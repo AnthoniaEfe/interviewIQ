@@ -1,0 +1,65 @@
+{
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "train_rows": 6241,
+  "test_rows": 1759,
+  "accuracy": 0.46389994314951677,
+  "macro_f1": 0.4239011172161828,
+  "weighted_f1": 0.46155480465348275,
+  "classification_report": {
+    "No Fit": {
+      "precision": 0.5743016759776536,
+      "recall": 0.5997666277712952,
+      "f1-score": 0.58675799086758,
+      "support": 857.0
+    },
+    "Potential Fit": {
+      "precision": 0.31901840490797545,
+      "recall": 0.35135135135135137,
+      "f1-score": 0.33440514469453375,
+      "support": 444.0
+    },
+    "Good Fit": {
+      "precision": 0.3893333333333333,
+      "recall": 0.31877729257641924,
+      "f1-score": 0.3505402160864346,
+      "support": 458.0
+    },
+    "accuracy": 0.46389994314951677,
+    "macro avg": {
+      "precision": 0.42755113807298745,
+      "recall": 0.4232984238996886,
+      "f1-score": 0.4239011172161828,
+      "support": 1759.0
+    },
+    "weighted avg": {
+      "precision": 0.46170288502481915,
+      "recall": 0.46389994314951677,
+      "f1-score": 0.46155480465348275,
+      "support": 1759.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      514,
+      205,
+      138
+    ],
+    [
+      197,
+      156,
+      91
+    ],
+    [
+      184,
+      128,
+      146
+    ]
+  ],
+  "labels": [
+    "No Fit",
+    "Potential Fit",
+    "Good Fit"
+  ],
+  "trained_at": "2026-09-20T22:05:57.440077+00:00"
+}
