@@ -1,0 +1,59 @@
+{
+  "experiment_id": "exp_20260920T212053Z",
+  "generation_mode": "baseline",
+  "profile_id": "p01_junior_swe",
+  "jd_id": "software_engineer",
+  "seniority": "senior",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt_version": "1.0.0",
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "You built REST APIs with Python and FastAPI for internal data pipelines. Walk me through one API you designed, including its endpoint structure, request validation, error handling, and testing approach."
+    },
+    {
+      "question": "How would you structure a Python backend service using object-oriented design principles so that business logic, data access, and API handlers remain maintainable as the service grows?"
+    },
+    {
+      "question": "Describe how you would design a PostgreSQL schema for a service that stores users, resources owned by users, and an audit history of changes. What primary keys, foreign keys, constraints, and indexes would you use?"
+    },
+    {
+      "question": "Suppose a PostgreSQL-backed API endpoint becomes slow as its dataset grows. How would you investigate the issue and decide whether to change the query, add an index, or modify the schema?"
+    },
+    {
+      "question": "Your CV mentions 78% test coverage using pytest. What kinds of unit and integration tests did you write for your FastAPI work, and what important failures can coverage metrics fail to reveal?"
+    },
+    {
+      "question": "What would you include in a Docker setup for a Python/FastAPI service that needs consistent local development, automated testing, and deployment to a Kubernetes environment?"
+    },
+    {
+      "question": "How would you design a Kubernetes deployment for a high-availability Python API, including health checks, replica configuration, configuration management, and safe rollout behavior?"
+    },
+    {
+      "question": "Describe a CI/CD pipeline you would create using GitHub Actions for this service, from pull request validation through deployment. Which checks would be required before merging?"
+    },
+    {
+      "question": "Imagine an API used by an internal data pipeline starts returning elevated 500 errors in production. How would you triage the incident, mitigate impact, identify the root cause, and communicate with the wider team?"
+    },
+    {
+      "question": "As a senior engineer working with junior developers, how would you conduct code reviews and mentor teammates while ensuring code quality, knowledge sharing, and constructive collaboration?"
+    }
+  ],
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 828,
+    "output_tokens": 395,
+    "cached_tokens": 0,
+    "estimated_cost": 0.006396,
+    "latency_ms": 5558.38,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "generated_at": "2026-09-20T21:21:13.123839+00:00"
+}

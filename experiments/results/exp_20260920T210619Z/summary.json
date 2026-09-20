@@ -1,0 +1,56 @@
+{
+  "experiment_id": "exp_20260920T210619Z",
+  "status": "failed",
+  "generation_mode": "baseline",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "prompt_version": "1.0.0",
+  "final_question_count_requested": 10,
+  "combinations_attempted": 3,
+  "combinations_ok": 0,
+  "combinations_failed": 3,
+  "total_estimated_cost_usd": 0,
+  "average_latency_ms": null,
+  "human_evaluation": "not_yet_evaluated",
+  "errors": [
+    {
+      "profile_id": "p01_junior_swe",
+      "jd_id": "software_engineer",
+      "seniority": "junior",
+      "error_type": "LLMPermanentError",
+      "error": "OPENAI_API_KEY is not set."
+    },
+    {
+      "profile_id": "p01_junior_swe",
+      "jd_id": "software_engineer",
+      "seniority": "mid",
+      "error_type": "LLMPermanentError",
+      "error": "OPENAI_API_KEY is not set."
+    },
+    {
+      "profile_id": "p01_junior_swe",
+      "jd_id": "software_engineer",
+      "seniority": "senior",
+      "error_type": "LLMPermanentError",
+      "error": "OPENAI_API_KEY is not set."
+    }
+  ],
+  "result_files": [],
+  "config_path": "/root/interviewIQ/experiments/configs/baseline.yaml",
+  "config": {
+    "experiment_name": "interviewiq_baseline_gpt56",
+    "generation_modes": [
+      "baseline"
+    ],
+    "final_question_count": 10,
+    "data": {
+      "profiles_dir": "experiments/datasets/profiles",
+      "jobs_dir": "experiments/datasets/jobs",
+      "seniorities": [
+        "junior",
+        "mid",
+        "senior"
+      ]
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "experiment_id": "exp_20260920T220958Z",
+  "generation_mode": "baseline",
+  "profile_id": "rjf_04652_021f517c37fa",
+  "jd_id": "rjf_04652_021f517c37fa",
+  "pair_id": "rjf_04652_021f517c37fa",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt_version": "1.0.0",
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Walk me through an ETL pipeline you built using Python, Airflow, and Snowflake, including the source data, transformations, scheduling, error handling, and how you validated the loaded data."
+    },
+    {
+      "question": "You have worked with JSON, CSV, XML, and DAT feeds. How do you profile a new customer data feed and determine its schema, data-quality risks, and transformation requirements before building an ingestion pipeline?"
+    },
+    {
+      "question": "Describe your approach to creating a data-mapping specification from source-system fields to target warehouse tables. What information do you document for field mappings, transformation rules, defaults, and exceptions?"
+    },
+    {
+      "question": "In your Honeywell work, you staged API or Kafka JSON data into Snowflake using FLATTEN. Can you explain how you handled nested or changing JSON structures and ensured the resulting relational data was accurate?"
+    },
+    {
+      "question": "What data-quality and reconciliation checks have you implemented in ETL processes, and how did you investigate and resolve discrepancies between source and target systems?"
+    },
+    {
+      "question": "Describe a performance-tuning problem you encountered in Redshift, Snowflake, SQL Server, or Spark. What was causing the performance issue, what changes did you make, and how did you measure the outcome?"
+    },
+    {
+      "question": "How have you used SQL to support reporting and analytics workloads, such as the regulatory and financial reports you developed? Please describe a complex query or reporting dataset you created."
+    },
+    {
+      "question": "The role involves configuring existing applications for new or modified customer data feeds. How would you approach safely introducing a changed feed format while minimizing disruption to downstream consumers?"
+    },
+    {
+      "question": "Tell me about an Airflow DAG you developed for ingestion or reporting. How did you structure dependencies, retries, alerting, backfills, and operational monitoring?"
+    },
+    {
+      "question": "This role supports aviation data analytics and may involve aircraft data formats such as DFDR, QAR, ARINC-717, and ARINC-429. If assigned an unfamiliar aircraft-data feed, how would you learn the format and translate it into a reliable standardized data load process?"
+    }
+  ],
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 2489,
+    "output_tokens": 423,
+    "cached_tokens": 0,
+    "estimated_cost": 0.010054,
+    "latency_ms": 6553.93,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "generated_at": "2026-09-20T22:12:23.911868+00:00"
+}

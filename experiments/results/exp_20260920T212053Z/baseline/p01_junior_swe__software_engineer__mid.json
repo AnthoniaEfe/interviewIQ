@@ -1,0 +1,59 @@
+{
+  "experiment_id": "exp_20260920T212053Z",
+  "generation_mode": "baseline",
+  "profile_id": "p01_junior_swe",
+  "jd_id": "software_engineer",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt_version": "1.0.0",
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Can you walk me through a REST API you built with Python and FastAPI at Startup XYZ, including its endpoints, validation, error handling, and how it supported the internal data pipeline?"
+    },
+    {
+      "question": "How have you structured Python code using object-oriented principles in your work or projects? Please give an example of a class design and the reasoning behind it."
+    },
+    {
+      "question": "What unit tests did you write with pytest for your FastAPI services, and how did you decide which cases or behaviours needed coverage?"
+    },
+    {
+      "question": "Describe your experience using PostgreSQL for basic queries. How would you design a schema for an API that stores users, records they create, and relationships between them?"
+    },
+    {
+      "question": "Suppose a PostgreSQL-backed API endpoint becomes slow as data grows. How would you investigate the issue, and what role could indexes play in improving it?"
+    },
+    {
+      "question": "You have used Docker for local development. How would you containerise a FastAPI application along with its PostgreSQL dependency, and what differences would you anticipate for a production deployment?"
+    },
+    {
+      "question": "What is your experience with GitHub-based code reviews, both receiving feedback and reviewing others' changes? Describe a piece of feedback that improved your code."
+    },
+    {
+      "question": "How would you design and implement an automated CI pipeline for a Python service using GitHub Actions, including testing and checks before merging a pull request?"
+    },
+    {
+      "question": "Imagine an internal data-pipeline API occasionally returns errors in production after a deployment. What information would you gather first, how would you triage the incident, and how would you communicate with the team?"
+    },
+    {
+      "question": "This role involves collaborating with engineering, product, and QA in agile sprints. Can you describe how you have worked with these groups at Startup XYZ to clarify requirements, deliver a feature, or resolve an issue?"
+    }
+  ],
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 828,
+    "output_tokens": 376,
+    "cached_tokens": 0,
+    "estimated_cost": 0.006168,
+    "latency_ms": 6272.56,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "generated_at": "2026-09-20T21:21:07.564856+00:00"
+}
