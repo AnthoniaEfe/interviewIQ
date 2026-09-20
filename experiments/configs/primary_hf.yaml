@@ -1,0 +1,21 @@
+experiment_name: interviewiq_primary_hf_resume_fit
+primary_dataset: cnamuangtoun/resume-job-description-fit
+generation_modes:
+  - baseline
+final_question_count: 10
+data:
+  source: resume_job_fit
+  cache_dir: experiments/datasets/resume_job_fit/cache
+  pairs_dir: experiments/datasets/resume_job_fit/experiment_pairs
+  manifest: experiments/datasets/resume_job_fit/experiment_pairs/manifest.json
+  # Prefer fit-positive pairs for interview question generation experiments.
+  labels:
+    - Good Fit
+    - Potential Fit
+  n_per_label: 15
+  seed: 42
+  # Seniority is not present in the HF labels; treat as unspecified unless overridden.
+  default_seniority: mid
+fit_model:
+  path: experiments/datasets/resume_job_fit/models/fit_classifier.joblib
+  embedding_model: all-MiniLM-L6-v2

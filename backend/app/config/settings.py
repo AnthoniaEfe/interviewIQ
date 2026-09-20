@@ -1,17 +1,26 @@
 """Typed application configuration. Model IDs are never hard-coded in business logic."""
 
 from functools import lru_cache
+from pathlib import Path
 from typing import Literal
 
-from pydantic import Field, field_validator
+from pydantic import field_validator, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+_PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
-        env_file=("../.env", ".env", "../../.env"),
+        env_file=(
+            str(_PROJECT_ROOT / ".env"),
+            "../.env",
+            ".env",
+            "../../.env",
+        ),
         env_file_encoding="utf-8",
         extra="ignore",
+        env_ignore_empty=True,
     )
 
     llm_provider: Literal["openai"] = "openai"
@@ -68,6 +77,17 @@ class Settings(BaseSettings):
     enable_redundancy_filter: bool = True
 
     mongodb_uri: str = ""
+
+    @model_validator(mode="after")
+    def load_api_key_from_secret_file(self) -> "Settings":
+        if self.openai_api_key.strip():
+            return self
+        secret_path = _PROJECT_ROOT / ".secrets" / "openai_api_key"
+        if secret_path.is_file():
+            value = secret_path.read_text(encoding="utf-8").strip()
+            if value:
+                object.__setattr__(self, "openai_api_key", value)
+        return self
 
     @field_validator("llm_fast_model", "llm_primary_model")
     @classmethod

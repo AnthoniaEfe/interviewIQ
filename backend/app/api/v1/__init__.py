@@ -1,7 +1,8 @@
 from fastapi import APIRouter
 
-from app.api.v1 import pipeline, system
+from app.api.v1 import experiments, pipeline, system
 
 api_router = APIRouter(prefix="/api/v1")
 api_router.include_router(system.router, tags=["system"])
 api_router.include_router(pipeline.router, tags=["pipeline"])
+api_router.include_router(experiments.router, tags=["experiments"])

@@ -66,24 +66,30 @@ class OpenAIProvider(LLMProvider):
         started = time.perf_counter()
         kwargs: dict = {
             "model": model,
-            "input": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt},
-            ],
+            "instructions": system_prompt,
+            "input": user_prompt,
             "text_format": schema,
             "max_output_tokens": max_output_tokens,
         }
-        if temperature is not None:
-            kwargs["temperature"] = temperature
         if reasoning_effort:
             kwargs["reasoning"] = {"effort": reasoning_effort}
         if prompt_cache_key:
             kwargs["prompt_cache_key"] = prompt_cache_key
+        # GPT-5.6 reasoning models often reject temperature; omit by default.
+        if temperature is not None and not _is_reasoning_model(model):
+            kwargs["temperature"] = temperature
 
         try:
             response = await client.responses.parse(**kwargs)
         except Exception as exc:  # noqa: BLE001 — mapped below
-            raise self._map_error(exc, model) from exc
+            if _is_unsupported_temperature(exc) and "temperature" in kwargs:
+                kwargs.pop("temperature", None)
+                try:
+                    response = await client.responses.parse(**kwargs)
+                except Exception as retry_exc:  # noqa: BLE001
+                    raise self._map_error(retry_exc, model) from retry_exc
+            else:
+                raise self._map_error(exc, model) from exc
 
         latency_ms = (time.perf_counter() - started) * 1000
         parsed = getattr(response, "output_parsed", None)
@@ -147,9 +153,21 @@ class OpenAIProvider(LLMProvider):
                 public_message="The language model is temporarily unavailable.",
             )
         return LLMPermanentError(
-            f"OpenAI request failed: {type(exc).__name__}",
+            f"OpenAI request failed: {type(exc).__name__}: {message}",
             public_message="Question generation failed.",
         )
+
+
+def _is_reasoning_model(model: str) -> bool:
+    lowered = model.lower()
+    return lowered.startswith("gpt-5") or lowered.startswith("gpt-6")
+
+
+def _is_unsupported_temperature(exc: Exception) -> bool:
+    message = str(exc).lower()
+    return "temperature" in message and (
+        "unsupported" in message or "not supported" in message or "unknown parameter" in message
+    )
 
 
 async def verify_configured_models(provider: LLMProvider, settings: Settings) -> None:

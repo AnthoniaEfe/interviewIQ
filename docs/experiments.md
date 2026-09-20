@@ -1,17 +1,26 @@
 # Experiments
 
+Primary dataset: `cnamuangtoun/resume-job-description-fit` (pandas + `hf://` URLs).
+
+## Prepare / train local fit model
+
 ```bash
-python -m experiments.run --config experiments/configs/main.yaml
+PYTHONPATH=backend python experiments/scripts/train_fit_classifier.py
 ```
 
-The runner currently writes a timestamped `experiments/results/<id>/summary.json` with `status: not_yet_evaluated`. Full batch execution (baseline + InterviewIQ on the dataset) is not implemented yet.
+This trains a local embedding + logistic-regression classifier on the HF **train**
+split and evaluates on **test**. It does **not** fine-tune Terra/Luna.
 
-Dataset size (for example 15 profiles × 3 roles × 3 seniorities) belongs in YAML/data files, not in application constants.
+## Run baseline generation on curated HF pairs
 
-## Config keys
+```bash
+PYTHONPATH=backend python -m experiments.run \
+  --config experiments/configs/primary_hf.yaml --smoke
+```
 
-See `experiments/configs/main.yaml` for pool size, MMR lambda, similarity threshold, ablation flags, and model-control notes.
+## Legacy smoke files
 
-## Legacy baseline
-
-`interviewiq_baseline/run_batch_baseline.py` still enumerates seniority in-process and defaults to GPT-4o. Keep it for smoke-testing the original script. The controlled thesis run will go through `experiments/run` once generation is wired.
+```bash
+PYTHONPATH=backend python -m experiments.run \
+  --config experiments/configs/baseline.yaml --smoke
+```

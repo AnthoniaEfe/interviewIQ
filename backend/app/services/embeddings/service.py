@@ -86,7 +86,14 @@ def resolve_device(device: str) -> str:
     try:
         import torch
 
-        return "cuda" if torch.cuda.is_available() else "cpu"
+        if not torch.cuda.is_available():
+            return "cpu"
+        # Guard against advertised CUDA with unusable drivers.
+        try:
+            torch.zeros(1, device="cuda")
+            return "cuda"
+        except Exception:  # noqa: BLE001
+            return "cpu"
     except ImportError:
         return "cpu"
 

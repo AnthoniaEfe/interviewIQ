@@ -45,7 +45,25 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 Health: `GET /api/v1/health`
 
+## Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open http://localhost:3000 for the research console:
+
+- experiment list and aggregate cost
+- per-run charts (latency, cost, tokens, fit labels)
+- question inspector
+- CV/JD upload for ad-hoc testing
+
+API must be running on port 8000 (`NEXT_PUBLIC_API_URL`).
+
 ## Testing
+
 
 Tests mock LLM usage and do not call paid APIs.
 
@@ -63,5 +81,7 @@ Used for Sentence-Transformer embeddings and PyTorch experiments. Luna/Terra are
 ## Research integrity
 
 No experiment results are fabricated. The runner writes `status: not_yet_evaluated` until a real run completes.
+
+Primary dataset: [`cnamuangtoun/resume-job-description-fit`](https://huggingface.co/datasets/cnamuangtoun/resume-job-description-fit) (pandas + `hf://`). Local fit classifier training uses the train split; Terra/Luna are never fine-tuned.
 
 The legacy baseline in `interviewiq_baseline/` uses `gpt-4o`. The thesis comparison must use the **same generation model** for baseline and InterviewIQ (Terra by default). The legacy script is retained as a historical prototype, not as the controlled experimental condition.
