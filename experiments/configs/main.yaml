@@ -1,0 +1,24 @@
+experiment_name: interviewiq_main
+generation_modes:
+  - baseline
+  - interviewiq
+model_control:
+  provider: openai
+  generation_model: ${LLM_PRIMARY_MODEL}
+  extraction_model: ${LLM_FAST_MODEL}
+embedding_model: all-MiniLM-L6-v2
+question_pool_size: 30
+final_question_count: 10
+mmr_lambda: 0.7
+question_similarity_threshold: 0.85
+ablation:
+  enable_tfidf: true
+  enable_bm25: true
+  enable_semantic: true
+  enable_gap_analysis: true
+  enable_competency_weighting: true
+  enable_mmr: true
+  enable_redundancy_filter: true
+data:
+  profiles_dir: experiments/datasets/profiles
+  jobs_dir: experiments/datasets/jobs
