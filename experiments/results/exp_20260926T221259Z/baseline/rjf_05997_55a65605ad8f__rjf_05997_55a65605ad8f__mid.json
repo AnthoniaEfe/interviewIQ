@@ -1,0 +1,62 @@
+{
+  "experiment_id": "exp_20260926T221259Z",
+  "generation_mode": "baseline",
+  "profile_id": "rjf_05997_55a65605ad8f",
+  "jd_id": "rjf_05997_55a65605ad8f",
+  "pair_id": "rjf_05997_55a65605ad8f",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt_version": "1.0.0",
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "You describe building a multi-tenant platform handling 1.4 million transactions per second. Walk me through its architecture, the main scalability bottlenecks you encountered, and the specific changes that produced the reported backend-request improvement."
+    },
+    {
+      "question": "For the platform performance optimizations that yielded approximately 7% IMR savings, how did you identify the opportunity, validate the root cause, and measure that the savings were attributable to your changes?"
+    },
+    {
+      "question": "Describe one of the four major projects you led at Amazon from press release through final delivery. How did you turn ambiguous requirements into a technical design, manage dependencies, and decide what to ship first?"
+    },
+    {
+      "question": "You migrated roughly 400 internal customers to improve availability and security. What was the migration strategy, how did you manage compatibility and rollback, and what signals told you the migration was successful?"
+    },
+    {
+      "question": "Design a canonical asset-management service for cloud data-center infrastructure. What would the core data model and REST APIs look like, and how would you handle asset identity, lifecycle state, ownership, and concurrent updates?"
+    },
+    {
+      "question": "How would you design the persistence layer for an asset-management system that needs both strongly consistent inventory records and scalable query capability? Discuss the tradeoffs between relational databases, NoSQL stores, and distributed persistence."
+    },
+    {
+      "question": "Tell me about the geo-distributed monitoring system you designed for vCloud Air. How did it collect and aggregate signals across locations, deal with network partitions or delayed telemetry, and support real-time operational decisions?"
+    },
+    {
+      "question": "Your CV mentions Java annotation-based frameworks for REST API test libraries. Explain the framework design, including how annotations were processed, how tests were orchestrated, and how you made the framework useful to other engineering teams."
+    },
+    {
+      "question": "Suppose a Linux-hosted microservice begins showing elevated tail latency after a deployment while average latency remains stable. What is your end-to-end debugging approach, from observability data through host-level investigation to mitigation and validation?"
+    },
+    {
+      "question": "What CI/CD pipeline would you establish for a Java and Python microservice deployed in Docker containers, using tools such as Git, Jenkins, and Kubernetes? Include testing layers, artifact/version management, deployment safety, and rollback."
+    }
+  ],
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 1518,
+    "output_tokens": 456,
+    "cached_tokens": 0,
+    "estimated_cost": 0.008508,
+    "latency_ms": 7385.65,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "generated_at": "2026-09-26T22:15:36.710001+00:00"
+}

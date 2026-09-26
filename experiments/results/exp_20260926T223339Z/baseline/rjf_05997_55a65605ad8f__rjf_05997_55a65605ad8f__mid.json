@@ -1,0 +1,62 @@
+{
+  "experiment_id": "exp_20260926T223339Z",
+  "generation_mode": "baseline",
+  "profile_id": "rjf_05997_55a65605ad8f",
+  "jd_id": "rjf_05997_55a65605ad8f",
+  "pair_id": "rjf_05997_55a65605ad8f",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt_version": "1.0.0",
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Describe the architecture of the multi-tenant platform you worked on at Amazon that handled 1.4 million transactions per second. What were the main scaling bottlenecks, and how did you address them?"
+    },
+    {
+      "question": "You mention achieving approximately 7% backend-request improvement and significant infrastructure savings. How did you identify the performance issue, measure the improvement, and ensure the optimization did not affect correctness or reliability?"
+    },
+    {
+      "question": "Walk me through one of the four major projects you led at Amazon, from initial requirements or press release through production delivery. What technical decisions did you own, and how did you manage competing priorities?"
+    },
+    {
+      "question": "Oracle's asset-management services will need reliable distributed persistence. How would you design a microservice that tracks the lifecycle and current state of millions of data-center assets across regions?"
+    },
+    {
+      "question": "What are the key trade-offs between relational databases and NoSQL stores for an asset-management system, particularly for asset inventory, relationships, audit history, and high-volume state updates?"
+    },
+    {
+      "question": "Describe a RESTful API you designed or implemented. How did you handle API resource modeling, idempotency, validation, error responses, versioning, and backward compatibility?"
+    },
+    {
+      "question": "Your CV references a stateless POST-request service. What made the service stateless, and how did you handle retries, duplicate requests, and safe processing when downstream dependencies were unavailable?"
+    },
+    {
+      "question": "Tell us about the geo-distributed monitoring solution you built for vCloud Air systems. How did it collect, transport, store, and present telemetry, and how did you deal with failures or network partitions between locations?"
+    },
+    {
+      "question": "When troubleshooting a Linux-hosted Java or Python service with rising latency and reduced throughput, what investigation process and tools would you use to isolate whether the issue is in the application, operating system, network, database, or a downstream service?"
+    },
+    {
+      "question": "Describe your experience using Docker and Jenkins in an Agile delivery workflow. How would you structure CI/CD for a Java- and Python-based microservice so that tests, security checks, deployments, rollback, and observability are built into the pipeline?"
+    }
+  ],
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 1518,
+    "output_tokens": 439,
+    "cached_tokens": 1515,
+    "estimated_cost": 0.005577,
+    "latency_ms": 5976.86,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "generated_at": "2026-09-26T22:37:43.631431+00:00"
+}

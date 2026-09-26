@@ -24,6 +24,8 @@ export type ExperimentPair = {
   model: string | null;
   n_questions: number;
   questions: { question: string }[];
+  resume_text: string | null;
+  job_description_text: string | null;
   latency_ms: number | null;
   input_tokens: number | null;
   output_tokens: number | null;

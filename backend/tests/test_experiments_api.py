@@ -19,6 +19,10 @@ def test_list_and_get_experiments(monkeypatch):
         body = detail.json()
         assert "summary" in body
         assert "charts" in body
+        if body["pairs"]:
+            pair = body["pairs"][0]
+            assert pair.get("resume_text")
+            assert pair.get("job_description_text")
 
 
 def test_upload_pair_json(monkeypatch):

@@ -25,12 +25,13 @@ export function PairTable({ pairs }: Props) {
   }
 
   return (
-    <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
+    <div className="space-y-4">
+      <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
       <div className="overflow-hidden rounded-xl border border-paper-line bg-paper-card shadow-panel">
         <div className="border-b border-paper-line px-4 py-3">
           <h3 className="font-display text-lg text-ink">Pairs</h3>
           <p className="text-xs text-ink-mute">
-            Select a row to inspect generated questions
+            Select a row to inspect the CV, job description, and generated questions
           </p>
         </div>
         <div className="max-h-[420px] overflow-auto">
@@ -100,6 +101,42 @@ export function PairTable({ pairs }: Props) {
           <p className="text-sm text-ink-mute">Select a pair.</p>
         )}
       </div>
+    </div>
+
+    {active ? (
+      <section className="space-y-3">
+        <div>
+          <h3 className="font-display text-xl text-ink">CV and job description</h3>
+          <p className="text-xs text-ink-mute">
+            Source documents for {active.pair_id || active.profile_id}
+            {active.seniority ? ` · ${active.seniority}` : ""}
+          </p>
+        </div>
+        <div className="grid gap-4 lg:grid-cols-2">
+          <SourcePanel title="Curriculum vitae" text={active.resume_text} />
+          <SourcePanel title="Job description" text={active.job_description_text} />
+        </div>
+      </section>
+    ) : null}
+    </div>
+  );
+}
+
+function SourcePanel({ title, text }: { title: string; text: string | null }) {
+  return (
+    <div className="overflow-hidden rounded-xl border border-paper-line bg-paper-card shadow-panel">
+      <div className="border-b border-paper-line px-4 py-3">
+        <h4 className="font-display text-lg text-ink">{title}</h4>
+      </div>
+      {text ? (
+        <pre className="max-h-[28rem] overflow-auto whitespace-pre-wrap px-4 py-3 font-sans text-sm leading-relaxed text-ink-soft">
+          {text}
+        </pre>
+      ) : (
+        <p className="px-4 py-6 text-sm text-ink-mute">
+          Source text is not available for this pair.
+        </p>
+      )}
     </div>
   );
 }

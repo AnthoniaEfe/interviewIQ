@@ -48,6 +48,70 @@ def list_experiments() -> list[dict]:
     return items
 
 
+def _read_under_root(path: Path, root: Path) -> str | None:
+    try:
+        resolved = path.resolve()
+    except OSError:
+        return None
+    if not resolved.is_relative_to(root) or not resolved.is_file():
+        return None
+    return resolved.read_text(encoding="utf-8")
+
+
+class PairSourceIndex:
+    """Resolve the CV and JD text that a recorded pair was generated from."""
+
+    def __init__(self, summary: dict, *, root: Path | None = None) -> None:
+        self.root = (root or project_root()).resolve()
+        data = (summary.get("config") or {}).get("data") or {}
+        self._by_id: dict[str, tuple[Path, Path]] = {}
+        self._profiles_dir: Path | None = None
+        self._jobs_dir: Path | None = None
+        if data.get("manifest"):
+            self._index_manifest(data)
+        else:
+            self._profiles_dir = self.root / data.get(
+                "profiles_dir", "experiments/datasets/profiles"
+            )
+            self._jobs_dir = self.root / data.get(
+                "jobs_dir", "experiments/datasets/jobs"
+            )
+
+    def _index_manifest(self, data: dict) -> None:
+        manifest_path = (self.root / data["manifest"]).resolve()
+        if not manifest_path.is_file() or not manifest_path.is_relative_to(self.root):
+            return
+        pairs_dir = self.root / data.get(
+            "pairs_dir", str(manifest_path.parent.relative_to(self.root))
+        )
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        for item in manifest:
+            cv_path = pairs_dir / item["profile_path"]
+            jd_path = pairs_dir / item["job_path"]
+            for key in (item.get("pair_id"), item.get("profile_id")):
+                if key:
+                    self._by_id[str(key)] = (cv_path, jd_path)
+
+    def texts_for(self, record: dict) -> tuple[str | None, str | None]:
+        lookup_id = record.get("pair_id") or record.get("profile_id")
+        if lookup_id and str(lookup_id) in self._by_id:
+            cv_path, jd_path = self._by_id[str(lookup_id)]
+            return (
+                _read_under_root(cv_path, self.root),
+                _read_under_root(jd_path, self.root),
+            )
+        profile_id = record.get("profile_id")
+        jd_id = record.get("jd_id")
+        if self._profiles_dir is None or self._jobs_dir is None:
+            return None, None
+        if not profile_id or not jd_id:
+            return None, None
+        return (
+            _read_under_root(self._profiles_dir / f"{profile_id}.txt", self.root),
+            _read_under_root(self._jobs_dir / f"{jd_id}.txt", self.root),
+        )
+
+
 def load_experiment(experiment_id: str) -> dict:
     path = results_root() / experiment_id
     summary_path = path / "summary.json"
@@ -55,6 +119,7 @@ def load_experiment(experiment_id: str) -> dict:
         raise FileNotFoundError(f"Experiment not found: {experiment_id}")
 
     summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    sources = PairSourceIndex(summary)
     pairs: list[dict] = []
     baseline_dir = path / "baseline"
     if baseline_dir.exists():
@@ -64,6 +129,7 @@ def load_experiment(experiment_id: str) -> dict:
             record = json.loads(file.read_text(encoding="utf-8"))
             usage = record.get("usage") or {}
             questions = record.get("questions") or []
+            resume_text, job_description_text = sources.texts_for(record)
             pairs.append(
                 {
                     "file": file.name,
@@ -75,6 +141,8 @@ def load_experiment(experiment_id: str) -> dict:
                     "model": record.get("model"),
                     "n_questions": len(questions),
                     "questions": questions,
+                    "resume_text": resume_text,
+                    "job_description_text": job_description_text,
                     "latency_ms": usage.get("latency_ms"),
                     "input_tokens": usage.get("input_tokens"),
                     "output_tokens": usage.get("output_tokens"),
