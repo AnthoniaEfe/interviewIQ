@@ -1,0 +1,359 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_03611_ef2aa407d208",
+  "jd_id": "rjf_03611_ef2aa407d208",
+  "pair_id": "rjf_03611_ef2aa407d208",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Web application development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3914,
+        "evidence": {
+          "tfidf_score": 0.07290055470443521,
+          "tfidf_matched_terms": [
+            "application",
+            "development",
+            "web"
+          ],
+          "bm25_score": 3.764917988360159,
+          "semantic_score": 0.5436726808547974,
+          "matched_candidate_competency": "Web services"
+        },
+        "candidate_evidence": [
+          "Web services"
+        ]
+      },
+      {
+        "job_competency": "B2B SaaS application development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6909,
+        "evidence": {
+          "tfidf_score": 0.025830701732208455,
+          "tfidf_matched_terms": [
+            "application",
+            "development"
+          ],
+          "bm25_score": 2.407182024147246,
+          "semantic_score": 0.35032960772514343,
+          "matched_candidate_competency": "Worked on application deployment and Maven build configuration."
+        },
+        "candidate_evidence": [
+          "Worked on application deployment and Maven build configuration."
+        ]
+      },
+      {
+        "job_competency": "JavaScript",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1617,
+        "evidence": {
+          "tfidf_score": 0.020985738860183574,
+          "tfidf_matched_terms": [
+            "javascript"
+          ],
+          "bm25_score": 5.788368335521702,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      },
+      {
+        "job_competency": "React",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9331,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3346276879310608,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Node.js",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7014,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6165167689323425,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Nest.js or similar framework",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.926,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36991915106773376,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Object-oriented programming",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.717,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5188794136047363,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Relational database management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3962,
+        "evidence": {
+          "tfidf_score": 0.02834400697740022,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.764917988360159,
+          "semantic_score": 0.5288444757461548,
+          "matched_candidate_competency": "Order management"
+        },
+        "candidate_evidence": [
+          "Order management"
+        ]
+      },
+      {
+        "job_competency": "Web application performance and scalability optimization",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3924,
+        "evidence": {
+          "tfidf_score": 0.2057029725526028,
+          "tfidf_matched_terms": [
+            "and",
+            "application",
+            "web"
+          ],
+          "bm25_score": 3.764917988360159,
+          "semantic_score": 0.4343513548374176,
+          "matched_candidate_competency": "Web services"
+        },
+        "candidate_evidence": [
+          "Web services"
+        ]
+      },
+      {
+        "job_competency": "Unit testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3487,
+        "evidence": {
+          "tfidf_score": 0.059446070410971455,
+          "tfidf_matched_terms": [
+            "testing",
+            "unit"
+          ],
+          "bm25_score": 5.578250728377087,
+          "semantic_score": 0.7458325624465942,
+          "matched_candidate_competency": "Performed unit and integration testing."
+        },
+        "candidate_evidence": [
+          "Performed unit and integration testing."
+        ]
+      },
+      {
+        "job_competency": "Technical implementation leadership",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9301,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3493143916130066,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Technical planning and code review",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6896,
+        "evidence": {
+          "tfidf_score": 0.17382440116007422,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.2575765642150931,
+          "semantic_score": 0.3968917429447174,
+          "matched_candidate_competency": "Developed stored procedures and triggers using MariaDB and Oracle."
+        },
+        "candidate_evidence": [
+          "Developed stored procedures and triggers using MariaDB and Oracle."
+        ]
+      },
+      {
+        "job_competency": "Team mentoring",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7254,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46646350622177124,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Team collaboration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7341,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4119997024536133,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Passion for building from scratch",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7049,
+        "evidence": {
+          "tfidf_score": 0.02113808151332816,
+          "tfidf_matched_terms": [
+            "for"
+          ],
+          "bm25_score": 1.8798731988584034,
+          "semantic_score": 0.33508336544036865,
+          "matched_candidate_competency": "Developed SOAP web services for the payment module."
+        },
+        "candidate_evidence": [
+          "Developed SOAP web services for the payment module."
+        ]
+      },
+      {
+        "job_competency": "Product and software quality orientation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3854,
+        "evidence": {
+          "tfidf_score": 0.19263451282326505,
+          "tfidf_matched_terms": [
+            "and",
+            "quality"
+          ],
+          "bm25_score": 4.820986282198612,
+          "semantic_score": 0.3764708340167999,
+          "matched_candidate_competency": "Quality activities"
+        },
+        "candidate_evidence": [
+          "Quality activities"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "JavaScript"
+    ],
+    "partial_matches": [
+      "Web application development",
+      "Relational database management",
+      "Web application performance and scalability optimization",
+      "Unit testing",
+      "Product and software quality orientation"
+    ],
+    "weak_matches": [
+      "B2B SaaS application development",
+      "Node.js",
+      "Object-oriented programming",
+      "Technical planning and code review",
+      "Team mentoring",
+      "Team collaboration",
+      "Passion for building from scratch"
+    ],
+    "missing": [
+      "React",
+      "Nest.js or similar framework",
+      "Technical implementation leadership"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "JavaScript"
+    ],
+    "partial_matches": [
+      "Web application development",
+      "Relational database management",
+      "Web application performance and scalability optimization",
+      "Unit testing",
+      "Product and software quality orientation"
+    ],
+    "competency_gaps": [
+      "B2B SaaS application development",
+      "Node.js",
+      "Object-oriented programming",
+      "Technical planning and code review",
+      "Team mentoring",
+      "Team collaboration",
+      "Passion for building from scratch",
+      "React",
+      "Nest.js or similar framework",
+      "Technical implementation leadership"
+    ]
+  },
+  "counts": {
+    "requirements": 16,
+    "strength_matches": 1,
+    "partial_matches": 5,
+    "competency_gaps": 10
+  },
+  "latency_ms": 43.56,
+  "analyzed_at": "2026-09-27T21:52:40.325955+00:00"
+}

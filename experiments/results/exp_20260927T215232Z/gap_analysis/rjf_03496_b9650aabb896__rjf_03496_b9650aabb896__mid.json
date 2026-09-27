@@ -1,0 +1,339 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_03496_b9650aabb896",
+  "jd_id": "rjf_03496_b9650aabb896",
+  "pair_id": "rjf_03496_b9650aabb896",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Enterprise data management technologies",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3913,
+        "evidence": {
+          "tfidf_score": 0.1411508454149849,
+          "tfidf_matched_terms": [
+            "data",
+            "enterprise",
+            "technologies"
+          ],
+          "bm25_score": 2.986672043022975,
+          "semantic_score": 0.6617169380187988,
+          "matched_candidate_competency": "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting."
+        },
+        "candidate_evidence": [
+          "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting."
+        ]
+      },
+      {
+        "job_competency": "Database technologies",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3914,
+        "evidence": {
+          "tfidf_score": 0.03832373235967257,
+          "tfidf_matched_terms": [
+            "database",
+            "technologies"
+          ],
+          "bm25_score": 4.100338771314038,
+          "semantic_score": 0.6186733841896057,
+          "matched_candidate_competency": "Azure SQL Database"
+        },
+        "candidate_evidence": [
+          "Azure SQL Database"
+        ]
+      },
+      {
+        "job_competency": "ETL technologies",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3584,
+        "evidence": {
+          "tfidf_score": 0.03832373235967257,
+          "tfidf_matched_terms": [
+            "etl",
+            "technologies"
+          ],
+          "bm25_score": 5.37915729900109,
+          "semantic_score": 0.8115969896316528,
+          "matched_candidate_competency": "ETL"
+        },
+        "candidate_evidence": [
+          "ETL"
+        ]
+      },
+      {
+        "job_competency": "Complex query writing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7056,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.59019935131073,
+          "matched_candidate_competency": "Hadoop"
+        },
+        "candidate_evidence": [
+          "Hadoop"
+        ]
+      },
+      {
+        "job_competency": "Cloud data solutions",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3454,
+        "evidence": {
+          "tfidf_score": 0.1949030769741203,
+          "tfidf_matched_terms": [
+            "cloud",
+            "data",
+            "solutions"
+          ],
+          "bm25_score": 5.5767207220049055,
+          "semantic_score": 0.8035064935684204,
+          "matched_candidate_competency": "Cloud data engineering"
+        },
+        "candidate_evidence": [
+          "Cloud data engineering"
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.17,
+        "evidence": {
+          "tfidf_score": 0.03251131460996533,
+          "tfidf_matched_terms": [
+            "python"
+          ],
+          "bm25_score": 5.37915729900109,
+          "semantic_score": 1.000000238418579,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Structured data processing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4039,
+        "evidence": {
+          "tfidf_score": 0.1465939486684094,
+          "tfidf_matched_terms": [
+            "data",
+            "processing"
+          ],
+          "bm25_score": 2.986672043022975,
+          "semantic_score": 0.5311275720596313,
+          "matched_candidate_competency": "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting."
+        },
+        "candidate_evidence": [
+          "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting."
+        ]
+      },
+      {
+        "job_competency": "Spark SQL",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.157,
+        "evidence": {
+          "tfidf_score": 0.14708700658103116,
+          "tfidf_matched_terms": [
+            "spark",
+            "sql"
+          ],
+          "bm25_score": 7.012516808723321,
+          "semantic_score": 0.9999997019767761,
+          "matched_candidate_competency": "Spark SQL"
+        },
+        "candidate_evidence": [
+          "Spark SQL"
+        ]
+      },
+      {
+        "job_competency": "Data warehouse development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3892,
+        "evidence": {
+          "tfidf_score": 0.15226033077861642,
+          "tfidf_matched_terms": [
+            "data",
+            "development"
+          ],
+          "bm25_score": 2.3085991422246,
+          "semantic_score": 0.7470365762710571,
+          "matched_candidate_competency": "Used version-control tools to coordinate project development and code submissions."
+        },
+        "candidate_evidence": [
+          "Used version-control tools to coordinate project development and code submissions."
+        ]
+      },
+      {
+        "job_competency": "ETL and ELT application development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3557,
+        "evidence": {
+          "tfidf_score": 0.26320949716424713,
+          "tfidf_matched_terms": [
+            "and",
+            "application",
+            "development",
+            "etl"
+          ],
+          "bm25_score": 5.37915729900109,
+          "semantic_score": 0.67048579454422,
+          "matched_candidate_competency": "ETL"
+        },
+        "candidate_evidence": [
+          "ETL"
+        ]
+      },
+      {
+        "job_competency": "Data integration pipeline architecture",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3996,
+        "evidence": {
+          "tfidf_score": 0.11981743770579013,
+          "tfidf_matched_terms": [
+            "data",
+            "integration"
+          ],
+          "bm25_score": 2.986672043022975,
+          "semantic_score": 0.5943414568901062,
+          "matched_candidate_competency": "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations."
+        },
+        "candidate_evidence": [
+          "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations."
+        ]
+      },
+      {
+        "job_competency": "Integration testing and debugging",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6604,
+        "evidence": {
+          "tfidf_score": 0.2604235417251249,
+          "tfidf_matched_terms": [
+            "and",
+            "debugging",
+            "integration"
+          ],
+          "bm25_score": 3.7800080366011155,
+          "semantic_score": 0.2727392613887787,
+          "matched_candidate_competency": "Resolved customer issues through workarounds, debugging, and defect fixes."
+        },
+        "candidate_evidence": [
+          "Resolved customer issues through workarounds, debugging, and defect fixes."
+        ]
+      },
+      {
+        "job_competency": "System architecture and integration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6641,
+        "evidence": {
+          "tfidf_score": 0.2330430627541375,
+          "tfidf_matched_terms": [
+            "and",
+            "integration"
+          ],
+          "bm25_score": 2.8064164327341077,
+          "semantic_score": 0.37449875473976135,
+          "matched_candidate_competency": "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations."
+        },
+        "candidate_evidence": [
+          "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations."
+        ]
+      },
+      {
+        "job_competency": "Software development lifecycle practices",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6774,
+        "evidence": {
+          "tfidf_score": 0.008233373297811368,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.3085991422246,
+          "semantic_score": 0.51313316822052,
+          "matched_candidate_competency": "Used version-control tools to coordinate project development and code submissions."
+        },
+        "candidate_evidence": [
+          "Used version-control tools to coordinate project development and code submissions."
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Python",
+      "Spark SQL"
+    ],
+    "partial_matches": [
+      "Enterprise data management technologies",
+      "Database technologies",
+      "ETL technologies",
+      "Cloud data solutions",
+      "Structured data processing",
+      "Data warehouse development",
+      "ETL and ELT application development",
+      "Data integration pipeline architecture"
+    ],
+    "weak_matches": [
+      "Complex query writing",
+      "Integration testing and debugging",
+      "System architecture and integration",
+      "Software development lifecycle practices"
+    ],
+    "missing": []
+  },
+  "three_category": {
+    "strength_matches": [
+      "Python",
+      "Spark SQL"
+    ],
+    "partial_matches": [
+      "Enterprise data management technologies",
+      "Database technologies",
+      "ETL technologies",
+      "Cloud data solutions",
+      "Structured data processing",
+      "Data warehouse development",
+      "ETL and ELT application development",
+      "Data integration pipeline architecture"
+    ],
+    "competency_gaps": [
+      "Complex query writing",
+      "Integration testing and debugging",
+      "System architecture and integration",
+      "Software development lifecycle practices"
+    ]
+  },
+  "counts": {
+    "requirements": 14,
+    "strength_matches": 2,
+    "partial_matches": 8,
+    "competency_gaps": 4
+  },
+  "latency_ms": 46.62,
+  "analyzed_at": "2026-09-27T21:52:40.121059+00:00"
+}

@@ -16,16 +16,27 @@ from app.services.retrieval.tfidf import TfidfMatcher
 
 
 def _candidate_texts(profile: CandidateProfile) -> list[str]:
-    labels = [c.normalized_label for c in profile.competencies]
-    if labels:
-        return labels
     extras: list[str] = []
-    for skill in profile.technical_skills + profile.soft_skills + profile.domain_experience:
+    for skill in (
+        profile.technical_skills
+        + profile.soft_skills
+        + profile.domain_experience
+        + profile.certifications
+        + profile.competencies
+    ):
         extras.append(skill.normalized_label)
     for job in profile.experience:
         extras.extend(job.technologies)
         extras.extend(job.responsibilities)
-    return extras or [""]
+    seen: set[str] = set()
+    out: list[str] = []
+    for text in extras:
+        key = text.strip().lower()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        out.append(text.strip())
+    return out or [""]
 
 
 def _job_competencies(job: JobDescription) -> list[tuple[str, RequirementPriority]]:
@@ -103,6 +114,14 @@ def build_gap_matrix(
     gaps: list[ProfileGap] = []
     bm25_raw: list[float] = []
     rows: list[dict] = []
+    semantic_by_label: dict[str, float] = {}
+    if settings.enable_semantic and embeddings is not None:
+        job_labels = [label for label, _ in job_items]
+        valid_cand = [text for text in cand_texts if text]
+        if job_labels and valid_cand:
+            sim = embeddings.similarity_matrix(job_labels, valid_cand)
+            for i, label in enumerate(job_labels):
+                semantic_by_label[label] = float(sim[i].max()) if sim.shape[1] else 0.0
 
     for label, priority in job_items:
         tfidf_score = 0.0
@@ -115,12 +134,7 @@ def build_gap_matrix(
         if settings.enable_bm25:
             best_idx, bm25_score = bm25_matcher.best_match(label, cand_texts)
 
-        semantic_score = 0.0
-        if settings.enable_semantic and embeddings is not None:
-            semantic_score = max(
-                (embeddings.similarity(label, text) for text in cand_texts if text),
-                default=0.0,
-            )
+        semantic_score = semantic_by_label.get(label, 0.0)
 
         matched_candidate = cand_texts[best_idx] if best_idx is not None and cand_texts else None
         bm25_raw.append(bm25_score)

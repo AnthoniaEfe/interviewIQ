@@ -1,0 +1,350 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_05855_1d0e27a3eacb",
+  "jd_id": "rjf_05855_1d0e27a3eacb",
+  "pair_id": "rjf_05855_1d0e27a3eacb",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Business analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3918,
+        "evidence": {
+          "tfidf_score": 0.04422185867340723,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 3.574177395266532,
+          "semantic_score": 0.6849226951599121,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Requirements analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6562,
+        "evidence": {
+          "tfidf_score": 0.04422185867340723,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 3.574177395266532,
+          "semantic_score": 0.5013313293457031,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Advanced technical skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.726,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46241968870162964,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Word",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.387,
+        "evidence": {
+          "tfidf_score": 0.06656931917384522,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 3.128273341571508,
+          "semantic_score": 0.7614802122116089,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1608,
+        "evidence": {
+          "tfidf_score": 0.13571262786476315,
+          "tfidf_matched_terms": [
+            "excel",
+            "microsoft"
+          ],
+          "bm25_score": 6.70245073683804,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Outlook",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4024,
+        "evidence": {
+          "tfidf_score": 0.06656931917384522,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 3.128273341571508,
+          "semantic_score": 0.6075252890586853,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Analytical thinking",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9376,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3119100332260132,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Conceptual thinking",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9484,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2578485608100891,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Documentation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7319,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4255511462688446,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Report creation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.922,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3898006081581116,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Presentation skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7267,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4584196209907532,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Planning and organization",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6658,
+        "evidence": {
+          "tfidf_score": 0.18443191662261296,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.4711240725391466,
+          "semantic_score": 0.5505881905555725,
+          "matched_candidate_competency": "Training and development"
+        },
+        "candidate_evidence": [
+          "Training and development"
+        ]
+      },
+      {
+        "job_competency": "Time management",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1584,
+        "evidence": {
+          "tfidf_score": 0.10833681930784977,
+          "tfidf_matched_terms": [
+            "management",
+            "time"
+          ],
+          "bm25_score": 7.364166439590634,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Time management"
+        },
+        "candidate_evidence": [
+          "Time management"
+        ]
+      },
+      {
+        "job_competency": "Stakeholder influence",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9402,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2991602122783661,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Stakeholder collaboration",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.935,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32519716024398804,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Follow-through",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9338,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33081161975860596,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Microsoft Excel",
+      "Time management"
+    ],
+    "partial_matches": [
+      "Business analysis",
+      "Microsoft Word",
+      "Microsoft Outlook"
+    ],
+    "weak_matches": [
+      "Requirements analysis",
+      "Advanced technical skills",
+      "Documentation",
+      "Presentation skills",
+      "Planning and organization"
+    ],
+    "missing": [
+      "Analytical thinking",
+      "Conceptual thinking",
+      "Report creation",
+      "Stakeholder influence",
+      "Stakeholder collaboration",
+      "Follow-through"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Microsoft Excel",
+      "Time management"
+    ],
+    "partial_matches": [
+      "Business analysis",
+      "Microsoft Word",
+      "Microsoft Outlook"
+    ],
+    "competency_gaps": [
+      "Requirements analysis",
+      "Advanced technical skills",
+      "Documentation",
+      "Presentation skills",
+      "Planning and organization",
+      "Analytical thinking",
+      "Conceptual thinking",
+      "Report creation",
+      "Stakeholder influence",
+      "Stakeholder collaboration",
+      "Follow-through"
+    ]
+  },
+  "counts": {
+    "requirements": 16,
+    "strength_matches": 2,
+    "partial_matches": 3,
+    "competency_gaps": 11
+  },
+  "latency_ms": 33.09,
+  "analyzed_at": "2026-09-27T21:52:40.972976+00:00"
+}

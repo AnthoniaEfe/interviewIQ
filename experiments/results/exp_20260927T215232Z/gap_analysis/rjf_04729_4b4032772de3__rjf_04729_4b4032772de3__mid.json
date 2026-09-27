@@ -1,0 +1,354 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_04729_4b4032772de3",
+  "jd_id": "rjf_04729_4b4032772de3",
+  "pair_id": "rjf_04729_4b4032772de3",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Industrial electrical design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7245,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4720524549484253,
+          "matched_candidate_competency": "LabVIEW"
+        },
+        "candidate_evidence": [
+          "LabVIEW"
+        ]
+      },
+      {
+        "job_competency": "Power distribution",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.941,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29506999254226685,
+          "matched_candidate_competency": "LabVIEW"
+        },
+        "candidate_evidence": [
+          "LabVIEW"
+        ]
+      },
+      {
+        "job_competency": "Motor control",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7299,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4381785988807678,
+          "matched_candidate_competency": "LabVIEW"
+        },
+        "candidate_evidence": [
+          "LabVIEW"
+        ]
+      },
+      {
+        "job_competency": "PLC control systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6429,
+        "evidence": {
+          "tfidf_score": 0.09181117010051507,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 2.4393795536060363,
+          "semantic_score": 0.42389145493507385,
+          "matched_candidate_competency": "Embedded systems"
+        },
+        "candidate_evidence": [
+          "Embedded systems"
+        ]
+      },
+      {
+        "job_competency": "Control panel design",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9507,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2466975301504135,
+          "matched_candidate_competency": "LabVIEW"
+        },
+        "candidate_evidence": [
+          "LabVIEW"
+        ]
+      },
+      {
+        "job_competency": "Lighting design",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9503,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24853965640068054,
+          "matched_candidate_competency": "LabVIEW"
+        },
+        "candidate_evidence": [
+          "LabVIEW"
+        ]
+      },
+      {
+        "job_competency": "Facility conduit and wiring design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7036,
+        "evidence": {
+          "tfidf_score": 0.06846992378198784,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.449738026520313,
+          "semantic_score": 0.2605665624141693,
+          "matched_candidate_competency": "IC testing and automated test systems"
+        },
+        "candidate_evidence": [
+          "IC testing and automated test systems"
+        ]
+      },
+      {
+        "job_competency": "Schematic and logic development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3838,
+        "evidence": {
+          "tfidf_score": 0.10481118655069038,
+          "tfidf_matched_terms": [
+            "and",
+            "schematic"
+          ],
+          "bm25_score": 3.2929675957730957,
+          "semantic_score": 0.4231919050216675,
+          "matched_candidate_competency": "Cadence Schematic Editor"
+        },
+        "candidate_evidence": [
+          "Cadence Schematic Editor"
+        ]
+      },
+      {
+        "job_competency": "National Electrical Code",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6357,
+        "evidence": {
+          "tfidf_score": 0.05033982440065653,
+          "tfidf_matched_terms": [
+            "code",
+            "national"
+          ],
+          "bm25_score": 3.2929675957730957,
+          "semantic_score": 0.3291529417037964,
+          "matched_candidate_competency": "Code Composer Studio"
+        },
+        "candidate_evidence": [
+          "Code Composer Studio"
+        ]
+      },
+      {
+        "job_competency": "AutoCAD",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7072,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5798711776733398,
+          "matched_candidate_competency": "LabVIEW"
+        },
+        "candidate_evidence": [
+          "LabVIEW"
+        ]
+      },
+      {
+        "job_competency": "Construction document and shop drawing review",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6802,
+        "evidence": {
+          "tfidf_score": 0.06194117932358886,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.449738026520313,
+          "semantic_score": 0.41147106885910034,
+          "matched_candidate_competency": "IC testing and automated test systems"
+        },
+        "candidate_evidence": [
+          "IC testing and automated test systems"
+        ]
+      },
+      {
+        "job_competency": "Facility testing and startup",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.374,
+        "evidence": {
+          "tfidf_score": 0.10481118655069038,
+          "tfidf_matched_terms": [
+            "and",
+            "testing"
+          ],
+          "bm25_score": 3.7407528484905628,
+          "semantic_score": 0.43152156472206116,
+          "matched_candidate_competency": "IC testing and automated test systems"
+        },
+        "candidate_evidence": [
+          "IC testing and automated test systems"
+        ]
+      },
+      {
+        "job_competency": "Project management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7282,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44882142543792725,
+          "matched_candidate_competency": "LabVIEW"
+        },
+        "candidate_evidence": [
+          "LabVIEW"
+        ]
+      },
+      {
+        "job_competency": "Instrumentation and control implementation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6663,
+        "evidence": {
+          "tfidf_score": 0.0776222324402711,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.449738026520313,
+          "semantic_score": 0.48661476373672485,
+          "matched_candidate_competency": "IC testing and automated test systems"
+        },
+        "candidate_evidence": [
+          "IC testing and automated test systems"
+        ]
+      },
+      {
+        "job_competency": "Legal authorization to work in the United States",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9049,
+        "evidence": {
+          "tfidf_score": 0.026967598634717926,
+          "tfidf_matched_terms": [
+            "in",
+            "to"
+          ],
+          "bm25_score": 1.424281338437257,
+          "semantic_score": 0.1698547601699829,
+          "matched_candidate_competency": "Identifying outliers in large collections of cotton fiber cross-section scan data."
+        },
+        "candidate_evidence": [
+          "Identifying outliers in large collections of cotton fiber cross-section scan data."
+        ]
+      },
+      {
+        "job_competency": "Water and wastewater applications",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.424,
+        "evidence": {
+          "tfidf_score": 0.0776222324402711,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.449738026520313,
+          "semantic_score": 0.23453813791275024,
+          "matched_candidate_competency": "IC testing and automated test systems"
+        },
+        "candidate_evidence": [
+          "IC testing and automated test systems"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Schematic and logic development",
+      "Facility testing and startup"
+    ],
+    "weak_matches": [
+      "Industrial electrical design",
+      "Motor control",
+      "PLC control systems",
+      "Facility conduit and wiring design",
+      "National Electrical Code",
+      "AutoCAD",
+      "Construction document and shop drawing review",
+      "Project management",
+      "Instrumentation and control implementation",
+      "Water and wastewater applications"
+    ],
+    "missing": [
+      "Power distribution",
+      "Control panel design",
+      "Lighting design",
+      "Legal authorization to work in the United States"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Schematic and logic development",
+      "Facility testing and startup"
+    ],
+    "competency_gaps": [
+      "Industrial electrical design",
+      "Motor control",
+      "PLC control systems",
+      "Facility conduit and wiring design",
+      "National Electrical Code",
+      "AutoCAD",
+      "Construction document and shop drawing review",
+      "Project management",
+      "Instrumentation and control implementation",
+      "Water and wastewater applications",
+      "Power distribution",
+      "Control panel design",
+      "Lighting design",
+      "Legal authorization to work in the United States"
+    ]
+  },
+  "counts": {
+    "requirements": 16,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 14
+  },
+  "latency_ms": 32.04,
+  "analyzed_at": "2026-09-27T21:52:40.725956+00:00"
+}

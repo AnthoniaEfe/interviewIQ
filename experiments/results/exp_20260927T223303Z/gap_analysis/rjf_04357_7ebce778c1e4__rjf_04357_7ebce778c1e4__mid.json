@@ -1,0 +1,295 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_04357_7ebce778c1e4",
+  "jd_id": "rjf_04357_7ebce778c1e4",
+  "pair_id": "rjf_04357_7ebce778c1e4",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Professional production coding",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.924,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38013237714767456,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "React",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9331,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3346278667449951,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Redux",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9359,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32056549191474915,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "JavaScript",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.162,
+        "evidence": {
+          "tfidf_score": 0.013277767178931123,
+          "tfidf_matched_terms": [
+            "javascript"
+          ],
+          "bm25_score": 6.252823220569816,
+          "semantic_score": 1.0000003576278687,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      },
+      {
+        "job_competency": "Java or similar frameworks",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3667,
+        "evidence": {
+          "tfidf_score": 0.010093132046170001,
+          "tfidf_matched_terms": [
+            "java"
+          ],
+          "bm25_score": 5.467992197500817,
+          "semantic_score": 0.6694590449333191,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Web backend technologies",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.397,
+        "evidence": {
+          "tfidf_score": 0.011938103736592777,
+          "tfidf_matched_terms": [
+            "web"
+          ],
+          "bm25_score": 4.665351140986935,
+          "semantic_score": 0.4610946476459503,
+          "matched_candidate_competency": "Web testing"
+        },
+        "candidate_evidence": [
+          "Web testing"
+        ]
+      },
+      {
+        "job_competency": "Ruby on Rails",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6935,
+        "evidence": {
+          "tfidf_score": 0.011938103736592777,
+          "tfidf_matched_terms": [
+            "on"
+          ],
+          "bm25_score": 2.301010291256,
+          "semantic_score": 0.38082000613212585,
+          "matched_candidate_competency": "Prepared and executed test cases based on functional specifications."
+        },
+        "candidate_evidence": [
+          "Prepared and executed test cases based on functional specifications."
+        ]
+      },
+      {
+        "job_competency": "Relational database design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4043,
+        "evidence": {
+          "tfidf_score": 0.01332004447578229,
+          "tfidf_matched_terms": [
+            "database",
+            "design"
+          ],
+          "bm25_score": 3.3613442746415765,
+          "semantic_score": 0.543580949306488,
+          "matched_candidate_competency": "Tested database data using SQL queries."
+        },
+        "candidate_evidence": [
+          "Tested database data using SQL queries."
+        ]
+      },
+      {
+        "job_competency": "PostgreSQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7125,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.546876847743988,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Customer-centric design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6954,
+        "evidence": {
+          "tfidf_score": 0.005967512100338548,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 2.1617567268140996,
+          "semantic_score": 0.3899366855621338,
+          "matched_candidate_competency": "Worked in an Agile environment across requirements, design, testing, and implementation phases."
+        },
+        "candidate_evidence": [
+          "Worked in an Agile environment across requirements, design, testing, and implementation phases."
+        ]
+      },
+      {
+        "job_competency": "Computer science concepts",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7254,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.466066837310791,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Networking",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4346,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4732457101345062,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Cloud infrastructure and services",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4232,
+        "evidence": {
+          "tfidf_score": 0.20600854498457447,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.1547412772398509,
+          "semantic_score": 0.298271507024765,
+          "matched_candidate_competency": "Communication and coordination"
+        },
+        "candidate_evidence": [
+          "Communication and coordination"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "JavaScript"
+    ],
+    "partial_matches": [
+      "Java or similar frameworks",
+      "Web backend technologies",
+      "Relational database design"
+    ],
+    "weak_matches": [
+      "Ruby on Rails",
+      "PostgreSQL",
+      "Customer-centric design",
+      "Computer science concepts",
+      "Networking",
+      "Cloud infrastructure and services"
+    ],
+    "missing": [
+      "Professional production coding",
+      "React",
+      "Redux"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "JavaScript"
+    ],
+    "partial_matches": [
+      "Java or similar frameworks",
+      "Web backend technologies",
+      "Relational database design"
+    ],
+    "competency_gaps": [
+      "Ruby on Rails",
+      "PostgreSQL",
+      "Customer-centric design",
+      "Computer science concepts",
+      "Networking",
+      "Cloud infrastructure and services",
+      "Professional production coding",
+      "React",
+      "Redux"
+    ]
+  },
+  "counts": {
+    "requirements": 13,
+    "strength_matches": 1,
+    "partial_matches": 3,
+    "competency_gaps": 9
+  },
+  "latency_ms": 38.68,
+  "analyzed_at": "2026-09-27T22:33:13.481586+00:00"
+}

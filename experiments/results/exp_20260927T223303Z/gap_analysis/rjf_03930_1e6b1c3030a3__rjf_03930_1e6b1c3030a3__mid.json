@@ -1,0 +1,402 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_03930_1e6b1c3030a3",
+  "jd_id": "rjf_03930_1e6b1c3030a3",
+  "pair_id": "rjf_03930_1e6b1c3030a3",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Software engineering",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3833,
+        "evidence": {
+          "tfidf_score": 0.06498988848737507,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 3.0308294677530934,
+          "semantic_score": 0.6551983952522278,
+          "matched_candidate_competency": "Network software"
+        },
+        "candidate_evidence": [
+          "Network software"
+        ]
+      },
+      {
+        "job_competency": "C#",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1611,
+        "evidence": {
+          "tfidf_score": 0.03716543691554462,
+          "tfidf_matched_terms": [
+            "c#"
+          ],
+          "bm25_score": 4.903708584313139,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": ".NET Core",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7057,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5895354151725769,
+          "matched_candidate_competency": "Apache Tomcat Server"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat Server"
+        ]
+      },
+      {
+        "job_competency": ".NET",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6988,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6323814988136292,
+          "matched_candidate_competency": "Apache Tomcat Server"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat Server"
+        ]
+      },
+      {
+        "job_competency": "Build engineering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7298,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.43870294094085693,
+          "matched_candidate_competency": "Apache Tomcat Server"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat Server"
+        ]
+      },
+      {
+        "job_competency": "CI/CD tools",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9307,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3466470241546631,
+          "matched_candidate_competency": "Apache Tomcat Server"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat Server"
+        ]
+      },
+      {
+        "job_competency": "Source control",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9217,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3914300203323364,
+          "matched_candidate_competency": "Apache Tomcat Server"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat Server"
+        ]
+      },
+      {
+        "job_competency": "Build automation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9239,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38050419092178345,
+          "matched_candidate_competency": "Apache Tomcat Server"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat Server"
+        ]
+      },
+      {
+        "job_competency": "Deployment automation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6985,
+        "evidence": {
+          "tfidf_score": 0.021546241024534764,
+          "tfidf_matched_terms": [
+            "deployment"
+          ],
+          "bm25_score": 1.71576131304979,
+          "semantic_score": 0.3556823134422302,
+          "matched_candidate_competency": "Participate in all phases of mobile app development from concept through deployment."
+        },
+        "candidate_evidence": [
+          "Participate in all phases of mobile app development from concept through deployment."
+        ]
+      },
+      {
+        "job_competency": "GitHub",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9295,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3522651791572571,
+          "matched_candidate_competency": "Apache Tomcat Server"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat Server"
+        ]
+      },
+      {
+        "job_competency": "Jenkins",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9384,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3077845573425293,
+          "matched_candidate_competency": "Apache Tomcat Server"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat Server"
+        ]
+      },
+      {
+        "job_competency": "Spinnaker",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9409,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29558783769607544,
+          "matched_candidate_competency": "Apache Tomcat Server"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat Server"
+        ]
+      },
+      {
+        "job_competency": "DevOps deployments",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7354,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40401023626327515,
+          "matched_candidate_competency": "Apache Tomcat Server"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat Server"
+        ]
+      },
+      {
+        "job_competency": "Unit testing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9363,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3183901906013489,
+          "matched_candidate_competency": "Apache Tomcat Server"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat Server"
+        ]
+      },
+      {
+        "job_competency": "Integration testing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9438,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28109467029571533,
+          "matched_candidate_competency": "Apache Tomcat Server"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat Server"
+        ]
+      },
+      {
+        "job_competency": "End-to-end testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.383,
+        "evidence": {
+          "tfidf_score": 0.08535714293085978,
+          "tfidf_matched_terms": [
+            "end",
+            "to"
+          ],
+          "bm25_score": 4.870892178873185,
+          "semantic_score": 0.36127766966819763,
+          "matched_candidate_competency": "Troubleshoot production issues reported by end users."
+        },
+        "candidate_evidence": [
+          "Troubleshoot production issues reported by end users."
+        ]
+      },
+      {
+        "job_competency": "Code review",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7258,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46360427141189575,
+          "matched_candidate_competency": "Apache Tomcat Server"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat Server"
+        ]
+      },
+      {
+        "job_competency": "Production deployment",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6611,
+        "evidence": {
+          "tfidf_score": 0.05259530499032327,
+          "tfidf_matched_terms": [
+            "deployment",
+            "production"
+          ],
+          "bm25_score": 2.4354460894365926,
+          "semantic_score": 0.4564593732357025,
+          "matched_candidate_competency": "Troubleshoot production issues reported by end users."
+        },
+        "candidate_evidence": [
+          "Troubleshoot production issues reported by end users."
+        ]
+      },
+      {
+        "job_competency": "Microsoft technologies",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2299,
+        "evidence": {
+          "tfidf_score": 0.021546241024534764,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 4.195103515110211,
+          "semantic_score": 0.5110988616943359,
+          "matched_candidate_competency": "Microsoft Access"
+        },
+        "candidate_evidence": [
+          "Microsoft Access"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "C#"
+    ],
+    "partial_matches": [
+      "Software engineering",
+      "End-to-end testing",
+      "Microsoft technologies"
+    ],
+    "weak_matches": [
+      ".NET Core",
+      ".NET",
+      "Build engineering",
+      "Deployment automation",
+      "DevOps deployments",
+      "Code review",
+      "Production deployment"
+    ],
+    "missing": [
+      "CI/CD tools",
+      "Source control",
+      "Build automation",
+      "GitHub",
+      "Jenkins",
+      "Spinnaker",
+      "Unit testing",
+      "Integration testing"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "C#"
+    ],
+    "partial_matches": [
+      "Software engineering",
+      "End-to-end testing",
+      "Microsoft technologies"
+    ],
+    "competency_gaps": [
+      ".NET Core",
+      ".NET",
+      "Build engineering",
+      "Deployment automation",
+      "DevOps deployments",
+      "Code review",
+      "Production deployment",
+      "CI/CD tools",
+      "Source control",
+      "Build automation",
+      "GitHub",
+      "Jenkins",
+      "Spinnaker",
+      "Unit testing",
+      "Integration testing"
+    ]
+  },
+  "counts": {
+    "requirements": 19,
+    "strength_matches": 1,
+    "partial_matches": 3,
+    "competency_gaps": 15
+  },
+  "latency_ms": 36.32,
+  "analyzed_at": "2026-09-27T22:33:13.292367+00:00"
+}

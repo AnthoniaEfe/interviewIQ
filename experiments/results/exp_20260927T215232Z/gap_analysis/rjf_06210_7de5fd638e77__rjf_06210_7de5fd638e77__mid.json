@@ -1,0 +1,197 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_06210_7de5fd638e77",
+  "jd_id": "rjf_06210_7de5fd638e77",
+  "pair_id": "rjf_06210_7de5fd638e77",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1619,
+        "evidence": {
+          "tfidf_score": 0.015150458838436635,
+          "tfidf_matched_terms": [
+            "java"
+          ],
+          "bm25_score": 6.0499940090488975,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Amazon Web Services (AWS)",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9433,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28374582529067993,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1692,
+        "evidence": {
+          "tfidf_score": 0.045492132838379266,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 4.700409586251425,
+          "semantic_score": 1.000000238418579,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Full-stack software development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6871,
+        "evidence": {
+          "tfidf_score": 0.018640555718427744,
+          "tfidf_matched_terms": [
+            "full",
+            "software"
+          ],
+          "bm25_score": 2.548976480860278,
+          "semantic_score": 0.37591952085494995,
+          "matched_candidate_competency": "Installed, configured, tested, and maintained database management software."
+        },
+        "candidate_evidence": [
+          "Installed, configured, tested, and maintained database management software."
+        ]
+      },
+      {
+        "job_competency": "Software engineering experience",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6905,
+        "evidence": {
+          "tfidf_score": 0.01362291135481285,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 2.548976480860278,
+          "semantic_score": 0.35841238498687744,
+          "matched_candidate_competency": "Installed, configured, tested, and maintained database management software."
+        },
+        "candidate_evidence": [
+          "Installed, configured, tested, and maintained database management software."
+        ]
+      },
+      {
+        "job_competency": "Fintech",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9327,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3364620804786682,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Cross-functional collaboration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7243,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4732370674610138,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Payments",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5614,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32167837023735046,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Java",
+      "SQL"
+    ],
+    "partial_matches": [],
+    "weak_matches": [
+      "Full-stack software development",
+      "Software engineering experience",
+      "Cross-functional collaboration"
+    ],
+    "missing": [
+      "Amazon Web Services (AWS)",
+      "Fintech",
+      "Payments"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Java",
+      "SQL"
+    ],
+    "partial_matches": [],
+    "competency_gaps": [
+      "Full-stack software development",
+      "Software engineering experience",
+      "Cross-functional collaboration",
+      "Amazon Web Services (AWS)",
+      "Fintech",
+      "Payments"
+    ]
+  },
+  "counts": {
+    "requirements": 8,
+    "strength_matches": 2,
+    "partial_matches": 0,
+    "competency_gaps": 6
+  },
+  "latency_ms": 29.62,
+  "analyzed_at": "2026-09-27T21:52:41.425571+00:00"
+}

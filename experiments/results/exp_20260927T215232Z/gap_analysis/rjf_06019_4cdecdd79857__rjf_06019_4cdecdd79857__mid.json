@@ -1,0 +1,774 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_06019_4cdecdd79857",
+  "jd_id": "rjf_06019_4cdecdd79857",
+  "pair_id": "rjf_06019_4cdecdd79857",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7177,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5143617391586304,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "Spring Boot",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9254,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37302836775779724,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "Hibernate",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9447,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27628371119499207,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "SQL databases",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3516,
+        "evidence": {
+          "tfidf_score": 0.008093453997406075,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 6.209059585795988,
+          "semantic_score": 0.7282426953315735,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Oracle",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7006,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6212955713272095,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "PostgreSQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7186,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5085058212280273,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "NoSQL databases",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9395,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3024212718009949,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "Database query writing and modification",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6678,
+        "evidence": {
+          "tfidf_score": 0.16043090281712774,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9551145433227192,
+          "semantic_score": 0.5902766585350037,
+          "matched_candidate_competency": "Analyzed and interpreted test data and prepared technical reports."
+        },
+        "candidate_evidence": [
+          "Analyzed and interpreted test data and prepared technical reports."
+        ]
+      },
+      {
+        "job_competency": "Software development lifecycle",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6659,
+        "evidence": {
+          "tfidf_score": 0.021013642829006245,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 2.5703671864152677,
+          "semantic_score": 0.5116511583328247,
+          "matched_candidate_competency": "Followed escalation procedures and coordinated with development teams."
+        },
+        "candidate_evidence": [
+          "Followed escalation procedures and coordinated with development teams."
+        ]
+      },
+      {
+        "job_competency": "Software engineering best practices",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.679,
+        "evidence": {
+          "tfidf_score": 0.00530469596135394,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 2.5658253725483338,
+          "semantic_score": 0.4425733983516693,
+          "matched_candidate_competency": "Created and executed software test plans, test cases, and scripts."
+        },
+        "candidate_evidence": [
+          "Created and executed software test plans, test cases, and scripts."
+        ]
+      },
+      {
+        "job_competency": "Coding standards",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9246,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3771057426929474,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "Code reviews",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6741,
+        "evidence": {
+          "tfidf_score": 0.01619152538701701,
+          "tfidf_matched_terms": [
+            "reviews"
+          ],
+          "bm25_score": 2.3911031348464467,
+          "semantic_score": 0.48578447103500366,
+          "matched_candidate_competency": "Conducted test calendar reviews with development teams and clients."
+        },
+        "candidate_evidence": [
+          "Conducted test calendar reviews with development teams and clients."
+        ]
+      },
+      {
+        "job_competency": "Source control",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7336,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4147097170352936,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "Software testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3712,
+        "evidence": {
+          "tfidf_score": 0.22689297495887983,
+          "tfidf_matched_terms": [
+            "software",
+            "testing"
+          ],
+          "bm25_score": 2.5658253725483338,
+          "semantic_score": 0.8079098463058472,
+          "matched_candidate_competency": "Created and executed software test plans, test cases, and scripts."
+        },
+        "candidate_evidence": [
+          "Created and executed software test plans, test cases, and scripts."
+        ]
+      },
+      {
+        "job_competency": "Build and release engineering",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3836,
+        "evidence": {
+          "tfidf_score": 0.2025683081348556,
+          "tfidf_matched_terms": [
+            "and",
+            "release"
+          ],
+          "bm25_score": 3.471002784895865,
+          "semantic_score": 0.5928682684898376,
+          "matched_candidate_competency": "Performed post-release production sanity testing."
+        },
+        "candidate_evidence": [
+          "Performed post-release production sanity testing."
+        ]
+      },
+      {
+        "job_competency": "Automation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.365,
+        "evidence": {
+          "tfidf_score": 0.041913444689861884,
+          "tfidf_matched_terms": [
+            "automation"
+          ],
+          "bm25_score": 4.211331900556035,
+          "semantic_score": 0.8100242614746094,
+          "matched_candidate_competency": "Test Automation"
+        },
+        "candidate_evidence": [
+          "Test Automation"
+        ]
+      },
+      {
+        "job_competency": "End-to-end traceability",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6447,
+        "evidence": {
+          "tfidf_score": 0.04233553610440293,
+          "tfidf_matched_terms": [
+            "end",
+            "to"
+          ],
+          "bm25_score": 4.633916717846606,
+          "semantic_score": 0.37942731380462646,
+          "matched_candidate_competency": "Validated checklists before batch End of Day runs."
+        },
+        "candidate_evidence": [
+          "Validated checklists before batch End of Day runs."
+        ]
+      },
+      {
+        "job_competency": "DevOps",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7248,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4700472950935364,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "Continuous integration and continuous deployment",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7143,
+        "evidence": {
+          "tfidf_score": 0.13351504478337695,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9551145433227192,
+          "semantic_score": 0.31991416215896606,
+          "matched_candidate_competency": "Analyzed and interpreted test data and prepared technical reports."
+        },
+        "candidate_evidence": [
+          "Analyzed and interpreted test data and prepared technical reports."
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9254,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3728322386741638,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "Jenkins",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9374,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31300246715545654,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "JIRA",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9368,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3159986734390259,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "Confluence",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9416,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29199302196502686,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "End-user and management communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3529,
+        "evidence": {
+          "tfidf_score": 0.2405568775188684,
+          "tfidf_matched_terms": [
+            "and",
+            "communication",
+            "end",
+            "user"
+          ],
+          "bm25_score": 6.209059585795988,
+          "semantic_score": 0.5408229827880859,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Vendor communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3784,
+        "evidence": {
+          "tfidf_score": 0.008093453997406075,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 6.209059585795988,
+          "semantic_score": 0.4602572023868561,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Leadership and mentoring",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3737,
+        "evidence": {
+          "tfidf_score": 0.24783778332402567,
+          "tfidf_matched_terms": [
+            "and",
+            "leadership"
+          ],
+          "bm25_score": 4.7197982423503575,
+          "semantic_score": 0.5068057179450989,
+          "matched_candidate_competency": "Leadership in Testing"
+        },
+        "candidate_evidence": [
+          "Leadership in Testing"
+        ]
+      },
+      {
+        "job_competency": "Team communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3472,
+        "evidence": {
+          "tfidf_score": 0.01974503511834154,
+          "tfidf_matched_terms": [
+            "communication",
+            "team"
+          ],
+          "bm25_score": 6.209059585795988,
+          "semantic_score": 0.7632095217704773,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Flexible schedule",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6876,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.7022742629051208,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "Software development experience",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6748,
+        "evidence": {
+          "tfidf_score": 0.021013642829006245,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 2.5703671864152677,
+          "semantic_score": 0.45618319511413574,
+          "matched_candidate_competency": "Followed escalation procedures and coordinated with development teams."
+        },
+        "candidate_evidence": [
+          "Followed escalation procedures and coordinated with development teams."
+        ]
+      },
+      {
+        "job_competency": "JavaScript",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5548,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37635910511016846,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "Advanced technical communication and teaching",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2157,
+        "evidence": {
+          "tfidf_score": 0.19331054258763156,
+          "tfidf_matched_terms": [
+            "and",
+            "communication",
+            "technical"
+          ],
+          "bm25_score": 6.209059585795988,
+          "semantic_score": 0.5100823044776917,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Agile/Scrum",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2119,
+        "evidence": {
+          "tfidf_score": 0.008093453997406075,
+          "tfidf_matched_terms": [
+            "agile"
+          ],
+          "bm25_score": 5.362959054003739,
+          "semantic_score": 0.8147215843200684,
+          "matched_candidate_competency": "Agile Methodologies"
+        },
+        "candidate_evidence": [
+          "Agile Methodologies"
+        ]
+      },
+      {
+        "job_competency": "Microservice architecture",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5595,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33714789152145386,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "Kubernetes",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5662,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28207388520240784,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "Containerization",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.563,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30847135186195374,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "MongoDB",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5689,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2589012384414673,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "SOLR",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5594,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3383653461933136,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      },
+      {
+        "job_competency": "Remote or virtual work experience",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5578,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35144802927970886,
+          "matched_candidate_competency": "Functional Testing"
+        },
+        "candidate_evidence": [
+          "Functional Testing"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "SQL databases",
+      "Software testing",
+      "Build and release engineering",
+      "Automation",
+      "End-user and management communication",
+      "Vendor communication",
+      "Leadership and mentoring",
+      "Team communication",
+      "Advanced technical communication and teaching",
+      "Agile/Scrum"
+    ],
+    "weak_matches": [
+      "Java",
+      "Oracle",
+      "PostgreSQL",
+      "Database query writing and modification",
+      "Software development lifecycle",
+      "Software engineering best practices",
+      "Code reviews",
+      "Source control",
+      "End-to-end traceability",
+      "DevOps",
+      "Continuous integration and continuous deployment",
+      "Flexible schedule",
+      "Software development experience"
+    ],
+    "missing": [
+      "Spring Boot",
+      "Hibernate",
+      "NoSQL databases",
+      "Coding standards",
+      "Git",
+      "Jenkins",
+      "JIRA",
+      "Confluence",
+      "JavaScript",
+      "Microservice architecture",
+      "Kubernetes",
+      "Containerization",
+      "MongoDB",
+      "SOLR",
+      "Remote or virtual work experience"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "SQL databases",
+      "Software testing",
+      "Build and release engineering",
+      "Automation",
+      "End-user and management communication",
+      "Vendor communication",
+      "Leadership and mentoring",
+      "Team communication",
+      "Advanced technical communication and teaching",
+      "Agile/Scrum"
+    ],
+    "competency_gaps": [
+      "Java",
+      "Oracle",
+      "PostgreSQL",
+      "Database query writing and modification",
+      "Software development lifecycle",
+      "Software engineering best practices",
+      "Code reviews",
+      "Source control",
+      "End-to-end traceability",
+      "DevOps",
+      "Continuous integration and continuous deployment",
+      "Flexible schedule",
+      "Software development experience",
+      "Spring Boot",
+      "Hibernate",
+      "NoSQL databases",
+      "Coding standards",
+      "Git",
+      "Jenkins",
+      "JIRA",
+      "Confluence",
+      "JavaScript",
+      "Microservice architecture",
+      "Kubernetes",
+      "Containerization",
+      "MongoDB",
+      "SOLR",
+      "Remote or virtual work experience"
+    ]
+  },
+  "counts": {
+    "requirements": 38,
+    "strength_matches": 0,
+    "partial_matches": 10,
+    "competency_gaps": 28
+  },
+  "latency_ms": 77.56,
+  "analyzed_at": "2026-09-27T21:52:41.255385+00:00"
+}

@@ -1,0 +1,380 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_05373_0562dd5f09f4",
+  "jd_id": "rjf_05373_0562dd5f09f4",
+  "pair_id": "rjf_05373_0562dd5f09f4",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Microsoft Dynamics 365",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3855,
+        "evidence": {
+          "tfidf_score": 0.008922366959025619,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 4.819637203371082,
+          "semantic_score": 0.4879332184791565,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Dynamics 365 solution development",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9345,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32766345143318176,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Team leadership",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9392,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30402714014053345,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "X++",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7172,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5175622701644897,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "C++",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1618,
+        "evidence": {
+          "tfidf_score": 0.01985234536184835,
+          "tfidf_matched_terms": [
+            "c++"
+          ],
+          "bm25_score": 5.558638466072338,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "C++"
+        },
+        "candidate_evidence": [
+          "C++"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1618,
+        "evidence": {
+          "tfidf_score": 0.01985234536184835,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 5.558638466072338,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "ADO",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9349,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32546883821487427,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Software development lifecycle",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6806,
+        "evidence": {
+          "tfidf_score": 0.026808352455850098,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 2.8752257862382495,
+          "semantic_score": 0.338144451379776,
+          "matched_candidate_competency": "Help-desk tracking software"
+        },
+        "candidate_evidence": [
+          "Help-desk tracking software"
+        ]
+      },
+      {
+        "job_competency": "Scrum",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9469,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26571741700172424,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Agile",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9303,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34858274459838867,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Azure",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7254,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4664265513420105,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Dynamics platform",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.931,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3450900912284851,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Technical communication",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9276,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3617769479751587,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Stakeholder collaboration",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9416,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29181158542633057,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Concurrent project management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6431,
+        "evidence": {
+          "tfidf_score": 0.01785503192883167,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 4.113549049634112,
+          "semantic_score": 0.41247332096099854,
+          "matched_candidate_competency": "Database management"
+        },
+        "candidate_evidence": [
+          "Database management"
+        ]
+      },
+      {
+        "job_competency": "Critical thinking",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9332,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3339974284172058,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Adaptability",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9277,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36159205436706543,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Strategic thinking",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.933,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3347710967063904,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "C++",
+      "SQL"
+    ],
+    "partial_matches": [
+      "Microsoft Dynamics 365"
+    ],
+    "weak_matches": [
+      "X++",
+      "Software development lifecycle",
+      "Azure",
+      "Concurrent project management"
+    ],
+    "missing": [
+      "Dynamics 365 solution development",
+      "Team leadership",
+      "ADO",
+      "Scrum",
+      "Agile",
+      "Dynamics platform",
+      "Technical communication",
+      "Stakeholder collaboration",
+      "Critical thinking",
+      "Adaptability",
+      "Strategic thinking"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "C++",
+      "SQL"
+    ],
+    "partial_matches": [
+      "Microsoft Dynamics 365"
+    ],
+    "competency_gaps": [
+      "X++",
+      "Software development lifecycle",
+      "Azure",
+      "Concurrent project management",
+      "Dynamics 365 solution development",
+      "Team leadership",
+      "ADO",
+      "Scrum",
+      "Agile",
+      "Dynamics platform",
+      "Technical communication",
+      "Stakeholder collaboration",
+      "Critical thinking",
+      "Adaptability",
+      "Strategic thinking"
+    ]
+  },
+  "counts": {
+    "requirements": 18,
+    "strength_matches": 2,
+    "partial_matches": 1,
+    "competency_gaps": 15
+  },
+  "latency_ms": 38.75,
+  "analyzed_at": "2026-09-27T22:33:13.932918+00:00"
+}

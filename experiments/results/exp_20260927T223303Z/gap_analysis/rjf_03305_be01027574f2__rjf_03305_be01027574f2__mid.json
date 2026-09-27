@@ -1,0 +1,422 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_03305_be01027574f2",
+  "jd_id": "rjf_03305_be01027574f2",
+  "pair_id": "rjf_03305_be01027574f2",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Electrical testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3706,
+        "evidence": {
+          "tfidf_score": 0.045914957297142234,
+          "tfidf_matched_terms": [
+            "electrical",
+            "testing"
+          ],
+          "bm25_score": 4.048527315673657,
+          "semantic_score": 0.5855973362922668,
+          "matched_candidate_competency": "Electrical construction"
+        },
+        "candidate_evidence": [
+          "Electrical construction"
+        ]
+      },
+      {
+        "job_competency": "Test procedure execution",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.945,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2751743197441101,
+          "matched_candidate_competency": "Civil engineering"
+        },
+        "candidate_evidence": [
+          "Civil engineering"
+        ]
+      },
+      {
+        "job_competency": "Electrical troubleshooting to LRU",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.64,
+        "evidence": {
+          "tfidf_score": 0.026618676347153893,
+          "tfidf_matched_terms": [
+            "electrical",
+            "to"
+          ],
+          "bm25_score": 4.048527315673657,
+          "semantic_score": 0.3059903085231781,
+          "matched_candidate_competency": "Electrical construction"
+        },
+        "candidate_evidence": [
+          "Electrical construction"
+        ]
+      },
+      {
+        "job_competency": "Schematics and wire lists",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6915,
+        "evidence": {
+          "tfidf_score": 0.2199844095260495,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.8524660776003309,
+          "semantic_score": 0.371404767036438,
+          "matched_candidate_competency": "Prepared and tracked RFIs and submittals"
+        },
+        "candidate_evidence": [
+          "Prepared and tracked RFIs and submittals"
+        ]
+      },
+      {
+        "job_competency": "Block diagrams and functional diagrams",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6939,
+        "evidence": {
+          "tfidf_score": 0.1614908040243708,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.8524660776003309,
+          "semantic_score": 0.40002918243408203,
+          "matched_candidate_competency": "Prepared and tracked RFIs and submittals"
+        },
+        "candidate_evidence": [
+          "Prepared and tracked RFIs and submittals"
+        ]
+      },
+      {
+        "job_competency": "Electronic test equipment",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7343,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4109100103378296,
+          "matched_candidate_competency": "Civil engineering"
+        },
+        "candidate_evidence": [
+          "Civil engineering"
+        ]
+      },
+      {
+        "job_competency": "Pneumatic and hydraulic gauges",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7008,
+        "evidence": {
+          "tfidf_score": 0.2199844095260495,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.8524660776003309,
+          "semantic_score": 0.31324175000190735,
+          "matched_candidate_competency": "Prepared and tracked RFIs and submittals"
+        },
+        "candidate_evidence": [
+          "Prepared and tracked RFIs and submittals"
+        ]
+      },
+      {
+        "job_competency": "Basic electronics",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.72,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5000895857810974,
+          "matched_candidate_competency": "Civil engineering"
+        },
+        "candidate_evidence": [
+          "Civil engineering"
+        ]
+      },
+      {
+        "job_competency": "Low- and high-voltage AC/DC systems",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3863,
+        "evidence": {
+          "tfidf_score": 0.17895085365318086,
+          "tfidf_matched_terms": [
+            "and",
+            "systems"
+          ],
+          "bm25_score": 4.200068739257834,
+          "semantic_score": 0.30372384190559387,
+          "matched_candidate_competency": "Water and sewer systems"
+        },
+        "candidate_evidence": [
+          "Water and sewer systems"
+        ]
+      },
+      {
+        "job_competency": "Electrical panel and equipment installation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3568,
+        "evidence": {
+          "tfidf_score": 0.22588591079155398,
+          "tfidf_matched_terms": [
+            "and",
+            "electrical"
+          ],
+          "bm25_score": 4.048527315673657,
+          "semantic_score": 0.5883197784423828,
+          "matched_candidate_competency": "Electrical construction"
+        },
+        "candidate_evidence": [
+          "Electrical construction"
+        ]
+      },
+      {
+        "job_competency": "Electrical component operation and troubleshooting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3594,
+        "evidence": {
+          "tfidf_score": 0.22588591079155396,
+          "tfidf_matched_terms": [
+            "and",
+            "electrical"
+          ],
+          "bm25_score": 4.048527315673657,
+          "semantic_score": 0.5623930096626282,
+          "matched_candidate_competency": "Electrical construction"
+        },
+        "candidate_evidence": [
+          "Electrical construction"
+        ]
+      },
+      {
+        "job_competency": "Mechanical installation and repair",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7025,
+        "evidence": {
+          "tfidf_score": 0.21998440952604953,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.8524660776003309,
+          "semantic_score": 0.30236148834228516,
+          "matched_candidate_competency": "Prepared and tracked RFIs and submittals"
+        },
+        "candidate_evidence": [
+          "Prepared and tracked RFIs and submittals"
+        ]
+      },
+      {
+        "job_competency": "ALSTOM safety procedures",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3914,
+        "evidence": {
+          "tfidf_score": 0.014580513984868029,
+          "tfidf_matched_terms": [
+            "safety"
+          ],
+          "bm25_score": 4.5029685923171,
+          "semantic_score": 0.32553189992904663,
+          "matched_candidate_competency": "Construction safety"
+        },
+        "candidate_evidence": [
+          "Construction safety"
+        ]
+      },
+      {
+        "job_competency": "Test anomaly and failure reporting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7026,
+        "evidence": {
+          "tfidf_score": 0.19404641273444934,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.8524660776003309,
+          "semantic_score": 0.3212359547615051,
+          "matched_candidate_competency": "Prepared and tracked RFIs and submittals"
+        },
+        "candidate_evidence": [
+          "Prepared and tracked RFIs and submittals"
+        ]
+      },
+      {
+        "job_competency": "Test procedure redlining",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9442,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2789965271949768,
+          "matched_candidate_competency": "Civil engineering"
+        },
+        "candidate_evidence": [
+          "Civil engineering"
+        ]
+      },
+      {
+        "job_competency": "Computer literacy",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9366,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31711721420288086,
+          "matched_candidate_competency": "Civil engineering"
+        },
+        "candidate_evidence": [
+          "Civil engineering"
+        ]
+      },
+      {
+        "job_competency": "Shift and overtime availability",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6614,
+        "evidence": {
+          "tfidf_score": 0.2199844095260495,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.8524660776003309,
+          "semantic_score": 0.5594372749328613,
+          "matched_candidate_competency": "Prepared and tracked RFIs and submittals"
+        },
+        "candidate_evidence": [
+          "Prepared and tracked RFIs and submittals"
+        ]
+      },
+      {
+        "job_competency": "Ability to lift 50 pounds",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6889,
+        "evidence": {
+          "tfidf_score": 0.005434755956720327,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 2.5994187659788217,
+          "semantic_score": 0.25739383697509766,
+          "matched_candidate_competency": "Oversaw work performed according to design drawings and schedules"
+        },
+        "candidate_evidence": [
+          "Oversaw work performed according to design drawings and schedules"
+        ]
+      },
+      {
+        "job_competency": "Electrical engineering",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.1025,
+        "evidence": {
+          "tfidf_score": 0.05741583662210649,
+          "tfidf_matched_terms": [
+            "electrical",
+            "engineering"
+          ],
+          "bm25_score": 4.5029685923171,
+          "semantic_score": 0.7901302576065063,
+          "matched_candidate_competency": "Civil engineering"
+        },
+        "candidate_evidence": [
+          "Civil engineering"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Electrical engineering"
+    ],
+    "partial_matches": [
+      "Electrical testing",
+      "Low- and high-voltage AC/DC systems",
+      "Electrical panel and equipment installation",
+      "Electrical component operation and troubleshooting",
+      "ALSTOM safety procedures"
+    ],
+    "weak_matches": [
+      "Electrical troubleshooting to LRU",
+      "Schematics and wire lists",
+      "Block diagrams and functional diagrams",
+      "Electronic test equipment",
+      "Pneumatic and hydraulic gauges",
+      "Basic electronics",
+      "Mechanical installation and repair",
+      "Test anomaly and failure reporting",
+      "Shift and overtime availability",
+      "Ability to lift 50 pounds"
+    ],
+    "missing": [
+      "Test procedure execution",
+      "Test procedure redlining",
+      "Computer literacy"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Electrical engineering"
+    ],
+    "partial_matches": [
+      "Electrical testing",
+      "Low- and high-voltage AC/DC systems",
+      "Electrical panel and equipment installation",
+      "Electrical component operation and troubleshooting",
+      "ALSTOM safety procedures"
+    ],
+    "competency_gaps": [
+      "Electrical troubleshooting to LRU",
+      "Schematics and wire lists",
+      "Block diagrams and functional diagrams",
+      "Electronic test equipment",
+      "Pneumatic and hydraulic gauges",
+      "Basic electronics",
+      "Mechanical installation and repair",
+      "Test anomaly and failure reporting",
+      "Shift and overtime availability",
+      "Ability to lift 50 pounds",
+      "Test procedure execution",
+      "Test procedure redlining",
+      "Computer literacy"
+    ]
+  },
+  "counts": {
+    "requirements": 19,
+    "strength_matches": 1,
+    "partial_matches": 5,
+    "competency_gaps": 13
+  },
+  "latency_ms": 46.53,
+  "analyzed_at": "2026-09-27T22:33:13.138088+00:00"
+}

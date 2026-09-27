@@ -1,0 +1,348 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_05378_6b48d68c1201",
+  "jd_id": "rjf_05378_6b48d68c1201",
+  "pair_id": "rjf_05378_6b48d68c1201",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Salesforce Industries Communications Cloud",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9386,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3072362542152405,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      },
+      {
+        "job_competency": "Salesforce CRM / SFDC",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9343,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3283650875091553,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      },
+      {
+        "job_competency": "Telecommunications domain solutioning",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9237,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38147300481796265,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      },
+      {
+        "job_competency": "Quote-to-cash",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9114,
+        "evidence": {
+          "tfidf_score": 0.046201080220773565,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 1.3285876265591632,
+          "semantic_score": 0.2985723912715912,
+          "matched_candidate_competency": "Checked cross-browser compatibility and worked with QA to fix bugs."
+        },
+        "candidate_evidence": [
+          "Checked cross-browser compatibility and worked with QA to fix bugs."
+        ]
+      },
+      {
+        "job_competency": "Vlocity",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7307,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.43299901485443115,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      },
+      {
+        "job_competency": "OmniStudio",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9396,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3020557761192322,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      },
+      {
+        "job_competency": "Salesforce API framework",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7098,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5640263557434082,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      },
+      {
+        "job_competency": "Third-party API integration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7171,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5179613828659058,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      },
+      {
+        "job_competency": "Vlocity custom solution design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6887,
+        "evidence": {
+          "tfidf_score": 0.016776903524529835,
+          "tfidf_matched_terms": [
+            "custom",
+            "design"
+          ],
+          "bm25_score": 4.225804226898396,
+          "semantic_score": 0.3344266712665558,
+          "matched_candidate_competency": "Responsive web design"
+        },
+        "candidate_evidence": [
+          "Responsive web design"
+        ]
+      },
+      {
+        "job_competency": "Salesforce capabilities and limitations",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.704,
+        "evidence": {
+          "tfidf_score": 0.15992056017675121,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.2724007755403473,
+          "semantic_score": 0.37516507506370544,
+          "matched_candidate_competency": "Developed and deployed JavaScript and Bootstrap applications to development, test, and production environments."
+        },
+        "candidate_evidence": [
+          "Developed and deployed JavaScript and Bootstrap applications to development, test, and production environments."
+        ]
+      },
+      {
+        "job_competency": "Solution architecture",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7096,
+        "evidence": {
+          "tfidf_score": 0.011860640576834464,
+          "tfidf_matched_terms": [
+            "architecture"
+          ],
+          "bm25_score": 2.3458673955663247,
+          "semantic_score": 0.36289069056510925,
+          "matched_candidate_competency": "Worked with AngularJS MVC architecture and single-page applications."
+        },
+        "candidate_evidence": [
+          "Worked with AngularJS MVC architecture and single-page applications."
+        ]
+      },
+      {
+        "job_competency": "Salesforce project lifecycle",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9329,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33572617173194885,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      },
+      {
+        "job_competency": "Code review and documentation",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1647,
+        "evidence": {
+          "tfidf_score": 0.218737723682289,
+          "tfidf_matched_terms": [
+            "and",
+            "code",
+            "review"
+          ],
+          "bm25_score": 9.09455443445789,
+          "semantic_score": 0.7924805879592896,
+          "matched_candidate_competency": "Code review"
+        },
+        "candidate_evidence": [
+          "Code review"
+        ]
+      },
+      {
+        "job_competency": "Source control",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9234,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3828565180301666,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      },
+      {
+        "job_competency": "Deployment to higher environments",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6938,
+        "evidence": {
+          "tfidf_score": 0.050579197143526274,
+          "tfidf_matched_terms": [
+            "environments",
+            "to"
+          ],
+          "bm25_score": 2.9859091385109835,
+          "semantic_score": 0.3794586658477783,
+          "matched_candidate_competency": "Developed and deployed JavaScript and Bootstrap applications to development, test, and production environments."
+        },
+        "candidate_evidence": [
+          "Developed and deployed JavaScript and Bootstrap applications to development, test, and production environments."
+        ]
+      },
+      {
+        "job_competency": "Salesforce certification",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5633,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30598631501197815,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Code review and documentation"
+    ],
+    "partial_matches": [],
+    "weak_matches": [
+      "Vlocity",
+      "Salesforce API framework",
+      "Third-party API integration",
+      "Vlocity custom solution design",
+      "Salesforce capabilities and limitations",
+      "Solution architecture",
+      "Deployment to higher environments"
+    ],
+    "missing": [
+      "Salesforce Industries Communications Cloud",
+      "Salesforce CRM / SFDC",
+      "Telecommunications domain solutioning",
+      "Quote-to-cash",
+      "OmniStudio",
+      "Salesforce project lifecycle",
+      "Source control",
+      "Salesforce certification"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Code review and documentation"
+    ],
+    "partial_matches": [],
+    "competency_gaps": [
+      "Vlocity",
+      "Salesforce API framework",
+      "Third-party API integration",
+      "Vlocity custom solution design",
+      "Salesforce capabilities and limitations",
+      "Solution architecture",
+      "Deployment to higher environments",
+      "Salesforce Industries Communications Cloud",
+      "Salesforce CRM / SFDC",
+      "Telecommunications domain solutioning",
+      "Quote-to-cash",
+      "OmniStudio",
+      "Salesforce project lifecycle",
+      "Source control",
+      "Salesforce certification"
+    ]
+  },
+  "counts": {
+    "requirements": 16,
+    "strength_matches": 1,
+    "partial_matches": 0,
+    "competency_gaps": 15
+  },
+  "latency_ms": 40.41,
+  "analyzed_at": "2026-09-27T22:33:13.974078+00:00"
+}

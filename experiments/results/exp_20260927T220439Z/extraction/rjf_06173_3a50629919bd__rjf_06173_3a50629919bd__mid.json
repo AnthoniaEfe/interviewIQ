@@ -1,0 +1,1492 @@
+{
+  "experiment_id": "exp_20260927T220439Z",
+  "stage": "extraction",
+  "profile_id": "rjf_06173_3a50629919bd",
+  "jd_id": "rjf_06173_3a50629919bd",
+  "pair_id": "rjf_06173_3a50629919bd",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Data Engineer and Data Modeler/Data Analyst with over 8 years of experience in data migration, cleansing, transformation, integration, ETL/ELT, big data applications, data lakes, data quality, governance, cloud platforms, analytics, and data modeling.",
+    "seniority_indicators": [
+      "Sr. Data Engineer",
+      "Sr. GCP Data Engineer",
+      "Over 8+ years of progressive professional experience",
+      "About 5 years of experience building Big Data applications"
+    ],
+    "education": [
+      {
+        "degree": "Bachelor\u2019s",
+        "institution": "CBIT-Hyderabad",
+        "field": "Computer Science",
+        "year": "2013",
+        "source_text": "Bachelor\u2019s: Computer Science, CBIT-Hyderabad, 2013"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Sr. Data Engineer",
+        "employer": "Humana Inc.",
+        "duration": "10/2020 to Current",
+        "responsibilities": [
+          "Gathered requirements and contributed to analysis, design, development, change management, and deployment.",
+          "Developed real-time streaming applications and data pipelines.",
+          "Extracted data from heterogeneous sources and applied business logic to normalize raw data.",
+          "Supported operations of Big Data Analytics, Splunk, and Tableau platforms.",
+          "Developed CI/CD pipelines and supported production jobs.",
+          "Created reports, dashboards, alerts, and automated error-handling processes."
+        ],
+        "achievements": [
+          "Developed Flink pipelines consuming Kafka streaming data and implemented AVRO serialization and deserialization.",
+          "Built Spark streaming pipelines to detect anomalies and write results to HBase.",
+          "Developed applications using Spark, Scala, Python, NiFi, S3, and AWS EMR.",
+          "Improved performance of slow PySpark jobs through design and configuration changes.",
+          "Designed and developed Tableau dashboard control panels using PostgreSQL and REST API calls."
+        ],
+        "technologies": [
+          "Hadoop",
+          "MapReduce",
+          "Spark",
+          "Spark MLlib",
+          "PySpark",
+          "Flink",
+          "Kafka",
+          "Hive",
+          "HBase",
+          "PIG",
+          "Tableau",
+          "SQL",
+          "Python",
+          "Scala",
+          "NiFi",
+          "AWS",
+          "S3",
+          "AWS EMR",
+          "PostgreSQL",
+          "SQL Server",
+          "T-SQL",
+          "CI/CD",
+          "Git",
+          "AVRO",
+          "Splunk"
+        ],
+        "source_text": "10/2020 to Current \u2014 Sr. Data Engineer, Humana Inc."
+      },
+      {
+        "title": "Sr. GCP Data Engineer",
+        "employer": "Cognizant Technology Solutions",
+        "duration": "01/2018 to 09/2020",
+        "responsibilities": [
+          "Developed batch and near-real-time data pipelines for structured and semi-structured data.",
+          "Designed and implemented Spark jobs using Scala and PySpark.",
+          "Performed data analysis and developed logical and physical data models and metadata repositories.",
+          "Developed stored procedures, views, triggers, APIs, and data ingestion jobs.",
+          "Built ETL pipelines in Airflow and implemented data loading and transformation processes.",
+          "Created BigQuery authorized views for row-level security and data sharing."
+        ],
+        "achievements": [
+          "Developed end-to-end Spark data pipelines and loaded partitioned Hive tables in Parquet format.",
+          "Implemented near-real-time ingestion using Flume, Kafka, and Spark Streaming.",
+          "Developed Python programs and CI/CD rules for Google Cloud Data Catalog metadata management.",
+          "Used hashing algorithms to encrypt specified columns in raw data.",
+          "Implemented data lake processing using S3, HDFS, Scala, Spark, Spark SQL, Hive, and Impala.",
+          "Developed Python-based RESTful services for revenue tracking and analysis."
+        ],
+        "technologies": [
+          "GCP",
+          "Google Cloud Data Catalog",
+          "BigQuery",
+          "BigQuery authorized views",
+          "Dataproc",
+          "Cloud Shell",
+          "Azure",
+          "Spark",
+          "Scala",
+          "PySpark",
+          "Spark SQL",
+          "Hive",
+          "Parquet",
+          "Kafka",
+          "Flume",
+          "Airflow",
+          "HDFS",
+          "S3",
+          "AWS Data Pipeline",
+          "Sqoop",
+          "Impala",
+          "Python",
+          "REST",
+          "Oracle",
+          "ERwin",
+          "SQL"
+        ],
+        "source_text": "01/2018 to 09/2020 \u2014 Sr. GCP Data Engineer, Cognizant Technology Solutions"
+      },
+      {
+        "title": "Big Data Engineer",
+        "employer": "Honeywell",
+        "duration": "06/2016 to 12/2017",
+        "responsibilities": [
+          "Implemented ETL frameworks for Hadoop and Cassandra data ingestion.",
+          "Performed data modeling, querying, analytics, and visualization across Hadoop and NoSQL systems.",
+          "Implemented Hive partitioning, dynamic partitioning, bucketing, UDFs, and data exports.",
+          "Created shell scripts to automate jobs and supported Hadoop cluster upgrades and troubleshooting.",
+          "Implemented access controls and security for Hive data."
+        ],
+        "achievements": [
+          "Designed and led implementation of an architecture for improved data ingestion and processing.",
+          "Implemented Apache Drill to join SQL and NoSQL data and store results in Hadoop.",
+          "Created Cassandra data-access architecture and dashboards for business needs.",
+          "Implemented Apache Sentry for group-level Hive table access restrictions.",
+          "Used Spark Streaming and Kafka for real-time data transformation and ingestion."
+        ],
+        "technologies": [
+          "Hadoop",
+          "HDFS",
+          "MapReduce",
+          "Hive",
+          "Pig",
+          "Impala",
+          "Cassandra",
+          "Spark",
+          "Scala",
+          "Kafka",
+          "Flume",
+          "Sqoop",
+          "Oozie",
+          "Tidal",
+          "Tableau",
+          "Apache Drill",
+          "Apache Sentry",
+          "AVRO",
+          "Shell",
+          "Java",
+          "SQL",
+          "Teradata",
+          "Pentaho",
+          "Zookeeper"
+        ],
+        "source_text": "06/2016 to 12/2017 \u2014 Big Data Engineer, Honeywell"
+      },
+      {
+        "title": "Data Engineer",
+        "employer": "ITC InfoTech",
+        "duration": "06/2014 to 11/2015",
+        "responsibilities": [
+          "Configured and monitored Hadoop clusters using Cloudera distribution.",
+          "Developed data pipelines for weblog, database, and streaming data ingestion.",
+          "Migrated data between on-premise Hadoop, AWS, HDFS, S3, and relational databases.",
+          "Performed ETL, data cleansing, analysis, validation, and data preparation.",
+          "Developed automation and test scripts and scheduled Hadoop workflows.",
+          "Implemented performance tuning, security, authorization, and cluster coordination."
+        ],
+        "achievements": [
+          "Migrated data from an on-premise Cloudera cluster to AWS EMR and built an S3 data lake pipeline.",
+          "Developed Kafka and Storm streaming pipelines for HDFS, HBase, and Hive.",
+          "Used Informatica PowerCenter for data cleansing, integration, and warehouse loading.",
+          "Optimized Apache NiFi workflows to improve data ingestion speeds.",
+          "Implemented Hive partitioning and bucketing to improve query performance.",
+          "Used Kerberos and Apache Sentry for Hadoop security and authorization."
+        ],
+        "technologies": [
+          "Cloudera CDH4",
+          "Hadoop 2.x",
+          "HDFS",
+          "MapReduce",
+          "YARN",
+          "Sqoop",
+          "Hive",
+          "AWS",
+          "EC2",
+          "EMR",
+          "S3",
+          "Redshift",
+          "Impala",
+          "Spark",
+          "Pig",
+          "HBase",
+          "Kafka",
+          "Zookeeper",
+          "Flume",
+          "Oozie",
+          "HCatalog",
+          "NiFi",
+          "Storm",
+          "Informatica PowerCenter",
+          "Python",
+          "MySQL",
+          "Scala",
+          "Teradata",
+          "Oracle",
+          "Git"
+        ],
+        "source_text": "06/2014 to 11/2015 \u2014 Data Engineer, ITC InfoTech"
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "Hadoop",
+        "original_mentions": [
+          "Hadoop"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Technical Skills: Hadoop/Spark Ecosystem: Hadoop",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Apache Spark",
+        "original_mentions": [
+          "Spark",
+          "Apache Spark",
+          "Spark-Core",
+          "Spark SQL",
+          "Spark Streaming"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Strong experience in Big Data technologies like Spark, Spark SQL, Pyspark",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "PySpark",
+        "original_mentions": [
+          "PySpark",
+          "Pyspark"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Utilized Apache Spark with Python; Spark SQL API in PySpark",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Scala",
+        "original_mentions": [
+          "Scala"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Design and develop spark job with Scala",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Python",
+        "original_mentions": [
+          "Python",
+          "python"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experienced in data manipulation using python",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "SQL",
+          "PL/SQL",
+          "T-SQL",
+          "SQL queries"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Query Languages: SQL, PL/SQL, T-SQL",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Kafka",
+        "original_mentions": [
+          "Kafka",
+          "Apache Kafka"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience in integrating Kafka with Spark streaming",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Hive",
+        "original_mentions": [
+          "Hive",
+          "HiveQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Hadoop/Spark Ecosystem: Hive/impala",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "HBase",
+        "original_mentions": [
+          "HBase"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Hands-on experience on NoSQL databases like ... HBase",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Cassandra",
+        "original_mentions": [
+          "Cassandra"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Implemented various Data Modelling techniques for Cassandra",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "MongoDB",
+        "original_mentions": [
+          "Mongo DB"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Databases: ... Mongo DB",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Snowflake",
+        "original_mentions": [
+          "Snowflake"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Databases: ... Snowflake",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "AWS",
+        "original_mentions": [
+          "Amazon Web Services (AWS)",
+          "AWS"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Hands-on experience working at Amazon Web Services (AWS)",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Amazon S3",
+        "original_mentions": [
+          "S3",
+          "AWS S3"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "AWS S3 Data Lake",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Amazon EMR",
+        "original_mentions": [
+          "AWS EMR",
+          "EMR"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "migrating ... to AWS EC2 instances deployed on EMR cluster",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Amazon Redshift",
+        "original_mentions": [
+          "Amazon Redshift",
+          "Redshift"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "AWS ... Redshift",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Azure",
+        "original_mentions": [
+          "MS Azure",
+          "Azure"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "MS Azure, Azure blob storage, Azure Data Factory, Azure Synapse",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Google Cloud Platform",
+        "original_mentions": [
+          "Google cloud Platform",
+          "GCP"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Sr. GCP Data Engineer",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "BigQuery",
+        "original_mentions": [
+          "Big Query",
+          "BigQuery"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience in GCP Dataproc, GCS, Cloud functions, Big Table and Big Query",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Dataproc",
+        "original_mentions": [
+          "GCP Dataproc",
+          "Dataproc"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience in GCP Dataproc",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "ETL/ELT",
+        "original_mentions": [
+          "ETL",
+          "ELT",
+          "data ingestion and transformation"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "building and architecting multiple Data pipelines, end to end ETL and ELT process",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data modeling",
+        "original_mentions": [
+          "Data Modeler",
+          "Data Modelling",
+          "star schema",
+          "Snowflake schema"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Designing star schema, Snowflake schema for Data Warehouse, ODS architecture",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Tableau",
+        "original_mentions": [
+          "Tableau",
+          "Tableau 9.1"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience in ... visualizations using Tableau",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Power BI",
+        "original_mentions": [
+          "Power BI"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "BI Tools: ... Power BI",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Jenkins",
+        "original_mentions": [
+          "Jenkins"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "setting up CI CD pipelines using tools such as Jenkins",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Maven",
+        "original_mentions": [
+          "Maven"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "CI CD pipelines using ... Maven",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Informatica",
+        "original_mentions": [
+          "Informatica Cloud",
+          "Informatica Powercenter"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Worked with Java based ETL tool, Talend ... Informatica Cloud",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Talend",
+        "original_mentions": [
+          "Talend"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Worked with Java based ETL tool, Talend",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Apache Flink",
+        "original_mentions": [
+          "Apache Flink",
+          "Flink"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Developed Flink pipelines to consume streaming data from Kafka",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Apache NiFi",
+        "original_mentions": [
+          "NiFi",
+          "Apache NiFi"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Developed flow XML files using Apache NiFi",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Airflow",
+        "original_mentions": [
+          "airflow",
+          "Airflow"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Build data pipelines in airflow",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data quality and governance",
+        "original_mentions": [
+          "Data Quality & Data Governance"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Good knowledge in Data Quality & Data Governance practices & processes",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data migration",
+        "original_mentions": [
+          "Data Migration",
+          "Migrating SQL database to Azure data lake"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Strong experience in Data Migration",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Real-time data processing",
+        "original_mentions": [
+          "real time processes",
+          "real-time streaming applications"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Involved in development of real time streaming applications",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SAP ECC and SAP BI",
+        "original_mentions": [
+          "SAP ECC",
+          "SAP BI"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Extensive experience in developing and driving strategic direction of SAP operating system and SAP business intelligence system",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Agile",
+        "original_mentions": [
+          "Agile",
+          "Scrum"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "SDLC Methodology: Agile, Scrum, Waterfall, UML",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Test-driven development",
+        "original_mentions": [
+          "Test-driven Development (TDD)"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Test-driven Development (TDD) methodologies",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Communication",
+        "original_mentions": [
+          "strong communication skills"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "strong communication skills",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Teamwork",
+        "original_mentions": [
+          "excellent team member",
+          "ability to perform individually"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "An excellent team member with an ability to perform individually",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Stakeholder management",
+        "original_mentions": [
+          "manage client expectations"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "effectively manage client expectations",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Interpersonal relations",
+        "original_mentions": [
+          "good interpersonal relations"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "good interpersonal relations",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Hardworking",
+        "original_mentions": [
+          "hardworking"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "hardworking and high level of motivation",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Big data engineering",
+        "original_mentions": [
+          "building Big data applications",
+          "Big Data Engineer"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "about 5 years of experience in building Big data applications",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data warehousing",
+        "original_mentions": [
+          "Data Warehouse",
+          "data warehouse projects"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Designing star schema, Snowflake schema for Data Warehouse",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Cloud data engineering",
+        "original_mentions": [
+          "cloud platforms",
+          "GCP",
+          "AWS",
+          "Azure"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Implemented Integration solutions for cloud platforms",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Business intelligence and analytics",
+        "original_mentions": [
+          "BI teams",
+          "dashboards",
+          "reports",
+          "ad-hoc analysis"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience in designing dashboards, reports, performing ad-hoc analysis and visualizations",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": []
+  },
+  "job": {
+    "title": "Solution Architect - Data Engineering",
+    "seniority": null,
+    "years_of_experience": "5+ years",
+    "responsibilities": [
+      "Provide technical leadership in a post-sales capacity for strategic customers designing and implementing big data projects.",
+      "Drive initiatives that turn customer data into actionable business value aligned with business outcomes.",
+      "Architect production-level workloads, including end-to-end pipeline load performance testing and optimization.",
+      "Deliver tutorials and training, including hackathons and conference presentations, to drive community adoption.",
+      "Work with Engineering and Product Management to influence the direction of the Databricks product.",
+      "Contribute to the Databricks SME community."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Apache Spark",
+        "original_mentions": [
+          "Apache Spark"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Hands-on and technical expertise with Apache Spark",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Big data technologies",
+        "original_mentions": [
+          "Hadoop, NoSQL, MPP, OLTP, OLAP"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "design and implementation experience in big data technologies including Hadoop, NoSQL, MPP, OLTP, OLAP",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Software engineering or data engineering",
+        "original_mentions": [
+          "Software Engineer",
+          "Data Engineer"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "5+ years Experience working as either: Software Engineer Data Engineer",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Query tuning",
+        "original_mentions": [
+          "query tuning"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Data Engineer: query tuning",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Performance tuning",
+        "original_mentions": [
+          "performance tuning"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "performance tuning",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Troubleshooting and debugging",
+        "original_mentions": [
+          "troubleshooting, and debugging"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "troubleshooting, and debugging Spark and/or other big data solutions",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Python, Scala, or Java",
+        "original_mentions": [
+          "Python, Scala, or Java"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Comfortable programming in Python, Scala, or Java",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cloud infrastructure and services",
+        "original_mentions": [
+          "AWS, Azure, or GCP"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "using and designing solutions on cloud infrastructure and services, such as AWS, Azure, or GCP",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "CI/CD development tools",
+        "original_mentions": [
+          "Development Tools for CICD",
+          "Jenkins"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Development Tools for CICD ... E.g. Jenkins",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Unit and integration testing",
+        "original_mentions": [
+          "Unit and Integration testing"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Unit and Integration testing",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Automation and orchestration",
+        "original_mentions": [
+          "Automation and Orchestration"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Automation and Orchestration",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "REST APIs",
+        "original_mentions": [
+          "REST API"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "REST API",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Business intelligence tools",
+        "original_mentions": [
+          "BI tools"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "BI tools",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SQL interfaces",
+        "original_mentions": [
+          "SQL Interfaces"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "SQL Interfaces",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Customer-facing technical consulting",
+        "original_mentions": [
+          "customer-facing pre-sales, post-sales, technical architecture guidance, or consulting"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Experience in customer-facing pre-sales, post-sales, technical architecture guidance, or consulting",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Databricks",
+        "original_mentions": [
+          "Databricks",
+          "Databricks product"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "The job requires expertise in Databricks",
+          "source_section": null,
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "Machine learning engineering",
+        "original_mentions": [
+          "Data ScienceML Engineer experience"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Data ScienceML Engineer experience ... desired",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Model selection",
+        "original_mentions": [
+          "model selection"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "experience in model selection",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Model lifecycle management",
+        "original_mentions": [
+          "model lifecycle"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "model lifecycle",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Hyperparameter tuning",
+        "original_mentions": [
+          "hyper-parameter tuning"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "hyper-parameter tuning",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Model serving",
+        "original_mentions": [
+          "model serving"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "model serving",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Deep learning",
+        "original_mentions": [
+          "deep learning"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "deep learning",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "MLflow",
+        "original_mentions": [
+          "MLFlow"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "using tools like MLFlow desired",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Big data engineering",
+        "original_mentions": [
+          "big data projects",
+          "big data technologies"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "design and implement big data projects",
+          "source_section": "Key responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cloud computing",
+        "original_mentions": [
+          "cloud infrastructure and services"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "solutions on cloud infrastructure and services",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Communication and presentation",
+        "original_mentions": [
+          "Excellent communication skills and comfortable presenting to strategic stakeholders/leadership"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Excellent communication skills and comfortable presenting to strategic stakeholders/leadership",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Customer success orientation",
+        "original_mentions": [
+          "Passionate about learning new technologies and making customers successful"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "making customers successful",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Learning agility",
+        "original_mentions": [
+          "Passionate about learning new technologies"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Passionate about learning new technologies",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [
+      "Provide technical leadership in a post-sales capacity.",
+      "Guide strategic customers through architectural design, data engineering, and model deployment.",
+      "Work with Engineering and Product Management to drive product direction."
+    ],
+    "system_design_requirements": [
+      "Design and implement big data projects from architectural design through data engineering and model deployment.",
+      "Architect production-level workloads.",
+      "Design solutions using cloud infrastructure and services.",
+      "Conduct end-to-end pipeline load performance testing and optimization."
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Apache Spark",
+        "original_mentions": [
+          "Apache Spark"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Hands-on and technical expertise with Apache Spark",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Databricks",
+        "original_mentions": [
+          "Databricks"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "The job requires expertise in Databricks",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Big data technologies",
+        "original_mentions": [
+          "Hadoop, NoSQL, MPP, OLTP, OLAP"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "big data technologies including Hadoop, NoSQL, MPP, OLTP, OLAP",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Python, Scala, or Java",
+        "original_mentions": [
+          "Python, Scala, or Java"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Comfortable programming in Python, Scala, or Java",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cloud infrastructure and services",
+        "original_mentions": [
+          "AWS, Azure, or GCP"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "cloud infrastructure and services, such as AWS, Azure, or GCP",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Customer-facing technical consulting",
+        "original_mentions": [
+          "pre-sales, post-sales, technical architecture guidance, or consulting"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "customer-facing pre-sales, post-sales, technical architecture guidance, or consulting",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Machine learning engineering",
+        "original_mentions": [
+          "Data ScienceML Engineer experience"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Data ScienceML Engineer experience ... desired",
+          "source_section": "Required Skills",
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 4126,
+    "output_tokens": 4375,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0058871,
+    "latency_ms": 25412.72,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1241,
+    "output_tokens": 2498,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0032458,
+    "latency_ms": 16818.67,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-09-27T22:13:16.480287+00:00"
+}

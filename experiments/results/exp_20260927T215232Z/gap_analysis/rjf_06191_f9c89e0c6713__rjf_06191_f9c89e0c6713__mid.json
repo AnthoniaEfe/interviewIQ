@@ -1,0 +1,475 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_06191_f9c89e0c6713",
+  "jd_id": "rjf_06191_f9c89e0c6713",
+  "pair_id": "rjf_06191_f9c89e0c6713",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Electrical testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3465,
+        "evidence": {
+          "tfidf_score": 0.1628476502923605,
+          "tfidf_matched_terms": [
+            "electrical",
+            "testing"
+          ],
+          "bm25_score": 4.854643436576571,
+          "semantic_score": 0.711605966091156,
+          "matched_candidate_competency": "Electrical equipment testing and commissioning"
+        },
+        "candidate_evidence": [
+          "Electrical equipment testing and commissioning"
+        ]
+      },
+      {
+        "job_competency": "Electrical troubleshooting to line-replaceable-unit level",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6669,
+        "evidence": {
+          "tfidf_score": 0.07132270544807716,
+          "tfidf_matched_terms": [
+            "electrical",
+            "to"
+          ],
+          "bm25_score": 2.3058823408339704,
+          "semantic_score": 0.445268839597702,
+          "matched_candidate_competency": "Demonstrated products, services, and solutions to potential clients."
+        },
+        "candidate_evidence": [
+          "Demonstrated products, services, and solutions to potential clients."
+        ]
+      },
+      {
+        "job_competency": "Test procedure execution",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9203,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39826008677482605,
+          "matched_candidate_competency": "Electrical power engineering"
+        },
+        "candidate_evidence": [
+          "Electrical power engineering"
+        ]
+      },
+      {
+        "job_competency": "Test procedure redlining",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9338,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3310678005218506,
+          "matched_candidate_competency": "Electrical power engineering"
+        },
+        "candidate_evidence": [
+          "Electrical power engineering"
+        ]
+      },
+      {
+        "job_competency": "Test reporting and anomaly documentation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6424,
+        "evidence": {
+          "tfidf_score": 0.20872377612434678,
+          "tfidf_matched_terms": [
+            "and",
+            "reporting"
+          ],
+          "bm25_score": 3.562297113738858,
+          "semantic_score": 0.3135787844657898,
+          "matched_candidate_competency": "Performed daily power monitoring and monthly calculations and reporting."
+        },
+        "candidate_evidence": [
+          "Performed daily power monitoring and monthly calculations and reporting."
+        ]
+      },
+      {
+        "job_competency": "Computer use",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9361,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3194122910499573,
+          "matched_candidate_competency": "Electrical power engineering"
+        },
+        "candidate_evidence": [
+          "Electrical power engineering"
+        ]
+      },
+      {
+        "job_competency": "Data recorders",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.734,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4127649664878845,
+          "matched_candidate_competency": "Electrical power engineering"
+        },
+        "candidate_evidence": [
+          "Electrical power engineering"
+        ]
+      },
+      {
+        "job_competency": "Digital multimeters",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6728,
+        "evidence": {
+          "tfidf_score": 0.017465860304116065,
+          "tfidf_matched_terms": [
+            "digital"
+          ],
+          "bm25_score": 2.769122434175775,
+          "semantic_score": 0.38131070137023926,
+          "matched_candidate_competency": "Installed digital equipment including TREs and combiners."
+        },
+        "candidate_evidence": [
+          "Installed digital equipment including TREs and combiners."
+        ]
+      },
+      {
+        "job_competency": "Measurement instruments",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9255,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3726773262023926,
+          "matched_candidate_competency": "Electrical power engineering"
+        },
+        "candidate_evidence": [
+          "Electrical power engineering"
+        ]
+      },
+      {
+        "job_competency": "Pneumatic and hydraulic gauges",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7161,
+        "evidence": {
+          "tfidf_score": 0.2166853235707241,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.8163178764415727,
+          "semantic_score": 0.24396461248397827,
+          "matched_candidate_competency": "Performed daily power monitoring and monthly calculations and reporting."
+        },
+        "candidate_evidence": [
+          "Performed daily power monitoring and monthly calculations and reporting."
+        ]
+      },
+      {
+        "job_competency": "Electrical schematics",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4021,
+        "evidence": {
+          "tfidf_score": 0.11565948409069605,
+          "tfidf_matched_terms": [
+            "electrical"
+          ],
+          "bm25_score": 2.1816789538740253,
+          "semantic_score": 0.5766608119010925,
+          "matched_candidate_competency": "Electrical distribution"
+        },
+        "candidate_evidence": [
+          "Electrical distribution"
+        ]
+      },
+      {
+        "job_competency": "Wire lists",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9257,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37131011486053467,
+          "matched_candidate_competency": "Electrical power engineering"
+        },
+        "candidate_evidence": [
+          "Electrical power engineering"
+        ]
+      },
+      {
+        "job_competency": "Block diagrams",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9501,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24962182343006134,
+          "matched_candidate_competency": "Electrical power engineering"
+        },
+        "candidate_evidence": [
+          "Electrical power engineering"
+        ]
+      },
+      {
+        "job_competency": "Functional diagrams",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9455,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27269428968429565,
+          "matched_candidate_competency": "Electrical power engineering"
+        },
+        "candidate_evidence": [
+          "Electrical power engineering"
+        ]
+      },
+      {
+        "job_competency": "Basic electronics",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7197,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5016446113586426,
+          "matched_candidate_competency": "Electrical power engineering"
+        },
+        "candidate_evidence": [
+          "Electrical power engineering"
+        ]
+      },
+      {
+        "job_competency": "DC and AC electrical systems",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3579,
+        "evidence": {
+          "tfidf_score": 0.3514917224660594,
+          "tfidf_matched_terms": [
+            "and",
+            "electrical",
+            "systems"
+          ],
+          "bm25_score": 3.2825478068660976,
+          "semantic_score": 0.6828683018684387,
+          "matched_candidate_competency": "Battery systems"
+        },
+        "candidate_evidence": [
+          "Battery systems"
+        ]
+      },
+      {
+        "job_competency": "Electrical panel and equipment installation and termination",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3387,
+        "evidence": {
+          "tfidf_score": 0.48686274656218614,
+          "tfidf_matched_terms": [
+            "and",
+            "electrical",
+            "equipment",
+            "installation"
+          ],
+          "bm25_score": 5.188496115774664,
+          "semantic_score": 0.4974666237831116,
+          "matched_candidate_competency": "Electrical equipment testing and commissioning"
+        },
+        "candidate_evidence": [
+          "Electrical equipment testing and commissioning"
+        ]
+      },
+      {
+        "job_competency": "Rail vehicle maintenance support",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3958,
+        "evidence": {
+          "tfidf_score": 0.04334587810643199,
+          "tfidf_matched_terms": [
+            "maintenance",
+            "support"
+          ],
+          "bm25_score": 3.646334777753564,
+          "semantic_score": 0.48274528980255127,
+          "matched_candidate_competency": "Electrical equipment sales support"
+        },
+        "candidate_evidence": [
+          "Electrical equipment sales support"
+        ]
+      },
+      {
+        "job_competency": "Industrial and technician safety",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.686,
+        "evidence": {
+          "tfidf_score": 0.2166853235707241,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.8163178764415727,
+          "semantic_score": 0.4317440986633301,
+          "matched_candidate_competency": "Performed daily power monitoring and monthly calculations and reporting."
+        },
+        "candidate_evidence": [
+          "Performed daily power monitoring and monthly calculations and reporting."
+        ]
+      },
+      {
+        "job_competency": "Learning and test-process optimization",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7063,
+        "evidence": {
+          "tfidf_score": 0.1911363165312105,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.8163178764415727,
+          "semantic_score": 0.32438987493515015,
+          "matched_candidate_competency": "Performed daily power monitoring and monthly calculations and reporting."
+        },
+        "candidate_evidence": [
+          "Performed daily power monitoring and monthly calculations and reporting."
+        ]
+      },
+      {
+        "job_competency": "Shift and overtime availability",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6958,
+        "evidence": {
+          "tfidf_score": 0.2166853235707241,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.8163178764415727,
+          "semantic_score": 0.3709644675254822,
+          "matched_candidate_competency": "Performed daily power monitoring and monthly calculations and reporting."
+        },
+        "candidate_evidence": [
+          "Performed daily power monitoring and monthly calculations and reporting."
+        ]
+      },
+      {
+        "job_competency": "Ability to lift 50 pounds",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7088,
+        "evidence": {
+          "tfidf_score": 0.01515521049100259,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 2.3058823408339704,
+          "semantic_score": 0.22513629496097565,
+          "matched_candidate_competency": "Demonstrated products, services, and solutions to potential clients."
+        },
+        "candidate_evidence": [
+          "Demonstrated products, services, and solutions to potential clients."
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Electrical testing",
+      "Electrical schematics",
+      "DC and AC electrical systems",
+      "Electrical panel and equipment installation and termination",
+      "Rail vehicle maintenance support"
+    ],
+    "weak_matches": [
+      "Electrical troubleshooting to line-replaceable-unit level",
+      "Test reporting and anomaly documentation",
+      "Data recorders",
+      "Digital multimeters",
+      "Pneumatic and hydraulic gauges",
+      "Basic electronics",
+      "Industrial and technician safety",
+      "Learning and test-process optimization",
+      "Shift and overtime availability",
+      "Ability to lift 50 pounds"
+    ],
+    "missing": [
+      "Test procedure execution",
+      "Test procedure redlining",
+      "Computer use",
+      "Measurement instruments",
+      "Wire lists",
+      "Block diagrams",
+      "Functional diagrams"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Electrical testing",
+      "Electrical schematics",
+      "DC and AC electrical systems",
+      "Electrical panel and equipment installation and termination",
+      "Rail vehicle maintenance support"
+    ],
+    "competency_gaps": [
+      "Electrical troubleshooting to line-replaceable-unit level",
+      "Test reporting and anomaly documentation",
+      "Data recorders",
+      "Digital multimeters",
+      "Pneumatic and hydraulic gauges",
+      "Basic electronics",
+      "Industrial and technician safety",
+      "Learning and test-process optimization",
+      "Shift and overtime availability",
+      "Ability to lift 50 pounds",
+      "Test procedure execution",
+      "Test procedure redlining",
+      "Computer use",
+      "Measurement instruments",
+      "Wire lists",
+      "Block diagrams",
+      "Functional diagrams"
+    ]
+  },
+  "counts": {
+    "requirements": 22,
+    "strength_matches": 0,
+    "partial_matches": 5,
+    "competency_gaps": 17
+  },
+  "latency_ms": 52.85,
+  "analyzed_at": "2026-09-27T21:52:41.395074+00:00"
+}

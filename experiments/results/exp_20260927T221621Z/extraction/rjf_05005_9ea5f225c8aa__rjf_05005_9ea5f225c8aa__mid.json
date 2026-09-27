@@ -1,0 +1,983 @@
+{
+  "experiment_id": "exp_20260927T221621Z",
+  "stage": "extraction",
+  "profile_id": "rjf_05005_9ea5f225c8aa",
+  "jd_id": "rjf_05005_9ea5f225c8aa",
+  "pair_id": "rjf_05005_9ea5f225c8aa",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Productive Data Entry Operator experienced in managing diverse databases, maintaining accuracy, identifying discrepancies, and working under pressure.",
+    "seniority_indicators": [],
+    "education": [
+      {
+        "degree": "Some College",
+        "institution": "Maricopa Community Colleges - Estrella Mountain Community College",
+        "field": "Professional Development in Human Resources Training",
+        "year": "Expected 2019",
+        "source_text": "Some College; professional development in Human Resources Training"
+      },
+      {
+        "degree": "High School Diploma",
+        "institution": "Desert Edge High School",
+        "field": null,
+        "year": "Expected 2018",
+        "source_text": "High School Diploma; President's Honor Roll List; GPA 3.6/4.0"
+      },
+      {
+        "degree": "Associate's",
+        "institution": null,
+        "field": "Business Administration",
+        "year": null,
+        "source_text": "Associates: Business Administration"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Data Entry Specialist",
+        "employer": "Mediware Information Systems, Inc.",
+        "duration": "09/2020-Current",
+        "responsibilities": [
+          "Compiled data and reviewed information for accuracy before input.",
+          "Reviewed source documents and assisted with system maintenance.",
+          "Maintained confidentiality while working with the Leadership and Professional Development Team."
+        ],
+        "achievements": [],
+        "technologies": [],
+        "source_text": "Data Entry Specialist, Mediware Information Systems, Inc., 09/2020-Current"
+      },
+      {
+        "title": "Key Entry Specialist",
+        "employer": "Capri Communities",
+        "duration": "02/2019-08/2020",
+        "responsibilities": [
+          "Entered customer and account data from source documents.",
+          "Reviewed data for deficiencies or errors and maintained confidentiality.",
+          "Corrected inaccuracies and validated output.",
+          "Identified issues, analyzed information, and provided problem solutions.",
+          "Participated in team-building activities."
+        ],
+        "achievements": [],
+        "technologies": [],
+        "source_text": "Key Entry Specialist, Capri Communities, 02/2019-08/2020"
+      },
+      {
+        "title": "Receptionist",
+        "employer": "Massage Envy",
+        "duration": "06/2018-08/2018",
+        "responsibilities": [
+          "Greeted visitors and customers and provided assistance.",
+          "Answered, forwarded, and screened multiple phone calls.",
+          "Maintained visitor logs to support workplace security.",
+          "Managed multiple tasks and met time-sensitive deadlines.",
+          "Maintained a clean and neat reception area."
+        ],
+        "achievements": [],
+        "technologies": [],
+        "source_text": "Receptionist, Massage Envy, 06/2018-08/2018"
+      },
+      {
+        "title": "Customer Service Associate",
+        "employer": "Massage Envy",
+        "duration": "11/2015-02/2016",
+        "responsibilities": [
+          "Handled cash, checks, and credit transactions.",
+          "Developed and implemented customer service initiatives to decrease wait times.",
+          "Demonstrated items to customers and supported customer awareness, interest, and sales.",
+          "Resolved product and service concerns to support retention and sales."
+        ],
+        "achievements": [],
+        "technologies": [],
+        "source_text": "Customer Service Associate, Massage Envy, 11/2015-02/2016"
+      },
+      {
+        "title": "Customer Service Associate",
+        "employer": "Paradise Bakery & Caf\u00e9",
+        "duration": "06/2014-10/2015",
+        "responsibilities": [
+          "Handled detailed ordering to support customer satisfaction.",
+          "Used interpersonal and communication skills while multitasking.",
+          "Resolved product and service concerns to support retention and sales.",
+          "Addressed customer needs and resolved concerns."
+        ],
+        "achievements": [],
+        "technologies": [],
+        "source_text": "Customer Service Associate, Paradise Bakery & Caf\u00e9, 06/2014-10/2015"
+      },
+      {
+        "title": "Office Assistant Volunteer",
+        "employer": "Estrella Mountain Medical Center",
+        "duration": "05/2012-08/2014",
+        "responsibilities": [
+          "Welcomed office visitors and alerted staff to scheduled appointments.",
+          "Provided information to customers by phone, email, and in person.",
+          "Updated customer information to verify business record accuracy.",
+          "Completed filing, copying, and mail distribution tasks.",
+          "Received and forwarded phone calls, emails, and letters to appropriate staff."
+        ],
+        "achievements": [],
+        "technologies": [],
+        "source_text": "Office Assistant Volunteer, Estrella Mountain Medical Center, 05/2012-08/2014"
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "Data Entry",
+        "original_mentions": [
+          "Data Entry Operator",
+          "Data Entry Specialist",
+          "Key Entry Specialist"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Data Entry Specialist; Key Entry Specialist",
+          "source_section": "Professional Summary; Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Database Management",
+        "original_mentions": [
+          "Database Management",
+          "managing diverse databases"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Database Management; managing diverse databases",
+          "source_section": "Summary; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Office",
+        "original_mentions": [
+          "Microsoft Office"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Proficiency in Microsoft Office",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Google Workspace",
+        "original_mentions": [
+          "G Suite"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "G Suite",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data Validation",
+        "original_mentions": [
+          "reviewed information for accuracy",
+          "validating output",
+          "correcting inaccuracies"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Reviewing data for deficiencies or errors; validating output",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Clerical Support",
+        "original_mentions": [
+          "Clerical",
+          "clerical tasks"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Completed clerical tasks such as filing, copying, and distributing mail",
+          "source_section": "Work History; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Office Administration",
+        "original_mentions": [
+          "Administrative and Office Support",
+          "Office Assistant"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Administrative and Office Support; Office Assistant Volunteer",
+          "source_section": "Skills; Work History",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Written Communication",
+        "original_mentions": [
+          "Written Communication",
+          "Written Verbal Communication"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Written and Verbal Communication",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Verbal Communication",
+        "original_mentions": [
+          "Verbal Communication",
+          "Communication skills"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Verbal Communication; communication skills",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Attention to Detail",
+        "original_mentions": [
+          "Excellent Attention to Detail",
+          "Detail-Oriented",
+          "attention to detailed ordering"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Excellent Attention to Detail; Detail-Oriented",
+          "source_section": "Summary; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Problem Solving",
+        "original_mentions": [
+          "problem solving",
+          "provided solutions to problems"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Strong aptitude for problem solving; provided solutions to problems",
+          "source_section": "Professional Summary; Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Multitasking",
+        "original_mentions": [
+          "Multitasking and Prioritization",
+          "multitasking"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Multitasking and Prioritization",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Time Management",
+        "original_mentions": [
+          "Time Management",
+          "met time-sensitive deadlines"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Time Management; met time-sensitive deadlines",
+          "source_section": "Skills; Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Decision Making",
+        "original_mentions": [
+          "Decision Making"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Decision Making",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Interpersonal Skills",
+        "original_mentions": [
+          "Interpersonal skills",
+          "good interpersonal skills"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Interpersonal skills",
+          "source_section": "Skills; Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Self-Starter",
+        "original_mentions": [
+          "Proactive Self-Starter",
+          "Self-Starter"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Proactive Self-Starter",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Team Building",
+        "original_mentions": [
+          "Team-building",
+          "team-building activities"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Participated in team-building activities",
+          "source_section": "Work History; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Working Under Pressure",
+        "original_mentions": [
+          "ability to work under pressure"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "ability to work under pressure",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Customer Service",
+        "original_mentions": [
+          "Customer service",
+          "Customer Service Associate",
+          "customer service initiatives"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Customer Service Associate; customer service initiatives",
+          "source_section": "Work History; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Reception",
+        "original_mentions": [
+          "Receptionist",
+          "reception"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Receptionist",
+          "source_section": "Work History; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Human Resources",
+        "original_mentions": [
+          "Human Resources Training",
+          "Human Resources"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Professional Development in Human Resources Training",
+          "source_section": "Education; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Sales",
+        "original_mentions": [
+          "sales",
+          "drive sales"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "drive sales",
+          "source_section": "Work History; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Customer Data Confidentiality",
+        "original_mentions": [
+          "Customer Data Confidentiality",
+          "keeping information confidential"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Keeping information confidential",
+          "source_section": "Work History; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Administrative Support",
+        "original_mentions": [
+          "Administrative and Office Support",
+          "Office Assistant Volunteer"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Administrative and Office Support",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": [
+      {
+        "normalized_label": "English",
+        "original_mentions": [
+          "English"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "English",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Spanish",
+        "original_mentions": [
+          "Spanish"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Spanish",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Phone Communication",
+        "original_mentions": [
+          "Phone",
+          "multiple phone calls"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Answered, forwarded, and screened multiple phone calls",
+          "source_section": "Work History; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Email Communication",
+        "original_mentions": [
+          "Email",
+          "email"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Interacted with customers by phone, email, or in-person",
+          "source_section": "Work History; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Filing",
+        "original_mentions": [
+          "Filing",
+          "filing"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Completed clerical tasks such as filing",
+          "source_section": "Work History; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Copying",
+        "original_mentions": [
+          "Copying",
+          "copying"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Completed clerical tasks such as filing, copying, and distributing mail",
+          "source_section": "Work History; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Money Handling",
+        "original_mentions": [
+          "Money",
+          "taking money in form of cash, checks, or credit"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Responsible for taking money in form of cash, checks, or credit",
+          "source_section": "Work History; Skills",
+          "origin": "candidate"
+        }
+      }
+    ]
+  },
+  "job": {
+    "title": null,
+    "seniority": null,
+    "years_of_experience": "Two years of experience in systems engineering or administration; preferred: three years of experience",
+    "responsibilities": [
+      "Assist in building, optimizing, and maintaining data pipelines and the enterprise data ecosystem.",
+      "Participate in building, managing, and implementing data and Big Data pipeline capabilities, including data modeling, process design, pipeline architecture, and ETL processes.",
+      "Assist with automating repeatable data preparation and integration tasks.",
+      "Partner with technology teams to understand data capture and testing needs and build and test end-to-end solutions.",
+      "Analyze information to determine business needs, implement technical solutions, and provide timely problem analysis and resolution.",
+      "Explain and interpret complex, difficult, or sensitive information.",
+      "Apply judgment to analyze multiple sources of information and solve low- to moderate-complexity problems with guidance."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "Basic knowledge of SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Basic knowledge of SQL",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Relational databases",
+        "original_mentions": [
+          "relational databases"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Basic knowledge of relational databases",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "ETL/ELT architecture and concepts",
+        "original_mentions": [
+          "ETLELT architecture and concepts"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Basic knowledge of ETL/ELT architecture and concepts",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data integration",
+        "original_mentions": [
+          "data integration concepts"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Basic knowledge of data integration concepts",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Big data",
+        "original_mentions": [
+          "big data concepts",
+          "Big Data pipeline capabilities"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Basic knowledge of big data concepts",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data pipeline architecture",
+        "original_mentions": [
+          "data pipeline architecture",
+          "building, management, and implementation of data pipeline capabilities"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "data pipeline architecture",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data modeling",
+        "original_mentions": [
+          "data modeling",
+          "developing data models"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "including data modeling",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data architecture documentation",
+        "original_mentions": [
+          "data architecture documents"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.93,
+        "source": {
+          "source_text": "data architecture documents",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "APIs",
+        "original_mentions": [
+          "API's"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "developing ... API's",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "IT project planning and management",
+        "original_mentions": [
+          "planning and managing IT projects"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Previous experience in planning and managing IT projects",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Systems engineering or administration",
+        "original_mentions": [
+          "experience in systems engineering or administration"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "two years of experience in systems engineering or administration",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "English language fluency",
+        "original_mentions": [
+          "English (Required)"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "English (Required)",
+          "source_section": "Job Details",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "Three years of experience",
+        "original_mentions": [
+          "three years of experience"
+        ],
+        "competency_type": "other",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Bachelor's degree and three years of experience",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [
+      "Bachelor's degree and two years of experience in systems engineering or administration, or equivalent education and related training or experience.",
+      "Preferred: Bachelor's degree and three years of experience, or equivalent education and related training or experience."
+    ],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Banking or financial services",
+        "original_mentions": [
+          "Banking or financial services experience"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Banking or financial services experience",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Problem analysis and resolution",
+        "original_mentions": [
+          "providing problem analysis and resolution"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "provide problem analysis and resolution in a timely manner",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Communication of complex information",
+        "original_mentions": [
+          "explain and interpret complex, difficult, or sensitive information"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "explain and interpret complex, difficult, or sensitive information",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Collaboration",
+        "original_mentions": [
+          "Partner with technology teams"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Partner with technology teams",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Judgment and analytical thinking",
+        "original_mentions": [
+          "exercise judgment based on the analysis of multiple sources of information"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "exercise judgment based on the analysis of multiple sources of information",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [],
+    "system_design_requirements": [
+      "Participate in overall data pipeline architecture.",
+      "Develop data models and corresponding data architecture documents.",
+      "Build and test end-to-end data solutions."
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Data preparation and integration automation",
+        "original_mentions": [
+          "automate repeatable data preparation and integration tasks"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "automate repeatable data preparation and integration tasks",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "End-to-end solution testing",
+        "original_mentions": [
+          "build and test end-to-end solutions"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "build and test end-to-end solutions",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Minimal travel",
+        "original_mentions": [
+          "Minimal and up to 10%"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Travel: Minimal and up to 10%",
+          "source_section": "Working Conditions",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Overtime availability",
+        "original_mentions": [
+          "including overtime as directed by manager/supervisor and required by business need"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "including overtime as directed ... by business need",
+          "source_section": "Working Conditions",
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 1972,
+    "output_tokens": 2756,
+    "cached_tokens": 1969,
+    "estimated_cost": 0.00334718,
+    "latency_ms": 14775.84,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1691,
+    "output_tokens": 1820,
+    "cached_tokens": 1688,
+    "estimated_cost": 0.00221836,
+    "latency_ms": 12822.54,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-09-27T22:17:57.493766+00:00"
+}

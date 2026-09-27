@@ -1,0 +1,885 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_05997_55a65605ad8f",
+  "jd_id": "rjf_05997_55a65605ad8f",
+  "pair_id": "rjf_05997_55a65605ad8f",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Python",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1689,
+        "evidence": {
+          "tfidf_score": 0.032836680362946236,
+          "tfidf_matched_terms": [
+            "python"
+          ],
+          "bm25_score": 5.480036803396642,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.172,
+        "evidence": {
+          "tfidf_score": 0.06577720454736641,
+          "tfidf_matched_terms": [
+            "java"
+          ],
+          "bm25_score": 4.694214600702426,
+          "semantic_score": 1.0000003576278687,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "REST API development",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1689,
+        "evidence": {
+          "tfidf_score": 0.11702018057030163,
+          "tfidf_matched_terms": [
+            "api",
+            "development"
+          ],
+          "bm25_score": 6.888644810305687,
+          "semantic_score": 0.783604621887207,
+          "matched_candidate_competency": "API development"
+        },
+        "candidate_evidence": [
+          "API development"
+        ]
+      },
+      {
+        "job_competency": "Linux/Unix fundamentals",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3737,
+        "evidence": {
+          "tfidf_score": 0.014757999952865967,
+          "tfidf_matched_terms": [
+            "linux"
+          ],
+          "bm25_score": 5.480036803396642,
+          "semantic_score": 0.6557638049125671,
+          "matched_candidate_competency": "Linux"
+        },
+        "candidate_evidence": [
+          "Linux"
+        ]
+      },
+      {
+        "job_competency": "Microservices",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7208,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4947076141834259,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Data structures and algorithms",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6977,
+        "evidence": {
+          "tfidf_score": 0.06318866419186658,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.0847240628410482,
+          "semantic_score": 0.4740077555179596,
+          "matched_candidate_competency": "Ran campaigns migrating approximately 400 internal customers to improve platform availability and security."
+        },
+        "candidate_evidence": [
+          "Ran campaigns migrating approximately 400 internal customers to improve platform availability and security."
+        ]
+      },
+      {
+        "job_competency": "Operating systems",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3923,
+        "evidence": {
+          "tfidf_score": 0.07675457213311873,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 3.189643609230545,
+          "semantic_score": 0.6718261241912842,
+          "matched_candidate_competency": "Backend systems"
+        },
+        "candidate_evidence": [
+          "Backend systems"
+        ]
+      },
+      {
+        "job_competency": "Distributed systems",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3995,
+        "evidence": {
+          "tfidf_score": 0.11708443004697507,
+          "tfidf_matched_terms": [
+            "distributed",
+            "systems"
+          ],
+          "bm25_score": 3.189643609230545,
+          "semantic_score": 0.5696925520896912,
+          "matched_candidate_competency": "Backend systems"
+        },
+        "candidate_evidence": [
+          "Backend systems"
+        ]
+      },
+      {
+        "job_competency": "Relational databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6992,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6297640800476074,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "NoSQL systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.663,
+        "evidence": {
+          "tfidf_score": 0.07675457213311873,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 3.189643609230545,
+          "semantic_score": 0.4514971077442169,
+          "matched_candidate_competency": "Backend systems"
+        },
+        "candidate_evidence": [
+          "Backend systems"
+        ]
+      },
+      {
+        "job_competency": "Storage",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7326,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.42098408937454224,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Distributed persistence",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7129,
+        "evidence": {
+          "tfidf_score": 0.019036693451321408,
+          "tfidf_matched_terms": [
+            "distributed"
+          ],
+          "bm25_score": 1.2340635665102542,
+          "semantic_score": 0.39570900797843933,
+          "matched_candidate_competency": "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies."
+        },
+        "candidate_evidence": [
+          "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies."
+        ]
+      },
+      {
+        "job_competency": "Troubleshooting",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1689,
+        "evidence": {
+          "tfidf_score": 0.032836680362946236,
+          "tfidf_matched_terms": [
+            "troubleshooting"
+          ],
+          "bm25_score": 5.480036803396642,
+          "semantic_score": 0.9999999403953552,
+          "matched_candidate_competency": "Troubleshooting"
+        },
+        "candidate_evidence": [
+          "Troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "Debugging",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1689,
+        "evidence": {
+          "tfidf_score": 0.032836680362946236,
+          "tfidf_matched_terms": [
+            "debugging"
+          ],
+          "bm25_score": 5.480036803396642,
+          "semantic_score": 1.000000238418579,
+          "matched_candidate_competency": "Debugging"
+        },
+        "candidate_evidence": [
+          "Debugging"
+        ]
+      },
+      {
+        "job_competency": "Performance tuning",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3736,
+        "evidence": {
+          "tfidf_score": 0.019036693451321408,
+          "tfidf_matched_terms": [
+            "performance"
+          ],
+          "bm25_score": 4.639826731325606,
+          "semantic_score": 0.7444270253181458,
+          "matched_candidate_competency": "Performance optimization"
+        },
+        "candidate_evidence": [
+          "Performance optimization"
+        ]
+      },
+      {
+        "job_competency": "Agile/DevOps",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3758,
+        "evidence": {
+          "tfidf_score": 0.03813358918175151,
+          "tfidf_matched_terms": [
+            "agile"
+          ],
+          "bm25_score": 3.974488341650946,
+          "semantic_score": 0.7808198928833008,
+          "matched_candidate_competency": "Agile development"
+        },
+        "candidate_evidence": [
+          "Agile development"
+        ]
+      },
+      {
+        "job_competency": "Software engineering experience",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3859,
+        "evidence": {
+          "tfidf_score": 0.029562671100733337,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 3.974488341650946,
+          "semantic_score": 0.6864580512046814,
+          "matched_candidate_competency": "Software development"
+        },
+        "candidate_evidence": [
+          "Software development"
+        ]
+      },
+      {
+        "job_competency": "U.S. citizenship and ability to obtain security clearance",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.688,
+        "evidence": {
+          "tfidf_score": 0.10837408520260633,
+          "tfidf_matched_terms": [
+            "and",
+            "s",
+            "security",
+            "to"
+          ],
+          "bm25_score": 3.9990544939802115,
+          "semantic_score": 0.18346989154815674,
+          "matched_candidate_competency": "Ran campaigns migrating approximately 400 internal customers to improve platform availability and security."
+        },
+        "candidate_evidence": [
+          "Ran campaigns migrating approximately 400 internal customers to improve platform availability and security."
+        ]
+      },
+      {
+        "job_competency": "Independent and team collaboration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.352,
+        "evidence": {
+          "tfidf_score": 0.11960898384476411,
+          "tfidf_matched_terms": [
+            "and",
+            "collaboration",
+            "team"
+          ],
+          "bm25_score": 5.480036803396642,
+          "semantic_score": 0.7933252453804016,
+          "matched_candidate_competency": "Collaboration"
+        },
+        "candidate_evidence": [
+          "Collaboration"
+        ]
+      },
+      {
+        "job_competency": "Communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.716,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5251201391220093,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Project and priority management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3806,
+        "evidence": {
+          "tfidf_score": 0.10448798683442828,
+          "tfidf_matched_terms": [
+            "and",
+            "management",
+            "project"
+          ],
+          "bm25_score": 4.639826731325606,
+          "semantic_score": 0.6100258827209473,
+          "matched_candidate_competency": "Product management"
+        },
+        "candidate_evidence": [
+          "Product management"
+        ]
+      },
+      {
+        "job_competency": "Results-driven execution",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9227,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38625216484069824,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Adaptability to ambiguity and uncertainty",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.695,
+        "evidence": {
+          "tfidf_score": 0.10725239981390783,
+          "tfidf_matched_terms": [
+            "and",
+            "to"
+          ],
+          "bm25_score": 2.271991531844428,
+          "semantic_score": 0.3282158076763153,
+          "matched_candidate_competency": "Ran campaigns migrating approximately 400 internal customers to improve platform availability and security."
+        },
+        "candidate_evidence": [
+          "Ran campaigns migrating approximately 400 internal customers to improve platform availability and security."
+        ]
+      },
+      {
+        "job_competency": "Teamwork",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1689,
+        "evidence": {
+          "tfidf_score": 0.03283668036294623,
+          "tfidf_matched_terms": [
+            "teamwork"
+          ],
+          "bm25_score": 5.480036803396642,
+          "semantic_score": 1.0000003576278687,
+          "matched_candidate_competency": "Teamwork"
+        },
+        "candidate_evidence": [
+          "Teamwork"
+        ]
+      },
+      {
+        "job_competency": "Learning orientation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9377,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31135180592536926,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Written and verbal communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6852,
+        "evidence": {
+          "tfidf_score": 0.06318866419186657,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.0847240628410482,
+          "semantic_score": 0.5518352389335632,
+          "matched_candidate_competency": "Ran campaigns migrating approximately 400 internal customers to improve platform availability and security."
+        },
+        "candidate_evidence": [
+          "Ran campaigns migrating approximately 400 internal customers to improve platform availability and security."
+        ]
+      },
+      {
+        "job_competency": "Clear presentation of complex information",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6918,
+        "evidence": {
+          "tfidf_score": 0.055738193621678034,
+          "tfidf_matched_terms": [
+            "of"
+          ],
+          "bm25_score": 1.5384723078211417,
+          "semantic_score": 0.46721699833869934,
+          "matched_candidate_competency": "Led development of multi-tenant, highly scalable software solutions."
+        },
+        "candidate_evidence": [
+          "Led development of multi-tenant, highly scalable software solutions."
+        ]
+      },
+      {
+        "job_competency": "Build automation",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4238,
+        "evidence": {
+          "tfidf_score": 0.019036693451321408,
+          "tfidf_matched_terms": [
+            "build"
+          ],
+          "bm25_score": 1.0995471502979937,
+          "semantic_score": 0.45133069157600403,
+          "matched_candidate_competency": "Collaborated with an agile development team to build a Java annotation-based framework for writing and orchestrating test libraries for RESTful API services."
+        },
+        "candidate_evidence": [
+          "Collaborated with an agile development team to build a Java annotation-based framework for writing and orchestrating test libraries for RESTful API services."
+        ]
+      },
+      {
+        "job_competency": "Continuous integration",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5628,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31013864278793335,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Continuous deployment",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5559,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36776202917099,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5548,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37701237201690674,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Jenkins",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.1014,
+        "evidence": {
+          "tfidf_score": 0.032836680362946236,
+          "tfidf_matched_terms": [
+            "jenkins"
+          ],
+          "bm25_score": 5.480036803396642,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Jenkins"
+        },
+        "candidate_evidence": [
+          "Jenkins"
+        ]
+      },
+      {
+        "job_competency": "Maven",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4415,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4015490710735321,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Grunt",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5546,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3780438303947449,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "RunDeck",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.553,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3915192782878876,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Ansible",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5548,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3765304386615753,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Data center infrastructure and operations",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2266,
+        "evidence": {
+          "tfidf_score": 0.07092004763313943,
+          "tfidf_matched_terms": [
+            "and",
+            "infrastructure"
+          ],
+          "bm25_score": 4.639826731325606,
+          "semantic_score": 0.6656385064125061,
+          "matched_candidate_competency": "Cloud infrastructure"
+        },
+        "candidate_evidence": [
+          "Cloud infrastructure"
+        ]
+      },
+      {
+        "job_competency": "React",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5598,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33462783694267273,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Docker",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.1014,
+        "evidence": {
+          "tfidf_score": 0.032836680362946236,
+          "tfidf_matched_terms": [
+            "docker"
+          ],
+          "bm25_score": 5.480036803396642,
+          "semantic_score": 0.999999463558197,
+          "matched_candidate_competency": "Docker"
+        },
+        "candidate_evidence": [
+          "Docker"
+        ]
+      },
+      {
+        "job_competency": "Kubernetes",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5543,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38077831268310547,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Observability",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5609,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3255458176136017,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Global distributed-team collaboration",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2199,
+        "evidence": {
+          "tfidf_score": 0.05904090730427715,
+          "tfidf_matched_terms": [
+            "collaboration",
+            "distributed",
+            "team"
+          ],
+          "bm25_score": 5.480036803396642,
+          "semantic_score": 0.6946517825126648,
+          "matched_candidate_competency": "Collaboration"
+        },
+        "candidate_evidence": [
+          "Collaboration"
+        ]
+      },
+      {
+        "job_competency": "Flexible working hours",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5723,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.23107899725437164,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Python",
+      "Java",
+      "REST API development",
+      "Troubleshooting",
+      "Debugging",
+      "Teamwork",
+      "Jenkins",
+      "Docker"
+    ],
+    "partial_matches": [
+      "Linux/Unix fundamentals",
+      "Operating systems",
+      "Distributed systems",
+      "Performance tuning",
+      "Agile/DevOps",
+      "Software engineering experience",
+      "Independent and team collaboration",
+      "Project and priority management",
+      "Data center infrastructure and operations",
+      "Global distributed-team collaboration"
+    ],
+    "weak_matches": [
+      "Microservices",
+      "Data structures and algorithms",
+      "Relational databases",
+      "NoSQL systems",
+      "Storage",
+      "Distributed persistence",
+      "U.S. citizenship and ability to obtain security clearance",
+      "Communication",
+      "Adaptability to ambiguity and uncertainty",
+      "Written and verbal communication",
+      "Clear presentation of complex information",
+      "Build automation",
+      "Maven"
+    ],
+    "missing": [
+      "Results-driven execution",
+      "Learning orientation",
+      "Continuous integration",
+      "Continuous deployment",
+      "Git",
+      "Grunt",
+      "RunDeck",
+      "Ansible",
+      "React",
+      "Kubernetes",
+      "Observability",
+      "Flexible working hours"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Python",
+      "Java",
+      "REST API development",
+      "Troubleshooting",
+      "Debugging",
+      "Teamwork",
+      "Jenkins",
+      "Docker"
+    ],
+    "partial_matches": [
+      "Linux/Unix fundamentals",
+      "Operating systems",
+      "Distributed systems",
+      "Performance tuning",
+      "Agile/DevOps",
+      "Software engineering experience",
+      "Independent and team collaboration",
+      "Project and priority management",
+      "Data center infrastructure and operations",
+      "Global distributed-team collaboration"
+    ],
+    "competency_gaps": [
+      "Microservices",
+      "Data structures and algorithms",
+      "Relational databases",
+      "NoSQL systems",
+      "Storage",
+      "Distributed persistence",
+      "U.S. citizenship and ability to obtain security clearance",
+      "Communication",
+      "Adaptability to ambiguity and uncertainty",
+      "Written and verbal communication",
+      "Clear presentation of complex information",
+      "Build automation",
+      "Maven",
+      "Results-driven execution",
+      "Learning orientation",
+      "Continuous integration",
+      "Continuous deployment",
+      "Git",
+      "Grunt",
+      "RunDeck",
+      "Ansible",
+      "React",
+      "Kubernetes",
+      "Observability",
+      "Flexible working hours"
+    ]
+  },
+  "counts": {
+    "requirements": 43,
+    "strength_matches": 8,
+    "partial_matches": 10,
+    "competency_gaps": 25
+  },
+  "latency_ms": 76.01,
+  "analyzed_at": "2026-09-27T21:52:41.176595+00:00"
+}

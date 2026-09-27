@@ -1,0 +1,496 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_05318_4105bda9546c",
+  "jd_id": "rjf_05318_4105bda9546c",
+  "pair_id": "rjf_05318_4105bda9546c",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Digital electronic circuit design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.396,
+        "evidence": {
+          "tfidf_score": 0.03334036103595109,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 2.394548141499076,
+          "semantic_score": 0.3493851125240326,
+          "matched_candidate_competency": "Project design and management"
+        },
+        "candidate_evidence": [
+          "Project design and management"
+        ]
+      },
+      {
+        "job_competency": "Schematic capture",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7348,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4077618718147278,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "Microprocessor-based design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3866,
+        "evidence": {
+          "tfidf_score": 0.03943480446326621,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 2.394548141499076,
+          "semantic_score": 0.4391118288040161,
+          "matched_candidate_competency": "Project design and management"
+        },
+        "candidate_evidence": [
+          "Project design and management"
+        ]
+      },
+      {
+        "job_competency": "C programming",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.693,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6685492396354675,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "Embedded microcontroller development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6551,
+        "evidence": {
+          "tfidf_score": 0.009824182702640913,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.0093781641151516,
+          "semantic_score": 0.33972591161727905,
+          "matched_candidate_competency": "Collaborated with engineers and customers to resolve product development, maintenance, and project issues."
+        },
+        "candidate_evidence": [
+          "Collaborated with engineers and customers to resolve product development, maintenance, and project issues."
+        ]
+      },
+      {
+        "job_competency": "ARM microcontrollers",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9422,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2888411283493042,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "FPGA development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6561,
+        "evidence": {
+          "tfidf_score": 0.012672445800057783,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.0093781641151516,
+          "semantic_score": 0.3314114511013031,
+          "matched_candidate_competency": "Collaborated with engineers and customers to resolve product development, maintenance, and project issues."
+        },
+        "candidate_evidence": [
+          "Collaborated with engineers and customers to resolve product development, maintenance, and project issues."
+        ]
+      },
+      {
+        "job_competency": "High-end 32-bit microcontrollers",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9319,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3402814567089081,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "Code Composer Studio",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.923,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3852408528327942,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "PCB layout and routing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7074,
+        "evidence": {
+          "tfidf_score": 0.24657128228390174,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.4136568430101528,
+          "semantic_score": 0.2791551351547241,
+          "matched_candidate_competency": "Designed and implemented electrical equipment, facilities, and systems for commercial and domestic purposes."
+        },
+        "candidate_evidence": [
+          "Designed and implemented electrical equipment, facilities, and systems for commercial and domestic purposes."
+        ]
+      },
+      {
+        "job_competency": "Signal integrity and EMC testing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7105,
+        "evidence": {
+          "tfidf_score": 0.21749847143080692,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.4136568430101528,
+          "semantic_score": 0.28115344047546387,
+          "matched_candidate_competency": "Designed and implemented electrical equipment, facilities, and systems for commercial and domestic purposes."
+        },
+        "candidate_evidence": [
+          "Designed and implemented electrical equipment, facilities, and systems for commercial and domestic purposes."
+        ]
+      },
+      {
+        "job_competency": "Manufacturing documentation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3738,
+        "evidence": {
+          "tfidf_score": 0.012672445800057783,
+          "tfidf_matched_terms": [
+            "manufacturing"
+          ],
+          "bm25_score": 2.699494082356487,
+          "semantic_score": 0.5024633407592773,
+          "matched_candidate_competency": "Performed calculations to establish manufacturing and installation specifications."
+        },
+        "candidate_evidence": [
+          "Performed calculations to establish manufacturing and installation specifications."
+        ]
+      },
+      {
+        "job_competency": "Onsite work",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6733,
+        "evidence": {
+          "tfidf_score": 0.012672445800057783,
+          "tfidf_matched_terms": [
+            "work"
+          ],
+          "bm25_score": 1.8229644513411754,
+          "semantic_score": 0.2756931483745575,
+          "matched_candidate_competency": "Prepared and submitted scopes of work, construction packages, economic analyses, funding requests, and engineering specifications."
+        },
+        "candidate_evidence": [
+          "Prepared and submitted scopes of work, construction packages, economic analyses, funding requests, and engineering specifications."
+        ]
+      },
+      {
+        "job_competency": "PCB design using PADs",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3857,
+        "evidence": {
+          "tfidf_score": 0.03334036103595109,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 2.394548141499076,
+          "semantic_score": 0.29159048199653625,
+          "matched_candidate_competency": "Project design and management"
+        },
+        "candidate_evidence": [
+          "Project design and management"
+        ]
+      },
+      {
+        "job_competency": "Altium Designer",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5583,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34751495718955994,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "DX Designer",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4329,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4906468093395233,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "Assembly programming",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4413,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40351924300193787,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "Xilinx FPGA",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5634,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30506718158721924,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "Altera FPGA",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5689,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2587502598762512,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "Lattice FPGA",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5644,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29638931155204773,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "MSP430 microcontrollers",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.571,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24173152446746826,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "TM4C microcontrollers",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5737,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.21919356286525726,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "NXP i.MX family",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5745,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.21272093057632446,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "High-speed design",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2313,
+        "evidence": {
+          "tfidf_score": 0.03943480446326621,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 2.394548141499076,
+          "semantic_score": 0.4507104754447937,
+          "matched_candidate_competency": "Project design and management"
+        },
+        "candidate_evidence": [
+          "Project design and management"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Digital electronic circuit design",
+      "Microprocessor-based design",
+      "Manufacturing documentation",
+      "High-speed design"
+    ],
+    "weak_matches": [
+      "Schematic capture",
+      "C programming",
+      "Embedded microcontroller development",
+      "FPGA development",
+      "PCB layout and routing",
+      "Signal integrity and EMC testing",
+      "Onsite work",
+      "PCB design using PADs",
+      "DX Designer",
+      "Assembly programming"
+    ],
+    "missing": [
+      "ARM microcontrollers",
+      "High-end 32-bit microcontrollers",
+      "Code Composer Studio",
+      "Altium Designer",
+      "Xilinx FPGA",
+      "Altera FPGA",
+      "Lattice FPGA",
+      "MSP430 microcontrollers",
+      "TM4C microcontrollers",
+      "NXP i.MX family"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Digital electronic circuit design",
+      "Microprocessor-based design",
+      "Manufacturing documentation",
+      "High-speed design"
+    ],
+    "competency_gaps": [
+      "Schematic capture",
+      "C programming",
+      "Embedded microcontroller development",
+      "FPGA development",
+      "PCB layout and routing",
+      "Signal integrity and EMC testing",
+      "Onsite work",
+      "PCB design using PADs",
+      "DX Designer",
+      "Assembly programming",
+      "ARM microcontrollers",
+      "High-end 32-bit microcontrollers",
+      "Code Composer Studio",
+      "Altium Designer",
+      "Xilinx FPGA",
+      "Altera FPGA",
+      "Lattice FPGA",
+      "MSP430 microcontrollers",
+      "TM4C microcontrollers",
+      "NXP i.MX family"
+    ]
+  },
+  "counts": {
+    "requirements": 24,
+    "strength_matches": 0,
+    "partial_matches": 4,
+    "competency_gaps": 20
+  },
+  "latency_ms": 45.97,
+  "analyzed_at": "2026-09-27T22:33:13.864749+00:00"
+}

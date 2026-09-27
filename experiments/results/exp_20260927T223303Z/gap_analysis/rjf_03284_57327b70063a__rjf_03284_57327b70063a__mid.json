@@ -1,0 +1,324 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_03284_57327b70063a",
+  "jd_id": "rjf_03284_57327b70063a",
+  "pair_id": "rjf_03284_57327b70063a",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Data engineering",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3655,
+        "evidence": {
+          "tfidf_score": 0.038422000333053825,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.3576869077493696,
+          "semantic_score": 0.5658400058746338,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "MS SQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.725,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4684726893901825,
+          "matched_candidate_competency": "Typing"
+        },
+        "candidate_evidence": [
+          "Typing"
+        ]
+      },
+      {
+        "job_competency": "SOQL",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.929,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35493263602256775,
+          "matched_candidate_competency": "Typing"
+        },
+        "candidate_evidence": [
+          "Typing"
+        ]
+      },
+      {
+        "job_competency": "ETL tools",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9422,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2891734838485718,
+          "matched_candidate_competency": "Typing"
+        },
+        "candidate_evidence": [
+          "Typing"
+        ]
+      },
+      {
+        "job_competency": "SSIS",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9347,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32634395360946655,
+          "matched_candidate_competency": "Typing"
+        },
+        "candidate_evidence": [
+          "Typing"
+        ]
+      },
+      {
+        "job_competency": "Salesforce",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7095,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5659313201904297,
+          "matched_candidate_competency": "Typing"
+        },
+        "candidate_evidence": [
+          "Typing"
+        ]
+      },
+      {
+        "job_competency": "Data migration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3784,
+        "evidence": {
+          "tfidf_score": 0.038422000333053825,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.3576869077493696,
+          "semantic_score": 0.43765687942504883,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Data cleanup",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3785,
+        "evidence": {
+          "tfidf_score": 0.038422000333053825,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.3576869077493696,
+          "semantic_score": 0.4357949197292328,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Data integration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3552,
+        "evidence": {
+          "tfidf_score": 0.038422000333053825,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.3576869077493696,
+          "semantic_score": 0.6686910390853882,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Data warehousing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3716,
+        "evidence": {
+          "tfidf_score": 0.038422000333053825,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.3576869077493696,
+          "semantic_score": 0.5052546262741089,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Oracle",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5562,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3653690218925476,
+          "matched_candidate_competency": "Typing"
+        },
+        "candidate_evidence": [
+          "Typing"
+        ]
+      },
+      {
+        "job_competency": "PostgreSQL",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5641,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2988835573196411,
+          "matched_candidate_competency": "Typing"
+        },
+        "candidate_evidence": [
+          "Typing"
+        ]
+      },
+      {
+        "job_competency": "Talend",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.576,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.20007362961769104,
+          "matched_candidate_competency": "Typing"
+        },
+        "candidate_evidence": [
+          "Typing"
+        ]
+      },
+      {
+        "job_competency": "Matillion",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5634,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3049696683883667,
+          "matched_candidate_competency": "Typing"
+        },
+        "candidate_evidence": [
+          "Typing"
+        ]
+      },
+      {
+        "job_competency": "Similar ETL tool",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5686,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26198750734329224,
+          "matched_candidate_competency": "Typing"
+        },
+        "candidate_evidence": [
+          "Typing"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Data engineering",
+      "Data migration",
+      "Data cleanup",
+      "Data integration",
+      "Data warehousing"
+    ],
+    "weak_matches": [
+      "MS SQL",
+      "Salesforce"
+    ],
+    "missing": [
+      "SOQL",
+      "ETL tools",
+      "SSIS",
+      "Oracle",
+      "PostgreSQL",
+      "Talend",
+      "Matillion",
+      "Similar ETL tool"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Data engineering",
+      "Data migration",
+      "Data cleanup",
+      "Data integration",
+      "Data warehousing"
+    ],
+    "competency_gaps": [
+      "MS SQL",
+      "Salesforce",
+      "SOQL",
+      "ETL tools",
+      "SSIS",
+      "Oracle",
+      "PostgreSQL",
+      "Talend",
+      "Matillion",
+      "Similar ETL tool"
+    ]
+  },
+  "counts": {
+    "requirements": 15,
+    "strength_matches": 0,
+    "partial_matches": 5,
+    "competency_gaps": 10
+  },
+  "latency_ms": 28.39,
+  "analyzed_at": "2026-09-27T22:33:13.090879+00:00"
+}

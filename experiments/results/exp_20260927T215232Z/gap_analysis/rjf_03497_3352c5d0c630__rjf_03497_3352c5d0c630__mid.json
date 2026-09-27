@@ -1,0 +1,844 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_03497_3352c5d0c630",
+  "jd_id": "rjf_03497_3352c5d0c630",
+  "pair_id": "rjf_03497_3352c5d0c630",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Data architecture",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6681,
+        "evidence": {
+          "tfidf_score": 0.03200871592660424,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.5935022234916687,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Data solutions",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6622,
+        "evidence": {
+          "tfidf_score": 0.03200871592660424,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.6302461624145508,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "ELT and ETL data pipelines",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6855,
+        "evidence": {
+          "tfidf_score": 0.3041976488822413,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.28060007095336914,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Enterprise data warehousing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6759,
+        "evidence": {
+          "tfidf_score": 0.024814426378407407,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.550227701663971,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Data marts",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6703,
+        "evidence": {
+          "tfidf_score": 0.03200871592660424,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.5798534154891968,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Data lakes",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6778,
+        "evidence": {
+          "tfidf_score": 0.03200871592660424,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.5327163934707642,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Data governance",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6873,
+        "evidence": {
+          "tfidf_score": 0.03200871592660424,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.4737549424171448,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Hybrid cloud data platforms",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.702,
+        "evidence": {
+          "tfidf_score": 0.02097948615738129,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.3896292448043823,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Azure data infrastructure",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6935,
+        "evidence": {
+          "tfidf_score": 0.024814426378407407,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.4402753710746765,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Google Cloud Platform data infrastructure",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7087,
+        "evidence": {
+          "tfidf_score": 0.018505829747765868,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.3495841920375824,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Apache Spark",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9552,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.22391377389431,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Power BI",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9392,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30408743023872375,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Metadata management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6757,
+        "evidence": {
+          "tfidf_score": 0.03200871592660424,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.5460585355758667,
+          "matched_candidate_competency": "Spreadsheet management"
+        },
+        "candidate_evidence": [
+          "Spreadsheet management"
+        ]
+      },
+      {
+        "job_competency": "Master data management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6682,
+        "evidence": {
+          "tfidf_score": 0.05546587258605365,
+          "tfidf_matched_terms": [
+            "data",
+            "management"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.5752957463264465,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Data catalog",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4093,
+        "evidence": {
+          "tfidf_score": 0.03200871592660424,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.6763966083526611,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Business glossary",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7109,
+        "evidence": {
+          "tfidf_score": 0.007991049695629249,
+          "tfidf_matched_terms": [
+            "business"
+          ],
+          "bm25_score": 2.2367964737153727,
+          "semantic_score": 0.4246966242790222,
+          "matched_candidate_competency": "Performed data entry for end-of-month invoicing and business account orders"
+        },
+        "candidate_evidence": [
+          "Performed data entry for end-of-month invoicing and business account orders"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7023,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6104057431221008,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "NoSQL databases",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4011,
+        "evidence": {
+          "tfidf_score": 0.015986543676032406,
+          "tfidf_matched_terms": [
+            "databases"
+          ],
+          "bm25_score": 5.169835356648118,
+          "semantic_score": 0.685151994228363,
+          "matched_candidate_competency": "Databases"
+        },
+        "candidate_evidence": [
+          "Databases"
+        ]
+      },
+      {
+        "job_competency": "Columnar databases",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3936,
+        "evidence": {
+          "tfidf_score": 0.015986543676032406,
+          "tfidf_matched_terms": [
+            "databases"
+          ],
+          "bm25_score": 5.169835356648118,
+          "semantic_score": 0.7603954076766968,
+          "matched_candidate_competency": "Databases"
+        },
+        "candidate_evidence": [
+          "Databases"
+        ]
+      },
+      {
+        "job_competency": "JSON",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.935,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32512524724006653,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Computer science fundamentals",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4105,
+        "evidence": {
+          "tfidf_score": 0.012393402847015915,
+          "tfidf_matched_terms": [
+            "computer"
+          ],
+          "bm25_score": 4.4873796947397775,
+          "semantic_score": 0.6320579051971436,
+          "matched_candidate_competency": "Computer systems"
+        },
+        "candidate_evidence": [
+          "Computer systems"
+        ]
+      },
+      {
+        "job_competency": "Pandas DataFrames",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.94,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3001202642917633,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Directed acyclic graphs",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9374,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3127514123916626,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Workflow orchestration tools",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9351,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32449138164520264,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Kubernetes",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9494,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2529807686805725,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "GitLab",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9565,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.21727091073989868,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Agile methodologies",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9349,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32574835419654846,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Team management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6706,
+        "evidence": {
+          "tfidf_score": 0.03200871592660424,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.5776429772377014,
+          "matched_candidate_competency": "Spreadsheet management"
+        },
+        "candidate_evidence": [
+          "Spreadsheet management"
+        ]
+      },
+      {
+        "job_competency": "Architecture documentation and communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6477,
+        "evidence": {
+          "tfidf_score": 0.32884673328086617,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 5.067615303290739,
+          "semantic_score": 0.4187615215778351,
+          "matched_candidate_competency": "Written and verbal communication"
+        },
+        "candidate_evidence": [
+          "Written and verbal communication"
+        ]
+      },
+      {
+        "job_competency": "Excellent verbal and written communication",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1621,
+        "evidence": {
+          "tfidf_score": 0.34253700292577255,
+          "tfidf_matched_terms": [
+            "and",
+            "communication",
+            "verbal",
+            "written"
+          ],
+          "bm25_score": 13.27880235844617,
+          "semantic_score": 0.7515071630477905,
+          "matched_candidate_competency": "Written and verbal communication"
+        },
+        "candidate_evidence": [
+          "Written and verbal communication"
+        ]
+      },
+      {
+        "job_competency": "Openness to new technologies",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7169,
+        "evidence": {
+          "tfidf_score": 0.02097948615738128,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 3.235726075539791,
+          "semantic_score": 0.32076379656791687,
+          "matched_candidate_competency": "Attention to detail"
+        },
+        "candidate_evidence": [
+          "Attention to detail"
+        ]
+      },
+      {
+        "job_competency": "Azure Data Factory",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4232,
+        "evidence": {
+          "tfidf_score": 0.024814426378407407,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.36645984649658203,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Google Dataflow",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4387,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.43010056018829346,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "AWS Glue",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5665,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2790718376636505,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Biomedical informatics",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4377,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44105449318885803,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Amazon S3 and Azure Blob Storage",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5491,
+        "evidence": {
+          "tfidf_score": 0.23791331507170405,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.10783067746854,
+          "semantic_score": 0.18274763226509094,
+          "matched_candidate_competency": "Identified and resolved system and account issues"
+        },
+        "candidate_evidence": [
+          "Identified and resolved system and account issues"
+        ]
+      },
+      {
+        "job_competency": "Machine learning and artificial intelligence",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4159,
+        "evidence": {
+          "tfidf_score": 0.2629899321835482,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.10783067746854,
+          "semantic_score": 0.4073854088783264,
+          "matched_candidate_competency": "Identified and resolved system and account issues"
+        },
+        "candidate_evidence": [
+          "Identified and resolved system and account issues"
+        ]
+      },
+      {
+        "job_competency": "Unstructured data",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4101,
+        "evidence": {
+          "tfidf_score": 0.03200871592660424,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.49738040566444397,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Data democratization",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4165,
+        "evidence": {
+          "tfidf_score": 0.03200871592660424,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.6628653224012826,
+          "semantic_score": 0.43024393916130066,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Kanban",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5712,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24017520248889923,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Jira and Confluence",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4225,
+        "evidence": {
+          "tfidf_score": 0.3526426212377137,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.10783067746854,
+          "semantic_score": 0.27144119143486023,
+          "matched_candidate_competency": "Identified and resolved system and account issues"
+        },
+        "candidate_evidence": [
+          "Identified and resolved system and account issues"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Excellent verbal and written communication"
+    ],
+    "partial_matches": [
+      "Data catalog",
+      "NoSQL databases",
+      "Columnar databases",
+      "Computer science fundamentals"
+    ],
+    "weak_matches": [
+      "Data architecture",
+      "Data solutions",
+      "ELT and ETL data pipelines",
+      "Enterprise data warehousing",
+      "Data marts",
+      "Data lakes",
+      "Data governance",
+      "Hybrid cloud data platforms",
+      "Azure data infrastructure",
+      "Google Cloud Platform data infrastructure",
+      "Metadata management",
+      "Master data management",
+      "Business glossary",
+      "SQL",
+      "Team management",
+      "Architecture documentation and communication",
+      "Openness to new technologies",
+      "Azure Data Factory",
+      "Google Dataflow",
+      "Biomedical informatics",
+      "Machine learning and artificial intelligence",
+      "Unstructured data",
+      "Data democratization",
+      "Jira and Confluence"
+    ],
+    "missing": [
+      "Apache Spark",
+      "Power BI",
+      "JSON",
+      "Pandas DataFrames",
+      "Directed acyclic graphs",
+      "Workflow orchestration tools",
+      "Kubernetes",
+      "GitLab",
+      "Agile methodologies",
+      "AWS Glue",
+      "Amazon S3 and Azure Blob Storage",
+      "Kanban"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Excellent verbal and written communication"
+    ],
+    "partial_matches": [
+      "Data catalog",
+      "NoSQL databases",
+      "Columnar databases",
+      "Computer science fundamentals"
+    ],
+    "competency_gaps": [
+      "Data architecture",
+      "Data solutions",
+      "ELT and ETL data pipelines",
+      "Enterprise data warehousing",
+      "Data marts",
+      "Data lakes",
+      "Data governance",
+      "Hybrid cloud data platforms",
+      "Azure data infrastructure",
+      "Google Cloud Platform data infrastructure",
+      "Metadata management",
+      "Master data management",
+      "Business glossary",
+      "SQL",
+      "Team management",
+      "Architecture documentation and communication",
+      "Openness to new technologies",
+      "Azure Data Factory",
+      "Google Dataflow",
+      "Biomedical informatics",
+      "Machine learning and artificial intelligence",
+      "Unstructured data",
+      "Data democratization",
+      "Jira and Confluence",
+      "Apache Spark",
+      "Power BI",
+      "JSON",
+      "Pandas DataFrames",
+      "Directed acyclic graphs",
+      "Workflow orchestration tools",
+      "Kubernetes",
+      "GitLab",
+      "Agile methodologies",
+      "AWS Glue",
+      "Amazon S3 and Azure Blob Storage",
+      "Kanban"
+    ]
+  },
+  "counts": {
+    "requirements": 41,
+    "strength_matches": 1,
+    "partial_matches": 4,
+    "competency_gaps": 36
+  },
+  "latency_ms": 80.75,
+  "analyzed_at": "2026-09-27T21:52:40.202664+00:00"
+}

@@ -1,0 +1,449 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_04553_ea8f275312b4",
+  "jd_id": "rjf_04553_ea8f275312b4",
+  "pair_id": "rjf_04553_ea8f275312b4",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "General ledger accounting",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1712,
+        "evidence": {
+          "tfidf_score": 0.09627607986375998,
+          "tfidf_matched_terms": [
+            "accounting",
+            "general",
+            "ledger"
+          ],
+          "bm25_score": 8.463696217389202,
+          "semantic_score": 0.7535895109176636,
+          "matched_candidate_competency": "General ledger"
+        },
+        "candidate_evidence": [
+          "General ledger"
+        ]
+      },
+      {
+        "job_competency": "U.S. GAAP",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.728,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4502872824668884,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Account reconciliations",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3554,
+        "evidence": {
+          "tfidf_score": 0.02934194932761315,
+          "tfidf_matched_terms": [
+            "account",
+            "reconciliations"
+          ],
+          "bm25_score": 4.953538615217045,
+          "semantic_score": 0.9846231937408447,
+          "matched_candidate_competency": "Account reconciliation"
+        },
+        "candidate_evidence": [
+          "Account reconciliation"
+        ]
+      },
+      {
+        "job_competency": "Journal entries",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7349,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4067535400390625,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Complex accounting transactions",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3934,
+        "evidence": {
+          "tfidf_score": 0.037409540152866315,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 3.8604039747631407,
+          "semantic_score": 0.6955882906913757,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "ASC 842 lease accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.669,
+        "evidence": {
+          "tfidf_score": 0.03162809076553915,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 3.8604039747631407,
+          "semantic_score": 0.4527004063129425,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "CECL credit loss accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6655,
+        "evidence": {
+          "tfidf_score": 0.03162809076553915,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 3.8604039747631407,
+          "semantic_score": 0.4746960401535034,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Accounting research",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3801,
+        "evidence": {
+          "tfidf_score": 0.0482554513023099,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 3.8604039747631407,
+          "semantic_score": 0.8207451701164246,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Internal controls",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4012,
+        "evidence": {
+          "tfidf_score": 0.024066816650729295,
+          "tfidf_matched_terms": [
+            "internal"
+          ],
+          "bm25_score": 3.7629629942755223,
+          "semantic_score": 0.6369267702102661,
+          "matched_candidate_competency": "Internal control testing"
+        },
+        "candidate_evidence": [
+          "Internal control testing"
+        ]
+      },
+      {
+        "job_competency": "Audit support",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4192,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.8078833222389221,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Statutory financial statements",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3748,
+        "evidence": {
+          "tfidf_score": 0.08410041277010438,
+          "tfidf_matched_terms": [
+            "financial",
+            "statements"
+          ],
+          "bm25_score": 5.500610617627658,
+          "semantic_score": 0.7017894983291626,
+          "matched_candidate_competency": "Compiled and prepared financial statements"
+        },
+        "candidate_evidence": [
+          "Compiled and prepared financial statements"
+        ]
+      },
+      {
+        "job_competency": "External and consolidated reporting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.392,
+        "evidence": {
+          "tfidf_score": 0.24413484463553772,
+          "tfidf_matched_terms": [
+            "and",
+            "reporting"
+          ],
+          "bm25_score": 3.3657662958189953,
+          "semantic_score": 0.5987355709075928,
+          "matched_candidate_competency": "Researched reporting issues and improved accounting operations procedures"
+        },
+        "candidate_evidence": [
+          "Researched reporting issues and improved accounting operations procedures"
+        ]
+      },
+      {
+        "job_competency": "Technical accounting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3826,
+        "evidence": {
+          "tfidf_score": 0.0482554513023099,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 3.8604039747631407,
+          "semantic_score": 0.7961413860321045,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Business combination accounting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3966,
+        "evidence": {
+          "tfidf_score": 0.0521950287441613,
+          "tfidf_matched_terms": [
+            "accounting",
+            "business"
+          ],
+          "bm25_score": 3.8604039747631407,
+          "semantic_score": 0.6527479887008667,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Divestiture accounting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.399,
+        "evidence": {
+          "tfidf_score": 0.0482554513023099,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 3.8604039747631407,
+          "semantic_score": 0.6318262815475464,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Equity method accounting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3971,
+        "evidence": {
+          "tfidf_score": 0.03740954015286632,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 3.8604039747631407,
+          "semantic_score": 0.6585283279418945,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Accounting standards implementation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3972,
+        "evidence": {
+          "tfidf_score": 0.037409540152866315,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 3.8604039747631407,
+          "semantic_score": 0.657619833946228,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Business contract accounting review",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4016,
+        "evidence": {
+          "tfidf_score": 0.06537326140080951,
+          "tfidf_matched_terms": [
+            "accounting",
+            "business",
+            "contract"
+          ],
+          "bm25_score": 4.231848108694601,
+          "semantic_score": 0.5599173307418823,
+          "matched_candidate_competency": "Contract analysis"
+        },
+        "candidate_evidence": [
+          "Contract analysis"
+        ]
+      },
+      {
+        "job_competency": "Valuation analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6562,
+        "evidence": {
+          "tfidf_score": 0.06043428026489366,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 3.0796904869464266,
+          "semantic_score": 0.580751895904541,
+          "matched_candidate_competency": "Budget analysis"
+        },
+        "candidate_evidence": [
+          "Budget analysis"
+        ]
+      },
+      {
+        "job_competency": "Accounting policies and procedures compliance",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3737,
+        "evidence": {
+          "tfidf_score": 0.27250608164594486,
+          "tfidf_matched_terms": [
+            "accounting",
+            "and",
+            "procedures"
+          ],
+          "bm25_score": 4.886502377777779,
+          "semantic_score": 0.6260753870010376,
+          "matched_candidate_competency": "Researched reporting issues and improved accounting operations procedures"
+        },
+        "candidate_evidence": [
+          "Researched reporting issues and improved accounting operations procedures"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "General ledger accounting"
+    ],
+    "partial_matches": [
+      "Account reconciliations",
+      "Complex accounting transactions",
+      "Accounting research",
+      "Internal controls",
+      "Audit support",
+      "Statutory financial statements",
+      "External and consolidated reporting",
+      "Technical accounting",
+      "Business combination accounting",
+      "Divestiture accounting",
+      "Equity method accounting",
+      "Accounting standards implementation",
+      "Business contract accounting review",
+      "Accounting policies and procedures compliance"
+    ],
+    "weak_matches": [
+      "U.S. GAAP",
+      "Journal entries",
+      "ASC 842 lease accounting",
+      "CECL credit loss accounting",
+      "Valuation analysis"
+    ],
+    "missing": []
+  },
+  "three_category": {
+    "strength_matches": [
+      "General ledger accounting"
+    ],
+    "partial_matches": [
+      "Account reconciliations",
+      "Complex accounting transactions",
+      "Accounting research",
+      "Internal controls",
+      "Audit support",
+      "Statutory financial statements",
+      "External and consolidated reporting",
+      "Technical accounting",
+      "Business combination accounting",
+      "Divestiture accounting",
+      "Equity method accounting",
+      "Accounting standards implementation",
+      "Business contract accounting review",
+      "Accounting policies and procedures compliance"
+    ],
+    "competency_gaps": [
+      "U.S. GAAP",
+      "Journal entries",
+      "ASC 842 lease accounting",
+      "CECL credit loss accounting",
+      "Valuation analysis"
+    ]
+  },
+  "counts": {
+    "requirements": 20,
+    "strength_matches": 1,
+    "partial_matches": 14,
+    "competency_gaps": 5
+  },
+  "latency_ms": 42.3,
+  "analyzed_at": "2026-09-27T21:52:40.547492+00:00"
+}

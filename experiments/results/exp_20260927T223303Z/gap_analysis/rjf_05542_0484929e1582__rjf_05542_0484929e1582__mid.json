@@ -1,0 +1,584 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_05542_0484929e1582",
+  "jd_id": "rjf_05542_0484929e1582",
+  "pair_id": "rjf_05542_0484929e1582",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Business analysis",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9306,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3469895124435425,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "ServiceNow platform",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9381,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3096342384815216,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "IT service management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3777,
+        "evidence": {
+          "tfidf_score": 0.022092746296784024,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.7507605505073065,
+          "semantic_score": 0.4560844302177429,
+          "matched_candidate_competency": "Configuration management"
+        },
+        "candidate_evidence": [
+          "Configuration management"
+        ]
+      },
+      {
+        "job_competency": "Incident Management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3896,
+        "evidence": {
+          "tfidf_score": 0.028497956368946826,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.7507605505073065,
+          "semantic_score": 0.33253130316734314,
+          "matched_candidate_competency": "Configuration management"
+        },
+        "candidate_evidence": [
+          "Configuration management"
+        ]
+      },
+      {
+        "job_competency": "Change Management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3684,
+        "evidence": {
+          "tfidf_score": 0.028497956368946826,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.7507605505073065,
+          "semantic_score": 0.5448604226112366,
+          "matched_candidate_competency": "Configuration management"
+        },
+        "candidate_evidence": [
+          "Configuration management"
+        ]
+      },
+      {
+        "job_competency": "Problem Management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3757,
+        "evidence": {
+          "tfidf_score": 0.028497956368946826,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.7507605505073065,
+          "semantic_score": 0.4714297354221344,
+          "matched_candidate_competency": "Configuration management"
+        },
+        "candidate_evidence": [
+          "Configuration management"
+        ]
+      },
+      {
+        "job_competency": "Service Catalog",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9335,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3325560390949249,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Analytical and problem-solving skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6841,
+        "evidence": {
+          "tfidf_score": 0.08481397288299054,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5541571117376218,
+          "semantic_score": 0.3499974012374878,
+          "matched_candidate_competency": "Used CISA, Python, and CISM"
+        },
+        "candidate_evidence": [
+          "Used CISA, Python, and CISM"
+        ]
+      },
+      {
+        "job_competency": "Stakeholder communication",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9469,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26554423570632935,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Technical communication",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9397,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30140283703804016,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Process mapping",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9318,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3411073684692383,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Workflow design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3624,
+        "evidence": {
+          "tfidf_score": 0.028497956368946826,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 3.7507605505073065,
+          "semantic_score": 0.6050605177879333,
+          "matched_candidate_competency": "Database design"
+        },
+        "candidate_evidence": [
+          "Database design"
+        ]
+      },
+      {
+        "job_competency": "Requirements gathering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7341,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41158387064933777,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Functional specifications",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9229,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3853030204772949,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "User stories",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9402,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2991414964199066,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Technical documentation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9302,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3489930331707001,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "ServiceNow configuration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3885,
+        "evidence": {
+          "tfidf_score": 0.028497956368946826,
+          "tfidf_matched_terms": [
+            "configuration"
+          ],
+          "bm25_score": 3.7507605505073065,
+          "semantic_score": 0.34313124418258667,
+          "matched_candidate_competency": "Configuration management"
+        },
+        "candidate_evidence": [
+          "Configuration management"
+        ]
+      },
+      {
+        "job_competency": "Business Rules",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9369,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31527215242385864,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Client Scripts",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7161,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5243199467658997,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "UI Policies",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6517,
+        "evidence": {
+          "tfidf_score": 0.028497956368946826,
+          "tfidf_matched_terms": [
+            "ui"
+          ],
+          "bm25_score": 2.6010299294975296,
+          "semantic_score": 0.3853966295719147,
+          "matched_candidate_competency": "Front-end UI development"
+        },
+        "candidate_evidence": [
+          "Front-end UI development"
+        ]
+      },
+      {
+        "job_competency": "Scrum Master experience",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.441,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4058777689933777,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "ServiceNow Certified System Administrator",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5695,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2545761168003082,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "SAFe Scrum Master certification",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5739,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.21740248799324036,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Cloud computing",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4411,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40492013096809387,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Amazon Web Services",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3882,
+        "evidence": {
+          "tfidf_score": 0.02209274629678402,
+          "tfidf_matched_terms": [
+            "web"
+          ],
+          "bm25_score": 3.071839501305688,
+          "semantic_score": 0.3255156874656677,
+          "matched_candidate_competency": "Web application development"
+        },
+        "candidate_evidence": [
+          "Web application development"
+        ]
+      },
+      {
+        "job_competency": "AWS certification",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5728,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.227055162191391,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Azure",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.554,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38293567299842834,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Enterprise infrastructure",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5588,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3431132733821869,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Process improvement",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4411,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40556877851486206,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "IT service management",
+      "Incident Management",
+      "Change Management",
+      "Problem Management",
+      "Workflow design",
+      "ServiceNow configuration"
+    ],
+    "weak_matches": [
+      "Analytical and problem-solving skills",
+      "Requirements gathering",
+      "Client Scripts",
+      "UI Policies",
+      "Scrum Master experience",
+      "Cloud computing",
+      "Amazon Web Services",
+      "Process improvement"
+    ],
+    "missing": [
+      "Business analysis",
+      "ServiceNow platform",
+      "Service Catalog",
+      "Stakeholder communication",
+      "Technical communication",
+      "Process mapping",
+      "Functional specifications",
+      "User stories",
+      "Technical documentation",
+      "Business Rules",
+      "ServiceNow Certified System Administrator",
+      "SAFe Scrum Master certification",
+      "AWS certification",
+      "Microsoft Azure",
+      "Enterprise infrastructure"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "IT service management",
+      "Incident Management",
+      "Change Management",
+      "Problem Management",
+      "Workflow design",
+      "ServiceNow configuration"
+    ],
+    "competency_gaps": [
+      "Analytical and problem-solving skills",
+      "Requirements gathering",
+      "Client Scripts",
+      "UI Policies",
+      "Scrum Master experience",
+      "Cloud computing",
+      "Amazon Web Services",
+      "Process improvement",
+      "Business analysis",
+      "ServiceNow platform",
+      "Service Catalog",
+      "Stakeholder communication",
+      "Technical communication",
+      "Process mapping",
+      "Functional specifications",
+      "User stories",
+      "Technical documentation",
+      "Business Rules",
+      "ServiceNow Certified System Administrator",
+      "SAFe Scrum Master certification",
+      "AWS certification",
+      "Microsoft Azure",
+      "Enterprise infrastructure"
+    ]
+  },
+  "counts": {
+    "requirements": 29,
+    "strength_matches": 0,
+    "partial_matches": 6,
+    "competency_gaps": 23
+  },
+  "latency_ms": 49.75,
+  "analyzed_at": "2026-09-27T22:33:14.078714+00:00"
+}

@@ -1,0 +1,430 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_06021_14549a02aa4a",
+  "jd_id": "rjf_06021_14549a02aa4a",
+  "pair_id": "rjf_06021_14549a02aa4a",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "General ledger accounting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4077,
+        "evidence": {
+          "tfidf_score": 0.060882019973781266,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 2.7615894777257832,
+          "semantic_score": 0.7027726173400879,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Journal entry preparation",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1604,
+        "evidence": {
+          "tfidf_score": 0.05548031350171667,
+          "tfidf_matched_terms": [
+            "entry",
+            "journal",
+            "preparation"
+          ],
+          "bm25_score": 11.858694940733153,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Journal entry preparation"
+        },
+        "candidate_evidence": [
+          "Journal entry preparation"
+        ]
+      },
+      {
+        "job_competency": "Month-end accounting close",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6797,
+        "evidence": {
+          "tfidf_score": 0.08683776724888408,
+          "tfidf_matched_terms": [
+            "accounting",
+            "end",
+            "month"
+          ],
+          "bm25_score": 3.6682597448892986,
+          "semantic_score": 0.4545436203479767,
+          "matched_candidate_competency": "Prepared balance sheets, profit and loss statements, month-end statements, invoices, and vendor payments."
+        },
+        "candidate_evidence": [
+          "Prepared balance sheets, profit and loss statements, month-end statements, invoices, and vendor payments."
+        ]
+      },
+      {
+        "job_competency": "Payroll and cost accruals",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3897,
+        "evidence": {
+          "tfidf_score": 0.2979982730389303,
+          "tfidf_matched_terms": [
+            "and",
+            "payroll"
+          ],
+          "bm25_score": 3.6067625162859525,
+          "semantic_score": 0.6512043476104736,
+          "matched_candidate_competency": "Payroll administration"
+        },
+        "candidate_evidence": [
+          "Payroll administration"
+        ]
+      },
+      {
+        "job_competency": "Financial analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.374,
+        "evidence": {
+          "tfidf_score": 0.12324455911103833,
+          "tfidf_matched_terms": [
+            "analysis",
+            "financial"
+          ],
+          "bm25_score": 5.833795989271404,
+          "semantic_score": 0.7984346747398376,
+          "matched_candidate_competency": "Financial statement analysis"
+        },
+        "candidate_evidence": [
+          "Financial statement analysis"
+        ]
+      },
+      {
+        "job_competency": "SAP FI",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3815,
+        "evidence": {
+          "tfidf_score": 0.02225588583165183,
+          "tfidf_matched_terms": [
+            "sap"
+          ],
+          "bm25_score": 4.658435028265942,
+          "semantic_score": 0.8740764856338501,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "US GAAP",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.392,
+        "evidence": {
+          "tfidf_score": 0.011121949519966272,
+          "tfidf_matched_terms": [
+            "gaap"
+          ],
+          "bm25_score": 4.835595563730239,
+          "semantic_score": 0.7658304572105408,
+          "matched_candidate_competency": "GAAP accounting"
+        },
+        "candidate_evidence": [
+          "GAAP accounting"
+        ]
+      },
+      {
+        "job_competency": "IFRS accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6736,
+        "evidence": {
+          "tfidf_score": 0.07853315860141519,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 2.7615894777257832,
+          "semantic_score": 0.5565522909164429,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "US tax",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6938,
+        "evidence": {
+          "tfidf_score": 0.03341386042968076,
+          "tfidf_matched_terms": [
+            "tax"
+          ],
+          "bm25_score": 3.2212415822411358,
+          "semantic_score": 0.43491023778915405,
+          "matched_candidate_competency": "Tax return preparation"
+        },
+        "candidate_evidence": [
+          "Tax return preparation"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7136,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5400963425636292,
+          "matched_candidate_competency": "MS Office"
+        },
+        "candidate_evidence": [
+          "MS Office"
+        ]
+      },
+      {
+        "job_competency": "Microsoft PowerPoint",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7034,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6040300130844116,
+          "matched_candidate_competency": "MS Office"
+        },
+        "candidate_evidence": [
+          "MS Office"
+        ]
+      },
+      {
+        "job_competency": "Accounting experience",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.399,
+        "evidence": {
+          "tfidf_score": 0.07853315860141519,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 2.7615894777257832,
+          "semantic_score": 0.7765306234359741,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Accounts receivable",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1747,
+        "evidence": {
+          "tfidf_score": 0.16544951196493257,
+          "tfidf_matched_terms": [
+            "accounts",
+            "receivable"
+          ],
+          "bm25_score": 6.037842615028596,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Accounts receivable"
+        },
+        "candidate_evidence": [
+          "Accounts receivable"
+        ]
+      },
+      {
+        "job_competency": "Accounts payable",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1747,
+        "evidence": {
+          "tfidf_score": 0.16544951196493257,
+          "tfidf_matched_terms": [
+            "accounts",
+            "payable"
+          ],
+          "bm25_score": 6.037842615028596,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Accounts payable"
+        },
+        "candidate_evidence": [
+          "Accounts payable"
+        ]
+      },
+      {
+        "job_competency": "Cash management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6576,
+        "evidence": {
+          "tfidf_score": 0.011121949519966274,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 4.835595563730239,
+          "semantic_score": 0.5760294198989868,
+          "matched_candidate_competency": "Management advising"
+        },
+        "candidate_evidence": [
+          "Management advising"
+        ]
+      },
+      {
+        "job_competency": "International and cross-cultural work experience",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6639,
+        "evidence": {
+          "tfidf_score": 0.20857607437856715,
+          "tfidf_matched_terms": [
+            "and",
+            "work"
+          ],
+          "bm25_score": 4.835595563730239,
+          "semantic_score": 0.38851940631866455,
+          "matched_candidate_competency": "Independent work"
+        },
+        "candidate_evidence": [
+          "Independent work"
+        ]
+      },
+      {
+        "job_competency": "Audit experience",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2328,
+        "evidence": {
+          "tfidf_score": 0.011121949519966272,
+          "tfidf_matched_terms": [
+            "audit"
+          ],
+          "bm25_score": 4.835595563730239,
+          "semantic_score": 0.8050539493560791,
+          "matched_candidate_competency": "Audit preparation"
+        },
+        "candidate_evidence": [
+          "Audit preparation"
+        ]
+      },
+      {
+        "job_competency": "SAP BW",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2288,
+        "evidence": {
+          "tfidf_score": 0.02225588583165183,
+          "tfidf_matched_terms": [
+            "sap"
+          ],
+          "bm25_score": 4.658435028265942,
+          "semantic_score": 0.8755380511283875,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "SAP CRM",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2345,
+        "evidence": {
+          "tfidf_score": 0.02225588583165183,
+          "tfidf_matched_terms": [
+            "sap"
+          ],
+          "bm25_score": 4.658435028265942,
+          "semantic_score": 0.7799779176712036,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Journal entry preparation",
+      "Accounts receivable",
+      "Accounts payable"
+    ],
+    "partial_matches": [
+      "General ledger accounting",
+      "Payroll and cost accruals",
+      "Financial analysis",
+      "SAP FI",
+      "US GAAP",
+      "Accounting experience",
+      "Audit experience",
+      "SAP BW",
+      "SAP CRM"
+    ],
+    "weak_matches": [
+      "Month-end accounting close",
+      "IFRS accounting",
+      "US tax",
+      "Microsoft Excel",
+      "Microsoft PowerPoint",
+      "Cash management",
+      "International and cross-cultural work experience"
+    ],
+    "missing": []
+  },
+  "three_category": {
+    "strength_matches": [
+      "Journal entry preparation",
+      "Accounts receivable",
+      "Accounts payable"
+    ],
+    "partial_matches": [
+      "General ledger accounting",
+      "Payroll and cost accruals",
+      "Financial analysis",
+      "SAP FI",
+      "US GAAP",
+      "Accounting experience",
+      "Audit experience",
+      "SAP BW",
+      "SAP CRM"
+    ],
+    "competency_gaps": [
+      "Month-end accounting close",
+      "IFRS accounting",
+      "US tax",
+      "Microsoft Excel",
+      "Microsoft PowerPoint",
+      "Cash management",
+      "International and cross-cultural work experience"
+    ]
+  },
+  "counts": {
+    "requirements": 19,
+    "strength_matches": 3,
+    "partial_matches": 9,
+    "competency_gaps": 7
+  },
+  "latency_ms": 41.93,
+  "analyzed_at": "2026-09-27T21:52:41.298435+00:00"
+}

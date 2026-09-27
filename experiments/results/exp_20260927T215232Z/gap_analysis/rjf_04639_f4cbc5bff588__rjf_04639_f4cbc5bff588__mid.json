@@ -1,0 +1,365 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_04639_f4cbc5bff588",
+  "jd_id": "rjf_04639_f4cbc5bff588",
+  "pair_id": "rjf_04639_f4cbc5bff588",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Docker",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7345,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4095425307750702,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Kubernetes",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9397,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30148109793663025,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Relational databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6787,
+        "evidence": {
+          "tfidf_score": 0.015335257080992575,
+          "tfidf_matched_terms": [
+            "databases"
+          ],
+          "bm25_score": 1.5123593976205159,
+          "semantic_score": 0.5495672225952148,
+          "matched_candidate_competency": "Created database schemas and interacted with databases to add, update, and delete records through JDBC."
+        },
+        "candidate_evidence": [
+          "Created database schemas and interacted with databases to add, update, and delete records through JDBC."
+        ]
+      },
+      {
+        "job_competency": "RESTful architecture",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6861,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.7117707133293152,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Microservices",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7095,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5653563737869263,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "AWS",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7335,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41539958119392395,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "CI/CD",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.937,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.315161794424057,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1655,
+        "evidence": {
+          "tfidf_score": 0.05295827335451436,
+          "tfidf_matched_terms": [
+            "java"
+          ],
+          "bm25_score": 4.992779367467838,
+          "semantic_score": 1.000000238418579,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Cloud technologies",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9297,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3517310917377472,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "System integrations",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.93,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35022005438804626,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Security coding practices",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7293,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44167932868003845,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Agile software development",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.171,
+        "evidence": {
+          "tfidf_score": 0.09376907848063627,
+          "tfidf_matched_terms": [
+            "agile",
+            "development"
+          ],
+          "bm25_score": 4.992779367467838,
+          "semantic_score": 0.8588431477546692,
+          "matched_candidate_competency": "Agile"
+        },
+        "candidate_evidence": [
+          "Agile"
+        ]
+      },
+      {
+        "job_competency": "Code reviews",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6687,
+        "evidence": {
+          "tfidf_score": 0.03070195904147472,
+          "tfidf_matched_terms": [
+            "code"
+          ],
+          "bm25_score": 2.4942812465010356,
+          "semantic_score": 0.47225749492645264,
+          "matched_candidate_competency": "Fixed bugs and built reusable code."
+        },
+        "candidate_evidence": [
+          "Fixed bugs and built reusable code."
+        ]
+      },
+      {
+        "job_competency": "Verbal and written communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6923,
+        "evidence": {
+          "tfidf_score": 0.15113169815441416,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5331254450680507,
+          "semantic_score": 0.3596585988998413,
+          "matched_candidate_competency": "Implemented functionality to capture images and record audio and video."
+        },
+        "candidate_evidence": [
+          "Implemented functionality to capture images and record audio and video."
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.0969,
+        "evidence": {
+          "tfidf_score": 0.026452016803223104,
+          "tfidf_matched_terms": [
+            "python"
+          ],
+          "bm25_score": 5.754124808698176,
+          "semantic_score": 1.000000238418579,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Apache Kafka",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3862,
+        "evidence": {
+          "tfidf_score": 0.015335257080992575,
+          "tfidf_matched_terms": [
+            "apache"
+          ],
+          "bm25_score": 4.7937532737253115,
+          "semantic_score": 0.3405472934246063,
+          "matched_candidate_competency": "Apache Tomcat"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat"
+        ]
+      },
+      {
+        "job_competency": "Financial planning system integrations",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5612,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32329022884368896,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Java",
+      "Agile software development",
+      "Python"
+    ],
+    "partial_matches": [],
+    "weak_matches": [
+      "Docker",
+      "Relational databases",
+      "RESTful architecture",
+      "Microservices",
+      "AWS",
+      "Security coding practices",
+      "Code reviews",
+      "Verbal and written communication",
+      "Apache Kafka"
+    ],
+    "missing": [
+      "Kubernetes",
+      "CI/CD",
+      "Cloud technologies",
+      "System integrations",
+      "Financial planning system integrations"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Java",
+      "Agile software development",
+      "Python"
+    ],
+    "partial_matches": [],
+    "competency_gaps": [
+      "Docker",
+      "Relational databases",
+      "RESTful architecture",
+      "Microservices",
+      "AWS",
+      "Security coding practices",
+      "Code reviews",
+      "Verbal and written communication",
+      "Apache Kafka",
+      "Kubernetes",
+      "CI/CD",
+      "Cloud technologies",
+      "System integrations",
+      "Financial planning system integrations"
+    ]
+  },
+  "counts": {
+    "requirements": 17,
+    "strength_matches": 3,
+    "partial_matches": 0,
+    "competency_gaps": 14
+  },
+  "latency_ms": 41.46,
+  "analyzed_at": "2026-09-27T21:52:40.589845+00:00"
+}

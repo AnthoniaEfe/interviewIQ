@@ -1,0 +1,180 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_05131_761b3d7acef1",
+  "jd_id": "rjf_05131_761b3d7acef1",
+  "pair_id": "rjf_05131_761b3d7acef1",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.717,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5188795328140259,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Low-latency techniques",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9434,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28304430842399597,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Multithreaded concurrency programming",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6567,
+        "evidence": {
+          "tfidf_score": 0.014885361978718934,
+          "tfidf_matched_terms": [
+            "programming"
+          ],
+          "bm25_score": 3.6287885097397434,
+          "semantic_score": 0.36715614795684814,
+          "matched_candidate_competency": "Object-Oriented Programming"
+        },
+        "candidate_evidence": [
+          "Object-Oriented Programming"
+        ]
+      },
+      {
+        "job_competency": "Lock-free algorithms",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3734,
+        "evidence": {
+          "tfidf_score": 0.014885361978718934,
+          "tfidf_matched_terms": [
+            "algorithms"
+          ],
+          "bm25_score": 5.2585097652030575,
+          "semantic_score": 0.5051996111869812,
+          "matched_candidate_competency": "Algorithms"
+        },
+        "candidate_evidence": [
+          "Algorithms"
+        ]
+      },
+      {
+        "job_competency": "Distributed systems design and development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3944,
+        "evidence": {
+          "tfidf_score": 0.2293155366574295,
+          "tfidf_matched_terms": [
+            "and",
+            "design",
+            "development"
+          ],
+          "bm25_score": 3.2812335742844385,
+          "semantic_score": 0.41599196195602417,
+          "matched_candidate_competency": "Design Patterns"
+        },
+        "candidate_evidence": [
+          "Design Patterns"
+        ]
+      },
+      {
+        "job_competency": "High-performance trading systems",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9245,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37771841883659363,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "System efficiency, scalability, and stability",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6952,
+        "evidence": {
+          "tfidf_score": 0.11740188271253246,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.465879951656623,
+          "semantic_score": 0.35775691270828247,
+          "matched_candidate_competency": "Studied requirements and information needs and conferred with stakeholders"
+        },
+        "candidate_evidence": [
+          "Studied requirements and information needs and conferred with stakeholders"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Lock-free algorithms",
+      "Distributed systems design and development"
+    ],
+    "weak_matches": [
+      "Java",
+      "Multithreaded concurrency programming",
+      "System efficiency, scalability, and stability"
+    ],
+    "missing": [
+      "Low-latency techniques",
+      "High-performance trading systems"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Lock-free algorithms",
+      "Distributed systems design and development"
+    ],
+    "competency_gaps": [
+      "Java",
+      "Multithreaded concurrency programming",
+      "System efficiency, scalability, and stability",
+      "Low-latency techniques",
+      "High-performance trading systems"
+    ]
+  },
+  "counts": {
+    "requirements": 7,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 5
+  },
+  "latency_ms": 23.8,
+  "analyzed_at": "2026-09-27T22:33:13.780812+00:00"
+}

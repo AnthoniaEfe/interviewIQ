@@ -1,0 +1,101 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_03166_82125d382220",
+  "jd_id": "rjf_03166_82125d382220",
+  "pair_id": "rjf_03166_82125d382220",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Data analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3741,
+        "evidence": {
+          "tfidf_score": 0.019808832269300754,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 4.4714369545924955,
+          "semantic_score": 0.49386975169181824,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Root cause analysis",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9568,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.21582326292991638,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Business analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3776,
+        "evidence": {
+          "tfidf_score": 0.013201713098799285,
+          "tfidf_matched_terms": [
+            "business"
+          ],
+          "bm25_score": 3.881214794122897,
+          "semantic_score": 0.5627771615982056,
+          "matched_candidate_competency": "Performed consumer, retail, business-to-business, direct, door-to-door, and telemarketing sales."
+        },
+        "candidate_evidence": [
+          "Performed consumer, retail, business-to-business, direct, door-to-door, and telemarketing sales."
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Data analysis",
+      "Business analysis"
+    ],
+    "weak_matches": [],
+    "missing": [
+      "Root cause analysis"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Data analysis",
+      "Business analysis"
+    ],
+    "competency_gaps": [
+      "Root cause analysis"
+    ]
+  },
+  "counts": {
+    "requirements": 3,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 1
+  },
+  "latency_ms": 444.73,
+  "analyzed_at": "2026-09-27T22:33:13.061910+00:00"
+}

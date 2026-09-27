@@ -1,0 +1,140 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_03202_f43978101918",
+  "jd_id": "rjf_03202_f43978101918",
+  "pair_id": "rjf_03202_f43978101918",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "DFMEA/FMEA reviews",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.959,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2051166594028473,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "WCCA updates and reviews",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6444,
+        "evidence": {
+          "tfidf_score": 0.019188972103535422,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9425731563291487,
+          "semantic_score": 0.20790711045265198,
+          "matched_candidate_competency": "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings"
+        },
+        "candidate_evidence": [
+          "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings"
+        ]
+      },
+      {
+        "job_competency": "DV testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3927,
+        "evidence": {
+          "tfidf_score": 0.029276901844876566,
+          "tfidf_matched_terms": [
+            "testing"
+          ],
+          "bm25_score": 0.8971060984574806,
+          "semantic_score": 0.33681467175483704,
+          "matched_candidate_competency": "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker"
+        },
+        "candidate_evidence": [
+          "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker"
+        ]
+      },
+      {
+        "job_competency": "Hardware verification and validation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3869,
+        "evidence": {
+          "tfidf_score": 0.019188972103535422,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9425731563291487,
+          "semantic_score": 0.36680927872657776,
+          "matched_candidate_competency": "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings"
+        },
+        "candidate_evidence": [
+          "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings"
+        ]
+      },
+      {
+        "job_competency": "Hardware updates",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9228,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3858194947242737,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "DV testing",
+      "Hardware verification and validation"
+    ],
+    "weak_matches": [
+      "WCCA updates and reviews"
+    ],
+    "missing": [
+      "DFMEA/FMEA reviews",
+      "Hardware updates"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "DV testing",
+      "Hardware verification and validation"
+    ],
+    "competency_gaps": [
+      "WCCA updates and reviews",
+      "DFMEA/FMEA reviews",
+      "Hardware updates"
+    ]
+  },
+  "counts": {
+    "requirements": 5,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 3
+  },
+  "latency_ms": 21.52,
+  "analyzed_at": "2026-09-27T21:52:40.020631+00:00"
+}

@@ -1,0 +1,693 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_04652_021f517c37fa",
+  "jd_id": "rjf_04652_021f517c37fa",
+  "pair_id": "rjf_04652_021f517c37fa",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Data engineering workflows",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.362,
+        "evidence": {
+          "tfidf_score": 0.16708089487386046,
+          "tfidf_matched_terms": [
+            "data",
+            "engineering"
+          ],
+          "bm25_score": 7.316540491380326,
+          "semantic_score": 0.7657113075256348,
+          "matched_candidate_competency": "Data engineering"
+        },
+        "candidate_evidence": [
+          "Data engineering"
+        ]
+      },
+      {
+        "job_competency": "Data analytics and reporting solutions",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1623,
+        "evidence": {
+          "tfidf_score": 0.4255488100782918,
+          "tfidf_matched_terms": [
+            "analytics",
+            "and",
+            "data",
+            "reporting"
+          ],
+          "bm25_score": 8.654007544637771,
+          "semantic_score": 0.8567341566085815,
+          "matched_candidate_competency": "Reporting and analytics"
+        },
+        "candidate_evidence": [
+          "Reporting and analytics"
+        ]
+      },
+      {
+        "job_competency": "Agile methodologies",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9306,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34712159633636475,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Post-deployment support",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.696,
+        "evidence": {
+          "tfidf_score": 0.005710765876384625,
+          "tfidf_matched_terms": [
+            "deployment"
+          ],
+          "bm25_score": 2.8359005397671257,
+          "semantic_score": 0.4560151994228363,
+          "matched_candidate_competency": "Worked on architecture design for multistate implementation and deployment."
+        },
+        "candidate_evidence": [
+          "Worked on architecture design for multistate implementation and deployment."
+        ]
+      },
+      {
+        "job_competency": "Data feed integration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3884,
+        "evidence": {
+          "tfidf_score": 0.16708089487386046,
+          "tfidf_matched_terms": [
+            "data",
+            "integration"
+          ],
+          "bm25_score": 5.718694048360712,
+          "semantic_score": 0.6081444025039673,
+          "matched_candidate_competency": "Data integration and orchestration"
+        },
+        "candidate_evidence": [
+          "Data integration and orchestration"
+        ]
+      },
+      {
+        "job_competency": "Data profiling and analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3914,
+        "evidence": {
+          "tfidf_score": 0.38144600528723827,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 2.3155391633658384,
+          "semantic_score": 0.644814670085907,
+          "matched_candidate_competency": "ETL and data migration"
+        },
+        "candidate_evidence": [
+          "ETL and data migration"
+        ]
+      },
+      {
+        "job_competency": "Metadata and data structures",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3898,
+        "evidence": {
+          "tfidf_score": 0.42404885843343665,
+          "tfidf_matched_terms": [
+            "and",
+            "data",
+            "structures"
+          ],
+          "bm25_score": 3.5759640233189347,
+          "semantic_score": 0.5448637008666992,
+          "matched_candidate_competency": "Created data normalization jobs and migrated on-premises database structures to Redshift."
+        },
+        "candidate_evidence": [
+          "Created data normalization jobs and migrated on-premises database structures to Redshift."
+        ]
+      },
+      {
+        "job_competency": "Data mapping specifications",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.667,
+        "evidence": {
+          "tfidf_score": 0.14371939950999668,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 1.7073376151590756,
+          "semantic_score": 0.6090531349182129,
+          "matched_candidate_competency": "Data engineering"
+        },
+        "candidate_evidence": [
+          "Data engineering"
+        ]
+      },
+      {
+        "job_competency": "ETL development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4058,
+        "evidence": {
+          "tfidf_score": 0.06303310603813704,
+          "tfidf_matched_terms": [
+            "development",
+            "etl"
+          ],
+          "bm25_score": 3.0152313678017864,
+          "semantic_score": 0.6931462287902832,
+          "matched_candidate_competency": "ETL and data migration"
+        },
+        "candidate_evidence": [
+          "ETL and data migration"
+        ]
+      },
+      {
+        "job_competency": "Task automation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9279,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36060231924057007,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Data validation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6762,
+        "evidence": {
+          "tfidf_score": 0.23555835154036475,
+          "tfidf_matched_terms": [
+            "data",
+            "validation"
+          ],
+          "bm25_score": 2.363562006278357,
+          "semantic_score": 0.4389133155345917,
+          "matched_candidate_competency": "Used AWS EMR, S3, EC2, and Lambda for distributed processing, storage, Kafka infrastructure, and data validation/transformation."
+        },
+        "candidate_evidence": [
+          "Used AWS EMR, S3, EC2, and Lambda for distributed processing, storage, Kafka infrastructure, and data validation/transformation."
+        ]
+      },
+      {
+        "job_competency": "Data quality management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3696,
+        "evidence": {
+          "tfidf_score": 0.20004321475131884,
+          "tfidf_matched_terms": [
+            "data",
+            "management",
+            "quality"
+          ],
+          "bm25_score": 5.718694048360712,
+          "semantic_score": 0.7713310718536377,
+          "matched_candidate_competency": "Data quality and reconciliation"
+        },
+        "candidate_evidence": [
+          "Data quality and reconciliation"
+        ]
+      },
+      {
+        "job_competency": "Master data management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6679,
+        "evidence": {
+          "tfidf_score": 0.16708089487386046,
+          "tfidf_matched_terms": [
+            "data",
+            "management"
+          ],
+          "bm25_score": 2.648811203552496,
+          "semantic_score": 0.5231001973152161,
+          "matched_candidate_competency": "Supported Hadoop clusters, HDFS, capacity planning, node management, and maintenance."
+        },
+        "candidate_evidence": [
+          "Supported Hadoop clusters, HDFS, capacity planning, node management, and maintenance."
+        ]
+      },
+      {
+        "job_competency": "Requirements gathering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.694,
+        "evidence": {
+          "tfidf_score": 0.0073664520740081,
+          "tfidf_matched_terms": [
+            "requirements"
+          ],
+          "bm25_score": 2.4848793512602114,
+          "semantic_score": 0.49114030599594116,
+          "matched_candidate_competency": "Gathered business requirements and converted them into T-SQL stored procedures."
+        },
+        "candidate_evidence": [
+          "Gathered business requirements and converted them into T-SQL stored procedures."
+        ]
+      },
+      {
+        "job_competency": "Solution implementation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6842,
+        "evidence": {
+          "tfidf_score": 0.0073664520740081,
+          "tfidf_matched_terms": [
+            "implementation"
+          ],
+          "bm25_score": 2.8359005397671257,
+          "semantic_score": 0.5287770628929138,
+          "matched_candidate_competency": "Worked on architecture design for multistate implementation and deployment."
+        },
+        "candidate_evidence": [
+          "Worked on architecture design for multistate implementation and deployment."
+        ]
+      },
+      {
+        "job_competency": "Legal authorization to work",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9326,
+        "evidence": {
+          "tfidf_score": 0.02418673213260749,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 1.6093654116166378,
+          "semantic_score": 0.21147306263446808,
+          "matched_candidate_competency": "Migrated data from RDBMS to Hadoop using Sqoop and implemented Oozie jobs."
+        },
+        "candidate_evidence": [
+          "Migrated data from RDBMS to Hadoop using Sqoop and implemented Oozie jobs."
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2184,
+        "evidence": {
+          "tfidf_score": 0.05088615255033593,
+          "tfidf_matched_terms": [
+            "python"
+          ],
+          "bm25_score": 4.8042755696882296,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "C#",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4268,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5536973476409912,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "PowerShell",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2133,
+        "evidence": {
+          "tfidf_score": 0.012706504560873508,
+          "tfidf_matched_terms": [
+            "powershell"
+          ],
+          "bm25_score": 6.520083197620529,
+          "semantic_score": 0.9999997019767761,
+          "matched_candidate_competency": "PowerShell"
+        },
+        "candidate_evidence": [
+          "PowerShell"
+        ]
+      },
+      {
+        "job_competency": "SQL scripting",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2404,
+        "evidence": {
+          "tfidf_score": 0.09705631311227533,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 2.9953733770377617,
+          "semantic_score": 0.7206190228462219,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "SQL Server",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.104,
+        "evidence": {
+          "tfidf_score": 0.19222599237951782,
+          "tfidf_matched_terms": [
+            "server",
+            "sql"
+          ],
+          "bm25_score": 5.826115467466872,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "SQL Server"
+        },
+        "candidate_evidence": [
+          "SQL Server"
+        ]
+      },
+      {
+        "job_competency": "Oracle",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2159,
+        "evidence": {
+          "tfidf_score": 0.02541901402484413,
+          "tfidf_matched_terms": [
+            "oracle"
+          ],
+          "bm25_score": 5.728031959010225,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Oracle"
+        },
+        "candidate_evidence": [
+          "Oracle"
+        ]
+      },
+      {
+        "job_competency": "MySQL",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2133,
+        "evidence": {
+          "tfidf_score": 0.012706504560873508,
+          "tfidf_matched_terms": [
+            "mysql"
+          ],
+          "bm25_score": 6.520083197620529,
+          "semantic_score": 1.000000238418579,
+          "matched_candidate_competency": "MySQL"
+        },
+        "candidate_evidence": [
+          "MySQL"
+        ]
+      },
+      {
+        "job_competency": "PostgreSQL",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2133,
+        "evidence": {
+          "tfidf_score": 0.012706504560873508,
+          "tfidf_matched_terms": [
+            "postgresql"
+          ],
+          "bm25_score": 6.520083197620529,
+          "semantic_score": 1.000000238418579,
+          "matched_candidate_competency": "PostgreSQL"
+        },
+        "candidate_evidence": [
+          "PostgreSQL"
+        ]
+      },
+      {
+        "job_competency": "Data visualization and reporting tools",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2231,
+        "evidence": {
+          "tfidf_score": 0.3706779569212416,
+          "tfidf_matched_terms": [
+            "and",
+            "data",
+            "reporting"
+          ],
+          "bm25_score": 5.027538880825878,
+          "semantic_score": 0.6668274998664856,
+          "matched_candidate_competency": "Reporting and analytics"
+        },
+        "candidate_evidence": [
+          "Reporting and analytics"
+        ]
+      },
+      {
+        "job_competency": "Power BI",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.0971,
+        "evidence": {
+          "tfidf_score": 0.01797112611519672,
+          "tfidf_matched_terms": [
+            "bi",
+            "power"
+          ],
+          "bm25_score": 11.2184057524425,
+          "semantic_score": 1.0000003576278687,
+          "matched_candidate_competency": "Power BI"
+        },
+        "candidate_evidence": [
+          "Power BI"
+        ]
+      },
+      {
+        "job_competency": "Tableau",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2159,
+        "evidence": {
+          "tfidf_score": 0.02541901402484413,
+          "tfidf_matched_terms": [
+            "tableau"
+          ],
+          "bm25_score": 5.728031959010225,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Tableau"
+        },
+        "candidate_evidence": [
+          "Tableau"
+        ]
+      },
+      {
+        "job_competency": "SSRS",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4214,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6105441451072693,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Aircraft data frames",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4249,
+        "evidence": {
+          "tfidf_score": 0.14371939950999668,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 1.7073376151590756,
+          "semantic_score": 0.3520560562610626,
+          "matched_candidate_competency": "Data engineering"
+        },
+        "candidate_evidence": [
+          "Data engineering"
+        ]
+      },
+      {
+        "job_competency": "Regular expressions",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5675,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2709687352180481,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "ETL tools",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2458,
+        "evidence": {
+          "tfidf_score": 0.036902059098006985,
+          "tfidf_matched_terms": [
+            "etl"
+          ],
+          "bm25_score": 3.0152313678017864,
+          "semantic_score": 0.6745408773422241,
+          "matched_candidate_competency": "ETL and data migration"
+        },
+        "candidate_evidence": [
+          "ETL and data migration"
+        ]
+      },
+      {
+        "job_competency": "Bilingual communication",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4136,
+        "evidence": {
+          "tfidf_score": 0.007366452074008099,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 4.384218899913804,
+          "semantic_score": 0.3932495415210724,
+          "matched_candidate_competency": "Communication across organizational levels"
+        },
+        "candidate_evidence": [
+          "Communication across organizational levels"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Data analytics and reporting solutions",
+      "SQL Server",
+      "Power BI"
+    ],
+    "partial_matches": [
+      "Data engineering workflows",
+      "Data feed integration",
+      "Data profiling and analysis",
+      "Metadata and data structures",
+      "ETL development",
+      "Data quality management",
+      "Python",
+      "PowerShell",
+      "SQL scripting",
+      "Oracle",
+      "MySQL",
+      "PostgreSQL",
+      "Data visualization and reporting tools",
+      "Tableau",
+      "ETL tools"
+    ],
+    "weak_matches": [
+      "Post-deployment support",
+      "Data mapping specifications",
+      "Data validation",
+      "Master data management",
+      "Requirements gathering",
+      "Solution implementation",
+      "C#",
+      "SSRS",
+      "Aircraft data frames",
+      "Bilingual communication"
+    ],
+    "missing": [
+      "Agile methodologies",
+      "Task automation",
+      "Legal authorization to work",
+      "Regular expressions"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Data analytics and reporting solutions",
+      "SQL Server",
+      "Power BI"
+    ],
+    "partial_matches": [
+      "Data engineering workflows",
+      "Data feed integration",
+      "Data profiling and analysis",
+      "Metadata and data structures",
+      "ETL development",
+      "Data quality management",
+      "Python",
+      "PowerShell",
+      "SQL scripting",
+      "Oracle",
+      "MySQL",
+      "PostgreSQL",
+      "Data visualization and reporting tools",
+      "Tableau",
+      "ETL tools"
+    ],
+    "competency_gaps": [
+      "Post-deployment support",
+      "Data mapping specifications",
+      "Data validation",
+      "Master data management",
+      "Requirements gathering",
+      "Solution implementation",
+      "C#",
+      "SSRS",
+      "Aircraft data frames",
+      "Bilingual communication",
+      "Agile methodologies",
+      "Task automation",
+      "Legal authorization to work",
+      "Regular expressions"
+    ]
+  },
+  "counts": {
+    "requirements": 32,
+    "strength_matches": 3,
+    "partial_matches": 15,
+    "competency_gaps": 14
+  },
+  "latency_ms": 74.13,
+  "analyzed_at": "2026-09-27T21:52:40.664964+00:00"
+}

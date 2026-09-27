@@ -1,0 +1,473 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_05015_76a5778b1247",
+  "jd_id": "rjf_05015_76a5778b1247",
+  "pair_id": "rjf_05015_76a5778b1247",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "General ledger accounting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.345,
+        "evidence": {
+          "tfidf_score": 0.14416037222976513,
+          "tfidf_matched_terms": [
+            "accounting",
+            "general",
+            "ledger"
+          ],
+          "bm25_score": 7.871180662601652,
+          "semantic_score": 0.7535895109176636,
+          "matched_candidate_competency": "General Ledger"
+        },
+        "candidate_evidence": [
+          "General Ledger"
+        ]
+      },
+      {
+        "job_competency": "Bookkeeping",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7042,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5986295938491821,
+          "matched_candidate_competency": "General Ledger"
+        },
+        "candidate_evidence": [
+          "General Ledger"
+        ]
+      },
+      {
+        "job_competency": "Month-end closing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.653,
+        "evidence": {
+          "tfidf_score": 0.041312489908596386,
+          "tfidf_matched_terms": [
+            "closing",
+            "end"
+          ],
+          "bm25_score": 4.635301439173715,
+          "semantic_score": 0.48223236203193665,
+          "matched_candidate_competency": "Closing Processes"
+        },
+        "candidate_evidence": [
+          "Closing Processes"
+        ]
+      },
+      {
+        "job_competency": "Local GAAP",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3959,
+        "evidence": {
+          "tfidf_score": 0.015894299398108148,
+          "tfidf_matched_terms": [
+            "gaap"
+          ],
+          "bm25_score": 4.635301439173715,
+          "semantic_score": 0.6235571503639221,
+          "matched_candidate_competency": "GAAP Compliance"
+        },
+        "candidate_evidence": [
+          "GAAP Compliance"
+        ]
+      },
+      {
+        "job_competency": "IFRS",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9571,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.21439741551876068,
+          "matched_candidate_competency": "General Ledger"
+        },
+        "candidate_evidence": [
+          "General Ledger"
+        ]
+      },
+      {
+        "job_competency": "US GAAP",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3887,
+        "evidence": {
+          "tfidf_score": 0.015894299398108148,
+          "tfidf_matched_terms": [
+            "gaap"
+          ],
+          "bm25_score": 4.635301439173715,
+          "semantic_score": 0.6958808898925781,
+          "matched_candidate_competency": "GAAP Compliance"
+        },
+        "candidate_evidence": [
+          "GAAP Compliance"
+        ]
+      },
+      {
+        "job_competency": "Cost center accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6566,
+        "evidence": {
+          "tfidf_score": 0.06215871603516348,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 3.262486477791419,
+          "semantic_score": 0.5641613602638245,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Profit center accounting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.404,
+        "evidence": {
+          "tfidf_score": 0.06215871603516348,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 3.262486477791419,
+          "semantic_score": 0.6283780336380005,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Standard costing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7122,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5485910177230835,
+          "matched_candidate_competency": "General Ledger"
+        },
+        "candidate_evidence": [
+          "General Ledger"
+        ]
+      },
+      {
+        "job_competency": "Project-based costing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4065,
+        "evidence": {
+          "tfidf_score": 0.012321891423420247,
+          "tfidf_matched_terms": [
+            "project"
+          ],
+          "bm25_score": 2.7467843429721035,
+          "semantic_score": 0.6853671669960022,
+          "matched_candidate_competency": "Analyzed P&Ls to project future expenses."
+        },
+        "candidate_evidence": [
+          "Analyzed P&Ls to project future expenses."
+        ]
+      },
+      {
+        "job_competency": "Manufacturing ERP systems",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.927,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3649601340293884,
+          "matched_candidate_competency": "General Ledger"
+        },
+        "candidate_evidence": [
+          "General Ledger"
+        ]
+      },
+      {
+        "job_competency": "IQMS by Dassault",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9076,
+        "evidence": {
+          "tfidf_score": 0.012321891423420247,
+          "tfidf_matched_terms": [
+            "by"
+          ],
+          "bm25_score": 2.361873943514251,
+          "semantic_score": 0.24608302116394043,
+          "matched_candidate_competency": "Prepared balance sheet reconciliations by analyzing general ledger activity."
+        },
+        "candidate_evidence": [
+          "Prepared balance sheet reconciliations by analyzing general ledger activity."
+        ]
+      },
+      {
+        "job_competency": "Microsoft Office",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4012,
+        "evidence": {
+          "tfidf_score": 0.015894299398108148,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 4.635301439173715,
+          "semantic_score": 0.5703072547912598,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Physical inventory management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.383,
+        "evidence": {
+          "tfidf_score": 0.055184852547662144,
+          "tfidf_matched_terms": [
+            "inventory",
+            "management"
+          ],
+          "bm25_score": 4.07496344586828,
+          "semantic_score": 0.7721530795097351,
+          "matched_candidate_competency": "Client Relationship Management"
+        },
+        "candidate_evidence": [
+          "Client Relationship Management"
+        ]
+      },
+      {
+        "job_competency": "Cost variance analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3499,
+        "evidence": {
+          "tfidf_score": 0.041312489908596386,
+          "tfidf_matched_terms": [
+            "analysis",
+            "variance"
+          ],
+          "bm25_score": 8.57089177047454,
+          "semantic_score": 0.7195443511009216,
+          "matched_candidate_competency": "Variance Analysis"
+        },
+        "candidate_evidence": [
+          "Variance Analysis"
+        ]
+      },
+      {
+        "job_competency": "Budget preparation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4158,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.8424698114395142,
+          "matched_candidate_competency": "General Ledger"
+        },
+        "candidate_evidence": [
+          "General Ledger"
+        ]
+      },
+      {
+        "job_competency": "Staff management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4047,
+        "evidence": {
+          "tfidf_score": 0.015894299398108148,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 4.07496344586828,
+          "semantic_score": 0.5843672752380371,
+          "matched_candidate_competency": "Client Relationship Management"
+        },
+        "candidate_evidence": [
+          "Client Relationship Management"
+        ]
+      },
+      {
+        "job_competency": "Motivating cross-functional contributors",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9512,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24392125010490417,
+          "matched_candidate_competency": "General Ledger"
+        },
+        "candidate_evidence": [
+          "General Ledger"
+        ]
+      },
+      {
+        "job_competency": "Cross-functional collaboration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7331,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4179990291595459,
+          "matched_candidate_competency": "General Ledger"
+        },
+        "candidate_evidence": [
+          "General Ledger"
+        ]
+      },
+      {
+        "job_competency": "SQL query writing",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5533,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38940542936325073,
+          "matched_candidate_competency": "General Ledger"
+        },
+        "candidate_evidence": [
+          "General Ledger"
+        ]
+      },
+      {
+        "job_competency": "Crystal Reports",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4055,
+        "evidence": {
+          "tfidf_score": 0.03182361350541179,
+          "tfidf_matched_terms": [
+            "reports"
+          ],
+          "bm25_score": 2.539041462288781,
+          "semantic_score": 0.5301044583320618,
+          "matched_candidate_competency": "Monthly, Quarterly, and Year-End Reports"
+        },
+        "candidate_evidence": [
+          "Monthly, Quarterly, and Year-End Reports"
+        ]
+      },
+      {
+        "job_competency": "Business administration",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4083,
+        "evidence": {
+          "tfidf_score": 0.03182361350541179,
+          "tfidf_matched_terms": [
+            "business"
+          ],
+          "bm25_score": 1.7588700663920407,
+          "semantic_score": 0.568740963935852,
+          "matched_candidate_competency": "Resolved issues through communication with business partners and identification of conflicts."
+        },
+        "candidate_evidence": [
+          "Resolved issues through communication with business partners and identification of conflicts."
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "General ledger accounting",
+      "Local GAAP",
+      "US GAAP",
+      "Profit center accounting",
+      "Project-based costing",
+      "Microsoft Office",
+      "Physical inventory management",
+      "Cost variance analysis",
+      "Budget preparation",
+      "Staff management"
+    ],
+    "weak_matches": [
+      "Bookkeeping",
+      "Month-end closing",
+      "Cost center accounting",
+      "Standard costing",
+      "Cross-functional collaboration",
+      "Crystal Reports",
+      "Business administration"
+    ],
+    "missing": [
+      "IFRS",
+      "Manufacturing ERP systems",
+      "IQMS by Dassault",
+      "Motivating cross-functional contributors",
+      "SQL query writing"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "General ledger accounting",
+      "Local GAAP",
+      "US GAAP",
+      "Profit center accounting",
+      "Project-based costing",
+      "Microsoft Office",
+      "Physical inventory management",
+      "Cost variance analysis",
+      "Budget preparation",
+      "Staff management"
+    ],
+    "competency_gaps": [
+      "Bookkeeping",
+      "Month-end closing",
+      "Cost center accounting",
+      "Standard costing",
+      "Cross-functional collaboration",
+      "Crystal Reports",
+      "Business administration",
+      "IFRS",
+      "Manufacturing ERP systems",
+      "IQMS by Dassault",
+      "Motivating cross-functional contributors",
+      "SQL query writing"
+    ]
+  },
+  "counts": {
+    "requirements": 22,
+    "strength_matches": 0,
+    "partial_matches": 10,
+    "competency_gaps": 12
+  },
+  "latency_ms": 43.22,
+  "analyzed_at": "2026-09-27T21:52:40.769875+00:00"
+}

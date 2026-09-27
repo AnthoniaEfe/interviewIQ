@@ -1,0 +1,279 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_03794_301991d452b9",
+  "jd_id": "rjf_03794_301991d452b9",
+  "pair_id": "rjf_03794_301991d452b9",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Financial statement preparation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3792,
+        "evidence": {
+          "tfidf_score": 0.01720363582507288,
+          "tfidf_matched_terms": [
+            "preparation"
+          ],
+          "bm25_score": 3.5119380563112506,
+          "semantic_score": 0.5350455641746521,
+          "matched_candidate_competency": "Tax return preparation"
+        },
+        "candidate_evidence": [
+          "Tax return preparation"
+        ]
+      },
+      {
+        "job_competency": "Journal entry preparation and posting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3823,
+        "evidence": {
+          "tfidf_score": 0.17940402401363667,
+          "tfidf_matched_terms": [
+            "and",
+            "preparation"
+          ],
+          "bm25_score": 3.5119380563112506,
+          "semantic_score": 0.38196101784706116,
+          "matched_candidate_competency": "Tax return preparation"
+        },
+        "candidate_evidence": [
+          "Tax return preparation"
+        ]
+      },
+      {
+        "job_competency": "Budget preparation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3868,
+        "evidence": {
+          "tfidf_score": 0.02219137704946824,
+          "tfidf_matched_terms": [
+            "preparation"
+          ],
+          "bm25_score": 3.5119380563112506,
+          "semantic_score": 0.4548155665397644,
+          "matched_candidate_competency": "Tax return preparation"
+        },
+        "candidate_evidence": [
+          "Tax return preparation"
+        ]
+      },
+      {
+        "job_competency": "Financial projections",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7168,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5199400186538696,
+          "matched_candidate_competency": "International tax reporting"
+        },
+        "candidate_evidence": [
+          "International tax reporting"
+        ]
+      },
+      {
+        "job_competency": "Audit documentation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3986,
+        "evidence": {
+          "tfidf_score": 0.02219137704946824,
+          "tfidf_matched_terms": [
+            "documentation"
+          ],
+          "bm25_score": 2.8340890644670176,
+          "semantic_score": 0.4648979902267456,
+          "matched_candidate_competency": "Prepared and maintained support documentation"
+        },
+        "candidate_evidence": [
+          "Prepared and maintained support documentation"
+        ]
+      },
+      {
+        "job_competency": "Accounting processes, regulations, and procedures",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3445,
+        "evidence": {
+          "tfidf_score": 0.19486005155729655,
+          "tfidf_matched_terms": [
+            "accounting",
+            "and"
+          ],
+          "bm25_score": 3.782101817241017,
+          "semantic_score": 0.6976375579833984,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Financial data analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3844,
+        "evidence": {
+          "tfidf_score": 0.01720363582507288,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 3.5119380563112506,
+          "semantic_score": 0.48265451192855835,
+          "matched_candidate_competency": "Permanent establishment analysis"
+        },
+        "candidate_evidence": [
+          "Permanent establishment analysis"
+        ]
+      },
+      {
+        "job_competency": "Technical issue research",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6511,
+        "evidence": {
+          "tfidf_score": 0.017203635825072876,
+          "tfidf_matched_terms": [
+            "technical"
+          ],
+          "bm25_score": 2.3755730604158156,
+          "semantic_score": 0.4708705544471741,
+          "matched_candidate_competency": "Researched technical issues regarding international tax matters"
+        },
+        "candidate_evidence": [
+          "Researched technical issues regarding international tax matters"
+        ]
+      },
+      {
+        "job_competency": "Computer systems and software",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3608,
+        "evidence": {
+          "tfidf_score": 0.2070505514686076,
+          "tfidf_matched_terms": [
+            "and",
+            "software"
+          ],
+          "bm25_score": 3.988973459286343,
+          "semantic_score": 0.48665714263916016,
+          "matched_candidate_competency": "Accounting software"
+        },
+        "candidate_evidence": [
+          "Accounting software"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Windows PC",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9444,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2782216966152191,
+          "matched_candidate_competency": "International tax reporting"
+        },
+        "candidate_evidence": [
+          "International tax reporting"
+        ]
+      },
+      {
+        "job_competency": "Web browsing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9538,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2311379313468933,
+          "matched_candidate_competency": "International tax reporting"
+        },
+        "candidate_evidence": [
+          "International tax reporting"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Outlook",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7305,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4346309006214142,
+          "matched_candidate_competency": "International tax reporting"
+        },
+        "candidate_evidence": [
+          "International tax reporting"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Financial statement preparation",
+      "Journal entry preparation and posting",
+      "Budget preparation",
+      "Audit documentation",
+      "Accounting processes, regulations, and procedures",
+      "Financial data analysis",
+      "Computer systems and software"
+    ],
+    "weak_matches": [
+      "Financial projections",
+      "Technical issue research",
+      "Microsoft Outlook"
+    ],
+    "missing": [
+      "Microsoft Windows PC",
+      "Web browsing"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Financial statement preparation",
+      "Journal entry preparation and posting",
+      "Budget preparation",
+      "Audit documentation",
+      "Accounting processes, regulations, and procedures",
+      "Financial data analysis",
+      "Computer systems and software"
+    ],
+    "competency_gaps": [
+      "Financial projections",
+      "Technical issue research",
+      "Microsoft Outlook",
+      "Microsoft Windows PC",
+      "Web browsing"
+    ]
+  },
+  "counts": {
+    "requirements": 12,
+    "strength_matches": 0,
+    "partial_matches": 7,
+    "competency_gaps": 5
+  },
+  "latency_ms": 26.15,
+  "analyzed_at": "2026-09-27T21:52:40.352928+00:00"
+}

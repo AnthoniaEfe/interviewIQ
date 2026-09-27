@@ -1,0 +1,499 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_03316_24b519fd92df",
+  "jd_id": "rjf_03316_24b519fd92df",
+  "pair_id": "rjf_03316_24b519fd92df",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Python",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7231,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4805905818939209,
+          "matched_candidate_competency": "Requirements Analysis"
+        },
+        "candidate_evidence": [
+          "Requirements Analysis"
+        ]
+      },
+      {
+        "job_competency": "Python web frameworks",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6813,
+        "evidence": {
+          "tfidf_score": 0.02051348623847796,
+          "tfidf_matched_terms": [
+            "web"
+          ],
+          "bm25_score": 4.003457915288046,
+          "semantic_score": 0.4087280035018921,
+          "matched_candidate_competency": "Web Catalog"
+        },
+        "candidate_evidence": [
+          "Web Catalog"
+        ]
+      },
+      {
+        "job_competency": "Web services and integration technologies",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6511,
+        "evidence": {
+          "tfidf_score": 0.2632744624161539,
+          "tfidf_matched_terms": [
+            "and",
+            "integration",
+            "web"
+          ],
+          "bm25_score": 4.003457915288046,
+          "semantic_score": 0.4153810143470764,
+          "matched_candidate_competency": "Web Catalog"
+        },
+        "candidate_evidence": [
+          "Web Catalog"
+        ]
+      },
+      {
+        "job_competency": "Relational databases and SQL",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3673,
+        "evidence": {
+          "tfidf_score": 0.2622854130056477,
+          "tfidf_matched_terms": [
+            "and",
+            "sql"
+          ],
+          "bm25_score": 5.4180944484969755,
+          "semantic_score": 0.6994309425354004,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Natural language processing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9299,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35041600465774536,
+          "matched_candidate_competency": "Requirements Analysis"
+        },
+        "candidate_evidence": [
+          "Requirements Analysis"
+        ]
+      },
+      {
+        "job_competency": "Full-stack software development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.389,
+        "evidence": {
+          "tfidf_score": 0.08553344519592405,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 6.107466456363594,
+          "semantic_score": 0.5603213310241699,
+          "matched_candidate_competency": "Software Development Lifecycle"
+        },
+        "candidate_evidence": [
+          "Software Development Lifecycle"
+        ]
+      },
+      {
+        "job_competency": "Problem solving",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1613,
+        "evidence": {
+          "tfidf_score": 0.032257872602947664,
+          "tfidf_matched_terms": [
+            "problem",
+            "solving"
+          ],
+          "bm25_score": 9.441370532106285,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Problem Solving"
+        },
+        "candidate_evidence": [
+          "Problem Solving"
+        ]
+      },
+      {
+        "job_competency": "Verbal and written communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3661,
+        "evidence": {
+          "tfidf_score": 0.2622854130056477,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 5.4180944484969755,
+          "semantic_score": 0.7116509675979614,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Computer Science or equivalent software development education",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3587,
+        "evidence": {
+          "tfidf_score": 0.09586168002806227,
+          "tfidf_matched_terms": [
+            "computer",
+            "development",
+            "science",
+            "software"
+          ],
+          "bm25_score": 8.006915830576093,
+          "semantic_score": 0.7050075531005859,
+          "matched_candidate_competency": "Computer Science"
+        },
+        "candidate_evidence": [
+          "Computer Science"
+        ]
+      },
+      {
+        "job_competency": "Web application development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3913,
+        "evidence": {
+          "tfidf_score": 0.1473886500575508,
+          "tfidf_matched_terms": [
+            "application",
+            "development",
+            "web"
+          ],
+          "bm25_score": 4.003457915288046,
+          "semantic_score": 0.4953979551792145,
+          "matched_candidate_competency": "Web Catalog"
+        },
+        "candidate_evidence": [
+          "Web Catalog"
+        ]
+      },
+      {
+        "job_competency": "Python ORMs",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5556,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36990463733673096,
+          "matched_candidate_competency": "Requirements Analysis"
+        },
+        "candidate_evidence": [
+          "Requirements Analysis"
+        ]
+      },
+      {
+        "job_competency": "Python data science and NLP libraries",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3992,
+        "evidence": {
+          "tfidf_score": 0.21202688224620353,
+          "tfidf_matched_terms": [
+            "and",
+            "science"
+          ],
+          "bm25_score": 4.003457915288046,
+          "semantic_score": 0.3644940257072449,
+          "matched_candidate_competency": "Computer Science"
+        },
+        "candidate_evidence": [
+          "Computer Science"
+        ]
+      },
+      {
+        "job_competency": "AWS",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5577,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35251927375793457,
+          "matched_candidate_competency": "Requirements Analysis"
+        },
+        "candidate_evidence": [
+          "Requirements Analysis"
+        ]
+      },
+      {
+        "job_competency": "Conversational AI and chatbots",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4233,
+        "evidence": {
+          "tfidf_score": 0.23290663227065608,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.5930272305046117,
+          "semantic_score": 0.3689824342727661,
+          "matched_candidate_competency": "Updated and fixed existing repositories and dashboards"
+        },
+        "candidate_evidence": [
+          "Updated and fixed existing repositories and dashboards"
+        ]
+      },
+      {
+        "job_competency": "Twitter Bootstrap",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5727,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.22727081179618835,
+          "matched_candidate_competency": "Requirements Analysis"
+        },
+        "candidate_evidence": [
+          "Requirements Analysis"
+        ]
+      },
+      {
+        "job_competency": "ReactJS",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5856,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.1200433000922203,
+          "matched_candidate_competency": "Requirements Analysis"
+        },
+        "candidate_evidence": [
+          "Requirements Analysis"
+        ]
+      },
+      {
+        "job_competency": "Algorithms and statistics",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4184,
+        "evidence": {
+          "tfidf_score": 0.27548074515111987,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.5930272305046117,
+          "semantic_score": 0.3883481025695801,
+          "matched_candidate_competency": "Updated and fixed existing repositories and dashboards"
+        },
+        "candidate_evidence": [
+          "Updated and fixed existing repositories and dashboards"
+        ]
+      },
+      {
+        "job_competency": "Data mining",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4268,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.554481565952301,
+          "matched_candidate_competency": "Requirements Analysis"
+        },
+        "candidate_evidence": [
+          "Requirements Analysis"
+        ]
+      },
+      {
+        "job_competency": "Machine learning",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4344,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.47491785883903503,
+          "matched_candidate_competency": "Requirements Analysis"
+        },
+        "candidate_evidence": [
+          "Requirements Analysis"
+        ]
+      },
+      {
+        "job_competency": "Scrum software development methodology",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2333,
+        "evidence": {
+          "tfidf_score": 0.08553344519592405,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 6.107466456363594,
+          "semantic_score": 0.561558723449707,
+          "matched_candidate_competency": "Software Development Lifecycle"
+        },
+        "candidate_evidence": [
+          "Software Development Lifecycle"
+        ]
+      },
+      {
+        "job_competency": "React",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5786,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.17870694398880005,
+          "matched_candidate_competency": "Requirements Analysis"
+        },
+        "candidate_evidence": [
+          "Requirements Analysis"
+        ]
+      },
+      {
+        "job_competency": "PLSQL",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4244,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.57953280210495,
+          "matched_candidate_competency": "Requirements Analysis"
+        },
+        "candidate_evidence": [
+          "Requirements Analysis"
+        ]
+      },
+      {
+        "job_competency": "Web services",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3991,
+        "evidence": {
+          "tfidf_score": 0.026460831439694465,
+          "tfidf_matched_terms": [
+            "web"
+          ],
+          "bm25_score": 4.003457915288046,
+          "semantic_score": 0.5048494338989258,
+          "matched_candidate_competency": "Web Catalog"
+        },
+        "candidate_evidence": [
+          "Web Catalog"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Problem solving"
+    ],
+    "partial_matches": [
+      "Relational databases and SQL",
+      "Full-stack software development",
+      "Verbal and written communication",
+      "Computer Science or equivalent software development education",
+      "Scrum software development methodology"
+    ],
+    "weak_matches": [
+      "Python",
+      "Python web frameworks",
+      "Web services and integration technologies",
+      "Web application development",
+      "Python data science and NLP libraries",
+      "Conversational AI and chatbots",
+      "Algorithms and statistics",
+      "Data mining",
+      "Machine learning",
+      "PLSQL",
+      "Web services"
+    ],
+    "missing": [
+      "Natural language processing",
+      "Python ORMs",
+      "AWS",
+      "Twitter Bootstrap",
+      "ReactJS",
+      "React"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Problem solving"
+    ],
+    "partial_matches": [
+      "Relational databases and SQL",
+      "Full-stack software development",
+      "Verbal and written communication",
+      "Computer Science or equivalent software development education",
+      "Scrum software development methodology"
+    ],
+    "competency_gaps": [
+      "Python",
+      "Python web frameworks",
+      "Web services and integration technologies",
+      "Web application development",
+      "Python data science and NLP libraries",
+      "Conversational AI and chatbots",
+      "Algorithms and statistics",
+      "Data mining",
+      "Machine learning",
+      "PLSQL",
+      "Web services",
+      "Natural language processing",
+      "Python ORMs",
+      "AWS",
+      "Twitter Bootstrap",
+      "ReactJS",
+      "React"
+    ]
+  },
+  "counts": {
+    "requirements": 23,
+    "strength_matches": 1,
+    "partial_matches": 5,
+    "competency_gaps": 17
+  },
+  "latency_ms": 45.51,
+  "analyzed_at": "2026-09-27T22:33:13.184436+00:00"
+}

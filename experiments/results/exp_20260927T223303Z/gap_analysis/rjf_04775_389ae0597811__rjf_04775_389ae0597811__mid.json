@@ -1,0 +1,736 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_04775_389ae0597811",
+  "jd_id": "rjf_04775_389ae0597811",
+  "pair_id": "rjf_04775_389ae0597811",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Software engineering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6569,
+        "evidence": {
+          "tfidf_score": 0.01361782310556718,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 3.431403319182528,
+          "semantic_score": 0.5769480466842651,
+          "matched_candidate_competency": "Full Software Development Life Cycle"
+        },
+        "candidate_evidence": [
+          "Full Software Development Life Cycle"
+        ]
+      },
+      {
+        "job_competency": ".NET",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7069,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5820938944816589,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "C#",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.721,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4936181306838989,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Data types",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.656,
+        "evidence": {
+          "tfidf_score": 0.02725765816412848,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 4.187840816917859,
+          "semantic_score": 0.5042999982833862,
+          "matched_candidate_competency": "Data Modeling"
+        },
+        "candidate_evidence": [
+          "Data Modeling"
+        ]
+      },
+      {
+        "job_competency": "Algorithms",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7294,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4410616159439087,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Object-oriented programming",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.717,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5188794136047363,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Web services development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6769,
+        "evidence": {
+          "tfidf_score": 0.021131217925533272,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.946593695541787,
+          "semantic_score": 0.4896284341812134,
+          "matched_candidate_competency": "Full Software Development Life Cycle"
+        },
+        "candidate_evidence": [
+          "Full Software Development Life Cycle"
+        ]
+      },
+      {
+        "job_competency": "Web application development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6741,
+        "evidence": {
+          "tfidf_score": 0.03538163480344764,
+          "tfidf_matched_terms": [
+            "application",
+            "development"
+          ],
+          "bm25_score": 2.946593695541787,
+          "semantic_score": 0.4963003396987915,
+          "matched_candidate_competency": "Full Software Development Life Cycle"
+        },
+        "candidate_evidence": [
+          "Full Software Development Life Cycle"
+        ]
+      },
+      {
+        "job_competency": "Console application development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6804,
+        "evidence": {
+          "tfidf_score": 0.03538163480344764,
+          "tfidf_matched_terms": [
+            "application",
+            "development"
+          ],
+          "bm25_score": 2.946593695541787,
+          "semantic_score": 0.45718953013420105,
+          "matched_candidate_competency": "Full Software Development Life Cycle"
+        },
+        "candidate_evidence": [
+          "Full Software Development Life Cycle"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3589,
+        "evidence": {
+          "tfidf_score": 0.11821382717664505,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 3.596482666481347,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "T-SQL",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1606,
+        "evidence": {
+          "tfidf_score": 0.10033511324753877,
+          "tfidf_matched_terms": [
+            "sql",
+            "t"
+          ],
+          "bm25_score": 7.96835437943172,
+          "semantic_score": 0.9999997615814209,
+          "matched_candidate_competency": "T-SQL"
+        },
+        "candidate_evidence": [
+          "T-SQL"
+        ]
+      },
+      {
+        "job_competency": "Problem solving",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1613,
+        "evidence": {
+          "tfidf_score": 0.06656408402165849,
+          "tfidf_matched_terms": [
+            "problem",
+            "solving"
+          ],
+          "bm25_score": 8.375681633835718,
+          "semantic_score": 0.9747363328933716,
+          "matched_candidate_competency": "Problem-solving"
+        },
+        "candidate_evidence": [
+          "Problem-solving"
+        ]
+      },
+      {
+        "job_competency": "Multitasking and delivery under aggressive timelines",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7096,
+        "evidence": {
+          "tfidf_score": 0.15070999541688918,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.387060469219234,
+          "semantic_score": 0.32748809456825256,
+          "matched_candidate_competency": "Maintained and restructured the IRP System, including industrial and patent search and retrieval functions."
+        },
+        "candidate_evidence": [
+          "Maintained and restructured the IRP System, including industrial and patent search and retrieval functions."
+        ]
+      },
+      {
+        "job_competency": "Agile methodology",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7292,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4422265887260437,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.716,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5251199007034302,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Bachelor's degree in a relevant field",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6993,
+        "evidence": {
+          "tfidf_score": 0.013115082572905898,
+          "tfidf_matched_terms": [
+            "in"
+          ],
+          "bm25_score": 2.6816525878075357,
+          "semantic_score": 0.37949565052986145,
+          "matched_candidate_competency": "Updated alumni information in the system."
+        },
+        "candidate_evidence": [
+          "Updated alumni information in the system."
+        ]
+      },
+      {
+        "job_competency": "Billing systems",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.422,
+        "evidence": {
+          "tfidf_score": 0.01361782310556718,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 2.2968070502435887,
+          "semantic_score": 0.38834241032600403,
+          "matched_candidate_competency": "Designed SRAM Vccmin systems using Java, Struts, Weblogic, and Oracle."
+        },
+        "candidate_evidence": [
+          "Designed SRAM Vccmin systems using Java, Struts, Weblogic, and Oracle."
+        ]
+      },
+      {
+        "job_competency": "Payment processing systems",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4004,
+        "evidence": {
+          "tfidf_score": 0.03538163480344764,
+          "tfidf_matched_terms": [
+            "processing",
+            "systems"
+          ],
+          "bm25_score": 4.187840816917859,
+          "semantic_score": 0.42777740955352783,
+          "matched_candidate_competency": "Word processing"
+        },
+        "candidate_evidence": [
+          "Word processing"
+        ]
+      },
+      {
+        "job_competency": "Financial systems",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4233,
+        "evidence": {
+          "tfidf_score": 0.01361782310556718,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 2.2968070502435887,
+          "semantic_score": 0.37485799193382263,
+          "matched_candidate_competency": "Designed SRAM Vccmin systems using Java, Struts, Weblogic, and Oracle."
+        },
+        "candidate_evidence": [
+          "Designed SRAM Vccmin systems using Java, Struts, Weblogic, and Oracle."
+        ]
+      },
+      {
+        "job_competency": "Continuous integration",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5618,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31794261932373047,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Automated deployment",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4287,
+        "evidence": {
+          "tfidf_score": 0.01361782310556718,
+          "tfidf_matched_terms": [
+            "deployment"
+          ],
+          "bm25_score": 1.7260779778059891,
+          "semantic_score": 0.36916014552116394,
+          "matched_candidate_competency": "Participated in analysis, design, development, testing, data modeling, deployment, database administration, and system problem-solving."
+        },
+        "candidate_evidence": [
+          "Participated in analysis, design, development, testing, data modeling, deployment, database administration, and system problem-solving."
+        ]
+      },
+      {
+        "job_competency": "Entity Framework",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4414,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40185898542404175,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "LINQ",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4356,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4623754918575287,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "RabbitMQ",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5612,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3237379193305969,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Docker containers",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.58,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.166669100522995,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "JIRA",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5525,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39599665999412537,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Splunk",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5614,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3217746317386627,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Source control and release management",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3935,
+        "evidence": {
+          "tfidf_score": 0.1953930575439659,
+          "tfidf_matched_terms": [
+            "and",
+            "management"
+          ],
+          "bm25_score": 3.672204390600286,
+          "semantic_score": 0.42577266693115234,
+          "matched_candidate_competency": "Intellectual Property Management"
+        },
+        "candidate_evidence": [
+          "Intellectual Property Management"
+        ]
+      },
+      {
+        "job_competency": "Domain-driven development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4097,
+        "evidence": {
+          "tfidf_score": 0.021131217925533272,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.946593695541787,
+          "semantic_score": 0.45261943340301514,
+          "matched_candidate_competency": "Full Software Development Life Cycle"
+        },
+        "candidate_evidence": [
+          "Full Software Development Life Cycle"
+        ]
+      },
+      {
+        "job_competency": "Microservices architecture",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5641,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2988690733909607,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Circuit breaker patterns",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4043,
+        "evidence": {
+          "tfidf_score": 0.010557076693176848,
+          "tfidf_matched_terms": [
+            "patterns"
+          ],
+          "bm25_score": 4.876875594053623,
+          "semantic_score": 0.3439739942550659,
+          "matched_candidate_competency": "Design Patterns"
+        },
+        "candidate_evidence": [
+          "Design Patterns"
+        ]
+      },
+      {
+        "job_competency": "Web services",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4307,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5130318403244019,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Windows services",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5533,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38906729221343994,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Console applications",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5545,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3789001703262329,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Relational databases",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4171,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6548506617546082,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Document-based databases",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2436,
+        "evidence": {
+          "tfidf_score": 0.02113121792553327,
+          "tfidf_matched_terms": [
+            "document"
+          ],
+          "bm25_score": 4.187840816917859,
+          "semantic_score": 0.5492272973060608,
+          "matched_candidate_competency": "Document Workflow"
+        },
+        "candidate_evidence": [
+          "Document Workflow"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "T-SQL",
+      "Problem solving"
+    ],
+    "partial_matches": [
+      "SQL",
+      "Document-based databases"
+    ],
+    "weak_matches": [
+      "Software engineering",
+      ".NET",
+      "C#",
+      "Data types",
+      "Algorithms",
+      "Object-oriented programming",
+      "Web services development",
+      "Web application development",
+      "Console application development",
+      "Multitasking and delivery under aggressive timelines",
+      "Agile methodology",
+      "Communication",
+      "Bachelor's degree in a relevant field",
+      "Billing systems",
+      "Payment processing systems",
+      "Financial systems",
+      "Automated deployment",
+      "Entity Framework",
+      "LINQ",
+      "Source control and release management",
+      "Domain-driven development",
+      "Circuit breaker patterns",
+      "Web services",
+      "Relational databases"
+    ],
+    "missing": [
+      "Continuous integration",
+      "RabbitMQ",
+      "Docker containers",
+      "JIRA",
+      "Splunk",
+      "Microservices architecture",
+      "Windows services",
+      "Console applications"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "T-SQL",
+      "Problem solving"
+    ],
+    "partial_matches": [
+      "SQL",
+      "Document-based databases"
+    ],
+    "competency_gaps": [
+      "Software engineering",
+      ".NET",
+      "C#",
+      "Data types",
+      "Algorithms",
+      "Object-oriented programming",
+      "Web services development",
+      "Web application development",
+      "Console application development",
+      "Multitasking and delivery under aggressive timelines",
+      "Agile methodology",
+      "Communication",
+      "Bachelor's degree in a relevant field",
+      "Billing systems",
+      "Payment processing systems",
+      "Financial systems",
+      "Automated deployment",
+      "Entity Framework",
+      "LINQ",
+      "Source control and release management",
+      "Domain-driven development",
+      "Circuit breaker patterns",
+      "Web services",
+      "Relational databases",
+      "Continuous integration",
+      "RabbitMQ",
+      "Docker containers",
+      "JIRA",
+      "Splunk",
+      "Microservices architecture",
+      "Windows services",
+      "Console applications"
+    ]
+  },
+  "counts": {
+    "requirements": 36,
+    "strength_matches": 2,
+    "partial_matches": 2,
+    "competency_gaps": 32
+  },
+  "latency_ms": 67.52,
+  "analyzed_at": "2026-09-27T22:33:13.685830+00:00"
+}

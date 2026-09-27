@@ -1,0 +1,318 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_03858_f96a3845408e",
+  "jd_id": "rjf_03858_f96a3845408e",
+  "pair_id": "rjf_03858_f96a3845408e",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Azure Databricks",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.73,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4376228153705597,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Apache Spark",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1584,
+        "evidence": {
+          "tfidf_score": 0.10824770493453706,
+          "tfidf_matched_terms": [
+            "apache",
+            "spark"
+          ],
+          "bm25_score": 7.089742708782538,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Apache Spark"
+        },
+        "candidate_evidence": [
+          "Apache Spark"
+        ]
+      },
+      {
+        "job_competency": "Azure Data Factory",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6871,
+        "evidence": {
+          "tfidf_score": 0.2091237120569101,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 1.310898175388187,
+          "semantic_score": 0.4098421037197113,
+          "matched_candidate_competency": "Data warehousing"
+        },
+        "candidate_evidence": [
+          "Data warehousing"
+        ]
+      },
+      {
+        "job_competency": "Production pipeline operationalization",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6667,
+        "evidence": {
+          "tfidf_score": 0.007601899802721714,
+          "tfidf_matched_terms": [
+            "pipeline"
+          ],
+          "bm25_score": 1.614272174402358,
+          "semantic_score": 0.6565362215042114,
+          "matched_candidate_competency": "Worked with data ingestion pipeline design, Hadoop information architecture, data modeling, data mining, machine learning, and advanced data processing."
+        },
+        "candidate_evidence": [
+          "Worked with data ingestion pipeline design, Hadoop information architecture, data modeling, data mining, machine learning, and advanced data processing."
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1676,
+        "evidence": {
+          "tfidf_score": 0.01691429426550724,
+          "tfidf_matched_terms": [
+            "python"
+          ],
+          "bm25_score": 6.006440768759023,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "PySpark",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1712,
+        "evidence": {
+          "tfidf_score": 0.03384275652023946,
+          "tfidf_matched_terms": [
+            "pyspark"
+          ],
+          "bm25_score": 5.19691594278439,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "PySpark"
+        },
+        "candidate_evidence": [
+          "PySpark"
+        ]
+      },
+      {
+        "job_competency": "Software engineering fundamentals",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.391,
+        "evidence": {
+          "tfidf_score": 0.007601899802721714,
+          "tfidf_matched_terms": [
+            "engineering"
+          ],
+          "bm25_score": 5.217740147309199,
+          "semantic_score": 0.5322951078414917,
+          "matched_candidate_competency": "Data engineering"
+        },
+        "candidate_evidence": [
+          "Data engineering"
+        ]
+      },
+      {
+        "job_competency": "Continuous integration and continuous delivery (CI/CD)",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6864,
+        "evidence": {
+          "tfidf_score": 0.10514371535339909,
+          "tfidf_matched_terms": [
+            "and",
+            "integration"
+          ],
+          "bm25_score": 3.4494518391611395,
+          "semantic_score": 0.2663201689720154,
+          "matched_candidate_competency": "Used Git for branching, merging, labeling/tagging, and integration."
+        },
+        "candidate_evidence": [
+          "Used Git for branching, merging, labeling/tagging, and integration."
+        ]
+      },
+      {
+        "job_competency": "Relational databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6992,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6297640204429626,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "NoSQL databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7321,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4241120219230652,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Data hygiene",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3996,
+        "evidence": {
+          "tfidf_score": 0.2697536260024651,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 1.310898175388187,
+          "semantic_score": 0.6633893847465515,
+          "matched_candidate_competency": "Data warehousing"
+        },
+        "candidate_evidence": [
+          "Data warehousing"
+        ]
+      },
+      {
+        "job_competency": "Agile/Scrum",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9376,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31212711334228516,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Software testing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9288,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35598528385162354,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Root cause analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6612,
+        "evidence": {
+          "tfidf_score": 0.01521016721575005,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 4.514513336732653,
+          "semantic_score": 0.3782798945903778,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Apache Spark",
+      "Python",
+      "PySpark"
+    ],
+    "partial_matches": [
+      "Software engineering fundamentals",
+      "Data hygiene"
+    ],
+    "weak_matches": [
+      "Azure Databricks",
+      "Azure Data Factory",
+      "Production pipeline operationalization",
+      "Continuous integration and continuous delivery (CI/CD)",
+      "Relational databases",
+      "NoSQL databases",
+      "Root cause analysis"
+    ],
+    "missing": [
+      "Agile/Scrum",
+      "Software testing"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Apache Spark",
+      "Python",
+      "PySpark"
+    ],
+    "partial_matches": [
+      "Software engineering fundamentals",
+      "Data hygiene"
+    ],
+    "competency_gaps": [
+      "Azure Databricks",
+      "Azure Data Factory",
+      "Production pipeline operationalization",
+      "Continuous integration and continuous delivery (CI/CD)",
+      "Relational databases",
+      "NoSQL databases",
+      "Root cause analysis",
+      "Agile/Scrum",
+      "Software testing"
+    ]
+  },
+  "counts": {
+    "requirements": 14,
+    "strength_matches": 3,
+    "partial_matches": 2,
+    "competency_gaps": 9
+  },
+  "latency_ms": 41.0,
+  "analyzed_at": "2026-09-27T21:52:40.394619+00:00"
+}

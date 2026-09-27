@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_03173_9a0a3c4d8ba0",
+  "jd_id": "rjf_03173_9a0a3c4d8ba0",
+  "pair_id": "rjf_03173_9a0a3c4d8ba0",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Accounting",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1575,
+        "evidence": {
+          "tfidf_score": 0.13352358341606824,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 2.556927406279952,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Taxation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6974,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.641213595867157,
+          "matched_candidate_competency": "General ledger accounting"
+        },
+        "candidate_evidence": [
+          "General ledger accounting"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Accounting"
+    ],
+    "partial_matches": [],
+    "weak_matches": [
+      "Taxation"
+    ],
+    "missing": []
+  },
+  "three_category": {
+    "strength_matches": [
+      "Accounting"
+    ],
+    "partial_matches": [],
+    "competency_gaps": [
+      "Taxation"
+    ]
+  },
+  "counts": {
+    "requirements": 2,
+    "strength_matches": 1,
+    "partial_matches": 0,
+    "competency_gaps": 1
+  },
+  "latency_ms": 464.27,
+  "analyzed_at": "2026-09-27T21:52:39.998483+00:00"
+}

@@ -1,0 +1,854 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_03558_5a71f8cf9f12",
+  "jd_id": "rjf_03558_5a71f8cf9f12",
+  "pair_id": "rjf_03558_5a71f8cf9f12",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "AWS",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7335,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4153996407985687,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1773,
+        "evidence": {
+          "tfidf_score": 0.12004198482279693,
+          "tfidf_matched_terms": [
+            "java"
+          ],
+          "bm25_score": 3.9642088945686513,
+          "semantic_score": 1.000000238418579,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Spring Boot",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9306,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.347249299287796,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Microservices",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9205,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3973199725151062,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Backend REST APIs",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6606,
+        "evidence": {
+          "tfidf_score": 0.013399819422438867,
+          "tfidf_matched_terms": [
+            "rest"
+          ],
+          "bm25_score": 5.636080661240707,
+          "semantic_score": 0.34260988235473633,
+          "matched_candidate_competency": "REST"
+        },
+        "candidate_evidence": [
+          "REST"
+        ]
+      },
+      {
+        "job_competency": "Agile software development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3566,
+        "evidence": {
+          "tfidf_score": 0.07529173376188919,
+          "tfidf_matched_terms": [
+            "agile",
+            "development"
+          ],
+          "bm25_score": 5.636080661240707,
+          "semantic_score": 0.8588433861732483,
+          "matched_candidate_competency": "Agile"
+        },
+        "candidate_evidence": [
+          "Agile"
+        ]
+      },
+      {
+        "job_competency": "Node.js",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3983,
+        "evidence": {
+          "tfidf_score": 0.034614533449333636,
+          "tfidf_matched_terms": [
+            "js"
+          ],
+          "bm25_score": 4.073551020761519,
+          "semantic_score": 0.6165171265602112,
+          "matched_candidate_competency": "Highcharts.js"
+        },
+        "candidate_evidence": [
+          "Highcharts.js"
+        ]
+      },
+      {
+        "job_competency": "Functional programming",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7335,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41585788130760193,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Scala",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.726,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4623722434043884,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Ruby",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9236,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3817964792251587,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "MongoDB",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7006,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6212483048439026,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Elasticsearch",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9203,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3987330198287964,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Redis",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9338,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33096325397491455,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "React.js",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6615,
+        "evidence": {
+          "tfidf_score": 0.034614533449333636,
+          "tfidf_matched_terms": [
+            "js"
+          ],
+          "bm25_score": 4.073551020761519,
+          "semantic_score": 0.4649117588996887,
+          "matched_candidate_competency": "Highcharts.js"
+        },
+        "candidate_evidence": [
+          "Highcharts.js"
+        ]
+      },
+      {
+        "job_competency": "Bootstrap",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7337,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4145664870738983,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "jQuery",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1729,
+        "evidence": {
+          "tfidf_score": 0.029814716675776644,
+          "tfidf_matched_terms": [
+            "jquery"
+          ],
+          "bm25_score": 5.636080661240707,
+          "semantic_score": 1.0000004768371582,
+          "matched_candidate_competency": "jQuery"
+        },
+        "candidate_evidence": [
+          "jQuery"
+        ]
+      },
+      {
+        "job_competency": "Backbone.js",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6645,
+        "evidence": {
+          "tfidf_score": 0.034614533449333636,
+          "tfidf_matched_terms": [
+            "js"
+          ],
+          "bm25_score": 4.073551020761519,
+          "semantic_score": 0.44567248225212097,
+          "matched_candidate_competency": "Highcharts.js"
+        },
+        "candidate_evidence": [
+          "Highcharts.js"
+        ]
+      },
+      {
+        "job_competency": "Require.js",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.668,
+        "evidence": {
+          "tfidf_score": 0.034614533449333636,
+          "tfidf_matched_terms": [
+            "js"
+          ],
+          "bm25_score": 4.073551020761519,
+          "semantic_score": 0.42393895983695984,
+          "matched_candidate_competency": "Highcharts.js"
+        },
+        "candidate_evidence": [
+          "Highcharts.js"
+        ]
+      },
+      {
+        "job_competency": "D3.js or Highcharts",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.348,
+        "evidence": {
+          "tfidf_score": 0.04903766893640002,
+          "tfidf_matched_terms": [
+            "highcharts",
+            "js"
+          ],
+          "bm25_score": 8.147102041523038,
+          "semantic_score": 0.7334451079368591,
+          "matched_candidate_competency": "Highcharts.js"
+        },
+        "candidate_evidence": [
+          "Highcharts.js"
+        ]
+      },
+      {
+        "job_competency": "MV* application design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3993,
+        "evidence": {
+          "tfidf_score": 0.12137725045437286,
+          "tfidf_matched_terms": [
+            "application",
+            "design"
+          ],
+          "bm25_score": 3.1326617793525333,
+          "semantic_score": 0.6275088787078857,
+          "matched_candidate_competency": "Mobile application development"
+        },
+        "candidate_evidence": [
+          "Mobile application development"
+        ]
+      },
+      {
+        "job_competency": "JavaScript graphing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3865,
+        "evidence": {
+          "tfidf_score": 0.017284744237886642,
+          "tfidf_matched_terms": [
+            "javascript"
+          ],
+          "bm25_score": 5.636080661240707,
+          "semantic_score": 0.6031509041786194,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      },
+      {
+        "job_competency": "Modular design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6708,
+        "evidence": {
+          "tfidf_score": 0.08733714253201794,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 3.053542242478876,
+          "semantic_score": 0.46077480912208557,
+          "matched_candidate_competency": "Database design"
+        },
+        "candidate_evidence": [
+          "Database design"
+        ]
+      },
+      {
+        "job_competency": "Responsive design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6806,
+        "evidence": {
+          "tfidf_score": 0.08733714253201794,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 3.053542242478876,
+          "semantic_score": 0.39949938654899597,
+          "matched_candidate_competency": "Database design"
+        },
+        "candidate_evidence": [
+          "Database design"
+        ]
+      },
+      {
+        "job_competency": "SQL and database programming",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3838,
+        "evidence": {
+          "tfidf_score": 0.11318440112582293,
+          "tfidf_matched_terms": [
+            "and",
+            "database"
+          ],
+          "bm25_score": 4.716873018940346,
+          "semantic_score": 0.642510175704956,
+          "matched_candidate_competency": "Database design"
+        },
+        "candidate_evidence": [
+          "Database design"
+        ]
+      },
+      {
+        "job_competency": "Database performance",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3904,
+        "evidence": {
+          "tfidf_score": 0.017284744237886642,
+          "tfidf_matched_terms": [
+            "database"
+          ],
+          "bm25_score": 4.716873018940346,
+          "semantic_score": 0.6491162776947021,
+          "matched_candidate_competency": "Database design"
+        },
+        "candidate_evidence": [
+          "Database design"
+        ]
+      },
+      {
+        "job_competency": "Web technologies and Internet architecture",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3929,
+        "evidence": {
+          "tfidf_score": 0.15239468848472607,
+          "tfidf_matched_terms": [
+            "and",
+            "architecture",
+            "web"
+          ],
+          "bm25_score": 4.716873018940346,
+          "semantic_score": 0.5219970345497131,
+          "matched_candidate_competency": "MVC Architecture"
+        },
+        "candidate_evidence": [
+          "MVC Architecture"
+        ]
+      },
+      {
+        "job_competency": "Unix server and web stack administration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3815,
+        "evidence": {
+          "tfidf_score": 0.15352119853976864,
+          "tfidf_matched_terms": [
+            "and",
+            "server",
+            "unix",
+            "web"
+          ],
+          "bm25_score": 4.716873018940346,
+          "semantic_score": 0.6357695460319519,
+          "matched_candidate_competency": "Unix/Linux"
+        },
+        "candidate_evidence": [
+          "Unix/Linux"
+        ]
+      },
+      {
+        "job_competency": "Debuggers, virtual machines, and database programs",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6663,
+        "evidence": {
+          "tfidf_score": 0.08774503780035975,
+          "tfidf_matched_terms": [
+            "and",
+            "database"
+          ],
+          "bm25_score": 4.716873018940346,
+          "semantic_score": 0.3356319069862366,
+          "matched_candidate_competency": "Database design"
+        },
+        "candidate_evidence": [
+          "Database design"
+        ]
+      },
+      {
+        "job_competency": "AWS RDS",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9373,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.313699334859848,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Amazon DynamoDB",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7189,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5066688656806946,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1729,
+        "evidence": {
+          "tfidf_score": 0.029814716675776644,
+          "tfidf_matched_terms": [
+            "git"
+          ],
+          "bm25_score": 5.636080661240707,
+          "semantic_score": 0.9999997615814209,
+          "matched_candidate_competency": "Git"
+        },
+        "candidate_evidence": [
+          "Git"
+        ]
+      },
+      {
+        "job_competency": "Continuous integration",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9364,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31794267892837524,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Jenkins",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.929,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.354782372713089,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Perl",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4367,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.45104485750198364,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4351,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46777573227882385,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Bash",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4351,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46723416447639465,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Hadoop",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.1038,
+        "evidence": {
+          "tfidf_score": 0.029814716675776644,
+          "tfidf_matched_terms": [
+            "hadoop"
+          ],
+          "bm25_score": 5.636080661240707,
+          "semantic_score": 0.9999998211860657,
+          "matched_candidate_competency": "Hadoop"
+        },
+        "candidate_evidence": [
+          "Hadoop"
+        ]
+      },
+      {
+        "job_competency": "Apache Spark",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4379,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.43905484676361084,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Hive",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4299,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.522304892539978,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Pig",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5629,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30897611379623413,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "MapReduce",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4186,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6395285129547119,
+          "matched_candidate_competency": "Java 8"
+        },
+        "candidate_evidence": [
+          "Java 8"
+        ]
+      },
+      {
+        "job_competency": "Bachelor's degree in Computer Science or equivalent",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4294,
+        "evidence": {
+          "tfidf_score": 0.007742822089723204,
+          "tfidf_matched_terms": [
+            "in"
+          ],
+          "bm25_score": 2.046590087287739,
+          "semantic_score": 0.3330557644367218,
+          "matched_candidate_competency": "Worked in the proxy layer of the AT&T network."
+        },
+        "candidate_evidence": [
+          "Worked in the proxy layer of the AT&T network."
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Java",
+      "jQuery",
+      "Git",
+      "Hadoop"
+    ],
+    "partial_matches": [
+      "Agile software development",
+      "Node.js",
+      "D3.js or Highcharts",
+      "MV* application design",
+      "JavaScript graphing",
+      "SQL and database programming",
+      "Database performance",
+      "Web technologies and Internet architecture",
+      "Unix server and web stack administration"
+    ],
+    "weak_matches": [
+      "AWS",
+      "Backend REST APIs",
+      "Functional programming",
+      "Scala",
+      "MongoDB",
+      "React.js",
+      "Bootstrap",
+      "Backbone.js",
+      "Require.js",
+      "Modular design",
+      "Responsive design",
+      "Debuggers, virtual machines, and database programs",
+      "Amazon DynamoDB",
+      "Perl",
+      "Python",
+      "Bash",
+      "Apache Spark",
+      "Hive",
+      "MapReduce",
+      "Bachelor's degree in Computer Science or equivalent"
+    ],
+    "missing": [
+      "Spring Boot",
+      "Microservices",
+      "Ruby",
+      "Elasticsearch",
+      "Redis",
+      "AWS RDS",
+      "Continuous integration",
+      "Jenkins",
+      "Pig"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Java",
+      "jQuery",
+      "Git",
+      "Hadoop"
+    ],
+    "partial_matches": [
+      "Agile software development",
+      "Node.js",
+      "D3.js or Highcharts",
+      "MV* application design",
+      "JavaScript graphing",
+      "SQL and database programming",
+      "Database performance",
+      "Web technologies and Internet architecture",
+      "Unix server and web stack administration"
+    ],
+    "competency_gaps": [
+      "AWS",
+      "Backend REST APIs",
+      "Functional programming",
+      "Scala",
+      "MongoDB",
+      "React.js",
+      "Bootstrap",
+      "Backbone.js",
+      "Require.js",
+      "Modular design",
+      "Responsive design",
+      "Debuggers, virtual machines, and database programs",
+      "Amazon DynamoDB",
+      "Perl",
+      "Python",
+      "Bash",
+      "Apache Spark",
+      "Hive",
+      "MapReduce",
+      "Bachelor's degree in Computer Science or equivalent",
+      "Spring Boot",
+      "Microservices",
+      "Ruby",
+      "Elasticsearch",
+      "Redis",
+      "AWS RDS",
+      "Continuous integration",
+      "Jenkins",
+      "Pig"
+    ]
+  },
+  "counts": {
+    "requirements": 42,
+    "strength_matches": 4,
+    "partial_matches": 9,
+    "competency_gaps": 29
+  },
+  "latency_ms": 77.31,
+  "analyzed_at": "2026-09-27T21:52:40.281230+00:00"
+}

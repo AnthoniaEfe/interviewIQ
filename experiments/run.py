@@ -25,13 +25,20 @@ if str(ROOT / "backend") not in sys.path:
 load_dotenv(ROOT / ".env", override=True)
 
 from app.config.settings import Settings, get_settings  # noqa: E402
-from app.schemas.domain import GenerationMode, LLMUsage  # noqa: E402
+from app.schemas.domain import (  # noqa: E402
+    CandidateProfile,
+    GenerationMode,
+    JobDescription,
+    LLMUsage,
+)
+from app.services.embeddings.service import build_embedding_service  # noqa: E402
 from app.services.extraction.profiles import (  # noqa: E402
     CV_PROMPT,
     JD_PROMPT,
     extract_candidate,
     extract_job,
 )
+from app.services.gap_analysis.matrix import build_gap_matrix  # noqa: E402
 from app.services.llm.factory import build_router  # noqa: E402
 from app.services.llm.provider import LLMResult  # noqa: E402
 from app.services.llm.tasks import LLMTask  # noqa: E402
@@ -177,6 +184,92 @@ async def run_extraction_combo(
     return record
 
 
+def latest_extraction_dir() -> Path:
+    results = ROOT / "experiments" / "results"
+    if not results.exists():
+        raise SystemExit("No experiments/results directory. Run --stage extraction first.")
+    candidates: list[Path] = []
+    for path in results.iterdir():
+        summary_path = path / "summary.json"
+        extraction_dir = path / "extraction"
+        if not summary_path.is_file() or not extraction_dir.is_dir():
+            continue
+        summary = json.loads(summary_path.read_text(encoding="utf-8"))
+        if summary.get("stage") == "extraction" and summary.get("status") == "completed":
+            candidates.append(path)
+    if not candidates:
+        raise SystemExit("No completed extraction experiment found. Run --stage extraction first.")
+    return sorted(candidates)[-1]
+
+
+def load_extraction_records(source_dir: Path) -> list[dict]:
+    extraction_dir = source_dir / "extraction"
+    records = []
+    for path in sorted(extraction_dir.glob("*.json")):
+        if path.name.startswith("_"):
+            continue
+        records.append(json.loads(path.read_text(encoding="utf-8")))
+    if not records:
+        raise SystemExit(f"No extraction artifacts in {extraction_dir}")
+    return records
+
+
+def run_gap_combo(
+    *,
+    settings: Settings,
+    embeddings,
+    record: dict,
+    experiment_id: str,
+    source_experiment: str,
+    out_dir: Path,
+) -> dict:
+    candidate = CandidateProfile.model_validate(record["candidate"])
+    job = JobDescription.model_validate(record["job"])
+    started = datetime.now(timezone.utc)
+    matrix = build_gap_matrix(candidate, job, settings, embeddings)
+    elapsed_ms = (datetime.now(timezone.utc) - started).total_seconds() * 1000
+    three_category = {
+        "strength_matches": matrix.strong_matches,
+        "partial_matches": matrix.partial_matches,
+        "competency_gaps": matrix.weak_matches + matrix.missing,
+    }
+    result = {
+        "experiment_id": experiment_id,
+        "stage": "gap_analysis",
+        "source_experiment": source_experiment,
+        "profile_id": record.get("profile_id"),
+        "jd_id": record.get("jd_id"),
+        "pair_id": record.get("pair_id"),
+        "fit_label": record.get("fit_label"),
+        "dataset": record.get("dataset"),
+        "seniority": record.get("seniority"),
+        "embedding_model": settings.embedding_model,
+        "embedding_device": settings.embedding_device,
+        "signals": {
+            "tfidf": settings.enable_tfidf,
+            "bm25": settings.enable_bm25,
+            "semantic": settings.enable_semantic,
+        },
+        "gap_matrix": matrix.model_dump(),
+        "three_category": three_category,
+        "counts": {
+            "requirements": len(matrix.gaps),
+            "strength_matches": len(three_category["strength_matches"]),
+            "partial_matches": len(three_category["partial_matches"]),
+            "competency_gaps": len(three_category["competency_gaps"]),
+        },
+        "latency_ms": round(elapsed_ms, 2),
+        "analyzed_at": datetime.now(timezone.utc).isoformat(),
+    }
+    request_id = (
+        f"{record.get('profile_id')}__{record.get('jd_id')}__{record.get('seniority')}"
+    )
+    (out_dir / f"{request_id}.json").write_text(
+        json.dumps(result, indent=2), encoding="utf-8"
+    )
+    return result
+
+
 async def run_baseline_combo(
     *,
     router,
@@ -238,19 +331,37 @@ async def run_baseline_combo(
     return record
 
 
-async def async_main(config_path: Path, *, smoke: bool, stage: str = "baseline") -> Path:
+async def async_main(
+    config_path: Path,
+    *,
+    smoke: bool,
+    stage: str = "baseline",
+    source_experiment: str | None = None,
+) -> Path:
     config = load_config(config_path)
     get_settings.cache_clear()
     settings = Settings()
-    router = build_router(settings)
 
     n_questions = int(config.get("final_question_count", settings.final_question_count))
+    experiment_id = datetime.now(timezone.utc).strftime("exp_%Y%m%dT%H%M%SZ")
+    out_dir = ROOT / "experiments" / "results" / experiment_id
+
+    if stage == "gap_analysis":
+        (out_dir / "gap_analysis").mkdir(parents=True, exist_ok=True)
+        return _run_gap_analysis_stage(
+            settings=settings,
+            config=config,
+            config_path=config_path,
+            experiment_id=experiment_id,
+            out_dir=out_dir,
+            smoke=smoke,
+            source_experiment=source_experiment,
+        )
+
+    router = build_router(settings)
     combinations = load_combinations(config)
     if smoke:
         combinations = combinations[:1]
-
-    experiment_id = datetime.now(timezone.utc).strftime("exp_%Y%m%dT%H%M%SZ")
-    out_dir = ROOT / "experiments" / "results" / experiment_id
     if stage == "extraction":
         (out_dir / "extraction").mkdir(parents=True, exist_ok=True)
         return await _run_extraction_stage(
@@ -422,18 +533,140 @@ async def _run_extraction_stage(
     return out_dir
 
 
+def _run_gap_analysis_stage(
+    *,
+    settings: Settings,
+    config: dict,
+    config_path: Path,
+    experiment_id: str,
+    out_dir: Path,
+    smoke: bool,
+    source_experiment: str | None,
+) -> Path:
+    source_dir = (
+        ROOT / "experiments" / "results" / source_experiment
+        if source_experiment
+        else latest_extraction_dir()
+    )
+    if not (source_dir / "extraction").is_dir():
+        raise SystemExit(f"Extraction artifacts not found in {source_dir}")
+    records = load_extraction_records(source_dir)
+    if smoke:
+        records = records[:1]
+
+    print(
+        f"[gap_analysis] loading embeddings {settings.embedding_model} "
+        f"device={settings.embedding_device}"
+    )
+    embeddings = build_embedding_service(
+        settings.embedding_model,
+        settings.embedding_device,
+    )
+    results: list[dict] = []
+    errors: list[dict] = []
+    for record in records:
+        label = f"{record.get('profile_id')} x {record.get('jd_id')}"
+        if record.get("fit_label"):
+            label = f"{label} [{record['fit_label']}]"
+        print(f"[gap_analysis] {label}")
+        try:
+            result = run_gap_combo(
+                settings=settings,
+                embeddings=embeddings,
+                record=record,
+                experiment_id=experiment_id,
+                source_experiment=source_dir.name,
+                out_dir=out_dir / "gap_analysis",
+            )
+            counts = result["counts"]
+            print(
+                f"  requirements={counts['requirements']} "
+                f"strength={counts['strength_matches']} "
+                f"partial={counts['partial_matches']} "
+                f"gaps={counts['competency_gaps']} "
+                f"latency_ms={result['latency_ms']}"
+            )
+            results.append(result)
+        except Exception as exc:  # noqa: BLE001 — recorded in experiment summary
+            print(f"  ERROR: {type(exc).__name__}: {exc}")
+            errors.append(
+                {
+                    "profile_id": record.get("profile_id"),
+                    "jd_id": record.get("jd_id"),
+                    "fit_label": record.get("fit_label"),
+                    "error_type": type(exc).__name__,
+                    "error": str(exc),
+                }
+            )
+
+    total_strength = sum(r["counts"]["strength_matches"] for r in results)
+    total_partial = sum(r["counts"]["partial_matches"] for r in results)
+    total_gaps = sum(r["counts"]["competency_gaps"] for r in results)
+    total_req = sum(r["counts"]["requirements"] for r in results)
+    total_latency = sum(r["latency_ms"] for r in results)
+    summary = {
+        "experiment_id": experiment_id,
+        "status": "completed" if results and not errors else (
+            "failed" if not results else "partial"
+        ),
+        "stage": "gap_analysis",
+        "source_experiment": source_dir.name,
+        "primary_dataset": config.get("primary_dataset"),
+        "embedding_model": settings.embedding_model,
+        "embedding_device": getattr(embeddings, "device", settings.embedding_device),
+        "signals": {
+            "tfidf": settings.enable_tfidf,
+            "bm25": settings.enable_bm25,
+            "semantic": settings.enable_semantic,
+        },
+        "combinations_attempted": len(records),
+        "combinations_ok": len(results),
+        "combinations_failed": len(errors),
+        "requirements_scored": total_req,
+        "three_category_totals": {
+            "strength_matches": total_strength,
+            "partial_matches": total_partial,
+            "competency_gaps": total_gaps,
+        },
+        "average_latency_ms": round(total_latency / len(results), 2) if results else None,
+        "human_evaluation": "not_yet_evaluated",
+        "errors": errors,
+        "result_files": [
+            f"gap_analysis/{r['profile_id']}__{r['jd_id']}__{r['seniority']}.json"
+            for r in results
+        ],
+        "config_path": str(config_path),
+        "config": config,
+    }
+    (out_dir / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    print(f"\nSummary -> {out_dir / 'summary.json'}")
+    return out_dir
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="InterviewIQ experiment runner")
     parser.add_argument("--config", required=True)
     parser.add_argument("--smoke", action="store_true", help="Run one combination only")
     parser.add_argument(
         "--stage",
-        choices=("extraction", "baseline"),
+        choices=("extraction", "gap_analysis", "baseline"),
         default="baseline",
         help="Pipeline stage to run. Default remains baseline generation.",
     )
+    parser.add_argument(
+        "--source-experiment",
+        default=None,
+        help="Extraction experiment id for --stage gap_analysis. Defaults to latest completed extraction.",
+    )
     args = parser.parse_args()
-    asyncio.run(async_main(Path(args.config).resolve(), smoke=args.smoke, stage=args.stage))
+    asyncio.run(
+        async_main(
+            Path(args.config).resolve(),
+            smoke=args.smoke,
+            stage=args.stage,
+            source_experiment=args.source_experiment,
+        )
+    )
 
 
 if __name__ == "__main__":

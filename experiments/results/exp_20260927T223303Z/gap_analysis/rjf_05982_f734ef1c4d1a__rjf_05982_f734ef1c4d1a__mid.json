@@ -1,0 +1,416 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_05982_f734ef1c4d1a",
+  "jd_id": "rjf_05982_f734ef1c4d1a",
+  "pair_id": "rjf_05982_f734ef1c4d1a",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Business analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.391,
+        "evidence": {
+          "tfidf_score": 0.023214286113047312,
+          "tfidf_matched_terms": [
+            "business"
+          ],
+          "bm25_score": 3.8140751540537563,
+          "semantic_score": 0.5714380145072937,
+          "matched_candidate_competency": "SAP Business Intelligence"
+        },
+        "candidate_evidence": [
+          "SAP Business Intelligence"
+        ]
+      },
+      {
+        "job_competency": "Product ownership",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7348,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4074538052082062,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "Process documentation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3946,
+        "evidence": {
+          "tfidf_score": 0.015469472163965716,
+          "tfidf_matched_terms": [
+            "documentation"
+          ],
+          "bm25_score": 4.769135700405324,
+          "semantic_score": 0.415581077337265,
+          "matched_candidate_competency": "CMMI documentation"
+        },
+        "candidate_evidence": [
+          "CMMI documentation"
+        ]
+      },
+      {
+        "job_competency": "Business process modeling",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6585,
+        "evidence": {
+          "tfidf_score": 0.01799663551016463,
+          "tfidf_matched_terms": [
+            "business"
+          ],
+          "bm25_score": 3.8140751540537563,
+          "semantic_score": 0.3701028823852539,
+          "matched_candidate_competency": "SAP Business Intelligence"
+        },
+        "candidate_evidence": [
+          "SAP Business Intelligence"
+        ]
+      },
+      {
+        "job_competency": "User story writing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6495,
+        "evidence": {
+          "tfidf_score": 0.03003617487495453,
+          "tfidf_matched_terms": [
+            "user"
+          ],
+          "bm25_score": 3.2389211834793317,
+          "semantic_score": 0.4928140640258789,
+          "matched_candidate_competency": "User acceptance testing"
+        },
+        "candidate_evidence": [
+          "User acceptance testing"
+        ]
+      },
+      {
+        "job_competency": "Business requirements analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3554,
+        "evidence": {
+          "tfidf_score": 0.04019816237556595,
+          "tfidf_matched_terms": [
+            "business",
+            "requirements"
+          ],
+          "bm25_score": 5.7089873003124305,
+          "semantic_score": 0.6655681133270264,
+          "matched_candidate_competency": "Verified client requirements with business analysts."
+        },
+        "candidate_evidence": [
+          "Verified client requirements with business analysts."
+        ]
+      },
+      {
+        "job_competency": "UAT management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6675,
+        "evidence": {
+          "tfidf_score": 0.030971222949784202,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.49602623954845,
+          "semantic_score": 0.3454709053039551,
+          "matched_candidate_competency": "Rational Quality Management"
+        },
+        "candidate_evidence": [
+          "Rational Quality Management"
+        ]
+      },
+      {
+        "job_competency": "Test scenario definition",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3949,
+        "evidence": {
+          "tfidf_score": 0.09172090594823613,
+          "tfidf_matched_terms": [
+            "test"
+          ],
+          "bm25_score": 2.505385345944016,
+          "semantic_score": 0.6534045338630676,
+          "matched_candidate_competency": "Test planning and test cases"
+        },
+        "candidate_evidence": [
+          "Test planning and test cases"
+        ]
+      },
+      {
+        "job_competency": "Test documentation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3579,
+        "evidence": {
+          "tfidf_score": 0.16360614499122006,
+          "tfidf_matched_terms": [
+            "documentation",
+            "test"
+          ],
+          "bm25_score": 4.769135700405324,
+          "semantic_score": 0.6718385219573975,
+          "matched_candidate_competency": "CMMI documentation"
+        },
+        "candidate_evidence": [
+          "CMMI documentation"
+        ]
+      },
+      {
+        "job_competency": "Business-IT liaison",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.372,
+        "evidence": {
+          "tfidf_score": 0.03348390341070659,
+          "tfidf_matched_terms": [
+            "business",
+            "liaison"
+          ],
+          "bm25_score": 4.769135700405324,
+          "semantic_score": 0.6284533143043518,
+          "matched_candidate_competency": "Stakeholder liaison"
+        },
+        "candidate_evidence": [
+          "Stakeholder liaison"
+        ]
+      },
+      {
+        "job_competency": "Workflow automation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9288,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3562406301498413,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "Organizational analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7283,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44790637493133545,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "Google Workspace productivity tools",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3905,
+        "evidence": {
+          "tfidf_score": 0.010139162654012285,
+          "tfidf_matched_terms": [
+            "tools"
+          ],
+          "bm25_score": 4.2347298397329824,
+          "semantic_score": 0.5307304859161377,
+          "matched_candidate_competency": "Performance Developer Tools"
+        },
+        "candidate_evidence": [
+          "Performance Developer Tools"
+        ]
+      },
+      {
+        "job_competency": "Confluence",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5565,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3625671863555908,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "Jira",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.102,
+        "evidence": {
+          "tfidf_score": 0.06683075463100972,
+          "tfidf_matched_terms": [
+            "jira"
+          ],
+          "bm25_score": 4.174460056562848,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "JIRA"
+        },
+        "candidate_evidence": [
+          "JIRA"
+        ]
+      },
+      {
+        "job_competency": "Salesforce",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4294,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5267752408981323,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "Steelbrick CPQ",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5618,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3179480731487274,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "Salesforce PRM",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.553,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39160585403442383,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "Regression test automation",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2184,
+        "evidence": {
+          "tfidf_score": 0.14376637815684712,
+          "tfidf_matched_terms": [
+            "regression",
+            "test"
+          ],
+          "bm25_score": 3.4035941802724583,
+          "semantic_score": 0.8044238686561584,
+          "matched_candidate_competency": "Regression testing"
+        },
+        "candidate_evidence": [
+          "Regression testing"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Jira"
+    ],
+    "partial_matches": [
+      "Business analysis",
+      "Process documentation",
+      "Business requirements analysis",
+      "Test scenario definition",
+      "Test documentation",
+      "Business-IT liaison",
+      "Google Workspace productivity tools",
+      "Regression test automation"
+    ],
+    "weak_matches": [
+      "Product ownership",
+      "Business process modeling",
+      "User story writing",
+      "UAT management",
+      "Organizational analysis",
+      "Salesforce"
+    ],
+    "missing": [
+      "Workflow automation",
+      "Confluence",
+      "Steelbrick CPQ",
+      "Salesforce PRM"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Jira"
+    ],
+    "partial_matches": [
+      "Business analysis",
+      "Process documentation",
+      "Business requirements analysis",
+      "Test scenario definition",
+      "Test documentation",
+      "Business-IT liaison",
+      "Google Workspace productivity tools",
+      "Regression test automation"
+    ],
+    "competency_gaps": [
+      "Product ownership",
+      "Business process modeling",
+      "User story writing",
+      "UAT management",
+      "Organizational analysis",
+      "Salesforce",
+      "Workflow automation",
+      "Confluence",
+      "Steelbrick CPQ",
+      "Salesforce PRM"
+    ]
+  },
+  "counts": {
+    "requirements": 19,
+    "strength_matches": 1,
+    "partial_matches": 8,
+    "competency_gaps": 10
+  },
+  "latency_ms": 48.11,
+  "analyzed_at": "2026-09-27T22:33:14.188536+00:00"
+}

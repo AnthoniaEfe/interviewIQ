@@ -1,0 +1,298 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_05005_9ea5f225c8aa",
+  "jd_id": "rjf_05005_9ea5f225c8aa",
+  "pair_id": "rjf_05005_9ea5f225c8aa",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7115,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5533870458602905,
+          "matched_candidate_competency": "Data Entry"
+        },
+        "candidate_evidence": [
+          "Data Entry"
+        ]
+      },
+      {
+        "job_competency": "Relational databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6884,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6974143981933594,
+          "matched_candidate_competency": "Data Entry"
+        },
+        "candidate_evidence": [
+          "Data Entry"
+        ]
+      },
+      {
+        "job_competency": "ETL/ELT architecture and concepts",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7213,
+        "evidence": {
+          "tfidf_score": 0.1980304519631245,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.6149047612217685,
+          "semantic_score": 0.26077109575271606,
+          "matched_candidate_competency": "Greeted visitors and customers and provided assistance."
+        },
+        "candidate_evidence": [
+          "Greeted visitors and customers and provided assistance."
+        ]
+      },
+      {
+        "job_competency": "Data integration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3907,
+        "evidence": {
+          "tfidf_score": 0.07152792127852559,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 2.7534059127785757,
+          "semantic_score": 0.6686910390853882,
+          "matched_candidate_competency": "Data Entry"
+        },
+        "candidate_evidence": [
+          "Data Entry"
+        ]
+      },
+      {
+        "job_competency": "Big data",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6559,
+        "evidence": {
+          "tfidf_score": 0.07152792127852559,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 2.7534059127785757,
+          "semantic_score": 0.4768213629722595,
+          "matched_candidate_competency": "Data Entry"
+        },
+        "candidate_evidence": [
+          "Data Entry"
+        ]
+      },
+      {
+        "job_competency": "Data pipeline architecture",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6727,
+        "evidence": {
+          "tfidf_score": 0.05545128210192445,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 2.7534059127785757,
+          "semantic_score": 0.38361549377441406,
+          "matched_candidate_competency": "Data Entry"
+        },
+        "candidate_evidence": [
+          "Data Entry"
+        ]
+      },
+      {
+        "job_competency": "Data modeling",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6585,
+        "evidence": {
+          "tfidf_score": 0.07152792127852559,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 2.7534059127785757,
+          "semantic_score": 0.46078795194625854,
+          "matched_candidate_competency": "Data Entry"
+        },
+        "candidate_evidence": [
+          "Data Entry"
+        ]
+      },
+      {
+        "job_competency": "Data architecture documentation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6669,
+        "evidence": {
+          "tfidf_score": 0.05545128210192445,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 2.7534059127785757,
+          "semantic_score": 0.42009711265563965,
+          "matched_candidate_competency": "Data Entry"
+        },
+        "candidate_evidence": [
+          "Data Entry"
+        ]
+      },
+      {
+        "job_competency": "APIs",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9315,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34270787239074707,
+          "matched_candidate_competency": "Data Entry"
+        },
+        "candidate_evidence": [
+          "Data Entry"
+        ]
+      },
+      {
+        "job_competency": "IT project planning and management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3911,
+        "evidence": {
+          "tfidf_score": 0.22689759269655177,
+          "tfidf_matched_terms": [
+            "and",
+            "management"
+          ],
+          "bm25_score": 4.139044242555957,
+          "semantic_score": 0.3621518015861511,
+          "matched_candidate_competency": "Database Management"
+        },
+        "candidate_evidence": [
+          "Database Management"
+        ]
+      },
+      {
+        "job_competency": "Systems engineering or administration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3797,
+        "evidence": {
+          "tfidf_score": 0.01674231942102078,
+          "tfidf_matched_terms": [
+            "administration",
+            "or"
+          ],
+          "bm25_score": 4.8495086304114805,
+          "semantic_score": 0.538223922252655,
+          "matched_candidate_competency": "Office Administration"
+        },
+        "candidate_evidence": [
+          "Office Administration"
+        ]
+      },
+      {
+        "job_competency": "English language fluency",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3669,
+        "evidence": {
+          "tfidf_score": 0.009175892455003918,
+          "tfidf_matched_terms": [
+            "english"
+          ],
+          "bm25_score": 5.578453560243687,
+          "semantic_score": 0.5736485719680786,
+          "matched_candidate_competency": "English"
+        },
+        "candidate_evidence": [
+          "English"
+        ]
+      },
+      {
+        "job_competency": "Three years of experience",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5672,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2735886573791504,
+          "matched_candidate_competency": "Data Entry"
+        },
+        "candidate_evidence": [
+          "Data Entry"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Data integration",
+      "IT project planning and management",
+      "Systems engineering or administration",
+      "English language fluency"
+    ],
+    "weak_matches": [
+      "SQL",
+      "Relational databases",
+      "ETL/ELT architecture and concepts",
+      "Big data",
+      "Data pipeline architecture",
+      "Data modeling",
+      "Data architecture documentation"
+    ],
+    "missing": [
+      "APIs",
+      "Three years of experience"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Data integration",
+      "IT project planning and management",
+      "Systems engineering or administration",
+      "English language fluency"
+    ],
+    "competency_gaps": [
+      "SQL",
+      "Relational databases",
+      "ETL/ELT architecture and concepts",
+      "Big data",
+      "Data pipeline architecture",
+      "Data modeling",
+      "Data architecture documentation",
+      "APIs",
+      "Three years of experience"
+    ]
+  },
+  "counts": {
+    "requirements": 13,
+    "strength_matches": 0,
+    "partial_matches": 4,
+    "competency_gaps": 9
+  },
+  "latency_ms": 32.05,
+  "analyzed_at": "2026-09-27T22:33:13.756337+00:00"
+}

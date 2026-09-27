@@ -1,0 +1,1005 @@
+{
+  "experiment_id": "exp_20260927T220439Z",
+  "stage": "extraction",
+  "profile_id": "rjf_04122_3ec8c52624fb",
+  "jd_id": "rjf_04122_3ec8c52624fb",
+  "pair_id": "rjf_04122_3ec8c52624fb",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Seeking a challenging accounting position to apply accounting skills, knowledge, and education while developing additional abilities.",
+    "seniority_indicators": [
+      "Accountant",
+      "Staff Accountant",
+      "Campus Accountant",
+      "Senior Finance Associate"
+    ],
+    "education": [
+      {
+        "degree": "BBA",
+        "institution": "Friends University",
+        "field": "Accounting",
+        "year": "2009",
+        "source_text": "Friends University \u2014 BBA: Accounting, GPA 3.5"
+      },
+      {
+        "degree": null,
+        "institution": "Baker University",
+        "field": "Business Administration",
+        "year": null,
+        "source_text": "Baker University \u2014 Business Administration, GPA 3.63"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Accountant",
+        "employer": "The Southern Company",
+        "duration": "2013-02 to 2014",
+        "responsibilities": [
+          "Set up capital jobs and entered completed assets into JDE and CAMS",
+          "Tracked spending for budget compliance and maintained CIP documentation",
+          "Audited purchasing cards and ensured compliance with company policies",
+          "Prepared journal entries, accruals, balance sheet reconciliations, and government reporting forms"
+        ],
+        "achievements": [],
+        "technologies": [
+          "JDE",
+          "CAMS"
+        ],
+        "source_text": "The Southern Company \u2014 Accountant, Albany, GA, 2013-02/2014"
+      },
+      {
+        "title": "Campus Accountant",
+        "employer": "Department of the Interior",
+        "duration": "06/2012 to 12/2012",
+        "responsibilities": [
+          "Processed student payments including self-payments, financial aid, military benefits, and loans",
+          "Monitored aged trial balances and past-due student accounts",
+          "Managed inventory ordering and just-in-time inventory records",
+          "Coded invoices, processed manual check requests, and created purchase orders",
+          "Performed deposits and month-end accounting duties"
+        ],
+        "achievements": [],
+        "technologies": [],
+        "source_text": "Department of the Interior \u2014 Campus Accountant, Albuquerque, NM, 06/2012-12/2012"
+      },
+      {
+        "title": "Staff Accountant",
+        "employer": "Macquarie Group",
+        "duration": "12/2010 to 05/2012",
+        "responsibilities": [
+          "Developed and implemented a strategy for collecting and reporting monthly sales and use taxes",
+          "Prepared amended returns and supported sales tax audits",
+          "Monitored invoice and work-order coding and accrued use tax liabilities",
+          "Maintained rental-side fixed assets, journal entries, intercompany transactions, depreciation, estimates, warranties, and reconciliations",
+          "Closed tax and fixed asset accounts at month-end and year-end"
+        ],
+        "achievements": [
+          "Trained associates on new tax procedures"
+        ],
+        "technologies": [],
+        "source_text": "Macquarie Group \u2014 Staff Accountant, San Diego, CA, 12/2010-05/2012"
+      },
+      {
+        "title": "Senior Finance Associate",
+        "employer": "Department of the Interior",
+        "duration": "10/2008 to 11/2010",
+        "responsibilities": [
+          "Processed vendor invoices and monitored outstanding checks",
+          "Processed warranties and returns, including repair-cost matching, adjusting entries, and account reconciliations",
+          "Supported conversion of vendors to ACH payments",
+          "Assisted vendors with new payment procedures and provided process feedback"
+        ],
+        "achievements": [
+          "Played an important role in converting vendors from paper checks to ACH payments"
+        ],
+        "technologies": [],
+        "source_text": "Department of the Interior \u2014 Senior Finance Associate, Boise, ID, 10/2008-11/2010"
+      },
+      {
+        "title": "Staff Accountant",
+        "employer": "Beauty First",
+        "duration": "06/2006 to 09/2008",
+        "responsibilities": [
+          "Oversaw accounting for 21 retail salons",
+          "Monitored inventory controls, material variances, purchase orders, and account reconciliations",
+          "Reconciled cost of goods and closed accounts at month-end and year-end",
+          "Performed bank reconciliations, deposit verification, credit card balancing, and fee processing",
+          "Calculated and reconciled sales and use taxes"
+        ],
+        "achievements": [
+          "Trained new accounting assistants",
+          "Assisted in developing a spreadsheet to track bank deposits"
+        ],
+        "technologies": [],
+        "source_text": "Beauty \u2014 Staff Accountant, City, STATE, 06/2006-09/2008"
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "Accounting",
+        "original_mentions": [
+          "Accounting"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: Accounting",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accounts Payable",
+        "original_mentions": [
+          "Accounts Payable",
+          "AP"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: Accounts Payable, AP",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accruals",
+        "original_mentions": [
+          "accruals"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Entered monthly journal entries and accruals",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Bank Reconciliations",
+        "original_mentions": [
+          "Bank Reconciliations",
+          "Reconciled bank accounts"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Bank Reconciliations; Reconciled bank accounts",
+          "source_section": "Skills and Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Fixed Assets",
+        "original_mentions": [
+          "Fixed Assets",
+          "fixed asset account"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Fixed Assets; Closed fixed asset account",
+          "source_section": "Skills and Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Inventory Control",
+        "original_mentions": [
+          "Inventory Control",
+          "inventory control"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Inventory Control; monitored inventory control procedures",
+          "source_section": "Skills and Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Journal Entries",
+        "original_mentions": [
+          "journal entries"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Entered monthly journal entries",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Office Suite",
+        "original_mentions": [
+          "Microsoft Office Suite"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Highlights: Microsoft Office Suite",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SAP",
+        "original_mentions": [
+          "SAP"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Highlights: SAP",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "AS400",
+        "original_mentions": [
+          "AS400"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Highlights: AS400",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JDE",
+        "original_mentions": [
+          "JDE"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Entered assets into JDE",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "CAMS",
+        "original_mentions": [
+          "CAMS"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Entered assets into JDE and CAMS",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Sales and Use Tax",
+        "original_mentions": [
+          "Sales and Use Tax",
+          "sales tax",
+          "use tax"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Sales and Use Tax; calculated sales tax and accrued use tax",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial Reporting",
+        "original_mentions": [
+          "reporting",
+          "government reporting/compliance forms"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Completed government reporting/compliance forms",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Budget Monitoring",
+        "original_mentions": [
+          "budget",
+          "budget compliance"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Tracked spending to ensure budget compliance",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Spreadsheets",
+        "original_mentions": [
+          "spreadsheet"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Developing a spreadsheet to track bank deposits",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Training",
+        "original_mentions": [
+          "Trained associates",
+          "Trained new accounting assistants"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Trained associates on new tax procedures",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Counseling",
+        "original_mentions": [
+          "counseling regarding repayment options"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Counseling students regarding repayment options",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Communication",
+        "original_mentions": [
+          "communicated",
+          "communicated any new policies"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Communicated new policies to administrative managers",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Vendor Support",
+        "original_mentions": [
+          "Provided assistance to vendors"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Provided assistance to vendors navigating new payment procedures",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Accounting Operations",
+        "original_mentions": [
+          "accounting position",
+          "various accounting duties"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Multiple accounting and finance roles",
+          "source_section": "Summary and Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accounts Payable",
+        "original_mentions": [
+          "Accounts Payable",
+          "invoice processing"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Processed invoices, coded invoices, and created purchase orders",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Tax Accounting",
+        "original_mentions": [
+          "Sales and Use Tax",
+          "sales tax",
+          "use tax"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Managed sales and use tax activities for multiple states",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Retail Accounting",
+        "original_mentions": [
+          "21 Beauty First retail salons",
+          "retail"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Oversaw all aspects of accounting for 21 retail salons",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Student Accounts",
+        "original_mentions": [
+          "Managing Student Accounts",
+          "student payments"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Managed student accounts and processed student payments",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Inventory Management",
+        "original_mentions": [
+          "Inventory Control",
+          "just-in-time inventory method"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Maintained accurate inventory using the just-in-time inventory method",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Purchasing Cards",
+        "original_mentions": [
+          "Purchasing Cards",
+          "VISA purchasing cards"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Conducted monthly audits of VISA purchasing cards",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial Compliance",
+        "original_mentions": [
+          "government reporting/compliance forms",
+          "company policies"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Completed government reporting/compliance forms and monitored policy compliance",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": []
+  },
+  "job": {
+    "title": null,
+    "seniority": null,
+    "years_of_experience": "Three or more years experience as a cost accountant in a manufacturing environment",
+    "responsibilities": [
+      "Create and maintain BOMs in local ERPs, such as SAGE, and master BOM data in spreadsheet files.",
+      "Establish, validate, and maintain additional costs such as per-unit labor and handling in BOMs.",
+      "Own inventory reconciliations across all warehouses.",
+      "Provide cross-functional analysis to ensure supplier shipments align with demand planning and inventory turns goals.",
+      "Identify inventory variances and root causes, and work with operations to implement remediation plans.",
+      "Establish and implement inventory-related accounting policies and procedures.",
+      "Maintain and validate inventory costing integrity, including inventory cost tier adjustments.",
+      "Lead year-end inventory audit processes and physical inventories.",
+      "Maintain purchases clearing account reconciliations.",
+      "Ensure accurate inventory accounting and work order processing with location personnel.",
+      "Prepare supporting documentation for quarterly and annual external audits.",
+      "Review month-end freight expense postings for inventory capitalization or customer billing.",
+      "Assist with expenditure analysis for budgeting and forecasts.",
+      "Support ad hoc projects as needed."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Cost accounting",
+        "original_mentions": [
+          "cost accountant"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Three or more years experience as a cost accountant",
+          "source_section": "Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Inventory costing",
+        "original_mentions": [
+          "inventory costing",
+          "inventory costing integrity"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "ensuring the accuracy of inventory costing and accounting",
+          "source_section": "Overview",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Inventory reconciliation",
+        "original_mentions": [
+          "inventory reconciliations",
+          "purchases clearing account reconciliation"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Ownership of inventory reconciliations across all warehouses",
+          "source_section": "Specific Job Function",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "ERP systems",
+        "original_mentions": [
+          "local ERPs",
+          "ERP systems"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Proficiency in Excel in conjunction with ERP systems and planning",
+          "source_section": "Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Excel",
+        "original_mentions": [
+          "Excel",
+          "spreadsheet files"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Proficiency in Excel",
+          "source_section": "Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Demand planning and inventory analysis",
+        "original_mentions": [
+          "demand planning and inventory turns goals",
+          "supplier shipments align with demand planning"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.94,
+        "source": {
+          "source_text": "provide analysis to ensure supplier shipments align with demand planning",
+          "source_section": "Specific Job Function",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "BOM management",
+        "original_mentions": [
+          "create & maintain BOMS",
+          "master BOM data"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "create & maintain BOMS in local ERPs",
+          "source_section": "Specific Job Function",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Manufacturing accounting",
+        "original_mentions": [
+          "manufacturing environment",
+          "cost accountant in a manufacturing environment"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "cost accountant in a manufacturing environment",
+          "source_section": "Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Attention to detail",
+        "original_mentions": [
+          "strong attention to detail"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "This requires a strong attention to detail",
+          "source_section": "Overview",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data integrity",
+        "original_mentions": [
+          "data integrity"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "data integrity",
+          "source_section": "Overview",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Conflict resolution",
+        "original_mentions": [
+          "facilitation of conflict resolution"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "facilitation of conflict resolution",
+          "source_section": "Overview",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Interpersonal skills",
+        "original_mentions": [
+          "Interpersonal"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Interpersonal",
+          "source_section": "Competencies",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Integrity",
+        "original_mentions": [
+          "Integrity"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Integrity",
+          "source_section": "Competencies",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Tenacity",
+        "original_mentions": [
+          "Tenacity"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Tenacity",
+          "source_section": "Competencies",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Initiative",
+        "original_mentions": [
+          "Initiative"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Initiative",
+          "source_section": "Competencies",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Decision-making",
+        "original_mentions": [
+          "Decision Making"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Decision Making",
+          "source_section": "Competencies",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Negotiation",
+        "original_mentions": [
+          "Negotiation Skills"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Negotiation Skills",
+          "source_section": "Competencies",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "SAGE",
+        "original_mentions": [
+          "SAGE"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "SAGE knowledge a plus",
+          "source_section": "Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Hyperion",
+        "original_mentions": [
+          "Hyperion"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Hyperion knowledge a plus",
+          "source_section": "Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SAP",
+        "original_mentions": [
+          "SAP"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "SAP knowledge a plus",
+          "source_section": "Requirements",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [
+      "Bachelor's degree in accounting"
+    ],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Inventory accounting",
+        "original_mentions": [
+          "inventory accounting",
+          "accurate inventory accounting"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "ensuring the accuracy of inventory costing and accounting",
+          "source_section": "Overview",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Physical inventory and cycle counts",
+        "original_mentions": [
+          "physical inventories and cycle counts"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "ensuring accurate physical inventories and cycle counts",
+          "source_section": "Overview",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "External audit support",
+        "original_mentions": [
+          "quarterly and annual external audits",
+          "year-end inventory audit process"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Prepare supporting documentation for quarterly and annual external audits",
+          "source_section": "Specific Job Function",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Budgeting and forecasting",
+        "original_mentions": [
+          "budgeting and forecasts"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "expenditure analysis needed for budgeting and forecasts",
+          "source_section": "Specific Job Function",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Collaboration",
+        "original_mentions": [
+          "collaborative environment",
+          "work closely with"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "in a collaborative and fast-paced environment",
+          "source_section": "Overview",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cross-functional communication",
+        "original_mentions": [
+          "work cross-functionally",
+          "work closely with channel CFO, Controller and Operations teams"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Work cross-functionally",
+          "source_section": "Specific Job Function",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [],
+    "system_design_requirements": [],
+    "competencies": [
+      {
+        "normalized_label": "Travel",
+        "original_mentions": [
+          "Travel = 20%"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Travel = 20%",
+          "source_section": "Requirements",
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 2189,
+    "output_tokens": 2622,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0033961,
+    "latency_ms": 15619.55,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1155,
+    "output_tokens": 1935,
+    "cached_tokens": 0,
+    "estimated_cost": 0.002553,
+    "latency_ms": 13659.86,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-09-27T22:18:36.352492+00:00"
+}

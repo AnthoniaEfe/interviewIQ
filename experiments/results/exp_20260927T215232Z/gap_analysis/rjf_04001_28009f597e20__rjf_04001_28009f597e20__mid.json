@@ -1,0 +1,515 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_04001_28009f597e20",
+  "jd_id": "rjf_04001_28009f597e20",
+  "pair_id": "rjf_04001_28009f597e20",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Software Development Life Cycle",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6913,
+        "evidence": {
+          "tfidf_score": 0.00942261140355314,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 3.050750141080171,
+          "semantic_score": 0.49850142002105713,
+          "matched_candidate_competency": "Supervised three junior software QA testers."
+        },
+        "candidate_evidence": [
+          "Supervised three junior software QA testers."
+        ]
+      },
+      {
+        "job_competency": "Software architecture patterns",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7042,
+        "evidence": {
+          "tfidf_score": 0.011145015431350158,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 3.050750141080171,
+          "semantic_score": 0.41633161902427673,
+          "matched_candidate_competency": "Supervised three junior software QA testers."
+        },
+        "candidate_evidence": [
+          "Supervised three junior software QA testers."
+        ]
+      },
+      {
+        "job_competency": "Oracle Cloud Fusion Financials",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9377,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3117191195487976,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "Oracle Integration Cloud",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6991,
+        "evidence": {
+          "tfidf_score": 0.022310110961934786,
+          "tfidf_matched_terms": [
+            "integration"
+          ],
+          "bm25_score": 4.063595627363482,
+          "semantic_score": 0.3823099732398987,
+          "matched_candidate_competency": "Integration testing"
+        },
+        "candidate_evidence": [
+          "Integration testing"
+        ]
+      },
+      {
+        "job_competency": "Oracle Cloud Infrastructure",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9399,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30070069432258606,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "Oracle Cloud EPM",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9426,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2870233654975891,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "BI Publisher Reports",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9174,
+        "evidence": {
+          "tfidf_score": 0.01114501543135016,
+          "tfidf_matched_terms": [
+            "reports"
+          ],
+          "bm25_score": 2.3880771418109465,
+          "semantic_score": 0.2685910761356354,
+          "matched_candidate_competency": "Prepared daily and weekly defect and test execution reports."
+        },
+        "candidate_evidence": [
+          "Prepared daily and weekly defect and test execution reports."
+        ]
+      },
+      {
+        "job_competency": "OTBI Reports",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7166,
+        "evidence": {
+          "tfidf_score": 0.014376219200058868,
+          "tfidf_matched_terms": [
+            "reports"
+          ],
+          "bm25_score": 2.3880771418109465,
+          "semantic_score": 0.3743686378002167,
+          "matched_candidate_competency": "Prepared daily and weekly defect and test execution reports."
+        },
+        "candidate_evidence": [
+          "Prepared daily and weekly defect and test execution reports."
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3658,
+        "evidence": {
+          "tfidf_score": 0.024797757862052232,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 5.675678560747623,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Agile software development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3824,
+        "evidence": {
+          "tfidf_score": 0.031114221665623013,
+          "tfidf_matched_terms": [
+            "agile",
+            "software"
+          ],
+          "bm25_score": 5.155248293545375,
+          "semantic_score": 0.8588431477546692,
+          "matched_candidate_competency": "Agile"
+        },
+        "candidate_evidence": [
+          "Agile"
+        ]
+      },
+      {
+        "job_competency": "SAFe",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9373,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3135043680667877,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "Scrum",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6897,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6893337368965149,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "JIRA",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3691,
+        "evidence": {
+          "tfidf_score": 0.04964019412241889,
+          "tfidf_matched_terms": [
+            "jira"
+          ],
+          "bm25_score": 4.76287594564783,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "JIRA"
+        },
+        "candidate_evidence": [
+          "JIRA"
+        ]
+      },
+      {
+        "job_competency": "Peer review",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9462,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26877883076667786,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3622,
+        "evidence": {
+          "tfidf_score": 0.012396091240361716,
+          "tfidf_matched_terms": [
+            "git"
+          ],
+          "bm25_score": 6.45843538333827,
+          "semantic_score": 0.9999998211860657,
+          "matched_candidate_competency": "Git"
+        },
+        "candidate_evidence": [
+          "Git"
+        ]
+      },
+      {
+        "job_competency": "Continuous integration and continuous delivery",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.399,
+        "evidence": {
+          "tfidf_score": 0.19338140343251917,
+          "tfidf_matched_terms": [
+            "and",
+            "continuous",
+            "integration"
+          ],
+          "bm25_score": 6.552957501809758,
+          "semantic_score": 0.4913496673107147,
+          "matched_candidate_competency": "Interpreted testing results and developed continuous improvement processes."
+        },
+        "candidate_evidence": [
+          "Interpreted testing results and developed continuous improvement processes."
+        ]
+      },
+      {
+        "job_competency": "Cloud migration",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.944,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2797873318195343,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "Cloud-centric engineering",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9386,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30697429180145264,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "End-to-end IT processes",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7081,
+        "evidence": {
+          "tfidf_score": 0.02523183218385163,
+          "tfidf_matched_terms": [
+            "processes",
+            "to"
+          ],
+          "bm25_score": 2.574483857130101,
+          "semantic_score": 0.40888217091560364,
+          "matched_candidate_competency": "Identified test cases and business processes for automation."
+        },
+        "candidate_evidence": [
+          "Identified test cases and business processes for automation."
+        ]
+      },
+      {
+        "job_competency": "Troubleshooting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7306,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4340139329433441,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "Root cause analysis",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1609,
+        "evidence": {
+          "tfidf_score": 0.042996128102199105,
+          "tfidf_matched_terms": [
+            "analysis",
+            "cause",
+            "root"
+          ],
+          "bm25_score": 13.152926785982427,
+          "semantic_score": 0.9999998211860657,
+          "matched_candidate_competency": "Root cause analysis"
+        },
+        "candidate_evidence": [
+          "Root cause analysis"
+        ]
+      },
+      {
+        "job_competency": "Solution requirements communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4001,
+        "evidence": {
+          "tfidf_score": 0.06255330795614156,
+          "tfidf_matched_terms": [
+            "communication",
+            "requirements"
+          ],
+          "bm25_score": 4.804781942369723,
+          "semantic_score": 0.678600013256073,
+          "matched_candidate_competency": "Communication and coordination"
+        },
+        "candidate_evidence": [
+          "Communication and coordination"
+        ]
+      },
+      {
+        "job_competency": "Architecture communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6794,
+        "evidence": {
+          "tfidf_score": 0.0071864934679469975,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 4.804781942369723,
+          "semantic_score": 0.47450679540634155,
+          "matched_candidate_competency": "Communication and coordination"
+        },
+        "candidate_evidence": [
+          "Communication and coordination"
+        ]
+      },
+      {
+        "job_competency": "Private, public, and hybrid cloud infrastructure",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5517,
+        "evidence": {
+          "tfidf_score": 0.1405368205032202,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.1380321317422772,
+          "semantic_score": 0.23224927484989166,
+          "matched_candidate_competency": "Communication and coordination"
+        },
+        "candidate_evidence": [
+          "Communication and coordination"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Root cause analysis"
+    ],
+    "partial_matches": [
+      "SQL",
+      "Agile software development",
+      "JIRA",
+      "Git",
+      "Continuous integration and continuous delivery",
+      "Solution requirements communication"
+    ],
+    "weak_matches": [
+      "Software Development Life Cycle",
+      "Software architecture patterns",
+      "Oracle Integration Cloud",
+      "OTBI Reports",
+      "Scrum",
+      "End-to-end IT processes",
+      "Troubleshooting",
+      "Architecture communication"
+    ],
+    "missing": [
+      "Oracle Cloud Fusion Financials",
+      "Oracle Cloud Infrastructure",
+      "Oracle Cloud EPM",
+      "BI Publisher Reports",
+      "SAFe",
+      "Peer review",
+      "Cloud migration",
+      "Cloud-centric engineering",
+      "Private, public, and hybrid cloud infrastructure"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Root cause analysis"
+    ],
+    "partial_matches": [
+      "SQL",
+      "Agile software development",
+      "JIRA",
+      "Git",
+      "Continuous integration and continuous delivery",
+      "Solution requirements communication"
+    ],
+    "competency_gaps": [
+      "Software Development Life Cycle",
+      "Software architecture patterns",
+      "Oracle Integration Cloud",
+      "OTBI Reports",
+      "Scrum",
+      "End-to-end IT processes",
+      "Troubleshooting",
+      "Architecture communication",
+      "Oracle Cloud Fusion Financials",
+      "Oracle Cloud Infrastructure",
+      "Oracle Cloud EPM",
+      "BI Publisher Reports",
+      "SAFe",
+      "Peer review",
+      "Cloud migration",
+      "Cloud-centric engineering",
+      "Private, public, and hybrid cloud infrastructure"
+    ]
+  },
+  "counts": {
+    "requirements": 24,
+    "strength_matches": 1,
+    "partial_matches": 6,
+    "competency_gaps": 17
+  },
+  "latency_ms": 60.07,
+  "analyzed_at": "2026-09-27T21:52:40.455844+00:00"
+}

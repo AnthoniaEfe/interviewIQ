@@ -1,0 +1,228 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_05320_ccfebe0a6c74",
+  "jd_id": "rjf_05320_ccfebe0a6c74",
+  "pair_id": "rjf_05320_ccfebe0a6c74",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1611,
+        "evidence": {
+          "tfidf_score": 0.036144363335227254,
+          "tfidf_matched_terms": [
+            "java"
+          ],
+          "bm25_score": 5.190431527381352,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "AWS Cloud Platform architecture",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9558,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.22100239992141724,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Data modeling",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6544,
+        "evidence": {
+          "tfidf_score": 0.020954285183539364,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.638294323332018,
+          "semantic_score": 0.36874231696128845,
+          "matched_candidate_competency": "Electronic Data Interchange"
+        },
+        "candidate_evidence": [
+          "Electronic Data Interchange"
+        ]
+      },
+      {
+        "job_competency": "Relational databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6992,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6297639608383179,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "NoSQL databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7337,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4145980477333069,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Microservices",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9395,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30260729789733887,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Docker",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9349,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3253406286239624,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Kubernetes",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9554,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.22296233475208282,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.728,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44969794154167175,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "GitOps",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9419,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2904486656188965,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Java"
+    ],
+    "partial_matches": [],
+    "weak_matches": [
+      "Data modeling",
+      "Relational databases",
+      "NoSQL databases",
+      "Python"
+    ],
+    "missing": [
+      "AWS Cloud Platform architecture",
+      "Microservices",
+      "Docker",
+      "Kubernetes",
+      "GitOps"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Java"
+    ],
+    "partial_matches": [],
+    "competency_gaps": [
+      "Data modeling",
+      "Relational databases",
+      "NoSQL databases",
+      "Python",
+      "AWS Cloud Platform architecture",
+      "Microservices",
+      "Docker",
+      "Kubernetes",
+      "GitOps"
+    ]
+  },
+  "counts": {
+    "requirements": 10,
+    "strength_matches": 1,
+    "partial_matches": 0,
+    "competency_gaps": 9
+  },
+  "latency_ms": 27.98,
+  "analyzed_at": "2026-09-27T22:33:13.893546+00:00"
+}

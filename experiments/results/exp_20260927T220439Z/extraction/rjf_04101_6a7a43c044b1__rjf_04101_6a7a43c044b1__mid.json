@@ -1,0 +1,1700 @@
+{
+  "experiment_id": "exp_20260927T220439Z",
+  "stage": "extraction",
+  "profile_id": "rjf_04101_6a7a43c044b1",
+  "jd_id": "rjf_04101_6a7a43c044b1",
+  "pair_id": "rjf_04101_6a7a43c044b1",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Highly motivated Sales Associate with extensive customer service and sales experience; also experienced in data science, data engineering, Oracle consulting, and data analysis.",
+    "seniority_indicators": [
+      "Data Science & Data Engineer Intern",
+      "Oracle Technical Consultant & Data Analyst",
+      "Data Analyst Intern"
+    ],
+    "education": [
+      {
+        "degree": "Master of Science",
+        "institution": "University of Utah, David Eccles School of Business",
+        "field": "Information Systems, Data Science and Analytics specialization",
+        "year": "Expected August 2017",
+        "source_text": "Master of Science: Information Systems, Expected August 2017"
+      },
+      {
+        "degree": "Bachelor of Science",
+        "institution": "Rajeev Gandhi Memorial College of Engineering and Technology",
+        "field": "Computer Science and Engineering",
+        "year": "Expected May 2012",
+        "source_text": "Bachelor of Science: Computer Science and Engineering, Expected May 2012"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Data Science & Data Engineer Intern",
+        "employer": "Envestnet",
+        "duration": "01/2017-Present",
+        "responsibilities": [
+          "Worked on big data ingestion using Sqoop to transfer data from MySQL database servers to Amazon EMR HCatalog and Hive to transfer data to Amazon S3.",
+          "Developed Sqoop and Hive scripts for data ingestion.",
+          "Used R and Spark in Amazon EMR for filtering, exploring, and analyzing data, providing insights, and developing reports."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Sqoop",
+          "MySQL",
+          "Amazon EMR",
+          "HCatalog",
+          "Hive",
+          "Amazon S3",
+          "R",
+          "Spark"
+        ],
+        "source_text": "Data Science & Data Engineer Intern, 01/2017-Present, Envestnet"
+      },
+      {
+        "title": "Oracle Technical Consultant & Data Analyst",
+        "employer": "First American Corporation",
+        "duration": "02/2013-07/2016",
+        "responsibilities": [
+          "Created SQL scripts for daily extracts, ad hoc requests, reporting, and large-data-set analysis.",
+          "Designed ER diagrams and conceptual, logical, and physical data models.",
+          "Created tables, indexes, sequences, and views.",
+          "Prepared SQL*Loader scripts for loading data from other systems into Oracle ERP.",
+          "Worked with the on-site business team on data fixes.",
+          "Created PL/SQL interfaces for business validation, transferring data between ERP modules, and loading data to base tables."
+        ],
+        "achievements": [
+          "Increased the performance of Oracle Business Intelligence reports by 60% in the production environment."
+        ],
+        "technologies": [
+          "SQL",
+          "Oracle",
+          "ER diagrams",
+          "SQL*Loader",
+          "PL/SQL",
+          "Oracle Business Intelligence",
+          "Oracle ERP"
+        ],
+        "source_text": "Oracle Technical Consultant & Data Analyst, 02/2013-07/2016, First American Corporation"
+      },
+      {
+        "title": "Data Analyst Intern",
+        "employer": "CMC Limited",
+        "duration": "11/2012-01/2013",
+        "responsibilities": [
+          "Developed SQL scripts.",
+          "Worked on an Oracle 11i database and Oracle Reports."
+        ],
+        "achievements": [],
+        "technologies": [
+          "SQL",
+          "Oracle 11i",
+          "Oracle Reports"
+        ],
+        "source_text": "Data Analyst Intern, 11/2012-01/2013, CMC Limited"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Academic Capstone Project - Big Data",
+        "description": "Built statistical regression and classification models, cleaned and explored data, and developed an interactive web interface using R Shiny to classify client loan types and predict future loan amounts.",
+        "technologies": [
+          "R",
+          "R Shiny",
+          "Statistical regression",
+          "Classification models"
+        ],
+        "source_text": "Academic Capstone Project - Big Data"
+      },
+      {
+        "name": "Kaggle - House Prices Predictions",
+        "description": "Applied simple and advanced machine learning models to housing predictors to predict house sales prices and used imputation methods for missing and null values.",
+        "technologies": [
+          "Machine learning",
+          "Imputation"
+        ],
+        "source_text": "Kaggle - House Prices Predictions"
+      },
+      {
+        "name": "Independent Study & Research - Apache Spark",
+        "description": "Independent study and research involving Apache Spark using Scala and Python.",
+        "technologies": [
+          "Apache Spark",
+          "Scala",
+          "Python"
+        ],
+        "source_text": "Independent Study & Research - Apache Spark using Scala and Python"
+      },
+      {
+        "name": "Hand Draw Shape Recognition",
+        "description": "Designed an interface that lets users invoke an application by drawing a shape and linked the shape to the application.",
+        "technologies": [],
+        "source_text": "Designed 'Hand Draw Shape Recognition' interface"
+      }
+    ],
+    "technical_skills": [
+      {
+        "normalized_label": "Machine Learning",
+        "original_mentions": [
+          "Machine Learning"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Machine Learning/Data Mining & NLP",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data Mining",
+        "original_mentions": [
+          "Data Mining"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Machine Learning/Data Mining & NLP",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Natural Language Processing",
+        "original_mentions": [
+          "NLP"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Machine Learning/Data Mining & NLP",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Linear Regression",
+        "original_mentions": [
+          "Linear Regression"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Linear Regression",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Neural Networks",
+        "original_mentions": [
+          "neural networks/deep learning"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "neural networks/deep learning",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Deep Learning",
+        "original_mentions": [
+          "deep learning"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "neural networks/deep learning",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Naive Bayes",
+        "original_mentions": [
+          "Naive Bayes"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Naive Bayes",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Support Vector Machines",
+        "original_mentions": [
+          "SVM"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "SVM",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Logistic Regression",
+        "original_mentions": [
+          "Logistic Regression"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Logistic Regression",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Decision Trees",
+        "original_mentions": [
+          "decision trees"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "decision trees",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "K-Means",
+        "original_mentions": [
+          "K-mean"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "K-mean",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "K-Nearest Neighbors",
+        "original_mentions": [
+          "KNN"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "KNN",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "R",
+        "original_mentions": [
+          "R"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "R",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Python",
+        "original_mentions": [
+          "Python"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Python",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "NumPy",
+        "original_mentions": [
+          "NumPy"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "NumPy",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Matplotlib",
+        "original_mentions": [
+          "Matplotlib"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Matplotlib",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "scikit-learn",
+        "original_mentions": [
+          "scikit-learn"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "scikit-learn",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "pandas",
+        "original_mentions": [
+          "pandas"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "pandas",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "ggplot2",
+        "original_mentions": [
+          "ggplot2"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "ggplot2",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Shiny",
+        "original_mentions": [
+          "Shiny"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Shiny",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "dplyr",
+        "original_mentions": [
+          "dplyr"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "dplyr",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "caret",
+        "original_mentions": [
+          "caret"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "caret",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "e1071",
+        "original_mentions": [
+          "e1071"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "e1071",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Keras",
+        "original_mentions": [
+          "keras"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "keras",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Tableau",
+        "original_mentions": [
+          "Tableau"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Tableau",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "QlikView",
+        "original_mentions": [
+          "Qlik View"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Qlik View",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Qlik Sense",
+        "original_mentions": [
+          "Qlik Sense"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Qlik Sense",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Excel",
+        "original_mentions": [
+          "Excel"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Excel",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "OBIEE",
+        "original_mentions": [
+          "OBIEE"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "OBIEE",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Apache Spark",
+        "original_mentions": [
+          "Spark"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Spark",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Apache Hive",
+        "original_mentions": [
+          "Hive"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Hive",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Sqoop",
+        "original_mentions": [
+          "Sqoop"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Sqoop",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Flume",
+        "original_mentions": [
+          "Flume"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Flume",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Kafka",
+        "original_mentions": [
+          "Kafka"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Kafka",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Impala",
+        "original_mentions": [
+          "Impala"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Impala",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Oracle",
+        "original_mentions": [
+          "Oracle"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Databases - Oracle",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "MySQL",
+        "original_mentions": [
+          "MySql"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "MySql",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "PostgreSQL",
+        "original_mentions": [
+          "PostgreSql"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "PostgreSql",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "SQL",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "PL/SQL",
+        "original_mentions": [
+          "PL/SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "PL/SQL",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Java",
+        "original_mentions": [
+          "core java"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "core java",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Scala",
+        "original_mentions": [
+          "Scala"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Scala",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "RStudio",
+        "original_mentions": [
+          "RStudio"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "RStudio",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Jupyter",
+        "original_mentions": [
+          "Jupyter"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Jupyter",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SQL Developer",
+        "original_mentions": [
+          "SqlDeveloper"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "SqlDeveloper",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Toad",
+        "original_mentions": [
+          "Toad"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Toad",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Atom",
+        "original_mentions": [
+          "Atom"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Atom",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Gradient Descent",
+        "original_mentions": [
+          "gradient descent"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "gradient descent",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "N-Grams",
+        "original_mentions": [
+          "N- Grams"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "N- Grams",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Edit Distance",
+        "original_mentions": [
+          "edit distance"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "edit distance",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Oracle E-Business Suite",
+        "original_mentions": [
+          "Oracle E-Business Suite 11i & R12"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Oracle E-Business Suite 11i & R12",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Oracle SOA",
+        "original_mentions": [
+          "Oracle SOA"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Oracle SOA",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Oracle Service Bus",
+        "original_mentions": [
+          "Oracle Service Bus"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Oracle Service Bus",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Amazon EMR",
+        "original_mentions": [
+          "amazon EMR"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "using R and spark in amazon EMR",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Amazon S3",
+        "original_mentions": [
+          "amazon S3 bucket"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "persistent storage in amazon S3 bucket",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SQL*Loader",
+        "original_mentions": [
+          "SQL.Loader",
+          "SQL*Loader"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Prepared SQL.Loader scripts",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "ER Modeling",
+        "original_mentions": [
+          "ER diagrams",
+          "conceptual models, logical and physical models"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Designed ER diagrams, conceptual models, logical and physical models",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Customer Service",
+        "original_mentions": [
+          "customer service"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "extensive customer service and sales experience",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Sales",
+        "original_mentions": [
+          "Sales Associate",
+          "sales professional",
+          "sales"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Highly motivated Sales Associate with extensive customer service and sales experience",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Communication and Interpersonal Skills",
+        "original_mentions": [
+          "Outgoing"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.88,
+        "source": {
+          "source_text": "Outgoing sales professional",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [
+      {
+        "normalized_label": "Tableau",
+        "original_mentions": [
+          "Tableau"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Certifications - Tableau",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "SQL"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Certifications - SQL & PL/SQL",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "PL/SQL",
+        "original_mentions": [
+          "PL/SQL"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Certifications - SQL & PL/SQL",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "domain_experience": [
+      {
+        "normalized_label": "Data Science",
+        "original_mentions": [
+          "Data Science"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Data Science & Data Engineer Intern",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data Engineering",
+        "original_mentions": [
+          "Data Engineer"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Data Science & Data Engineer Intern",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data Analysis",
+        "original_mentions": [
+          "Data Analyst"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Oracle Technical Consultant & Data Analyst",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Business Intelligence",
+        "original_mentions": [
+          "Business Intelligence",
+          "Oracle Business Intelligence"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Business Intelligence & Visualization",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Big Data",
+        "original_mentions": [
+          "Big Data"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Academic Capstone Project - Big Data",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Oracle ERP",
+        "original_mentions": [
+          "Oracle ERP",
+          "Oracle E-Business Suite"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Oracle ERP & Fusion Middleware",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Statistical Programming",
+        "original_mentions": [
+          "Statistical Programming & Packages"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Statistical Programming & Packages",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data Visualization",
+        "original_mentions": [
+          "Business Intelligence & Visualization"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Business Intelligence & Visualization",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data Ingestion",
+        "original_mentions": [
+          "Big Data Ingestion",
+          "data ingestion"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Working on Big Data Ingestion using Sqoop",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data Modeling",
+        "original_mentions": [
+          "conceptual models, logical and physical models"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Designed ER diagrams, conceptual models, logical and physical models",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Reporting",
+        "original_mentions": [
+          "reporting",
+          "Oracle Business Intelligence reports"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Created SQL scripts for daily extracts, ad-hoc requests, reporting",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data Cleaning",
+        "original_mentions": [
+          "cleaning",
+          "imputation methods for filling missing and null values"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "cleaning, exploring data",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Statistical Modeling",
+        "original_mentions": [
+          "statistical regression and classification models"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Building statistical regression and classification models",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      }
+    ]
+  },
+  "job": {
+    "title": "Data Engineer (Oracle and DataStage)",
+    "seniority": null,
+    "years_of_experience": null,
+    "responsibilities": [],
+    "required_skills": [
+      {
+        "normalized_label": "Oracle",
+        "original_mentions": [
+          "Oracle"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: Oracle, Datastage, UNIX, PLSQL, SQL",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "DataStage",
+        "original_mentions": [
+          "Datastage"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: Oracle, Datastage, UNIX, PLSQL, SQL",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "UNIX",
+        "original_mentions": [
+          "UNIX"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: Oracle, Datastage, UNIX, PLSQL, SQL",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "PL/SQL",
+        "original_mentions": [
+          "PLSQL"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: Oracle, Datastage, UNIX, PLSQL, SQL",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "SQL",
+          "expert level experience with SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: Oracle, Datastage, UNIX, PLSQL, SQL. ... expert level experience with SQL",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data engineering",
+        "original_mentions": [
+          "Data engineering experience"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Data engineering experience",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cloud platforms",
+        "original_mentions": [
+          "cloud (AWS, Azure andor Google Cloud Platform)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.92,
+        "source": {
+          "source_text": "Experience with the cloud (AWS, Azure andor Google Cloud Platform)",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cloud-based data warehouses",
+        "original_mentions": [
+          "cloud-based data warehouses (Snowflake, Google BigQuery, Amazon Redshift, Azure Synapse Analytics)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Experience in cloud-based data warehouses (Snowflake, Google BigQuery, Amazon Redshift, Azure Synapse Analytics)",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cloud-based ETL/ELT tools",
+        "original_mentions": [
+          "cloud-based ETLELT tools (Matillion, Glue, Data Factory)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Experience with cloud-based ETLELT tools (Matillion, Glue, Data Factory)",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data modeling",
+        "original_mentions": [
+          "data modelling"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "... and data modelling",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Version control systems",
+        "original_mentions": [
+          "version control systems (Git, SVN)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Experience with version control systems (Git, SVN)",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Agile principles",
+        "original_mentions": [
+          "Understanding of and willingness to embrace Agile Principles"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.94,
+        "source": {
+          "source_text": "Understanding of and willingness to embrace Agile Principles",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "AWS",
+        "original_mentions": [
+          "AWS"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Good to have: AWS, Matillion, Snowflake",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Matillion",
+        "original_mentions": [
+          "Matillion"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Good to have: AWS, Matillion, Snowflake",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Snowflake",
+        "original_mentions": [
+          "Snowflake"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Good to have: AWS, Matillion, Snowflake",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [],
+    "certifications": [],
+    "domain_knowledge": [],
+    "soft_skills": [],
+    "leadership_requirements": [],
+    "system_design_requirements": [],
+    "competencies": [
+      {
+        "normalized_label": "Oracle",
+        "original_mentions": [
+          "Oracle"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: Oracle, Datastage, UNIX, PLSQL, SQL",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "DataStage",
+        "original_mentions": [
+          "Datastage"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: Oracle, Datastage, UNIX, PLSQL, SQL",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "UNIX",
+        "original_mentions": [
+          "UNIX"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: Oracle, Datastage, UNIX, PLSQL, SQL",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "PL/SQL",
+        "original_mentions": [
+          "PLSQL"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: Oracle, Datastage, UNIX, PLSQL, SQL",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "SQL",
+          "expert level experience with SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: Oracle, Datastage, UNIX, PLSQL, SQL. ... expert level experience with SQL",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data engineering",
+        "original_mentions": [
+          "Data engineering experience"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Data engineering experience",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cloud platforms",
+        "original_mentions": [
+          "cloud (AWS, Azure andor Google Cloud Platform)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.92,
+        "source": {
+          "source_text": "Experience with the cloud (AWS, Azure andor Google Cloud Platform)",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cloud-based data warehouses",
+        "original_mentions": [
+          "cloud-based data warehouses (Snowflake, Google BigQuery, Amazon Redshift, Azure Synapse Analytics)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Experience in cloud-based data warehouses (Snowflake, Google BigQuery, Amazon Redshift, Azure Synapse Analytics)",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cloud-based ETL/ELT tools",
+        "original_mentions": [
+          "cloud-based ETLELT tools (Matillion, Glue, Data Factory)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Experience with cloud-based ETLELT tools (Matillion, Glue, Data Factory)",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data modeling",
+        "original_mentions": [
+          "data modelling"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "... and data modelling",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Version control systems",
+        "original_mentions": [
+          "version control systems (Git, SVN)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Experience with version control systems (Git, SVN)",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Agile principles",
+        "original_mentions": [
+          "Understanding of and willingness to embrace Agile Principles"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.94,
+        "source": {
+          "source_text": "Understanding of and willingness to embrace Agile Principles",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "AWS",
+        "original_mentions": [
+          "AWS"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Good to have: AWS, Matillion, Snowflake",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Matillion",
+        "original_mentions": [
+          "Matillion"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Good to have: AWS, Matillion, Snowflake",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Snowflake",
+        "original_mentions": [
+          "Snowflake"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Good to have: AWS, Matillion, Snowflake",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 1964,
+    "output_tokens": 4923,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0061123,
+    "latency_ms": 25926.78,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1009,
+    "output_tokens": 1951,
+    "cached_tokens": 0,
+    "estimated_cost": 0.002543,
+    "latency_ms": 12251.82,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-09-27T22:18:07.069043+00:00"
+}

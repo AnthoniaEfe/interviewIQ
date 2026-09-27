@@ -1,0 +1,482 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_04423_8ebcbfa69c51",
+  "jd_id": "rjf_04423_8ebcbfa69c51",
+  "pair_id": "rjf_04423_8ebcbfa69c51",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Tax and accounting experience",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3577,
+        "evidence": {
+          "tfidf_score": 0.4218633612957895,
+          "tfidf_matched_terms": [
+            "accounting",
+            "and",
+            "tax"
+          ],
+          "bm25_score": 3.540342315151272,
+          "semantic_score": 0.6399514675140381,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Microsoft computer skills",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3889,
+        "evidence": {
+          "tfidf_score": 0.007684863533724271,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 4.470396001814389,
+          "semantic_score": 0.516484797000885,
+          "matched_candidate_competency": "Microsoft Office Suite"
+        },
+        "candidate_evidence": [
+          "Microsoft Office Suite"
+        ]
+      },
+      {
+        "job_competency": "QuickBooks",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7186,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5086313486099243,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Multi-screen computer use",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7023,
+        "evidence": {
+          "tfidf_score": 0.03259777813842765,
+          "tfidf_matched_terms": [
+            "use"
+          ],
+          "bm25_score": 2.50958430852664,
+          "semantic_score": 0.2558176517486572,
+          "matched_candidate_competency": "Sales and use tax"
+        },
+        "candidate_evidence": [
+          "Sales and use tax"
+        ]
+      },
+      {
+        "job_competency": "Paperless environment proficiency",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9492,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2538948953151703,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Project leadership",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3829,
+        "evidence": {
+          "tfidf_score": 0.009912887367799286,
+          "tfidf_matched_terms": [
+            "leadership"
+          ],
+          "bm25_score": 4.470396001814389,
+          "semantic_score": 0.5743985772132874,
+          "matched_candidate_competency": "Leadership through training"
+        },
+        "candidate_evidence": [
+          "Leadership through training"
+        ]
+      },
+      {
+        "job_competency": "Written and verbal communication",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1663,
+        "evidence": {
+          "tfidf_score": 0.2870180810058262,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 5.694475611598632,
+          "semantic_score": 0.7089037895202637,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Organization",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7306,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4339831471443176,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Problem solving",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9276,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3618238568305969,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Analytical skills",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9248,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37592896819114685,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Attention to detail and accuracy",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7238,
+        "evidence": {
+          "tfidf_score": 0.2277245193765608,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.2829885766998634,
+          "semantic_score": 0.26835399866104126,
+          "matched_candidate_competency": "Developed and implemented a strategy for collecting and reporting monthly sales and use taxes"
+        },
+        "candidate_evidence": [
+          "Developed and implemented a strategy for collecting and reporting monthly sales and use taxes"
+        ]
+      },
+      {
+        "job_competency": "Teamwork and client interaction",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6977,
+        "evidence": {
+          "tfidf_score": 0.2581642361933886,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.2829885766998634,
+          "semantic_score": 0.4085119962692261,
+          "matched_candidate_competency": "Developed and implemented a strategy for collecting and reporting monthly sales and use taxes"
+        },
+        "candidate_evidence": [
+          "Developed and implemented a strategy for collecting and reporting monthly sales and use taxes"
+        ]
+      },
+      {
+        "job_competency": "Self-starting and independent work",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6588,
+        "evidence": {
+          "tfidf_score": 0.24869384955453389,
+          "tfidf_matched_terms": [
+            "and",
+            "work"
+          ],
+          "bm25_score": 3.1021344430672375,
+          "semantic_score": 0.28730273246765137,
+          "matched_candidate_competency": "Monitored invoices and work orders for correct coding"
+        },
+        "candidate_evidence": [
+          "Monitored invoices and work orders for correct coding"
+        ]
+      },
+      {
+        "job_competency": "Fast-paced, deadline-oriented work",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6823,
+        "evidence": {
+          "tfidf_score": 0.0057311329313526164,
+          "tfidf_matched_terms": [
+            "work"
+          ],
+          "bm25_score": 2.9077678000354426,
+          "semantic_score": 0.348390132188797,
+          "matched_candidate_competency": "Monitored invoices and work orders for correct coding"
+        },
+        "candidate_evidence": [
+          "Monitored invoices and work orders for correct coding"
+        ]
+      },
+      {
+        "job_competency": "Positive attitude",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9408,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2959766387939453,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Professional dress and demeanor",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7062,
+        "evidence": {
+          "tfidf_score": 0.2581642361933886,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.2829885766998634,
+          "semantic_score": 0.35526230931282043,
+          "matched_candidate_competency": "Developed and implemented a strategy for collecting and reporting monthly sales and use taxes"
+        },
+        "candidate_evidence": [
+          "Developed and implemented a strategy for collecting and reporting monthly sales and use taxes"
+        ]
+      },
+      {
+        "job_competency": "Residence within 15 miles of Westlake Village",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9057,
+        "evidence": {
+          "tfidf_score": 0.004769607703705688,
+          "tfidf_matched_terms": [
+            "of"
+          ],
+          "bm25_score": 2.1546198239584045,
+          "semantic_score": 0.18402820825576782,
+          "matched_candidate_competency": "Reconciled cost of goods and closed accounts at month-end and year-end"
+        },
+        "candidate_evidence": [
+          "Reconciled cost of goods and closed accounts at month-end and year-end"
+        ]
+      },
+      {
+        "job_competency": "In-office work",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3895,
+        "evidence": {
+          "tfidf_score": 0.039516374617451576,
+          "tfidf_matched_terms": [
+            "in",
+            "office",
+            "work"
+          ],
+          "bm25_score": 4.470396001814389,
+          "semantic_score": 0.4867893159389496,
+          "matched_candidate_competency": "Microsoft Office Suite"
+        },
+        "candidate_evidence": [
+          "Microsoft Office Suite"
+        ]
+      },
+      {
+        "job_competency": "Experience with a Certified Public Accountant",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3967,
+        "evidence": {
+          "tfidf_score": 0.01631136269673482,
+          "tfidf_matched_terms": [
+            "a",
+            "with"
+          ],
+          "bm25_score": 2.8879186721489245,
+          "semantic_score": 0.47561115026474,
+          "matched_candidate_competency": "Assisted with vendor payment policy implementation"
+        },
+        "candidate_evidence": [
+          "Assisted with vendor payment policy implementation"
+        ]
+      },
+      {
+        "job_competency": "CPA license",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5612,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32370641827583313,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Desire to learn and grow with the company",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2406,
+        "evidence": {
+          "tfidf_score": 0.19377358802466407,
+          "tfidf_matched_terms": [
+            "and",
+            "with"
+          ],
+          "bm25_score": 2.8879186721489245,
+          "semantic_score": 0.4644659161567688,
+          "matched_candidate_competency": "Assisted with vendor payment policy implementation"
+        },
+        "candidate_evidence": [
+          "Assisted with vendor payment policy implementation"
+        ]
+      },
+      {
+        "job_competency": "Tax and accounting experience",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2146,
+        "evidence": {
+          "tfidf_score": 0.4218633612957895,
+          "tfidf_matched_terms": [
+            "accounting",
+            "and",
+            "tax"
+          ],
+          "bm25_score": 3.540342315151272,
+          "semantic_score": 0.6399514675140381,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Written and verbal communication"
+    ],
+    "partial_matches": [
+      "Tax and accounting experience",
+      "Microsoft computer skills",
+      "Project leadership",
+      "In-office work",
+      "Desire to learn and grow with the company",
+      "Tax and accounting experience"
+    ],
+    "weak_matches": [
+      "QuickBooks",
+      "Multi-screen computer use",
+      "Organization",
+      "Attention to detail and accuracy",
+      "Teamwork and client interaction",
+      "Self-starting and independent work",
+      "Fast-paced, deadline-oriented work",
+      "Professional dress and demeanor",
+      "Experience with a Certified Public Accountant"
+    ],
+    "missing": [
+      "Paperless environment proficiency",
+      "Problem solving",
+      "Analytical skills",
+      "Positive attitude",
+      "Residence within 15 miles of Westlake Village",
+      "CPA license"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Written and verbal communication"
+    ],
+    "partial_matches": [
+      "Tax and accounting experience",
+      "Microsoft computer skills",
+      "Project leadership",
+      "In-office work",
+      "Desire to learn and grow with the company",
+      "Tax and accounting experience"
+    ],
+    "competency_gaps": [
+      "QuickBooks",
+      "Multi-screen computer use",
+      "Organization",
+      "Attention to detail and accuracy",
+      "Teamwork and client interaction",
+      "Self-starting and independent work",
+      "Fast-paced, deadline-oriented work",
+      "Professional dress and demeanor",
+      "Experience with a Certified Public Accountant",
+      "Paperless environment proficiency",
+      "Problem solving",
+      "Analytical skills",
+      "Positive attitude",
+      "Residence within 15 miles of Westlake Village",
+      "CPA license"
+    ]
+  },
+  "counts": {
+    "requirements": 22,
+    "strength_matches": 1,
+    "partial_matches": 6,
+    "competency_gaps": 15
+  },
+  "latency_ms": 47.55,
+  "analyzed_at": "2026-09-27T21:52:40.504368+00:00"
+}

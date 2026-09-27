@@ -1,0 +1,314 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_05281_56dd66bfd7af",
+  "jd_id": "rjf_05281_56dd66bfd7af",
+  "pair_id": "rjf_05281_56dd66bfd7af",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Scala and Apache Spark",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9017,
+        "evidence": {
+          "tfidf_score": 0.2681502847593024,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9554200598061301,
+          "semantic_score": 0.2061624526977539,
+          "matched_candidate_competency": "Created and maintained databases, spreadsheets, and tracking mechanisms."
+        },
+        "candidate_evidence": [
+          "Created and maintained databases, spreadsheets, and tracking mechanisms."
+        ]
+      },
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9253,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3735104203224182,
+          "matched_candidate_competency": "Relational databases"
+        },
+        "candidate_evidence": [
+          "Relational databases"
+        ]
+      },
+      {
+        "job_competency": "Spring Framework",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9555,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.22260898351669312,
+          "matched_candidate_competency": "Relational databases"
+        },
+        "candidate_evidence": [
+          "Relational databases"
+        ]
+      },
+      {
+        "job_competency": "REST API development",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9464,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2677806615829468,
+          "matched_candidate_competency": "Relational databases"
+        },
+        "candidate_evidence": [
+          "Relational databases"
+        ]
+      },
+      {
+        "job_competency": "ETL data pipeline design and development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6651,
+        "evidence": {
+          "tfidf_score": 0.29712547661286576,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 2.480776473086748,
+          "semantic_score": 0.4013936221599579,
+          "matched_candidate_competency": "Data analysis and modeling"
+        },
+        "candidate_evidence": [
+          "Data analysis and modeling"
+        ]
+      },
+      {
+        "job_competency": "Database design and development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3723,
+        "evidence": {
+          "tfidf_score": 0.3001066842076224,
+          "tfidf_matched_terms": [
+            "and",
+            "database"
+          ],
+          "bm25_score": 4.583496228850833,
+          "semantic_score": 0.6475472450256348,
+          "matched_candidate_competency": "Database and spreadsheet maintenance"
+        },
+        "candidate_evidence": [
+          "Database and spreadsheet maintenance"
+        ]
+      },
+      {
+        "job_competency": "Software feature and system development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6896,
+        "evidence": {
+          "tfidf_score": 0.23653312952208166,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9554200598061301,
+          "semantic_score": 0.4285156726837158,
+          "matched_candidate_competency": "Created and maintained databases, spreadsheets, and tracking mechanisms."
+        },
+        "candidate_evidence": [
+          "Created and maintained databases, spreadsheets, and tracking mechanisms."
+        ]
+      },
+      {
+        "job_competency": "Relational databases",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1608,
+        "evidence": {
+          "tfidf_score": 0.045538632682093,
+          "tfidf_matched_terms": [
+            "databases",
+            "relational"
+          ],
+          "bm25_score": 8.503335572221125,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Relational databases"
+        },
+        "candidate_evidence": [
+          "Relational databases"
+        ]
+      },
+      {
+        "job_competency": "Professional engineering",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9258,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3708500862121582,
+          "matched_candidate_competency": "Relational databases"
+        },
+        "candidate_evidence": [
+          "Relational databases"
+        ]
+      },
+      {
+        "job_competency": "AWS",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4412,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40368854999542236,
+          "matched_candidate_competency": "Relational databases"
+        },
+        "candidate_evidence": [
+          "Relational databases"
+        ]
+      },
+      {
+        "job_competency": "Cloud technology",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4354,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46497732400894165,
+          "matched_candidate_competency": "Relational databases"
+        },
+        "candidate_evidence": [
+          "Relational databases"
+        ]
+      },
+      {
+        "job_competency": "SaaS product environment",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5585,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34563374519348145,
+          "matched_candidate_competency": "Relational databases"
+        },
+        "candidate_evidence": [
+          "Relational databases"
+        ]
+      },
+      {
+        "job_competency": "Software development life cycle",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5575,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3545297384262085,
+          "matched_candidate_competency": "Relational databases"
+        },
+        "candidate_evidence": [
+          "Relational databases"
+        ]
+      },
+      {
+        "job_competency": "Leadership and mentorship",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3871,
+        "evidence": {
+          "tfidf_score": 0.36717379959171637,
+          "tfidf_matched_terms": [
+            "and",
+            "leadership"
+          ],
+          "bm25_score": 2.7168054576661134,
+          "semantic_score": 0.4526863694190979,
+          "matched_candidate_competency": "Supported school leadership and teaching staff with reception, messages, emails, and clerical tasks."
+        },
+        "candidate_evidence": [
+          "Supported school leadership and teaching staff with reception, messages, emails, and clerical tasks."
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Relational databases"
+    ],
+    "partial_matches": [
+      "Database design and development"
+    ],
+    "weak_matches": [
+      "ETL data pipeline design and development",
+      "Software feature and system development",
+      "AWS",
+      "Cloud technology",
+      "Leadership and mentorship"
+    ],
+    "missing": [
+      "Scala and Apache Spark",
+      "Java",
+      "Spring Framework",
+      "REST API development",
+      "Professional engineering",
+      "SaaS product environment",
+      "Software development life cycle"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Relational databases"
+    ],
+    "partial_matches": [
+      "Database design and development"
+    ],
+    "competency_gaps": [
+      "ETL data pipeline design and development",
+      "Software feature and system development",
+      "AWS",
+      "Cloud technology",
+      "Leadership and mentorship",
+      "Scala and Apache Spark",
+      "Java",
+      "Spring Framework",
+      "REST API development",
+      "Professional engineering",
+      "SaaS product environment",
+      "Software development life cycle"
+    ]
+  },
+  "counts": {
+    "requirements": 14,
+    "strength_matches": 1,
+    "partial_matches": 1,
+    "competency_gaps": 12
+  },
+  "latency_ms": 32.77,
+  "analyzed_at": "2026-09-27T21:52:40.901108+00:00"
+}

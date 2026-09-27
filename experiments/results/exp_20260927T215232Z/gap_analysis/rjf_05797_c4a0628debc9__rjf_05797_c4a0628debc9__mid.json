@@ -1,0 +1,292 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_05797_c4a0628debc9",
+  "jd_id": "rjf_05797_c4a0628debc9",
+  "pair_id": "rjf_05797_c4a0628debc9",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1606,
+        "evidence": {
+          "tfidf_score": 0.04999618511071461,
+          "tfidf_matched_terms": [
+            "excel",
+            "microsoft"
+          ],
+          "bm25_score": 9.522975567669741,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Full-cycle accounting and close",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2365,
+        "evidence": {
+          "tfidf_score": 0.282603627592397,
+          "tfidf_matched_terms": [
+            "accounting",
+            "and",
+            "close"
+          ],
+          "bm25_score": 3.5472206055662943,
+          "semantic_score": 0.5662321448326111,
+          "matched_candidate_competency": "Month-end close"
+        },
+        "candidate_evidence": [
+          "Month-end close"
+        ]
+      },
+      {
+        "job_competency": "US GAAP",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2317,
+        "evidence": {
+          "tfidf_score": 0.008185355765271357,
+          "tfidf_matched_terms": [
+            "gaap"
+          ],
+          "bm25_score": 5.5384263942939045,
+          "semantic_score": 0.6958808898925781,
+          "matched_candidate_competency": "GAAP compliance"
+        },
+        "candidate_evidence": [
+          "GAAP compliance"
+        ]
+      },
+      {
+        "job_competency": "Lease accounting",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3933,
+        "evidence": {
+          "tfidf_score": 0.06588762103381082,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 3.4734882207688944,
+          "semantic_score": 0.5804365873336792,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "General accounting",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2151,
+        "evidence": {
+          "tfidf_score": 0.12073489043331662,
+          "tfidf_matched_terms": [
+            "accounting",
+            "general"
+          ],
+          "bm25_score": 6.258235802263968,
+          "semantic_score": 0.8313175439834595,
+          "matched_candidate_competency": "General ledger accounting"
+        },
+        "candidate_evidence": [
+          "General ledger accounting"
+        ]
+      },
+      {
+        "job_competency": "Account reconciliations",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.1052,
+        "evidence": {
+          "tfidf_score": 0.09020449905413255,
+          "tfidf_matched_terms": [
+            "account",
+            "reconciliations"
+          ],
+          "bm25_score": 5.604575824572752,
+          "semantic_score": 0.9846232533454895,
+          "matched_candidate_competency": "Performed inter-company account reconciliations."
+        },
+        "candidate_evidence": [
+          "Performed inter-company account reconciliations."
+        ]
+      },
+      {
+        "job_competency": "Journal entries",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2341,
+        "evidence": {
+          "tfidf_score": 0.03996967296323439,
+          "tfidf_matched_terms": [
+            "entries",
+            "journal"
+          ],
+          "bm25_score": 4.685152552724672,
+          "semantic_score": 0.6996987462043762,
+          "matched_candidate_competency": "Performed month-end General Ledger close and prepared manual journal entries."
+        },
+        "candidate_evidence": [
+          "Performed month-end General Ledger close and prepared manual journal entries."
+        ]
+      },
+      {
+        "job_competency": "Financial reporting",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.1011,
+        "evidence": {
+          "tfidf_score": 0.13091250970272247,
+          "tfidf_matched_terms": [
+            "financial",
+            "reporting"
+          ],
+          "bm25_score": 6.738201903151348,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Financial reporting"
+        },
+        "candidate_evidence": [
+          "Financial reporting"
+        ]
+      },
+      {
+        "job_competency": "Monthly accruals",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2342,
+        "evidence": {
+          "tfidf_score": 0.060012981799907605,
+          "tfidf_matched_terms": [
+            "accruals",
+            "monthly"
+          ],
+          "bm25_score": 3.9442832509529664,
+          "semantic_score": 0.7402677536010742,
+          "matched_candidate_competency": "Performed bank reconciliations, journal entry preparation, month-end close, and monthly accruals."
+        },
+        "candidate_evidence": [
+          "Performed bank reconciliations, journal entry preparation, month-end close, and monthly accruals."
+        ]
+      },
+      {
+        "job_competency": "Prepaids amortization",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.436,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.45793384313583374,
+          "matched_candidate_competency": "General ledger accounting"
+        },
+        "candidate_evidence": [
+          "General ledger accounting"
+        ]
+      },
+      {
+        "job_competency": "Month-end allocations",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2253,
+        "evidence": {
+          "tfidf_score": 0.056822631510472135,
+          "tfidf_matched_terms": [
+            "end",
+            "month"
+          ],
+          "bm25_score": 7.0944412111325885,
+          "semantic_score": 0.6433149576187134,
+          "matched_candidate_competency": "Month-end close"
+        },
+        "candidate_evidence": [
+          "Month-end close"
+        ]
+      },
+      {
+        "job_competency": "Operational reporting",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.245,
+        "evidence": {
+          "tfidf_score": 0.041022603007260704,
+          "tfidf_matched_terms": [
+            "reporting"
+          ],
+          "bm25_score": 3.692951956175879,
+          "semantic_score": 0.5945367813110352,
+          "matched_candidate_competency": "Financial reporting"
+        },
+        "candidate_evidence": [
+          "Financial reporting"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Microsoft Excel",
+      "Account reconciliations",
+      "Financial reporting"
+    ],
+    "partial_matches": [
+      "Full-cycle accounting and close",
+      "US GAAP",
+      "General accounting",
+      "Journal entries",
+      "Monthly accruals",
+      "Month-end allocations",
+      "Operational reporting"
+    ],
+    "weak_matches": [
+      "Lease accounting",
+      "Prepaids amortization"
+    ],
+    "missing": []
+  },
+  "three_category": {
+    "strength_matches": [
+      "Microsoft Excel",
+      "Account reconciliations",
+      "Financial reporting"
+    ],
+    "partial_matches": [
+      "Full-cycle accounting and close",
+      "US GAAP",
+      "General accounting",
+      "Journal entries",
+      "Monthly accruals",
+      "Month-end allocations",
+      "Operational reporting"
+    ],
+    "competency_gaps": [
+      "Lease accounting",
+      "Prepaids amortization"
+    ]
+  },
+  "counts": {
+    "requirements": 12,
+    "strength_matches": 3,
+    "partial_matches": 7,
+    "competency_gaps": 2
+  },
+  "latency_ms": 37.26,
+  "analyzed_at": "2026-09-27T21:52:40.939191+00:00"
+}

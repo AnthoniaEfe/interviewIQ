@@ -1,0 +1,874 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_05901_0ce23bc466db",
+  "jd_id": "rjf_05901_0ce23bc466db",
+  "pair_id": "rjf_05901_0ce23bc466db",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "C++",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1661,
+        "evidence": {
+          "tfidf_score": 0.03544247520421747,
+          "tfidf_matched_terms": [
+            "c++"
+          ],
+          "bm25_score": 5.293236538705428,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "C++"
+        },
+        "candidate_evidence": [
+          "C++"
+        ]
+      },
+      {
+        "job_competency": "Java/J2EE",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3493,
+        "evidence": {
+          "tfidf_score": 0.01026896981958867,
+          "tfidf_matched_terms": [
+            "java"
+          ],
+          "bm25_score": 6.10039848428547,
+          "semantic_score": 0.7488442063331604,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Relational and non-relational databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6995,
+        "evidence": {
+          "tfidf_score": 0.08796143985903902,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.347053625198823,
+          "semantic_score": 0.39650335907936096,
+          "matched_candidate_competency": "Defense and military systems"
+        },
+        "candidate_evidence": [
+          "Defense and military systems"
+        ]
+      },
+      {
+        "job_competency": "Software architecture patterns",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6768,
+        "evidence": {
+          "tfidf_score": 0.0643102345619265,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 3.0350281489208886,
+          "semantic_score": 0.3485872149467468,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "Automated unit testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3809,
+        "evidence": {
+          "tfidf_score": 0.0643102345619265,
+          "tfidf_matched_terms": [
+            "testing"
+          ],
+          "bm25_score": 2.8490050651554393,
+          "semantic_score": 0.7928453087806702,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "Test-driven development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3984,
+        "evidence": {
+          "tfidf_score": 0.0892235844807387,
+          "tfidf_matched_terms": [
+            "test"
+          ],
+          "bm25_score": 2.3872731905003017,
+          "semantic_score": 0.6553861498832703,
+          "matched_candidate_competency": "Test automation"
+        },
+        "candidate_evidence": [
+          "Test automation"
+        ]
+      },
+      {
+        "job_competency": "Continuous integration",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9479,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2604362666606903,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "Communication protocols",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3828,
+        "evidence": {
+          "tfidf_score": 0.020547373490899697,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 4.593962815364744,
+          "semantic_score": 0.5915933847427368,
+          "matched_candidate_competency": "Written communication"
+        },
+        "candidate_evidence": [
+          "Written communication"
+        ]
+      },
+      {
+        "job_competency": "Professional writing and oral presentation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6732,
+        "evidence": {
+          "tfidf_score": 0.10569395555816095,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.347053625198823,
+          "semantic_score": 0.5475472807884216,
+          "matched_candidate_competency": "Defense and military systems"
+        },
+        "candidate_evidence": [
+          "Defense and military systems"
+        ]
+      },
+      {
+        "job_competency": "Software development methodologies and lifecycle",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6432,
+        "evidence": {
+          "tfidf_score": 0.1665161564897053,
+          "tfidf_matched_terms": [
+            "and",
+            "software"
+          ],
+          "bm25_score": 3.7901314965002344,
+          "semantic_score": 0.3890374004840851,
+          "matched_candidate_competency": "Verified software and hardware against software requirements."
+        },
+        "candidate_evidence": [
+          "Verified software and hardware against software requirements."
+        ]
+      },
+      {
+        "job_competency": "Version control architecture and management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6479,
+        "evidence": {
+          "tfidf_score": 0.14800102968946566,
+          "tfidf_matched_terms": [
+            "and",
+            "control",
+            "management"
+          ],
+          "bm25_score": 3.644936806306792,
+          "semantic_score": 0.3913920521736145,
+          "matched_candidate_competency": "Microsoft Test Management"
+        },
+        "candidate_evidence": [
+          "Microsoft Test Management"
+        ]
+      },
+      {
+        "job_competency": "Intelligent Transportation Systems (ITS)",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6722,
+        "evidence": {
+          "tfidf_score": 0.013467373658828477,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 3.633848893635076,
+          "semantic_score": 0.34198346734046936,
+          "matched_candidate_competency": "Defense and military systems"
+        },
+        "candidate_evidence": [
+          "Defense and military systems"
+        ]
+      },
+      {
+        "job_competency": "V2X",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7157,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5267013311386108,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "NTCIP, SAE, and IEEE standards",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7061,
+        "evidence": {
+          "tfidf_score": 0.10569395555816095,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.347053625198823,
+          "semantic_score": 0.3419918715953827,
+          "matched_candidate_competency": "Defense and military systems"
+        },
+        "candidate_evidence": [
+          "Defense and military systems"
+        ]
+      },
+      {
+        "job_competency": "Agile development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7324,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.42225182056427,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "GitHub",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.932,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33989983797073364,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "Atlassian Jira",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3597,
+        "evidence": {
+          "tfidf_score": 0.0308446882609195,
+          "tfidf_matched_terms": [
+            "jira"
+          ],
+          "bm25_score": 4.754570747340457,
+          "semantic_score": 0.7949132323265076,
+          "matched_candidate_competency": "Jira"
+        },
+        "candidate_evidence": [
+          "Jira"
+        ]
+      },
+      {
+        "job_competency": "Confluence",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9428,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28614193201065063,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "SonarCloud",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9411,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2942832112312317,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "Staff management and development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3987,
+        "evidence": {
+          "tfidf_score": 0.15231152394712,
+          "tfidf_matched_terms": [
+            "and",
+            "management"
+          ],
+          "bm25_score": 3.644936806306792,
+          "semantic_score": 0.45050206780433655,
+          "matched_candidate_competency": "Microsoft Test Management"
+        },
+        "candidate_evidence": [
+          "Microsoft Test Management"
+        ]
+      },
+      {
+        "job_competency": "Scrum Master leadership",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7249,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46963754296302795,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "Public Trust security clearance",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7337,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4144830107688904,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "U.S. work authorization",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3879,
+        "evidence": {
+          "tfidf_score": 0.03975445677392469,
+          "tfidf_matched_terms": [
+            "s",
+            "u",
+            "work"
+          ],
+          "bm25_score": 6.01135615664796,
+          "semantic_score": 0.3524352014064789,
+          "matched_candidate_competency": "Completed U.S. Army EOD training."
+        },
+        "candidate_evidence": [
+          "Completed U.S. Army EOD training."
+        ]
+      },
+      {
+        "job_competency": "Local candidate in McLean, Virginia",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7117,
+        "evidence": {
+          "tfidf_score": 0.017832847493424734,
+          "tfidf_matched_terms": [
+            "in"
+          ],
+          "bm25_score": 2.955236189065506,
+          "semantic_score": 0.17515619099140167,
+          "matched_candidate_competency": "Manually tested products in Jira."
+        },
+        "candidate_evidence": [
+          "Manually tested products in Jira."
+        ]
+      },
+      {
+        "job_competency": "Real-time embedded software",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3975,
+        "evidence": {
+          "tfidf_score": 0.054371423106677204,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 3.0350281489208886,
+          "semantic_score": 0.44557467103004456,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "Software architecture and release management",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3836,
+        "evidence": {
+          "tfidf_score": 0.19946167704661508,
+          "tfidf_matched_terms": [
+            "and",
+            "management",
+            "software"
+          ],
+          "bm25_score": 3.7901314965002344,
+          "semantic_score": 0.38908374309539795,
+          "matched_candidate_competency": "Verified software and hardware against software requirements."
+        },
+        "candidate_evidence": [
+          "Verified software and hardware against software requirements."
+        ]
+      },
+      {
+        "job_competency": "Message queues, brokers, and data streaming",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4252,
+        "evidence": {
+          "tfidf_score": 0.09561582506638816,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.347053625198823,
+          "semantic_score": 0.33392032980918884,
+          "matched_candidate_competency": "Defense and military systems"
+        },
+        "candidate_evidence": [
+          "Defense and military systems"
+        ]
+      },
+      {
+        "job_competency": "SOAP and REST web services",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4285,
+        "evidence": {
+          "tfidf_score": 0.10569395555816095,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.347053625198823,
+          "semantic_score": 0.29208534955978394,
+          "matched_candidate_competency": "Defense and military systems"
+        },
+        "candidate_evidence": [
+          "Defense and military systems"
+        ]
+      },
+      {
+        "job_competency": "Frontend web development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4414,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40185561776161194,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "Automation or robotics",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2336,
+        "evidence": {
+          "tfidf_score": 0.01592913904852359,
+          "tfidf_matched_terms": [
+            "automation"
+          ],
+          "bm25_score": 4.593962815364744,
+          "semantic_score": 0.5297808051109314,
+          "matched_candidate_competency": "Test automation"
+        },
+        "candidate_evidence": [
+          "Test automation"
+        ]
+      },
+      {
+        "job_competency": "Vehicle physics, lateral control, and steering",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4222,
+        "evidence": {
+          "tfidf_score": 0.1061273451421752,
+          "tfidf_matched_terms": [
+            "and",
+            "control"
+          ],
+          "bm25_score": 2.4187217825394645,
+          "semantic_score": 0.2255631387233734,
+          "matched_candidate_competency": "Performed software testing for the Navy System for Naval Target Control."
+        },
+        "candidate_evidence": [
+          "Performed software testing for the Navy System for Naval Target Control."
+        ]
+      },
+      {
+        "job_competency": "Robot Operating System",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4159,
+        "evidence": {
+          "tfidf_score": 0.007960912776212827,
+          "tfidf_matched_terms": [
+            "system"
+          ],
+          "bm25_score": 2.4187217825394645,
+          "semantic_score": 0.36478185653686523,
+          "matched_candidate_competency": "Performed software testing for the Navy System for Naval Target Control."
+        },
+        "candidate_evidence": [
+          "Performed software testing for the Navy System for Naval Target Control."
+        ]
+      },
+      {
+        "job_competency": "Telematics systems and data visualization",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3839,
+        "evidence": {
+          "tfidf_score": 0.12526997699009548,
+          "tfidf_matched_terms": [
+            "and",
+            "systems"
+          ],
+          "bm25_score": 4.980902518833899,
+          "semantic_score": 0.29499155282974243,
+          "matched_candidate_competency": "Defense and military systems"
+        },
+        "candidate_evidence": [
+          "Defense and military systems"
+        ]
+      },
+      {
+        "job_competency": "Docker",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5654,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28833407163619995,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "Continuous integration and continuous deployment",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.422,
+        "evidence": {
+          "tfidf_score": 0.08796143985903902,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.347053625198823,
+          "semantic_score": 0.3727133572101593,
+          "matched_candidate_competency": "Defense and military systems"
+        },
+        "candidate_evidence": [
+          "Defense and military systems"
+        ]
+      },
+      {
+        "job_competency": "Spring Framework",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5632,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3066706359386444,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "Agile toolsets",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5534,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.388322114944458,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "Unity and HTC Vive",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4319,
+        "evidence": {
+          "tfidf_score": 0.11982196463355062,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.347053625198823,
+          "semantic_score": 0.2453121840953827,
+          "matched_candidate_competency": "Defense and military systems"
+        },
+        "candidate_evidence": [
+          "Defense and military systems"
+        ]
+      },
+      {
+        "job_competency": "Proactive self-management",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4051,
+        "evidence": {
+          "tfidf_score": 0.023912025954760434,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.644936806306792,
+          "semantic_score": 0.3140087127685547,
+          "matched_candidate_competency": "Microsoft Test Management"
+        },
+        "candidate_evidence": [
+          "Microsoft Test Management"
+        ]
+      },
+      {
+        "job_competency": "Organization and multitasking",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2115,
+        "evidence": {
+          "tfidf_score": 0.16748940017749703,
+          "tfidf_matched_terms": [
+            "and",
+            "organization"
+          ],
+          "bm25_score": 6.10039848428547,
+          "semantic_score": 0.5993267893791199,
+          "matched_candidate_competency": "Organization"
+        },
+        "candidate_evidence": [
+          "Organization"
+        ]
+      },
+      {
+        "job_competency": "Adaptability and independent work",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2216,
+        "evidence": {
+          "tfidf_score": 0.13689617446311436,
+          "tfidf_matched_terms": [
+            "and",
+            "work"
+          ],
+          "bm25_score": 5.294492998903276,
+          "semantic_score": 0.5534510612487793,
+          "matched_candidate_competency": "Work ethic"
+        },
+        "candidate_evidence": [
+          "Work ethic"
+        ]
+      },
+      {
+        "job_competency": "Dynamic team collaboration",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2424,
+        "evidence": {
+          "tfidf_score": 0.0561402278807482,
+          "tfidf_matched_terms": [
+            "team"
+          ],
+          "bm25_score": 2.4007233241464174,
+          "semantic_score": 0.6226023435592651,
+          "matched_candidate_competency": "Microsoft Team Foundation Server"
+        },
+        "candidate_evidence": [
+          "Microsoft Team Foundation Server"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "C++"
+    ],
+    "partial_matches": [
+      "Java/J2EE",
+      "Automated unit testing",
+      "Test-driven development",
+      "Communication protocols",
+      "Atlassian Jira",
+      "Staff management and development",
+      "U.S. work authorization",
+      "Automation or robotics",
+      "Organization and multitasking",
+      "Adaptability and independent work",
+      "Dynamic team collaboration"
+    ],
+    "weak_matches": [
+      "Relational and non-relational databases",
+      "Software architecture patterns",
+      "Professional writing and oral presentation",
+      "Software development methodologies and lifecycle",
+      "Version control architecture and management",
+      "Intelligent Transportation Systems (ITS)",
+      "V2X",
+      "NTCIP, SAE, and IEEE standards",
+      "Agile development",
+      "Scrum Master leadership",
+      "Public Trust security clearance",
+      "Local candidate in McLean, Virginia",
+      "Real-time embedded software",
+      "Software architecture and release management",
+      "Message queues, brokers, and data streaming",
+      "SOAP and REST web services",
+      "Frontend web development",
+      "Vehicle physics, lateral control, and steering",
+      "Robot Operating System",
+      "Telematics systems and data visualization",
+      "Continuous integration and continuous deployment",
+      "Unity and HTC Vive",
+      "Proactive self-management"
+    ],
+    "missing": [
+      "Continuous integration",
+      "GitHub",
+      "Confluence",
+      "SonarCloud",
+      "Docker",
+      "Spring Framework",
+      "Agile toolsets"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "C++"
+    ],
+    "partial_matches": [
+      "Java/J2EE",
+      "Automated unit testing",
+      "Test-driven development",
+      "Communication protocols",
+      "Atlassian Jira",
+      "Staff management and development",
+      "U.S. work authorization",
+      "Automation or robotics",
+      "Organization and multitasking",
+      "Adaptability and independent work",
+      "Dynamic team collaboration"
+    ],
+    "competency_gaps": [
+      "Relational and non-relational databases",
+      "Software architecture patterns",
+      "Professional writing and oral presentation",
+      "Software development methodologies and lifecycle",
+      "Version control architecture and management",
+      "Intelligent Transportation Systems (ITS)",
+      "V2X",
+      "NTCIP, SAE, and IEEE standards",
+      "Agile development",
+      "Scrum Master leadership",
+      "Public Trust security clearance",
+      "Local candidate in McLean, Virginia",
+      "Real-time embedded software",
+      "Software architecture and release management",
+      "Message queues, brokers, and data streaming",
+      "SOAP and REST web services",
+      "Frontend web development",
+      "Vehicle physics, lateral control, and steering",
+      "Robot Operating System",
+      "Telematics systems and data visualization",
+      "Continuous integration and continuous deployment",
+      "Unity and HTC Vive",
+      "Proactive self-management",
+      "Continuous integration",
+      "GitHub",
+      "Confluence",
+      "SonarCloud",
+      "Docker",
+      "Spring Framework",
+      "Agile toolsets"
+    ]
+  },
+  "counts": {
+    "requirements": 42,
+    "strength_matches": 1,
+    "partial_matches": 11,
+    "competency_gaps": 30
+  },
+  "latency_ms": 84.09,
+  "analyzed_at": "2026-09-27T21:52:41.057863+00:00"
+}

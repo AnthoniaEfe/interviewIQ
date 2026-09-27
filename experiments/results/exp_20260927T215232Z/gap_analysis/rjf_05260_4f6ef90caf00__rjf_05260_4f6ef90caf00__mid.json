@@ -1,0 +1,578 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_05260_4f6ef90caf00",
+  "jd_id": "rjf_05260_4f6ef90caf00",
+  "pair_id": "rjf_05260_4f6ef90caf00",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Digital electronic circuit design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3664,
+        "evidence": {
+          "tfidf_score": 0.061484404702208846,
+          "tfidf_matched_terms": [
+            "circuit",
+            "electronic"
+          ],
+          "bm25_score": 4.334501722099854,
+          "semantic_score": 0.5402821898460388,
+          "matched_candidate_competency": "Circuit fundamentals"
+        },
+        "candidate_evidence": [
+          "Circuit fundamentals"
+        ]
+      },
+      {
+        "job_competency": "Electronic schematics",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3532,
+        "evidence": {
+          "tfidf_score": 0.10605537929552142,
+          "tfidf_matched_terms": [
+            "electronic",
+            "schematics"
+          ],
+          "bm25_score": 4.334501722099854,
+          "semantic_score": 0.638738751411438,
+          "matched_candidate_competency": "Reading schematics"
+        },
+        "candidate_evidence": [
+          "Reading schematics"
+        ]
+      },
+      {
+        "job_competency": "Microprocessor-based design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7293,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44201424717903137,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "C programming",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6533,
+        "evidence": {
+          "tfidf_score": 0.03458410442062491,
+          "tfidf_matched_terms": [
+            "programming"
+          ],
+          "bm25_score": 2.1324741517904577,
+          "semantic_score": 0.5221365690231323,
+          "matched_candidate_competency": "Created and revised programming and testing procedures"
+        },
+        "candidate_evidence": [
+          "Created and revised programming and testing procedures"
+        ]
+      },
+      {
+        "job_competency": "Embedded controller implementation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9516,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2417963147163391,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Microcontroller development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6503,
+        "evidence": {
+          "tfidf_score": 0.03458410442062491,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.836060328144947,
+          "semantic_score": 0.4189663529396057,
+          "matched_candidate_competency": "Software development and documentation"
+        },
+        "candidate_evidence": [
+          "Software development and documentation"
+        ]
+      },
+      {
+        "job_competency": "FPGA development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6569,
+        "evidence": {
+          "tfidf_score": 0.03458410442062491,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.836060328144947,
+          "semantic_score": 0.3774130642414093,
+          "matched_candidate_competency": "Software development and documentation"
+        },
+        "candidate_evidence": [
+          "Software development and documentation"
+        ]
+      },
+      {
+        "job_competency": "PCB layout and routing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7106,
+        "evidence": {
+          "tfidf_score": 0.2051515510866716,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9164133386886172,
+          "semantic_score": 0.24614502489566803,
+          "matched_candidate_competency": "Created and revised programming and testing procedures"
+        },
+        "candidate_evidence": [
+          "Created and revised programming and testing procedures"
+        ]
+      },
+      {
+        "job_competency": "PCB design",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9352,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32406872510910034,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "IDE tools",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9212,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3940489888191223,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Code Composer Studio",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9322,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33892738819122314,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Firmware development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6473,
+        "evidence": {
+          "tfidf_score": 0.03458410442062491,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.836060328144947,
+          "semantic_score": 0.4378143548965454,
+          "matched_candidate_competency": "Software development and documentation"
+        },
+        "candidate_evidence": [
+          "Software development and documentation"
+        ]
+      },
+      {
+        "job_competency": "Manufacturing documentation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3832,
+        "evidence": {
+          "tfidf_score": 0.06330077533370992,
+          "tfidf_matched_terms": [
+            "documentation",
+            "manufacturing"
+          ],
+          "bm25_score": 2.836060328144947,
+          "semantic_score": 0.6297956705093384,
+          "matched_candidate_competency": "Software development and documentation"
+        },
+        "candidate_evidence": [
+          "Software development and documentation"
+        ]
+      },
+      {
+        "job_competency": "Assembler programming",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.392,
+        "evidence": {
+          "tfidf_score": 0.03458410442062491,
+          "tfidf_matched_terms": [
+            "programming"
+          ],
+          "bm25_score": 2.1324741517904577,
+          "semantic_score": 0.5214085578918457,
+          "matched_candidate_competency": "Created and revised programming and testing procedures"
+        },
+        "candidate_evidence": [
+          "Created and revised programming and testing procedures"
+        ]
+      },
+      {
+        "job_competency": "DX Designer",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5672,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27303481101989746,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Altium",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5568,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3601152300834656,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "PAD PCB design tools",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5633,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.306227445602417,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "High-speed digital design",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5533,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38915878534317017,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Signal integrity testing",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2369,
+        "evidence": {
+          "tfidf_score": 0.06764659213237627,
+          "tfidf_matched_terms": [
+            "testing"
+          ],
+          "bm25_score": 2.5059958756369975,
+          "semantic_score": 0.5672820806503296,
+          "matched_candidate_competency": "Environmental testing"
+        },
+        "candidate_evidence": [
+          "Environmental testing"
+        ]
+      },
+      {
+        "job_competency": "EMC testing",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2399,
+        "evidence": {
+          "tfidf_score": 0.08725894034174571,
+          "tfidf_matched_terms": [
+            "testing"
+          ],
+          "bm25_score": 2.5059958756369975,
+          "semantic_score": 0.5022435188293457,
+          "matched_candidate_competency": "Environmental testing"
+        },
+        "candidate_evidence": [
+          "Environmental testing"
+        ]
+      },
+      {
+        "job_competency": "System-on-chip (SoC) development",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2331,
+        "evidence": {
+          "tfidf_score": 0.03179780113412024,
+          "tfidf_matched_terms": [
+            "development",
+            "on"
+          ],
+          "bm25_score": 4.0113269128559965,
+          "semantic_score": 0.39698418974876404,
+          "matched_candidate_competency": "Trained staff on test procedure software development and documentation"
+        },
+        "candidate_evidence": [
+          "Trained staff on test procedure software development and documentation"
+        ]
+      },
+      {
+        "job_competency": "Xilinx",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.558,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35008543729782104,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Altera",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5665,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.279163658618927,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Lattice",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.571,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24156178534030914,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "MSP430",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5687,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26091644167900085,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "TM4C",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5678,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26802462339401245,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "NXP i.MX family",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.573,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.22532284259796143,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "Microprocessor firmware development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3883,
+        "evidence": {
+          "tfidf_score": 0.026810969705144145,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.836060328144947,
+          "semantic_score": 0.4448193609714508,
+          "matched_candidate_competency": "Software development and documentation"
+        },
+        "candidate_evidence": [
+          "Software development and documentation"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Digital electronic circuit design",
+      "Electronic schematics",
+      "Manufacturing documentation",
+      "Signal integrity testing",
+      "EMC testing",
+      "System-on-chip (SoC) development"
+    ],
+    "weak_matches": [
+      "Microprocessor-based design",
+      "C programming",
+      "Microcontroller development",
+      "FPGA development",
+      "PCB layout and routing",
+      "Firmware development",
+      "Assembler programming",
+      "Microprocessor firmware development"
+    ],
+    "missing": [
+      "Embedded controller implementation",
+      "PCB design",
+      "IDE tools",
+      "Code Composer Studio",
+      "DX Designer",
+      "Altium",
+      "PAD PCB design tools",
+      "High-speed digital design",
+      "Xilinx",
+      "Altera",
+      "Lattice",
+      "MSP430",
+      "TM4C",
+      "NXP i.MX family"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Digital electronic circuit design",
+      "Electronic schematics",
+      "Manufacturing documentation",
+      "Signal integrity testing",
+      "EMC testing",
+      "System-on-chip (SoC) development"
+    ],
+    "competency_gaps": [
+      "Microprocessor-based design",
+      "C programming",
+      "Microcontroller development",
+      "FPGA development",
+      "PCB layout and routing",
+      "Firmware development",
+      "Assembler programming",
+      "Microprocessor firmware development",
+      "Embedded controller implementation",
+      "PCB design",
+      "IDE tools",
+      "Code Composer Studio",
+      "DX Designer",
+      "Altium",
+      "PAD PCB design tools",
+      "High-speed digital design",
+      "Xilinx",
+      "Altera",
+      "Lattice",
+      "MSP430",
+      "TM4C",
+      "NXP i.MX family"
+    ]
+  },
+  "counts": {
+    "requirements": 28,
+    "strength_matches": 0,
+    "partial_matches": 6,
+    "competency_gaps": 22
+  },
+  "latency_ms": 48.88,
+  "analyzed_at": "2026-09-27T21:52:40.819598+00:00"
+}

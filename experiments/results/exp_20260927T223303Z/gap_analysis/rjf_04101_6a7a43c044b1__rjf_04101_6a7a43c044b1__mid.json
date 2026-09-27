@@ -1,0 +1,330 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_04101_6a7a43c044b1",
+  "jd_id": "rjf_04101_6a7a43c044b1",
+  "pair_id": "rjf_04101_6a7a43c044b1",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Oracle",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1735,
+        "evidence": {
+          "tfidf_score": 0.29811408130350414,
+          "tfidf_matched_terms": [
+            "oracle"
+          ],
+          "bm25_score": 2.6349918544429936,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Oracle"
+        },
+        "candidate_evidence": [
+          "Oracle"
+        ]
+      },
+      {
+        "job_competency": "DataStage",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7074,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5788418054580688,
+          "matched_candidate_competency": "Machine Learning"
+        },
+        "candidate_evidence": [
+          "Machine Learning"
+        ]
+      },
+      {
+        "job_competency": "UNIX",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7177,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5143616199493408,
+          "matched_candidate_competency": "Machine Learning"
+        },
+        "candidate_evidence": [
+          "Machine Learning"
+        ]
+      },
+      {
+        "job_competency": "PL/SQL",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.156,
+        "evidence": {
+          "tfidf_score": 0.18809749081974805,
+          "tfidf_matched_terms": [
+            "pl",
+            "sql"
+          ],
+          "bm25_score": 6.338330796601542,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "PL/SQL"
+        },
+        "candidate_evidence": [
+          "PL/SQL"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1747,
+        "evidence": {
+          "tfidf_score": 0.21251488251503903,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 2.9723120786783013,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Data engineering",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1523,
+        "evidence": {
+          "tfidf_score": 0.27312538967692074,
+          "tfidf_matched_terms": [
+            "data",
+            "engineering"
+          ],
+          "bm25_score": 6.429617992921222,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Data Engineering"
+        },
+        "candidate_evidence": [
+          "Data Engineering"
+        ]
+      },
+      {
+        "job_competency": "Cloud computing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7231,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4803887605667114,
+          "matched_candidate_competency": "Machine Learning"
+        },
+        "candidate_evidence": [
+          "Machine Learning"
+        ]
+      },
+      {
+        "job_competency": "Cloud data warehouses",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6693,
+        "evidence": {
+          "tfidf_score": 0.16113856528198545,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 1.913530502915964,
+          "semantic_score": 0.472910076379776,
+          "matched_candidate_competency": "Data Mining"
+        },
+        "candidate_evidence": [
+          "Data Mining"
+        ]
+      },
+      {
+        "job_competency": "Data modeling",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3971,
+        "evidence": {
+          "tfidf_score": 0.20785644940073264,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 1.913530502915964,
+          "semantic_score": 0.6499369144439697,
+          "matched_candidate_competency": "Data Mining"
+        },
+        "candidate_evidence": [
+          "Data Mining"
+        ]
+      },
+      {
+        "job_competency": "Cloud-based ETL/ELT tools",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7309,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4319879710674286,
+          "matched_candidate_competency": "Machine Learning"
+        },
+        "candidate_evidence": [
+          "Machine Learning"
+        ]
+      },
+      {
+        "job_competency": "Version control systems",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9431,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2846427261829376,
+          "matched_candidate_competency": "Machine Learning"
+        },
+        "candidate_evidence": [
+          "Machine Learning"
+        ]
+      },
+      {
+        "job_competency": "Agile principles",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9464,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2680281698703766,
+          "matched_candidate_competency": "Machine Learning"
+        },
+        "candidate_evidence": [
+          "Machine Learning"
+        ]
+      },
+      {
+        "job_competency": "AWS",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4205,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6196870803833008,
+          "matched_candidate_competency": "Machine Learning"
+        },
+        "candidate_evidence": [
+          "Machine Learning"
+        ]
+      },
+      {
+        "job_competency": "Matillion",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5561,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3654868006706238,
+          "matched_candidate_competency": "Machine Learning"
+        },
+        "candidate_evidence": [
+          "Machine Learning"
+        ]
+      },
+      {
+        "job_competency": "Snowflake",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5547,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37756824493408203,
+          "matched_candidate_competency": "Machine Learning"
+        },
+        "candidate_evidence": [
+          "Machine Learning"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Oracle",
+      "PL/SQL",
+      "SQL",
+      "Data engineering"
+    ],
+    "partial_matches": [
+      "Data modeling"
+    ],
+    "weak_matches": [
+      "DataStage",
+      "UNIX",
+      "Cloud computing",
+      "Cloud data warehouses",
+      "Cloud-based ETL/ELT tools",
+      "AWS"
+    ],
+    "missing": [
+      "Version control systems",
+      "Agile principles",
+      "Matillion",
+      "Snowflake"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Oracle",
+      "PL/SQL",
+      "SQL",
+      "Data engineering"
+    ],
+    "partial_matches": [
+      "Data modeling"
+    ],
+    "competency_gaps": [
+      "DataStage",
+      "UNIX",
+      "Cloud computing",
+      "Cloud data warehouses",
+      "Cloud-based ETL/ELT tools",
+      "AWS",
+      "Version control systems",
+      "Agile principles",
+      "Matillion",
+      "Snowflake"
+    ]
+  },
+  "counts": {
+    "requirements": 15,
+    "strength_matches": 4,
+    "partial_matches": 1,
+    "competency_gaps": 10
+  },
+  "latency_ms": 37.82,
+  "analyzed_at": "2026-09-27T22:33:13.370048+00:00"
+}

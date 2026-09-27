@@ -1,0 +1,444 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_06115_0a36e59a7e9d",
+  "jd_id": "rjf_06115_0a36e59a7e9d",
+  "pair_id": "rjf_06115_0a36e59a7e9d",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Business requirements analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6503,
+        "evidence": {
+          "tfidf_score": 0.0672267254912127,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 2.6925730684861353,
+          "semantic_score": 0.5000898241996765,
+          "matched_candidate_competency": "Fraud analysis"
+        },
+        "candidate_evidence": [
+          "Fraud analysis"
+        ]
+      },
+      {
+        "job_competency": "Project management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3954,
+        "evidence": {
+          "tfidf_score": 0.03437332474529394,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.8206464276708965,
+          "semantic_score": 0.47397419810295105,
+          "matched_candidate_competency": "Time management"
+        },
+        "candidate_evidence": [
+          "Time management"
+        ]
+      },
+      {
+        "job_competency": "IT business analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3979,
+        "evidence": {
+          "tfidf_score": 0.09006537505974457,
+          "tfidf_matched_terms": [
+            "analysis",
+            "it"
+          ],
+          "bm25_score": 2.6925730684861353,
+          "semantic_score": 0.5686122179031372,
+          "matched_candidate_competency": "Fraud analysis"
+        },
+        "candidate_evidence": [
+          "Fraud analysis"
+        ]
+      },
+      {
+        "job_competency": "Collaboration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6983,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6358014345169067,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      },
+      {
+        "job_competency": "Multitasking",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9256,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37219661474227905,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      },
+      {
+        "job_competency": "Organizational skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7051,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5933576226234436,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      },
+      {
+        "job_competency": "Oral and written communication",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1683,
+        "evidence": {
+          "tfidf_score": 0.21608903566300441,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 5.245107110064269,
+          "semantic_score": 0.7222411632537842,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Cross-functional communication leadership",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3724,
+        "evidence": {
+          "tfidf_score": 0.024284803530120795,
+          "tfidf_matched_terms": [
+            "communication",
+            "leadership"
+          ],
+          "bm25_score": 5.245107110064269,
+          "semantic_score": 0.508215069770813,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "English communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3462,
+        "evidence": {
+          "tfidf_score": 0.017164606853451194,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 5.245107110064269,
+          "semantic_score": 0.7746473550796509,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Task prioritization",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9261,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3696242570877075,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      },
+      {
+        "job_competency": "Business Analyst leadership and coaching",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3698,
+        "evidence": {
+          "tfidf_score": 0.18723564012843025,
+          "tfidf_matched_terms": [
+            "and",
+            "leadership"
+          ],
+          "bm25_score": 4.521938822073009,
+          "semantic_score": 0.5147454738616943,
+          "matched_candidate_competency": "Team leadership"
+        },
+        "candidate_evidence": [
+          "Team leadership"
+        ]
+      },
+      {
+        "job_competency": "Industry knowledge",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7317,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.42704126238822937,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      },
+      {
+        "job_competency": "Industry trends",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.929,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35480794310569763,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      },
+      {
+        "job_competency": "Agile methodology",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9251,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3746364116668701,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Word",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7278,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.45143282413482666,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1636,
+        "evidence": {
+          "tfidf_score": 0.017164606853451194,
+          "tfidf_matched_terms": [
+            "excel"
+          ],
+          "bm25_score": 5.245107110064269,
+          "semantic_score": 0.9658975005149841,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      },
+      {
+        "job_competency": "Microsoft PowerPoint",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7358,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40105363726615906,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Exchange",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9318,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3407678008079529,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Visio",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9274,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3629099726676941,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Project",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7263,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4606113135814667,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      },
+      {
+        "job_competency": "Related professional experience",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9276,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3618888258934021,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Oral and written communication",
+      "Microsoft Excel"
+    ],
+    "partial_matches": [
+      "Project management",
+      "IT business analysis",
+      "Cross-functional communication leadership",
+      "English communication",
+      "Business Analyst leadership and coaching"
+    ],
+    "weak_matches": [
+      "Business requirements analysis",
+      "Collaboration",
+      "Organizational skills",
+      "Industry knowledge",
+      "Microsoft Word",
+      "Microsoft PowerPoint",
+      "Microsoft Project"
+    ],
+    "missing": [
+      "Multitasking",
+      "Task prioritization",
+      "Industry trends",
+      "Agile methodology",
+      "Microsoft Exchange",
+      "Microsoft Visio",
+      "Related professional experience"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Oral and written communication",
+      "Microsoft Excel"
+    ],
+    "partial_matches": [
+      "Project management",
+      "IT business analysis",
+      "Cross-functional communication leadership",
+      "English communication",
+      "Business Analyst leadership and coaching"
+    ],
+    "competency_gaps": [
+      "Business requirements analysis",
+      "Collaboration",
+      "Organizational skills",
+      "Industry knowledge",
+      "Microsoft Word",
+      "Microsoft PowerPoint",
+      "Microsoft Project",
+      "Multitasking",
+      "Task prioritization",
+      "Industry trends",
+      "Agile methodology",
+      "Microsoft Exchange",
+      "Microsoft Visio",
+      "Related professional experience"
+    ]
+  },
+  "counts": {
+    "requirements": 21,
+    "strength_matches": 2,
+    "partial_matches": 5,
+    "competency_gaps": 14
+  },
+  "latency_ms": 42.19,
+  "analyzed_at": "2026-09-27T21:52:41.341438+00:00"
+}

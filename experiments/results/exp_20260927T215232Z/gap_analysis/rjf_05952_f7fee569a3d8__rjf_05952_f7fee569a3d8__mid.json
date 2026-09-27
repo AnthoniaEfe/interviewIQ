@@ -1,0 +1,312 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_05952_f7fee569a3d8",
+  "jd_id": "rjf_05952_f7fee569a3d8",
+  "pair_id": "rjf_05952_f7fee569a3d8",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Business analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3463,
+        "evidence": {
+          "tfidf_score": 0.0752614430928695,
+          "tfidf_matched_terms": [
+            "analysis",
+            "business"
+          ],
+          "bm25_score": 4.646574959316317,
+          "semantic_score": 0.7300865054130554,
+          "matched_candidate_competency": "Business Objects"
+        },
+        "candidate_evidence": [
+          "Business Objects"
+        ]
+      },
+      {
+        "job_competency": "Business process review",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3853,
+        "evidence": {
+          "tfidf_score": 0.013629096488786708,
+          "tfidf_matched_terms": [
+            "business"
+          ],
+          "bm25_score": 4.646574959316317,
+          "semantic_score": 0.38697144389152527,
+          "matched_candidate_competency": "Business Objects"
+        },
+        "candidate_evidence": [
+          "Business Objects"
+        ]
+      },
+      {
+        "job_competency": "Requirements elicitation and documentation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3859,
+        "evidence": {
+          "tfidf_score": 0.2804296950432514,
+          "tfidf_matched_terms": [
+            "and",
+            "documentation"
+          ],
+          "bm25_score": 3.2303024705538466,
+          "semantic_score": 0.4090701937675476,
+          "matched_candidate_competency": "Billed and invoiced clients and supported deal documentation."
+        },
+        "candidate_evidence": [
+          "Billed and invoiced clients and supported deal documentation."
+        ]
+      },
+      {
+        "job_competency": "Consensus facilitation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9278,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36110615730285645,
+          "matched_candidate_competency": "TRACS"
+        },
+        "candidate_evidence": [
+          "TRACS"
+        ]
+      },
+      {
+        "job_competency": "Strategic analysis and program support",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3622,
+        "evidence": {
+          "tfidf_score": 0.3330372653682989,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and",
+            "program",
+            "support"
+          ],
+          "bm25_score": 4.165327180755151,
+          "semantic_score": 0.4562593102455139,
+          "matched_candidate_competency": "Technical support"
+        },
+        "candidate_evidence": [
+          "Technical support"
+        ]
+      },
+      {
+        "job_competency": "Agile Scrum",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9458,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2711426913738251,
+          "matched_candidate_competency": "TRACS"
+        },
+        "candidate_evidence": [
+          "TRACS"
+        ]
+      },
+      {
+        "job_competency": "JIRA",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7084,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5722280740737915,
+          "matched_candidate_competency": "TRACS"
+        },
+        "candidate_evidence": [
+          "TRACS"
+        ]
+      },
+      {
+        "job_competency": "User story development and validation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3928,
+        "evidence": {
+          "tfidf_score": 0.24298518109141176,
+          "tfidf_matched_terms": [
+            "and",
+            "user"
+          ],
+          "bm25_score": 3.2738945647726565,
+          "semantic_score": 0.3613424599170685,
+          "matched_candidate_competency": "Managed user accounts, network security, and troubleshooting."
+        },
+        "candidate_evidence": [
+          "Managed user accounts, network security, and troubleshooting."
+        ]
+      },
+      {
+        "job_competency": "Sprint planning",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7273,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.45461568236351013,
+          "matched_candidate_competency": "TRACS"
+        },
+        "candidate_evidence": [
+          "TRACS"
+        ]
+      },
+      {
+        "job_competency": "Backlog grooming",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9254,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37277597188949585,
+          "matched_candidate_competency": "TRACS"
+        },
+        "candidate_evidence": [
+          "TRACS"
+        ]
+      },
+      {
+        "job_competency": "Contract compliance",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7311,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.43070748448371887,
+          "matched_candidate_competency": "TRACS"
+        },
+        "candidate_evidence": [
+          "TRACS"
+        ]
+      },
+      {
+        "job_competency": "Contract change notices",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9478,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26109057664871216,
+          "matched_candidate_competency": "TRACS"
+        },
+        "candidate_evidence": [
+          "TRACS"
+        ]
+      },
+      {
+        "job_competency": "LEAN principles",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.939,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30489954352378845,
+          "matched_candidate_competency": "TRACS"
+        },
+        "candidate_evidence": [
+          "TRACS"
+        ]
+      },
+      {
+        "job_competency": "LPI initiatives",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9302,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34892868995666504,
+          "matched_candidate_competency": "TRACS"
+        },
+        "candidate_evidence": [
+          "TRACS"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Business analysis",
+      "Business process review",
+      "Requirements elicitation and documentation",
+      "Strategic analysis and program support",
+      "User story development and validation"
+    ],
+    "weak_matches": [
+      "JIRA",
+      "Sprint planning",
+      "Contract compliance"
+    ],
+    "missing": [
+      "Consensus facilitation",
+      "Agile Scrum",
+      "Backlog grooming",
+      "Contract change notices",
+      "LEAN principles",
+      "LPI initiatives"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Business analysis",
+      "Business process review",
+      "Requirements elicitation and documentation",
+      "Strategic analysis and program support",
+      "User story development and validation"
+    ],
+    "competency_gaps": [
+      "JIRA",
+      "Sprint planning",
+      "Contract compliance",
+      "Consensus facilitation",
+      "Agile Scrum",
+      "Backlog grooming",
+      "Contract change notices",
+      "LEAN principles",
+      "LPI initiatives"
+    ]
+  },
+  "counts": {
+    "requirements": 14,
+    "strength_matches": 0,
+    "partial_matches": 5,
+    "competency_gaps": 9
+  },
+  "latency_ms": 40.73,
+  "analyzed_at": "2026-09-27T21:52:41.099811+00:00"
+}

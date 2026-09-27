@@ -19,6 +19,21 @@ def test_classify_match_thresholds():
     assert classify_match(tfidf=0.0, bm25=0.0, semantic=0.0, bm25_max=1.0) == MatchLabel.MISSING
 
 
+def test_gap_matrix_uses_typed_skills_when_competencies_present():
+    profile = CandidateProfile(
+        competencies=[NormalizedCompetency(normalized_label="Leadership")],
+        technical_skills=[NormalizedCompetency(normalized_label="Python")],
+    )
+    job = JobDescription(
+        required_skills=[
+            NormalizedCompetency(normalized_label="Python", priority=RequirementPriority.REQUIRED),
+        ]
+    )
+    matrix = build_gap_matrix(profile, job, Settings(), HashingEmbeddingService())
+    assert matrix.gaps[0].job_competency == "Python"
+    assert matrix.gaps[0].match_label in {MatchLabel.STRONG, MatchLabel.PARTIAL}
+
+
 def test_gap_matrix_detects_missing_and_match():
     profile = CandidateProfile(
         competencies=[

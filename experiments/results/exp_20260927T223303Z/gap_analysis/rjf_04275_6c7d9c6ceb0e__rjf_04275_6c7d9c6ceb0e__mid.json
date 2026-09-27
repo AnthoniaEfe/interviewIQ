@@ -1,0 +1,269 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_04275_6c7d9c6ceb0e",
+  "jd_id": "rjf_04275_6c7d9c6ceb0e",
+  "pair_id": "rjf_04275_6c7d9c6ceb0e",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Technical-business stakeholder communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6566,
+        "evidence": {
+          "tfidf_score": 0.04946462587068451,
+          "tfidf_matched_terms": [
+            "business",
+            "communication"
+          ],
+          "bm25_score": 4.494054472096786,
+          "semantic_score": 0.4335865080356598,
+          "matched_candidate_competency": "Communication and presentation"
+        },
+        "candidate_evidence": [
+          "Communication and presentation"
+        ]
+      },
+      {
+        "job_competency": "Business process requirements analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3655,
+        "evidence": {
+          "tfidf_score": 0.13261196487693927,
+          "tfidf_matched_terms": [
+            "analysis",
+            "business",
+            "process"
+          ],
+          "bm25_score": 6.030086851024988,
+          "semantic_score": 0.6744820475578308,
+          "matched_candidate_competency": "Business process improvement"
+        },
+        "candidate_evidence": [
+          "Business process improvement"
+        ]
+      },
+      {
+        "job_competency": "Solution proposal",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7108,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5577888488769531,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Business process modeling",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3575,
+        "evidence": {
+          "tfidf_score": 0.11975648215528703,
+          "tfidf_matched_terms": [
+            "business",
+            "modeling",
+            "process"
+          ],
+          "bm25_score": 6.030086851024988,
+          "semantic_score": 0.7641372680664062,
+          "matched_candidate_competency": "Business process improvement"
+        },
+        "candidate_evidence": [
+          "Business process improvement"
+        ]
+      },
+      {
+        "job_competency": "Business process analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3549,
+        "evidence": {
+          "tfidf_score": 0.1707784718412188,
+          "tfidf_matched_terms": [
+            "analysis",
+            "business",
+            "process"
+          ],
+          "bm25_score": 6.030086851024988,
+          "semantic_score": 0.7516791820526123,
+          "matched_candidate_competency": "Business process improvement"
+        },
+        "candidate_evidence": [
+          "Business process improvement"
+        ]
+      },
+      {
+        "job_competency": "Process improvement methodologies",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1705,
+        "evidence": {
+          "tfidf_score": 0.043103021856062365,
+          "tfidf_matched_terms": [
+            "improvement",
+            "process"
+          ],
+          "bm25_score": 7.9173254050580155,
+          "semantic_score": 0.8081586360931396,
+          "matched_candidate_competency": "Business process improvement"
+        },
+        "candidate_evidence": [
+          "Business process improvement"
+        ]
+      },
+      {
+        "job_competency": "Business analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3894,
+        "evidence": {
+          "tfidf_score": 0.1595694221613561,
+          "tfidf_matched_terms": [
+            "analysis",
+            "business"
+          ],
+          "bm25_score": 2.7102076909517376,
+          "semantic_score": 0.7300864458084106,
+          "matched_candidate_competency": "Financial analysis"
+        },
+        "candidate_evidence": [
+          "Financial analysis"
+        ]
+      },
+      {
+        "job_competency": "Agile team experience",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.723,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4814777970314026,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "US citizenship or Green Card work authorization",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9776,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.11180158704519272,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Robotic process automation development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4052,
+        "evidence": {
+          "tfidf_score": 0.026120454144845717,
+          "tfidf_matched_terms": [
+            "process"
+          ],
+          "bm25_score": 3.42327093296123,
+          "semantic_score": 0.4354912042617798,
+          "matched_candidate_competency": "Business process improvement"
+        },
+        "candidate_evidence": [
+          "Business process improvement"
+        ]
+      },
+      {
+        "job_competency": "RPA platforms and tools",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.432,
+        "evidence": {
+          "tfidf_score": 0.2269129458103005,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.36865114277731525,
+          "semantic_score": 0.29500526189804077,
+          "matched_candidate_competency": "Developed and executed campaign strategies and methods."
+        },
+        "candidate_evidence": [
+          "Developed and executed campaign strategies and methods."
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Process improvement methodologies"
+    ],
+    "partial_matches": [
+      "Business process requirements analysis",
+      "Business process modeling",
+      "Business process analysis",
+      "Business analysis"
+    ],
+    "weak_matches": [
+      "Technical-business stakeholder communication",
+      "Solution proposal",
+      "Agile team experience",
+      "Robotic process automation development",
+      "RPA platforms and tools"
+    ],
+    "missing": [
+      "US citizenship or Green Card work authorization"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Process improvement methodologies"
+    ],
+    "partial_matches": [
+      "Business process requirements analysis",
+      "Business process modeling",
+      "Business process analysis",
+      "Business analysis"
+    ],
+    "competency_gaps": [
+      "Technical-business stakeholder communication",
+      "Solution proposal",
+      "Agile team experience",
+      "Robotic process automation development",
+      "RPA platforms and tools",
+      "US citizenship or Green Card work authorization"
+    ]
+  },
+  "counts": {
+    "requirements": 11,
+    "strength_matches": 1,
+    "partial_matches": 4,
+    "competency_gaps": 6
+  },
+  "latency_ms": 30.97,
+  "analyzed_at": "2026-09-27T22:33:13.442207+00:00"
+}

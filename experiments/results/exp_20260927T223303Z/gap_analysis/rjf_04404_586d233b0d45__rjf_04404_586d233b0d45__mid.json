@@ -1,0 +1,398 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_04404_586d233b0d45",
+  "jd_id": "rjf_04404_586d233b0d45",
+  "pair_id": "rjf_04404_586d233b0d45",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Software engineering",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3949,
+        "evidence": {
+          "tfidf_score": 0.05574364686297243,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 2.8521601058053614,
+          "semantic_score": 0.5660102367401123,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "C#",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7143,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5359004735946655,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": ".NET Core",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9276,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36207467317581177,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": ".NET",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7262,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46123552322387695,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Build engineering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7342,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41147154569625854,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "CI/CD tools",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.937,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3151204586029053,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Source control",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9348,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3258807063102722,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Build automation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9307,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3467351794242859,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Deployment automation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9426,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2872408926486969,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "GitHub",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.932,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33983114361763,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Jenkins",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9384,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3077845871448517,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Spinnaker",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9323,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33872514963150024,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "DevOps deployments",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9473,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2634924650192261,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Unit testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3841,
+        "evidence": {
+          "tfidf_score": 0.08409073541577244,
+          "tfidf_matched_terms": [
+            "testing"
+          ],
+          "bm25_score": 2.960779548378064,
+          "semantic_score": 0.6361074447631836,
+          "matched_candidate_competency": "Functional testing"
+        },
+        "candidate_evidence": [
+          "Functional testing"
+        ]
+      },
+      {
+        "job_competency": "Integration testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3882,
+        "evidence": {
+          "tfidf_score": 0.08409073541577244,
+          "tfidf_matched_terms": [
+            "testing"
+          ],
+          "bm25_score": 2.960779548378064,
+          "semantic_score": 0.5948232412338257,
+          "matched_candidate_competency": "Functional testing"
+        },
+        "candidate_evidence": [
+          "Functional testing"
+        ]
+      },
+      {
+        "job_competency": "End-to-end testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3575,
+        "evidence": {
+          "tfidf_score": 0.09883454498080813,
+          "tfidf_matched_terms": [
+            "end",
+            "testing",
+            "to"
+          ],
+          "bm25_score": 4.825738031436757,
+          "semantic_score": 0.6004214286804199,
+          "matched_candidate_competency": "Provided help-desk support and resolved end-user problems."
+        },
+        "candidate_evidence": [
+          "Provided help-desk support and resolved end-user problems."
+        ]
+      },
+      {
+        "job_competency": "Code review",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9261,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36968275904655457,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Production deployment",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9426,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2870105504989624,
+          "matched_candidate_competency": "Pega PRPC"
+        },
+        "candidate_evidence": [
+          "Pega PRPC"
+        ]
+      },
+      {
+        "job_competency": "Microsoft technologies",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2203,
+        "evidence": {
+          "tfidf_score": 0.013877377139995548,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 4.762275912530932,
+          "semantic_score": 0.5772359371185303,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Software engineering",
+      "Unit testing",
+      "Integration testing",
+      "End-to-end testing",
+      "Microsoft technologies"
+    ],
+    "weak_matches": [
+      "C#",
+      ".NET",
+      "Build engineering"
+    ],
+    "missing": [
+      ".NET Core",
+      "CI/CD tools",
+      "Source control",
+      "Build automation",
+      "Deployment automation",
+      "GitHub",
+      "Jenkins",
+      "Spinnaker",
+      "DevOps deployments",
+      "Code review",
+      "Production deployment"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Software engineering",
+      "Unit testing",
+      "Integration testing",
+      "End-to-end testing",
+      "Microsoft technologies"
+    ],
+    "competency_gaps": [
+      "C#",
+      ".NET",
+      "Build engineering",
+      ".NET Core",
+      "CI/CD tools",
+      "Source control",
+      "Build automation",
+      "Deployment automation",
+      "GitHub",
+      "Jenkins",
+      "Spinnaker",
+      "DevOps deployments",
+      "Code review",
+      "Production deployment"
+    ]
+  },
+  "counts": {
+    "requirements": 19,
+    "strength_matches": 0,
+    "partial_matches": 5,
+    "competency_gaps": 14
+  },
+  "latency_ms": 39.95,
+  "analyzed_at": "2026-09-27T22:33:13.522220+00:00"
+}

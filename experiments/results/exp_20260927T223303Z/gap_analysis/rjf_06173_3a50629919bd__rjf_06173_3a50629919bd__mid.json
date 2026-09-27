@@ -1,0 +1,709 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_06173_3a50629919bd",
+  "jd_id": "rjf_06173_3a50629919bd",
+  "pair_id": "rjf_06173_3a50629919bd",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Databricks",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7081,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5745210647583008,
+          "matched_candidate_competency": "Hadoop"
+        },
+        "candidate_evidence": [
+          "Hadoop"
+        ]
+      },
+      {
+        "job_competency": "Apache Spark",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1747,
+        "evidence": {
+          "tfidf_score": 0.18217687618152684,
+          "tfidf_matched_terms": [
+            "apache",
+            "spark"
+          ],
+          "bm25_score": 5.801088506156759,
+          "semantic_score": 0.9999998211860657,
+          "matched_candidate_competency": "Apache Spark"
+        },
+        "candidate_evidence": [
+          "Apache Spark"
+        ]
+      },
+      {
+        "job_competency": "Big data technologies",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3621,
+        "evidence": {
+          "tfidf_score": 0.14528866737102356,
+          "tfidf_matched_terms": [
+            "big",
+            "data"
+          ],
+          "bm25_score": 7.173831496933873,
+          "semantic_score": 0.8136000037193298,
+          "matched_candidate_competency": "Big data"
+        },
+        "candidate_evidence": [
+          "Big data"
+        ]
+      },
+      {
+        "job_competency": "Hadoop",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3672,
+        "evidence": {
+          "tfidf_score": 0.0613073279895034,
+          "tfidf_matched_terms": [
+            "hadoop"
+          ],
+          "bm25_score": 4.433770151481772,
+          "semantic_score": 0.9999998211860657,
+          "matched_candidate_competency": "Hadoop"
+        },
+        "candidate_evidence": [
+          "Hadoop"
+        ]
+      },
+      {
+        "job_competency": "NoSQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6763,
+        "evidence": {
+          "tfidf_score": 0.008742506354146362,
+          "tfidf_matched_terms": [
+            "nosql"
+          ],
+          "bm25_score": 2.2868368454617363,
+          "semantic_score": 0.6212484240531921,
+          "matched_candidate_competency": "Implemented Apache Drill to join SQL and NoSQL data and store results in Hadoop."
+        },
+        "candidate_evidence": [
+          "Implemented Apache Drill to join SQL and NoSQL data and store results in Hadoop."
+        ]
+      },
+      {
+        "job_competency": "MPP databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6946,
+        "evidence": {
+          "tfidf_score": 0.005068369019662414,
+          "tfidf_matched_terms": [
+            "databases"
+          ],
+          "bm25_score": 3.3143456308244805,
+          "semantic_score": 0.44410771131515503,
+          "matched_candidate_competency": "Exported analyzed data to relational databases using Sqoop."
+        },
+        "candidate_evidence": [
+          "Exported analyzed data to relational databases using Sqoop."
+        ]
+      },
+      {
+        "job_competency": "OLTP",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9208,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3961029350757599,
+          "matched_candidate_competency": "Hadoop"
+        },
+        "candidate_evidence": [
+          "Hadoop"
+        ]
+      },
+      {
+        "job_competency": "OLAP",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.725,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4688311517238617,
+          "matched_candidate_competency": "Hadoop"
+        },
+        "candidate_evidence": [
+          "Hadoop"
+        ]
+      },
+      {
+        "job_competency": "Query tuning",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6932,
+        "evidence": {
+          "tfidf_score": 0.005068369019662414,
+          "tfidf_matched_terms": [
+            "tuning"
+          ],
+          "bm25_score": 2.8826125030909484,
+          "semantic_score": 0.48018011450767517,
+          "matched_candidate_competency": "Performed Hadoop cluster upgrades, troubleshooting, performance tuning, and log management."
+        },
+        "candidate_evidence": [
+          "Performed Hadoop cluster upgrades, troubleshooting, performance tuning, and log management."
+        ]
+      },
+      {
+        "job_competency": "Performance tuning",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6853,
+        "evidence": {
+          "tfidf_score": 0.018548422211043854,
+          "tfidf_matched_terms": [
+            "performance",
+            "tuning"
+          ],
+          "bm25_score": 5.43687427334024,
+          "semantic_score": 0.35694989562034607,
+          "matched_candidate_competency": "Performed Hadoop cluster upgrades, troubleshooting, performance tuning, and log management."
+        },
+        "candidate_evidence": [
+          "Performed Hadoop cluster upgrades, troubleshooting, performance tuning, and log management."
+        ]
+      },
+      {
+        "job_competency": "Troubleshooting and debugging",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6715,
+        "evidence": {
+          "tfidf_score": 0.3057288401091245,
+          "tfidf_matched_terms": [
+            "and",
+            "troubleshooting"
+          ],
+          "bm25_score": 3.4933091957589455,
+          "semantic_score": 0.35160666704177856,
+          "matched_candidate_competency": "Performed Hadoop cluster upgrades, troubleshooting, performance tuning, and log management."
+        },
+        "candidate_evidence": [
+          "Performed Hadoop cluster upgrades, troubleshooting, performance tuning, and log management."
+        ]
+      },
+      {
+        "job_competency": "Python, Scala, or Java",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3851,
+        "evidence": {
+          "tfidf_score": 0.035319821327564456,
+          "tfidf_matched_terms": [
+            "java",
+            "python",
+            "scala"
+          ],
+          "bm25_score": 6.965840213750073,
+          "semantic_score": 0.6792429685592651,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Cloud infrastructure and services",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3908,
+        "evidence": {
+          "tfidf_score": 0.25831866239783174,
+          "tfidf_matched_terms": [
+            "and",
+            "cloud"
+          ],
+          "bm25_score": 4.878181773952935,
+          "semantic_score": 0.5879265666007996,
+          "matched_candidate_competency": "Cloud Shell"
+        },
+        "candidate_evidence": [
+          "Cloud Shell"
+        ]
+      },
+      {
+        "job_competency": "AWS, Azure, or GCP",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3855,
+        "evidence": {
+          "tfidf_score": 0.0392486460635301,
+          "tfidf_matched_terms": [
+            "aws",
+            "azure",
+            "gcp"
+          ],
+          "bm25_score": 6.172379859092561,
+          "semantic_score": 0.7222521305084229,
+          "matched_candidate_competency": "GCP"
+        },
+        "candidate_evidence": [
+          "GCP"
+        ]
+      },
+      {
+        "job_competency": "CI/CD development tools",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3528,
+        "evidence": {
+          "tfidf_score": 0.023526336345156086,
+          "tfidf_matched_terms": [
+            "cd",
+            "ci",
+            "development"
+          ],
+          "bm25_score": 10.666040531141007,
+          "semantic_score": 0.7752507328987122,
+          "matched_candidate_competency": "CI/CD"
+        },
+        "candidate_evidence": [
+          "CI/CD"
+        ]
+      },
+      {
+        "job_competency": "Unit and integration testing",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1644,
+        "evidence": {
+          "tfidf_score": 0.3252674152305095,
+          "tfidf_matched_terms": [
+            "and",
+            "integration",
+            "testing",
+            "unit"
+          ],
+          "bm25_score": 11.781770357439166,
+          "semantic_score": 0.7173396348953247,
+          "matched_candidate_competency": "Unit, system, integration, and UAT testing"
+        },
+        "candidate_evidence": [
+          "Unit, system, integration, and UAT testing"
+        ]
+      },
+      {
+        "job_competency": "Automation and orchestration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6637,
+        "evidence": {
+          "tfidf_score": 0.3057288401091245,
+          "tfidf_matched_terms": [
+            "and",
+            "automation"
+          ],
+          "bm25_score": 3.090707594876996,
+          "semantic_score": 0.42611217498779297,
+          "matched_candidate_competency": "Created shell scripts for job automation and implemented Sentry-based access restrictions."
+        },
+        "candidate_evidence": [
+          "Created shell scripts for job automation and implemented Sentry-based access restrictions."
+        ]
+      },
+      {
+        "job_competency": "REST APIs",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4028,
+        "evidence": {
+          "tfidf_score": 0.024733996325891343,
+          "tfidf_matched_terms": [
+            "apis",
+            "rest"
+          ],
+          "bm25_score": 6.172379859092561,
+          "semantic_score": 0.5605118870735168,
+          "matched_candidate_competency": "REST"
+        },
+        "candidate_evidence": [
+          "REST"
+        ]
+      },
+      {
+        "job_competency": "BI tools",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6562,
+        "evidence": {
+          "tfidf_score": 0.010137871709694449,
+          "tfidf_matched_terms": [
+            "bi"
+          ],
+          "bm25_score": 5.333020265570504,
+          "semantic_score": 0.551963210105896,
+          "matched_candidate_competency": "Power BI"
+        },
+        "candidate_evidence": [
+          "Power BI"
+        ]
+      },
+      {
+        "job_competency": "SQL interfaces",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4061,
+        "evidence": {
+          "tfidf_score": 0.030449963725856632,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 4.66426836518219,
+          "semantic_score": 0.6191005706787109,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Jenkins",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.355,
+        "evidence": {
+          "tfidf_score": 0.008742506354146362,
+          "tfidf_matched_terms": [
+            "jenkins"
+          ],
+          "bm25_score": 6.965840213750073,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Jenkins"
+        },
+        "candidate_evidence": [
+          "Jenkins"
+        ]
+      },
+      {
+        "job_competency": "Customer-facing technical consulting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7194,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5038380026817322,
+          "matched_candidate_competency": "Hadoop"
+        },
+        "candidate_evidence": [
+          "Hadoop"
+        ]
+      },
+      {
+        "job_competency": "Strategic stakeholder presentation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9355,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3225341737270355,
+          "matched_candidate_competency": "Hadoop"
+        },
+        "candidate_evidence": [
+          "Hadoop"
+        ]
+      },
+      {
+        "job_competency": "Communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.355,
+        "evidence": {
+          "tfidf_score": 0.008742506354146362,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 6.965840213750073,
+          "semantic_score": 1.0000003576278687,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Customer success orientation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9323,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3382664620876312,
+          "matched_candidate_competency": "Hadoop"
+        },
+        "candidate_evidence": [
+          "Hadoop"
+        ]
+      },
+      {
+        "job_competency": "Continuous learning",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6692,
+        "evidence": {
+          "tfidf_score": 0.012364231915896447,
+          "tfidf_matched_terms": [
+            "continuous",
+            "learning"
+          ],
+          "bm25_score": 5.2981100164528465,
+          "semantic_score": 0.47065865993499756,
+          "matched_candidate_competency": "Machine learning applications"
+        },
+        "candidate_evidence": [
+          "Machine learning applications"
+        ]
+      },
+      {
+        "job_competency": "Data science and machine learning engineering",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.1012,
+        "evidence": {
+          "tfidf_score": 0.3711490767612202,
+          "tfidf_matched_terms": [
+            "and",
+            "data",
+            "engineering",
+            "learning",
+            "machine"
+          ],
+          "bm25_score": 10.596220032905693,
+          "semantic_score": 0.6726287603378296,
+          "matched_candidate_competency": "Machine learning applications"
+        },
+        "candidate_evidence": [
+          "Machine learning applications"
+        ]
+      },
+      {
+        "job_competency": "Model selection",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4242,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5812169313430786,
+          "matched_candidate_competency": "Hadoop"
+        },
+        "candidate_evidence": [
+          "Hadoop"
+        ]
+      },
+      {
+        "job_competency": "Model lifecycle management",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4105,
+        "evidence": {
+          "tfidf_score": 0.015725597473465604,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.9930033753192133,
+          "semantic_score": 0.4577667713165283,
+          "matched_candidate_competency": "Client relationship management"
+        },
+        "candidate_evidence": [
+          "Client relationship management"
+        ]
+      },
+      {
+        "job_competency": "Hyperparameter tuning",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4343,
+        "evidence": {
+          "tfidf_score": 0.005068369019662414,
+          "tfidf_matched_terms": [
+            "tuning"
+          ],
+          "bm25_score": 2.8826125030909484,
+          "semantic_score": 0.2884112000465393,
+          "matched_candidate_competency": "Performed Hadoop cluster upgrades, troubleshooting, performance tuning, and log management."
+        },
+        "candidate_evidence": [
+          "Performed Hadoop cluster upgrades, troubleshooting, performance tuning, and log management."
+        ]
+      },
+      {
+        "job_competency": "Model serving",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4371,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44727829098701477,
+          "matched_candidate_competency": "Hadoop"
+        },
+        "candidate_evidence": [
+          "Hadoop"
+        ]
+      },
+      {
+        "job_competency": "Deep learning",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3944,
+        "evidence": {
+          "tfidf_score": 0.005068369019662414,
+          "tfidf_matched_terms": [
+            "learning"
+          ],
+          "bm25_score": 5.2981100164528465,
+          "semantic_score": 0.5510733127593994,
+          "matched_candidate_competency": "Machine learning applications"
+        },
+        "candidate_evidence": [
+          "Machine learning applications"
+        ]
+      },
+      {
+        "job_competency": "MLflow",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4261,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5615924000740051,
+          "matched_candidate_competency": "Hadoop"
+        },
+        "candidate_evidence": [
+          "Hadoop"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Apache Spark",
+      "Unit and integration testing",
+      "Data science and machine learning engineering"
+    ],
+    "partial_matches": [
+      "Big data technologies",
+      "Hadoop",
+      "Python, Scala, or Java",
+      "Cloud infrastructure and services",
+      "AWS, Azure, or GCP",
+      "CI/CD development tools",
+      "REST APIs",
+      "SQL interfaces",
+      "Jenkins",
+      "Communication"
+    ],
+    "weak_matches": [
+      "Databricks",
+      "NoSQL",
+      "MPP databases",
+      "OLAP",
+      "Query tuning",
+      "Performance tuning",
+      "Troubleshooting and debugging",
+      "Automation and orchestration",
+      "BI tools",
+      "Customer-facing technical consulting",
+      "Continuous learning",
+      "Model selection",
+      "Model lifecycle management",
+      "Hyperparameter tuning",
+      "Model serving",
+      "Deep learning",
+      "MLflow"
+    ],
+    "missing": [
+      "OLTP",
+      "Strategic stakeholder presentation",
+      "Customer success orientation"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Apache Spark",
+      "Unit and integration testing",
+      "Data science and machine learning engineering"
+    ],
+    "partial_matches": [
+      "Big data technologies",
+      "Hadoop",
+      "Python, Scala, or Java",
+      "Cloud infrastructure and services",
+      "AWS, Azure, or GCP",
+      "CI/CD development tools",
+      "REST APIs",
+      "SQL interfaces",
+      "Jenkins",
+      "Communication"
+    ],
+    "competency_gaps": [
+      "Databricks",
+      "NoSQL",
+      "MPP databases",
+      "OLAP",
+      "Query tuning",
+      "Performance tuning",
+      "Troubleshooting and debugging",
+      "Automation and orchestration",
+      "BI tools",
+      "Customer-facing technical consulting",
+      "Continuous learning",
+      "Model selection",
+      "Model lifecycle management",
+      "Hyperparameter tuning",
+      "Model serving",
+      "Deep learning",
+      "MLflow",
+      "OLTP",
+      "Strategic stakeholder presentation",
+      "Customer success orientation"
+    ]
+  },
+  "counts": {
+    "requirements": 33,
+    "strength_matches": 3,
+    "partial_matches": 10,
+    "competency_gaps": 20
+  },
+  "latency_ms": 89.91,
+  "analyzed_at": "2026-09-27T22:33:14.279319+00:00"
+}

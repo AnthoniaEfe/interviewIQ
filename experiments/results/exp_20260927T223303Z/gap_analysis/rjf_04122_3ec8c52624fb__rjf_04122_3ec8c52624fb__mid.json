@@ -1,0 +1,363 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_04122_3ec8c52624fb",
+  "jd_id": "rjf_04122_3ec8c52624fb",
+  "pair_id": "rjf_04122_3ec8c52624fb",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Cost accounting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3768,
+        "evidence": {
+          "tfidf_score": 0.060946720132185675,
+          "tfidf_matched_terms": [
+            "accounting",
+            "cost"
+          ],
+          "bm25_score": 3.996640721006187,
+          "semantic_score": 0.6679836511611938,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Excel",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4191,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.8094978928565979,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "ERP systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7263,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4609323740005493,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Planning",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7255,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46573594212532043,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Inventory costing and accounting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3557,
+        "evidence": {
+          "tfidf_score": 0.3842419912857414,
+          "tfidf_matched_terms": [
+            "accounting",
+            "and",
+            "inventory"
+          ],
+          "bm25_score": 3.996640721006187,
+          "semantic_score": 0.6369016766548157,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "BOM management",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9231,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38429194688796997,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Attention to detail",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6928,
+        "evidence": {
+          "tfidf_score": 0.007729634291640874,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 2.530089440336418,
+          "semantic_score": 0.33624374866485596,
+          "matched_candidate_competency": "Assisted with an accounts payable policy change to ACH payments"
+        },
+        "candidate_evidence": [
+          "Assisted with an accounts payable policy change to ACH payments"
+        ]
+      },
+      {
+        "job_competency": "Data integrity",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7318,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4263985753059387,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Conflict resolution",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7349,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4071386754512787,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Integrity",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7181,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.511604905128479,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Tenacity",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9325,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3377266824245453,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Initiative",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9319,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3403727114200592,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Decision making",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7262,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46139276027679443,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Negotiation skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7338,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41382381319999695,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "SAGE",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5614,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32200318574905396,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Hyperion",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5707,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24380598962306976,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "SAP",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.0971,
+        "evidence": {
+          "tfidf_score": 0.017198504632586705,
+          "tfidf_matched_terms": [
+            "sap"
+          ],
+          "bm25_score": 5.7863962495033805,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "SAP"
+    ],
+    "partial_matches": [
+      "Cost accounting",
+      "Excel",
+      "Inventory costing and accounting"
+    ],
+    "weak_matches": [
+      "ERP systems",
+      "Planning",
+      "Attention to detail",
+      "Data integrity",
+      "Conflict resolution",
+      "Integrity",
+      "Decision making",
+      "Negotiation skills"
+    ],
+    "missing": [
+      "BOM management",
+      "Tenacity",
+      "Initiative",
+      "SAGE",
+      "Hyperion"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "SAP"
+    ],
+    "partial_matches": [
+      "Cost accounting",
+      "Excel",
+      "Inventory costing and accounting"
+    ],
+    "competency_gaps": [
+      "ERP systems",
+      "Planning",
+      "Attention to detail",
+      "Data integrity",
+      "Conflict resolution",
+      "Integrity",
+      "Decision making",
+      "Negotiation skills",
+      "BOM management",
+      "Tenacity",
+      "Initiative",
+      "SAGE",
+      "Hyperion"
+    ]
+  },
+  "counts": {
+    "requirements": 17,
+    "strength_matches": 1,
+    "partial_matches": 3,
+    "competency_gaps": 13
+  },
+  "latency_ms": 39.69,
+  "analyzed_at": "2026-09-27T22:33:13.410498+00:00"
+}

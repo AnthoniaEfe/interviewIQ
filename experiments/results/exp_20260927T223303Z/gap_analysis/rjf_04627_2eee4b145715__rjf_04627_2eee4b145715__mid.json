@@ -1,0 +1,783 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_04627_2eee4b145715",
+  "jd_id": "rjf_04627_2eee4b145715",
+  "pair_id": "rjf_04627_2eee4b145715",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Linux/Unix administration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3488,
+        "evidence": {
+          "tfidf_score": 0.03418879244920926,
+          "tfidf_matched_terms": [
+            "linux",
+            "unix"
+          ],
+          "bm25_score": 5.528487661318232,
+          "semantic_score": 0.7361079454421997,
+          "matched_candidate_competency": "Linux"
+        },
+        "candidate_evidence": [
+          "Linux"
+        ]
+      },
+      {
+        "job_competency": "Monitoring, reliability, and security of Linux-based services",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3694,
+        "evidence": {
+          "tfidf_score": 0.18250033862112647,
+          "tfidf_matched_terms": [
+            "and",
+            "based",
+            "linux",
+            "of",
+            "security"
+          ],
+          "bm25_score": 5.528487661318232,
+          "semantic_score": 0.41948968172073364,
+          "matched_candidate_competency": "Linux"
+        },
+        "candidate_evidence": [
+          "Linux"
+        ]
+      },
+      {
+        "job_competency": "AWS operations and DevOps",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6963,
+        "evidence": {
+          "tfidf_score": 0.18107596429843642,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.1385358887228463,
+          "semantic_score": 0.35759976506233215,
+          "matched_candidate_competency": "Budgeting and finance"
+        },
+        "candidate_evidence": [
+          "Budgeting and finance"
+        ]
+      },
+      {
+        "job_competency": "Amazon EC2",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9233,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3833802044391632,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Amazon S3",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9378,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31112945079803467,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "AWS IAM",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9269,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36543506383895874,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Amazon RDS",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9441,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27966251969337463,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Amazon CloudFront",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.949,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2550358772277832,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Amazon CloudWatch",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9528,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.23584814369678497,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "AWS Lambda",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9453,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27339908480644226,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "AWS CloudFormation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9489,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2556140720844269,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "AWS CDK",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9323,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33863139152526855,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Configuration management and automation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6945,
+        "evidence": {
+          "tfidf_score": 0.18107596429843642,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.1385358887228463,
+          "semantic_score": 0.3693885803222656,
+          "matched_candidate_competency": "Budgeting and finance"
+        },
+        "candidate_evidence": [
+          "Budgeting and finance"
+        ]
+      },
+      {
+        "job_competency": "Chef",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9306,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34675800800323486,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Puppet",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9305,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3476085960865021,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "CI/CD tools",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.735,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40614020824432373,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Jenkins",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1659,
+        "evidence": {
+          "tfidf_score": 0.045432841032959165,
+          "tfidf_matched_terms": [
+            "jenkins"
+          ],
+          "bm25_score": 4.771365053855159,
+          "semantic_score": 1.000000238418579,
+          "matched_candidate_competency": "Jenkins"
+        },
+        "candidate_evidence": [
+          "Jenkins"
+        ]
+      },
+      {
+        "job_competency": "JFrog Artifactory",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7297,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4392632246017456,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9282,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35878676176071167,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Application performance monitoring",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.372,
+        "evidence": {
+          "tfidf_score": 0.03418879244920926,
+          "tfidf_matched_terms": [
+            "application",
+            "performance"
+          ],
+          "bm25_score": 4.579197057167105,
+          "semantic_score": 0.632696270942688,
+          "matched_candidate_competency": "Performance testing"
+        },
+        "candidate_evidence": [
+          "Performance testing"
+        ]
+      },
+      {
+        "job_competency": "Log analysis and monitoring",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3725,
+        "evidence": {
+          "tfidf_score": 0.23627796333529488,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and",
+            "log"
+          ],
+          "bm25_score": 4.579197057167105,
+          "semantic_score": 0.47675371170043945,
+          "matched_candidate_competency": "Requirements analysis"
+        },
+        "candidate_evidence": [
+          "Requirements analysis"
+        ]
+      },
+      {
+        "job_competency": "Coding and scripting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3587,
+        "evidence": {
+          "tfidf_score": 0.27751515588788644,
+          "tfidf_matched_terms": [
+            "and",
+            "scripting"
+          ],
+          "bm25_score": 3.532847390759893,
+          "semantic_score": 0.7255176901817322,
+          "matched_candidate_competency": "Shell scripting"
+        },
+        "candidate_evidence": [
+          "Shell scripting"
+        ]
+      },
+      {
+        "job_competency": "PHP",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7165,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5221449136734009,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7204,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4973408281803131,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Perl",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7219,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4882744252681732,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Ruby",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7246,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.47152331471443176,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "MySQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.719,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5062379837036133,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Open-source technologies and cloud services",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7002,
+        "evidence": {
+          "tfidf_score": 0.14449544187526142,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.1385358887228463,
+          "semantic_score": 0.3606422543525696,
+          "matched_candidate_competency": "Budgeting and finance"
+        },
+        "candidate_evidence": [
+          "Budgeting and finance"
+        ]
+      },
+      {
+        "job_competency": "IT operations for highly available services",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6886,
+        "evidence": {
+          "tfidf_score": 0.020690000799675833,
+          "tfidf_matched_terms": [
+            "for"
+          ],
+          "bm25_score": 2.0943637222003635,
+          "semantic_score": 0.3967893421649933,
+          "matched_candidate_competency": "Worked with Jenkins for continuous integration."
+        },
+        "candidate_evidence": [
+          "Worked with Jenkins for continuous integration."
+        ]
+      },
+      {
+        "job_competency": "Communication and collaboration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6926,
+        "evidence": {
+          "tfidf_score": 0.21417570245884146,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.1385358887228463,
+          "semantic_score": 0.35646018385887146,
+          "matched_candidate_competency": "Budgeting and finance"
+        },
+        "candidate_evidence": [
+          "Budgeting and finance"
+        ]
+      },
+      {
+        "job_competency": "Teamwork",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9227,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38664284348487854,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Adobe Experience Manager",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5611,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32431238889694214,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Globally distributed team experience",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5613,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32286766171455383,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Agile methodology",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5563,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3643079996109009,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "CI/CD framework with AEM",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4101,
+        "evidence": {
+          "tfidf_score": 0.007608251377906309,
+          "tfidf_matched_terms": [
+            "with"
+          ],
+          "bm25_score": 2.714666990264357,
+          "semantic_score": 0.35379770398139954,
+          "matched_candidate_competency": "Worked with Jenkins for continuous integration."
+        },
+        "candidate_evidence": [
+          "Worked with Jenkins for continuous integration."
+        ]
+      },
+      {
+        "job_competency": "Frontend development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4109,
+        "evidence": {
+          "tfidf_score": 0.013159656193367859,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 1.6853319292553022,
+          "semantic_score": 0.48141393065452576,
+          "matched_candidate_competency": "Contributed to development of an automated test setup for regression test cases."
+        },
+        "candidate_evidence": [
+          "Contributed to development of an automated test setup for regression test cases."
+        ]
+      },
+      {
+        "job_competency": "React",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5752,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2067367285490036,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "Node.js",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4415,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40135183930397034,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      },
+      {
+        "job_competency": "NoSQL databases",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.555,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3750742971897125,
+          "matched_candidate_competency": "Selenium WebDriver"
+        },
+        "candidate_evidence": [
+          "Selenium WebDriver"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Jenkins"
+    ],
+    "partial_matches": [
+      "Linux/Unix administration",
+      "Monitoring, reliability, and security of Linux-based services",
+      "Application performance monitoring",
+      "Log analysis and monitoring",
+      "Coding and scripting"
+    ],
+    "weak_matches": [
+      "AWS operations and DevOps",
+      "Configuration management and automation",
+      "CI/CD tools",
+      "JFrog Artifactory",
+      "PHP",
+      "Python",
+      "Perl",
+      "Ruby",
+      "MySQL",
+      "Open-source technologies and cloud services",
+      "IT operations for highly available services",
+      "Communication and collaboration",
+      "CI/CD framework with AEM",
+      "Frontend development",
+      "Node.js"
+    ],
+    "missing": [
+      "Amazon EC2",
+      "Amazon S3",
+      "AWS IAM",
+      "Amazon RDS",
+      "Amazon CloudFront",
+      "Amazon CloudWatch",
+      "AWS Lambda",
+      "AWS CloudFormation",
+      "AWS CDK",
+      "Chef",
+      "Puppet",
+      "Git",
+      "Teamwork",
+      "Adobe Experience Manager",
+      "Globally distributed team experience",
+      "Agile methodology",
+      "React",
+      "NoSQL databases"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Jenkins"
+    ],
+    "partial_matches": [
+      "Linux/Unix administration",
+      "Monitoring, reliability, and security of Linux-based services",
+      "Application performance monitoring",
+      "Log analysis and monitoring",
+      "Coding and scripting"
+    ],
+    "competency_gaps": [
+      "AWS operations and DevOps",
+      "Configuration management and automation",
+      "CI/CD tools",
+      "JFrog Artifactory",
+      "PHP",
+      "Python",
+      "Perl",
+      "Ruby",
+      "MySQL",
+      "Open-source technologies and cloud services",
+      "IT operations for highly available services",
+      "Communication and collaboration",
+      "CI/CD framework with AEM",
+      "Frontend development",
+      "Node.js",
+      "Amazon EC2",
+      "Amazon S3",
+      "AWS IAM",
+      "Amazon RDS",
+      "Amazon CloudFront",
+      "Amazon CloudWatch",
+      "AWS Lambda",
+      "AWS CloudFormation",
+      "AWS CDK",
+      "Chef",
+      "Puppet",
+      "Git",
+      "Teamwork",
+      "Adobe Experience Manager",
+      "Globally distributed team experience",
+      "Agile methodology",
+      "React",
+      "NoSQL databases"
+    ]
+  },
+  "counts": {
+    "requirements": 39,
+    "strength_matches": 1,
+    "partial_matches": 5,
+    "competency_gaps": 33
+  },
+  "latency_ms": 70.41,
+  "analyzed_at": "2026-09-27T22:33:13.593427+00:00"
+}

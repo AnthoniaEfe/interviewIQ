@@ -1,0 +1,545 @@
+{
+  "experiment_id": "exp_20260927T215232Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T205741Z",
+  "profile_id": "rjf_05266_0481cbd0ff32",
+  "jd_id": "rjf_05266_0481cbd0ff32",
+  "pair_id": "rjf_05266_0481cbd0ff32",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Accounting",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1765,
+        "evidence": {
+          "tfidf_score": 0.04712013884531922,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 4.398203142470553,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Financial transactions and accounting fundamentals",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.36,
+        "evidence": {
+          "tfidf_score": 0.3390838378178302,
+          "tfidf_matched_terms": [
+            "accounting",
+            "and",
+            "financial",
+            "transactions"
+          ],
+          "bm25_score": 4.64018915657045,
+          "semantic_score": 0.6868035793304443,
+          "matched_candidate_competency": "Reviewed accounting documents and transactions for supporting documentation."
+        },
+        "candidate_evidence": [
+          "Reviewed accounting documents and transactions for supporting documentation."
+        ]
+      },
+      {
+        "job_competency": "Generally Accepted Accounting Principles (GAAP)",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3991,
+        "evidence": {
+          "tfidf_score": 0.015793527563194954,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 4.398203142470553,
+          "semantic_score": 0.5617934465408325,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Office Suite",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1704,
+        "evidence": {
+          "tfidf_score": 0.08328119869395828,
+          "tfidf_matched_terms": [
+            "microsoft",
+            "office"
+          ],
+          "bm25_score": 6.536306431797496,
+          "semantic_score": 0.8822548985481262,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "QuickBooks",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7173,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5166298747062683,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Business technology solutions",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.923,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.384805291891098,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Financial analysis and data analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3904,
+        "evidence": {
+          "tfidf_score": 0.2253523693737886,
+          "tfidf_matched_terms": [
+            "and",
+            "data",
+            "financial"
+          ],
+          "bm25_score": 2.9857797854887442,
+          "semantic_score": 0.6317048072814941,
+          "matched_candidate_competency": "Financial Reporting"
+        },
+        "candidate_evidence": [
+          "Financial Reporting"
+        ]
+      },
+      {
+        "job_competency": "Financial presentations",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4035,
+        "evidence": {
+          "tfidf_score": 0.05481307314981741,
+          "tfidf_matched_terms": [
+            "financial"
+          ],
+          "bm25_score": 2.9857797854887442,
+          "semantic_score": 0.6282587647438049,
+          "matched_candidate_competency": "Financial Reporting"
+        },
+        "candidate_evidence": [
+          "Financial Reporting"
+        ]
+      },
+      {
+        "job_competency": "Detail orientation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9466,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2668502926826477,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Organizational skills",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9221,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3893716037273407,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Interpersonal skills",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9475,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2627464234828949,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Problem solving",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9282,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35886961221694946,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Professional communication",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9415,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2926565408706665,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Presentation and verbal communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7194,
+        "evidence": {
+          "tfidf_score": 0.22892988408290935,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.27963127918996217,
+          "semantic_score": 0.30445924401283264,
+          "matched_candidate_competency": "Procurement and Purchasing"
+        },
+        "candidate_evidence": [
+          "Procurement and Purchasing"
+        ]
+      },
+      {
+        "job_competency": "Written business communication",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.925,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3749486207962036,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Reading and information assimilation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9181,
+        "evidence": {
+          "tfidf_score": 0.22892988408290935,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.27963127918996217,
+          "semantic_score": 0.20995751023292542,
+          "matched_candidate_competency": "Procurement and Purchasing"
+        },
+        "candidate_evidence": [
+          "Procurement and Purchasing"
+        ]
+      },
+      {
+        "job_competency": "Customer service",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7284,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.447491854429245,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Collaboration",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9364,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3180200457572937,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Adaptability",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9542,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2289261817932129,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Process improvement",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9349,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3253518044948578,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Coaching and feedback receptiveness",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9176,
+        "evidence": {
+          "tfidf_score": 0.22892988408290935,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.27963127918996217,
+          "semantic_score": 0.21268324553966522,
+          "matched_candidate_competency": "Procurement and Purchasing"
+        },
+        "candidate_evidence": [
+          "Procurement and Purchasing"
+        ]
+      },
+      {
+        "job_competency": "Audit accounting",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2253,
+        "evidence": {
+          "tfidf_score": 0.02731736669685573,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 4.398203142470553,
+          "semantic_score": 0.7901976108551025,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Bookkeeping",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4225,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5986295938491821,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Payroll",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4257,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5653342604637146,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Production accounting",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2242,
+        "evidence": {
+          "tfidf_score": 0.02731736669685573,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 4.398203142470553,
+          "semantic_score": 0.807887077331543,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Financial reporting software",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.1019,
+        "evidence": {
+          "tfidf_score": 0.05929165097170956,
+          "tfidf_matched_terms": [
+            "financial",
+            "reporting"
+          ],
+          "bm25_score": 7.582252011120781,
+          "semantic_score": 0.8104074597358704,
+          "matched_candidate_competency": "Financial Reporting"
+        },
+        "candidate_evidence": [
+          "Financial Reporting"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Accounting",
+      "Microsoft Office Suite",
+      "Financial reporting software"
+    ],
+    "partial_matches": [
+      "Financial transactions and accounting fundamentals",
+      "Generally Accepted Accounting Principles (GAAP)",
+      "Financial analysis and data analysis",
+      "Financial presentations",
+      "Audit accounting",
+      "Production accounting"
+    ],
+    "weak_matches": [
+      "QuickBooks",
+      "Presentation and verbal communication",
+      "Customer service",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "missing": [
+      "Business technology solutions",
+      "Detail orientation",
+      "Organizational skills",
+      "Interpersonal skills",
+      "Problem solving",
+      "Professional communication",
+      "Written business communication",
+      "Reading and information assimilation",
+      "Collaboration",
+      "Adaptability",
+      "Process improvement",
+      "Coaching and feedback receptiveness"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Accounting",
+      "Microsoft Office Suite",
+      "Financial reporting software"
+    ],
+    "partial_matches": [
+      "Financial transactions and accounting fundamentals",
+      "Generally Accepted Accounting Principles (GAAP)",
+      "Financial analysis and data analysis",
+      "Financial presentations",
+      "Audit accounting",
+      "Production accounting"
+    ],
+    "competency_gaps": [
+      "QuickBooks",
+      "Presentation and verbal communication",
+      "Customer service",
+      "Bookkeeping",
+      "Payroll",
+      "Business technology solutions",
+      "Detail orientation",
+      "Organizational skills",
+      "Interpersonal skills",
+      "Problem solving",
+      "Professional communication",
+      "Written business communication",
+      "Reading and information assimilation",
+      "Collaboration",
+      "Adaptability",
+      "Process improvement",
+      "Coaching and feedback receptiveness"
+    ]
+  },
+  "counts": {
+    "requirements": 26,
+    "strength_matches": 3,
+    "partial_matches": 6,
+    "competency_gaps": 17
+  },
+  "latency_ms": 46.94,
+  "analyzed_at": "2026-09-27T21:52:40.867467+00:00"
+}

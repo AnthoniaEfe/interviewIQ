@@ -1,0 +1,269 @@
+{
+  "experiment_id": "exp_20260927T223303Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20260927T221621Z",
+  "profile_id": "rjf_03949_7f3d80c6585b",
+  "jd_id": "rjf_03949_7f3d80c6585b",
+  "pair_id": "rjf_03949_7f3d80c6585b",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Jira",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9258,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3710378408432007,
+          "matched_candidate_competency": "Windows Server"
+        },
+        "candidate_evidence": [
+          "Windows Server"
+        ]
+      },
+      {
+        "job_competency": "Jira Align",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9493,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2534917891025543,
+          "matched_candidate_competency": "Windows Server"
+        },
+        "candidate_evidence": [
+          "Windows Server"
+        ]
+      },
+      {
+        "job_competency": "Salesforce platform capabilities, features, and best practices",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6825,
+        "evidence": {
+          "tfidf_score": 0.1093663980469733,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.559435369130103,
+          "semantic_score": 0.4010016918182373,
+          "matched_candidate_competency": "File and Print Services"
+        },
+        "candidate_evidence": [
+          "File and Print Services"
+        ]
+      },
+      {
+        "job_competency": "Requirements gathering",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9318,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3408909738063812,
+          "matched_candidate_competency": "Windows Server"
+        },
+        "candidate_evidence": [
+          "Windows Server"
+        ]
+      },
+      {
+        "job_competency": "Process mapping",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.946,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2698289453983307,
+          "matched_candidate_competency": "Windows Server"
+        },
+        "candidate_evidence": [
+          "Windows Server"
+        ]
+      },
+      {
+        "job_competency": "Documentation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9227,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38670408725738525,
+          "matched_candidate_competency": "Windows Server"
+        },
+        "candidate_evidence": [
+          "Windows Server"
+        ]
+      },
+      {
+        "job_competency": "Salesforce Lightning",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.732,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.42497125267982483,
+          "matched_candidate_competency": "Windows Server"
+        },
+        "candidate_evidence": [
+          "Windows Server"
+        ]
+      },
+      {
+        "job_competency": "Sales Cloud",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3877,
+        "evidence": {
+          "tfidf_score": 0.016311346296861724,
+          "tfidf_matched_terms": [
+            "cloud"
+          ],
+          "bm25_score": 4.008635822432186,
+          "semantic_score": 0.4644685983657837,
+          "matched_candidate_competency": "Barracuda Cloud Backup"
+        },
+        "candidate_evidence": [
+          "Barracuda Cloud Backup"
+        ]
+      },
+      {
+        "job_competency": "Service Cloud",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3707,
+        "evidence": {
+          "tfidf_score": 0.03980524091463764,
+          "tfidf_matched_terms": [
+            "cloud",
+            "service"
+          ],
+          "bm25_score": 4.650061412181319,
+          "semantic_score": 0.5127087831497192,
+          "matched_candidate_competency": "Customer Service"
+        },
+        "candidate_evidence": [
+          "Customer Service"
+        ]
+      },
+      {
+        "job_competency": "Data analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7071,
+        "evidence": {
+          "tfidf_score": 0.032660539810275675,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 1.3695266266945203,
+          "semantic_score": 0.33493125438690186,
+          "matched_candidate_competency": "Trained staff on technical services, electronic health records, billing, email, printing, and data files"
+        },
+        "candidate_evidence": [
+          "Trained staff on technical services, electronic health records, billing, email, printing, and data files"
+        ]
+      },
+      {
+        "job_competency": "Trend identification",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9555,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.22225090861320496,
+          "matched_candidate_competency": "Windows Server"
+        },
+        "candidate_evidence": [
+          "Windows Server"
+        ]
+      },
+      {
+        "job_competency": "Actionable insights",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9223,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38842448592185974,
+          "matched_candidate_competency": "Windows Server"
+        },
+        "candidate_evidence": [
+          "Windows Server"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Sales Cloud",
+      "Service Cloud"
+    ],
+    "weak_matches": [
+      "Salesforce platform capabilities, features, and best practices",
+      "Salesforce Lightning",
+      "Data analysis"
+    ],
+    "missing": [
+      "Jira",
+      "Jira Align",
+      "Requirements gathering",
+      "Process mapping",
+      "Documentation",
+      "Trend identification",
+      "Actionable insights"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Sales Cloud",
+      "Service Cloud"
+    ],
+    "competency_gaps": [
+      "Salesforce platform capabilities, features, and best practices",
+      "Salesforce Lightning",
+      "Data analysis",
+      "Jira",
+      "Jira Align",
+      "Requirements gathering",
+      "Process mapping",
+      "Documentation",
+      "Trend identification",
+      "Actionable insights"
+    ]
+  },
+  "counts": {
+    "requirements": 12,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 10
+  },
+  "latency_ms": 38.45,
+  "analyzed_at": "2026-09-27T22:33:13.331504+00:00"
+}
