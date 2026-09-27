@@ -1,0 +1,77 @@
+{
+  "experiment_id": "exp_20260927T205741Z",
+  "status": "completed",
+  "stage": "extraction",
+  "primary_dataset": "cnamuangtoun/resume-job-description-fit",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "combinations_attempted": 30,
+  "combinations_ok": 30,
+  "combinations_failed": 0,
+  "total_estimated_cost_usd": 0.2134107,
+  "average_latency_ms": 31259.87,
+  "human_evaluation": "not_yet_evaluated",
+  "errors": [],
+  "result_files": [
+    "extraction/rjf_04001_28009f597e20__rjf_04001_28009f597e20__mid.json",
+    "extraction/rjf_04639_f4cbc5bff588__rjf_04639_f4cbc5bff588__mid.json",
+    "extraction/rjf_03858_f96a3845408e__rjf_03858_f96a3845408e__mid.json",
+    "extraction/rjf_03496_b9650aabb896__rjf_03496_b9650aabb896__mid.json",
+    "extraction/rjf_05901_0ce23bc466db__rjf_05901_0ce23bc466db__mid.json",
+    "extraction/rjf_06019_4cdecdd79857__rjf_06019_4cdecdd79857__mid.json",
+    "extraction/rjf_04668_066625dfe7d9__rjf_04668_066625dfe7d9__mid.json",
+    "extraction/rjf_03497_3352c5d0c630__rjf_03497_3352c5d0c630__mid.json",
+    "extraction/rjf_06115_0a36e59a7e9d__rjf_06115_0a36e59a7e9d__mid.json",
+    "extraction/rjf_06191_f9c89e0c6713__rjf_06191_f9c89e0c6713__mid.json",
+    "extraction/rjf_05797_c4a0628debc9__rjf_05797_c4a0628debc9__mid.json",
+    "extraction/rjf_03311_f96e539f2ada__rjf_03311_f96e539f2ada__mid.json",
+    "extraction/rjf_05281_56dd66bfd7af__rjf_05281_56dd66bfd7af__mid.json",
+    "extraction/rjf_05015_76a5778b1247__rjf_05015_76a5778b1247__mid.json",
+    "extraction/rjf_05266_0481cbd0ff32__rjf_05266_0481cbd0ff32__mid.json",
+    "extraction/rjf_03558_5a71f8cf9f12__rjf_03558_5a71f8cf9f12__mid.json",
+    "extraction/rjf_05855_1d0e27a3eacb__rjf_05855_1d0e27a3eacb__mid.json",
+    "extraction/rjf_05952_f7fee569a3d8__rjf_05952_f7fee569a3d8__mid.json",
+    "extraction/rjf_03173_9a0a3c4d8ba0__rjf_03173_9a0a3c4d8ba0__mid.json",
+    "extraction/rjf_05260_4f6ef90caf00__rjf_05260_4f6ef90caf00__mid.json",
+    "extraction/rjf_03202_f43978101918__rjf_03202_f43978101918__mid.json",
+    "extraction/rjf_04423_8ebcbfa69c51__rjf_04423_8ebcbfa69c51__mid.json",
+    "extraction/rjf_03611_ef2aa407d208__rjf_03611_ef2aa407d208__mid.json",
+    "extraction/rjf_03794_301991d452b9__rjf_03794_301991d452b9__mid.json",
+    "extraction/rjf_04652_021f517c37fa__rjf_04652_021f517c37fa__mid.json",
+    "extraction/rjf_06021_14549a02aa4a__rjf_06021_14549a02aa4a__mid.json",
+    "extraction/rjf_05997_55a65605ad8f__rjf_05997_55a65605ad8f__mid.json",
+    "extraction/rjf_04729_4b4032772de3__rjf_04729_4b4032772de3__mid.json",
+    "extraction/rjf_04553_ea8f275312b4__rjf_04553_ea8f275312b4__mid.json",
+    "extraction/rjf_06210_7de5fd638e77__rjf_06210_7de5fd638e77__mid.json"
+  ],
+  "config_path": "/root/interviewIQ/experiments/configs/primary_hf.yaml",
+  "config": {
+    "experiment_name": "interviewiq_primary_hf_resume_fit",
+    "primary_dataset": "cnamuangtoun/resume-job-description-fit",
+    "generation_modes": [
+      "baseline"
+    ],
+    "final_question_count": 10,
+    "data": {
+      "source": "resume_job_fit",
+      "cache_dir": "experiments/datasets/resume_job_fit/cache",
+      "pairs_dir": "experiments/datasets/resume_job_fit/experiment_pairs",
+      "manifest": "experiments/datasets/resume_job_fit/experiment_pairs/manifest.json",
+      "labels": [
+        "Good Fit",
+        "Potential Fit"
+      ],
+      "n_per_label": 15,
+      "seed": 42,
+      "default_seniority": "mid"
+    },
+    "fit_model": {
+      "path": "experiments/datasets/resume_job_fit/models/fit_classifier.joblib",
+      "embedding_model": "all-MiniLM-L6-v2"
+    }
+  }
+}

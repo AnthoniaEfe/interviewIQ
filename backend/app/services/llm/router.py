@@ -51,10 +51,16 @@ class LLMRouter:
         request_id: str | None = None,
         experiment_id: str | None = None,
         prompt_cache_key: str | None = None,
+        max_output_tokens: int | None = None,
     ) -> tuple[T, LLMResult]:
         model = self.model_for(task)
         temp = self.settings.llm_temperature if temperature is None else temperature
         effort = reasoning_effort if reasoning_effort is not None else self.settings.llm_reasoning_effort
+        token_limit = (
+            max_output_tokens
+            if max_output_tokens is not None
+            else self.settings.llm_max_output_tokens
+        )
 
         async def _call(target_model: str):
             return await self.provider.complete_structured(
@@ -64,7 +70,7 @@ class LLMRouter:
                 user_prompt=user_prompt,
                 temperature=temp,
                 reasoning_effort=effort,
-                max_output_tokens=self.settings.llm_max_output_tokens,
+                max_output_tokens=token_limit,
                 prompt_cache_key=prompt_cache_key,
             )
 

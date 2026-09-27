@@ -1,0 +1,55 @@
+{
+  "experiment_id": "exp_20260927T205539Z",
+  "status": "failed",
+  "stage": "extraction",
+  "primary_dataset": "cnamuangtoun/resume-job-description-fit",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "combinations_attempted": 1,
+  "combinations_ok": 0,
+  "combinations_failed": 1,
+  "total_estimated_cost_usd": 0,
+  "average_latency_ms": null,
+  "human_evaluation": "not_yet_evaluated",
+  "errors": [
+    {
+      "profile_id": "rjf_04001_28009f597e20",
+      "jd_id": "rjf_04001_28009f597e20",
+      "seniority": "mid",
+      "fit_label": "Potential Fit",
+      "error_type": "LLMPermanentError",
+      "error": "OpenAI request failed: ValidationError: 1 validation error for CandidateProfile\n  Invalid JSON: EOF while parsing a string at line 1 column 19704 [type=json_invalid, input_value='{\"name\":null,\"profession...Automation\",\"automation', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/json_invalid"
+    }
+  ],
+  "result_files": [],
+  "config_path": "/root/interviewIQ/experiments/configs/primary_hf.yaml",
+  "config": {
+    "experiment_name": "interviewiq_primary_hf_resume_fit",
+    "primary_dataset": "cnamuangtoun/resume-job-description-fit",
+    "generation_modes": [
+      "baseline"
+    ],
+    "final_question_count": 10,
+    "data": {
+      "source": "resume_job_fit",
+      "cache_dir": "experiments/datasets/resume_job_fit/cache",
+      "pairs_dir": "experiments/datasets/resume_job_fit/experiment_pairs",
+      "manifest": "experiments/datasets/resume_job_fit/experiment_pairs/manifest.json",
+      "labels": [
+        "Good Fit",
+        "Potential Fit"
+      ],
+      "n_per_label": 15,
+      "seed": 42,
+      "default_seniority": "mid"
+    },
+    "fit_model": {
+      "path": "experiments/datasets/resume_job_fit/models/fit_classifier.joblib",
+      "embedding_model": "all-MiniLM-L6-v2"
+    }
+  }
+}

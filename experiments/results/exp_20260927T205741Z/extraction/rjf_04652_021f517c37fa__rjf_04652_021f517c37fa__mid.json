@@ -1,0 +1,1788 @@
+{
+  "experiment_id": "exp_20260927T205741Z",
+  "stage": "extraction",
+  "profile_id": "rjf_04652_021f517c37fa",
+  "jd_id": "rjf_04652_021f517c37fa",
+  "pair_id": "rjf_04652_021f517c37fa",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Over 3 years of professional IT experience in data engineering and data analytics, including data ingestion, data lakes, data warehouses, reporting, analytics, data quality, reconciliation, transformation, integration, and orchestration.",
+    "seniority_indicators": [
+      "Summary states over 3 years of professional IT experience.",
+      "Held Data Engineer roles at Honeywell.",
+      "Worked as a SQL Developer at IHS Markit."
+    ],
+    "education": [
+      {
+        "degree": "Master of Science",
+        "institution": "George Mason University",
+        "field": "Data Analytics Engineering",
+        "year": "Expected 12/2022",
+        "source_text": "Master of Science: Data Analytics Engineering, Expected in 12/2022 - George Mason University"
+      },
+      {
+        "degree": "Bachelor of Science",
+        "institution": "KL University",
+        "field": "Electronics & Communication Engineering",
+        "year": "Expected 06/2019",
+        "source_text": "Bachelor of Science: Electronics & Communication Engineering, Expected in 06/2019 - KL University"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Data Engineer",
+        "employer": "Honeywell",
+        "duration": "01/2022-Current",
+        "responsibilities": [
+          "Worked on architecture design for multistate implementation and deployment.",
+          "Implemented one-time data migration from SQL Server to Snowflake using Python and SnowSQL.",
+          "Developed ETL pipelines in and out of data warehouses.",
+          "Created regulatory and financial reports using advanced Snowflake SQL queries.",
+          "Staged API and Kafka JSON data into Snowflake using FLATTEN.",
+          "Created Airflow DAGs and Python scheduling scripts for ingestion, ETL jobs, and business reports.",
+          "Built Docker images and maintained Docker and Kubernetes environments for pipeline testing and CI/CD.",
+          "Supported Hadoop clusters, HDFS, capacity planning, node management, and maintenance.",
+          "Loaded data from Linux file systems into HDFS.",
+          "Migrated data from RDBMS to Hadoop using Sqoop and implemented Oozie jobs.",
+          "Created HBase tables for PII data and exported processed data to relational databases using Sqoop."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Python",
+          "SnowSQL",
+          "Snowflake",
+          "Airflow",
+          "Docker",
+          "Kubernetes",
+          "CI/CD",
+          "Kafka",
+          "Hadoop",
+          "HDFS",
+          "Sqoop",
+          "Oozie",
+          "HBase",
+          "Linux"
+        ],
+        "source_text": "Data Engineer, 01/2022-Current, Honeywell; Snowflake migration, Airflow, Docker/Kubernetes, Hadoop and HDFS responsibilities"
+      },
+      {
+        "title": "Data Engineer",
+        "employer": "Honeywell",
+        "duration": "01/2021-12/2021",
+        "responsibilities": [
+          "Prepared ETL design documents covering database structure, change data capture, error handling, restart, and refresh strategies.",
+          "Implemented data lake processing for JSON, CSV, XML, and DAT feeds.",
+          "Developed Informatica mappings using various transformations.",
+          "Designed and built a multi-terabyte data warehouse on Redshift.",
+          "Optimized and tuned Redshift queries for Tableau and SAS Visual Analytics.",
+          "Created data normalization jobs and migrated on-premises database structures to Redshift.",
+          "Developed Scala UDFs and Spark applications to load JSON files into Hive tables.",
+          "Used AWS EMR, S3, EC2, and Lambda for distributed processing, storage, Kafka infrastructure, and data validation/transformation.",
+          "Created Airflow scheduling scripts in Python.",
+          "Programmed ETL functions between Oracle and Amazon Redshift."
+        ],
+        "achievements": [
+          "Optimized Redshift queries to perform up to 100x faster for Tableau and SAS Visual Analytics."
+        ],
+        "technologies": [
+          "Informatica",
+          "Amazon Redshift",
+          "Scala",
+          "Spark",
+          "Hive",
+          "AWS EMR",
+          "Amazon S3",
+          "Amazon EC2",
+          "AWS Lambda",
+          "Airflow",
+          "Python",
+          "Oracle",
+          "Kafka"
+        ],
+        "source_text": "Data Engineer, 01/2021-12/2021, Honeywell; Redshift data warehouse, AWS, Spark, Hive and Informatica work"
+      },
+      {
+        "title": "SQL Developer",
+        "employer": "IHS Markit",
+        "duration": "06/2019-12/2023",
+        "responsibilities": [
+          "Gathered business requirements and converted them into T-SQL stored procedures.",
+          "Performed unit testing of code and packages.",
+          "Participated in Joint Application Development sessions with business clients.",
+          "Automated SQL Server version upgrades and patch installations.",
+          "Performed code reviews for other development teams.",
+          "Maintained SQL Server stored procedures, views, ad hoc queries, and SSIS packages.",
+          "Created and updated reports using SQL Server Reporting Services.",
+          "Created files, views, tables, and datasets for Sales Operations and Analytics teams.",
+          "Monitored and tuned SQL Server database resources and activities."
+        ],
+        "achievements": [],
+        "technologies": [
+          "T-SQL",
+          "Microsoft SQL Server",
+          "SSIS",
+          "SQL Server Reporting Services",
+          "Visual Studio"
+        ],
+        "source_text": "SQL Developer, 06/2019-12/2023, IHS Markit; SQL Server development, reporting and database maintenance"
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: using various languages and tools like SQL",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Python",
+        "original_mentions": [
+          "Python"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Scripting Language - Python",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Hadoop",
+        "original_mentions": [
+          "Hadoop",
+          "Big/Hadoop"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: Big/Hadoop; Skills: Big Data Ecosystems",
+          "source_section": "Summary/Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "HDFS",
+        "original_mentions": [
+          "HDFS",
+          "Hadoop Distributed File System"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: HDFS; Experience: Hadoop Distributed File System",
+          "source_section": "Skills/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "MapReduce",
+        "original_mentions": [
+          "MapReduce"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Big Data Ecosystems - MapReduce",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Apache Spark",
+        "original_mentions": [
+          "Spark",
+          "spark applications"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Spark; Experience: developed spark applications in Scala",
+          "source_section": "Skills/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Apache Kafka",
+        "original_mentions": [
+          "Kafka"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Kafka; Experience: API or Kafka data",
+          "source_section": "Skills/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Apache Hive",
+        "original_mentions": [
+          "Hive",
+          "HIVE"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Hive; Summary: EMRs like HIVE",
+          "source_section": "Skills/Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Apache Airflow",
+        "original_mentions": [
+          "Airflow",
+          "Airflow DAGs",
+          "Airflow Scheduling scripts"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience: Created Airflow DAGs and scheduling scripts",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Docker",
+        "original_mentions": [
+          "Docker",
+          "Docker Images",
+          "Docker container clusters"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience: Build Docker Images and maintain Docker container clusters",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Kubernetes",
+        "original_mentions": [
+          "Kubernetes"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience: Kubernetes and Docker runtime environment",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Talend",
+        "original_mentions": [
+          "Talend",
+          "Talend Bigdata"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: ETL methodology using Talend; Data ingestion using Talend Bigdata",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Informatica",
+        "original_mentions": [
+          "Informatica",
+          "Informatica design mappings"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary and Experience: ETL development and Informatica mappings",
+          "source_section": "Summary/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Snowflake",
+        "original_mentions": [
+          "Snowflake",
+          "SnowSQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience: migrated data to Snowflake using Python and SnowSQL",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Amazon Redshift",
+        "original_mentions": [
+          "Redshift",
+          "Amazon Redshift",
+          "Redshift spectrum"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: AWS services including Redshift and Redshift Spectrum",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Amazon S3",
+        "original_mentions": [
+          "S3",
+          "AWS S3"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary and Experience: AWS S3 for raw file storage",
+          "source_section": "Summary/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "AWS Glue",
+        "original_mentions": [
+          "Glue"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: AWS services like Glue",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Amazon Athena",
+        "original_mentions": [
+          "Athena"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: AWS services like Athena",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "AWS Lambda",
+        "original_mentions": [
+          "Lambda",
+          "AWS Lambda"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary and Experience: AWS Lambda",
+          "source_section": "Summary/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Amazon CloudWatch",
+        "original_mentions": [
+          "cloudwatch"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: AWS services like cloudwatch",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Amazon EMR",
+        "original_mentions": [
+          "EMR",
+          "AWS EMR Distribution"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary and Experience: EMR/AWS EMR Distribution",
+          "source_section": "Summary/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SQL Server",
+        "original_mentions": [
+          "SQL Server",
+          "MS SQL SERVER",
+          "Microsoft SQL Server"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary, Skills and Experience: SQL Server database development",
+          "source_section": "Summary/Skills/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Oracle",
+        "original_mentions": [
+          "Oracle"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary and Experience: Oracle and Oracle-to-Redshift ETL",
+          "source_section": "Summary/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "PL/SQL",
+        "original_mentions": [
+          "PL/SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: writing SQL and PL/SQL",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Scala",
+        "original_mentions": [
+          "Scala"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience: developed Scala UDFs and Spark applications",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "PowerShell",
+        "original_mentions": [
+          "PowerShell Scripting"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Scripting Language - PowerShell Scripting",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Pig Latin",
+        "original_mentions": [
+          "Pig Latin"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Scripting Language - Pig Latin",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "HiveQL",
+        "original_mentions": [
+          "HiveQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Scripting Language - HiveQL",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "MySQL",
+        "original_mentions": [
+          "MySQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Database - MySQL",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Teradata",
+        "original_mentions": [
+          "Teradata"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Database - Teradata",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "PostgreSQL",
+        "original_mentions": [
+          "PostgreSQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Database - PostgreSQL",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "DB2",
+        "original_mentions": [
+          "DB2"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Database - DB2",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Git",
+        "original_mentions": [
+          "Git"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Version Control - Git",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SVN",
+        "original_mentions": [
+          "SVN"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Version Control - SVN",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Bitbucket",
+        "original_mentions": [
+          "Bitbucket"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Version Control - Bitbucket",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Tableau",
+        "original_mentions": [
+          "Tableau"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: ETL Tools - Tableau",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Excel",
+        "original_mentions": [
+          "Microsoft Excel"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: ETL Tools - Microsoft Excel",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Power BI",
+        "original_mentions": [
+          "Power BI"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: ETL Tools - Power BI",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "R",
+        "original_mentions": [
+          "R"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: ETL Tools - R",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Google Data Studio",
+        "original_mentions": [
+          "Google Data Studio"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: ETL Tools - Google Data Studio",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SSIS",
+        "original_mentions": [
+          "SSIS packages"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience: maintained SSIS packages",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SQL Server Reporting Services",
+        "original_mentions": [
+          "Microsoft SQL Server Reporting Services"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience: created reports using Microsoft SQL Server Reporting Services",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "HBase",
+        "original_mentions": [
+          "HBase"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills and Experience: HBase tables",
+          "source_section": "Skills/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Apache Oozie",
+        "original_mentions": [
+          "Oozie jobs"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience: implemented Oozie jobs",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Sqoop",
+        "original_mentions": [
+          "Sqoop"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience: data migration and exports using Sqoop",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Nifi",
+        "original_mentions": [
+          "Nifi"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Big Data Ecosystems - Nifi",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Flume",
+        "original_mentions": [
+          "Flume"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Big Data Ecosystems - Flume",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Zookeeper",
+        "original_mentions": [
+          "Zookeeper"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Big Data Ecosystems - Zookeeper",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "HBase",
+        "original_mentions": [
+          "HBase"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Big Data Ecosystems - HBase",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Azure",
+        "original_mentions": [
+          "Microsoft Azure"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Cloud Environment - Microsoft Azure",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Analytical skills",
+        "original_mentions": [
+          "very good analytical"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Summary: very good analytical and problem-solving skills",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Problem-solving",
+        "original_mentions": [
+          "problem-solving skills"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: very good analytical and problem-solving skills",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Communication across organizational levels",
+        "original_mentions": [
+          "work effectively with associates at all levels within the organization"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: ability to work effectively with associates at all levels",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Data engineering",
+        "original_mentions": [
+          "Data Engineering",
+          "Data Engineering field"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: extensive experience on Data Engineering field",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data analytics",
+        "original_mentions": [
+          "Data Analytics",
+          "Data Analysis"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: professional experience in Data Analytics and Data Analysis",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data ingestion",
+        "original_mentions": [
+          "Ingestion",
+          "Data Ingestion projects"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: experience including Ingestion and Data Ingestion projects",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data lakes",
+        "original_mentions": [
+          "Datalake",
+          "Data lake"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: experience with Datalake and injecting data into Data lake",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data warehousing",
+        "original_mentions": [
+          "Datawarehouse",
+          "Data Warehouse"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary and Experience: data warehouse design and implementation",
+          "source_section": "Summary/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "ETL and data migration",
+        "original_mentions": [
+          "ETL methodology",
+          "Data Migration, Extraction, Transformation and loading"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: ETL methodology for data migration, extraction, transformation and loading",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data quality and reconciliation",
+        "original_mentions": [
+          "Data quality",
+          "Data Reconciliation"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: knowledge and experience on Data quality and Data Reconciliation",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data lineage",
+        "original_mentions": [
+          "Data Lineage"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: knowledge and experience on Data Lineage",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Big data pipelines",
+        "original_mentions": [
+          "Big Data pipelines"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: knowledge and experience on Big Data pipelines",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data integration and orchestration",
+        "original_mentions": [
+          "Data integration",
+          "Data orchestration tools"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: experience with Data integration and Data orchestration tools",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Database performance tuning",
+        "original_mentions": [
+          "performance tuning",
+          "Monitored and tuned database resources"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary and Experience: performance tuning and database monitoring",
+          "source_section": "Summary/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "OLTP and OLAP data modeling",
+        "original_mentions": [
+          "OLTP and OLAP database models and data marts"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: integrated complex OLTP and OLAP database models and data marts",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Reporting and analytics",
+        "original_mentions": [
+          "Reporting and Analytics",
+          "regulatory and financial reports"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary and Experience: reporting, analytics and financial reports",
+          "source_section": "Summary/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Cloud computing",
+        "original_mentions": [
+          "Amazon Web Services (AWS)",
+          "Microsoft Azure"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Cloud Environment - AWS and Microsoft Azure",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": []
+  },
+  "job": {
+    "title": "Data Engineer",
+    "seniority": null,
+    "years_of_experience": null,
+    "responsibilities": [
+      "Develop data engineering jobs and workflows that enable data analytics and reporting solutions based on given design and architecture.",
+      "Execute and deliver results using agile methodologies.",
+      "Provide post-deployment support when needed.",
+      "Configure existing applications to consume new and modified customer data feeds.",
+      "Perform data profiling and data analysis for source systems and target data repositories.",
+      "Understand metadata and underlying data structures needed to standardize data load processes.",
+      "Develop data mapping specifications based on data analysis and functional requirements.",
+      "Build automated Extract, Transform & Load (ETL) jobs based on data mapping specifications.",
+      "Create and enhance automation for frequently executed tasks.",
+      "Validate data mapping results.",
+      "Implement and ensure compliance with Data Quality (DQ) rules.",
+      "Implement and control the use of master data configurations.",
+      "Participate in requirements gathering and implement solutions to address customer needs."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Data engineering workflows",
+        "original_mentions": [
+          "developing data engineering jobs and workflows"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "developing data engineering jobs and workflows",
+          "source_section": "Job Description Summary",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data analytics and reporting solutions",
+        "original_mentions": [
+          "data analytics and reporting solutions"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.94,
+        "source": {
+          "source_text": "enable data analytics and reporting solutions based on the given design and architecture",
+          "source_section": "Job Description Summary",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Agile methodologies",
+        "original_mentions": [
+          "agile methodologies"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "using agile methodologies",
+          "source_section": "Job Description Summary",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Post-deployment support",
+        "original_mentions": [
+          "post-deployment support"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "providing post-deployment support, when needed",
+          "source_section": "Job Description Summary",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data feed integration",
+        "original_mentions": [
+          "customer data feeds"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Configure existing applications to consume new and modified customer data feeds",
+          "source_section": "Roles And Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data profiling and analysis",
+        "original_mentions": [
+          "data profiling",
+          "data analysis"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Perform data profiling and data analysis for any source systems and the target data repositories",
+          "source_section": "Roles And Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Metadata and data structures",
+        "original_mentions": [
+          "metadata",
+          "underlying data structures"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Understand metadata and the underlying data structures needed to standardize the data load processes",
+          "source_section": "Roles And Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data mapping specifications",
+        "original_mentions": [
+          "data mapping specifications"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Develop data mapping specifications",
+          "source_section": "Roles And Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "ETL development",
+        "original_mentions": [
+          "automated Extract, Transform & Load (ETL) jobs"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Build automated Extract, Transform & Load (ETL) jobs",
+          "source_section": "Roles And Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Task automation",
+        "original_mentions": [
+          "automation on frequently executed tasks"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Create and enhance automation on frequently executed tasks",
+          "source_section": "Roles And Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data validation",
+        "original_mentions": [
+          "Validate the data mapping results"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Validate the data mapping results",
+          "source_section": "Roles And Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data quality management",
+        "original_mentions": [
+          "Data Quality (DQ) rules"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Implement new and ensure compliance with Data Quality (DQ) rules provided",
+          "source_section": "Roles And Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Master data management",
+        "original_mentions": [
+          "master data configurations"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Implement and control the use of master data configurations",
+          "source_section": "Roles And Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Requirements gathering",
+        "original_mentions": [
+          "requirement gathering process"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Participate in the requirement gathering process",
+          "source_section": "Roles And Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Solution implementation",
+        "original_mentions": [
+          "implement new solutions to address customer needs"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "implement new solutions to address customer needs",
+          "source_section": "Roles And Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Legal authorization to work",
+        "original_mentions": [
+          "legally work in the country to which you have applied"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Must be able to legally work in the country to which you have applied",
+          "source_section": "Basic Requirements",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "Python",
+        "original_mentions": [
+          "Python"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Hands-on experience in scripting and programming languages like Python",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "C#",
+        "original_mentions": [
+          "C#"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Hands-on experience in scripting and programming languages like C#",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "PowerShell",
+        "original_mentions": [
+          "Powershell"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Hands-on experience in scripting and programming languages like ... Powershell",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SQL scripting",
+        "original_mentions": [
+          "SQL scripts"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Hands-on experience in writing SQL scripts",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SQL Server",
+        "original_mentions": [
+          "SQL Server"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "SQL Server",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Oracle",
+        "original_mentions": [
+          "Oracle"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Oracle",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "MySQL",
+        "original_mentions": [
+          "MySQL"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "MySQL",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "PostgreSQL",
+        "original_mentions": [
+          "PostgreSQL"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "PostgreSQL",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data visualization and reporting tools",
+        "original_mentions": [
+          "Data visualization or reporting tools"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Exposure to Data visualization or reporting tools",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Power BI",
+        "original_mentions": [
+          "PowerBI"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "PowerBI",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Tableau",
+        "original_mentions": [
+          "Tableau"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Tableau",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SSRS",
+        "original_mentions": [
+          "SSRS"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "SSRS",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Aircraft data frames",
+        "original_mentions": [
+          "DFDR",
+          "QAR",
+          "ARINC-717",
+          "ARINC-429"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience with aircraft data frames such as DFDR, QAR, ARINC-717, ARINC-429, etc.",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Regular expressions",
+        "original_mentions": [
+          "regular expressions"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience in handling regular expressions",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "ETL tools",
+        "original_mentions": [
+          "Extract, Transform & Load (ETL) tools"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Exposure to Extract, Transform & Load (ETL) tools",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Bilingual communication",
+        "original_mentions": [
+          "bilingual"
+        ],
+        "competency_type": "soft",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "bilingual preferred",
+          "source_section": "Personal And Leadership Attributes",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [
+      "Bachelor's Degree in Computer Science or STEM Majors (Science, Technology, Engineering and Math)."
+    ],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Aviation data",
+        "original_mentions": [
+          "aircraft data frames",
+          "DFDR",
+          "QAR",
+          "ARINC-717",
+          "ARINC-429"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience with aircraft data frames such as DFDR, QAR, ARINC-717, ARINC-429, etc.",
+          "source_section": "Desired Characteristics",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Written and oral communication",
+        "original_mentions": [
+          "Effective written and oral communication"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Effective written and oral communication and interpersonal skills",
+          "source_section": "Personal And Leadership Attributes",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Interpersonal skills",
+        "original_mentions": [
+          "interpersonal skills"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Effective written and oral communication and interpersonal skills",
+          "source_section": "Personal And Leadership Attributes",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Team support",
+        "original_mentions": [
+          "help team members"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Demonstrates the ability to help team members",
+          "source_section": "Personal And Leadership Attributes",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Learning agility",
+        "original_mentions": [
+          "desire to learn and grow quickly"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Inquisitive with a desire to learn and grow quickly as a contributor to the larger team",
+          "source_section": "Personal And Leadership Attributes",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Innovation",
+        "original_mentions": [
+          "opportunities for innovation",
+          "offers new ideas"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Identifies opportunities for innovation and offers new ideas",
+          "source_section": "Personal And Leadership Attributes",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Initiative",
+        "original_mentions": [
+          "Takes the initiative"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Takes the initiative to experiment with new software frameworks",
+          "source_section": "Personal And Leadership Attributes",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Adaptability",
+        "original_mentions": [
+          "Adapts to new environments and changing requirements",
+          "Pivots quickly as needed"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Adapts to new environments and changing requirements. Pivots quickly as needed.",
+          "source_section": "Personal And Leadership Attributes",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Coachability",
+        "original_mentions": [
+          "When coached, responds to need"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "When coached, responds to need & seeks info from other sources",
+          "source_section": "Personal And Leadership Attributes",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Project status communication",
+        "original_mentions": [
+          "Communicates project status or challenges"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Communicates project status or challenges in a clear and concise manner",
+          "source_section": "Personal And Leadership Attributes",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [
+      "Demonstrates the ability to help team members.",
+      "Contributes to the larger team."
+    ],
+    "system_design_requirements": [
+      "Develop data engineering jobs and workflows based on the given design and architecture.",
+      "Understand underlying data structures needed to standardize data load processes."
+    ],
+    "competencies": []
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 2339,
+    "output_tokens": 5090,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0063877,
+    "latency_ms": 25817.33,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1716,
+    "output_tokens": 3271,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0042684,
+    "latency_ms": 21036.01,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-09-27T21:10:59.349597+00:00"
+}

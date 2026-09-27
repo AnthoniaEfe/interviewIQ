@@ -1,0 +1,656 @@
+{
+  "experiment_id": "exp_20260927T205741Z",
+  "stage": "extraction",
+  "profile_id": "rjf_03173_9a0a3c4d8ba0",
+  "jd_id": "rjf_03173_9a0a3c4d8ba0",
+  "pair_id": "rjf_03173_9a0a3c4d8ba0",
+  "fit_label": "Potential Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Highly motivated accounting professional with over 2 years of experience in accounting operations, deadline management, reconciliations, and financial reporting.",
+    "seniority_indicators": [
+      "Over 2 solid years experience in accounting",
+      "Accountant II",
+      "Revenue Accountant",
+      "Financial Aid Officer"
+    ],
+    "education": [
+      {
+        "degree": "Master of Science",
+        "institution": "Kaplan University",
+        "field": "Accounting, emphasis in Auditing",
+        "year": "Expected 2013",
+        "source_text": "Master of Science: Accounting; emphasis in Auditing; GPA 3.95"
+      },
+      {
+        "degree": "Bachelor of Science",
+        "institution": "United States International University-Africa",
+        "field": "International Business Administration, emphasis in Accounting",
+        "year": "Expected 2001",
+        "source_text": "Bachelor of Science: International Business Administration; emphasis in Accounting"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Accountant II",
+        "employer": "Graphic Packaging",
+        "duration": "10/2013-05/2015",
+        "responsibilities": [
+          "Verified and posted business transactions to the general ledger through the FASKB system.",
+          "Balanced and audited general ledger accounts and prepared accounting entries.",
+          "Maintained investment program and subsidiary ledgers for partnership investments.",
+          "Maintained amortization schedules and calculated and posted interest accrual payments.",
+          "Prepared reports summarizing and forecasting assets, liabilities, income, expenses, and earnings.",
+          "Prepared sales use and tax reconciliation reports and resolved differences.",
+          "Reviewed and analyzed balance sheet account reconciliations.",
+          "Prepared and posted journal entries for intercompany bank transactions.",
+          "Participated in the month-end close process.",
+          "Provided audit support to internal auditors and EY, including supporting documentation and audit walkthroughs."
+        ],
+        "achievements": [
+          "Prepared quarterly consolidations of intercompany reconciliations for SunTrust Trust Partnerships and Entities loans and accounts receivable balances for external auditors with zero errors to date.",
+          "Filed state business license renewals for mortgage bank branches."
+        ],
+        "technologies": [
+          "FASKB"
+        ],
+        "source_text": "Accountant II responsible for general ledger, investment subsidiary ledgers, reconciliations, tax reports, journal entries, month-end close, and audit support."
+      },
+      {
+        "title": "Revenue Accountant",
+        "employer": "Elior",
+        "duration": "09/2012-09/2013",
+        "responsibilities": [
+          "Reviewed, analyzed, and accounted for tuition and revenue at assigned schools.",
+          "Performed month-end closing activities for up to 10 domestic schools.",
+          "Performed post-close number analysis, expense accruals, and profit and loss variance research.",
+          "Ensured accuracy of subledger postings and compliance with GAAP and company policies.",
+          "Completed monthly balance sheet reconciliations and maintained documentation.",
+          "Researched and resolved reconciliation items with various departments.",
+          "Prepared monthly journal entries and posted them through Oracle.",
+          "Monitored accounting records for multiple cost centers.",
+          "Prepared and processed intercompany invoices, travel expenses, and reimbursement requests."
+        ],
+        "achievements": [
+          "Created an accounts payable submission invoice tracking sheet to reduce discrepancies and support accurate, timely vendor payments."
+        ],
+        "technologies": [
+          "Oracle"
+        ],
+        "source_text": "Revenue Accountant responsible for school revenue, month-end close, reconciliations, journal entries, Oracle postings, and GAAP compliance."
+      },
+      {
+        "title": "Financial Aid Officer",
+        "employer": "University of California",
+        "duration": "03/2009-2012",
+        "responsibilities": [
+          "Calculated student tuition and book charges and posted them to student general ledger accounts using CampusVue.",
+          "Posted Title IV federal fund payments to student ledger accounts.",
+          "Approved and initiated Title IV and non-Title IV funds while monitoring eligibility and disbursements.",
+          "Ran weekly cash flow and remaining balance reports for multiple campuses.",
+          "Monitored accounts receivable to ensure funds were paid accurately and on schedule.",
+          "Performed and resolved reconciliations of federal loans and grants.",
+          "Imported and exported daily batches of Title IV and non-Title IV fund files.",
+          "Reviewed incoming and outgoing batches for accuracy, completeness, and possible rejections."
+        ],
+        "achievements": [],
+        "technologies": [
+          "CampusVue"
+        ],
+        "source_text": "Financial Aid Officer responsible for student ledger accounting, Title IV and non-Title IV funds, cash flow reporting, and federal loan and grant reconciliations."
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "General ledger accounting",
+        "original_mentions": [
+          "General ledger accounting",
+          "general ledger"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "General and tax accounting; general ledger",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Tax accounting",
+        "original_mentions": [
+          "tax accounting",
+          "sales Use & Tax reconciliation"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "General and tax accounting",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Account reconciliations",
+        "original_mentions": [
+          "Account reconciliations",
+          "balance sheet account reconciliations"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Account reconciliations",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial statement analysis",
+        "original_mentions": [
+          "Financial statement analysis"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Financial statement analysis",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Journal entries",
+        "original_mentions": [
+          "Prepare and post journal entries",
+          "monthly journal entries"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Prepare and post journal entries",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Month-end close",
+        "original_mentions": [
+          "Participate in month-end close process",
+          "monthly closing process"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Participate in month-end close process",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "GAAP compliance",
+        "original_mentions": [
+          "compliance with GAAP and company policies",
+          "GAAP compliance"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "compliance with GAAP and company policies",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Intercompany accounting",
+        "original_mentions": [
+          "inter company bank transactions",
+          "inter-company invoices",
+          "inter-company recons"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "inter company bank transactions",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Investment accounting",
+        "original_mentions": [
+          "partnership investments",
+          "investment subsidiary ledger",
+          "interest accrual payments"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "maintaining investment program and subsidiary ledgers for partnership investments",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accounts payable",
+        "original_mentions": [
+          "AP submission invoice tracking sheet",
+          "vendor payments"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "AP submission invoice tracking sheet",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "FASKB",
+        "original_mentions": [
+          "FASKB system"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "general ledger through FASKB system",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Oracle",
+        "original_mentions": [
+          "oracle"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "posting via oracle",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "CampusVue",
+        "original_mentions": [
+          "CampusVue"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "using CampusVue",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Computer proficiency",
+        "original_mentions": [
+          "Computer proficiency (PC and Mac)"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Computer proficiency (PC and Mac)",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Strong organizational skills",
+        "original_mentions": [
+          "Strong organizational skills"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Strong organizational skills",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Analytical reasoning",
+        "original_mentions": [
+          "Analytical reasoning",
+          "strong analytical skills"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Analytical reasoning",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Effective time management",
+        "original_mentions": [
+          "Effective time management",
+          "manages strict deadlines"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Effective time management",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Teamwork",
+        "original_mentions": [
+          "Flexible team player",
+          "strong working relationships with stakeholders"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Flexible team player",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Deadline management",
+        "original_mentions": [
+          "effectively manages strict deadlines"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "effectively manages strict deadlines",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Accounting operations",
+        "original_mentions": [
+          "accounting operations"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "skilled in accounting operations",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Revenue accounting",
+        "original_mentions": [
+          "Revenue Accountant",
+          "accounted for tuition and revenue"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "accounted for tuition and revenue at assigned schools",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial aid administration",
+        "original_mentions": [
+          "Financial Aid Officer"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Financial Aid Officer",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Title IV funding",
+        "original_mentions": [
+          "Title IV federal funds",
+          "Title IV and Non-Title IV funds"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Approve and initiate Title IV and Non-Title IV funds",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Federal loan and grant reconciliation",
+        "original_mentions": [
+          "reconciliations of federal loans and grants"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "resolve reconciliations of federal loans and grants",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Audit support",
+        "original_mentions": [
+          "assisting the shared service Controller with various tasks, including audits",
+          "worked with internal auditors and EY"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Worked with internal auditors and EY",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Mortgage banking operations",
+        "original_mentions": [
+          "mortgage bank branches",
+          "mortgage bank branches business license renewals"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.93,
+        "source": {
+          "source_text": "state business license renewals for mortgage bank branches",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Accounting",
+        "original_mentions": [
+          "over 2 solid years experience in accounting",
+          "accounting operations"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "over 2 solid years experience in accounting",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Auditing",
+        "original_mentions": [
+          "Emphasis in Auditing",
+          "balance and audit general ledger accounts"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Emphasis in Auditing",
+          "source_section": "Education",
+          "origin": "candidate"
+        }
+      }
+    ]
+  },
+  "job": {
+    "title": null,
+    "seniority": null,
+    "years_of_experience": null,
+    "responsibilities": [
+      "Help with accounting and taxes."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Accounting",
+        "original_mentions": [
+          "accounting"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "help with accounting",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Taxation",
+        "original_mentions": [
+          "taxes"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "help with taxes",
+          "source_section": null,
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [],
+    "education_requirements": [],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Taxation",
+        "original_mentions": [
+          "taxes"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "help with taxes",
+          "source_section": null,
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [],
+    "leadership_requirements": [],
+    "system_design_requirements": [],
+    "competencies": [
+      {
+        "normalized_label": "Accounting",
+        "original_mentions": [
+          "accounting"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "help with accounting",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Taxation",
+        "original_mentions": [
+          "taxes"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "help with taxes",
+          "source_section": null,
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 1917,
+    "output_tokens": 2761,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0035085,
+    "latency_ms": 13956.79,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 749,
+    "output_tokens": 429,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0006646,
+    "latency_ms": 3831.53,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-09-27T21:07:57.159399+00:00"
+}

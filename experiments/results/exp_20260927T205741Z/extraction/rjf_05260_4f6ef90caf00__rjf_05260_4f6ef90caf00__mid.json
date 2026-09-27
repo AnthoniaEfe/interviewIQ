@@ -1,0 +1,1002 @@
+{
+  "experiment_id": "exp_20260927T205741Z",
+  "stage": "extraction",
+  "profile_id": "rjf_05260_4f6ef90caf00",
+  "jd_id": "rjf_05260_4f6ef90caf00",
+  "pair_id": "rjf_05260_4f6ef90caf00",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Electronics technician and hardware test engineer with over 10 years of experience, including team leadership, training, electronics testing, repair, and automation. Pursuing a Bachelor's degree in Computer Science.",
+    "seniority_indicators": [
+      "Over 10 years of experience",
+      "Team lead experience",
+      "Primary trainer",
+      "Leadership roles"
+    ],
+    "education": [
+      {
+        "degree": "Certificate",
+        "institution": "Madison Area Technical College",
+        "field": "IT-LAMP Open Source Development",
+        "year": "Expected August 2016",
+        "source_text": "Certificate, IT-LAMP Open Source Development"
+      },
+      {
+        "degree": "Associate's Degree",
+        "institution": "Madison Area Technical College",
+        "field": "Electrical Engineering Technology",
+        "year": "May 2006",
+        "source_text": "Associates Degree, Electrical Engineering Technology"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Hardware Test Engineer",
+        "employer": "Zoom",
+        "duration": "December 2010 to February 2017",
+        "responsibilities": [
+          "Overhauled programming and testing processes and infrastructure with management",
+          "Scheduled due dates and tracked projects to completion",
+          "Developed and maintained an in-house test automation framework",
+          "Created and revised programming and testing procedures",
+          "Trained staff on test procedure software development and documentation"
+        ],
+        "achievements": [],
+        "technologies": [
+          "Linux",
+          "Unix file systems",
+          "Bash shell scripts",
+          "DOS batch scripts",
+          "Terminal macros"
+        ],
+        "source_text": "Hardware Test Engineer, Zoom; worked on programming/testing processes, infrastructure, automation, and training"
+      },
+      {
+        "title": "Independent Consultant",
+        "employer": "Aecom",
+        "duration": "November 2010 to February 2017",
+        "responsibilities": [
+          "Performed consumer electronics tear-down, debugging, component-level repair, and reassembly",
+          "Conducted per-project cost-benefit analysis"
+        ],
+        "achievements": [],
+        "technologies": [
+          "Consumer electronics"
+        ],
+        "source_text": "Independent Consultant, Aecom; consumer electronics tear down, debug, repair, and reassembly"
+      },
+      {
+        "title": "Electronics Technician",
+        "employer": "Extreme Engineering Solutions Inc",
+        "duration": "October 2006 to December 2010",
+        "responsibilities": [
+          "Debugged and repaired electronics at the component level using microscopes",
+          "Hand-built electronic assemblies to IPC J-STD-001 specifications",
+          "Assembled and maintained records for component kits for shipment to manufacturing",
+          "Programmed and tested electronic components and assemblies",
+          "Stress-tested electronic assemblies using environmental test chambers"
+        ],
+        "achievements": [],
+        "technologies": [
+          "Microscopes",
+          "IPC J-STD-001",
+          "Environmental test chambers"
+        ],
+        "source_text": "Electronics Technician, Extreme Engineering Solutions Inc; electronics debug/repair, assembly, programming, and testing"
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "Shell scripting",
+        "original_mentions": [
+          "shell scripting",
+          "shell scripts"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Proficient in shell scripting",
+          "source_section": "QUALIFICATIONS",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Bash",
+        "original_mentions": [
+          "Bash"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "(Bash) shell scripts",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "DOS batch scripting",
+        "original_mentions": [
+          "DOS batch scripts",
+          "DOS"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "DOS batch scripts",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Linux",
+        "original_mentions": [
+          "Linux"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Linux",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Unix",
+        "original_mentions": [
+          "Unix file systems",
+          "Unix"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Unix file systems",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Terminal macros",
+        "original_mentions": [
+          "terminal macros",
+          "macros"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "terminal macros",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Test automation",
+        "original_mentions": [
+          "test automation framework",
+          "automation"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Development and maintenance of in-house test automation framework",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Software development and documentation",
+        "original_mentions": [
+          "software development and documentation"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "test procedure software development and documentation",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Electronics debugging and repair",
+        "original_mentions": [
+          "debugging/repairing electronic products",
+          "electronics debug/repair"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skilled in debugging/repairing electronic products at the component level",
+          "source_section": "QUALIFICATIONS",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Soldering",
+        "original_mentions": [
+          "soldering techniques"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Proficient in soldering techniques",
+          "source_section": "QUALIFICATIONS",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Reading schematics",
+        "original_mentions": [
+          "read schematics"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Ability to read schematics",
+          "source_section": "QUALIFICATIONS",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Circuit fundamentals",
+        "original_mentions": [
+          "fundamental circuit concepts"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "understand fundamental circuit concepts",
+          "source_section": "QUALIFICATIONS",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Electronic component and assembly testing",
+        "original_mentions": [
+          "programming and testing electronic components and assemblies"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience programming and testing electronic components and assemblies",
+          "source_section": "QUALIFICATIONS",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Environmental testing",
+        "original_mentions": [
+          "Stress testing",
+          "environmental test chambers"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Stress testing electronic assemblies using environmental test chambers",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Inventory control",
+        "original_mentions": [
+          "Inventory control procedures"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Inventory control procedures",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Cash register operations",
+        "original_mentions": [
+          "Cash register operations"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Cash register operations",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Team leadership",
+        "original_mentions": [
+          "Team lead experience",
+          "Team lead"
+        ],
+        "competency_type": "leadership",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Team lead experience scheduling due dates and tracking projects",
+          "source_section": "QUALIFICATIONS",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Training",
+        "original_mentions": [
+          "trainer",
+          "Primary trainer"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Primary trainer on test procedure software development and documentation",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Project scheduling and tracking",
+        "original_mentions": [
+          "scheduling due dates",
+          "tracking projects",
+          "tracking progress"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "scheduling due dates and tracking progress to completion",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Motivation",
+        "original_mentions": [
+          "motivated person"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "dynamic motivated person",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [
+      {
+        "normalized_label": "IPC J-STD-001",
+        "original_mentions": [
+          "IPC J-STD-001 certification",
+          "IPC J-STD-001 specifications"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "previous IPC J-STD-001 certification",
+          "source_section": "QUALIFICATIONS",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "domain_experience": [
+      {
+        "normalized_label": "Electronics",
+        "original_mentions": [
+          "Electronics technician",
+          "Electronics"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Electronics technician and hardware test engineer",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Hardware testing",
+        "original_mentions": [
+          "Hardware Test Engineer",
+          "programming/testing"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Hardware Test Engineer",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Consumer electronics",
+        "original_mentions": [
+          "Consumer electronics"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Consumer electronics tear down, debug, repair, and reassembly",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "ESD-sensitive environments",
+        "original_mentions": [
+          "ESD sensitive environments"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience working in ESD sensitive environments",
+          "source_section": "QUALIFICATIONS",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": []
+  },
+  "job": {
+    "title": "Senior Digital Electronic Engineer",
+    "seniority": "Senior",
+    "years_of_experience": "10 years",
+    "responsibilities": [
+      "Implement embedded controllers using microcontrollers for image capture systems.",
+      "Develop firmware using C programming and Assembler.",
+      "Capture schematics and perform PCB layout, routing, and PAD-tool work.",
+      "Work closely with the manufacturing team to ensure thorough documentation and support product production.",
+      "Work onsite five days per week in the Parsippany, NJ office."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Digital electronic circuit design",
+        "original_mentions": [
+          "digital circuit design",
+          "digital electronic Circuit Design and development"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "10 years digital electronic Circuit Design and development",
+          "source_section": "Core Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Electronic schematics",
+        "original_mentions": [
+          "schematics experience",
+          "Capture schematics",
+          "Schematic Capture"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Experience with ... schematics",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Microprocessor-based design",
+        "original_mentions": [
+          "schematics experience using microprocessors",
+          "Microprocessors development"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.94,
+        "source": {
+          "source_text": "digital circuit design and schematics experience using microprocessors",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "C programming",
+        "original_mentions": [
+          "Microprocessor C programming experience",
+          "Firmware using \"C\" programming",
+          "Demonstrated experience in C Programming"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Demonstrated experience in C Programming",
+          "source_section": "Core Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Embedded controller implementation",
+        "original_mentions": [
+          "Implementing embedded controllers",
+          "implementing embedded controllers via Microcontrollers"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Implementing embedded controllers using Microcontrollers",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Microcontroller development",
+        "original_mentions": [
+          "Microcontrollers",
+          "Microcontrollers (ARM)",
+          "high-end (32 bits) microcontrollers"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.94,
+        "source": {
+          "source_text": "implementing embedded controllers via Microcontrollers(ARM)",
+          "source_section": "Core Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "FPGA development",
+        "original_mentions": [
+          "High speed FPGA",
+          "FPGA (Xilinx)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "as well FPGA (Xilinx)",
+          "source_section": "Core Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "PCB layout and routing",
+        "original_mentions": [
+          "PCB layout",
+          "layout guidance for PCB designer",
+          "PCB layout, routing"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Experience with Capture schematics, PCB layout, routing",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "PCB design",
+        "original_mentions": [
+          "PCB Design",
+          "Printed Circuit Board Design"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Desired Experience: PCB Design",
+          "source_section": "Desired Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "IDE tools",
+        "original_mentions": [
+          "IDE tools"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.86,
+        "source": {
+          "source_text": "high-end (32 bits) microcontrollers and IDE tools",
+          "source_section": "Core Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Code Composer Studio",
+        "original_mentions": [
+          "CCS from Ti",
+          "Code Composer Studio"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Familiarity with Code Composer Studio",
+          "source_section": "Core Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Firmware development",
+        "original_mentions": [
+          "Developing firmware"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Developing firmware utilizing \"C\" programming",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Manufacturing documentation",
+        "original_mentions": [
+          "through documentation",
+          "documentation and for production of products"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.88,
+        "source": {
+          "source_text": "ensure through documentation and for production of products",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "Assembler programming",
+        "original_mentions": [
+          "Assembler"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.84,
+        "source": {
+          "source_text": "firmware utilizing \"C\" programming (and Assembler)",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "DX Designer",
+        "original_mentions": [
+          "DX Designer"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.85,
+        "source": {
+          "source_text": "tools like DX Designer",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Altium",
+        "original_mentions": [
+          "Altium"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.85,
+        "source": {
+          "source_text": "tools like ... Altium",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "PAD PCB design tools",
+        "original_mentions": [
+          "PAD",
+          "(PADs) tools"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.94,
+        "source": {
+          "source_text": "PCB Design (preferably PAD)",
+          "source_section": "Desired Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "High-speed digital design",
+        "original_mentions": [
+          "High Speed design tools",
+          "High speed FPGA"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.88,
+        "source": {
+          "source_text": "High Speed design tools",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Signal integrity testing",
+        "original_mentions": [
+          "test tools for signal integrity"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Use of test tools for signal integrity",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "EMC testing",
+        "original_mentions": [
+          "EMC"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.86,
+        "source": {
+          "source_text": "test tools for signal integrity, EMC",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "System-on-chip (SoC) development",
+        "original_mentions": [
+          "SOC"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.82,
+        "source": {
+          "source_text": "High speed FPGA and SOC",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Xilinx",
+        "original_mentions": [
+          "Xilinx"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.85,
+        "source": {
+          "source_text": "FPGA (Xilinx)",
+          "source_section": "Core Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Altera",
+        "original_mentions": [
+          "Altera"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.8,
+        "source": {
+          "source_text": "XilinxAlteraLattice",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Lattice",
+        "original_mentions": [
+          "Lattice"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.8,
+        "source": {
+          "source_text": "XilinxAlteraLattice",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "MSP430",
+        "original_mentions": [
+          "MSP430"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.8,
+        "source": {
+          "source_text": "microprocessor like MSP430",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "TM4C",
+        "original_mentions": [
+          "TM4C"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.8,
+        "source": {
+          "source_text": "TM4C",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "NXP i.MX family",
+        "original_mentions": [
+          "NXP IMX family"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.8,
+        "source": {
+          "source_text": "NXP IMX family",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Microprocessor firmware development",
+        "original_mentions": [
+          "Work on Microprocessors development",
+          "Firmware using \"C\" programming"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "BIG PLUS: Work on Microprocessors development ... doing Firmware using \"C\" programming",
+          "source_section": "Desired Experience",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [
+      "Bachelor's degree in Electrical or Electronics Engineering, or a similar field."
+    ],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Medical devices",
+        "original_mentions": [
+          "Medical Device company"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "growing Medical Device company",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Image capture systems",
+        "original_mentions": [
+          "image capture systems"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.88,
+        "source": {
+          "source_text": "embedded controllers ... for various image capture systems",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Manufacturing collaboration",
+        "original_mentions": [
+          "Working closely with the manufacturing team"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Working closely with the manufacturing team",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [],
+    "system_design_requirements": [
+      "Design and develop digital electronic circuits using microprocessors, microcontrollers, and FPGA devices.",
+      "Implement embedded controllers for image capture systems.",
+      "Perform high-speed design and provide PCB layout guidance."
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Onsite work in Parsippany, New Jersey",
+        "original_mentions": [
+          "ONSITE 5 DAYS a week in Parsippany NJ Office"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "ONSITE 5 DAYS a week in Parsippany NJ Office",
+          "source_section": null,
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 1570,
+    "output_tokens": 2195,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0027599,
+    "latency_ms": 12541.48,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1035,
+    "output_tokens": 2390,
+    "cached_tokens": 0,
+    "estimated_cost": 0.003075,
+    "latency_ms": 15575.5,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-09-27T21:08:25.278549+00:00"
+}

@@ -1,0 +1,1061 @@
+{
+  "experiment_id": "exp_20260927T205741Z",
+  "stage": "extraction",
+  "profile_id": "rjf_06021_14549a02aa4a",
+  "jd_id": "rjf_06021_14549a02aa4a",
+  "pair_id": "rjf_06021_14549a02aa4a",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Motivated Accountant with 10 years of experience managing payroll functions and maintaining accounts payable. Proficient in MS Office and accounting software, with strong mathematics, analytical abilities, and independent team-oriented work style.",
+    "seniority_indicators": [
+      "10 years of hands-on accounting experience",
+      "Human Resources Manager experience",
+      "Managed accounting, payroll, and financial reporting activities",
+      "Advised senior management on forecasting decisions"
+    ],
+    "education": [
+      {
+        "degree": "Master of Science",
+        "institution": "DeVry University",
+        "field": "Accounting",
+        "year": "Expected 05/2015",
+        "source_text": "Expected 05/2015, Master of Science in Accounting, DeVry University"
+      },
+      {
+        "degree": "Bachelor of Science",
+        "institution": "Franciscan University of Steubenville",
+        "field": "Business",
+        "year": "Expected 05/2008",
+        "source_text": "Expected 05/2008, Bachelor of Science in Business, Franciscan University"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Accountant",
+        "employer": "Blue Ridge Healthcare System, Inc.",
+        "duration": "03/2017 to Current",
+        "responsibilities": [
+          "Prepared checks, financial statements, tax returns, and monthly and year-end closing statements.",
+          "Managed accounting, payroll, financial reporting, accounts payable, and accounts receivable operations.",
+          "Analyzed budgets, financial statements, revenue, and expenditure trends.",
+          "Developed accounting policies and documented business processes to strengthen internal controls.",
+          "Interacted with auditors and facilitated annual financial statement audits.",
+          "Administered employee payroll and corporate payroll reconciliation and tax activities."
+        ],
+        "achievements": [
+          "Updated billing procedures to improve efficiency and reduce accounts receivable.",
+          "Coordinated staff workflows and reviewed completed work to reduce errors."
+        ],
+        "technologies": [
+          "Accounting software"
+        ],
+        "source_text": "03/2017 to Current Accountant, Blue Ridge Healthcare System, Inc.; managed accounting, payroll, financial reporting, AP/AR, audits, and financial analysis."
+      },
+      {
+        "title": "Accountant",
+        "employer": "Blue Ridge Healthcare System, Inc.",
+        "duration": "03/2011 to 03/2017",
+        "responsibilities": [
+          "Reconciled bank accounts, expense reports, and financial accounts using SAP software.",
+          "Managed billing, invoice processing, payments, collections, and accounts receivable.",
+          "Prepared balance sheets, profit and loss statements, month-end statements, invoices, and vendor payments.",
+          "Created receiving reports and updated vendor balance sheets for accounts payable.",
+          "Researched and resolved billing inconsistencies, invoice discrepancies, and delinquent accounts.",
+          "Trained new team members on company policies and accounting systems.",
+          "Completed billing audits and submitted claims using integrated billing software."
+        ],
+        "achievements": [
+          "Maintained customer payments within net terms.",
+          "Investigated past-due invoices to generate revenue and reduce unpaid accounts."
+        ],
+        "technologies": [
+          "SAP",
+          "Integrated billing software"
+        ],
+        "source_text": "03/2011 to 03/2017 Accountant, Blue Ridge Healthcare System, Inc.; handled reconciliation, billing, AP/AR, collections, audits, and SAP accounting."
+      },
+      {
+        "title": "Human Resources Manager",
+        "employer": "Dependable Cleaners",
+        "duration": "04/2008 to 03/2011",
+        "responsibilities": [
+          "Created performance measurement, employee development, and compensation strategies.",
+          "Managed recruitment, selection, onboarding, orientation, benefits, and employee records.",
+          "Developed hiring and recruitment policies and directed HR programs and processes.",
+          "Conducted interviews, background checks, exit interviews, and onboarding activities.",
+          "Advised leadership on leave, benefits, employment discrepancies, and job services.",
+          "Generated HR compliance and recruitment reports using data and analytics.",
+          "Handled confidential employee and company information."
+        ],
+        "achievements": [
+          "Implemented a new filing and organization system.",
+          "Used data and analytics to improve recruitment, selection, and onboarding processes.",
+          "Worked cross-functionally to optimize HR business processes."
+        ],
+        "technologies": [
+          "HR website",
+          "Online media"
+        ],
+        "source_text": "04/2008 to 03/2011 Human Resources Manager, Dependable Cleaners; managed recruitment, onboarding, HR policies, employee records, and compliance reporting."
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "MS Office",
+        "original_mentions": [
+          "MS Office"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "proficient in MS Office",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accounting software",
+        "original_mentions": [
+          "accounting software",
+          "Accounting Software Systems"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "proficient in accounting software",
+          "source_section": "Summary and Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "GAAP accounting",
+        "original_mentions": [
+          "GAAP Accounting",
+          "GAAP Accounting Practices"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "GAAP Accounting Practices",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Account reconciliation",
+        "original_mentions": [
+          "Account Reconciliation Expert",
+          "reconciled all bank accounts",
+          "reconciled financial accounts"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Account Reconciliation Expert",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Journal entry preparation",
+        "original_mentions": [
+          "Journal Entry Preparation",
+          "monthly and annual journal entries"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Journal Entry Preparation",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial statement analysis",
+        "original_mentions": [
+          "Financial Statements Review",
+          "Financial Statements",
+          "examined financial statements"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Financial Statements Review",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accounts payable",
+        "original_mentions": [
+          "maintaining accounts payables",
+          "Managed AP operations",
+          "accounts payable"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "maintaining accounts payables",
+          "source_section": "Summary and Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accounts receivable",
+        "original_mentions": [
+          "accounts receivable",
+          "Managed AR operations"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Managed AP and AR operations",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Payroll administration",
+        "original_mentions": [
+          "managing payroll functions",
+          "Administered payroll for employees"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "managing payroll functions",
+          "source_section": "Summary and Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial controls",
+        "original_mentions": [
+          "Financial Controls",
+          "internal controls"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Financial Controls",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Audit preparation",
+        "original_mentions": [
+          "Audit Preparation",
+          "Facilitated and completed annual financial statement audits"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Audit Preparation",
+          "source_section": "Skills and Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Tax return preparation",
+        "original_mentions": [
+          "filed federal and state tax returns",
+          "Filed taxes"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "filed federal and state tax returns",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SAP",
+        "original_mentions": [
+          "SAP software"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Reconciled financial accounts using SAP software",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Budget analysis",
+        "original_mentions": [
+          "department budgeting and accounting reports",
+          "Examined budget estimates"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Analyzed monthly department budgeting and accounting reports",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Invoice processing",
+        "original_mentions": [
+          "Processing Checks and Invoices",
+          "processed invoice payments"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Processing Checks and Invoices",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Analytical abilities",
+        "original_mentions": [
+          "outstanding mathematics and analytical abilities",
+          "conducted statistical analyses"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "outstanding mathematics and analytical abilities",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Independent work",
+        "original_mentions": [
+          "Independent and self-motivated"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Independent and self-motivated",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Teamwork",
+        "original_mentions": [
+          "team player",
+          "worked cross-functionally"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "team player",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Communication",
+        "original_mentions": [
+          "interacted with internal and external auditors",
+          "developed strong professional rapport"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Interacted with internal and external auditors",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Confidentiality",
+        "original_mentions": [
+          "handled sensitive employee and company information with highest level of confidentiality"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "highest level of confidentiality and discretion",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Accounting",
+        "original_mentions": [
+          "Accountant",
+          "Accounting"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Accountant",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Healthcare",
+        "original_mentions": [
+          "Blue Ridge Healthcare System, Inc."
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Blue Ridge Healthcare System, Inc.",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Human resources",
+        "original_mentions": [
+          "Human Resources Manager",
+          "HR programs"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Human Resources Manager",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Recruitment and onboarding",
+        "original_mentions": [
+          "recruitment",
+          "selection and onboarding",
+          "new employee onboarding"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "recruitment, selection and onboarding",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Accounting policy development",
+        "original_mentions": [
+          "Developed and documented business processes and accounting policies"
+        ],
+        "competency_type": "leadership",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Developed and documented business processes and accounting policies",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Staff coordination",
+        "original_mentions": [
+          "coordinating staff workflows",
+          "Trained new team members"
+        ],
+        "competency_type": "leadership",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "coordinating staff workflows and reviewing completed work",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Management advising",
+        "original_mentions": [
+          "advised senior management on forecasting decisions",
+          "Advised leadership"
+        ],
+        "competency_type": "leadership",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "advised senior management on forecasting decisions",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ]
+  },
+  "job": {
+    "title": "Senior Accountant",
+    "seniority": null,
+    "years_of_experience": "10+ years of accounting experience; 5+ years of financial analysis",
+    "responsibilities": [
+      "Perform day-to-day general ledger accounting, including journal entry preparation and related reporting for prepaids, accruals, payroll, benefits, and intercompany-related party processes.",
+      "Assist with monthly accounting close procedures, including proper period-end cut-off and the accounting close schedule.",
+      "Calculate and maintain payroll-related and cost accruals to ensure accurate monthly cut-off.",
+      "Monitor elements leading to cross-margin profitability analysis and support project management.",
+      "Maintain the chart of accounts and cost center reporting."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "General ledger accounting",
+        "original_mentions": [
+          "Day-to-day general ledger accounting"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Day-to-day general ledger accounting",
+          "source_section": "Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Journal entry preparation",
+        "original_mentions": [
+          "journal entry preparation"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "journal entry preparation and related reporting",
+          "source_section": "Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Month-end accounting close",
+        "original_mentions": [
+          "monthly accounting close procedures"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "monthly accounting close procedures",
+          "source_section": "Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Payroll and cost accruals",
+        "original_mentions": [
+          "Calculating and maintaining payroll related and cost accruals"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Calculating and maintaining payroll related and cost accruals",
+          "source_section": "Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Financial analysis",
+        "original_mentions": [
+          "5+ years of financial analysis"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "5+ years of financial analysis",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SAP FI",
+        "original_mentions": [
+          "SAPR3 or S4 (FI)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience with SAPR3 or S4 (FI) required",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "US GAAP",
+        "original_mentions": [
+          "US GAAP"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Proficiency in knowledge of US GAAP",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "IFRS accounting",
+        "original_mentions": [
+          "IFRS Accounting"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "IFRS Accounting",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "US tax",
+        "original_mentions": [
+          "US Tax"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "US Tax",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Excel",
+        "original_mentions": [
+          "advanced knowledge in Excel"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "advanced knowledge in Excel",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Microsoft PowerPoint",
+        "original_mentions": [
+          "PPT"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Strong PC skills with advanced knowledge in Excel and PPT",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Accounting experience",
+        "original_mentions": [
+          "10+ years of accounting experience (General Ledger, AR, AP, Cash Management)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "10+ years of accounting experience (General Ledger, AR, AP, Cash Management)",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Accounts receivable",
+        "original_mentions": [
+          "AR"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "General Ledger, AR, AP, Cash Management",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Accounts payable",
+        "original_mentions": [
+          "AP"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "General Ledger, AR, AP, Cash Management",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cash management",
+        "original_mentions": [
+          "Cash Management"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "General Ledger, AR, AP, Cash Management",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "International and cross-cultural work experience",
+        "original_mentions": [
+          "Experience working in an international and cross-cultural environment"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Experience working in an international and cross-cultural environment",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "Audit experience",
+        "original_mentions": [
+          "Audit background a plus"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Audit background a plus",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SAP BW",
+        "original_mentions": [
+          "SAP BW"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience with SAP BW, SAP CRM is a plus",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SAP CRM",
+        "original_mentions": [
+          "SAP CRM"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience with SAP BW, SAP CRM is a plus",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [
+      "Bachelor's degree in accounting or finance, with a concentration in Accounting (preferred)."
+    ],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "General ledger, accounts receivable, accounts payable, and cash management",
+        "original_mentions": [
+          "General Ledger, AR, AP, Cash Management"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "10+ years of accounting experience (General Ledger, AR, AP, Cash Management)",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Profitability analysis",
+        "original_mentions": [
+          "cross margin profitability analysis"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "cross margin profitability analysis",
+          "source_section": "Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Chart of accounts and cost center reporting",
+        "original_mentions": [
+          "Maintenance of chart of accounts and cost center reporting"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Maintenance of chart of accounts and cost center reporting",
+          "source_section": "Responsibilities",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Cross-cultural collaboration",
+        "original_mentions": [
+          "international and cross-cultural environment"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Experience working in an international and cross-cultural environment",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [],
+    "system_design_requirements": [],
+    "competencies": [
+      {
+        "normalized_label": "Accounting experience",
+        "original_mentions": [
+          "10+ years of accounting experience"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "10+ years of accounting experience",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Financial analysis experience",
+        "original_mentions": [
+          "5+ years of financial analysis"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "5+ years of financial analysis",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Bachelor's degree in accounting or finance",
+        "original_mentions": [
+          "Bachelors degree in accounting or finance (concentration in Accounting) preferred"
+        ],
+        "competency_type": "education",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Bachelors degree in accounting or finance (concentration in Accounting) preferred",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SAP FI",
+        "original_mentions": [
+          "SAPR3 or S4 (FI)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience with SAPR3 or S4 (FI) required",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Audit background",
+        "original_mentions": [
+          "Audit background a plus"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Audit background a plus",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SAP BW",
+        "original_mentions": [
+          "SAP BW"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience with SAP BW, SAP CRM is a plus",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SAP CRM",
+        "original_mentions": [
+          "SAP CRM"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience with SAP BW, SAP CRM is a plus",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "US GAAP",
+        "original_mentions": [
+          "US GAAP"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Proficiency in knowledge of US GAAP",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "IFRS accounting",
+        "original_mentions": [
+          "IFRS Accounting"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "IFRS Accounting",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "US tax",
+        "original_mentions": [
+          "US Tax"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "US Tax",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Advanced Excel and PowerPoint",
+        "original_mentions": [
+          "advanced knowledge in Excel and PPT"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Strong PC skills with advanced knowledge in Excel and PPT",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 2384,
+    "output_tokens": 2566,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0033679,
+    "latency_ms": 13539.73,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 975,
+    "output_tokens": 2282,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0029334,
+    "latency_ms": 13833.98,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-09-27T21:11:26.725656+00:00"
+}

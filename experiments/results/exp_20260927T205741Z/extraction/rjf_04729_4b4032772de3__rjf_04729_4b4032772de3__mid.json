@@ -1,0 +1,818 @@
+{
+  "experiment_id": "exp_20260927T205741Z",
+  "stage": "extraction",
+  "profile_id": "rjf_04729_4b4032772de3",
+  "jd_id": "rjf_04729_4b4032772de3",
+  "pair_id": "rjf_04729_4b4032772de3",
+  "fit_label": "Good Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Sales Associate and sales professional with customer service and sales experience; technical experience in electrical design, automated testing, embedded systems, and sensor-based hardware/software development.",
+    "seniority_indicators": [],
+    "education": [
+      {
+        "degree": "Master of Science",
+        "institution": "Texas Tech University",
+        "field": "Electrical Engineering",
+        "year": "May 2014",
+        "source_text": "Texas Tech University \u2014 M.S. Electrical Engineering, GPA 3.9/4.0"
+      },
+      {
+        "degree": "Bachelor of Technology",
+        "institution": "Jawaharlal Nehru Technological University",
+        "field": "Electronics and Communications Engineering",
+        "year": "May 2012",
+        "source_text": "B.Tech Electronics and Communications Engineering, GPA 3.7/4.0"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Electrical Design Engineer",
+        "employer": null,
+        "duration": "06/2014\u2013Present",
+        "responsibilities": [
+          "Developing next-generation intelligent down-hole oil drilling tools.",
+          "Automating calibration processes for accelerometers and magnetometers.",
+          "Developing automated test systems using LabVIEW and Python."
+        ],
+        "achievements": [],
+        "technologies": [
+          "LabVIEW",
+          "Python",
+          "Accelerometers",
+          "Magnetometers"
+        ],
+        "source_text": "Electrical Design Engineer, 06/2014\u2013Present \u2014 down-hole oil drilling tools and automated test systems"
+      },
+      {
+        "title": "Research Assistant",
+        "employer": "Rockwell Automation, Inc.",
+        "duration": null,
+        "responsibilities": [
+          "Developing a high-accuracy GPS system.",
+          "Identifying outliers in large collections of cotton fiber cross-section scan data."
+        ],
+        "achievements": [],
+        "technologies": [
+          "GPS"
+        ],
+        "source_text": "Rockwell Automation, Inc. \u2014 Research Assistant; high-accuracy GPS and cotton fiber scan data"
+      },
+      {
+        "title": "Product Engineering Intern",
+        "employer": "Dartmouth College",
+        "duration": null,
+        "responsibilities": [
+          "Developed hardware and software for embedded-systems projects using various sensors.",
+          "Developed firmware for a programmer to program AVR microcontrollers through a USB port."
+        ],
+        "achievements": [
+          "Served as President of the Electronics Club at SNIST, Hyderabad, from 2010 to 2012.",
+          "Taught classes on basic analog circuits, microcontroller programming, and sensor interfaces."
+        ],
+        "technologies": [
+          "Embedded systems",
+          "Sensors",
+          "Firmware",
+          "AVR microcontrollers",
+          "USB"
+        ],
+        "source_text": "Dartmouth College \u2014 Product Engineering Intern; embedded hardware/software and AVR programmer firmware"
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "LabVIEW",
+        "original_mentions": [
+          "LabVIEW"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Highlights: LabVIEW",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Cadence Virtuoso",
+        "original_mentions": [
+          "Virtuoso (Cadence) Design Suite"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Virtuoso (Cadence) Design Suite",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "PSpice",
+        "original_mentions": [
+          "P LE CS"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.45,
+        "source": {
+          "source_text": "P LE CS",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Cadence Schematic Editor",
+        "original_mentions": [
+          "Cadence Schematic editor"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Cadence Schematic editor",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "AWR Microwave Office",
+        "original_mentions": [
+          "AWR Microwave Office"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "AWR Microwave Office",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "MATLAB/Simulink",
+        "original_mentions": [
+          "MATLAB/SIMULINK",
+          "MATLAB"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "MATLAB/SIMULINK",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Code Composer Studio",
+        "original_mentions": [
+          "Code Composer Studio",
+          "Composer"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Code Composer Studio",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "National Instruments PXI",
+        "original_mentions": [
+          "National Instruments PXI"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "National Instruments PXI",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Texas Instruments VLCT",
+        "original_mentions": [
+          "Texas Instruments VLCT"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Texas Instruments VLCT for IC Testing-ATE",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "C",
+        "original_mentions": [
+          "C"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Programming Languages: C",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "C++",
+        "original_mentions": [
+          "C++"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Programming Languages: C++",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Python",
+        "original_mentions": [
+          "Python"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Programming Languages: Python",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Assembly",
+        "original_mentions": [
+          "Assembly"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Programming Languages: Assembly",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "VHDL",
+        "original_mentions": [
+          "VHDL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Programming Languages: VHDL",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "CAD",
+        "original_mentions": [
+          "CAD"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: CAD",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Electronics",
+        "original_mentions": [
+          "Electronics"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: Electronics",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Embedded systems",
+        "original_mentions": [
+          "embedded systems"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: embedded systems",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "GPS",
+        "original_mentions": [
+          "GPS"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: GPS",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "USB",
+        "original_mentions": [
+          "USB"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: USB",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Customer service",
+        "original_mentions": [
+          "customer service"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: extensive customer service experience",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Sales",
+        "original_mentions": [
+          "sales experience",
+          "sales professional"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Summary: sales experience and sales professional",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Oil drilling tools",
+        "original_mentions": [
+          "down-hole oil drilling tools"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Developing intelligent down-hole oil drilling tools",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "IC testing and automated test systems",
+        "original_mentions": [
+          "IC Testing-ATE",
+          "automated test systems"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Texas Instruments VLCT for IC Testing-ATE; automated test systems",
+          "source_section": "Highlights and Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Embedded systems",
+        "original_mentions": [
+          "embedded systems"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Hardware and software for projects on embedded systems",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Sensor interfaces",
+        "original_mentions": [
+          "Sensor interfaces",
+          "sensors"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Microcontroller Programming and Sensor interfaces",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Leadership",
+        "original_mentions": [
+          "President of The Electronics Club"
+        ],
+        "competency_type": "leadership",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Served as President of The Electronics Club, SNIST, Hyderabad for two years (2010\u20132012)",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Teaching",
+        "original_mentions": [
+          "Taught classes"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Taught classes on basic Analog Circuits, Microcontroller Programming, and Sensor interfaces",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ]
+  },
+  "job": {
+    "title": "Senior Electrical Engineer",
+    "seniority": "Senior",
+    "years_of_experience": "Minimum 6 years experience in Industrial Electrical Design",
+    "responsibilities": [
+      "Manage the electrical staff.",
+      "Perform quality control.",
+      "Manage projects.",
+      "Review design and construction documents.",
+      "Assist with process and instrumentation diagrams (P&IDs).",
+      "Assist with instrumentation and control implementation.",
+      "Support power distribution, motor control, PLC control systems, control panels, lighting, facility conduit and wiring design, schematic and logic development.",
+      "Apply and implement the National Electric Code.",
+      "Review facility construction documents and shop drawings.",
+      "Support facility testing and startup."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Industrial electrical design",
+        "original_mentions": [
+          "Industrial Electrical Design"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Minimum 6 years experience in Industrial Electrical Design",
+          "source_section": "As a successful candidate you should have",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Power distribution",
+        "original_mentions": [
+          "Power Distribution"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Power Distribution",
+          "source_section": "Responsibilities during design and construction phases",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Motor control",
+        "original_mentions": [
+          "Motor Control"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Motor Control",
+          "source_section": "Responsibilities during design and construction phases",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "PLC control systems",
+        "original_mentions": [
+          "PLC Control System"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "PLC Control System",
+          "source_section": "Responsibilities during design and construction phases",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Control panel design",
+        "original_mentions": [
+          "Control Panels"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.93,
+        "source": {
+          "source_text": "Control Panels",
+          "source_section": "Responsibilities during design and construction phases",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Lighting design",
+        "original_mentions": [
+          "Lighting"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Lighting",
+          "source_section": "Responsibilities during design and construction phases",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Facility conduit and wiring design",
+        "original_mentions": [
+          "Facility Conduit and Wiring Design"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Facility Conduit and Wiring Design",
+          "source_section": "Responsibilities during design and construction phases",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Schematic and logic development",
+        "original_mentions": [
+          "Schematic and Logic Development"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Schematic and Logic Development",
+          "source_section": "Responsibilities during design and construction phases",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "National Electrical Code",
+        "original_mentions": [
+          "National Electric Code"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Extensive Knowledge and Implementation of the National Electric Code",
+          "source_section": "Responsibilities during design and construction phases",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "AutoCAD",
+        "original_mentions": [
+          "AutoCAD"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Working knowledge of AutoCAD",
+          "source_section": "Responsibilities during design and construction phases",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Construction document and shop drawing review",
+        "original_mentions": [
+          "Facility Construction Document and Shop Drawing Review"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Facility Construction Document and Shop Drawing Review",
+          "source_section": "Responsibilities during design and construction phases",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Facility testing and startup",
+        "original_mentions": [
+          "Facility Testing and Startup"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Facility Testing and Startup",
+          "source_section": "Responsibilities during design and construction phases",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Project management",
+        "original_mentions": [
+          "Project Management experience"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Project Management experience",
+          "source_section": "As a successful candidate you should have",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Instrumentation and control implementation",
+        "original_mentions": [
+          "instrumentation & control implementation"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "assist with instrumentation & control implementation",
+          "source_section": "Position responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Legal authorization to work in the United States",
+        "original_mentions": [
+          "legally authorized to work in the United States"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Applicants must be legally authorized to work in the United States",
+          "source_section": "Application requirements",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "Water and wastewater applications",
+        "original_mentions": [
+          "water and wastewater application"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "preferably in water and wastewater application",
+          "source_section": "As a successful candidate you should have",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [],
+    "certifications": [
+      {
+        "normalized_label": "Professional Engineer license in Maryland",
+        "original_mentions": [
+          "Professional Engineer license in Maryland"
+        ],
+        "competency_type": "certification",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Professional Engineer license in Maryland or ability to obtain",
+          "source_section": "As a successful candidate you should have",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Ability to obtain a Professional Engineer license in Maryland",
+        "original_mentions": [
+          "ability to obtain"
+        ],
+        "competency_type": "certification",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Professional Engineer license in Maryland or ability to obtain",
+          "source_section": "As a successful candidate you should have",
+          "origin": "job"
+        }
+      }
+    ],
+    "domain_knowledge": [],
+    "soft_skills": [
+      {
+        "normalized_label": "Quality focus and attention to detail",
+        "original_mentions": [
+          "Quality focus with attention to detail"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Quality focus with attention to detail",
+          "source_section": "As a successful candidate you should have",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [
+      "Management of the electrical staff"
+    ],
+    "system_design_requirements": [
+      "Electrical design responsibilities include power distribution, motor control, PLC control systems, control panels, lighting, facility conduit and wiring design, and schematic and logic development.",
+      "Assist with process and instrumentation diagrams (P&IDs) and instrumentation and control implementation."
+    ],
+    "competencies": []
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 1581,
+    "output_tokens": 2196,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0027633,
+    "latency_ms": 11152.37,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1024,
+    "output_tokens": 1486,
+    "cached_tokens": 0,
+    "estimated_cost": 0.001988,
+    "latency_ms": 10025.61,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-09-27T21:12:21.443975+00:00"
+}

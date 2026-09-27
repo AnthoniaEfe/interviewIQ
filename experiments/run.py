@@ -26,7 +26,14 @@ load_dotenv(ROOT / ".env", override=True)
 
 from app.config.settings import Settings, get_settings  # noqa: E402
 from app.schemas.domain import GenerationMode, LLMUsage  # noqa: E402
+from app.services.extraction.profiles import (  # noqa: E402
+    CV_PROMPT,
+    JD_PROMPT,
+    extract_candidate,
+    extract_job,
+)
 from app.services.llm.factory import build_router  # noqa: E402
+from app.services.llm.provider import LLMResult  # noqa: E402
 from app.services.llm.tasks import LLMTask  # noqa: E402
 from app.services.question_generation.baseline import PROMPT, generate_baseline  # noqa: E402
 
@@ -95,6 +102,81 @@ def load_combinations(config: dict) -> list[dict]:
     ]
 
 
+def _usage_payload(usage: LLMResult, task_type: str) -> dict:
+    return LLMUsage(
+        provider=usage.provider,
+        model=usage.model,
+        task_type=task_type,
+        input_tokens=usage.input_tokens,
+        output_tokens=usage.output_tokens,
+        cached_tokens=usage.cached_tokens,
+        estimated_cost=usage.estimated_cost,
+        latency_ms=usage.latency_ms,
+        retry_count=usage.retry_count,
+        fallback_used=usage.fallback_used,
+        fallback_reason=usage.fallback_reason,
+    ).model_dump()
+
+
+async def run_extraction_combo(
+    *,
+    router,
+    settings: Settings,
+    combo: dict,
+    experiment_id: str,
+    out_dir: Path,
+) -> dict:
+    cv_path: Path = combo["cv_path"]
+    jd_path: Path = combo["jd_path"]
+    seniority = combo["seniority"]
+    request_id = f"{combo['profile_id']}__{combo['jd_id']}__{seniority}"
+    candidate, cv_usage = await extract_candidate(
+        router=router,
+        settings=settings,
+        cv_text=cv_path.read_text(encoding="utf-8"),
+        experiment_id=experiment_id,
+        request_id=f"{request_id}:cv",
+    )
+    job, jd_usage = await extract_job(
+        router=router,
+        settings=settings,
+        jd_text=jd_path.read_text(encoding="utf-8"),
+        experiment_id=experiment_id,
+        request_id=f"{request_id}:jd",
+    )
+    record = {
+        "experiment_id": experiment_id,
+        "stage": "extraction",
+        "profile_id": combo["profile_id"],
+        "jd_id": combo["jd_id"],
+        "pair_id": combo.get("pair_id"),
+        "fit_label": combo.get("fit_label"),
+        "dataset": "cnamuangtoun/resume-job-description-fit"
+        if combo.get("fit_label") is not None
+        else None,
+        "seniority": seniority,
+        "provider": cv_usage.provider,
+        "model": cv_usage.model,
+        "task_types": [
+            LLMTask.CV_EXTRACTION.value,
+            LLMTask.JD_EXTRACTION.value,
+        ],
+        "prompt_versions": {
+            "candidate_profile": CV_PROMPT.version,
+            "job_description": JD_PROMPT.version,
+        },
+        "candidate": candidate.model_dump(),
+        "job": job.model_dump(),
+        "cv_usage": _usage_payload(cv_usage, LLMTask.CV_EXTRACTION.value),
+        "jd_usage": _usage_payload(jd_usage, LLMTask.JD_EXTRACTION.value),
+        "fallback_used": cv_usage.fallback_used or jd_usage.fallback_used,
+        "extracted_at": datetime.now(timezone.utc).isoformat(),
+    }
+    out_path = out_dir / f"{request_id}.json"
+    out_path.write_text(json.dumps(record, indent=2), encoding="utf-8")
+    return record
+
+
 async def run_baseline_combo(
     *,
     router,
@@ -156,7 +238,7 @@ async def run_baseline_combo(
     return record
 
 
-async def async_main(config_path: Path, *, smoke: bool) -> Path:
+async def async_main(config_path: Path, *, smoke: bool, stage: str = "baseline") -> Path:
     config = load_config(config_path)
     get_settings.cache_clear()
     settings = Settings()
@@ -169,6 +251,18 @@ async def async_main(config_path: Path, *, smoke: bool) -> Path:
 
     experiment_id = datetime.now(timezone.utc).strftime("exp_%Y%m%dT%H%M%SZ")
     out_dir = ROOT / "experiments" / "results" / experiment_id
+    if stage == "extraction":
+        (out_dir / "extraction").mkdir(parents=True, exist_ok=True)
+        return await _run_extraction_stage(
+            settings=settings,
+            router=router,
+            config=config,
+            config_path=config_path,
+            combinations=combinations,
+            experiment_id=experiment_id,
+            out_dir=out_dir,
+        )
+
     (out_dir / "baseline").mkdir(parents=True, exist_ok=True)
 
     results: list[dict] = []
@@ -244,12 +338,102 @@ async def async_main(config_path: Path, *, smoke: bool) -> Path:
     return out_dir
 
 
+async def _run_extraction_stage(
+    *,
+    settings: Settings,
+    router,
+    config: dict,
+    config_path: Path,
+    combinations: list[dict],
+    experiment_id: str,
+    out_dir: Path,
+) -> Path:
+    results: list[dict] = []
+    errors: list[dict] = []
+    for combo in combinations:
+        label = f"{combo['profile_id']} x {combo['jd_id']} x {combo['seniority']}"
+        if combo.get("fit_label"):
+            label = f"{label} [{combo['fit_label']}]"
+        print(f"[extraction] {label} via {settings.llm_fast_model}")
+        try:
+            record = await run_extraction_combo(
+                router=router,
+                settings=settings,
+                combo=combo,
+                experiment_id=experiment_id,
+                out_dir=out_dir / "extraction",
+            )
+            cv_usage = record["cv_usage"]
+            jd_usage = record["jd_usage"]
+            print(
+                f"  cv_skills={len(record['candidate']['technical_skills'])} "
+                f"jd_required={len(record['job']['required_skills'])} "
+                f"latency_ms={cv_usage['latency_ms'] + jd_usage['latency_ms']} "
+                f"cost_usd={cv_usage['estimated_cost'] + jd_usage['estimated_cost']}"
+            )
+            results.append(record)
+        except Exception as exc:  # noqa: BLE001 — recorded in experiment summary
+            print(f"  ERROR: {type(exc).__name__}: {exc}")
+            errors.append(
+                {
+                    "profile_id": combo["profile_id"],
+                    "jd_id": combo["jd_id"],
+                    "seniority": combo["seniority"],
+                    "fit_label": combo.get("fit_label"),
+                    "error_type": type(exc).__name__,
+                    "error": str(exc),
+                }
+            )
+
+    total_cost = sum(
+        r["cv_usage"]["estimated_cost"] + r["jd_usage"]["estimated_cost"] for r in results
+    )
+    total_latency = sum(
+        r["cv_usage"]["latency_ms"] + r["jd_usage"]["latency_ms"] for r in results
+    )
+    summary = {
+        "experiment_id": experiment_id,
+        "status": "completed" if results and not errors else (
+            "failed" if not results else "partial"
+        ),
+        "stage": "extraction",
+        "primary_dataset": config.get("primary_dataset"),
+        "provider": settings.llm_provider,
+        "model": settings.llm_fast_model,
+        "prompt_versions": {
+            "candidate_profile": CV_PROMPT.version,
+            "job_description": JD_PROMPT.version,
+        },
+        "combinations_attempted": len(combinations),
+        "combinations_ok": len(results),
+        "combinations_failed": len(errors),
+        "total_estimated_cost_usd": round(total_cost, 8),
+        "average_latency_ms": round(total_latency / len(results), 2) if results else None,
+        "human_evaluation": "not_yet_evaluated",
+        "errors": errors,
+        "result_files": [
+            f"extraction/{r['profile_id']}__{r['jd_id']}__{r['seniority']}.json" for r in results
+        ],
+        "config_path": str(config_path),
+        "config": config,
+    }
+    (out_dir / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    print(f"\nSummary -> {out_dir / 'summary.json'}")
+    return out_dir
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="InterviewIQ experiment runner")
     parser.add_argument("--config", required=True)
     parser.add_argument("--smoke", action="store_true", help="Run one combination only")
+    parser.add_argument(
+        "--stage",
+        choices=("extraction", "baseline"),
+        default="baseline",
+        help="Pipeline stage to run. Default remains baseline generation.",
+    )
     args = parser.parse_args()
-    asyncio.run(async_main(Path(args.config).resolve(), smoke=args.smoke))
+    asyncio.run(async_main(Path(args.config).resolve(), smoke=args.smoke, stage=args.stage))
 
 
 if __name__ == "__main__":
