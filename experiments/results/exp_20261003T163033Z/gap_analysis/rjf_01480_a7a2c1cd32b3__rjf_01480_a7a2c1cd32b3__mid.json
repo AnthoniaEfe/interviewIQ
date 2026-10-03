@@ -1,0 +1,320 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01480_a7a2c1cd32b3",
+  "jd_id": "rjf_01480_a7a2c1cd32b3",
+  "pair_id": "rjf_01480_a7a2c1cd32b3",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.693,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6685736179351807,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Financial management software",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3634,
+        "evidence": {
+          "tfidf_score": 0.1337235311025213,
+          "tfidf_matched_terms": [
+            "financial",
+            "management"
+          ],
+          "bm25_score": 5.921463448949684,
+          "semantic_score": 0.7628816366195679,
+          "matched_candidate_competency": "Financial management"
+        },
+        "candidate_evidence": [
+          "Financial management"
+        ]
+      },
+      {
+        "job_competency": "Enterprise resource planning (ERP) software",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7006,
+        "evidence": {
+          "tfidf_score": 0.006242370394679143,
+          "tfidf_matched_terms": [
+            "planning"
+          ],
+          "bm25_score": 2.3707767342557897,
+          "semantic_score": 0.41561079025268555,
+          "matched_candidate_competency": "Translated customer needs into workload, funding, workforce, and facility planning forecasts."
+        },
+        "candidate_evidence": [
+          "Translated customer needs into workload, funding, workforce, and facility planning forecasts."
+        ]
+      },
+      {
+        "job_competency": "GAAP",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9275,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3626231849193573,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Financial reporting",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1653,
+        "evidence": {
+          "tfidf_score": 0.0792438667200291,
+          "tfidf_matched_terms": [
+            "financial",
+            "reporting"
+          ],
+          "bm25_score": 7.4650064194606385,
+          "semantic_score": 0.9999999403953552,
+          "matched_candidate_competency": "Financial reporting"
+        },
+        "candidate_evidence": [
+          "Financial reporting"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Office Suite",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9338,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33103179931640625,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Written and verbal communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3645,
+        "evidence": {
+          "tfidf_score": 0.2235373568946823,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 5.63331352451605,
+          "semantic_score": 0.7089036107063293,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Organization and time management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6493,
+        "evidence": {
+          "tfidf_score": 0.31780183783488336,
+          "tfidf_matched_terms": [
+            "and",
+            "management"
+          ],
+          "bm25_score": 2.330563080668212,
+          "semantic_score": 0.5057333707809448,
+          "matched_candidate_competency": "Performed contract management, systems engineering, risk management, configuration management, and financial status reporting."
+        },
+        "candidate_evidence": [
+          "Performed contract management, systems engineering, risk management, configuration management, and financial status reporting."
+        ]
+      },
+      {
+        "job_competency": "Relationship building",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6538,
+        "evidence": {
+          "tfidf_score": 0.010797152216103757,
+          "tfidf_matched_terms": [
+            "relationship"
+          ],
+          "bm25_score": 4.41749046167086,
+          "semantic_score": 0.5308541059494019,
+          "matched_candidate_competency": "Customer relationship management"
+        },
+        "candidate_evidence": [
+          "Customer relationship management"
+        ]
+      },
+      {
+        "job_competency": "Problem solving and judgment",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3566,
+        "evidence": {
+          "tfidf_score": 0.2539249603102764,
+          "tfidf_matched_terms": [
+            "and",
+            "problem",
+            "solving"
+          ],
+          "bm25_score": 8.83498092334172,
+          "semantic_score": 0.49352288246154785,
+          "matched_candidate_competency": "Complex problem solving"
+        },
+        "candidate_evidence": [
+          "Complex problem solving"
+        ]
+      },
+      {
+        "job_competency": "Detail orientation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9473,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2635938823223114,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Analytical skills",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9255,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37231987714767456,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "SAP S/4HANA",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4232,
+        "evidence": {
+          "tfidf_score": 0.016749263104632182,
+          "tfidf_matched_terms": [
+            "s"
+          ],
+          "bm25_score": 3.097996198715586,
+          "semantic_score": 0.31586647033691406,
+          "matched_candidate_competency": "U.S. Navy ship systems"
+        },
+        "candidate_evidence": [
+          "U.S. Navy ship systems"
+        ]
+      },
+      {
+        "job_competency": "Corporate accounting experience",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4292,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5289419889450073,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Financial reporting"
+    ],
+    "partial_matches": [
+      "Financial management software",
+      "Written and verbal communication",
+      "Problem solving and judgment"
+    ],
+    "weak_matches": [
+      "Accounting",
+      "Enterprise resource planning (ERP) software",
+      "Organization and time management",
+      "Relationship building",
+      "SAP S/4HANA",
+      "Corporate accounting experience"
+    ],
+    "missing": [
+      "GAAP",
+      "Microsoft Office Suite",
+      "Detail orientation",
+      "Analytical skills"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Financial reporting"
+    ],
+    "partial_matches": [
+      "Financial management software",
+      "Written and verbal communication",
+      "Problem solving and judgment"
+    ],
+    "competency_gaps": [
+      "Accounting",
+      "Enterprise resource planning (ERP) software",
+      "Organization and time management",
+      "Relationship building",
+      "SAP S/4HANA",
+      "Corporate accounting experience",
+      "GAAP",
+      "Microsoft Office Suite",
+      "Detail orientation",
+      "Analytical skills"
+    ]
+  },
+  "counts": {
+    "requirements": 14,
+    "strength_matches": 1,
+    "partial_matches": 3,
+    "competency_gaps": 10
+  },
+  "latency_ms": 34.74,
+  "analyzed_at": "2026-10-03T17:29:44.189313+00:00"
+}

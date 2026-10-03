@@ -1,0 +1,270 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01854_54536e552f6d",
+  "jd_id": "rjf_01854_54536e552f6d",
+  "pair_id": "rjf_01854_54536e552f6d",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Web application development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6692,
+        "evidence": {
+          "tfidf_score": 0.01698385394298928,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.066399479489301,
+          "semantic_score": 0.4376349449157715,
+          "matched_candidate_competency": "Interacted with clients during analysis, development, and implementation."
+        },
+        "candidate_evidence": [
+          "Interacted with clients during analysis, development, and implementation."
+        ]
+      },
+      {
+        "job_competency": "B2B SaaS application development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6803,
+        "evidence": {
+          "tfidf_score": 0.014359087865354773,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.066399479489301,
+          "semantic_score": 0.3698733448982239,
+          "matched_candidate_competency": "Interacted with clients during analysis, development, and implementation."
+        },
+        "candidate_evidence": [
+          "Interacted with clients during analysis, development, and implementation."
+        ]
+      },
+      {
+        "job_competency": "Technical implementation leadership",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.365,
+        "evidence": {
+          "tfidf_score": 0.06554421156219183,
+          "tfidf_matched_terms": [
+            "implementation",
+            "leadership",
+            "technical"
+          ],
+          "bm25_score": 4.219306399874586,
+          "semantic_score": 0.5512601137161255,
+          "matched_candidate_competency": "Team leadership"
+        },
+        "candidate_evidence": [
+          "Team leadership"
+        ]
+      },
+      {
+        "job_competency": "JavaScript",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9311,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34440547227859497,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "React",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9587,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.20673665404319763,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Node.js",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9277,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3615778684616089,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Nest.js or similar framework",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.943,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2848299741744995,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Object-oriented programming",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7198,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5012229681015015,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Relational database management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3558,
+        "evidence": {
+          "tfidf_score": 0.051237817430115074,
+          "tfidf_matched_terms": [
+            "database"
+          ],
+          "bm25_score": 3.8333153299480993,
+          "semantic_score": 0.7218915820121765,
+          "matched_candidate_competency": "Database"
+        },
+        "candidate_evidence": [
+          "Database"
+        ]
+      },
+      {
+        "job_competency": "Web application performance optimization",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9306,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3471894860267639,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Web application scalability optimization",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9353,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32343634963035583,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Unit testing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9395,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.302472323179245,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Technical implementation leadership",
+      "Relational database management"
+    ],
+    "weak_matches": [
+      "Web application development",
+      "B2B SaaS application development",
+      "Object-oriented programming"
+    ],
+    "missing": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Nest.js or similar framework",
+      "Web application performance optimization",
+      "Web application scalability optimization",
+      "Unit testing"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Technical implementation leadership",
+      "Relational database management"
+    ],
+    "competency_gaps": [
+      "Web application development",
+      "B2B SaaS application development",
+      "Object-oriented programming",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Nest.js or similar framework",
+      "Web application performance optimization",
+      "Web application scalability optimization",
+      "Unit testing"
+    ]
+  },
+  "counts": {
+    "requirements": 12,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 10
+  },
+  "latency_ms": 28.6,
+  "analyzed_at": "2026-10-03T17:29:44.674319+00:00"
+}

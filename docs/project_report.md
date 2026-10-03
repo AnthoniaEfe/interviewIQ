@@ -5,12 +5,12 @@
 | Field | Value |
 | --- | --- |
 | Repository | `interviewIQ` |
-| Report date | 2026-10-03 |
+| Report date | 2026-10-04 |
 | Primary dataset | [`cnamuangtoun/resume-job-description-fit`](https://huggingface.co/datasets/cnamuangtoun/resume-job-description-fit) |
 | Generation model (controlled) | `gpt-5.6-terra` |
 | Extraction model | `gpt-5.6-luna` |
 | Embedding model | `all-MiniLM-L6-v2` |
-| Related deep-dive | [Gap sensitivity report](gap_sensitivity_report.md) |
+| Related deep-dives | [Gap sensitivity](gap_sensitivity_report.md) · [Fit-label control](fit_label_control_report.md) · [Gold-set protocol](gold_set_protocol.md) · [Classifier reframing](classifier_reframing_report.md) |
 
 ---
 
@@ -20,24 +20,28 @@ InterviewIQ is a research system for generating interview questions that are con
 
 1. A **legacy flat-prompt baseline** (`interviewiq_baseline/`, historically `gpt-4o`).
 2. A **FastAPI application** with Luna/Terra routing, TF-IDF + BM25 + semantic retrieval, gap matrix labelling, competency weighting, and competency-weighted MMR.
-3. An **experiment runner** with stages for baseline generation, Luna extraction, gap analysis, and evidence-set sensitivity analysis.
+3. An **experiment runner** with stages for baseline generation, Luna extraction, gap analysis, evidence-set sensitivity, fit-label control, gold-set pack/analysis, and local classifier evaluation.
 4. A **Next.js research console** for browsing runs, costs, and question sets.
 
 **Work completed so far (quantitative):**
 
 | Workstream | Status | Headline result |
 | --- | --- | --- |
-| Local fit classifier | Done | Test accuracy 0.464, macro-F1 0.424 (not used as thesis DV) |
+| Local fit classifier (original V0) | Done (metrics frozen 2026-09-20) | Test accuracy 0.464, macro-F1 0.424 (not a thesis DV) |
+| Classifier reframing (V0–V6, group CV, gap-lite) | **Running** | Protocol frozen; MiniLM + gap-lite features being computed on the 8,000-pair splits. Do not cite variant metrics until `classifier_reframing_combined/summary.json` exists |
 | Terra baseline generation | Done | 30-pair and 150-pair runs; 10 questions/pair; ~$0.25 / ~$1.15 |
 | Luna extraction (Primary-30) | Done | 30/30 pairs; $0.213; mean ~2.8 competencies vs ~24 tech skills |
 | Luna extraction (Holdout-30) | Done | 30/30 pairs; $0.196 |
+| Luna extraction (fit-label No Fit + extras) | Done | `exp_20261003T163033Z`; 98/98 pairs; **$0.673**; 0 failures |
 | Gap analysis (Primary-30) | Done | 633 requirements → **64.3%** gap (weak+missing) |
 | Gap analysis (Holdout-30) | Done | 515 requirements → **72.6%** gap |
 | Evidence-set sensitivity | Done | Competencies-only would inflate gaps to 94–97%; raw CV does **not** beat production evidence |
+| Fit-label control (HF labels vs gap rate) | Done | Frozen rule: **does not separate** No Fit vs Good Fit on both splits; do not claim validation |
+| Gold-set (human gap labels) | Phase 1 pack **built**; Phase 2 **not run** | 150 items + 10 calibration; **no human labels yet** (none fabricated) |
 | Full InterviewIQ question generation | Not yet run as controlled experiment | Pipeline modules exist; Terra pool + MMR stage pending batch eval |
-| Human evaluation | Not yet | Runner marks `human_evaluation: not_yet_evaluated` |
+| Human evaluation of questions | Not yet | Runner marks `human_evaluation: not_yet_evaluated` |
 
-**Thesis-relevant takeaway from gap work:** the stored high gap rate is **not** an artefact of scoring only ~2.7 extracted competencies—the production scorer already uses an expanded evidence union (~67 strings/pair). Substituting raw CV chunks does not reduce gaps. Restricting evidence to competencies alone *would* inflate gaps to ~94–97%, and that inflation exceeds a mismatched-candidate size-bias control.
+**Thesis-relevant takeaway from gap work:** the stored high gap rate is **not** an artefact of scoring only ~2.7 extracted competencies—the production scorer already uses an expanded evidence union (~67 strings/pair). Substituting raw CV chunks does not reduce gaps. Restricting evidence to competencies alone *would* inflate gaps to ~94–97%, and that inflation exceeds a mismatched-candidate size-bias control. **Independent Hugging Face fit labels do not validate the matrix** under the pre-registered coarse rule (Section 9). Independent **requirement-level** human labels are the next check (gold set, Section 10); they have not been collected yet.
 
 ---
 
@@ -59,7 +63,8 @@ Do **not** compare a Luna baseline against a Terra InterviewIQ condition.
 - No fabricated experiment numbers; unavailable metrics are `null`.
 - Model IDs are configuration-driven; business logic selects an `LLMTask`, never a hard-coded model string.
 - Fail closed on invalid API key / model ID (no silent substitution).
-- Luna/Terra are never fine-tuned; only a local embedding + logistic-regression fit classifier is trained.
+- Luna/Terra are never fine-tuned; only a local embedding + logistic-regression (and related sklearn) fit classifier is trained.
+- Gold-set analysis never invents annotator labels. Classifier “improved over V0” and gold-set G4 recalibration are **pre-registered adoption rules**; they are not applied until the corresponding numbers exist.
 
 ---
 
@@ -80,12 +85,12 @@ CV/JD text
 
 | Path | Role |
 | --- | --- |
-| `backend/` | FastAPI app: config, LLM router, retrieval, embeddings, gap analysis, MMR, gap sensitivity |
+| `backend/` | FastAPI app: config, LLM router, retrieval, embeddings, gap analysis, MMR, gap sensitivity, fit-label control, gold-set, classifier eval |
 | `prompts/` | Versioned prompt files (extraction, generation, validation) |
-| `experiments/` | YAML configs, runner, datasets, result artifacts |
+| `experiments/` | YAML configs, runner, datasets, gold-set pack, result artifacts |
 | `frontend/` | Next.js research console |
 | `interviewiq_baseline/` | Preserved flat-prompt prototype (`gpt-4o`) |
-| `docs/` | Architecture, routing, experiments, sensitivity report, figures |
+| `docs/` | Architecture, routing, experiments, sensitivity / fit-label / gold-set / classifier reports, figures |
 
 ### 3.2 Stack
 
@@ -143,7 +148,7 @@ Columns: `resume_text`, `job_description_text`, `label`.
 
 ### 4.2 Local fit classifier (calibration aid, not thesis DV)
 
-Trained on train split; evaluated on test. Embedding model: `all-MiniLM-L6-v2`. Artifact: `experiments/datasets/resume_job_fit/models/fit_classifier_metrics.json` (trained 2026-09-20).
+Trained on train split; evaluated on test. Embedding model: `all-MiniLM-L6-v2`. Artifact: `experiments/datasets/resume_job_fit/models/fit_classifier_metrics.json` (trained 2026-09-20). New reframing models, if any, go under `experiments/datasets/resume_job_fit/models_reframing/` and **must not overwrite** this artifact. A frozen protocol for variants V0–V6, group-aware CV, and LLM-free gap-lite features is in [classifier_reframing_report.md](classifier_reframing_report.md). **Test-set variant tables are not in this report yet** (evaluation still running as of 2026-10-04).
 
 | Metric | Value |
 | --- | ---: |
@@ -176,6 +181,11 @@ Stratified **Good Fit** and **Potential Fit** pairs for generation / extraction 
 | `experiment_pairs` | 30 | 15 Good + 15 Potential | `primary_hf.yaml` (seed 42) |
 | `experiment_pairs_holdout30` | 30 | 15 + 15 | `primary_hf_holdout30.yaml` (seed 2026) |
 | `experiment_pairs_150` | 150 | 75 + 75 | `primary_hf_150.yaml` |
+| `experiment_pairs_nf_primary30` | 30 | No Fit, seed 42, disjoint from used fit-positive ids | fit-label control |
+| `experiment_pairs_nf_holdout30` | 30 | No Fit, seed 2026, disjoint from NF-primary | fit-label control |
+| `experiment_pairs_nf_matched` / `_control` | extras | additional No Fit / matched-job pairs in the 98-pair extraction | fit-label control |
+
+No Fit pairs are used only for **gap-vs-label** analysis, not for interview-question generation.
 
 ---
 
@@ -203,7 +213,8 @@ All artifacts under `experiments/results/`. Status values and costs are taken fr
 | `exp_20260927T205622Z` | completed | smoke | 1/1 | 0.010099 | 42274 | 1.0.0 / 1.0.0 |
 | **`exp_20260927T205741Z`** | completed | **Primary-30** | 30/30 | **0.213411** | 31260 | 1.0.0 / 1.0.0 |
 | `exp_20260927T220439Z` | completed | (30) | 30/30 | 0.207788 | 33233 | Related holdout-path prep |
-| **`exp_20260927T221621Z`** | completed | **Holdout-30** | 30/30 | **0.196053** | 32751 | 1.0.0 / 1.0.0 |
+| `exp_20260927T221621Z` | completed | **Holdout-30** | 30/30 | **0.196053** | 32751 | 1.0.0 / 1.0.0 |
+| **`exp_20261003T163033Z`** | completed | **NF + extras (fit-label)** | **98/98** | **0.673245** | — | 1.0.0 / 1.0.0 |
 
 ### 5.3 Gap analysis
 
@@ -230,6 +241,27 @@ Four-label breakdown (same runs):
 | `gap_sensitivity_combined/` | both | — | Combined tables, audit, false-gap examples |
 
 Embedding device for sensitivity runs: **CUDA**. Library versions logged in each `summary.json`.
+
+### 5.5 Fit-label control (Luna extraction + local scoring)
+
+| Experiment ID | Status | Notes |
+| --- | --- | --- |
+| **`exp_20261003T163033Z`** | completed | 98 Luna extractions; Condition A/D scoring; H1–H3 tests; figures 22–25 |
+| `fit_label_control_combined/` | completed | Combined tables + frozen decision |
+
+### 5.6 Gold-set (human requirement labels)
+
+| Artifact | Status |
+| --- | --- |
+| `experiments/gold_set/` pack (seed `20261004`) | **Built** (150 + 10 calibration) |
+| `experiments/gold_set/annotations/annotator_*.csv` | **Absent** — Phase 2 analysis refuses until real files exist |
+
+### 5.7 Classifier reframing
+
+| Artifact | Status |
+| --- | --- |
+| Protocol in `docs/classifier_reframing_report.md` | Frozen before the eval run |
+| `experiments/results/classifier_reframing_combined/` | **Not yet written** (gap-lite features still computing) |
 
 ---
 
@@ -462,7 +494,94 @@ Audit annotator columns (`missed_skills_in_cv`, `extraction_recall_estimate`, `n
 
 ---
 
-## 9. Baseline generation results (Terra)
+## 9. Fit-label control (gap matrix vs Hugging Face labels)
+
+Full write-up: [fit_label_control_report.md](fit_label_control_report.md).  
+Combined tables: `experiments/results/fit_label_control_combined/`.
+
+HF `No Fit` / `Potential Fit` / `Good Fit` labels are **independent of InterviewIQ scoring**. Frozen hypotheses H1–H3 and the coarse decision rule were written **before** sampling and scoring.
+
+### 9.1 Design (computed, not assumed)
+
+- Fit-positive comparison sets: existing Primary-30 and Holdout-30.
+- NF-primary-30 / NF-holdout-30: 30 No Fit pairs each (seeds 42 / 2026), disjoint from used fit-positive pair ids.
+- Scoring: production Condition A; robustness Condition D and semantic-only; mismatched-candidate control (5 permutations, seed 42).
+- Extraction: `gpt-5.6-luna`, prompt 1.0.0 / 1.0.0, spend **$0.673245**, 98/98 pairs, 0 failures (`exp_20261003T163033Z`).
+- Primary/holdout Condition A **count regression vs stored gap JSONs: passed**.
+
+### 9.2 Frozen decision (apply literally)
+
+No Fit vs Good Fit was **not** significant with AUC ≥ 0.65 on **both** splits:
+
+| Split | Holm *p* (No Fit vs Good) | AUC (A, No Fit vs Good) [95% CI] | Coarse significant |
+| --- | ---: | --- | --- |
+| Primary | 0.329 | 0.621 [0.443, 0.791] | no |
+| Holdout | 1.0 | 0.501 [0.321, 0.692] | no |
+
+**Outcome (verbatim rule):** the gap matrix does not separate fit labels; possible reasons include label noise, extraction, or scoring; **do not claim validation**. H1 monotonicity is **not** claimed (`h1_monotonic_allowed_both_splits`: false).
+
+Adjacent Potential vs Good is null on both splits (as H3 allowed). Primary No Fit vs Potential Holm *p* = 0.031 is **not** the pre-registered coarse claim.
+
+### 9.3 Figures 22–25
+
+![Figure 22: Gap rate by fit label](figures/fig22_gap_rate_by_fit_label.png)
+
+![Figure 23: ROC for fit labels](figures/fig23_roc_fit_labels.png)
+
+![Figure 24: Stacked shares by fit label](figures/fig24_stacked_shares_by_fit_label.png)
+
+![Figure 25: Confound panel](figures/fig25_confound_panel.png)
+
+---
+
+## 10. Gold set for the gap matrix (Phase 1)
+
+Protocol (frozen before sampling): [gold_set_protocol.md](gold_set_protocol.md).  
+Guidelines: [gold_set_guidelines.md](gold_set_guidelines.md).
+
+The four-way system labels have so far been checked mainly against the system’s own combined score. The gold set is **requirement × whole-CV** human judgement (2 / 1 / 0), independent of system scores.
+
+### 10.1 Pack (built; seed `20261004`)
+
+| Item | Count |
+| --- | ---: |
+| Main items | 150 (75 Primary-30 + 75 Holdout-30) |
+| Stratum targets per split | 19 strong / 19 partial / 19 weak / 18 missing (achieved) |
+| Distinct pairs | Primary 30; Holdout **28** (≥ 25 required; max 3 requirements/pair) |
+| Fit-label mix among selected pairs | Primary 15 Good + 15 Potential; Holdout 14 + 14 |
+| Calibration items | 10 (same pairs, disjoint from the 150) |
+
+Inclusion probability π = n/N per four-way stratum is stored on each main item (design weight N/n). Holdout raw CV/JD files are read from `experiment_pairs_150` (`experiment_pairs_holdout30/profiles` is empty on disk).
+
+**Blind pack** (`items_blind.json`, `annotator_app.html`) contains requirement text, full CV, collapsible JD, anonymous ids, and calibration flags only. System labels, scores, split names, and fit labels live only in `answer_key_do_not_open_before_annotating.json`.
+
+### 10.2 Phase 1 stop
+
+Place completed files at:
+
+- `experiments/gold_set/annotations/annotator_A.csv`
+- `experiments/gold_set/annotations/annotator_B.csv`
+- optional `adjudicated.csv`
+
+Columns: `item_id`, `label`, `cannot_judge`, `snippet`, `notes`. **Do not run** `gold_set_analyze` until those files exist. **No human labels have been created in this repository.** Phase 2 (agreement, system-vs-human, signal AUCs, false gaps, G4 recalibration, figures 26–29) is unimplemented as a delivered result until real CSVs are present.
+
+Single-annotator fallback: `annotator_A.csv` plus a 30-item re-annotation after ≥ 7 days (test–retest kappa).
+
+---
+
+## 11. Classifier reframing (in progress)
+
+Protocol (frozen before the eval run): [classifier_reframing_report.md](classifier_reframing_report.md).
+
+Goal: report the original classifier honestly, test modest variants (V0–V6) with **group-aware CV on train only**, and test whether LLM-free **gap-lite** features (JD chunks vs Condition-D CV chunks; production hybrid weights/thresholds) predict HF fit labels. Gap-lite is **not** the production Luna-extracted matrix and must not be described as validating it.
+
+A variant “improves over V0” only if selected on validation **and** the paired-bootstrap 95% CI of test macro-F1 gain excludes 0.
+
+**As of this report date:** the original V0 metrics in Section 4.2 still stand. The full MiniLM evaluation is computing cached chunk features and then gap-lite on 6,241 train + 1,759 test pairs. Headline tables, leakage-audit counts, figures 30–34, and the literal improved-over-V0 outcomes will be appended to the classifier report when that run writes `experiments/results/classifier_reframing_combined/`. Those numbers are **null here**.
+
+---
+
+## 12. Baseline generation results (Terra)
 
 Controlled baseline: flat prompt, **no** gap matrix / competency budget / MMR. Requested \(N = 10\) questions.
 
@@ -478,7 +597,7 @@ The legacy `interviewiq_baseline/` package remains as a historical `gpt-4o` prot
 
 ---
 
-## 10. Application surface
+## 13. Application surface
 
 ### 10.1 Backend API
 
@@ -510,11 +629,24 @@ PYTHONPATH=backend python -m experiments.run --config experiments/configs/primar
 
 # Gap sensitivity (both splits + figures + report)
 PYTHONPATH=backend python experiments/scripts/run_gap_sensitivity.py
+
+# Fit-label control (paid Luna; requires --confirm-spend)
+PYTHONPATH=backend python experiments/scripts/run_fit_label_control.py --dry-run
+PYTHONPATH=backend python experiments/scripts/run_fit_label_control.py --confirm-spend --max-cost 1.00
+
+# Gold-set pack (no LLM; then STOP for human annotation)
+PYTHONPATH=backend python experiments/scripts/build_gold_set.py
+
+# Gold-set analysis (refuses unless real annotation CSVs exist)
+PYTHONPATH=backend python experiments/scripts/analyze_gold_set.py
+
+# Classifier reframing (local embeddings only; no LLM)
+PYTHONPATH=backend python experiments/scripts/run_classifier_eval.py
 ```
 
 ---
 
-## 11. Testing
+## 14. Testing
 
 Tests mock LLM usage and do not call paid APIs. Prefer `EMBEDDING_MODEL=hashing-test` to avoid downloading Sentence-Transformer weights.
 
@@ -528,44 +660,52 @@ Tests mock LLM usage and do not call paid APIs. Prefer `EMBEDDING_MODEL=hashing-
 | Baseline generation | Prompt path (mocked) |
 | API / experiments API | Health and experiment readers |
 | **Gap sensitivity** | Chunker, evidence builders, mismatch seeding, bootstrap reproducibility, 2-pair E2E |
+| **Fit-label control** | NF sampling disjointness, spend guard, JT toy, synthetic end-to-end |
+| **Gold set** | Deterministic stratified sampler, blind-field check, analysis refusal on missing/short/invalid files, kappa/bootstrap toys, weighted mean |
+| **Classifier eval** | Connected-component groups + group-fold leakage, gap-lite on 2 synthetic pairs, paired-bootstrap gain, smoke pipeline on tiny hashing data |
 
-As of the sensitivity work: **32 pytest tests passing**.
+As of 2026-10-04: **47 pytest tests passing** (`EMBEDDING_MODEL=hashing-test`).
 
 ---
 
-## 12. Cost summary (completed paid LLM stages)
+## 15. Cost summary (completed paid LLM stages)
 
 | Stage | Approx. total USD (sum of successful runs cited above) |
 | --- | ---: |
 | Baseline Terra (30+30+150+smoke) | ≈ 1.66 |
 | Luna extraction (primary + holdout + smokes) | ≈ 0.63 |
+| Luna extraction (fit-label NF + extras, `exp_20261003T163033Z`) | **0.673245** |
 | Gap analysis | 0 (local embeddings only) |
 | Gap sensitivity | 0 (local embeddings + IR only) |
+| Fit-label scoring / gold-set pack / classifier eval | 0 LLM (local embeddings + sklearn) |
 
 Exact per-run totals are recorded in each experiment’s `summary.json`.
 
 ---
 
-## 13. Limitations and open work
+## 16. Limitations and open work
 
 ### Limitations of completed work
 
-- Gap labels depend on IR + MiniLM similarity, not human adjudication.  
+- Gap labels depend on IR + MiniLM similarity, not human adjudication **until the gold set is annotated**.  
 - BM25/TF-IDF normalisation is evidence-set-dependent (documented; semantic-only used as robustness check).  
-- Local fit classifier accuracy is modest (~0.46); it is a curation/calibration aid, not a primary outcome.  
+- Hugging Face pair-level fit labels **do not** validate the requirement-level gap matrix under the frozen H2 coarse rule.  
+- Local fit classifier accuracy is modest (~0.46); it remains exploratory unless a reframing variant meets the pre-registered rule.  
 - Frontend charts visualise run metadata; they are not substitutes for the thesis figures in `docs/figures/`.  
 - Full InterviewIQ **question generation** batch (Terra pool + MMR) vs baseline human eval is still outstanding.
 
 ### Recommended next steps
 
-1. Run InterviewIQ generation on the same Primary-30 / Holdout-30 pairs with Terra, logging pool/MMR artifacts.  
-2. Blind human evaluation of Baseline vs InterviewIQ question sets.  
-3. Optional: fill the gap-sensitivity audit sheet (20 pairs) for extraction-recall estimates.  
-4. Optional: ablations of TF-IDF / BM25 / semantic flags under fixed evidence.
+1. Annotate the gold set (`annotator_A.csv` / `annotator_B.csv`); then run `analyze_gold_set.py` (G1–G4, figures 26–29).  
+2. Finish classifier reframing and report only computed test metrics plus the literal improved-over-V0 outcomes.  
+3. Run InterviewIQ generation on the same Primary-30 / Holdout-30 pairs with Terra, logging pool/MMR artifacts.  
+4. Blind human evaluation of Baseline vs InterviewIQ question sets.  
+5. Optional: fill the gap-sensitivity audit sheet (20 pairs) for extraction-recall estimates.  
+6. Optional: ablations of TF-IDF / BM25 / semantic flags under fixed evidence.
 
 ---
 
-## 14. Key artifact index
+## 17. Key artifact index
 
 | Artifact | Location |
 | --- | --- |
@@ -574,8 +714,12 @@ Exact per-run totals are recorded in each experiment’s `summary.json`.
 | LLM routing | `docs/llm-routing.md` |
 | Research pipeline | `docs/research-pipeline.md` |
 | Gap sensitivity deep-dive | `docs/gap_sensitivity_report.md` |
+| Fit-label control | `docs/fit_label_control_report.md` |
+| Gold-set protocol / guidelines | `docs/gold_set_protocol.md`, `docs/gold_set_guidelines.md` |
+| Classifier reframing protocol | `docs/classifier_reframing_report.md` |
 | Figures 17–21 | `docs/figures/fig17_*.png` … `fig21_*.png` |
-| Fit classifier metrics | `experiments/datasets/resume_job_fit/models/fit_classifier_metrics.json` |
+| Figures 22–25 | `docs/figures/fig22_*.png` … `fig25_*.png` |
+| Fit classifier metrics (V0) | `experiments/datasets/resume_job_fit/models/fit_classifier_metrics.json` |
 | Primary extraction | `experiments/results/exp_20260927T205741Z/` |
 | Primary gap analysis | `experiments/results/exp_20260927T215232Z/` |
 | Holdout extraction | `experiments/results/exp_20260927T221621Z/` |
@@ -583,11 +727,14 @@ Exact per-run totals are recorded in each experiment’s `summary.json`.
 | Gap sensitivity (primary) | `experiments/results/exp_20261003T042547Z/` |
 | Gap sensitivity (holdout) | `experiments/results/exp_20261003T042642Z/` |
 | Combined sensitivity tables | `experiments/results/gap_sensitivity_combined/` |
+| Fit-label control run | `experiments/results/exp_20261003T163033Z/` |
+| Fit-label combined tables | `experiments/results/fit_label_control_combined/` |
+| Gold-set annotation pack | `experiments/gold_set/` |
 | Primary-30 Terra baseline | `experiments/results/exp_20260920T220958Z/` |
 | 150-pair Terra baseline | `experiments/results/exp_20260926T223339Z/` |
 
 ---
 
-## 15. Conclusion
+## 18. Conclusion
 
-InterviewIQ’s deterministic gap-analysis stack is implemented, tested, and exercised on two 30-pair fit-positive splits. Production scoring yields **64.3%** (primary) and **72.6%** (holdout) gap shares over job requirements. A local sensitivity study shows that (i) those rates already reflect expanded extracted evidence, not competencies-only sparsity; (ii) competencies-only would severely inflate gaps beyond a size-bias control; and (iii) raw CV chunking does not improve on production evidence for this scorer. Terra baseline question sets exist at 30- and 150-pair scale. The remaining critical path for the thesis comparison is **InterviewIQ generation + human evaluation** against those baselines under a matched Terra configuration.
+InterviewIQ’s deterministic gap-analysis stack is implemented, tested, and exercised on two 30-pair fit-positive splits. Production scoring yields **64.3%** (primary) and **72.6%** (holdout) gap shares over job requirements. A local sensitivity study shows that (i) those rates already reflect expanded extracted evidence, not competencies-only sparsity; (ii) competencies-only would severely inflate gaps beyond a size-bias control; and (iii) raw CV chunking does not improve on production evidence for this scorer. Against **independent pair-level fit labels**, the frozen H2 rule is **not** met: do not claim that the gap matrix tracks HF No Fit / Good Fit. A 160-item **human gold set** (requirement vs whole CV) is packed and waiting for annotation; analysis must not proceed without those files. The original local fit classifier remains a weak auxiliary model (macro-F1 0.424); reframing variants are being evaluated under a frozen protocol and are not yet reported. Terra baseline question sets exist at 30- and 150-pair scale. The remaining critical path for the thesis **generation** comparison is **InterviewIQ generation + human evaluation** against those baselines under a matched Terra configuration.

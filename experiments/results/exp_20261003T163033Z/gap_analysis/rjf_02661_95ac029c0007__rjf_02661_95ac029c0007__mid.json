@@ -1,0 +1,370 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02661_95ac029c0007",
+  "jd_id": "rjf_02661_95ac029c0007",
+  "pair_id": "rjf_02661_95ac029c0007",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Business analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3814,
+        "evidence": {
+          "tfidf_score": 0.045271549147619765,
+          "tfidf_matched_terms": [
+            "analysis",
+            "business"
+          ],
+          "bm25_score": 4.1482988616034575,
+          "semantic_score": 0.40168964862823486,
+          "matched_candidate_competency": "Claims payment analysis"
+        },
+        "candidate_evidence": [
+          "Claims payment analysis"
+        ]
+      },
+      {
+        "job_competency": "Business process review",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.365,
+        "evidence": {
+          "tfidf_score": 0.04284320483320617,
+          "tfidf_matched_terms": [
+            "business",
+            "process"
+          ],
+          "bm25_score": 4.0528240179913775,
+          "semantic_score": 0.585268497467041,
+          "matched_candidate_competency": "Process improvement"
+        },
+        "candidate_evidence": [
+          "Process improvement"
+        ]
+      },
+      {
+        "job_competency": "Requirements elicitation and documentation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6807,
+        "evidence": {
+          "tfidf_score": 0.20107217323804166,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9823672371945972,
+          "semantic_score": 0.41725167632102966,
+          "matched_candidate_competency": "Training and presentation"
+        },
+        "candidate_evidence": [
+          "Training and presentation"
+        ]
+      },
+      {
+        "job_competency": "Consensus facilitation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7327,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4205801486968994,
+          "matched_candidate_competency": "Microsoft Windows"
+        },
+        "candidate_evidence": [
+          "Microsoft Windows"
+        ]
+      },
+      {
+        "job_competency": "Strategic analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3841,
+        "evidence": {
+          "tfidf_score": 0.012361349176993929,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 4.1482988616034575,
+          "semantic_score": 0.3997979462146759,
+          "matched_candidate_competency": "Claims payment analysis"
+        },
+        "candidate_evidence": [
+          "Claims payment analysis"
+        ]
+      },
+      {
+        "job_competency": "Agile Scrum",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9343,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.328438401222229,
+          "matched_candidate_competency": "Microsoft Windows"
+        },
+        "candidate_evidence": [
+          "Microsoft Windows"
+        ]
+      },
+      {
+        "job_competency": "JIRA",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9391,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30453363060951233,
+          "matched_candidate_competency": "Microsoft Windows"
+        },
+        "candidate_evidence": [
+          "Microsoft Windows"
+        ]
+      },
+      {
+        "job_competency": "User story development and validation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6517,
+        "evidence": {
+          "tfidf_score": 0.19655943222527358,
+          "tfidf_matched_terms": [
+            "and",
+            "development"
+          ],
+          "bm25_score": 2.7387990504428505,
+          "semantic_score": 0.2844254970550537,
+          "matched_candidate_competency": "Supported provider policies, procedures, process development, and business-case preparation."
+        },
+        "candidate_evidence": [
+          "Supported provider policies, procedures, process development, and business-case preparation."
+        ]
+      },
+      {
+        "job_competency": "Sprint planning",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9201,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3995956778526306,
+          "matched_candidate_competency": "Microsoft Windows"
+        },
+        "candidate_evidence": [
+          "Microsoft Windows"
+        ]
+      },
+      {
+        "job_competency": "Backlog grooming",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9282,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3589532971382141,
+          "matched_candidate_competency": "Microsoft Windows"
+        },
+        "candidate_evidence": [
+          "Microsoft Windows"
+        ]
+      },
+      {
+        "job_competency": "Contract compliance",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3897,
+        "evidence": {
+          "tfidf_score": 0.09096839002856219,
+          "tfidf_matched_terms": [
+            "compliance",
+            "contract"
+          ],
+          "bm25_score": 2.5881175319116703,
+          "semantic_score": 0.5668665170669556,
+          "matched_candidate_competency": "Provider contract administration"
+        },
+        "candidate_evidence": [
+          "Provider contract administration"
+        ]
+      },
+      {
+        "job_competency": "Contract change notices",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6648,
+        "evidence": {
+          "tfidf_score": 0.04817205499662368,
+          "tfidf_matched_terms": [
+            "contract"
+          ],
+          "bm25_score": 2.5881175319116703,
+          "semantic_score": 0.3410417437553406,
+          "matched_candidate_competency": "Provider contract administration"
+        },
+        "candidate_evidence": [
+          "Provider contract administration"
+        ]
+      },
+      {
+        "job_competency": "Requirements specifications",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9206,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3970770239830017,
+          "matched_candidate_competency": "Microsoft Windows"
+        },
+        "candidate_evidence": [
+          "Microsoft Windows"
+        ]
+      },
+      {
+        "job_competency": "LEAN principles",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9382,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3091728091239929,
+          "matched_candidate_competency": "Microsoft Windows"
+        },
+        "candidate_evidence": [
+          "Microsoft Windows"
+        ]
+      },
+      {
+        "job_competency": "LPI initiatives",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7358,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40138763189315796,
+          "matched_candidate_competency": "Microsoft Windows"
+        },
+        "candidate_evidence": [
+          "Microsoft Windows"
+        ]
+      },
+      {
+        "job_competency": "State and federal regulatory programs",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.695,
+        "evidence": {
+          "tfidf_score": 0.17736408685335256,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9823672371945972,
+          "semantic_score": 0.345633327960968,
+          "matched_candidate_competency": "Training and presentation"
+        },
+        "candidate_evidence": [
+          "Training and presentation"
+        ]
+      },
+      {
+        "job_competency": "Michigan residency",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9684,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.1577622890472412,
+          "matched_candidate_competency": "Microsoft Windows"
+        },
+        "candidate_evidence": [
+          "Microsoft Windows"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Business analysis",
+      "Business process review",
+      "Strategic analysis",
+      "Contract compliance"
+    ],
+    "weak_matches": [
+      "Requirements elicitation and documentation",
+      "Consensus facilitation",
+      "User story development and validation",
+      "Contract change notices",
+      "LPI initiatives",
+      "State and federal regulatory programs"
+    ],
+    "missing": [
+      "Agile Scrum",
+      "JIRA",
+      "Sprint planning",
+      "Backlog grooming",
+      "Requirements specifications",
+      "LEAN principles",
+      "Michigan residency"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Business analysis",
+      "Business process review",
+      "Strategic analysis",
+      "Contract compliance"
+    ],
+    "competency_gaps": [
+      "Requirements elicitation and documentation",
+      "Consensus facilitation",
+      "User story development and validation",
+      "Contract change notices",
+      "LPI initiatives",
+      "State and federal regulatory programs",
+      "Agile Scrum",
+      "JIRA",
+      "Sprint planning",
+      "Backlog grooming",
+      "Requirements specifications",
+      "LEAN principles",
+      "Michigan residency"
+    ]
+  },
+  "counts": {
+    "requirements": 17,
+    "strength_matches": 0,
+    "partial_matches": 4,
+    "competency_gaps": 13
+  },
+  "latency_ms": 36.21,
+  "analyzed_at": "2026-10-03T17:29:45.703266+00:00"
+}

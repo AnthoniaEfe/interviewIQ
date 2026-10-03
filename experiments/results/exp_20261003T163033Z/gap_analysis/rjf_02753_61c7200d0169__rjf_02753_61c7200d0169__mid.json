@@ -1,0 +1,381 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02753_61c7200d0169",
+  "jd_id": "rjf_02753_61c7200d0169",
+  "pair_id": "rjf_02753_61c7200d0169",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Salesforce Industries Communications Cloud",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9311,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34432631731033325,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Salesforce / SFDC",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9217,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3914230763912201,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Vlocity",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9492,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.25402119755744934,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "OmniStudio",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9461,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2696324586868286,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Salesforce API framework",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9582,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2088891565799713,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Third-party APIs",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9514,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2430044263601303,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Salesforce platform capabilities and limitations",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6684,
+        "evidence": {
+          "tfidf_score": 0.1261876149286244,
+          "tfidf_matched_terms": [
+            "and",
+            "platform"
+          ],
+          "bm25_score": 2.1322284860884113,
+          "semantic_score": 0.3340423107147217,
+          "matched_candidate_competency": "Ensured the quality of the Touchstone platform through quality assurance methods, performance benchmarking, and bug testing."
+        },
+        "candidate_evidence": [
+          "Ensured the quality of the Touchstone platform through quality assurance methods, performance benchmarking, and bug testing."
+        ]
+      },
+      {
+        "job_competency": "Salesforce project lifecycle",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9423,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2885858118534088,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Code review and documentation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6835,
+        "evidence": {
+          "tfidf_score": 0.11990029943313339,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.4118713592140157,
+          "semantic_score": 0.3773801326751709,
+          "matched_candidate_competency": "Used automated testing to validate new features and bug fixes and prevent performance and quality regressions."
+        },
+        "candidate_evidence": [
+          "Used automated testing to validate new features and bug fixes and prevent performance and quality regressions."
+        ]
+      },
+      {
+        "job_competency": "Source control",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7308,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4324873089790344,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Deployment to higher environments",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7091,
+        "evidence": {
+          "tfidf_score": 0.08807370399112456,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 1.4950290927174898,
+          "semantic_score": 0.225699782371521,
+          "matched_candidate_competency": "Presented findings to stakeholders to support prioritization of features and bug fixes."
+        },
+        "candidate_evidence": [
+          "Presented findings to stakeholders to support prioritization of features and bug fixes."
+        ]
+      },
+      {
+        "job_competency": "Telecom domain solutioning",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9393,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3033407926559448,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Quote to Cash",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6676,
+        "evidence": {
+          "tfidf_score": 0.10417311592698257,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 1.4950290927174898,
+          "semantic_score": 0.47298508882522583,
+          "matched_candidate_competency": "Presented findings to stakeholders to support prioritization of features and bug fixes."
+        },
+        "candidate_evidence": [
+          "Presented findings to stakeholders to support prioritization of features and bug fixes."
+        ]
+      },
+      {
+        "job_competency": "Solution architecture",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9369,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3152618706226349,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Customer communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7333,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41693180799484253,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Solution presentation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3708,
+        "evidence": {
+          "tfidf_score": 0.02184633718017329,
+          "tfidf_matched_terms": [
+            "presentation"
+          ],
+          "bm25_score": 4.060287416040136,
+          "semantic_score": 0.5251984596252441,
+          "matched_candidate_competency": "Stakeholder presentation"
+        },
+        "candidate_evidence": [
+          "Stakeholder presentation"
+        ]
+      },
+      {
+        "job_competency": "Development team guidance",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6929,
+        "evidence": {
+          "tfidf_score": 0.016936147230595444,
+          "tfidf_matched_terms": [
+            "team"
+          ],
+          "bm25_score": 1.5454455543318466,
+          "semantic_score": 0.37131866812705994,
+          "matched_candidate_competency": "Worked with the Investment Services team to understand data needs for department-wide investment decisions."
+        },
+        "candidate_evidence": [
+          "Worked with the Investment Services team to understand data needs for department-wide investment decisions."
+        ]
+      },
+      {
+        "job_competency": "Salesforce certification",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4374,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4439462423324585,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Solution presentation"
+    ],
+    "weak_matches": [
+      "Salesforce platform capabilities and limitations",
+      "Code review and documentation",
+      "Source control",
+      "Deployment to higher environments",
+      "Quote to Cash",
+      "Customer communication",
+      "Development team guidance",
+      "Salesforce certification"
+    ],
+    "missing": [
+      "Salesforce Industries Communications Cloud",
+      "Salesforce / SFDC",
+      "Vlocity",
+      "OmniStudio",
+      "Salesforce API framework",
+      "Third-party APIs",
+      "Salesforce project lifecycle",
+      "Telecom domain solutioning",
+      "Solution architecture"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Solution presentation"
+    ],
+    "competency_gaps": [
+      "Salesforce platform capabilities and limitations",
+      "Code review and documentation",
+      "Source control",
+      "Deployment to higher environments",
+      "Quote to Cash",
+      "Customer communication",
+      "Development team guidance",
+      "Salesforce certification",
+      "Salesforce Industries Communications Cloud",
+      "Salesforce / SFDC",
+      "Vlocity",
+      "OmniStudio",
+      "Salesforce API framework",
+      "Third-party APIs",
+      "Salesforce project lifecycle",
+      "Telecom domain solutioning",
+      "Solution architecture"
+    ]
+  },
+  "counts": {
+    "requirements": 18,
+    "strength_matches": 0,
+    "partial_matches": 1,
+    "competency_gaps": 17
+  },
+  "latency_ms": 32.5,
+  "analyzed_at": "2026-10-03T17:29:46.015655+00:00"
+}

@@ -1,0 +1,329 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00835_8be9b126f07c",
+  "jd_id": "rjf_00835_8be9b126f07c",
+  "pair_id": "rjf_00835_8be9b126f07c",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Computer science fundamentals",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3847,
+        "evidence": {
+          "tfidf_score": 0.006437526956659428,
+          "tfidf_matched_terms": [
+            "computer"
+          ],
+          "bm25_score": 5.083148905807885,
+          "semantic_score": 0.4847603738307953,
+          "matched_candidate_competency": "Computer literacy"
+        },
+        "candidate_evidence": [
+          "Computer literacy"
+        ]
+      },
+      {
+        "job_competency": "Data structures and algorithms",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3823,
+        "evidence": {
+          "tfidf_score": 0.34526318297139896,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 4.371666281700496,
+          "semantic_score": 0.347515344619751,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Software application development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3926,
+        "evidence": {
+          "tfidf_score": 0.02876176282045902,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 4.50495677866466,
+          "semantic_score": 0.46374890208244324,
+          "matched_candidate_competency": "Training and development"
+        },
+        "candidate_evidence": [
+          "Training and development"
+        ]
+      },
+      {
+        "job_competency": "Strong communication skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7333,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41713643074035645,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Relationship building",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6981,
+        "evidence": {
+          "tfidf_score": 0.008303918393409725,
+          "tfidf_matched_terms": [
+            "building"
+          ],
+          "bm25_score": 2.50800960301714,
+          "semantic_score": 0.303305983543396,
+          "matched_candidate_competency": "Maintained employee leave records and ordered office and building supplies."
+        },
+        "candidate_evidence": [
+          "Maintained employee leave records and ordered office and building supplies."
+        ]
+      },
+      {
+        "job_competency": "Foundational database knowledge",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9324,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33785343170166016,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "User interface development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3983,
+        "evidence": {
+          "tfidf_score": 0.006437526956659429,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 4.50495677866466,
+          "semantic_score": 0.4240753948688507,
+          "matched_candidate_competency": "Training and development"
+        },
+        "candidate_evidence": [
+          "Training and development"
+        ]
+      },
+      {
+        "job_competency": "On-site work availability",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3844,
+        "evidence": {
+          "tfidf_score": 0.011744689146850135,
+          "tfidf_matched_terms": [
+            "on",
+            "work"
+          ],
+          "bm25_score": 5.743429031401176,
+          "semantic_score": 0.39758819341659546,
+          "matched_candidate_competency": "Inspected homes requiring work and bid on jobs."
+        },
+        "candidate_evidence": [
+          "Inspected homes requiring work and bid on jobs."
+        ]
+      },
+      {
+        "job_competency": "Object-oriented programming",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5589,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3423769176006317,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": ".NET",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4307,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5131887197494507,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "C#",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4339,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.48041075468063354,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "JavaScript",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5624,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31306999921798706,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "TypeScript",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5734,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.22188036143779755,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Angular",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5701,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24905897676944733,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4342,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.47720780968666077,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Computer science fundamentals",
+      "Data structures and algorithms",
+      "Software application development",
+      "User interface development",
+      "On-site work availability"
+    ],
+    "weak_matches": [
+      "Strong communication skills",
+      "Relationship building",
+      ".NET",
+      "C#",
+      "SQL"
+    ],
+    "missing": [
+      "Foundational database knowledge",
+      "Object-oriented programming",
+      "JavaScript",
+      "TypeScript",
+      "Angular"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Computer science fundamentals",
+      "Data structures and algorithms",
+      "Software application development",
+      "User interface development",
+      "On-site work availability"
+    ],
+    "competency_gaps": [
+      "Strong communication skills",
+      "Relationship building",
+      ".NET",
+      "C#",
+      "SQL",
+      "Foundational database knowledge",
+      "Object-oriented programming",
+      "JavaScript",
+      "TypeScript",
+      "Angular"
+    ]
+  },
+  "counts": {
+    "requirements": 15,
+    "strength_matches": 0,
+    "partial_matches": 5,
+    "competency_gaps": 10
+  },
+  "latency_ms": 37.98,
+  "analyzed_at": "2026-10-03T17:29:43.573215+00:00"
+}

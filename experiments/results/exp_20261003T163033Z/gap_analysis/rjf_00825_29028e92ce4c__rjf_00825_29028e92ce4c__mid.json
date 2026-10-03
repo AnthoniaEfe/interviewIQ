@@ -1,0 +1,470 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00825_29028e92ce4c",
+  "jd_id": "rjf_00825_29028e92ce4c",
+  "pair_id": "rjf_00825_29028e92ce4c",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7207,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4959256947040558,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      },
+      {
+        "job_competency": "Financial analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6611,
+        "evidence": {
+          "tfidf_score": 0.04775831200295606,
+          "tfidf_matched_terms": [
+            "analysis",
+            "financial"
+          ],
+          "bm25_score": 5.165308791291032,
+          "semantic_score": 0.4879596531391144,
+          "matched_candidate_competency": "Performed database management, analysis, and reporting for financial and descriptive purposes."
+        },
+        "candidate_evidence": [
+          "Performed database management, analysis, and reporting for financial and descriptive purposes."
+        ]
+      },
+      {
+        "job_competency": "Budgeting and forecasting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.709,
+        "evidence": {
+          "tfidf_score": 0.27022445085902513,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3658429980278015,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      },
+      {
+        "job_competency": "GAAP compliance",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9372,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31421706080436707,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      },
+      {
+        "job_competency": "Uniform Guidance and OMB Circulars",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9243,
+        "evidence": {
+          "tfidf_score": 0.20152501633614592,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2274894267320633,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      },
+      {
+        "job_competency": "Revenue recognition",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7251,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4681183993816376,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9223,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38853582739830017,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Word",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9299,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3503313362598419,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Outlook",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9456,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2720857560634613,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      },
+      {
+        "job_competency": "Written and verbal communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3745,
+        "evidence": {
+          "tfidf_score": 0.2572775211828908,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 5.295672813955613,
+          "semantic_score": 0.7089035511016846,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Interpersonal skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6544,
+        "evidence": {
+          "tfidf_score": 0.006515910326576592,
+          "tfidf_matched_terms": [
+            "skills"
+          ],
+          "bm25_score": 5.6268363478119445,
+          "semantic_score": 0.5300534963607788,
+          "matched_candidate_competency": "Analytical skills"
+        },
+        "candidate_evidence": [
+          "Analytical skills"
+        ]
+      },
+      {
+        "job_competency": "Analytical skills",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1619,
+        "evidence": {
+          "tfidf_score": 0.015895880218165435,
+          "tfidf_matched_terms": [
+            "analytical",
+            "skills"
+          ],
+          "bm25_score": 11.253672695623889,
+          "semantic_score": 0.9999998807907104,
+          "matched_candidate_competency": "Analytical skills"
+        },
+        "candidate_evidence": [
+          "Analytical skills"
+        ]
+      },
+      {
+        "job_competency": "Organization and time management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6545,
+        "evidence": {
+          "tfidf_score": 0.3025886487773142,
+          "tfidf_matched_terms": [
+            "and",
+            "management"
+          ],
+          "bm25_score": 2.6516302522734687,
+          "semantic_score": 0.5057333111763,
+          "matched_candidate_competency": "Database management"
+        },
+        "candidate_evidence": [
+          "Database management"
+        ]
+      },
+      {
+        "job_competency": "Teamwork",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.714,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5374894738197327,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      },
+      {
+        "job_competency": "Judgment and decision-making",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7252,
+        "evidence": {
+          "tfidf_score": 0.22846267085649738,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.0,
+          "semantic_score": 0.296093225479126,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      },
+      {
+        "job_competency": "Multitasking and prioritization",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7192,
+        "evidence": {
+          "tfidf_score": 0.27022445085902513,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30212461948394775,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      },
+      {
+        "job_competency": "Self-starter",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9436,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28218817710876465,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      },
+      {
+        "job_competency": "Attention to detail",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7207,
+        "evidence": {
+          "tfidf_score": 0.030373914096469806,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 2.0525564425313023,
+          "semantic_score": 0.33624354004859924,
+          "matched_candidate_competency": "Initiated a survey-based method to evaluate program success."
+        },
+        "candidate_evidence": [
+          "Initiated a survey-based method to evaluate program success."
+        ]
+      },
+      {
+        "job_competency": "Proactivity and diligence",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7086,
+        "evidence": {
+          "tfidf_score": 0.27022445085902513,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3683655560016632,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      },
+      {
+        "job_competency": "Financial Edge",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4343,
+        "evidence": {
+          "tfidf_score": 0.006515910326576592,
+          "tfidf_matched_terms": [
+            "financial"
+          ],
+          "bm25_score": 3.157772556796444,
+          "semantic_score": 0.2607196867465973,
+          "matched_candidate_competency": "Performed database management, analysis, and reporting for financial and descriptive purposes."
+        },
+        "candidate_evidence": [
+          "Performed database management, analysis, and reporting for financial and descriptive purposes."
+        ]
+      },
+      {
+        "job_competency": "Collaborative work environment",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4384,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.43366625905036926,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      },
+      {
+        "job_competency": "Nonprofit human services commitment",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5654,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28792333602905273,
+          "matched_candidate_competency": "SAS"
+        },
+        "candidate_evidence": [
+          "SAS"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Analytical skills"
+    ],
+    "partial_matches": [
+      "Written and verbal communication"
+    ],
+    "weak_matches": [
+      "Accounting",
+      "Financial analysis",
+      "Budgeting and forecasting",
+      "Revenue recognition",
+      "Interpersonal skills",
+      "Organization and time management",
+      "Teamwork",
+      "Judgment and decision-making",
+      "Multitasking and prioritization",
+      "Attention to detail",
+      "Proactivity and diligence",
+      "Financial Edge",
+      "Collaborative work environment"
+    ],
+    "missing": [
+      "GAAP compliance",
+      "Uniform Guidance and OMB Circulars",
+      "Microsoft Excel",
+      "Microsoft Word",
+      "Microsoft Outlook",
+      "Self-starter",
+      "Nonprofit human services commitment"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Analytical skills"
+    ],
+    "partial_matches": [
+      "Written and verbal communication"
+    ],
+    "competency_gaps": [
+      "Accounting",
+      "Financial analysis",
+      "Budgeting and forecasting",
+      "Revenue recognition",
+      "Interpersonal skills",
+      "Organization and time management",
+      "Teamwork",
+      "Judgment and decision-making",
+      "Multitasking and prioritization",
+      "Attention to detail",
+      "Proactivity and diligence",
+      "Financial Edge",
+      "Collaborative work environment",
+      "GAAP compliance",
+      "Uniform Guidance and OMB Circulars",
+      "Microsoft Excel",
+      "Microsoft Word",
+      "Microsoft Outlook",
+      "Self-starter",
+      "Nonprofit human services commitment"
+    ]
+  },
+  "counts": {
+    "requirements": 22,
+    "strength_matches": 1,
+    "partial_matches": 1,
+    "competency_gaps": 20
+  },
+  "latency_ms": 52.46,
+  "analyzed_at": "2026-10-03T17:29:43.534393+00:00"
+}

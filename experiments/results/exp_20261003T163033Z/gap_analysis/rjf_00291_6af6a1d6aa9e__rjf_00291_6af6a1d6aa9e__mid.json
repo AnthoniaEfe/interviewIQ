@@ -1,0 +1,228 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00291_6af6a1d6aa9e",
+  "jd_id": "rjf_00291_6af6a1d6aa9e",
+  "pair_id": "rjf_00291_6af6a1d6aa9e",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "C/C++ programming",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7262,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46134084463119507,
+          "matched_candidate_competency": "Microsoft SQL Server"
+        },
+        "candidate_evidence": [
+          "Microsoft SQL Server"
+        ]
+      },
+      {
+        "job_competency": "Shader programming",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9489,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2554388642311096,
+          "matched_candidate_competency": "Microsoft SQL Server"
+        },
+        "candidate_evidence": [
+          "Microsoft SQL Server"
+        ]
+      },
+      {
+        "job_competency": "3D graphics APIs",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9479,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26063135266304016,
+          "matched_candidate_competency": "Microsoft SQL Server"
+        },
+        "candidate_evidence": [
+          "Microsoft SQL Server"
+        ]
+      },
+      {
+        "job_competency": "Performance optimization",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9369,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3157367706298828,
+          "matched_candidate_competency": "Microsoft SQL Server"
+        },
+        "candidate_evidence": [
+          "Microsoft SQL Server"
+        ]
+      },
+      {
+        "job_competency": "Memory optimization",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9436,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28221195936203003,
+          "matched_candidate_competency": "Microsoft SQL Server"
+        },
+        "candidate_evidence": [
+          "Microsoft SQL Server"
+        ]
+      },
+      {
+        "job_competency": "Hardware and software profiling",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3622,
+        "evidence": {
+          "tfidf_score": 0.25640366750125787,
+          "tfidf_matched_terms": [
+            "and",
+            "profiling",
+            "software"
+          ],
+          "bm25_score": 3.6776710503581906,
+          "semantic_score": 0.4354916214942932,
+          "matched_candidate_competency": "Software development life cycle"
+        },
+        "candidate_evidence": [
+          "Software development life cycle"
+        ]
+      },
+      {
+        "job_competency": "Graphics pipeline debugging",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9533,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.23337584733963013,
+          "matched_candidate_competency": "Microsoft SQL Server"
+        },
+        "candidate_evidence": [
+          "Microsoft SQL Server"
+        ]
+      },
+      {
+        "job_competency": "Graphics debugging tools",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9223,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3883218765258789,
+          "matched_candidate_competency": "Microsoft SQL Server"
+        },
+        "candidate_evidence": [
+          "Microsoft SQL Server"
+        ]
+      },
+      {
+        "job_competency": "Multithreaded programming",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9305,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.347663938999176,
+          "matched_candidate_competency": "Microsoft SQL Server"
+        },
+        "candidate_evidence": [
+          "Microsoft SQL Server"
+        ]
+      },
+      {
+        "job_competency": "Large codebase experience",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9218,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39096152782440186,
+          "matched_candidate_competency": "Microsoft SQL Server"
+        },
+        "candidate_evidence": [
+          "Microsoft SQL Server"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Hardware and software profiling"
+    ],
+    "weak_matches": [
+      "C/C++ programming"
+    ],
+    "missing": [
+      "Shader programming",
+      "3D graphics APIs",
+      "Performance optimization",
+      "Memory optimization",
+      "Graphics pipeline debugging",
+      "Graphics debugging tools",
+      "Multithreaded programming",
+      "Large codebase experience"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Hardware and software profiling"
+    ],
+    "competency_gaps": [
+      "C/C++ programming",
+      "Shader programming",
+      "3D graphics APIs",
+      "Performance optimization",
+      "Memory optimization",
+      "Graphics pipeline debugging",
+      "Graphics debugging tools",
+      "Multithreaded programming",
+      "Large codebase experience"
+    ]
+  },
+  "counts": {
+    "requirements": 10,
+    "strength_matches": 0,
+    "partial_matches": 1,
+    "competency_gaps": 9
+  },
+  "latency_ms": 33.56,
+  "analyzed_at": "2026-10-03T17:29:42.561933+00:00"
+}

@@ -1,0 +1,842 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02384_dc85e6141ed0",
+  "jd_id": "rjf_02384_dc85e6141ed0",
+  "pair_id": "rjf_02384_dc85e6141ed0",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "C++ software development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3914,
+        "evidence": {
+          "tfidf_score": 0.020114451615438466,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 8.907538015057549,
+          "semantic_score": 0.570634126663208,
+          "matched_candidate_competency": "Software development lifecycle"
+        },
+        "candidate_evidence": [
+          "Software development lifecycle"
+        ]
+      },
+      {
+        "job_competency": "Java/J2EE software development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4008,
+        "evidence": {
+          "tfidf_score": 0.016440392494443325,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 8.907538015057549,
+          "semantic_score": 0.4798668920993805,
+          "matched_candidate_competency": "Software development lifecycle"
+        },
+        "candidate_evidence": [
+          "Software development lifecycle"
+        ]
+      },
+      {
+        "job_competency": "Relational and non-relational databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6991,
+        "evidence": {
+          "tfidf_score": 0.09431592987507074,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.671409808659543,
+          "semantic_score": 0.4659501612186432,
+          "matched_candidate_competency": "Business requirements and analysis"
+        },
+        "candidate_evidence": [
+          "Business requirements and analysis"
+        ]
+      },
+      {
+        "job_competency": "Software architecture patterns",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6842,
+        "evidence": {
+          "tfidf_score": 0.009010482102477858,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 4.453769007528774,
+          "semantic_score": 0.4668881595134735,
+          "matched_candidate_competency": "Software development lifecycle"
+        },
+        "candidate_evidence": [
+          "Software development lifecycle"
+        ]
+      },
+      {
+        "job_competency": "Automated unit testing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9385,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30743607878685,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Test-driven development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6818,
+        "evidence": {
+          "tfidf_score": 0.020114451615438466,
+          "tfidf_matched_terms": [
+            "development",
+            "test"
+          ],
+          "bm25_score": 4.453769007528774,
+          "semantic_score": 0.47391343116760254,
+          "matched_candidate_competency": "Software development lifecycle"
+        },
+        "candidate_evidence": [
+          "Software development lifecycle"
+        ]
+      },
+      {
+        "job_competency": "Continuous integration",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9125,
+        "evidence": {
+          "tfidf_score": 0.011622834136151243,
+          "tfidf_matched_terms": [
+            "integration"
+          ],
+          "bm25_score": 1.9774685963154466,
+          "semantic_score": 0.3179425895214081,
+          "matched_candidate_competency": "Developed a PHP report module for integration into a police management system."
+        },
+        "candidate_evidence": [
+          "Developed a PHP report module for integration into a police management system."
+        ]
+      },
+      {
+        "job_competency": "Communication protocols",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7062,
+        "evidence": {
+          "tfidf_score": 0.011622834136151243,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 1.8624126560958514,
+          "semantic_score": 0.47306180000305176,
+          "matched_candidate_competency": "Developed .NET job scheduling with Hangfire and real-time bidirectional communication with SignalR."
+        },
+        "candidate_evidence": [
+          "Developed .NET job scheduling with Hangfire and real-time bidirectional communication with SignalR."
+        ]
+      },
+      {
+        "job_competency": "Scalable application development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6775,
+        "evidence": {
+          "tfidf_score": 0.00901048210247786,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 4.453769007528774,
+          "semantic_score": 0.5088565349578857,
+          "matched_candidate_competency": "Software development lifecycle"
+        },
+        "candidate_evidence": [
+          "Software development lifecycle"
+        ]
+      },
+      {
+        "job_competency": "Software development methodologies and lifecycle",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.161,
+        "evidence": {
+          "tfidf_score": 0.1643640425225607,
+          "tfidf_matched_terms": [
+            "and",
+            "development",
+            "lifecycle",
+            "software"
+          ],
+          "bm25_score": 13.361307022586324,
+          "semantic_score": 0.9060214757919312,
+          "matched_candidate_competency": "Software development lifecycle"
+        },
+        "candidate_evidence": [
+          "Software development lifecycle"
+        ]
+      },
+      {
+        "job_competency": "Version control architecture and management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6689,
+        "evidence": {
+          "tfidf_score": 0.18271483831484864,
+          "tfidf_matched_terms": [
+            "and",
+            "management"
+          ],
+          "bm25_score": 3.306593628813806,
+          "semantic_score": 0.4967919588088989,
+          "matched_candidate_competency": "Records management"
+        },
+        "candidate_evidence": [
+          "Records management"
+        ]
+      },
+      {
+        "job_competency": "Complex systems architecture and design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6713,
+        "evidence": {
+          "tfidf_score": 0.1688066311577027,
+          "tfidf_matched_terms": [
+            "and",
+            "design",
+            "systems"
+          ],
+          "bm25_score": 5.303256476280618,
+          "semantic_score": 0.38015174865722656,
+          "matched_candidate_competency": "Performed requirements specification, analysis and design, and test case design."
+        },
+        "candidate_evidence": [
+          "Performed requirements specification, analysis and design, and test case design."
+        ]
+      },
+      {
+        "job_competency": "ITS and control systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6837,
+        "evidence": {
+          "tfidf_score": 0.16492029072452927,
+          "tfidf_matched_terms": [
+            "and",
+            "systems"
+          ],
+          "bm25_score": 4.106342740292338,
+          "semantic_score": 0.37270116806030273,
+          "matched_candidate_competency": "Parking systems"
+        },
+        "candidate_evidence": [
+          "Parking systems"
+        ]
+      },
+      {
+        "job_competency": "Intelligent Transportation Systems (ITS)",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6848,
+        "evidence": {
+          "tfidf_score": 0.022889798756536437,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 4.106342740292338,
+          "semantic_score": 0.47250133752822876,
+          "matched_candidate_competency": "Parking systems"
+        },
+        "candidate_evidence": [
+          "Parking systems"
+        ]
+      },
+      {
+        "job_competency": "V2X",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7353,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4043188989162445,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "ITS and connected-vehicle standards",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7084,
+        "evidence": {
+          "tfidf_score": 0.113329473876478,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.671409808659543,
+          "semantic_score": 0.39361342787742615,
+          "matched_candidate_competency": "Business requirements and analysis"
+        },
+        "candidate_evidence": [
+          "Business requirements and analysis"
+        ]
+      },
+      {
+        "job_competency": "Business and proposal development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.404,
+        "evidence": {
+          "tfidf_score": 0.18020477467229018,
+          "tfidf_matched_terms": [
+            "and",
+            "business",
+            "development"
+          ],
+          "bm25_score": 5.096881326134619,
+          "semantic_score": 0.5384640097618103,
+          "matched_candidate_competency": "Business requirements and analysis"
+        },
+        "candidate_evidence": [
+          "Business requirements and analysis"
+        ]
+      },
+      {
+        "job_competency": "Professional writing and oral presentation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7255,
+        "evidence": {
+          "tfidf_score": 0.113329473876478,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.671409808659543,
+          "semantic_score": 0.286597341299057,
+          "matched_candidate_competency": "Business requirements and analysis"
+        },
+        "candidate_evidence": [
+          "Business requirements and analysis"
+        ]
+      },
+      {
+        "job_competency": "Proactive self-management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7161,
+        "evidence": {
+          "tfidf_score": 0.07299083671334725,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.306593628813806,
+          "semantic_score": 0.284241259098053,
+          "matched_candidate_competency": "Records management"
+        },
+        "candidate_evidence": [
+          "Records management"
+        ]
+      },
+      {
+        "job_competency": "Organization and multitasking",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6942,
+        "evidence": {
+          "tfidf_score": 0.1519632420886729,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.671409808659543,
+          "semantic_score": 0.4537274241447449,
+          "matched_candidate_competency": "Business requirements and analysis"
+        },
+        "candidate_evidence": [
+          "Business requirements and analysis"
+        ]
+      },
+      {
+        "job_competency": "Independent and team-based work",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6711,
+        "evidence": {
+          "tfidf_score": 0.113329473876478,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.671409808659543,
+          "semantic_score": 0.6266486048698425,
+          "matched_candidate_competency": "Business requirements and analysis"
+        },
+        "candidate_evidence": [
+          "Business requirements and analysis"
+        ]
+      },
+      {
+        "job_competency": "Adaptability to changing priorities",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7275,
+        "evidence": {
+          "tfidf_score": 0.015244885310481847,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 2.5068698036237103,
+          "semantic_score": 0.3012830913066864,
+          "matched_candidate_competency": "Interacted with clients to identify business requirements."
+        },
+        "candidate_evidence": [
+          "Interacted with clients to identify business requirements."
+        ]
+      },
+      {
+        "job_competency": "Real-time embedded software",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.421,
+        "evidence": {
+          "tfidf_score": 0.02697492860241362,
+          "tfidf_matched_terms": [
+            "real",
+            "software",
+            "time"
+          ],
+          "bm25_score": 4.453769007528774,
+          "semantic_score": 0.34405776858329773,
+          "matched_candidate_competency": "Software development lifecycle"
+        },
+        "candidate_evidence": [
+          "Software development lifecycle"
+        ]
+      },
+      {
+        "job_competency": "Software architecture and release management",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.395,
+        "evidence": {
+          "tfidf_score": 0.20328890705787211,
+          "tfidf_matched_terms": [
+            "and",
+            "management",
+            "software"
+          ],
+          "bm25_score": 4.453769007528774,
+          "semantic_score": 0.48247405886650085,
+          "matched_candidate_competency": "Software development lifecycle"
+        },
+        "candidate_evidence": [
+          "Software development lifecycle"
+        ]
+      },
+      {
+        "job_competency": "Message queues, brokers, and data streaming",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.429,
+        "evidence": {
+          "tfidf_score": 0.11419500130029107,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 2.3814634896066624,
+          "semantic_score": 0.3123219311237335,
+          "matched_candidate_competency": "Developed dashboard, reporting, records management, classification, task management, data list, and project file management modules."
+        },
+        "candidate_evidence": [
+          "Developed dashboard, reporting, records management, classification, task management, data list, and project file management modules."
+        ]
+      },
+      {
+        "job_competency": "SOAP and REST web services",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.1024,
+        "evidence": {
+          "tfidf_score": 0.28730086902948276,
+          "tfidf_matched_terms": [
+            "and",
+            "rest",
+            "services",
+            "soap",
+            "web"
+          ],
+          "bm25_score": 9.603984878358835,
+          "semantic_score": 0.830529510974884,
+          "matched_candidate_competency": "REST Web Services"
+        },
+        "candidate_evidence": [
+          "REST Web Services"
+        ]
+      },
+      {
+        "job_competency": "OpenAPI",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5595,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3371722996234894,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Frontend web development",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.245,
+        "evidence": {
+          "tfidf_score": 0.08144076341914461,
+          "tfidf_matched_terms": [
+            "development",
+            "frontend",
+            "web"
+          ],
+          "bm25_score": 4.453769007528774,
+          "semantic_score": 0.6049745082855225,
+          "matched_candidate_competency": "Software development lifecycle"
+        },
+        "candidate_evidence": [
+          "Software development lifecycle"
+        ]
+      },
+      {
+        "job_competency": "Automation or robotics",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5577,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.352439284324646,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Vehicle dynamics and steering",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5454,
+        "evidence": {
+          "tfidf_score": 0.12847811531941236,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.671409808659543,
+          "semantic_score": 0.26445046067237854,
+          "matched_candidate_competency": "Business requirements and analysis"
+        },
+        "candidate_evidence": [
+          "Business requirements and analysis"
+        ]
+      },
+      {
+        "job_competency": "Robot Operating System",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4264,
+        "evidence": {
+          "tfidf_score": 0.027073934118295562,
+          "tfidf_matched_terms": [
+            "system"
+          ],
+          "bm25_score": 2.084678784203296,
+          "semantic_score": 0.4211168587207794,
+          "matched_candidate_competency": "Developed a large-scale parking system from scratch."
+        },
+        "candidate_evidence": [
+          "Developed a large-scale parking system from scratch."
+        ]
+      },
+      {
+        "job_competency": "Telematics systems",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4157,
+        "evidence": {
+          "tfidf_score": 0.03492330844134305,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 4.106342740292338,
+          "semantic_score": 0.41261065006256104,
+          "matched_candidate_competency": "Parking systems"
+        },
+        "candidate_evidence": [
+          "Parking systems"
+        ]
+      },
+      {
+        "job_competency": "Data visualization technologies",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.428,
+        "evidence": {
+          "tfidf_score": 0.009010482102477858,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 1.668280082918725,
+          "semantic_score": 0.4410799443721771,
+          "matched_candidate_competency": "Developed dashboard, reporting, records management, classification, task management, data list, and project file management modules."
+        },
+        "candidate_evidence": [
+          "Developed dashboard, reporting, records management, classification, task management, data list, and project file management modules."
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2183,
+        "evidence": {
+          "tfidf_score": 0.020048402335009843,
+          "tfidf_matched_terms": [
+            "git"
+          ],
+          "bm25_score": 6.171044098872849,
+          "semantic_score": 0.9999997615814209,
+          "matched_candidate_competency": "Git"
+        },
+        "candidate_evidence": [
+          "Git"
+        ]
+      },
+      {
+        "job_competency": "Docker and Docker Compose",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4315,
+        "evidence": {
+          "tfidf_score": 0.10252328141013017,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.671409808659543,
+          "semantic_score": 0.33486172556877136,
+          "matched_candidate_competency": "Business requirements and analysis"
+        },
+        "candidate_evidence": [
+          "Business requirements and analysis"
+        ]
+      },
+      {
+        "job_competency": "Continuous integration and continuous deployment",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5448,
+        "evidence": {
+          "tfidf_score": 0.10426694644893127,
+          "tfidf_matched_terms": [
+            "and",
+            "integration"
+          ],
+          "bm25_score": 1.9774685963154466,
+          "semantic_score": 0.27070751786231995,
+          "matched_candidate_competency": "Developed a PHP report module for integration into a police management system."
+        },
+        "candidate_evidence": [
+          "Developed a PHP report module for integration into a police management system."
+        ]
+      },
+      {
+        "job_competency": "Spring Framework",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4077,
+        "evidence": {
+          "tfidf_score": 0.02325934961305958,
+          "tfidf_matched_terms": [
+            "framework"
+          ],
+          "bm25_score": 4.532780766900696,
+          "semantic_score": 0.48078301548957825,
+          "matched_candidate_competency": "Entity Framework"
+        },
+        "candidate_evidence": [
+          "Entity Framework"
+        ]
+      },
+      {
+        "job_competency": "Agile projects and toolsets",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4159,
+        "evidence": {
+          "tfidf_score": 0.12847811531941236,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.671409808659543,
+          "semantic_score": 0.4778599739074707,
+          "matched_candidate_competency": "Business requirements and analysis"
+        },
+        "candidate_evidence": [
+          "Business requirements and analysis"
+        ]
+      },
+      {
+        "job_competency": "Unity and HTC Vive",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5498,
+        "evidence": {
+          "tfidf_score": 0.12847811531941233,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.671409808659543,
+          "semantic_score": 0.22854338586330414,
+          "matched_candidate_competency": "Business requirements and analysis"
+        },
+        "candidate_evidence": [
+          "Business requirements and analysis"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Software development methodologies and lifecycle",
+      "SOAP and REST web services"
+    ],
+    "partial_matches": [
+      "C++ software development",
+      "Java/J2EE software development",
+      "Business and proposal development",
+      "Frontend web development",
+      "Git"
+    ],
+    "weak_matches": [
+      "Relational and non-relational databases",
+      "Software architecture patterns",
+      "Test-driven development",
+      "Communication protocols",
+      "Scalable application development",
+      "Version control architecture and management",
+      "Complex systems architecture and design",
+      "ITS and control systems",
+      "Intelligent Transportation Systems (ITS)",
+      "V2X",
+      "ITS and connected-vehicle standards",
+      "Professional writing and oral presentation",
+      "Proactive self-management",
+      "Organization and multitasking",
+      "Independent and team-based work",
+      "Adaptability to changing priorities",
+      "Real-time embedded software",
+      "Software architecture and release management",
+      "Message queues, brokers, and data streaming",
+      "Robot Operating System",
+      "Telematics systems",
+      "Data visualization technologies",
+      "Docker and Docker Compose",
+      "Spring Framework",
+      "Agile projects and toolsets"
+    ],
+    "missing": [
+      "Automated unit testing",
+      "Continuous integration",
+      "OpenAPI",
+      "Automation or robotics",
+      "Vehicle dynamics and steering",
+      "Continuous integration and continuous deployment",
+      "Unity and HTC Vive"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Software development methodologies and lifecycle",
+      "SOAP and REST web services"
+    ],
+    "partial_matches": [
+      "C++ software development",
+      "Java/J2EE software development",
+      "Business and proposal development",
+      "Frontend web development",
+      "Git"
+    ],
+    "competency_gaps": [
+      "Relational and non-relational databases",
+      "Software architecture patterns",
+      "Test-driven development",
+      "Communication protocols",
+      "Scalable application development",
+      "Version control architecture and management",
+      "Complex systems architecture and design",
+      "ITS and control systems",
+      "Intelligent Transportation Systems (ITS)",
+      "V2X",
+      "ITS and connected-vehicle standards",
+      "Professional writing and oral presentation",
+      "Proactive self-management",
+      "Organization and multitasking",
+      "Independent and team-based work",
+      "Adaptability to changing priorities",
+      "Real-time embedded software",
+      "Software architecture and release management",
+      "Message queues, brokers, and data streaming",
+      "Robot Operating System",
+      "Telematics systems",
+      "Data visualization technologies",
+      "Docker and Docker Compose",
+      "Spring Framework",
+      "Agile projects and toolsets",
+      "Automated unit testing",
+      "Continuous integration",
+      "OpenAPI",
+      "Automation or robotics",
+      "Vehicle dynamics and steering",
+      "Continuous integration and continuous deployment",
+      "Unity and HTC Vive"
+    ]
+  },
+  "counts": {
+    "requirements": 39,
+    "strength_matches": 2,
+    "partial_matches": 5,
+    "competency_gaps": 32
+  },
+  "latency_ms": 84.42,
+  "analyzed_at": "2026-10-03T17:29:45.322405+00:00"
+}

@@ -1,0 +1,569 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00332_e96f6153a44f",
+  "jd_id": "rjf_00332_e96f6153a44f",
+  "pair_id": "rjf_00332_e96f6153a44f",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Gaming industry expertise",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9384,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30817630887031555,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Gaming industry knowledge",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9406,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.297223299741745,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Gaming passion",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7214,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.49097922444343567,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Data analysis",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1586,
+        "evidence": {
+          "tfidf_score": 0.10433284726323568,
+          "tfidf_matched_terms": [
+            "analysis",
+            "data"
+          ],
+          "bm25_score": 7.080852249405936,
+          "semantic_score": 0.9999995827674866,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Data insight generation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6619,
+        "evidence": {
+          "tfidf_score": 0.04415718164507455,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.1156859675528636,
+          "semantic_score": 0.500285267829895,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Data quality and issue remediation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6507,
+        "evidence": {
+          "tfidf_score": 0.28385026014296977,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 3.1156859675528636,
+          "semantic_score": 0.390007346868515,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "T-SQL",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9298,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35078442096710205,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7285,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44679731130599976,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Database concepts",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7305,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.43450894951820374,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Data warehousing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6648,
+        "evidence": {
+          "tfidf_score": 0.05695939377533043,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.1156859675528636,
+          "semantic_score": 0.4719719886779785,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Power BI",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7231,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4804615080356598,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Power Apps",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7353,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4043680429458618,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.176,
+        "evidence": {
+          "tfidf_score": 0.024454841294992605,
+          "tfidf_matched_terms": [
+            "excel"
+          ],
+          "bm25_score": 4.681132607893429,
+          "semantic_score": 0.9658975601196289,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Relational data models",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6726,
+        "evidence": {
+          "tfidf_score": 0.04415718164507455,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.1156859675528636,
+          "semantic_score": 0.43303465843200684,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Qualitative and quantitative research",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6826,
+        "evidence": {
+          "tfidf_score": 0.2569158010643954,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.8479706053056589,
+          "semantic_score": 0.45109614729881287,
+          "matched_candidate_competency": "Administered and maintained student information and demographic and assessment data using PowerSchool."
+        },
+        "candidate_evidence": [
+          "Administered and maintained student information and demographic and assessment data using PowerSchool."
+        ]
+      },
+      {
+        "job_competency": "Competitive analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6502,
+        "evidence": {
+          "tfidf_score": 0.02837967552272602,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 3.965166281853072,
+          "semantic_score": 0.4950593411922455,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Forecasting models",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9408,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2959807515144348,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Research and industry monitoring",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6948,
+        "evidence": {
+          "tfidf_score": 0.2569158010643954,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.8479706053056589,
+          "semantic_score": 0.37507811188697815,
+          "matched_candidate_competency": "Administered and maintained student information and demographic and assessment data using PowerSchool."
+        },
+        "candidate_evidence": [
+          "Administered and maintained student information and demographic and assessment data using PowerSchool."
+        ]
+      },
+      {
+        "job_competency": "Gaming metadata and KPI analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6536,
+        "evidence": {
+          "tfidf_score": 0.26148725662494793,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and"
+          ],
+          "bm25_score": 3.965166281853072,
+          "semantic_score": 0.29866835474967957,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Technical and analytical skills",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3803,
+        "evidence": {
+          "tfidf_score": 0.28934483389628557,
+          "tfidf_matched_terms": [
+            "and",
+            "skills"
+          ],
+          "bm25_score": 4.681132607893429,
+          "semantic_score": 0.48448631167411804,
+          "matched_candidate_competency": "Interpersonal skills"
+        },
+        "candidate_evidence": [
+          "Interpersonal skills"
+        ]
+      },
+      {
+        "job_competency": "Business acumen",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7316,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4272734224796295,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Communication skills",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3669,
+        "evidence": {
+          "tfidf_score": 0.03459445894463134,
+          "tfidf_matched_terms": [
+            "communication",
+            "skills"
+          ],
+          "bm25_score": 5.378558107920794,
+          "semantic_score": 0.7354776263237,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Presentation skills",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3985,
+        "evidence": {
+          "tfidf_score": 0.014177417205023463,
+          "tfidf_matched_terms": [
+            "skills"
+          ],
+          "bm25_score": 4.681132607893429,
+          "semantic_score": 0.5089766979217529,
+          "matched_candidate_competency": "Interpersonal skills"
+        },
+        "candidate_evidence": [
+          "Interpersonal skills"
+        ]
+      },
+      {
+        "job_competency": "Stakeholder communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3959,
+        "evidence": {
+          "tfidf_score": 0.014177417205023463,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 5.378558107920794,
+          "semantic_score": 0.46027305722236633,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Fast-paced business adaptability",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9421,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2896312475204468,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4375,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44313234090805054,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Data analysis tools and techniques",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.0996,
+        "evidence": {
+          "tfidf_score": 0.3261224510061627,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and",
+            "data"
+          ],
+          "bm25_score": 7.080852249405936,
+          "semantic_score": 0.6856673955917358,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Data analysis",
+      "Excel",
+      "Data analysis tools and techniques"
+    ],
+    "partial_matches": [
+      "Technical and analytical skills",
+      "Communication skills",
+      "Presentation skills",
+      "Stakeholder communication"
+    ],
+    "weak_matches": [
+      "Gaming passion",
+      "Data insight generation",
+      "Data quality and issue remediation",
+      "SQL",
+      "Database concepts",
+      "Data warehousing",
+      "Power BI",
+      "Power Apps",
+      "Relational data models",
+      "Qualitative and quantitative research",
+      "Competitive analysis",
+      "Research and industry monitoring",
+      "Gaming metadata and KPI analysis",
+      "Business acumen",
+      "Python"
+    ],
+    "missing": [
+      "Gaming industry expertise",
+      "Gaming industry knowledge",
+      "T-SQL",
+      "Forecasting models",
+      "Fast-paced business adaptability"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Data analysis",
+      "Excel",
+      "Data analysis tools and techniques"
+    ],
+    "partial_matches": [
+      "Technical and analytical skills",
+      "Communication skills",
+      "Presentation skills",
+      "Stakeholder communication"
+    ],
+    "competency_gaps": [
+      "Gaming passion",
+      "Data insight generation",
+      "Data quality and issue remediation",
+      "SQL",
+      "Database concepts",
+      "Data warehousing",
+      "Power BI",
+      "Power Apps",
+      "Relational data models",
+      "Qualitative and quantitative research",
+      "Competitive analysis",
+      "Research and industry monitoring",
+      "Gaming metadata and KPI analysis",
+      "Business acumen",
+      "Python",
+      "Gaming industry expertise",
+      "Gaming industry knowledge",
+      "T-SQL",
+      "Forecasting models",
+      "Fast-paced business adaptability"
+    ]
+  },
+  "counts": {
+    "requirements": 27,
+    "strength_matches": 3,
+    "partial_matches": 4,
+    "competency_gaps": 20
+  },
+  "latency_ms": 51.01,
+  "analyzed_at": "2026-10-03T17:29:42.613558+00:00"
+}

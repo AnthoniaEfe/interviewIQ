@@ -1,0 +1,325 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02779_1664ca28b982",
+  "jd_id": "rjf_02779_1664ca28b982",
+  "pair_id": "rjf_02779_1664ca28b982",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Professional production code development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6548,
+        "evidence": {
+          "tfidf_score": 0.08457141710078613,
+          "tfidf_matched_terms": [
+            "code",
+            "development"
+          ],
+          "bm25_score": 2.973962867540596,
+          "semantic_score": 0.45954078435897827,
+          "matched_candidate_competency": "Database development"
+        },
+        "candidate_evidence": [
+          "Database development"
+        ]
+      },
+      {
+        "job_competency": "React and Redux",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7079,
+        "evidence": {
+          "tfidf_score": 0.17115009022365804,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5697666187948112,
+          "semantic_score": 0.24387255311012268,
+          "matched_candidate_competency": "Implemented functionality to capture images and record audio and video."
+        },
+        "candidate_evidence": [
+          "Implemented functionality to capture images and record audio and video."
+        ]
+      },
+      {
+        "job_competency": "JavaScript",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1679,
+        "evidence": {
+          "tfidf_score": 0.07659752584773191,
+          "tfidf_matched_terms": [
+            "javascript"
+          ],
+          "bm25_score": 4.513512406486399,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      },
+      {
+        "job_competency": "Java or similar frameworks",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3715,
+        "evidence": {
+          "tfidf_score": 0.04188021126356378,
+          "tfidf_matched_terms": [
+            "frameworks",
+            "java"
+          ],
+          "bm25_score": 4.513512406486399,
+          "semantic_score": 0.6694590449333191,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Web backend technologies",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3964,
+        "evidence": {
+          "tfidf_score": 0.057670292788556,
+          "tfidf_matched_terms": [
+            "web"
+          ],
+          "bm25_score": 2.753771125215077,
+          "semantic_score": 0.6362181901931763,
+          "matched_candidate_competency": "REST Web Services"
+        },
+        "candidate_evidence": [
+          "REST Web Services"
+        ]
+      },
+      {
+        "job_competency": "Ruby on Rails",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6891,
+        "evidence": {
+          "tfidf_score": 0.011446164942492097,
+          "tfidf_matched_terms": [
+            "on"
+          ],
+          "bm25_score": 2.2877107918498565,
+          "semantic_score": 0.38861334323883057,
+          "matched_candidate_competency": "Deployed the application on users' phones for beta testing."
+        },
+        "candidate_evidence": [
+          "Deployed the application on users' phones for beta testing."
+        ]
+      },
+      {
+        "job_competency": "Relational database design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3746,
+        "evidence": {
+          "tfidf_score": 0.05120693035830506,
+          "tfidf_matched_terms": [
+            "database",
+            "design"
+          ],
+          "bm25_score": 4.2184231144157325,
+          "semantic_score": 0.6696176528930664,
+          "matched_candidate_competency": "Database development"
+        },
+        "candidate_evidence": [
+          "Database development"
+        ]
+      },
+      {
+        "job_competency": "PostgreSQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7125,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5468767285346985,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Customer-centric design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6999,
+        "evidence": {
+          "tfidf_score": 0.02291408372781598,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 1.9839366226361803,
+          "semantic_score": 0.3519541621208191,
+          "matched_candidate_competency": "Cooperated with web designers to match visual design intent."
+        },
+        "candidate_evidence": [
+          "Cooperated with web designers to match visual design intent."
+        ]
+      },
+      {
+        "job_competency": "Cross-stack engineering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6659,
+        "evidence": {
+          "tfidf_score": 0.022914083727815976,
+          "tfidf_matched_terms": [
+            "cross"
+          ],
+          "bm25_score": 3.6337571664749935,
+          "semantic_score": 0.3508557677268982,
+          "matched_candidate_competency": "Cross-browser testing"
+        },
+        "candidate_evidence": [
+          "Cross-browser testing"
+        ]
+      },
+      {
+        "job_competency": "Collaboration",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1615,
+        "evidence": {
+          "tfidf_score": 0.0254678181866496,
+          "tfidf_matched_terms": [
+            "collaboration"
+          ],
+          "bm25_score": 5.797075393605877,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Collaboration"
+        },
+        "candidate_evidence": [
+          "Collaboration"
+        ]
+      },
+      {
+        "job_competency": "Networking",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.439,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4270612597465515,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Cloud-based infrastructure and services",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3876,
+        "evidence": {
+          "tfidf_score": 0.15481091859244775,
+          "tfidf_matched_terms": [
+            "and",
+            "services"
+          ],
+          "bm25_score": 3.6337571664749935,
+          "semantic_score": 0.3767116665840149,
+          "matched_candidate_competency": "REST Web Services"
+        },
+        "candidate_evidence": [
+          "REST Web Services"
+        ]
+      },
+      {
+        "job_competency": "Web applications",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2265,
+        "evidence": {
+          "tfidf_score": 0.07439027568573017,
+          "tfidf_matched_terms": [
+            "web"
+          ],
+          "bm25_score": 2.753771125215077,
+          "semantic_score": 0.8129464983940125,
+          "matched_candidate_competency": "REST Web Services"
+        },
+        "candidate_evidence": [
+          "REST Web Services"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "JavaScript",
+      "Collaboration"
+    ],
+    "partial_matches": [
+      "Java or similar frameworks",
+      "Web backend technologies",
+      "Relational database design",
+      "Web applications"
+    ],
+    "weak_matches": [
+      "Professional production code development",
+      "React and Redux",
+      "Ruby on Rails",
+      "PostgreSQL",
+      "Customer-centric design",
+      "Cross-stack engineering",
+      "Networking",
+      "Cloud-based infrastructure and services"
+    ],
+    "missing": []
+  },
+  "three_category": {
+    "strength_matches": [
+      "JavaScript",
+      "Collaboration"
+    ],
+    "partial_matches": [
+      "Java or similar frameworks",
+      "Web backend technologies",
+      "Relational database design",
+      "Web applications"
+    ],
+    "competency_gaps": [
+      "Professional production code development",
+      "React and Redux",
+      "Ruby on Rails",
+      "PostgreSQL",
+      "Customer-centric design",
+      "Cross-stack engineering",
+      "Networking",
+      "Cloud-based infrastructure and services"
+    ]
+  },
+  "counts": {
+    "requirements": 14,
+    "strength_matches": 2,
+    "partial_matches": 4,
+    "competency_gaps": 8
+  },
+  "latency_ms": 37.78,
+  "analyzed_at": "2026-10-03T17:29:46.054179+00:00"
+}

@@ -1,0 +1,439 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01098_473f0dfea278",
+  "jd_id": "rjf_01098_473f0dfea278",
+  "pair_id": "rjf_01098_473f0dfea278",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Data modeling",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3945,
+        "evidence": {
+          "tfidf_score": 0.03506941458763424,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.3952739716100617,
+          "semantic_score": 0.45735055208206177,
+          "matched_candidate_competency": "Data Entry"
+        },
+        "candidate_evidence": [
+          "Data Entry"
+        ]
+      },
+      {
+        "job_competency": "ETL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7233,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.47958382964134216,
+          "matched_candidate_competency": "EMR/EHR"
+        },
+        "candidate_evidence": [
+          "EMR/EHR"
+        ]
+      },
+      {
+        "job_competency": "Data warehousing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3898,
+        "evidence": {
+          "tfidf_score": 0.03506941458763424,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.3952739716100617,
+          "semantic_score": 0.505254864692688,
+          "matched_candidate_competency": "Data Entry"
+        },
+        "candidate_evidence": [
+          "Data Entry"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7236,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4772079885005951,
+          "matched_candidate_competency": "EMR/EHR"
+        },
+        "candidate_evidence": [
+          "EMR/EHR"
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9219,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3902759552001953,
+          "matched_candidate_competency": "EMR/EHR"
+        },
+        "candidate_evidence": [
+          "EMR/EHR"
+        ]
+      },
+      {
+        "job_competency": "Azure Data Factory",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6468,
+        "evidence": {
+          "tfidf_score": 0.02718720139896027,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.3952739716100617,
+          "semantic_score": 0.36646008491516113,
+          "matched_candidate_competency": "Data Entry"
+        },
+        "candidate_evidence": [
+          "Data Entry"
+        ]
+      },
+      {
+        "job_competency": "Azure Databricks",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9519,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24040937423706055,
+          "matched_candidate_competency": "EMR/EHR"
+        },
+        "candidate_evidence": [
+          "EMR/EHR"
+        ]
+      },
+      {
+        "job_competency": "Azure Synapse Analytics",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9625,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.18728800117969513,
+          "matched_candidate_competency": "EMR/EHR"
+        },
+        "candidate_evidence": [
+          "EMR/EHR"
+        ]
+      },
+      {
+        "job_competency": "Azure Data Lake Storage",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6672,
+        "evidence": {
+          "tfidf_score": 0.02975950934280874,
+          "tfidf_matched_terms": [
+            "data",
+            "storage"
+          ],
+          "bm25_score": 3.3952739716100617,
+          "semantic_score": 0.23666693270206451,
+          "matched_candidate_competency": "Data Entry"
+        },
+        "candidate_evidence": [
+          "Data Entry"
+        ]
+      },
+      {
+        "job_competency": "Azure SQL Database",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9458,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27077266573905945,
+          "matched_candidate_competency": "EMR/EHR"
+        },
+        "candidate_evidence": [
+          "EMR/EHR"
+        ]
+      },
+      {
+        "job_competency": "Data governance",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3988,
+        "evidence": {
+          "tfidf_score": 0.03506941458763424,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.3952739716100617,
+          "semantic_score": 0.4143450856208801,
+          "matched_candidate_competency": "Data Entry"
+        },
+        "candidate_evidence": [
+          "Data Entry"
+        ]
+      },
+      {
+        "job_competency": "Version control",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6663,
+        "evidence": {
+          "tfidf_score": 0.00700189812435118,
+          "tfidf_matched_terms": [
+            "control"
+          ],
+          "bm25_score": 2.7985518770355844,
+          "semantic_score": 0.35985639691352844,
+          "matched_candidate_competency": "Coordinated shipping instructions, routing information, departmental activities, purchasing, and records control."
+        },
+        "candidate_evidence": [
+          "Coordinated shipping instructions, routing information, departmental activities, purchasing, and records control."
+        ]
+      },
+      {
+        "job_competency": "Attention to detail",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6842,
+        "evidence": {
+          "tfidf_score": 0.02718720139896027,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 2.247193207970252,
+          "semantic_score": 0.32570576667785645,
+          "matched_candidate_competency": "Mixed pharmaceutical preparations according to written prescriptions."
+        },
+        "candidate_evidence": [
+          "Mixed pharmaceutical preparations according to written prescriptions."
+        ]
+      },
+      {
+        "job_competency": "Troubleshooting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9311,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34426143765449524,
+          "matched_candidate_competency": "EMR/EHR"
+        },
+        "candidate_evidence": [
+          "EMR/EHR"
+        ]
+      },
+      {
+        "job_competency": "Communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3519,
+        "evidence": {
+          "tfidf_score": 0.012077679941170294,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 4.460577668688464,
+          "semantic_score": 0.7222413420677185,
+          "matched_candidate_competency": "Oral and Written Communication"
+        },
+        "candidate_evidence": [
+          "Oral and Written Communication"
+        ]
+      },
+      {
+        "job_competency": "Teamwork",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.714,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5374892950057983,
+          "matched_candidate_competency": "EMR/EHR"
+        },
+        "candidate_evidence": [
+          "EMR/EHR"
+        ]
+      },
+      {
+        "job_competency": "Mentoring",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7228,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.48268163204193115,
+          "matched_candidate_competency": "EMR/EHR"
+        },
+        "candidate_evidence": [
+          "EMR/EHR"
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5611,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32433274388313293,
+          "matched_candidate_competency": "EMR/EHR"
+        },
+        "candidate_evidence": [
+          "EMR/EHR"
+        ]
+      },
+      {
+        "job_competency": "Visual Studio",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4335,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4845772385597229,
+          "matched_candidate_competency": "EMR/EHR"
+        },
+        "candidate_evidence": [
+          "EMR/EHR"
+        ]
+      },
+      {
+        "job_competency": "Azure DevOps",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5598,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3348722457885742,
+          "matched_candidate_competency": "EMR/EHR"
+        },
+        "candidate_evidence": [
+          "EMR/EHR"
+        ]
+      },
+      {
+        "job_competency": "Power BI",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.566,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2829839885234833,
+          "matched_candidate_competency": "EMR/EHR"
+        },
+        "candidate_evidence": [
+          "EMR/EHR"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Data modeling",
+      "Data warehousing",
+      "Data governance",
+      "Communication"
+    ],
+    "weak_matches": [
+      "ETL",
+      "SQL",
+      "Azure Data Factory",
+      "Azure Data Lake Storage",
+      "Version control",
+      "Attention to detail",
+      "Teamwork",
+      "Mentoring",
+      "Visual Studio"
+    ],
+    "missing": [
+      "Python",
+      "Azure Databricks",
+      "Azure Synapse Analytics",
+      "Azure SQL Database",
+      "Troubleshooting",
+      "Git",
+      "Azure DevOps",
+      "Power BI"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Data modeling",
+      "Data warehousing",
+      "Data governance",
+      "Communication"
+    ],
+    "competency_gaps": [
+      "ETL",
+      "SQL",
+      "Azure Data Factory",
+      "Azure Data Lake Storage",
+      "Version control",
+      "Attention to detail",
+      "Teamwork",
+      "Mentoring",
+      "Visual Studio",
+      "Python",
+      "Azure Databricks",
+      "Azure Synapse Analytics",
+      "Azure SQL Database",
+      "Troubleshooting",
+      "Git",
+      "Azure DevOps",
+      "Power BI"
+    ]
+  },
+  "counts": {
+    "requirements": 21,
+    "strength_matches": 0,
+    "partial_matches": 4,
+    "competency_gaps": 17
+  },
+  "latency_ms": 46.3,
+  "analyzed_at": "2026-10-03T17:29:43.796815+00:00"
+}

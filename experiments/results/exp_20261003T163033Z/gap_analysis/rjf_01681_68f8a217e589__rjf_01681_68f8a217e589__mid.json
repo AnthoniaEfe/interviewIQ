@@ -1,0 +1,268 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01681_68f8a217e589",
+  "jd_id": "rjf_01681_68f8a217e589",
+  "pair_id": "rjf_01681_68f8a217e589",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Salesforce Industries Communications Cloud",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7271,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4553864598274231,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Salesforce / SFDC",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7172,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5172770023345947,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Vlocity",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9323,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33868634700775146,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Omnistudio",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9283,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3583160638809204,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Salesforce API framework",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.934,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3301829695701599,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Third-party APIs",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9273,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36328208446502686,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Solution architecture",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7279,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.45050057768821716,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Salesforce project lifecycle",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3849,
+        "evidence": {
+          "tfidf_score": 0.014853212564860213,
+          "tfidf_matched_terms": [
+            "project"
+          ],
+          "bm25_score": 2.283161963496418,
+          "semantic_score": 0.39014115929603577,
+          "matched_candidate_competency": "Maintained modules in a data warehouse project."
+        },
+        "candidate_evidence": [
+          "Maintained modules in a data warehouse project."
+        ]
+      },
+      {
+        "job_competency": "Code review and documentation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6506,
+        "evidence": {
+          "tfidf_score": 0.21587443624778807,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.201957768627774,
+          "semantic_score": 0.37703967094421387,
+          "matched_candidate_competency": "Microprocessors and microcontrollers"
+        },
+        "candidate_evidence": [
+          "Microprocessors and microcontrollers"
+        ]
+      },
+      {
+        "job_competency": "Source control",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9234,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38279592990875244,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Deployments to higher environments",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6556,
+        "evidence": {
+          "tfidf_score": 0.025155680294636978,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 1.7769716911419398,
+          "semantic_score": 0.29985976219177246,
+          "matched_candidate_competency": "Analyzed requirements and made changes to existing modules."
+        },
+        "candidate_evidence": [
+          "Analyzed requirements and made changes to existing modules."
+        ]
+      },
+      {
+        "job_competency": "Salesforce capabilities and limitations",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6481,
+        "evidence": {
+          "tfidf_score": 0.21587443624778807,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.201957768627774,
+          "semantic_score": 0.39271342754364014,
+          "matched_candidate_competency": "Microprocessors and microcontrollers"
+        },
+        "candidate_evidence": [
+          "Microprocessors and microcontrollers"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Salesforce project lifecycle"
+    ],
+    "weak_matches": [
+      "Salesforce Industries Communications Cloud",
+      "Salesforce / SFDC",
+      "Solution architecture",
+      "Code review and documentation",
+      "Deployments to higher environments",
+      "Salesforce capabilities and limitations"
+    ],
+    "missing": [
+      "Vlocity",
+      "Omnistudio",
+      "Salesforce API framework",
+      "Third-party APIs",
+      "Source control"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Salesforce project lifecycle"
+    ],
+    "competency_gaps": [
+      "Salesforce Industries Communications Cloud",
+      "Salesforce / SFDC",
+      "Solution architecture",
+      "Code review and documentation",
+      "Deployments to higher environments",
+      "Salesforce capabilities and limitations",
+      "Vlocity",
+      "Omnistudio",
+      "Salesforce API framework",
+      "Third-party APIs",
+      "Source control"
+    ]
+  },
+  "counts": {
+    "requirements": 12,
+    "strength_matches": 0,
+    "partial_matches": 1,
+    "competency_gaps": 11
+  },
+  "latency_ms": 29.07,
+  "analyzed_at": "2026-10-03T17:29:44.435523+00:00"
+}

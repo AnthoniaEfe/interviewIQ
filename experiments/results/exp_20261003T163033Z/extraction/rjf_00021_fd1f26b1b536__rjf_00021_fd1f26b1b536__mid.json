@@ -1,0 +1,931 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "extraction",
+  "profile_id": "rjf_00021_fd1f26b1b536",
+  "jd_id": "rjf_00021_fd1f26b1b536",
+  "pair_id": "rjf_00021_fd1f26b1b536",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Computer scientist and engineer with four years of experience across computer hardware, software, and IoT disciplines; experienced developing products and applying computer science concepts in business contexts.",
+    "seniority_indicators": [
+      "Four years of experience in the field",
+      "IoT Embedded Software Engineer",
+      "Data Integration Engineer Internship"
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Science",
+        "institution": "University of Toledo",
+        "field": "Computer Science and Engineering Technology",
+        "year": "Expected 12/2022",
+        "source_text": "Bachelor of Science: Computer Science and Engineering Technology; GPA 3.89; ABET Accredited Degree"
+      }
+    ],
+    "experience": [
+      {
+        "title": "IoT Embedded Software Engineer",
+        "employer": "Carrier Corporation",
+        "duration": "08/2022 to Current",
+        "responsibilities": [
+          "Developed digital smart home products from traditionally non-smart home products",
+          "Collaborated with firmware, hardware, cloud, mobile app, and QA engineers on IoT embedded solutions",
+          "Designed, developed, modified, and debugged software and firmware for smart home IoT products",
+          "Used AWS IoT Core REST API shadows with JSON to update device states",
+          "Stored device and telemetry data in AWS S3",
+          "Conducted code reviews through Swarm Review",
+          "Participated in Agile/Scrum stand-ups and project sprint planning",
+          "Assisted with board bring-ups and initial setup/configuration"
+        ],
+        "achievements": [],
+        "technologies": [
+          "C",
+          "AWS IoT Core",
+          "REST API",
+          "JSON",
+          "AWS S3",
+          "Perforce",
+          "Swarm Review",
+          "Atlassian Jira",
+          "CI/CD",
+          "Segger hardware JTAGs",
+          "IAR Embedded Workbench",
+          "FreeRTOS"
+        ],
+        "source_text": "Developed and debugged C software/firmware for smart home IoT products and collaborated across embedded, cloud, mobile, hardware, and QA teams."
+      },
+      {
+        "title": "Data Integration Engineer Intern",
+        "employer": "Bay Controls, LLC",
+        "duration": "12/2020 to 08/2022",
+        "responsibilities": [
+          "Integrated air compressor systems into IoT platforms for Ford, Chrysler, and General Motors plants",
+          "Used JACE 8000 controllers communicating over C-link and Modbus TCP",
+          "Performed integration through the Tridium Niagara IoT framework",
+          "Added custom Java programming capabilities to existing systems",
+          "Created Java flow calculation and control programs using live unit data",
+          "Designed and implemented GUIs for integration purposes",
+          "Troubleshot faulty systems and performed quality control checks"
+        ],
+        "achievements": [
+          "Created Java programs deployed on field hardware for more than 50 automotive plants",
+          "Enabled live data monitoring, data collection, and remote interaction capabilities for automotive plants"
+        ],
+        "technologies": [
+          "JACE 8000",
+          "C-link",
+          "Modbus TCP",
+          "Tridium Niagara",
+          "Java",
+          "GUIs",
+          "IoT"
+        ],
+        "source_text": "Integrated air compressor systems into IoT environments and created Java programs deployed across 50+ automotive plants."
+      },
+      {
+        "title": "Samsung Experience Consultant",
+        "employer": "Mosaic Sales Solutions",
+        "duration": "12/2012 to 12/2020",
+        "responsibilities": [],
+        "achievements": [],
+        "technologies": [],
+        "source_text": "Samsung Experience Consultant at Mosaic Sales Solutions"
+      },
+      {
+        "title": "Intel Sales Representative",
+        "employer": "ActionLink",
+        "duration": "12/2012 to 12/2020",
+        "responsibilities": [],
+        "achievements": [],
+        "technologies": [],
+        "source_text": "Intel Sales Representative at ActionLink"
+      },
+      {
+        "title": "Computer Repair Technician Intern",
+        "employer": "Glass City PC",
+        "duration": "12/2012 to 12/2020",
+        "responsibilities": [],
+        "achievements": [],
+        "technologies": [],
+        "source_text": "Computer Repair Technician Intern at Glass City PC"
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "C",
+        "original_mentions": [
+          "C"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Designed, developed, modified, and debugged software/firmware using C",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Java",
+        "original_mentions": [
+          "Java"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Added custom Java programming capabilities; created custom Java flow calculation and control programs",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "AWS IoT Core",
+        "original_mentions": [
+          "AWS IoT Core"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Utilized AWS IoT Core REST API shadows with JSON",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "AWS S3",
+        "original_mentions": [
+          "AWS S3 cloud storage"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Stored device and telemetry data within AWS S3 cloud storage",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JSON",
+        "original_mentions": [
+          "JSON"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "AWS IoT Core REST API shadows with JSON",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "REST API",
+        "original_mentions": [
+          "REST API"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "AWS IoT Core REST API shadows",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "FreeRTOS",
+        "original_mentions": [
+          "Real-Time Operating Systems (FreeRTOS)"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Imported Real-Time Operating Systems (FreeRTOS) in project builds",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Perforce",
+        "original_mentions": [
+          "Perforce"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Implemented version control and continuous integration using Perforce",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Atlassian Jira",
+        "original_mentions": [
+          "Atlassian Jira"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Integrated Atlassian Jira in agile/scrum development and CI/CD workflows",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "CI/CD",
+        "original_mentions": [
+          "continuous integration",
+          "CI/CD"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Implemented version control and continuous integration; integrated CI/CD workflows",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Modbus TCP",
+        "original_mentions": [
+          "Modbus TCP"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "JACE 8000 controllers communicating over C-link and Modbus TCP protocols",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Tridium Niagara",
+        "original_mentions": [
+          "Tridium Niagara IoT framework"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Performed integration through the Tridium Niagara IoT framework",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JACE 8000",
+        "original_mentions": [
+          "JACE 8000 controllers"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Utilized JACE 8000 controllers",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "IAR Embedded Workbench",
+        "original_mentions": [
+          "IAR Embedded Workbench"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Debugged software with Segger hardware JTAGs and IAR Embedded Workbench",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Segger JTAG",
+        "original_mentions": [
+          "Segger hardware JTAGs"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Debugged software with Segger hardware JTAGs",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "GUI Design",
+        "original_mentions": [
+          "designing and implementing GUIs"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Designing and implementing GUIs for various integration purposes",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Cross-functional collaboration",
+        "original_mentions": [
+          "Collaborated with firmware, hardware, cloud, mobile app, and QA engineers"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Collaborated with firmware, hardware, cloud, mobile app, and QA engineers",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Agile/Scrum",
+        "original_mentions": [
+          "agile/scrum development",
+          "stand-ups",
+          "project sprint planning"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Integrated Atlassian Jira in agile/scrum development and project sprint planning",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Customer service",
+        "original_mentions": [
+          "providing professional products and services to customers"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Gained experience providing professional products and services to customers",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Adaptability",
+        "original_mentions": [
+          "knowledge and adaptability to work across a diverse range of computing disciplines"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Knowledge and adaptability to work across a diverse range of computing disciplines",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Internet of Things (IoT)",
+        "original_mentions": [
+          "IoT embedded solutions",
+          "IoT",
+          "digital smart home products"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Developed digital smart home products and integrated air compressor systems into the IoT",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Embedded software",
+        "original_mentions": [
+          "IoT Embedded Software Engineer",
+          "software/firmware"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Designed, developed, modified, and debugged software/firmware for smart home IoT products",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Smart home technology",
+        "original_mentions": [
+          "smart home IoT products",
+          "digital smart home products"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Turning traditionally non-smart home products into digital smart home products",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Industrial data integration",
+        "original_mentions": [
+          "Data Integration Engineer",
+          "Integrated air compressor systems"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Integrated air compressor systems into the IoT for automotive plants",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Automotive manufacturing",
+        "original_mentions": [
+          "Ford, Chrysler, and General Motor plants",
+          "50+ automotive plants"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Integrated systems for Ford, Chrysler, and General Motor plants",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Computer science",
+        "original_mentions": [
+          "computer science concepts",
+          "Computer Science and Engineering Technology"
+        ],
+        "competency_type": "education",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Bachelor of Science in Computer Science and Engineering Technology; comprehensive understanding of computer science concepts",
+          "source_section": "Education and Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial system management",
+        "original_mentions": [
+          "Treasurer",
+          "Overhauled Finance/Dues System"
+        ],
+        "competency_type": "leadership",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Elected by Executive Board for Treasurer - Overhauled Finance/Dues System",
+          "source_section": "Education",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Quality control",
+        "original_mentions": [
+          "performing quality control checks"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Performing quality control checks on the final product",
+          "source_section": "Work History",
+          "origin": "candidate"
+        }
+      }
+    ]
+  },
+  "job": {
+    "title": "Cost Accountant",
+    "seniority": null,
+    "years_of_experience": "5 years of corporate accounting experience at a manufacturing firm according to IFRS or US GAAP",
+    "responsibilities": [
+      "Run general ledger accounts and bookkeeping, including monthly closing according to local GAAP and IFRS or US GAAP.",
+      "Maintain cost and profit centers, standard costing, and project-based costing in IQMS by Dassault.",
+      "Oversee subsystems relevant for month-end closing, including semi-annual physical inventory management.",
+      "Manage staff responsible for accounting data entry and motivate various non-reporting functions to contribute.",
+      "Monitor cost variance with Production and Engineering teams.",
+      "Prepare annual budgets with the Director of Finance and leadership team members.",
+      "Prepare project budgets with Project Managers.",
+      "Manage the integration of accounting systems with publicly listed parent Stratec SE."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Corporate accounting in a manufacturing environment",
+        "original_mentions": [
+          "5 years of corporate accounting experience at a manufacturing firm"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "5 years of corporate accounting experience at a manufacturing firm",
+          "source_section": "Minimum Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "IFRS and US GAAP",
+        "original_mentions": [
+          "according to International Financial Reporting Standards (IFRS) or US GAAP"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "according to International Financial Reporting Standards (IFRS) or US GAAP",
+          "source_section": "Minimum Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cost center and profit center accounting",
+        "original_mentions": [
+          "Fluency with Cost & Profit Center Accounting methods"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Fluency with Cost & Profit Center Accounting methods in a manufacturing environment",
+          "source_section": "Minimum Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Standard costing",
+        "original_mentions": [
+          "standard costing"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "standard costing",
+          "source_section": "Position Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Project-based costing",
+        "original_mentions": [
+          "project-based costing"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "project-based costing",
+          "source_section": "Position Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Manufacturing ERP systems",
+        "original_mentions": [
+          "Deep understanding of manufacturing ERP systems"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Deep understanding of manufacturing ERP systems",
+          "source_section": "Minimum Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "IQMS by Dassault",
+        "original_mentions": [
+          "ERP system IQMS by Dassault"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "ERP system IQMS by Dassault",
+          "source_section": "Position Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Office",
+        "original_mentions": [
+          "proficiency with Microsoft office"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "proficiency with Microsoft office",
+          "source_section": "Minimum Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "General ledger accounting and bookkeeping",
+        "original_mentions": [
+          "Run general ledger accounts bookkeeping"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Run general ledger accounts bookkeeping",
+          "source_section": "Position Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Month-end closing",
+        "original_mentions": [
+          "monthly closing",
+          "Month end closing"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "monthly closing according to local GAAP and IFRSUS GAAP",
+          "source_section": "Position Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Physical inventory management",
+        "original_mentions": [
+          "semi-annual physical inventory management"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "semi-annual physical inventory management",
+          "source_section": "Position Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cost variance monitoring",
+        "original_mentions": [
+          "Monitoring cost variance"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Monitoring cost variance in concert with Production and Engineering teams",
+          "source_section": "Position Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Annual and project budgeting",
+        "original_mentions": [
+          "Prepare annual budgets",
+          "project budgets"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Prepare annual budgets together with Director of Finance and Leadership team members and project budgets with Project Managers",
+          "source_section": "Position Responsibilities",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "SQL query writing",
+        "original_mentions": [
+          "Ability to write SQL queries"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Ability to write SQL queries",
+          "source_section": "Highly Desirable",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Crystal Reports",
+        "original_mentions": [
+          "create Crystal Reports"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "create Crystal Reports",
+          "source_section": "Highly Desirable",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Master of Business Administration",
+        "original_mentions": [
+          "Masters degree in business administration (MBA)"
+        ],
+        "competency_type": "education",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Masters degree in business administration (MBA)",
+          "source_section": "Highly Desirable",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Certified Public Accountant",
+        "original_mentions": [
+          "CPA"
+        ],
+        "competency_type": "certification",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "CPA",
+          "source_section": "Highly Desirable",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [
+      "Bachelor's degree in accounting."
+    ],
+    "certifications": [
+      {
+        "normalized_label": "Certified Public Accountant",
+        "original_mentions": [
+          "CPA"
+        ],
+        "competency_type": "certification",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "CPA",
+          "source_section": "Highly Desirable",
+          "origin": "job"
+        }
+      }
+    ],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Manufacturing accounting",
+        "original_mentions": [
+          "corporate accounting experience at a manufacturing firm",
+          "manufacturing environment"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "corporate accounting experience at a manufacturing firm",
+          "source_section": "Minimum Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Contract manufacturing for in-vitro diagnostics",
+        "original_mentions": [
+          "contract manufacturer for in-vitro diagnostics"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "As a contract manufacturer for in-vitro diagnostics",
+          "source_section": "The Company",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Staff management",
+        "original_mentions": [
+          "Manage staff responsible for accounting data entry"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Manage staff responsible for accounting data entry",
+          "source_section": "Position Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Motivating cross-functional contributors",
+        "original_mentions": [
+          "motivate various non-reporting functions to do their part"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "motivate various non-reporting functions to do their part",
+          "source_section": "Position Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cross-functional collaboration",
+        "original_mentions": [
+          "in concert with Production and Engineering teams",
+          "with Project Managers"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "in concert with Production and Engineering teams",
+          "source_section": "Position Responsibilities",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [
+      "Manage staff responsible for accounting data entry.",
+      "Motivate various non-reporting functions to contribute."
+    ],
+    "system_design_requirements": [
+      "Take accounting systems to the next level.",
+      "Manage integration with publicly listed parent Stratec SE."
+    ],
+    "competencies": []
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 1726,
+    "output_tokens": 2690,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0033851,
+    "latency_ms": 16926.34,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1205,
+    "output_tokens": 1936,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0025642,
+    "latency_ms": 16413.53,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-10-03T16:53:09.141336+00:00",
+  "reused_from_experiment": null
+}

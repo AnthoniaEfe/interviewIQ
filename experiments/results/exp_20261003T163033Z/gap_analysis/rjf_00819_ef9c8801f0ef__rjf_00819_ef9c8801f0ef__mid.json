@@ -1,0 +1,679 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00819_ef9c8801f0ef",
+  "jd_id": "rjf_00819_ef9c8801f0ef",
+  "pair_id": "rjf_00819_ef9c8801f0ef",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Electrical design and analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6571,
+        "evidence": {
+          "tfidf_score": 0.3131679205447742,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and"
+          ],
+          "bm25_score": 2.8034705091381875,
+          "semantic_score": 0.2581265866756439,
+          "matched_candidate_competency": "Variance analysis"
+        },
+        "candidate_evidence": [
+          "Variance analysis"
+        ]
+      },
+      {
+        "job_competency": "Project-based engineering",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9368,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31577068567276,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Electrical design for power generation, power distribution, and renewable energy",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.8991,
+        "evidence": {
+          "tfidf_score": 0.17226260563920018,
+          "tfidf_matched_terms": [
+            "and",
+            "for"
+          ],
+          "bm25_score": 1.7524089191332193,
+          "semantic_score": 0.1250447779893875,
+          "matched_candidate_competency": "Prepared consolidated reporting for internal and external agencies."
+        },
+        "candidate_evidence": [
+          "Prepared consolidated reporting for internal and external agencies."
+        ]
+      },
+      {
+        "job_competency": "Utility project engineering above 20 MW",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.948,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26017528772354126,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Photovoltaic solar systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6423,
+        "evidence": {
+          "tfidf_score": 0.006715431832096692,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 4.741356643363599,
+          "semantic_score": 0.3033711910247803,
+          "matched_candidate_competency": "General ledger systems"
+        },
+        "candidate_evidence": [
+          "General ledger systems"
+        ]
+      },
+      {
+        "job_competency": "Electrical substations",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9479,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26053547859191895,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Battery energy storage systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.641,
+        "evidence": {
+          "tfidf_score": 0.0056775968549047035,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 4.741356643363599,
+          "semantic_score": 0.3123950958251953,
+          "matched_candidate_competency": "General ledger systems"
+        },
+        "candidate_evidence": [
+          "General ledger systems"
+        ]
+      },
+      {
+        "job_competency": "Wind energy systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6587,
+        "evidence": {
+          "tfidf_score": 0.006715431832096692,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 4.741356643363599,
+          "semantic_score": 0.20114342868328094,
+          "matched_candidate_competency": "General ledger systems"
+        },
+        "candidate_evidence": [
+          "General ledger systems"
+        ]
+      },
+      {
+        "job_competency": "Electrical loading and equipment sizing calculations",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9183,
+        "evidence": {
+          "tfidf_score": 0.19248422515864905,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.42621741441339445,
+          "semantic_score": 0.2034839689731598,
+          "matched_candidate_competency": "Budgeting and forecasting"
+        },
+        "candidate_evidence": [
+          "Budgeting and forecasting"
+        ]
+      },
+      {
+        "job_competency": "Short-circuit analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6898,
+        "evidence": {
+          "tfidf_score": 0.04725563274804311,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 2.8034705091381875,
+          "semantic_score": 0.2528618574142456,
+          "matched_candidate_competency": "Variance analysis"
+        },
+        "candidate_evidence": [
+          "Variance analysis"
+        ]
+      },
+      {
+        "job_competency": "Reactive capability analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6756,
+        "evidence": {
+          "tfidf_score": 0.04725563274804311,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 2.8034705091381875,
+          "semantic_score": 0.34160128235816956,
+          "matched_candidate_competency": "Variance analysis"
+        },
+        "candidate_evidence": [
+          "Variance analysis"
+        ]
+      },
+      {
+        "job_competency": "Arc-flash analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6544,
+        "evidence": {
+          "tfidf_score": 0.06027515669726477,
+          "tfidf_matched_terms": [
+            "analysis",
+            "flash"
+          ],
+          "bm25_score": 3.414415680722323,
+          "semantic_score": 0.3769836723804474,
+          "matched_candidate_competency": "Prepared weekly corporate flash reporting for executives."
+        },
+        "candidate_evidence": [
+          "Prepared weekly corporate flash reporting for executives."
+        ]
+      },
+      {
+        "job_competency": "Cable ampacity analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6857,
+        "evidence": {
+          "tfidf_score": 0.06027515669726477,
+          "tfidf_matched_terms": [
+            "analysis",
+            "cable"
+          ],
+          "bm25_score": 2.822066847699174,
+          "semantic_score": 0.2660275995731354,
+          "matched_candidate_competency": "Reported monthly subscriber billing for regional cable services to affiliates."
+        },
+        "candidate_evidence": [
+          "Reported monthly subscriber billing for regional cable services to affiliates."
+        ]
+      },
+      {
+        "job_competency": "Electrical grounding",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9686,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.1569666564464569,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Voltage-drop analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.685,
+        "evidence": {
+          "tfidf_score": 0.04725563274804311,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 2.8034705091381875,
+          "semantic_score": 0.2831350862979889,
+          "matched_candidate_competency": "Variance analysis"
+        },
+        "candidate_evidence": [
+          "Variance analysis"
+        ]
+      },
+      {
+        "job_competency": "NEC, IEEE/ANSI standards, and electrical codes",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6364,
+        "evidence": {
+          "tfidf_score": 0.18934805450472975,
+          "tfidf_matched_terms": [
+            "and",
+            "codes"
+          ],
+          "bm25_score": 3.7213496518689473,
+          "semantic_score": 0.34914687275886536,
+          "matched_candidate_competency": "Maintained general ledger account hierarchies and codes."
+        },
+        "candidate_evidence": [
+          "Maintained general ledger account hierarchies and codes."
+        ]
+      },
+      {
+        "job_competency": "Electrical construction cost estimating and scheduling",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6608,
+        "evidence": {
+          "tfidf_score": 0.2073773335346087,
+          "tfidf_matched_terms": [
+            "and",
+            "cost"
+          ],
+          "bm25_score": 2.401937960567957,
+          "semantic_score": 0.3717488944530487,
+          "matched_candidate_competency": "Prepared monthly profit and loss statements, journal entries, balance sheet reconciliations, and revenue/cost-driver reporting."
+        },
+        "candidate_evidence": [
+          "Prepared monthly profit and loss statements, journal entries, balance sheet reconciliations, and revenue/cost-driver reporting."
+        ]
+      },
+      {
+        "job_competency": "Renewable energy and power-sector permitting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9101,
+        "evidence": {
+          "tfidf_score": 0.19248422515864905,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.42621741441339445,
+          "semantic_score": 0.24418629705905914,
+          "matched_candidate_competency": "Budgeting and forecasting"
+        },
+        "candidate_evidence": [
+          "Budgeting and forecasting"
+        ]
+      },
+      {
+        "job_competency": "Field investigations and construction oversight",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3962,
+        "evidence": {
+          "tfidf_score": 0.23178273668123855,
+          "tfidf_matched_terms": [
+            "and",
+            "investigations"
+          ],
+          "bm25_score": 2.9076105095287033,
+          "semantic_score": 0.449304461479187,
+          "matched_candidate_competency": "Compiled forensic data for multi-site facility reconciliations and federal investigations."
+        },
+        "candidate_evidence": [
+          "Compiled forensic data for multi-site facility reconciliations and federal investigations."
+        ]
+      },
+      {
+        "job_competency": "Construction quality assurance",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6759,
+        "evidence": {
+          "tfidf_score": 0.006715431832096689,
+          "tfidf_matched_terms": [
+            "quality"
+          ],
+          "bm25_score": 2.995278497819378,
+          "semantic_score": 0.34296539425849915,
+          "matched_candidate_competency": "Implemented process improvements for revenue analysis and quality controls."
+        },
+        "candidate_evidence": [
+          "Implemented process improvements for revenue analysis and quality controls."
+        ]
+      },
+      {
+        "job_competency": "Independent and team-based work",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.36,
+        "evidence": {
+          "tfidf_score": 0.23815553163694594,
+          "tfidf_matched_terms": [
+            "and",
+            "team"
+          ],
+          "bm25_score": 4.498523300144236,
+          "semantic_score": 0.5790107250213623,
+          "matched_candidate_competency": "Team supervision"
+        },
+        "candidate_evidence": [
+          "Team supervision"
+        ]
+      },
+      {
+        "job_competency": "Regulatory knowledge and negotiation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7087,
+        "evidence": {
+          "tfidf_score": 0.2412136066750699,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.42621741441339445,
+          "semantic_score": 0.32867535948753357,
+          "matched_candidate_competency": "Budgeting and forecasting"
+        },
+        "candidate_evidence": [
+          "Budgeting and forecasting"
+        ]
+      },
+      {
+        "job_competency": "Technical writing and documentation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6453,
+        "evidence": {
+          "tfidf_score": 0.2748557867184793,
+          "tfidf_matched_terms": [
+            "and",
+            "documentation"
+          ],
+          "bm25_score": 2.7335420101869428,
+          "semantic_score": 0.3706423342227936,
+          "matched_candidate_competency": "Coordinated Sarbanes-Oxley documentation for external financial reporting."
+        },
+        "candidate_evidence": [
+          "Coordinated Sarbanes-Oxley documentation for external financial reporting."
+        ]
+      },
+      {
+        "job_competency": "Attention to detail",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6846,
+        "evidence": {
+          "tfidf_score": 0.02690570422882891,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 2.5238184463991398,
+          "semantic_score": 0.3408080041408539,
+          "matched_candidate_competency": "Provided variance analysis to executive management."
+        },
+        "candidate_evidence": [
+          "Provided variance analysis to executive management."
+        ]
+      },
+      {
+        "job_competency": "Technical communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3702,
+        "evidence": {
+          "tfidf_score": 0.008662394470061254,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 5.251586333960718,
+          "semantic_score": 0.5412403345108032,
+          "matched_candidate_competency": "Executive communication"
+        },
+        "candidate_evidence": [
+          "Executive communication"
+        ]
+      },
+      {
+        "job_competency": "Business development and client relationship management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6381,
+        "evidence": {
+          "tfidf_score": 0.2247035484267906,
+          "tfidf_matched_terms": [
+            "and",
+            "management"
+          ],
+          "bm25_score": 3.610197052262461,
+          "semantic_score": 0.3277997374534607,
+          "matched_candidate_competency": "Deadline management"
+        },
+        "candidate_evidence": [
+          "Deadline management"
+        ]
+      },
+      {
+        "job_competency": "Travel availability",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9573,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.21366900205612183,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "AutoCAD",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9395,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30251455307006836,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "ERP software",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3771,
+        "evidence": {
+          "tfidf_score": 0.017330450498321322,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 4.498523300144236,
+          "semantic_score": 0.5731272101402283,
+          "matched_candidate_competency": "Accounting software"
+        },
+        "candidate_evidence": [
+          "Accounting software"
+        ]
+      },
+      {
+        "job_competency": "Excel, Word, and PowerPoint",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3514,
+        "evidence": {
+          "tfidf_score": 0.2675009310109213,
+          "tfidf_matched_terms": [
+            "and",
+            "excel"
+          ],
+          "bm25_score": 5.251586333960718,
+          "semantic_score": 0.5358713269233704,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "PVsyst",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5657,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28597211837768555,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "pvCase or pvDesign",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5694,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2552294135093689,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Field investigations and construction oversight",
+      "Independent and team-based work",
+      "Technical communication",
+      "ERP software",
+      "Excel, Word, and PowerPoint"
+    ],
+    "weak_matches": [
+      "Electrical design and analysis",
+      "Photovoltaic solar systems",
+      "Battery energy storage systems",
+      "Wind energy systems",
+      "Short-circuit analysis",
+      "Reactive capability analysis",
+      "Arc-flash analysis",
+      "Cable ampacity analysis",
+      "Voltage-drop analysis",
+      "NEC, IEEE/ANSI standards, and electrical codes",
+      "Electrical construction cost estimating and scheduling",
+      "Construction quality assurance",
+      "Regulatory knowledge and negotiation",
+      "Technical writing and documentation",
+      "Attention to detail",
+      "Business development and client relationship management"
+    ],
+    "missing": [
+      "Project-based engineering",
+      "Electrical design for power generation, power distribution, and renewable energy",
+      "Utility project engineering above 20 MW",
+      "Electrical substations",
+      "Electrical loading and equipment sizing calculations",
+      "Electrical grounding",
+      "Renewable energy and power-sector permitting",
+      "Travel availability",
+      "AutoCAD",
+      "PVsyst",
+      "pvCase or pvDesign"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Field investigations and construction oversight",
+      "Independent and team-based work",
+      "Technical communication",
+      "ERP software",
+      "Excel, Word, and PowerPoint"
+    ],
+    "competency_gaps": [
+      "Electrical design and analysis",
+      "Photovoltaic solar systems",
+      "Battery energy storage systems",
+      "Wind energy systems",
+      "Short-circuit analysis",
+      "Reactive capability analysis",
+      "Arc-flash analysis",
+      "Cable ampacity analysis",
+      "Voltage-drop analysis",
+      "NEC, IEEE/ANSI standards, and electrical codes",
+      "Electrical construction cost estimating and scheduling",
+      "Construction quality assurance",
+      "Regulatory knowledge and negotiation",
+      "Technical writing and documentation",
+      "Attention to detail",
+      "Business development and client relationship management",
+      "Project-based engineering",
+      "Electrical design for power generation, power distribution, and renewable energy",
+      "Utility project engineering above 20 MW",
+      "Electrical substations",
+      "Electrical loading and equipment sizing calculations",
+      "Electrical grounding",
+      "Renewable energy and power-sector permitting",
+      "Travel availability",
+      "AutoCAD",
+      "PVsyst",
+      "pvCase or pvDesign"
+    ]
+  },
+  "counts": {
+    "requirements": 32,
+    "strength_matches": 0,
+    "partial_matches": 5,
+    "competency_gaps": 27
+  },
+  "latency_ms": 64.36,
+  "analyzed_at": "2026-10-03T17:29:43.480956+00:00"
+}

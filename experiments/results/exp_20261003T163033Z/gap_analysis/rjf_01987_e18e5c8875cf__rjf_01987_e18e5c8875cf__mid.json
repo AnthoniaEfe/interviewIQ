@@ -1,0 +1,551 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01987_e18e5c8875cf",
+  "jd_id": "rjf_01987_e18e5c8875cf",
+  "pair_id": "rjf_01987_e18e5c8875cf",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Software development processes",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.399,
+        "evidence": {
+          "tfidf_score": 0.08318546864016942,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 3.6881350777572344,
+          "semantic_score": 0.5124751925468445,
+          "matched_candidate_competency": "Network software"
+        },
+        "candidate_evidence": [
+          "Network software"
+        ]
+      },
+      {
+        "job_competency": "Bash shell scripting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9314,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34279152750968933,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "AWS Lambda",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9379,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31041258573532104,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "Amazon SQS",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7262,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4613499045372009,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "Amazon EventBridge",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9285,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3572734594345093,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "AWS RDS/Aurora",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9361,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3193736672401428,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "Amazon DynamoDB",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7305,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.43412965536117554,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "Infrastructure as Code",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6676,
+        "evidence": {
+          "tfidf_score": 0.022240679389417598,
+          "tfidf_matched_terms": [
+            "code"
+          ],
+          "bm25_score": 3.7021841289197974,
+          "semantic_score": 0.3735145032405853,
+          "matched_candidate_competency": "Developed JavaScript code."
+        },
+        "candidate_evidence": [
+          "Developed JavaScript code."
+        ]
+      },
+      {
+        "job_competency": "AWS CloudFormation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9438,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2808389663696289,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "Terraform",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9497,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2515227198600769,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "AWS cloud technologies",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9261,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3696821331977844,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "Amazon EC2",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7348,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40749871730804443,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "Amazon RDS",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9278,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3609028458595276,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "Amazon MQ",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9273,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3633696436882019,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "Amazon S3",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9273,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3634741008281708,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "Amazon API Gateway",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6525,
+        "evidence": {
+          "tfidf_score": 0.037146747166794336,
+          "tfidf_matched_terms": [
+            "api"
+          ],
+          "bm25_score": 3.6881350777572344,
+          "semantic_score": 0.45822465419769287,
+          "matched_candidate_competency": "REST API"
+        },
+        "candidate_evidence": [
+          "REST API"
+        ]
+      },
+      {
+        "job_competency": "CI/CD processes and tools",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7083,
+        "evidence": {
+          "tfidf_score": 0.1039584728674215,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.2856574462273875,
+          "semantic_score": 0.34332606196403503,
+          "matched_candidate_competency": "Developed and implemented Roof911 web application."
+        },
+        "candidate_evidence": [
+          "Developed and implemented Roof911 web application."
+        ]
+      },
+      {
+        "job_competency": "Bitbucket Pipelines",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9378,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3109073340892792,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1619,
+        "evidence": {
+          "tfidf_score": 0.01647775383769523,
+          "tfidf_matched_terms": [
+            "java"
+          ],
+          "bm25_score": 6.350385282105062,
+          "semantic_score": 1.0000003576278687,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3734,
+        "evidence": {
+          "tfidf_score": 0.09932791259835103,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 3.4668429590693313,
+          "semantic_score": 0.7824864387512207,
+          "matched_candidate_competency": "T-SQL"
+        },
+        "candidate_evidence": [
+          "T-SQL"
+        ]
+      },
+      {
+        "job_competency": "Object-oriented programming",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.717,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5188794136047363,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "JavaScript",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1682,
+        "evidence": {
+          "tfidf_score": 0.04948570825975964,
+          "tfidf_matched_terms": [
+            "javascript"
+          ],
+          "bm25_score": 5.0660003626675705,
+          "semantic_score": 1.000000238418579,
+          "matched_candidate_competency": "JavaScript"
+        },
+        "candidate_evidence": [
+          "JavaScript"
+        ]
+      },
+      {
+        "job_competency": "Front-end web frameworks",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.378,
+        "evidence": {
+          "tfidf_score": 0.07439715127800839,
+          "tfidf_matched_terms": [
+            "end",
+            "front",
+            "web"
+          ],
+          "bm25_score": 4.488564671598072,
+          "semantic_score": 0.6343917846679688,
+          "matched_candidate_competency": "Developed front-end code using HTML, CSS, JavaScript and jQuery."
+        },
+        "candidate_evidence": [
+          "Developed front-end code using HTML, CSS, JavaScript and jQuery."
+        ]
+      },
+      {
+        "job_competency": "Problem solving",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7236,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.47773200273513794,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "Process-driven mindset",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9344,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3281773328781128,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "Resourcefulness",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9255,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3726525604724884,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      },
+      {
+        "job_competency": "Minimal direct oversight",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9477,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26132795214653015,
+          "matched_candidate_competency": "Windows NT/2000/XP/Vista"
+        },
+        "candidate_evidence": [
+          "Windows NT/2000/XP/Vista"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Java",
+      "JavaScript"
+    ],
+    "partial_matches": [
+      "Software development processes",
+      "SQL",
+      "Front-end web frameworks"
+    ],
+    "weak_matches": [
+      "Amazon SQS",
+      "Amazon DynamoDB",
+      "Infrastructure as Code",
+      "Amazon EC2",
+      "Amazon API Gateway",
+      "CI/CD processes and tools",
+      "Object-oriented programming",
+      "Problem solving"
+    ],
+    "missing": [
+      "Bash shell scripting",
+      "AWS Lambda",
+      "Amazon EventBridge",
+      "AWS RDS/Aurora",
+      "AWS CloudFormation",
+      "Terraform",
+      "AWS cloud technologies",
+      "Amazon RDS",
+      "Amazon MQ",
+      "Amazon S3",
+      "Bitbucket Pipelines",
+      "Process-driven mindset",
+      "Resourcefulness",
+      "Minimal direct oversight"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Java",
+      "JavaScript"
+    ],
+    "partial_matches": [
+      "Software development processes",
+      "SQL",
+      "Front-end web frameworks"
+    ],
+    "competency_gaps": [
+      "Amazon SQS",
+      "Amazon DynamoDB",
+      "Infrastructure as Code",
+      "Amazon EC2",
+      "Amazon API Gateway",
+      "CI/CD processes and tools",
+      "Object-oriented programming",
+      "Problem solving",
+      "Bash shell scripting",
+      "AWS Lambda",
+      "Amazon EventBridge",
+      "AWS RDS/Aurora",
+      "AWS CloudFormation",
+      "Terraform",
+      "AWS cloud technologies",
+      "Amazon RDS",
+      "Amazon MQ",
+      "Amazon S3",
+      "Bitbucket Pipelines",
+      "Process-driven mindset",
+      "Resourcefulness",
+      "Minimal direct oversight"
+    ]
+  },
+  "counts": {
+    "requirements": 27,
+    "strength_matches": 2,
+    "partial_matches": 3,
+    "competency_gaps": 22
+  },
+  "latency_ms": 63.05,
+  "analyzed_at": "2026-10-03T17:29:44.790806+00:00"
+}

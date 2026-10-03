@@ -1,0 +1,843 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "extraction",
+  "profile_id": "rjf_02144_21c2bb2552fe",
+  "jd_id": "rjf_02144_21c2bb2552fe",
+  "pair_id": "rjf_02144_21c2bb2552fe",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Financial Accountant specializing in financial planning, reporting and analysis across private and public sectors.",
+    "seniority_indicators": [
+      "Accountant",
+      "Financial Accountant"
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Arts (BA) Honours in Business Studies",
+        "institution": "University of Greenwich",
+        "field": "Business Studies",
+        "year": "2014",
+        "source_text": "Completed BA Honours Business Studies with Second Upper Class Honors."
+      },
+      {
+        "degree": "Association of Business Executive",
+        "institution": "Oshwal College",
+        "field": "Business",
+        "year": "2013",
+        "source_text": "Completed the Association of Business Executive."
+      }
+    ],
+    "experience": [
+      {
+        "title": "Accountant",
+        "employer": "Ametek, Inc.; Shantilal Gala & Company",
+        "duration": "06/2012-09/2015",
+        "responsibilities": [
+          "Maintained accounts receivable documentation electronically and on paper.",
+          "Processed bank reconciliations and weekly and monthly financial reports.",
+          "Entered weekly sales and customer count sheets for management review.",
+          "Processed payroll, electronic deposits and employee pay adjustments.",
+          "Collaborated with auditors during preliminary and year-end audits."
+        ],
+        "achievements": [
+          "Created a new Excel financial recording system that increased efficiency and reduced workloads."
+        ],
+        "technologies": [
+          "Excel"
+        ],
+        "source_text": "Accountant role; maintained accounts receivable, processed reconciliations and reports, created an Excel financial recording system."
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "Financial planning",
+        "original_mentions": [
+          "financial planning"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "specializing in financial planning",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial reporting",
+        "original_mentions": [
+          "financial reporting",
+          "Periodic financial reporting"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "financial reporting; Periodic financial reporting expert",
+          "source_section": "Summary; Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial analysis",
+        "original_mentions": [
+          "analysis"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "financial planning, reporting and analysis",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Invoice coding",
+        "original_mentions": [
+          "Invoice coding familiarity"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Invoice coding familiarity",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "General ledger accounting",
+        "original_mentions": [
+          "General ledger accounting skills"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "General ledger accounting skills",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Account reconciliation",
+        "original_mentions": [
+          "Account reconciliation expert",
+          "bank reconciliations"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Account reconciliation expert; processed bank reconciliations",
+          "source_section": "Highlights; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accounts receivable",
+        "original_mentions": [
+          "accounts receivable documentation"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Maintained accounts receivable documentation",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Payroll processing",
+        "original_mentions": [
+          "Processed payroll"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Processed payroll, electronic deposits and employee pay adjustments",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Excel",
+        "original_mentions": [
+          "Excel financial recording system"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "creating a new Excel financial recording system",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Communication",
+        "original_mentions": [
+          "Strong communication skills",
+          "Communication"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Strong communication skills; Communication allows me to interact with colleagues and clients",
+          "source_section": "Highlights; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Problem solving",
+        "original_mentions": [
+          "Complex problem solving"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Complex problem solving",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Organization",
+        "original_mentions": [
+          "Organization"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Organization - managing responsibilities and keeping track of those responsibilities",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Time management",
+        "original_mentions": [
+          "Time Management"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Time Management",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Adaptability",
+        "original_mentions": [
+          "Adaptability"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Adaptability - adapt quickly and easily",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Audit",
+        "original_mentions": [
+          "Audit firm",
+          "auditors",
+          "year-end audit processes"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "worked at an audit firm; collaborated with auditors during year-end audit processes",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial accounting",
+        "original_mentions": [
+          "Financial Accountant",
+          "accounting"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Financial Accountant; Accountant",
+          "source_section": "Summary; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Private and public sectors",
+        "original_mentions": [
+          "private and public sectors"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "in both private and public sectors",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Business studies",
+        "original_mentions": [
+          "Business Studies",
+          "Business"
+        ],
+        "competency_type": "education",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "BA Honours Business Studies; Association of Business Executive",
+          "source_section": "Education",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accounting",
+        "original_mentions": [
+          "Introduction to Accounting",
+          "Financial Accounting",
+          "Managerial Accounting"
+        ],
+        "competency_type": "education",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "completed coursework in Introduction to Accounting, Financial Accounting and Managerial Accounting",
+          "source_section": "Education",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Corporate finance",
+        "original_mentions": [
+          "Corporate Finance"
+        ],
+        "competency_type": "education",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Corporate Finance",
+          "source_section": "Education",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Business management",
+        "original_mentions": [
+          "Business Management"
+        ],
+        "competency_type": "education",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Diploma in Business Management",
+          "source_section": "Education",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Strategic planning",
+        "original_mentions": [
+          "Corporate Strategy and Planning",
+          "Managing Strategy"
+        ],
+        "competency_type": "education",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Corporate Strategy and Planning; Managing Strategy",
+          "source_section": "Education",
+          "origin": "candidate"
+        }
+      }
+    ]
+  },
+  "job": {
+    "title": "Cost Accountant",
+    "seniority": null,
+    "years_of_experience": "Minimum 5 years of Accounting experience",
+    "responsibilities": [
+      "Perform month-end close for inventory accounts and reconcile perpetual inventory to the general ledger.",
+      "Maintain standard costs for inventory parts, including material, labor, burden, overhead, routers, and product structures, with quarterly/annual updates.",
+      "Complete work order review and accounting close; analyze variances and inventory activities.",
+      "Analyze and record amortization of capitalized PPV and manufacturing variances.",
+      "Maintain monthly allocation entries.",
+      "Participate in the annual physical inventory, reconcile results to the general ledger and perpetual inventory, and coordinate tasks and personnel.",
+      "Complete miscellaneous account analyses as requested.",
+      "Document procedures and streamline transaction processing to improve efficiencies.",
+      "Complete assigned monthly balance sheet reconciliations.",
+      "Support annual external audit and tax analysis as assigned.",
+      "Complete training according to the position training plan."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Microsoft Excel",
+        "original_mentions": [
+          "Strong MS Excel (Pivot Tables, VLOOKUP, etc.)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Strong MS Excel (Pivot Tables, VLOOKUP, etc.)",
+          "source_section": "REQUIRED KNOWLEDGE, SKILLS AND ABILITIES",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "ERP systems",
+        "original_mentions": [
+          "ERP"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "ERP",
+          "source_section": "COMPUTER SKILLS",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Office",
+        "original_mentions": [
+          "MS Office (Excel, Word, Powerpoint, Outlook)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "MS Office (Excel, Word, Powerpoint, Outlook)",
+          "source_section": "COMPUTER SKILLS",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "U.S. GAAP",
+        "original_mentions": [
+          "Solid understanding of U.S. GAAP"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Solid understanding of U.S. GAAP",
+          "source_section": "REQUIRED KNOWLEDGE, SKILLS AND ABILITIES",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Financial accounting",
+        "original_mentions": [
+          "Accounting experience"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "minimum 5 years Accounting experience",
+          "source_section": "EDUCATION, EXPERIENCE, and TRAINING",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Document interpretation and business writing",
+        "original_mentions": [
+          "read and interpret documents",
+          "write routine reports and correspondence"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Ability to read and interpret documents... Ability to write routine reports and correspondence.",
+          "source_section": "REQUIRED KNOWLEDGE, SKILLS AND ABILITIES",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Basic arithmetic and quantitative analysis",
+        "original_mentions": [
+          "add, subtract, multiply and divide",
+          "compute average, ratios, percent"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Ability to add, subtract, multiply and divide... compute average, ratios, percent.",
+          "source_section": "REQUIRED KNOWLEDGE, SKILLS AND ABILITIES",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [],
+    "education_requirements": [
+      "Bachelor's degree in Accounting or Finance"
+    ],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Inventory accounting",
+        "original_mentions": [
+          "inventory accounts",
+          "reconciliation of perpetual to GL",
+          "standard costs for inventory parts"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Month-end close including... inventory accounts",
+          "source_section": "ESSENTIAL DUTIES AND RESPONSIBILITIES",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cost accounting",
+        "original_mentions": [
+          "Maintaining standard costs",
+          "analyzing variances",
+          "manufacturing variances"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Maintaining standard costs for inventory parts",
+          "source_section": "ESSENTIAL DUTIES AND RESPONSIBILITIES",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Month-end close and account reconciliation",
+        "original_mentions": [
+          "Month-end close",
+          "monthly balance sheet reconciliations"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Month-end close... Completion of monthly balance sheet reconciliations",
+          "source_section": "ESSENTIAL DUTIES AND RESPONSIBILITIES",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "External audit and tax analysis support",
+        "original_mentions": [
+          "Supporting annual external audit and tax analysis"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Supporting annual external audit and tax analysis as assigned",
+          "source_section": "ESSENTIAL DUTIES AND RESPONSIBILITIES",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Flexibility and adaptability",
+        "original_mentions": [
+          "Must be flexible and adaptable to change"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Must be flexible and adaptable to change.",
+          "source_section": "EDUCATION, EXPERIENCE, and TRAINING",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Self-motivation",
+        "original_mentions": [
+          "Self-motivated"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Self-motivated",
+          "source_section": "EDUCATION, EXPERIENCE, and TRAINING",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Prioritization and deadline management",
+        "original_mentions": [
+          "prioritize multiple projects under tight deadlines"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "ability to prioritize multiple projects under tight deadlines",
+          "source_section": "EDUCATION, EXPERIENCE, and TRAINING",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Independent work",
+        "original_mentions": [
+          "work independently"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "work independently",
+          "source_section": "EDUCATION, EXPERIENCE, and TRAINING",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Professional communication with management",
+        "original_mentions": [
+          "work professionally with all levels of management"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Ability to work professionally with all levels of management.",
+          "source_section": "EDUCATION, EXPERIENCE, and TRAINING",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Continuous improvement",
+        "original_mentions": [
+          "streamlining transaction processing to improve efficiencies"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "streamlining transaction processing to improve efficiencies",
+          "source_section": "ESSENTIAL DUTIES AND RESPONSIBILITIES",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [],
+    "system_design_requirements": [],
+    "competencies": [
+      {
+        "normalized_label": "Microsoft Excel",
+        "original_mentions": [
+          "Strong MS Excel (Pivot Tables, VLOOKUP, etc.)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Strong MS Excel (Pivot Tables, VLOOKUP, etc.)",
+          "source_section": "REQUIRED KNOWLEDGE, SKILLS AND ABILITIES",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "ERP systems",
+        "original_mentions": [
+          "ERP"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "ERP",
+          "source_section": "COMPUTER SKILLS",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Office",
+        "original_mentions": [
+          "MS Office (Excel, Word, Powerpoint, Outlook)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "MS Office (Excel, Word, Powerpoint, Outlook)",
+          "source_section": "COMPUTER SKILLS",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "U.S. GAAP",
+        "original_mentions": [
+          "Solid understanding of U.S. GAAP"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Solid understanding of U.S. GAAP",
+          "source_section": "REQUIRED KNOWLEDGE, SKILLS AND ABILITIES",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Inventory accounting",
+        "original_mentions": [
+          "inventory accounts",
+          "reconciliation of perpetual to GL"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Month-end close including... inventory accounts",
+          "source_section": "ESSENTIAL DUTIES AND RESPONSIBILITIES",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cost accounting",
+        "original_mentions": [
+          "Maintaining standard costs",
+          "analyzing variances"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Maintaining standard costs for inventory parts",
+          "source_section": "ESSENTIAL DUTIES AND RESPONSIBILITIES",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Flexibility and adaptability",
+        "original_mentions": [
+          "flexible and adaptable to change"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Must be flexible and adaptable to change.",
+          "source_section": "EDUCATION, EXPERIENCE, and TRAINING",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Prioritization and independent work",
+        "original_mentions": [
+          "prioritize multiple projects under tight deadlines",
+          "work independently"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "prioritize multiple projects under tight deadlines and work independently",
+          "source_section": "EDUCATION, EXPERIENCE, and TRAINING",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Bachelor's degree in Accounting or Finance",
+        "original_mentions": [
+          "Bachelors Degree in Accounting or Finance"
+        ],
+        "competency_type": "education",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Bachelors Degree in Accounting or Finance",
+          "source_section": "EDUCATION, EXPERIENCE, and TRAINING",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Accounting experience",
+        "original_mentions": [
+          "minimum 5 years Accounting experience"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "minimum 5 years Accounting experience",
+          "source_section": "EDUCATION, EXPERIENCE, and TRAINING",
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 1908,
+    "output_tokens": 1786,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0023367,
+    "latency_ms": 12000.93,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1484,
+    "output_tokens": 2426,
+    "cached_tokens": 0,
+    "estimated_cost": 0.003208,
+    "latency_ms": 19439.47,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-10-03T16:53:40.585285+00:00",
+  "reused_from_experiment": null
+}

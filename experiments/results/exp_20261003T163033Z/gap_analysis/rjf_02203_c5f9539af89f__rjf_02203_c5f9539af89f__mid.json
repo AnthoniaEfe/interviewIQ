@@ -1,0 +1,500 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02203_c5f9539af89f",
+  "jd_id": "rjf_02203_c5f9539af89f",
+  "pair_id": "rjf_02203_c5f9539af89f",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Data analysis",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1752,
+        "evidence": {
+          "tfidf_score": 0.29678370801104986,
+          "tfidf_matched_terms": [
+            "analysis",
+            "data"
+          ],
+          "bm25_score": 4.372769250117855,
+          "semantic_score": 0.9999997019767761,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Data quality and integrity management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3457,
+        "evidence": {
+          "tfidf_score": 0.4298466556611097,
+          "tfidf_matched_terms": [
+            "and",
+            "data",
+            "management",
+            "quality"
+          ],
+          "bm25_score": 6.770127238080917,
+          "semantic_score": 0.796551525592804,
+          "matched_candidate_competency": "Data quality"
+        },
+        "candidate_evidence": [
+          "Data quality"
+        ]
+      },
+      {
+        "job_competency": "Data modeling and algorithms",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3749,
+        "evidence": {
+          "tfidf_score": 0.40960782088987147,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 1.9249637712702397,
+          "semantic_score": 0.8236530423164368,
+          "matched_candidate_competency": "Cleaned data and maintained HR data accuracy."
+        },
+        "candidate_evidence": [
+          "Cleaned data and maintained HR data accuracy."
+        ]
+      },
+      {
+        "job_competency": "Structured and unstructured data analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3864,
+        "evidence": {
+          "tfidf_score": 0.4269006206506287,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and",
+            "data"
+          ],
+          "bm25_score": 4.372769250117855,
+          "semantic_score": 0.5422481298446655,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1731,
+        "evidence": {
+          "tfidf_score": 0.0681864457040731,
+          "tfidf_matched_terms": [
+            "excel",
+            "microsoft"
+          ],
+          "bm25_score": 7.772370984843103,
+          "semantic_score": 0.9999999403953552,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Power BI or similar analytics tools",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3698,
+        "evidence": {
+          "tfidf_score": 0.04886000384219804,
+          "tfidf_matched_terms": [
+            "analytics",
+            "bi",
+            "power",
+            "tools"
+          ],
+          "bm25_score": 8.147944331278886,
+          "semantic_score": 0.7548638582229614,
+          "matched_candidate_competency": "Power BI"
+        },
+        "candidate_evidence": [
+          "Power BI"
+        ]
+      },
+      {
+        "job_competency": "Web analytics platforms",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6635,
+        "evidence": {
+          "tfidf_score": 0.012358645499616211,
+          "tfidf_matched_terms": [
+            "analytics"
+          ],
+          "bm25_score": 4.568899209432186,
+          "semantic_score": 0.5575645565986633,
+          "matched_candidate_competency": "Predictive analytics"
+        },
+        "candidate_evidence": [
+          "Predictive analytics"
+        ]
+      },
+      {
+        "job_competency": "Python or R",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9222,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38891178369522095,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Power Apps",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.674,
+        "evidence": {
+          "tfidf_score": 0.048364459557496145,
+          "tfidf_matched_terms": [
+            "microsoft",
+            "power"
+          ],
+          "bm25_score": 4.073972165639443,
+          "semantic_score": 0.49568799138069153,
+          "matched_candidate_competency": "Power BI"
+        },
+        "candidate_evidence": [
+          "Power BI"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Power Automate",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6848,
+        "evidence": {
+          "tfidf_score": 0.048364459557496145,
+          "tfidf_matched_terms": [
+            "microsoft",
+            "power"
+          ],
+          "bm25_score": 4.073972165639443,
+          "semantic_score": 0.4285767674446106,
+          "matched_candidate_competency": "Power BI"
+        },
+        "candidate_evidence": [
+          "Power BI"
+        ]
+      },
+      {
+        "job_competency": "Data visualization",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1719,
+        "evidence": {
+          "tfidf_score": 0.24449280653782063,
+          "tfidf_matched_terms": [
+            "data",
+            "visualization"
+          ],
+          "bm25_score": 6.030457720591182,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Data visualization"
+        },
+        "candidate_evidence": [
+          "Data visualization"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3697,
+        "evidence": {
+          "tfidf_score": 0.05505713106791947,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 4.171653644409815,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Oracle",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7006,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6212954521179199,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Analytical skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6749,
+        "evidence": {
+          "tfidf_score": 0.01594170935093805,
+          "tfidf_matched_terms": [
+            "analytical"
+          ],
+          "bm25_score": 4.10338872394287,
+          "semantic_score": 0.5126057267189026,
+          "matched_candidate_competency": "Analytical problem solving"
+        },
+        "candidate_evidence": [
+          "Analytical problem solving"
+        ]
+      },
+      {
+        "job_competency": "Attention to detail and accuracy",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1564,
+        "evidence": {
+          "tfidf_score": 0.34403019611319174,
+          "tfidf_matched_terms": [
+            "accuracy",
+            "and",
+            "attention",
+            "detail",
+            "to"
+          ],
+          "bm25_score": 11.970580043942388,
+          "semantic_score": 0.8642982244491577,
+          "matched_candidate_competency": "Attention to detail"
+        },
+        "candidate_evidence": [
+          "Attention to detail"
+        ]
+      },
+      {
+        "job_competency": "Communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3656,
+        "evidence": {
+          "tfidf_score": 0.027498095493017863,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 5.153545079833461,
+          "semantic_score": 1.000000238418579,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Problem solving",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3645,
+        "evidence": {
+          "tfidf_score": 0.01944050581495883,
+          "tfidf_matched_terms": [
+            "problem",
+            "solving"
+          ],
+          "bm25_score": 9.53539137364089,
+          "semantic_score": 0.7433907985687256,
+          "matched_candidate_competency": "Analytical problem solving"
+        },
+        "candidate_evidence": [
+          "Analytical problem solving"
+        ]
+      },
+      {
+        "job_competency": "Self-direction and initiative",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7069,
+        "evidence": {
+          "tfidf_score": 0.22345314030185817,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.7346405259704495,
+          "semantic_score": 0.36800798773765564,
+          "matched_candidate_competency": "Led functional and non-functional requirements gathering and refinement."
+        },
+        "candidate_evidence": [
+          "Led functional and non-functional requirements gathering and refinement."
+        ]
+      },
+      {
+        "job_competency": "Teamwork",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7225,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4846785068511963,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Multitasking and prioritization",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7023,
+        "evidence": {
+          "tfidf_score": 0.26429920434888876,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.7346405259704495,
+          "semantic_score": 0.36619865894317627,
+          "matched_candidate_competency": "Led functional and non-functional requirements gathering and refinement."
+        },
+        "candidate_evidence": [
+          "Led functional and non-functional requirements gathering and refinement."
+        ]
+      },
+      {
+        "job_competency": "Working under pressure and tight deadlines",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7177,
+        "evidence": {
+          "tfidf_score": 0.17831168466465863,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.7346405259704495,
+          "semantic_score": 0.3344523310661316,
+          "matched_candidate_competency": "Led functional and non-functional requirements gathering and refinement."
+        },
+        "candidate_evidence": [
+          "Led functional and non-functional requirements gathering and refinement."
+        ]
+      },
+      {
+        "job_competency": "Stakeholder collaboration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3813,
+        "evidence": {
+          "tfidf_score": 0.01944050581495883,
+          "tfidf_matched_terms": [
+            "collaboration",
+            "stakeholder"
+          ],
+          "bm25_score": 5.308568726921923,
+          "semantic_score": 0.8398236036300659,
+          "matched_candidate_competency": "Stakeholder communication"
+        },
+        "candidate_evidence": [
+          "Stakeholder communication"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Data analysis",
+      "Microsoft Excel",
+      "Data visualization",
+      "Attention to detail and accuracy"
+    ],
+    "partial_matches": [
+      "Data quality and integrity management",
+      "Data modeling and algorithms",
+      "Structured and unstructured data analysis",
+      "Power BI or similar analytics tools",
+      "SQL",
+      "Communication",
+      "Problem solving",
+      "Stakeholder collaboration"
+    ],
+    "weak_matches": [
+      "Web analytics platforms",
+      "Microsoft Power Apps",
+      "Microsoft Power Automate",
+      "Oracle",
+      "Analytical skills",
+      "Self-direction and initiative",
+      "Teamwork",
+      "Multitasking and prioritization",
+      "Working under pressure and tight deadlines"
+    ],
+    "missing": [
+      "Python or R"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Data analysis",
+      "Microsoft Excel",
+      "Data visualization",
+      "Attention to detail and accuracy"
+    ],
+    "partial_matches": [
+      "Data quality and integrity management",
+      "Data modeling and algorithms",
+      "Structured and unstructured data analysis",
+      "Power BI or similar analytics tools",
+      "SQL",
+      "Communication",
+      "Problem solving",
+      "Stakeholder collaboration"
+    ],
+    "competency_gaps": [
+      "Web analytics platforms",
+      "Microsoft Power Apps",
+      "Microsoft Power Automate",
+      "Oracle",
+      "Analytical skills",
+      "Self-direction and initiative",
+      "Teamwork",
+      "Multitasking and prioritization",
+      "Working under pressure and tight deadlines",
+      "Python or R"
+    ]
+  },
+  "counts": {
+    "requirements": 22,
+    "strength_matches": 4,
+    "partial_matches": 8,
+    "competency_gaps": 10
+  },
+  "latency_ms": 50.04,
+  "analyzed_at": "2026-10-03T17:29:44.985529+00:00"
+}

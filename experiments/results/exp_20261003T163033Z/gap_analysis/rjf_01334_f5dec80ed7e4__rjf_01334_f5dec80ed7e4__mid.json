@@ -1,0 +1,314 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01334_f5dec80ed7e4",
+  "jd_id": "rjf_01334_f5dec80ed7e4",
+  "pair_id": "rjf_01334_f5dec80ed7e4",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Salesforce Industries Communications Cloud",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9466,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26681748032569885,
+          "matched_candidate_competency": "Accounts Payable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable"
+        ]
+      },
+      {
+        "job_competency": "Salesforce Development and Configuration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7126,
+        "evidence": {
+          "tfidf_score": 0.20436538016857445,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9080758641814485,
+          "semantic_score": 0.30991244316101074,
+          "matched_candidate_competency": "Produced and distributed correspondence and forms."
+        },
+        "candidate_evidence": [
+          "Produced and distributed correspondence and forms."
+        ]
+      },
+      {
+        "job_competency": "Telecommunications Domain Solutioning",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9264,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36822253465652466,
+          "matched_candidate_competency": "Accounts Payable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable"
+        ]
+      },
+      {
+        "job_competency": "Quote-to-Cash Architecture",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4061,
+        "evidence": {
+          "tfidf_score": 0.05962182789811914,
+          "tfidf_matched_terms": [
+            "cash",
+            "to"
+          ],
+          "bm25_score": 3.782261460541141,
+          "semantic_score": 0.5477262139320374,
+          "matched_candidate_competency": "Cash Register Operations"
+        },
+        "candidate_evidence": [
+          "Cash Register Operations"
+        ]
+      },
+      {
+        "job_competency": "Vlocity",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9341,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3296734094619751,
+          "matched_candidate_competency": "Accounts Payable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable"
+        ]
+      },
+      {
+        "job_competency": "OmniStudio",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9206,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3972485661506653,
+          "matched_candidate_competency": "Accounts Payable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable"
+        ]
+      },
+      {
+        "job_competency": "Salesforce API Framework",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9423,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2885769009590149,
+          "matched_candidate_competency": "Accounts Payable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable"
+        ]
+      },
+      {
+        "job_competency": "Third-Party APIs",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3732,
+        "evidence": {
+          "tfidf_score": 0.03110578880321948,
+          "tfidf_matched_terms": [
+            "party",
+            "third"
+          ],
+          "bm25_score": 8.183407691721767,
+          "semantic_score": 0.4947800636291504,
+          "matched_candidate_competency": "Third-Party Billing"
+        },
+        "candidate_evidence": [
+          "Third-Party Billing"
+        ]
+      },
+      {
+        "job_competency": "Vlocity Custom Solution Design",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9496,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2518613636493683,
+          "matched_candidate_competency": "Accounts Payable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable"
+        ]
+      },
+      {
+        "job_competency": "Salesforce Capabilities and Limitations",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7033,
+        "evidence": {
+          "tfidf_score": 0.20436538016857445,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9080758641814485,
+          "semantic_score": 0.36782824993133545,
+          "matched_candidate_competency": "Produced and distributed correspondence and forms."
+        },
+        "candidate_evidence": [
+          "Produced and distributed correspondence and forms."
+        ]
+      },
+      {
+        "job_competency": "Code Review and Documentation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3972,
+        "evidence": {
+          "tfidf_score": 0.28381448327100256,
+          "tfidf_matched_terms": [
+            "and",
+            "documentation",
+            "review"
+          ],
+          "bm25_score": 3.8627889424336344,
+          "semantic_score": 0.46066081523895264,
+          "matched_candidate_competency": "Complete audit schedules and supporting documentation."
+        },
+        "candidate_evidence": [
+          "Complete audit schedules and supporting documentation."
+        ]
+      },
+      {
+        "job_competency": "Source Control",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6548,
+        "evidence": {
+          "tfidf_score": 0.011975045952984499,
+          "tfidf_matched_terms": [
+            "control"
+          ],
+          "bm25_score": 4.989463759414566,
+          "semantic_score": 0.4414787292480469,
+          "matched_candidate_competency": "Inventory Control"
+        },
+        "candidate_evidence": [
+          "Inventory Control"
+        ]
+      },
+      {
+        "job_competency": "Salesforce Deployments",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9358,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.321181058883667,
+          "matched_candidate_competency": "Accounts Payable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable"
+        ]
+      },
+      {
+        "job_competency": "Salesforce Project Lifecycle",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6727,
+        "evidence": {
+          "tfidf_score": 0.018578662036831506,
+          "tfidf_matched_terms": [
+            "project"
+          ],
+          "bm25_score": 3.782261460541141,
+          "semantic_score": 0.43495821952819824,
+          "matched_candidate_competency": "Capital Project Closeout"
+        },
+        "candidate_evidence": [
+          "Capital Project Closeout"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Quote-to-Cash Architecture",
+      "Third-Party APIs",
+      "Code Review and Documentation"
+    ],
+    "weak_matches": [
+      "Salesforce Development and Configuration",
+      "Salesforce Capabilities and Limitations",
+      "Source Control",
+      "Salesforce Project Lifecycle"
+    ],
+    "missing": [
+      "Salesforce Industries Communications Cloud",
+      "Telecommunications Domain Solutioning",
+      "Vlocity",
+      "OmniStudio",
+      "Salesforce API Framework",
+      "Vlocity Custom Solution Design",
+      "Salesforce Deployments"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Quote-to-Cash Architecture",
+      "Third-Party APIs",
+      "Code Review and Documentation"
+    ],
+    "competency_gaps": [
+      "Salesforce Development and Configuration",
+      "Salesforce Capabilities and Limitations",
+      "Source Control",
+      "Salesforce Project Lifecycle",
+      "Salesforce Industries Communications Cloud",
+      "Telecommunications Domain Solutioning",
+      "Vlocity",
+      "OmniStudio",
+      "Salesforce API Framework",
+      "Vlocity Custom Solution Design",
+      "Salesforce Deployments"
+    ]
+  },
+  "counts": {
+    "requirements": 14,
+    "strength_matches": 0,
+    "partial_matches": 3,
+    "competency_gaps": 11
+  },
+  "latency_ms": 33.98,
+  "analyzed_at": "2026-10-03T17:29:44.045172+00:00"
+}

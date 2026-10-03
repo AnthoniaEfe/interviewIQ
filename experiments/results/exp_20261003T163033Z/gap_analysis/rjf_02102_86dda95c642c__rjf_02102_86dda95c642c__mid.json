@@ -1,0 +1,143 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02102_86dda95c642c",
+  "jd_id": "rjf_02102_86dda95c642c",
+  "pair_id": "rjf_02102_86dda95c642c",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Data analysis",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1554,
+        "evidence": {
+          "tfidf_score": 0.39890913002503425,
+          "tfidf_matched_terms": [
+            "analysis",
+            "data"
+          ],
+          "bm25_score": 3.4407847124484516,
+          "semantic_score": 0.9999999403953552,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Root cause analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6586,
+        "evidence": {
+          "tfidf_score": 0.05440547943849587,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 2.6274041974391236,
+          "semantic_score": 0.38939201831817627,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Process definition",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3638,
+        "evidence": {
+          "tfidf_score": 0.009956105933666472,
+          "tfidf_matched_terms": [
+            "process"
+          ],
+          "bm25_score": 4.3468724153712035,
+          "semantic_score": 0.6040931940078735,
+          "matched_candidate_competency": "Business process analysis"
+        },
+        "candidate_evidence": [
+          "Business process analysis"
+        ]
+      },
+      {
+        "job_competency": "Documentation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9234,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38320478796958923,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Training material preparation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9381,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3095020055770874,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Data analysis"
+    ],
+    "partial_matches": [
+      "Process definition"
+    ],
+    "weak_matches": [
+      "Root cause analysis"
+    ],
+    "missing": [
+      "Documentation",
+      "Training material preparation"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Data analysis"
+    ],
+    "partial_matches": [
+      "Process definition"
+    ],
+    "competency_gaps": [
+      "Root cause analysis",
+      "Documentation",
+      "Training material preparation"
+    ]
+  },
+  "counts": {
+    "requirements": 5,
+    "strength_matches": 1,
+    "partial_matches": 1,
+    "competency_gaps": 3
+  },
+  "latency_ms": 20.49,
+  "analyzed_at": "2026-10-03T17:29:44.889698+00:00"
+}

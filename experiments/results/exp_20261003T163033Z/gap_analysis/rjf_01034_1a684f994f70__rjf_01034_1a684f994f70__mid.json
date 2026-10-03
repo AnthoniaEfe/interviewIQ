@@ -1,0 +1,535 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01034_1a684f994f70",
+  "jd_id": "rjf_01034_1a684f994f70",
+  "pair_id": "rjf_01034_1a684f994f70",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Tax and accounting experience",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.91,
+        "evidence": {
+          "tfidf_score": 0.26874436115827305,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.24510944394093684,
+          "semantic_score": 0.23302166163921356,
+          "matched_candidate_competency": "Protection and coordination"
+        },
+        "candidate_evidence": [
+          "Protection and coordination"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Office/computer skills",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3934,
+        "evidence": {
+          "tfidf_score": 0.003389680918275297,
+          "tfidf_matched_terms": [
+            "office"
+          ],
+          "bm25_score": 5.977226068758928,
+          "semantic_score": 0.6882501840591431,
+          "matched_candidate_competency": "MS Office"
+        },
+        "candidate_evidence": [
+          "MS Office"
+        ]
+      },
+      {
+        "job_competency": "QuickBooks",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7207,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4953610301017761,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Multi-monitor computer use",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9479,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2606778144836426,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Project leadership",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3906,
+        "evidence": {
+          "tfidf_score": 0.015519879806294132,
+          "tfidf_matched_terms": [
+            "project"
+          ],
+          "bm25_score": 4.773921891249378,
+          "semantic_score": 0.7826635837554932,
+          "matched_candidate_competency": "Project management"
+        },
+        "candidate_evidence": [
+          "Project management"
+        ]
+      },
+      {
+        "job_competency": "Written and verbal communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3939,
+        "evidence": {
+          "tfidf_score": 0.2989231411145773,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 5.254439095795513,
+          "semantic_score": 0.507124662399292,
+          "matched_candidate_competency": "Technical communication"
+        },
+        "candidate_evidence": [
+          "Technical communication"
+        ]
+      },
+      {
+        "job_competency": "Organization",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7245,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4715910255908966,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Problem solving",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.162,
+        "evidence": {
+          "tfidf_score": 0.012616294131045765,
+          "tfidf_matched_terms": [
+            "problem",
+            "solving"
+          ],
+          "bm25_score": 11.954452137517857,
+          "semantic_score": 1.0000005960464478,
+          "matched_candidate_competency": "Problem solving"
+        },
+        "candidate_evidence": [
+          "Problem solving"
+        ]
+      },
+      {
+        "job_competency": "Analytical skills",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9294,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3528139591217041,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Attention to detail and accuracy",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7027,
+        "evidence": {
+          "tfidf_score": 0.2629510473029517,
+          "tfidf_matched_terms": [
+            "and",
+            "detail"
+          ],
+          "bm25_score": 2.4513074150461924,
+          "semantic_score": 0.2570143938064575,
+          "matched_candidate_competency": "Provided electrical and instrumentation detail design for a wastewater treatment facility."
+        },
+        "candidate_evidence": [
+          "Provided electrical and instrumentation detail design for a wastewater treatment facility."
+        ]
+      },
+      {
+        "job_competency": "Teamwork and client interaction",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7049,
+        "evidence": {
+          "tfidf_score": 0.26874436115827305,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.24510944394093684,
+          "semantic_score": 0.37741342186927795,
+          "matched_candidate_competency": "Protection and coordination"
+        },
+        "candidate_evidence": [
+          "Protection and coordination"
+        ]
+      },
+      {
+        "job_competency": "Self-starting and independent work",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7085,
+        "evidence": {
+          "tfidf_score": 0.23705715935837235,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.24510944394093684,
+          "semantic_score": 0.37844905257225037,
+          "matched_candidate_competency": "Protection and coordination"
+        },
+        "candidate_evidence": [
+          "Protection and coordination"
+        ]
+      },
+      {
+        "job_competency": "Positive attitude",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9513,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24347184598445892,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Professional dress and demeanor",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7174,
+        "evidence": {
+          "tfidf_score": 0.26874436115827305,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.24510944394093684,
+          "semantic_score": 0.299014151096344,
+          "matched_candidate_competency": "Protection and coordination"
+        },
+        "candidate_evidence": [
+          "Protection and coordination"
+        ]
+      },
+      {
+        "job_competency": "Fast-paced, deadline-oriented work",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9256,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37212637066841125,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Paperless environment",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9518,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2408975511789322,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Tax return preparation and review",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6886,
+        "evidence": {
+          "tfidf_score": 0.2550992676015437,
+          "tfidf_matched_terms": [
+            "and",
+            "review"
+          ],
+          "bm25_score": 3.427430280104222,
+          "semantic_score": 0.2896758019924164,
+          "matched_candidate_competency": "Performed design review and verification of cathodic protection systems."
+        },
+        "candidate_evidence": [
+          "Performed design review and verification of cathodic protection systems."
+        ]
+      },
+      {
+        "job_competency": "Tax compliance support",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.72,
+        "evidence": {
+          "tfidf_score": 0.020065181521289995,
+          "tfidf_matched_terms": [
+            "support"
+          ],
+          "bm25_score": 3.0446742130039572,
+          "semantic_score": 0.29407456517219543,
+          "matched_candidate_competency": "Provided construction and commissioning support."
+        },
+        "candidate_evidence": [
+          "Provided construction and commissioning support."
+        ]
+      },
+      {
+        "job_competency": "Accounting close and year-end adjustments",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9108,
+        "evidence": {
+          "tfidf_score": 0.21445328410925282,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.24510944394093684,
+          "semantic_score": 0.26959800720214844,
+          "matched_candidate_competency": "Protection and coordination"
+        },
+        "candidate_evidence": [
+          "Protection and coordination"
+        ]
+      },
+      {
+        "job_competency": "Tax and accounting project management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3553,
+        "evidence": {
+          "tfidf_score": 0.29333517810401183,
+          "tfidf_matched_terms": [
+            "and",
+            "management",
+            "project"
+          ],
+          "bm25_score": 9.547843782498756,
+          "semantic_score": 0.627839207649231,
+          "matched_candidate_competency": "Project management"
+        },
+        "candidate_evidence": [
+          "Project management"
+        ]
+      },
+      {
+        "job_competency": "Proximity to Westlake Village",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9677,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.16147704422473907,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "In-office work",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4002,
+        "evidence": {
+          "tfidf_score": 0.008948702941851535,
+          "tfidf_matched_terms": [
+            "in",
+            "office"
+          ],
+          "bm25_score": 5.977226068758928,
+          "semantic_score": 0.616776168346405,
+          "matched_candidate_competency": "MS Office"
+        },
+        "candidate_evidence": [
+          "MS Office"
+        ]
+      },
+      {
+        "job_competency": "Experience with a certified public accountant",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5476,
+        "evidence": {
+          "tfidf_score": 0.0054104417207387736,
+          "tfidf_matched_terms": [
+            "a"
+          ],
+          "bm25_score": 2.5516150263237214,
+          "semantic_score": 0.27267953753471375,
+          "matched_candidate_competency": "Provided electrical and instrumentation detail design for a wastewater treatment facility."
+        },
+        "candidate_evidence": [
+          "Provided electrical and instrumentation detail design for a wastewater treatment facility."
+        ]
+      },
+      {
+        "job_competency": "CPA license",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5633,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30600032210350037,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Desire to learn and grow",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5443,
+        "evidence": {
+          "tfidf_score": 0.2370571593583724,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.24510944394093684,
+          "semantic_score": 0.2711109519004822,
+          "matched_candidate_competency": "Protection and coordination"
+        },
+        "candidate_evidence": [
+          "Protection and coordination"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Problem solving"
+    ],
+    "partial_matches": [
+      "Microsoft Office/computer skills",
+      "Project leadership",
+      "Written and verbal communication",
+      "Tax and accounting project management",
+      "In-office work"
+    ],
+    "weak_matches": [
+      "QuickBooks",
+      "Organization",
+      "Attention to detail and accuracy",
+      "Teamwork and client interaction",
+      "Self-starting and independent work",
+      "Professional dress and demeanor",
+      "Tax return preparation and review",
+      "Tax compliance support"
+    ],
+    "missing": [
+      "Tax and accounting experience",
+      "Multi-monitor computer use",
+      "Analytical skills",
+      "Positive attitude",
+      "Fast-paced, deadline-oriented work",
+      "Paperless environment",
+      "Accounting close and year-end adjustments",
+      "Proximity to Westlake Village",
+      "Experience with a certified public accountant",
+      "CPA license",
+      "Desire to learn and grow"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Problem solving"
+    ],
+    "partial_matches": [
+      "Microsoft Office/computer skills",
+      "Project leadership",
+      "Written and verbal communication",
+      "Tax and accounting project management",
+      "In-office work"
+    ],
+    "competency_gaps": [
+      "QuickBooks",
+      "Organization",
+      "Attention to detail and accuracy",
+      "Teamwork and client interaction",
+      "Self-starting and independent work",
+      "Professional dress and demeanor",
+      "Tax return preparation and review",
+      "Tax compliance support",
+      "Tax and accounting experience",
+      "Multi-monitor computer use",
+      "Analytical skills",
+      "Positive attitude",
+      "Fast-paced, deadline-oriented work",
+      "Paperless environment",
+      "Accounting close and year-end adjustments",
+      "Proximity to Westlake Village",
+      "Experience with a certified public accountant",
+      "CPA license",
+      "Desire to learn and grow"
+    ]
+  },
+  "counts": {
+    "requirements": 25,
+    "strength_matches": 1,
+    "partial_matches": 5,
+    "competency_gaps": 19
+  },
+  "latency_ms": 70.91,
+  "analyzed_at": "2026-10-03T17:29:43.711809+00:00"
+}

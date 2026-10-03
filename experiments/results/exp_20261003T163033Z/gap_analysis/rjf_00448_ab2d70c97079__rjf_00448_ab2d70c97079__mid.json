@@ -1,0 +1,208 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00448_ab2d70c97079",
+  "jd_id": "rjf_00448_ab2d70c97079",
+  "pair_id": "rjf_00448_ab2d70c97079",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1677,
+        "evidence": {
+          "tfidf_score": 0.10735799096833099,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 3.889702739043764,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Relational databases",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3617,
+        "evidence": {
+          "tfidf_score": 0.0377743918211157,
+          "tfidf_matched_terms": [
+            "databases",
+            "relational"
+          ],
+          "bm25_score": 3.897857972952435,
+          "semantic_score": 0.7877652645111084,
+          "matched_candidate_competency": "Relational data modeling"
+        },
+        "candidate_evidence": [
+          "Relational data modeling"
+        ]
+      },
+      {
+        "job_competency": "ETL/ELT architecture and concepts",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1691,
+        "evidence": {
+          "tfidf_score": 0.25126956356345065,
+          "tfidf_matched_terms": [
+            "and",
+            "architecture",
+            "etl"
+          ],
+          "bm25_score": 5.155532032102958,
+          "semantic_score": 0.6799034476280212,
+          "matched_candidate_competency": "ETL"
+        },
+        "candidate_evidence": [
+          "ETL"
+        ]
+      },
+      {
+        "job_competency": "Data integration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3773,
+        "evidence": {
+          "tfidf_score": 0.12715951361576955,
+          "tfidf_matched_terms": [
+            "data",
+            "integration"
+          ],
+          "bm25_score": 3.474109522035557,
+          "semantic_score": 0.6262130737304688,
+          "matched_candidate_competency": "System migration and integration"
+        },
+        "candidate_evidence": [
+          "System migration and integration"
+        ]
+      },
+      {
+        "job_competency": "Big data",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3989,
+        "evidence": {
+          "tfidf_score": 0.08335128928169122,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 2.7206733795757403,
+          "semantic_score": 0.5524435639381409,
+          "matched_candidate_competency": "Data warehousing"
+        },
+        "candidate_evidence": [
+          "Data warehousing"
+        ]
+      },
+      {
+        "job_competency": "IT project planning and management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3519,
+        "evidence": {
+          "tfidf_score": 0.3325850339985781,
+          "tfidf_matched_terms": [
+            "and",
+            "it",
+            "management",
+            "project"
+          ],
+          "bm25_score": 4.934763276754923,
+          "semantic_score": 0.5139093399047852,
+          "matched_candidate_competency": "Coordinated development activities with enterprise architecture, project management, and product management teams."
+        },
+        "candidate_evidence": [
+          "Coordinated development activities with enterprise architecture, project management, and product management teams."
+        ]
+      },
+      {
+        "job_competency": "English language fluency",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9477,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26125282049179077,
+          "matched_candidate_competency": "Oracle PL/SQL"
+        },
+        "candidate_evidence": [
+          "Oracle PL/SQL"
+        ]
+      },
+      {
+        "job_competency": "Banking or financial services experience",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5602,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3314036428928375,
+          "matched_candidate_competency": "Oracle PL/SQL"
+        },
+        "candidate_evidence": [
+          "Oracle PL/SQL"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "SQL",
+      "ETL/ELT architecture and concepts"
+    ],
+    "partial_matches": [
+      "Relational databases",
+      "Data integration",
+      "Big data",
+      "IT project planning and management"
+    ],
+    "weak_matches": [],
+    "missing": [
+      "English language fluency",
+      "Banking or financial services experience"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "SQL",
+      "ETL/ELT architecture and concepts"
+    ],
+    "partial_matches": [
+      "Relational databases",
+      "Data integration",
+      "Big data",
+      "IT project planning and management"
+    ],
+    "competency_gaps": [
+      "English language fluency",
+      "Banking or financial services experience"
+    ]
+  },
+  "counts": {
+    "requirements": 8,
+    "strength_matches": 2,
+    "partial_matches": 4,
+    "competency_gaps": 2
+  },
+  "latency_ms": 30.31,
+  "analyzed_at": "2026-10-03T17:29:42.851260+00:00"
+}

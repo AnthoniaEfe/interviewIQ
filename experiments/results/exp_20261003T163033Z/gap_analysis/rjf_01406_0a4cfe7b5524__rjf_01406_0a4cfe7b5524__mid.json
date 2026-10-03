@@ -1,0 +1,401 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01406_0a4cfe7b5524",
+  "jd_id": "rjf_01406_0a4cfe7b5524",
+  "pair_id": "rjf_01406_0a4cfe7b5524",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Business analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7089,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5692309737205505,
+          "matched_candidate_competency": "Power system troubleshooting"
+        },
+        "candidate_evidence": [
+          "Power system troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "Process documentation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3743,
+        "evidence": {
+          "tfidf_score": 0.018936130453718118,
+          "tfidf_matched_terms": [
+            "process"
+          ],
+          "bm25_score": 4.089083306750462,
+          "semantic_score": 0.5851966738700867,
+          "matched_candidate_competency": "Coal production process"
+        },
+        "candidate_evidence": [
+          "Coal production process"
+        ]
+      },
+      {
+        "job_competency": "Business process automation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3849,
+        "evidence": {
+          "tfidf_score": 0.014680039527769854,
+          "tfidf_matched_terms": [
+            "process"
+          ],
+          "bm25_score": 4.089083306750462,
+          "semantic_score": 0.4829117953777313,
+          "matched_candidate_competency": "Coal production process"
+        },
+        "candidate_evidence": [
+          "Coal production process"
+        ]
+      },
+      {
+        "job_competency": "Business process modeling",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3828,
+        "evidence": {
+          "tfidf_score": 0.014680039527769854,
+          "tfidf_matched_terms": [
+            "process"
+          ],
+          "bm25_score": 4.089083306750462,
+          "semantic_score": 0.50417560338974,
+          "matched_candidate_competency": "Coal production process"
+        },
+        "candidate_evidence": [
+          "Coal production process"
+        ]
+      },
+      {
+        "job_competency": "User story writing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9404,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29786786437034607,
+          "matched_candidate_competency": "Power system troubleshooting"
+        },
+        "candidate_evidence": [
+          "Power system troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "Business requirements analysis",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9213,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3935500383377075,
+          "matched_candidate_competency": "Power system troubleshooting"
+        },
+        "candidate_evidence": [
+          "Power system troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "Business-IT liaison",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7343,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4106622636318207,
+          "matched_candidate_competency": "Power system troubleshooting"
+        },
+        "candidate_evidence": [
+          "Power system troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "Organizational structural analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7319,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.42569416761398315,
+          "matched_candidate_competency": "Power system troubleshooting"
+        },
+        "candidate_evidence": [
+          "Power system troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "Communication",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9323,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33829209208488464,
+          "matched_candidate_competency": "Power system troubleshooting"
+        },
+        "candidate_evidence": [
+          "Power system troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "Enterprise-wide business perspective",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9497,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2512865662574768,
+          "matched_candidate_competency": "Power system troubleshooting"
+        },
+        "candidate_evidence": [
+          "Power system troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "Team collaboration and influence",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6796,
+        "evidence": {
+          "tfidf_score": 0.20347448408174412,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.3372916551475829,
+          "semantic_score": 0.3850271999835968,
+          "matched_candidate_competency": "Read and interpreted diagrams and blueprints."
+        },
+        "candidate_evidence": [
+          "Read and interpreted diagrams and blueprints."
+        ]
+      },
+      {
+        "job_competency": "Google Suite of Productivity Tools",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3856,
+        "evidence": {
+          "tfidf_score": 0.04657785695265035,
+          "tfidf_matched_terms": [
+            "of",
+            "tools"
+          ],
+          "bm25_score": 4.0505070491396085,
+          "semantic_score": 0.4582538306713104,
+          "matched_candidate_competency": "Used instruments, test equipment, hand tools, power tools, and shop machine tools."
+        },
+        "candidate_evidence": [
+          "Used instruments, test equipment, hand tools, power tools, and shop machine tools."
+        ]
+      },
+      {
+        "job_competency": "User acceptance testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3803,
+        "evidence": {
+          "tfidf_score": 0.014680039527769856,
+          "tfidf_matched_terms": [
+            "testing"
+          ],
+          "bm25_score": 4.6668885566173754,
+          "semantic_score": 0.435808926820755,
+          "matched_candidate_competency": "Electrical testing"
+        },
+        "candidate_evidence": [
+          "Electrical testing"
+        ]
+      },
+      {
+        "job_competency": "Regression test automation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3965,
+        "evidence": {
+          "tfidf_score": 0.014680039527769854,
+          "tfidf_matched_terms": [
+            "test"
+          ],
+          "bm25_score": 4.089083306750462,
+          "semantic_score": 0.3670361042022705,
+          "matched_candidate_competency": "Electrical test equipment"
+        },
+        "candidate_evidence": [
+          "Electrical test equipment"
+        ]
+      },
+      {
+        "job_competency": "Confluence",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5633,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30595749616622925,
+          "matched_candidate_competency": "Power system troubleshooting"
+        },
+        "candidate_evidence": [
+          "Power system troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "JIRA",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4414,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4021057188510895,
+          "matched_candidate_competency": "Power system troubleshooting"
+        },
+        "candidate_evidence": [
+          "Power system troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "Salesforce",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4279,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5426610708236694,
+          "matched_candidate_competency": "Power system troubleshooting"
+        },
+        "candidate_evidence": [
+          "Power system troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "Steelbrick CPQ",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.566,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2830507159233093,
+          "matched_candidate_competency": "Power system troubleshooting"
+        },
+        "candidate_evidence": [
+          "Power system troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "Salesforce PRM",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4407,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40917226672172546,
+          "matched_candidate_competency": "Power system troubleshooting"
+        },
+        "candidate_evidence": [
+          "Power system troubleshooting"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Process documentation",
+      "Business process automation",
+      "Business process modeling",
+      "Google Suite of Productivity Tools",
+      "User acceptance testing",
+      "Regression test automation"
+    ],
+    "weak_matches": [
+      "Business analysis",
+      "Business-IT liaison",
+      "Organizational structural analysis",
+      "Team collaboration and influence",
+      "JIRA",
+      "Salesforce",
+      "Salesforce PRM"
+    ],
+    "missing": [
+      "User story writing",
+      "Business requirements analysis",
+      "Communication",
+      "Enterprise-wide business perspective",
+      "Confluence",
+      "Steelbrick CPQ"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Process documentation",
+      "Business process automation",
+      "Business process modeling",
+      "Google Suite of Productivity Tools",
+      "User acceptance testing",
+      "Regression test automation"
+    ],
+    "competency_gaps": [
+      "Business analysis",
+      "Business-IT liaison",
+      "Organizational structural analysis",
+      "Team collaboration and influence",
+      "JIRA",
+      "Salesforce",
+      "Salesforce PRM",
+      "User story writing",
+      "Business requirements analysis",
+      "Communication",
+      "Enterprise-wide business perspective",
+      "Confluence",
+      "Steelbrick CPQ"
+    ]
+  },
+  "counts": {
+    "requirements": 19,
+    "strength_matches": 0,
+    "partial_matches": 6,
+    "competency_gaps": 13
+  },
+  "latency_ms": 48.36,
+  "analyzed_at": "2026-10-03T17:29:44.153754+00:00"
+}

@@ -1,0 +1,372 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00021_fd1f26b1b536",
+  "jd_id": "rjf_00021_fd1f26b1b536",
+  "pair_id": "rjf_00021_fd1f26b1b536",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Corporate accounting in a manufacturing environment",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.379,
+        "evidence": {
+          "tfidf_score": 0.029204256731752698,
+          "tfidf_matched_terms": [
+            "in",
+            "manufacturing"
+          ],
+          "bm25_score": 4.61831810815003,
+          "semantic_score": 0.43835633993148804,
+          "matched_candidate_competency": "Automotive manufacturing"
+        },
+        "candidate_evidence": [
+          "Automotive manufacturing"
+        ]
+      },
+      {
+        "job_competency": "IFRS and US GAAP",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7103,
+        "evidence": {
+          "tfidf_score": 0.13542313980722714,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.1610727220348305,
+          "semantic_score": 0.2706983685493469,
+          "matched_candidate_competency": "Designed, developed, modified, and debugged software and firmware for smart home IoT products"
+        },
+        "candidate_evidence": [
+          "Designed, developed, modified, and debugged software and firmware for smart home IoT products"
+        ]
+      },
+      {
+        "job_competency": "Cost center and profit center accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6959,
+        "evidence": {
+          "tfidf_score": 0.09255558000450921,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.1610727220348305,
+          "semantic_score": 0.3928137421607971,
+          "matched_candidate_competency": "Designed, developed, modified, and debugged software and firmware for smart home IoT products"
+        },
+        "candidate_evidence": [
+          "Designed, developed, modified, and debugged software and firmware for smart home IoT products"
+        ]
+      },
+      {
+        "job_competency": "Standard costing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9429,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2853849530220032,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Project-based costing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6892,
+        "evidence": {
+          "tfidf_score": 0.013741889639580116,
+          "tfidf_matched_terms": [
+            "project"
+          ],
+          "bm25_score": 2.2424759852315272,
+          "semantic_score": 0.31772518157958984,
+          "matched_candidate_competency": "Participated in Agile/Scrum stand-ups and project sprint planning"
+        },
+        "candidate_evidence": [
+          "Participated in Agile/Scrum stand-ups and project sprint planning"
+        ]
+      },
+      {
+        "job_competency": "Manufacturing ERP systems",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3701,
+        "evidence": {
+          "tfidf_score": 0.06159434215499716,
+          "tfidf_matched_terms": [
+            "manufacturing",
+            "systems"
+          ],
+          "bm25_score": 4.61831810815003,
+          "semantic_score": 0.503055214881897,
+          "matched_candidate_competency": "Automotive manufacturing"
+        },
+        "candidate_evidence": [
+          "Automotive manufacturing"
+        ]
+      },
+      {
+        "job_competency": "IQMS by Dassault",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9396,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.301754891872406,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Office",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7333,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41677936911582947,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "General ledger accounting and bookkeeping",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4002,
+        "evidence": {
+          "tfidf_score": 0.13817137357442663,
+          "tfidf_matched_terms": [
+            "and",
+            "general"
+          ],
+          "bm25_score": 2.454395865450312,
+          "semantic_score": 0.4962330758571625,
+          "matched_candidate_competency": "Integrated air compressor systems into IoT platforms for Ford, Chrysler, and General Motors plants"
+        },
+        "candidate_evidence": [
+          "Integrated air compressor systems into IoT platforms for Ford, Chrysler, and General Motors plants"
+        ]
+      },
+      {
+        "job_competency": "Month-end closing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9585,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.20741426944732666,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Physical inventory management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.392,
+        "evidence": {
+          "tfidf_score": 0.013741889639580118,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 4.078222433347428,
+          "semantic_score": 0.4076242446899414,
+          "matched_candidate_competency": "Financial system management"
+        },
+        "candidate_evidence": [
+          "Financial system management"
+        ]
+      },
+      {
+        "job_competency": "Cost variance monitoring",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9402,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29918575286865234,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Annual and project budgeting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6515,
+        "evidence": {
+          "tfidf_score": 0.15946386516717967,
+          "tfidf_matched_terms": [
+            "and",
+            "project"
+          ],
+          "bm25_score": 3.0857141231904346,
+          "semantic_score": 0.30710873007774353,
+          "matched_candidate_competency": "Participated in Agile/Scrum stand-ups and project sprint planning"
+        },
+        "candidate_evidence": [
+          "Participated in Agile/Scrum stand-ups and project sprint planning"
+        ]
+      },
+      {
+        "job_competency": "SQL query writing",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5701,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24899764358997345,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Crystal Reports",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5682,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26493412256240845,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Master of Business Administration",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2336,
+        "evidence": {
+          "tfidf_score": 0.01161815224230605,
+          "tfidf_matched_terms": [
+            "of"
+          ],
+          "bm25_score": 3.651224834897092,
+          "semantic_score": 0.505486786365509,
+          "matched_candidate_competency": "Internet of Things (IoT)"
+        },
+        "candidate_evidence": [
+          "Internet of Things (IoT)"
+        ]
+      },
+      {
+        "job_competency": "Certified Public Accountant",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5546,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3780946731567383,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Corporate accounting in a manufacturing environment",
+      "Manufacturing ERP systems",
+      "General ledger accounting and bookkeeping",
+      "Physical inventory management",
+      "Master of Business Administration"
+    ],
+    "weak_matches": [
+      "IFRS and US GAAP",
+      "Cost center and profit center accounting",
+      "Project-based costing",
+      "Microsoft Office",
+      "Annual and project budgeting"
+    ],
+    "missing": [
+      "Standard costing",
+      "IQMS by Dassault",
+      "Month-end closing",
+      "Cost variance monitoring",
+      "SQL query writing",
+      "Crystal Reports",
+      "Certified Public Accountant"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Corporate accounting in a manufacturing environment",
+      "Manufacturing ERP systems",
+      "General ledger accounting and bookkeeping",
+      "Physical inventory management",
+      "Master of Business Administration"
+    ],
+    "competency_gaps": [
+      "IFRS and US GAAP",
+      "Cost center and profit center accounting",
+      "Project-based costing",
+      "Microsoft Office",
+      "Annual and project budgeting",
+      "Standard costing",
+      "IQMS by Dassault",
+      "Month-end closing",
+      "Cost variance monitoring",
+      "SQL query writing",
+      "Crystal Reports",
+      "Certified Public Accountant"
+    ]
+  },
+  "counts": {
+    "requirements": 17,
+    "strength_matches": 0,
+    "partial_matches": 5,
+    "competency_gaps": 12
+  },
+  "latency_ms": 38.5,
+  "analyzed_at": "2026-10-03T17:29:42.212511+00:00"
+}

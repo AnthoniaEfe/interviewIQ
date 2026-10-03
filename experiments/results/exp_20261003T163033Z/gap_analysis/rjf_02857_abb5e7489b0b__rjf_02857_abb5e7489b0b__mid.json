@@ -1,0 +1,328 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02857_abb5e7489b0b",
+  "jd_id": "rjf_02857_abb5e7489b0b",
+  "pair_id": "rjf_02857_abb5e7489b0b",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Data analysis",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1649,
+        "evidence": {
+          "tfidf_score": 0.11564999337258001,
+          "tfidf_matched_terms": [
+            "analysis",
+            "data"
+          ],
+          "bm25_score": 8.028473859980135,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Data quality and integrity management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.654,
+        "evidence": {
+          "tfidf_score": 0.3384375467960376,
+          "tfidf_matched_terms": [
+            "and",
+            "data",
+            "management"
+          ],
+          "bm25_score": 3.0982761735585096,
+          "semantic_score": 0.4210142493247986,
+          "matched_candidate_competency": "Directed customer flow and communicated customer requests to management."
+        },
+        "candidate_evidence": [
+          "Directed customer flow and communicated customer requests to management."
+        ]
+      },
+      {
+        "job_competency": "Structured and unstructured data analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3589,
+        "evidence": {
+          "tfidf_score": 0.3384375467960375,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and",
+            "data"
+          ],
+          "bm25_score": 8.028473859980135,
+          "semantic_score": 0.5422477722167969,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1612,
+        "evidence": {
+          "tfidf_score": 0.03435166358198495,
+          "tfidf_matched_terms": [
+            "excel",
+            "microsoft"
+          ],
+          "bm25_score": 9.78655334233725,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Power BI or equivalent analytics tools",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7023,
+        "evidence": {
+          "tfidf_score": 0.009819020990021517,
+          "tfidf_matched_terms": [
+            "or"
+          ],
+          "bm25_score": 2.746909744784801,
+          "semantic_score": 0.39269328117370605,
+          "matched_candidate_competency": "Prepared or assisted with individual tax returns."
+        },
+        "candidate_evidence": [
+          "Prepared or assisted with individual tax returns."
+        ]
+      },
+      {
+        "job_competency": "Web analytics",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7232,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.48027458786964417,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Python or R",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6994,
+        "evidence": {
+          "tfidf_score": 0.014554062679786265,
+          "tfidf_matched_terms": [
+            "or"
+          ],
+          "bm25_score": 2.746909744784801,
+          "semantic_score": 0.40745747089385986,
+          "matched_candidate_competency": "Prepared or assisted with individual tax returns."
+        },
+        "candidate_evidence": [
+          "Prepared or assisted with individual tax returns."
+        ]
+      },
+      {
+        "job_competency": "Microsoft Power Apps",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6761,
+        "evidence": {
+          "tfidf_score": 0.014554062679786265,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 4.541146320873189,
+          "semantic_score": 0.415399968624115,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Power Automate",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6903,
+        "evidence": {
+          "tfidf_score": 0.014554062679786265,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 4.541146320873189,
+          "semantic_score": 0.3267708420753479,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Data visualization",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1672,
+        "evidence": {
+          "tfidf_score": 0.12726480750612895,
+          "tfidf_matched_terms": [
+            "data",
+            "visualization"
+          ],
+          "bm25_score": 7.324213159389264,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Data visualization"
+        },
+        "candidate_evidence": [
+          "Data visualization"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7023,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6104055047035217,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Oracle",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7204,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4974898397922516,
+          "matched_candidate_competency": "Microsoft Word"
+        },
+        "candidate_evidence": [
+          "Microsoft Word"
+        ]
+      },
+      {
+        "job_competency": "Data modeling and algorithms",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3891,
+        "evidence": {
+          "tfidf_score": 0.3575739588348718,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 2.9561271849316344,
+          "semantic_score": 0.6139940619468689,
+          "matched_candidate_competency": "Documented existing data sources and new data."
+        },
+        "candidate_evidence": [
+          "Documented existing data sources and new data."
+        ]
+      },
+      {
+        "job_competency": "Requirements analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6527,
+        "evidence": {
+          "tfidf_score": 0.022892328266003858,
+          "tfidf_matched_terms": [
+            "analysis",
+            "requirements"
+          ],
+          "bm25_score": 5.24540702146406,
+          "semantic_score": 0.5013312101364136,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Data analysis",
+      "Microsoft Excel",
+      "Data visualization"
+    ],
+    "partial_matches": [
+      "Structured and unstructured data analysis",
+      "Data modeling and algorithms"
+    ],
+    "weak_matches": [
+      "Data quality and integrity management",
+      "Power BI or equivalent analytics tools",
+      "Web analytics",
+      "Python or R",
+      "Microsoft Power Apps",
+      "Microsoft Power Automate",
+      "SQL",
+      "Oracle",
+      "Requirements analysis"
+    ],
+    "missing": []
+  },
+  "three_category": {
+    "strength_matches": [
+      "Data analysis",
+      "Microsoft Excel",
+      "Data visualization"
+    ],
+    "partial_matches": [
+      "Structured and unstructured data analysis",
+      "Data modeling and algorithms"
+    ],
+    "competency_gaps": [
+      "Data quality and integrity management",
+      "Power BI or equivalent analytics tools",
+      "Web analytics",
+      "Python or R",
+      "Microsoft Power Apps",
+      "Microsoft Power Automate",
+      "SQL",
+      "Oracle",
+      "Requirements analysis"
+    ]
+  },
+  "counts": {
+    "requirements": 14,
+    "strength_matches": 3,
+    "partial_matches": 2,
+    "competency_gaps": 9
+  },
+  "latency_ms": 38.94,
+  "analyzed_at": "2026-10-03T17:29:46.093816+00:00"
+}

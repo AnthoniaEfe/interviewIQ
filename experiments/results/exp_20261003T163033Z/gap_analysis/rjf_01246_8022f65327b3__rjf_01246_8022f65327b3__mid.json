@@ -1,0 +1,448 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01246_8022f65327b3",
+  "jd_id": "rjf_01246_8022f65327b3",
+  "pair_id": "rjf_01246_8022f65327b3",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Revenue accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7358,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40117067098617554,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Revenue recognition under ASC 606",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9327,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3366529941558838,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Billing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7193,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5044018030166626,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Accounting principles",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7354,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40404558181762695,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Fair credit practices",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.94,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2999213635921478,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Collection regulations",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9442,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27923497557640076,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Office",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9307,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3462916612625122,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Written and spoken English",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3729,
+        "evidence": {
+          "tfidf_score": 0.2277136834739864,
+          "tfidf_matched_terms": [
+            "and",
+            "english"
+          ],
+          "bm25_score": 5.370399595327195,
+          "semantic_score": 0.6651265025138855,
+          "matched_candidate_competency": "English"
+        },
+        "candidate_evidence": [
+          "English"
+        ]
+      },
+      {
+        "job_competency": "Analytical ability",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.375,
+        "evidence": {
+          "tfidf_score": 0.014278987302502792,
+          "tfidf_matched_terms": [
+            "analytical"
+          ],
+          "bm25_score": 4.6294878387130725,
+          "semantic_score": 0.8641696572303772,
+          "matched_candidate_competency": "Analytical skills"
+        },
+        "candidate_evidence": [
+          "Analytical skills"
+        ]
+      },
+      {
+        "job_competency": "Attention to detail",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7208,
+        "evidence": {
+          "tfidf_score": 0.02215894987611355,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 1.753457614256925,
+          "semantic_score": 0.33624374866485596,
+          "matched_candidate_competency": "Oversaw manual, end-to-end, systems, integration, regression, and UAT projects."
+        },
+        "candidate_evidence": [
+          "Oversaw manual, end-to-end, systems, integration, regression, and UAT projects."
+        ]
+      },
+      {
+        "job_competency": "Organization",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7031,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6058793067932129,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Time management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6804,
+        "evidence": {
+          "tfidf_score": 0.05737110423208252,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.1025359592659227,
+          "semantic_score": 0.4534262716770172,
+          "matched_candidate_competency": "QA management"
+        },
+        "candidate_evidence": [
+          "QA management"
+        ]
+      },
+      {
+        "job_competency": "Multitasking under pressure",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9403,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29854631423950195,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Adaptability and deadline management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6654,
+        "evidence": {
+          "tfidf_score": 0.26336105634719464,
+          "tfidf_matched_terms": [
+            "and",
+            "management"
+          ],
+          "bm25_score": 3.1025359592659227,
+          "semantic_score": 0.3923453390598297,
+          "matched_candidate_competency": "QA management"
+        },
+        "candidate_evidence": [
+          "QA management"
+        ]
+      },
+      {
+        "job_competency": "Confidentiality",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7291,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44308367371559143,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Problem solving and judgment",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1692,
+        "evidence": {
+          "tfidf_score": 0.26158543094799425,
+          "tfidf_matched_terms": [
+            "and",
+            "problem",
+            "solving"
+          ],
+          "bm25_score": 9.258975677426145,
+          "semantic_score": 0.6705223321914673,
+          "matched_candidate_competency": "Problem solving"
+        },
+        "candidate_evidence": [
+          "Problem solving"
+        ]
+      },
+      {
+        "job_competency": "Verbal and written communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3683,
+        "evidence": {
+          "tfidf_score": 0.2277136834739864,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 5.370399595327195,
+          "semantic_score": 0.7116509675979614,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Interpersonal skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6535,
+        "evidence": {
+          "tfidf_score": 0.014278987302502792,
+          "tfidf_matched_terms": [
+            "skills"
+          ],
+          "bm25_score": 4.6294878387130725,
+          "semantic_score": 0.5300533771514893,
+          "matched_candidate_competency": "Analytical skills"
+        },
+        "candidate_evidence": [
+          "Analytical skills"
+        ]
+      },
+      {
+        "job_competency": "NetSuite",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5593,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3390960097312927,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Salesforce",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4336,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.48353222012519836,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Software or fintech billing and revenue experience",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3974,
+        "evidence": {
+          "tfidf_score": 0.16943559866563818,
+          "tfidf_matched_terms": [
+            "and",
+            "software"
+          ],
+          "bm25_score": 3.4541169802240215,
+          "semantic_score": 0.4535163938999176,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Problem solving and judgment"
+    ],
+    "partial_matches": [
+      "Written and spoken English",
+      "Analytical ability",
+      "Verbal and written communication"
+    ],
+    "weak_matches": [
+      "Revenue accounting",
+      "Billing",
+      "Accounting principles",
+      "Attention to detail",
+      "Organization",
+      "Time management",
+      "Adaptability and deadline management",
+      "Confidentiality",
+      "Interpersonal skills",
+      "Salesforce",
+      "Software or fintech billing and revenue experience"
+    ],
+    "missing": [
+      "Revenue recognition under ASC 606",
+      "Fair credit practices",
+      "Collection regulations",
+      "Microsoft Office",
+      "Multitasking under pressure",
+      "NetSuite"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Problem solving and judgment"
+    ],
+    "partial_matches": [
+      "Written and spoken English",
+      "Analytical ability",
+      "Verbal and written communication"
+    ],
+    "competency_gaps": [
+      "Revenue accounting",
+      "Billing",
+      "Accounting principles",
+      "Attention to detail",
+      "Organization",
+      "Time management",
+      "Adaptability and deadline management",
+      "Confidentiality",
+      "Interpersonal skills",
+      "Salesforce",
+      "Software or fintech billing and revenue experience",
+      "Revenue recognition under ASC 606",
+      "Fair credit practices",
+      "Collection regulations",
+      "Microsoft Office",
+      "Multitasking under pressure",
+      "NetSuite"
+    ]
+  },
+  "counts": {
+    "requirements": 21,
+    "strength_matches": 1,
+    "partial_matches": 3,
+    "competency_gaps": 17
+  },
+  "latency_ms": 42.05,
+  "analyzed_at": "2026-10-03T17:29:43.973632+00:00"
+}

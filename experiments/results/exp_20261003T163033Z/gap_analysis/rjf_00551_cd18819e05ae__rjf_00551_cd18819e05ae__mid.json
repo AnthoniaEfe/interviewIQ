@@ -1,0 +1,78 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00551_cd18819e05ae",
+  "jd_id": "rjf_00551_cd18819e05ae",
+  "pair_id": "rjf_00551_cd18819e05ae",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7302,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.43598541617393494,
+          "matched_candidate_competency": "Electrification"
+        },
+        "candidate_evidence": [
+          "Electrification"
+        ]
+      },
+      {
+        "job_competency": "Taxes",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9451,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2743123769760132,
+          "matched_candidate_competency": "Electrification"
+        },
+        "candidate_evidence": [
+          "Electrification"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [],
+    "weak_matches": [
+      "Accounting"
+    ],
+    "missing": [
+      "Taxes"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [],
+    "competency_gaps": [
+      "Accounting",
+      "Taxes"
+    ]
+  },
+  "counts": {
+    "requirements": 2,
+    "strength_matches": 0,
+    "partial_matches": 0,
+    "competency_gaps": 2
+  },
+  "latency_ms": 20.02,
+  "analyzed_at": "2026-10-03T17:29:42.959425+00:00"
+}

@@ -1,0 +1,368 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_03138_b63283104b67",
+  "jd_id": "rjf_03138_b63283104b67",
+  "pair_id": "rjf_03138_b63283104b67",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Ansible",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9247,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37653040885925293,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "AWX/Tower",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9388,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3058410882949829,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Shell scripting",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1635,
+        "evidence": {
+          "tfidf_score": 0.05182234504379807,
+          "tfidf_matched_terms": [
+            "scripting",
+            "shell"
+          ],
+          "bm25_score": 7.078170076087997,
+          "semantic_score": 0.9418842792510986,
+          "matched_candidate_competency": "Unix Shell Scripting"
+        },
+        "candidate_evidence": [
+          "Unix Shell Scripting"
+        ]
+      },
+      {
+        "job_competency": "Oracle Database queries",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3887,
+        "evidence": {
+          "tfidf_score": 0.0552448057399516,
+          "tfidf_matched_terms": [
+            "database",
+            "queries"
+          ],
+          "bm25_score": 4.223579470240605,
+          "semantic_score": 0.6235995292663574,
+          "matched_candidate_competency": "Database"
+        },
+        "candidate_evidence": [
+          "Database"
+        ]
+      },
+      {
+        "job_competency": "Reverse engineering of programming languages",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7164,
+        "evidence": {
+          "tfidf_score": 0.012274122212945592,
+          "tfidf_matched_terms": [
+            "of"
+          ],
+          "bm25_score": 1.28851869392966,
+          "semantic_score": 0.3767668604850769,
+          "matched_candidate_competency": "Led a team of 10-15 people for one year in a workplace safety initiative."
+        },
+        "candidate_evidence": [
+          "Led a team of 10-15 people for one year in a workplace safety initiative."
+        ]
+      },
+      {
+        "job_competency": "Agile methodologies",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3689,
+        "evidence": {
+          "tfidf_score": 0.04254356234136036,
+          "tfidf_matched_terms": [
+            "agile"
+          ],
+          "bm25_score": 4.223579470240605,
+          "semantic_score": 0.8314971327781677,
+          "matched_candidate_competency": "Agile"
+        },
+        "candidate_evidence": [
+          "Agile"
+        ]
+      },
+      {
+        "job_competency": "REST APIs",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9449,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27544793486595154,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9282,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3587868809700012,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Code review",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9307,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34660202264785767,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Software testing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7174,
+        "evidence": {
+          "tfidf_score": 0.02123000678799766,
+          "tfidf_matched_terms": [
+            "testing"
+          ],
+          "bm25_score": 1.165040416250509,
+          "semantic_score": 0.37707167863845825,
+          "matched_candidate_competency": "Analyzed requirements and provided customer support and testing for functional and technical queries, requests, requirements, and modifications."
+        },
+        "candidate_evidence": [
+          "Analyzed requirements and provided customer support and testing for functional and technical queries, requests, requirements, and modifications."
+        ]
+      },
+      {
+        "job_competency": "CI/CD",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9216,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39209285378456116,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1722,
+        "evidence": {
+          "tfidf_score": 0.036619959699580505,
+          "tfidf_matched_terms": [
+            "python"
+          ],
+          "bm25_score": 4.99239752514952,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Kubernetes",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.941,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2949818968772888,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "OpenShift",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9367,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3164835572242737,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "DevOps",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9203,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.398672878742218,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Jenkins",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9405,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29729023575782776,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Automation testing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7169,
+        "evidence": {
+          "tfidf_score": 0.02123000678799766,
+          "tfidf_matched_terms": [
+            "testing"
+          ],
+          "bm25_score": 1.165040416250509,
+          "semantic_score": 0.38005346059799194,
+          "matched_candidate_competency": "Analyzed requirements and provided customer support and testing for functional and technical queries, requests, requirements, and modifications."
+        },
+        "candidate_evidence": [
+          "Analyzed requirements and provided customer support and testing for functional and technical queries, requests, requirements, and modifications."
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Shell scripting",
+      "Python"
+    ],
+    "partial_matches": [
+      "Oracle Database queries",
+      "Agile methodologies"
+    ],
+    "weak_matches": [
+      "Reverse engineering of programming languages",
+      "Software testing",
+      "Automation testing"
+    ],
+    "missing": [
+      "Ansible",
+      "AWX/Tower",
+      "REST APIs",
+      "Git",
+      "Code review",
+      "CI/CD",
+      "Kubernetes",
+      "OpenShift",
+      "DevOps",
+      "Jenkins"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Shell scripting",
+      "Python"
+    ],
+    "partial_matches": [
+      "Oracle Database queries",
+      "Agile methodologies"
+    ],
+    "competency_gaps": [
+      "Reverse engineering of programming languages",
+      "Software testing",
+      "Automation testing",
+      "Ansible",
+      "AWX/Tower",
+      "REST APIs",
+      "Git",
+      "Code review",
+      "CI/CD",
+      "Kubernetes",
+      "OpenShift",
+      "DevOps",
+      "Jenkins"
+    ]
+  },
+  "counts": {
+    "requirements": 17,
+    "strength_matches": 2,
+    "partial_matches": 2,
+    "competency_gaps": 13
+  },
+  "latency_ms": 34.91,
+  "analyzed_at": "2026-10-03T17:29:46.267526+00:00"
+}

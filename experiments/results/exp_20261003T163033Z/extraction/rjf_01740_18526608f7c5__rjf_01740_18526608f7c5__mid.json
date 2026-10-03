@@ -1,0 +1,931 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "extraction",
+  "profile_id": "rjf_01740_18526608f7c5",
+  "jd_id": "rjf_01740_18526608f7c5",
+  "pair_id": "rjf_01740_18526608f7c5",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Highly motivated Sales Associate with extensive customer service and sales experience. Outgoing sales professional with a track record of driving increased sales, improving the buying experience, and elevating company profile with the target market.",
+    "seniority_indicators": [
+      "Software Engineer of IoT Cloud",
+      "Software Engineer",
+      "Machine Learning Developer (Intern)"
+    ],
+    "education": [
+      {
+        "degree": "Master of Science",
+        "institution": "University College London",
+        "field": "Computational Statistics & Machine Learning",
+        "year": "Expected in 2013",
+        "source_text": "Master of Science: Computational Statistics & Machine Learning, Expected in 2013"
+      },
+      {
+        "degree": "Bachelor of Science",
+        "institution": "University of Liverpool",
+        "field": "Electronic Commerce Computing",
+        "year": "Expected in Jun 2010",
+        "source_text": "Bachelor of Science: Electronic Commerce Computing, Expected in Jun 2010"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Software Engineer of IoT Cloud",
+        "employer": "Belvedere Trading",
+        "duration": "05/2014 to Current",
+        "responsibilities": [
+          "Designed and implemented cluster provisioning and management for an IoT cloud.",
+          "Provisioned and managed AWS and Heroku resources using CloudFormation, EC2, Auto Scaling, and ELB.",
+          "Deployed microservices and managed platform versioning, upgrades, and scaling.",
+          "Worked on storage of sensitive and critical information such as authentication tokens and client secrets.",
+          "Customized the platform for business needs, including database, Kafka, and CloudFormation infrastructure migrations."
+        ],
+        "achievements": [
+          "Co-hosted workloads across 10K customers.",
+          "Batch transformed approximately 100MM rows of user data daily.",
+          "Real-time ingestion of 7 TB of events daily at approximately 80 MB/s sustained."
+        ],
+        "technologies": [
+          "Salesforce IoT Cloud",
+          "AWS",
+          "Heroku",
+          "CloudFormation",
+          "EC2",
+          "Auto Scaling",
+          "ELB",
+          "Kafka",
+          "Storm",
+          "Spark",
+          "Cassandra",
+          "Kubernetes"
+        ],
+        "source_text": "Software Engineer of IoT Cloud, 05/2014 to Current, Belvedere Trading"
+      },
+      {
+        "title": "Software Engineer",
+        "employer": "Locket",
+        "duration": "02/2014 to 05/2014",
+        "responsibilities": [
+          "Focused on backend development, including intelligent content generation and display."
+        ],
+        "achievements": [
+          "Worked on an app selected by Google as one of the Best apps of 2014."
+        ],
+        "technologies": [],
+        "source_text": "Software Engineer, 02/2014 to 05/2014, Locket"
+      },
+      {
+        "title": "Machine Learning Developer (Intern)",
+        "employer": "British Broadcasting Corporation (BBC)",
+        "duration": "05/2013 to 08/2013",
+        "responsibilities": [
+          "Developed a face detection and recognition program in Java using eigenfaces (PCA) and fisherfaces (LDA).",
+          "Applied text mining techniques to subtitles to assist facial identification of actors in television programs."
+        ],
+        "achievements": [
+          "Achieved up to 98% accuracy on standard face databases, including ORL."
+        ],
+        "technologies": [
+          "Java",
+          "Machine learning",
+          "Eigenfaces",
+          "PCA",
+          "Fisherfaces",
+          "LDA",
+          "Text mining"
+        ],
+        "source_text": "Machine Learning Developer (Intern), 05/2013 to 08/2013, BBC"
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "Java",
+        "original_mentions": [
+          "Java"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Programming: Java",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Python",
+        "original_mentions": [
+          "Python"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Programming: Python",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JavaScript",
+        "original_mentions": [
+          "Javascript"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Programming: Javascript",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Gradle",
+        "original_mentions": [
+          "Gradle"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Building tool: Gradle",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Maven",
+        "original_mentions": [
+          "Maven"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Building tool: Maven",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Puppet",
+        "original_mentions": [
+          "Puppet"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Ops related: Puppet",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Ansible",
+        "original_mentions": [
+          "Ansible"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Ops related: Ansible",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SaltStack",
+        "original_mentions": [
+          "Saltstack"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Ops related: Saltstack",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Docker",
+        "original_mentions": [
+          "Docker"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Ops related: Docker",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Kubernetes",
+        "original_mentions": [
+          "Kubernetes"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Ops related: Kubernetes",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Jenkins",
+        "original_mentions": [
+          "Jenkins"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Ops related: Jenkins",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Bash",
+        "original_mentions": [
+          "Bash"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Ops related: Bash",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "AWS",
+        "original_mentions": [
+          "AWS"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Others: AWS",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Hibernate",
+        "original_mentions": [
+          "Hibernate"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Others: Hibernate",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "PostgreSQL",
+        "original_mentions": [
+          "Postgres"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Others: Postgres",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "CloudFormation",
+        "original_mentions": [
+          "Cloudformation"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "heavily involving Cloudformation",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Amazon EC2",
+        "original_mentions": [
+          "EC2"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Cloudformation, EC2, Auto-scaling and ELB",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Auto Scaling",
+        "original_mentions": [
+          "Auto-scaling"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Cloudformation, EC2, Auto-scaling and ELB",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Elastic Load Balancing",
+        "original_mentions": [
+          "ELB"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Cloudformation, EC2, Auto-scaling and ELB",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Heroku",
+        "original_mentions": [
+          "Heroku"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Provision and manage AWS and Heroku resource",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Kafka",
+        "original_mentions": [
+          "Kafka"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Micro-services that we support use Kafka",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Storm",
+        "original_mentions": [
+          "Storm"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Micro-services that we support use Kafka, Storm, Spark",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Spark",
+        "original_mentions": [
+          "Spark"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Micro-services that we support use Kafka, Storm, Spark",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Cassandra",
+        "original_mentions": [
+          "Cassandra"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Micro-services that we support use Kafka, Storm, Spark, Cassandra",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Machine Learning",
+        "original_mentions": [
+          "machine learning algorithms"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "implementing machine learning algorithms",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Face Detection",
+        "original_mentions": [
+          "face detection"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Developed a face detection and recognition program",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Face Recognition",
+        "original_mentions": [
+          "recognition"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Developed a face detection and recognition program",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Text Mining",
+        "original_mentions": [
+          "text mining"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Applied text mining techniques to subtitles",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Customer Service",
+        "original_mentions": [
+          "customer service"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "extensive customer service and sales experience",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Sales",
+        "original_mentions": [
+          "sales experience",
+          "sales professional"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "extensive customer service and sales experience",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Motivation",
+        "original_mentions": [
+          "Highly motivated"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Highly motivated Sales Associate",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "IoT Cloud",
+        "original_mentions": [
+          "IoT Cloud"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Software Engineer of IoT Cloud",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Real-Time Event Processing",
+        "original_mentions": [
+          "realtime engagement and analytics",
+          "real-time ingests"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "a massively scalable event processing engine for realtime engagement and analytics",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Backend Development",
+        "original_mentions": [
+          "backend development"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "I was mainly focusing on backend development",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Machine Learning",
+        "original_mentions": [
+          "Machine Learning Developer",
+          "machine learning algorithms"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Machine Learning Developer (Intern)",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": []
+  },
+  "job": {
+    "title": "Lead Software Developer",
+    "seniority": "Lead",
+    "years_of_experience": "8+ years of experience in software engineering",
+    "responsibilities": [
+      "Lead the full stack engineering team.",
+      "Develop, test, and maintain software applications and systems.",
+      "Meet security, scalability, and performance requirements.",
+      "Ensure services run reliably and efficiently at scale.",
+      "Work cross-functionally across multiple teams to deliver high-quality products."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Java",
+        "original_mentions": [
+          "Java"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience with Java",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Amazon Web Services (AWS)",
+        "original_mentions": [
+          "AWS"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience with AWS",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience with SQL",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Full-stack software development",
+        "original_mentions": [
+          "full stack team",
+          "background across the stack"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.91,
+        "source": {
+          "source_text": "lead their full stack team",
+          "source_section": "Role description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Software engineering",
+        "original_mentions": [
+          "8+ years of experience in software engineering"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "8+ years of experience in software engineering",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cross-functional collaboration",
+        "original_mentions": [
+          "working cross-functionality across multiple teams"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Experience working cross-functionality across multiple teams",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Fintech",
+        "original_mentions": [
+          "strong Fintech background"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "strong Fintech background",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "Payments",
+        "original_mentions": [
+          "Payments experience is a plus"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Payments experience is a plus",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [
+      "Degree in Computer Science or equivalent"
+    ],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Fintech",
+        "original_mentions": [
+          "strong Fintech background"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "strong Fintech background",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Payments",
+        "original_mentions": [
+          "Payments experience is a plus"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Payments experience is a plus",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Cross-functional collaboration",
+        "original_mentions": [
+          "working cross-functionality across multiple teams"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Experience working cross-functionality across multiple teams",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [
+      "Lead the full stack team."
+    ],
+    "system_design_requirements": [
+      "Develop, test, and maintain software applications and systems to meet security, scalability, and performance requirements.",
+      "Ensure services run reliably and efficiently at scale."
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Computer Science or equivalent degree",
+        "original_mentions": [
+          "Degree in Computer Science or equivalent"
+        ],
+        "competency_type": "education",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Degree in Computer Science or equivalent",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Java",
+        "original_mentions": [
+          "Java"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience with Java",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Amazon Web Services (AWS)",
+        "original_mentions": [
+          "AWS"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience with AWS",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience with SQL",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Fintech",
+        "original_mentions": [
+          "strong Fintech background"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "strong Fintech background",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Payments",
+        "original_mentions": [
+          "Payments experience is a plus"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Payments experience is a plus",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cross-functional collaboration",
+        "original_mentions": [
+          "working cross-functionality across multiple teams"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Experience working cross-functionality across multiple teams",
+          "source_section": "What they're looking for",
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 1617,
+    "output_tokens": 2748,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0034329,
+    "latency_ms": 16968.47,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 997,
+    "output_tokens": 1486,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0019826,
+    "latency_ms": 10302.09,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-10-03T16:59:05.027993+00:00",
+  "reused_from_experiment": null
+}

@@ -1,0 +1,340 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01550_e8cdc8f691d5",
+  "jd_id": "rjf_01550_e8cdc8f691d5",
+  "pair_id": "rjf_01550_e8cdc8f691d5",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Enterprise data management technologies",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3836,
+        "evidence": {
+          "tfidf_score": 0.036911430815656426,
+          "tfidf_matched_terms": [
+            "data",
+            "management"
+          ],
+          "bm25_score": 4.7174081890575,
+          "semantic_score": 0.67047518491745,
+          "matched_candidate_competency": "Database management"
+        },
+        "candidate_evidence": [
+          "Database management"
+        ]
+      },
+      {
+        "job_competency": "Database technologies",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3845,
+        "evidence": {
+          "tfidf_score": 0.039140813669773566,
+          "tfidf_matched_terms": [
+            "database"
+          ],
+          "bm25_score": 3.56906905312598,
+          "semantic_score": 0.7737300395965576,
+          "matched_candidate_competency": "Database management"
+        },
+        "candidate_evidence": [
+          "Database management"
+        ]
+      },
+      {
+        "job_competency": "ETL technologies",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9227,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38644397258758545,
+          "matched_candidate_competency": "Electrical test engineering"
+        },
+        "candidate_evidence": [
+          "Electrical test engineering"
+        ]
+      },
+      {
+        "job_competency": "Complex SQL queries",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7243,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4730721712112427,
+          "matched_candidate_competency": "Electrical test engineering"
+        },
+        "candidate_evidence": [
+          "Electrical test engineering"
+        ]
+      },
+      {
+        "job_competency": "Cloud data solutions administration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4026,
+        "evidence": {
+          "tfidf_score": 0.036911430815656426,
+          "tfidf_matched_terms": [
+            "administration",
+            "data"
+          ],
+          "bm25_score": 4.7174081890575,
+          "semantic_score": 0.48105674982070923,
+          "matched_candidate_competency": "Systems administration"
+        },
+        "candidate_evidence": [
+          "Systems administration"
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7204,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4973407983779907,
+          "matched_candidate_competency": "Electrical test engineering"
+        },
+        "candidate_evidence": [
+          "Electrical test engineering"
+        ]
+      },
+      {
+        "job_competency": "Structured data processing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3472,
+        "evidence": {
+          "tfidf_score": 0.05649227994358878,
+          "tfidf_matched_terms": [
+            "data",
+            "processing"
+          ],
+          "bm25_score": 7.599189028667683,
+          "semantic_score": 0.7355920672416687,
+          "matched_candidate_competency": "Data processing"
+        },
+        "candidate_evidence": [
+          "Data processing"
+        ]
+      },
+      {
+        "job_competency": "Data pipelines",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4002,
+        "evidence": {
+          "tfidf_score": 0.039140813669773566,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.56906905312598,
+          "semantic_score": 0.6165421605110168,
+          "matched_candidate_competency": "Data acquisition"
+        },
+        "candidate_evidence": [
+          "Data acquisition"
+        ]
+      },
+      {
+        "job_competency": "Data warehouses",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.402,
+        "evidence": {
+          "tfidf_score": 0.039140813669773566,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.56906905312598,
+          "semantic_score": 0.5983161926269531,
+          "matched_candidate_competency": "Data acquisition"
+        },
+        "candidate_evidence": [
+          "Data acquisition"
+        ]
+      },
+      {
+        "job_competency": "ELT",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.935,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3250548243522644,
+          "matched_candidate_competency": "Electrical test engineering"
+        },
+        "candidate_evidence": [
+          "Electrical test engineering"
+        ]
+      },
+      {
+        "job_competency": "Data integration architecture",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6526,
+        "evidence": {
+          "tfidf_score": 0.03034351148064307,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.56906905312598,
+          "semantic_score": 0.5459669232368469,
+          "matched_candidate_competency": "Data acquisition"
+        },
+        "candidate_evidence": [
+          "Data acquisition"
+        ]
+      },
+      {
+        "job_competency": "System architecture and integration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4015,
+        "evidence": {
+          "tfidf_score": 0.20102902690936958,
+          "tfidf_matched_terms": [
+            "and",
+            "system"
+          ],
+          "bm25_score": 2.7319424466976834,
+          "semantic_score": 0.5644823908805847,
+          "matched_candidate_competency": "Set up and ran the control system for each test."
+        },
+        "candidate_evidence": [
+          "Set up and ran the control system for each test."
+        ]
+      },
+      {
+        "job_competency": "Software development life cycle practices",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6851,
+        "evidence": {
+          "tfidf_score": 0.0400478506657841,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 3.218285534263393,
+          "semantic_score": 0.3702390789985657,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      },
+      {
+        "job_competency": "Scrum",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7341,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41199973225593567,
+          "matched_candidate_competency": "Electrical test engineering"
+        },
+        "candidate_evidence": [
+          "Electrical test engineering"
+        ]
+      },
+      {
+        "job_competency": "Integration testing and debugging",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3955,
+        "evidence": {
+          "tfidf_score": 0.23262004479917997,
+          "tfidf_matched_terms": [
+            "and",
+            "testing"
+          ],
+          "bm25_score": 2.932884600566899,
+          "semantic_score": 0.580701470375061,
+          "matched_candidate_competency": "Software testing"
+        },
+        "candidate_evidence": [
+          "Software testing"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Enterprise data management technologies",
+      "Database technologies",
+      "Cloud data solutions administration",
+      "Structured data processing",
+      "Data pipelines",
+      "Data warehouses",
+      "System architecture and integration",
+      "Integration testing and debugging"
+    ],
+    "weak_matches": [
+      "Complex SQL queries",
+      "Python",
+      "Data integration architecture",
+      "Software development life cycle practices",
+      "Scrum"
+    ],
+    "missing": [
+      "ETL technologies",
+      "ELT"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Enterprise data management technologies",
+      "Database technologies",
+      "Cloud data solutions administration",
+      "Structured data processing",
+      "Data pipelines",
+      "Data warehouses",
+      "System architecture and integration",
+      "Integration testing and debugging"
+    ],
+    "competency_gaps": [
+      "Complex SQL queries",
+      "Python",
+      "Data integration architecture",
+      "Software development life cycle practices",
+      "Scrum",
+      "ETL technologies",
+      "ELT"
+    ]
+  },
+  "counts": {
+    "requirements": 15,
+    "strength_matches": 0,
+    "partial_matches": 8,
+    "competency_gaps": 7
+  },
+  "latency_ms": 34.43,
+  "analyzed_at": "2026-10-03T17:29:44.306329+00:00"
+}

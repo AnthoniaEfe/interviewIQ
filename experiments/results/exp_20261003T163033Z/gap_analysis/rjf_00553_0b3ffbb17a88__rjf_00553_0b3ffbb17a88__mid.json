@@ -1,0 +1,469 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00553_0b3ffbb17a88",
+  "jd_id": "rjf_00553_0b3ffbb17a88",
+  "pair_id": "rjf_00553_0b3ffbb17a88",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Oracle",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9264,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3679753541946411,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "IBM DataStage",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7278,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4513673782348633,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "UNIX",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9204,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39811304211616516,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "PL/SQL",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9392,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3039805293083191,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9338,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33104443550109863,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "Data engineering",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3672,
+        "evidence": {
+          "tfidf_score": 0.05774471086292413,
+          "tfidf_matched_terms": [
+            "data",
+            "engineering"
+          ],
+          "bm25_score": 3.7083483245229485,
+          "semantic_score": 0.5345739126205444,
+          "matched_candidate_competency": "Data transfer"
+        },
+        "candidate_evidence": [
+          "Data transfer"
+        ]
+      },
+      {
+        "job_competency": "Cloud computing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7354,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4034951627254486,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "Cloud data warehouses",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3821,
+        "evidence": {
+          "tfidf_score": 0.03211304244144057,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.7083483245229485,
+          "semantic_score": 0.4053344428539276,
+          "matched_candidate_competency": "Data transfer"
+        },
+        "candidate_evidence": [
+          "Data transfer"
+        ]
+      },
+      {
+        "job_competency": "Data modeling",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3791,
+        "evidence": {
+          "tfidf_score": 0.04142337353973633,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.7083483245229485,
+          "semantic_score": 0.4281408488750458,
+          "matched_candidate_competency": "Data transfer"
+        },
+        "candidate_evidence": [
+          "Data transfer"
+        ]
+      },
+      {
+        "job_competency": "Cloud ETL/ELT tools",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6444,
+        "evidence": {
+          "tfidf_score": 0.0038691662761558016,
+          "tfidf_matched_terms": [
+            "tools"
+          ],
+          "bm25_score": 3.0700660847991346,
+          "semantic_score": 0.3486004173755646,
+          "matched_candidate_competency": "Used ticketing and network monitoring tools to investigate incidents."
+        },
+        "candidate_evidence": [
+          "Used ticketing and network monitoring tools to investigate incidents."
+        ]
+      },
+      {
+        "job_competency": "Version control systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7342,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41144418716430664,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9258,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37084612250328064,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "SVN",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7345,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40942665934562683,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "AWS",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4363,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.45484498143196106,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "Matillion",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4405,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41181036829948425,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "Snowflake",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5641,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2993667721748352,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Azure",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5566,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3618013858795166,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "Google Cloud Platform",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5635,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30425509810447693,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "AWS Glue",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5722,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.23189887404441833,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "Azure Data Factory",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2341,
+        "evidence": {
+          "tfidf_score": 0.03211304244144057,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.7083483245229485,
+          "semantic_score": 0.32402101159095764,
+          "matched_candidate_competency": "Data transfer"
+        },
+        "candidate_evidence": [
+          "Data transfer"
+        ]
+      },
+      {
+        "job_competency": "Google BigQuery",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5686,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2614597976207733,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "Amazon Redshift",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5652,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2903093695640564,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      },
+      {
+        "job_competency": "Azure Synapse Analytics",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5628,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30965229868888855,
+          "matched_candidate_competency": "Cisco routing and switching"
+        },
+        "candidate_evidence": [
+          "Cisco routing and switching"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Data engineering",
+      "Cloud data warehouses",
+      "Data modeling",
+      "Azure Data Factory"
+    ],
+    "weak_matches": [
+      "IBM DataStage",
+      "Cloud computing",
+      "Cloud ETL/ELT tools",
+      "Version control systems",
+      "SVN",
+      "AWS",
+      "Matillion"
+    ],
+    "missing": [
+      "Oracle",
+      "UNIX",
+      "PL/SQL",
+      "SQL",
+      "Git",
+      "Snowflake",
+      "Microsoft Azure",
+      "Google Cloud Platform",
+      "AWS Glue",
+      "Google BigQuery",
+      "Amazon Redshift",
+      "Azure Synapse Analytics"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Data engineering",
+      "Cloud data warehouses",
+      "Data modeling",
+      "Azure Data Factory"
+    ],
+    "competency_gaps": [
+      "IBM DataStage",
+      "Cloud computing",
+      "Cloud ETL/ELT tools",
+      "Version control systems",
+      "SVN",
+      "AWS",
+      "Matillion",
+      "Oracle",
+      "UNIX",
+      "PL/SQL",
+      "SQL",
+      "Git",
+      "Snowflake",
+      "Microsoft Azure",
+      "Google Cloud Platform",
+      "AWS Glue",
+      "Google BigQuery",
+      "Amazon Redshift",
+      "Azure Synapse Analytics"
+    ]
+  },
+  "counts": {
+    "requirements": 23,
+    "strength_matches": 0,
+    "partial_matches": 4,
+    "competency_gaps": 19
+  },
+  "latency_ms": 64.47,
+  "analyzed_at": "2026-10-03T17:29:43.024465+00:00"
+}

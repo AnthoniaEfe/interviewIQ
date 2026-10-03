@@ -1,0 +1,356 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00857_a7b490bccd67",
+  "jd_id": "rjf_00857_a7b490bccd67",
+  "pair_id": "rjf_00857_a7b490bccd67",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "General ledger accounting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.933,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33501768112182617,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Journal entry preparation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9462,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2691996395587921,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Monthly accounting close",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9404,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29808229207992554,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Payroll and cost accruals",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.656,
+        "evidence": {
+          "tfidf_score": 0.15270931431304655,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5174194011339244,
+          "semantic_score": 0.40193694829940796,
+          "matched_candidate_competency": "Training and mentoring"
+        },
+        "candidate_evidence": [
+          "Training and mentoring"
+        ]
+      },
+      {
+        "job_competency": "Profitability analysis",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9269,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36562156677246094,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Chart of accounts and cost center reporting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3673,
+        "evidence": {
+          "tfidf_score": 0.179041712742694,
+          "tfidf_matched_terms": [
+            "and",
+            "of",
+            "reporting"
+          ],
+          "bm25_score": 2.965290941468548,
+          "semantic_score": 0.44299668073654175,
+          "matched_candidate_competency": "Troubleshot database and reporting issues."
+        },
+        "candidate_evidence": [
+          "Troubleshot database and reporting issues."
+        ]
+      },
+      {
+        "job_competency": "Accounting experience",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.93,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3501929044723511,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Financial analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.728,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4499961733818054,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "SAP FI",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.719,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5061143636703491,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "US GAAP",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9308,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3460858464241028,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "IFRS accounting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9312,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34412169456481934,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "US tax",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9585,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.20745138823986053,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9203,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3982928395271301,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Microsoft PowerPoint",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7262,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46117839217185974,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Audit experience",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5585,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3455269932746887,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "SAP BW",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4344,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.47497427463531494,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "SAP CRM",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4374,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44352078437805176,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Chart of accounts and cost center reporting"
+    ],
+    "weak_matches": [
+      "Payroll and cost accruals",
+      "Financial analysis",
+      "SAP FI",
+      "Microsoft PowerPoint",
+      "SAP BW",
+      "SAP CRM"
+    ],
+    "missing": [
+      "General ledger accounting",
+      "Journal entry preparation",
+      "Monthly accounting close",
+      "Profitability analysis",
+      "Accounting experience",
+      "US GAAP",
+      "IFRS accounting",
+      "US tax",
+      "Microsoft Excel",
+      "Audit experience"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Chart of accounts and cost center reporting"
+    ],
+    "competency_gaps": [
+      "Payroll and cost accruals",
+      "Financial analysis",
+      "SAP FI",
+      "Microsoft PowerPoint",
+      "SAP BW",
+      "SAP CRM",
+      "General ledger accounting",
+      "Journal entry preparation",
+      "Monthly accounting close",
+      "Profitability analysis",
+      "Accounting experience",
+      "US GAAP",
+      "IFRS accounting",
+      "US tax",
+      "Microsoft Excel",
+      "Audit experience"
+    ]
+  },
+  "counts": {
+    "requirements": 17,
+    "strength_matches": 0,
+    "partial_matches": 1,
+    "competency_gaps": 16
+  },
+  "latency_ms": 34.13,
+  "analyzed_at": "2026-10-03T17:29:43.608030+00:00"
+}

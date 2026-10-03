@@ -1,0 +1,243 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02560_a02ec7811c9b",
+  "jd_id": "rjf_02560_a02ec7811c9b",
+  "pair_id": "rjf_02560_a02ec7811c9b",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Stakeholder communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3866,
+        "evidence": {
+          "tfidf_score": 0.008513513413449754,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 4.692080740212698,
+          "semantic_score": 0.4555945098400116,
+          "matched_candidate_competency": "Communication and presentation"
+        },
+        "candidate_evidence": [
+          "Communication and presentation"
+        ]
+      },
+      {
+        "job_competency": "Business requirements gathering and analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3711,
+        "evidence": {
+          "tfidf_score": 0.27219868513671114,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and",
+            "business",
+            "requirements"
+          ],
+          "bm25_score": 4.0058772040094475,
+          "semantic_score": 0.5110427141189575,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Business process modeling",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6555,
+        "evidence": {
+          "tfidf_score": 0.036888572337351884,
+          "tfidf_matched_terms": [
+            "business",
+            "modeling"
+          ],
+          "bm25_score": 3.631730750821934,
+          "semantic_score": 0.35524633526802063,
+          "matched_candidate_competency": "Business intelligence"
+        },
+        "candidate_evidence": [
+          "Business intelligence"
+        ]
+      },
+      {
+        "job_competency": "Business analysis techniques",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3776,
+        "evidence": {
+          "tfidf_score": 0.051687652844089084,
+          "tfidf_matched_terms": [
+            "analysis",
+            "business"
+          ],
+          "bm25_score": 4.0058772040094475,
+          "semantic_score": 0.6115800142288208,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Process improvement methodologies",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7347,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40835991501808167,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Agile methodology",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9321,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3397355079650879,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Business analysis experience",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3877,
+        "evidence": {
+          "tfidf_score": 0.051687652844089084,
+          "tfidf_matched_terms": [
+            "analysis",
+            "business"
+          ],
+          "bm25_score": 4.0058772040094475,
+          "semantic_score": 0.5100908279418945,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "US citizenship or Green Card work authorization",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9759,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.12045726180076599,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "RPA development",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5671,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2739917039871216,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "RPA platforms and tools",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2265,
+        "evidence": {
+          "tfidf_score": 0.22427357844806842,
+          "tfidf_matched_terms": [
+            "and",
+            "tools"
+          ],
+          "bm25_score": 5.234779235466215,
+          "semantic_score": 0.3069142997264862,
+          "matched_candidate_competency": "Reporting tools"
+        },
+        "candidate_evidence": [
+          "Reporting tools"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Stakeholder communication",
+      "Business requirements gathering and analysis",
+      "Business analysis techniques",
+      "Business analysis experience",
+      "RPA platforms and tools"
+    ],
+    "weak_matches": [
+      "Business process modeling",
+      "Process improvement methodologies"
+    ],
+    "missing": [
+      "Agile methodology",
+      "US citizenship or Green Card work authorization",
+      "RPA development"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Stakeholder communication",
+      "Business requirements gathering and analysis",
+      "Business analysis techniques",
+      "Business analysis experience",
+      "RPA platforms and tools"
+    ],
+    "competency_gaps": [
+      "Business process modeling",
+      "Process improvement methodologies",
+      "Agile methodology",
+      "US citizenship or Green Card work authorization",
+      "RPA development"
+    ]
+  },
+  "counts": {
+    "requirements": 10,
+    "strength_matches": 0,
+    "partial_matches": 5,
+    "competency_gaps": 5
+  },
+  "latency_ms": 28.98,
+  "analyzed_at": "2026-10-03T17:29:45.627865+00:00"
+}

@@ -1,0 +1,568 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01942_5b5361494714",
+  "jd_id": "rjf_01942_5b5361494714",
+  "pair_id": "rjf_01942_5b5361494714",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Software engineering",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1721,
+        "evidence": {
+          "tfidf_score": 0.14703594578353468,
+          "tfidf_matched_terms": [
+            "engineering",
+            "software"
+          ],
+          "bm25_score": 7.229862083024295,
+          "semantic_score": 0.9999999403953552,
+          "matched_candidate_competency": "Software Engineering"
+        },
+        "candidate_evidence": [
+          "Software Engineering"
+        ]
+      },
+      {
+        "job_competency": "Data types, algorithms, and object-oriented programming",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1679,
+        "evidence": {
+          "tfidf_score": 0.175763303874313,
+          "tfidf_matched_terms": [
+            "algorithms",
+            "and",
+            "object",
+            "oriented",
+            "programming"
+          ],
+          "bm25_score": 12.11308321973656,
+          "semantic_score": 0.7602344155311584,
+          "matched_candidate_competency": "Object-Oriented Programming"
+        },
+        "candidate_evidence": [
+          "Object-Oriented Programming"
+        ]
+      },
+      {
+        "job_competency": "Web service development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3812,
+        "evidence": {
+          "tfidf_score": 0.07760788056738645,
+          "tfidf_matched_terms": [
+            "development",
+            "web"
+          ],
+          "bm25_score": 4.676086630321724,
+          "semantic_score": 0.8406850099563599,
+          "matched_candidate_competency": "Web Services"
+        },
+        "candidate_evidence": [
+          "Web Services"
+        ]
+      },
+      {
+        "job_competency": "Web application development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4058,
+        "evidence": {
+          "tfidf_score": 0.07760788056738645,
+          "tfidf_matched_terms": [
+            "development",
+            "web"
+          ],
+          "bm25_score": 4.676086630321724,
+          "semantic_score": 0.5939277410507202,
+          "matched_candidate_competency": "Web Services"
+        },
+        "candidate_evidence": [
+          "Web Services"
+        ]
+      },
+      {
+        "job_competency": "Console application development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6825,
+        "evidence": {
+          "tfidf_score": 0.05793469607695613,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.9811670959114873,
+          "semantic_score": 0.5063124895095825,
+          "matched_candidate_competency": "Portal Development"
+        },
+        "candidate_evidence": [
+          "Portal Development"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4066,
+        "evidence": {
+          "tfidf_score": 0.051214655068669415,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 3.4725428705980534,
+          "semantic_score": 0.6807720065116882,
+          "matched_candidate_competency": "Microsoft SQL Server"
+        },
+        "candidate_evidence": [
+          "Microsoft SQL Server"
+        ]
+      },
+      {
+        "job_competency": "T-SQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6684,
+        "evidence": {
+          "tfidf_score": 0.029691116092770187,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 3.4725428705980534,
+          "semantic_score": 0.5849151611328125,
+          "matched_candidate_competency": "Microsoft SQL Server"
+        },
+        "candidate_evidence": [
+          "Microsoft SQL Server"
+        ]
+      },
+      {
+        "job_competency": "Problem solving",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1697,
+        "evidence": {
+          "tfidf_score": 0.036191090930439276,
+          "tfidf_matched_terms": [
+            "problem",
+            "solving"
+          ],
+          "bm25_score": 9.352173260643449,
+          "semantic_score": 1.0000005960464478,
+          "matched_candidate_competency": "Problem Solving"
+        },
+        "candidate_evidence": [
+          "Problem Solving"
+        ]
+      },
+      {
+        "job_competency": "Multitasking and delivery under aggressive timelines",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6917,
+        "evidence": {
+          "tfidf_score": 0.12568914874594056,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.2379794251052372,
+          "semantic_score": 0.5061984062194824,
+          "matched_candidate_competency": "Read and understood technical documents, including requirements, design, and release notes."
+        },
+        "candidate_evidence": [
+          "Read and understood technical documents, including requirements, design, and release notes."
+        ]
+      },
+      {
+        "job_competency": "Agile methodology",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7247,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4705874025821686,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7213,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.491749107837677,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Bachelor's degree in a relevant field",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6987,
+        "evidence": {
+          "tfidf_score": 0.0222985825244365,
+          "tfidf_matched_terms": [
+            "a",
+            "in"
+          ],
+          "bm25_score": 4.368967003862602,
+          "semantic_score": 0.34570980072021484,
+          "matched_candidate_competency": "Participates in product design reviews and provides ideas and solutions in a teamwork environment."
+        },
+        "candidate_evidence": [
+          "Participates in product design reviews and provides ideas and solutions in a teamwork environment."
+        ]
+      },
+      {
+        "job_competency": ".NET and C#",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2125,
+        "evidence": {
+          "tfidf_score": 0.3739925275584972,
+          "tfidf_matched_terms": [
+            "and",
+            "c#",
+            "net"
+          ],
+          "bm25_score": 5.554260202950364,
+          "semantic_score": 0.8341412544250488,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Continuous integration and automated deployment",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4047,
+        "evidence": {
+          "tfidf_score": 0.15711192979718794,
+          "tfidf_matched_terms": [
+            "and",
+            "deployment"
+          ],
+          "bm25_score": 3.6210874530296495,
+          "semantic_score": 0.4428515136241913,
+          "matched_candidate_competency": "Performs software design, debugging, testing, and deployment."
+        },
+        "candidate_evidence": [
+          "Performs software design, debugging, testing, and deployment."
+        ]
+      },
+      {
+        "job_competency": "Entity Framework",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.103,
+        "evidence": {
+          "tfidf_score": 0.07256782798615354,
+          "tfidf_matched_terms": [
+            "entity",
+            "framework"
+          ],
+          "bm25_score": 8.25961541570987,
+          "semantic_score": 0.9999998807907104,
+          "matched_candidate_competency": "Entity Framework"
+        },
+        "candidate_evidence": [
+          "Entity Framework"
+        ]
+      },
+      {
+        "job_competency": "LINQ",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2182,
+        "evidence": {
+          "tfidf_score": 0.025582796708301464,
+          "tfidf_matched_terms": [
+            "linq"
+          ],
+          "bm25_score": 5.554260202950364,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "LINQ"
+        },
+        "candidate_evidence": [
+          "LINQ"
+        ]
+      },
+      {
+        "job_competency": "RabbitMQ",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5597,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3362368047237396,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Docker containers",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5741,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.21589849889278412,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "JIRA",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5655,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2872577905654907,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Splunk",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4395,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.421847939491272,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Source control and release management",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4028,
+        "evidence": {
+          "tfidf_score": 0.21097853909786637,
+          "tfidf_matched_terms": [
+            "and",
+            "management",
+            "release"
+          ],
+          "bm25_score": 3.2510310753963543,
+          "semantic_score": 0.4447998106479645,
+          "matched_candidate_competency": "Time Management"
+        },
+        "candidate_evidence": [
+          "Time Management"
+        ]
+      },
+      {
+        "job_competency": "Domain-driven development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.41,
+        "evidence": {
+          "tfidf_score": 0.05793469607695613,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.9811670959114873,
+          "semantic_score": 0.5015780925750732,
+          "matched_candidate_competency": "Portal Development"
+        },
+        "candidate_evidence": [
+          "Portal Development"
+        ]
+      },
+      {
+        "job_competency": "Microservices architecture",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4301,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5199456214904785,
+          "matched_candidate_competency": "C#"
+        },
+        "candidate_evidence": [
+          "C#"
+        ]
+      },
+      {
+        "job_competency": "Circuit breaker patterns",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4184,
+        "evidence": {
+          "tfidf_score": 0.011497840477240536,
+          "tfidf_matched_terms": [
+            "patterns"
+          ],
+          "bm25_score": 4.676086630321724,
+          "semantic_score": 0.3439740836620331,
+          "matched_candidate_competency": "Design Patterns"
+        },
+        "candidate_evidence": [
+          "Design Patterns"
+        ]
+      },
+      {
+        "job_competency": "Windows services",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2434,
+        "evidence": {
+          "tfidf_score": 0.01483133657788886,
+          "tfidf_matched_terms": [
+            "services"
+          ],
+          "bm25_score": 4.676086630321724,
+          "semantic_score": 0.6428744196891785,
+          "matched_candidate_competency": "Web Services"
+        },
+        "candidate_evidence": [
+          "Web Services"
+        ]
+      },
+      {
+        "job_competency": "Relational and document-based databases",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4082,
+        "evidence": {
+          "tfidf_score": 0.17728028466486712,
+          "tfidf_matched_terms": [
+            "and",
+            "based"
+          ],
+          "bm25_score": 3.094295567312986,
+          "semantic_score": 0.42376241087913513,
+          "matched_candidate_competency": "SharePoint-based workflows"
+        },
+        "candidate_evidence": [
+          "SharePoint-based workflows"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Software engineering",
+      "Data types, algorithms, and object-oriented programming",
+      "Problem solving",
+      "Entity Framework"
+    ],
+    "partial_matches": [
+      "Web service development",
+      "Web application development",
+      "SQL",
+      ".NET and C#",
+      "LINQ",
+      "Windows services"
+    ],
+    "weak_matches": [
+      "Console application development",
+      "T-SQL",
+      "Multitasking and delivery under aggressive timelines",
+      "Agile methodology",
+      "Communication",
+      "Bachelor's degree in a relevant field",
+      "Continuous integration and automated deployment",
+      "Splunk",
+      "Source control and release management",
+      "Domain-driven development",
+      "Microservices architecture",
+      "Circuit breaker patterns",
+      "Relational and document-based databases"
+    ],
+    "missing": [
+      "RabbitMQ",
+      "Docker containers",
+      "JIRA"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Software engineering",
+      "Data types, algorithms, and object-oriented programming",
+      "Problem solving",
+      "Entity Framework"
+    ],
+    "partial_matches": [
+      "Web service development",
+      "Web application development",
+      "SQL",
+      ".NET and C#",
+      "LINQ",
+      "Windows services"
+    ],
+    "competency_gaps": [
+      "Console application development",
+      "T-SQL",
+      "Multitasking and delivery under aggressive timelines",
+      "Agile methodology",
+      "Communication",
+      "Bachelor's degree in a relevant field",
+      "Continuous integration and automated deployment",
+      "Splunk",
+      "Source control and release management",
+      "Domain-driven development",
+      "Microservices architecture",
+      "Circuit breaker patterns",
+      "Relational and document-based databases",
+      "RabbitMQ",
+      "Docker containers",
+      "JIRA"
+    ]
+  },
+  "counts": {
+    "requirements": 26,
+    "strength_matches": 4,
+    "partial_matches": 6,
+    "competency_gaps": 16
+  },
+  "latency_ms": 51.75,
+  "analyzed_at": "2026-10-03T17:29:44.726769+00:00"
+}

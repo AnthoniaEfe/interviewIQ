@@ -1,0 +1,357 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01594_a1af0f25fba5",
+  "jd_id": "rjf_01594_a1af0f25fba5",
+  "pair_id": "rjf_01594_a1af0f25fba5",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Python",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9219,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3902760148048401,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Django, Flask, or other Python frameworks",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9596,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.20211327075958252,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Web services and integration technologies",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6488,
+        "evidence": {
+          "tfidf_score": 0.16635262028487136,
+          "tfidf_matched_terms": [
+            "and",
+            "web"
+          ],
+          "bm25_score": 5.017181660023493,
+          "semantic_score": 0.3484800159931183,
+          "matched_candidate_competency": "Eagle Web"
+        },
+        "candidate_evidence": [
+          "Eagle Web"
+        ]
+      },
+      {
+        "job_competency": "Relational databases and SQL",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3612,
+        "evidence": {
+          "tfidf_score": 0.19198789970069127,
+          "tfidf_matched_terms": [
+            "and",
+            "sql"
+          ],
+          "bm25_score": 5.797953445733201,
+          "semantic_score": 0.6994309425354004,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Natural language processing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4021,
+        "evidence": {
+          "tfidf_score": 0.010715926010604936,
+          "tfidf_matched_terms": [
+            "processing"
+          ],
+          "bm25_score": 5.017181660023493,
+          "semantic_score": 0.4996020793914795,
+          "matched_candidate_competency": "Data processing"
+        },
+        "candidate_evidence": [
+          "Data processing"
+        ]
+      },
+      {
+        "job_competency": "Software development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.714,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5374341011047363,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Web-based application development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4014,
+        "evidence": {
+          "tfidf_score": 0.009059835515627057,
+          "tfidf_matched_terms": [
+            "web"
+          ],
+          "bm25_score": 5.017181660023493,
+          "semantic_score": 0.34061241149902344,
+          "matched_candidate_competency": "Eagle Web"
+        },
+        "candidate_evidence": [
+          "Eagle Web"
+        ]
+      },
+      {
+        "job_competency": "Python ORMs and data science libraries",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3966,
+        "evidence": {
+          "tfidf_score": 0.21153918028396004,
+          "tfidf_matched_terms": [
+            "and",
+            "data",
+            "science"
+          ],
+          "bm25_score": 4.4217359245481775,
+          "semantic_score": 0.2944636940956116,
+          "matched_candidate_competency": "Applied management science"
+        },
+        "candidate_evidence": [
+          "Applied management science"
+        ]
+      },
+      {
+        "job_competency": "Conversational AI and chatbots",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.414,
+        "evidence": {
+          "tfidf_score": 0.16801518645932892,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.774537019256581,
+          "semantic_score": 0.39461958408355713,
+          "matched_candidate_competency": "Developed and mentored teenage boys and girls."
+        },
+        "candidate_evidence": [
+          "Developed and mentored teenage boys and girls."
+        ]
+      },
+      {
+        "job_competency": "ReactJS",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5757,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.20249852538108826,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Twitter Bootstrap",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5756,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.20344260334968567,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Algorithms and statistics",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2424,
+        "evidence": {
+          "tfidf_score": 0.19872748281694902,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.774537019256581,
+          "semantic_score": 0.6438895463943481,
+          "matched_candidate_competency": "Developed and mentored teenage boys and girls."
+        },
+        "candidate_evidence": [
+          "Developed and mentored teenage boys and girls."
+        ]
+      },
+      {
+        "job_competency": "Data mining",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.0948,
+        "evidence": {
+          "tfidf_score": 0.11921276630913177,
+          "tfidf_matched_terms": [
+            "data",
+            "mining"
+          ],
+          "bm25_score": 7.980847350903633,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Data mining"
+        },
+        "candidate_evidence": [
+          "Data mining"
+        ]
+      },
+      {
+        "job_competency": "Machine learning",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4108,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.720397412776947,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Natural language processing",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2413,
+        "evidence": {
+          "tfidf_score": 0.010715926010604936,
+          "tfidf_matched_terms": [
+            "processing"
+          ],
+          "bm25_score": 5.017181660023493,
+          "semantic_score": 0.4996020793914795,
+          "matched_candidate_competency": "Data processing"
+        },
+        "candidate_evidence": [
+          "Data processing"
+        ]
+      },
+      {
+        "job_competency": "Scrum software development methodology",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5584,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34691575169563293,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Data mining"
+    ],
+    "partial_matches": [
+      "Relational databases and SQL",
+      "Natural language processing",
+      "Algorithms and statistics",
+      "Natural language processing"
+    ],
+    "weak_matches": [
+      "Web services and integration technologies",
+      "Software development",
+      "Web-based application development",
+      "Python ORMs and data science libraries",
+      "Conversational AI and chatbots",
+      "Machine learning"
+    ],
+    "missing": [
+      "Python",
+      "Django, Flask, or other Python frameworks",
+      "ReactJS",
+      "Twitter Bootstrap",
+      "Scrum software development methodology"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Data mining"
+    ],
+    "partial_matches": [
+      "Relational databases and SQL",
+      "Natural language processing",
+      "Algorithms and statistics",
+      "Natural language processing"
+    ],
+    "competency_gaps": [
+      "Web services and integration technologies",
+      "Software development",
+      "Web-based application development",
+      "Python ORMs and data science libraries",
+      "Conversational AI and chatbots",
+      "Machine learning",
+      "Python",
+      "Django, Flask, or other Python frameworks",
+      "ReactJS",
+      "Twitter Bootstrap",
+      "Scrum software development methodology"
+    ]
+  },
+  "counts": {
+    "requirements": 16,
+    "strength_matches": 1,
+    "partial_matches": 4,
+    "competency_gaps": 11
+  },
+  "latency_ms": 40.61,
+  "analyzed_at": "2026-10-03T17:29:44.347661+00:00"
+}

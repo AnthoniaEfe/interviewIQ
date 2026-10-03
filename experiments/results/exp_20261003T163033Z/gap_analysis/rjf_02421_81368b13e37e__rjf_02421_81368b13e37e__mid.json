@@ -1,0 +1,376 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02421_81368b13e37e",
+  "jd_id": "rjf_02421_81368b13e37e",
+  "pair_id": "rjf_02421_81368b13e37e",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Professional engineering experience",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9327,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33671629428863525,
+          "matched_candidate_competency": "ETL"
+        },
+        "candidate_evidence": [
+          "ETL"
+        ]
+      },
+      {
+        "job_competency": "Data engineering",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4015,
+        "evidence": {
+          "tfidf_score": 0.14772910050388796,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 2.1192896556090797,
+          "semantic_score": 0.623431921005249,
+          "matched_candidate_competency": "Data modeling"
+        },
+        "candidate_evidence": [
+          "Data modeling"
+        ]
+      },
+      {
+        "job_competency": "Scala and Apache Spark",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9061,
+        "evidence": {
+          "tfidf_score": 0.1998665632341749,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9896005168447299,
+          "semantic_score": 0.2028278410434723,
+          "matched_candidate_competency": "Database backup and recovery"
+        },
+        "candidate_evidence": [
+          "Database backup and recovery"
+        ]
+      },
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7177,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5143615007400513,
+          "matched_candidate_competency": "ETL"
+        },
+        "candidate_evidence": [
+          "ETL"
+        ]
+      },
+      {
+        "job_competency": "Spring",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9438,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28091198205947876,
+          "matched_candidate_competency": "ETL"
+        },
+        "candidate_evidence": [
+          "ETL"
+        ]
+      },
+      {
+        "job_competency": "REST API development",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9418,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2909165918827057,
+          "matched_candidate_competency": "ETL"
+        },
+        "candidate_evidence": [
+          "ETL"
+        ]
+      },
+      {
+        "job_competency": "ETL data pipeline design, building, and deployment",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3617,
+        "evidence": {
+          "tfidf_score": 0.26330146377551866,
+          "tfidf_matched_terms": [
+            "and",
+            "data",
+            "etl"
+          ],
+          "bm25_score": 5.5279362738401785,
+          "semantic_score": 0.5324110984802246,
+          "matched_candidate_competency": "ETL"
+        },
+        "candidate_evidence": [
+          "ETL"
+        ]
+      },
+      {
+        "job_competency": "Database design and development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3848,
+        "evidence": {
+          "tfidf_score": 0.2615179808575173,
+          "tfidf_matched_terms": [
+            "and",
+            "database"
+          ],
+          "bm25_score": 3.6094596039199716,
+          "semantic_score": 0.5287933349609375,
+          "matched_candidate_competency": "Database backup and recovery"
+        },
+        "candidate_evidence": [
+          "Database backup and recovery"
+        ]
+      },
+      {
+        "job_competency": "System and feature development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3905,
+        "evidence": {
+          "tfidf_score": 0.2348973069648342,
+          "tfidf_matched_terms": [
+            "and",
+            "system"
+          ],
+          "bm25_score": 3.897496088417901,
+          "semantic_score": 0.45861294865608215,
+          "matched_candidate_competency": "Sybase System 10"
+        },
+        "candidate_evidence": [
+          "Sybase System 10"
+        ]
+      },
+      {
+        "job_competency": "Apache Spark",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9435,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2822745442390442,
+          "matched_candidate_competency": "ETL"
+        },
+        "candidate_evidence": [
+          "ETL"
+        ]
+      },
+      {
+        "job_competency": "Relational databases",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3832,
+        "evidence": {
+          "tfidf_score": 0.04791287663826074,
+          "tfidf_matched_terms": [
+            "databases"
+          ],
+          "bm25_score": 3.473844430446142,
+          "semantic_score": 0.7215263843536377,
+          "matched_candidate_competency": "Microsoft databases"
+        },
+        "candidate_evidence": [
+          "Microsoft databases"
+        ]
+      },
+      {
+        "job_competency": "Cloud technology",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9259,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3707074224948883,
+          "matched_candidate_competency": "ETL"
+        },
+        "candidate_evidence": [
+          "ETL"
+        ]
+      },
+      {
+        "job_competency": "Computer Science or related field",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.921,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3950900733470917,
+          "matched_candidate_competency": "ETL"
+        },
+        "candidate_evidence": [
+          "ETL"
+        ]
+      },
+      {
+        "job_competency": "Amazon Web Services",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4331,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4887844920158386,
+          "matched_candidate_competency": "ETL"
+        },
+        "candidate_evidence": [
+          "ETL"
+        ]
+      },
+      {
+        "job_competency": "SaaS product environment",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4213,
+        "evidence": {
+          "tfidf_score": 0.006170709585833384,
+          "tfidf_matched_terms": [
+            "product"
+          ],
+          "bm25_score": 1.740545262990297,
+          "semantic_score": 0.4015149474143982,
+          "matched_candidate_competency": "Designed and created models, tables, and reports for product receivables, issues, stock ledgers, quotations, bills of materials, and purchase orders."
+        },
+        "candidate_evidence": [
+          "Designed and created models, tables, and reports for product receivables, issues, stock ledgers, quotations, bills of materials, and purchase orders."
+        ]
+      },
+      {
+        "job_competency": "Product software development life cycle",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3912,
+        "evidence": {
+          "tfidf_score": 0.01952358287799256,
+          "tfidf_matched_terms": [
+            "product",
+            "software"
+          ],
+          "bm25_score": 4.373883762041256,
+          "semantic_score": 0.3935524821281433,
+          "matched_candidate_competency": "Scanner software"
+        },
+        "candidate_evidence": [
+          "Scanner software"
+        ]
+      },
+      {
+        "job_competency": "Leadership and mentorship",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.0991,
+        "evidence": {
+          "tfidf_score": 0.27160289157257983,
+          "tfidf_matched_terms": [
+            "and",
+            "leadership"
+          ],
+          "bm25_score": 6.34557671906475,
+          "semantic_score": 0.7427629828453064,
+          "matched_candidate_competency": "Leadership"
+        },
+        "candidate_evidence": [
+          "Leadership"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Leadership and mentorship"
+    ],
+    "partial_matches": [
+      "Data engineering",
+      "ETL data pipeline design, building, and deployment",
+      "Database design and development",
+      "System and feature development",
+      "Relational databases"
+    ],
+    "weak_matches": [
+      "Java",
+      "Amazon Web Services",
+      "SaaS product environment",
+      "Product software development life cycle"
+    ],
+    "missing": [
+      "Professional engineering experience",
+      "Scala and Apache Spark",
+      "Spring",
+      "REST API development",
+      "Apache Spark",
+      "Cloud technology",
+      "Computer Science or related field"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Leadership and mentorship"
+    ],
+    "partial_matches": [
+      "Data engineering",
+      "ETL data pipeline design, building, and deployment",
+      "Database design and development",
+      "System and feature development",
+      "Relational databases"
+    ],
+    "competency_gaps": [
+      "Java",
+      "Amazon Web Services",
+      "SaaS product environment",
+      "Product software development life cycle",
+      "Professional engineering experience",
+      "Scala and Apache Spark",
+      "Spring",
+      "REST API development",
+      "Apache Spark",
+      "Cloud technology",
+      "Computer Science or related field"
+    ]
+  },
+  "counts": {
+    "requirements": 17,
+    "strength_matches": 1,
+    "partial_matches": 5,
+    "competency_gaps": 11
+  },
+  "latency_ms": 45.99,
+  "analyzed_at": "2026-10-03T17:29:45.440358+00:00"
+}

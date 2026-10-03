@@ -1,0 +1,304 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01755_99c6e18c2b0f",
+  "jd_id": "rjf_01755_99c6e18c2b0f",
+  "pair_id": "rjf_01755_99c6e18c2b0f",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Machine learning",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9251,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3742554187774658,
+          "matched_candidate_competency": "Apache Tomcat"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat"
+        ]
+      },
+      {
+        "job_competency": "Machine learning model development at scale",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6638,
+        "evidence": {
+          "tfidf_score": 0.04516345818241476,
+          "tfidf_matched_terms": [
+            "development",
+            "model"
+          ],
+          "bm25_score": 3.2672451167120995,
+          "semantic_score": 0.3129846751689911,
+          "matched_candidate_competency": "Model-View-Controller (MVC)"
+        },
+        "candidate_evidence": [
+          "Model-View-Controller (MVC)"
+        ]
+      },
+      {
+        "job_competency": "Software engineering",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3924,
+        "evidence": {
+          "tfidf_score": 0.08269441092158829,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 2.629429173472212,
+          "semantic_score": 0.6081638336181641,
+          "matched_candidate_competency": "Network software"
+        },
+        "candidate_evidence": [
+          "Network software"
+        ]
+      },
+      {
+        "job_competency": "C/C++ and Java",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3442,
+        "evidence": {
+          "tfidf_score": 0.17001420903546488,
+          "tfidf_matched_terms": [
+            "and",
+            "java"
+          ],
+          "bm25_score": 4.86020649865226,
+          "semantic_score": 0.6803012490272522,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Scripting languages",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7289,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4444526433944702,
+          "matched_candidate_competency": "Apache Tomcat"
+        },
+        "candidate_evidence": [
+          "Apache Tomcat"
+        ]
+      },
+      {
+        "job_competency": "Technical leadership",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.688,
+        "evidence": {
+          "tfidf_score": 0.04104290494748571,
+          "tfidf_matched_terms": [
+            "technical"
+          ],
+          "bm25_score": 1.4492498126005795,
+          "semantic_score": 0.4456688165664673,
+          "matched_candidate_competency": "Collaborate with the project team to balance creative, business, and technical requirements."
+        },
+        "candidate_evidence": [
+          "Collaborate with the project team to balance creative, business, and technical requirements."
+        ]
+      },
+      {
+        "job_competency": "Project ownership",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6786,
+        "evidence": {
+          "tfidf_score": 0.020483936918957082,
+          "tfidf_matched_terms": [
+            "project"
+          ],
+          "bm25_score": 1.7434459236236832,
+          "semantic_score": 0.47410136461257935,
+          "matched_candidate_competency": "Collaborate with the project team to balance creative, business, and technical requirements."
+        },
+        "candidate_evidence": [
+          "Collaborate with the project team to balance creative, business, and technical requirements."
+        ]
+      },
+      {
+        "job_competency": "Technical direction setting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7043,
+        "evidence": {
+          "tfidf_score": 0.031818088095463444,
+          "tfidf_matched_terms": [
+            "technical"
+          ],
+          "bm25_score": 1.4492498126005795,
+          "semantic_score": 0.35087335109710693,
+          "matched_candidate_competency": "Collaborate with the project team to balance creative, business, and technical requirements."
+        },
+        "candidate_evidence": [
+          "Collaborate with the project team to balance creative, business, and technical requirements."
+        ]
+      },
+      {
+        "job_competency": "Parallel and distributed computing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6722,
+        "evidence": {
+          "tfidf_score": 0.14316381810803477,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.6531859598798246,
+          "semantic_score": 0.43642082810401917,
+          "matched_candidate_competency": "Identify and solve hardware and software problems."
+        },
+        "candidate_evidence": [
+          "Identify and solve hardware and software problems."
+        ]
+      },
+      {
+        "job_competency": "Scalable classifiers and ML tools",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.692,
+        "evidence": {
+          "tfidf_score": 0.1262836098116386,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.6531859598798246,
+          "semantic_score": 0.32487013936042786,
+          "matched_candidate_competency": "Identify and solve hardware and software problems."
+        },
+        "candidate_evidence": [
+          "Identify and solve hardware and software problems."
+        ]
+      },
+      {
+        "job_competency": "Large-scale software architecture",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3969,
+        "evidence": {
+          "tfidf_score": 0.05420043256968957,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 2.629429173472212,
+          "semantic_score": 0.41935840249061584,
+          "matched_candidate_competency": "Network software"
+        },
+        "candidate_evidence": [
+          "Network software"
+        ]
+      },
+      {
+        "job_competency": "Master's degree in Computer Science or related technical field",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4182,
+        "evidence": {
+          "tfidf_score": 0.0251837384126007,
+          "tfidf_matched_terms": [
+            "in",
+            "technical"
+          ],
+          "bm25_score": 1.7434459236236832,
+          "semantic_score": 0.35530728101730347,
+          "matched_candidate_competency": "Participate in all phases of mobile app development from concept through deployment."
+        },
+        "candidate_evidence": [
+          "Participate in all phases of mobile app development from concept through deployment."
+        ]
+      },
+      {
+        "job_competency": "PhD in Computer Science or related technical field",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4202,
+        "evidence": {
+          "tfidf_score": 0.02855002443119592,
+          "tfidf_matched_terms": [
+            "in",
+            "technical"
+          ],
+          "bm25_score": 1.7434459236236832,
+          "semantic_score": 0.33267268538475037,
+          "matched_candidate_competency": "Participate in all phases of mobile app development from concept through deployment."
+        },
+        "candidate_evidence": [
+          "Participate in all phases of mobile app development from concept through deployment."
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Software engineering",
+      "C/C++ and Java"
+    ],
+    "weak_matches": [
+      "Machine learning model development at scale",
+      "Scripting languages",
+      "Technical leadership",
+      "Project ownership",
+      "Technical direction setting",
+      "Parallel and distributed computing",
+      "Scalable classifiers and ML tools",
+      "Large-scale software architecture",
+      "Master's degree in Computer Science or related technical field",
+      "PhD in Computer Science or related technical field"
+    ],
+    "missing": [
+      "Machine learning"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Software engineering",
+      "C/C++ and Java"
+    ],
+    "competency_gaps": [
+      "Machine learning model development at scale",
+      "Scripting languages",
+      "Technical leadership",
+      "Project ownership",
+      "Technical direction setting",
+      "Parallel and distributed computing",
+      "Scalable classifiers and ML tools",
+      "Large-scale software architecture",
+      "Master's degree in Computer Science or related technical field",
+      "PhD in Computer Science or related technical field",
+      "Machine learning"
+    ]
+  },
+  "counts": {
+    "requirements": 13,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 11
+  },
+  "latency_ms": 29.61,
+  "analyzed_at": "2026-10-03T17:29:44.490881+00:00"
+}

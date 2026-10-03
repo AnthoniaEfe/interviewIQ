@@ -1,0 +1,357 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01164_0b1a0b983df1",
+  "jd_id": "rjf_01164_0b1a0b983df1",
+  "pair_id": "rjf_01164_0b1a0b983df1",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Electrical testing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9473,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26328471302986145,
+          "matched_candidate_competency": "Windows"
+        },
+        "candidate_evidence": [
+          "Windows"
+        ]
+      },
+      {
+        "job_competency": "Electrical troubleshooting to LRU level",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9241,
+        "evidence": {
+          "tfidf_score": 0.007623786264685486,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 1.569151605998563,
+          "semantic_score": 0.13308727741241455,
+          "matched_candidate_competency": "Upgraded IIG enhancements to Sage MAS 4.50 and MAS 5.00 from older versions."
+        },
+        "candidate_evidence": [
+          "Upgraded IIG enhancements to Sage MAS 4.50 and MAS 5.00 from older versions."
+        ]
+      },
+      {
+        "job_competency": "Test procedures and schematics",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3986,
+        "evidence": {
+          "tfidf_score": 0.20225622452374797,
+          "tfidf_matched_terms": [
+            "and",
+            "procedures"
+          ],
+          "bm25_score": 2.9400065980176526,
+          "semantic_score": 0.41149216890335083,
+          "matched_candidate_competency": "Created stored procedures, jobs, and T-SQL queries."
+        },
+        "candidate_evidence": [
+          "Created stored procedures, jobs, and T-SQL queries."
+        ]
+      },
+      {
+        "job_competency": "Test procedure redlining",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9421,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2893085777759552,
+          "matched_candidate_competency": "Windows"
+        },
+        "candidate_evidence": [
+          "Windows"
+        ]
+      },
+      {
+        "job_competency": "Computer and test measurement equipment use",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6982,
+        "evidence": {
+          "tfidf_score": 0.12682323906953996,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5855151453728926,
+          "semantic_score": 0.2979964017868042,
+          "matched_candidate_competency": "Supported Attestation and HR information systems and fixed bugs and created new features."
+        },
+        "candidate_evidence": [
+          "Supported Attestation and HR information systems and fixed bugs and created new features."
+        ]
+      },
+      {
+        "job_competency": "Electrical schematics, block diagrams, wire lists, and functional diagrams",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.681,
+        "evidence": {
+          "tfidf_score": 0.09961102035397407,
+          "tfidf_matched_terms": [
+            "and",
+            "functional"
+          ],
+          "bm25_score": 2.792298872579755,
+          "semantic_score": 0.24045687913894653,
+          "matched_candidate_competency": "Developed programs and functional features for SharePoint websites using VB.NET."
+        },
+        "candidate_evidence": [
+          "Developed programs and functional features for SharePoint websites using VB.NET."
+        ]
+      },
+      {
+        "job_competency": "Basic electronics",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3918,
+        "evidence": {
+          "tfidf_score": 0.013186526200530154,
+          "tfidf_matched_terms": [
+            "basic"
+          ],
+          "bm25_score": 4.886316399674311,
+          "semantic_score": 0.3217891454696655,
+          "matched_candidate_competency": "Visual Basic"
+        },
+        "candidate_evidence": [
+          "Visual Basic"
+        ]
+      },
+      {
+        "job_competency": "AC/DC electrical systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6715,
+        "evidence": {
+          "tfidf_score": 0.03470298506247792,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 3.0034733245791734,
+          "semantic_score": 0.31593459844589233,
+          "matched_candidate_competency": "Government information systems"
+        },
+        "candidate_evidence": [
+          "Government information systems"
+        ]
+      },
+      {
+        "job_competency": "Electrical panel and equipment installation and termination",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6584,
+        "evidence": {
+          "tfidf_score": 0.22456090139307244,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 3.1710302907457852,
+          "semantic_score": 0.2300979644060135,
+          "matched_candidate_competency": "Supported Attestation and HR information systems and fixed bugs and created new features."
+        },
+        "candidate_evidence": [
+          "Supported Attestation and HR information systems and fixed bugs and created new features."
+        ]
+      },
+      {
+        "job_competency": "Rail vehicle mechanical installation and repair support",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7065,
+        "evidence": {
+          "tfidf_score": 0.11667058991959041,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5855151453728926,
+          "semantic_score": 0.2535688281059265,
+          "matched_candidate_competency": "Supported Attestation and HR information systems and fixed bugs and created new features."
+        },
+        "candidate_evidence": [
+          "Supported Attestation and HR information systems and fixed bugs and created new features."
+        ]
+      },
+      {
+        "job_competency": "Test reporting and anomaly documentation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6783,
+        "evidence": {
+          "tfidf_score": 0.1401907036272602,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5855151453728926,
+          "semantic_score": 0.41181057691574097,
+          "matched_candidate_competency": "Supported Attestation and HR information systems and fixed bugs and created new features."
+        },
+        "candidate_evidence": [
+          "Supported Attestation and HR information systems and fixed bugs and created new features."
+        ]
+      },
+      {
+        "job_competency": "Technician safety awareness",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9481,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2595035433769226,
+          "matched_candidate_competency": "Windows"
+        },
+        "candidate_evidence": [
+          "Windows"
+        ]
+      },
+      {
+        "job_competency": "ALSTOM safety procedure compliance",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9597,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.201386958360672,
+          "matched_candidate_competency": "Windows"
+        },
+        "candidate_evidence": [
+          "Windows"
+        ]
+      },
+      {
+        "job_competency": "Shift and overtime availability",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7112,
+        "evidence": {
+          "tfidf_score": 0.15892985973767096,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5855151453728926,
+          "semantic_score": 0.192629873752594,
+          "matched_candidate_competency": "Supported Attestation and HR information systems and fixed bugs and created new features."
+        },
+        "candidate_evidence": [
+          "Supported Attestation and HR information systems and fixed bugs and created new features."
+        ]
+      },
+      {
+        "job_competency": "Ability to lift 50 pounds",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6929,
+        "evidence": {
+          "tfidf_score": 0.024262256056791297,
+          "tfidf_matched_terms": [
+            "50",
+            "to"
+          ],
+          "bm25_score": 3.2026703574858977,
+          "semantic_score": 0.15931759774684906,
+          "matched_candidate_competency": "Sage MAS 4.50"
+        },
+        "candidate_evidence": [
+          "Sage MAS 4.50"
+        ]
+      },
+      {
+        "job_competency": "Electrical engineering degree",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5767,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.19390703737735748,
+          "matched_candidate_competency": "Windows"
+        },
+        "candidate_evidence": [
+          "Windows"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Test procedures and schematics",
+      "Basic electronics"
+    ],
+    "weak_matches": [
+      "Computer and test measurement equipment use",
+      "Electrical schematics, block diagrams, wire lists, and functional diagrams",
+      "AC/DC electrical systems",
+      "Electrical panel and equipment installation and termination",
+      "Rail vehicle mechanical installation and repair support",
+      "Test reporting and anomaly documentation",
+      "Shift and overtime availability",
+      "Ability to lift 50 pounds"
+    ],
+    "missing": [
+      "Electrical testing",
+      "Electrical troubleshooting to LRU level",
+      "Test procedure redlining",
+      "Technician safety awareness",
+      "ALSTOM safety procedure compliance",
+      "Electrical engineering degree"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Test procedures and schematics",
+      "Basic electronics"
+    ],
+    "competency_gaps": [
+      "Computer and test measurement equipment use",
+      "Electrical schematics, block diagrams, wire lists, and functional diagrams",
+      "AC/DC electrical systems",
+      "Electrical panel and equipment installation and termination",
+      "Rail vehicle mechanical installation and repair support",
+      "Test reporting and anomaly documentation",
+      "Shift and overtime availability",
+      "Ability to lift 50 pounds",
+      "Electrical testing",
+      "Electrical troubleshooting to LRU level",
+      "Test procedure redlining",
+      "Technician safety awareness",
+      "ALSTOM safety procedure compliance",
+      "Electrical engineering degree"
+    ]
+  },
+  "counts": {
+    "requirements": 16,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 14
+  },
+  "latency_ms": 40.79,
+  "analyzed_at": "2026-10-03T17:29:43.838445+00:00"
+}

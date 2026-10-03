@@ -1,0 +1,382 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01830_bc80ba788506",
+  "jd_id": "rjf_01830_bc80ba788506",
+  "pair_id": "rjf_01830_bc80ba788506",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Data analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4072,
+        "evidence": {
+          "tfidf_score": 0.17190524567039375,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 1.9804805953751885,
+          "semantic_score": 0.6499369144439697,
+          "matched_candidate_competency": "Data Warehousing"
+        },
+        "candidate_evidence": [
+          "Data Warehousing"
+        ]
+      },
+      {
+        "job_competency": "Data gathering and evaluation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3977,
+        "evidence": {
+          "tfidf_score": 0.35949092329538346,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 2.7636045010597345,
+          "semantic_score": 0.5457006692886353,
+          "matched_candidate_competency": "Data Ingestion and Processing"
+        },
+        "candidate_evidence": [
+          "Data Ingestion and Processing"
+        ]
+      },
+      {
+        "job_competency": "Data quality and integrity management",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1698,
+        "evidence": {
+          "tfidf_score": 0.37688188108198234,
+          "tfidf_matched_terms": [
+            "and",
+            "data",
+            "integrity",
+            "quality"
+          ],
+          "bm25_score": 6.968342328180214,
+          "semantic_score": 0.7965515851974487,
+          "matched_candidate_competency": "Data Quality"
+        },
+        "candidate_evidence": [
+          "Data Quality"
+        ]
+      },
+      {
+        "job_competency": "Audit process implementation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7182,
+        "evidence": {
+          "tfidf_score": 0.005561136014600645,
+          "tfidf_matched_terms": [
+            "process"
+          ],
+          "bm25_score": 2.4597244927077564,
+          "semantic_score": 0.32190990447998047,
+          "matched_candidate_competency": "Developed Spark Streaming programs to process near-real-time Kafka data."
+        },
+        "candidate_evidence": [
+          "Developed Spark Streaming programs to process near-real-time Kafka data."
+        ]
+      },
+      {
+        "job_competency": "Workflow and approval process development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6915,
+        "evidence": {
+          "tfidf_score": 0.21055532541596816,
+          "tfidf_matched_terms": [
+            "and",
+            "development",
+            "process"
+          ],
+          "bm25_score": 2.8955403347511814,
+          "semantic_score": 0.3027800917625427,
+          "matched_candidate_competency": "Introduced cloud-based technologies into Python development."
+        },
+        "candidate_evidence": [
+          "Introduced cloud-based technologies into Python development."
+        ]
+      },
+      {
+        "job_competency": "Requirements analysis",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9221,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3893284797668457,
+          "matched_candidate_competency": "Hadoop"
+        },
+        "candidate_evidence": [
+          "Hadoop"
+        ]
+      },
+      {
+        "job_competency": "Data modeling and algorithm development",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1693,
+        "evidence": {
+          "tfidf_score": 0.3768818810819823,
+          "tfidf_matched_terms": [
+            "and",
+            "data",
+            "development",
+            "modeling"
+          ],
+          "bm25_score": 7.639525584419007,
+          "semantic_score": 0.7567092180252075,
+          "matched_candidate_competency": "Data Modeling"
+        },
+        "candidate_evidence": [
+          "Data Modeling"
+        ]
+      },
+      {
+        "job_competency": "MS Excel",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7227,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.48330792784690857,
+          "matched_candidate_competency": "Hadoop"
+        },
+        "candidate_evidence": [
+          "Hadoop"
+        ]
+      },
+      {
+        "job_competency": "Structured and unstructured data analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6538,
+        "evidence": {
+          "tfidf_score": 0.3114897196752833,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 2.7636045010597345,
+          "semantic_score": 0.47220754623413086,
+          "matched_candidate_competency": "Data Ingestion and Processing"
+        },
+        "candidate_evidence": [
+          "Data Ingestion and Processing"
+        ]
+      },
+      {
+        "job_competency": "Power BI or comparable analytics tools",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3608,
+        "evidence": {
+          "tfidf_score": 0.035150821851911096,
+          "tfidf_matched_terms": [
+            "analytics",
+            "bi",
+            "power",
+            "tools"
+          ],
+          "bm25_score": 9.975723465610052,
+          "semantic_score": 0.6159892082214355,
+          "matched_candidate_competency": "Power BI"
+        },
+        "candidate_evidence": [
+          "Power BI"
+        ]
+      },
+      {
+        "job_competency": "Web analytics",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3893,
+        "evidence": {
+          "tfidf_score": 0.05256340112804285,
+          "tfidf_matched_terms": [
+            "analytics",
+            "web"
+          ],
+          "bm25_score": 4.5419649440329515,
+          "semantic_score": 0.7259698510169983,
+          "matched_candidate_competency": "Log Analytics"
+        },
+        "candidate_evidence": [
+          "Log Analytics"
+        ]
+      },
+      {
+        "job_competency": "Python or R",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3823,
+        "evidence": {
+          "tfidf_score": 0.016693382222787836,
+          "tfidf_matched_terms": [
+            "python"
+          ],
+          "bm25_score": 5.309260758135187,
+          "semantic_score": 0.7650347352027893,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Power Apps",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6479,
+        "evidence": {
+          "tfidf_score": 0.03574079434325496,
+          "tfidf_matched_terms": [
+            "apps",
+            "microsoft",
+            "power"
+          ],
+          "bm25_score": 5.659044989043819,
+          "semantic_score": 0.49820223450660706,
+          "matched_candidate_competency": "Microsoft Azure"
+        },
+        "candidate_evidence": [
+          "Microsoft Azure"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Power Automate",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6562,
+        "evidence": {
+          "tfidf_score": 0.028586225422201288,
+          "tfidf_matched_terms": [
+            "automate",
+            "microsoft",
+            "power"
+          ],
+          "bm25_score": 5.659044989043819,
+          "semantic_score": 0.45173144340515137,
+          "matched_candidate_competency": "Microsoft Azure"
+        },
+        "candidate_evidence": [
+          "Microsoft Azure"
+        ]
+      },
+      {
+        "job_competency": "Data visualization",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3546,
+        "evidence": {
+          "tfidf_score": 0.2188066267534894,
+          "tfidf_matched_terms": [
+            "data",
+            "visualization"
+          ],
+          "bm25_score": 5.9265207819332755,
+          "semantic_score": 0.8440934419631958,
+          "matched_candidate_competency": "Data Visualization and Reporting"
+        },
+        "candidate_evidence": [
+          "Data Visualization and Reporting"
+        ]
+      },
+      {
+        "job_competency": "SQL and Oracle",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3746,
+        "evidence": {
+          "tfidf_score": 0.292886461295754,
+          "tfidf_matched_terms": [
+            "and",
+            "sql"
+          ],
+          "bm25_score": 4.6003576956684284,
+          "semantic_score": 0.6883060932159424,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Data quality and integrity management",
+      "Data modeling and algorithm development"
+    ],
+    "partial_matches": [
+      "Data analysis",
+      "Data gathering and evaluation",
+      "Power BI or comparable analytics tools",
+      "Web analytics",
+      "Python or R",
+      "Data visualization",
+      "SQL and Oracle"
+    ],
+    "weak_matches": [
+      "Audit process implementation",
+      "Workflow and approval process development",
+      "MS Excel",
+      "Structured and unstructured data analysis",
+      "Microsoft Power Apps",
+      "Microsoft Power Automate"
+    ],
+    "missing": [
+      "Requirements analysis"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Data quality and integrity management",
+      "Data modeling and algorithm development"
+    ],
+    "partial_matches": [
+      "Data analysis",
+      "Data gathering and evaluation",
+      "Power BI or comparable analytics tools",
+      "Web analytics",
+      "Python or R",
+      "Data visualization",
+      "SQL and Oracle"
+    ],
+    "competency_gaps": [
+      "Audit process implementation",
+      "Workflow and approval process development",
+      "MS Excel",
+      "Structured and unstructured data analysis",
+      "Microsoft Power Apps",
+      "Microsoft Power Automate",
+      "Requirements analysis"
+    ]
+  },
+  "counts": {
+    "requirements": 16,
+    "strength_matches": 2,
+    "partial_matches": 7,
+    "competency_gaps": 7
+  },
+  "latency_ms": 48.77,
+  "analyzed_at": "2026-10-03T17:29:44.644961+00:00"
+}

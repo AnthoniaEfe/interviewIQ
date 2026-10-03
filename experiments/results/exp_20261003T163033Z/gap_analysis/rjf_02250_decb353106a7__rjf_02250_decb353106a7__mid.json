@@ -1,0 +1,289 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02250_decb353106a7",
+  "jd_id": "rjf_02250_decb353106a7",
+  "pair_id": "rjf_02250_decb353106a7",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Business analysis",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1656,
+        "evidence": {
+          "tfidf_score": 0.09405320210793022,
+          "tfidf_matched_terms": [
+            "analysis",
+            "business"
+          ],
+          "bm25_score": 6.9779819482536025,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Business analysis"
+        },
+        "candidate_evidence": [
+          "Business analysis"
+        ]
+      },
+      {
+        "job_competency": "Requirements analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6674,
+        "evidence": {
+          "tfidf_score": 0.042767066265192895,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 3.341276623535911,
+          "semantic_score": 0.5013312101364136,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "Business process analysis and optimization",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3482,
+        "evidence": {
+          "tfidf_score": 0.37240325918962225,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and",
+            "business",
+            "process"
+          ],
+          "bm25_score": 6.9779819482536025,
+          "semantic_score": 0.6213399171829224,
+          "matched_candidate_competency": "Business analysis"
+        },
+        "candidate_evidence": [
+          "Business analysis"
+        ]
+      },
+      {
+        "job_competency": "IT modernization and automation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7074,
+        "evidence": {
+          "tfidf_score": 0.2748619757775214,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.0690912006046715,
+          "semantic_score": 0.36626607179641724,
+          "matched_candidate_competency": "Supervised classroom activities and learning and developmental activities."
+        },
+        "candidate_evidence": [
+          "Supervised classroom activities and learning and developmental activities."
+        ]
+      },
+      {
+        "job_competency": "User acceptance testing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9273,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3635933995246887,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Project management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3617,
+        "evidence": {
+          "tfidf_score": 0.06260219252246929,
+          "tfidf_matched_terms": [
+            "management",
+            "project"
+          ],
+          "bm25_score": 7.595779631065298,
+          "semantic_score": 0.6644293069839478,
+          "matched_candidate_competency": "Project Management Certificate"
+        },
+        "candidate_evidence": [
+          "Project Management Certificate"
+        ]
+      },
+      {
+        "job_competency": "Advanced technical skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6545,
+        "evidence": {
+          "tfidf_score": 0.02215244343383086,
+          "tfidf_matched_terms": [
+            "skills",
+            "technical"
+          ],
+          "bm25_score": 3.588496642267746,
+          "semantic_score": 0.5751808881759644,
+          "matched_candidate_competency": "Research and analytical skills"
+        },
+        "candidate_evidence": [
+          "Research and analytical skills"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Word",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3866,
+        "evidence": {
+          "tfidf_score": 0.025616767432735194,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 4.00097760371139,
+          "semantic_score": 0.7614802718162537,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1605,
+        "evidence": {
+          "tfidf_score": 0.05209663450901377,
+          "tfidf_matched_terms": [
+            "excel",
+            "microsoft"
+          ],
+          "bm25_score": 8.482222191128674,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Outlook",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4019,
+        "evidence": {
+          "tfidf_score": 0.025616767432735194,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 4.00097760371139,
+          "semantic_score": 0.6075253486633301,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Report writing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7018,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6135777235031128,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Presentation skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6726,
+        "evidence": {
+          "tfidf_score": 0.01706881838431222,
+          "tfidf_matched_terms": [
+            "skills"
+          ],
+          "bm25_score": 3.588496642267746,
+          "semantic_score": 0.4662492275238037,
+          "matched_candidate_competency": "Research and analytical skills"
+        },
+        "candidate_evidence": [
+          "Research and analytical skills"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Business analysis",
+      "Microsoft Excel"
+    ],
+    "partial_matches": [
+      "Business process analysis and optimization",
+      "Project management",
+      "Microsoft Word",
+      "Microsoft Outlook"
+    ],
+    "weak_matches": [
+      "Requirements analysis",
+      "IT modernization and automation",
+      "Advanced technical skills",
+      "Report writing",
+      "Presentation skills"
+    ],
+    "missing": [
+      "User acceptance testing"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Business analysis",
+      "Microsoft Excel"
+    ],
+    "partial_matches": [
+      "Business process analysis and optimization",
+      "Project management",
+      "Microsoft Word",
+      "Microsoft Outlook"
+    ],
+    "competency_gaps": [
+      "Requirements analysis",
+      "IT modernization and automation",
+      "Advanced technical skills",
+      "Report writing",
+      "Presentation skills",
+      "User acceptance testing"
+    ]
+  },
+  "counts": {
+    "requirements": 12,
+    "strength_matches": 2,
+    "partial_matches": 4,
+    "competency_gaps": 6
+  },
+  "latency_ms": 35.32,
+  "analyzed_at": "2026-10-03T17:29:45.021688+00:00"
+}

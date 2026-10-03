@@ -1,0 +1,632 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00433_0897ca47b09c",
+  "jd_id": "rjf_00433_0897ca47b09c",
+  "pair_id": "rjf_00433_0897ca47b09c",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Data engineering workflows",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9433,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28363126516342163,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Data profiling and analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6362,
+        "evidence": {
+          "tfidf_score": 0.20699786900790568,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and"
+          ],
+          "bm25_score": 2.8803962827035217,
+          "semantic_score": 0.32514697313308716,
+          "matched_candidate_competency": "Performed month-end analysis and closing"
+        },
+        "candidate_evidence": [
+          "Performed month-end analysis and closing"
+        ]
+      },
+      {
+        "job_competency": "Metadata and data structures",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7188,
+        "evidence": {
+          "tfidf_score": 0.1789799451373304,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.4766983551580823,
+          "semantic_score": 0.28320762515068054,
+          "matched_candidate_competency": "Controlled and monitored production petty cash and daily cash reports"
+        },
+        "candidate_evidence": [
+          "Controlled and monitored production petty cash and daily cash reports"
+        ]
+      },
+      {
+        "job_competency": "Data mapping specifications",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9504,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2481847107410431,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "ETL development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3855,
+        "evidence": {
+          "tfidf_score": 0.017693344508803152,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 3.975842809823706,
+          "semantic_score": 0.38205188512802124,
+          "matched_candidate_competency": "Team development"
+        },
+        "candidate_evidence": [
+          "Team development"
+        ]
+      },
+      {
+        "job_competency": "Data validation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9298,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35122576355934143,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Data quality",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9528,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.23575842380523682,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Master data management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3974,
+        "evidence": {
+          "tfidf_score": 0.013716582561707063,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.4533603379444955,
+          "semantic_score": 0.36470532417297363,
+          "matched_candidate_competency": "Petty cash management"
+        },
+        "candidate_evidence": [
+          "Petty cash management"
+        ]
+      },
+      {
+        "job_competency": "Requirements gathering",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9266,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36685043573379517,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Agile methodologies",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7221,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4871196150779724,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Bachelor's degree in Computer Science or STEM",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9641,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.1795000284910202,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Legal authorization to work in the United States",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9432,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28389981389045715,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4409,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4076228141784668,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "C#",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4378,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4393295347690582,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "PowerShell",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5656,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2864324152469635,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.439,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.42693477869033813,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "SQL Server",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5556,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36963051557540894,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Oracle",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4412,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40388208627700806,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "MySQL",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5566,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36167991161346436,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "PostgreSQL",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5641,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29888349771499634,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Data visualization and reporting tools",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2306,
+        "evidence": {
+          "tfidf_score": 0.2041775131530349,
+          "tfidf_matched_terms": [
+            "and",
+            "reporting"
+          ],
+          "bm25_score": 2.825734677722601,
+          "semantic_score": 0.47130733728408813,
+          "matched_candidate_competency": "Financial reporting"
+        },
+        "candidate_evidence": [
+          "Financial reporting"
+        ]
+      },
+      {
+        "job_competency": "Power BI",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.566,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2829839587211609,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Tableau",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.567,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27508750557899475,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "SSRS",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4356,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46282726526260376,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Aircraft data frames",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5708,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24310503900051117,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "DFDR",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5727,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.22767877578735352,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "QAR",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5692,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2562962770462036,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "ARINC-717",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5754,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.20486724376678467,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "ARINC-429",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5742,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.21463552117347717,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Regular expressions",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5711,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24082641303539276,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "ETL tools",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.561,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3253275752067566,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Bilingual communication",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5727,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2278517186641693,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "ETL development",
+      "Master data management",
+      "Data visualization and reporting tools"
+    ],
+    "weak_matches": [
+      "Data profiling and analysis",
+      "Metadata and data structures",
+      "Agile methodologies",
+      "Python",
+      "C#",
+      "SQL",
+      "Oracle",
+      "SSRS"
+    ],
+    "missing": [
+      "Data engineering workflows",
+      "Data mapping specifications",
+      "Data validation",
+      "Data quality",
+      "Requirements gathering",
+      "Bachelor's degree in Computer Science or STEM",
+      "Legal authorization to work in the United States",
+      "PowerShell",
+      "SQL Server",
+      "MySQL",
+      "PostgreSQL",
+      "Power BI",
+      "Tableau",
+      "Aircraft data frames",
+      "DFDR",
+      "QAR",
+      "ARINC-717",
+      "ARINC-429",
+      "Regular expressions",
+      "ETL tools",
+      "Bilingual communication"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "ETL development",
+      "Master data management",
+      "Data visualization and reporting tools"
+    ],
+    "competency_gaps": [
+      "Data profiling and analysis",
+      "Metadata and data structures",
+      "Agile methodologies",
+      "Python",
+      "C#",
+      "SQL",
+      "Oracle",
+      "SSRS",
+      "Data engineering workflows",
+      "Data mapping specifications",
+      "Data validation",
+      "Data quality",
+      "Requirements gathering",
+      "Bachelor's degree in Computer Science or STEM",
+      "Legal authorization to work in the United States",
+      "PowerShell",
+      "SQL Server",
+      "MySQL",
+      "PostgreSQL",
+      "Power BI",
+      "Tableau",
+      "Aircraft data frames",
+      "DFDR",
+      "QAR",
+      "ARINC-717",
+      "ARINC-429",
+      "Regular expressions",
+      "ETL tools",
+      "Bilingual communication"
+    ]
+  },
+  "counts": {
+    "requirements": 32,
+    "strength_matches": 0,
+    "partial_matches": 3,
+    "competency_gaps": 29
+  },
+  "latency_ms": 50.22,
+  "analyzed_at": "2026-10-03T17:29:42.820049+00:00"
+}

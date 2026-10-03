@@ -1,0 +1,553 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02749_65b7cd9d7d67",
+  "jd_id": "rjf_02749_65b7cd9d7d67",
+  "pair_id": "rjf_02749_65b7cd9d7d67",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Information systems best practices",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9367,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31639620661735535,
+          "matched_candidate_competency": "Ajax"
+        },
+        "candidate_evidence": [
+          "Ajax"
+        ]
+      },
+      {
+        "job_competency": "Project planning and management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7029,
+        "evidence": {
+          "tfidf_score": 0.15073531866104506,
+          "tfidf_matched_terms": [
+            "and",
+            "project"
+          ],
+          "bm25_score": 2.087185932288449,
+          "semantic_score": 0.29834920167922974,
+          "matched_candidate_competency": "Wrote 50% of the code for a Python scientific computing project mining and analyzing Git logs and mailing lists."
+        },
+        "candidate_evidence": [
+          "Wrote 50% of the code for a Python scientific computing project mining and analyzing Git logs and mailing lists."
+        ]
+      },
+      {
+        "job_competency": "Complex problem solving",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9368,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31593120098114014,
+          "matched_candidate_competency": "Ajax"
+        },
+        "candidate_evidence": [
+          "Ajax"
+        ]
+      },
+      {
+        "job_competency": "Software engineering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7149,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5316225290298462,
+          "matched_candidate_competency": "Ajax"
+        },
+        "candidate_evidence": [
+          "Ajax"
+        ]
+      },
+      {
+        "job_competency": "Technical solution development",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9406,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29687631130218506,
+          "matched_candidate_competency": "Ajax"
+        },
+        "candidate_evidence": [
+          "Ajax"
+        ]
+      },
+      {
+        "job_competency": "Software integration",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9304,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34816351532936096,
+          "matched_candidate_competency": "Ajax"
+        },
+        "candidate_evidence": [
+          "Ajax"
+        ]
+      },
+      {
+        "job_competency": "Automated unit testing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9497,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.25164276361465454,
+          "matched_candidate_competency": "Ajax"
+        },
+        "candidate_evidence": [
+          "Ajax"
+        ]
+      },
+      {
+        "job_competency": "Security controls and monitoring",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.708,
+        "evidence": {
+          "tfidf_score": 0.11148185838312136,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.4536375604759373,
+          "semantic_score": 0.354922354221344,
+          "matched_candidate_competency": "Designed and implemented MySQL databases."
+        },
+        "candidate_evidence": [
+          "Designed and implemented MySQL databases."
+        ]
+      },
+      {
+        "job_competency": "Agile software development",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9446,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2772209048271179,
+          "matched_candidate_competency": "Ajax"
+        },
+        "candidate_evidence": [
+          "Ajax"
+        ]
+      },
+      {
+        "job_competency": "English language fluency",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9391,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30434659123420715,
+          "matched_candidate_competency": "Ajax"
+        },
+        "candidate_evidence": [
+          "Ajax"
+        ]
+      },
+      {
+        "job_competency": "Enterprise application development and scaling",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5443,
+        "evidence": {
+          "tfidf_score": 0.09833721740018564,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.4536375604759373,
+          "semantic_score": 0.2546716332435608,
+          "matched_candidate_competency": "Designed and implemented MySQL databases."
+        },
+        "candidate_evidence": [
+          "Designed and implemented MySQL databases."
+        ]
+      },
+      {
+        "job_competency": ".NET and C#",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4277,
+        "evidence": {
+          "tfidf_score": 0.1318601583767917,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.4536375604759373,
+          "semantic_score": 0.30997923016548157,
+          "matched_candidate_competency": "Designed and implemented MySQL databases."
+        },
+        "candidate_evidence": [
+          "Designed and implemented MySQL databases."
+        ]
+      },
+      {
+        "job_competency": "Angular frontend development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4227,
+        "evidence": {
+          "tfidf_score": 0.015840943939057852,
+          "tfidf_matched_terms": [
+            "frontend"
+          ],
+          "bm25_score": 1.9934655471676221,
+          "semantic_score": 0.3978087306022644,
+          "matched_candidate_competency": "Built a responsive frontend with Bootstrap, JQuery, and Ajax calls."
+        },
+        "candidate_evidence": [
+          "Built a responsive frontend with Bootstrap, JQuery, and Ajax calls."
+        ]
+      },
+      {
+        "job_competency": "HTML5, CSS3, Bootstrap, JavaScript, AJAX, and JSON",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2361,
+        "evidence": {
+          "tfidf_score": 0.133994732026736,
+          "tfidf_matched_terms": [
+            "ajax",
+            "and",
+            "bootstrap"
+          ],
+          "bm25_score": 4.321317846447943,
+          "semantic_score": 0.5595527291297913,
+          "matched_candidate_competency": "Built a responsive frontend with Bootstrap, JQuery, and Ajax calls."
+        },
+        "candidate_evidence": [
+          "Built a responsive frontend with Bootstrap, JQuery, and Ajax calls."
+        ]
+      },
+      {
+        "job_competency": "Java backend development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.415,
+        "evidence": {
+          "tfidf_score": 0.015840943939057852,
+          "tfidf_matched_terms": [
+            "backend"
+          ],
+          "bm25_score": 2.501128645010561,
+          "semantic_score": 0.43055522441864014,
+          "matched_candidate_competency": "Built a PHP backend connected to MySQL."
+        },
+        "candidate_evidence": [
+          "Built a PHP backend connected to MySQL."
+        ]
+      },
+      {
+        "job_competency": "Spring, Spring Boot, and Hibernate",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5502,
+        "evidence": {
+          "tfidf_score": 0.08183895842077593,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.4536375604759373,
+          "semantic_score": 0.21734113991260529,
+          "matched_candidate_competency": "Designed and implemented MySQL databases."
+        },
+        "candidate_evidence": [
+          "Designed and implemented MySQL databases."
+        ]
+      },
+      {
+        "job_competency": "REST, SOAP, and microservice APIs",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4286,
+        "evidence": {
+          "tfidf_score": 0.09833721740018563,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.4536375604759373,
+          "semantic_score": 0.3259350061416626,
+          "matched_candidate_competency": "Designed and implemented MySQL databases."
+        },
+        "candidate_evidence": [
+          "Designed and implemented MySQL databases."
+        ]
+      },
+      {
+        "job_competency": "AWS and Azure cloud hosting",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4235,
+        "evidence": {
+          "tfidf_score": 0.09833721740018563,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.4536375604759373,
+          "semantic_score": 0.37906885147094727,
+          "matched_candidate_competency": "Designed and implemented MySQL databases."
+        },
+        "candidate_evidence": [
+          "Designed and implemented MySQL databases."
+        ]
+      },
+      {
+        "job_competency": "Data structures, algorithms, and software design",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2432,
+        "evidence": {
+          "tfidf_score": 0.14135005348825003,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 3.5466496504683693,
+          "semantic_score": 0.508443295955658,
+          "matched_candidate_competency": "Created data science experiments and visualizations from Bigbang data."
+        },
+        "candidate_evidence": [
+          "Created data science experiments and visualizations from Bigbang data."
+        ]
+      },
+      {
+        "job_competency": "Analytical and debugging skills",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4271,
+        "evidence": {
+          "tfidf_score": 0.11148185838312134,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.4536375604759373,
+          "semantic_score": 0.33100131154060364,
+          "matched_candidate_competency": "Designed and implemented MySQL databases."
+        },
+        "candidate_evidence": [
+          "Designed and implemented MySQL databases."
+        ]
+      },
+      {
+        "job_competency": "SAFe",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5583,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3471969962120056,
+          "matched_candidate_competency": "Ajax"
+        },
+        "candidate_evidence": [
+          "Ajax"
+        ]
+      },
+      {
+        "job_competency": "SOA and Open API methodologies",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5478,
+        "evidence": {
+          "tfidf_score": 0.09833721740018563,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.4536375604759373,
+          "semantic_score": 0.22494594752788544,
+          "matched_candidate_competency": "Designed and implemented MySQL databases."
+        },
+        "candidate_evidence": [
+          "Designed and implemented MySQL databases."
+        ]
+      },
+      {
+        "job_competency": "Web servers, application containers, and caching technologies",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.214,
+        "evidence": {
+          "tfidf_score": 0.122584980062902,
+          "tfidf_matched_terms": [
+            "and",
+            "servers",
+            "web"
+          ],
+          "bm25_score": 8.007159465128,
+          "semantic_score": 0.5915785431861877,
+          "matched_candidate_competency": "Web servers"
+        },
+        "candidate_evidence": [
+          "Web servers"
+        ]
+      },
+      {
+        "job_competency": "Relational database design and development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4038,
+        "evidence": {
+          "tfidf_score": 0.09833721740018564,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.4536375604759373,
+          "semantic_score": 0.5834332704544067,
+          "matched_candidate_competency": "Designed and implemented MySQL databases."
+        },
+        "candidate_evidence": [
+          "Designed and implemented MySQL databases."
+        ]
+      },
+      {
+        "job_competency": "Azure DevOps, Visual Studio, and Git",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2386,
+        "evidence": {
+          "tfidf_score": 0.11685599872600386,
+          "tfidf_matched_terms": [
+            "and",
+            "git"
+          ],
+          "bm25_score": 4.295076943996626,
+          "semantic_score": 0.5338572263717651,
+          "matched_candidate_competency": "Git"
+        },
+        "candidate_evidence": [
+          "Git"
+        ]
+      },
+      {
+        "job_competency": "Unit and integration testing",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.548,
+        "evidence": {
+          "tfidf_score": 0.11148185838312134,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.4536375604759373,
+          "semantic_score": 0.21318843960762024,
+          "matched_candidate_competency": "Designed and implemented MySQL databases."
+        },
+        "candidate_evidence": [
+          "Designed and implemented MySQL databases."
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "HTML5, CSS3, Bootstrap, JavaScript, AJAX, and JSON",
+      "Data structures, algorithms, and software design",
+      "Web servers, application containers, and caching technologies",
+      "Azure DevOps, Visual Studio, and Git"
+    ],
+    "weak_matches": [
+      "Project planning and management",
+      "Software engineering",
+      "Security controls and monitoring",
+      ".NET and C#",
+      "Angular frontend development",
+      "Java backend development",
+      "REST, SOAP, and microservice APIs",
+      "AWS and Azure cloud hosting",
+      "Analytical and debugging skills",
+      "Relational database design and development"
+    ],
+    "missing": [
+      "Information systems best practices",
+      "Complex problem solving",
+      "Technical solution development",
+      "Software integration",
+      "Automated unit testing",
+      "Agile software development",
+      "English language fluency",
+      "Enterprise application development and scaling",
+      "Spring, Spring Boot, and Hibernate",
+      "SAFe",
+      "SOA and Open API methodologies",
+      "Unit and integration testing"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "HTML5, CSS3, Bootstrap, JavaScript, AJAX, and JSON",
+      "Data structures, algorithms, and software design",
+      "Web servers, application containers, and caching technologies",
+      "Azure DevOps, Visual Studio, and Git"
+    ],
+    "competency_gaps": [
+      "Project planning and management",
+      "Software engineering",
+      "Security controls and monitoring",
+      ".NET and C#",
+      "Angular frontend development",
+      "Java backend development",
+      "REST, SOAP, and microservice APIs",
+      "AWS and Azure cloud hosting",
+      "Analytical and debugging skills",
+      "Relational database design and development",
+      "Information systems best practices",
+      "Complex problem solving",
+      "Technical solution development",
+      "Software integration",
+      "Automated unit testing",
+      "Agile software development",
+      "English language fluency",
+      "Enterprise application development and scaling",
+      "Spring, Spring Boot, and Hibernate",
+      "SAFe",
+      "SOA and Open API methodologies",
+      "Unit and integration testing"
+    ]
+  },
+  "counts": {
+    "requirements": 26,
+    "strength_matches": 0,
+    "partial_matches": 4,
+    "competency_gaps": 22
+  },
+  "latency_ms": 47.97,
+  "analyzed_at": "2026-10-03T17:29:45.982279+00:00"
+}

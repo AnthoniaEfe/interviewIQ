@@ -1,0 +1,764 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02476_fe21094bbb9d",
+  "jd_id": "rjf_02476_fe21094bbb9d",
+  "pair_id": "rjf_02476_fe21094bbb9d",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7189,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5067530870437622,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Spring Boot",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.922,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3902333378791809,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "SQL databases",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3913,
+        "evidence": {
+          "tfidf_score": 0.07028409004785452,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 3.026105278909326,
+          "semantic_score": 0.7553417086601257,
+          "matched_candidate_competency": "T-SQL"
+        },
+        "candidate_evidence": [
+          "T-SQL"
+        ]
+      },
+      {
+        "job_competency": "Hibernate",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9485,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2573082149028778,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Database query development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6586,
+        "evidence": {
+          "tfidf_score": 0.06838503855241071,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.7710442481597313,
+          "semantic_score": 0.5768945813179016,
+          "matched_candidate_competency": "Agile development"
+        },
+        "candidate_evidence": [
+          "Agile development"
+        ]
+      },
+      {
+        "job_competency": "Oracle",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7194,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5038197636604309,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3847,
+        "evidence": {
+          "tfidf_score": 0.12123408959667466,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 3.026105278909326,
+          "semantic_score": 0.7824862599372864,
+          "matched_candidate_competency": "T-SQL"
+        },
+        "candidate_evidence": [
+          "T-SQL"
+        ]
+      },
+      {
+        "job_competency": "PostgreSQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7309,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.43178701400756836,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "NoSQL databases",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9315,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3426755368709564,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Software development lifecycle",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3967,
+        "evidence": {
+          "tfidf_score": 0.10703359610352872,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 3.753767375928959,
+          "semantic_score": 0.6058650016784668,
+          "matched_candidate_competency": "Software design"
+        },
+        "candidate_evidence": [
+          "Software design"
+        ]
+      },
+      {
+        "job_competency": "Software engineering best practices",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3545,
+        "evidence": {
+          "tfidf_score": 0.03709143993674721,
+          "tfidf_matched_terms": [
+            "engineering",
+            "software"
+          ],
+          "bm25_score": 8.125150458941143,
+          "semantic_score": 0.677574872970581,
+          "matched_candidate_competency": "Software engineering"
+        },
+        "candidate_evidence": [
+          "Software engineering"
+        ]
+      },
+      {
+        "job_competency": "Coding standards",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7291,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4432066082954407,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Code reviews",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9298,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35079294443130493,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Source control",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7329,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4196600615978241,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Software testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4019,
+        "evidence": {
+          "tfidf_score": 0.03495464244787311,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 3.753767375928959,
+          "semantic_score": 0.6078326106071472,
+          "matched_candidate_competency": "Software design"
+        },
+        "candidate_evidence": [
+          "Software design"
+        ]
+      },
+      {
+        "job_competency": "Build and release engineering",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3978,
+        "evidence": {
+          "tfidf_score": 0.18734854911447185,
+          "tfidf_matched_terms": [
+            "and",
+            "engineering"
+          ],
+          "bm25_score": 4.371383083012184,
+          "semantic_score": 0.4784555733203888,
+          "matched_candidate_competency": "Software engineering"
+        },
+        "candidate_evidence": [
+          "Software engineering"
+        ]
+      },
+      {
+        "job_competency": "Automation",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1767,
+        "evidence": {
+          "tfidf_score": 0.06029379126143407,
+          "tfidf_matched_terms": [
+            "automation"
+          ],
+          "bm25_score": 4.564890128273364,
+          "semantic_score": 1.000000238418579,
+          "matched_candidate_competency": "Automation"
+        },
+        "candidate_evidence": [
+          "Automation"
+        ]
+      },
+      {
+        "job_competency": "DevOps",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7299,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.43800464272499084,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Continuous integration and continuous deployment",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7034,
+        "evidence": {
+          "tfidf_score": 0.11831438807561155,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.407085472227802,
+          "semantic_score": 0.3852817714214325,
+          "matched_candidate_competency": "Built and maintained applications supporting core business and enterprise"
+        },
+        "candidate_evidence": [
+          "Built and maintained applications supporting core business and enterprise"
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9344,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3280814588069916,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Jenkins",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9356,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32210680842399597,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Jira",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9405,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.297730028629303,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Confluence",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9313,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3435075581073761,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Full-stack software development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6521,
+        "evidence": {
+          "tfidf_score": 0.08748308746747673,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 3.753767375928959,
+          "semantic_score": 0.5120876431465149,
+          "matched_candidate_competency": "Software design"
+        },
+        "candidate_evidence": [
+          "Software design"
+        ]
+      },
+      {
+        "job_competency": "Technical communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7322,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4240618944168091,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Vendor interaction",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7323,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.423255980014801,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Leadership and mentoring",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3628,
+        "evidence": {
+          "tfidf_score": 0.2292167493969091,
+          "tfidf_matched_terms": [
+            "and",
+            "leadership"
+          ],
+          "bm25_score": 5.315961668403916,
+          "semantic_score": 0.7089927196502686,
+          "matched_candidate_competency": "Leadership"
+        },
+        "candidate_evidence": [
+          "Leadership"
+        ]
+      },
+      {
+        "job_competency": "Flexible schedule",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9301,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34962576627731323,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "High school diploma or equivalent",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9393,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3033308982849121,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Advanced technical concepts",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4374,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.443478524684906,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Agile/Scrum",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2197,
+        "evidence": {
+          "tfidf_score": 0.1726931523933944,
+          "tfidf_matched_terms": [
+            "agile",
+            "scrum"
+          ],
+          "bm25_score": 3.6799931192834068,
+          "semantic_score": 0.8684890270233154,
+          "matched_candidate_competency": "Scrum"
+        },
+        "candidate_evidence": [
+          "Scrum"
+        ]
+      },
+      {
+        "job_competency": "Microservice architecture",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2429,
+        "evidence": {
+          "tfidf_score": 0.01745412919455952,
+          "tfidf_matched_terms": [
+            "architecture"
+          ],
+          "bm25_score": 4.371383083012184,
+          "semantic_score": 0.5356667637825012,
+          "matched_candidate_competency": "Application architecture"
+        },
+        "candidate_evidence": [
+          "Application architecture"
+        ]
+      },
+      {
+        "job_competency": "Kubernetes",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5646,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29535773396492004,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Containerization",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5587,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3443438410758972,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "MongoDB",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5564,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36313897371292114,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Solr",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5669,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27575555443763733,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Remote, virtual, or work-from-home experience",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5643,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2978494167327881,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Bachelor's degree in computer science or equivalent experience",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4197,
+        "evidence": {
+          "tfidf_score": 0.007344748506443036,
+          "tfidf_matched_terms": [
+            "in"
+          ],
+          "bm25_score": 1.8052392154642003,
+          "semantic_score": 0.4559761583805084,
+          "matched_candidate_competency": "Worked in an Agile development shop using Scrum and sprints"
+        },
+        "candidate_evidence": [
+          "Worked in an Agile development shop using Scrum and sprints"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Automation"
+    ],
+    "partial_matches": [
+      "SQL databases",
+      "SQL",
+      "Software development lifecycle",
+      "Software engineering best practices",
+      "Software testing",
+      "Build and release engineering",
+      "Leadership and mentoring",
+      "Agile/Scrum",
+      "Microservice architecture"
+    ],
+    "weak_matches": [
+      "Java",
+      "Database query development",
+      "Oracle",
+      "PostgreSQL",
+      "Coding standards",
+      "Source control",
+      "DevOps",
+      "Continuous integration and continuous deployment",
+      "Full-stack software development",
+      "Technical communication",
+      "Vendor interaction",
+      "Advanced technical concepts",
+      "Bachelor's degree in computer science or equivalent experience"
+    ],
+    "missing": [
+      "Spring Boot",
+      "Hibernate",
+      "NoSQL databases",
+      "Code reviews",
+      "Git",
+      "Jenkins",
+      "Jira",
+      "Confluence",
+      "Flexible schedule",
+      "High school diploma or equivalent",
+      "Kubernetes",
+      "Containerization",
+      "MongoDB",
+      "Solr",
+      "Remote, virtual, or work-from-home experience"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Automation"
+    ],
+    "partial_matches": [
+      "SQL databases",
+      "SQL",
+      "Software development lifecycle",
+      "Software engineering best practices",
+      "Software testing",
+      "Build and release engineering",
+      "Leadership and mentoring",
+      "Agile/Scrum",
+      "Microservice architecture"
+    ],
+    "competency_gaps": [
+      "Java",
+      "Database query development",
+      "Oracle",
+      "PostgreSQL",
+      "Coding standards",
+      "Source control",
+      "DevOps",
+      "Continuous integration and continuous deployment",
+      "Full-stack software development",
+      "Technical communication",
+      "Vendor interaction",
+      "Advanced technical concepts",
+      "Bachelor's degree in computer science or equivalent experience",
+      "Spring Boot",
+      "Hibernate",
+      "NoSQL databases",
+      "Code reviews",
+      "Git",
+      "Jenkins",
+      "Jira",
+      "Confluence",
+      "Flexible schedule",
+      "High school diploma or equivalent",
+      "Kubernetes",
+      "Containerization",
+      "MongoDB",
+      "Solr",
+      "Remote, virtual, or work-from-home experience"
+    ]
+  },
+  "counts": {
+    "requirements": 38,
+    "strength_matches": 1,
+    "partial_matches": 9,
+    "competency_gaps": 28
+  },
+  "latency_ms": 64.89,
+  "analyzed_at": "2026-10-03T17:29:45.506110+00:00"
+}

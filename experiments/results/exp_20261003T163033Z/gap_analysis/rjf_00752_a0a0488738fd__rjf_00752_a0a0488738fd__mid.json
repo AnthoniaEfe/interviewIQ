@@ -1,0 +1,458 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00752_a0a0488738fd",
+  "jd_id": "rjf_00752_a0a0488738fd",
+  "pair_id": "rjf_00752_a0a0488738fd",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Accounting, bookkeeping, finance, or financial analysis experience",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.71,
+        "evidence": {
+          "tfidf_score": 0.008032479689889734,
+          "tfidf_matched_terms": [
+            "or"
+          ],
+          "bm25_score": 2.2428338449792182,
+          "semantic_score": 0.3757694363594055,
+          "matched_candidate_competency": "Checked inventory and ordered or disposed of medications as needed"
+        },
+        "candidate_evidence": [
+          "Checked inventory and ordered or disposed of medications as needed"
+        ]
+      },
+      {
+        "job_competency": "Generally Accepted Accounting Principles (GAAP)",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9359,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3204813599586487,
+          "matched_candidate_competency": "FDA drug safety guidelines"
+        },
+        "candidate_evidence": [
+          "FDA drug safety guidelines"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Office Suite",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1725,
+        "evidence": {
+          "tfidf_score": 0.08754572345587827,
+          "tfidf_matched_terms": [
+            "microsoft",
+            "office"
+          ],
+          "bm25_score": 7.461450702810892,
+          "semantic_score": 0.8822547793388367,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "QuickBooks",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7173,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5166299343109131,
+          "matched_candidate_competency": "FDA drug safety guidelines"
+        },
+        "candidate_evidence": [
+          "FDA drug safety guidelines"
+        ]
+      },
+      {
+        "job_competency": "Financial reporting and analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6991,
+        "evidence": {
+          "tfidf_score": 0.1813787324785646,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9680953928479075,
+          "semantic_score": 0.41623395681381226,
+          "matched_candidate_competency": "Audit and inspection processes"
+        },
+        "candidate_evidence": [
+          "Audit and inspection processes"
+        ]
+      },
+      {
+        "job_competency": "Financial presentation and communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3847,
+        "evidence": {
+          "tfidf_score": 0.20882768588047482,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 5.371830425125905,
+          "semantic_score": 0.5632221698760986,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Business English communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4015,
+        "evidence": {
+          "tfidf_score": 0.012942051860209646,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 5.371830425125905,
+          "semantic_score": 0.5420632362365723,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Written communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3776,
+        "evidence": {
+          "tfidf_score": 0.016694259024311067,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 5.371830425125905,
+          "semantic_score": 0.7781989574432373,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Attention to detail",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7127,
+        "evidence": {
+          "tfidf_score": 0.03895237332435823,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 1.788640884476659,
+          "semantic_score": 0.3721066117286682,
+          "matched_candidate_competency": "Searched databases to build competing studies and competitive landscapes"
+        },
+        "candidate_evidence": [
+          "Searched databases to build competing studies and competitive landscapes"
+        ]
+      },
+      {
+        "job_competency": "Organization",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1773,
+        "evidence": {
+          "tfidf_score": 0.02879617980293115,
+          "tfidf_matched_terms": [
+            "organization"
+          ],
+          "bm25_score": 5.371830425125905,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Organization"
+        },
+        "candidate_evidence": [
+          "Organization"
+        ]
+      },
+      {
+        "job_competency": "Interpersonal skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7174,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5159734487533569,
+          "matched_candidate_competency": "FDA drug safety guidelines"
+        },
+        "candidate_evidence": [
+          "FDA drug safety guidelines"
+        ]
+      },
+      {
+        "job_competency": "Problem solving",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.161,
+        "evidence": {
+          "tfidf_score": 0.04074042606782307,
+          "tfidf_matched_terms": [
+            "problem",
+            "solving"
+          ],
+          "bm25_score": 9.301773769245752,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Problem solving"
+        },
+        "candidate_evidence": [
+          "Problem solving"
+        ]
+      },
+      {
+        "job_competency": "Adaptability and collaboration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6839,
+        "evidence": {
+          "tfidf_score": 0.21453381507700356,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9680953928479075,
+          "semantic_score": 0.4865957498550415,
+          "matched_candidate_competency": "Audit and inspection processes"
+        },
+        "candidate_evidence": [
+          "Audit and inspection processes"
+        ]
+      },
+      {
+        "job_competency": "Customer service",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1651,
+        "evidence": {
+          "tfidf_score": 0.08167943231773493,
+          "tfidf_matched_terms": [
+            "customer",
+            "service"
+          ],
+          "bm25_score": 7.888528407198925,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Customer service"
+        },
+        "candidate_evidence": [
+          "Customer service"
+        ]
+      },
+      {
+        "job_competency": "Technology solution orientation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9259,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37060999870300293,
+          "matched_candidate_competency": "FDA drug safety guidelines"
+        },
+        "candidate_evidence": [
+          "FDA drug safety guidelines"
+        ]
+      },
+      {
+        "job_competency": "Bachelor's degree in accounting, finance, business management, or related field",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6887,
+        "evidence": {
+          "tfidf_score": 0.026617369749699315,
+          "tfidf_matched_terms": [
+            "in",
+            "management",
+            "or"
+          ],
+          "bm25_score": 4.650886884622876,
+          "semantic_score": 0.3003804683685303,
+          "matched_candidate_competency": "Time management"
+        },
+        "candidate_evidence": [
+          "Time management"
+        ]
+      },
+      {
+        "job_competency": "Atlanta, Georgia residency",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9375,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31261274218559265,
+          "matched_candidate_competency": "FDA drug safety guidelines"
+        },
+        "candidate_evidence": [
+          "FDA drug safety guidelines"
+        ]
+      },
+      {
+        "job_competency": "Financial reporting software",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4395,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.42146703600883484,
+          "matched_candidate_competency": "FDA drug safety guidelines"
+        },
+        "candidate_evidence": [
+          "FDA drug safety guidelines"
+        ]
+      },
+      {
+        "job_competency": "Audit accounting experience",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3959,
+        "evidence": {
+          "tfidf_score": 0.06534757702731794,
+          "tfidf_matched_terms": [
+            "audit"
+          ],
+          "bm25_score": 3.1491895686345512,
+          "semantic_score": 0.5734530687332153,
+          "matched_candidate_competency": "Entered audit reports into an audit database"
+        },
+        "candidate_evidence": [
+          "Entered audit reports into an audit database"
+        ]
+      },
+      {
+        "job_competency": "Payroll experience",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5525,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39563459157943726,
+          "matched_candidate_competency": "FDA drug safety guidelines"
+        },
+        "candidate_evidence": [
+          "FDA drug safety guidelines"
+        ]
+      },
+      {
+        "job_competency": "Production accounting experience",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4239,
+        "evidence": {
+          "tfidf_score": 0.012942051860209644,
+          "tfidf_matched_terms": [
+            "production"
+          ],
+          "bm25_score": 2.576313187533538,
+          "semantic_score": 0.3674294352531433,
+          "matched_candidate_competency": "Performed data entry, medication production, and customer service"
+        },
+        "candidate_evidence": [
+          "Performed data entry, medication production, and customer service"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Microsoft Office Suite",
+      "Organization",
+      "Problem solving",
+      "Customer service"
+    ],
+    "partial_matches": [
+      "Financial presentation and communication",
+      "Business English communication",
+      "Written communication"
+    ],
+    "weak_matches": [
+      "Accounting, bookkeeping, finance, or financial analysis experience",
+      "QuickBooks",
+      "Financial reporting and analysis",
+      "Attention to detail",
+      "Interpersonal skills",
+      "Adaptability and collaboration",
+      "Bachelor's degree in accounting, finance, business management, or related field",
+      "Financial reporting software",
+      "Audit accounting experience",
+      "Production accounting experience"
+    ],
+    "missing": [
+      "Generally Accepted Accounting Principles (GAAP)",
+      "Technology solution orientation",
+      "Atlanta, Georgia residency",
+      "Payroll experience"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Microsoft Office Suite",
+      "Organization",
+      "Problem solving",
+      "Customer service"
+    ],
+    "partial_matches": [
+      "Financial presentation and communication",
+      "Business English communication",
+      "Written communication"
+    ],
+    "competency_gaps": [
+      "Accounting, bookkeeping, finance, or financial analysis experience",
+      "QuickBooks",
+      "Financial reporting and analysis",
+      "Attention to detail",
+      "Interpersonal skills",
+      "Adaptability and collaboration",
+      "Bachelor's degree in accounting, finance, business management, or related field",
+      "Financial reporting software",
+      "Audit accounting experience",
+      "Production accounting experience",
+      "Generally Accepted Accounting Principles (GAAP)",
+      "Technology solution orientation",
+      "Atlanta, Georgia residency",
+      "Payroll experience"
+    ]
+  },
+  "counts": {
+    "requirements": 21,
+    "strength_matches": 4,
+    "partial_matches": 3,
+    "competency_gaps": 14
+  },
+  "latency_ms": 45.09,
+  "analyzed_at": "2026-10-03T17:29:43.338535+00:00"
+}

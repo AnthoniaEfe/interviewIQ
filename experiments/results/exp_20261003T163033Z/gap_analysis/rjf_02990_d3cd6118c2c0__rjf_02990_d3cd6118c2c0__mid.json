@@ -1,0 +1,380 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02990_d3cd6118c2c0",
+  "jd_id": "rjf_02990_d3cd6118c2c0",
+  "pair_id": "rjf_02990_d3cd6118c2c0",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Object-oriented programming",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7038,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6012317538261414,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Embedded programming",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7138,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5389871597290039,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "C",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9247,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37653863430023193,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "C++",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7189,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5067528486251831,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "C#",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7114,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5536978244781494,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.161,
+        "evidence": {
+          "tfidf_score": 0.04008855021728177,
+          "tfidf_matched_terms": [
+            "python"
+          ],
+          "bm25_score": 5.016514867258166,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Network communications",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9477,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2612672448158264,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Industrial control system protocols",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9386,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3070991337299347,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Digital forensics",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.937,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31495049595832825,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Reverse engineering",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9218,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3909141719341278,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Industrial control systems",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9363,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31847622990608215,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Information security",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9311,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34474125504493713,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Cyber analysis and operations",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7012,
+        "evidence": {
+          "tfidf_score": 0.18595975885867622,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.171076968059441,
+          "semantic_score": 0.3027461767196655,
+          "matched_candidate_competency": "Developed stored procedures and triggers using MariaDB and Oracle."
+        },
+        "candidate_evidence": [
+          "Developed stored procedures and triggers using MariaDB and Oracle."
+        ]
+      },
+      {
+        "job_competency": "White-box testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3899,
+        "evidence": {
+          "tfidf_score": 0.03611953203011578,
+          "tfidf_matched_terms": [
+            "testing"
+          ],
+          "bm25_score": 3.459969915042765,
+          "semantic_score": 0.5564506649971008,
+          "matched_candidate_competency": "Unit Testing"
+        },
+        "candidate_evidence": [
+          "Unit Testing"
+        ]
+      },
+      {
+        "job_competency": "Black-box testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3848,
+        "evidence": {
+          "tfidf_score": 0.03611953203011578,
+          "tfidf_matched_terms": [
+            "testing"
+          ],
+          "bm25_score": 3.459969915042765,
+          "semantic_score": 0.6075814962387085,
+          "matched_candidate_competency": "Unit Testing"
+        },
+        "candidate_evidence": [
+          "Unit Testing"
+        ]
+      },
+      {
+        "job_competency": "Cybersecurity vulnerability assessment",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9469,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26529747247695923,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Hardware-software interaction",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3806,
+        "evidence": {
+          "tfidf_score": 0.018017254353296822,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 4.225529120553559,
+          "semantic_score": 0.5489481687545776,
+          "matched_candidate_competency": "Software Design"
+        },
+        "candidate_evidence": [
+          "Software Design"
+        ]
+      },
+      {
+        "job_competency": "United States citizenship",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9669,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.16552694141864777,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Python"
+    ],
+    "partial_matches": [
+      "White-box testing",
+      "Black-box testing",
+      "Hardware-software interaction"
+    ],
+    "weak_matches": [
+      "Object-oriented programming",
+      "Embedded programming",
+      "C++",
+      "C#",
+      "Cyber analysis and operations"
+    ],
+    "missing": [
+      "C",
+      "Network communications",
+      "Industrial control system protocols",
+      "Digital forensics",
+      "Reverse engineering",
+      "Industrial control systems",
+      "Information security",
+      "Cybersecurity vulnerability assessment",
+      "United States citizenship"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Python"
+    ],
+    "partial_matches": [
+      "White-box testing",
+      "Black-box testing",
+      "Hardware-software interaction"
+    ],
+    "competency_gaps": [
+      "Object-oriented programming",
+      "Embedded programming",
+      "C++",
+      "C#",
+      "Cyber analysis and operations",
+      "C",
+      "Network communications",
+      "Industrial control system protocols",
+      "Digital forensics",
+      "Reverse engineering",
+      "Industrial control systems",
+      "Information security",
+      "Cybersecurity vulnerability assessment",
+      "United States citizenship"
+    ]
+  },
+  "counts": {
+    "requirements": 18,
+    "strength_matches": 1,
+    "partial_matches": 3,
+    "competency_gaps": 14
+  },
+  "latency_ms": 41.82,
+  "analyzed_at": "2026-10-03T17:29:46.196581+00:00"
+}

@@ -1,0 +1,251 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00004_13aa68c99897",
+  "jd_id": "rjf_00004_13aa68c99897",
+  "pair_id": "rjf_00004_13aa68c99897",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "C#",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7006,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6213322877883911,
+          "matched_candidate_competency": "Business Analysis"
+        },
+        "candidate_evidence": [
+          "Business Analysis"
+        ]
+      },
+      {
+        "job_competency": ".NET Core",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7312,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4302024245262146,
+          "matched_candidate_competency": "Business Analysis"
+        },
+        "candidate_evidence": [
+          "Business Analysis"
+        ]
+      },
+      {
+        "job_competency": ".NET",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7162,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5237129926681519,
+          "matched_candidate_competency": "Business Analysis"
+        },
+        "candidate_evidence": [
+          "Business Analysis"
+        ]
+      },
+      {
+        "job_competency": "Build engineering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7214,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.49096542596817017,
+          "matched_candidate_competency": "Business Analysis"
+        },
+        "candidate_evidence": [
+          "Business Analysis"
+        ]
+      },
+      {
+        "job_competency": "CI/CD tools",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3726,
+        "evidence": {
+          "tfidf_score": 0.02348771104281102,
+          "tfidf_matched_terms": [
+            "cd",
+            "tools"
+          ],
+          "bm25_score": 4.572423831151035,
+          "semantic_score": 0.5068806409835815,
+          "matched_candidate_competency": "CD installation"
+        },
+        "candidate_evidence": [
+          "CD installation"
+        ]
+      },
+      {
+        "job_competency": "GitHub",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9209,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3954342007637024,
+          "matched_candidate_competency": "Business Analysis"
+        },
+        "candidate_evidence": [
+          "Business Analysis"
+        ]
+      },
+      {
+        "job_competency": "Jenkins",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9364,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31798478960990906,
+          "matched_candidate_competency": "Business Analysis"
+        },
+        "candidate_evidence": [
+          "Business Analysis"
+        ]
+      },
+      {
+        "job_competency": "Spinnaker",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9387,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.306629478931427,
+          "matched_candidate_competency": "Business Analysis"
+        },
+        "candidate_evidence": [
+          "Business Analysis"
+        ]
+      },
+      {
+        "job_competency": "DevOps deployments",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3762,
+        "evidence": {
+          "tfidf_score": 0.00904548980122947,
+          "tfidf_matched_terms": [
+            "deployments"
+          ],
+          "bm25_score": 2.840297882389406,
+          "semantic_score": 0.7648587822914124,
+          "matched_candidate_competency": "Scheduled deployments and production fixes for hospital reporting"
+        },
+        "candidate_evidence": [
+          "Scheduled deployments and production fixes for hospital reporting"
+        ]
+      },
+      {
+        "job_competency": "Software engineering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.659,
+        "evidence": {
+          "tfidf_score": 0.018097426304811547,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 2.296200942258798,
+          "semantic_score": 0.4908665418624878,
+          "matched_candidate_competency": "Collaborated on USPS Postal Stores software requirements and reporting"
+        },
+        "candidate_evidence": [
+          "Collaborated on USPS Postal Stores software requirements and reporting"
+        ]
+      },
+      {
+        "job_competency": "Microsoft technologies",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.219,
+        "evidence": {
+          "tfidf_score": 0.027162279211356048,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 4.118224488506234,
+          "semantic_score": 0.6544023752212524,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "CI/CD tools",
+      "DevOps deployments",
+      "Microsoft technologies"
+    ],
+    "weak_matches": [
+      "C#",
+      ".NET Core",
+      ".NET",
+      "Build engineering",
+      "Software engineering"
+    ],
+    "missing": [
+      "GitHub",
+      "Jenkins",
+      "Spinnaker"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "CI/CD tools",
+      "DevOps deployments",
+      "Microsoft technologies"
+    ],
+    "competency_gaps": [
+      "C#",
+      ".NET Core",
+      ".NET",
+      "Build engineering",
+      "Software engineering",
+      "GitHub",
+      "Jenkins",
+      "Spinnaker"
+    ]
+  },
+  "counts": {
+    "requirements": 11,
+    "strength_matches": 0,
+    "partial_matches": 3,
+    "competency_gaps": 8
+  },
+  "latency_ms": 395.13,
+  "analyzed_at": "2026-10-03T17:29:42.173269+00:00"
+}

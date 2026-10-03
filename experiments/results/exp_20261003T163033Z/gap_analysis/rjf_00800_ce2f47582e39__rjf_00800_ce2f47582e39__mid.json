@@ -1,0 +1,274 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00800_ce2f47582e39",
+  "jd_id": "rjf_00800_ce2f47582e39",
+  "pair_id": "rjf_00800_ce2f47582e39",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Salesforce",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7132,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5426603555679321,
+          "matched_candidate_competency": "Server hardware break/fix"
+        },
+        "candidate_evidence": [
+          "Server hardware break/fix"
+        ]
+      },
+      {
+        "job_competency": "Salesforce declarative customization",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9382,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30910757184028625,
+          "matched_candidate_competency": "Server hardware break/fix"
+        },
+        "candidate_evidence": [
+          "Server hardware break/fix"
+        ]
+      },
+      {
+        "job_competency": "Salesforce programmatic customization",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9399,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30040156841278076,
+          "matched_candidate_competency": "Server hardware break/fix"
+        },
+        "candidate_evidence": [
+          "Server hardware break/fix"
+        ]
+      },
+      {
+        "job_competency": "Salesforce security and stability design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3605,
+        "evidence": {
+          "tfidf_score": 0.24802172410234619,
+          "tfidf_matched_terms": [
+            "and",
+            "security"
+          ],
+          "bm25_score": 4.00865037520533,
+          "semantic_score": 0.4856516122817993,
+          "matched_candidate_competency": "Cyber security"
+        },
+        "candidate_evidence": [
+          "Cyber security"
+        ]
+      },
+      {
+        "job_competency": "Code and log-file debugging",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3879,
+        "evidence": {
+          "tfidf_score": 0.22787891616649697,
+          "tfidf_matched_terms": [
+            "and",
+            "code"
+          ],
+          "bm25_score": 3.3285175287540163,
+          "semantic_score": 0.34931954741477966,
+          "matched_candidate_competency": "Interpreted IBM product documentation, manuals, code, and application interfaces."
+        },
+        "candidate_evidence": [
+          "Interpreted IBM product documentation, manuals, code, and application interfaces."
+        ]
+      },
+      {
+        "job_competency": "Database querying",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9376,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3119148910045624,
+          "matched_candidate_competency": "Server hardware break/fix"
+        },
+        "candidate_evidence": [
+          "Server hardware break/fix"
+        ]
+      },
+      {
+        "job_competency": "Complex data lookup and update",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3761,
+        "evidence": {
+          "tfidf_score": 0.2863751973764701,
+          "tfidf_matched_terms": [
+            "and",
+            "data",
+            "update"
+          ],
+          "bm25_score": 4.154026538341029,
+          "semantic_score": 0.27416613698005676,
+          "matched_candidate_competency": "Windows Update Services"
+        },
+        "candidate_evidence": [
+          "Windows Update Services"
+        ]
+      },
+      {
+        "job_competency": "Version and revision control",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6812,
+        "evidence": {
+          "tfidf_score": 0.23677163560544362,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.157758654724697,
+          "semantic_score": 0.35568204522132874,
+          "matched_candidate_competency": "Upgraded, maintained, and installed servers and switch equipment."
+        },
+        "candidate_evidence": [
+          "Upgraded, maintained, and installed servers and switch equipment."
+        ]
+      },
+      {
+        "job_competency": "CST work hours",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9381,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3094697892665863,
+          "matched_candidate_competency": "Server hardware break/fix"
+        },
+        "candidate_evidence": [
+          "Server hardware break/fix"
+        ]
+      },
+      {
+        "job_competency": "W2 employment",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9462,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.269022136926651,
+          "matched_candidate_competency": "Server hardware break/fix"
+        },
+        "candidate_evidence": [
+          "Server hardware break/fix"
+        ]
+      },
+      {
+        "job_competency": "Independent visa status",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9679,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.1607467532157898,
+          "matched_candidate_competency": "Server hardware break/fix"
+        },
+        "candidate_evidence": [
+          "Server hardware break/fix"
+        ]
+      },
+      {
+        "job_competency": "Financial services industry experience",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2339,
+        "evidence": {
+          "tfidf_score": 0.011867315980860481,
+          "tfidf_matched_terms": [
+            "services"
+          ],
+          "bm25_score": 4.154026538341029,
+          "semantic_score": 0.3424413204193115,
+          "matched_candidate_competency": "Windows Update Services"
+        },
+        "candidate_evidence": [
+          "Windows Update Services"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Salesforce security and stability design",
+      "Code and log-file debugging",
+      "Complex data lookup and update",
+      "Financial services industry experience"
+    ],
+    "weak_matches": [
+      "Salesforce",
+      "Version and revision control"
+    ],
+    "missing": [
+      "Salesforce declarative customization",
+      "Salesforce programmatic customization",
+      "Database querying",
+      "CST work hours",
+      "W2 employment",
+      "Independent visa status"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Salesforce security and stability design",
+      "Code and log-file debugging",
+      "Complex data lookup and update",
+      "Financial services industry experience"
+    ],
+    "competency_gaps": [
+      "Salesforce",
+      "Version and revision control",
+      "Salesforce declarative customization",
+      "Salesforce programmatic customization",
+      "Database querying",
+      "CST work hours",
+      "W2 employment",
+      "Independent visa status"
+    ]
+  },
+  "counts": {
+    "requirements": 12,
+    "strength_matches": 0,
+    "partial_matches": 4,
+    "competency_gaps": 8
+  },
+  "latency_ms": 40.57,
+  "analyzed_at": "2026-10-03T17:29:43.415891+00:00"
+}

@@ -1,0 +1,317 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00026_646635e8d1ff",
+  "jd_id": "rjf_00026_646635e8d1ff",
+  "pair_id": "rjf_00026_646635e8d1ff",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Accounting and financial principles",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3497,
+        "evidence": {
+          "tfidf_score": 0.22019317660758153,
+          "tfidf_matched_terms": [
+            "accounting",
+            "and",
+            "financial"
+          ],
+          "bm25_score": 3.7605889632021254,
+          "semantic_score": 0.7470147013664246,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Advanced Microsoft Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1627,
+        "evidence": {
+          "tfidf_score": 0.22469986680575213,
+          "tfidf_matched_terms": [
+            "advanced",
+            "excel",
+            "microsoft"
+          ],
+          "bm25_score": 4.777579573861037,
+          "semantic_score": 0.8280066251754761,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "GAAP",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7232,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4802849292755127,
+          "matched_candidate_competency": "R"
+        },
+        "candidate_evidence": [
+          "R"
+        ]
+      },
+      {
+        "job_competency": "FERC accounting requirements",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3855,
+        "evidence": {
+          "tfidf_score": 0.03781605384082874,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 3.7605889632021254,
+          "semantic_score": 0.5259065628051758,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Closing journal entries",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.944,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27999499440193176,
+          "matched_candidate_competency": "R"
+        },
+        "candidate_evidence": [
+          "R"
+        ]
+      },
+      {
+        "job_competency": "Revenue accruals",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7015,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6154485940933228,
+          "matched_candidate_competency": "R"
+        },
+        "candidate_evidence": [
+          "R"
+        ]
+      },
+      {
+        "job_competency": "Expense accruals",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7039,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6004259586334229,
+          "matched_candidate_competency": "R"
+        },
+        "candidate_evidence": [
+          "R"
+        ]
+      },
+      {
+        "job_competency": "Deferred revenue accounting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3849,
+        "evidence": {
+          "tfidf_score": 0.03781605384082875,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 3.7605889632021254,
+          "semantic_score": 0.5322502851486206,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Financial statement analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.395,
+        "evidence": {
+          "tfidf_score": 0.08484223265712626,
+          "tfidf_matched_terms": [
+            "analysis",
+            "financial"
+          ],
+          "bm25_score": 2.714688044035107,
+          "semantic_score": 0.5604113340377808,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "Gross margin analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6668,
+        "evidence": {
+          "tfidf_score": 0.056970479523933144,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 2.714688044035107,
+          "semantic_score": 0.3635062575340271,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "Invoicing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7214,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4915589392185211,
+          "matched_candidate_competency": "R"
+        },
+        "candidate_evidence": [
+          "R"
+        ]
+      },
+      {
+        "job_competency": "Balance sheet account reconciliations",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7336,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4150523245334625,
+          "matched_candidate_competency": "R"
+        },
+        "candidate_evidence": [
+          "R"
+        ]
+      },
+      {
+        "job_competency": "Supporting schedule maintenance",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7295,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44075724482536316,
+          "matched_candidate_competency": "R"
+        },
+        "candidate_evidence": [
+          "R"
+        ]
+      },
+      {
+        "job_competency": "Oil and gas industry experience",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4187,
+        "evidence": {
+          "tfidf_score": 0.11914719328677736,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.051303625519722,
+          "semantic_score": 0.3843277096748352,
+          "matched_candidate_competency": "Organization and time management"
+        },
+        "candidate_evidence": [
+          "Organization and time management"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Advanced Microsoft Excel"
+    ],
+    "partial_matches": [
+      "Accounting and financial principles",
+      "FERC accounting requirements",
+      "Deferred revenue accounting",
+      "Financial statement analysis"
+    ],
+    "weak_matches": [
+      "GAAP",
+      "Revenue accruals",
+      "Expense accruals",
+      "Gross margin analysis",
+      "Invoicing",
+      "Balance sheet account reconciliations",
+      "Supporting schedule maintenance",
+      "Oil and gas industry experience"
+    ],
+    "missing": [
+      "Closing journal entries"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Advanced Microsoft Excel"
+    ],
+    "partial_matches": [
+      "Accounting and financial principles",
+      "FERC accounting requirements",
+      "Deferred revenue accounting",
+      "Financial statement analysis"
+    ],
+    "competency_gaps": [
+      "GAAP",
+      "Revenue accruals",
+      "Expense accruals",
+      "Gross margin analysis",
+      "Invoicing",
+      "Balance sheet account reconciliations",
+      "Supporting schedule maintenance",
+      "Oil and gas industry experience",
+      "Closing journal entries"
+    ]
+  },
+  "counts": {
+    "requirements": 14,
+    "strength_matches": 1,
+    "partial_matches": 4,
+    "competency_gaps": 9
+  },
+  "latency_ms": 35.27,
+  "analyzed_at": "2026-10-03T17:29:42.248464+00:00"
+}

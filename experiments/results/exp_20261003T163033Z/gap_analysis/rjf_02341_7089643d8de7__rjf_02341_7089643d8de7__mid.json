@@ -1,0 +1,185 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02341_7089643d8de7",
+  "jd_id": "rjf_02341_7089643d8de7",
+  "pair_id": "rjf_02341_7089643d8de7",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "JDE World Homebuilder",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7301,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.43664056062698364,
+          "matched_candidate_competency": "Windows"
+        },
+        "candidate_evidence": [
+          "Windows"
+        ]
+      },
+      {
+        "job_competency": "JDE World Homebuilder module functionality",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.39,
+        "evidence": {
+          "tfidf_score": 0.016096882772131962,
+          "tfidf_matched_terms": [
+            "functionality",
+            "module"
+          ],
+          "bm25_score": 2.5108749630113705,
+          "semantic_score": 0.33796370029449463,
+          "matched_candidate_competency": "Developed modules and functionality for MAS 90 systems."
+        },
+        "candidate_evidence": [
+          "Developed modules and functionality for MAS 90 systems."
+        ]
+      },
+      {
+        "job_competency": "JDE Job Cost module functionality",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3939,
+        "evidence": {
+          "tfidf_score": 0.016096882772131962,
+          "tfidf_matched_terms": [
+            "functionality",
+            "module"
+          ],
+          "bm25_score": 2.5108749630113705,
+          "semantic_score": 0.29912951588630676,
+          "matched_candidate_competency": "Developed modules and functionality for MAS 90 systems."
+        },
+        "candidate_evidence": [
+          "Developed modules and functionality for MAS 90 systems."
+        ]
+      },
+      {
+        "job_competency": "JDE Procurement module functionality",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3866,
+        "evidence": {
+          "tfidf_score": 0.018577445367903882,
+          "tfidf_matched_terms": [
+            "functionality",
+            "module"
+          ],
+          "bm25_score": 2.5108749630113705,
+          "semantic_score": 0.3699888586997986,
+          "matched_candidate_competency": "Developed modules and functionality for MAS 90 systems."
+        },
+        "candidate_evidence": [
+          "Developed modules and functionality for MAS 90 systems."
+        ]
+      },
+      {
+        "job_competency": "JDE World to EnterpriseOne migration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6838,
+        "evidence": {
+          "tfidf_score": 0.007592811071432118,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 1.600624902647086,
+          "semantic_score": 0.2424677312374115,
+          "matched_candidate_competency": "Upgraded IIG enhancements to Sage MAS 4.50 and MAS 5.00 from older versions."
+        },
+        "candidate_evidence": [
+          "Upgraded IIG enhancements to Sage MAS 4.50 and MAS 5.00 from older versions."
+        ]
+      },
+      {
+        "job_competency": "Migration data preparation, conversion, and validation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6421,
+        "evidence": {
+          "tfidf_score": 0.149436838024146,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 2.1310902062119506,
+          "semantic_score": 0.23845823109149933,
+          "matched_candidate_competency": "Developed back-end code, client-side pages, databases, REST APIs, stored procedures and data-analysis modules."
+        },
+        "candidate_evidence": [
+          "Developed back-end code, client-side pages, databases, REST APIs, stored procedures and data-analysis modules."
+        ]
+      },
+      {
+        "job_competency": "Hands-on experience with JDE World and EnterpriseOne",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3885,
+        "evidence": {
+          "tfidf_score": 0.11565441720141127,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.4187803208791385,
+          "semantic_score": 0.44227927923202515,
+          "matched_candidate_competency": "Created Archicad and Revit plugins and cross-platform networking applications."
+        },
+        "candidate_evidence": [
+          "Created Archicad and Revit plugins and cross-platform networking applications."
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "JDE World Homebuilder module functionality",
+      "JDE Job Cost module functionality",
+      "JDE Procurement module functionality"
+    ],
+    "weak_matches": [
+      "JDE World Homebuilder",
+      "JDE World to EnterpriseOne migration",
+      "Migration data preparation, conversion, and validation",
+      "Hands-on experience with JDE World and EnterpriseOne"
+    ],
+    "missing": []
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "JDE World Homebuilder module functionality",
+      "JDE Job Cost module functionality",
+      "JDE Procurement module functionality"
+    ],
+    "competency_gaps": [
+      "JDE World Homebuilder",
+      "JDE World to EnterpriseOne migration",
+      "Migration data preparation, conversion, and validation",
+      "Hands-on experience with JDE World and EnterpriseOne"
+    ]
+  },
+  "counts": {
+    "requirements": 7,
+    "strength_matches": 0,
+    "partial_matches": 3,
+    "competency_gaps": 4
+  },
+  "latency_ms": 28.52,
+  "analyzed_at": "2026-10-03T17:29:45.237307+00:00"
+}

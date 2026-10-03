@@ -375,6 +375,26 @@ async def async_main(
         out = result.get("out_dir")
         return Path(out) if out else ROOT / "experiments" / "results"
 
+    if stage == "gold_set_build":
+        from app.services.gold_set.build import build_gold_set
+
+        result = build_gold_set(ROOT)
+        print(result)
+        return ROOT / "experiments" / "gold_set"
+
+    if stage == "gold_set_analyze":
+        from app.services.gold_set.analyze import run_gold_set_analyze
+
+        run_gold_set_analyze(ROOT)
+        return ROOT / "experiments" / "results" / "gold_set_analysis"
+
+    if stage == "classifier_eval":
+        from app.services.classifier_eval.pipeline import run_classifier_eval
+
+        result = run_classifier_eval(root=ROOT, settings=settings, smoke=smoke)
+        out = result.get("out_dir")
+        return Path(out) if out else ROOT / "experiments" / "results"
+
     if stage == "gap_sensitivity":
         if not source_experiment:
             raise SystemExit(
@@ -689,6 +709,9 @@ def main() -> None:
             "baseline",
             "gap_sensitivity",
             "fit_label_control",
+            "gold_set_build",
+            "gold_set_analyze",
+            "classifier_eval",
         ),
         default="baseline",
         help="Pipeline stage to run. Default remains baseline generation.",

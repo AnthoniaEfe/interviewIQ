@@ -1,0 +1,611 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00543_105cadbc3ea1",
+  "jd_id": "rjf_00543_105cadbc3ea1",
+  "pair_id": "rjf_00543_105cadbc3ea1",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Software Development Life Cycle",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6733,
+        "evidence": {
+          "tfidf_score": 0.015601691103181757,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 4.467962094684459,
+          "semantic_score": 0.4534669816493988,
+          "matched_candidate_competency": "Research and Development"
+        },
+        "candidate_evidence": [
+          "Research and Development"
+        ]
+      },
+      {
+        "job_competency": "Architecture patterns",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9289,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3555966317653656,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Solution requirements and architecture communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6415,
+        "evidence": {
+          "tfidf_score": 0.2600380701248477,
+          "tfidf_matched_terms": [
+            "and",
+            "communication",
+            "requirements"
+          ],
+          "bm25_score": 5.234571484392417,
+          "semantic_score": 0.41318055987358093,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Oracle Cloud Fusion Financials",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9555,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.22269241511821747,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Oracle Integration Cloud",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9472,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26381269097328186,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Cloud infrastructure solutions",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9297,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35161828994750977,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Oracle Cloud EPM Application",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9536,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.23220792412757874,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "BI Publisher Reports",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.953,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.23504847288131714,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "OTBI Reports",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9473,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.263729065656662,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Cloud migration",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9616,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.19216109812259674,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Cloud-centric engineering environments",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7037,
+        "evidence": {
+          "tfidf_score": 0.021719110878007906,
+          "tfidf_matched_terms": [
+            "engineering"
+          ],
+          "bm25_score": 4.0133331949479505,
+          "semantic_score": 0.29201647639274597,
+          "matched_candidate_competency": "Electrical Engineering"
+        },
+        "candidate_evidence": [
+          "Electrical Engineering"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7287,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4454781711101532,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Agile software development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6784,
+        "evidence": {
+          "tfidf_score": 0.01908831926731882,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 4.467962094684459,
+          "semantic_score": 0.4189430773258209,
+          "matched_candidate_competency": "Research and Development"
+        },
+        "candidate_evidence": [
+          "Research and Development"
+        ]
+      },
+      {
+        "job_competency": "SAFe",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9373,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3135043680667877,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Scrum",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.929,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3550247251987457,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "JIRA",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9325,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33728301525115967,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Peer review",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9259,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37026742100715637,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9219,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39031365513801575,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "CI/CD",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9216,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3920929729938507,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "End-to-end IT processes",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7191,
+        "evidence": {
+          "tfidf_score": 0.026648962908456253,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 1.8021769797746456,
+          "semantic_score": 0.3540049195289612,
+          "matched_candidate_competency": "Designed products according to electrician and contractor requirements."
+        },
+        "candidate_evidence": [
+          "Designed products according to electrician and contractor requirements."
+        ]
+      },
+      {
+        "job_competency": "Troubleshooting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7316,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.42778855562210083,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Root-cause analysis",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.938,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3100477457046509,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Problem solving",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9202,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39912688732147217,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Collaboration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.716,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5251201391220093,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Critical thinking",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9393,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30328619480133057,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Team building",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6613,
+        "evidence": {
+          "tfidf_score": 0.03313717242917219,
+          "tfidf_matched_terms": [
+            "building"
+          ],
+          "bm25_score": 4.0133331949479505,
+          "semantic_score": 0.5482989549636841,
+          "matched_candidate_competency": "Relationship Building"
+        },
+        "candidate_evidence": [
+          "Relationship Building"
+        ]
+      },
+      {
+        "job_competency": "Presentation skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7263,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4607628583908081,
+          "matched_candidate_competency": "AutoCAD Electrical"
+        },
+        "candidate_evidence": [
+          "AutoCAD Electrical"
+        ]
+      },
+      {
+        "job_competency": "Verbal, interpersonal, and written communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3778,
+        "evidence": {
+          "tfidf_score": 0.22758599086336434,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 5.234571484392417,
+          "semantic_score": 0.6687062978744507,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Self-motivation and proactivity",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1574,
+        "evidence": {
+          "tfidf_score": 0.2871142530599198,
+          "tfidf_matched_terms": [
+            "and",
+            "motivation",
+            "self"
+          ],
+          "bm25_score": 10.258518873232319,
+          "semantic_score": 0.8857262134552002,
+          "matched_candidate_competency": "Self-Motivation"
+        },
+        "candidate_evidence": [
+          "Self-Motivation"
+        ]
+      },
+      {
+        "job_competency": "Private, public, and hybrid cloud infrastructure",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.433,
+        "evidence": {
+          "tfidf_score": 0.18070796347398163,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.1897745936472996,
+          "semantic_score": 0.2666604816913605,
+          "matched_candidate_competency": "Training and Mentoring"
+        },
+        "candidate_evidence": [
+          "Training and Mentoring"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Self-motivation and proactivity"
+    ],
+    "partial_matches": [
+      "Verbal, interpersonal, and written communication"
+    ],
+    "weak_matches": [
+      "Software Development Life Cycle",
+      "Solution requirements and architecture communication",
+      "Cloud-centric engineering environments",
+      "SQL",
+      "Agile software development",
+      "End-to-end IT processes",
+      "Troubleshooting",
+      "Collaboration",
+      "Team building",
+      "Presentation skills",
+      "Private, public, and hybrid cloud infrastructure"
+    ],
+    "missing": [
+      "Architecture patterns",
+      "Oracle Cloud Fusion Financials",
+      "Oracle Integration Cloud",
+      "Cloud infrastructure solutions",
+      "Oracle Cloud EPM Application",
+      "BI Publisher Reports",
+      "OTBI Reports",
+      "Cloud migration",
+      "SAFe",
+      "Scrum",
+      "JIRA",
+      "Peer review",
+      "Git",
+      "CI/CD",
+      "Root-cause analysis",
+      "Problem solving",
+      "Critical thinking"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Self-motivation and proactivity"
+    ],
+    "partial_matches": [
+      "Verbal, interpersonal, and written communication"
+    ],
+    "competency_gaps": [
+      "Software Development Life Cycle",
+      "Solution requirements and architecture communication",
+      "Cloud-centric engineering environments",
+      "SQL",
+      "Agile software development",
+      "End-to-end IT processes",
+      "Troubleshooting",
+      "Collaboration",
+      "Team building",
+      "Presentation skills",
+      "Private, public, and hybrid cloud infrastructure",
+      "Architecture patterns",
+      "Oracle Cloud Fusion Financials",
+      "Oracle Integration Cloud",
+      "Cloud infrastructure solutions",
+      "Oracle Cloud EPM Application",
+      "BI Publisher Reports",
+      "OTBI Reports",
+      "Cloud migration",
+      "SAFe",
+      "Scrum",
+      "JIRA",
+      "Peer review",
+      "Git",
+      "CI/CD",
+      "Root-cause analysis",
+      "Problem solving",
+      "Critical thinking"
+    ]
+  },
+  "counts": {
+    "requirements": 30,
+    "strength_matches": 1,
+    "partial_matches": 1,
+    "competency_gaps": 28
+  },
+  "latency_ms": 63.74,
+  "analyzed_at": "2026-10-03T17:29:42.938461+00:00"
+}

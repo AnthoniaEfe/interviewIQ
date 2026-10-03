@@ -1,0 +1,329 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01064_a885630f6c0c",
+  "jd_id": "rjf_01064_a885630f6c0c",
+  "pair_id": "rjf_01064_a885630f6c0c",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Docker",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9481,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.259737491607666,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Kubernetes",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9453,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2735443115234375,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Relational databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7259,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4633007049560547,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "RESTful architecture",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9325,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33729076385498047,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Microservices",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.723,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.48141059279441833,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Amazon Web Services (AWS)",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6708,
+        "evidence": {
+          "tfidf_score": 0.006456321361390276,
+          "tfidf_matched_terms": [
+            "services"
+          ],
+          "bm25_score": 2.556417296374701,
+          "semantic_score": 0.3913341462612152,
+          "matched_candidate_competency": "Performed data entry for United Way, JVC, and Bibby Financial Services"
+        },
+        "candidate_evidence": [
+          "Performed data entry for United Way, JVC, and Bibby Financial Services"
+        ]
+      },
+      {
+        "job_competency": "Continuous Integration and Continuous Delivery",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7132,
+        "evidence": {
+          "tfidf_score": 0.1797499852803744,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.5929961106410937,
+          "semantic_score": 0.3124171793460846,
+          "matched_candidate_competency": "Identified and resolved system and account issues"
+        },
+        "candidate_evidence": [
+          "Identified and resolved system and account issues"
+        ]
+      },
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7333,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41677942872047424,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Professional experience",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9245,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3774363398551941,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Bachelor's or master's degree in computer science or engineering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6512,
+        "evidence": {
+          "tfidf_score": 0.030858220536391326,
+          "tfidf_matched_terms": [
+            "in",
+            "s"
+          ],
+          "bm25_score": 4.152395152454188,
+          "semantic_score": 0.23892256617546082,
+          "matched_candidate_competency": "Entered employees\u2019 sick, vacation, and accrued time for Aaron\u2019s corporate office"
+        },
+        "candidate_evidence": [
+          "Entered employees\u2019 sick, vacation, and accrued time for Aaron\u2019s corporate office"
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5532,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39027607440948486,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Apache Kafka",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5754,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.20527994632720947,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Financial planning system integrations",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3925,
+        "evidence": {
+          "tfidf_score": 0.03049166666895688,
+          "tfidf_matched_terms": [
+            "financial",
+            "planning",
+            "system"
+          ],
+          "bm25_score": 2.8337951746672707,
+          "semantic_score": 0.43252500891685486,
+          "matched_candidate_competency": "Identified and resolved system and account issues"
+        },
+        "candidate_evidence": [
+          "Identified and resolved system and account issues"
+        ]
+      },
+      {
+        "job_competency": "Anaplan",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5678,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26814180612564087,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Oracle financial planning systems",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2309,
+        "evidence": {
+          "tfidf_score": 0.02285908336878389,
+          "tfidf_matched_terms": [
+            "financial",
+            "planning",
+            "systems"
+          ],
+          "bm25_score": 4.664257490504117,
+          "semantic_score": 0.3850482702255249,
+          "matched_candidate_competency": "Tax form systems"
+        },
+        "candidate_evidence": [
+          "Tax form systems"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Oracle financial planning systems"
+    ],
+    "weak_matches": [
+      "Relational databases",
+      "Microservices",
+      "Amazon Web Services (AWS)",
+      "Continuous Integration and Continuous Delivery",
+      "Java",
+      "Bachelor's or master's degree in computer science or engineering",
+      "Financial planning system integrations"
+    ],
+    "missing": [
+      "Docker",
+      "Kubernetes",
+      "RESTful architecture",
+      "Professional experience",
+      "Python",
+      "Apache Kafka",
+      "Anaplan"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Oracle financial planning systems"
+    ],
+    "competency_gaps": [
+      "Relational databases",
+      "Microservices",
+      "Amazon Web Services (AWS)",
+      "Continuous Integration and Continuous Delivery",
+      "Java",
+      "Bachelor's or master's degree in computer science or engineering",
+      "Financial planning system integrations",
+      "Docker",
+      "Kubernetes",
+      "RESTful architecture",
+      "Professional experience",
+      "Python",
+      "Apache Kafka",
+      "Anaplan"
+    ]
+  },
+  "counts": {
+    "requirements": 15,
+    "strength_matches": 0,
+    "partial_matches": 1,
+    "competency_gaps": 14
+  },
+  "latency_ms": 37.1,
+  "analyzed_at": "2026-10-03T17:29:43.749831+00:00"
+}

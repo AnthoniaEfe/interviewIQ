@@ -1,0 +1,278 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00561_aaa29a0d910f",
+  "jd_id": "rjf_00561_aaa29a0d910f",
+  "pair_id": "rjf_00561_aaa29a0d910f",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Accounting and financial principles",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3617,
+        "evidence": {
+          "tfidf_score": 0.18346441106546338,
+          "tfidf_matched_terms": [
+            "and",
+            "financial"
+          ],
+          "bm25_score": 5.136529859746569,
+          "semantic_score": 0.49588125944137573,
+          "matched_candidate_competency": "Financial services"
+        },
+        "candidate_evidence": [
+          "Financial services"
+        ]
+      },
+      {
+        "job_competency": "Advanced Microsoft Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1719,
+        "evidence": {
+          "tfidf_score": 0.006608464033105488,
+          "tfidf_matched_terms": [
+            "excel"
+          ],
+          "bm25_score": 5.136529859746569,
+          "semantic_score": 0.8068927526473999,
+          "matched_candidate_competency": "MS Excel"
+        },
+        "candidate_evidence": [
+          "MS Excel"
+        ]
+      },
+      {
+        "job_competency": "GAAP accounting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9334,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33315569162368774,
+          "matched_candidate_competency": "Software requirements analysis"
+        },
+        "candidate_evidence": [
+          "Software requirements analysis"
+        ]
+      },
+      {
+        "job_competency": "FERC accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7282,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4487597942352295,
+          "matched_candidate_competency": "Software requirements analysis"
+        },
+        "candidate_evidence": [
+          "Software requirements analysis"
+        ]
+      },
+      {
+        "job_competency": "Month-end close accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6817,
+        "evidence": {
+          "tfidf_score": 0.011177856933155325,
+          "tfidf_matched_terms": [
+            "end"
+          ],
+          "bm25_score": 3.3618138030991336,
+          "semantic_score": 0.24024388194084167,
+          "matched_candidate_competency": "Performed regression, integration, functional, end-to-end, acceptance, structured, and workflow testing."
+        },
+        "candidate_evidence": [
+          "Performed regression, integration, functional, end-to-end, acceptance, structured, and workflow testing."
+        ]
+      },
+      {
+        "job_competency": "Journal entries and accruals",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6987,
+        "evidence": {
+          "tfidf_score": 0.1639626978087625,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5306993937575886,
+          "semantic_score": 0.2869304418563843,
+          "matched_candidate_competency": "Validated transactions and XML requests and responses using SQL and SOAP UI."
+        },
+        "candidate_evidence": [
+          "Validated transactions and XML requests and responses using SQL and SOAP UI."
+        ]
+      },
+      {
+        "job_competency": "Financial statement analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3768,
+        "evidence": {
+          "tfidf_score": 0.014750996179004909,
+          "tfidf_matched_terms": [
+            "analysis",
+            "financial"
+          ],
+          "bm25_score": 5.136529859746569,
+          "semantic_score": 0.4711887836456299,
+          "matched_candidate_competency": "Financial services"
+        },
+        "candidate_evidence": [
+          "Financial services"
+        ]
+      },
+      {
+        "job_competency": "Gross margin analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6573,
+        "evidence": {
+          "tfidf_score": 0.006608464033105488,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 4.445414703654497,
+          "semantic_score": 0.2376566231250763,
+          "matched_candidate_competency": "Software requirements analysis"
+        },
+        "candidate_evidence": [
+          "Software requirements analysis"
+        ]
+      },
+      {
+        "job_competency": "Invoicing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7197,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5017226934432983,
+          "matched_candidate_competency": "Software requirements analysis"
+        },
+        "candidate_evidence": [
+          "Software requirements analysis"
+        ]
+      },
+      {
+        "job_competency": "Balance sheet reconciliations",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9357,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32166463136672974,
+          "matched_candidate_competency": "Software requirements analysis"
+        },
+        "candidate_evidence": [
+          "Software requirements analysis"
+        ]
+      },
+      {
+        "job_competency": "Supporting schedule maintenance",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9316,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3418639898300171,
+          "matched_candidate_competency": "Software requirements analysis"
+        },
+        "candidate_evidence": [
+          "Software requirements analysis"
+        ]
+      },
+      {
+        "job_competency": "Oil and gas industry experience",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4222,
+        "evidence": {
+          "tfidf_score": 0.14463012811044398,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5306993937575886,
+          "semantic_score": 0.27010130882263184,
+          "matched_candidate_competency": "Validated transactions and XML requests and responses using SQL and SOAP UI."
+        },
+        "candidate_evidence": [
+          "Validated transactions and XML requests and responses using SQL and SOAP UI."
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Advanced Microsoft Excel"
+    ],
+    "partial_matches": [
+      "Accounting and financial principles",
+      "Financial statement analysis"
+    ],
+    "weak_matches": [
+      "FERC accounting",
+      "Month-end close accounting",
+      "Journal entries and accruals",
+      "Gross margin analysis",
+      "Invoicing",
+      "Oil and gas industry experience"
+    ],
+    "missing": [
+      "GAAP accounting",
+      "Balance sheet reconciliations",
+      "Supporting schedule maintenance"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Advanced Microsoft Excel"
+    ],
+    "partial_matches": [
+      "Accounting and financial principles",
+      "Financial statement analysis"
+    ],
+    "competency_gaps": [
+      "FERC accounting",
+      "Month-end close accounting",
+      "Journal entries and accruals",
+      "Gross margin analysis",
+      "Invoicing",
+      "Oil and gas industry experience",
+      "GAAP accounting",
+      "Balance sheet reconciliations",
+      "Supporting schedule maintenance"
+    ]
+  },
+  "counts": {
+    "requirements": 12,
+    "strength_matches": 1,
+    "partial_matches": 2,
+    "competency_gaps": 9
+  },
+  "latency_ms": 36.05,
+  "analyzed_at": "2026-10-03T17:29:43.061432+00:00"
+}

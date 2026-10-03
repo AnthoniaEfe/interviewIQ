@@ -1,0 +1,963 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "extraction",
+  "profile_id": "rjf_00835_8be9b126f07c",
+  "jd_id": "rjf_00835_8be9b126f07c",
+  "pair_id": "rjf_00835_8be9b126f07c",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Secretarial, receptionist, customer service, office support, data entry, and transcription experience, with skills in Microsoft Office, payroll, personnel support, travel, vouchers, file maintenance, and reservation services.",
+    "seniority_indicators": [
+      "Co-Owner",
+      "Administrative Assistant",
+      "Support Staff Secretary"
+    ],
+    "education": [
+      {
+        "degree": "High School Diploma",
+        "institution": "Calvin Coolidge High School",
+        "field": null,
+        "year": "1980",
+        "source_text": "High School Diploma 1980"
+      },
+      {
+        "degree": null,
+        "institution": "Phoenix University",
+        "field": "Business Administration",
+        "year": "Expected September 2014",
+        "source_text": "Business Administration; Expected Date of Graduation September 2014"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Data Entry Clerk",
+        "employer": "Cdr Maguire",
+        "duration": "04/2009 to 11/2009",
+        "responsibilities": [
+          "Keyed consumer credit information and numerical and alphabetical data.",
+          "Compiled and sent statistical reports.",
+          "Worked in a production environment while maintaining accuracy and productivity."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Computer literacy"
+        ],
+        "source_text": "Keyed consumer credit information and compiled statistical reports."
+      },
+      {
+        "title": "Administrative Assistant",
+        "employer": "Pepsico",
+        "duration": "01/2008 to 03/2009",
+        "responsibilities": [
+          "Answered incoming calls and provided customer service.",
+          "Greeted visitors and provided applications and tours to prospective tenants.",
+          "Compiled tenant packet information and routed maintenance requests.",
+          "Typed tenant letters and memos using Microsoft Office.",
+          "Processed biweekly payroll using automated payroll software.",
+          "Maintained employee leave records and ordered office and building supplies.",
+          "Retrieved information using the internet and filed, copied, and faxed documents."
+        ],
+        "achievements": [],
+        "technologies": [
+          "MSOffice2003",
+          "Automated payroll software",
+          "Internet",
+          "Xerox/fax"
+        ],
+        "source_text": "Processed biweekly payroll and maintained employee leave records."
+      },
+      {
+        "title": "Co-Owner",
+        "employer": "Marriott International",
+        "duration": "01/2005 to 10/2007",
+        "responsibilities": [
+          "Inspected homes requiring work and bid on jobs.",
+          "Prepared and submitted client invoices and payment vouchers.",
+          "Cleaned vacant homes and removed debris.",
+          "Maintained supplies and budget.",
+          "Used the internet and MapQuest to locate addresses."
+        ],
+        "achievements": [],
+        "technologies": [
+          "MSOffice2007",
+          "Excel",
+          "Internet",
+          "MapQuest"
+        ],
+        "source_text": "Prepared invoices and vouchers and maintained supplies and budget."
+      },
+      {
+        "title": "Support Staff Secretary",
+        "employer": "Food and Drug Administration",
+        "duration": "01/1 to 01/1",
+        "responsibilities": [
+          "Received calls, greeted visitors, and directed them to appropriate staff.",
+          "Maintained the Director's calendar and scheduled appointments and meetings.",
+          "Organized and maintained files, manuals, periodicals, and meeting materials.",
+          "Reserved conference and banquet rooms and audiovisual equipment.",
+          "Maintained Executive Council agendas and sent updates and confirmations.",
+          "Typed letters, memos, and weekly activity reports using Microsoft Office, Excel, and Outlook.",
+          "Maintained time and attendance and travel and training requests.",
+          "Took notes at weekly staff meetings.",
+          "Reviewed incoming documents and routed them to supervisors or staff members.",
+          "Scanned correspondence and documents.",
+          "Entered consumer complaints and concerns in Excel.",
+          "Converted written drafts into charts, graphs, and reports.",
+          "Supported other clerical staff with duties and projects."
+        ],
+        "achievements": [],
+        "technologies": [
+          "MSOffice",
+          "Excel",
+          "Outlook",
+          "PowerPoint",
+          "MS Word"
+        ],
+        "source_text": "Maintained calendars, files, meeting logistics, correspondence, and administrative records."
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "Microsoft Word",
+        "original_mentions": [
+          "MSWord 2007",
+          "MSOffice2003",
+          "MSOffice2007",
+          "MS Word",
+          "Word"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "MSWord 2007; MS Word; Word",
+          "source_section": "Summary; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Excel",
+        "original_mentions": [
+          "Excel"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Excel",
+          "source_section": "Summary; Experience; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft PowerPoint",
+        "original_mentions": [
+          "PowerPoint"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "PowerPoint",
+          "source_section": "Summary; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Outlook",
+        "original_mentions": [
+          "Outlook"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Outlook",
+          "source_section": "Summary; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Paradox",
+        "original_mentions": [
+          "Paradox"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Paradox",
+          "source_section": "Summary; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data entry",
+        "original_mentions": [
+          "Data Entry",
+          "Data Entry Clerk"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Data Entry Clerk; Data Entry",
+          "source_section": "Experience; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Payroll software",
+        "original_mentions": [
+          "Automated payroll software",
+          "ADP Payroll",
+          "Payroll Software"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Processed biweekly payroll using automated payroll software",
+          "source_section": "Experience; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Internet research",
+        "original_mentions": [
+          "Internet"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Gathered and retrieved information using the internet",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "MapQuest",
+        "original_mentions": [
+          "MapQuest"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "MapQuest",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Xerox and faxing",
+        "original_mentions": [
+          "Xerox",
+          "faxed"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Filed, Xerox and faxed document",
+          "source_section": "Experience; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Transcription",
+        "original_mentions": [
+          "Transcriber"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Data Entry/Transcriber",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Attention to detail",
+        "original_mentions": [
+          "good attention to detail"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Good attention to detail",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Working to deadlines",
+        "original_mentions": [
+          "ability to work to deadlines"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Ability to work to deadlines",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accuracy",
+        "original_mentions": [
+          "without mistakes"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Work fast but without mistakes",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Customer service",
+        "original_mentions": [
+          "Customer Service",
+          "customer service"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Customer service",
+          "source_section": "Summary; Experience; Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Administrative support",
+        "original_mentions": [
+          "Office Support",
+          "Administrative Assistant",
+          "Support Staff Secretary",
+          "Secretarial"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Office Support; Administrative Assistant; Support Staff Secretary",
+          "source_section": "Summary; Experience; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Reception and visitor services",
+        "original_mentions": [
+          "Receptionist",
+          "greeted visitors",
+          "Guest services"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Receptionist; greeted visitors; Guest services",
+          "source_section": "Summary; Highlights; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Payroll administration",
+        "original_mentions": [
+          "Payroll",
+          "biweekly payroll",
+          "ADP Payroll",
+          "Automated Payroll"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Processed biweekly payroll",
+          "source_section": "Experience; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Personnel administration",
+        "original_mentions": [
+          "Personnel",
+          "employee leave record",
+          "Time & Attendance"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Maintained employees leave record",
+          "source_section": "Summary; Experience; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Travel coordination",
+        "original_mentions": [
+          "Travel Foreign and Domestic",
+          "travel and training request"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Travel Foreign and Domestic; travel and training request",
+          "source_section": "Summary; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Inventory and supply management",
+        "original_mentions": [
+          "Inventory control procedures",
+          "Upkeep and Maintenance of Files and Supplies",
+          "ordering",
+          "Office Supplies"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Inventory control procedures; upkeep and ordering of supplies",
+          "source_section": "Highlights; Summary; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Invoicing and vouchers",
+        "original_mentions": [
+          "Invoices",
+          "Vouchers",
+          "Prepared and submitted invoices"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Prepared and submitted invoices and vouchers",
+          "source_section": "Summary; Experience; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Retail operations",
+        "original_mentions": [
+          "Merchandising expertise",
+          "Loss prevention",
+          "Cash register operations",
+          "Product promotions",
+          "Retail Sales"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Merchandising expertise; loss prevention; cash register operations",
+          "source_section": "Highlights; Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Equal Employment Opportunity policy and procedures",
+        "original_mentions": [
+          "EEO Policy and Procedures",
+          "Equal Employment Opportunity",
+          "Eeo"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "EEO Policy and Procedures",
+          "source_section": "Summary; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Training and development",
+        "original_mentions": [
+          "Training and Development",
+          "Training"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Training and Development",
+          "source_section": "Summary; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Reservation services",
+        "original_mentions": [
+          "Reservationist"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Reservationist",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ]
+  },
+  "job": {
+    "title": "Software Engineer Intern",
+    "seniority": "Intern",
+    "years_of_experience": null,
+    "responsibilities": [
+      "Execute the product vision.",
+      "Optimize the user experience and functionality of platforms.",
+      "Work in software application development.",
+      "Participate in group learning.",
+      "Voice ideas to a captive audience.",
+      "Partner with Milliman in delivering products and services."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Computer science fundamentals",
+        "original_mentions": [
+          "understanding of computer science fundamentals, including data structures and algorithms"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Ability to demonstrate an understanding of computer science fundamentals, including data structures and algorithms.",
+          "source_section": "Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data structures and algorithms",
+        "original_mentions": [
+          "data structures and algorithms"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Ability to demonstrate an understanding of computer science fundamentals, including data structures and algorithms.",
+          "source_section": "Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Software application development",
+        "original_mentions": [
+          "software application development"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "You will work in software application development, using technologies such as .NET, C#, JavaScript, TypeScript, Angular, and SQL.",
+          "source_section": "Role description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Strong communication skills",
+        "original_mentions": [
+          "strong communication skills"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.92,
+        "source": {
+          "source_text": "We are looking for someone with strong communication skills to create dynamic relationships, both internally and externally.",
+          "source_section": "Were Looking For",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Relationship building",
+        "original_mentions": [
+          "Relationship builders",
+          "create dynamic relationships, both internally and externally"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.88,
+        "source": {
+          "source_text": "We are looking for someone with strong communication skills to create dynamic relationships, both internally and externally.",
+          "source_section": "Were Looking For",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Foundational database knowledge",
+        "original_mentions": [
+          "foundational knowledge of how to make databases ... user-friendly, functional, and scalable"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.84,
+        "source": {
+          "source_text": "You should have a foundational knowledge of how to make databases and interfaces user-friendly, functional, and scalable.",
+          "source_section": "Role description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "User interface development",
+        "original_mentions": [
+          "foundational knowledge of how to make ... interfaces user-friendly, functional, and scalable"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.84,
+        "source": {
+          "source_text": "You should have a foundational knowledge of how to make databases and interfaces user-friendly, functional, and scalable.",
+          "source_section": "Role description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "On-site work availability",
+        "original_mentions": [
+          "Willing to work on-site"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Willing to work on-site, we are located at 180th and Dodge in Omaha NE for the duration of the internship.",
+          "source_section": "Requirements",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "Object-oriented programming",
+        "original_mentions": [
+          "programming experience in an object-oriented language (Optional)"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "One year of programming experience in an object-oriented language (Optional).",
+          "source_section": "Requirements",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": ".NET",
+        "original_mentions": [
+          ".NET"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.85,
+        "source": {
+          "source_text": "using technologies such as .NET, C#, JavaScript, TypeScript, Angular, and SQL",
+          "source_section": "Role description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "C#",
+        "original_mentions": [
+          "C#"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.85,
+        "source": {
+          "source_text": "using technologies such as .NET, C#, JavaScript, TypeScript, Angular, and SQL",
+          "source_section": "Role description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "JavaScript",
+        "original_mentions": [
+          "JavaScript"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.85,
+        "source": {
+          "source_text": "using technologies such as .NET, C#, JavaScript, TypeScript, Angular, and SQL",
+          "source_section": "Role description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "TypeScript",
+        "original_mentions": [
+          "TypeScript"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.85,
+        "source": {
+          "source_text": "using technologies such as .NET, C#, JavaScript, TypeScript, Angular, and SQL",
+          "source_section": "Role description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Angular",
+        "original_mentions": [
+          "Angular"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.85,
+        "source": {
+          "source_text": "using technologies such as .NET, C#, JavaScript, TypeScript, Angular, and SQL",
+          "source_section": "Role description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.85,
+        "source": {
+          "source_text": "using technologies such as .NET, C#, JavaScript, TypeScript, Angular, and SQL",
+          "source_section": "Role description",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [
+      "Pursuing a Bachelor or Master's degree in Engineering, Computer Science, Management Information or related field, or equivalent experience."
+    ],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Health insurance",
+        "original_mentions": [
+          "health insurance"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.72,
+        "source": {
+          "source_text": "change the landscape of health insurance with new and extraordinary ideas",
+          "source_section": "Were Looking For",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Employee benefit insurance plans",
+        "original_mentions": [
+          "employee benefit insurance plans"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.8,
+        "source": {
+          "source_text": "design and administration of their employee benefit insurance plans",
+          "source_section": "Company description",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Accuracy and timeliness",
+        "original_mentions": [
+          "accurate, on-time and on-point"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.84,
+        "source": {
+          "source_text": "We aim for 100% in everything we do which means being accurate, on-time and on-point for our customers needs.",
+          "source_section": "Were Looking For",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Innovation",
+        "original_mentions": [
+          "Innovation is at the core of our DNA"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.82,
+        "source": {
+          "source_text": "Innovation is at the core of our DNA",
+          "source_section": "Were Looking For",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Learning agility",
+        "original_mentions": [
+          "great employee can learn almost anything"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.82,
+        "source": {
+          "source_text": "We do not expect expertise in everything, but we believe great employee can learn almost anything.",
+          "source_section": "Were Looking For",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Growth mindset",
+        "original_mentions": [
+          "Growth mindset"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Growth mindset.",
+          "source_section": "Were Looking For",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [],
+    "system_design_requirements": [],
+    "competencies": [
+      {
+        "normalized_label": "In-person internship in Omaha, Nebraska",
+        "original_mentions": [
+          "This internship is in person in Omaha, NE for the duration of the internship"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "This internship is in person in Omaha, NE for the duration of the internship.",
+          "source_section": "Position logistics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "School-year work availability",
+        "original_mentions": [
+          "approximately 20 hours per week during the school year",
+          "15-20 hours per week during the school year"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Candidates will be expected to work approximately 20 hours per week during the school year.",
+          "source_section": "Position logistics",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Summer work availability",
+        "original_mentions": [
+          "40 hours during the summer"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "40 hours during the summer",
+          "source_section": "What We Offer",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Confident professionalism",
+        "original_mentions": [
+          "Confident professionals"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.78,
+        "source": {
+          "source_text": "Confident professionals.",
+          "source_section": "Were Looking For",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Client feedback responsiveness",
+        "original_mentions": [
+          "proactively respond to client feedback"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.82,
+        "source": {
+          "source_text": "We proactively respond to client feedback in an effort to change the landscape of health insurance",
+          "source_section": "Were Looking For",
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 2065,
+    "output_tokens": 2444,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0031577,
+    "latency_ms": 15798.49,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1611,
+    "output_tokens": 2066,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0028014,
+    "latency_ms": 14430.25,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-10-03T16:49:55.788420+00:00",
+  "reused_from_experiment": null
+}

@@ -1,0 +1,356 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00123_56a711ff78e1",
+  "jd_id": "rjf_00123_56a711ff78e1",
+  "pair_id": "rjf_00123_56a711ff78e1",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Apache Spark",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.951,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24523203074932098,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Big data technologies",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9306,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.347072035074234,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Software engineering or data engineering",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3804,
+        "evidence": {
+          "tfidf_score": 0.04694070794633547,
+          "tfidf_matched_terms": [
+            "engineering"
+          ],
+          "bm25_score": 7.311693221260652,
+          "semantic_score": 0.411135733127594,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Query and performance tuning",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.715,
+        "evidence": {
+          "tfidf_score": 0.22801924174516225,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.311574563818254,
+          "semantic_score": 0.22576263546943665,
+          "matched_candidate_competency": "Analyzed and resolved design and equipment problems."
+        },
+        "candidate_evidence": [
+          "Analyzed and resolved design and equipment problems."
+        ]
+      },
+      {
+        "job_competency": "Troubleshooting and debugging",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7029,
+        "evidence": {
+          "tfidf_score": 0.26969996522793177,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.311574563818254,
+          "semantic_score": 0.2702512741088867,
+          "matched_candidate_competency": "Analyzed and resolved design and equipment problems."
+        },
+        "candidate_evidence": [
+          "Analyzed and resolved design and equipment problems."
+        ]
+      },
+      {
+        "job_competency": "Python, Scala, or Java",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9509,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2455569952726364,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Cloud infrastructure and services",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6919,
+        "evidence": {
+          "tfidf_score": 0.2280192417451623,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.311574563818254,
+          "semantic_score": 0.3702636659145355,
+          "matched_candidate_competency": "Analyzed and resolved design and equipment problems."
+        },
+        "candidate_evidence": [
+          "Analyzed and resolved design and equipment problems."
+        ]
+      },
+      {
+        "job_competency": "CI/CD and development tooling",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6953,
+        "evidence": {
+          "tfidf_score": 0.20113387121571677,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.311574563818254,
+          "semantic_score": 0.36872872710227966,
+          "matched_candidate_competency": "Analyzed and resolved design and equipment problems."
+        },
+        "candidate_evidence": [
+          "Analyzed and resolved design and equipment problems."
+        ]
+      },
+      {
+        "job_competency": "Unit and integration testing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6447,
+        "evidence": {
+          "tfidf_score": 0.26020327572183105,
+          "tfidf_matched_terms": [
+            "and",
+            "testing"
+          ],
+          "bm25_score": 3.8066509004527966,
+          "semantic_score": 0.38510531187057495,
+          "matched_candidate_competency": "Power Quality Ground Testing"
+        },
+        "candidate_evidence": [
+          "Power Quality Ground Testing"
+        ]
+      },
+      {
+        "job_competency": "Automation and orchestration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3671,
+        "evidence": {
+          "tfidf_score": 0.34520726320845757,
+          "tfidf_matched_terms": [
+            "and",
+            "automation"
+          ],
+          "bm25_score": 3.655846610630326,
+          "semantic_score": 0.695084810256958,
+          "matched_candidate_competency": "Substation automation"
+        },
+        "candidate_evidence": [
+          "Substation automation"
+        ]
+      },
+      {
+        "job_competency": "REST APIs",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.938,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31003639101982117,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "BI tools and SQL interfaces",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6487,
+        "evidence": {
+          "tfidf_score": 0.21927161554910565,
+          "tfidf_matched_terms": [
+            "and",
+            "interfaces"
+          ],
+          "bm25_score": 4.864618131436764,
+          "semantic_score": 0.282096266746521,
+          "matched_candidate_competency": "Human-machine interfaces"
+        },
+        "candidate_evidence": [
+          "Human-machine interfaces"
+        ]
+      },
+      {
+        "job_competency": "Databricks",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9277,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36159658432006836,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Customer-facing technical architecture or consulting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6887,
+        "evidence": {
+          "tfidf_score": 0.0044728056414652835,
+          "tfidf_matched_terms": [
+            "customer"
+          ],
+          "bm25_score": 2.06745517689057,
+          "semantic_score": 0.4798961579799652,
+          "matched_candidate_competency": "Generated Electrical Load Analysis for 767 and 777 airplanes to meet FAA and customer requirements."
+        },
+        "candidate_evidence": [
+          "Generated Electrical Load Analysis for 767 and 777 airplanes to meet FAA and customer requirements."
+        ]
+      },
+      {
+        "job_competency": "Machine learning model engineering",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3984,
+        "evidence": {
+          "tfidf_score": 0.036379065941470626,
+          "tfidf_matched_terms": [
+            "engineering",
+            "machine"
+          ],
+          "bm25_score": 4.864618131436764,
+          "semantic_score": 0.32423490285873413,
+          "matched_candidate_competency": "Human-machine interfaces"
+        },
+        "candidate_evidence": [
+          "Human-machine interfaces"
+        ]
+      },
+      {
+        "job_competency": "MLflow",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5611,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3240196406841278,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Software engineering or data engineering",
+      "Automation and orchestration"
+    ],
+    "weak_matches": [
+      "Query and performance tuning",
+      "Troubleshooting and debugging",
+      "Cloud infrastructure and services",
+      "CI/CD and development tooling",
+      "Unit and integration testing",
+      "BI tools and SQL interfaces",
+      "Customer-facing technical architecture or consulting",
+      "Machine learning model engineering"
+    ],
+    "missing": [
+      "Apache Spark",
+      "Big data technologies",
+      "Python, Scala, or Java",
+      "REST APIs",
+      "Databricks",
+      "MLflow"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Software engineering or data engineering",
+      "Automation and orchestration"
+    ],
+    "competency_gaps": [
+      "Query and performance tuning",
+      "Troubleshooting and debugging",
+      "Cloud infrastructure and services",
+      "CI/CD and development tooling",
+      "Unit and integration testing",
+      "BI tools and SQL interfaces",
+      "Customer-facing technical architecture or consulting",
+      "Machine learning model engineering",
+      "Apache Spark",
+      "Big data technologies",
+      "Python, Scala, or Java",
+      "REST APIs",
+      "Databricks",
+      "MLflow"
+    ]
+  },
+  "counts": {
+    "requirements": 16,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 14
+  },
+  "latency_ms": 44.79,
+  "analyzed_at": "2026-10-03T17:29:42.407818+00:00"
+}

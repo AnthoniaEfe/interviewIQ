@@ -1,0 +1,289 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02971_a577d237d109",
+  "jd_id": "rjf_02971_a577d237d109",
+  "pair_id": "rjf_02971_a577d237d109",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Salesforce Industries Communications Cloud",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9408,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2960212528705597,
+          "matched_candidate_competency": "Manual Testing"
+        },
+        "candidate_evidence": [
+          "Manual Testing"
+        ]
+      },
+      {
+        "job_competency": "Salesforce CRM (SFDC)",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9316,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34192514419555664,
+          "matched_candidate_competency": "Manual Testing"
+        },
+        "candidate_evidence": [
+          "Manual Testing"
+        ]
+      },
+      {
+        "job_competency": "Vlocity",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9323,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3386862874031067,
+          "matched_candidate_competency": "Manual Testing"
+        },
+        "candidate_evidence": [
+          "Manual Testing"
+        ]
+      },
+      {
+        "job_competency": "Omnistudio",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9328,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3360919952392578,
+          "matched_candidate_competency": "Manual Testing"
+        },
+        "candidate_evidence": [
+          "Manual Testing"
+        ]
+      },
+      {
+        "job_competency": "Salesforce API framework",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9279,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3605956733226776,
+          "matched_candidate_competency": "Manual Testing"
+        },
+        "candidate_evidence": [
+          "Manual Testing"
+        ]
+      },
+      {
+        "job_competency": "Third-party APIs",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9361,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3194279074668884,
+          "matched_candidate_competency": "Manual Testing"
+        },
+        "candidate_evidence": [
+          "Manual Testing"
+        ]
+      },
+      {
+        "job_competency": "Vlocity custom solution design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6575,
+        "evidence": {
+          "tfidf_score": 0.005058493643633583,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 3.6987358734208895,
+          "semantic_score": 0.252082884311676,
+          "matched_candidate_competency": "Test Planning and Test Case Design"
+        },
+        "candidate_evidence": [
+          "Test Planning and Test Case Design"
+        ]
+      },
+      {
+        "job_competency": "Salesforce capabilities and limitations",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6943,
+        "evidence": {
+          "tfidf_score": 0.19939225967667917,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.696089067226851,
+          "semantic_score": 0.39170682430267334,
+          "matched_candidate_competency": "Updated WSDL endpoints and validated request and response XML."
+        },
+        "candidate_evidence": [
+          "Updated WSDL endpoints and validated request and response XML."
+        ]
+      },
+      {
+        "job_competency": "Salesforce project lifecycle",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3765,
+        "evidence": {
+          "tfidf_score": 0.029978045186330318,
+          "tfidf_matched_terms": [
+            "project"
+          ],
+          "bm25_score": 3.7213762245944753,
+          "semantic_score": 0.5734694600105286,
+          "matched_candidate_competency": "Project Documentation"
+        },
+        "candidate_evidence": [
+          "Project Documentation"
+        ]
+      },
+      {
+        "job_competency": "Code review and documentation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3519,
+        "evidence": {
+          "tfidf_score": 0.23378203779717135,
+          "tfidf_matched_terms": [
+            "and",
+            "documentation"
+          ],
+          "bm25_score": 4.368908497784477,
+          "semantic_score": 0.5555825233459473,
+          "matched_candidate_competency": "Project Documentation"
+        },
+        "candidate_evidence": [
+          "Project Documentation"
+        ]
+      },
+      {
+        "job_competency": "Source control",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7249,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46953487396240234,
+          "matched_candidate_competency": "Manual Testing"
+        },
+        "candidate_evidence": [
+          "Manual Testing"
+        ]
+      },
+      {
+        "job_competency": "Deployments to higher environments",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6792,
+        "evidence": {
+          "tfidf_score": 0.025345094600261804,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 2.4782014332692017,
+          "semantic_score": 0.31085819005966187,
+          "matched_candidate_competency": "Wrote SQL queries to validate data."
+        },
+        "candidate_evidence": [
+          "Wrote SQL queries to validate data."
+        ]
+      },
+      {
+        "job_competency": "Salesforce solution architecture",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7347,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40814682841300964,
+          "matched_candidate_competency": "Manual Testing"
+        },
+        "candidate_evidence": [
+          "Manual Testing"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Salesforce project lifecycle",
+      "Code review and documentation"
+    ],
+    "weak_matches": [
+      "Vlocity custom solution design",
+      "Salesforce capabilities and limitations",
+      "Source control",
+      "Deployments to higher environments",
+      "Salesforce solution architecture"
+    ],
+    "missing": [
+      "Salesforce Industries Communications Cloud",
+      "Salesforce CRM (SFDC)",
+      "Vlocity",
+      "Omnistudio",
+      "Salesforce API framework",
+      "Third-party APIs"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Salesforce project lifecycle",
+      "Code review and documentation"
+    ],
+    "competency_gaps": [
+      "Vlocity custom solution design",
+      "Salesforce capabilities and limitations",
+      "Source control",
+      "Deployments to higher environments",
+      "Salesforce solution architecture",
+      "Salesforce Industries Communications Cloud",
+      "Salesforce CRM (SFDC)",
+      "Vlocity",
+      "Omnistudio",
+      "Salesforce API framework",
+      "Third-party APIs"
+    ]
+  },
+  "counts": {
+    "requirements": 13,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 11
+  },
+  "latency_ms": 39.29,
+  "analyzed_at": "2026-10-03T17:29:46.154070+00:00"
+}

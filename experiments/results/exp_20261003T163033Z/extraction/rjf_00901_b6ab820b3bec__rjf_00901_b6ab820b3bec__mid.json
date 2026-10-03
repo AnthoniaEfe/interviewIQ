@@ -1,0 +1,912 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "extraction",
+  "profile_id": "rjf_00901_b6ab820b3bec",
+  "jd_id": "rjf_00901_b6ab820b3bec",
+  "pair_id": "rjf_00901_b6ab820b3bec",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Experienced excavator operator with over 10 years of safe operation experience, including physical excavation by diving in the sea with a boat and sharp blade bucket. Background with dredgers, movers, lifting equipment, IT, and accounting. Communicates in English and Igbo.",
+    "seniority_indicators": [
+      "Over 10 years of safe operation experience"
+    ],
+    "education": [
+      {
+        "degree": "Certificate",
+        "institution": "US Human Right Institute",
+        "field": "Human Right Education / Business Consultancy",
+        "year": "12/2021",
+        "source_text": "Certificate: Human Right Education / Business Consultancy, US Human Right Institute-New York"
+      },
+      {
+        "degree": "Training",
+        "institution": "Mr. Emmanuel Doc (The Excavator/ Diver Trainer)",
+        "field": "Professional Diving And Instruction Training",
+        "year": "01/1998",
+        "source_text": "Traning: Professional Diving And Instruction Training"
+      },
+      {
+        "degree": "Certificate",
+        "institution": "Alightpro",
+        "field": "Business Analytics Course",
+        "year": "08/2021",
+        "source_text": "Certificate: Business Analytics Course, Alightpro-Online"
+      },
+      {
+        "degree": "Post Graduate Diploma in Education (PGDE)",
+        "institution": "Ahmadu Bello University / National Teachers Institute",
+        "field": "Education / English",
+        "year": "02/2014",
+        "source_text": "Post Graduate Diploma in Education (PGDE) Qualification To Do Masters Degree: Educations / English"
+      },
+      {
+        "degree": "Higher National Diploma (BSs Equivalent)",
+        "institution": "Akwai State Polytechnic",
+        "field": "Accounting",
+        "year": "09/2005",
+        "source_text": "Higher National Diploma (BSs Equivalent): Accounting"
+      },
+      {
+        "degree": "National Diploma (ND)",
+        "institution": "Akwai Ibom State Polytechnic",
+        "field": "Business Studies",
+        "year": "03/2000",
+        "source_text": "National Diploma (ND): Business Studies"
+      },
+      {
+        "degree": "Career4U Program",
+        "institution": "Houston Community College",
+        "field": "Microsoft Software Administrator",
+        "year": "02/2022",
+        "source_text": "Career4U Program: Microsoft Software Administrator"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Ministry Assistant",
+        "employer": "Avery Dennison Corporation",
+        "duration": "02/2022 to 11/2022",
+        "responsibilities": [
+          "Excavated sand by diving in the sea.",
+          "Excavated sand using a dredger.",
+          "Moved sand to the loading site.",
+          "Lifted and loaded sand on tippers.",
+          "Identified and avoided hazards to protect equipment and personnel.",
+          "Performed equipment inspections before and after each shift.",
+          "Maintained equipment logs for the direct supervisor.",
+          "Worked with team members and customers to find workable solutions."
+        ],
+        "achievements": [
+          "Maximized equipment and personnel protection by identifying and avoiding hazards.",
+          "Demonstrated leadership by improving work processes and helping train others.",
+          "Improved operations by finding workable solutions with team members and customers.",
+          "Maintained updated knowledge through continuing education and advanced training."
+        ],
+        "technologies": [
+          "Excel",
+          "Microsoft Word",
+          "Microsoft Access",
+          "Microsoft PowerPoint",
+          "QuickBooks",
+          "Dredger",
+          "Lifting equipment"
+        ],
+        "source_text": "02/2022 to 11/2022, Ministry Assistant, Avery Dennison Corporation; excavation, sand movement, lifting/loading, inspections, hazard avoidance, leadership, training, Excel, Microsoft Word, Access, PowerPoint and QuickBooks"
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "Excavator operation",
+        "original_mentions": [
+          "Experienced Excavator Operator",
+          "safe operation Experience"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experienced Excavator Operator with Over 10 years of safe operation Experience",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Underwater excavation",
+        "original_mentions": [
+          "Physical Excavation by diving in the sea with boat and sharp blade bucket",
+          "Excavation of Sands by diving in sea"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Physical Excavation by diving in the sea with boat and sharp blade bucket",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Dredger operation",
+        "original_mentions": [
+          "working with dredger",
+          "Excavation of sand using dredger"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Background working with dredger",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Lifting and loading equipment",
+        "original_mentions": [
+          "lifting equipment",
+          "Lifting and loading sand on Tippers"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Lifting and loading sand on Tippers",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Pre-operational equipment checks",
+        "original_mentions": [
+          "Pre-operational equipment checks",
+          "Performed equipment inspections before and after each shift"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Pre-operational equipment checks",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Pipe rigging",
+        "original_mentions": [
+          "Insure proper pipe rigging"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Insure proper pipe rigging",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Safety procedures",
+        "original_mentions": [
+          "Safety Procedure",
+          "identifying and avoiding hazards"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Safety Procedure",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Ground disturbance issues",
+        "original_mentions": [
+          "Ground disturbance Issues"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Ground disturbance Issues",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Routine cleaning",
+        "original_mentions": [
+          "Routine Cleaning"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Routine Cleaning",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Excel",
+        "original_mentions": [
+          "Excel"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Excel",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Word",
+        "original_mentions": [
+          "Microsoft Word"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Microsoft Word",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Access",
+        "original_mentions": [
+          "Access"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Access",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft PowerPoint",
+        "original_mentions": [
+          "Power Point"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Power Point",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "QuickBooks",
+        "original_mentions": [
+          "QuickBooks"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "QuickBooks",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Written and verbal communication",
+        "original_mentions": [
+          "Written and verbal communication"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Written and verbal communication",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "English communication",
+        "original_mentions": [
+          "Good English ... Language Communicator"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Good English ... Language Communicator",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Igbo communication",
+        "original_mentions": [
+          "Igbo Language Communicator"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Igbo Language Communicator",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Conflict resolution",
+        "original_mentions": [
+          "Conflict resolution"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Conflict resolution",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Team building",
+        "original_mentions": [
+          "Team building"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Team building",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Problem resolution",
+        "original_mentions": [
+          "Problem resolution"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Problem resolution",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Leadership",
+        "original_mentions": [
+          "Demonstrated leadership"
+        ],
+        "competency_type": "leadership",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Demonstrated leadership by making improvements to work processes and helping to train others",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Training others",
+        "original_mentions": [
+          "helping to train others"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "helping to train others",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [
+      {
+        "normalized_label": "Human Right Education / Business Consultancy",
+        "original_mentions": [
+          "Certificate: Human Right Education / Business Consultancy"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Certificate: Human Right Education / Business Consultancy, US Human Right Institute-New York",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Business Analytics",
+        "original_mentions": [
+          "Certificate: Business Analytics Course"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Certificate: Business Analytics Course, Alightpro-Online",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Professional Diving and Instruction Training",
+        "original_mentions": [
+          "Professional Diving And Instruction Training"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Traning: Professional Diving And Instruction Training",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Software Administrator",
+        "original_mentions": [
+          "Career4U Program: Microsoft Software Administrator"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Career4U Program: Microsoft Software Administrator, Houston Community College",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "domain_experience": [
+      {
+        "normalized_label": "Sand excavation and dredging",
+        "original_mentions": [
+          "Excavation of Sands by diving in sea",
+          "Excavation of sand using dredger",
+          "Moving of sand to loading site"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Excavation of Sands by diving in sea; Excavation of sand using dredger; Moving of sand to loading site",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "IT and accounting",
+        "original_mentions": [
+          "IT and Accounting experience"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "IT and Accounting experience",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": []
+  },
+  "job": {
+    "title": "Associate Data Analyst - Analytics and Insights",
+    "seniority": "Associate",
+    "years_of_experience": "Minimum of 1 year of data analysis experience",
+    "responsibilities": [
+      "Collaborate with product and sales teams on member experience, product launches, pilots, and product success.",
+      "Use data-driven insights to improve the usability of pharmacy benefits and user experience.",
+      "Partner with cross-functional teams to identify business challenges, establish performance benchmarks, and develop strategies.",
+      "Analyze customer and prospect behaviors and key performance indicators and provide actionable recommendations.",
+      "Conduct end-to-end A/B testing, including ideation, design, monitoring, and reporting.",
+      "Use ETL tools to combine diverse data sets across platforms.",
+      "Analyze and extract data to identify insights and areas for improvement.",
+      "Use HDFS data structures to optimize storage, retrieval times, and analytics and data science applications."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Python",
+        "original_mentions": [
+          "Proficiency in Python"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Proficiency in Python, SQL, R, PySpark, and Scala is essential.",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "Proficiency in SQL",
+          "data manipulation using SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Proficiency in Python, SQL, R, PySpark, and Scala is essential.",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "R",
+        "original_mentions": [
+          "Proficiency in R"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Proficiency in Python, SQL, R, PySpark, and Scala is essential.",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "PySpark",
+        "original_mentions": [
+          "Proficiency in PySpark"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Proficiency in Python, SQL, R, PySpark, and Scala is essential.",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Scala",
+        "original_mentions": [
+          "Proficiency in Scala"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Proficiency in Python, SQL, R, PySpark, and Scala is essential.",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data analysis",
+        "original_mentions": [
+          "data analysis experience"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Minimum of 1 year of data analysis experience.",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Large-scale data manipulation and harmonization",
+        "original_mentions": [
+          "manipulate and harmonize large data sets across platforms"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Ability to manipulate and harmonize large data sets across platforms.",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "ETL tools",
+        "original_mentions": [
+          "utilizing ETL tools",
+          "Employ ETL tools"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "utilizing ETL tools and running SQL and Python scripts",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Patient journey analytics",
+        "original_mentions": [
+          "analytical prowess in the context of patient journey frameworks"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Demonstrated analytical prowess in the context of patient journey frameworks.",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Bachelor's degree in Data Management, Computer Science, or related field",
+        "original_mentions": [
+          "Bachelor's degree in Data Management, Computer Science, or a related field"
+        ],
+        "competency_type": "education",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Bachelor's degree in Data Management, Computer Science, or a related field is required.",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Direct employment by ASK Consulting",
+        "original_mentions": [
+          "directly contracted by ASK Consulting",
+          "employed directly by our company"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "All candidates must be directly contracted by ASK Consulting on their payroll and cannot be subcontracted.",
+          "source_section": "Opening notice",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "Tableau",
+        "original_mentions": [
+          "Familiarity with Tableau",
+          "Tableau ... would be advantageous"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Familiarity with Tableau or other BI visualization tools would be advantageous.",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Business intelligence visualization tools",
+        "original_mentions": [
+          "other BI visualization tools"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Familiarity with Tableau or other BI visualization tools would be advantageous.",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Hadoop and big data platforms",
+        "original_mentions": [
+          "Knowledge of Hadoop and big data platforms",
+          "Exposure to Hadoop or big data platforms"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Exposure to Hadoop or big data platforms.",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "A/B testing",
+        "original_mentions": [
+          "end-to-end AB testing"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Elevate campaign performance through end-to-end AB testing.",
+          "source_section": "Responsibilities",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [
+      "Bachelor's degree in Data Management, Computer Science, or a related field."
+    ],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Pharmacy benefits",
+        "original_mentions": [
+          "pharmacy benefits",
+          "optimize overall pharmacy benefits"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.92,
+        "source": {
+          "source_text": "enhance the usability of pharmacy benefits",
+          "source_section": "Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Patient behavior",
+        "original_mentions": [
+          "patient behavior"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "uncover novel insights in patient behavior",
+          "source_section": "About Us",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Customer and prospect behavior analytics",
+        "original_mentions": [
+          "customerprospect behaviors"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "analyze customerprospect behaviors and key performance indicators",
+          "source_section": "Responsibilities",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Cross-functional collaboration",
+        "original_mentions": [
+          "Partner closely with cross-functional teams",
+          "Collaborate with product and sales teams"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Partner closely with cross-functional teams to identify business challenges",
+          "source_section": "Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Actionable recommendations",
+        "original_mentions": [
+          "providing actionable recommendations"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "providing actionable recommendations",
+          "source_section": "Responsibilities",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [],
+    "system_design_requirements": [
+      "Use HDFS data structures to optimize storage, retrieval times, and the application of analytics and data science."
+    ],
+    "competencies": [
+      {
+        "normalized_label": "HDFS data structures",
+        "original_mentions": [
+          "expertise in HDFS data structures"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.94,
+        "source": {
+          "source_text": "Leverage your expertise in HDFS data structures",
+          "source_section": "Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Running SQL and Python scripts",
+        "original_mentions": [
+          "running SQL and Python scripts"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "utilizing ETL tools and running SQL and Python scripts",
+          "source_section": "Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "No sponsorship availability",
+        "original_mentions": [
+          "unable to provide sponsorship"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "We are unable to provide sponsorship at this moment.",
+          "source_section": "Opening notice",
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 1542,
+    "output_tokens": 2728,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0033939,
+    "latency_ms": 16784.04,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1362,
+    "output_tokens": 1951,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0026136,
+    "latency_ms": 15938.93,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-10-03T16:57:39.855779+00:00",
+  "reused_from_experiment": null
+}

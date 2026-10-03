@@ -1,0 +1,476 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02494_3554c91e3b3b",
+  "jd_id": "rjf_02494_3554c91e3b3b",
+  "pair_id": "rjf_02494_3554c91e3b3b",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Electrical systems architecture",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4015,
+        "evidence": {
+          "tfidf_score": 0.055729317457664185,
+          "tfidf_matched_terms": [
+            "electrical",
+            "systems"
+          ],
+          "bm25_score": 3.5692224809213164,
+          "semantic_score": 0.6436168551445007,
+          "matched_candidate_competency": "Electrical maintenance"
+        },
+        "candidate_evidence": [
+          "Electrical maintenance"
+        ]
+      },
+      {
+        "job_competency": "Electrical system development and design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3906,
+        "evidence": {
+          "tfidf_score": 0.2402061183532154,
+          "tfidf_matched_terms": [
+            "and",
+            "electrical"
+          ],
+          "bm25_score": 3.5692224809213164,
+          "semantic_score": 0.614154040813446,
+          "matched_candidate_competency": "Electrical maintenance"
+        },
+        "candidate_evidence": [
+          "Electrical maintenance"
+        ]
+      },
+      {
+        "job_competency": "Electrical component development, validation, and launch",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4005,
+        "evidence": {
+          "tfidf_score": 0.21491378105218711,
+          "tfidf_matched_terms": [
+            "and",
+            "electrical"
+          ],
+          "bm25_score": 3.5692224809213164,
+          "semantic_score": 0.5336261987686157,
+          "matched_candidate_competency": "Electrical maintenance"
+        },
+        "candidate_evidence": [
+          "Electrical maintenance"
+        ]
+      },
+      {
+        "job_competency": "Automotive electrical engineering",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3488,
+        "evidence": {
+          "tfidf_score": 0.041765566480074644,
+          "tfidf_matched_terms": [
+            "electrical",
+            "engineering"
+          ],
+          "bm25_score": 8.931066859060047,
+          "semantic_score": 0.730469822883606,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Automotive electrical systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6582,
+        "evidence": {
+          "tfidf_score": 0.055729317457664185,
+          "tfidf_matched_terms": [
+            "electrical",
+            "systems"
+          ],
+          "bm25_score": 3.5692224809213164,
+          "semantic_score": 0.5446107983589172,
+          "matched_candidate_competency": "Electrical maintenance"
+        },
+        "candidate_evidence": [
+          "Electrical maintenance"
+        ]
+      },
+      {
+        "job_competency": "DFMEA",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.931,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3449203372001648,
+          "matched_candidate_competency": "Electrical maintenance"
+        },
+        "candidate_evidence": [
+          "Electrical maintenance"
+        ]
+      },
+      {
+        "job_competency": "Six Sigma design",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9428,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28593453764915466,
+          "matched_candidate_competency": "Electrical maintenance"
+        },
+        "candidate_evidence": [
+          "Electrical maintenance"
+        ]
+      },
+      {
+        "job_competency": "Lean engineering principles",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6797,
+        "evidence": {
+          "tfidf_score": 0.006223068642012462,
+          "tfidf_matched_terms": [
+            "engineering"
+          ],
+          "bm25_score": 5.361844378138731,
+          "semantic_score": 0.29675546288490295,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Power electronics",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4019,
+        "evidence": {
+          "tfidf_score": 0.04022678468585938,
+          "tfidf_matched_terms": [
+            "power"
+          ],
+          "bm25_score": 3.5692224809213164,
+          "semantic_score": 0.6511816382408142,
+          "matched_candidate_competency": "Power transformers"
+        },
+        "candidate_evidence": [
+          "Power transformers"
+        ]
+      },
+      {
+        "job_competency": "High-voltage systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6843,
+        "evidence": {
+          "tfidf_score": 0.027801956843406347,
+          "tfidf_matched_terms": [
+            "systems",
+            "voltage"
+          ],
+          "bm25_score": 2.799846878285466,
+          "semantic_score": 0.4671000838279724,
+          "matched_candidate_competency": "Preventive and corrective maintenance of transformers, voltage regulators, instrument transformers, buses, breakers, AC/DC systems, meters, relays and control circuits"
+        },
+        "candidate_evidence": [
+          "Preventive and corrective maintenance of transformers, voltage regulators, instrument transformers, buses, breakers, AC/DC systems, meters, relays and control circuits"
+        ]
+      },
+      {
+        "job_competency": "ISO 26262",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7242,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.47360843420028687,
+          "matched_candidate_competency": "Electrical maintenance"
+        },
+        "candidate_evidence": [
+          "Electrical maintenance"
+        ]
+      },
+      {
+        "job_competency": "ASPICE",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9347,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32642361521720886,
+          "matched_candidate_competency": "Electrical maintenance"
+        },
+        "candidate_evidence": [
+          "Electrical maintenance"
+        ]
+      },
+      {
+        "job_competency": "Cybersecurity risk awareness and solutions",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3893,
+        "evidence": {
+          "tfidf_score": 0.21667289101468443,
+          "tfidf_matched_terms": [
+            "and",
+            "awareness"
+          ],
+          "bm25_score": 5.361844378138731,
+          "semantic_score": 0.49470677971839905,
+          "matched_candidate_competency": "Safety awareness"
+        },
+        "candidate_evidence": [
+          "Safety awareness"
+        ]
+      },
+      {
+        "job_competency": "Electrical architecture solution development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4051,
+        "evidence": {
+          "tfidf_score": 0.026365858424564317,
+          "tfidf_matched_terms": [
+            "electrical"
+          ],
+          "bm25_score": 3.5692224809213164,
+          "semantic_score": 0.6298922896385193,
+          "matched_candidate_competency": "Electrical maintenance"
+        },
+        "candidate_evidence": [
+          "Electrical maintenance"
+        ]
+      },
+      {
+        "job_competency": "Analytical skills",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9297,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35174962878227234,
+          "matched_candidate_competency": "Electrical maintenance"
+        },
+        "candidate_evidence": [
+          "Electrical maintenance"
+        ]
+      },
+      {
+        "job_competency": "Decision-making",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7341,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41206300258636475,
+          "matched_candidate_competency": "Electrical maintenance"
+        },
+        "candidate_evidence": [
+          "Electrical maintenance"
+        ]
+      },
+      {
+        "job_competency": "Leadership",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.714,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5374894142150879,
+          "matched_candidate_competency": "Electrical maintenance"
+        },
+        "candidate_evidence": [
+          "Electrical maintenance"
+        ]
+      },
+      {
+        "job_competency": "Communication and interpersonal skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6992,
+        "evidence": {
+          "tfidf_score": 0.22565966570087642,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.8230595487016623,
+          "semantic_score": 0.39178866147994995,
+          "matched_candidate_competency": "Switchgear and substations"
+        },
+        "candidate_evidence": [
+          "Switchgear and substations"
+        ]
+      },
+      {
+        "job_competency": "Technical direction and guidance",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.696,
+        "evidence": {
+          "tfidf_score": 0.22565966570087648,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.8230595487016623,
+          "semantic_score": 0.41147974133491516,
+          "matched_candidate_competency": "Switchgear and substations"
+        },
+        "candidate_evidence": [
+          "Switchgear and substations"
+        ]
+      },
+      {
+        "job_competency": "Project initiation and leadership",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3771,
+        "evidence": {
+          "tfidf_score": 0.2567400315042755,
+          "tfidf_matched_terms": [
+            "and",
+            "project"
+          ],
+          "bm25_score": 4.666582509540012,
+          "semantic_score": 0.6446126103401184,
+          "matched_candidate_competency": "Project management"
+        },
+        "candidate_evidence": [
+          "Project management"
+        ]
+      },
+      {
+        "job_competency": "Occasional travel flexibility",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9641,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.1794915795326233,
+          "matched_candidate_competency": "Electrical maintenance"
+        },
+        "candidate_evidence": [
+          "Electrical maintenance"
+        ]
+      },
+      {
+        "job_competency": "Master's degree in Engineering",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2413,
+        "evidence": {
+          "tfidf_score": 0.0046409716284215126,
+          "tfidf_matched_terms": [
+            "engineering"
+          ],
+          "bm25_score": 5.361844378138731,
+          "semantic_score": 0.5247439742088318,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Electrical systems architecture",
+      "Electrical system development and design",
+      "Electrical component development, validation, and launch",
+      "Automotive electrical engineering",
+      "Power electronics",
+      "Cybersecurity risk awareness and solutions",
+      "Electrical architecture solution development",
+      "Project initiation and leadership",
+      "Master's degree in Engineering"
+    ],
+    "weak_matches": [
+      "Automotive electrical systems",
+      "Lean engineering principles",
+      "High-voltage systems",
+      "ISO 26262",
+      "Decision-making",
+      "Leadership",
+      "Communication and interpersonal skills",
+      "Technical direction and guidance"
+    ],
+    "missing": [
+      "DFMEA",
+      "Six Sigma design",
+      "ASPICE",
+      "Analytical skills",
+      "Occasional travel flexibility"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Electrical systems architecture",
+      "Electrical system development and design",
+      "Electrical component development, validation, and launch",
+      "Automotive electrical engineering",
+      "Power electronics",
+      "Cybersecurity risk awareness and solutions",
+      "Electrical architecture solution development",
+      "Project initiation and leadership",
+      "Master's degree in Engineering"
+    ],
+    "competency_gaps": [
+      "Automotive electrical systems",
+      "Lean engineering principles",
+      "High-voltage systems",
+      "ISO 26262",
+      "Decision-making",
+      "Leadership",
+      "Communication and interpersonal skills",
+      "Technical direction and guidance",
+      "DFMEA",
+      "Six Sigma design",
+      "ASPICE",
+      "Analytical skills",
+      "Occasional travel flexibility"
+    ]
+  },
+  "counts": {
+    "requirements": 22,
+    "strength_matches": 0,
+    "partial_matches": 9,
+    "competency_gaps": 13
+  },
+  "latency_ms": 52.46,
+  "analyzed_at": "2026-10-03T17:29:45.559712+00:00"
+}

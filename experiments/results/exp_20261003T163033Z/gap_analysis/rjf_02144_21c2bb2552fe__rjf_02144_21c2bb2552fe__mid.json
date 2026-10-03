@@ -1,0 +1,185 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02144_21c2bb2552fe",
+  "jd_id": "rjf_02144_21c2bb2552fe",
+  "pair_id": "rjf_02144_21c2bb2552fe",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1582,
+        "evidence": {
+          "tfidf_score": 0.11424826841878329,
+          "tfidf_matched_terms": [
+            "excel",
+            "microsoft"
+          ],
+          "bm25_score": 6.2758797549400045,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "ERP systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7228,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.48231247067451477,
+          "matched_candidate_competency": "Financial planning"
+        },
+        "candidate_evidence": [
+          "Financial planning"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Office",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3992,
+        "evidence": {
+          "tfidf_score": 0.03104789535741023,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 3.464185051349753,
+          "semantic_score": 0.5703073143959045,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "U.S. GAAP",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.728,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4502872824668884,
+          "matched_candidate_competency": "Financial planning"
+        },
+        "candidate_evidence": [
+          "Financial planning"
+        ]
+      },
+      {
+        "job_competency": "Financial accounting",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1636,
+        "evidence": {
+          "tfidf_score": 0.3179852680692215,
+          "tfidf_matched_terms": [
+            "accounting",
+            "financial"
+          ],
+          "bm25_score": 4.094737846605352,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Financial accounting"
+        },
+        "candidate_evidence": [
+          "Financial accounting"
+        ]
+      },
+      {
+        "job_competency": "Document interpretation and business writing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6559,
+        "evidence": {
+          "tfidf_score": 0.18520397246518622,
+          "tfidf_matched_terms": [
+            "and",
+            "business"
+          ],
+          "bm25_score": 2.8116947035902515,
+          "semantic_score": 0.425995409488678,
+          "matched_candidate_competency": "Business studies"
+        },
+        "candidate_evidence": [
+          "Business studies"
+        ]
+      },
+      {
+        "job_competency": "Basic arithmetic and quantitative analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6505,
+        "evidence": {
+          "tfidf_score": 0.1638232875015751,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and"
+          ],
+          "bm25_score": 3.464185051349753,
+          "semantic_score": 0.39722850918769836,
+          "matched_candidate_competency": "Financial analysis"
+        },
+        "candidate_evidence": [
+          "Financial analysis"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Microsoft Excel",
+      "Financial accounting"
+    ],
+    "partial_matches": [
+      "Microsoft Office"
+    ],
+    "weak_matches": [
+      "ERP systems",
+      "U.S. GAAP",
+      "Document interpretation and business writing",
+      "Basic arithmetic and quantitative analysis"
+    ],
+    "missing": []
+  },
+  "three_category": {
+    "strength_matches": [
+      "Microsoft Excel",
+      "Financial accounting"
+    ],
+    "partial_matches": [
+      "Microsoft Office"
+    ],
+    "competency_gaps": [
+      "ERP systems",
+      "U.S. GAAP",
+      "Document interpretation and business writing",
+      "Basic arithmetic and quantitative analysis"
+    ]
+  },
+  "counts": {
+    "requirements": 7,
+    "strength_matches": 2,
+    "partial_matches": 1,
+    "competency_gaps": 4
+  },
+  "latency_ms": 17.43,
+  "analyzed_at": "2026-10-03T17:29:44.934923+00:00"
+}

@@ -1,0 +1,315 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00380_f88f73657bb4",
+  "jd_id": "rjf_00380_f88f73657bb4",
+  "pair_id": "rjf_00380_f88f73657bb4",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "U.S. Generally Accepted Accounting Principles",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9274,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36296114325523376,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Financial management reporting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3616,
+        "evidence": {
+          "tfidf_score": 0.07325306194226121,
+          "tfidf_matched_terms": [
+            "financial",
+            "management",
+            "reporting"
+          ],
+          "bm25_score": 5.597142152773695,
+          "semantic_score": 0.5790266990661621,
+          "matched_candidate_competency": "Reporting"
+        },
+        "candidate_evidence": [
+          "Reporting"
+        ]
+      },
+      {
+        "job_competency": "General ledger reconciliation and analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6505,
+        "evidence": {
+          "tfidf_score": 0.20705337704754945,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and"
+          ],
+          "bm25_score": 3.0211943090705797,
+          "semantic_score": 0.37408676743507385,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Accounting practices",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7188,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5076344013214111,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "PC-based applications",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9203,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39835843443870544,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "AS/400 environment",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9541,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2292746603488922,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Data extraction and system query techniques",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3986,
+        "evidence": {
+          "tfidf_score": 0.27430552442502615,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 2.4841620330388365,
+          "semantic_score": 0.47544288635253906,
+          "matched_candidate_competency": "Prepared and analyzed data for data quality initiatives and audits."
+        },
+        "candidate_evidence": [
+          "Prepared and analyzed data for data quality initiatives and audits."
+        ]
+      },
+      {
+        "job_competency": "Hyperion",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9498,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2508365511894226,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Power BI",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3988,
+        "evidence": {
+          "tfidf_score": 0.02444418572277924,
+          "tfidf_matched_terms": [
+            "bi"
+          ],
+          "bm25_score": 4.1204724895250076,
+          "semantic_score": 0.44128525257110596,
+          "matched_candidate_competency": "BI dashboards"
+        },
+        "candidate_evidence": [
+          "BI dashboards"
+        ]
+      },
+      {
+        "job_competency": "JD Edwards or similar accounting software",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6846,
+        "evidence": {
+          "tfidf_score": 0.006388270607710207,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 2.1234531946105,
+          "semantic_score": 0.43211400508880615,
+          "matched_candidate_competency": "Built BI dashboard templates using company software for Microsoft Dynamics GP."
+        },
+        "candidate_evidence": [
+          "Built BI dashboard templates using company software for Microsoft Dynamics GP."
+        ]
+      },
+      {
+        "job_competency": "Sarbanes-Oxley internal controls",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9302,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3489944338798523,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Balance sheet reconciliations",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7346,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4086567163467407,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Financial systems user acceptance testing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6758,
+        "evidence": {
+          "tfidf_score": 0.014970220064091358,
+          "tfidf_matched_terms": [
+            "financial",
+            "testing"
+          ],
+          "bm25_score": 3.3832935810851428,
+          "semantic_score": 0.31144654750823975,
+          "matched_candidate_competency": "Hospital financial and claims data"
+        },
+        "candidate_evidence": [
+          "Hospital financial and claims data"
+        ]
+      },
+      {
+        "job_competency": "Availability during normal business hours",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6919,
+        "evidence": {
+          "tfidf_score": 0.007061609197389881,
+          "tfidf_matched_terms": [
+            "business"
+          ],
+          "bm25_score": 2.8246699658012484,
+          "semantic_score": 0.29183149337768555,
+          "matched_candidate_competency": "Linked multiple databases to address business priorities."
+        },
+        "candidate_evidence": [
+          "Linked multiple databases to address business priorities."
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Financial management reporting",
+      "Data extraction and system query techniques",
+      "Power BI"
+    ],
+    "weak_matches": [
+      "General ledger reconciliation and analysis",
+      "Accounting practices",
+      "JD Edwards or similar accounting software",
+      "Balance sheet reconciliations",
+      "Financial systems user acceptance testing",
+      "Availability during normal business hours"
+    ],
+    "missing": [
+      "U.S. Generally Accepted Accounting Principles",
+      "PC-based applications",
+      "AS/400 environment",
+      "Hyperion",
+      "Sarbanes-Oxley internal controls"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Financial management reporting",
+      "Data extraction and system query techniques",
+      "Power BI"
+    ],
+    "competency_gaps": [
+      "General ledger reconciliation and analysis",
+      "Accounting practices",
+      "JD Edwards or similar accounting software",
+      "Balance sheet reconciliations",
+      "Financial systems user acceptance testing",
+      "Availability during normal business hours",
+      "U.S. Generally Accepted Accounting Principles",
+      "PC-based applications",
+      "AS/400 environment",
+      "Hyperion",
+      "Sarbanes-Oxley internal controls"
+    ]
+  },
+  "counts": {
+    "requirements": 14,
+    "strength_matches": 0,
+    "partial_matches": 3,
+    "competency_gaps": 11
+  },
+  "latency_ms": 33.32,
+  "analyzed_at": "2026-10-03T17:29:42.727520+00:00"
+}

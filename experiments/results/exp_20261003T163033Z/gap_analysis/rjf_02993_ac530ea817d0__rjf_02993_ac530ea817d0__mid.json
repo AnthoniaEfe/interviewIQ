@@ -1,0 +1,432 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02993_ac530ea817d0",
+  "jd_id": "rjf_02993_ac530ea817d0",
+  "pair_id": "rjf_02993_ac530ea817d0",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Accounting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3621,
+        "evidence": {
+          "tfidf_score": 0.15371169400654316,
+          "tfidf_matched_terms": [
+            "accounting"
+          ],
+          "bm25_score": 2.450069599124246,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Budgeting and financial analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3665,
+        "evidence": {
+          "tfidf_score": 0.35854504323212266,
+          "tfidf_matched_terms": [
+            "and",
+            "budgeting",
+            "financial"
+          ],
+          "bm25_score": 2.8588829601295425,
+          "semantic_score": 0.7580621838569641,
+          "matched_candidate_competency": "Financial Reporting"
+        },
+        "candidate_evidence": [
+          "Financial Reporting"
+        ]
+      },
+      {
+        "job_competency": "Financial reporting",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1593,
+        "evidence": {
+          "tfidf_score": 0.08635749616535722,
+          "tfidf_matched_terms": [
+            "financial",
+            "reporting"
+          ],
+          "bm25_score": 6.96528439041466,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Financial Reporting"
+        },
+        "candidate_evidence": [
+          "Financial Reporting"
+        ]
+      },
+      {
+        "job_competency": "Cost methodologies",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9281,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3597261607646942,
+          "matched_candidate_competency": "Accounts Payable and Receivable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable and Receivable"
+        ]
+      },
+      {
+        "job_competency": "Budgeting concepts, practices, and procedures",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3854,
+        "evidence": {
+          "tfidf_score": 0.24392388459183295,
+          "tfidf_matched_terms": [
+            "and",
+            "budgeting"
+          ],
+          "bm25_score": 2.8069285680750182,
+          "semantic_score": 0.6610245108604431,
+          "matched_candidate_competency": "Managed payroll and wage allocations, budgeting, deposits and account reconciliations."
+        },
+        "candidate_evidence": [
+          "Managed payroll and wage allocations, budgeting, deposits and account reconciliations."
+        ]
+      },
+      {
+        "job_competency": "Revenue recognition",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7135,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5407476425170898,
+          "matched_candidate_competency": "Accounts Payable and Receivable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable and Receivable"
+        ]
+      },
+      {
+        "job_competency": "Excel",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.718,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5122822523117065,
+          "matched_candidate_competency": "Accounts Payable and Receivable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable and Receivable"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Word",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3783,
+        "evidence": {
+          "tfidf_score": 0.01762859354189782,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 4.106401430285118,
+          "semantic_score": 0.7614802122116089,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Outlook",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3937,
+        "evidence": {
+          "tfidf_score": 0.01762859354189782,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 4.106401430285118,
+          "semantic_score": 0.6075252890586853,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Written and verbal communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7183,
+        "evidence": {
+          "tfidf_score": 0.24704868247230866,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.7684526975255704,
+          "semantic_score": 0.24276801943778992,
+          "matched_candidate_competency": "Accounts Payable and Receivable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable and Receivable"
+        ]
+      },
+      {
+        "job_competency": "Interpersonal skills",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9338,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3308126628398895,
+          "matched_candidate_competency": "Accounts Payable and Receivable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable and Receivable"
+        ]
+      },
+      {
+        "job_competency": "Analytical skills",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9365,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31767362356185913,
+          "matched_candidate_competency": "Accounts Payable and Receivable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable and Receivable"
+        ]
+      },
+      {
+        "job_competency": "Organizational skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7146,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5339195728302002,
+          "matched_candidate_competency": "Accounts Payable and Receivable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable and Receivable"
+        ]
+      },
+      {
+        "job_competency": "Time management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6703,
+        "evidence": {
+          "tfidf_score": 0.035304977914732964,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.364584114651893,
+          "semantic_score": 0.4217011332511902,
+          "matched_candidate_competency": "Payroll Management"
+        },
+        "candidate_evidence": [
+          "Payroll Management"
+        ]
+      },
+      {
+        "job_competency": "Teamwork",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.931,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3451972007751465,
+          "matched_candidate_competency": "Accounts Payable and Receivable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable and Receivable"
+        ]
+      },
+      {
+        "job_competency": "Judgment and decision-making",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7094,
+        "evidence": {
+          "tfidf_score": 0.24704868247230866,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.7684526975255704,
+          "semantic_score": 0.29852837324142456,
+          "matched_candidate_competency": "Accounts Payable and Receivable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable and Receivable"
+        ]
+      },
+      {
+        "job_competency": "Multitasking and prioritization",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.707,
+        "evidence": {
+          "tfidf_score": 0.29220788808189097,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.7684526975255704,
+          "semantic_score": 0.279293954372406,
+          "matched_candidate_competency": "Accounts Payable and Receivable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable and Receivable"
+        ]
+      },
+      {
+        "job_competency": "Financial Edge",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3992,
+        "evidence": {
+          "tfidf_score": 0.053077594494287506,
+          "tfidf_matched_terms": [
+            "financial"
+          ],
+          "bm25_score": 2.8588829601295425,
+          "semantic_score": 0.4935719072818756,
+          "matched_candidate_competency": "Financial Reporting"
+        },
+        "candidate_evidence": [
+          "Financial Reporting"
+        ]
+      },
+      {
+        "job_competency": "Collaborative work style",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.56,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3332756757736206,
+          "matched_candidate_competency": "Accounts Payable and Receivable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable and Receivable"
+        ]
+      },
+      {
+        "job_competency": "Commitment to nonprofit human services",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5665,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27935630083084106,
+          "matched_candidate_competency": "Accounts Payable and Receivable"
+        },
+        "candidate_evidence": [
+          "Accounts Payable and Receivable"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Financial reporting"
+    ],
+    "partial_matches": [
+      "Accounting",
+      "Budgeting and financial analysis",
+      "Budgeting concepts, practices, and procedures",
+      "Microsoft Word",
+      "Microsoft Outlook"
+    ],
+    "weak_matches": [
+      "Revenue recognition",
+      "Excel",
+      "Written and verbal communication",
+      "Organizational skills",
+      "Time management",
+      "Judgment and decision-making",
+      "Multitasking and prioritization",
+      "Financial Edge"
+    ],
+    "missing": [
+      "Cost methodologies",
+      "Interpersonal skills",
+      "Analytical skills",
+      "Teamwork",
+      "Collaborative work style",
+      "Commitment to nonprofit human services"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Financial reporting"
+    ],
+    "partial_matches": [
+      "Accounting",
+      "Budgeting and financial analysis",
+      "Budgeting concepts, practices, and procedures",
+      "Microsoft Word",
+      "Microsoft Outlook"
+    ],
+    "competency_gaps": [
+      "Revenue recognition",
+      "Excel",
+      "Written and verbal communication",
+      "Organizational skills",
+      "Time management",
+      "Judgment and decision-making",
+      "Multitasking and prioritization",
+      "Financial Edge",
+      "Cost methodologies",
+      "Interpersonal skills",
+      "Analytical skills",
+      "Teamwork",
+      "Collaborative work style",
+      "Commitment to nonprofit human services"
+    ]
+  },
+  "counts": {
+    "requirements": 20,
+    "strength_matches": 1,
+    "partial_matches": 5,
+    "competency_gaps": 14
+  },
+  "latency_ms": 34.49,
+  "analyzed_at": "2026-10-03T17:29:46.231851+00:00"
+}

@@ -1,0 +1,228 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02293_ca8392810689",
+  "jd_id": "rjf_02293_ca8392810689",
+  "pair_id": "rjf_02293_ca8392810689",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "MS Access",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7144,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5348606109619141,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "MS Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1683,
+        "evidence": {
+          "tfidf_score": 0.017239397709009466,
+          "tfidf_matched_terms": [
+            "excel"
+          ],
+          "bm25_score": 4.471319832232579,
+          "semantic_score": 0.9736288785934448,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Operational transaction analysis and processing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3524,
+        "evidence": {
+          "tfidf_score": 0.32170290994664263,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and",
+            "processing"
+          ],
+          "bm25_score": 5.1774601000991,
+          "semantic_score": 0.48469802737236023,
+          "matched_candidate_competency": "Data processing"
+        },
+        "candidate_evidence": [
+          "Data processing"
+        ]
+      },
+      {
+        "job_competency": "Systems testing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6796,
+        "evidence": {
+          "tfidf_score": 0.008616912445143236,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 2.536025366395847,
+          "semantic_score": 0.37873104214668274,
+          "matched_candidate_competency": "Entered customer data into reservation systems and updated room changes."
+        },
+        "candidate_evidence": [
+          "Entered customer data into reservation systems and updated room changes."
+        ]
+      },
+      {
+        "job_competency": "Procedure and control development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3876,
+        "evidence": {
+          "tfidf_score": 0.3162996029581158,
+          "tfidf_matched_terms": [
+            "and",
+            "development"
+          ],
+          "bm25_score": 2.573273433492935,
+          "semantic_score": 0.5136958360671997,
+          "matched_candidate_competency": "Organized activities supporting physical, mental and social development."
+        },
+        "candidate_evidence": [
+          "Organized activities supporting physical, mental and social development."
+        ]
+      },
+      {
+        "job_competency": "Process improvement recommendations",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4034,
+        "evidence": {
+          "tfidf_score": 0.006680172362099302,
+          "tfidf_matched_terms": [
+            "process"
+          ],
+          "bm25_score": 2.9067689511881016,
+          "semantic_score": 0.539952278137207,
+          "matched_candidate_competency": "Monitored process efficiencies and identified data integrity exceptions."
+        },
+        "candidate_evidence": [
+          "Monitored process efficiencies and identified data integrity exceptions."
+        ]
+      },
+      {
+        "job_competency": "Project planning and implementation support",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3508,
+        "evidence": {
+          "tfidf_score": 0.33858248825601267,
+          "tfidf_matched_terms": [
+            "and",
+            "planning",
+            "project",
+            "support"
+          ],
+          "bm25_score": 5.1774601000991,
+          "semantic_score": 0.4877566993236542,
+          "matched_candidate_competency": "Meeting planning"
+        },
+        "candidate_evidence": [
+          "Meeting planning"
+        ]
+      },
+      {
+        "job_competency": "Problem resolution",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3934,
+        "evidence": {
+          "tfidf_score": 0.008616912445143236,
+          "tfidf_matched_terms": [
+            "problem"
+          ],
+          "bm25_score": 4.581030137242903,
+          "semantic_score": 0.39623376727104187,
+          "matched_candidate_competency": "Analytical problem solving"
+        },
+        "candidate_evidence": [
+          "Analytical problem solving"
+        ]
+      },
+      {
+        "job_competency": "Membership enrollment",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5653,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2894172668457031,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "MS Excel"
+    ],
+    "partial_matches": [
+      "Operational transaction analysis and processing",
+      "Procedure and control development",
+      "Process improvement recommendations",
+      "Project planning and implementation support",
+      "Problem resolution"
+    ],
+    "weak_matches": [
+      "MS Access",
+      "Systems testing"
+    ],
+    "missing": [
+      "Membership enrollment"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "MS Excel"
+    ],
+    "partial_matches": [
+      "Operational transaction analysis and processing",
+      "Procedure and control development",
+      "Process improvement recommendations",
+      "Project planning and implementation support",
+      "Problem resolution"
+    ],
+    "competency_gaps": [
+      "MS Access",
+      "Systems testing",
+      "Membership enrollment"
+    ]
+  },
+  "counts": {
+    "requirements": 9,
+    "strength_matches": 1,
+    "partial_matches": 5,
+    "competency_gaps": 3
+  },
+  "latency_ms": 31.2,
+  "analyzed_at": "2026-10-03T17:29:45.131739+00:00"
+}

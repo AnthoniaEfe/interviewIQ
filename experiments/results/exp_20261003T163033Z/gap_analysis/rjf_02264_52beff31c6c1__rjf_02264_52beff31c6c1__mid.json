@@ -1,0 +1,900 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02264_52beff31c6c1",
+  "jd_id": "rjf_02264_52beff31c6c1",
+  "pair_id": "rjf_02264_52beff31c6c1",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "AWS",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9203,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39851224422454834,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7177,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.514361560344696,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Spring Boot",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9254,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3730282485485077,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Microservices",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9256,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3719407618045807,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Backend REST API development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6945,
+        "evidence": {
+          "tfidf_score": 0.026289709574996125,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.705886363267202,
+          "semantic_score": 0.2949732542037964,
+          "matched_candidate_competency": "Software development life cycle"
+        },
+        "candidate_evidence": [
+          "Software development life cycle"
+        ]
+      },
+      {
+        "job_competency": "Agile software development",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1658,
+        "evidence": {
+          "tfidf_score": 0.10015607365999865,
+          "tfidf_matched_terms": [
+            "agile",
+            "development",
+            "software"
+          ],
+          "bm25_score": 5.882550030052117,
+          "semantic_score": 0.8588430881500244,
+          "matched_candidate_competency": "Software development life cycle"
+        },
+        "candidate_evidence": [
+          "Software development life cycle"
+        ]
+      },
+      {
+        "job_competency": "Node.js",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9277,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3615778684616089,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Functional programming",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7009,
+        "evidence": {
+          "tfidf_score": 0.020020280655905213,
+          "tfidf_matched_terms": [
+            "functional"
+          ],
+          "bm25_score": 1.4774186039847172,
+          "semantic_score": 0.4158579111099243,
+          "matched_candidate_competency": "Provided customer support and tested functional and technical queries, requests, requirements, and modifications."
+        },
+        "candidate_evidence": [
+          "Provided customer support and tested functional and technical queries, requests, requirements, and modifications."
+        ]
+      },
+      {
+        "job_competency": "Scala",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9292,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3541261851787567,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Ruby",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7246,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4715232253074646,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Bootstrap",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9397,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30132949352264404,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "jQuery",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9418,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29087990522384644,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "MongoDB",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7169,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5196822881698608,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Elasticsearch",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9416,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2918538749217987,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Redis",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9387,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30644652247428894,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "React.js",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9596,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.20222336053848267,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Backbone.js",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9476,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2620052099227905,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Require.js",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9453,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2734697461128235,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "D3 or Highcharts",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9399,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30067405104637146,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "MV* application design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6769,
+        "evidence": {
+          "tfidf_score": 0.0467796995075903,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 3.210246441684638,
+          "semantic_score": 0.3246990442276001,
+          "matched_candidate_competency": "ASIC design"
+        },
+        "candidate_evidence": [
+          "ASIC design"
+        ]
+      },
+      {
+        "job_competency": "JavaScript graphing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.943,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2849022150039673,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Modular design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6525,
+        "evidence": {
+          "tfidf_score": 0.06034224163945661,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 3.210246441684638,
+          "semantic_score": 0.4676288068294525,
+          "matched_candidate_competency": "ASIC design"
+        },
+        "candidate_evidence": [
+          "ASIC design"
+        ]
+      },
+      {
+        "job_competency": "Responsive design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6774,
+        "evidence": {
+          "tfidf_score": 0.06034224163945661,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 3.210246441684638,
+          "semantic_score": 0.31155019998550415,
+          "matched_candidate_competency": "ASIC design"
+        },
+        "candidate_evidence": [
+          "ASIC design"
+        ]
+      },
+      {
+        "job_competency": "SQL and database programming",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3445,
+        "evidence": {
+          "tfidf_score": 0.31363938564702765,
+          "tfidf_matched_terms": [
+            "and",
+            "database",
+            "sql"
+          ],
+          "bm25_score": 4.388266882518196,
+          "semantic_score": 0.7597933411598206,
+          "matched_candidate_competency": "Database"
+        },
+        "candidate_evidence": [
+          "Database"
+        ]
+      },
+      {
+        "job_competency": "Web technologies and Internet architecture",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6863,
+        "evidence": {
+          "tfidf_score": 0.16775110695906498,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.471542083264837,
+          "semantic_score": 0.3973005414009094,
+          "matched_candidate_competency": "Microprocessors and microcontrollers"
+        },
+        "candidate_evidence": [
+          "Microprocessors and microcontrollers"
+        ]
+      },
+      {
+        "job_competency": "Unix server and web stack administration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3677,
+        "evidence": {
+          "tfidf_score": 0.22034131864890003,
+          "tfidf_matched_terms": [
+            "and",
+            "server",
+            "unix"
+          ],
+          "bm25_score": 4.388266882518196,
+          "semantic_score": 0.5978660583496094,
+          "matched_candidate_competency": "Unix"
+        },
+        "candidate_evidence": [
+          "Unix"
+        ]
+      },
+      {
+        "job_competency": "Debugging and virtual machines",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6969,
+        "evidence": {
+          "tfidf_score": 0.19017423559502736,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.471542083264837,
+          "semantic_score": 0.31382229924201965,
+          "matched_candidate_competency": "Microprocessors and microcontrollers"
+        },
+        "candidate_evidence": [
+          "Microprocessors and microcontrollers"
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9282,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.358786940574646,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Continuous integration",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.948,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2600969970226288,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Jenkins",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9405,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29728999733924866,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Verbal and written communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6971,
+        "evidence": {
+          "tfidf_score": 0.19017423559502736,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.471542083264837,
+          "semantic_score": 0.31317973136901855,
+          "matched_candidate_competency": "Microprocessors and microcontrollers"
+        },
+        "candidate_evidence": [
+          "Microprocessors and microcontrollers"
+        ]
+      },
+      {
+        "job_competency": "Data presentation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4044,
+        "evidence": {
+          "tfidf_score": 0.06034224163945662,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.210246441684638,
+          "semantic_score": 0.501768946647644,
+          "matched_candidate_competency": "Data warehousing"
+        },
+        "candidate_evidence": [
+          "Data warehousing"
+        ]
+      },
+      {
+        "job_competency": "Business and technical stakeholder communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6483,
+        "evidence": {
+          "tfidf_score": 0.19158640844110872,
+          "tfidf_matched_terms": [
+            "and",
+            "technical"
+          ],
+          "bm25_score": 2.823187859620081,
+          "semantic_score": 0.44450274109840393,
+          "matched_candidate_competency": "Provided customer support and tested functional and technical queries, requests, requirements, and modifications."
+        },
+        "candidate_evidence": [
+          "Provided customer support and tested functional and technical queries, requests, requirements, and modifications."
+        ]
+      },
+      {
+        "job_competency": "Employment without sponsorship",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9321,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33934712409973145,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Remote work during EST hours",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7207,
+        "evidence": {
+          "tfidf_score": 0.011574719403621427,
+          "tfidf_matched_terms": [
+            "during"
+          ],
+          "bm25_score": 1.9382082343627518,
+          "semantic_score": 0.2396221160888672,
+          "matched_candidate_competency": "Interacted with clients during analysis, development, and implementation phases."
+        },
+        "candidate_evidence": [
+          "Interacted with clients during analysis, development, and implementation phases."
+        ]
+      },
+      {
+        "job_competency": "Bachelor's degree in Computer Science or equivalent",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3946,
+        "evidence": {
+          "tfidf_score": 0.04683073423193081,
+          "tfidf_matched_terms": [
+            "computer",
+            "in"
+          ],
+          "bm25_score": 3.1766636667849153,
+          "semantic_score": 0.44994455575942993,
+          "matched_candidate_competency": "Electrical and computer engineering"
+        },
+        "candidate_evidence": [
+          "Electrical and computer engineering"
+        ]
+      },
+      {
+        "job_competency": "Perl",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.0995,
+        "evidence": {
+          "tfidf_score": 0.034533284803659144,
+          "tfidf_matched_terms": [
+            "perl"
+          ],
+          "bm25_score": 5.151749221655877,
+          "semantic_score": 0.9999999403953552,
+          "matched_candidate_competency": "Perl"
+        },
+        "candidate_evidence": [
+          "Perl"
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.0995,
+        "evidence": {
+          "tfidf_score": 0.034533284803659144,
+          "tfidf_matched_terms": [
+            "python"
+          ],
+          "bm25_score": 5.151749221655877,
+          "semantic_score": 1.000000238418579,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Bash",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4154,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6732557415962219,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Hadoop",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5535,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38765230774879456,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Apache Spark",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5669,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2758077383041382,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Big data technologies",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.243,
+        "evidence": {
+          "tfidf_score": 0.046779699507590304,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.210246441684638,
+          "semantic_score": 0.506437361240387,
+          "matched_candidate_competency": "Data warehousing"
+        },
+        "candidate_evidence": [
+          "Data warehousing"
+        ]
+      },
+      {
+        "job_competency": "Hive",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5524,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.396813303232193,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "Pig",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5629,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30897629261016846,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      },
+      {
+        "job_competency": "MapReduce",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4368,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.45012855529785156,
+          "matched_candidate_competency": "C"
+        },
+        "candidate_evidence": [
+          "C"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Agile software development",
+      "Perl",
+      "Python"
+    ],
+    "partial_matches": [
+      "SQL and database programming",
+      "Unix server and web stack administration",
+      "Data presentation",
+      "Big data technologies"
+    ],
+    "weak_matches": [
+      "Java",
+      "Backend REST API development",
+      "Functional programming",
+      "Ruby",
+      "MongoDB",
+      "MV* application design",
+      "Modular design",
+      "Responsive design",
+      "Web technologies and Internet architecture",
+      "Debugging and virtual machines",
+      "Verbal and written communication",
+      "Business and technical stakeholder communication",
+      "Remote work during EST hours",
+      "Bachelor's degree in Computer Science or equivalent",
+      "Bash",
+      "MapReduce"
+    ],
+    "missing": [
+      "AWS",
+      "Spring Boot",
+      "Microservices",
+      "Node.js",
+      "Scala",
+      "Bootstrap",
+      "jQuery",
+      "Elasticsearch",
+      "Redis",
+      "React.js",
+      "Backbone.js",
+      "Require.js",
+      "D3 or Highcharts",
+      "JavaScript graphing",
+      "Git",
+      "Continuous integration",
+      "Jenkins",
+      "Employment without sponsorship",
+      "Hadoop",
+      "Apache Spark",
+      "Hive",
+      "Pig"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Agile software development",
+      "Perl",
+      "Python"
+    ],
+    "partial_matches": [
+      "SQL and database programming",
+      "Unix server and web stack administration",
+      "Data presentation",
+      "Big data technologies"
+    ],
+    "competency_gaps": [
+      "Java",
+      "Backend REST API development",
+      "Functional programming",
+      "Ruby",
+      "MongoDB",
+      "MV* application design",
+      "Modular design",
+      "Responsive design",
+      "Web technologies and Internet architecture",
+      "Debugging and virtual machines",
+      "Verbal and written communication",
+      "Business and technical stakeholder communication",
+      "Remote work during EST hours",
+      "Bachelor's degree in Computer Science or equivalent",
+      "Bash",
+      "MapReduce",
+      "AWS",
+      "Spring Boot",
+      "Microservices",
+      "Node.js",
+      "Scala",
+      "Bootstrap",
+      "jQuery",
+      "Elasticsearch",
+      "Redis",
+      "React.js",
+      "Backbone.js",
+      "Require.js",
+      "D3 or Highcharts",
+      "JavaScript graphing",
+      "Git",
+      "Continuous integration",
+      "Jenkins",
+      "Employment without sponsorship",
+      "Hadoop",
+      "Apache Spark",
+      "Hive",
+      "Pig"
+    ]
+  },
+  "counts": {
+    "requirements": 45,
+    "strength_matches": 3,
+    "partial_matches": 4,
+    "competency_gaps": 38
+  },
+  "latency_ms": 76.87,
+  "analyzed_at": "2026-10-03T17:29:45.099315+00:00"
+}

@@ -1,0 +1,597 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02012_5a7c31dedd0b",
+  "jd_id": "rjf_02012_5a7c31dedd0b",
+  "pair_id": "rjf_02012_5a7c31dedd0b",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Web-based three-tier application architecture",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.689,
+        "evidence": {
+          "tfidf_score": 0.010916991360416697,
+          "tfidf_matched_terms": [
+            "application",
+            "based"
+          ],
+          "bm25_score": 2.952297345582207,
+          "semantic_score": 0.29053544998168945,
+          "matched_candidate_competency": "Maintained test plans based on new system capabilities."
+        },
+        "candidate_evidence": [
+          "Maintained test plans based on new system capabilities."
+        ]
+      },
+      {
+        "job_competency": "Security architecture",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9386,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3071242868900299,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Consumer-facing web and mobile software development at scale",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3728,
+        "evidence": {
+          "tfidf_score": 0.2035036791823381,
+          "tfidf_matched_terms": [
+            "and",
+            "development",
+            "mobile",
+            "software"
+          ],
+          "bm25_score": 4.966890528181196,
+          "semantic_score": 0.4551392197608948,
+          "matched_candidate_competency": "Mobile testing"
+        },
+        "candidate_evidence": [
+          "Mobile testing"
+        ]
+      },
+      {
+        "job_competency": "Agile methodologies",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3584,
+        "evidence": {
+          "tfidf_score": 0.029902743924701495,
+          "tfidf_matched_terms": [
+            "agile"
+          ],
+          "bm25_score": 4.198637804287968,
+          "semantic_score": 0.8314968347549438,
+          "matched_candidate_competency": "Agile"
+        },
+        "candidate_evidence": [
+          "Agile"
+        ]
+      },
+      {
+        "job_competency": "Secure application development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6807,
+        "evidence": {
+          "tfidf_score": 0.0344979597868094,
+          "tfidf_matched_terms": [
+            "application",
+            "development"
+          ],
+          "bm25_score": 2.7744939431487987,
+          "semantic_score": 0.34856677055358887,
+          "matched_candidate_competency": "Test case development and execution"
+        },
+        "candidate_evidence": [
+          "Test case development and execution"
+        ]
+      },
+      {
+        "job_competency": "Change management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3851,
+        "evidence": {
+          "tfidf_score": 0.009956105933666472,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 4.966890528181196,
+          "semantic_score": 0.47688373923301697,
+          "matched_candidate_competency": "Defect management"
+        },
+        "candidate_evidence": [
+          "Defect management"
+        ]
+      },
+      {
+        "job_competency": "Security vulnerability mitigation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9415,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2926406264305115,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Input validation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7004,
+        "evidence": {
+          "tfidf_score": 0.009956105933666472,
+          "tfidf_matched_terms": [
+            "input"
+          ],
+          "bm25_score": 2.323906142520252,
+          "semantic_score": 0.304298460483551,
+          "matched_candidate_competency": "Reviewed and provided input on test strategies, defect reports, and QA deliverables."
+        },
+        "candidate_evidence": [
+          "Reviewed and provided input on test strategies, defect reports, and QA deliverables."
+        ]
+      },
+      {
+        "job_competency": "Encryption",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9318,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3409413695335388,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Secure authentication",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9444,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2782360911369324,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "PHP",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1619,
+        "evidence": {
+          "tfidf_score": 0.01717343765814253,
+          "tfidf_matched_terms": [
+            "php"
+          ],
+          "bm25_score": 5.604265018773134,
+          "semantic_score": 0.9999999403953552,
+          "matched_candidate_competency": "PHP"
+        },
+        "candidate_evidence": [
+          "PHP"
+        ]
+      },
+      {
+        "job_competency": "Content management systems",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3858,
+        "evidence": {
+          "tfidf_score": 0.007718368280473585,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 4.966890528181196,
+          "semantic_score": 0.4716704487800598,
+          "matched_candidate_competency": "Defect management"
+        },
+        "candidate_evidence": [
+          "Defect management"
+        ]
+      },
+      {
+        "job_competency": "PHP frameworks",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3568,
+        "evidence": {
+          "tfidf_score": 0.009956105933666472,
+          "tfidf_matched_terms": [
+            "php"
+          ],
+          "bm25_score": 5.604265018773134,
+          "semantic_score": 0.6740910410881042,
+          "matched_candidate_competency": "PHP"
+        },
+        "candidate_evidence": [
+          "PHP"
+        ]
+      },
+      {
+        "job_competency": "JavaScript and Node.js",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9056,
+        "evidence": {
+          "tfidf_score": 0.2485685036616639,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.43409341261120205,
+          "semantic_score": 0.22739244997501373,
+          "matched_candidate_competency": "Identified and communicated challenges in the development and test process."
+        },
+        "candidate_evidence": [
+          "Identified and communicated challenges in the development and test process."
+        ]
+      },
+      {
+        "job_competency": "JavaScript frameworks",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.938,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31018397212028503,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Relational, NoSQL, and key-value databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7137,
+        "evidence": {
+          "tfidf_score": 0.19835330388559363,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.43409341261120205,
+          "semantic_score": 0.3323328495025635,
+          "matched_candidate_competency": "Identified and communicated challenges in the development and test process."
+        },
+        "candidate_evidence": [
+          "Identified and communicated challenges in the development and test process."
+        ]
+      },
+      {
+        "job_competency": "API development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6798,
+        "evidence": {
+          "tfidf_score": 0.029902743924701502,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.7744939431487987,
+          "semantic_score": 0.35758617520332336,
+          "matched_candidate_competency": "Test case development and execution"
+        },
+        "candidate_evidence": [
+          "Test case development and execution"
+        ]
+      },
+      {
+        "job_competency": "RESTful APIs",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.953,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2352466583251953,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "OAuth2 and JWT tokens",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.938,
+        "evidence": {
+          "tfidf_score": 0.2485685036616639,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.43409341261120205,
+          "semantic_score": 0.06571891158819199,
+          "matched_candidate_competency": "Identified and communicated challenges in the development and test process."
+        },
+        "candidate_evidence": [
+          "Identified and communicated challenges in the development and test process."
+        ]
+      },
+      {
+        "job_competency": "Mobile payload delivery",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3834,
+        "evidence": {
+          "tfidf_score": 0.007718368280473585,
+          "tfidf_matched_terms": [
+            "mobile"
+          ],
+          "bm25_score": 4.966890528181196,
+          "semantic_score": 0.4955689013004303,
+          "matched_candidate_competency": "Mobile testing"
+        },
+        "candidate_evidence": [
+          "Mobile testing"
+        ]
+      },
+      {
+        "job_competency": "Web markup and frontend build technologies",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7109,
+        "evidence": {
+          "tfidf_score": 0.19835330388559363,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.43409341261120205,
+          "semantic_score": 0.3502397835254669,
+          "matched_candidate_competency": "Identified and communicated challenges in the development and test process."
+        },
+        "candidate_evidence": [
+          "Identified and communicated challenges in the development and test process."
+        ]
+      },
+      {
+        "job_competency": "Version control systems",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9267,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.366543173789978,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Docker containerization and orchestration",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9201,
+        "evidence": {
+          "tfidf_score": 0.24856850366166391,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.43409341261120205,
+          "semantic_score": 0.154730886220932,
+          "matched_candidate_competency": "Identified and communicated challenges in the development and test process."
+        },
+        "candidate_evidence": [
+          "Identified and communicated challenges in the development and test process."
+        ]
+      },
+      {
+        "job_competency": "Software testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3805,
+        "evidence": {
+          "tfidf_score": 0.06085747871510682,
+          "tfidf_matched_terms": [
+            "software",
+            "testing"
+          ],
+          "bm25_score": 3.3394584201084334,
+          "semantic_score": 0.7020799517631531,
+          "matched_candidate_competency": "Mobile testing"
+        },
+        "candidate_evidence": [
+          "Mobile testing"
+        ]
+      },
+      {
+        "job_competency": "Testing frameworks",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3924,
+        "evidence": {
+          "tfidf_score": 0.039910619511514187,
+          "tfidf_matched_terms": [
+            "testing"
+          ],
+          "bm25_score": 3.3394584201084334,
+          "semantic_score": 0.5993123650550842,
+          "matched_candidate_competency": "Mobile testing"
+        },
+        "candidate_evidence": [
+          "Mobile testing"
+        ]
+      },
+      {
+        "job_competency": "Atlassian tools",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9405,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2974621057510376,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Software engineering planning and resource management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.368,
+        "evidence": {
+          "tfidf_score": 0.2765146551689602,
+          "tfidf_matched_terms": [
+            "and",
+            "management",
+            "planning",
+            "software"
+          ],
+          "bm25_score": 4.966890528181196,
+          "semantic_score": 0.44800421595573425,
+          "matched_candidate_competency": "Defect management"
+        },
+        "candidate_evidence": [
+          "Defect management"
+        ]
+      },
+      {
+        "job_competency": "Waterfall methodologies",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4356,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46240341663360596,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "PHP"
+    ],
+    "partial_matches": [
+      "Consumer-facing web and mobile software development at scale",
+      "Agile methodologies",
+      "Change management",
+      "Content management systems",
+      "PHP frameworks",
+      "Mobile payload delivery",
+      "Software testing",
+      "Testing frameworks",
+      "Software engineering planning and resource management"
+    ],
+    "weak_matches": [
+      "Web-based three-tier application architecture",
+      "Secure application development",
+      "Input validation",
+      "Relational, NoSQL, and key-value databases",
+      "API development",
+      "Web markup and frontend build technologies",
+      "Waterfall methodologies"
+    ],
+    "missing": [
+      "Security architecture",
+      "Security vulnerability mitigation",
+      "Encryption",
+      "Secure authentication",
+      "JavaScript and Node.js",
+      "JavaScript frameworks",
+      "RESTful APIs",
+      "OAuth2 and JWT tokens",
+      "Version control systems",
+      "Docker containerization and orchestration",
+      "Atlassian tools"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "PHP"
+    ],
+    "partial_matches": [
+      "Consumer-facing web and mobile software development at scale",
+      "Agile methodologies",
+      "Change management",
+      "Content management systems",
+      "PHP frameworks",
+      "Mobile payload delivery",
+      "Software testing",
+      "Testing frameworks",
+      "Software engineering planning and resource management"
+    ],
+    "competency_gaps": [
+      "Web-based three-tier application architecture",
+      "Secure application development",
+      "Input validation",
+      "Relational, NoSQL, and key-value databases",
+      "API development",
+      "Web markup and frontend build technologies",
+      "Waterfall methodologies",
+      "Security architecture",
+      "Security vulnerability mitigation",
+      "Encryption",
+      "Secure authentication",
+      "JavaScript and Node.js",
+      "JavaScript frameworks",
+      "RESTful APIs",
+      "OAuth2 and JWT tokens",
+      "Version control systems",
+      "Docker containerization and orchestration",
+      "Atlassian tools"
+    ]
+  },
+  "counts": {
+    "requirements": 28,
+    "strength_matches": 1,
+    "partial_matches": 9,
+    "competency_gaps": 18
+  },
+  "latency_ms": 53.55,
+  "analyzed_at": "2026-10-03T17:29:44.845351+00:00"
+}

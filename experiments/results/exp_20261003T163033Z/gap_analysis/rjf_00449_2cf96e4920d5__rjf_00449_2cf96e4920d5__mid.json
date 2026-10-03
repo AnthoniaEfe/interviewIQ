@@ -1,0 +1,156 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00449_2cf96e4920d5",
+  "jd_id": "rjf_00449_2cf96e4920d5",
+  "pair_id": "rjf_00449_2cf96e4920d5",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Microsoft Azure",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9363,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3185727596282959,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "Azure Data Factory",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3845,
+        "evidence": {
+          "tfidf_score": 0.01032882020366945,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 4.623235556403275,
+          "semantic_score": 0.39742815494537354,
+          "matched_candidate_competency": "Data collection"
+        },
+        "candidate_evidence": [
+          "Data collection"
+        ]
+      },
+      {
+        "job_competency": "Azure Data Lake Storage",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3894,
+        "evidence": {
+          "tfidf_score": 0.008732554892887706,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 4.623235556403275,
+          "semantic_score": 0.3494766652584076,
+          "matched_candidate_competency": "Data collection"
+        },
+        "candidate_evidence": [
+          "Data collection"
+        ]
+      },
+      {
+        "job_competency": "Databricks",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7294,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4413168430328369,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "Azure Key Vault",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9773,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.113435760140419,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      },
+      {
+        "job_competency": "Azure Cosmos DB",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5641,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2991228401660919,
+          "matched_candidate_competency": "AutoCAD"
+        },
+        "candidate_evidence": [
+          "AutoCAD"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Azure Data Factory",
+      "Azure Data Lake Storage"
+    ],
+    "weak_matches": [
+      "Databricks"
+    ],
+    "missing": [
+      "Microsoft Azure",
+      "Azure Key Vault",
+      "Azure Cosmos DB"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Azure Data Factory",
+      "Azure Data Lake Storage"
+    ],
+    "competency_gaps": [
+      "Databricks",
+      "Microsoft Azure",
+      "Azure Key Vault",
+      "Azure Cosmos DB"
+    ]
+  },
+  "counts": {
+    "requirements": 6,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 4
+  },
+  "latency_ms": 22.29,
+  "analyzed_at": "2026-10-03T17:29:42.874122+00:00"
+}

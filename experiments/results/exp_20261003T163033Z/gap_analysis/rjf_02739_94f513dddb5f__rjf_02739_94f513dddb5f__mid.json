@@ -1,0 +1,237 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02739_94f513dddb5f",
+  "jd_id": "rjf_02739_94f513dddb5f",
+  "pair_id": "rjf_02739_94f513dddb5f",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Java 11 or later",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3629,
+        "evidence": {
+          "tfidf_score": 0.018963428107017767,
+          "tfidf_matched_terms": [
+            "java"
+          ],
+          "bm25_score": 5.013026395029127,
+          "semantic_score": 0.7070961594581604,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "AWS cloud architecture",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9366,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3172430396080017,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Data modeling",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9263,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3687421679496765,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Relational databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6773,
+        "evidence": {
+          "tfidf_score": 0.014453232657671648,
+          "tfidf_matched_terms": [
+            "databases"
+          ],
+          "bm25_score": 1.5948582653022059,
+          "semantic_score": 0.5495669841766357,
+          "matched_candidate_competency": "Created database schemas and interacted with databases to add, update, and delete records through JDBC."
+        },
+        "candidate_evidence": [
+          "Created database schemas and interacted with databases to add, update, and delete records through JDBC."
+        ]
+      },
+      {
+        "job_competency": "NoSQL databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6676,
+        "evidence": {
+          "tfidf_score": 0.014453232657671648,
+          "tfidf_matched_terms": [
+            "databases"
+          ],
+          "bm25_score": 1.5948582653022059,
+          "semantic_score": 0.6102392673492432,
+          "matched_candidate_competency": "Created database schemas and interacted with databases to add, update, and delete records through JDBC."
+        },
+        "candidate_evidence": [
+          "Created database schemas and interacted with databases to add, update, and delete records through JDBC."
+        ]
+      },
+      {
+        "job_competency": "Microservices",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7095,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5653564929962158,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Docker",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7345,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4095427393913269,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Kubernetes",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9397,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3014809191226959,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Python",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1616,
+        "evidence": {
+          "tfidf_score": 0.02493059953950755,
+          "tfidf_matched_terms": [
+            "python"
+          ],
+          "bm25_score": 5.7871071669036125,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Git and GitOps",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1662,
+        "evidence": {
+          "tfidf_score": 0.21528242785866095,
+          "tfidf_matched_terms": [
+            "and",
+            "git"
+          ],
+          "bm25_score": 5.7871071669036125,
+          "semantic_score": 0.7641212940216064,
+          "matched_candidate_competency": "Git"
+        },
+        "candidate_evidence": [
+          "Git"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Python",
+      "Git and GitOps"
+    ],
+    "partial_matches": [
+      "Java 11 or later"
+    ],
+    "weak_matches": [
+      "Relational databases",
+      "NoSQL databases",
+      "Microservices",
+      "Docker"
+    ],
+    "missing": [
+      "AWS cloud architecture",
+      "Data modeling",
+      "Kubernetes"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Python",
+      "Git and GitOps"
+    ],
+    "partial_matches": [
+      "Java 11 or later"
+    ],
+    "competency_gaps": [
+      "Relational databases",
+      "NoSQL databases",
+      "Microservices",
+      "Docker",
+      "AWS cloud architecture",
+      "Data modeling",
+      "Kubernetes"
+    ]
+  },
+  "counts": {
+    "requirements": 10,
+    "strength_matches": 2,
+    "partial_matches": 1,
+    "competency_gaps": 7
+  },
+  "latency_ms": 31.71,
+  "analyzed_at": "2026-10-03T17:29:45.933645+00:00"
+}

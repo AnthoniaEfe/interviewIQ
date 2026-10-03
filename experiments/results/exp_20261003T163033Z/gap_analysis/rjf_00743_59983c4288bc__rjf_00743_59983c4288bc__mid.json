@@ -1,0 +1,186 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00743_59983c4288bc",
+  "jd_id": "rjf_00743_59983c4288bc",
+  "pair_id": "rjf_00743_59983c4288bc",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Microsoft Office 365",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9227,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38645225763320923,
+          "matched_candidate_competency": "Software Engineering"
+        },
+        "candidate_evidence": [
+          "Software Engineering"
+        ]
+      },
+      {
+        "job_competency": "ERP systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6733,
+        "evidence": {
+          "tfidf_score": 0.008497240399207935,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 2.6838103101783317,
+          "semantic_score": 0.3790077865123749,
+          "matched_candidate_competency": "Set up dashboards and monitoring systems and created an on-call rotation."
+        },
+        "candidate_evidence": [
+          "Set up dashboards and monitoring systems and created an on-call rotation."
+        ]
+      },
+      {
+        "job_competency": "Accounting experience",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9344,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3280261158943176,
+          "matched_candidate_competency": "Software Engineering"
+        },
+        "candidate_evidence": [
+          "Software Engineering"
+        ]
+      },
+      {
+        "job_competency": "Organizational and time-management skills",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3841,
+        "evidence": {
+          "tfidf_score": 0.2799730035005918,
+          "tfidf_matched_terms": [
+            "and",
+            "management",
+            "skills"
+          ],
+          "bm25_score": 3.60701106639821,
+          "semantic_score": 0.4021243751049042,
+          "matched_candidate_competency": "Cryptographic Key Management"
+        },
+        "candidate_evidence": [
+          "Cryptographic Key Management"
+        ]
+      },
+      {
+        "job_competency": "Written and oral communication",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1668,
+        "evidence": {
+          "tfidf_score": 0.28791557715612776,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 4.9492563489685635,
+          "semantic_score": 0.6980932950973511,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Fast-paced work and deadline management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3866,
+        "evidence": {
+          "tfidf_score": 0.22895584679143247,
+          "tfidf_matched_terms": [
+            "and",
+            "management"
+          ],
+          "bm25_score": 3.60701106639821,
+          "semantic_score": 0.4152093231678009,
+          "matched_candidate_competency": "Cryptographic Key Management"
+        },
+        "candidate_evidence": [
+          "Cryptographic Key Management"
+        ]
+      },
+      {
+        "job_competency": "Attention to detail",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6928,
+        "evidence": {
+          "tfidf_score": 0.01977877738400335,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 2.0189822385747807,
+          "semantic_score": 0.34907037019729614,
+          "matched_candidate_competency": "Served as founding engineer and helped build the team to 6 members."
+        },
+        "candidate_evidence": [
+          "Served as founding engineer and helped build the team to 6 members."
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Written and oral communication"
+    ],
+    "partial_matches": [
+      "Organizational and time-management skills",
+      "Fast-paced work and deadline management"
+    ],
+    "weak_matches": [
+      "ERP systems",
+      "Attention to detail"
+    ],
+    "missing": [
+      "Microsoft Office 365",
+      "Accounting experience"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Written and oral communication"
+    ],
+    "partial_matches": [
+      "Organizational and time-management skills",
+      "Fast-paced work and deadline management"
+    ],
+    "competency_gaps": [
+      "ERP systems",
+      "Attention to detail",
+      "Microsoft Office 365",
+      "Accounting experience"
+    ]
+  },
+  "counts": {
+    "requirements": 7,
+    "strength_matches": 1,
+    "partial_matches": 2,
+    "competency_gaps": 4
+  },
+  "latency_ms": 26.29,
+  "analyzed_at": "2026-10-03T17:29:43.292882+00:00"
+}

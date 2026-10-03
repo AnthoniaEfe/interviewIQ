@@ -1,0 +1,255 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02103_cd560738b087",
+  "jd_id": "rjf_02103_cd560738b087",
+  "pair_id": "rjf_02103_cd560738b087",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Jira and Jira Aline tools",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7112,
+        "evidence": {
+          "tfidf_score": 0.0922742290005963,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.2638774105016701,
+          "semantic_score": 0.28422969579696655,
+          "matched_candidate_competency": "Pre-processed and optimized animal shelter data using SQL and Python."
+        },
+        "candidate_evidence": [
+          "Pre-processed and optimized animal shelter data using SQL and Python."
+        ]
+      },
+      {
+        "job_competency": "Salesforce platform capabilities and best practices",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7034,
+        "evidence": {
+          "tfidf_score": 0.10030391217328634,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.2638774105016701,
+          "semantic_score": 0.3269578814506531,
+          "matched_candidate_competency": "Pre-processed and optimized animal shelter data using SQL and Python."
+        },
+        "candidate_evidence": [
+          "Pre-processed and optimized animal shelter data using SQL and Python."
+        ]
+      },
+      {
+        "job_competency": "Requirements gathering",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9344,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3282371163368225,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Process mapping",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9313,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34343671798706055,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Documentation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9347,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3265599012374878,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Salesforce Lightning",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9396,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30189600586891174,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Sales Cloud",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4032,
+        "evidence": {
+          "tfidf_score": 0.036529731184843046,
+          "tfidf_matched_terms": [
+            "cloud"
+          ],
+          "bm25_score": 2.87331309640057,
+          "semantic_score": 0.4819297790527344,
+          "matched_candidate_competency": "AWS Certified Cloud Practitioner"
+        },
+        "candidate_evidence": [
+          "AWS Certified Cloud Practitioner"
+        ]
+      },
+      {
+        "job_competency": "Service Cloud",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3962,
+        "evidence": {
+          "tfidf_score": 0.036529731184843046,
+          "tfidf_matched_terms": [
+            "cloud"
+          ],
+          "bm25_score": 2.87331309640057,
+          "semantic_score": 0.5526954531669617,
+          "matched_candidate_competency": "AWS Certified Cloud Practitioner"
+        },
+        "candidate_evidence": [
+          "AWS Certified Cloud Practitioner"
+        ]
+      },
+      {
+        "job_competency": "Data analysis",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1511,
+        "evidence": {
+          "tfidf_score": 0.3035986606524572,
+          "tfidf_matched_terms": [
+            "analysis",
+            "data"
+          ],
+          "bm25_score": 4.703283603184891,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Data Analysis"
+        },
+        "candidate_evidence": [
+          "Data Analysis"
+        ]
+      },
+      {
+        "job_competency": "Trend identification",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7242,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4737023413181305,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Actionable insights",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9228,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3857778310775757,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Data analysis"
+    ],
+    "partial_matches": [
+      "Sales Cloud",
+      "Service Cloud"
+    ],
+    "weak_matches": [
+      "Jira and Jira Aline tools",
+      "Salesforce platform capabilities and best practices",
+      "Trend identification"
+    ],
+    "missing": [
+      "Requirements gathering",
+      "Process mapping",
+      "Documentation",
+      "Salesforce Lightning",
+      "Actionable insights"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Data analysis"
+    ],
+    "partial_matches": [
+      "Sales Cloud",
+      "Service Cloud"
+    ],
+    "competency_gaps": [
+      "Jira and Jira Aline tools",
+      "Salesforce platform capabilities and best practices",
+      "Trend identification",
+      "Requirements gathering",
+      "Process mapping",
+      "Documentation",
+      "Salesforce Lightning",
+      "Actionable insights"
+    ]
+  },
+  "counts": {
+    "requirements": 11,
+    "strength_matches": 1,
+    "partial_matches": 2,
+    "competency_gaps": 8
+  },
+  "latency_ms": 26.75,
+  "analyzed_at": "2026-10-03T17:29:44.916929+00:00"
+}

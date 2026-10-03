@@ -1,0 +1,933 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "extraction",
+  "profile_id": "rjf_02071_c3a2d8db4b35",
+  "jd_id": "rjf_02071_c3a2d8db4b35",
+  "pair_id": "rjf_02071_c3a2d8db4b35",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "A motivated data enthusiast with 5+ years of SQL and data analysis experience, 3+ years of object-oriented programming experience, and 2+ years of Python and R experience. Self-taught in machine learning and big data, with coursework through Coursera, Udacity, and Udemy. AWS Certified Cloud Practitioner.",
+    "seniority_indicators": [
+      "5+ years of SQL and data analysis experience",
+      "3+ years of object-oriented programming experience",
+      "2+ years of Python and R experience",
+      "Presented weekly to CXOs",
+      "Earned responsibility for data architecture and automation despite being junior"
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Engineering",
+        "institution": "University of Mumbai, Vidyalankar Institute of Technology",
+        "field": "Information Technology",
+        "year": "Expected July 2018",
+        "source_text": "Expected in July 2018 \u2014 Bachelor of Engineering: Information Technology"
+      },
+      {
+        "degree": "Master of Science",
+        "institution": "University of California-San Francisco",
+        "field": "Business Analytics",
+        "year": "Expected June",
+        "source_text": "Expected in June \u2014 Master of Science: Business Analytics"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Data Analyst",
+        "employer": "Angi HomeServices Inc.",
+        "duration": "10/2019 to 06/2019",
+        "responsibilities": [
+          "Built an end-to-end analytics-based solution for animal shelters to assess current capacity and provide recommendations for improving animal outcomes and health.",
+          "Created a cloud-based UI to source animal shelter data and present an optimal solution.",
+          "Used the Delphi method to generate synthetic data for missing values using information from animal experts.",
+          "Pre-processed and optimized animal shelter data using SQL and Python.",
+          "Delivered a complete, extendable analytics and UI solution despite unclear client outcomes and COVID-19-related conditions."
+        ],
+        "achievements": [
+          "Predicted animal outcomes with 73% accuracy based on characteristics at intake."
+        ],
+        "technologies": [
+          "AWS",
+          "Flask",
+          "HTML",
+          "SQL",
+          "Python",
+          "Delphi method"
+        ],
+        "source_text": "Data Analyst, Angi HomeServices Inc. \u2014 Built an end-to-end analytics-based animal shelter solution; created an AWS/Flask/HTML UI; used Delphi, SQL, and Python; predicted animal outcomes with 73% accuracy."
+      },
+      {
+        "title": "Analyst",
+        "employer": "Ameresco",
+        "duration": "01/2019 to 06/2019",
+        "responsibilities": [
+          "Predicted MEIS/SEIS license prices using time-series analysis and supervised machine learning models.",
+          "Created a billing system from scratch using Excel, VLOOKUP, HLOOKUP, and formulas."
+        ],
+        "achievements": [
+          "Negotiated and operationalized MEIS/SEIS license rates, resulting in savings of INR 1,000,000.",
+          "Reduced time spent creating bills by 50%."
+        ],
+        "technologies": [
+          "Time-series analysis",
+          "Supervised machine learning",
+          "Excel",
+          "VLOOKUP",
+          "HLOOKUP"
+        ],
+        "source_text": "Analyst, Ameresco \u2014 Predicted MEIS/SEIS license prices and created a new Excel-based billing system."
+      },
+      {
+        "title": "Analyst Intern",
+        "employer": "Spencer Stuart",
+        "duration": "06/2018 to 09/2018",
+        "responsibilities": [
+          "Created data architecture and automation for BSE mutual funds.",
+          "Processed more than 1 million weekly transactions to support audits and executive reporting.",
+          "Presented weekly to CXOs."
+        ],
+        "achievements": [
+          "Quickly earned responsibility for data architecture and automation despite being junior."
+        ],
+        "technologies": [
+          "Data architecture",
+          "Automation"
+        ],
+        "source_text": "Analyst Intern, Spencer Stuart \u2014 Created data architecture and automation for BSE mutual funds; processed 1 million+ weekly transactions; presented to CXOs."
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Tools: SQL, Python, Jupyter Notebook, Flask, R, Tableau, Spark, MongoDB, Excel, HTML, MapReduce",
+          "source_section": "Summary / Tools",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Python",
+        "original_mentions": [
+          "Python"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Tools: SQL, Python, Jupyter Notebook, Flask, R, Tableau, Spark, MongoDB, Excel, HTML, MapReduce",
+          "source_section": "Summary / Tools",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Jupyter Notebook",
+        "original_mentions": [
+          "Jupyter Notebook"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Tools: SQL, Python, Jupyter Notebook, Flask, R, Tableau, Spark, MongoDB, Excel, HTML, MapReduce",
+          "source_section": "Summary / Tools",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Flask",
+        "original_mentions": [
+          "Flask"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Tools: SQL, Python, Jupyter Notebook, Flask, R, Tableau, Spark, MongoDB, Excel, HTML, MapReduce",
+          "source_section": "Summary / Tools",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "R",
+        "original_mentions": [
+          "R"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Tools: SQL, Python, Jupyter Notebook, Flask, R, Tableau, Spark, MongoDB, Excel, HTML, MapReduce",
+          "source_section": "Summary / Tools",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Tableau",
+        "original_mentions": [
+          "Tableau"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Tools: SQL, Python, Jupyter Notebook, Flask, R, Tableau, Spark, MongoDB, Excel, HTML, MapReduce",
+          "source_section": "Summary / Tools",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Apache Spark",
+        "original_mentions": [
+          "Spark"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Tools: SQL, Python, Jupyter Notebook, Flask, R, Tableau, Spark, MongoDB, Excel, HTML, MapReduce",
+          "source_section": "Summary / Tools",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "MongoDB",
+        "original_mentions": [
+          "MongoDB"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Tools: SQL, Python, Jupyter Notebook, Flask, R, Tableau, Spark, MongoDB, Excel, HTML, MapReduce",
+          "source_section": "Summary / Tools",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Excel",
+        "original_mentions": [
+          "Excel"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Tools: SQL, Python, Jupyter Notebook, Flask, R, Tableau, Spark, MongoDB, Excel, HTML, MapReduce",
+          "source_section": "Summary / Tools",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "HTML",
+        "original_mentions": [
+          "HTML"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Tools: SQL, Python, Jupyter Notebook, Flask, R, Tableau, Spark, MongoDB, Excel, HTML, MapReduce",
+          "source_section": "Summary / Tools",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "MapReduce",
+        "original_mentions": [
+          "MapReduce"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Tools: SQL, Python, Jupyter Notebook, Flask, R, Tableau, Spark, MongoDB, Excel, HTML, MapReduce",
+          "source_section": "Summary / Tools",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "A/B testing",
+        "original_mentions": [
+          "A/B Testing"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: A/B Testing, Data Analysis, Database Management, Data Mining, Data Visualization, Hypothesis Testing, Modeling, Machine Learning, Statistical Analysis, Dashboards, Automation",
+          "source_section": "Summary / Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data analysis",
+        "original_mentions": [
+          "Data Analysis"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: A/B Testing, Data Analysis, Database Management, Data Mining, Data Visualization, Hypothesis Testing, Modeling, Machine Learning, Statistical Analysis, Dashboards, Automation",
+          "source_section": "Summary / Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Database management",
+        "original_mentions": [
+          "Database Management"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: A/B Testing, Data Analysis, Database Management, Data Mining, Data Visualization, Hypothesis Testing, Modeling, Machine Learning, Statistical Analysis, Dashboards, Automation",
+          "source_section": "Summary / Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data mining",
+        "original_mentions": [
+          "Data Mining"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: A/B Testing, Data Analysis, Database Management, Data Mining, Data Visualization, Hypothesis Testing, Modeling, Machine Learning, Statistical Analysis, Dashboards, Automation",
+          "source_section": "Summary / Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data visualization",
+        "original_mentions": [
+          "Data Visualization"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: A/B Testing, Data Analysis, Database Management, Data Mining, Data Visualization, Hypothesis Testing, Modeling, Machine Learning, Statistical Analysis, Dashboards, Automation",
+          "source_section": "Summary / Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Hypothesis testing",
+        "original_mentions": [
+          "Hypothesis Testing"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: A/B Testing, Data Analysis, Database Management, Data Mining, Data Visualization, Hypothesis Testing, Modeling, Machine Learning, Statistical Analysis, Dashboards, Automation",
+          "source_section": "Summary / Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Machine learning",
+        "original_mentions": [
+          "Machine Learning"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: A/B Testing, Data Analysis, Database Management, Data Mining, Data Visualization, Hypothesis Testing, Modeling, Machine Learning, Statistical Analysis, Dashboards, Automation",
+          "source_section": "Summary / Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Statistical analysis",
+        "original_mentions": [
+          "Statistical Analysis"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: A/B Testing, Data Analysis, Database Management, Data Mining, Data Visualization, Hypothesis Testing, Modeling, Machine Learning, Statistical Analysis, Dashboards, Automation",
+          "source_section": "Summary / Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Dashboards",
+        "original_mentions": [
+          "Dashboards"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: A/B Testing, Data Analysis, Data Mining, Data Visualization, Hypothesis Testing, Modeling, Machine Learning, Statistical Analysis, Dashboards",
+          "source_section": "Summary / Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Automation",
+        "original_mentions": [
+          "Automation"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: ... Dashboards, Automation",
+          "source_section": "Summary / Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Time-series analysis",
+        "original_mentions": [
+          "Time-series analysis"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Operationalized and negotiated the prices/rate ... by predicting the price ... using Time-series analysis",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Supervised machine learning",
+        "original_mentions": [
+          "supervised machine learning model"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "... predicting the price ... using Time-series analysis and supervised machine learning model",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Object-oriented programming",
+        "original_mentions": [
+          "Object-Oriented Programming"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "3+ years of Object-Oriented Programming experience",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "VLOOKUP",
+        "original_mentions": [
+          "VLOOKUP"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "using Excel, VLOOKUP, HLOOKUP and Formulas",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "HLOOKUP",
+        "original_mentions": [
+          "HLOOKUP"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "using Excel, VLOOKUP, HLOOKUP and Formulas",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Client management",
+        "original_mentions": [
+          "Dealt with a tricky client, with unclear outcomes"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Dealt with a tricky client, with unclear outcomes ... yet delivered a complete, extendable analytics/UI solution.",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Presentation to executives",
+        "original_mentions": [
+          "Presented to CXOs weekly"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Presented to CXOs weekly.",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Negotiation",
+        "original_mentions": [
+          "negotiated the prices/rate"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Operationalized and negotiated the prices/rate of various MEIS/SEIS",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [
+      {
+        "normalized_label": "AWS Certified Cloud Practitioner",
+        "original_mentions": [
+          "AWS Certified Cloud Practitioner"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "... am an AWS Certified Cloud Practitioner.",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "domain_experience": [
+      {
+        "normalized_label": "Animal shelter analytics",
+        "original_mentions": [
+          "animal shelters",
+          "animal shelter data"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Built an end to end analytics-based solution for animal shelters ...",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Import/export licenses in India",
+        "original_mentions": [
+          "Traders of import export licenses in India",
+          "MEIS/SEIS"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Traders of import export licenses in India ... MEIS/SEIS licenses",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Mutual funds",
+        "original_mentions": [
+          "BSE's Mutual Funds",
+          "Funds"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "... creation of data architecture & automation for BSE's Mutual Funds.",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": []
+  },
+  "job": {
+    "title": null,
+    "seniority": null,
+    "years_of_experience": null,
+    "responsibilities": [
+      "Execute all or part of business analysis on business features and user stories.",
+      "Provide oversight when junior BAs are involved.",
+      "Gather and understand business needs and translate them into effective user stories and requirements.",
+      "Assist in estimating, prioritizing, and implementing cost-effective business process and system solutions.",
+      "Work with the Product Owner and business stakeholders on prioritization and implementation.",
+      "Onboard and mentor new BAs.",
+      "Acquire business-unit domain knowledge and facilitate domain knowledge growth across technical teams.",
+      "Lead or support knowledge management initiatives.",
+      "Develop understanding of the industry and organizational vision, mission, and strategic goals."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "FACETS",
+        "original_mentions": [
+          "experience in FACETS"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Must have experience in FACETS",
+          "source_section": "Requirement",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Business analysis",
+        "original_mentions": [
+          "business analysis"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Execute all or part of the business analysis",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "User story development",
+        "original_mentions": [
+          "business features/user stories",
+          "user stories/requirements"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "translating business needs into effective user stories and requirements",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Business requirements gathering",
+        "original_mentions": [
+          "gathering and understanding of business needs"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "gathering and understanding of business needs",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Business process and system solution implementation",
+        "original_mentions": [
+          "implementation of cost-effective business process and system solutions"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "implementation of cost-effective business process and system solutions",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Estimation and prioritization",
+        "original_mentions": [
+          "estimation, prioritization"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Assist in the estimation, prioritization",
+          "source_section": null,
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [],
+    "education_requirements": [],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Business-unit domain knowledge",
+        "original_mentions": [
+          "BU domain knowledge"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Proactively acquire BU domain knowledge",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Industry knowledge",
+        "original_mentions": [
+          "understanding of the industry"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.94,
+        "source": {
+          "source_text": "Develop a strong understanding of the industry",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Organizational strategy knowledge",
+        "original_mentions": [
+          "organizational vision, mission, strategic goals"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "understanding of the organizational vision, mission, strategic goals",
+          "source_section": null,
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Mentoring",
+        "original_mentions": [
+          "mentoring BAs/new BAs"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "On-boarding and mentoring BAs/new BAs",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Oversight",
+        "original_mentions": [
+          "Provide oversight"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Provide oversight when junior BAs are involved",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cross-functional collaboration",
+        "original_mentions": [
+          "Work with Product Owner Business"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Work with Product Owner Business",
+          "source_section": null,
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [
+      "Provide oversight when junior BAs are involved.",
+      "Onboard and mentor new BAs.",
+      "Lead or support knowledge management initiatives."
+    ],
+    "system_design_requirements": [
+      "Assist in implementing cost-effective business process and system solutions."
+    ],
+    "competencies": [
+      {
+        "normalized_label": "FACETS",
+        "original_mentions": [
+          "experience in FACETS"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Must have experience in FACETS",
+          "source_section": "Requirement",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Business analysis",
+        "original_mentions": [
+          "business analysis"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Execute all or part of the business analysis",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "User story development",
+        "original_mentions": [
+          "business features/user stories",
+          "user stories/requirements"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "translating business needs into effective user stories and requirements",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Business requirements gathering",
+        "original_mentions": [
+          "gathering and understanding of business needs"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "gathering and understanding of business needs",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Estimation and prioritization",
+        "original_mentions": [
+          "estimation, prioritization"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Assist in the estimation, prioritization",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Business-unit domain knowledge",
+        "original_mentions": [
+          "BU domain knowledge"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Proactively acquire BU domain knowledge",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Mentoring",
+        "original_mentions": [
+          "mentoring BAs/new BAs"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "On-boarding and mentoring BAs/new BAs",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Knowledge management",
+        "original_mentions": [
+          "Knowledge management initiatives"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Lead or support Knowledge management initiatives",
+          "source_section": null,
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 1783,
+    "output_tokens": 3315,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0041465,
+    "latency_ms": 18673.98,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 874,
+    "output_tokens": 1578,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0020684,
+    "latency_ms": 11917.15,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-10-03T16:48:13.070968+00:00",
+  "reused_from_experiment": null
+}

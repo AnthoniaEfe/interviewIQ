@@ -1,0 +1,186 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01819_852e4a0fd127",
+  "jd_id": "rjf_01819_852e4a0fd127",
+  "pair_id": "rjf_01819_852e4a0fd127",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Cucumber BDD",
+        "priority": "unspecified",
+        "match_label": "missing",
+        "weight": 0.5743,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.21448659896850586,
+          "matched_candidate_competency": "Requirement Analysis and Design"
+        },
+        "candidate_evidence": [
+          "Requirement Analysis and Design"
+        ]
+      },
+      {
+        "job_competency": "Selenium UI automation",
+        "priority": "unspecified",
+        "match_label": "weak_match",
+        "weight": 0.4186,
+        "evidence": {
+          "tfidf_score": 0.008967862528491086,
+          "tfidf_matched_terms": [
+            "ui"
+          ],
+          "bm25_score": 2.547524903421558,
+          "semantic_score": 0.24063798785209656,
+          "matched_candidate_competency": "Analyzed and estimated QA defects and UI/design changes."
+        },
+        "candidate_evidence": [
+          "Analyzed and estimated QA defects and UI/design changes."
+        ]
+      },
+      {
+        "job_competency": "Test plan development",
+        "priority": "unspecified",
+        "match_label": "partial_match",
+        "weight": 0.2404,
+        "evidence": {
+          "tfidf_score": 0.07054870938321257,
+          "tfidf_matched_terms": [
+            "development",
+            "test"
+          ],
+          "bm25_score": 2.7807726337037058,
+          "semantic_score": 0.513313889503479,
+          "matched_candidate_competency": "Repository Development"
+        },
+        "candidate_evidence": [
+          "Repository Development"
+        ]
+      },
+      {
+        "job_competency": "Test case development",
+        "priority": "unspecified",
+        "match_label": "partial_match",
+        "weight": 0.2318,
+        "evidence": {
+          "tfidf_score": 0.07054870938321257,
+          "tfidf_matched_terms": [
+            "development",
+            "test"
+          ],
+          "bm25_score": 2.7807726337037058,
+          "semantic_score": 0.6564699411392212,
+          "matched_candidate_competency": "Repository Development"
+        },
+        "candidate_evidence": [
+          "Repository Development"
+        ]
+      },
+      {
+        "job_competency": "Test scenario development",
+        "priority": "unspecified",
+        "match_label": "partial_match",
+        "weight": 0.2329,
+        "evidence": {
+          "tfidf_score": 0.07054870938321257,
+          "tfidf_matched_terms": [
+            "development",
+            "test"
+          ],
+          "bm25_score": 2.7807726337037058,
+          "semantic_score": 0.6377425193786621,
+          "matched_candidate_competency": "Repository Development"
+        },
+        "candidate_evidence": [
+          "Repository Development"
+        ]
+      },
+      {
+        "job_competency": "Test data request creation",
+        "priority": "unspecified",
+        "match_label": "partial_match",
+        "weight": 0.2255,
+        "evidence": {
+          "tfidf_score": 0.016362599168768022,
+          "tfidf_matched_terms": [
+            "data",
+            "test"
+          ],
+          "bm25_score": 4.875301475479272,
+          "semantic_score": 0.47898632287979126,
+          "matched_candidate_competency": "Data Modeling"
+        },
+        "candidate_evidence": [
+          "Data Modeling"
+        ]
+      },
+      {
+        "job_competency": "Data mining",
+        "priority": "unspecified",
+        "match_label": "partial_match",
+        "weight": 0.2169,
+        "evidence": {
+          "tfidf_score": 0.011567858138888516,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 4.875301475479272,
+          "semantic_score": 0.6259856224060059,
+          "matched_candidate_competency": "Data Modeling"
+        },
+        "candidate_evidence": [
+          "Data Modeling"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Test plan development",
+      "Test case development",
+      "Test scenario development",
+      "Test data request creation",
+      "Data mining"
+    ],
+    "weak_matches": [
+      "Selenium UI automation"
+    ],
+    "missing": [
+      "Cucumber BDD"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Test plan development",
+      "Test case development",
+      "Test scenario development",
+      "Test data request creation",
+      "Data mining"
+    ],
+    "competency_gaps": [
+      "Selenium UI automation",
+      "Cucumber BDD"
+    ]
+  },
+  "counts": {
+    "requirements": 7,
+    "strength_matches": 0,
+    "partial_matches": 5,
+    "competency_gaps": 2
+  },
+  "latency_ms": 24.23,
+  "analyzed_at": "2026-10-03T17:29:44.595580+00:00"
+}

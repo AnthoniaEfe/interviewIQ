@@ -1,0 +1,506 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00649_fec4272fefdf",
+  "jd_id": "rjf_00649_fec4272fefdf",
+  "pair_id": "rjf_00649_fec4272fefdf",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Business analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7011,
+        "evidence": {
+          "tfidf_score": 0.024987567124353193,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 2.5634492709995365,
+          "semantic_score": 0.34178540110588074,
+          "matched_candidate_competency": "Pore pressure analysis and management"
+        },
+        "candidate_evidence": [
+          "Pore pressure analysis and management"
+        ]
+      },
+      {
+        "job_competency": "ServiceNow platform",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7229,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.48173806071281433,
+          "matched_candidate_competency": "Mud logging"
+        },
+        "candidate_evidence": [
+          "Mud logging"
+        ]
+      },
+      {
+        "job_competency": "IT Service Management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4058,
+        "evidence": {
+          "tfidf_score": 0.06508872724685445,
+          "tfidf_matched_terms": [
+            "management",
+            "service"
+          ],
+          "bm25_score": 3.729736766172481,
+          "semantic_score": 0.5181556940078735,
+          "matched_candidate_competency": "Customer service"
+        },
+        "candidate_evidence": [
+          "Customer service"
+        ]
+      },
+      {
+        "job_competency": "Incident Management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6784,
+        "evidence": {
+          "tfidf_score": 0.05011151596058596,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.037426899884049,
+          "semantic_score": 0.417330265045166,
+          "matched_candidate_competency": "Time management"
+        },
+        "candidate_evidence": [
+          "Time management"
+        ]
+      },
+      {
+        "job_competency": "Change Management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6701,
+        "evidence": {
+          "tfidf_score": 0.05011151596058596,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.037426899884049,
+          "semantic_score": 0.46907708048820496,
+          "matched_candidate_competency": "Time management"
+        },
+        "candidate_evidence": [
+          "Time management"
+        ]
+      },
+      {
+        "job_competency": "Problem Management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6649,
+        "evidence": {
+          "tfidf_score": 0.05011151596058596,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.037426899884049,
+          "semantic_score": 0.5013989210128784,
+          "matched_candidate_competency": "Time management"
+        },
+        "candidate_evidence": [
+          "Time management"
+        ]
+      },
+      {
+        "job_competency": "Service Catalog",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6516,
+        "evidence": {
+          "tfidf_score": 0.024987567124353193,
+          "tfidf_matched_terms": [
+            "service"
+          ],
+          "bm25_score": 3.729736766172481,
+          "semantic_score": 0.5334635972976685,
+          "matched_candidate_competency": "Customer service"
+        },
+        "candidate_evidence": [
+          "Customer service"
+        ]
+      },
+      {
+        "job_competency": "Analytical and problem-solving skills",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1645,
+        "evidence": {
+          "tfidf_score": 0.09963768652116685,
+          "tfidf_matched_terms": [
+            "analytical",
+            "and",
+            "skills"
+          ],
+          "bm25_score": 7.459473532344962,
+          "semantic_score": 0.8846830129623413,
+          "matched_candidate_competency": "Analytical skills"
+        },
+        "candidate_evidence": [
+          "Analytical skills"
+        ]
+      },
+      {
+        "job_competency": "Stakeholder communication and collaboration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6451,
+        "evidence": {
+          "tfidf_score": 0.0896534990817423,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 4.396491078481397,
+          "semantic_score": 0.458886981010437,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Technical communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3807,
+        "evidence": {
+          "tfidf_score": 0.024987567124353193,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 4.396491078481397,
+          "semantic_score": 0.7321170568466187,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Process mapping",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9451,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27469098567962646,
+          "matched_candidate_competency": "Mud logging"
+        },
+        "candidate_evidence": [
+          "Mud logging"
+        ]
+      },
+      {
+        "job_competency": "Workflow design",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9367,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31665486097335815,
+          "matched_candidate_competency": "Mud logging"
+        },
+        "candidate_evidence": [
+          "Mud logging"
+        ]
+      },
+      {
+        "job_competency": "Process improvement",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9301,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3496953248977661,
+          "matched_candidate_competency": "Mud logging"
+        },
+        "candidate_evidence": [
+          "Mud logging"
+        ]
+      },
+      {
+        "job_competency": "Requirements gathering",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9247,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37638506293296814,
+          "matched_candidate_competency": "Mud logging"
+        },
+        "candidate_evidence": [
+          "Mud logging"
+        ]
+      },
+      {
+        "job_competency": "Technical and business documentation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7195,
+        "evidence": {
+          "tfidf_score": 0.06641925560894205,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.685880651246577,
+          "semantic_score": 0.28367525339126587,
+          "matched_candidate_competency": "Adaptability and learning ability"
+        },
+        "candidate_evidence": [
+          "Adaptability and learning ability"
+        ]
+      },
+      {
+        "job_competency": "ServiceNow configuration and customization",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7223,
+        "evidence": {
+          "tfidf_score": 0.06641925560894206,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.685880651246577,
+          "semantic_score": 0.2661730647087097,
+          "matched_candidate_competency": "Adaptability and learning ability"
+        },
+        "candidate_evidence": [
+          "Adaptability and learning ability"
+        ]
+      },
+      {
+        "job_competency": "ServiceNow Business Rules",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.722,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.48734039068222046,
+          "matched_candidate_competency": "Mud logging"
+        },
+        "candidate_evidence": [
+          "Mud logging"
+        ]
+      },
+      {
+        "job_competency": "ServiceNow Client Scripts",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6994,
+        "evidence": {
+          "tfidf_score": 0.07856034776318101,
+          "tfidf_matched_terms": [
+            "client"
+          ],
+          "bm25_score": 1.9078861255025583,
+          "semantic_score": 0.37792444229125977,
+          "matched_candidate_competency": "KOC client operations"
+        },
+        "candidate_evidence": [
+          "KOC client operations"
+        ]
+      },
+      {
+        "job_competency": "ServiceNow UI Policies",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9466,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26675093173980713,
+          "matched_candidate_competency": "Mud logging"
+        },
+        "candidate_evidence": [
+          "Mud logging"
+        ]
+      },
+      {
+        "job_competency": "Scrum Master experience",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.441,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4058777689933777,
+          "matched_candidate_competency": "Mud logging"
+        },
+        "candidate_evidence": [
+          "Mud logging"
+        ]
+      },
+      {
+        "job_competency": "Cloud computing",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5609,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32547813653945923,
+          "matched_candidate_competency": "Mud logging"
+        },
+        "candidate_evidence": [
+          "Mud logging"
+        ]
+      },
+      {
+        "job_competency": "Amazon Web Services (AWS)",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.553,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39133420586586,
+          "matched_candidate_competency": "Mud logging"
+        },
+        "candidate_evidence": [
+          "Mud logging"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Azure",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5608,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3268773555755615,
+          "matched_candidate_competency": "Mud logging"
+        },
+        "candidate_evidence": [
+          "Mud logging"
+        ]
+      },
+      {
+        "job_competency": "Enterprise infrastructure",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.556,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36630362272262573,
+          "matched_candidate_competency": "Mud logging"
+        },
+        "candidate_evidence": [
+          "Mud logging"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Analytical and problem-solving skills"
+    ],
+    "partial_matches": [
+      "IT Service Management",
+      "Technical communication"
+    ],
+    "weak_matches": [
+      "Business analysis",
+      "ServiceNow platform",
+      "Incident Management",
+      "Change Management",
+      "Problem Management",
+      "Service Catalog",
+      "Stakeholder communication and collaboration",
+      "Technical and business documentation",
+      "ServiceNow configuration and customization",
+      "ServiceNow Business Rules",
+      "ServiceNow Client Scripts",
+      "Scrum Master experience"
+    ],
+    "missing": [
+      "Process mapping",
+      "Workflow design",
+      "Process improvement",
+      "Requirements gathering",
+      "ServiceNow UI Policies",
+      "Cloud computing",
+      "Amazon Web Services (AWS)",
+      "Microsoft Azure",
+      "Enterprise infrastructure"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Analytical and problem-solving skills"
+    ],
+    "partial_matches": [
+      "IT Service Management",
+      "Technical communication"
+    ],
+    "competency_gaps": [
+      "Business analysis",
+      "ServiceNow platform",
+      "Incident Management",
+      "Change Management",
+      "Problem Management",
+      "Service Catalog",
+      "Stakeholder communication and collaboration",
+      "Technical and business documentation",
+      "ServiceNow configuration and customization",
+      "ServiceNow Business Rules",
+      "ServiceNow Client Scripts",
+      "Scrum Master experience",
+      "Process mapping",
+      "Workflow design",
+      "Process improvement",
+      "Requirements gathering",
+      "ServiceNow UI Policies",
+      "Cloud computing",
+      "Amazon Web Services (AWS)",
+      "Microsoft Azure",
+      "Enterprise infrastructure"
+    ]
+  },
+  "counts": {
+    "requirements": 24,
+    "strength_matches": 1,
+    "partial_matches": 2,
+    "competency_gaps": 21
+  },
+  "latency_ms": 37.28,
+  "analyzed_at": "2026-10-03T17:29:43.206972+00:00"
+}

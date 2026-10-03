@@ -1,0 +1,479 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00627_419631f732ed",
+  "jd_id": "rjf_00627_419631f732ed",
+  "pair_id": "rjf_00627_419631f732ed",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "U.S. GAAP accounting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9363,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31840449571609497,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "General ledger accounting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9458,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2707894444465637,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Complex accounting transactions",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7303,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4357525110244751,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "ASC 842 lease accounting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.953,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.23523882031440735,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "CECL credit loss accounting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9593,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2032867968082428,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Journal entries",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7084,
+        "evidence": {
+          "tfidf_score": 0.015036859739045767,
+          "tfidf_matched_terms": [
+            "entries"
+          ],
+          "bm25_score": 1.7390554108206673,
+          "semantic_score": 0.2788461744785309,
+          "matched_candidate_competency": "Implemented data preprocessing and cleaning for a dataset containing over one million entries."
+        },
+        "candidate_evidence": [
+          "Implemented data preprocessing and cleaning for a dataset containing over one million entries."
+        ]
+      },
+      {
+        "job_competency": "General ledger reconciliations",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9369,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3154231309890747,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Technical accounting research",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3658,
+        "evidence": {
+          "tfidf_score": 0.0116571701849139,
+          "tfidf_matched_terms": [
+            "research"
+          ],
+          "bm25_score": 4.6143820100767545,
+          "semantic_score": 0.582872748374939,
+          "matched_candidate_competency": "Business Research"
+        },
+        "candidate_evidence": [
+          "Business Research"
+        ]
+      },
+      {
+        "job_competency": "Accounting standards implementation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9291,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3544658124446869,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Financial statement preparation and review",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7036,
+        "evidence": {
+          "tfidf_score": 0.061836456797451665,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.384524116812893,
+          "semantic_score": 0.3311902582645416,
+          "matched_candidate_competency": "Performed data extraction and cleaning using R."
+        },
+        "candidate_evidence": [
+          "Performed data extraction and cleaning using R."
+        ]
+      },
+      {
+        "job_competency": "External reporting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7347,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4080347418785095,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Consolidated footnote disclosures",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9544,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2282075732946396,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Internal controls",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7335,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41533714532852173,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Control narratives and process flow charts",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3891,
+        "evidence": {
+          "tfidf_score": 0.08401470723063421,
+          "tfidf_matched_terms": [
+            "and",
+            "control"
+          ],
+          "bm25_score": 3.491122110159515,
+          "semantic_score": 0.47843989729881287,
+          "matched_candidate_competency": "Quality Control"
+        },
+        "candidate_evidence": [
+          "Quality Control"
+        ]
+      },
+      {
+        "job_competency": "Control issue remediation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6524,
+        "evidence": {
+          "tfidf_score": 0.035063659546004225,
+          "tfidf_matched_terms": [
+            "control"
+          ],
+          "bm25_score": 3.491122110159515,
+          "semantic_score": 0.3288135528564453,
+          "matched_candidate_competency": "Quality Control"
+        },
+        "candidate_evidence": [
+          "Quality Control"
+        ]
+      },
+      {
+        "job_competency": "Business combinations accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6556,
+        "evidence": {
+          "tfidf_score": 0.07076025222254867,
+          "tfidf_matched_terms": [
+            "business"
+          ],
+          "bm25_score": 2.6319494865319517,
+          "semantic_score": 0.4217086732387543,
+          "matched_candidate_competency": "Business Intelligence"
+        },
+        "candidate_evidence": [
+          "Business Intelligence"
+        ]
+      },
+      {
+        "job_competency": "Divestitures accounting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9405,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2975330054759979,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Equity method investments",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9292,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35415953397750854,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Business contract accounting review",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6719,
+        "evidence": {
+          "tfidf_score": 0.059824624166510534,
+          "tfidf_matched_terms": [
+            "business"
+          ],
+          "bm25_score": 2.6319494865319517,
+          "semantic_score": 0.32812783122062683,
+          "matched_candidate_competency": "Business Intelligence"
+        },
+        "candidate_evidence": [
+          "Business Intelligence"
+        ]
+      },
+      {
+        "job_competency": "Goodwill and intangible asset valuation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9089,
+        "evidence": {
+          "tfidf_score": 0.06183645679745165,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.384524116812893,
+          "semantic_score": 0.18428108096122742,
+          "matched_candidate_competency": "Performed data extraction and cleaning using R."
+        },
+        "candidate_evidence": [
+          "Performed data extraction and cleaning using R."
+        ]
+      },
+      {
+        "job_competency": "Accounting analysis and documentation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6935,
+        "evidence": {
+          "tfidf_score": 0.07010207632328729,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.384524116812893,
+          "semantic_score": 0.3878771662712097,
+          "matched_candidate_competency": "Performed data extraction and cleaning using R."
+        },
+        "candidate_evidence": [
+          "Performed data extraction and cleaning using R."
+        ]
+      },
+      {
+        "job_competency": "Accounting policy and procedure compliance",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7059,
+        "evidence": {
+          "tfidf_score": 0.06183645679745165,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.384524116812893,
+          "semantic_score": 0.3165237009525299,
+          "matched_candidate_competency": "Performed data extraction and cleaning using R."
+        },
+        "candidate_evidence": [
+          "Performed data extraction and cleaning using R."
+        ]
+      },
+      {
+        "job_competency": "Certified Public Accountant",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5658,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2853979468345642,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Technical accounting research",
+      "Control narratives and process flow charts"
+    ],
+    "weak_matches": [
+      "Complex accounting transactions",
+      "Journal entries",
+      "Financial statement preparation and review",
+      "External reporting",
+      "Internal controls",
+      "Control issue remediation",
+      "Business combinations accounting",
+      "Business contract accounting review",
+      "Accounting analysis and documentation",
+      "Accounting policy and procedure compliance"
+    ],
+    "missing": [
+      "U.S. GAAP accounting",
+      "General ledger accounting",
+      "ASC 842 lease accounting",
+      "CECL credit loss accounting",
+      "General ledger reconciliations",
+      "Accounting standards implementation",
+      "Consolidated footnote disclosures",
+      "Divestitures accounting",
+      "Equity method investments",
+      "Goodwill and intangible asset valuation",
+      "Certified Public Accountant"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Technical accounting research",
+      "Control narratives and process flow charts"
+    ],
+    "competency_gaps": [
+      "Complex accounting transactions",
+      "Journal entries",
+      "Financial statement preparation and review",
+      "External reporting",
+      "Internal controls",
+      "Control issue remediation",
+      "Business combinations accounting",
+      "Business contract accounting review",
+      "Accounting analysis and documentation",
+      "Accounting policy and procedure compliance",
+      "U.S. GAAP accounting",
+      "General ledger accounting",
+      "ASC 842 lease accounting",
+      "CECL credit loss accounting",
+      "General ledger reconciliations",
+      "Accounting standards implementation",
+      "Consolidated footnote disclosures",
+      "Divestitures accounting",
+      "Equity method investments",
+      "Goodwill and intangible asset valuation",
+      "Certified Public Accountant"
+    ]
+  },
+  "counts": {
+    "requirements": 23,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 21
+  },
+  "latency_ms": 44.58,
+  "analyzed_at": "2026-10-03T17:29:43.138361+00:00"
+}

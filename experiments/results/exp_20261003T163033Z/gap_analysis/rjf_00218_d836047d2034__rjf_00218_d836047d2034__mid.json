@@ -1,0 +1,242 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00218_d836047d2034",
+  "jd_id": "rjf_00218_d836047d2034",
+  "pair_id": "rjf_00218_d836047d2034",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Data quality",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3584,
+        "evidence": {
+          "tfidf_score": 0.12540425253705226,
+          "tfidf_matched_terms": [
+            "data",
+            "quality"
+          ],
+          "bm25_score": 4.201470521459922,
+          "semantic_score": 0.5716813802719116,
+          "matched_candidate_competency": "Quality Assurance"
+        },
+        "candidate_evidence": [
+          "Quality Assurance"
+        ]
+      },
+      {
+        "job_competency": "Data quality modeling",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3612,
+        "evidence": {
+          "tfidf_score": 0.08894889354533406,
+          "tfidf_matched_terms": [
+            "data",
+            "quality"
+          ],
+          "bm25_score": 4.201470521459922,
+          "semantic_score": 0.5710992217063904,
+          "matched_candidate_competency": "Quality Assurance"
+        },
+        "candidate_evidence": [
+          "Quality Assurance"
+        ]
+      },
+      {
+        "job_competency": "Data analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3471,
+        "evidence": {
+          "tfidf_score": 0.12540425253705226,
+          "tfidf_matched_terms": [
+            "analysis",
+            "data"
+          ],
+          "bm25_score": 4.201470521459922,
+          "semantic_score": 0.6849225759506226,
+          "matched_candidate_competency": "Business Analysis"
+        },
+        "candidate_evidence": [
+          "Business Analysis"
+        ]
+      },
+      {
+        "job_competency": "Matrix-based analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3718,
+        "evidence": {
+          "tfidf_score": 0.06321908501400553,
+          "tfidf_matched_terms": [
+            "analysis",
+            "based"
+          ],
+          "bm25_score": 4.201470521459922,
+          "semantic_score": 0.48498061299324036,
+          "matched_candidate_competency": "Business Analysis"
+        },
+        "candidate_evidence": [
+          "Business Analysis"
+        ]
+      },
+      {
+        "job_competency": "Collibra",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.942,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2900528311729431,
+          "matched_candidate_competency": "System Administration"
+        },
+        "candidate_evidence": [
+          "System Administration"
+        ]
+      },
+      {
+        "job_competency": "Jira",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9325,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3372828960418701,
+          "matched_candidate_competency": "System Administration"
+        },
+        "candidate_evidence": [
+          "System Administration"
+        ]
+      },
+      {
+        "job_competency": "Confluence",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.929,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3549860119819641,
+          "matched_candidate_competency": "System Administration"
+        },
+        "candidate_evidence": [
+          "System Administration"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.705,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.593652606010437,
+          "matched_candidate_competency": "System Administration"
+        },
+        "candidate_evidence": [
+          "System Administration"
+        ]
+      },
+      {
+        "job_competency": "Data quality testing",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2139,
+        "evidence": {
+          "tfidf_score": 0.1318121877983644,
+          "tfidf_matched_terms": [
+            "data",
+            "quality",
+            "testing"
+          ],
+          "bm25_score": 4.201470521459922,
+          "semantic_score": 0.5856032371520996,
+          "matched_candidate_competency": "Quality Assurance"
+        },
+        "candidate_evidence": [
+          "Quality Assurance"
+        ]
+      },
+      {
+        "job_competency": "Financial services",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4013,
+        "evidence": {
+          "tfidf_score": 0.01456089239965517,
+          "tfidf_matched_terms": [
+            "financial"
+          ],
+          "bm25_score": 1.7705962610410564,
+          "semantic_score": 0.4925970435142517,
+          "matched_candidate_competency": "Performed system administration, business analysis, and maintenance of health and financial database dictionaries."
+        },
+        "candidate_evidence": [
+          "Performed system administration, business analysis, and maintenance of health and financial database dictionaries."
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Data quality",
+      "Data quality modeling",
+      "Data analysis",
+      "Matrix-based analysis",
+      "Data quality testing"
+    ],
+    "weak_matches": [
+      "SQL",
+      "Financial services"
+    ],
+    "missing": [
+      "Collibra",
+      "Jira",
+      "Confluence"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Data quality",
+      "Data quality modeling",
+      "Data analysis",
+      "Matrix-based analysis",
+      "Data quality testing"
+    ],
+    "competency_gaps": [
+      "SQL",
+      "Financial services",
+      "Collibra",
+      "Jira",
+      "Confluence"
+    ]
+  },
+  "counts": {
+    "requirements": 10,
+    "strength_matches": 0,
+    "partial_matches": 5,
+    "competency_gaps": 5
+  },
+  "latency_ms": 32.61,
+  "analyzed_at": "2026-10-03T17:29:42.527778+00:00"
+}

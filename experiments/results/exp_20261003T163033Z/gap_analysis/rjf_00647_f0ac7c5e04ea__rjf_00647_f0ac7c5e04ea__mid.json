@@ -1,0 +1,207 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00647_f0ac7c5e04ea",
+  "jd_id": "rjf_00647_f0ac7c5e04ea",
+  "pair_id": "rjf_00647_f0ac7c5e04ea",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "General accounting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9207,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3963778018951416,
+          "matched_candidate_competency": "Electrical diagnostics"
+        },
+        "candidate_evidence": [
+          "Electrical diagnostics"
+        ]
+      },
+      {
+        "job_competency": "Account reconciliations",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9269,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3654429316520691,
+          "matched_candidate_competency": "Electrical diagnostics"
+        },
+        "candidate_evidence": [
+          "Electrical diagnostics"
+        ]
+      },
+      {
+        "job_competency": "Journal entries",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9486,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2571772336959839,
+          "matched_candidate_competency": "Electrical diagnostics"
+        },
+        "candidate_evidence": [
+          "Electrical diagnostics"
+        ]
+      },
+      {
+        "job_competency": "Lease accounting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9312,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3437808156013489,
+          "matched_candidate_competency": "Electrical diagnostics"
+        },
+        "candidate_evidence": [
+          "Electrical diagnostics"
+        ]
+      },
+      {
+        "job_competency": "Financial reporting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9323,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3384021520614624,
+          "matched_candidate_competency": "Electrical diagnostics"
+        },
+        "candidate_evidence": [
+          "Electrical diagnostics"
+        ]
+      },
+      {
+        "job_competency": "Full-cycle accounting and month-end close",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3888,
+        "evidence": {
+          "tfidf_score": 0.18491677914696783,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.24434380794232946,
+          "semantic_score": 0.22340767085552216,
+          "matched_candidate_competency": "Blueprints and schematics"
+        },
+        "candidate_evidence": [
+          "Blueprints and schematics"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9551,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.22447381913661957,
+          "matched_candidate_competency": "Electrical diagnostics"
+        },
+        "candidate_evidence": [
+          "Electrical diagnostics"
+        ]
+      },
+      {
+        "job_competency": "US GAAP",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5678,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2680128216743469,
+          "matched_candidate_competency": "Electrical diagnostics"
+        },
+        "candidate_evidence": [
+          "Electrical diagnostics"
+        ]
+      },
+      {
+        "job_competency": "Accounting experience",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5536,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38695183396339417,
+          "matched_candidate_competency": "Electrical diagnostics"
+        },
+        "candidate_evidence": [
+          "Electrical diagnostics"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Full-cycle accounting and month-end close"
+    ],
+    "weak_matches": [],
+    "missing": [
+      "General accounting",
+      "Account reconciliations",
+      "Journal entries",
+      "Lease accounting",
+      "Financial reporting",
+      "Microsoft Excel",
+      "US GAAP",
+      "Accounting experience"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Full-cycle accounting and month-end close"
+    ],
+    "competency_gaps": [
+      "General accounting",
+      "Account reconciliations",
+      "Journal entries",
+      "Lease accounting",
+      "Financial reporting",
+      "Microsoft Excel",
+      "US GAAP",
+      "Accounting experience"
+    ]
+  },
+  "counts": {
+    "requirements": 9,
+    "strength_matches": 0,
+    "partial_matches": 1,
+    "competency_gaps": 8
+  },
+  "latency_ms": 29.97,
+  "analyzed_at": "2026-10-03T17:29:43.169069+00:00"
+}

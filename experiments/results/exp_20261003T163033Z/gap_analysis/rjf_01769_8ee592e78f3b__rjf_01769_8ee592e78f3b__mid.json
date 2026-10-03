@@ -1,0 +1,794 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01769_8ee592e78f3b",
+  "jd_id": "rjf_01769_8ee592e78f3b",
+  "pair_id": "rjf_01769_8ee592e78f3b",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Data architecture",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3833,
+        "evidence": {
+          "tfidf_score": 0.009694204773236847,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.6889204382896423,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Data engineering solutions",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3871,
+        "evidence": {
+          "tfidf_score": 0.007515332111237606,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.6529725193977356,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "ELT and ETL data pipelines",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6461,
+        "evidence": {
+          "tfidf_score": 0.23087574297683894,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.3186500072479248,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Enterprise data warehouses",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3875,
+        "evidence": {
+          "tfidf_score": 0.007515332111237606,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.6485975980758667,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Data marts",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3911,
+        "evidence": {
+          "tfidf_score": 0.009694204773236847,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.6110861301422119,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Data lakes",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3991,
+        "evidence": {
+          "tfidf_score": 0.009694204773236847,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.531699538230896,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Data governance",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.39,
+        "evidence": {
+          "tfidf_score": 0.009694204773236847,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.6225346922874451,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Hybrid cloud data platforms",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4033,
+        "evidence": {
+          "tfidf_score": 0.006353876716369682,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.4918864071369171,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Azure data infrastructure",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4,
+        "evidence": {
+          "tfidf_score": 0.007515332111237606,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.5239893198013306,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "GCP data infrastructure",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6482,
+        "evidence": {
+          "tfidf_score": 0.007515332111237606,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.4728068709373474,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Apache Spark",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9459,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2703852951526642,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Power BI",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9503,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24867986142635345,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Metadata management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4004,
+        "evidence": {
+          "tfidf_score": 0.05844482827197012,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.1203403854016467,
+          "semantic_score": 0.6728103160858154,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Master data management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3451,
+        "evidence": {
+          "tfidf_score": 0.05899751136664991,
+          "tfidf_matched_terms": [
+            "data",
+            "management"
+          ],
+          "bm25_score": 8.36831671931372,
+          "semantic_score": 0.7546390891075134,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Data catalog",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3831,
+        "evidence": {
+          "tfidf_score": 0.009694204773236847,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.6915930509567261,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Business glossary",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7342,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4114595651626587,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7281,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4494476914405823,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "NoSQL databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7219,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4878954589366913,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Columnar databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7159,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5256603360176086,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "JSON",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.935,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3251252770423889,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Computer science fundamentals",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9279,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36071690917015076,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Pandas DataFrames",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9559,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.22061309218406677,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Directed acyclic graphs",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7169,
+        "evidence": {
+          "tfidf_score": 0.007515332111237606,
+          "tfidf_matched_terms": [
+            "directed"
+          ],
+          "bm25_score": 3.2710210733222738,
+          "semantic_score": 0.2203422337770462,
+          "matched_candidate_competency": "Directed calls to appropriate individuals and departments"
+        },
+        "candidate_evidence": [
+          "Directed calls to appropriate individuals and departments"
+        ]
+      },
+      {
+        "job_competency": "Workflow orchestration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6763,
+        "evidence": {
+          "tfidf_score": 0.009694204773236847,
+          "tfidf_matched_terms": [
+            "workflow"
+          ],
+          "bm25_score": 3.8513558745610714,
+          "semantic_score": 0.420670747756958,
+          "matched_candidate_competency": "Managed physician appointments and workflow"
+        },
+        "candidate_evidence": [
+          "Managed physician appointments and workflow"
+        ]
+      },
+      {
+        "job_competency": "Kubernetes",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9494,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.25298064947128296,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "GitLab",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.947,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2647690176963806,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Data architecture documentation and operationalization",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3831,
+        "evidence": {
+          "tfidf_score": 0.23087574297683894,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.5254963040351868,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Data strategy communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3814,
+        "evidence": {
+          "tfidf_score": 0.016775768720978555,
+          "tfidf_matched_terms": [
+            "communication",
+            "data"
+          ],
+          "bm25_score": 5.969558341630382,
+          "semantic_score": 0.6387808918952942,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Azure Data Factory",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3906,
+        "evidence": {
+          "tfidf_score": 0.007515332111237606,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.45532748103141785,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Google Dataflow",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4346,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.47300824522972107,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "AWS Glue",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5763,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.19719567894935608,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Biomedical informatics",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4375,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4424998164176941,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Amazon S3 or Azure Blob Storage",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5632,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3069678246974945,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Machine learning and AI",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.424,
+        "evidence": {
+          "tfidf_score": 0.2394517408247963,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.37334579051908134,
+          "semantic_score": 0.3698621392250061,
+          "matched_candidate_competency": "Compiled and maintained company information and contacts"
+        },
+        "candidate_evidence": [
+          "Compiled and maintained company information and contacts"
+        ]
+      },
+      {
+        "job_competency": "Unstructured data",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2419,
+        "evidence": {
+          "tfidf_score": 0.009694204773236847,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.49051976203918457,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Data democratization",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2375,
+        "evidence": {
+          "tfidf_score": 0.009694204773236847,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 5.2479763339120735,
+          "semantic_score": 0.5636863112449646,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Agile methodologies",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5568,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3597705066204071,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Kanban",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5585,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34560680389404297,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Jira and Confluence",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4317,
+        "evidence": {
+          "tfidf_score": 0.28322226527878297,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.37334579051908134,
+          "semantic_score": 0.25728344917297363,
+          "matched_candidate_competency": "Compiled and maintained company information and contacts"
+        },
+        "candidate_evidence": [
+          "Compiled and maintained company information and contacts"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Data architecture",
+      "Data engineering solutions",
+      "Enterprise data warehouses",
+      "Data marts",
+      "Data lakes",
+      "Data governance",
+      "Hybrid cloud data platforms",
+      "Azure data infrastructure",
+      "Metadata management",
+      "Master data management",
+      "Data catalog",
+      "Data architecture documentation and operationalization",
+      "Data strategy communication",
+      "Unstructured data",
+      "Data democratization"
+    ],
+    "weak_matches": [
+      "ELT and ETL data pipelines",
+      "GCP data infrastructure",
+      "Business glossary",
+      "SQL",
+      "NoSQL databases",
+      "Columnar databases",
+      "Directed acyclic graphs",
+      "Workflow orchestration",
+      "Azure Data Factory",
+      "Google Dataflow",
+      "Biomedical informatics",
+      "Machine learning and AI",
+      "Jira and Confluence"
+    ],
+    "missing": [
+      "Apache Spark",
+      "Power BI",
+      "JSON",
+      "Computer science fundamentals",
+      "Pandas DataFrames",
+      "Kubernetes",
+      "GitLab",
+      "AWS Glue",
+      "Amazon S3 or Azure Blob Storage",
+      "Agile methodologies",
+      "Kanban"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Data architecture",
+      "Data engineering solutions",
+      "Enterprise data warehouses",
+      "Data marts",
+      "Data lakes",
+      "Data governance",
+      "Hybrid cloud data platforms",
+      "Azure data infrastructure",
+      "Metadata management",
+      "Master data management",
+      "Data catalog",
+      "Data architecture documentation and operationalization",
+      "Data strategy communication",
+      "Unstructured data",
+      "Data democratization"
+    ],
+    "competency_gaps": [
+      "ELT and ETL data pipelines",
+      "GCP data infrastructure",
+      "Business glossary",
+      "SQL",
+      "NoSQL databases",
+      "Columnar databases",
+      "Directed acyclic graphs",
+      "Workflow orchestration",
+      "Azure Data Factory",
+      "Google Dataflow",
+      "Biomedical informatics",
+      "Machine learning and AI",
+      "Jira and Confluence",
+      "Apache Spark",
+      "Power BI",
+      "JSON",
+      "Computer science fundamentals",
+      "Pandas DataFrames",
+      "Kubernetes",
+      "GitLab",
+      "AWS Glue",
+      "Amazon S3 or Azure Blob Storage",
+      "Agile methodologies",
+      "Kanban"
+    ]
+  },
+  "counts": {
+    "requirements": 39,
+    "strength_matches": 0,
+    "partial_matches": 15,
+    "competency_gaps": 24
+  },
+  "latency_ms": 78.73,
+  "analyzed_at": "2026-10-03T17:29:44.570288+00:00"
+}

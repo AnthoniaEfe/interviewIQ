@@ -1,0 +1,839 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02340_67b618f30e02",
+  "jd_id": "rjf_02340_67b618f30e02",
+  "pair_id": "rjf_02340_67b618f30e02",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Python",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1768,
+        "evidence": {
+          "tfidf_score": 0.040329319639841245,
+          "tfidf_matched_terms": [
+            "python"
+          ],
+          "bm25_score": 4.908100687891522,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3598,
+        "evidence": {
+          "tfidf_score": 0.16327149582615821,
+          "tfidf_matched_terms": [
+            "java"
+          ],
+          "bm25_score": 3.166965320803776,
+          "semantic_score": 1.0000003576278687,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "REST API development",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1671,
+        "evidence": {
+          "tfidf_score": 0.06999135551611972,
+          "tfidf_matched_terms": [
+            "api",
+            "development",
+            "rest"
+          ],
+          "bm25_score": 8.504537458733424,
+          "semantic_score": 0.8560024499893188,
+          "matched_candidate_competency": "REST API"
+        },
+        "candidate_evidence": [
+          "REST API"
+        ]
+      },
+      {
+        "job_competency": "Linux/Unix fundamentals",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7284,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44780880212783813,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Microservices",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7244,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4725560247898102,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Data structures and algorithms",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6607,
+        "evidence": {
+          "tfidf_score": 0.23508584536279156,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 4.153533045362864,
+          "semantic_score": 0.32819864153862,
+          "matched_candidate_competency": "Test data management"
+        },
+        "candidate_evidence": [
+          "Test data management"
+        ]
+      },
+      {
+        "job_competency": "Operating systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7244,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4728010296821594,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Distributed systems",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9243,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37846478819847107,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Relational databases",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6992,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6297642588615417,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "NoSQL systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7274,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.453718364238739,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Storage",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9323,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33842188119888306,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Distributed persistence",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9326,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33706095814704895,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Troubleshooting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9419,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2907041311264038,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Debugging",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.932,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34005385637283325,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Performance tuning",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9456,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27220383286476135,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Agile/DevOps",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.714,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5374732613563538,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Software engineering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.726,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46233057975769043,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Technical and non-technical communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7232,
+        "evidence": {
+          "tfidf_score": 0.1535266549889772,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.154126567349256,
+          "semantic_score": 0.26320183277130127,
+          "matched_candidate_competency": "Developed stored procedures and triggers using MariaDB and Oracle."
+        },
+        "candidate_evidence": [
+          "Developed stored procedures and triggers using MariaDB and Oracle."
+        ]
+      },
+      {
+        "job_competency": "Presenting complex information clearly and concisely",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7228,
+        "evidence": {
+          "tfidf_score": 0.16688651083904787,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.154126567349256,
+          "semantic_score": 0.255323588848114,
+          "matched_candidate_competency": "Developed stored procedures and triggers using MariaDB and Oracle."
+        },
+        "candidate_evidence": [
+          "Developed stored procedures and triggers using MariaDB and Oracle."
+        ]
+      },
+      {
+        "job_competency": "Independent and collaborative work",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7033,
+        "evidence": {
+          "tfidf_score": 0.20913556501435754,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.154126567349256,
+          "semantic_score": 0.34545445442199707,
+          "matched_candidate_competency": "Developed stored procedures and triggers using MariaDB and Oracle."
+        },
+        "candidate_evidence": [
+          "Developed stored procedures and triggers using MariaDB and Oracle."
+        ]
+      },
+      {
+        "job_competency": "Managing multiple priorities",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7249,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4692862927913666,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Results-driven mindset",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7162,
+        "evidence": {
+          "tfidf_score": 0.020219109218905476,
+          "tfidf_matched_terms": [
+            "driven",
+            "results"
+          ],
+          "bm25_score": 2.481076303333844,
+          "semantic_score": 0.2899259626865387,
+          "matched_candidate_competency": "Prepared test cases and results for unit testing."
+        },
+        "candidate_evidence": [
+          "Prepared test cases and results for unit testing."
+        ]
+      },
+      {
+        "job_competency": "Teamwork",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7164,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5224040746688843,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Learning orientation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9529,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.23533692955970764,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Adaptability under ambiguity",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9696,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.1518220156431198,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Build automation",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4161,
+        "evidence": {
+          "tfidf_score": 0.02338046619201946,
+          "tfidf_matched_terms": [
+            "build"
+          ],
+          "bm25_score": 2.141294598974021,
+          "semantic_score": 0.4590771794319153,
+          "matched_candidate_competency": "Worked on application deployment and Maven build configuration."
+        },
+        "candidate_evidence": [
+          "Worked on application deployment and Maven build configuration."
+        ]
+      },
+      {
+        "job_competency": "Continuous integration",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.0976,
+        "evidence": {
+          "tfidf_score": 0.07142041105002352,
+          "tfidf_matched_terms": [
+            "continuous",
+            "integration"
+          ],
+          "bm25_score": 7.847077089402012,
+          "semantic_score": 1.000000238418579,
+          "matched_candidate_competency": "Continuous integration"
+        },
+        "candidate_evidence": [
+          "Continuous integration"
+        ]
+      },
+      {
+        "job_competency": "Continuous deployment",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3969,
+        "evidence": {
+          "tfidf_score": 0.0427841876839856,
+          "tfidf_matched_terms": [
+            "continuous",
+            "deployment"
+          ],
+          "bm25_score": 4.143296474838922,
+          "semantic_score": 0.4677480459213257,
+          "matched_candidate_competency": "Continuous integration"
+        },
+        "candidate_evidence": [
+          "Continuous integration"
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2152,
+        "evidence": {
+          "tfidf_score": 0.08085125422725195,
+          "tfidf_matched_terms": [
+            "git"
+          ],
+          "bm25_score": 3.9927366620219167,
+          "semantic_score": 0.9999996423721313,
+          "matched_candidate_competency": "Git"
+        },
+        "candidate_evidence": [
+          "Git"
+        ]
+      },
+      {
+        "job_competency": "Jenkins",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.1061,
+        "evidence": {
+          "tfidf_score": 0.040329319639841245,
+          "tfidf_matched_terms": [
+            "jenkins"
+          ],
+          "bm25_score": 4.908100687891522,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Jenkins"
+        },
+        "candidate_evidence": [
+          "Jenkins"
+        ]
+      },
+      {
+        "job_competency": "Maven",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2152,
+        "evidence": {
+          "tfidf_score": 0.08085125422725195,
+          "tfidf_matched_terms": [
+            "maven"
+          ],
+          "bm25_score": 3.9927366620219167,
+          "semantic_score": 0.9999997615814209,
+          "matched_candidate_competency": "Maven"
+        },
+        "candidate_evidence": [
+          "Maven"
+        ]
+      },
+      {
+        "job_competency": "Grunt",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.434,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.47942882776260376,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "RunDeck",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5632,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30684804916381836,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Ansible",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5547,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3774415850639343,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Data center infrastructure and operations",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3956,
+        "evidence": {
+          "tfidf_score": 0.20369589140228317,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 4.153533045362864,
+          "semantic_score": 0.3596036732196808,
+          "matched_candidate_competency": "Test data management"
+        },
+        "candidate_evidence": [
+          "Test data management"
+        ]
+      },
+      {
+        "job_competency": "React",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5598,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33462783694267273,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Containerization",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5595,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33786553144454956,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Docker",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5563,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36382046341896057,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Kubernetes",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.558,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34996578097343445,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Observability",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5626,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.311680406332016,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Global distributed-team collaboration",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4397,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.42002585530281067,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Flexible hours",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5663,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.28070592880249023,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Python",
+      "REST API development",
+      "Continuous integration",
+      "Jenkins"
+    ],
+    "partial_matches": [
+      "Java",
+      "Git",
+      "Maven"
+    ],
+    "weak_matches": [
+      "Linux/Unix fundamentals",
+      "Microservices",
+      "Data structures and algorithms",
+      "Operating systems",
+      "Relational databases",
+      "NoSQL systems",
+      "Agile/DevOps",
+      "Software engineering",
+      "Technical and non-technical communication",
+      "Presenting complex information clearly and concisely",
+      "Independent and collaborative work",
+      "Managing multiple priorities",
+      "Results-driven mindset",
+      "Teamwork",
+      "Build automation",
+      "Continuous deployment",
+      "Grunt",
+      "Data center infrastructure and operations",
+      "Global distributed-team collaboration"
+    ],
+    "missing": [
+      "Distributed systems",
+      "Storage",
+      "Distributed persistence",
+      "Troubleshooting",
+      "Debugging",
+      "Performance tuning",
+      "Learning orientation",
+      "Adaptability under ambiguity",
+      "RunDeck",
+      "Ansible",
+      "React",
+      "Containerization",
+      "Docker",
+      "Kubernetes",
+      "Observability",
+      "Flexible hours"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Python",
+      "REST API development",
+      "Continuous integration",
+      "Jenkins"
+    ],
+    "partial_matches": [
+      "Java",
+      "Git",
+      "Maven"
+    ],
+    "competency_gaps": [
+      "Linux/Unix fundamentals",
+      "Microservices",
+      "Data structures and algorithms",
+      "Operating systems",
+      "Relational databases",
+      "NoSQL systems",
+      "Agile/DevOps",
+      "Software engineering",
+      "Technical and non-technical communication",
+      "Presenting complex information clearly and concisely",
+      "Independent and collaborative work",
+      "Managing multiple priorities",
+      "Results-driven mindset",
+      "Teamwork",
+      "Build automation",
+      "Continuous deployment",
+      "Grunt",
+      "Data center infrastructure and operations",
+      "Global distributed-team collaboration",
+      "Distributed systems",
+      "Storage",
+      "Distributed persistence",
+      "Troubleshooting",
+      "Debugging",
+      "Performance tuning",
+      "Learning orientation",
+      "Adaptability under ambiguity",
+      "RunDeck",
+      "Ansible",
+      "React",
+      "Containerization",
+      "Docker",
+      "Kubernetes",
+      "Observability",
+      "Flexible hours"
+    ]
+  },
+  "counts": {
+    "requirements": 42,
+    "strength_matches": 4,
+    "partial_matches": 3,
+    "competency_gaps": 35
+  },
+  "latency_ms": 75.16,
+  "analyzed_at": "2026-10-03T17:29:45.207583+00:00"
+}

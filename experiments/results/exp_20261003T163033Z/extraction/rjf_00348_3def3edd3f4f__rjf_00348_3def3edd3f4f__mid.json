@@ -1,0 +1,882 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "extraction",
+  "profile_id": "rjf_00348_3def3edd3f4f",
+  "jd_id": "rjf_00348_3def3edd3f4f",
+  "pair_id": "rjf_00348_3def3edd3f4f",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Accounting professional with extensive experience in compensation and benefits accounting, financial statement audits, reviews, full-disclosure compilations, government audits, payroll administration, accounts payable, accounts receivable, financial reporting, reconciliations, and management analysis.",
+    "seniority_indicators": [
+      "Manager, Compensation & Benefits Accountant",
+      "20 years of professional accounting experience",
+      "Coordinated functions for a team of five employees",
+      "Prepared reports for executive-level management"
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Arts",
+        "institution": "Anderson University",
+        "field": "Accounting",
+        "year": null,
+        "source_text": "Bachelor of Arts | Accounting, Anderson University"
+      },
+      {
+        "degree": "Associate of Arts",
+        "institution": null,
+        "field": "Secretarial Studies",
+        "year": null,
+        "source_text": "Associate of Arts | Secretarial Studies"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Manager, Compensation & Benefits Accountant",
+        "employer": "Ball Corporation",
+        "duration": "01/1989 to 05/2009",
+        "responsibilities": [
+          "Managed accounting operations, accounting close, account reporting, and reconciliations.",
+          "Managed payroll, annual bonus, pension funds, annual reporting, and investment activities.",
+          "Prepared financial and regulatory reports, expense forecasts, financial statements, and audit documentation.",
+          "Reviewed general ledger entries and maintained payroll, benefits cash, accounts payable, accrued expense, and liability accounts.",
+          "Conducted technical and analytical reviews of federal and state corporate and payroll tax returns and FAS 86, FAS 109, and FAS 112 provisions.",
+          "Coordinated department functions and served as liaison between compensation and benefits and other departments.",
+          "Maintained confidential employee compensation and benefits information."
+        ],
+        "achievements": [
+          "Trained staff on office systems, databases, policies, and procedures while focusing on error reduction.",
+          "Coordinated functions for a team of five employees.",
+          "Created databases and spreadsheets to improve compensation and benefits analysis and reporting accuracy.",
+          "Addressed and resolved non-routine, complex, and unexpected variances.",
+          "Maintained administrative and procedural processes to improve accuracy and efficiency."
+        ],
+        "technologies": [
+          "Accounting software",
+          "Computer spreadsheets",
+          "Databases"
+        ],
+        "source_text": "Managed accounting operations and compensation and benefits accounting at Ball Corporation from 01/1989 to 05/2009."
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "Accounting",
+        "original_mentions": [
+          "Accounting",
+          "accounting professional"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Accounting",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "General ledger accounting",
+        "original_mentions": [
+          "General ledger accounting",
+          "G/L"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "General ledger accounting",
+          "source_section": "Highlights/Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accounts payable",
+        "original_mentions": [
+          "accounts payable",
+          "Account payable"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "accounts payable",
+          "source_section": "Summary/Experience/Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accounts receivable",
+        "original_mentions": [
+          "accounts receivable"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "accounts receivable",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Payroll administration",
+        "original_mentions": [
+          "payroll administration",
+          "Payroll"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "payroll administration",
+          "source_section": "Summary/Experience/Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Account reconciliations",
+        "original_mentions": [
+          "account reconciliations",
+          "reconciliations"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Account reconciliations",
+          "source_section": "Highlights/Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial reporting",
+        "original_mentions": [
+          "financial reports",
+          "financial and regulatory reports"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Prepared financial and regulatory reports",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Budget analysis",
+        "original_mentions": [
+          "Budget analysis",
+          "budgeting"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Budget analysis",
+          "source_section": "Highlights/Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Tax return review",
+        "original_mentions": [
+          "tax returns",
+          "technical and analytical review of federal/state corporate, payroll tax returns"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "technical and analytical review of federal/state corporate, payroll tax returns",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accounting software",
+        "original_mentions": [
+          "accounting software"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "using specialized accounting software",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Spreadsheets",
+        "original_mentions": [
+          "spreadsheets",
+          "computer spreadsheets"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "computer spreadsheets/databases",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Databases",
+        "original_mentions": [
+          "databases",
+          "Create databases"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Create databases and spreadsheets",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Analytical reasoning",
+        "original_mentions": [
+          "Analytical reasoning"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Analytical reasoning",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Attention to detail",
+        "original_mentions": [
+          "Attention to detail",
+          "Detail-oriented"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Attention to detail",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Teamwork",
+        "original_mentions": [
+          "Team-oriented professional",
+          "Flexible team player"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Team-oriented professional",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Communication",
+        "original_mentions": [
+          "excellent verbal and written skills",
+          "Strong communication skills"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "excellent verbal and written skills",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Problem solving",
+        "original_mentions": [
+          "Complex problem solving",
+          "problem solving"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Complex problem solving",
+          "source_section": "Highlights/Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Time management",
+        "original_mentions": [
+          "Effective time management",
+          "time management"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Effective time management",
+          "source_section": "Highlights/Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Organizational skills",
+        "original_mentions": [
+          "Strong organizational skills"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Strong organizational skills",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Compensation and benefits",
+        "original_mentions": [
+          "Compensation and Benefits",
+          "compensation and benefits programs"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Compensation and Benefits Accountant",
+          "source_section": "Summary/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial statement audits",
+        "original_mentions": [
+          "financial statement audits",
+          "full financial statement audits"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "financial statement audits",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Government audits",
+        "original_mentions": [
+          "government audits"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "government audits",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Benefits accounting",
+        "original_mentions": [
+          "benefit accounting"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "benefit accounting",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Payroll accounting",
+        "original_mentions": [
+          "payroll posting",
+          "payroll and benefits cash"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Assist with payroll posting",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Human resources administration",
+        "original_mentions": [
+          "human resources"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "human resources and payroll administration",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Investment management",
+        "original_mentions": [
+          "management of investments"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "management of investments",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": []
+  },
+  "job": {
+    "title": "Electrical Testing Technician",
+    "seniority": null,
+    "years_of_experience": "Minimum 5 years experience in related field (Electrical testing)",
+    "responsibilities": [
+      "Perform and generate reports on routine tests and testing activities.",
+      "Troubleshoot manufacturing and component problems to the lowest Line Replaceable Unit (LRU).",
+      "Support qualification tests.",
+      "Execute tests according to test procedures and schematics.",
+      "Redline test procedures as required.",
+      "Document and report anomalies or failures during test execution.",
+      "Learn and optimize test execution and troubleshooting.",
+      "Support mechanical installations and repairs on rail vehicles as directed by the Supervisor.",
+      "Support installation and termination of electrical panels, equipment, and components.",
+      "Work different shifts and overtime as needed."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Electrical testing",
+        "original_mentions": [
+          "routine tests and testing activities",
+          "Electrical testing"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Perform routine tests; minimum 5 years in electrical testing",
+          "source_section": "Experience (Essential Functions)",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Test execution",
+        "original_mentions": [
+          "Execute tests according to test procedures and schematics",
+          "Accountable for test execution"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Execute tests according to test procedures and schematics",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Troubleshooting to LRU level",
+        "original_mentions": [
+          "Troubleshoot manufacturing & component problems to the lowest Line Replaceable Unit (LRU)"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Troubleshoot ... to the lowest LRU",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Test reporting and anomaly documentation",
+        "original_mentions": [
+          "generate reports",
+          "Clearly document and report any anomaly or failure"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Generate reports and document anomalies or failures",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Test procedure redlining",
+        "original_mentions": [
+          "Redline test procedures as required"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Redline test procedures as required",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Computers and data recorders",
+        "original_mentions": [
+          "use of computers, data recorders"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Working knowledge and experience with computers and data recorders",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Digital multimeters",
+        "original_mentions": [
+          "digital millimetres"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Use of digital millimetres",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Measurement instruments",
+        "original_mentions": [
+          "various measurement instruments"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Use of various measurement instruments",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Pneumatic and hydraulic gauges",
+        "original_mentions": [
+          "pneumatichydraulic gauges"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Use of pneumatic/hydraulic gauges",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Schematics and wire lists",
+        "original_mentions": [
+          "Reading and understanding of schematics and wire lists",
+          "strong knowledge and comprehension of schematics ... wire lists"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Strong knowledge of schematics and wire lists",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Block diagrams and functional diagrams",
+        "original_mentions": [
+          "bloc diagrams, ... functional diagrams"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Knowledge of block and functional diagrams",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Basic electronics",
+        "original_mentions": [
+          "knowledge of basic Electronics"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Knowledge of basic Electronics",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "AC/DC electrical systems",
+        "original_mentions": [
+          "operation of 12VDC-72VDC and 24VAC-480VAC systems"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Operation of 12VDC-72VDC and 24VAC-480VAC systems",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Electrical panel and equipment installation",
+        "original_mentions": [
+          "installation and terminate of electrical panels, equipment, components"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Install and terminate electrical panels, equipment, and components",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Electrical component operation and troubleshooting",
+        "original_mentions": [
+          "understanding of how they operate in order to troubleshoot any electrical issues"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Understand component operation to troubleshoot electrical issues",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Mechanical installation and repair",
+        "original_mentions": [
+          "Support mechanical installations and repairs on rail vehicles"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Support mechanical installations and repairs on rail vehicles",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Safety awareness",
+        "original_mentions": [
+          "Technician safety awareness is critical"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Technician safety awareness is critical",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "ALSTOM safety procedures",
+        "original_mentions": [
+          "understand and apply all applicable ALSTOM Safety Procedures"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Apply applicable ALSTOM Safety Procedures",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Industrial work environment adaptability",
+        "original_mentions": [
+          "work will take place in a heavy industrial environment ... outside in rail yards"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Work in heavy industrial environments and rail yards",
+          "source_section": "Working Conditions (IndustrialEnvironmental)",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Shift and overtime availability",
+        "original_mentions": [
+          "work different shifts and overtime as needed"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Work different shifts and overtime as needed",
+          "source_section": "Working Conditions (IndustrialEnvironmental)",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Ability to lift 50 pounds",
+        "original_mentions": [
+          "Must be able to lift 50 lbs"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Lift 50 lbs",
+          "source_section": "PhysicalMental Requirements",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [],
+    "education_requirements": [
+      "High School Diploma or Equivalent Required."
+    ],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Rail vehicles and rail yards",
+        "original_mentions": [
+          "rail vehicles",
+          "rail yards"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Installations and repairs on rail vehicles; work in rail yards",
+          "source_section": "Working Conditions (IndustrialEnvironmental)",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Safety awareness",
+        "original_mentions": [
+          "Technician safety awareness is critical"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Technician safety awareness is critical",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Continuous learning and optimization",
+        "original_mentions": [
+          "Responsible for learning curve and optimization of test execution and troubleshooting"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Learning curve and optimization of test execution and troubleshooting",
+          "source_section": null,
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [],
+    "system_design_requirements": [],
+    "competencies": [
+      {
+        "normalized_label": "Electrical Engineering degree",
+        "original_mentions": [
+          "Electrical Engineering Degree Desirable"
+        ],
+        "competency_type": "education",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Electrical Engineering Degree Desirable",
+          "source_section": "Educational Requirements",
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 1771,
+    "output_tokens": 2095,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0026801,
+    "latency_ms": 14354.0,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1085,
+    "output_tokens": 1925,
+    "cached_tokens": 0,
+    "estimated_cost": 0.002527,
+    "latency_ms": 14671.35,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-10-03T17:17:11.530935+00:00",
+  "reused_from_experiment": null
+}

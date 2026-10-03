@@ -1,0 +1,293 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00611_746348fe66f6",
+  "jd_id": "rjf_00611_746348fe66f6",
+  "pair_id": "rjf_00611_746348fe66f6",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Revenue cycle management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3811,
+        "evidence": {
+          "tfidf_score": 0.02048190352480067,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 4.094160899376262,
+          "semantic_score": 0.43532517552375793,
+          "matched_candidate_competency": "SLA management"
+        },
+        "candidate_evidence": [
+          "SLA management"
+        ]
+      },
+      {
+        "job_competency": "Accounts receivable",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9279,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3602856397628784,
+          "matched_candidate_competency": "Database design"
+        },
+        "candidate_evidence": [
+          "Database design"
+        ]
+      },
+      {
+        "job_competency": "Revenue recognition",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7232,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4797573685646057,
+          "matched_candidate_competency": "Database design"
+        },
+        "candidate_evidence": [
+          "Database design"
+        ]
+      },
+      {
+        "job_competency": "GAAP",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9354,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32315778732299805,
+          "matched_candidate_competency": "Database design"
+        },
+        "candidate_evidence": [
+          "Database design"
+        ]
+      },
+      {
+        "job_competency": "Contracts management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3838,
+        "evidence": {
+          "tfidf_score": 0.026420092149780132,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 4.094160899376262,
+          "semantic_score": 0.403621107339859,
+          "matched_candidate_competency": "SLA management"
+        },
+        "candidate_evidence": [
+          "SLA management"
+        ]
+      },
+      {
+        "job_competency": "Billing processes",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7208,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4952952265739441,
+          "matched_candidate_competency": "Database design"
+        },
+        "candidate_evidence": [
+          "Database design"
+        ]
+      },
+      {
+        "job_competency": "Financial reporting and analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3774,
+        "evidence": {
+          "tfidf_score": 0.3173017264556106,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and",
+            "reporting"
+          ],
+          "bm25_score": 2.1518821342125065,
+          "semantic_score": 0.600195586681366,
+          "matched_candidate_competency": "Managed research and reporting of customer install base for the BDM Sales team"
+        },
+        "candidate_evidence": [
+          "Managed research and reporting of customer install base for the BDM Sales team"
+        ]
+      },
+      {
+        "job_competency": "Revenue auditing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7191,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5055016875267029,
+          "matched_candidate_competency": "Database design"
+        },
+        "candidate_evidence": [
+          "Database design"
+        ]
+      },
+      {
+        "job_competency": "External audit coordination",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.929,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35476526618003845,
+          "matched_candidate_competency": "Database design"
+        },
+        "candidate_evidence": [
+          "Database design"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1606,
+        "evidence": {
+          "tfidf_score": 0.09701821830226162,
+          "tfidf_matched_terms": [
+            "excel",
+            "microsoft"
+          ],
+          "bm25_score": 4.1570282022344,
+          "semantic_score": 0.9658974409103394,
+          "matched_candidate_competency": "Excel"
+        },
+        "candidate_evidence": [
+          "Excel"
+        ]
+      },
+      {
+        "job_competency": "Reporting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6835,
+        "evidence": {
+          "tfidf_score": 0.04557241641256221,
+          "tfidf_matched_terms": [
+            "reporting"
+          ],
+          "bm25_score": 1.6833905317074107,
+          "semantic_score": 0.3900878429412842,
+          "matched_candidate_competency": "Managed research and reporting of customer install base for the BDM Sales team"
+        },
+        "candidate_evidence": [
+          "Managed research and reporting of customer install base for the BDM Sales team"
+        ]
+      },
+      {
+        "job_competency": "Accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.71,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5627771615982056,
+          "matched_candidate_competency": "Database design"
+        },
+        "candidate_evidence": [
+          "Database design"
+        ]
+      },
+      {
+        "job_competency": "Manufacturing, pharmaceutical, or healthcare industry experience",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9336,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33195412158966064,
+          "matched_candidate_competency": "Database design"
+        },
+        "candidate_evidence": [
+          "Database design"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Microsoft Excel"
+    ],
+    "partial_matches": [
+      "Revenue cycle management",
+      "Contracts management",
+      "Financial reporting and analysis"
+    ],
+    "weak_matches": [
+      "Revenue recognition",
+      "Billing processes",
+      "Revenue auditing",
+      "Reporting",
+      "Accounting"
+    ],
+    "missing": [
+      "Accounts receivable",
+      "GAAP",
+      "External audit coordination",
+      "Manufacturing, pharmaceutical, or healthcare industry experience"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Microsoft Excel"
+    ],
+    "partial_matches": [
+      "Revenue cycle management",
+      "Contracts management",
+      "Financial reporting and analysis"
+    ],
+    "competency_gaps": [
+      "Revenue recognition",
+      "Billing processes",
+      "Revenue auditing",
+      "Reporting",
+      "Accounting",
+      "Accounts receivable",
+      "GAAP",
+      "External audit coordination",
+      "Manufacturing, pharmaceutical, or healthcare industry experience"
+    ]
+  },
+  "counts": {
+    "requirements": 13,
+    "strength_matches": 1,
+    "partial_matches": 3,
+    "competency_gaps": 9
+  },
+  "latency_ms": 31.02,
+  "analyzed_at": "2026-10-03T17:29:43.093069+00:00"
+}

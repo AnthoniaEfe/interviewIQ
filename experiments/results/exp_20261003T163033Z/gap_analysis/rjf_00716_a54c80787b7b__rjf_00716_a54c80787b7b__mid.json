@@ -1,0 +1,295 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00716_a54c80787b7b",
+  "jd_id": "rjf_00716_a54c80787b7b",
+  "pair_id": "rjf_00716_a54c80787b7b",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Accounting and financial principles",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7256,
+        "evidence": {
+          "tfidf_score": 0.154429988341298,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.7456753403865587,
+          "semantic_score": 0.2704797089099884,
+          "matched_candidate_competency": "Grant and protocol management"
+        },
+        "candidate_evidence": [
+          "Grant and protocol management"
+        ]
+      },
+      {
+        "job_competency": "Advanced Microsoft Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1687,
+        "evidence": {
+          "tfidf_score": 0.06332827113634965,
+          "tfidf_matched_terms": [
+            "excel",
+            "microsoft"
+          ],
+          "bm25_score": 7.120004442586216,
+          "semantic_score": 0.8280066251754761,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Accounting close and journal entries",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9111,
+        "evidence": {
+          "tfidf_score": 0.13622140460232576,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.7456753403865587,
+          "semantic_score": 0.26383599638938904,
+          "matched_candidate_competency": "Grant and protocol management"
+        },
+        "candidate_evidence": [
+          "Grant and protocol management"
+        ]
+      },
+      {
+        "job_competency": "Financial statement analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3959,
+        "evidence": {
+          "tfidf_score": 0.00941947173575534,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 4.766018713211625,
+          "semantic_score": 0.5317894220352173,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Gross margin analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6685,
+        "evidence": {
+          "tfidf_score": 0.00941947173575534,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 4.766018713211625,
+          "semantic_score": 0.3127524256706238,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Invoicing and billing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7243,
+        "evidence": {
+          "tfidf_score": 0.18265898161500946,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.7456753403865587,
+          "semantic_score": 0.2575935125350952,
+          "matched_candidate_competency": "Grant and protocol management"
+        },
+        "candidate_evidence": [
+          "Grant and protocol management"
+        ]
+      },
+      {
+        "job_competency": "Balance sheet account reconciliations",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9471,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26467281579971313,
+          "matched_candidate_competency": "Analytical problem solving"
+        },
+        "candidate_evidence": [
+          "Analytical problem solving"
+        ]
+      },
+      {
+        "job_competency": "GAAP",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9407,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29650044441223145,
+          "matched_candidate_competency": "Analytical problem solving"
+        },
+        "candidate_evidence": [
+          "Analytical problem solving"
+        ]
+      },
+      {
+        "job_competency": "FERC accounting requirements",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9487,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.256561815738678,
+          "matched_candidate_competency": "Analytical problem solving"
+        },
+        "candidate_evidence": [
+          "Analytical problem solving"
+        ]
+      },
+      {
+        "job_competency": "Relevant accounting experience",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9393,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30366772413253784,
+          "matched_candidate_competency": "Analytical problem solving"
+        },
+        "candidate_evidence": [
+          "Analytical problem solving"
+        ]
+      },
+      {
+        "job_competency": "Background check",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9483,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2585753798484802,
+          "matched_candidate_competency": "Analytical problem solving"
+        },
+        "candidate_evidence": [
+          "Analytical problem solving"
+        ]
+      },
+      {
+        "job_competency": "Drug screening",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9464,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2679010033607483,
+          "matched_candidate_competency": "Analytical problem solving"
+        },
+        "candidate_evidence": [
+          "Analytical problem solving"
+        ]
+      },
+      {
+        "job_competency": "Oil and gas industry experience",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.554,
+        "evidence": {
+          "tfidf_score": 0.13622140460232576,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.7456753403865587,
+          "semantic_score": 0.20302104949951172,
+          "matched_candidate_competency": "Grant and protocol management"
+        },
+        "candidate_evidence": [
+          "Grant and protocol management"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Advanced Microsoft Excel"
+    ],
+    "partial_matches": [
+      "Financial statement analysis"
+    ],
+    "weak_matches": [
+      "Accounting and financial principles",
+      "Gross margin analysis",
+      "Invoicing and billing"
+    ],
+    "missing": [
+      "Accounting close and journal entries",
+      "Balance sheet account reconciliations",
+      "GAAP",
+      "FERC accounting requirements",
+      "Relevant accounting experience",
+      "Background check",
+      "Drug screening",
+      "Oil and gas industry experience"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Advanced Microsoft Excel"
+    ],
+    "partial_matches": [
+      "Financial statement analysis"
+    ],
+    "competency_gaps": [
+      "Accounting and financial principles",
+      "Gross margin analysis",
+      "Invoicing and billing",
+      "Accounting close and journal entries",
+      "Balance sheet account reconciliations",
+      "GAAP",
+      "FERC accounting requirements",
+      "Relevant accounting experience",
+      "Background check",
+      "Drug screening",
+      "Oil and gas industry experience"
+    ]
+  },
+  "counts": {
+    "requirements": 13,
+    "strength_matches": 1,
+    "partial_matches": 1,
+    "competency_gaps": 11
+  },
+  "latency_ms": 32.75,
+  "analyzed_at": "2026-10-03T17:29:43.265948+00:00"
+}

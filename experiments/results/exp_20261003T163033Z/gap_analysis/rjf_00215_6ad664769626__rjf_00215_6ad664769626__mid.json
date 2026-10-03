@@ -1,0 +1,540 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00215_6ad664769626",
+  "jd_id": "rjf_00215_6ad664769626",
+  "pair_id": "rjf_00215_6ad664769626",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Linux/Unix administration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7341,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41170230507850647,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Linux-based service monitoring, reliability and security",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6769,
+        "evidence": {
+          "tfidf_score": 0.165045182043037,
+          "tfidf_matched_terms": [
+            "and",
+            "based"
+          ],
+          "bm25_score": 2.647278039434071,
+          "semantic_score": 0.25863540172576904,
+          "matched_candidate_competency": "Established and maintained a product backlog based on business stakeholder priorities."
+        },
+        "candidate_evidence": [
+          "Established and maintained a product backlog based on business stakeholder priorities."
+        ]
+      },
+      {
+        "job_competency": "Amazon Web Services (AWS)",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6697,
+        "evidence": {
+          "tfidf_score": 0.0061692296291665895,
+          "tfidf_matched_terms": [
+            "services"
+          ],
+          "bm25_score": 3.7613388784529547,
+          "semantic_score": 0.26040130853652954,
+          "matched_candidate_competency": "Loan and financial services analytics"
+        },
+        "candidate_evidence": [
+          "Loan and financial services analytics"
+        ]
+      },
+      {
+        "job_competency": "AWS EC2, S3, IAM, RDS, CloudFront, CloudWatch, Lambda, CloudFormation and CDK",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7073,
+        "evidence": {
+          "tfidf_score": 0.11672328847165185,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9457203580660616,
+          "semantic_score": 0.35333842039108276,
+          "matched_candidate_competency": "Cleaned data and maintained HR data accuracy and integrity."
+        },
+        "candidate_evidence": [
+          "Cleaned data and maintained HR data accuracy and integrity."
+        ]
+      },
+      {
+        "job_competency": "Automation and configuration management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.372,
+        "evidence": {
+          "tfidf_score": 0.23316711635015278,
+          "tfidf_matched_terms": [
+            "and",
+            "management"
+          ],
+          "bm25_score": 4.4076381915678455,
+          "semantic_score": 0.46077144145965576,
+          "matched_candidate_competency": "Database management"
+        },
+        "candidate_evidence": [
+          "Database management"
+        ]
+      },
+      {
+        "job_competency": "Chef or Puppet",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9632,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.1839185357093811,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "CI/CD tools",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6442,
+        "evidence": {
+          "tfidf_score": 0.021913344513339303,
+          "tfidf_matched_terms": [
+            "tools"
+          ],
+          "bm25_score": 3.922021896204923,
+          "semantic_score": 0.38407838344573975,
+          "matched_candidate_competency": "Reporting tools"
+        },
+        "candidate_evidence": [
+          "Reporting tools"
+        ]
+      },
+      {
+        "job_competency": "Application performance monitoring (APM)",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6852,
+        "evidence": {
+          "tfidf_score": 0.006169229629166589,
+          "tfidf_matched_terms": [
+            "performance"
+          ],
+          "bm25_score": 2.773301285641824,
+          "semantic_score": 0.30781808495521545,
+          "matched_candidate_competency": "Analyzed recruitment, retention, compensation, employee tenure, and performance data."
+        },
+        "candidate_evidence": [
+          "Analyzed recruitment, retention, compensation, employee tenure, and performance data."
+        ]
+      },
+      {
+        "job_competency": "Log analysis and monitoring",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3898,
+        "evidence": {
+          "tfidf_score": 0.2646471927478305,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and"
+          ],
+          "bm25_score": 3.0001049065785637,
+          "semantic_score": 0.46474504470825195,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Coding and scripting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6809,
+        "evidence": {
+          "tfidf_score": 0.23898441650564334,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9457203580660616,
+          "semantic_score": 0.4271654188632965,
+          "matched_candidate_competency": "Cleaned data and maintained HR data accuracy and integrity."
+        },
+        "candidate_evidence": [
+          "Cleaned data and maintained HR data accuracy and integrity."
+        ]
+      },
+      {
+        "job_competency": "MySQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.69,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6873857975006104,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Open-source technologies and cloud services",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3869,
+        "evidence": {
+          "tfidf_score": 0.174843325821056,
+          "tfidf_matched_terms": [
+            "and",
+            "services"
+          ],
+          "bm25_score": 4.5934123508890226,
+          "semantic_score": 0.3284337818622589,
+          "matched_candidate_competency": "Loan and financial services analytics"
+        },
+        "candidate_evidence": [
+          "Loan and financial services analytics"
+        ]
+      },
+      {
+        "job_competency": "IT operations best practices for highly available services",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3996,
+        "evidence": {
+          "tfidf_score": 0.013576986321091033,
+          "tfidf_matched_terms": [
+            "for",
+            "it",
+            "services"
+          ],
+          "bm25_score": 3.7613388784529547,
+          "semantic_score": 0.44390228390693665,
+          "matched_candidate_competency": "Loan and financial services analytics"
+        },
+        "candidate_evidence": [
+          "Loan and financial services analytics"
+        ]
+      },
+      {
+        "job_competency": "Communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3568,
+        "evidence": {
+          "tfidf_score": 0.03248400837539624,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 4.4076381915678455,
+          "semantic_score": 0.7632262706756592,
+          "matched_candidate_competency": "Stakeholder communication"
+        },
+        "candidate_evidence": [
+          "Stakeholder communication"
+        ]
+      },
+      {
+        "job_competency": "Collaboration and teamwork",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3437,
+        "evidence": {
+          "tfidf_score": 0.2759364584836832,
+          "tfidf_matched_terms": [
+            "and",
+            "collaboration"
+          ],
+          "bm25_score": 4.576583199585533,
+          "semantic_score": 0.6874309778213501,
+          "matched_candidate_competency": "Cross-functional collaboration"
+        },
+        "candidate_evidence": [
+          "Cross-functional collaboration"
+        ]
+      },
+      {
+        "job_competency": "Scalable and highly available distributed systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7114,
+        "evidence": {
+          "tfidf_score": 0.16123284979499744,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9457203580660616,
+          "semantic_score": 0.2945576608181,
+          "matched_candidate_competency": "Cleaned data and maintained HR data accuracy and integrity."
+        },
+        "candidate_evidence": [
+          "Cleaned data and maintained HR data accuracy and integrity."
+        ]
+      },
+      {
+        "job_competency": "Platform security",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9339,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33051589131355286,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Monitoring, resiliency and platform health",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7018,
+        "evidence": {
+          "tfidf_score": 0.17822716740577124,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9457203580660616,
+          "semantic_score": 0.34215182065963745,
+          "matched_candidate_competency": "Cleaned data and maintained HR data accuracy and integrity."
+        },
+        "candidate_evidence": [
+          "Cleaned data and maintained HR data accuracy and integrity."
+        ]
+      },
+      {
+        "job_competency": "On-call support",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7099,
+        "evidence": {
+          "tfidf_score": 0.014599496318573105,
+          "tfidf_matched_terms": [
+            "on"
+          ],
+          "bm25_score": 2.1049991977542994,
+          "semantic_score": 0.2447245717048645,
+          "matched_candidate_competency": "Established and maintained a product backlog based on business stakeholder priorities."
+        },
+        "candidate_evidence": [
+          "Established and maintained a product backlog based on business stakeholder priorities."
+        ]
+      },
+      {
+        "job_competency": "Adobe Experience Manager (AEM)",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5616,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.320137619972229,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "Experience working on globally distributed teams",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3908,
+        "evidence": {
+          "tfidf_score": 0.02065743855607506,
+          "tfidf_matched_terms": [
+            "on",
+            "teams"
+          ],
+          "bm25_score": 3.122495393115261,
+          "semantic_score": 0.45792070031166077,
+          "matched_candidate_competency": "Worked with internal teams to understand business needs and recommend metrics and models based on observed trends."
+        },
+        "candidate_evidence": [
+          "Worked with internal teams to understand business needs and recommend metrics and models based on observed trends."
+        ]
+      },
+      {
+        "job_competency": "Agile methodology",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2141,
+        "evidence": {
+          "tfidf_score": 0.009412485949590668,
+          "tfidf_matched_terms": [
+            "agile"
+          ],
+          "bm25_score": 5.1328367203068614,
+          "semantic_score": 0.6739668846130371,
+          "matched_candidate_competency": "Agile SDLC"
+        },
+        "candidate_evidence": [
+          "Agile SDLC"
+        ]
+      },
+      {
+        "job_competency": "CI/CD with AEM",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4272,
+        "evidence": {
+          "tfidf_score": 0.02472463926352514,
+          "tfidf_matched_terms": [
+            "with"
+          ],
+          "bm25_score": 1.8015205998562647,
+          "semantic_score": 0.2683412730693817,
+          "matched_candidate_competency": "Collaborated with business stakeholders to gather reporting requirements and feedback."
+        },
+        "candidate_evidence": [
+          "Collaborated with business stakeholders to gather reporting requirements and feedback."
+        ]
+      },
+      {
+        "job_competency": "Frontend development",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2353,
+        "evidence": {
+          "tfidf_score": 0.018832235861770626,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 4.4076381915678455,
+          "semantic_score": 0.41938847303390503,
+          "matched_candidate_competency": "Spreadsheet development"
+        },
+        "candidate_evidence": [
+          "Spreadsheet development"
+        ]
+      },
+      {
+        "job_competency": "NoSQL databases",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4231,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5929545164108276,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Automation and configuration management",
+      "Log analysis and monitoring",
+      "Open-source technologies and cloud services",
+      "IT operations best practices for highly available services",
+      "Communication",
+      "Collaboration and teamwork",
+      "Agile methodology",
+      "Frontend development"
+    ],
+    "weak_matches": [
+      "Linux/Unix administration",
+      "Linux-based service monitoring, reliability and security",
+      "Amazon Web Services (AWS)",
+      "AWS EC2, S3, IAM, RDS, CloudFront, CloudWatch, Lambda, CloudFormation and CDK",
+      "CI/CD tools",
+      "Application performance monitoring (APM)",
+      "Coding and scripting",
+      "MySQL",
+      "Scalable and highly available distributed systems",
+      "Monitoring, resiliency and platform health",
+      "On-call support",
+      "Experience working on globally distributed teams",
+      "CI/CD with AEM",
+      "NoSQL databases"
+    ],
+    "missing": [
+      "Chef or Puppet",
+      "Platform security",
+      "Adobe Experience Manager (AEM)"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Automation and configuration management",
+      "Log analysis and monitoring",
+      "Open-source technologies and cloud services",
+      "IT operations best practices for highly available services",
+      "Communication",
+      "Collaboration and teamwork",
+      "Agile methodology",
+      "Frontend development"
+    ],
+    "competency_gaps": [
+      "Linux/Unix administration",
+      "Linux-based service monitoring, reliability and security",
+      "Amazon Web Services (AWS)",
+      "AWS EC2, S3, IAM, RDS, CloudFront, CloudWatch, Lambda, CloudFormation and CDK",
+      "CI/CD tools",
+      "Application performance monitoring (APM)",
+      "Coding and scripting",
+      "MySQL",
+      "Scalable and highly available distributed systems",
+      "Monitoring, resiliency and platform health",
+      "On-call support",
+      "Experience working on globally distributed teams",
+      "CI/CD with AEM",
+      "NoSQL databases",
+      "Chef or Puppet",
+      "Platform security",
+      "Adobe Experience Manager (AEM)"
+    ]
+  },
+  "counts": {
+    "requirements": 25,
+    "strength_matches": 0,
+    "partial_matches": 8,
+    "competency_gaps": 17
+  },
+  "latency_ms": 53.32,
+  "analyzed_at": "2026-10-03T17:29:42.494237+00:00"
+}

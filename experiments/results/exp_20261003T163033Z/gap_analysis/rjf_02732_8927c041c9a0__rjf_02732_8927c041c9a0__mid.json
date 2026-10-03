@@ -1,0 +1,423 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02732_8927c041c9a0",
+  "jd_id": "rjf_02732_8927c041c9a0",
+  "pair_id": "rjf_02732_8927c041c9a0",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Industrial electrical design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3877,
+        "evidence": {
+          "tfidf_score": 0.04200630289279149,
+          "tfidf_matched_terms": [
+            "design",
+            "electrical"
+          ],
+          "bm25_score": 3.4978271765401345,
+          "semantic_score": 0.5412601232528687,
+          "matched_candidate_competency": "Network Planning and Design"
+        },
+        "candidate_evidence": [
+          "Network Planning and Design"
+        ]
+      },
+      {
+        "job_competency": "Power distribution",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9498,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2509957551956177,
+          "matched_candidate_competency": "Routing and Switching"
+        },
+        "candidate_evidence": [
+          "Routing and Switching"
+        ]
+      },
+      {
+        "job_competency": "Motor control",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9248,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3761204481124878,
+          "matched_candidate_competency": "Routing and Switching"
+        },
+        "candidate_evidence": [
+          "Routing and Switching"
+        ]
+      },
+      {
+        "job_competency": "PLC control systems",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9252,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3739805519580841,
+          "matched_candidate_competency": "Routing and Switching"
+        },
+        "candidate_evidence": [
+          "Routing and Switching"
+        ]
+      },
+      {
+        "job_competency": "Control panel design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6653,
+        "evidence": {
+          "tfidf_score": 0.012528206398174084,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 3.4978271765401345,
+          "semantic_score": 0.2820853292942047,
+          "matched_candidate_competency": "Network Planning and Design"
+        },
+        "candidate_evidence": [
+          "Network Planning and Design"
+        ]
+      },
+      {
+        "job_competency": "Lighting design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6676,
+        "evidence": {
+          "tfidf_score": 0.01616042996738242,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 3.4978271765401345,
+          "semantic_score": 0.2645491361618042,
+          "matched_candidate_competency": "Network Planning and Design"
+        },
+        "candidate_evidence": [
+          "Network Planning and Design"
+        ]
+      },
+      {
+        "job_competency": "Facility conduit and wiring design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.381,
+        "evidence": {
+          "tfidf_score": 0.20167281420517727,
+          "tfidf_matched_terms": [
+            "and",
+            "design"
+          ],
+          "bm25_score": 4.405440132852593,
+          "semantic_score": 0.34571021795272827,
+          "matched_candidate_competency": "Network Planning and Design"
+        },
+        "candidate_evidence": [
+          "Network Planning and Design"
+        ]
+      },
+      {
+        "job_competency": "Schematic and logic development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6966,
+        "evidence": {
+          "tfidf_score": 0.20365682037419447,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.0291557893537882,
+          "semantic_score": 0.33182621002197266,
+          "matched_candidate_competency": "Routing and Switching"
+        },
+        "candidate_evidence": [
+          "Routing and Switching"
+        ]
+      },
+      {
+        "job_competency": "National Electrical Code",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6686,
+        "evidence": {
+          "tfidf_score": 0.025084945657171648,
+          "tfidf_matched_terms": [
+            "electrical"
+          ],
+          "bm25_score": 2.9909745707284476,
+          "semantic_score": 0.331820011138916,
+          "matched_candidate_competency": "Electrical and Instrumentation Engineering"
+        },
+        "candidate_evidence": [
+          "Electrical and Instrumentation Engineering"
+        ]
+      },
+      {
+        "job_competency": "AutoCAD",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9247,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37640827894210815,
+          "matched_candidate_competency": "Routing and Switching"
+        },
+        "candidate_evidence": [
+          "Routing and Switching"
+        ]
+      },
+      {
+        "job_competency": "Construction document and shop drawing review",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6579,
+        "evidence": {
+          "tfidf_score": 0.162514568760654,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.0291557893537882,
+          "semantic_score": 0.604556679725647,
+          "matched_candidate_competency": "Routing and Switching"
+        },
+        "candidate_evidence": [
+          "Routing and Switching"
+        ]
+      },
+      {
+        "job_competency": "Facility testing and startup",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6878,
+        "evidence": {
+          "tfidf_score": 0.2036568203741945,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.0291557893537882,
+          "semantic_score": 0.3867492973804474,
+          "matched_candidate_competency": "Routing and Switching"
+        },
+        "candidate_evidence": [
+          "Routing and Switching"
+        ]
+      },
+      {
+        "job_competency": "Process and instrumentation diagrams",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3518,
+        "evidence": {
+          "tfidf_score": 0.27354099636546575,
+          "tfidf_matched_terms": [
+            "and",
+            "instrumentation"
+          ],
+          "bm25_score": 3.705354874823406,
+          "semantic_score": 0.6933503150939941,
+          "matched_candidate_competency": "Instrumentation"
+        },
+        "candidate_evidence": [
+          "Instrumentation"
+        ]
+      },
+      {
+        "job_competency": "Instrumentation and control implementation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3508,
+        "evidence": {
+          "tfidf_score": 0.27354099636546575,
+          "tfidf_matched_terms": [
+            "and",
+            "instrumentation"
+          ],
+          "bm25_score": 3.705354874823406,
+          "semantic_score": 0.7035175561904907,
+          "matched_candidate_competency": "Instrumentation"
+        },
+        "candidate_evidence": [
+          "Instrumentation"
+        ]
+      },
+      {
+        "job_competency": "Project management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3922,
+        "evidence": {
+          "tfidf_score": 0.09915733508756092,
+          "tfidf_matched_terms": [
+            "management",
+            "project"
+          ],
+          "bm25_score": 2.392552672566968,
+          "semantic_score": 0.6269143223762512,
+          "matched_candidate_competency": "Project Scheduling and Reporting"
+        },
+        "candidate_evidence": [
+          "Project Scheduling and Reporting"
+        ]
+      },
+      {
+        "job_competency": "Quality control",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6552,
+        "evidence": {
+          "tfidf_score": 0.01616042996738242,
+          "tfidf_matched_terms": [
+            "quality"
+          ],
+          "bm25_score": 2.375598666304148,
+          "semantic_score": 0.5192139148712158,
+          "matched_candidate_competency": "ISO 9001:2008 Quality Management System Internal Auditor"
+        },
+        "candidate_evidence": [
+          "ISO 9001:2008 Quality Management System Internal Auditor"
+        ]
+      },
+      {
+        "job_competency": "Attention to detail",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7029,
+        "evidence": {
+          "tfidf_score": 0.050400119371443376,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 1.935410470853953,
+          "semantic_score": 0.2644204795360565,
+          "matched_candidate_competency": "ADCO Permit-to-Work System Training"
+        },
+        "candidate_evidence": [
+          "ADCO Permit-to-Work System Training"
+        ]
+      },
+      {
+        "job_competency": "Legal authorization to work in the United States",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3778,
+        "evidence": {
+          "tfidf_score": 0.05479407906635533,
+          "tfidf_matched_terms": [
+            "in",
+            "to",
+            "work"
+          ],
+          "bm25_score": 4.764911957000987,
+          "semantic_score": 0.4304184019565582,
+          "matched_candidate_competency": "ADCO Permit-to-Work System Training"
+        },
+        "candidate_evidence": [
+          "ADCO Permit-to-Work System Training"
+        ]
+      },
+      {
+        "job_competency": "Water and wastewater applications",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4296,
+        "evidence": {
+          "tfidf_score": 0.20365682037419447,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.0291557893537882,
+          "semantic_score": 0.20975491404533386,
+          "matched_candidate_competency": "Routing and Switching"
+        },
+        "candidate_evidence": [
+          "Routing and Switching"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Industrial electrical design",
+      "Facility conduit and wiring design",
+      "Process and instrumentation diagrams",
+      "Instrumentation and control implementation",
+      "Project management",
+      "Legal authorization to work in the United States"
+    ],
+    "weak_matches": [
+      "Control panel design",
+      "Lighting design",
+      "Schematic and logic development",
+      "National Electrical Code",
+      "Construction document and shop drawing review",
+      "Facility testing and startup",
+      "Quality control",
+      "Attention to detail",
+      "Water and wastewater applications"
+    ],
+    "missing": [
+      "Power distribution",
+      "Motor control",
+      "PLC control systems",
+      "AutoCAD"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Industrial electrical design",
+      "Facility conduit and wiring design",
+      "Process and instrumentation diagrams",
+      "Instrumentation and control implementation",
+      "Project management",
+      "Legal authorization to work in the United States"
+    ],
+    "competency_gaps": [
+      "Control panel design",
+      "Lighting design",
+      "Schematic and logic development",
+      "National Electrical Code",
+      "Construction document and shop drawing review",
+      "Facility testing and startup",
+      "Quality control",
+      "Attention to detail",
+      "Water and wastewater applications",
+      "Power distribution",
+      "Motor control",
+      "PLC control systems",
+      "AutoCAD"
+    ]
+  },
+  "counts": {
+    "requirements": 19,
+    "strength_matches": 0,
+    "partial_matches": 6,
+    "competency_gaps": 13
+  },
+  "latency_ms": 39.41,
+  "analyzed_at": "2026-10-03T17:29:45.901185+00:00"
+}

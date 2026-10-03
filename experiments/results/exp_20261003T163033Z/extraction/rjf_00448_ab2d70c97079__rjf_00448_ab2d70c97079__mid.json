@@ -1,0 +1,1171 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "extraction",
+  "profile_id": "rjf_00448_ab2d70c97079",
+  "jd_id": "rjf_00448_ab2d70c97079",
+  "pair_id": "rjf_00448_ab2d70c97079",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Information Technology Professional with over 15 years at a global pharmaceutical company, experienced across software development phases from requirements analysis through implementation and support. Background includes research IT, database systems, data warehouses, migrations, integrations, security, and agile delivery.",
+    "seniority_indicators": [
+      "Over 15 years of experience at a global pharmaceutical company",
+      "Technical Lead",
+      "Technical Analyst",
+      "Transition Lead",
+      "Sr. Technical Analyst / IT Lead",
+      "Sr. Application System Analyst",
+      "Led teams of developers and DBAs",
+      "Project Lead on ELN deployment and adoption"
+    ],
+    "education": [
+      {
+        "degree": "MS",
+        "institution": "University of Michigan",
+        "field": "Computer Science",
+        "year": null,
+        "source_text": "University of Michigan \u2013 MS: Computer Science"
+      },
+      {
+        "degree": "Bachelor of Engineering",
+        "institution": "University of Michigan",
+        "field": null,
+        "year": null,
+        "source_text": "University of Michigan \u2013 Bachelor of Engineering"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Research Data Administrator; Technical Lead / Technical Analyst / Transition Lead",
+        "employer": "Fidelity National Financial",
+        "duration": "05/2015\u2013Current",
+        "responsibilities": [
+          "Led assigned PCB-IT/MRL development projects and delivery of software products to QA and Production.",
+          "Captured and documented requirements with MRL scientists for research applications and tools.",
+          "Provided training, knowledge transfer, development support, and mentoring to global support teams.",
+          "Coordinated development activities with enterprise architecture, project management, and product management teams.",
+          "Supported metadata registration, data capture, project query tools, and resolution of research IT issues."
+        ],
+        "achievements": [
+          "Led an ELN deployment and adoption project in AWS cloud across Merck CROs."
+        ],
+        "technologies": [
+          "AWS",
+          "ELN",
+          "JIRA"
+        ],
+        "source_text": "Fidelity National Financial \u2014 Research Data Administrator / Technical Lead / Technical Analyst / Transition Lead, 05/2015\u2013Current"
+      },
+      {
+        "title": "Sr. Technical Analyst / IT Lead",
+        "employer": "Merck & Co",
+        "duration": "06/2008\u201305/2015",
+        "responsibilities": [
+          "Led integration and remediation of legacy applications for a harmonized compensation and career framework program.",
+          "Led application upgrades in the Discovery and Preclinical area.",
+          "Led developers and DBAs during database migration, platform upgrade, and client application remediation.",
+          "Implemented information security enhancements for company information assets."
+        ],
+        "achievements": [
+          "Migrated Oracle 10g from Solaris to Oracle 11g on Red Hat Linux and remediated more than 60 client applications.",
+          "Reduced application downtime by 30% through parallel task execution.",
+          "Avoided $350,000 in Oracle partitioning licensing costs through performance tuning and an alternative implementation."
+        ],
+        "technologies": [
+          "Oracle 10g",
+          "Oracle 11g",
+          "Solaris",
+          "Red Hat Linux",
+          "Oracle TDE",
+          "Oracle FGAC",
+          "Virtual Private Database",
+          "Fine-Grained Auditing",
+          "AEP 9.0"
+        ],
+        "source_text": "Merck & Co \u2014 Sr. Technical Analyst / IT Lead, 06/2008\u201305/2015"
+      },
+      {
+        "title": "Sr. Application System Analyst",
+        "employer": "Merck",
+        "duration": "04/2003\u201305/2008",
+        "responsibilities": [
+          "Designed, developed, and implemented a biologic materials registration system.",
+          "Remodeled an Oracle database from an entity-attribute-value model to a relational data model.",
+          "Performed legacy RNA data migration and database decommissioning.",
+          "Implemented enterprise chemistry tools and commercial databases.",
+          "Led remediation of downstream applications during transition from Ariba and PeopleSoft to SAP."
+        ],
+        "achievements": [
+          "Led technical implementation of Symyx Direct 6.0 Cartridge for Merck scientists.",
+          "Designed and developed a database for registration and storage requests of frozen biological samples."
+        ],
+        "technologies": [
+          "Oracle",
+          "Symyx Direct 6.0 Cartridge",
+          "Ariba",
+          "PeopleSoft",
+          "SAP",
+          "EAV model",
+          "Relational data modeling"
+        ],
+        "source_text": "Merck \u2014 Sr. Application System Analyst, 04/2003\u201305/2008"
+      },
+      {
+        "title": "System Analyst",
+        "employer": "Merck",
+        "duration": "08/1999\u201303/2003",
+        "responsibilities": [
+          "Designed, developed, and managed custom OLTP and OLAP systems and ETL tools for research data warehouses.",
+          "Maintained experimental and chemical database replication to remote sites in Europe and Japan.",
+          "Performed SQL and PL/SQL tuning and performance optimization.",
+          "Designed and developed registration and tracking systems for oligonucleotides and cDNA."
+        ],
+        "achievements": [
+          "Created PL/SQL upload, summary, and data-mart engines for assay data and research projects.",
+          "Developed systems for oligonucleotide registration, sample and plate mapping, storage tracking, and experimental data management.",
+          "Developed a cDNA registration and management system for DNA clone registration and storage tracking."
+        ],
+        "technologies": [
+          "Oracle",
+          "PL/SQL",
+          "OLTP",
+          "OLAP",
+          "ETL",
+          "Data warehousing",
+          "Database replication",
+          "SQL"
+        ],
+        "source_text": "Merck \u2014 System Analyst, 08/1999\u201303/2003"
+      }
+    ],
+    "projects": [
+      {
+        "name": "ELN deployment across Merck CROs",
+        "description": "Project lead for deployment and adoption of an electronic laboratory notebook in AWS cloud across Merck CROs.",
+        "technologies": [
+          "ELN",
+          "AWS"
+        ],
+        "source_text": "Project Lead on ELN deployment/adoption in AWS cloud across Merck CROs."
+      },
+      {
+        "name": "Discovery and Preclinical Services Platform Upgrade",
+        "description": "Multi-year upgrade of biological, chemical, and high-throughput screening data warehouses, including database migration and client application remediation.",
+        "technologies": [
+          "Oracle 10g",
+          "Oracle 11g",
+          "Solaris",
+          "Red Hat Linux",
+          "Data warehouses"
+        ],
+        "source_text": "Major multi-year Discovery and Preclinical Services Platform Upgrade project."
+      },
+      {
+        "name": "Biologic materials registration system",
+        "description": "Registration system for biologic materials including RNAi and mixed moieties, with relational database redesign and legacy data migration.",
+        "technologies": [
+          "Oracle",
+          "Relational data modeling",
+          "Data migration",
+          "RNAi"
+        ],
+        "source_text": "Designed/developed/implemented a registration system for registering biologic materials."
+      },
+      {
+        "name": "Oligonucleotide registration and tracking system",
+        "description": "Oracle application for oligonucleotide registration, sample mapping, storage tracking, and experimental data management.",
+        "technologies": [
+          "Oracle",
+          "PL/SQL"
+        ],
+        "source_text": "Designed and developed a Registration and Tracking System for Oligonucleotides."
+      },
+      {
+        "name": "cDNA registration and management system",
+        "description": "Oracle application for DNA clone registration, plate and nylon web mapping, storage tracking, and experimental data management.",
+        "technologies": [
+          "Oracle",
+          "Database design"
+        ],
+        "source_text": "Designed and developed Registration and Management System to create cDNA design and supply service."
+      }
+    ],
+    "technical_skills": [
+      {
+        "normalized_label": "Oracle PL/SQL",
+        "original_mentions": [
+          "Oracle PL/SQL",
+          "PL/SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Programming Languages: Oracle PL/SQL",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "SQL",
+          "SQL*PLUS",
+          "SQL* PLUS"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Programming Languages: SQL* PLUS",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "C",
+        "original_mentions": [
+          "C"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Programming Languages: C",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "C++",
+        "original_mentions": [
+          "C++"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Programming Languages: C++",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Pro*C",
+        "original_mentions": [
+          "Pro*C"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Programming Languages: Pro*C",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Unix Shell",
+        "original_mentions": [
+          "UNIX Shell"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Programming Languages: UNIX Shell",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Oracle Database",
+        "original_mentions": [
+          "Oracle 10g",
+          "Oracle 11g",
+          "Oracle DB",
+          "Oracle",
+          "databases"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Data Bases/Tools: Oracle 10g/11g",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SQL Server",
+        "original_mentions": [
+          "SQL Server"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Data Bases/Tools: SQL Server",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "ETL",
+        "original_mentions": [
+          "ETL tools"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "OLTP and OLAP systems and ETL tools",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data warehousing",
+        "original_mentions": [
+          "Data warehouse Design",
+          "data warehouse",
+          "data warehouses"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Database/Data warehouse Design",
+          "source_section": "Areas of Expertise",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data modeling",
+        "original_mentions": [
+          "Data Modeling",
+          "ERWIN",
+          "relational data model"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Data Modeling; remodeled it ... to relational data model",
+          "source_section": "Areas of Expertise / Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Database replication",
+        "original_mentions": [
+          "Data Replication",
+          "database replication"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Data Replication",
+          "source_section": "Areas of Expertise",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Oracle Designer",
+        "original_mentions": [
+          "Oracle Designer"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Tools/Framework: Oracle Designer",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "ERwin",
+        "original_mentions": [
+          "ERWIN",
+          "All Fusion-ERWIN Data Modeler"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "All Fusion-ERWIN Data Modeler",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SharePoint",
+        "original_mentions": [
+          "SharePoint 2010",
+          "SharePoint"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Enterprise Content Management: SharePoint 2010",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Linux",
+        "original_mentions": [
+          "RH Linux",
+          "Red Hat Linux",
+          "Linux"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Oracle 11g on RH Linux platform",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "AWS",
+        "original_mentions": [
+          "AWS cloud"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "ELN deployment/adoption in AWS cloud",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JIRA",
+        "original_mentions": [
+          "JIRA"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Tools/Framework: JIRA",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Subversion",
+        "original_mentions": [
+          "Subversion"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Tools/Framework: Subversion",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Information security",
+        "original_mentions": [
+          "information security",
+          "Oracle TDE",
+          "Oracle FGAC",
+          "FGA",
+          "data encryption"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Led & implemented information security enhancements",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Problem solving",
+        "original_mentions": [
+          "Problem Solving",
+          "tenacious problem solving capabilities"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "tenacious problem solving capabilities",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Mentoring",
+        "original_mentions": [
+          "mentoring",
+          "training and knowledge transfer"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "development and mentoring as necessary",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Requirements gathering",
+        "original_mentions": [
+          "requirements gathering and analysis",
+          "capture and write requirements"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "requirements gathering and analysis",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Team leadership",
+        "original_mentions": [
+          "Team Leadership",
+          "led a team of developers and DBAs"
+        ],
+        "competency_type": "leadership",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Team Leadership",
+          "source_section": "Areas of Expertise",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Resource management",
+        "original_mentions": [
+          "Resource Management"
+        ],
+        "competency_type": "leadership",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Resource Management",
+          "source_section": "Areas of Expertise",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Pharmaceutical research IT",
+        "original_mentions": [
+          "Discovery and Preclinical IT",
+          "global pharmaceutical company"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Discovery and Preclinical IT",
+          "source_section": "Areas of Expertise",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Drug discovery",
+        "original_mentions": [
+          "drug discovery programs"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "issues arising from drug discovery programs",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Chemistry and cheminformatics",
+        "original_mentions": [
+          "chemistry",
+          "cheminformatics tools",
+          "Chemical DBs"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "evaluation/implementation of AEP 9.0 cheminformatics tools",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Biological data management",
+        "original_mentions": [
+          "biologic materials",
+          "Biological Information data warehouse",
+          "DNA clone registration"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "registration system for registering biologic materials",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Pharmacology",
+        "original_mentions": [
+          "Oligonucleotides for Pharmacology"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Registration and Tracking System for Oligonucleotides for Pharmacology",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "GxP applications",
+        "original_mentions": [
+          "GxP application"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "seven of them were critical GxP application",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Agile/Scrum",
+        "original_mentions": [
+          "Agile/Scrum",
+          "Agile",
+          "Scrum"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Methodologies: Agile/Scrum",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Waterfall",
+        "original_mentions": [
+          "Waterfall"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Methodologies: Waterfall",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SDLC",
+        "original_mentions": [
+          "SDLC"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Methodologies: SDLC",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Testing and QA",
+        "original_mentions": [
+          "Testing/QA/Rollout and Hyper care",
+          "QA"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Testing/QA/Rollout and Hyper care",
+          "source_section": "Areas of Expertise",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Release management",
+        "original_mentions": [
+          "Release Management",
+          "Change & Release management"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Custom Software Development; Configuration Management; Release Management",
+          "source_section": "Areas of Expertise",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "System migration and integration",
+        "original_mentions": [
+          "System Migrations/Integrations",
+          "data migration"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "System Migrations/Integrations",
+          "source_section": "Areas of Expertise",
+          "origin": "candidate"
+        }
+      }
+    ]
+  },
+  "job": {
+    "title": null,
+    "seniority": null,
+    "years_of_experience": "Two years of experience in systems engineering or administration required; three years preferred",
+    "responsibilities": [
+      "Assist in building, optimizing, and maintaining data pipelines and the data ecosystem for enterprise-wide data consumption.",
+      "Develop data models, data architecture documents, and APIs.",
+      "Participate in building, managing, and implementing data and/or Big Data pipeline capabilities.",
+      "Participate in data modeling, process design, data pipeline architecture, and all phases of ETL processes.",
+      "Assist with automating repeatable data preparation and integration tasks.",
+      "Partner with technology teams to understand data capture and testing needs and build and test end-to-end solutions.",
+      "Analyze information to determine business needs and implement effective technical solutions.",
+      "Provide timely problem analysis and resolution and explain and interpret complex, difficult, or sensitive information.",
+      "Apply judgment to solve low- to moderate-complexity problems using analysis of multiple information sources, with some guidance from experienced data engineers."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "Basic knowledge of SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Basic knowledge of SQL",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Relational databases",
+        "original_mentions": [
+          "relational databases"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Basic knowledge of ... relational databases",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "ETL/ELT architecture and concepts",
+        "original_mentions": [
+          "ETLELT architecture and concepts"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Basic knowledge of ... ETLELT architecture and concepts",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data integration",
+        "original_mentions": [
+          "data integration concepts"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Basic knowledge of ... data integration concepts",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Big data",
+        "original_mentions": [
+          "big data concepts"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Basic knowledge of ... big data concepts",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "IT project planning and management",
+        "original_mentions": [
+          "planning and managing IT projects"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Previous experience in planning and managing IT projects",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "English language fluency",
+        "original_mentions": [
+          "English (Required)"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Language Fluency: English (Required)",
+          "source_section": null,
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "Banking or financial services experience",
+        "original_mentions": [
+          "Banking or financial services experience"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Banking or financial services experience",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [
+      "Bachelor's degree and two years of experience in systems engineering or administration, or equivalent education and related training or experience (required).",
+      "Bachelor's degree and three years of experience, or equivalent education and related training or experience (preferred)."
+    ],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Banking or financial services",
+        "original_mentions": [
+          "Banking or financial services experience"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Banking or financial services experience",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Problem analysis and resolution",
+        "original_mentions": [
+          "providing problem analysis and resolution in a timely manner"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.94,
+        "source": {
+          "source_text": "provide problem analysis and resolution in a timely manner",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Communication of complex information",
+        "original_mentions": [
+          "explain and interpret complex, difficult, or sensitive information"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "explain and interpret complex, difficult, or sensitive information",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Judgment",
+        "original_mentions": [
+          "exercise judgment"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "exercise judgment based on the analysis of multiple sources of information",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Collaboration",
+        "original_mentions": [
+          "Partner with technology teams"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Partner with technology teams",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [],
+    "system_design_requirements": [
+      "Participate in data modeling, process design, and overall data pipeline architecture.",
+      "Build, manage, and implement data and/or Big Data pipeline capabilities.",
+      "Develop corresponding data architecture documents and APIs.",
+      "Understand data capture and testing needs and build and test end-to-end solutions."
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Data pipelines",
+        "original_mentions": [
+          "building, optimizing and maintaining the data pipelines"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "building, optimizing and maintaining the data pipelines",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data modeling",
+        "original_mentions": [
+          "developing data models",
+          "data modeling"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "developing data models",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data architecture documentation",
+        "original_mentions": [
+          "corresponding data architecture documents"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "corresponding data architecture documents",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "API development",
+        "original_mentions": [
+          "API's"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "API's",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data preparation automation",
+        "original_mentions": [
+          "automate repeatable data preparation"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "automate repeatable data preparation and integration tasks",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "End-to-end solution testing",
+        "original_mentions": [
+          "build and test end-to-end solutions"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "build and test end-to-end solutions",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Bachelor's degree",
+        "original_mentions": [
+          "Bachelor's degree"
+        ],
+        "competency_type": "education",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Bachelor's degree and two years of experience",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Systems engineering or administration experience",
+        "original_mentions": [
+          "two years of experience in systems engineering or administration"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "two years of experience in systems engineering or administration",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Three years of experience",
+        "original_mentions": [
+          "three years of experience"
+        ],
+        "competency_type": "other",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Bachelor's degree and three years of experience",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Overtime availability",
+        "original_mentions": [
+          "including overtime as directed by manager/supervisor"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "work all hours scheduled, including overtime",
+          "source_section": "Other Job Requirements / Working Conditions",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Travel availability",
+        "original_mentions": [
+          "Minimal and up to 10%"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Travel: Minimal and up to 10%",
+          "source_section": "Other Job Requirements / Working Conditions",
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 2589,
+    "output_tokens": 3613,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0046653,
+    "latency_ms": 22854.48,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1691,
+    "output_tokens": 1758,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0024478,
+    "latency_ms": 13602.62,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-10-03T17:25:13.068358+00:00",
+  "reused_from_experiment": null
+}

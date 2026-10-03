@@ -1,0 +1,367 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00095_ed3ae44cc7da",
+  "jd_id": "rjf_00095_ed3ae44cc7da",
+  "pair_id": "rjf_00095_ed3ae44cc7da",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Business requirements analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6968,
+        "evidence": {
+          "tfidf_score": 0.008419558909555916,
+          "tfidf_matched_terms": [
+            "business"
+          ],
+          "bm25_score": 2.3208270029021216,
+          "semantic_score": 0.34814250469207764,
+          "matched_candidate_competency": "Managed day-to-day operations of a medical supply business."
+        },
+        "candidate_evidence": [
+          "Managed day-to-day operations of a medical supply business."
+        ]
+      },
+      {
+        "job_competency": "Technical requirements specification",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7278,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4509739577770233,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Analytical skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7355,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.40323999524116516,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Project management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3859,
+        "evidence": {
+          "tfidf_score": 0.010860588322839222,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 5.093982765932708,
+          "semantic_score": 0.4948219358921051,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Collaboration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.716,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5251200795173645,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Multitasking",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9234,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.382843941450119,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Organizational skills",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4047,
+        "evidence": {
+          "tfidf_score": 0.010860588322839222,
+          "tfidf_matched_terms": [
+            "organizational"
+          ],
+          "bm25_score": 3.188821594637465,
+          "semantic_score": 0.5451846718788147,
+          "matched_candidate_competency": "Retyped, edited, and maintained organizational policies."
+        },
+        "candidate_evidence": [
+          "Retyped, edited, and maintained organizational policies."
+        ]
+      },
+      {
+        "job_competency": "Oral and written communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3442,
+        "evidence": {
+          "tfidf_score": 0.2454331355804658,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 5.204232369989838,
+          "semantic_score": 0.7222412824630737,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Cross-functional communication leadership",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3829,
+        "evidence": {
+          "tfidf_score": 0.014244035227886002,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 5.204232369989838,
+          "semantic_score": 0.5082151293754578,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "English communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3544,
+        "evidence": {
+          "tfidf_score": 0.03976718512885006,
+          "tfidf_matched_terms": [
+            "communication",
+            "english"
+          ],
+          "bm25_score": 5.204232369989838,
+          "semantic_score": 0.7746474146842957,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Task prioritization",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7303,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4356001913547516,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Coaching",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7076,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5777388215065002,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Office desktop applications",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3714,
+        "evidence": {
+          "tfidf_score": 0.03850355819292747,
+          "tfidf_matched_terms": [
+            "microsoft",
+            "office"
+          ],
+          "bm25_score": 5.988429418623248,
+          "semantic_score": 0.5072983503341675,
+          "matched_candidate_competency": "Microsoft?"
+        },
+        "candidate_evidence": [
+          "Microsoft?"
+        ]
+      },
+      {
+        "job_competency": "Agile",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9257,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37148067355155945,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Industry knowledge",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9249,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3753974437713623,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Industry trends",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.732,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.42493298649787903,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      },
+      {
+        "job_competency": "Related professional experience",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7326,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4213351607322693,
+          "matched_candidate_competency": "Data entry"
+        },
+        "candidate_evidence": [
+          "Data entry"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Project management",
+      "Organizational skills",
+      "Oral and written communication",
+      "Cross-functional communication leadership",
+      "English communication",
+      "Microsoft Office desktop applications"
+    ],
+    "weak_matches": [
+      "Business requirements analysis",
+      "Technical requirements specification",
+      "Analytical skills",
+      "Collaboration",
+      "Task prioritization",
+      "Coaching",
+      "Industry trends",
+      "Related professional experience"
+    ],
+    "missing": [
+      "Multitasking",
+      "Agile",
+      "Industry knowledge"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Project management",
+      "Organizational skills",
+      "Oral and written communication",
+      "Cross-functional communication leadership",
+      "English communication",
+      "Microsoft Office desktop applications"
+    ],
+    "competency_gaps": [
+      "Business requirements analysis",
+      "Technical requirements specification",
+      "Analytical skills",
+      "Collaboration",
+      "Task prioritization",
+      "Coaching",
+      "Industry trends",
+      "Related professional experience",
+      "Multitasking",
+      "Agile",
+      "Industry knowledge"
+    ]
+  },
+  "counts": {
+    "requirements": 17,
+    "strength_matches": 0,
+    "partial_matches": 6,
+    "competency_gaps": 11
+  },
+  "latency_ms": 43.07,
+  "analyzed_at": "2026-10-03T17:29:42.362271+00:00"
+}

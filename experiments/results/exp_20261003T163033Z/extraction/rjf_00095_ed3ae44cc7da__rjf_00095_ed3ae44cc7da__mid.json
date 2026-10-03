@@ -1,0 +1,1435 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "extraction",
+  "profile_id": "rjf_00095_ed3ae44cc7da",
+  "jd_id": "rjf_00095_ed3ae44cc7da",
+  "pair_id": "rjf_00095_ed3ae44cc7da",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Highly motivated Sales Associate with extensive customer service and sales experience; track record of driving increased sales, improving buying experience, and elevating company profile.",
+    "seniority_indicators": [
+      "Extensive customer service and sales experience"
+    ],
+    "education": [
+      {
+        "degree": "Associate of Science",
+        "institution": "Mattia College, Miami, Florida",
+        "field": "Nursing",
+        "year": "Expected May 2014",
+        "source_text": "Associate of Science: Nursing; Mattia College"
+      },
+      {
+        "degree": "Associate of Arts",
+        "institution": "Miami Dade College, Miami, Florida",
+        "field": null,
+        "year": "Expected 2010",
+        "source_text": "Associate of Arts; Miami Dade College"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Data Entry Associate, Quality Control, Research Clinical Coordinator",
+        "employer": "Abercrombie & Fitch Co.",
+        "duration": "12/2014\u2013Present",
+        "responsibilities": [
+          "Worked with computerized patient records and clinical trial data.",
+          "Entered, transcribed, coded, and maintained clinical data.",
+          "Performed data integrity checks and quality assurance reviews.",
+          "Submitted regulatory documents to IRB and sponsor.",
+          "Recruited, screened, scheduled, and obtained consent from study subjects.",
+          "Performed study procedures and documented adverse events.",
+          "Processed and shipped laboratory work.",
+          "Maintained study files and communication with study personnel.",
+          "Prepared studies for initiation, closure, and archiving."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Computerized patient records",
+          "Clinical trial data",
+          "Data management",
+          "Quality assurance",
+          "IRB and sponsor documentation"
+        ],
+        "source_text": "Data Entry Associate, Quality Control, Research Clinical Coordinator; 12/2014\u2013Present"
+      },
+      {
+        "title": "Front Desk Coordinator",
+        "employer": "Miami Vascular Surgery/South Miami Baptist Hospital",
+        "duration": "12/2011\u201312/2012",
+        "responsibilities": [
+          "Oversaw front-office operations and provided customer service.",
+          "Handled patient scheduling, insurance verification, medical billing, and coding.",
+          "Communicated medical concepts to patients.",
+          "Communicated patient rights and HIPAA regulations."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Medical billing",
+          "Medical coding",
+          "HIPAA"
+        ],
+        "source_text": "Front Desk Coordinator; 12/2011\u201312/2012"
+      },
+      {
+        "title": "Behavioral Health Department Secretary",
+        "employer": "Kendall Regional Medical Center/HCA",
+        "duration": "01/2011\u201312/2011",
+        "responsibilities": [
+          "Oversaw front-office operations and provided customer service.",
+          "Handled patient scheduling, patient orders, and next-level-of-care arrangements.",
+          "Answered department telephone calls and directed inquiries."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Front-office operations",
+          "Telephone systems"
+        ],
+        "source_text": "Behavioral Health Department Secretary; 01/2011\u201312/2011"
+      },
+      {
+        "title": "PBX Hospital Communications Operator",
+        "employer": "Kendall Regional Medical Center/HCA",
+        "duration": "05/2009\u201301/2011",
+        "responsibilities": [
+          "Answered a multi-line telephone system.",
+          "Screened and directed calls.",
+          "Responded to inquiries and provided customer service."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Multi-line telephone system"
+        ],
+        "source_text": "PBX Hospital Communications Operator; 05/2009\u201301/2011"
+      },
+      {
+        "title": "Health Service Administrative Assistant",
+        "employer": "Oxy Care Of Miami Inc",
+        "duration": "03/2008\u201305/2009",
+        "responsibilities": [
+          "Managed day-to-day operations of a medical supply business.",
+          "Created delivery orders for an office averaging 40 appointments weekly.",
+          "Handled accounts payable, accounts receivable, invoicing, insurance billing, and budgeting.",
+          "Handled complaints and concerns.",
+          "Hired and trained office staff as needed.",
+          "Retyped, edited, and maintained organizational policies."
+        ],
+        "achievements": [
+          "Supported an office averaging 40 appointments weekly."
+        ],
+        "technologies": [
+          "Accounts payable and receivable",
+          "Invoicing",
+          "Insurance billing",
+          "Budgeting"
+        ],
+        "source_text": "Health Service Administrative Assistant; 03/2008\u201305/2009"
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "Data entry",
+        "original_mentions": [
+          "Data Entry"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Data Entry Associate",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data management",
+        "original_mentions": [
+          "Data Management"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "answer Data Management queries",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Quality assurance",
+        "original_mentions": [
+          "quality assurance",
+          "quality"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Performs quality assurance review",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Clinical research",
+        "original_mentions": [
+          "Clinical Research",
+          "clinical trial data",
+          "research"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Research Clinical Coordinator; Clinical Research",
+          "source_section": "Professional Experience; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Medical billing and coding",
+        "original_mentions": [
+          "medical billing",
+          "billing",
+          "coding",
+          "Certified Medical Biller and Coder"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "medical billing and coding",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Insurance verification",
+        "original_mentions": [
+          "insurance verification",
+          "insurance"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Handled patient scheduling, insurance verification",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Inventory control",
+        "original_mentions": [
+          "Inventory control procedures"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Inventory control procedures",
+          "source_section": "Skill Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Merchandising",
+        "original_mentions": [
+          "Merchandising expertise"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Merchandising expertise",
+          "source_section": "Skill Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Loss prevention",
+        "original_mentions": [
+          "Loss prevention"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Loss prevention",
+          "source_section": "Skill Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Cash register operations",
+        "original_mentions": [
+          "Cash register operations"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Cash register operations",
+          "source_section": "Skill Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Product promotions",
+        "original_mentions": [
+          "Product promotions"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Product promotions",
+          "source_section": "Skill Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accounts payable and receivable",
+        "original_mentions": [
+          "accounts payable",
+          "accounts/receivable"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Conducted accounts payable/receivable",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Budgeting",
+        "original_mentions": [
+          "budgeting"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "budgeting",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Scheduling",
+        "original_mentions": [
+          "scheduling"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "patient scheduling",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Documentation",
+        "original_mentions": [
+          "Documentation",
+          "Good Documentation Practices (GDP)"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Good Documentation Practices (GDP)",
+          "source_section": "Education and Training; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Standard operating procedures",
+        "original_mentions": [
+          "SOP",
+          "SOP Reading"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "SOP Reading",
+          "source_section": "Education and Training; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Regulatory documentation",
+        "original_mentions": [
+          "regulatory documents"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Submitting regulatory documents to IRB and Sponsor",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Recruiting",
+        "original_mentions": [
+          "Recruiting",
+          "Recruiting subjects"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Recruiting subjects",
+          "source_section": "Professional Experience; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft?",
+        "original_mentions": [],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.0,
+        "source": null
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Customer service",
+        "original_mentions": [
+          "customer service",
+          "excellent customer service",
+          "Strong customer service"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "extensive customer service and sales experience",
+          "source_section": "Professional Summary; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Communication",
+        "original_mentions": [
+          "Strong communication skills",
+          "interpersonal skills"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Strong communication skills, interpersonal skills",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Self-motivated",
+        "original_mentions": [
+          "Self-motivated"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Self-motivated",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Teaching",
+        "original_mentions": [
+          "Teaching"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Teaching subjects about protocol expectations",
+          "source_section": "Professional Experience; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Spanish language",
+        "original_mentions": [
+          "fluent in Spanish"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "fluent in Spanish",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "English language",
+        "original_mentions": [
+          "English"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "English",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [
+      {
+        "normalized_label": "Certified Medical Biller and Coder",
+        "original_mentions": [
+          "Certified Medical Biller and Coder"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Certified Medical Biller and Coder",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Basic Life Support",
+        "original_mentions": [
+          "BLS (CPR/AED)",
+          "CPR"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "BLS (CPR/AED)",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Advanced Cardiovascular Life Support",
+        "original_mentions": [
+          "ACLS"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "ACLS",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Pediatric Advanced Life Support",
+        "original_mentions": [
+          "PALS"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "PALS",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "OSHA",
+        "original_mentions": [
+          "OSHA"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "OSHA",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Crisis Prevention Intervention",
+        "original_mentions": [
+          "Crisis Prevention Intervention Certified"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Crisis Prevention Intervention Certified",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "General Clinical Research Training",
+        "original_mentions": [
+          "General Clinical Research Training"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "General Clinical Research Training",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Good Clinical Practice",
+        "original_mentions": [
+          "Good Clinical Practices (GCP)",
+          "GCP"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Good Clinical Practices (GCP)",
+          "source_section": "Education and Training; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "HIPAA",
+        "original_mentions": [
+          "HIPPA",
+          "HIPAA regulations"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "HIPAA regulations",
+          "source_section": "Professional Experience; Education and Training; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Infection control",
+        "original_mentions": [
+          "Infection Control and Barrier Precautions",
+          "Infection Control"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Infection Control and Barrier Precautions",
+          "source_section": "Education and Training; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Informed consent process",
+        "original_mentions": [
+          "Informed Consent Process"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Informed Consent Process",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Biomedical hazards",
+        "original_mentions": [
+          "Biomedical Hazards"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Biomedical Hazards",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Medical errors prevention",
+        "original_mentions": [
+          "Medical Errors Prevention"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Medical Errors Prevention",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Alzheimer's and dementia",
+        "original_mentions": [
+          "Alzheimer's and Dementia"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Alzheimer's and Dementia",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Domestic violence",
+        "original_mentions": [
+          "Domestic Violence"
+        ],
+        "competency_type": "certification",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Domestic Violence",
+          "source_section": "Education and Training",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "domain_experience": [
+      {
+        "normalized_label": "Clinical research coordination",
+        "original_mentions": [
+          "Research Clinical Coordinator",
+          "Clinical Research"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Research Clinical Coordinator",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Healthcare administration",
+        "original_mentions": [
+          "Health Service Administrative Assistant",
+          "medical supply business"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Health Service Administrative Assistant",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Hospital operations",
+        "original_mentions": [
+          "PBX Hospital Communications Operator",
+          "hospital"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "PBX Hospital Communications Operator",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Patient services",
+        "original_mentions": [
+          "patient scheduling",
+          "patient rights"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "patient scheduling",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Sales",
+        "original_mentions": [
+          "Sales Associate",
+          "sales professional",
+          "increased sales"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Sales Associate with extensive customer service and sales experience",
+          "source_section": "Professional Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Front-office operations",
+        "original_mentions": [
+          "front-office operations",
+          "front-office"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Oversaw front-office operations",
+          "source_section": "Professional Experience; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Telephone operations",
+        "original_mentions": [
+          "multi-line telephone",
+          "telephone"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Answered multi-line telephone system",
+          "source_section": "Professional Experience; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Patient recruitment and screening",
+        "original_mentions": [
+          "Recruiting subjects",
+          "Screening and scheduling subjects"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Recruiting subjects. Screening and scheduling subjects.",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Clinical trial subject consent",
+        "original_mentions": [
+          "Getting voluntary subject consent",
+          "Informed Consent Process"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Getting voluntary subject consent",
+          "source_section": "Professional Experience",
+          "origin": "candidate"
+        }
+      }
+    ]
+  },
+  "job": {
+    "title": "IT System Business Analyst",
+    "seniority": null,
+    "years_of_experience": "Minimum of 5 years related experience required",
+    "responsibilities": [
+      "Translate business requirements into technical specifications and maintain relationships with the business.",
+      "Drive standard business processes across the IT Enterprise and assess potential impacts to the business.",
+      "Develop and maintain technical knowledge in specialized areas, producing solutions for global consistency and standardization.",
+      "Produce feasibility reports, design solutions to improve productivity, and create and maintain functional models and process flows."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Business requirements analysis",
+        "original_mentions": [
+          "interpret customer business needs",
+          "business analysis process and functions"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Proven IT knowledge of the business analysis process and functions.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Technical requirements specification",
+        "original_mentions": [
+          "Translate business requirements into technical specifications"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Translate business requirements into technical specifications",
+          "source_section": "In this role, you will",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Analytical skills",
+        "original_mentions": [
+          "Strong analytical ... skills"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Strong analytical and project management skills",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Project management",
+        "original_mentions": [
+          "project management skills"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Strong analytical and project management skills",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Collaboration",
+        "original_mentions": [
+          "Excellent collaboration"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Excellent collaboration, multi-tasking, and organizational skills.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Multitasking",
+        "original_mentions": [
+          "multi-tasking"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Excellent collaboration, multi-tasking, and organizational skills.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Organizational skills",
+        "original_mentions": [
+          "organizational skills"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Excellent collaboration, multi-tasking, and organizational skills.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Oral and written communication",
+        "original_mentions": [
+          "Effective oral and written communication skills"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Effective oral and written communication skills",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cross-functional communication leadership",
+        "original_mentions": [
+          "lead communication across different IT and business teams"
+        ],
+        "competency_type": "leadership",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "ability to lead communication across different IT and business teams",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "English communication",
+        "original_mentions": [
+          "Fluent and clear English communication skills"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Fluent and clear English communication skills.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Task prioritization",
+        "original_mentions": [
+          "prioritize team tasks"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Ability to prioritize team tasks",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Coaching",
+        "original_mentions": [
+          "provide coaching"
+        ],
+        "competency_type": "leadership",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "provide coaching",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Office desktop applications",
+        "original_mentions": [
+          "Microsoft standard desktop applications including Word, Excel, PowerPoint, Exchange, Visio, and Project"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Proficiency in Microsoft standard desktop applications including Word, Excel, PowerPoint, Exchange, Visio, and Project.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Agile",
+        "original_mentions": [
+          "proven experience in an agile environment"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "proven experience in an agile environment",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Industry knowledge",
+        "original_mentions": [
+          "Thorough knowledge of the industry"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Thorough knowledge of the industry, trends",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Industry trends",
+        "original_mentions": [
+          "knowledge of ... trends"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.94,
+        "source": {
+          "source_text": "Thorough knowledge of the industry, trends",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Related professional experience",
+        "original_mentions": [
+          "Minimum of 5 years related experience"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Minimum of 5 years related experience required.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [],
+    "education_requirements": [],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Healthcare industry",
+        "original_mentions": [
+          "Fortune 15 Healthcare company",
+          "healthcare providers",
+          "healthcare systems"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Fortune 15 Healthcare company",
+          "source_section": "A Little About This Gig",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Industry knowledge",
+        "original_mentions": [
+          "Thorough knowledge of the industry"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Thorough knowledge of the industry, trends",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Industry trends",
+        "original_mentions": [
+          "knowledge of ... trends"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.94,
+        "source": {
+          "source_text": "Thorough knowledge of the industry, trends",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Analytical skills",
+        "original_mentions": [
+          "Strong analytical ... skills"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Strong analytical and project management skills",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Collaboration",
+        "original_mentions": [
+          "Excellent collaboration"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Excellent collaboration, multi-tasking, and organizational skills.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Multitasking",
+        "original_mentions": [
+          "multi-tasking"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "Excellent collaboration, multi-tasking, and organizational skills.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Organizational skills",
+        "original_mentions": [
+          "organizational skills"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Excellent collaboration, multi-tasking, and organizational skills.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Oral and written communication",
+        "original_mentions": [
+          "Effective oral and written communication skills"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Effective oral and written communication skills",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "English communication",
+        "original_mentions": [
+          "Fluent and clear English communication skills"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Fluent and clear English communication skills.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Task prioritization",
+        "original_mentions": [
+          "prioritize team tasks"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Ability to prioritize team tasks",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [
+      "Lead communication across different IT and business teams.",
+      "Prioritize team tasks.",
+      "Lead junior Business Analysts.",
+      "Provide coaching."
+    ],
+    "system_design_requirements": [
+      "Translate business requirements into technical specifications.",
+      "Produce feasibility reports.",
+      "Design solutions to improve productivity.",
+      "Create and maintain functional models and process flows.",
+      "Produce solutions for global consistency and standardization."
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Business requirements analysis",
+        "original_mentions": [
+          "interpret customer business needs",
+          "business analysis process and functions"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Proven IT knowledge of the business analysis process and functions.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Technical requirements specification",
+        "original_mentions": [
+          "Translate business requirements into technical specifications"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Translate business requirements into technical specifications",
+          "source_section": "In this role, you will",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Project management",
+        "original_mentions": [
+          "project management skills"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Strong analytical and project management skills",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Agile",
+        "original_mentions": [
+          "proven experience in an agile environment"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "proven experience in an agile environment",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Office desktop applications",
+        "original_mentions": [
+          "Word, Excel, PowerPoint, Exchange, Visio, and Project"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Proficiency in Microsoft standard desktop applications including Word, Excel, PowerPoint, Exchange, Visio, and Project.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Healthcare industry",
+        "original_mentions": [
+          "Fortune 15 Healthcare company",
+          "healthcare systems"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Fortune 15 Healthcare company",
+          "source_section": "A Little About This Gig",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cross-functional communication leadership",
+        "original_mentions": [
+          "lead communication across different IT and business teams"
+        ],
+        "competency_type": "leadership",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "ability to lead communication across different IT and business teams",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Coaching junior Business Analysts",
+        "original_mentions": [
+          "lead junior Business Analysts",
+          "provide coaching"
+        ],
+        "competency_type": "leadership",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Ability to prioritize team tasks, lead junior Business Analysts, and provide coaching.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Related professional experience",
+        "original_mentions": [
+          "Minimum of 5 years related experience"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Minimum of 5 years related experience required.",
+          "source_section": "The Ideal Candidate",
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 2044,
+    "output_tokens": 3622,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0045671,
+    "latency_ms": 21450.26,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1096,
+    "output_tokens": 2568,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0033008,
+    "latency_ms": 17866.27,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-10-03T17:15:27.038698+00:00",
+  "reused_from_experiment": null
+}

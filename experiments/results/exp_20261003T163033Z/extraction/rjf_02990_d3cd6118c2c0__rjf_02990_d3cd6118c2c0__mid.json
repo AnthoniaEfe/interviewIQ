@@ -1,0 +1,1319 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "extraction",
+  "profile_id": "rjf_02990_d3cd6118c2c0",
+  "jd_id": "rjf_02990_d3cd6118c2c0",
+  "pair_id": "rjf_02990_d3cd6118c2c0",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": "Jessica",
+    "professional_summary": "IT software developer with experience in software design, development, and implementation of enterprise billing and order management applications. Experienced with Java/J2EE technologies on Windows, including Spring, JSP, JSON, and servlets, with understanding of Python programming.",
+    "seniority_indicators": [
+      "Software Developer",
+      "Software Development Engineer"
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Science",
+        "institution": "New York Institute of Technology",
+        "field": "Computer Science",
+        "year": "Expected May 2016",
+        "source_text": "New York Institute of Technology; Computer Science; Expected May 2016; GPA 4.0; Summa Cum Laude"
+      },
+      {
+        "degree": "Bachelor of Engineering",
+        "institution": "University of Mumbai",
+        "field": "Computer Engineering",
+        "year": "Expected May 2014",
+        "source_text": "University of Mumbai; Computer Engineering; Expected May 2014"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Software Developer",
+        "employer": "Panjiva",
+        "duration": "10/2016-Current",
+        "responsibilities": [
+          "Designed and developed a notification module using Spring, JavaMail, and JDBC Template.",
+          "Contributed to enhancement design and documentation for a scheduled scenario module.",
+          "Performed unit and integration testing.",
+          "Provided daily production support.",
+          "Created and merged Git repository branches.",
+          "Developed stored procedures and triggers using MariaDB and Oracle.",
+          "Worked on application deployment and Maven build configuration.",
+          "Contributed to test-environment build and development activities."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Spring Boot",
+          "Spring Batch",
+          "Java",
+          "Apache Tomcat",
+          "Oracle",
+          "MariaDB",
+          "DB2",
+          "Jenkins",
+          "Maven",
+          "Git"
+        ],
+        "source_text": "Panjiva \u2014 Software Developer; Test Data Management Project; 10/2016-Current"
+      },
+      {
+        "title": "Software Developer",
+        "employer": "Pearson",
+        "duration": "10/2016-Current",
+        "responsibilities": [
+          "Identified, corrected, and verified defects using Java, Spring, and Oracle.",
+          "Wrote test cases using test-driven development with JUnit and Cucumber.",
+          "Prepared test cases and results during unit testing.",
+          "Completed an end-to-end continuous integration pipeline using Jenkins, Maven, Git, and Sonar."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "Spring Batch",
+          "Java Scheduler",
+          "Tomcat",
+          "REST API",
+          "Oracle",
+          "JUnit",
+          "Cucumber",
+          "Jenkins",
+          "SonarQube",
+          "JFrog",
+          "Git",
+          "AWS"
+        ],
+        "source_text": "Pearson \u2014 Software Developer; Billing Automation Project; 10/2016-Current"
+      },
+      {
+        "title": "Software Development Engineer",
+        "employer": "Skilljar",
+        "duration": "04/2015-09/2016",
+        "responsibilities": [
+          "Implemented a payment module using Java, Spring Batch, Spring Boot, JSON, and JSP.",
+          "Developed SOAP web services for the payment module.",
+          "Created Maven archetypes for REST web services supporting JSON message transformation.",
+          "Developed stored procedures and triggers using MySQL and Oracle.",
+          "Installed Tomcat Server.",
+          "Created and merged repository branches using Git.",
+          "Worked on an end-to-end continuous integration pipeline using Jenkins, Maven, Git, and Sonar."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Java",
+          "Spring Batch",
+          "Spring Boot",
+          "Servlet",
+          "JSP",
+          "JSON",
+          "Web Services",
+          "Oracle",
+          "MySQL",
+          "Maven",
+          "Jenkins",
+          "Git",
+          "Sonar"
+        ],
+        "source_text": "Skilljar \u2014 Software Development Engineer; Purchase & Order Management System; 04/2015-09/2016"
+      },
+      {
+        "title": "College Project",
+        "employer": "New York Institute of Technology",
+        "duration": "04/2016",
+        "responsibilities": [
+          "Developed and implemented a tracking module using Python and JSON.",
+          "Implemented Java and JSP with JavaMail for an alert module."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Python",
+          "JSON",
+          "Java",
+          "JSP",
+          "JavaMail"
+        ],
+        "source_text": "New York Institute of Technology \u2014 College Project; 04/2016"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Test Data Management Project",
+        "description": "Web-based application for automating test data setup, synchronizing data across systems, and retrieving samples from production data.",
+        "technologies": [
+          "Spring Boot",
+          "Spring Batch",
+          "Java",
+          "Apache Tomcat",
+          "Oracle",
+          "MariaDB",
+          "DB2",
+          "Jenkins",
+          "Maven",
+          "Git"
+        ],
+        "source_text": "Panjiva: Test Data Management Project"
+      },
+      {
+        "name": "Billing Automation Project",
+        "description": "Billing software for validating invoices, identifying outliers against historical data, and confirming acceptable bill data.",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "Spring Batch",
+          "Tomcat",
+          "REST API",
+          "Oracle",
+          "JUnit",
+          "Cucumber",
+          "Jenkins",
+          "SonarQube",
+          "Git",
+          "AWS"
+        ],
+        "source_text": "Pearson: Billing Automation Project"
+      },
+      {
+        "name": "Purchase & Order Management System",
+        "description": "Web-based system for sorting orders by lead times, synchronizing databases, and retrieving available inventory.",
+        "technologies": [
+          "Java",
+          "Spring Batch",
+          "Spring Boot",
+          "Servlet",
+          "JSP",
+          "JSON",
+          "SOAP",
+          "Oracle",
+          "MySQL",
+          "Maven",
+          "Jenkins",
+          "Git",
+          "Sonar"
+        ],
+        "source_text": "Skilljar: Purchase & Order Management System"
+      },
+      {
+        "name": "Sales, Discounts, Payment, Products and Inventory Management",
+        "description": "Automated software for managing sales, discounts, payments, products, and inventory.",
+        "technologies": [
+          "Python",
+          "JSON",
+          "Java",
+          "JSP",
+          "JavaMail"
+        ],
+        "source_text": "New York Institute of Technology: College Project"
+      }
+    ],
+    "technical_skills": [
+      {
+        "normalized_label": "Java",
+        "original_mentions": [
+          "JAVA",
+          "Java"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Technical Skills: Java; Summary: JAVA/J2EE",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "J2EE",
+        "original_mentions": [
+          "J2EE",
+          "J2EE technologies"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Technical Skills: J2EE Framework; Summary: J2EE technologies",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Spring",
+        "original_mentions": [
+          "Spring 2.5",
+          "Spring 3.0",
+          "Spring framework",
+          "Spring Boot",
+          "Spring Batch"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "J2EE Framework: Spring 2.5, Spring 3.0; Technologies: Spring Batch, Spring Boot",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Servlets",
+        "original_mentions": [
+          "Servlets",
+          "Servlet"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "J2EE technologies such as ... servlets; Technologies: Servlet",
+          "source_section": "Summary/Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JSP",
+        "original_mentions": [
+          "JSP"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Technologies: JSP",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Python",
+        "original_mentions": [
+          "Python",
+          "python programming"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Summary: good understanding of Python programming; Project: Python",
+          "source_section": "Summary/Projects",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JSON",
+        "original_mentions": [
+          "JSON"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Technologies: JSON",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "REST",
+        "original_mentions": [
+          "REST",
+          "REST API",
+          "REST Web Services"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Web services: REST; REST API",
+          "source_section": "Technical Skills/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SOAP",
+        "original_mentions": [
+          "SOAP"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Web services: SOAP; Developed SOAP Web Services",
+          "source_section": "Technical Skills/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Apache Tomcat",
+        "original_mentions": [
+          "Apache Tomcat 5.0",
+          "Apache Tomcat 5.5",
+          "Tomcat Server",
+          "Tomcat"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Servers: Apache Tomcat 5.0, 5.5",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Oracle",
+        "original_mentions": [
+          "Oracle"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Database/Tools: Oracle",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "MySQL",
+        "original_mentions": [
+          "MySQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Database/Tools: MySQL",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "MariaDB",
+        "original_mentions": [
+          "Maria DB",
+          "MariaDB"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Database/Tools: Maria DB",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SQL Server",
+        "original_mentions": [
+          "SQL Server"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Database/Tools: SQL Server",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "PL/SQL",
+        "original_mentions": [
+          "PL/SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Database/Tools: PL/SQL",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Git",
+        "original_mentions": [
+          "GIT",
+          "Git"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Version Control: GIT",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Maven",
+        "original_mentions": [
+          "Maven"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Build Configuration using Maven",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Jenkins",
+        "original_mentions": [
+          "Jenkins"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Continuous integration pipeline using Jenkins",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JUnit",
+        "original_mentions": [
+          "JUNIT",
+          "Junit"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Test cases using JUNIT",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Cucumber",
+        "original_mentions": [
+          "Cucumber"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Test-driven development using JUNIT and Cucumber",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "HTML",
+        "original_mentions": [
+          "HTML"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Technologies: HTML",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "CSS",
+        "original_mentions": [
+          "CSS"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Technologies: CSS",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JavaScript",
+        "original_mentions": [
+          "JavaScript"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: JavaScript",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JDBC",
+        "original_mentions": [
+          "JDBC",
+          "JDBC 3.0"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Technologies: JDBC",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Eclipse",
+        "original_mentions": [
+          "Eclipse 3.2",
+          "Eclipse 3.3",
+          "MARS"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "IDE / Programming Tools: Eclipse 3.2, Eclipse 3.3, MARS",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "NetBeans",
+        "original_mentions": [
+          "NetBeans"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "IDE / Programming Tools: NetBeans",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Visual Studio",
+        "original_mentions": [
+          "Visual studio"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "IDE / Programming Tools: Visual studio",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "AWS",
+        "original_mentions": [
+          "AWS"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Environment: AWS",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SonarQube",
+        "original_mentions": [
+          "SonarQube",
+          "Sonar"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Continuous integration pipeline using ... Sonar",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Bootstrap",
+        "original_mentions": [
+          "Bootstrap"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Technologies: Bootstrap",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "XML",
+        "original_mentions": [
+          "XML"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: XML",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "XSLT",
+        "original_mentions": [
+          "XSLT"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Skills: XSLT",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Documentation",
+        "original_mentions": [
+          "design and documentation"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.92,
+        "source": {
+          "source_text": "Involved in design and documentation of enhancement",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Scrum Participation",
+        "original_mentions": [
+          "Attending scrum calls"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Attending scrum calls to plan and prioritize activities",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Production Support",
+        "original_mentions": [
+          "daily production support"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Provided with daily production support",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Enterprise Billing Applications",
+        "original_mentions": [
+          "enterprise billing applications",
+          "Billing Automation Project"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience in ... enterprise billing ... applications; Billing Automation Project",
+          "source_section": "Summary/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Order Management",
+        "original_mentions": [
+          "order management applications",
+          "Purchase & Order Management System"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Enterprise ... order management applications; Purchase & Order Management System",
+          "source_section": "Summary/Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Test Data Management",
+        "original_mentions": [
+          "Test Data Management Project"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Test Data Management Project",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Continuous Integration",
+        "original_mentions": [
+          "continuous integration pipeline"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Worked on end-to-end continuous integration pipeline",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Software Design",
+        "original_mentions": [
+          "software design"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Strong experience in software design",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Software Development",
+        "original_mentions": [
+          "software development",
+          "Developed",
+          "Implemented"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Strong experience in software design, development and implementation",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Unit Testing",
+        "original_mentions": [
+          "unit testing"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Involved in unit testing and integration testing",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Integration Testing",
+        "original_mentions": [
+          "integration testing"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Involved in unit testing and integration testing",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Test-Driven Development",
+        "original_mentions": [
+          "test driven development"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Writing test cases in test driven development",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ]
+  },
+  "job": {
+    "title": "Lead Software Engineer",
+    "seniority": "Lead",
+    "years_of_experience": "Typically 6+ years",
+    "responsibilities": [
+      "Lead a team conducting white- and black-box testing of devices and software for security flaws and vulnerabilities.",
+      "Identify areas of concern and recommend an improved cybersecurity stance.",
+      "Stay up to date on current security vulnerabilities and mitigation processes.",
+      "Train others about current security vulnerabilities and mitigation processes.",
+      "Lead the specification, design, implementation, and testing of firmware/software systems.",
+      "Understand hardware and software interactions and collaborate with Hardware Engineers.",
+      "Lead the development of designs and test documentation.",
+      "Mentor Engineers, Associate Engineers, and Technicians."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Object-oriented programming",
+        "original_mentions": [
+          "Object Oriented Programming"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Typically 6+ years experience in one or more of the following areas: Object Oriented",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Embedded programming",
+        "original_mentions": [
+          "Embedded Programming"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Typically 6+ years experience in one or more of the following areas: ... Embedded Programming",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "C",
+        "original_mentions": [
+          "C"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Object Oriented andor Embedded Programming (C, C++, C#, Python)",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "C++",
+        "original_mentions": [
+          "C++"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Object Oriented andor Embedded Programming (C, C++, C#, Python)",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "C#",
+        "original_mentions": [
+          "C#"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Object Oriented andor Embedded Programming (C, C++, C#, Python)",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Python",
+        "original_mentions": [
+          "Python"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Object Oriented andor Embedded Programming (C, C++, C#, Python)",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Network communications",
+        "original_mentions": [
+          "Network Communications"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Typically 6+ years experience in one or more of the following areas: ... Network Communications",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Industrial control system protocols",
+        "original_mentions": [
+          "ICS Protocols"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.94,
+        "source": {
+          "source_text": "Network Communications (IS andor ICS Protocols)",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Digital forensics",
+        "original_mentions": [
+          "Digital Forensics"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Typically 6+ years experience in one or more of the following areas: ... Digital Forensics",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Reverse engineering",
+        "original_mentions": [
+          "Reverse Engineering"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Typically 6+ years experience in one or more of the following areas: ... Reverse Engineering",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Industrial control systems",
+        "original_mentions": [
+          "industrial control systems"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Experience with industrial control systems, information security, and cyber analysisoperations.",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Information security",
+        "original_mentions": [
+          "information security"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Experience with industrial control systems, information security, and cyber analysisoperations.",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cyber analysis and operations",
+        "original_mentions": [
+          "cyber analysisoperations"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "Experience with industrial control systems, information security, and cyber analysisoperations.",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "White-box testing",
+        "original_mentions": [
+          "white ... box testing"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "conducting white and black box testing of devices and software",
+          "source_section": "Role",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Black-box testing",
+        "original_mentions": [
+          "black box testing"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "conducting white and black box testing of devices and software",
+          "source_section": "Role",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cybersecurity vulnerability assessment",
+        "original_mentions": [
+          "security flaws and vulnerabilities",
+          "improved cybersecurity stance"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "testing of devices and software for security flaws and vulnerabilities",
+          "source_section": "Role",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Hardware-software interaction",
+        "original_mentions": [
+          "Understand hardware and software interactions"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Understand hardware and software interactions",
+          "source_section": "Role",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "United States citizenship",
+        "original_mentions": [
+          "United States Citizenship is required"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "United States Citizenship is required.",
+          "source_section": "Eligibility",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [],
+    "education_requirements": [
+      "B.S. in Electrical Engineering, Computer Science, Cybersecurity, Information Technology, Software Engineering, Information Systems, or Computer Engineering, or equivalent."
+    ],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Power engineering",
+        "original_mentions": [
+          "power engineering community"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.86,
+        "source": {
+          "source_text": "found in the power engineering community",
+          "source_section": "Introduction",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Industrial control systems",
+        "original_mentions": [
+          "industrial control systems"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Experience with industrial control systems",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Information security",
+        "original_mentions": [
+          "information security"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "information security",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Collaboration",
+        "original_mentions": [
+          "collaborate with Hardware Engineers"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "collaborate with Hardware Engineers",
+          "source_section": "Role",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Mentoring",
+        "original_mentions": [
+          "Mentor Engineers, Associate Engineers, and Technicians"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Mentor Engineers, Associate Engineers, and Technicians.",
+          "source_section": "Role",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Training",
+        "original_mentions": [
+          "training others"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "staying up to date and training others about current security vulnerabilities and mitigation processes",
+          "source_section": "Role",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [
+      "Lead a team conducting white- and black-box testing of devices and software.",
+      "Lead the specification, design, implementation, and testing of firmware/software systems.",
+      "Lead the development of designs and test documentation.",
+      "Mentor Engineers, Associate Engineers, and Technicians."
+    ],
+    "system_design_requirements": [
+      "Lead the specification, design, implementation, and testing of firmware/software systems.",
+      "Understand hardware and software interactions.",
+      "Lead the development of designs and test documentation."
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Team leadership",
+        "original_mentions": [
+          "Lead a team"
+        ],
+        "competency_type": "leadership",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Lead a team, conducting white and black box testing",
+          "source_section": "Role",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Cybersecurity vulnerability mitigation",
+        "original_mentions": [
+          "mitigation processes"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "current security vulnerabilities and mitigation processes",
+          "source_section": "Role",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "NICCS work roles PR-VAM-001 and AN-EXP-001",
+        "original_mentions": [
+          "NICCS Work Role ID: PR-VAM-001 and AN-EXP-001"
+        ],
+        "competency_type": "other",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "See NICCS Work Role ID: PR-VAM-001 and AN-EXP-001.",
+          "source_section": "Qualifications",
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 2187,
+    "output_tokens": 3797,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0048057,
+    "latency_ms": 21408.19,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1341,
+    "output_tokens": 2143,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0028398,
+    "latency_ms": 15007.3,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-10-03T16:37:44.648317+00:00",
+  "reused_from_experiment": null
+}

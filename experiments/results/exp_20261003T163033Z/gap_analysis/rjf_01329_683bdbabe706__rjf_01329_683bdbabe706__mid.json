@@ -1,0 +1,336 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01329_683bdbabe706",
+  "jd_id": "rjf_01329_683bdbabe706",
+  "pair_id": "rjf_01329_683bdbabe706",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Cost accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7286,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4465354084968567,
+          "matched_candidate_competency": "Healthcare information systems"
+        },
+        "candidate_evidence": [
+          "Healthcare information systems"
+        ]
+      },
+      {
+        "job_competency": "Manufacturing accounting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.924,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3802480697631836,
+          "matched_candidate_competency": "Healthcare information systems"
+        },
+        "candidate_evidence": [
+          "Healthcare information systems"
+        ]
+      },
+      {
+        "job_competency": "Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1649,
+        "evidence": {
+          "tfidf_score": 0.033475559908984806,
+          "tfidf_matched_terms": [
+            "excel"
+          ],
+          "bm25_score": 4.201571632735125,
+          "semantic_score": 0.9658973813056946,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "ERP systems",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.385,
+        "evidence": {
+          "tfidf_score": 0.019407076630614396,
+          "tfidf_matched_terms": [
+            "systems"
+          ],
+          "bm25_score": 3.766252721041514,
+          "semantic_score": 0.4983440637588501,
+          "matched_candidate_competency": "Healthcare information systems"
+        },
+        "candidate_evidence": [
+          "Healthcare information systems"
+        ]
+      },
+      {
+        "job_competency": "Planning",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3453,
+        "evidence": {
+          "tfidf_score": 0.01673092395987073,
+          "tfidf_matched_terms": [
+            "planning"
+          ],
+          "bm25_score": 4.430910010962638,
+          "semantic_score": 0.7842509746551514,
+          "matched_candidate_competency": "Planning and organizing"
+        },
+        "candidate_evidence": [
+          "Planning and organizing"
+        ]
+      },
+      {
+        "job_competency": "Inventory costing and accounting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3767,
+        "evidence": {
+          "tfidf_score": 0.3156939650488354,
+          "tfidf_matched_terms": [
+            "and",
+            "inventory"
+          ],
+          "bm25_score": 3.373324498294624,
+          "semantic_score": 0.425630658864975,
+          "matched_candidate_competency": "Managed station coverage, inventory, staffing, compliance, and student clearance"
+        },
+        "candidate_evidence": [
+          "Managed station coverage, inventory, staffing, compliance, and student clearance"
+        ]
+      },
+      {
+        "job_competency": "BOM management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3845,
+        "evidence": {
+          "tfidf_score": 0.029130520988490227,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.703266709831738,
+          "semantic_score": 0.5060930252075195,
+          "matched_candidate_competency": "Dashboard management"
+        },
+        "candidate_evidence": [
+          "Dashboard management"
+        ]
+      },
+      {
+        "job_competency": "Inventory reconciliation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6731,
+        "evidence": {
+          "tfidf_score": 0.00969956363009316,
+          "tfidf_matched_terms": [
+            "inventory"
+          ],
+          "bm25_score": 2.7323440982277454,
+          "semantic_score": 0.32334938645362854,
+          "matched_candidate_competency": "Managed station coverage, inventory, staffing, compliance, and student clearance"
+        },
+        "candidate_evidence": [
+          "Managed station coverage, inventory, staffing, compliance, and student clearance"
+        ]
+      },
+      {
+        "job_competency": "Inventory variance analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6808,
+        "evidence": {
+          "tfidf_score": 0.007519486509659533,
+          "tfidf_matched_terms": [
+            "inventory"
+          ],
+          "bm25_score": 2.7323440982277454,
+          "semantic_score": 0.2765975594520569,
+          "matched_candidate_competency": "Managed station coverage, inventory, staffing, compliance, and student clearance"
+        },
+        "candidate_evidence": [
+          "Managed station coverage, inventory, staffing, compliance, and student clearance"
+        ]
+      },
+      {
+        "job_competency": "Data integrity",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.383,
+        "evidence": {
+          "tfidf_score": 0.029130520988490227,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 3.703266709831738,
+          "semantic_score": 0.5210915207862854,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Physical inventory and cycle counts",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3914,
+        "evidence": {
+          "tfidf_score": 0.2735407719750438,
+          "tfidf_matched_terms": [
+            "and",
+            "inventory"
+          ],
+          "bm25_score": 3.373324498294624,
+          "semantic_score": 0.3096601963043213,
+          "matched_candidate_competency": "Managed station coverage, inventory, staffing, compliance, and student clearance"
+        },
+        "candidate_evidence": [
+          "Managed station coverage, inventory, staffing, compliance, and student clearance"
+        ]
+      },
+      {
+        "job_competency": "Audit support",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7338,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41344401240348816,
+          "matched_candidate_competency": "Healthcare information systems"
+        },
+        "candidate_evidence": [
+          "Healthcare information systems"
+        ]
+      },
+      {
+        "job_competency": "SAGE",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5609,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.326202392578125,
+          "matched_candidate_competency": "Healthcare information systems"
+        },
+        "candidate_evidence": [
+          "Healthcare information systems"
+        ]
+      },
+      {
+        "job_competency": "Hyperion",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5703,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24723875522613525,
+          "matched_candidate_competency": "Healthcare information systems"
+        },
+        "candidate_evidence": [
+          "Healthcare information systems"
+        ]
+      },
+      {
+        "job_competency": "SAP",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5552,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3734390437602997,
+          "matched_candidate_competency": "Healthcare information systems"
+        },
+        "candidate_evidence": [
+          "Healthcare information systems"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Excel"
+    ],
+    "partial_matches": [
+      "ERP systems",
+      "Planning",
+      "Inventory costing and accounting",
+      "BOM management",
+      "Data integrity",
+      "Physical inventory and cycle counts"
+    ],
+    "weak_matches": [
+      "Cost accounting",
+      "Inventory reconciliation",
+      "Inventory variance analysis",
+      "Audit support"
+    ],
+    "missing": [
+      "Manufacturing accounting",
+      "SAGE",
+      "Hyperion",
+      "SAP"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Excel"
+    ],
+    "partial_matches": [
+      "ERP systems",
+      "Planning",
+      "Inventory costing and accounting",
+      "BOM management",
+      "Data integrity",
+      "Physical inventory and cycle counts"
+    ],
+    "competency_gaps": [
+      "Cost accounting",
+      "Inventory reconciliation",
+      "Inventory variance analysis",
+      "Audit support",
+      "Manufacturing accounting",
+      "SAGE",
+      "Hyperion",
+      "SAP"
+    ]
+  },
+  "counts": {
+    "requirements": 15,
+    "strength_matches": 1,
+    "partial_matches": 6,
+    "competency_gaps": 8
+  },
+  "latency_ms": 35.93,
+  "analyzed_at": "2026-10-03T17:29:44.010354+00:00"
+}

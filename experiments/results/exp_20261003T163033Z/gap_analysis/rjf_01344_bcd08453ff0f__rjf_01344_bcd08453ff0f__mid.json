@@ -1,0 +1,649 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01344_bcd08453ff0f",
+  "jd_id": "rjf_01344_bcd08453ff0f",
+  "pair_id": "rjf_01344_bcd08453ff0f",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "English language fluency",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9226,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38693222403526306,
+          "matched_candidate_competency": "10-key data entry"
+        },
+        "candidate_evidence": [
+          "10-key data entry"
+        ]
+      },
+      {
+        "job_competency": "Information systems best practices",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6629,
+        "evidence": {
+          "tfidf_score": 0.044158067680052905,
+          "tfidf_matched_terms": [
+            "information",
+            "systems"
+          ],
+          "bm25_score": 4.657872214236802,
+          "semantic_score": 0.44849371910095215,
+          "matched_candidate_competency": "Computer systems"
+        },
+        "candidate_evidence": [
+          "Computer systems"
+        ]
+      },
+      {
+        "job_competency": "Business processes and competitive strategies related to IT",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6689,
+        "evidence": {
+          "tfidf_score": 0.2422446538387985,
+          "tfidf_matched_terms": [
+            "and",
+            "it",
+            "to"
+          ],
+          "bm25_score": 3.9190930582233374,
+          "semantic_score": 0.32221680879592896,
+          "matched_candidate_competency": "IT support"
+        },
+        "candidate_evidence": [
+          "IT support"
+        ]
+      },
+      {
+        "job_competency": "Project planning and management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6488,
+        "evidence": {
+          "tfidf_score": 0.20658339812677295,
+          "tfidf_matched_terms": [
+            "and",
+            "management"
+          ],
+          "bm25_score": 4.657872214236802,
+          "semantic_score": 0.41489309072494507,
+          "matched_candidate_competency": "Time management"
+        },
+        "candidate_evidence": [
+          "Time management"
+        ]
+      },
+      {
+        "job_competency": "Complex problem solving",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3451,
+        "evidence": {
+          "tfidf_score": 0.02693709741357724,
+          "tfidf_matched_terms": [
+            "problem",
+            "solving"
+          ],
+          "bm25_score": 9.315744428473604,
+          "semantic_score": 0.7783294320106506,
+          "matched_candidate_competency": "Problem solving"
+        },
+        "candidate_evidence": [
+          "Problem solving"
+        ]
+      },
+      {
+        "job_competency": "Mentoring and technical direction",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3661,
+        "evidence": {
+          "tfidf_score": 0.23931883216232316,
+          "tfidf_matched_terms": [
+            "and",
+            "direction",
+            "mentoring"
+          ],
+          "bm25_score": 5.078986322609594,
+          "semantic_score": 0.751064121723175,
+          "matched_candidate_competency": "Tutoring and mentoring"
+        },
+        "candidate_evidence": [
+          "Tutoring and mentoring"
+        ]
+      },
+      {
+        "job_competency": "Technical communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.383,
+        "evidence": {
+          "tfidf_score": 0.015562777496951868,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 5.290639760321801,
+          "semantic_score": 0.7321172952651978,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Software engineering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7286,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4464329779148102,
+          "matched_candidate_competency": "10-key data entry"
+        },
+        "candidate_evidence": [
+          "10-key data entry"
+        ]
+      },
+      {
+        "job_competency": "Automated unit and integration testing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9114,
+        "evidence": {
+          "tfidf_score": 0.15890433963398615,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9562227703427528,
+          "semantic_score": 0.24702420830726624,
+          "matched_candidate_competency": "Identified and resolved system and account issues."
+        },
+        "candidate_evidence": [
+          "Identified and resolved system and account issues."
+        ]
+      },
+      {
+        "job_competency": "Agile software delivery",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9319,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3403531014919281,
+          "matched_candidate_competency": "10-key data entry"
+        },
+        "candidate_evidence": [
+          "10-key data entry"
+        ]
+      },
+      {
+        "job_competency": "Enterprise application and service development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3993,
+        "evidence": {
+          "tfidf_score": 0.21400079004753045,
+          "tfidf_matched_terms": [
+            "and",
+            "development",
+            "service"
+          ],
+          "bm25_score": 3.9190930582233374,
+          "semantic_score": 0.36469829082489014,
+          "matched_candidate_competency": "Customer service"
+        },
+        "candidate_evidence": [
+          "Customer service"
+        ]
+      },
+      {
+        "job_competency": "Full-stack development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4298,
+        "evidence": {
+          "tfidf_score": 0.012064882494104385,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.121058300280298,
+          "semantic_score": 0.3426166772842407,
+          "matched_candidate_competency": "Worked alongside the entire development team in an energetic and creative environment."
+        },
+        "candidate_evidence": [
+          "Worked alongside the entire development team in an energetic and creative environment."
+        ]
+      },
+      {
+        "job_competency": ".NET and C#",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.428,
+        "evidence": {
+          "tfidf_score": 0.21307447927499884,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9562227703427528,
+          "semantic_score": 0.30539146065711975,
+          "matched_candidate_competency": "Identified and resolved system and account issues."
+        },
+        "candidate_evidence": [
+          "Identified and resolved system and account issues."
+        ]
+      },
+      {
+        "job_competency": "Angular",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5658,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2847444713115692,
+          "matched_candidate_competency": "10-key data entry"
+        },
+        "candidate_evidence": [
+          "10-key data entry"
+        ]
+      },
+      {
+        "job_competency": "Web UI technologies",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4356,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46298709511756897,
+          "matched_candidate_competency": "10-key data entry"
+        },
+        "candidate_evidence": [
+          "10-key data entry"
+        ]
+      },
+      {
+        "job_competency": "Java backend development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4354,
+        "evidence": {
+          "tfidf_score": 0.012064882494104385,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.121058300280298,
+          "semantic_score": 0.28440168499946594,
+          "matched_candidate_competency": "Worked alongside the entire development team in an energetic and creative environment."
+        },
+        "candidate_evidence": [
+          "Worked alongside the entire development team in an energetic and creative environment."
+        ]
+      },
+      {
+        "job_competency": "Spring and Spring Boot",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5502,
+        "evidence": {
+          "tfidf_score": 0.14375249237760213,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9562227703427528,
+          "semantic_score": 0.23019219934940338,
+          "matched_candidate_competency": "Identified and resolved system and account issues."
+        },
+        "candidate_evidence": [
+          "Identified and resolved system and account issues."
+        ]
+      },
+      {
+        "job_competency": "Hibernate",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.566,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2830168604850769,
+          "matched_candidate_competency": "10-key data entry"
+        },
+        "candidate_evidence": [
+          "10-key data entry"
+        ]
+      },
+      {
+        "job_competency": "REST, SOAP, and microservice APIs",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.546,
+        "evidence": {
+          "tfidf_score": 0.15890433963398615,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9562227703427528,
+          "semantic_score": 0.25357234477996826,
+          "matched_candidate_competency": "Identified and resolved system and account issues."
+        },
+        "candidate_evidence": [
+          "Identified and resolved system and account issues."
+        ]
+      },
+      {
+        "job_competency": "Cloud hosting",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5702,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24855856597423553,
+          "matched_candidate_competency": "10-key data entry"
+        },
+        "candidate_evidence": [
+          "10-key data entry"
+        ]
+      },
+      {
+        "job_competency": "Data structures and algorithms",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2419,
+        "evidence": {
+          "tfidf_score": 0.24461676173116736,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 3.282689729655276,
+          "semantic_score": 0.5210617184638977,
+          "matched_candidate_competency": "Filing and data archiving"
+        },
+        "candidate_evidence": [
+          "Filing and data archiving"
+        ]
+      },
+      {
+        "job_competency": "Software design",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.429,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5311275720596313,
+          "matched_candidate_competency": "10-key data entry"
+        },
+        "candidate_evidence": [
+          "10-key data entry"
+        ]
+      },
+      {
+        "job_competency": "Analytical and debugging skills",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3889,
+        "evidence": {
+          "tfidf_score": 0.20658339812677295,
+          "tfidf_matched_terms": [
+            "and",
+            "skills"
+          ],
+          "bm25_score": 4.657872214236802,
+          "semantic_score": 0.4191175103187561,
+          "matched_candidate_competency": "Interpersonal skills"
+        },
+        "candidate_evidence": [
+          "Interpersonal skills"
+        ]
+      },
+      {
+        "job_competency": "SAFe",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5689,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2591182589530945,
+          "matched_candidate_competency": "10-key data entry"
+        },
+        "candidate_evidence": [
+          "10-key data entry"
+        ]
+      },
+      {
+        "job_competency": "SOA and Open API methodologies",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5493,
+        "evidence": {
+          "tfidf_score": 0.15890433963398615,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9562227703427528,
+          "semantic_score": 0.22617536783218384,
+          "matched_candidate_competency": "Identified and resolved system and account issues."
+        },
+        "candidate_evidence": [
+          "Identified and resolved system and account issues."
+        ]
+      },
+      {
+        "job_competency": "Web servers and application containers",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.547,
+        "evidence": {
+          "tfidf_score": 0.15890433963398615,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9562227703427528,
+          "semantic_score": 0.24521242082118988,
+          "matched_candidate_competency": "Identified and resolved system and account issues."
+        },
+        "candidate_evidence": [
+          "Identified and resolved system and account issues."
+        ]
+      },
+      {
+        "job_competency": "Caching technologies",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5536,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3870573043823242,
+          "matched_candidate_competency": "10-key data entry"
+        },
+        "candidate_evidence": [
+          "10-key data entry"
+        ]
+      },
+      {
+        "job_competency": "Relational databases and SQL",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4096,
+        "evidence": {
+          "tfidf_score": 0.18014492941617466,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.9562227703427528,
+          "semantic_score": 0.5215371251106262,
+          "matched_candidate_competency": "Identified and resolved system and account issues."
+        },
+        "candidate_evidence": [
+          "Identified and resolved system and account issues."
+        ]
+      },
+      {
+        "job_competency": "Azure DevOps",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5563,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36416494846343994,
+          "matched_candidate_competency": "10-key data entry"
+        },
+        "candidate_evidence": [
+          "10-key data entry"
+        ]
+      },
+      {
+        "job_competency": "Visual Studio",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4335,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4843258261680603,
+          "matched_candidate_competency": "10-key data entry"
+        },
+        "candidate_evidence": [
+          "10-key data entry"
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5645,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29600605368614197,
+          "matched_candidate_competency": "10-key data entry"
+        },
+        "candidate_evidence": [
+          "10-key data entry"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Complex problem solving",
+      "Mentoring and technical direction",
+      "Technical communication",
+      "Data structures and algorithms"
+    ],
+    "weak_matches": [
+      "Information systems best practices",
+      "Business processes and competitive strategies related to IT",
+      "Project planning and management",
+      "Software engineering",
+      "Enterprise application and service development",
+      "Full-stack development",
+      ".NET and C#",
+      "Web UI technologies",
+      "Java backend development",
+      "Software design",
+      "Analytical and debugging skills",
+      "Relational databases and SQL",
+      "Visual Studio"
+    ],
+    "missing": [
+      "English language fluency",
+      "Automated unit and integration testing",
+      "Agile software delivery",
+      "Angular",
+      "Spring and Spring Boot",
+      "Hibernate",
+      "REST, SOAP, and microservice APIs",
+      "Cloud hosting",
+      "SAFe",
+      "SOA and Open API methodologies",
+      "Web servers and application containers",
+      "Caching technologies",
+      "Azure DevOps",
+      "Git"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Complex problem solving",
+      "Mentoring and technical direction",
+      "Technical communication",
+      "Data structures and algorithms"
+    ],
+    "competency_gaps": [
+      "Information systems best practices",
+      "Business processes and competitive strategies related to IT",
+      "Project planning and management",
+      "Software engineering",
+      "Enterprise application and service development",
+      "Full-stack development",
+      ".NET and C#",
+      "Web UI technologies",
+      "Java backend development",
+      "Software design",
+      "Analytical and debugging skills",
+      "Relational databases and SQL",
+      "Visual Studio",
+      "English language fluency",
+      "Automated unit and integration testing",
+      "Agile software delivery",
+      "Angular",
+      "Spring and Spring Boot",
+      "Hibernate",
+      "REST, SOAP, and microservice APIs",
+      "Cloud hosting",
+      "SAFe",
+      "SOA and Open API methodologies",
+      "Web servers and application containers",
+      "Caching technologies",
+      "Azure DevOps",
+      "Git"
+    ]
+  },
+  "counts": {
+    "requirements": 31,
+    "strength_matches": 0,
+    "partial_matches": 4,
+    "competency_gaps": 27
+  },
+  "latency_ms": 58.44,
+  "analyzed_at": "2026-10-03T17:29:44.104418+00:00"
+}

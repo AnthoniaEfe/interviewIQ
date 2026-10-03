@@ -1,0 +1,1146 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "extraction",
+  "profile_id": "rjf_02749_65b7cd9d7d67",
+  "jd_id": "rjf_02749_65b7cd9d7d67",
+  "pair_id": "rjf_02749_65b7cd9d7d67",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Highly motivated Sales Associate with extensive customer service and sales experience; also experienced in software engineering and scientific computing internships.",
+    "seniority_indicators": [
+      "Software Engineering Intern",
+      "Research Assistant",
+      "Bachelor of Computer Science expected May 2017"
+    ],
+    "education": [
+      {
+        "degree": "Bachelor",
+        "institution": "University of California Berkeley",
+        "field": "Computer Science",
+        "year": "Expected May 2017",
+        "source_text": "Bachelor: Computer Science, Expected in May 2017"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Software Engineering Intern",
+        "employer": "Intel Corp.",
+        "duration": "06/2015-Present",
+        "responsibilities": [
+          "Created a full-stack online platform for analyzing cancer-targeting antibodies.",
+          "Created a Python program to calculate scientific metrics from antibody DNA sequences.",
+          "Implemented hierarchical clustering for protein sequences using scikit-learn.",
+          "Designed and implemented MySQL databases.",
+          "Built a PHP backend connected to MySQL.",
+          "Built a responsive frontend with Bootstrap, JQuery, and Ajax calls."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Python",
+          "scikit-learn",
+          "MySQL",
+          "PHP",
+          "Bootstrap",
+          "JQuery",
+          "Ajax"
+        ],
+        "source_text": "Software Engineering Intern, 06/2015-Present, Intel Corp., San Diego, CA"
+      },
+      {
+        "title": "Research Assistant",
+        "employer": "New Jersey Institute Of Technology",
+        "duration": "08/2014-07/2015",
+        "responsibilities": [
+          "Wrote 50% of the code for a Python scientific computing project mining and analyzing Git logs and mailing lists.",
+          "Designed and implemented an entity resolution algorithm.",
+          "Created data science experiments and visualizations from Bigbang data."
+        ],
+        "achievements": [
+          "Entity resolution algorithm ran in O(n) time with over 90% accuracy and replaced an O(n^2) algorithm."
+        ],
+        "technologies": [
+          "Python",
+          "Git",
+          "Graph theory",
+          "Statistics"
+        ],
+        "source_text": "Research Assistant, 08/2014-07/2015, New Jersey Institute Of Technology, Newark, NJ"
+      },
+      {
+        "title": "Software Engineering Intern",
+        "employer": "Intel Corp.",
+        "duration": "06/2014-08/2014",
+        "responsibilities": [
+          "Developed an iOS app and web server for bMobilized's website builder.",
+          "Built a Python project to scrape the existing website builder and perform HTML pattern matching.",
+          "Used scraped data to automatically generate displays for iOS."
+        ],
+        "achievements": [],
+        "technologies": [
+          "iOS",
+          "Node.js",
+          "MongoDB",
+          "CouchDB",
+          "Salesforce Mobile SDK",
+          "Python"
+        ],
+        "source_text": "Software Engineering Intern, 06/2014-08/2014, Intel Corp., Allentown, PA"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Cancer-targeting antibody analysis platform",
+        "description": "Online platform for analyzing cancer-targeting antibodies, including DNA-sequence metrics and protein-sequence clustering.",
+        "technologies": [
+          "Python",
+          "scikit-learn",
+          "MySQL",
+          "PHP",
+          "Bootstrap",
+          "JQuery",
+          "Ajax"
+        ],
+        "source_text": "Created the full stack of an online platform for analyzing cancer-targeting antibodies."
+      },
+      {
+        "name": "Bigbang scientific computing project",
+        "description": "Project mining and analyzing Git logs and mailing lists of open-source projects, with experiments involving graph theory and statistics.",
+        "technologies": [
+          "Python",
+          "Git",
+          "Graph theory",
+          "Statistics"
+        ],
+        "source_text": "Python scientific computing project that mines and analyzes large amounts of data from the Git logs and mailing lists of open-source projects."
+      },
+      {
+        "name": "bMobilized iOS website builder",
+        "description": "iOS app and web server extending the bMobilized website builder to iOS.",
+        "technologies": [
+          "iOS",
+          "Node.js",
+          "MongoDB",
+          "CouchDB",
+          "Salesforce Mobile SDK"
+        ],
+        "source_text": "Developed an iOS app and a web server for bMobilized."
+      }
+    ],
+    "technical_skills": [
+      {
+        "normalized_label": "Ajax",
+        "original_mentions": [
+          "Ajax"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Ajax",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Bootstrap",
+        "original_mentions": [
+          "Bootstrap"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "responsive frontend with Bootstrap",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "CouchDB",
+        "original_mentions": [
+          "CouchDB"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Used Node.js, MongoDB, CouchDB",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "HTML",
+        "original_mentions": [
+          "HTML"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "pattern matching on its HTML",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "iOS",
+        "original_mentions": [
+          "iOS"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Developed an iOS app",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JQuery",
+        "original_mentions": [
+          "JQuery"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Bootstrap, JQuery, and Ajax calls",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "MongoDB",
+        "original_mentions": [
+          "MongoDB"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Used Node.js, MongoDB, CouchDB",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "MySQL",
+        "original_mentions": [
+          "MySQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Designed and implemented MySQL databases",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Node.js",
+        "original_mentions": [
+          "Node.js"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Used Node.js, MongoDB, CouchDB",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "PHP",
+        "original_mentions": [
+          "PHP"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Built the entire PHP backend",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Python",
+        "original_mentions": [
+          "Python"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Created a Python program",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Salesforce Mobile SDK",
+        "original_mentions": [
+          "Salesforce Mobile SDK"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Salesforce Mobile SDK",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "scikit-learn",
+        "original_mentions": [
+          "scikit-learn"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "using scikit-learn",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Web servers",
+        "original_mentions": [
+          "web server"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Developed an iOS app and a web server",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Databases",
+        "original_mentions": [
+          "databases"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Designed and implemented MySQL databases",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Networking",
+        "original_mentions": [
+          "networking libraries"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "iOS networking libraries",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Customer service",
+        "original_mentions": [
+          "customer service"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "extensive customer service and sales experience",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Sales",
+        "original_mentions": [
+          "sales",
+          "Sales Associate",
+          "sales professional"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Highly motivated Sales Associate with extensive customer service and sales experience",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Motivation",
+        "original_mentions": [
+          "Highly motivated"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Highly motivated Sales Associate",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Outgoing",
+        "original_mentions": [
+          "Outgoing"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Outgoing sales professional",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Cancer-targeting antibody analysis",
+        "original_mentions": [
+          "cancer-targetting antibodies",
+          "cancer"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "online platform for analyzing cancer-targeting antibodies",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Scientific computing",
+        "original_mentions": [
+          "scientific computing",
+          "scientific"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Python scientific computing project",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data science",
+        "original_mentions": [
+          "data science"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Created data science experiments and visualizations",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Clustering",
+        "original_mentions": [
+          "clustering",
+          "hierarchical clustering algorithm"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Implemented a hierarchical clustering algorithm",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Statistics",
+        "original_mentions": [
+          "statistics"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experiments dealt with graph theory and statistics",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Graph theory",
+        "original_mentions": [
+          "graph theory"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experiments dealt with graph theory and statistics",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Entity resolution",
+        "original_mentions": [
+          "entity resolution algorithm"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Designed and implemented an entity resolution algorithm",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Merchandising",
+        "original_mentions": [
+          "Merchandising expertise"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Merchandising expertise",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Inventory control",
+        "original_mentions": [
+          "Inventory control procedures"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Inventory control procedures",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Loss prevention",
+        "original_mentions": [
+          "Loss prevention"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Loss prevention",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Cash register operations",
+        "original_mentions": [
+          "Cash register operations"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Cash register operations",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Product promotions",
+        "original_mentions": [
+          "Product promotions"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Product promotions",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      }
+    ]
+  },
+  "job": {
+    "title": null,
+    "seniority": null,
+    "years_of_experience": "Required: six to ten years of experience, or equivalent education and software engineering training or experience. Preferred: ten+ years of experience with a master's degree or equivalent combination of education and work experience.",
+    "responsibilities": [
+      "Develop technical solutions to complex business problems with clients, analysts, programmers, and other team members.",
+      "Develop customized code, perform software integration and analysis, and configure project-specific solutions.",
+      "Lead and participate in development, testing, implementation, maintenance, and support of highly complex solutions.",
+      "Build non-functional monitoring capabilities and provide escalated production support.",
+      "Build and maintain security controls and monitoring.",
+      "Lead moderately complex projects and participate in larger, more complex initiatives.",
+      "Solve complex technical and operational problems and support less experienced teammates.",
+      "Deliver high-quality working software and automate manual reusable tasks in an Agile environment.",
+      "Participate in user-story refinement and work directly with the business from design through delivery.",
+      "Design, develop, and maintain automated unit tests and support integration and functional testing.",
+      "Provide automated monitoring, warranty support, and knowledge transfer to production support.",
+      "Develop code according to Product Owner acceptance criteria."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Information systems best practices",
+        "original_mentions": [
+          "In-depth knowledge in information systems and ability to identify, apply, and implement best practices"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "In-depth knowledge in information systems and ability to identify, apply, and implement best practices",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Project planning and management",
+        "original_mentions": [
+          "Ability to plan and manage projects"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Ability to plan and manage projects and solve complex problems by applying best practices",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Complex problem solving",
+        "original_mentions": [
+          "solve complex problems",
+          "Solve complex technical and operational problems"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Ability to plan and manage projects and solve complex problems by applying best practices",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Software engineering",
+        "original_mentions": [
+          "software engineering training or experience"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.96,
+        "source": {
+          "source_text": "six to ten years of experience or equivalent education and software engineering training or experience",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Technical solution development",
+        "original_mentions": [
+          "develop technical solutions to complex business problems"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Work as a technical expert ... to develop technical solutions to complex business problems",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Software integration",
+        "original_mentions": [
+          "software integration"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Develop customized coding, software integration, perform analysis, configure solutions",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Automated unit testing",
+        "original_mentions": [
+          "robust unit testing",
+          "automated unit testing"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "design, developing, and maintaining automated unit testing",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Security controls and monitoring",
+        "original_mentions": [
+          "maintain security controls and monitoring"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Build in and maintain security controls and monitoring",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Agile software development",
+        "original_mentions": [
+          "In an Agile environment",
+          "Multiple years working in an Agile team"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "In an Agile environment",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "English language fluency",
+        "original_mentions": [
+          "English (Required)"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Language Fluency: English (Required)",
+          "source_section": "Job Details",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "Enterprise application development and scaling",
+        "original_mentions": [
+          "building high-quality apps or services from the ground up and scaling at an enterprise level"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Professional experience building high-quality apps or services from the ground up and scaling at an enterprise level",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": ".NET and C#",
+        "original_mentions": [
+          ".NET developer, proficient in C#"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": ".NET developer, proficient in C#",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Angular frontend development",
+        "original_mentions": [
+          "UI Development using Angular (version 8 or above)"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "UI Development using Angular (version 8 or above), HTML5, CSS3, Bootstrap, JavaScript, AJAX, JSON",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "HTML5, CSS3, Bootstrap, JavaScript, AJAX, and JSON",
+        "original_mentions": [
+          "HTML5, CSS3, Bootstrap, JavaScript, AJAX, JSON"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "HTML5, CSS3, Bootstrap, JavaScript, AJAX, JSON",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Java backend development",
+        "original_mentions": [
+          "Backend Development ... using Java (8911)"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.97,
+        "source": {
+          "source_text": "Backend Development ... using Java (8911), Spring, Spring Boot Framework, Hibernate and RESTful web services",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Spring, Spring Boot, and Hibernate",
+        "original_mentions": [
+          "Spring, Spring Boot Framework, Hibernate"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Spring, Spring Boot Framework, Hibernate and RESTful web services",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "REST, SOAP, and microservice APIs",
+        "original_mentions": [
+          "REST SOAP services",
+          "Micro Service APIs"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Implementing REST SOAP services Micro Service APIs",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "AWS and Azure cloud hosting",
+        "original_mentions": [
+          "Amazon Web Services (AWS) Azure"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Hosting application components on Cloud using Amazon Web Services (AWS) Azure",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data structures, algorithms, and software design",
+        "original_mentions": [
+          "data structures, algorithms, and software design"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Solid foundation in data structures, algorithms, and software design",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Analytical and debugging skills",
+        "original_mentions": [
+          "strong analytical and debugging skills"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "strong analytical and debugging skills",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SAFe",
+        "original_mentions": [
+          "SAFe preferred"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Multiple years working in an Agile team, SAFe preferred",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "SOA and Open API methodologies",
+        "original_mentions": [
+          "SOA andor Open API methodologies"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Strong understanding of SOA andor Open API methodologies and service architectures",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Web servers, application containers, and caching technologies",
+        "original_mentions": [
+          "web servers, application containers, caching technologies"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience using web servers, application containers, caching technologies",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Relational database design and development",
+        "original_mentions": [
+          "SQL, stored procedures, data modeling"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Solid knowledge of relational database design and development (SQL, stored procedures, data modeling)",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Azure DevOps, Visual Studio, and Git",
+        "original_mentions": [
+          "Proficient in Azure DevOps, Visual Studio and Git"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Proficient in Azure DevOps, Visual Studio and Git",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Unit and integration testing",
+        "original_mentions": [
+          "write comprehensive unit and integration tests"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Proven ability to write comprehensive unit and integration tests",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [
+      "Required: bachelor's degree and six to ten years of experience, or equivalent education and software engineering training or experience.",
+      "Preferred: master's degree and ten+ years of experience, or an equivalent combination of education and work experience."
+    ],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Insurance",
+        "original_mentions": [
+          "Insurance space",
+          "Insurance ... experience"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Insurance, Fintech, Financial Accounting, Treasury experience",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Fintech",
+        "original_mentions": [
+          "Fintech experience"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Insurance, Fintech, Financial Accounting, Treasury experience",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Financial accounting",
+        "original_mentions": [
+          "Financial Accounting experience"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Insurance, Fintech, Financial Accounting, Treasury experience",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Treasury",
+        "original_mentions": [
+          "Treasury experience"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Insurance, Fintech, Financial Accounting, Treasury experience",
+          "source_section": "Preferred Qualifications",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Mentoring and providing direction",
+        "original_mentions": [
+          "provide direction and mentor less experienced teammates",
+          "Act as a resource for teammates with less experience"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Ability to provide direction and mentor less experienced teammates",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Complex information communication",
+        "original_mentions": [
+          "interpret and convey complex, difficult, or sensitive information"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Ability to interpret and convey complex, difficult, or sensitive information",
+          "source_section": "Required Qualifications",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Technical collaboration",
+        "original_mentions": [
+          "Work as a technical expert with clients, analysts, programmers and other team members"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Work as a technical expert with clients, analysts, programmers and other team members",
+          "source_section": "Essential Duties and Responsibilities",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [
+      "Typically lead moderately complex projects and participate in larger, more complex initiatives.",
+      "Provide direction and mentor less experienced teammates.",
+      "May oversee the work of a small team."
+    ],
+    "system_design_requirements": [
+      "Design and deliver custom applications with internal business partners and product owners.",
+      "Build and scale high-quality applications or services at an enterprise level (preferred).",
+      "Apply SOA or Open API methodologies and service architectures (preferred).",
+      "Host application components in AWS or Azure (preferred)."
+    ],
+    "competencies": []
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 1564,
+    "output_tokens": 2587,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0032291,
+    "latency_ms": 16962.87,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 2103,
+    "output_tokens": 2851,
+    "cached_tokens": 2100,
+    "estimated_cost": 0.0034638,
+    "latency_ms": 20794.2,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-10-03T17:05:51.240956+00:00",
+  "reused_from_experiment": null
+}

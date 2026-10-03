@@ -1,0 +1,568 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01613_4aafde44cdfa",
+  "jd_id": "rjf_01613_4aafde44cdfa",
+  "pair_id": "rjf_01613_4aafde44cdfa",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Accounting and bookkeeping experience",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6799,
+        "evidence": {
+          "tfidf_score": 0.22367486568757244,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.6947130397846247,
+          "semantic_score": 0.5211657285690308,
+          "matched_candidate_competency": "Compiled and maintained company information and contacts"
+        },
+        "candidate_evidence": [
+          "Compiled and maintained company information and contacts"
+        ]
+      },
+      {
+        "job_competency": "QuickBooks",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7186,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5086315870285034,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Computer skills",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7269,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4566982388496399,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3817,
+        "evidence": {
+          "tfidf_score": 0.02186935311697066,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 4.442518114358687,
+          "semantic_score": 0.7699273824691772,
+          "matched_candidate_competency": "Microsoft Outlook"
+        },
+        "candidate_evidence": [
+          "Microsoft Outlook"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Word",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3921,
+        "evidence": {
+          "tfidf_score": 0.02186935311697066,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 4.442518114358687,
+          "semantic_score": 0.6665712594985962,
+          "matched_candidate_competency": "Microsoft Outlook"
+        },
+        "candidate_evidence": [
+          "Microsoft Outlook"
+        ]
+      },
+      {
+        "job_competency": "Generally Accepted Accounting Principles (GAAP)",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9246,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3771439492702484,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Chart of accounts and accounting coding",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3875,
+        "evidence": {
+          "tfidf_score": 0.27317279712269593,
+          "tfidf_matched_terms": [
+            "accounts",
+            "and",
+            "chart",
+            "coding",
+            "of"
+          ],
+          "bm25_score": 4.7382053563785815,
+          "semantic_score": 0.4967668056488037,
+          "matched_candidate_competency": "Medical billing and coding"
+        },
+        "candidate_evidence": [
+          "Medical billing and coding"
+        ]
+      },
+      {
+        "job_competency": "Accounting operations",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3982,
+        "evidence": {
+          "tfidf_score": 0.03283252231157103,
+          "tfidf_matched_terms": [
+            "operations"
+          ],
+          "bm25_score": 3.961281331372505,
+          "semantic_score": 0.6398610472679138,
+          "matched_candidate_competency": "Purchasing operations"
+        },
+        "candidate_evidence": [
+          "Purchasing operations"
+        ]
+      },
+      {
+        "job_competency": "Payroll and tax reporting",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3904,
+        "evidence": {
+          "tfidf_score": 0.26868350187793166,
+          "tfidf_matched_terms": [
+            "and",
+            "reporting"
+          ],
+          "bm25_score": 3.961281331372505,
+          "semantic_score": 0.5407505035400391,
+          "matched_candidate_competency": "Financial reporting"
+        },
+        "candidate_evidence": [
+          "Financial reporting"
+        ]
+      },
+      {
+        "job_competency": "General ledger accounting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7151,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5309281349182129,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Month-end closing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9407,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29631224274635315,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Account reconciliation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7014,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.6159510612487793,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Financial statement reporting",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1664,
+        "evidence": {
+          "tfidf_score": 0.04737357163759645,
+          "tfidf_matched_terms": [
+            "financial",
+            "reporting"
+          ],
+          "bm25_score": 8.403799445731192,
+          "semantic_score": 0.8868284225463867,
+          "matched_candidate_competency": "Financial reporting"
+        },
+        "candidate_evidence": [
+          "Financial reporting"
+        ]
+      },
+      {
+        "job_competency": "Multitasking",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7243,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4732934832572937,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Working under pressure",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.928,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35978537797927856,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Deadline management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4017,
+        "evidence": {
+          "tfidf_score": 0.05487366688819079,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.299780689662334,
+          "semantic_score": 0.6473947763442993,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Attention to detail and accuracy",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6837,
+        "evidence": {
+          "tfidf_score": 0.26633988503724904,
+          "tfidf_matched_terms": [
+            "and",
+            "to"
+          ],
+          "bm25_score": 2.053809294232138,
+          "semantic_score": 0.3438175320625305,
+          "matched_candidate_competency": "Calculated and disbursed weekly funding to agent companies"
+        },
+        "candidate_evidence": [
+          "Calculated and disbursed weekly funding to agent companies"
+        ]
+      },
+      {
+        "job_competency": "Confidentiality and ethical standards",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3955,
+        "evidence": {
+          "tfidf_score": 0.25030559201060204,
+          "tfidf_matched_terms": [
+            "and",
+            "confidentiality"
+          ],
+          "bm25_score": 4.309623967359413,
+          "semantic_score": 0.4726655185222626,
+          "matched_candidate_competency": "Maintained patient charts and confidentiality"
+        },
+        "candidate_evidence": [
+          "Maintained patient charts and confidentiality"
+        ]
+      },
+      {
+        "job_competency": "Interpersonal communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3669,
+        "evidence": {
+          "tfidf_score": 0.01092898988622068,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 5.89331093434648,
+          "semantic_score": 0.7970160245895386,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Decision-making",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7357,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4017915427684784,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Relationship building",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6987,
+        "evidence": {
+          "tfidf_score": 0.01092898988622068,
+          "tfidf_matched_terms": [
+            "building"
+          ],
+          "bm25_score": 2.589794078415235,
+          "semantic_score": 0.3935219943523407,
+          "matched_candidate_competency": "Organized employee morale-building events through the Positive Outlook Program"
+        },
+        "candidate_evidence": [
+          "Organized employee morale-building events through the Positive Outlook Program"
+        ]
+      },
+      {
+        "job_competency": "Teamwork",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.714,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5374894738197327,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Non-smoking",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9505,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2477467805147171,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Background check",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7106,
+        "evidence": {
+          "tfidf_score": 0.01092898988622068,
+          "tfidf_matched_terms": [
+            "check"
+          ],
+          "bm25_score": 2.958302326727284,
+          "semantic_score": 0.28645652532577515,
+          "matched_candidate_competency": "Processed customer credit card, ACH, and check payments"
+        },
+        "candidate_evidence": [
+          "Processed customer credit card, ACH, and check payments"
+        ]
+      },
+      {
+        "job_competency": "Drug test",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9456,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.271941214799881,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      },
+      {
+        "job_competency": "Property management",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4016,
+        "evidence": {
+          "tfidf_score": 0.05487366688819079,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.299780689662334,
+          "semantic_score": 0.4805990755558014,
+          "matched_candidate_competency": "Data management"
+        },
+        "candidate_evidence": [
+          "Data management"
+        ]
+      },
+      {
+        "job_competency": "Accounting degree or comparable qualification",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5556,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37015223503112793,
+          "matched_candidate_competency": "SAP"
+        },
+        "candidate_evidence": [
+          "SAP"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Financial statement reporting"
+    ],
+    "partial_matches": [
+      "Microsoft Excel",
+      "Microsoft Word",
+      "Chart of accounts and accounting coding",
+      "Accounting operations",
+      "Payroll and tax reporting",
+      "Deadline management",
+      "Confidentiality and ethical standards",
+      "Interpersonal communication"
+    ],
+    "weak_matches": [
+      "Accounting and bookkeeping experience",
+      "QuickBooks",
+      "Computer skills",
+      "General ledger accounting",
+      "Account reconciliation",
+      "Multitasking",
+      "Attention to detail and accuracy",
+      "Decision-making",
+      "Relationship building",
+      "Teamwork",
+      "Background check",
+      "Property management"
+    ],
+    "missing": [
+      "Generally Accepted Accounting Principles (GAAP)",
+      "Month-end closing",
+      "Working under pressure",
+      "Non-smoking",
+      "Drug test",
+      "Accounting degree or comparable qualification"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Financial statement reporting"
+    ],
+    "partial_matches": [
+      "Microsoft Excel",
+      "Microsoft Word",
+      "Chart of accounts and accounting coding",
+      "Accounting operations",
+      "Payroll and tax reporting",
+      "Deadline management",
+      "Confidentiality and ethical standards",
+      "Interpersonal communication"
+    ],
+    "competency_gaps": [
+      "Accounting and bookkeeping experience",
+      "QuickBooks",
+      "Computer skills",
+      "General ledger accounting",
+      "Account reconciliation",
+      "Multitasking",
+      "Attention to detail and accuracy",
+      "Decision-making",
+      "Relationship building",
+      "Teamwork",
+      "Background check",
+      "Property management",
+      "Generally Accepted Accounting Principles (GAAP)",
+      "Month-end closing",
+      "Working under pressure",
+      "Non-smoking",
+      "Drug test",
+      "Accounting degree or comparable qualification"
+    ]
+  },
+  "counts": {
+    "requirements": 27,
+    "strength_matches": 1,
+    "partial_matches": 8,
+    "competency_gaps": 18
+  },
+  "latency_ms": 57.05,
+  "analyzed_at": "2026-10-03T17:29:44.405528+00:00"
+}

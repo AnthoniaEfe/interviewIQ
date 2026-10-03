@@ -1,0 +1,125 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02923_28ca0bec3e28",
+  "jd_id": "rjf_02923_28ca0bec3e28",
+  "pair_id": "rjf_02923_28ca0bec3e28",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Tableau",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3554,
+        "evidence": {
+          "tfidf_score": 0.07962891847762402,
+          "tfidf_matched_terms": [
+            "tableau"
+          ],
+          "bm25_score": 4.074247264021428,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Tableau"
+        },
+        "candidate_evidence": [
+          "Tableau"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1597,
+        "evidence": {
+          "tfidf_score": 0.07504908374386497,
+          "tfidf_matched_terms": [
+            "excel",
+            "microsoft"
+          ],
+          "bm25_score": 7.908780002784325,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "Microsoft Excel"
+        },
+        "candidate_evidence": [
+          "Microsoft Excel"
+        ]
+      },
+      {
+        "job_competency": "Financial forecasting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9231,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38468432426452637,
+          "matched_candidate_competency": "Python"
+        },
+        "candidate_evidence": [
+          "Python"
+        ]
+      },
+      {
+        "job_competency": "Financial data analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3582,
+        "evidence": {
+          "tfidf_score": 0.266761157438071,
+          "tfidf_matched_terms": [
+            "analysis",
+            "data"
+          ],
+          "bm25_score": 5.857412047160878,
+          "semantic_score": 0.6622132658958435,
+          "matched_candidate_competency": "Data Analysis"
+        },
+        "candidate_evidence": [
+          "Data Analysis"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Microsoft Excel"
+    ],
+    "partial_matches": [
+      "Tableau",
+      "Financial data analysis"
+    ],
+    "weak_matches": [],
+    "missing": [
+      "Financial forecasting"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Microsoft Excel"
+    ],
+    "partial_matches": [
+      "Tableau",
+      "Financial data analysis"
+    ],
+    "competency_gaps": [
+      "Financial forecasting"
+    ]
+  },
+  "counts": {
+    "requirements": 4,
+    "strength_matches": 1,
+    "partial_matches": 2,
+    "competency_gaps": 1
+  },
+  "latency_ms": 19.77,
+  "analyzed_at": "2026-10-03T17:29:46.114264+00:00"
+}

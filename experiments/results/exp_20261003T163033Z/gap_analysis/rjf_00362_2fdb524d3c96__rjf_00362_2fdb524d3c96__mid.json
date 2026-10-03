@@ -1,0 +1,258 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00362_2fdb524d3c96",
+  "jd_id": "rjf_00362_2fdb524d3c96",
+  "pair_id": "rjf_00362_2fdb524d3c96",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "GAAP revenue recognition",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9409,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2956085503101349,
+          "matched_candidate_competency": "Project management"
+        },
+        "candidate_evidence": [
+          "Project management"
+        ]
+      },
+      {
+        "job_competency": "Revenue cycle management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6775,
+        "evidence": {
+          "tfidf_score": 0.04823886829801317,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 2.5984234216553137,
+          "semantic_score": 0.4699949622154236,
+          "matched_candidate_competency": "Project management"
+        },
+        "candidate_evidence": [
+          "Project management"
+        ]
+      },
+      {
+        "job_competency": "Accounts receivable",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9552,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.22412116825580597,
+          "matched_candidate_competency": "Project management"
+        },
+        "candidate_evidence": [
+          "Project management"
+        ]
+      },
+      {
+        "job_competency": "Contract management",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1591,
+        "evidence": {
+          "tfidf_score": 0.08971089556739789,
+          "tfidf_matched_terms": [
+            "contract",
+            "management"
+          ],
+          "bm25_score": 7.51561020165089,
+          "semantic_score": 1.0,
+          "matched_candidate_competency": "Contract management"
+        },
+        "candidate_evidence": [
+          "Contract management"
+        ]
+      },
+      {
+        "job_competency": "Billing processes",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9265,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3675661087036133,
+          "matched_candidate_competency": "Project management"
+        },
+        "candidate_evidence": [
+          "Project management"
+        ]
+      },
+      {
+        "job_competency": "Financial reporting and analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3707,
+        "evidence": {
+          "tfidf_score": 0.3486899250273436,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and",
+            "financial"
+          ],
+          "bm25_score": 4.917186779995577,
+          "semantic_score": 0.5403116941452026,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9358,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3211871087551117,
+          "matched_candidate_competency": "Project management"
+        },
+        "candidate_evidence": [
+          "Project management"
+        ]
+      },
+      {
+        "job_competency": "Financial statement assistance",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.674,
+        "evidence": {
+          "tfidf_score": 0.008723443310603181,
+          "tfidf_matched_terms": [
+            "financial"
+          ],
+          "bm25_score": 3.3966906505713004,
+          "semantic_score": 0.44170719385147095,
+          "matched_candidate_competency": "Prepared technical, financial, and administrative reports."
+        },
+        "candidate_evidence": [
+          "Prepared technical, financial, and administrative reports."
+        ]
+      },
+      {
+        "job_competency": "Revenue audits",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9211,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39465564489364624,
+          "matched_candidate_competency": "Project management"
+        },
+        "candidate_evidence": [
+          "Project management"
+        ]
+      },
+      {
+        "job_competency": "External audit coordination",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9323,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3384154736995697,
+          "matched_candidate_competency": "Project management"
+        },
+        "candidate_evidence": [
+          "Project management"
+        ]
+      },
+      {
+        "job_competency": "Accounting process improvement",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6545,
+        "evidence": {
+          "tfidf_score": 0.01460307042950576,
+          "tfidf_matched_terms": [
+            "improvement",
+            "process"
+          ],
+          "bm25_score": 4.233858075918559,
+          "semantic_score": 0.4760615825653076,
+          "matched_candidate_competency": "Process analysis and re-engineering"
+        },
+        "candidate_evidence": [
+          "Process analysis and re-engineering"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Contract management"
+    ],
+    "partial_matches": [
+      "Financial reporting and analysis"
+    ],
+    "weak_matches": [
+      "Revenue cycle management",
+      "Financial statement assistance",
+      "Accounting process improvement"
+    ],
+    "missing": [
+      "GAAP revenue recognition",
+      "Accounts receivable",
+      "Billing processes",
+      "Microsoft Excel",
+      "Revenue audits",
+      "External audit coordination"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Contract management"
+    ],
+    "partial_matches": [
+      "Financial reporting and analysis"
+    ],
+    "competency_gaps": [
+      "Revenue cycle management",
+      "Financial statement assistance",
+      "Accounting process improvement",
+      "GAAP revenue recognition",
+      "Accounts receivable",
+      "Billing processes",
+      "Microsoft Excel",
+      "Revenue audits",
+      "External audit coordination"
+    ]
+  },
+  "counts": {
+    "requirements": 11,
+    "strength_matches": 1,
+    "partial_matches": 1,
+    "competency_gaps": 9
+  },
+  "latency_ms": 38.14,
+  "analyzed_at": "2026-10-03T17:29:42.693501+00:00"
+}

@@ -1,0 +1,160 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02071_c3a2d8db4b35",
+  "jd_id": "rjf_02071_c3a2d8db4b35",
+  "pair_id": "rjf_02071_c3a2d8db4b35",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "FACETS",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9333,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.333265095949173,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Business analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3514,
+        "evidence": {
+          "tfidf_score": 0.06868259462199337,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 2.9995493451806814,
+          "semantic_score": 0.6849225163459778,
+          "matched_candidate_competency": "Data analysis"
+        },
+        "candidate_evidence": [
+          "Data analysis"
+        ]
+      },
+      {
+        "job_competency": "User story development",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9399,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30036455392837524,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Business requirements gathering",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9264,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36782127618789673,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Business process and system solution implementation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3869,
+        "evidence": {
+          "tfidf_score": 0.156606010407402,
+          "tfidf_matched_terms": [
+            "and",
+            "solution",
+            "system"
+          ],
+          "bm25_score": 2.7796902227354248,
+          "semantic_score": 0.31858497858047485,
+          "matched_candidate_competency": "Created a billing system from scratch using Excel, VLOOKUP, HLOOKUP, and formulas."
+        },
+        "candidate_evidence": [
+          "Created a billing system from scratch using Excel, VLOOKUP, HLOOKUP, and formulas."
+        ]
+      },
+      {
+        "job_competency": "Estimation and prioritization",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6592,
+        "evidence": {
+          "tfidf_score": 0.15348133327145652,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.4736924390463972,
+          "semantic_score": 0.39643049240112305,
+          "matched_candidate_competency": "Pre-processed and optimized animal shelter data using SQL and Python."
+        },
+        "candidate_evidence": [
+          "Pre-processed and optimized animal shelter data using SQL and Python."
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Business analysis",
+      "Business process and system solution implementation"
+    ],
+    "weak_matches": [
+      "Estimation and prioritization"
+    ],
+    "missing": [
+      "FACETS",
+      "User story development",
+      "Business requirements gathering"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Business analysis",
+      "Business process and system solution implementation"
+    ],
+    "competency_gaps": [
+      "Estimation and prioritization",
+      "FACETS",
+      "User story development",
+      "Business requirements gathering"
+    ]
+  },
+  "counts": {
+    "requirements": 6,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 4
+  },
+  "latency_ms": 22.45,
+  "analyzed_at": "2026-10-03T17:29:44.868705+00:00"
+}

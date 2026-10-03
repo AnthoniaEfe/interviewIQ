@@ -1,0 +1,619 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02713_50892a7ceaba",
+  "jd_id": "rjf_02713_50892a7ceaba",
+  "pair_id": "rjf_02713_50892a7ceaba",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Digital electronic circuit design and development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3527,
+        "evidence": {
+          "tfidf_score": 0.3431748374768816,
+          "tfidf_matched_terms": [
+            "and",
+            "design",
+            "development",
+            "digital"
+          ],
+          "bm25_score": 5.125696684510738,
+          "semantic_score": 0.5032733678817749,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "Digital circuit design and schematic design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3452,
+        "evidence": {
+          "tfidf_score": 0.34963640830009346,
+          "tfidf_matched_terms": [
+            "and",
+            "design",
+            "digital"
+          ],
+          "bm25_score": 5.397763136891851,
+          "semantic_score": 0.5358586311340332,
+          "matched_candidate_competency": "Electrical design"
+        },
+        "candidate_evidence": [
+          "Electrical design"
+        ]
+      },
+      {
+        "job_competency": "Microprocessor-based circuit design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.387,
+        "evidence": {
+          "tfidf_score": 0.058640958028444934,
+          "tfidf_matched_terms": [
+            "based",
+            "design"
+          ],
+          "bm25_score": 3.3080188502220578,
+          "semantic_score": 0.6267120838165283,
+          "matched_candidate_competency": "Provided hardware and software design consultation based on customer and project needs."
+        },
+        "candidate_evidence": [
+          "Provided hardware and software design consultation based on customer and project needs."
+        ]
+      },
+      {
+        "job_competency": "Schematic capture",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9267,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36628812551498413,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "PCB layout and routing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6988,
+        "evidence": {
+          "tfidf_score": 0.26048591805805754,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.5440227460265913,
+          "semantic_score": 0.36146992444992065,
+          "matched_candidate_competency": "Cybersecurity and networking"
+        },
+        "candidate_evidence": [
+          "Cybersecurity and networking"
+        ]
+      },
+      {
+        "job_competency": "C programming",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3618,
+        "evidence": {
+          "tfidf_score": 0.009142731866867405,
+          "tfidf_matched_terms": [
+            "c"
+          ],
+          "bm25_score": 5.125696684510738,
+          "semantic_score": 0.6625769734382629,
+          "matched_candidate_competency": "C/C++"
+        },
+        "candidate_evidence": [
+          "C/C++"
+        ]
+      },
+      {
+        "job_competency": "Embedded controller implementation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7291,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4432392418384552,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "Microcontrollers",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7076,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5775185823440552,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "ARM microcontrollers",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7262,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4613819420337677,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "FPGA development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3765,
+        "evidence": {
+          "tfidf_score": 0.009142731866867405,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 5.125696684510738,
+          "semantic_score": 0.5156876444816589,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "High-speed digital design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.385,
+        "evidence": {
+          "tfidf_score": 0.08495517070725508,
+          "tfidf_matched_terms": [
+            "design",
+            "digital"
+          ],
+          "bm25_score": 3.3334299154757354,
+          "semantic_score": 0.6232582330703735,
+          "matched_candidate_competency": "Digital substation"
+        },
+        "candidate_evidence": [
+          "Digital substation"
+        ]
+      },
+      {
+        "job_competency": "Signal integrity testing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9279,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3605749011039734,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "EMC testing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.924,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38012808561325073,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "Code Composer Studio",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9278,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3607518672943115,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "IDE tools",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7317,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.42699912190437317,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "Electrical or Electronics Engineering",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3845,
+        "evidence": {
+          "tfidf_score": 0.038907478732712324,
+          "tfidf_matched_terms": [
+            "electrical",
+            "or"
+          ],
+          "bm25_score": 3.3334299154757354,
+          "semantic_score": 0.6627874374389648,
+          "matched_candidate_competency": "Electrical design"
+        },
+        "candidate_evidence": [
+          "Electrical design"
+        ]
+      },
+      {
+        "job_competency": "Onsite work in Parsippany, New Jersey",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6851,
+        "evidence": {
+          "tfidf_score": 0.01002489077006126,
+          "tfidf_matched_terms": [
+            "in",
+            "new"
+          ],
+          "bm25_score": 3.046171723584744,
+          "semantic_score": 0.2870481312274933,
+          "matched_candidate_competency": "Prepared and participated in project design reviews."
+        },
+        "candidate_evidence": [
+          "Prepared and participated in project design reviews."
+        ]
+      },
+      {
+        "job_competency": "PAD PCB design tools",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4055,
+        "evidence": {
+          "tfidf_score": 0.04830995458626492,
+          "tfidf_matched_terms": [
+            "design"
+          ],
+          "bm25_score": 2.6988815684459255,
+          "semantic_score": 0.3648865222930908,
+          "matched_candidate_competency": "Electrical design"
+        },
+        "candidate_evidence": [
+          "Electrical design"
+        ]
+      },
+      {
+        "job_competency": "DX Designer",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4329,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.49064698815345764,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "Altium",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5568,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36011531949043274,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "Microprocessor firmware development",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2281,
+        "evidence": {
+          "tfidf_score": 0.0070878084371805376,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 5.125696684510738,
+          "semantic_score": 0.4815855324268341,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "Assembler programming",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5523,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39769160747528076,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "MSP430",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5638,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3014310896396637,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "TM4C",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5726,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2285863161087036,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "NXP i.MX family",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5748,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2097395658493042,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "Xilinx FPGA",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5612,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32361507415771484,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "Altera FPGA",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5526,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3948464095592499,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "Lattice FPGA",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5542,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3815118372440338,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "System-on-chip (SoC) development",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2245,
+        "evidence": {
+          "tfidf_score": 0.0419744131550865,
+          "tfidf_matched_terms": [
+            "development",
+            "on",
+            "system"
+          ],
+          "bm25_score": 5.125696684510738,
+          "semantic_score": 0.5139256119728088,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      },
+      {
+        "job_competency": "PCB layout guidance",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5525,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3959745466709137,
+          "matched_candidate_competency": "Business development"
+        },
+        "candidate_evidence": [
+          "Business development"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Digital electronic circuit design and development",
+      "Digital circuit design and schematic design",
+      "Microprocessor-based circuit design",
+      "C programming",
+      "FPGA development",
+      "High-speed digital design",
+      "Electrical or Electronics Engineering",
+      "Microprocessor firmware development",
+      "System-on-chip (SoC) development"
+    ],
+    "weak_matches": [
+      "PCB layout and routing",
+      "Embedded controller implementation",
+      "Microcontrollers",
+      "ARM microcontrollers",
+      "IDE tools",
+      "Onsite work in Parsippany, New Jersey",
+      "PAD PCB design tools",
+      "DX Designer"
+    ],
+    "missing": [
+      "Schematic capture",
+      "Signal integrity testing",
+      "EMC testing",
+      "Code Composer Studio",
+      "Altium",
+      "Assembler programming",
+      "MSP430",
+      "TM4C",
+      "NXP i.MX family",
+      "Xilinx FPGA",
+      "Altera FPGA",
+      "Lattice FPGA",
+      "PCB layout guidance"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Digital electronic circuit design and development",
+      "Digital circuit design and schematic design",
+      "Microprocessor-based circuit design",
+      "C programming",
+      "FPGA development",
+      "High-speed digital design",
+      "Electrical or Electronics Engineering",
+      "Microprocessor firmware development",
+      "System-on-chip (SoC) development"
+    ],
+    "competency_gaps": [
+      "PCB layout and routing",
+      "Embedded controller implementation",
+      "Microcontrollers",
+      "ARM microcontrollers",
+      "IDE tools",
+      "Onsite work in Parsippany, New Jersey",
+      "PAD PCB design tools",
+      "DX Designer",
+      "Schematic capture",
+      "Signal integrity testing",
+      "EMC testing",
+      "Code Composer Studio",
+      "Altium",
+      "Assembler programming",
+      "MSP430",
+      "TM4C",
+      "NXP i.MX family",
+      "Xilinx FPGA",
+      "Altera FPGA",
+      "Lattice FPGA",
+      "PCB layout guidance"
+    ]
+  },
+  "counts": {
+    "requirements": 30,
+    "strength_matches": 0,
+    "partial_matches": 9,
+    "competency_gaps": 21
+  },
+  "latency_ms": 61.35,
+  "analyzed_at": "2026-10-03T17:29:45.765409+00:00"
+}

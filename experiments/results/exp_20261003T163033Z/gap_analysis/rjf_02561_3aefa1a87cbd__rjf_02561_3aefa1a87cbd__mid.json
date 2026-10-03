@@ -1,0 +1,368 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02561_3aefa1a87cbd",
+  "jd_id": "rjf_02561_3aefa1a87cbd",
+  "pair_id": "rjf_02561_3aefa1a87cbd",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Business analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3757,
+        "evidence": {
+          "tfidf_score": 0.08352947378920142,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 2.9761945175467037,
+          "semantic_score": 0.5584506988525391,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "Business process review",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9387,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.30649876594543457,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "Requirements elicitation and documentation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6791,
+        "evidence": {
+          "tfidf_score": 0.11298059920499844,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.3350882100396237,
+          "semantic_score": 0.39198917150497437,
+          "matched_candidate_competency": "Performed genotype and clinical-trait data mining"
+        },
+        "candidate_evidence": [
+          "Performed genotype and clinical-trait data mining"
+        ]
+      },
+      {
+        "job_competency": "Group facilitation and consensus building",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4049,
+        "evidence": {
+          "tfidf_score": 0.09965924417804004,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.3350882100396237,
+          "semantic_score": 0.5974406003952026,
+          "matched_candidate_competency": "Performed genotype and clinical-trait data mining"
+        },
+        "candidate_evidence": [
+          "Performed genotype and clinical-trait data mining"
+        ]
+      },
+      {
+        "job_competency": "Strategic analysis and program support",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3839,
+        "evidence": {
+          "tfidf_score": 0.18250528811294622,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and",
+            "support"
+          ],
+          "bm25_score": 2.9761945175467037,
+          "semantic_score": 0.4021204710006714,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "Agile Scrum",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7333,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4166662395000458,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "JIRA",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9293,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3532651662826538,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "User story development and validation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3789,
+        "evidence": {
+          "tfidf_score": 0.1378329806219663,
+          "tfidf_matched_terms": [
+            "and",
+            "development"
+          ],
+          "bm25_score": 3.587478307095015,
+          "semantic_score": 0.35730212926864624,
+          "matched_candidate_competency": "Database development"
+        },
+        "candidate_evidence": [
+          "Database development"
+        ]
+      },
+      {
+        "job_competency": "Sprint planning",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9369,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3152528405189514,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "Backlog grooming",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9372,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31402239203453064,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "Contract compliance",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9391,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3043212592601776,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "Contract change notices",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9573,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.21366645395755768,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "Requirements specifications",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9316,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34219837188720703,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "LEAN principles",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9436,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2820775508880615,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "LPI initiatives",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9473,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.26334017515182495,
+          "matched_candidate_competency": "Statistical analysis"
+        },
+        "candidate_evidence": [
+          "Statistical analysis"
+        ]
+      },
+      {
+        "job_competency": "Programs governed by state and/or federal regulations",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6835,
+        "evidence": {
+          "tfidf_score": 0.08791619448514056,
+          "tfidf_matched_terms": [
+            "and",
+            "by"
+          ],
+          "bm25_score": 2.1048181369086167,
+          "semantic_score": 0.22239786386489868,
+          "matched_candidate_competency": "Customized Pima Indian common-variant chips by selecting tag variants"
+        },
+        "candidate_evidence": [
+          "Customized Pima Indian common-variant chips by selecting tag variants"
+        ]
+      },
+      {
+        "job_competency": "Michigan local candidate",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6359,
+        "evidence": {
+          "tfidf_score": 0.012827010277551615,
+          "tfidf_matched_terms": [
+            "candidate"
+          ],
+          "bm25_score": 3.212514334817644,
+          "semantic_score": 0.3442297577857971,
+          "matched_candidate_competency": "Mentored Ph.D. candidate students"
+        },
+        "candidate_evidence": [
+          "Mentored Ph.D. candidate students"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Business analysis",
+      "Group facilitation and consensus building",
+      "Strategic analysis and program support",
+      "User story development and validation"
+    ],
+    "weak_matches": [
+      "Requirements elicitation and documentation",
+      "Agile Scrum",
+      "Programs governed by state and/or federal regulations",
+      "Michigan local candidate"
+    ],
+    "missing": [
+      "Business process review",
+      "JIRA",
+      "Sprint planning",
+      "Backlog grooming",
+      "Contract compliance",
+      "Contract change notices",
+      "Requirements specifications",
+      "LEAN principles",
+      "LPI initiatives"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Business analysis",
+      "Group facilitation and consensus building",
+      "Strategic analysis and program support",
+      "User story development and validation"
+    ],
+    "competency_gaps": [
+      "Requirements elicitation and documentation",
+      "Agile Scrum",
+      "Programs governed by state and/or federal regulations",
+      "Michigan local candidate",
+      "Business process review",
+      "JIRA",
+      "Sprint planning",
+      "Backlog grooming",
+      "Contract compliance",
+      "Contract change notices",
+      "Requirements specifications",
+      "LEAN principles",
+      "LPI initiatives"
+    ]
+  },
+  "counts": {
+    "requirements": 17,
+    "strength_matches": 0,
+    "partial_matches": 4,
+    "competency_gaps": 13
+  },
+  "latency_ms": 37.88,
+  "analyzed_at": "2026-10-03T17:29:45.666352+00:00"
+}

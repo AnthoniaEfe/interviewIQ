@@ -1,0 +1,1526 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "extraction",
+  "profile_id": "rjf_02340_67b618f30e02",
+  "jd_id": "rjf_02340_67b618f30e02",
+  "pair_id": "rjf_02340_67b618f30e02",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": "Jessica",
+    "professional_summary": "IT software developer with experience in software design, development, and implementation of enterprise billing and order management applications, using Java/J2EE technologies on Windows platforms.",
+    "seniority_indicators": [],
+    "education": [
+      {
+        "degree": "Bachelor's degree",
+        "institution": "New York Institute of Technology",
+        "field": "Computer Science",
+        "year": "Expected May 2016",
+        "source_text": "New York Institute of Technology, Computer Science, GPA 4.0, Summa Cum Laude"
+      },
+      {
+        "degree": "Bachelor's degree",
+        "institution": "University of Mumbai",
+        "field": "Computer Engineering",
+        "year": "Expected May 2014",
+        "source_text": "University of Mumbai, Computer Engineering"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Software Developer",
+        "employer": "Panjiva",
+        "duration": "10/2016-Current",
+        "responsibilities": [
+          "Designed and developed a notification module using Spring, Java Mail, and JDBC Template.",
+          "Contributed to design and documentation of a scheduled scenario module.",
+          "Performed unit and integration testing and provided daily production support.",
+          "Created and merged Git branches.",
+          "Developed stored procedures and triggers using MariaDB and Oracle.",
+          "Worked on application deployment and Maven build configuration.",
+          "Participated in Scrum calls and test-environment build and development activities."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Spring Boot",
+          "Spring Batch",
+          "Java",
+          "Java Mail",
+          "JDBC Template",
+          "Apache Tomcat",
+          "Oracle",
+          "MariaDB",
+          "DB2",
+          "Jenkins",
+          "Maven",
+          "Git"
+        ],
+        "source_text": "Panjiva - Software Developer, Test Data Management Project, 10/2016-Current"
+      },
+      {
+        "title": "Software Developer",
+        "employer": "Pearson",
+        "duration": "10/2016-Current",
+        "responsibilities": [
+          "Identified, corrected, and verified defects using Java, Spring, and Oracle.",
+          "Wrote test cases using test-driven development with JUnit and Cucumber.",
+          "Prepared test cases and results for unit testing.",
+          "Worked on quality-related activities."
+        ],
+        "achievements": [
+          "Completed an end-to-end continuous integration pipeline using Jenkins, Maven, Git, and Sonar."
+        ],
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "Spring Batch",
+          "Java Scheduler",
+          "Tomcat",
+          "REST API",
+          "Oracle",
+          "JUnit",
+          "Cucumber",
+          "Jenkins",
+          "SonarQube",
+          "JFrog",
+          "Git",
+          "AWS"
+        ],
+        "source_text": "Pearson - Software Developer, Billing Automation Project, 10/2016-Current"
+      },
+      {
+        "title": "Software Development Engineer",
+        "employer": "Skilljar",
+        "duration": "04/2015-09/2016",
+        "responsibilities": [
+          "Implemented a payment module using Java, Spring Batch, Spring Boot, JSON, and JSP.",
+          "Developed SOAP web services for the payment module.",
+          "Created Maven archetypes for REST web services supporting JSON message transformation.",
+          "Developed stored procedures and triggers using MySQL and Oracle.",
+          "Installed Tomcat Server.",
+          "Created and merged repository branches using Git.",
+          "Worked on an end-to-end continuous integration pipeline using Jenkins, Maven, Git, and Sonar."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Java",
+          "Spring Batch",
+          "Spring Boot",
+          "Servlet",
+          "JSP",
+          "JSON",
+          "SOAP",
+          "REST",
+          "Oracle",
+          "MySQL",
+          "Maven",
+          "Jenkins",
+          "Git",
+          "Sonar"
+        ],
+        "source_text": "Skilljar - Software Development Engineer, Purchase & Order Management System, 04/2015-09/2016"
+      },
+      {
+        "title": "College Project",
+        "employer": "New York Institute of Technology",
+        "duration": "04/2016",
+        "responsibilities": [
+          "Developed and implemented a tracking module using Python and JSON.",
+          "Implemented Java and JSP and Java Mail for an alert module."
+        ],
+        "achievements": [],
+        "technologies": [
+          "Python",
+          "JSON",
+          "Java",
+          "JSP",
+          "Java Mail"
+        ],
+        "source_text": "New York Institute Of Technology - College Project, 2016-04/2016"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Test Data Management Project",
+        "description": "Web-based application to automate test-data setup, synchronize data across systems, and retrieve samples from production data.",
+        "technologies": [
+          "Spring Boot",
+          "Spring Batch",
+          "Java",
+          "Oracle",
+          "MariaDB",
+          "DB2",
+          "Jenkins",
+          "Maven",
+          "Git"
+        ],
+        "source_text": "Test Data Management is a web based application used to automate manual efforts involved in test data setup."
+      },
+      {
+        "name": "Billing Automation Project",
+        "description": "Billing software for validating invoices, identifying outliers against historical data, and confirming acceptable billing limits.",
+        "technologies": [
+          "Java",
+          "Spring Boot",
+          "Spring Batch",
+          "Oracle",
+          "JUnit",
+          "Cucumber",
+          "Jenkins",
+          "SonarQube",
+          "AWS"
+        ],
+        "source_text": "Billing Automation is a billing software used for validating bills (invoices)."
+      },
+      {
+        "name": "Purchase & Order Management System",
+        "description": "Web-based system for sorting orders by lead times, synchronizing databases, and retrieving available inventory.",
+        "technologies": [
+          "Java",
+          "Spring Batch",
+          "Spring Boot",
+          "Servlet",
+          "JSP",
+          "JSON",
+          "SOAP",
+          "Oracle",
+          "MySQL",
+          "Jenkins",
+          "Git"
+        ],
+        "source_text": "Purchase and order Management system is a web based application used to sort orders based on lead times."
+      },
+      {
+        "name": "College Project",
+        "description": "Software for managing sales, discounts, payments, products, and inventory.",
+        "technologies": [
+          "Python",
+          "JSON",
+          "Java",
+          "JSP",
+          "Java Mail"
+        ],
+        "source_text": "This automated software helps in managing details of sales, discounts, payment, products and inventory."
+      }
+    ],
+    "technical_skills": [
+      {
+        "normalized_label": "Java",
+        "original_mentions": [
+          "JAVA",
+          "Java"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experienced in JAVA/J2EE technologies; Technologies: Java",
+          "source_section": "Summary; Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "J2EE",
+        "original_mentions": [
+          "J2EE"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "J2EE Framework; J2EE (Servlets, JSP, JDBC, EJB, Java Mail)",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Spring",
+        "original_mentions": [
+          "Spring 2.5",
+          "Spring 3.0",
+          "Spring Framework"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "J2EE Framework: Spring 2.5, Spring 3.0; notification module using spring framework",
+          "source_section": "Technical Skills; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Spring Boot",
+        "original_mentions": [
+          "Spring Boot"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Environment: Spring Boot",
+          "source_section": "Technical Skills; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Spring Batch",
+        "original_mentions": [
+          "Spring Batch"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Technologies: Spring Batch",
+          "source_section": "Technical Skills; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JSP",
+        "original_mentions": [
+          "JSP"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "J2EE technologies such as Spring, JSP, JSON and servlets",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Servlets",
+        "original_mentions": [
+          "servlets",
+          "Servlet",
+          "Servlets"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "J2EE (Servlets, JSP, JDBC, EJB, Java Mail)",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JSON",
+        "original_mentions": [
+          "JSON"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Spring, JSP, JSON and servlets",
+          "source_section": "Summary; Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Python",
+        "original_mentions": [
+          "Python",
+          "python"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Good understanding of Python programming",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "SQL",
+          "PL/SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "MySQL, Oracle, Maria DB, SQL Server, NO SQL, PL/SQL",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "MySQL",
+        "original_mentions": [
+          "MySQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Database/Tools: MySQL",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Oracle",
+        "original_mentions": [
+          "Oracle"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Database/Tools: Oracle",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "MariaDB",
+        "original_mentions": [
+          "Maria DB",
+          "MariaDB"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Developed stored procedures and triggers using Maria DB",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "REST",
+        "original_mentions": [
+          "REST",
+          "REST API",
+          "REST Web Services"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "REST Web Services supporting JSON message transformation",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SOAP",
+        "original_mentions": [
+          "SOAP",
+          "SOAP Web Services"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Developed SOAP Web Services for payment module",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JDBC",
+        "original_mentions": [
+          "JDBC",
+          "JDBC Template"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Java mail and JDBC Template",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "EJB",
+        "original_mentions": [
+          "EJB"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "J2EE (Servlets, JSP, JDBC, EJB, Java Mail)",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Apache Tomcat",
+        "original_mentions": [
+          "Apache Tomcat 5.0",
+          "Apache Tomcat 5.5",
+          "Tomcat"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Servers: Apache Tomcat 5.0, 5.5",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Git",
+        "original_mentions": [
+          "GIT",
+          "Git"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Version Control: GIT",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Maven",
+        "original_mentions": [
+          "Maven"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Build Configuration of Application using Maven",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Jenkins",
+        "original_mentions": [
+          "Jenkins"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "continuous integration pipeline using Jenkins",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JUnit",
+        "original_mentions": [
+          "JUNIT",
+          "Junit"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Writing test cases in test driven development using JUNIT",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Cucumber",
+        "original_mentions": [
+          "Cucumber"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "using JUNIT and Cucumber",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SonarQube",
+        "original_mentions": [
+          "Sonar",
+          "SonarQube"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Jenkins, Maven, Git and SonarQube",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "HTML",
+        "original_mentions": [
+          "HTML"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Technologies: HTML, CSS",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "CSS",
+        "original_mentions": [
+          "CSS"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Technologies: HTML, CSS",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Bootstrap",
+        "original_mentions": [
+          "Bootstrap"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Technologies: Bootstrap",
+          "source_section": "Technical Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "JavaScript",
+        "original_mentions": [
+          "JavaScript"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: JavaScript",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "jQuery",
+        "original_mentions": [
+          "JQUERY"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: JQUERY",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "XML",
+        "original_mentions": [
+          "XML"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: XML",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "WebSphere",
+        "original_mentions": [
+          "IBM Web sphere 6.1"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: IBM Web sphere 6.1",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "WebLogic",
+        "original_mentions": [
+          "WebLogic"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skills: WebLogic",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Documentation",
+        "original_mentions": [
+          "documentation"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Involved in design and documentation of enhancement",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Scrum participation",
+        "original_mentions": [
+          "Attending scrum calls"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Attending scrum calls to plan and prioritize the activities",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Quality assurance",
+        "original_mentions": [
+          "quality related activities",
+          "quality"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Responsible for ... quality related activities",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Enterprise billing applications",
+        "original_mentions": [
+          "enterprise billing",
+          "Billing Automation Project"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience in ... enterprise billing ... applications; Billing Automation Project",
+          "source_section": "Summary; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Order management",
+        "original_mentions": [
+          "order management",
+          "Purchase & Order Management System"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Enterprise ... order management applications; Purchase and order Management system",
+          "source_section": "Summary; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Test data management",
+        "original_mentions": [
+          "Test Data Management Project"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Test Data Management is a web based application used to automate test data setup",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Continuous integration",
+        "original_mentions": [
+          "continuous integration pipeline"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Completed Automation end to end continuous integration pipeline",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Inventory management",
+        "original_mentions": [
+          "inventory",
+          "available inventory"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "retrieve available inventory from database; managing ... products and inventory",
+          "source_section": "Experience; Project",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": []
+  },
+  "job": {
+    "title": "Senior Software Engineer",
+    "seniority": "Senior",
+    "years_of_experience": "Minimum 6 years in a software-engineering related position; at least half in an AgileDevOps environment",
+    "responsibilities": [
+      "Build, test, deploy, and operate highly scalable solutions for the canonical asset management system for next-generation Cloud Infrastructure.",
+      "Dive deeply into any part of the technology stack and low-level systems.",
+      "Work independently and as part of a team in an Agile environment.",
+      "Communicate with technical and non-technical stakeholders in multiple global locations.",
+      "Manage multiple projects and priorities in a fast-paced environment.",
+      "Contribute as a technical contributor and help the team succeed."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Python",
+        "original_mentions": [
+          "4+ years of Python development"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "4+ years of Python development",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Java",
+        "original_mentions": [
+          "3+ years of Java development"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "3+ years of Java development",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "REST API development",
+        "original_mentions": [
+          "3+ years of experience with REST API development"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "3+ years of experience with REST API development",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Linux/Unix fundamentals",
+        "original_mentions": [
+          "Strong knowledge of LinuxUnix fundamentals"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Strong knowledge of LinuxUnix fundamentals",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Microservices",
+        "original_mentions": [
+          "Strong knowledge of microservices"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Strong knowledge of microservices",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data structures and algorithms",
+        "original_mentions": [
+          "Strong knowledge of ... data structures, algorithms"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Strong knowledge of data structures, algorithms",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Operating systems",
+        "original_mentions": [
+          "Strong knowledge of ... operating systems"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Strong knowledge of operating systems",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Distributed systems",
+        "original_mentions": [
+          "Strong knowledge of ... distributed systems"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Strong knowledge of distributed systems",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Relational databases",
+        "original_mentions": [
+          "Solid understanding of relational databases"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Solid understanding of relational databases",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "NoSQL systems",
+        "original_mentions": [
+          "Solid understanding of NoSQL systems"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Solid understanding of NoSQL systems",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Storage",
+        "original_mentions": [
+          "Solid understanding of storage"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Solid understanding of storage",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Distributed persistence",
+        "original_mentions": [
+          "Solid understanding of distributed persistence"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Solid understanding of distributed persistence",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Troubleshooting",
+        "original_mentions": [
+          "Excellent troubleshooting ... skills"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Excellent troubleshooting skills",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Debugging",
+        "original_mentions": [
+          "Excellent ... debugging ... skills"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Excellent debugging skills",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Performance tuning",
+        "original_mentions": [
+          "Excellent ... performance tuning skills"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Excellent performance tuning skills",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Agile/DevOps",
+        "original_mentions": [
+          "at least half of which was in an AgileDevOps environment"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "at least half of which was in an AgileDevOps environment",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Software engineering",
+        "original_mentions": [
+          "Minimum 6 years in a software-engineering related position"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Minimum 6 years in a software-engineering related position",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Technical and non-technical communication",
+        "original_mentions": [
+          "Excellent written and verbal communication skills"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Excellent written and verbal communication skills",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Presenting complex information clearly and concisely",
+        "original_mentions": [
+          "ability to present complex information clearly and concisely to all audiences"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "present complex information clearly and concisely to all audiences",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Independent and collaborative work",
+        "original_mentions": [
+          "work independently and as part of a team"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "work independently and as part of a team",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Managing multiple priorities",
+        "original_mentions": [
+          "manage multiple projects and priorities"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "manage multiple projects and priorities in a fast-paced environment",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Results-driven mindset",
+        "original_mentions": [
+          "be results-driven"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "be results-driven",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Teamwork",
+        "original_mentions": [
+          "be a team player"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "be a team player",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Learning orientation",
+        "original_mentions": [
+          "eager to learn"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "eager to learn",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Adaptability under ambiguity",
+        "original_mentions": [
+          "thrive even when faced with ambiguity and uncertainty"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "thrive even when faced with ambiguity and uncertainty",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [
+      {
+        "normalized_label": "Build automation",
+        "original_mentions": [
+          "build automation"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience with build automation",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Continuous integration",
+        "original_mentions": [
+          "continuous integration"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "continuous integration",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Continuous deployment",
+        "original_mentions": [
+          "continuous deployment"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "continuous deployment",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Git",
+        "original_mentions": [
+          "Git"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "tools such as Git",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Jenkins",
+        "original_mentions": [
+          "Jenkins"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "tools such as ... Jenkins",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Maven",
+        "original_mentions": [
+          "Maven"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "tools such as ... Maven",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Grunt",
+        "original_mentions": [
+          "Grunt"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "tools such as ... Grunt",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "RunDeck",
+        "original_mentions": [
+          "RunDeck"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "tools such as ... RunDeck",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Ansible",
+        "original_mentions": [
+          "Ansible"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "tools such as ... Ansible",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data center infrastructure and operations",
+        "original_mentions": [
+          "Working knowledge of or experience in data center infrastructure and operations is a plus"
+        ],
+        "competency_type": "domain",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "data center infrastructure and operations is a plus",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "React",
+        "original_mentions": [
+          "Experience with React JavaScript framework is a plus"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience with React JavaScript framework is a plus",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Containerization",
+        "original_mentions": [
+          "containerization technologies"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "developing and designing solutions with containerization technologies",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Docker",
+        "original_mentions": [
+          "Docker"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "such as Docker",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Kubernetes",
+        "original_mentions": [
+          "Kubernetes"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "such as ... Kubernetes",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Observability",
+        "original_mentions": [
+          "observability tools and practices"
+        ],
+        "competency_type": "technical",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience with observability tools and practices",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Global distributed-team collaboration",
+        "original_mentions": [
+          "working with team members in a global setting with distributed time zones"
+        ],
+        "competency_type": "soft",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "team members in a global setting with distributed time zones",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Flexible hours",
+        "original_mentions": [
+          "working flexible hours"
+        ],
+        "competency_type": "soft",
+        "priority": "preferred",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience with working flexible hours",
+          "source_section": "Desired Experience and Skills",
+          "origin": "job"
+        }
+      }
+    ],
+    "education_requirements": [
+      "BS or MS degree in Computer Science or equivalent experience"
+    ],
+    "certifications": [
+      {
+        "normalized_label": "Security clearance eligibility",
+        "original_mentions": [
+          "US Citizens able to obtain a security clearance"
+        ],
+        "competency_type": "certification",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "US Citizens able to obtain a security clearance",
+          "source_section": "Required Experience",
+          "origin": "job"
+        }
+      }
+    ],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Cloud infrastructure",
+        "original_mentions": [
+          "Oracle's next generation Cloud Infrastructure"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "next generation Cloud Infrastructure",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Canonical asset management systems",
+        "original_mentions": [
+          "canonical asset management system"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "canonical asset management system",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Technical communication",
+        "original_mentions": [
+          "great communicator to both technical and non-technical stakeholders"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "great communicator to both technical and non-technical stakeholders",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Agile teamwork",
+        "original_mentions": [
+          "work independently and as part of a team in an Agile environment"
+        ],
+        "competency_type": "soft",
+        "priority": "required",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "work independently and as part of a team in an Agile environment",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      }
+    ],
+    "leadership_requirements": [],
+    "system_design_requirements": [
+      "Build and design highly scalable solutions for the canonical asset management system.",
+      "Develop and design solutions using containerization technologies such as Docker and Kubernetes."
+    ],
+    "competencies": []
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 2187,
+    "output_tokens": 3490,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0044373,
+    "latency_ms": 21224.33,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1205,
+    "output_tokens": 2996,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0038362,
+    "latency_ms": 21116.69,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-10-03T17:16:09.384945+00:00",
+  "reused_from_experiment": null
+}

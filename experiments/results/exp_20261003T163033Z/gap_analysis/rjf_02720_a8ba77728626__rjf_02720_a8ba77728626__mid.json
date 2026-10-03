@@ -1,0 +1,955 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02720_a8ba77728626",
+  "jd_id": "rjf_02720_a8ba77728626",
+  "pair_id": "rjf_02720_a8ba77728626",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Information systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7269,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.45699238777160645,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Software engineering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.656,
+        "evidence": {
+          "tfidf_score": 0.00752658434976975,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 4.72824329317208,
+          "semantic_score": 0.5660099983215332,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Technical solution development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7055,
+        "evidence": {
+          "tfidf_score": 0.005834906769034169,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.5202122092217074,
+          "semantic_score": 0.41161736845970154,
+          "matched_candidate_competency": "Coordinated with development and onsite teams on issues and defects."
+        },
+        "candidate_evidence": [
+          "Coordinated with development and onsite teams on issues and defects."
+        ]
+      },
+      {
+        "job_competency": "Custom application development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.684,
+        "evidence": {
+          "tfidf_score": 0.013024007769275021,
+          "tfidf_matched_terms": [
+            "application",
+            "development"
+          ],
+          "bm25_score": 3.4375127131410532,
+          "semantic_score": 0.47683027386665344,
+          "matched_candidate_competency": "Analyzed business requirements and application logic."
+        },
+        "candidate_evidence": [
+          "Analyzed business requirements and application logic."
+        ]
+      },
+      {
+        "job_competency": "Software integration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6572,
+        "evidence": {
+          "tfidf_score": 0.045961329369858354,
+          "tfidf_matched_terms": [
+            "integration",
+            "software"
+          ],
+          "bm25_score": 4.72824329317208,
+          "semantic_score": 0.5298385620117188,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Solution analysis and configuration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6791,
+        "evidence": {
+          "tfidf_score": 0.2376810335131237,
+          "tfidf_matched_terms": [
+            "analysis",
+            "and"
+          ],
+          "bm25_score": 2.7535406206985513,
+          "semantic_score": 0.3866228461265564,
+          "matched_candidate_competency": "Created test strategies, project test plans, requirements traceability analysis and testing documentation."
+        },
+        "candidate_evidence": [
+          "Created test strategies, project test plans, requirements traceability analysis and testing documentation."
+        ]
+      },
+      {
+        "job_competency": "Software development lifecycle",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6736,
+        "evidence": {
+          "tfidf_score": 0.013024007769275021,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 4.72824329317208,
+          "semantic_score": 0.4520112872123718,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Automated unit testing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4005,
+        "evidence": {
+          "tfidf_score": 0.13378935796846747,
+          "tfidf_matched_terms": [
+            "testing"
+          ],
+          "bm25_score": 1.5713027513263305,
+          "semantic_score": 0.7856802940368652,
+          "matched_candidate_competency": "Manual testing"
+        },
+        "candidate_evidence": [
+          "Manual testing"
+        ]
+      },
+      {
+        "job_competency": "Integration and functional testing",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1682,
+        "evidence": {
+          "tfidf_score": 0.562002949739622,
+          "tfidf_matched_terms": [
+            "and",
+            "functional",
+            "integration",
+            "testing"
+          ],
+          "bm25_score": 5.5090873453914675,
+          "semantic_score": 0.8317070603370667,
+          "matched_candidate_competency": "Integration testing"
+        },
+        "candidate_evidence": [
+          "Integration testing"
+        ]
+      },
+      {
+        "job_competency": "Application monitoring",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.681,
+        "evidence": {
+          "tfidf_score": 0.00752658434976975,
+          "tfidf_matched_terms": [
+            "application"
+          ],
+          "bm25_score": 3.4375127131410532,
+          "semantic_score": 0.499332070350647,
+          "matched_candidate_competency": "Analyzed business requirements and application logic."
+        },
+        "candidate_evidence": [
+          "Analyzed business requirements and application logic."
+        ]
+      },
+      {
+        "job_competency": "Application security controls",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6616,
+        "evidence": {
+          "tfidf_score": 0.013024007769275021,
+          "tfidf_matched_terms": [
+            "application",
+            "security"
+          ],
+          "bm25_score": 5.4047028793633665,
+          "semantic_score": 0.480378121137619,
+          "matched_candidate_competency": "Security testing"
+        },
+        "candidate_evidence": [
+          "Security testing"
+        ]
+      },
+      {
+        "job_competency": "Agile software development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3767,
+        "evidence": {
+          "tfidf_score": 0.03750872554461086,
+          "tfidf_matched_terms": [
+            "agile",
+            "development",
+            "software"
+          ],
+          "bm25_score": 4.991973222175232,
+          "semantic_score": 0.8588430881500244,
+          "matched_candidate_competency": "Agile"
+        },
+        "candidate_evidence": [
+          "Agile"
+        ]
+      },
+      {
+        "job_competency": "Continuous engineering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7013,
+        "evidence": {
+          "tfidf_score": 0.015056882031164535,
+          "tfidf_matched_terms": [
+            "continuous"
+          ],
+          "bm25_score": 2.5442025823325602,
+          "semantic_score": 0.42887285351753235,
+          "matched_candidate_competency": "Interpreted test results and supported continuous improvement processes."
+        },
+        "candidate_evidence": [
+          "Interpreted test results and supported continuous improvement processes."
+        ]
+      },
+      {
+        "job_competency": "Project management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6654,
+        "evidence": {
+          "tfidf_score": 0.027549565648477096,
+          "tfidf_matched_terms": [
+            "management",
+            "project"
+          ],
+          "bm25_score": 5.4047028793633665,
+          "semantic_score": 0.44564855098724365,
+          "matched_candidate_competency": "Defect management"
+        },
+        "candidate_evidence": [
+          "Defect management"
+        ]
+      },
+      {
+        "job_competency": "Complex problem solving",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.925,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37489286065101624,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Best practices implementation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9343,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32832399010658264,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Mentoring and technical direction",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3601,
+        "evidence": {
+          "tfidf_score": 0.2376810335131237,
+          "tfidf_matched_terms": [
+            "and",
+            "mentoring"
+          ],
+          "bm25_score": 6.3070370950229995,
+          "semantic_score": 0.7831610441207886,
+          "matched_candidate_competency": "Mentoring"
+        },
+        "candidate_evidence": [
+          "Mentoring"
+        ]
+      },
+      {
+        "job_competency": "Complex technical communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3887,
+        "evidence": {
+          "tfidf_score": 0.005834906769034169,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 6.3070370950229995,
+          "semantic_score": 0.6712133884429932,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "English language fluency",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9226,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3869320750236511,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Enterprise application scaling",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.414,
+        "evidence": {
+          "tfidf_score": 0.005834906769034168,
+          "tfidf_matched_terms": [
+            "application"
+          ],
+          "bm25_score": 3.4375127131410532,
+          "semantic_score": 0.44474002718925476,
+          "matched_candidate_competency": "Analyzed business requirements and application logic."
+        },
+        "candidate_evidence": [
+          "Analyzed business requirements and application logic."
+        ]
+      },
+      {
+        "job_competency": "Full-stack development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4275,
+        "evidence": {
+          "tfidf_score": 0.005834906769034169,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 2.5202122092217074,
+          "semantic_score": 0.3675600290298462,
+          "matched_candidate_competency": "Coordinated with development and onsite teams on issues and defects."
+        },
+        "candidate_evidence": [
+          "Coordinated with development and onsite teams on issues and defects."
+        ]
+      },
+      {
+        "job_competency": "C# and .NET",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4128,
+        "evidence": {
+          "tfidf_score": 0.2538736918126435,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.029198417953084,
+          "semantic_score": 0.43766579031944275,
+          "matched_candidate_competency": "Logged defects in JIRA and prepared daily and weekly defect and test execution reports."
+        },
+        "candidate_evidence": [
+          "Logged defects in JIRA and prepared daily and weekly defect and test execution reports."
+        ]
+      },
+      {
+        "job_competency": "Angular",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5603,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33118483424186707,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Front-end web technologies",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4009,
+        "evidence": {
+          "tfidf_score": 0.009868738529544986,
+          "tfidf_matched_terms": [
+            "web"
+          ],
+          "bm25_score": 4.72816409106051,
+          "semantic_score": 0.4888923764228821,
+          "matched_candidate_competency": "Web testing"
+        },
+        "candidate_evidence": [
+          "Web testing"
+        ]
+      },
+      {
+        "job_competency": "Java backend development",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2387,
+        "evidence": {
+          "tfidf_score": 0.019540831610654903,
+          "tfidf_matched_terms": [
+            "development",
+            "java"
+          ],
+          "bm25_score": 5.517547768913986,
+          "semantic_score": 0.6245687007904053,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "REST and SOAP services",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4302,
+        "evidence": {
+          "tfidf_score": 0.21463883637226638,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.029198417953084,
+          "semantic_score": 0.28628501296043396,
+          "matched_candidate_competency": "Logged defects in JIRA and prepared daily and weekly defect and test execution reports."
+        },
+        "candidate_evidence": [
+          "Logged defects in JIRA and prepared daily and weekly defect and test execution reports."
+        ]
+      },
+      {
+        "job_competency": "Microservice APIs",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5665,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2795351445674896,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Cloud platforms",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5588,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34313809871673584,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Data structures and algorithms",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4031,
+        "evidence": {
+          "tfidf_score": 0.25008553606405004,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 2.9620010779319017,
+          "semantic_score": 0.4083878993988037,
+          "matched_candidate_competency": "Created test cases and data for regression and integration testing."
+        },
+        "candidate_evidence": [
+          "Created test cases and data for regression and integration testing."
+        ]
+      },
+      {
+        "job_competency": "Software design",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3957,
+        "evidence": {
+          "tfidf_score": 0.00752658434976975,
+          "tfidf_matched_terms": [
+            "software"
+          ],
+          "bm25_score": 4.72824329317208,
+          "semantic_score": 0.544387936592102,
+          "matched_candidate_competency": "Software quality assurance"
+        },
+        "candidate_evidence": [
+          "Software quality assurance"
+        ]
+      },
+      {
+        "job_competency": "Analytical and debugging skills",
+        "priority": "preferred",
+        "match_label": "strong_match",
+        "weight": 0.099,
+        "evidence": {
+          "tfidf_score": 0.266629631355006,
+          "tfidf_matched_terms": [
+            "analytical",
+            "and",
+            "skills"
+          ],
+          "bm25_score": 10.809405758726733,
+          "semantic_score": 0.7514618039131165,
+          "matched_candidate_competency": "Analytical skills"
+        },
+        "candidate_evidence": [
+          "Analytical skills"
+        ]
+      },
+      {
+        "job_competency": "SAFe",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5624,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.313504159450531,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "SOA and Open API methodologies",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4132,
+        "evidence": {
+          "tfidf_score": 0.20594455576922005,
+          "tfidf_matched_terms": [
+            "and",
+            "methodologies"
+          ],
+          "bm25_score": 3.096983133547731,
+          "semantic_score": 0.326609343290329,
+          "matched_candidate_competency": "Supervised three junior QA testers and supported QA and quality-control methodologies."
+        },
+        "candidate_evidence": [
+          "Supervised three junior QA testers and supported QA and quality-control methodologies."
+        ]
+      },
+      {
+        "job_competency": "Service architectures",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5544,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37993544340133667,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Web servers and application containers",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3936,
+        "evidence": {
+          "tfidf_score": 0.23129735352798472,
+          "tfidf_matched_terms": [
+            "and",
+            "application",
+            "web"
+          ],
+          "bm25_score": 4.72816409106051,
+          "semantic_score": 0.39835262298583984,
+          "matched_candidate_competency": "Web testing"
+        },
+        "candidate_evidence": [
+          "Web testing"
+        ]
+      },
+      {
+        "job_competency": "Caching technologies",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5591,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3410329818725586,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Relational database development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3929,
+        "evidence": {
+          "tfidf_score": 0.0195408316106549,
+          "tfidf_matched_terms": [
+            "database",
+            "development"
+          ],
+          "bm25_score": 4.72816409106051,
+          "semantic_score": 0.5647651553153992,
+          "matched_candidate_competency": "Database testing"
+        },
+        "candidate_evidence": [
+          "Database testing"
+        ]
+      },
+      {
+        "job_competency": "SQL and stored procedures",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2343,
+        "evidence": {
+          "tfidf_score": 0.25008553606405004,
+          "tfidf_matched_terms": [
+            "and",
+            "sql"
+          ],
+          "bm25_score": 4.991973222175232,
+          "semantic_score": 0.5608736276626587,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Data modeling",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4181,
+        "evidence": {
+          "tfidf_score": 0.022594615542930827,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 2.7207658931367824,
+          "semantic_score": 0.43928229808807373,
+          "matched_candidate_competency": "Tested database data using SQL queries."
+        },
+        "candidate_evidence": [
+          "Tested database data using SQL queries."
+        ]
+      },
+      {
+        "job_competency": "Azure DevOps",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5598,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33487221598625183,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Visual Studio",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4335,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4845772385597229,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Git",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2132,
+        "evidence": {
+          "tfidf_score": 0.012982719144483956,
+          "tfidf_matched_terms": [
+            "git"
+          ],
+          "bm25_score": 6.3070370950229995,
+          "semantic_score": 0.9999998211860657,
+          "matched_candidate_competency": "Git"
+        },
+        "candidate_evidence": [
+          "Git"
+        ]
+      },
+      {
+        "job_competency": "Insurance domain",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5735,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.22097937762737274,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Fintech domain",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4375,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44261252880096436,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Financial accounting",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4286,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5357587933540344,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      },
+      {
+        "job_competency": "Treasury",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5577,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3527233600616455,
+          "matched_candidate_competency": "Selenium"
+        },
+        "candidate_evidence": [
+          "Selenium"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Integration and functional testing",
+      "Analytical and debugging skills"
+    ],
+    "partial_matches": [
+      "Automated unit testing",
+      "Agile software development",
+      "Mentoring and technical direction",
+      "Complex technical communication",
+      "Java backend development",
+      "SQL and stored procedures",
+      "Git"
+    ],
+    "weak_matches": [
+      "Information systems",
+      "Software engineering",
+      "Technical solution development",
+      "Custom application development",
+      "Software integration",
+      "Solution analysis and configuration",
+      "Software development lifecycle",
+      "Application monitoring",
+      "Application security controls",
+      "Continuous engineering",
+      "Project management",
+      "Enterprise application scaling",
+      "Full-stack development",
+      "C# and .NET",
+      "Front-end web technologies",
+      "REST and SOAP services",
+      "Data structures and algorithms",
+      "Software design",
+      "SOA and Open API methodologies",
+      "Web servers and application containers",
+      "Relational database development",
+      "Data modeling",
+      "Visual Studio",
+      "Fintech domain",
+      "Financial accounting"
+    ],
+    "missing": [
+      "Complex problem solving",
+      "Best practices implementation",
+      "English language fluency",
+      "Angular",
+      "Microservice APIs",
+      "Cloud platforms",
+      "SAFe",
+      "Service architectures",
+      "Caching technologies",
+      "Azure DevOps",
+      "Insurance domain",
+      "Treasury"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Integration and functional testing",
+      "Analytical and debugging skills"
+    ],
+    "partial_matches": [
+      "Automated unit testing",
+      "Agile software development",
+      "Mentoring and technical direction",
+      "Complex technical communication",
+      "Java backend development",
+      "SQL and stored procedures",
+      "Git"
+    ],
+    "competency_gaps": [
+      "Information systems",
+      "Software engineering",
+      "Technical solution development",
+      "Custom application development",
+      "Software integration",
+      "Solution analysis and configuration",
+      "Software development lifecycle",
+      "Application monitoring",
+      "Application security controls",
+      "Continuous engineering",
+      "Project management",
+      "Enterprise application scaling",
+      "Full-stack development",
+      "C# and .NET",
+      "Front-end web technologies",
+      "REST and SOAP services",
+      "Data structures and algorithms",
+      "Software design",
+      "SOA and Open API methodologies",
+      "Web servers and application containers",
+      "Relational database development",
+      "Data modeling",
+      "Visual Studio",
+      "Fintech domain",
+      "Financial accounting",
+      "Complex problem solving",
+      "Best practices implementation",
+      "English language fluency",
+      "Angular",
+      "Microservice APIs",
+      "Cloud platforms",
+      "SAFe",
+      "Service architectures",
+      "Caching technologies",
+      "Azure DevOps",
+      "Insurance domain",
+      "Treasury"
+    ]
+  },
+  "counts": {
+    "requirements": 46,
+    "strength_matches": 2,
+    "partial_matches": 7,
+    "competency_gaps": 37
+  },
+  "latency_ms": 93.59,
+  "analyzed_at": "2026-10-03T17:29:45.860265+00:00"
+}

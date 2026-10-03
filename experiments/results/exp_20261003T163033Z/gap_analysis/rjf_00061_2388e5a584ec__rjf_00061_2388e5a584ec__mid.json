@@ -1,0 +1,137 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00061_2388e5a584ec",
+  "jd_id": "rjf_00061_2388e5a584ec",
+  "pair_id": "rjf_00061_2388e5a584ec",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "DFMEA/FMEA reviews",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9622,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.18889278173446655,
+          "matched_candidate_competency": "Financial planning"
+        },
+        "candidate_evidence": [
+          "Financial planning"
+        ]
+      },
+      {
+        "job_competency": "WCCA updates and reviews",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3849,
+        "evidence": {
+          "tfidf_score": 0.158924042559082,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.949578412514305,
+          "semantic_score": 0.2814723253250122,
+          "matched_candidate_competency": "Processed bank reconciliations and weekly and monthly financial reports."
+        },
+        "candidate_evidence": [
+          "Processed bank reconciliations and weekly and monthly financial reports."
+        ]
+      },
+      {
+        "job_competency": "DV testing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9669,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.16541728377342224,
+          "matched_candidate_competency": "Financial planning"
+        },
+        "candidate_evidence": [
+          "Financial planning"
+        ]
+      },
+      {
+        "job_competency": "Hardware verification and validation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3901,
+        "evidence": {
+          "tfidf_score": 0.158924042559082,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.949578412514305,
+          "semantic_score": 0.23005032539367676,
+          "matched_candidate_competency": "Processed bank reconciliations and weekly and monthly financial reports."
+        },
+        "candidate_evidence": [
+          "Processed bank reconciliations and weekly and monthly financial reports."
+        ]
+      },
+      {
+        "job_competency": "Hardware updates",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9485,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.25754451751708984,
+          "matched_candidate_competency": "Financial planning"
+        },
+        "candidate_evidence": [
+          "Financial planning"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "WCCA updates and reviews",
+      "Hardware verification and validation"
+    ],
+    "weak_matches": [],
+    "missing": [
+      "DFMEA/FMEA reviews",
+      "DV testing",
+      "Hardware updates"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "WCCA updates and reviews",
+      "Hardware verification and validation"
+    ],
+    "competency_gaps": [
+      "DFMEA/FMEA reviews",
+      "DV testing",
+      "Hardware updates"
+    ]
+  },
+  "counts": {
+    "requirements": 5,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 3
+  },
+  "latency_ms": 15.0,
+  "analyzed_at": "2026-10-03T17:29:42.264224+00:00"
+}

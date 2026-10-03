@@ -1,0 +1,436 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01537_84393f912159",
+  "jd_id": "rjf_01537_84393f912159",
+  "pair_id": "rjf_01537_84393f912159",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Microsoft Excel",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9296,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35210204124450684,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Advanced Excel functions",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9474,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2631889581680298,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Firm computer software",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7289,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44444841146469116,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Ability to learn software and operating systems",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6543,
+        "evidence": {
+          "tfidf_score": 0.23448020860344274,
+          "tfidf_matched_terms": [
+            "and",
+            "systems",
+            "to"
+          ],
+          "bm25_score": 2.6504733326216696,
+          "semantic_score": 0.350788950920105,
+          "matched_candidate_competency": "Designed control systems for new machinery to meet aerospace industry standards."
+        },
+        "candidate_evidence": [
+          "Designed control systems for new machinery to meet aerospace industry standards."
+        ]
+      },
+      {
+        "job_competency": "International payroll issues for expatriates",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7137,
+        "evidence": {
+          "tfidf_score": 0.03137186080849865,
+          "tfidf_matched_terms": [
+            "for"
+          ],
+          "bm25_score": 1.7133049864864849,
+          "semantic_score": 0.2677174508571625,
+          "matched_candidate_competency": "Coordinated and assigned work for the electrical engineering department."
+        },
+        "candidate_evidence": [
+          "Coordinated and assigned work for the electrical engineering department."
+        ]
+      },
+      {
+        "job_competency": "U.S. and international payroll tax rules",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7172,
+        "evidence": {
+          "tfidf_score": 0.12510935673538043,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5008600314282385,
+          "semantic_score": 0.20663221180438995,
+          "matched_candidate_competency": "Training and mentoring"
+        },
+        "candidate_evidence": [
+          "Training and mentoring"
+        ]
+      },
+      {
+        "job_competency": "Tax accounting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9406,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.29709458351135254,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Analytical skills",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9247,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37641364336013794,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Problem solving",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9202,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.39912673830986023,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Troubleshooting",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9311,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3442614674568176,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Organization and planning",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4037,
+        "evidence": {
+          "tfidf_score": 0.20157807371797906,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5008600314282385,
+          "semantic_score": 0.5940554141998291,
+          "matched_candidate_competency": "Training and mentoring"
+        },
+        "candidate_evidence": [
+          "Training and mentoring"
+        ]
+      },
+      {
+        "job_competency": "Written and verbal communication",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1695,
+        "evidence": {
+          "tfidf_score": 0.20073969315366952,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 5.180630325856735,
+          "semantic_score": 0.7089036107063293,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Attention to detail",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7064,
+        "evidence": {
+          "tfidf_score": 0.04206645911027666,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 1.5021326987566435,
+          "semantic_score": 0.33624356985092163,
+          "matched_candidate_competency": "Designed control systems for new machinery to meet aerospace industry standards."
+        },
+        "candidate_evidence": [
+          "Designed control systems for new machinery to meet aerospace industry standards."
+        ]
+      },
+      {
+        "job_competency": "Prioritization and time management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3883,
+        "evidence": {
+          "tfidf_score": 0.26343963806214776,
+          "tfidf_matched_terms": [
+            "and",
+            "management"
+          ],
+          "bm25_score": 3.487455027470148,
+          "semantic_score": 0.4145946204662323,
+          "matched_candidate_competency": "Hiring and personnel management"
+        },
+        "candidate_evidence": [
+          "Hiring and personnel management"
+        ]
+      },
+      {
+        "job_competency": "Multitasking and shifting priorities",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6867,
+        "evidence": {
+          "tfidf_score": 0.17042523339882035,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5008600314282385,
+          "semantic_score": 0.3630117177963257,
+          "matched_candidate_competency": "Training and mentoring"
+        },
+        "candidate_evidence": [
+          "Training and mentoring"
+        ]
+      },
+      {
+        "job_competency": "Confidentiality",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7291,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.44308367371559143,
+          "matched_candidate_competency": "Electrical engineering"
+        },
+        "candidate_evidence": [
+          "Electrical engineering"
+        ]
+      },
+      {
+        "job_competency": "Independent and team collaboration",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3503,
+        "evidence": {
+          "tfidf_score": 0.22872935022325785,
+          "tfidf_matched_terms": [
+            "and",
+            "collaboration",
+            "team"
+          ],
+          "bm25_score": 4.526628587694028,
+          "semantic_score": 0.669973611831665,
+          "matched_candidate_competency": "Cross-functional collaboration"
+        },
+        "candidate_evidence": [
+          "Cross-functional collaboration"
+        ]
+      },
+      {
+        "job_competency": "Discretion and sound judgment",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7097,
+        "evidence": {
+          "tfidf_score": 0.17042523339882035,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5008600314282385,
+          "semantic_score": 0.2190297544002533,
+          "matched_candidate_competency": "Training and mentoring"
+        },
+        "candidate_evidence": [
+          "Training and mentoring"
+        ]
+      },
+      {
+        "job_competency": "Adaptability and flexibility",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6904,
+        "evidence": {
+          "tfidf_score": 0.20157807371797906,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5008600314282385,
+          "semantic_score": 0.31682321429252625,
+          "matched_candidate_competency": "Training and mentoring"
+        },
+        "candidate_evidence": [
+          "Training and mentoring"
+        ]
+      },
+      {
+        "job_competency": "Fast-paced work environment",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6847,
+        "evidence": {
+          "tfidf_score": 0.007084066381026648,
+          "tfidf_matched_terms": [
+            "work"
+          ],
+          "bm25_score": 2.6175458907567863,
+          "semantic_score": 0.3363139033317566,
+          "matched_candidate_competency": "Coordinated and assigned work for the electrical engineering department."
+        },
+        "candidate_evidence": [
+          "Coordinated and assigned work for the electrical engineering department."
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Written and verbal communication"
+    ],
+    "partial_matches": [
+      "Organization and planning",
+      "Prioritization and time management",
+      "Independent and team collaboration"
+    ],
+    "weak_matches": [
+      "Firm computer software",
+      "Ability to learn software and operating systems",
+      "International payroll issues for expatriates",
+      "U.S. and international payroll tax rules",
+      "Attention to detail",
+      "Multitasking and shifting priorities",
+      "Confidentiality",
+      "Discretion and sound judgment",
+      "Adaptability and flexibility",
+      "Fast-paced work environment"
+    ],
+    "missing": [
+      "Microsoft Excel",
+      "Advanced Excel functions",
+      "Tax accounting",
+      "Analytical skills",
+      "Problem solving",
+      "Troubleshooting"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Written and verbal communication"
+    ],
+    "partial_matches": [
+      "Organization and planning",
+      "Prioritization and time management",
+      "Independent and team collaboration"
+    ],
+    "competency_gaps": [
+      "Firm computer software",
+      "Ability to learn software and operating systems",
+      "International payroll issues for expatriates",
+      "U.S. and international payroll tax rules",
+      "Attention to detail",
+      "Multitasking and shifting priorities",
+      "Confidentiality",
+      "Discretion and sound judgment",
+      "Adaptability and flexibility",
+      "Fast-paced work environment",
+      "Microsoft Excel",
+      "Advanced Excel functions",
+      "Tax accounting",
+      "Analytical skills",
+      "Problem solving",
+      "Troubleshooting"
+    ]
+  },
+  "counts": {
+    "requirements": 20,
+    "strength_matches": 1,
+    "partial_matches": 3,
+    "competency_gaps": 16
+  },
+  "latency_ms": 48.09,
+  "analyzed_at": "2026-10-03T17:29:44.238171+00:00"
+}

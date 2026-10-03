@@ -1,0 +1,329 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00901_b6ab820b3bec",
+  "jd_id": "rjf_00901_b6ab820b3bec",
+  "pair_id": "rjf_00901_b6ab820b3bec",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Python",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.922,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3901834785938263,
+          "matched_candidate_competency": "Excavator operation"
+        },
+        "candidate_evidence": [
+          "Excavator operation"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7241,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4744378924369812,
+          "matched_candidate_competency": "Excavator operation"
+        },
+        "candidate_evidence": [
+          "Excavator operation"
+        ]
+      },
+      {
+        "job_competency": "R",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.941,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2951560616493225,
+          "matched_candidate_competency": "Excavator operation"
+        },
+        "candidate_evidence": [
+          "Excavator operation"
+        ]
+      },
+      {
+        "job_competency": "PySpark",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9395,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.302266001701355,
+          "matched_candidate_competency": "Excavator operation"
+        },
+        "candidate_evidence": [
+          "Excavator operation"
+        ]
+      },
+      {
+        "job_competency": "Scala",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9366,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31705471873283386,
+          "matched_candidate_competency": "Excavator operation"
+        },
+        "candidate_evidence": [
+          "Excavator operation"
+        ]
+      },
+      {
+        "job_competency": "Data analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7081,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5743997097015381,
+          "matched_candidate_competency": "Excavator operation"
+        },
+        "candidate_evidence": [
+          "Excavator operation"
+        ]
+      },
+      {
+        "job_competency": "Large-scale data manipulation and harmonization",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6937,
+        "evidence": {
+          "tfidf_score": 0.12676943856657444,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.2331942742918427,
+          "semantic_score": 0.33763587474823,
+          "matched_candidate_competency": "IT and accounting"
+        },
+        "candidate_evidence": [
+          "IT and accounting"
+        ]
+      },
+      {
+        "job_competency": "ETL tools",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9392,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3038032054901123,
+          "matched_candidate_competency": "Excavator operation"
+        },
+        "candidate_evidence": [
+          "Excavator operation"
+        ]
+      },
+      {
+        "job_competency": "Patient journey analytics",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3752,
+        "evidence": {
+          "tfidf_score": 0.017380603363963982,
+          "tfidf_matched_terms": [
+            "analytics"
+          ],
+          "bm25_score": 3.9871656971240763,
+          "semantic_score": 0.48463770747184753,
+          "matched_candidate_competency": "Business Analytics"
+        },
+        "candidate_evidence": [
+          "Business Analytics"
+        ]
+      },
+      {
+        "job_competency": "Bachelor's degree in Data Management, Computer Science, or related field",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6794,
+        "evidence": {
+          "tfidf_score": 0.008488926641856685,
+          "tfidf_matched_terms": [
+            "in"
+          ],
+          "bm25_score": 2.2020953403759256,
+          "semantic_score": 0.3330824077129364,
+          "matched_candidate_competency": "Excavated sand by diving in the sea."
+        },
+        "candidate_evidence": [
+          "Excavated sand by diving in the sea."
+        ]
+      },
+      {
+        "job_competency": "Direct employment by ASK Consulting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6602,
+        "evidence": {
+          "tfidf_score": 0.02749265081346838,
+          "tfidf_matched_terms": [
+            "by",
+            "direct"
+          ],
+          "bm25_score": 2.2020953403759256,
+          "semantic_score": 0.43905961513519287,
+          "matched_candidate_competency": "Excavated sand by diving in the sea."
+        },
+        "candidate_evidence": [
+          "Excavated sand by diving in the sea."
+        ]
+      },
+      {
+        "job_competency": "Tableau",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5626,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3113965690135956,
+          "matched_candidate_competency": "Excavator operation"
+        },
+        "candidate_evidence": [
+          "Excavator operation"
+        ]
+      },
+      {
+        "job_competency": "Business intelligence visualization tools",
+        "priority": "preferred",
+        "match_label": "partial_match",
+        "weight": 0.2246,
+        "evidence": {
+          "tfidf_score": 0.029453556966987007,
+          "tfidf_matched_terms": [
+            "business"
+          ],
+          "bm25_score": 3.3272117944258093,
+          "semantic_score": 0.6089865565299988,
+          "matched_candidate_competency": "Business Analytics"
+        },
+        "candidate_evidence": [
+          "Business Analytics"
+        ]
+      },
+      {
+        "job_competency": "Hadoop and big data platforms",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.428,
+        "evidence": {
+          "tfidf_score": 0.14013123242607045,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.2331942742918427,
+          "semantic_score": 0.20490972697734833,
+          "matched_candidate_competency": "IT and accounting"
+        },
+        "candidate_evidence": [
+          "IT and accounting"
+        ]
+      },
+      {
+        "job_competency": "A/B testing",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4078,
+        "evidence": {
+          "tfidf_score": 0.01738060336396398,
+          "tfidf_matched_terms": [
+            "a"
+          ],
+          "bm25_score": 2.6824778540315806,
+          "semantic_score": 0.23431618511676788,
+          "matched_candidate_competency": "Excavated sand using a dredger."
+        },
+        "candidate_evidence": [
+          "Excavated sand using a dredger."
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Patient journey analytics",
+      "Business intelligence visualization tools"
+    ],
+    "weak_matches": [
+      "SQL",
+      "Data analysis",
+      "Large-scale data manipulation and harmonization",
+      "Bachelor's degree in Data Management, Computer Science, or related field",
+      "Direct employment by ASK Consulting",
+      "Hadoop and big data platforms",
+      "A/B testing"
+    ],
+    "missing": [
+      "Python",
+      "R",
+      "PySpark",
+      "Scala",
+      "ETL tools",
+      "Tableau"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Patient journey analytics",
+      "Business intelligence visualization tools"
+    ],
+    "competency_gaps": [
+      "SQL",
+      "Data analysis",
+      "Large-scale data manipulation and harmonization",
+      "Bachelor's degree in Data Management, Computer Science, or related field",
+      "Direct employment by ASK Consulting",
+      "Hadoop and big data platforms",
+      "A/B testing",
+      "Python",
+      "R",
+      "PySpark",
+      "Scala",
+      "ETL tools",
+      "Tableau"
+    ]
+  },
+  "counts": {
+    "requirements": 15,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 13
+  },
+  "latency_ms": 31.5,
+  "analyzed_at": "2026-10-03T17:29:43.640206+00:00"
+}

@@ -1,0 +1,371 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_02504_db685bfadf48",
+  "jd_id": "rjf_02504_db685bfadf48",
+  "pair_id": "rjf_02504_db685bfadf48",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "C",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9313,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3436374068260193,
+          "matched_candidate_competency": "Microsoft Office Suite"
+        },
+        "candidate_evidence": [
+          "Microsoft Office Suite"
+        ]
+      },
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7308,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4326747953891754,
+          "matched_candidate_competency": "Microsoft Office Suite"
+        },
+        "candidate_evidence": [
+          "Microsoft Office Suite"
+        ]
+      },
+      {
+        "job_competency": "Software engineering leadership",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3992,
+        "evidence": {
+          "tfidf_score": 0.04527374070131996,
+          "tfidf_matched_terms": [
+            "leadership",
+            "software"
+          ],
+          "bm25_score": 3.7022604653854287,
+          "semantic_score": 0.4105459451675415,
+          "matched_candidate_competency": "CRM software"
+        },
+        "candidate_evidence": [
+          "CRM software"
+        ]
+      },
+      {
+        "job_competency": "Financial services or payments processing",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3724,
+        "evidence": {
+          "tfidf_score": 0.07400254306470945,
+          "tfidf_matched_terms": [
+            "financial",
+            "or",
+            "payments",
+            "services"
+          ],
+          "bm25_score": 3.7022604653854287,
+          "semantic_score": 0.6571432948112488,
+          "matched_candidate_competency": "Financial reporting"
+        },
+        "candidate_evidence": [
+          "Financial reporting"
+        ]
+      },
+      {
+        "job_competency": "Executive communication",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3621,
+        "evidence": {
+          "tfidf_score": 0.01305379566185687,
+          "tfidf_matched_terms": [
+            "communication"
+          ],
+          "bm25_score": 4.9313552530725655,
+          "semantic_score": 0.6196916699409485,
+          "matched_candidate_competency": "Interpersonal communication"
+        },
+        "candidate_evidence": [
+          "Interpersonal communication"
+        ]
+      },
+      {
+        "job_competency": "Hands-on software engineering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6444,
+        "evidence": {
+          "tfidf_score": 0.037004144137345846,
+          "tfidf_matched_terms": [
+            "on",
+            "software"
+          ],
+          "bm25_score": 3.7022604653854287,
+          "semantic_score": 0.3813742697238922,
+          "matched_candidate_competency": "CRM software"
+        },
+        "candidate_evidence": [
+          "CRM software"
+        ]
+      },
+      {
+        "job_competency": "Resilient service design and support",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3742,
+        "evidence": {
+          "tfidf_score": 0.2426431036460333,
+          "tfidf_matched_terms": [
+            "and",
+            "service"
+          ],
+          "bm25_score": 3.7022604653854287,
+          "semantic_score": 0.5125417709350586,
+          "matched_candidate_competency": "Customer service"
+        },
+        "candidate_evidence": [
+          "Customer service"
+        ]
+      },
+      {
+        "job_competency": "Technical solution design",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7161,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5246313810348511,
+          "matched_candidate_competency": "Microsoft Office Suite"
+        },
+        "candidate_evidence": [
+          "Microsoft Office Suite"
+        ]
+      },
+      {
+        "job_competency": "Cross-functional team management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3873,
+        "evidence": {
+          "tfidf_score": 0.02771870937631228,
+          "tfidf_matched_terms": [
+            "management",
+            "team"
+          ],
+          "bm25_score": 4.9313552530725655,
+          "semantic_score": 0.35596519708633423,
+          "matched_candidate_competency": "Time management"
+        },
+        "candidate_evidence": [
+          "Time management"
+        ]
+      },
+      {
+        "job_competency": "DevOps collaboration",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7357,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.402157187461853,
+          "matched_candidate_competency": "Microsoft Office Suite"
+        },
+        "candidate_evidence": [
+          "Microsoft Office Suite"
+        ]
+      },
+      {
+        "job_competency": "AIX",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9343,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32830068469047546,
+          "matched_candidate_competency": "Microsoft Office Suite"
+        },
+        "candidate_evidence": [
+          "Microsoft Office Suite"
+        ]
+      },
+      {
+        "job_competency": "Public cloud",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9205,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3973955512046814,
+          "matched_candidate_competency": "Microsoft Office Suite"
+        },
+        "candidate_evidence": [
+          "Microsoft Office Suite"
+        ]
+      },
+      {
+        "job_competency": "AWS",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7119,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5505298376083374,
+          "matched_candidate_competency": "Microsoft Office Suite"
+        },
+        "candidate_evidence": [
+          "Microsoft Office Suite"
+        ]
+      },
+      {
+        "job_competency": "Azure",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7318,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4261704981327057,
+          "matched_candidate_competency": "Microsoft Office Suite"
+        },
+        "candidate_evidence": [
+          "Microsoft Office Suite"
+        ]
+      },
+      {
+        "job_competency": "Google Cloud Platform",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9284,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3579452633857727,
+          "matched_candidate_competency": "Microsoft Office Suite"
+        },
+        "candidate_evidence": [
+          "Microsoft Office Suite"
+        ]
+      },
+      {
+        "job_competency": "AIX",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5606,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.32830068469047546,
+          "matched_candidate_competency": "Microsoft Office Suite"
+        },
+        "candidate_evidence": [
+          "Microsoft Office Suite"
+        ]
+      },
+      {
+        "job_competency": "Public cloud solution development",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.3845,
+        "evidence": {
+          "tfidf_score": 0.008555854787089043,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 4.408631596246873,
+          "semantic_score": 0.31802546977996826,
+          "matched_candidate_competency": "Training and development"
+        },
+        "candidate_evidence": [
+          "Training and development"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Software engineering leadership",
+      "Financial services or payments processing",
+      "Executive communication",
+      "Resilient service design and support",
+      "Cross-functional team management"
+    ],
+    "weak_matches": [
+      "Java",
+      "Hands-on software engineering",
+      "Technical solution design",
+      "DevOps collaboration",
+      "AWS",
+      "Azure",
+      "Public cloud solution development"
+    ],
+    "missing": [
+      "C",
+      "AIX",
+      "Public cloud",
+      "Google Cloud Platform",
+      "AIX"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Software engineering leadership",
+      "Financial services or payments processing",
+      "Executive communication",
+      "Resilient service design and support",
+      "Cross-functional team management"
+    ],
+    "competency_gaps": [
+      "Java",
+      "Hands-on software engineering",
+      "Technical solution design",
+      "DevOps collaboration",
+      "AWS",
+      "Azure",
+      "Public cloud solution development",
+      "C",
+      "AIX",
+      "Public cloud",
+      "Google Cloud Platform",
+      "AIX"
+    ]
+  },
+  "counts": {
+    "requirements": 17,
+    "strength_matches": 0,
+    "partial_matches": 5,
+    "competency_gaps": 12
+  },
+  "latency_ms": 37.62,
+  "analyzed_at": "2026-10-03T17:29:45.598174+00:00"
+}

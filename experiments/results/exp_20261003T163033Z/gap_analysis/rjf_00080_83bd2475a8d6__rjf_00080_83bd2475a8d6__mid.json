@@ -1,0 +1,237 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00080_83bd2475a8d6",
+  "jd_id": "rjf_00080_83bd2475a8d6",
+  "pair_id": "rjf_00080_83bd2475a8d6",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Machine learning",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9209,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3953612446784973,
+          "matched_candidate_competency": "Electrical Systems Specifications"
+        },
+        "candidate_evidence": [
+          "Electrical Systems Specifications"
+        ]
+      },
+      {
+        "job_competency": "Machine learning models at scale",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9469,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.265422523021698,
+          "matched_candidate_competency": "Electrical Systems Specifications"
+        },
+        "candidate_evidence": [
+          "Electrical Systems Specifications"
+        ]
+      },
+      {
+        "job_competency": "Programming in C/C++ and Java",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9097,
+        "evidence": {
+          "tfidf_score": 0.19248422515864932,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.266058811631485,
+          "semantic_score": 0.25678372383117676,
+          "matched_candidate_competency": "Diagnosis and Troubleshooting"
+        },
+        "candidate_evidence": [
+          "Diagnosis and Troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "Scripting languages",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9462,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.268770694732666,
+          "matched_candidate_competency": "Electrical Systems Specifications"
+        },
+        "candidate_evidence": [
+          "Electrical Systems Specifications"
+        ]
+      },
+      {
+        "job_competency": "Technical leadership",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7265,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.45924466848373413,
+          "matched_candidate_competency": "Electrical Systems Specifications"
+        },
+        "candidate_evidence": [
+          "Electrical Systems Specifications"
+        ]
+      },
+      {
+        "job_competency": "Scalable classifiers and ML tools",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7065,
+        "evidence": {
+          "tfidf_score": 0.21277251046507994,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.266058811631485,
+          "semantic_score": 0.3748086988925934,
+          "matched_candidate_competency": "Diagnosis and Troubleshooting"
+        },
+        "candidate_evidence": [
+          "Diagnosis and Troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "Data regression and rules-based models",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3803,
+        "evidence": {
+          "tfidf_score": 0.21307910944769196,
+          "tfidf_matched_terms": [
+            "and",
+            "data"
+          ],
+          "bm25_score": 3.975521130178162,
+          "semantic_score": 0.2869124412536621,
+          "matched_candidate_competency": "Data Collection"
+        },
+        "candidate_evidence": [
+          "Data Collection"
+        ]
+      },
+      {
+        "job_competency": "Requirements synthesis and feature roadmapping",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7139,
+        "evidence": {
+          "tfidf_score": 0.21277251046507994,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.266058811631485,
+          "semantic_score": 0.3280772268772125,
+          "matched_candidate_competency": "Diagnosis and Troubleshooting"
+        },
+        "candidate_evidence": [
+          "Diagnosis and Troubleshooting"
+        ]
+      },
+      {
+        "job_competency": "ML systems performance and evaluation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3922,
+        "evidence": {
+          "tfidf_score": 0.3108923666643719,
+          "tfidf_matched_terms": [
+            "and",
+            "performance",
+            "systems"
+          ],
+          "bm25_score": 2.3287187353378016,
+          "semantic_score": 0.40505093336105347,
+          "matched_candidate_competency": "Reviewed employee performance to correct issues and enhance productivity."
+        },
+        "candidate_evidence": [
+          "Reviewed employee performance to correct issues and enhance productivity."
+        ]
+      },
+      {
+        "job_competency": "Large-scale software architecture",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5601,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33280736207962036,
+          "matched_candidate_competency": "Electrical Systems Specifications"
+        },
+        "candidate_evidence": [
+          "Electrical Systems Specifications"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Data regression and rules-based models",
+      "ML systems performance and evaluation"
+    ],
+    "weak_matches": [
+      "Technical leadership",
+      "Scalable classifiers and ML tools",
+      "Requirements synthesis and feature roadmapping"
+    ],
+    "missing": [
+      "Machine learning",
+      "Machine learning models at scale",
+      "Programming in C/C++ and Java",
+      "Scripting languages",
+      "Large-scale software architecture"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Data regression and rules-based models",
+      "ML systems performance and evaluation"
+    ],
+    "competency_gaps": [
+      "Technical leadership",
+      "Scalable classifiers and ML tools",
+      "Requirements synthesis and feature roadmapping",
+      "Machine learning",
+      "Machine learning models at scale",
+      "Programming in C/C++ and Java",
+      "Scripting languages",
+      "Large-scale software architecture"
+    ]
+  },
+  "counts": {
+    "requirements": 10,
+    "strength_matches": 0,
+    "partial_matches": 2,
+    "competency_gaps": 8
+  },
+  "latency_ms": 22.44,
+  "analyzed_at": "2026-10-03T17:29:42.318561+00:00"
+}

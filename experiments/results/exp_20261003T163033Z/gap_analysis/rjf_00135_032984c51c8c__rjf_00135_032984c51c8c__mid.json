@@ -1,0 +1,243 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00135_032984c51c8c",
+  "jd_id": "rjf_00135_032984c51c8c",
+  "pair_id": "rjf_00135_032984c51c8c",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Financial statement preparation",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.933,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.33509010076522827,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Journal entry preparation and posting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7025,
+        "evidence": {
+          "tfidf_score": 0.16105321210977394,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.8706751401188204,
+          "semantic_score": 0.23396512866020203,
+          "matched_candidate_competency": "Prepared and presented design and technical proposals"
+        },
+        "candidate_evidence": [
+          "Prepared and presented design and technical proposals"
+        ]
+      },
+      {
+        "job_competency": "Accounting processes, regulations, and procedures",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6856,
+        "evidence": {
+          "tfidf_score": 0.16105321210977394,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.8706751401188204,
+          "semantic_score": 0.3398292064666748,
+          "matched_candidate_competency": "Prepared and presented design and technical proposals"
+        },
+        "candidate_evidence": [
+          "Prepared and presented design and technical proposals"
+        ]
+      },
+      {
+        "job_competency": "Financial analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.657,
+        "evidence": {
+          "tfidf_score": 0.03880261390739604,
+          "tfidf_matched_terms": [
+            "analysis"
+          ],
+          "bm25_score": 3.799080600381707,
+          "semantic_score": 0.3477932810783386,
+          "matched_candidate_competency": "Requirements analysis"
+        },
+        "candidate_evidence": [
+          "Requirements analysis"
+        ]
+      },
+      {
+        "job_competency": "Technical issue analysis",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3889,
+        "evidence": {
+          "tfidf_score": 0.06728571188815197,
+          "tfidf_matched_terms": [
+            "analysis",
+            "technical"
+          ],
+          "bm25_score": 3.799080600381707,
+          "semantic_score": 0.5436362624168396,
+          "matched_candidate_competency": "Requirements analysis"
+        },
+        "candidate_evidence": [
+          "Requirements analysis"
+        ]
+      },
+      {
+        "job_competency": "Computer systems and software use",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3896,
+        "evidence": {
+          "tfidf_score": 0.2396163204232348,
+          "tfidf_matched_terms": [
+            "and",
+            "software",
+            "systems"
+          ],
+          "bm25_score": 3.1357736954753648,
+          "semantic_score": 0.4974118769168854,
+          "matched_candidate_competency": "High availability systems"
+        },
+        "candidate_evidence": [
+          "High availability systems"
+        ]
+      },
+      {
+        "job_competency": "Windows PC",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1717,
+        "evidence": {
+          "tfidf_score": 0.01936959620821195,
+          "tfidf_matched_terms": [
+            "windows"
+          ],
+          "bm25_score": 5.5120462001569175,
+          "semantic_score": 0.8010663390159607,
+          "matched_candidate_competency": "Windows"
+        },
+        "candidate_evidence": [
+          "Windows"
+        ]
+      },
+      {
+        "job_competency": "Web browsing",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7236,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.47747546434402466,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Microsoft Outlook",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9365,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.31730568408966064,
+          "matched_candidate_competency": "Java"
+        },
+        "candidate_evidence": [
+          "Java"
+        ]
+      },
+      {
+        "job_competency": "Issue recognition and communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6733,
+        "evidence": {
+          "tfidf_score": 0.18258103960276112,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.8706751401188204,
+          "semantic_score": 0.4003196656703949,
+          "matched_candidate_competency": "Prepared and presented design and technical proposals"
+        },
+        "candidate_evidence": [
+          "Prepared and presented design and technical proposals"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "Windows PC"
+    ],
+    "partial_matches": [
+      "Technical issue analysis",
+      "Computer systems and software use"
+    ],
+    "weak_matches": [
+      "Journal entry preparation and posting",
+      "Accounting processes, regulations, and procedures",
+      "Financial analysis",
+      "Web browsing",
+      "Issue recognition and communication"
+    ],
+    "missing": [
+      "Financial statement preparation",
+      "Microsoft Outlook"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "Windows PC"
+    ],
+    "partial_matches": [
+      "Technical issue analysis",
+      "Computer systems and software use"
+    ],
+    "competency_gaps": [
+      "Journal entry preparation and posting",
+      "Accounting processes, regulations, and procedures",
+      "Financial analysis",
+      "Web browsing",
+      "Issue recognition and communication",
+      "Financial statement preparation",
+      "Microsoft Outlook"
+    ]
+  },
+  "counts": {
+    "requirements": 10,
+    "strength_matches": 1,
+    "partial_matches": 2,
+    "competency_gaps": 7
+  },
+  "latency_ms": 31.7,
+  "analyzed_at": "2026-10-03T17:29:42.440258+00:00"
+}

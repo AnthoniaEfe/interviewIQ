@@ -1,0 +1,296 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01543_54d041deaffb",
+  "jd_id": "rjf_01543_54d041deaffb",
+  "pair_id": "rjf_01543_54d041deaffb",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Analog and digital circuit design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3748,
+        "evidence": {
+          "tfidf_score": 0.2736422969730624,
+          "tfidf_matched_terms": [
+            "and",
+            "digital"
+          ],
+          "bm25_score": 3.6473043945794354,
+          "semantic_score": 0.4622187614440918,
+          "matched_candidate_competency": "Digital imaging"
+        },
+        "candidate_evidence": [
+          "Digital imaging"
+        ]
+      },
+      {
+        "job_competency": "Analog signal conditioning",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9452,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2741810381412506,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "DC-DC power conversion",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9715,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.14241671562194824,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Communication interface design",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3689,
+        "evidence": {
+          "tfidf_score": 0.024967724886393518,
+          "tfidf_matched_terms": [
+            "communication",
+            "interface"
+          ],
+          "bm25_score": 4.6766605345705505,
+          "semantic_score": 0.5423279404640198,
+          "matched_candidate_competency": "Communication"
+        },
+        "candidate_evidence": [
+          "Communication"
+        ]
+      },
+      {
+        "job_competency": "Electrical hardware integration, testing, troubleshooting, and verification",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7216,
+        "evidence": {
+          "tfidf_score": 0.19757288819122595,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.48296244064570565,
+          "semantic_score": 0.2645619511604309,
+          "matched_candidate_competency": "Identified and resolved customer and company issues."
+        },
+        "candidate_evidence": [
+          "Identified and resolved customer and company issues."
+        ]
+      },
+      {
+        "job_competency": "Test criteria development and test-system design support",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3907,
+        "evidence": {
+          "tfidf_score": 0.19784609783179724,
+          "tfidf_matched_terms": [
+            "and",
+            "support",
+            "system"
+          ],
+          "bm25_score": 3.279235461396476,
+          "semantic_score": 0.4191673994064331,
+          "matched_candidate_competency": "Digital imaging system"
+        },
+        "candidate_evidence": [
+          "Digital imaging system"
+        ]
+      },
+      {
+        "job_competency": "Component and architecture trade studies",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6968,
+        "evidence": {
+          "tfidf_score": 0.23740243562912816,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.48296244064570565,
+          "semantic_score": 0.3893655240535736,
+          "matched_candidate_competency": "Identified and resolved customer and company issues."
+        },
+        "candidate_evidence": [
+          "Identified and resolved customer and company issues."
+        ]
+      },
+      {
+        "job_competency": "Engineering development life cycle",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7332,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4174237847328186,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Switch-mode DC-DC converter design and debugging",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.927,
+        "evidence": {
+          "tfidf_score": 0.16345117343768362,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.48296244064570565,
+          "semantic_score": 0.16509076952934265,
+          "matched_candidate_competency": "Identified and resolved customer and company issues."
+        },
+        "candidate_evidence": [
+          "Identified and resolved customer and company issues."
+        ]
+      },
+      {
+        "job_competency": "Control-loop stability analysis",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9791,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.1044631153345108,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "RS-422, RS-485, and LVDS",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9137,
+        "evidence": {
+          "tfidf_score": 0.1839421179798564,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 0.48296244064570565,
+          "semantic_score": 0.2162754237651825,
+          "matched_candidate_competency": "Identified and resolved customer and company issues."
+        },
+        "candidate_evidence": [
+          "Identified and resolved customer and company issues."
+        ]
+      },
+      {
+        "job_competency": "Electronic laboratory equipment",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9384,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3080434203147888,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "US citizenship",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9501,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.24956785142421722,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Analog and digital circuit design",
+      "Communication interface design",
+      "Test criteria development and test-system design support"
+    ],
+    "weak_matches": [
+      "Electrical hardware integration, testing, troubleshooting, and verification",
+      "Component and architecture trade studies",
+      "Engineering development life cycle"
+    ],
+    "missing": [
+      "Analog signal conditioning",
+      "DC-DC power conversion",
+      "Switch-mode DC-DC converter design and debugging",
+      "Control-loop stability analysis",
+      "RS-422, RS-485, and LVDS",
+      "Electronic laboratory equipment",
+      "US citizenship"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Analog and digital circuit design",
+      "Communication interface design",
+      "Test criteria development and test-system design support"
+    ],
+    "competency_gaps": [
+      "Electrical hardware integration, testing, troubleshooting, and verification",
+      "Component and architecture trade studies",
+      "Engineering development life cycle",
+      "Analog signal conditioning",
+      "DC-DC power conversion",
+      "Switch-mode DC-DC converter design and debugging",
+      "Control-loop stability analysis",
+      "RS-422, RS-485, and LVDS",
+      "Electronic laboratory equipment",
+      "US citizenship"
+    ]
+  },
+  "counts": {
+    "requirements": 13,
+    "strength_matches": 0,
+    "partial_matches": 3,
+    "competency_gaps": 10
+  },
+  "latency_ms": 32.26,
+  "analyzed_at": "2026-10-03T17:29:44.271193+00:00"
+}

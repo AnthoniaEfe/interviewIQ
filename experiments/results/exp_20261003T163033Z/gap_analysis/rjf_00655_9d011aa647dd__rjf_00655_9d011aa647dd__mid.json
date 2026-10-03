@@ -1,0 +1,175 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00655_9d011aa647dd",
+  "jd_id": "rjf_00655_9d011aa647dd",
+  "pair_id": "rjf_00655_9d011aa647dd",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Java",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7333,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.41677939891815186,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Low-latency techniques",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6634,
+        "evidence": {
+          "tfidf_score": 0.007291239945834827,
+          "tfidf_matched_terms": [
+            "low"
+          ],
+          "bm25_score": 2.3642512237143056,
+          "semantic_score": 0.3102582097053528,
+          "matched_candidate_competency": "Managed the gift kiosk, maintained inventory, and ordered items when stock was low."
+        },
+        "candidate_evidence": [
+          "Managed the gift kiosk, maintained inventory, and ordered items when stock was low."
+        ]
+      },
+      {
+        "job_competency": "Multithreaded concurrency programming",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9313,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.34328919649124146,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Lock-free algorithms",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9454,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.27282071113586426,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Distributed systems design and development",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3558,
+        "evidence": {
+          "tfidf_score": 0.26183284472809937,
+          "tfidf_matched_terms": [
+            "and",
+            "distributed"
+          ],
+          "bm25_score": 3.294854222452921,
+          "semantic_score": 0.4954761266708374,
+          "matched_candidate_competency": "Distributed incoming mail."
+        },
+        "candidate_evidence": [
+          "Distributed incoming mail."
+        ]
+      },
+      {
+        "job_competency": "Buy-side firm experience",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7264,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.46020498871803284,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Stakeholder interaction",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9254,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.37305358052253723,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Distributed systems design and development"
+    ],
+    "weak_matches": [
+      "Java",
+      "Low-latency techniques",
+      "Buy-side firm experience"
+    ],
+    "missing": [
+      "Multithreaded concurrency programming",
+      "Lock-free algorithms",
+      "Stakeholder interaction"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Distributed systems design and development"
+    ],
+    "competency_gaps": [
+      "Java",
+      "Low-latency techniques",
+      "Buy-side firm experience",
+      "Multithreaded concurrency programming",
+      "Lock-free algorithms",
+      "Stakeholder interaction"
+    ]
+  },
+  "counts": {
+    "requirements": 7,
+    "strength_matches": 0,
+    "partial_matches": 1,
+    "competency_gaps": 6
+  },
+  "latency_ms": 24.92,
+  "analyzed_at": "2026-10-03T17:29:43.232697+00:00"
+}

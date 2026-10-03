@@ -1,0 +1,908 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "extraction",
+  "profile_id": "rjf_02102_86dda95c642c",
+  "jd_id": "rjf_02102_86dda95c642c",
+  "pair_id": "rjf_02102_86dda95c642c",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Logical Data Analyst skilled in requirement analysis, software development, database management, and collecting, cleaning, and interpreting data sets. Strong cross-functional understanding of information technology and business processes.",
+    "seniority_indicators": [
+      "5 years of experience stated in the summary",
+      "Data Analyst experience from 10/2017 to 03/2020 and 01/2022 to Current",
+      "Managed diverse projects for data capture, storage, and forecast analysis"
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Science",
+        "institution": "Utah Tech University",
+        "field": "Business Administration \u2013 MIS",
+        "year": "Expected 05/2017",
+        "source_text": "Bachelor of Science|Business Administration \u2013 MIS, Utah Tech University"
+      },
+      {
+        "degree": "Master of Science",
+        "institution": "University of Utah",
+        "field": "Business Analytics",
+        "year": "Expected",
+        "source_text": "Master of Science|Business Analytics, University of Utah"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Data Analyst",
+        "employer": "Granicus",
+        "duration": "01/2022 to Current",
+        "responsibilities": [
+          "Conducted data analysis to prepare forecasts and identify trends",
+          "Generated reports and analytics on key performance and operational metrics",
+          "Partnered with data scientists on research and analytics initiatives",
+          "Worked with internal teams to understand business needs and changing strategies",
+          "Created business intelligence databases, spreadsheets, and outputs",
+          "Managed projects for data capture, storage, and forecast analysis"
+        ],
+        "achievements": [
+          "Developed a credit scoring matrix for personal loans using linear and logistic predictive models",
+          "Implemented internal Power BI reporting for forecasting and delinquency comparisons",
+          "Built data stories and visualizations to influence decision makers"
+        ],
+        "technologies": [
+          "X-13ARIMA-SEATS",
+          "Power BI",
+          "Linear regression",
+          "Logistic regression",
+          "Yeo-Johnson Transformation"
+        ],
+        "source_text": "Conducted data analysis, forecasting, credit scoring, and Power BI reporting at Granicus."
+      },
+      {
+        "title": "Data Specialist",
+        "employer": "Ascension Health",
+        "duration": "02/2021 to 12/2021",
+        "responsibilities": [
+          "Used modeling and machine learning in R to analyze inpatient care to hospice",
+          "Generated customized reports on client data",
+          "Audited data for integrity and quality",
+          "Reconciled data to identify anomalies and corrected data errors",
+          "Extracted, imported, and exported data into database applications",
+          "Gathered data from multiple sources for databases"
+        ],
+        "achievements": [
+          "Created interactive Power BI reporting dashboards for internal operations",
+          "Developed and implemented a payroll system using SSRS",
+          "Implemented new data using a linked server with Microsoft SQL Server Management Studio"
+        ],
+        "technologies": [
+          "R",
+          "Power BI",
+          "SSRS",
+          "Microsoft SQL Server Management Studio"
+        ],
+        "source_text": "Analyzed healthcare data, audited data quality, created Power BI dashboards, and implemented reporting systems."
+      },
+      {
+        "title": "Report Developer",
+        "employer": "CGI Group Inc.",
+        "duration": "05/2020 to 10/2020",
+        "responsibilities": [
+          "Monitored and reported on key performance indicators",
+          "Assessed and prioritized reporting needs and strategies",
+          "Evaluated data sources and compiled data",
+          "Drafted and formatted reports according to data quality requirements"
+        ],
+        "achievements": [
+          "Streamlined reporting processes by redesigning report outputs"
+        ],
+        "technologies": [],
+        "source_text": "Monitored KPIs, evaluated data sources, and streamlined reporting processes."
+      },
+      {
+        "title": "Data Analyst",
+        "employer": "Granicus",
+        "duration": "10/2017 to 03/2020",
+        "responsibilities": [
+          "Audited internal data and processes to identify improvement initiatives",
+          "Generated analytics on key performance and operational metrics",
+          "Built data support and report generation for internal and external reporting",
+          "Assisted with administration and auditing of SQL databases",
+          "Created and maintained custom queries, views, and stored procedures using T-SQL",
+          "Assisted with change management validation and verification for data quality"
+        ],
+        "achievements": [
+          "Created business reports using large datasets, Crystal Reports, SQL, and MS Excel",
+          "Managed Crystal Reports distribution for daily, weekly, and monthly reports and dashboards"
+        ],
+        "technologies": [
+          "Crystal Reports",
+          "SQL",
+          "T-SQL",
+          "MS Excel"
+        ],
+        "source_text": "Audited data and SQL databases, developed reports, and maintained T-SQL queries, views, and stored procedures."
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "SQL",
+        "original_mentions": [
+          "Database Programming and SQL",
+          "SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Database Programming and SQL; Created and maintained SQL queries",
+          "source_section": "Skills; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "T-SQL",
+        "original_mentions": [
+          "T-SQL"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Created and maintained custom queries, views, and stored procedures using T-SQL",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "R",
+        "original_mentions": [
+          "R"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Modeling and machine learning in R",
+          "source_section": "Experience; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Python",
+        "original_mentions": [
+          "Python"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "R and Python",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Power BI",
+        "original_mentions": [
+          "power bi",
+          "Microsoft Power BI"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Implemented internal reporting using power bi; Utilized Microsoft Power BI",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Crystal Reports",
+        "original_mentions": [
+          "Crystal Reports",
+          "Crystal"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Business reports utilizing large datasets and Crystal Reports",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "SSRS",
+        "original_mentions": [
+          "SSRS"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Developed and implemented a new payroll system using SSRS",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft SQL Server Management Studio",
+        "original_mentions": [
+          "Microsoft SQL Server Management Studio"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Created a linked server with Microsoft SQL Server Management Studio",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data analysis",
+        "original_mentions": [
+          "Data Analysis",
+          "data analysis"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Data Analysis; Conducted data analysis to prepare forecasts",
+          "source_section": "Skills; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data mining",
+        "original_mentions": [
+          "Data Mining"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Data Mining",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data visualization",
+        "original_mentions": [
+          "Data Visualization and Presentations",
+          "visualizations"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Data Visualization and Presentations; Built data stories and visualizations",
+          "source_section": "Skills; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Reporting",
+        "original_mentions": [
+          "Reporting Tools",
+          "reporting"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Reporting Tools; Generated reports and reporting dashboards",
+          "source_section": "Skills; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Linear regression",
+        "original_mentions": [
+          "Linear regression",
+          "linear predictive models"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Linear and Logistic regression; linear predictive models",
+          "source_section": "Skills; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Logistic regression",
+        "original_mentions": [
+          "Logistic regression",
+          "logistic predictive models"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Linear and Logistic regression; logistic predictive models",
+          "source_section": "Skills; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Machine learning",
+        "original_mentions": [
+          "machine learning"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Machine learning using descriptive models",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Time series analysis",
+        "original_mentions": [
+          "time series analysis"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "X-13ARIMA-SEATS model for seasonal adjustment for time series analysis",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Yeo-Johnson Transformation",
+        "original_mentions": [
+          "Yeo-Johnson Transformation"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience using Yeo-Johnson Transformation",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data quality",
+        "original_mentions": [
+          "Data Quality",
+          "data quality"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Data Quality; Audited data regularly to guarantee data integrity and quality",
+          "source_section": "Skills; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Excel",
+        "original_mentions": [
+          "MS Excel"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Business reports utilizing MS Excel",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Analytical problem solving",
+        "original_mentions": [
+          "Analytical Problem Solving",
+          "Natural problem-solver"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Analytical Problem Solving; Natural problem-solver",
+          "source_section": "Summary; Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Cross-functional collaboration",
+        "original_mentions": [
+          "cross-functional understanding",
+          "Partnered with data scientists",
+          "Worked with internal teams"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Strong cross-functional understanding; Partnered with data scientists",
+          "source_section": "Summary; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Communication and presentations",
+        "original_mentions": [
+          "Presentations",
+          "Built compelling data stories"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "Data Visualization and Presentations; Built compelling data stories",
+          "source_section": "Skills; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Self-directed",
+        "original_mentions": [
+          "Self-directed"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Self-directed and proactive professional",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Proactive",
+        "original_mentions": [
+          "proactive"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Self-directed and proactive professional",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Business intelligence",
+        "original_mentions": [
+          "business intelligence databases"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Created and designed business intelligence databases",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Healthcare data analysis",
+        "original_mentions": [
+          "inpatient care to hospice",
+          "Ascension Health"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Analyzed inpatient care to hospice data at Ascension Health",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial and economic reporting",
+        "original_mentions": [
+          "business, financial or economic data"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Reports summarizing business, financial or economic data",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Credit scoring",
+        "original_mentions": [
+          "credit scoring matrix",
+          "internal scoring model"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Developed a new credit scoring matrix for personal loans",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Forecasting",
+        "original_mentions": [
+          "forecasts",
+          "forecast analysis"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Prepared forecasts and managed forecast analysis",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Business process analysis",
+        "original_mentions": [
+          "requirement analysis",
+          "business processes"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Skilled in requirement analysis and business processes",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": [
+      {
+        "normalized_label": "Requirement analysis",
+        "original_mentions": [
+          "requirement analysis"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skilled in requirement analysis",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Software development",
+        "original_mentions": [
+          "software development"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skilled in software development",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Database management",
+        "original_mentions": [
+          "database management"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Skilled in database management",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data collection",
+        "original_mentions": [
+          "collecting data",
+          "data capture"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience collecting data; data capture projects",
+          "source_section": "Summary; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data cleaning",
+        "original_mentions": [
+          "cleaning data",
+          "Corrected data errors"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience cleaning data; Corrected data errors",
+          "source_section": "Summary; Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Data interpretation",
+        "original_mentions": [
+          "interpreting data sets"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 1.0,
+        "source": {
+          "source_text": "Experience interpreting data sets",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ]
+  },
+  "job": {
+    "title": "Business Analyst",
+    "seniority": "Experienced",
+    "years_of_experience": null,
+    "responsibilities": [
+      "Analyze promo and defect data and create analyses and summaries as specified.",
+      "Perform root cause analyses.",
+      "Prepare training materials.",
+      "Define processes.",
+      "Produce documentation."
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "Data analysis",
+        "original_mentions": [
+          "Analyze promo & defect data",
+          "create analyses"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Analyze promo & defect data and create analyses",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Root cause analysis",
+        "original_mentions": [
+          "Root cause analyses"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Root cause analyses",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Process definition",
+        "original_mentions": [
+          "Process definition"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Process definition",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Documentation",
+        "original_mentions": [
+          "Documentation"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Documentation",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Training material preparation",
+        "original_mentions": [
+          "Preparation of training materials"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Preparation of training materials",
+          "source_section": null,
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [],
+    "education_requirements": [],
+    "certifications": [],
+    "domain_knowledge": [
+      {
+        "normalized_label": "Telecommunications promotions",
+        "original_mentions": [
+          "Telecom Promos"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Experienced Business Analyst in Telecom Promos",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Promo and defect data",
+        "original_mentions": [
+          "promo & defect data"
+        ],
+        "competency_type": "domain",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Analyze promo & defect data",
+          "source_section": null,
+          "origin": "job"
+        }
+      }
+    ],
+    "soft_skills": [],
+    "leadership_requirements": [],
+    "system_design_requirements": [],
+    "competencies": [
+      {
+        "normalized_label": "Business analysis",
+        "original_mentions": [
+          "Business Analyst"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experienced Business Analyst",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Data analysis",
+        "original_mentions": [
+          "Analyze promo & defect data",
+          "create analyses"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Analyze promo & defect data and create analyses",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Root cause analysis",
+        "original_mentions": [
+          "Root cause analyses"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Root cause analyses",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Process definition",
+        "original_mentions": [
+          "Process definition"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Process definition",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Documentation",
+        "original_mentions": [
+          "Documentation"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Documentation",
+          "source_section": null,
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Training material preparation",
+        "original_mentions": [
+          "Preparation of training materials"
+        ],
+        "competency_type": "other",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Preparation of training materials",
+          "source_section": null,
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 1872,
+    "output_tokens": 3103,
+    "cached_tokens": 1045,
+    "estimated_cost": 0.0039099,
+    "latency_ms": 19968.0,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 766,
+    "output_tokens": 1017,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0013736,
+    "latency_ms": 8653.03,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-10-03T17:01:15.593350+00:00",
+  "reused_from_experiment": null
+}

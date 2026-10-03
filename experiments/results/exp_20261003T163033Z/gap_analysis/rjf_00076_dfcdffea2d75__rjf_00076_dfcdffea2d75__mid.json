@@ -1,0 +1,200 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00076_dfcdffea2d75",
+  "jd_id": "rjf_00076_dfcdffea2d75",
+  "pair_id": "rjf_00076_dfcdffea2d75",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Data Engineering",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.674,
+        "evidence": {
+          "tfidf_score": 0.024274288579080167,
+          "tfidf_matched_terms": [
+            "data"
+          ],
+          "bm25_score": 2.5445943387627548,
+          "semantic_score": 0.4467359185218811,
+          "matched_candidate_competency": "Managed test data definition and acquisition."
+        },
+        "candidate_evidence": [
+          "Managed test data definition and acquisition."
+        ]
+      },
+      {
+        "job_competency": "MS SQL or SOQL",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3466,
+        "evidence": {
+          "tfidf_score": 0.007949957492315644,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 5.918847691778393,
+          "semantic_score": 0.7780410647392273,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "MS SQL data manipulation and querying",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3462,
+        "evidence": {
+          "tfidf_score": 0.18674238315525904,
+          "tfidf_matched_terms": [
+            "and",
+            "data",
+            "sql"
+          ],
+          "bm25_score": 5.918847691778393,
+          "semantic_score": 0.6475955247879028,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "SSIS",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7301,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.43705764412879944,
+          "matched_candidate_competency": "Arduino/YUN"
+        },
+        "candidate_evidence": [
+          "Arduino/YUN"
+        ]
+      },
+      {
+        "job_competency": "Salesforce",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.686,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.7125455141067505,
+          "matched_candidate_competency": "Arduino/YUN"
+        },
+        "candidate_evidence": [
+          "Arduino/YUN"
+        ]
+      },
+      {
+        "job_competency": "Salesforce data operations and SOQL",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3807,
+        "evidence": {
+          "tfidf_score": 0.22061269124826266,
+          "tfidf_matched_terms": [
+            "and",
+            "data",
+            "operations"
+          ],
+          "bm25_score": 4.2830909088955575,
+          "semantic_score": 0.48517459630966187,
+          "matched_candidate_competency": "Lab operations"
+        },
+        "candidate_evidence": [
+          "Lab operations"
+        ]
+      },
+      {
+        "job_competency": "Oracle or PostgreSQL",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4342,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4773505926132202,
+          "matched_candidate_competency": "Arduino/YUN"
+        },
+        "candidate_evidence": [
+          "Arduino/YUN"
+        ]
+      },
+      {
+        "job_competency": "Talend or Matillion",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5612,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3234834372997284,
+          "matched_candidate_competency": "Arduino/YUN"
+        },
+        "candidate_evidence": [
+          "Arduino/YUN"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "MS SQL or SOQL",
+      "MS SQL data manipulation and querying",
+      "Salesforce data operations and SOQL"
+    ],
+    "weak_matches": [
+      "Data Engineering",
+      "SSIS",
+      "Salesforce",
+      "Oracle or PostgreSQL"
+    ],
+    "missing": [
+      "Talend or Matillion"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "MS SQL or SOQL",
+      "MS SQL data manipulation and querying",
+      "Salesforce data operations and SOQL"
+    ],
+    "competency_gaps": [
+      "Data Engineering",
+      "SSIS",
+      "Salesforce",
+      "Oracle or PostgreSQL",
+      "Talend or Matillion"
+    ]
+  },
+  "counts": {
+    "requirements": 8,
+    "strength_matches": 0,
+    "partial_matches": 3,
+    "competency_gaps": 5
+  },
+  "latency_ms": 30.78,
+  "analyzed_at": "2026-10-03T17:29:42.295544+00:00"
+}

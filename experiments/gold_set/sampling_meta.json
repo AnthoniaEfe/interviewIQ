@@ -1,0 +1,66 @@
+{
+  "seed": 20261004,
+  "primary": {
+    "n_selected": 75,
+    "n_pairs": 30,
+    "stratum_population": {
+      "strong_match": 51,
+      "weak_match": 245,
+      "missing": 162,
+      "partial_match": 175
+    },
+    "stratum_sampled": {
+      "strong_match": 19,
+      "partial_match": 19,
+      "weak_match": 19,
+      "missing": 18
+    },
+    "fit_label_pairs": {
+      "Good Fit": 15,
+      "Potential Fit": 15
+    },
+    "targets": {
+      "strong_match": 19,
+      "partial_match": 19,
+      "weak_match": 19,
+      "missing": 18
+    }
+  },
+  "holdout": {
+    "n_selected": 75,
+    "n_pairs": 28,
+    "stratum_population": {
+      "partial_match": 108,
+      "missing": 168,
+      "weak_match": 206,
+      "strong_match": 33
+    },
+    "stratum_sampled": {
+      "strong_match": 19,
+      "partial_match": 19,
+      "weak_match": 19,
+      "missing": 18
+    },
+    "fit_label_pairs": {
+      "Good Fit": 14,
+      "Potential Fit": 14
+    },
+    "targets": {
+      "strong_match": 19,
+      "partial_match": 19,
+      "weak_match": 19,
+      "missing": 18
+    }
+  },
+  "n_main": 150,
+  "n_calibration": 10,
+  "git_commit": "3c355badee2d407801153182212a0f470da55c95",
+  "library_versions": {
+    "numpy": "2.1.2",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.8.0+cu128",
+    "sentence-transformers": "6.1.0",
+    "rank-bm25": "0.2.2"
+  }
+}

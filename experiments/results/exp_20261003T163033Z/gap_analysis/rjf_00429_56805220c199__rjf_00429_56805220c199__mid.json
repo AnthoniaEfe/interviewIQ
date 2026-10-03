@@ -1,0 +1,388 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00429_56805220c199",
+  "jd_id": "rjf_00429_56805220c199",
+  "pair_id": "rjf_00429_56805220c199",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Microsoft Dynamics 365",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3985,
+        "evidence": {
+          "tfidf_score": 0.035016911481875856,
+          "tfidf_matched_terms": [
+            "microsoft"
+          ],
+          "bm25_score": 3.714283257842311,
+          "semantic_score": 0.48793309926986694,
+          "matched_candidate_competency": "Microsoft Office"
+        },
+        "candidate_evidence": [
+          "Microsoft Office"
+        ]
+      },
+      {
+        "job_competency": "Dynamics 365 solution development",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6448,
+        "evidence": {
+          "tfidf_score": 0.0098425443048436,
+          "tfidf_matched_terms": [
+            "development"
+          ],
+          "bm25_score": 4.335292980676211,
+          "semantic_score": 0.37811270356178284,
+          "matched_candidate_competency": "Training and development"
+        },
+        "candidate_evidence": [
+          "Training and development"
+        ]
+      },
+      {
+        "job_competency": "Custom entities, workflows, and integrations",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.698,
+        "evidence": {
+          "tfidf_score": 0.16383915749058683,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.226902655962779,
+          "semantic_score": 0.3488854169845581,
+          "matched_candidate_competency": "Shipping and packaging"
+        },
+        "candidate_evidence": [
+          "Shipping and packaging"
+        ]
+      },
+      {
+        "job_competency": "X++",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9482,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.25899791717529297,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "C++",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9239,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3803449273109436,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7115,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5533871650695801,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "ADO",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9451,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2746484577655792,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Azure",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7254,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4664265811443329,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Software development lifecycle",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6398,
+        "evidence": {
+          "tfidf_score": 0.02599165575375938,
+          "tfidf_matched_terms": [
+            "development",
+            "software"
+          ],
+          "bm25_score": 4.335292980676211,
+          "semantic_score": 0.39723122119903564,
+          "matched_candidate_competency": "Training and development"
+        },
+        "candidate_evidence": [
+          "Training and development"
+        ]
+      },
+      {
+        "job_competency": "Scrum and Agile",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6941,
+        "evidence": {
+          "tfidf_score": 0.21969156567763642,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.226902655962779,
+          "semantic_score": 0.33187335729599,
+          "matched_candidate_competency": "Shipping and packaging"
+        },
+        "candidate_evidence": [
+          "Shipping and packaging"
+        ]
+      },
+      {
+        "job_competency": "Testing and debugging",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4078,
+        "evidence": {
+          "tfidf_score": 0.21969156567763642,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.226902655962779,
+          "semantic_score": 0.5915233492851257,
+          "matched_candidate_competency": "Shipping and packaging"
+        },
+        "candidate_evidence": [
+          "Shipping and packaging"
+        ]
+      },
+      {
+        "job_competency": "Code reviews and development best practices",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3786,
+        "evidence": {
+          "tfidf_score": 0.16454971929996923,
+          "tfidf_matched_terms": [
+            "and",
+            "development"
+          ],
+          "bm25_score": 5.56219563663899,
+          "semantic_score": 0.34107816219329834,
+          "matched_candidate_competency": "Training and development"
+        },
+        "candidate_evidence": [
+          "Training and development"
+        ]
+      },
+      {
+        "job_competency": "Team leadership",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3685,
+        "evidence": {
+          "tfidf_score": 0.015016917110618125,
+          "tfidf_matched_terms": [
+            "leadership"
+          ],
+          "bm25_score": 4.900624715853074,
+          "semantic_score": 0.6425807476043701,
+          "matched_candidate_competency": "Leadership training"
+        },
+        "candidate_evidence": [
+          "Leadership training"
+        ]
+      },
+      {
+        "job_competency": "Concurrent project management",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6556,
+        "evidence": {
+          "tfidf_score": 0.05867111193508397,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 3.0574925210466706,
+          "semantic_score": 0.4461146295070648,
+          "matched_candidate_competency": "Inventory management"
+        },
+        "candidate_evidence": [
+          "Inventory management"
+        ]
+      },
+      {
+        "job_competency": "Critical thinking",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9425,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.287445604801178,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Communication",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9234,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.38283854722976685,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Adaptability",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9457,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2713027596473694,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      },
+      {
+        "job_competency": "Strategic thinking",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9295,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.35256966948509216,
+          "matched_candidate_competency": "Logistics analysis"
+        },
+        "candidate_evidence": [
+          "Logistics analysis"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Microsoft Dynamics 365",
+      "Testing and debugging",
+      "Code reviews and development best practices",
+      "Team leadership"
+    ],
+    "weak_matches": [
+      "Dynamics 365 solution development",
+      "Custom entities, workflows, and integrations",
+      "SQL",
+      "Azure",
+      "Software development lifecycle",
+      "Scrum and Agile",
+      "Concurrent project management"
+    ],
+    "missing": [
+      "X++",
+      "C++",
+      "ADO",
+      "Critical thinking",
+      "Communication",
+      "Adaptability",
+      "Strategic thinking"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Microsoft Dynamics 365",
+      "Testing and debugging",
+      "Code reviews and development best practices",
+      "Team leadership"
+    ],
+    "competency_gaps": [
+      "Dynamics 365 solution development",
+      "Custom entities, workflows, and integrations",
+      "SQL",
+      "Azure",
+      "Software development lifecycle",
+      "Scrum and Agile",
+      "Concurrent project management",
+      "X++",
+      "C++",
+      "ADO",
+      "Critical thinking",
+      "Communication",
+      "Adaptability",
+      "Strategic thinking"
+    ]
+  },
+  "counts": {
+    "requirements": 18,
+    "strength_matches": 0,
+    "partial_matches": 4,
+    "competency_gaps": 14
+  },
+  "latency_ms": 40.82,
+  "analyzed_at": "2026-10-03T17:29:42.769013+00:00"
+}

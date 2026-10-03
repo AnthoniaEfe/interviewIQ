@@ -1,0 +1,507 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "extraction",
+  "profile_id": "rjf_00061_2388e5a584ec",
+  "jd_id": "rjf_00061_2388e5a584ec",
+  "pair_id": "rjf_00061_2388e5a584ec",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "task_types": [
+    "cv_extraction",
+    "jd_extraction"
+  ],
+  "prompt_versions": {
+    "candidate_profile": "1.0.0",
+    "job_description": "1.0.0"
+  },
+  "candidate": {
+    "name": null,
+    "professional_summary": "Financial Accountant specializing in financial planning, reporting and analysis in private and public sectors; experienced in responding to financial inquiries and developing financial outcomes.",
+    "seniority_indicators": [
+      "Accountant"
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Arts (BA) Honors",
+        "institution": "University of Greenwich",
+        "field": "Business Studies",
+        "year": "2014",
+        "source_text": "Bachelor of Arts: Business Studies; BA Honors Business Studies, Second Upper Class Honors."
+      },
+      {
+        "degree": "Association of Business Executive",
+        "institution": "Oshwal College",
+        "field": "Business",
+        "year": "2013",
+        "source_text": "Completed the Association of Business Executive."
+      }
+    ],
+    "experience": [
+      {
+        "title": "Accountant",
+        "employer": "Ametek, Inc.; Shantilal Gala & Company",
+        "duration": "06/2012-09/2015",
+        "responsibilities": [
+          "Maintained accounts receivable documentation electronically and on paper.",
+          "Processed bank reconciliations and weekly and monthly financial reports.",
+          "Entered weekly sales and customer count sheets for management review.",
+          "Processed payroll, electronic deposits and employee pay adjustments.",
+          "Collaborated with auditors during preliminary and year-end audit processes."
+        ],
+        "achievements": [
+          "Created a new Excel financial recording system that increased efficiency and reduced workloads."
+        ],
+        "technologies": [
+          "Excel"
+        ],
+        "source_text": "Accountant, 06/2012-09/2015; worked at Shantilal Gala & Company, an audit firm, as an Accountant."
+      }
+    ],
+    "projects": [],
+    "technical_skills": [
+      {
+        "normalized_label": "Financial planning",
+        "original_mentions": [
+          "financial planning"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Financial Accountant specializing in financial planning",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial reporting",
+        "original_mentions": [
+          "financial reporting",
+          "Periodic financial reporting expert",
+          "financial reports"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Periodic financial reporting expert",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Financial analysis",
+        "original_mentions": [
+          "analysis"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "specializing in financial planning, reporting and analysis",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Invoice coding",
+        "original_mentions": [
+          "Invoice coding familiarity"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Invoice coding familiarity",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "General ledger accounting",
+        "original_mentions": [
+          "General ledger accounting skills"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "General ledger accounting skills",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Account reconciliation",
+        "original_mentions": [
+          "Account reconciliation expert",
+          "bank reconciliations"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Processed bank reconciliations",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Accounts receivable",
+        "original_mentions": [
+          "accounts receivable documentation"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Maintained accounts receivable documentation",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Payroll processing",
+        "original_mentions": [
+          "Processed payroll"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Processed payroll, electronic deposits and employee pay adjustments",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Microsoft Excel",
+        "original_mentions": [
+          "Excel financial recording system"
+        ],
+        "competency_type": "technical",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "creating a new Excel financial recording system",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "soft_skills": [
+      {
+        "normalized_label": "Communication",
+        "original_mentions": [
+          "Strong communication skills",
+          "Communication"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Strong communication skills",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Complex problem solving",
+        "original_mentions": [
+          "Complex problem solving"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "Complex problem solving",
+          "source_section": "Highlights",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Organization",
+        "original_mentions": [
+          "Organization"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Organization - managing responsibilities and keeping track of those responsibilities",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Time management",
+        "original_mentions": [
+          "Time Management"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Time Management - Good time-management skills",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Adaptability",
+        "original_mentions": [
+          "Adaptability"
+        ],
+        "competency_type": "soft",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Adaptability - adapt quickly and easily",
+          "source_section": "Skills",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "certifications": [],
+    "domain_experience": [
+      {
+        "normalized_label": "Financial accounting",
+        "original_mentions": [
+          "Financial Accountant",
+          "Accountant"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Financial Accountant specializing in financial planning, reporting and analysis",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Audit support",
+        "original_mentions": [
+          "Collaborated extensively with auditors during preliminary and year-end audit processes"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Collaborated extensively with auditors during preliminary and year-end audit processes",
+          "source_section": "Experience",
+          "origin": "candidate"
+        }
+      },
+      {
+        "normalized_label": "Private and public sector accounting",
+        "original_mentions": [
+          "both private and public sectors"
+        ],
+        "competency_type": "domain",
+        "priority": "unspecified",
+        "confidence": 0.95,
+        "source": {
+          "source_text": "in both private and public sectors",
+          "source_section": "Summary",
+          "origin": "candidate"
+        }
+      }
+    ],
+    "competencies": []
+  },
+  "job": {
+    "title": null,
+    "seniority": null,
+    "years_of_experience": null,
+    "responsibilities": [
+      "Conduct DFMEA/FMEA reviews",
+      "Perform WCCA updates and reviews",
+      "Perform DV testing",
+      "Conduct hardware verification and validation and potentially update hardware"
+    ],
+    "required_skills": [
+      {
+        "normalized_label": "DFMEA/FMEA reviews",
+        "original_mentions": [
+          "Experience in DFMEAFMEA reviews"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience in DFMEAFMEA reviews",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "WCCA updates and reviews",
+        "original_mentions": [
+          "Experience in WCCA updates and reviews"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience in WCCA updates and reviews",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "DV testing",
+        "original_mentions": [
+          "DV testing"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "DV testing",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Hardware verification and validation",
+        "original_mentions": [
+          "HW V&V"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "HW V&V",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Hardware updates",
+        "original_mentions": [
+          "possible hardware updates"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "possible hardware updates",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      }
+    ],
+    "preferred_skills": [],
+    "education_requirements": [],
+    "certifications": [],
+    "domain_knowledge": [],
+    "soft_skills": [],
+    "leadership_requirements": [],
+    "system_design_requirements": [],
+    "competencies": [
+      {
+        "normalized_label": "DFMEA/FMEA reviews",
+        "original_mentions": [
+          "Experience in DFMEAFMEA reviews"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience in DFMEAFMEA reviews",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "WCCA updates and reviews",
+        "original_mentions": [
+          "Experience in WCCA updates and reviews"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "Experience in WCCA updates and reviews",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "DV testing",
+        "original_mentions": [
+          "DV testing"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.99,
+        "source": {
+          "source_text": "DV testing",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Hardware verification and validation",
+        "original_mentions": [
+          "HW V&V"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.98,
+        "source": {
+          "source_text": "HW V&V",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      },
+      {
+        "normalized_label": "Hardware updates",
+        "original_mentions": [
+          "possible hardware updates"
+        ],
+        "competency_type": "technical",
+        "priority": "required",
+        "confidence": 0.9,
+        "source": {
+          "source_text": "possible hardware updates",
+          "source_section": "Job Description",
+          "origin": "job"
+        }
+      }
+    ]
+  },
+  "cv_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "cv_extraction",
+    "input_tokens": 1908,
+    "output_tokens": 1596,
+    "cached_tokens": 1905,
+    "estimated_cost": 0.0019539,
+    "latency_ms": 11259.9,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "jd_usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-luna",
+    "task_type": "jd_extraction",
+    "input_tokens": 1142,
+    "output_tokens": 893,
+    "cached_tokens": 0,
+    "estimated_cost": 0.0013,
+    "latency_ms": 9260.86,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "fallback_used": false,
+  "extracted_at": "2026-10-03T17:11:31.707046+00:00",
+  "reused_from_experiment": null
+}

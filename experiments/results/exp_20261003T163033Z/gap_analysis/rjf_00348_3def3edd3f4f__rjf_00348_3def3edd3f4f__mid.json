@@ -1,0 +1,446 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_00348_3def3edd3f4f",
+  "jd_id": "rjf_00348_3def3edd3f4f",
+  "pair_id": "rjf_00348_3def3edd3f4f",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Electrical testing",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9587,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.20645011961460114,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Test execution",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9554,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.223239004611969,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Troubleshooting to LRU level",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6512,
+        "evidence": {
+          "tfidf_score": 0.011607439452142595,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 3.6023180166963304,
+          "semantic_score": 0.1710609495639801,
+          "matched_candidate_competency": "Attention to detail"
+        },
+        "candidate_evidence": [
+          "Attention to detail"
+        ]
+      },
+      {
+        "job_competency": "Test reporting and anomaly documentation",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3821,
+        "evidence": {
+          "tfidf_score": 0.26602776251164284,
+          "tfidf_matched_terms": [
+            "and",
+            "documentation",
+            "reporting"
+          ],
+          "bm25_score": 2.8980889445349867,
+          "semantic_score": 0.37560755014419556,
+          "matched_candidate_competency": "Financial reporting"
+        },
+        "candidate_evidence": [
+          "Financial reporting"
+        ]
+      },
+      {
+        "job_competency": "Test procedure redlining",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9603,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.19870546460151672,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Computers and data recorders",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6529,
+        "evidence": {
+          "tfidf_score": 0.21193366666784616,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.3187420095928848,
+          "semantic_score": 0.48613420128822327,
+          "matched_candidate_competency": "Compensation and benefits"
+        },
+        "candidate_evidence": [
+          "Compensation and benefits"
+        ]
+      },
+      {
+        "job_competency": "Digital multimeters",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9402,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2988989055156708,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Measurement instruments",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9321,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3394625186920166,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Pneumatic and hydraulic gauges",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7115,
+        "evidence": {
+          "tfidf_score": 0.21193366666784616,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.3187420095928848,
+          "semantic_score": 0.11972355097532272,
+          "matched_candidate_competency": "Compensation and benefits"
+        },
+        "candidate_evidence": [
+          "Compensation and benefits"
+        ]
+      },
+      {
+        "job_competency": "Schematics and wire lists",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6962,
+        "evidence": {
+          "tfidf_score": 0.21193366666784616,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.3187420095928848,
+          "semantic_score": 0.2149386703968048,
+          "matched_candidate_competency": "Compensation and benefits"
+        },
+        "candidate_evidence": [
+          "Compensation and benefits"
+        ]
+      },
+      {
+        "job_competency": "Block diagrams and functional diagrams",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7092,
+        "evidence": {
+          "tfidf_score": 0.1555807445798593,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.3187420095928848,
+          "semantic_score": 0.1760360598564148,
+          "matched_candidate_competency": "Compensation and benefits"
+        },
+        "candidate_evidence": [
+          "Compensation and benefits"
+        ]
+      },
+      {
+        "job_competency": "Basic electronics",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9471,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2647159993648529,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "AC/DC electrical systems",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9579,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.21053704619407654,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Electrical panel and equipment installation",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7037,
+        "evidence": {
+          "tfidf_score": 0.1869449196111521,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.3187420095928848,
+          "semantic_score": 0.1870015561580658,
+          "matched_candidate_competency": "Compensation and benefits"
+        },
+        "candidate_evidence": [
+          "Compensation and benefits"
+        ]
+      },
+      {
+        "job_competency": "Electrical component operation and troubleshooting",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6871,
+        "evidence": {
+          "tfidf_score": 0.18694491961115212,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.3187420095928848,
+          "semantic_score": 0.29110991954803467,
+          "matched_candidate_competency": "Compensation and benefits"
+        },
+        "candidate_evidence": [
+          "Compensation and benefits"
+        ]
+      },
+      {
+        "job_competency": "Mechanical installation and repair",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6948,
+        "evidence": {
+          "tfidf_score": 0.2119336666678462,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.3187420095928848,
+          "semantic_score": 0.22388532757759094,
+          "matched_candidate_competency": "Compensation and benefits"
+        },
+        "candidate_evidence": [
+          "Compensation and benefits"
+        ]
+      },
+      {
+        "job_competency": "Safety awareness",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9459,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2704032063484192,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "ALSTOM safety procedures",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9757,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.12146187573671341,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Industrial work environment adaptability",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9323,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3384333848953247,
+          "matched_candidate_competency": "Accounting"
+        },
+        "candidate_evidence": [
+          "Accounting"
+        ]
+      },
+      {
+        "job_competency": "Shift and overtime availability",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6604,
+        "evidence": {
+          "tfidf_score": 0.21193366666784616,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.3187420095928848,
+          "semantic_score": 0.4389352798461914,
+          "matched_candidate_competency": "Compensation and benefits"
+        },
+        "candidate_evidence": [
+          "Compensation and benefits"
+        ]
+      },
+      {
+        "job_competency": "Ability to lift 50 pounds",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6508,
+        "evidence": {
+          "tfidf_score": 0.010238825522105357,
+          "tfidf_matched_terms": [
+            "to"
+          ],
+          "bm25_score": 3.6023180166963304,
+          "semantic_score": 0.1745520979166031,
+          "matched_candidate_competency": "Attention to detail"
+        },
+        "candidate_evidence": [
+          "Attention to detail"
+        ]
+      }
+    ],
+    "strong_matches": [],
+    "partial_matches": [
+      "Test reporting and anomaly documentation"
+    ],
+    "weak_matches": [
+      "Troubleshooting to LRU level",
+      "Computers and data recorders",
+      "Pneumatic and hydraulic gauges",
+      "Schematics and wire lists",
+      "Block diagrams and functional diagrams",
+      "Electrical panel and equipment installation",
+      "Electrical component operation and troubleshooting",
+      "Mechanical installation and repair",
+      "Shift and overtime availability",
+      "Ability to lift 50 pounds"
+    ],
+    "missing": [
+      "Electrical testing",
+      "Test execution",
+      "Test procedure redlining",
+      "Digital multimeters",
+      "Measurement instruments",
+      "Basic electronics",
+      "AC/DC electrical systems",
+      "Safety awareness",
+      "ALSTOM safety procedures",
+      "Industrial work environment adaptability"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [],
+    "partial_matches": [
+      "Test reporting and anomaly documentation"
+    ],
+    "competency_gaps": [
+      "Troubleshooting to LRU level",
+      "Computers and data recorders",
+      "Pneumatic and hydraulic gauges",
+      "Schematics and wire lists",
+      "Block diagrams and functional diagrams",
+      "Electrical panel and equipment installation",
+      "Electrical component operation and troubleshooting",
+      "Mechanical installation and repair",
+      "Shift and overtime availability",
+      "Ability to lift 50 pounds",
+      "Electrical testing",
+      "Test execution",
+      "Test procedure redlining",
+      "Digital multimeters",
+      "Measurement instruments",
+      "Basic electronics",
+      "AC/DC electrical systems",
+      "Safety awareness",
+      "ALSTOM safety procedures",
+      "Industrial work environment adaptability"
+    ]
+  },
+  "counts": {
+    "requirements": 21,
+    "strength_matches": 0,
+    "partial_matches": 1,
+    "competency_gaps": 20
+  },
+  "latency_ms": 40.13,
+  "analyzed_at": "2026-10-03T17:29:42.654595+00:00"
+}

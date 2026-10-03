@@ -1,0 +1,258 @@
+{
+  "experiment_id": "exp_20261003T163033Z",
+  "stage": "gap_analysis",
+  "source_experiment": "exp_20261003T163033Z",
+  "profile_id": "rjf_01180_aedbc79e6db5",
+  "jd_id": "rjf_01180_aedbc79e6db5",
+  "pair_id": "rjf_01180_aedbc79e6db5",
+  "fit_label": "No Fit",
+  "dataset": "cnamuangtoun/resume-job-description-fit",
+  "seniority": "mid",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "auto",
+  "signals": {
+    "tfidf": true,
+    "bm25": true,
+    "semantic": true
+  },
+  "gap_matrix": {
+    "gaps": [
+      {
+        "job_competency": "Microsoft Office",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.7144,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.5348606109619141,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "SQL",
+        "priority": "required",
+        "match_label": "strong_match",
+        "weight": 0.1618,
+        "evidence": {
+          "tfidf_score": 0.01867542429266372,
+          "tfidf_matched_terms": [
+            "sql"
+          ],
+          "bm25_score": 6.255862099155536,
+          "semantic_score": 1.0000001192092896,
+          "matched_candidate_competency": "SQL"
+        },
+        "candidate_evidence": [
+          "SQL"
+        ]
+      },
+      {
+        "job_competency": "Business analysis",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6949,
+        "evidence": {
+          "tfidf_score": 0.010826865669831116,
+          "tfidf_matched_terms": [
+            "business"
+          ],
+          "bm25_score": 2.191108355609463,
+          "semantic_score": 0.38629817962646484,
+          "matched_candidate_competency": "Designed and implemented COM and COM+ objects for business logic support."
+        },
+        "candidate_evidence": [
+          "Designed and implemented COM and COM+ objects for business logic support."
+        ]
+      },
+      {
+        "job_competency": "CMS experience",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9261,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.3692534565925598,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Independent responsibility management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.4023,
+        "evidence": {
+          "tfidf_score": 0.025214579462805625,
+          "tfidf_matched_terms": [
+            "management"
+          ],
+          "bm25_score": 4.193909725966888,
+          "semantic_score": 0.4547938406467438,
+          "matched_candidate_competency": "Project management"
+        },
+        "candidate_evidence": [
+          "Project management"
+        ]
+      },
+      {
+        "job_competency": "Prioritization and deadline management",
+        "priority": "required",
+        "match_label": "partial_match",
+        "weight": 0.3856,
+        "evidence": {
+          "tfidf_score": 0.1996132998752428,
+          "tfidf_matched_terms": [
+            "and",
+            "management"
+          ],
+          "bm25_score": 4.193909725966888,
+          "semantic_score": 0.49121129512786865,
+          "matched_candidate_competency": "Project management"
+        },
+        "candidate_evidence": [
+          "Project management"
+        ]
+      },
+      {
+        "job_competency": "Multitasking and adaptability",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6875,
+        "evidence": {
+          "tfidf_score": 0.1911460315153948,
+          "tfidf_matched_terms": [
+            "and"
+          ],
+          "bm25_score": 1.5169640809038263,
+          "semantic_score": 0.3781326413154602,
+          "matched_candidate_competency": "Training and documentation"
+        },
+        "candidate_evidence": [
+          "Training and documentation"
+        ]
+      },
+      {
+        "job_competency": "Cross-functional collaboration",
+        "priority": "required",
+        "match_label": "missing",
+        "weight": 0.9264,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.36816495656967163,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "Written and verbal communication",
+        "priority": "required",
+        "match_label": "weak_match",
+        "weight": 0.6634,
+        "evidence": {
+          "tfidf_score": 0.19110435911004447,
+          "tfidf_matched_terms": [
+            "and",
+            "communication"
+          ],
+          "bm25_score": 3.045243261997019,
+          "semantic_score": 0.345245361328125,
+          "matched_candidate_competency": "Designed and implemented C++ classes for host automation communication."
+        },
+        "candidate_evidence": [
+          "Designed and implemented C++ classes for host automation communication."
+        ]
+      },
+      {
+        "job_competency": "Medicaid experience",
+        "priority": "preferred",
+        "match_label": "weak_match",
+        "weight": 0.4416,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.4004432260990143,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      },
+      {
+        "job_competency": "DDI experience",
+        "priority": "preferred",
+        "match_label": "missing",
+        "weight": 0.5659,
+        "evidence": {
+          "tfidf_score": 0.0,
+          "tfidf_matched_terms": [],
+          "bm25_score": 0.0,
+          "semantic_score": 0.2838174104690552,
+          "matched_candidate_competency": ".NET"
+        },
+        "candidate_evidence": [
+          ".NET"
+        ]
+      }
+    ],
+    "strong_matches": [
+      "SQL"
+    ],
+    "partial_matches": [
+      "Independent responsibility management",
+      "Prioritization and deadline management"
+    ],
+    "weak_matches": [
+      "Microsoft Office",
+      "Business analysis",
+      "Multitasking and adaptability",
+      "Written and verbal communication",
+      "Medicaid experience"
+    ],
+    "missing": [
+      "CMS experience",
+      "Cross-functional collaboration",
+      "DDI experience"
+    ]
+  },
+  "three_category": {
+    "strength_matches": [
+      "SQL"
+    ],
+    "partial_matches": [
+      "Independent responsibility management",
+      "Prioritization and deadline management"
+    ],
+    "competency_gaps": [
+      "Microsoft Office",
+      "Business analysis",
+      "Multitasking and adaptability",
+      "Written and verbal communication",
+      "Medicaid experience",
+      "CMS experience",
+      "Cross-functional collaboration",
+      "DDI experience"
+    ]
+  },
+  "counts": {
+    "requirements": 11,
+    "strength_matches": 1,
+    "partial_matches": 2,
+    "competency_gaps": 8
+  },
+  "latency_ms": 40.49,
+  "analyzed_at": "2026-10-03T17:29:43.930764+00:00"
+}
