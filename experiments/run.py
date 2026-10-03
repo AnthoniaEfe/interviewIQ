@@ -39,6 +39,7 @@ from app.services.extraction.profiles import (  # noqa: E402
     extract_job,
 )
 from app.services.gap_analysis.matrix import build_gap_matrix  # noqa: E402
+from app.services.gap_sensitivity.analyze import run_gap_sensitivity  # noqa: E402
 from app.services.llm.factory import build_router  # noqa: E402
 from app.services.llm.provider import LLMResult  # noqa: E402
 from app.services.llm.tasks import LLMTask  # noqa: E402
@@ -358,6 +359,23 @@ async def async_main(
             source_experiment=source_experiment,
         )
 
+    if stage == "gap_sensitivity":
+        if not source_experiment:
+            raise SystemExit(
+                "--source-experiment is required for --stage gap_sensitivity "
+                "(extraction experiment id)."
+            )
+        out_dir.mkdir(parents=True, exist_ok=True)
+        return run_gap_sensitivity(
+            settings=settings,
+            config=config,
+            config_path=config_path,
+            experiment_id=experiment_id,
+            out_dir=out_dir,
+            source_experiment=source_experiment,
+            smoke=smoke,
+        )
+
     router = build_router(settings)
     combinations = load_combinations(config)
     if smoke:
@@ -649,14 +667,17 @@ def main() -> None:
     parser.add_argument("--smoke", action="store_true", help="Run one combination only")
     parser.add_argument(
         "--stage",
-        choices=("extraction", "gap_analysis", "baseline"),
+        choices=("extraction", "gap_analysis", "baseline", "gap_sensitivity"),
         default="baseline",
         help="Pipeline stage to run. Default remains baseline generation.",
     )
     parser.add_argument(
         "--source-experiment",
         default=None,
-        help="Extraction experiment id for --stage gap_analysis. Defaults to latest completed extraction.",
+        help=(
+            "Extraction experiment id for --stage gap_analysis or gap_sensitivity. "
+            "Defaults to latest completed extraction for gap_analysis."
+        ),
     )
     args = parser.parse_args()
     asyncio.run(

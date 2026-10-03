@@ -1,0 +1,995 @@
+{
+  "experiment_id": "exp_20261003T042837Z",
+  "status": "completed",
+  "stage": "gap_sensitivity",
+  "split": "primary-30",
+  "source_experiment": "exp_20260927T205741Z",
+  "stored_gap_experiment": "exp_20260927T215232Z",
+  "conditions": [
+    "A_competencies",
+    "A0_competencies_only",
+    "B_comp_skills",
+    "C_comp_skills_exp",
+    "D_raw_cv_chunks",
+    "E_union"
+  ],
+  "condition_descriptions": {
+    "A_competencies": "Production pipeline evidence via ``_candidate_texts``: technical/soft/domain skills, certifications, competencies, experience technologies and responsibilities (deduplicated). This is the stored-result baseline.",
+    "A0_competencies_only": "Extracted competency ``normalized_label`` strings only.",
+    "B_comp_skills": "Competencies + extracted technical skills (case-insensitive dedupe).",
+    "C_comp_skills_exp": "B + experience title, responsibility bullets, and achievement bullets.",
+    "D_raw_cv_chunks": "Raw CV sentence/bullet chunks (no extraction).",
+    "E_union": "Union of C and D."
+  },
+  "regression": {
+    "passed": true,
+    "counts": {
+      "requirements": 7,
+      "strong_match": 1,
+      "partial_match": 2,
+      "weak_match": 2,
+      "missing": 2
+    },
+    "n_label_mismatch": 0,
+    "n_score_mismatch": 0,
+    "max_abs_combined_diff": 0.0,
+    "tolerance": 0.0001,
+    "pairs": [
+      {
+        "request_id": "rjf_03173_9a0a3c4d8ba0__rjf_03173_9a0a3c4d8ba0__mid",
+        "n_requirements": 2,
+        "evidence_size": 55
+      },
+      {
+        "request_id": "rjf_03202_f43978101918__rjf_03202_f43978101918__mid",
+        "n_requirements": 5,
+        "evidence_size": 64
+      }
+    ],
+    "expected_counts": {
+      "requirements": 633,
+      "strong_match": 51,
+      "partial_match": 175,
+      "weak_match": 245,
+      "missing": 162
+    },
+    "counts_match_expected": false,
+    "split": "primary-30"
+  },
+  "metrics": {
+    "A_competencies": {
+      "label_counts": {
+        "strong_match": 1,
+        "partial_match": 2,
+        "weak_match": 2,
+        "missing": 2
+      },
+      "three_category_counts": {
+        "strength": 1,
+        "partial": 2,
+        "gap": 4
+      },
+      "pooled_gap_share": 0.5714285714285714,
+      "pooled_gap_share_bootstrap": {
+        "share": 0.5714285714285714,
+        "ci_low": 0.5,
+        "ci_high": 0.6,
+        "n_pairs": 2,
+        "n_requirements": 7
+      },
+      "per_pair_gap_rate": {
+        "mean": 0.55,
+        "median": 0.55,
+        "iqr": 0.04999999999999993,
+        "q1": 0.525,
+        "q3": 0.575,
+        "n": 2
+      },
+      "per_pair_gap_rate_bootstrap": {
+        "mean": 0.55,
+        "ci_low": 0.5,
+        "ci_high": 0.6,
+        "n": 2
+      },
+      "evidence_size": {
+        "mean": 59.5,
+        "median": 59.5,
+        "n": 2
+      },
+      "mean_signals": {
+        "tfidf": 0.028739775638287952,
+        "bm25_norm": 0.5645375477047867,
+        "semantic": 0.44909727573394775,
+        "combined": 0.37286796870274247
+      },
+      "dose_response": {
+        "rho": null,
+        "p_value": null,
+        "n": 2
+      }
+    },
+    "A0_competencies_only": {
+      "label_counts": {
+        "strong_match": 0,
+        "partial_match": 1,
+        "weak_match": 1,
+        "missing": 5
+      },
+      "three_category_counts": {
+        "strength": 0,
+        "partial": 1,
+        "gap": 6
+      },
+      "pooled_gap_share": 0.8571428571428571,
+      "pooled_gap_share_bootstrap": {
+        "share": 0.8571428571428571,
+        "ci_low": 0.5,
+        "ci_high": 1.0,
+        "n_pairs": 2,
+        "n_requirements": 7
+      },
+      "per_pair_gap_rate": {
+        "mean": 0.75,
+        "median": 0.75,
+        "iqr": 0.25,
+        "q1": 0.625,
+        "q3": 0.875,
+        "n": 2
+      },
+      "per_pair_gap_rate_bootstrap": {
+        "mean": 0.75,
+        "ci_low": 0.5,
+        "ci_high": 1.0,
+        "n": 2
+      },
+      "evidence_size": {
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 2
+      },
+      "mean_signals": {
+        "tfidf": 0.08281981021966654,
+        "bm25_norm": 0.0,
+        "semantic": 0.20244275672095163,
+        "combined": 0.12192633091539244
+      },
+      "dose_response": {
+        "rho": null,
+        "p_value": null,
+        "n": 2
+      }
+    },
+    "B_comp_skills": {
+      "label_counts": {
+        "strong_match": 1,
+        "partial_match": 0,
+        "weak_match": 1,
+        "missing": 5
+      },
+      "three_category_counts": {
+        "strength": 1,
+        "partial": 0,
+        "gap": 6
+      },
+      "pooled_gap_share": 0.8571428571428571,
+      "pooled_gap_share_bootstrap": {
+        "share": 0.8571428571428571,
+        "ci_low": 0.5,
+        "ci_high": 1.0,
+        "n_pairs": 2,
+        "n_requirements": 7
+      },
+      "per_pair_gap_rate": {
+        "mean": 0.75,
+        "median": 0.75,
+        "iqr": 0.25,
+        "q1": 0.625,
+        "q3": 0.875,
+        "n": 2
+      },
+      "per_pair_gap_rate_bootstrap": {
+        "mean": 0.75,
+        "ci_low": 0.5,
+        "ci_high": 1.0,
+        "n": 2
+      },
+      "evidence_size": {
+        "mean": 31.0,
+        "median": 31.0,
+        "n": 2
+      },
+      "mean_signals": {
+        "tfidf": 0.08281981021966651,
+        "bm25_norm": 0.14285714285714285,
+        "semantic": 0.43671282274382456,
+        "combined": 0.2747756496411146
+      },
+      "dose_response": {
+        "rho": null,
+        "p_value": null,
+        "n": 2
+      }
+    },
+    "C_comp_skills_exp": {
+      "label_counts": {
+        "strong_match": 1,
+        "partial_match": 2,
+        "weak_match": 2,
+        "missing": 2
+      },
+      "three_category_counts": {
+        "strength": 1,
+        "partial": 2,
+        "gap": 4
+      },
+      "pooled_gap_share": 0.5714285714285714,
+      "pooled_gap_share_bootstrap": {
+        "share": 0.5714285714285714,
+        "ci_low": 0.5,
+        "ci_high": 0.6,
+        "n_pairs": 2,
+        "n_requirements": 7
+      },
+      "per_pair_gap_rate": {
+        "mean": 0.55,
+        "median": 0.55,
+        "iqr": 0.04999999999999993,
+        "q1": 0.525,
+        "q3": 0.575,
+        "n": 2
+      },
+      "per_pair_gap_rate_bootstrap": {
+        "mean": 0.55,
+        "ci_low": 0.5,
+        "ci_high": 0.6,
+        "n": 2
+      },
+      "evidence_size": {
+        "mean": 53.0,
+        "median": 53.0,
+        "n": 2
+      },
+      "mean_signals": {
+        "tfidf": 0.02423358395518271,
+        "bm25_norm": 0.5645915797049298,
+        "semantic": 0.4492782673665455,
+        "combined": 0.37184542459830094
+      },
+      "dose_response": {
+        "rho": null,
+        "p_value": null,
+        "n": 2
+      }
+    },
+    "D_raw_cv_chunks": {
+      "label_counts": {
+        "strong_match": 0,
+        "partial_match": 2,
+        "weak_match": 1,
+        "missing": 4
+      },
+      "three_category_counts": {
+        "strength": 0,
+        "partial": 2,
+        "gap": 5
+      },
+      "pooled_gap_share": 0.7142857142857143,
+      "pooled_gap_share_bootstrap": {
+        "share": 0.7142857142857143,
+        "ci_low": 0.5,
+        "ci_high": 0.8,
+        "n_pairs": 2,
+        "n_requirements": 7
+      },
+      "per_pair_gap_rate": {
+        "mean": 0.65,
+        "median": 0.65,
+        "iqr": 0.15000000000000013,
+        "q1": 0.575,
+        "q3": 0.7250000000000001,
+        "n": 2
+      },
+      "per_pair_gap_rate_bootstrap": {
+        "mean": 0.65,
+        "ci_low": 0.5,
+        "ci_high": 0.8,
+        "n": 2
+      },
+      "evidence_size": {
+        "mean": 17.0,
+        "median": 17.0,
+        "n": 2
+      },
+      "mean_signals": {
+        "tfidf": 0.042915000834938856,
+        "bm25_norm": 0.3079952092038199,
+        "semantic": 0.34043382321085247,
+        "combined": 0.2579444641151159
+      },
+      "dose_response": {
+        "rho": null,
+        "p_value": null,
+        "n": 2
+      }
+    },
+    "E_union": {
+      "label_counts": {
+        "strong_match": 1,
+        "partial_match": 2,
+        "weak_match": 2,
+        "missing": 2
+      },
+      "three_category_counts": {
+        "strength": 1,
+        "partial": 2,
+        "gap": 4
+      },
+      "pooled_gap_share": 0.5714285714285714,
+      "pooled_gap_share_bootstrap": {
+        "share": 0.5714285714285714,
+        "ci_low": 0.5,
+        "ci_high": 0.6,
+        "n_pairs": 2,
+        "n_requirements": 7
+      },
+      "per_pair_gap_rate": {
+        "mean": 0.55,
+        "median": 0.55,
+        "iqr": 0.04999999999999993,
+        "q1": 0.525,
+        "q3": 0.575,
+        "n": 2
+      },
+      "per_pair_gap_rate_bootstrap": {
+        "mean": 0.55,
+        "ci_low": 0.5,
+        "ci_high": 0.6,
+        "n": 2
+      },
+      "evidence_size": {
+        "mean": 70.0,
+        "median": 70.0,
+        "n": 2
+      },
+      "mean_signals": {
+        "tfidf": 0.04238232287871481,
+        "bm25_norm": 0.5258193381029014,
+        "semantic": 0.4656307803733008,
+        "combined": 0.3748658054320545
+      },
+      "dose_response": {
+        "rho": null,
+        "p_value": null,
+        "n": 2
+      }
+    }
+  },
+  "semantic_only_metrics": {
+    "A_competencies": {
+      "label_counts": {
+        "strong_match": 1,
+        "partial_match": 1,
+        "weak_match": 5,
+        "missing": 0
+      },
+      "three_category_counts": {
+        "strength": 1,
+        "partial": 1,
+        "gap": 5
+      },
+      "pooled_gap_share": 0.7142857142857143,
+      "pooled_gap_share_bootstrap": {
+        "share": 0.7142857142857143,
+        "ci_low": 0.0,
+        "ci_high": 1.0,
+        "n_pairs": 2,
+        "n_requirements": 7
+      },
+      "per_pair_gap_rate": {
+        "mean": 0.5,
+        "median": 0.5,
+        "iqr": 0.5,
+        "q1": 0.25,
+        "q3": 0.75,
+        "n": 2
+      },
+      "per_pair_gap_rate_bootstrap": {
+        "mean": 0.5,
+        "ci_low": 0.0,
+        "ci_high": 1.0,
+        "n": 2
+      },
+      "evidence_size": {
+        "mean": 59.5,
+        "median": 59.5,
+        "n": 2
+      },
+      "mean_signals": null,
+      "dose_response": {
+        "rho": null,
+        "p_value": null,
+        "n": 2
+      }
+    },
+    "A0_competencies_only": {
+      "label_counts": {
+        "strong_match": 1,
+        "partial_match": 1,
+        "weak_match": 0,
+        "missing": 5
+      },
+      "three_category_counts": {
+        "strength": 1,
+        "partial": 1,
+        "gap": 5
+      },
+      "pooled_gap_share": 0.7142857142857143,
+      "pooled_gap_share_bootstrap": {
+        "share": 0.7142857142857143,
+        "ci_low": 0.0,
+        "ci_high": 1.0,
+        "n_pairs": 2,
+        "n_requirements": 7
+      },
+      "per_pair_gap_rate": {
+        "mean": 0.5,
+        "median": 0.5,
+        "iqr": 0.5,
+        "q1": 0.25,
+        "q3": 0.75,
+        "n": 2
+      },
+      "per_pair_gap_rate_bootstrap": {
+        "mean": 0.5,
+        "ci_low": 0.0,
+        "ci_high": 1.0,
+        "n": 2
+      },
+      "evidence_size": {
+        "mean": 1.0,
+        "median": 1.0,
+        "n": 2
+      },
+      "mean_signals": null,
+      "dose_response": {
+        "rho": null,
+        "p_value": null,
+        "n": 2
+      }
+    },
+    "B_comp_skills": {
+      "label_counts": {
+        "strong_match": 1,
+        "partial_match": 1,
+        "weak_match": 5,
+        "missing": 0
+      },
+      "three_category_counts": {
+        "strength": 1,
+        "partial": 1,
+        "gap": 5
+      },
+      "pooled_gap_share": 0.7142857142857143,
+      "pooled_gap_share_bootstrap": {
+        "share": 0.7142857142857143,
+        "ci_low": 0.0,
+        "ci_high": 1.0,
+        "n_pairs": 2,
+        "n_requirements": 7
+      },
+      "per_pair_gap_rate": {
+        "mean": 0.5,
+        "median": 0.5,
+        "iqr": 0.5,
+        "q1": 0.25,
+        "q3": 0.75,
+        "n": 2
+      },
+      "per_pair_gap_rate_bootstrap": {
+        "mean": 0.5,
+        "ci_low": 0.0,
+        "ci_high": 1.0,
+        "n": 2
+      },
+      "evidence_size": {
+        "mean": 31.0,
+        "median": 31.0,
+        "n": 2
+      },
+      "mean_signals": null,
+      "dose_response": {
+        "rho": null,
+        "p_value": null,
+        "n": 2
+      }
+    },
+    "C_comp_skills_exp": {
+      "label_counts": {
+        "strong_match": 1,
+        "partial_match": 1,
+        "weak_match": 5,
+        "missing": 0
+      },
+      "three_category_counts": {
+        "strength": 1,
+        "partial": 1,
+        "gap": 5
+      },
+      "pooled_gap_share": 0.7142857142857143,
+      "pooled_gap_share_bootstrap": {
+        "share": 0.7142857142857143,
+        "ci_low": 0.0,
+        "ci_high": 1.0,
+        "n_pairs": 2,
+        "n_requirements": 7
+      },
+      "per_pair_gap_rate": {
+        "mean": 0.5,
+        "median": 0.5,
+        "iqr": 0.5,
+        "q1": 0.25,
+        "q3": 0.75,
+        "n": 2
+      },
+      "per_pair_gap_rate_bootstrap": {
+        "mean": 0.5,
+        "ci_low": 0.0,
+        "ci_high": 1.0,
+        "n": 2
+      },
+      "evidence_size": {
+        "mean": 53.0,
+        "median": 53.0,
+        "n": 2
+      },
+      "mean_signals": null,
+      "dose_response": {
+        "rho": null,
+        "p_value": null,
+        "n": 2
+      }
+    },
+    "D_raw_cv_chunks": {
+      "label_counts": {
+        "strong_match": 0,
+        "partial_match": 2,
+        "weak_match": 4,
+        "missing": 1
+      },
+      "three_category_counts": {
+        "strength": 0,
+        "partial": 2,
+        "gap": 5
+      },
+      "pooled_gap_share": 0.7142857142857143,
+      "pooled_gap_share_bootstrap": {
+        "share": 0.7142857142857143,
+        "ci_low": 0.5,
+        "ci_high": 0.8,
+        "n_pairs": 2,
+        "n_requirements": 7
+      },
+      "per_pair_gap_rate": {
+        "mean": 0.65,
+        "median": 0.65,
+        "iqr": 0.15000000000000013,
+        "q1": 0.575,
+        "q3": 0.7250000000000001,
+        "n": 2
+      },
+      "per_pair_gap_rate_bootstrap": {
+        "mean": 0.65,
+        "ci_low": 0.5,
+        "ci_high": 0.8,
+        "n": 2
+      },
+      "evidence_size": {
+        "mean": 17.0,
+        "median": 17.0,
+        "n": 2
+      },
+      "mean_signals": null,
+      "dose_response": {
+        "rho": null,
+        "p_value": null,
+        "n": 2
+      }
+    },
+    "E_union": {
+      "label_counts": {
+        "strong_match": 1,
+        "partial_match": 2,
+        "weak_match": 4,
+        "missing": 0
+      },
+      "three_category_counts": {
+        "strength": 1,
+        "partial": 2,
+        "gap": 4
+      },
+      "pooled_gap_share": 0.5714285714285714,
+      "pooled_gap_share_bootstrap": {
+        "share": 0.5714285714285714,
+        "ci_low": 0.0,
+        "ci_high": 0.8,
+        "n_pairs": 2,
+        "n_requirements": 7
+      },
+      "per_pair_gap_rate": {
+        "mean": 0.4,
+        "median": 0.4,
+        "iqr": 0.4000000000000001,
+        "q1": 0.2,
+        "q3": 0.6000000000000001,
+        "n": 2
+      },
+      "per_pair_gap_rate_bootstrap": {
+        "mean": 0.4,
+        "ci_low": 0.0,
+        "ci_high": 0.8,
+        "n": 2
+      },
+      "evidence_size": {
+        "mean": 70.0,
+        "median": 70.0,
+        "n": 2
+      },
+      "mean_signals": null,
+      "dose_response": {
+        "rho": null,
+        "p_value": null,
+        "n": 2
+      }
+    }
+  },
+  "size_adjusted": {
+    "A_competencies": {
+      "true_mean_per_pair_gap_rate": 0.55,
+      "mismatched_mean_per_pair_gap_rate": 0.8,
+      "size_adjusted_effect_mean_per_pair": -0.25,
+      "true_pooled_gap_share": 0.5714285714285714,
+      "mismatched_pooled_gap_share": 0.7142857142857143,
+      "size_adjusted_effect_pooled_share": -0.1428571428571429,
+      "wilcoxon_true_vs_mismatched": {
+        "n_pairs": 2,
+        "n_nonzero": 1,
+        "statistic": 0.0,
+        "p_value": 1.0,
+        "rank_biserial": -1.0
+      }
+    },
+    "A0_competencies_only": {
+      "true_mean_per_pair_gap_rate": 0.75,
+      "mismatched_mean_per_pair_gap_rate": 1.0,
+      "size_adjusted_effect_mean_per_pair": -0.25,
+      "true_pooled_gap_share": 0.8571428571428571,
+      "mismatched_pooled_gap_share": 1.0,
+      "size_adjusted_effect_pooled_share": -0.1428571428571429,
+      "wilcoxon_true_vs_mismatched": {
+        "n_pairs": 2,
+        "n_nonzero": 1,
+        "statistic": 0.0,
+        "p_value": 1.0,
+        "rank_biserial": -1.0
+      }
+    },
+    "B_comp_skills": {
+      "true_mean_per_pair_gap_rate": 0.75,
+      "mismatched_mean_per_pair_gap_rate": 1.0,
+      "size_adjusted_effect_mean_per_pair": -0.25,
+      "true_pooled_gap_share": 0.8571428571428571,
+      "mismatched_pooled_gap_share": 1.0,
+      "size_adjusted_effect_pooled_share": -0.1428571428571429,
+      "wilcoxon_true_vs_mismatched": {
+        "n_pairs": 2,
+        "n_nonzero": 1,
+        "statistic": 0.0,
+        "p_value": 1.0,
+        "rank_biserial": -1.0
+      }
+    },
+    "C_comp_skills_exp": {
+      "true_mean_per_pair_gap_rate": 0.55,
+      "mismatched_mean_per_pair_gap_rate": 0.8,
+      "size_adjusted_effect_mean_per_pair": -0.25,
+      "true_pooled_gap_share": 0.5714285714285714,
+      "mismatched_pooled_gap_share": 0.7142857142857143,
+      "size_adjusted_effect_pooled_share": -0.1428571428571429,
+      "wilcoxon_true_vs_mismatched": {
+        "n_pairs": 2,
+        "n_nonzero": 1,
+        "statistic": 0.0,
+        "p_value": 1.0,
+        "rank_biserial": -1.0
+      }
+    },
+    "D_raw_cv_chunks": {
+      "true_mean_per_pair_gap_rate": 0.65,
+      "mismatched_mean_per_pair_gap_rate": 0.8,
+      "size_adjusted_effect_mean_per_pair": -0.15000000000000002,
+      "true_pooled_gap_share": 0.7142857142857143,
+      "mismatched_pooled_gap_share": 0.7142857142857143,
+      "size_adjusted_effect_pooled_share": 0.0,
+      "wilcoxon_true_vs_mismatched": {
+        "n_pairs": 2,
+        "n_nonzero": 2,
+        "statistic": 1.0,
+        "p_value": 1.0,
+        "rank_biserial": -0.3333333333333333
+      }
+    },
+    "E_union": {
+      "true_mean_per_pair_gap_rate": 0.55,
+      "mismatched_mean_per_pair_gap_rate": 0.8,
+      "size_adjusted_effect_mean_per_pair": -0.25,
+      "true_pooled_gap_share": 0.5714285714285714,
+      "mismatched_pooled_gap_share": 0.7142857142857143,
+      "size_adjusted_effect_pooled_share": -0.1428571428571429,
+      "wilcoxon_true_vs_mismatched": {
+        "n_pairs": 2,
+        "n_nonzero": 1,
+        "statistic": 0.0,
+        "p_value": 1.0,
+        "rank_biserial": -1.0
+      }
+    }
+  },
+  "wilcoxon_vs_A": {
+    "A0_competencies_only": {
+      "n_pairs": 2,
+      "n_nonzero": 1,
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "rank_biserial": 1.0
+    },
+    "B_comp_skills": {
+      "n_pairs": 2,
+      "n_nonzero": 1,
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "rank_biserial": 1.0
+    },
+    "C_comp_skills_exp": {
+      "n_pairs": 2,
+      "n_nonzero": 0,
+      "statistic": null,
+      "p_value": null,
+      "rank_biserial": null
+    },
+    "D_raw_cv_chunks": {
+      "n_pairs": 2,
+      "n_nonzero": 1,
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "rank_biserial": 1.0
+    },
+    "E_union": {
+      "n_pairs": 2,
+      "n_nonzero": 0,
+      "statistic": null,
+      "p_value": null,
+      "rank_biserial": null
+    }
+  },
+  "transitions": {
+    "A_competencies->A0_competencies_only": {
+      "strong_match": {
+        "strong_match": 0,
+        "partial_match": 1,
+        "weak_match": 0,
+        "missing": 0
+      },
+      "partial_match": {
+        "strong_match": 0,
+        "partial_match": 0,
+        "weak_match": 0,
+        "missing": 2
+      },
+      "weak_match": {
+        "strong_match": 0,
+        "partial_match": 0,
+        "weak_match": 1,
+        "missing": 1
+      },
+      "missing": {
+        "strong_match": 0,
+        "partial_match": 0,
+        "weak_match": 0,
+        "missing": 2
+      }
+    },
+    "A_competencies->B_comp_skills": {
+      "strong_match": {
+        "strong_match": 1,
+        "partial_match": 0,
+        "weak_match": 0,
+        "missing": 0
+      },
+      "partial_match": {
+        "strong_match": 0,
+        "partial_match": 0,
+        "weak_match": 0,
+        "missing": 2
+      },
+      "weak_match": {
+        "strong_match": 0,
+        "partial_match": 0,
+        "weak_match": 1,
+        "missing": 1
+      },
+      "missing": {
+        "strong_match": 0,
+        "partial_match": 0,
+        "weak_match": 0,
+        "missing": 2
+      }
+    },
+    "A_competencies->C_comp_skills_exp": {
+      "strong_match": {
+        "strong_match": 1,
+        "partial_match": 0,
+        "weak_match": 0,
+        "missing": 0
+      },
+      "partial_match": {
+        "strong_match": 0,
+        "partial_match": 2,
+        "weak_match": 0,
+        "missing": 0
+      },
+      "weak_match": {
+        "strong_match": 0,
+        "partial_match": 0,
+        "weak_match": 2,
+        "missing": 0
+      },
+      "missing": {
+        "strong_match": 0,
+        "partial_match": 0,
+        "weak_match": 0,
+        "missing": 2
+      }
+    },
+    "A_competencies->D_raw_cv_chunks": {
+      "strong_match": {
+        "strong_match": 0,
+        "partial_match": 1,
+        "weak_match": 0,
+        "missing": 0
+      },
+      "partial_match": {
+        "strong_match": 0,
+        "partial_match": 1,
+        "weak_match": 1,
+        "missing": 0
+      },
+      "weak_match": {
+        "strong_match": 0,
+        "partial_match": 0,
+        "weak_match": 0,
+        "missing": 2
+      },
+      "missing": {
+        "strong_match": 0,
+        "partial_match": 0,
+        "weak_match": 0,
+        "missing": 2
+      }
+    },
+    "A_competencies->E_union": {
+      "strong_match": {
+        "strong_match": 1,
+        "partial_match": 0,
+        "weak_match": 0,
+        "missing": 0
+      },
+      "partial_match": {
+        "strong_match": 0,
+        "partial_match": 2,
+        "weak_match": 0,
+        "missing": 0
+      },
+      "weak_match": {
+        "strong_match": 0,
+        "partial_match": 0,
+        "weak_match": 2,
+        "missing": 0
+      },
+      "missing": {
+        "strong_match": 0,
+        "partial_match": 0,
+        "weak_match": 0,
+        "missing": 2
+      }
+    }
+  },
+  "breakdowns": {
+    "A_competencies": {
+      "by_fit_label": {
+        "Potential Fit": {
+          "label_counts": {
+            "strong_match": 1,
+            "partial_match": 2,
+            "weak_match": 2,
+            "missing": 2
+          },
+          "three_category_counts": {
+            "strength": 1,
+            "partial": 2,
+            "gap": 4
+          },
+          "pooled_gap_share": 0.5714285714285714,
+          "n_requirements": 7
+        }
+      },
+      "by_priority": {
+        "required": {
+          "label_counts": {
+            "strong_match": 1,
+            "partial_match": 2,
+            "weak_match": 2,
+            "missing": 2
+          },
+          "three_category_counts": {
+            "strength": 1,
+            "partial": 2,
+            "gap": 4
+          },
+          "pooled_gap_share": 0.5714285714285714,
+          "n_requirements": 7
+        }
+      }
+    },
+    "best_evidence_condition": "A_competencies"
+  },
+  "bm25_normalisation_note": "Primary labels use within-condition per-pair bm25_max (production). bm25_norm_fixed / combined_fixed_bm25 use Condition A bm25_max. Semantic-only metrics remove BM25/TF-IDF scale effects.",
+  "seeds": {
+    "global": 42,
+    "bootstrap_resamples": 2000,
+    "mismatch_permutations": 5
+  },
+  "git_commit": "4a144652a7fb5c12e107701ffe417c47afa32640",
+  "library_versions": {
+    "numpy": "2.1.2",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.8.0+cu128",
+    "sentence-transformers": "6.1.0",
+    "rank-bm25": "0.2.2"
+  },
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "cuda",
+  "n_pairs": 2,
+  "missing_cv_text_pairs": 0,
+  "result_files": [
+    "pairs/rjf_03173_9a0a3c4d8ba0__rjf_03173_9a0a3c4d8ba0__mid.json",
+    "pairs/rjf_03202_f43978101918__rjf_03202_f43978101918__mid.json"
+  ],
+  "config_path": "/root/interviewIQ/experiments/configs/primary_hf.yaml",
+  "config": {
+    "experiment_name": "interviewiq_primary_hf_resume_fit",
+    "primary_dataset": "cnamuangtoun/resume-job-description-fit",
+    "generation_modes": [
+      "baseline"
+    ],
+    "final_question_count": 10,
+    "data": {
+      "source": "resume_job_fit",
+      "cache_dir": "experiments/datasets/resume_job_fit/cache",
+      "pairs_dir": "experiments/datasets/resume_job_fit/experiment_pairs",
+      "manifest": "experiments/datasets/resume_job_fit/experiment_pairs/manifest.json",
+      "labels": [
+        "Good Fit",
+        "Potential Fit"
+      ],
+      "n_per_label": 15,
+      "seed": 42,
+      "default_seniority": "mid"
+    },
+    "fit_model": {
+      "path": "experiments/datasets/resume_job_fit/models/fit_classifier.joblib",
+      "embedding_model": "all-MiniLM-L6-v2"
+    }
+  },
+  "analyzed_at": "2026-10-03T04:28:45.163161+00:00"
+}
