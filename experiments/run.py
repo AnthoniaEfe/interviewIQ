@@ -40,6 +40,7 @@ from app.services.extraction.profiles import (  # noqa: E402
 )
 from app.services.gap_analysis.matrix import build_gap_matrix  # noqa: E402
 from app.services.gap_sensitivity.analyze import run_gap_sensitivity  # noqa: E402
+from app.services.fit_label_control.pipeline import run_fit_label_control  # noqa: E402
 from app.services.llm.factory import build_router  # noqa: E402
 from app.services.llm.provider import LLMResult  # noqa: E402
 from app.services.llm.tasks import LLMTask  # noqa: E402
@@ -338,6 +339,9 @@ async def async_main(
     smoke: bool,
     stage: str = "baseline",
     source_experiment: str | None = None,
+    dry_run: bool = False,
+    confirm_spend: bool = False,
+    max_cost: float | None = None,
 ) -> Path:
     config = load_config(config_path)
     get_settings.cache_clear()
@@ -358,6 +362,18 @@ async def async_main(
             smoke=smoke,
             source_experiment=source_experiment,
         )
+
+    if stage == "fit_label_control":
+        from app.services.fit_label_control.constants import DEFAULT_MAX_COST_USD
+
+        result = await run_fit_label_control(
+            dry_run=dry_run,
+            confirm_spend=confirm_spend,
+            max_cost=DEFAULT_MAX_COST_USD if max_cost is None else max_cost,
+            smoke=smoke,
+        )
+        out = result.get("out_dir")
+        return Path(out) if out else ROOT / "experiments" / "results"
 
     if stage == "gap_sensitivity":
         if not source_experiment:
@@ -667,7 +683,13 @@ def main() -> None:
     parser.add_argument("--smoke", action="store_true", help="Run one combination only")
     parser.add_argument(
         "--stage",
-        choices=("extraction", "gap_analysis", "baseline", "gap_sensitivity"),
+        choices=(
+            "extraction",
+            "gap_analysis",
+            "baseline",
+            "gap_sensitivity",
+            "fit_label_control",
+        ),
         default="baseline",
         help="Pipeline stage to run. Default remains baseline generation.",
     )
@@ -679,6 +701,22 @@ def main() -> None:
             "Defaults to latest completed extraction for gap_analysis."
         ),
     )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="For fit_label_control: print pairs and estimated cost, then exit.",
+    )
+    parser.add_argument(
+        "--confirm-spend",
+        action="store_true",
+        help="For fit_label_control: allow paid Luna extraction.",
+    )
+    parser.add_argument(
+        "--max-cost",
+        type=float,
+        default=None,
+        help="For fit_label_control: abort if running cost would exceed this USD cap.",
+    )
     args = parser.parse_args()
     asyncio.run(
         async_main(
@@ -686,6 +724,9 @@ def main() -> None:
             smoke=args.smoke,
             stage=args.stage,
             source_experiment=args.source_experiment,
+            dry_run=args.dry_run,
+            confirm_spend=args.confirm_spend,
+            max_cost=args.max_cost,
         )
     )
 

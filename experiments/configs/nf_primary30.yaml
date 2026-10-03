@@ -1,0 +1,15 @@
+experiment_name: interviewiq_nf_primary30
+primary_dataset: cnamuangtoun/resume-job-description-fit
+generation_modes:
+  - baseline
+final_question_count: 10
+data:
+  source: resume_job_fit
+  cache_dir: experiments/datasets/resume_job_fit/cache
+  pairs_dir: experiments/datasets/resume_job_fit/experiment_pairs_nf_primary30
+  manifest: experiments/datasets/resume_job_fit/experiment_pairs_nf_primary30/manifest.json
+  labels:
+    - No Fit
+  n_per_label: 30
+  seed: 42
+  default_seniority: mid

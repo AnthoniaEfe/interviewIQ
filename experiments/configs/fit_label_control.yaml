@@ -1,0 +1,17 @@
+experiment_name: interviewiq_fit_label_control
+primary_dataset: cnamuangtoun/resume-job-description-fit
+generation_modes:
+  - baseline
+final_question_count: 10
+data:
+  source: resume_job_fit
+  cache_dir: experiments/datasets/resume_job_fit/cache
+  default_seniority: mid
+fit_label_control:
+  n_no_fit: 30
+  smoke_pairs: 2
+  primary_seed: 42
+  holdout_seed: 2026
+  prior_per_pair_cost_usd: 0.00711369
+  max_cost_usd: 1.00
+  source_split: train
