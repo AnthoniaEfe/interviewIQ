@@ -1,0 +1,225 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_06210_7de5fd638e77",
+  "jd_id": "rjf_06210_7de5fd638e77",
+  "pair_id": "rjf_06210_7de5fd638e77",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_06210_7de5fd638e77__rjf_06210_7de5fd638e77__mid.json",
+  "n_requirements": 8,
+  "questions": [
+    {
+      "question": "You have led teams and served as an acting supervisor. What motivates you to move into a lead software developer role, and how would you balance hands-on technical contribution with coaching engineers?"
+    },
+    {
+      "question": "Your profile describes leading a hardware and software refresh for a Business Intelligence Competency Center. What was the most consequential architectural decision, how did you evaluate options, and what measurable result followed?"
+    },
+    {
+      "question": "Payments experience is not shown in your profile. If asked to lead a team building a payment initiation service, what questions would you ask product, risk, operations, and partner teams before proposing an architecture?"
+    },
+    {
+      "question": "Which parts of the full stack have you personally delivered\u2014frontend, APIs, backend services, data layer, deployment, and observability\u2014and where have you primarily led or supported others?"
+    },
+    {
+      "question": "What aspects of your work on accounts receivable and collection systems would transfer to a fintech product, and what domain knowledge would you need to build before making design decisions?"
+    },
+    {
+      "question": "The role requires AWS, which is not reflected in your profile. How would you design and operate a Java service on AWS that must remain available during an Availability Zone failure?"
+    },
+    {
+      "question": "Your background emphasizes infrastructure, databases, and enterprise architecture. Give a concrete example of software you personally designed or implemented, including the language, your code-level contribution, testing approach, and production outcome."
+    },
+    {
+      "question": "You join a team with established payment and compliance rules that you have not previously worked with. How would you rapidly learn the domain while avoiding risky assumptions in early technical decisions?"
+    },
+    {
+      "question": "Suppose the team needs to deliver a new customer-facing feature with a Java backend, web UI, SQL persistence, and AWS deployment in six weeks. How would you break down the work, sequence risks, and define a minimum viable release?"
+    },
+    {
+      "question": "How would you decide whether validation, authorization checks, and business rules belong in the client, the Java API, or both for a customer-facing financial workflow?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "You have led teams and served as an acting supervisor. What motivates you to move into a lead software developer role, and how would you balance hands-on technical contribution with coaching engineers?",
+      "competency": "Leadership motivation",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Explores motivation and the candidate's intended leadership style during the transition from enterprise systems leadership to a software development lead role.",
+      "source_evidence": [
+        "Candidate achievement: served as acting supervisor",
+        "Candidate achievement: led and mentored multiple teams",
+        "Candidate professional summary: systems software specialist and lead architect"
+      ],
+      "priority": 0.7,
+      "weight": 0.6088
+    },
+    {
+      "question": "Your profile describes leading a hardware and software refresh for a Business Intelligence Competency Center. What was the most consequential architectural decision, how did you evaluate options, and what measurable result followed?",
+      "competency": "Architecture leadership",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Elicits concrete evidence from a prominent candidate-specific leadership and architecture achievement.",
+      "source_evidence": [
+        "Candidate experience: managed BICC hardware and software refresh projects",
+        "Candidate achievement: technical lead for enterprise-wide data warehouse infrastructure"
+      ],
+      "priority": 0.72,
+      "weight": 0.6088
+    },
+    {
+      "question": "Payments experience is not shown in your profile. If asked to lead a team building a payment initiation service, what questions would you ask product, risk, operations, and partner teams before proposing an architecture?",
+      "competency": "Payments discovery",
+      "competency_type": "other",
+      "target_gap": "Payments",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Assesses structured discovery and risk identification for the preferred payments domain.",
+      "source_evidence": [
+        "Gap matrix: Payments \u2014 missing",
+        "Job preference: Payments experience is a plus",
+        "Candidate experience: communicated with vendors and multiple teams"
+      ],
+      "priority": 0.78,
+      "weight": 0.5614
+    },
+    {
+      "question": "Which parts of the full stack have you personally delivered\u2014frontend, APIs, backend services, data layer, deployment, and observability\u2014and where have you primarily led or supported others?",
+      "competency": "Full-stack delivery scope",
+      "competency_type": "domain",
+      "target_gap": "Full-stack software development",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Directly distinguishes hands-on full-stack breadth from the profile's stronger infrastructure and database background.",
+      "source_evidence": [
+        "Gap matrix: Full-stack software development \u2014 weak_match",
+        "Candidate evidence: Installed, configured, tested, and maintained database management software.",
+        "Candidate skills: JavaScript, HTML, Java, C#/.NET"
+      ],
+      "priority": 0.91,
+      "weight": 0.6871
+    },
+    {
+      "question": "What aspects of your work on accounts receivable and collection systems would transfer to a fintech product, and what domain knowledge would you need to build before making design decisions?",
+      "competency": "Fintech domain transfer",
+      "competency_type": "domain",
+      "target_gap": "Fintech",
+      "question_type": "Role-Specific",
+      "difficulty": "medium",
+      "rationale": "Uses the candidate's adjacent collections experience to evaluate honest domain transfer and learning strategy.",
+      "source_evidence": [
+        "Gap matrix: Fintech \u2014 missing",
+        "Candidate experience: Accounts Receivable Collection System (ARCS)",
+        "Candidate experience: solutions for directives affecting collection systems"
+      ],
+      "priority": 0.93,
+      "weight": 0.9327
+    },
+    {
+      "question": "The role requires AWS, which is not reflected in your profile. How would you design and operate a Java service on AWS that must remain available during an Availability Zone failure?",
+      "competency": "AWS architecture",
+      "competency_type": "technical",
+      "target_gap": "Amazon Web Services (AWS)",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Directly tests the highest-priority missing requirement through a production resilience scenario relevant to a lead developer role.",
+      "source_evidence": [
+        "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+        "Job requirement: Experience with Java, AWS, SQL."
+      ],
+      "priority": 0.99,
+      "weight": 0.9433
+    },
+    {
+      "question": "Your background emphasizes infrastructure, databases, and enterprise architecture. Give a concrete example of software you personally designed or implemented, including the language, your code-level contribution, testing approach, and production outcome.",
+      "competency": "Software engineering depth",
+      "competency_type": "domain",
+      "target_gap": "Software engineering experience",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Clarifies the weak evidence for sustained hands-on software engineering versus systems and infrastructure leadership.",
+      "source_evidence": [
+        "Gap matrix: Software engineering experience \u2014 weak_match",
+        "Candidate evidence: Installed, configured, tested, and maintained database management software.",
+        "Candidate experience: analyzed, designed, developed, tested, and implemented ARCS automated processes"
+      ],
+      "priority": 0.91,
+      "weight": 0.6905
+    },
+    {
+      "question": "You join a team with established payment and compliance rules that you have not previously worked with. How would you rapidly learn the domain while avoiding risky assumptions in early technical decisions?",
+      "competency": "Domain onboarding",
+      "competency_type": "soft",
+      "target_gap": "Fintech",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Evaluates the candidate's approach to closing a material domain gap in a safety-conscious manner.",
+      "source_evidence": [
+        "Gap matrix: Fintech \u2014 missing",
+        "Candidate experience: led and mentored multiple teams",
+        "Job requires strong Fintech background"
+      ],
+      "priority": 0.89,
+      "weight": 0.9327
+    },
+    {
+      "question": "Suppose the team needs to deliver a new customer-facing feature with a Java backend, web UI, SQL persistence, and AWS deployment in six weeks. How would you break down the work, sequence risks, and define a minimum viable release?",
+      "competency": "Full-stack planning",
+      "competency_type": "other",
+      "target_gap": "Full-stack software development",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests ability to lead integrated delivery across the layers named in the role rather than only infrastructure work.",
+      "source_evidence": [
+        "Gap matrix: Full-stack software development \u2014 weak_match",
+        "Job responsibility: Lead the full stack team.",
+        "Candidate experience: managed multiple enterprise projects"
+      ],
+      "priority": 0.9,
+      "weight": 0.6871
+    },
+    {
+      "question": "How would you decide whether validation, authorization checks, and business rules belong in the client, the Java API, or both for a customer-facing financial workflow?",
+      "competency": "Full-stack boundary design",
+      "competency_type": "technical",
+      "target_gap": "Full-stack software development",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Assesses cross-layer design judgment and security awareness needed to lead a full-stack team.",
+      "source_evidence": [
+        "Gap matrix: Full-stack software development \u2014 weak_match",
+        "Job responsibility: meet security requirements.",
+        "Candidate skills: Java, JavaScript, HTML"
+      ],
+      "priority": 0.88,
+      "weight": 0.6871
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    29,
+    28,
+    8,
+    14,
+    5,
+    0,
+    10,
+    7,
+    15,
+    16
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.23,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:50.664688+00:00"
+}

@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_03794_301991d452b9",
+  "jd_id": "rjf_03794_301991d452b9",
+  "pair_id": "rjf_03794_301991d452b9",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Your Coca-Cola role includes preparing Forms 5471, 8858, 8865, 1120-F, and IC-DISC returns. What accounting records and reconciliations did you rely on to validate the underlying financial data before filing?"
+    },
+    {
+      "question": "This role requires preparing financial statements and calculating, documenting, and posting journal entries. Describe your direct experience with general-ledger journal entries, including the accounting system used and the review controls you followed."
+    },
+    {
+      "question": "Tell us about a technical international-tax issue you researched at Coca-Cola. How did you analyze the facts, determine the appropriate treatment, and communicate your conclusion to stakeholders?"
+    },
+    {
+      "question": "Describe a period when you managed multiple tax projects with competing deadlines. How did you prioritize the work, monitor progress, and maintain accuracy under pressure?"
+    },
+    {
+      "question": "You have conducted M&A due diligence and permanent-establishment analysis. Give an example of an issue or risk you identified, how you escalated it, and the outcome of your communication."
+    },
+    {
+      "question": "What exposure have you had to preparing annual budgets, periodic forecasts, or variance analyses? If your experience is limited, explain how you would use your accounting and Excel skills to build a projection for an assigned program."
+    },
+    {
+      "question": "This position supports program accounting and requires working knowledge of funding-source regulations. How would you get up to speed on unfamiliar funding requirements and ensure expenditures, documentation, and reporting remain compliant?"
+    },
+    {
+      "question": "Imagine that, while preparing a monthly financial statement, you find that a program expense appears misclassified and could materially affect the reported results. What steps would you take to investigate, correct, document, and communicate the issue?"
+    },
+    {
+      "question": "What interests you in moving from an international tax-focused role at Coca-Cola to a Senior Accountant position centered on program accounting, financial statements, budgets, and audits?"
+    },
+    {
+      "question": "The role requires schedules and support for both internal and external audits. Drawing on the support documentation you maintained at Midwest Health and your current tax work, how would you organize an audit-ready file and respond to an auditor\u2019s request?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 3963,
+    "output_tokens": 464,
+    "cached_tokens": 0,
+    "estimated_cost": 0.013494,
+    "latency_ms": 6256.6,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.013494,
+  "cost_cny": 0.09135438,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:03:51.402652+00:00",
+  "user_prompt_sha256": "e5a8e97c86e29e5c2bb6801e9ec4bb1e9fee6e7084f35aa5fe076e48bbc182a3"
+}

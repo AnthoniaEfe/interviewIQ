@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_04553_ea8f275312b4",
+  "jd_id": "rjf_04553_ea8f275312b4",
+  "pair_id": "rjf_04553_ea8f275312b4",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Walk me through a general-ledger account reconciliation you performed for cash, accounts receivable, accounts payable, or investments: how did you investigate reconciling items, document conclusions, and ensure the ledger remained accurate?"
+    },
+    {
+      "question": "In your audit work, you tested cash disbursements, cash receipts, and payroll controls. Describe a control deficiency you identified or a control risk you assessed, including how you communicated the issue and followed it through."
+    },
+    {
+      "question": "This role requires analyzing, creating, and posting journal entries under U.S. GAAP. Describe your direct experience preparing or reviewing journal entries and the checks you use to validate account coding, support, and period-end accuracy."
+    },
+    {
+      "question": "How would you research and document the appropriate U.S. GAAP treatment for a transaction when the accounting conclusion is unclear, including the sources you would consult and how you would present your recommendation?"
+    },
+    {
+      "question": "What is your understanding of ASC 842 lease accounting, and how would you approach identifying leases in a contract, determining the initial accounting, and supporting ongoing reporting if this is an area you have not previously owned?"
+    },
+    {
+      "question": "The position calculates expected credit losses under CECL. Explain how you would build your understanding of CECL and what data, assumptions, controls, and documentation you would expect to evaluate in a credit-loss calculation."
+    },
+    {
+      "question": "Suppose the company acquires a business with identifiable intangible assets and later needs consolidated footnote disclosures. How would you organize the accounting analysis, valuation inputs, journal entries, and reporting support, and where would you seek technical guidance?"
+    },
+    {
+      "question": "You analyzed contract schedules and costs for construction clients. How would you apply that analytical discipline when reviewing a new business contract to identify key accounting considerations such as performance obligations, payment terms, contingencies, or lease components?"
+    },
+    {
+      "question": "Tell me about managing inexperienced staff during preliminary audit fieldwork. How did you set expectations, review their work, provide feedback, and protect quality while meeting the engagement timeline?"
+    },
+    {
+      "question": "You have worked across public-accounting engagements and also coordinated a swim team involving more than 100 swimmers, parents, and coaches. What motivates you to move into a Senior Accountant II role, and how would you use that coordination experience to work effectively with internal stakeholders, auditors, and accounting colleagues?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 6131,
+    "output_tokens": 581,
+    "cached_tokens": 0,
+    "estimated_cost": 0.019234,
+    "latency_ms": 7114.78,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.019234,
+  "cost_cny": 0.13021418,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:04:19.827501+00:00",
+  "user_prompt_sha256": "15e995fc4635f03b5f28238fc3285ae29477a13b887dac4a49b620ee2b5f7284"
+}

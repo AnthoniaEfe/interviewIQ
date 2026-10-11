@@ -1,0 +1,1077 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "pool",
+  "condition": "T_pool",
+  "profile_id": "rjf_03558_5a71f8cf9f12",
+  "jd_id": "rjf_03558_5a71f8cf9f12",
+  "pair_id": "rjf_03558_5a71f8cf9f12",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "prompt": {
+    "file": "generation/interviewiq_pool.md",
+    "version": "1.1.0",
+    "sha256": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc"
+  },
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 42,
+  "pool_size_requested": 30,
+  "raw_questions": [
+    {
+      "question": "You have built applications on Microsoft Azure. How would you map that experience to deploying a Java web service on AWS, including the AWS services you would choose for compute, networking, secrets, logging, and monitoring?",
+      "competency": "AWS platform design",
+      "dimension": "Technical",
+      "target_gap": "AWS",
+      "difficulty": "mid",
+      "rationale": "AWS is a required weak match, while the profile shows Azure rather than AWS. This tests transferable cloud architecture knowledge without assuming direct AWS production experience.",
+      "source_evidence": [
+        "Microsoft Azure",
+        "Java 8"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Design a Spring Boot service that receives a request, validates it, persists data, calls a downstream REST service, and returns a consistent error response. Which Spring components and testing approach would you use?",
+      "competency": "Spring Boot",
+      "dimension": "Technical",
+      "target_gap": "Spring Boot",
+      "difficulty": "mid",
+      "rationale": "Spring Boot is a high-weight missing required skill. The candidate's Java background provides a basis to assess readiness to use the framework.",
+      "source_evidence": [
+        "Java 8",
+        "Oracle Certified Associate, Java SE 8 Programmer"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Suppose a legacy Java application must be split into independently deployable services. How would you identify service boundaries, manage inter-service communication, and avoid distributed-data consistency problems?",
+      "competency": "Microservices architecture",
+      "dimension": "Situational",
+      "target_gap": "Microservices",
+      "difficulty": "mid",
+      "rationale": "Microservices is missing and central to the role's scalable services requirement; this assesses architectural reasoning rather than claimed hands-on experience.",
+      "source_evidence": [
+        "Java 8",
+        "REST",
+        "MVC Architecture"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Walk through a REST endpoint you have built or designed: how did you choose resource URLs, HTTP methods, validation rules, status codes, pagination, and an approach to API versioning?",
+      "competency": "Backend API design",
+      "dimension": "Technical",
+      "target_gap": "Backend REST APIs",
+      "difficulty": "mid",
+      "rationale": "The candidate lists REST and JSON, but the matrix rates backend REST API experience as weak. This distinguishes familiarity from robust backend API design experience.",
+      "source_evidence": [
+        "REST",
+        "JSON",
+        "C# server-side functionality"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "If asked to add a small Node.js service alongside an existing Java backend, how would you structure asynchronous request handling, error propagation, configuration, and automated tests?",
+      "competency": "Node.js backend development",
+      "dimension": "Technical",
+      "target_gap": "Node.js",
+      "difficulty": "mid",
+      "rationale": "Node.js is a required partial match based on JavaScript-adjacent evidence, so the question tests practical depth and ability to transition into server-side JavaScript.",
+      "source_evidence": [
+        "JavaScript",
+        "TypeScript",
+        "Highcharts.js"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Compare object-oriented Java with functional programming. Using a collection-processing example, explain when immutable data and higher-order functions would improve the design and when they may not.",
+      "competency": "Functional programming",
+      "dimension": "Technical",
+      "target_gap": "Functional programming",
+      "difficulty": "mid",
+      "rationale": "Functional programming is a required weak match. The candidate's Java 8 experience can support a concrete assessment of functional concepts and trade-offs.",
+      "source_evidence": [
+        "Java 8",
+        "Oracle Certified Associate, Java SE 8 Programmer"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "What exposure have you had to Scala, and how would you implement a transformation pipeline using case classes, immutable collections, and pattern matching? If you have not used Scala, describe how you would get productive quickly.",
+      "competency": "Scala",
+      "dimension": "Technical",
+      "target_gap": "Scala",
+      "difficulty": "mid",
+      "rationale": "Scala is a required weak match with no explicit profile evidence. This directly verifies experience while allowing the candidate to demonstrate an informed learning plan.",
+      "source_evidence": [
+        "Java 8",
+        "Data structures and algorithms"
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "This role uses Ruby in a functional-programming-oriented stack. What Ruby experience do you have, and how would you assess and close any gap before taking ownership of a production Ruby service?",
+      "competency": "Ruby readiness",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Ruby",
+      "difficulty": "mid",
+      "rationale": "Ruby is a missing required skill. This probes candor, learning strategy, and ownership for a material technology gap.",
+      "source_evidence": [
+        "Java 8",
+        "JavaScript",
+        "Full-stack developer with 3 years of professional experience"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "For a feature that needs flexible document storage and several query patterns, how would you model data in MongoDB, choose indexes, and recognize when the model should be revised?",
+      "competency": "MongoDB data modeling",
+      "dimension": "Technical",
+      "target_gap": "MongoDB",
+      "difficulty": "mid",
+      "rationale": "MongoDB is a required weak match; the profile cites database design and NoSQL but not MongoDB-specific work.",
+      "source_evidence": [
+        "NoSQL",
+        "Database design",
+        "MySQL"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "A product manager wants type-ahead search across millions of records with faceting and relevance ranking. Outline an Elasticsearch index, ingestion/update path, query strategy, and operational risks.",
+      "competency": "Elasticsearch",
+      "dimension": "Situational",
+      "target_gap": "Elasticsearch",
+      "difficulty": "hard",
+      "rationale": "Elasticsearch is missing and required. This scenario assesses whether the candidate understands search-system concepts needed in the role.",
+      "source_evidence": [
+        "Database design",
+        "Web development"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "When would you introduce Redis into a web application, and how would you design cache keys, expiration, invalidation, and protection against stale or unavailable cache data?",
+      "competency": "Redis caching",
+      "dimension": "Technical",
+      "target_gap": "Redis",
+      "difficulty": "mid",
+      "rationale": "Redis is a high-weight missing requirement. The question evaluates core caching and resilience knowledge relevant to scalable services.",
+      "source_evidence": [
+        "Web development",
+        "Microsoft Azure"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "You have JavaScript and TypeScript experience. How would you build a React page that fetches remote data, represents loading/error/empty states, and prevents unnecessary re-rendering as the page grows?",
+      "competency": "React.js",
+      "dimension": "Technical",
+      "target_gap": "React.js",
+      "difficulty": "mid",
+      "rationale": "React.js is a required weak match based on adjacent JavaScript experience. This tests whether that experience translates to component-based client development.",
+      "source_evidence": [
+        "JavaScript",
+        "TypeScript",
+        "HTML"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Given a designer's desktop-first mockup for a data-heavy dashboard, how would you turn it into a responsive, accessible Bootstrap-based interface that works on small screens?",
+      "competency": "Bootstrap and responsive UI",
+      "dimension": "Situational",
+      "target_gap": "Bootstrap",
+      "difficulty": "mid",
+      "rationale": "Bootstrap is a required weak match, and the role explicitly involves responsive applications with designers and product managers.",
+      "source_evidence": [
+        "HTML5",
+        "CSS3",
+        "Web development"
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "Describe a practical MV* structure for a client application that displays editable records, including where state, view rendering, user events, validation, and server synchronization belong.",
+      "competency": "MV* application design",
+      "dimension": "Technical",
+      "target_gap": "MV* application design",
+      "difficulty": "mid",
+      "rationale": "MV* application design is a partial match; the profile includes MVC Architecture, making this a useful depth probe of applicable design patterns.",
+      "source_evidence": [
+        "MVC Architecture",
+        "Mobile application development"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "For an existing Backbone.js application with a growing codebase, how would you organize models, collections, views, routers, and event cleanup to keep the application maintainable?",
+      "competency": "Backbone.js",
+      "dimension": "Technical",
+      "target_gap": "Backbone.js",
+      "difficulty": "mid",
+      "rationale": "Backbone.js is a required weak match with no direct profile evidence. This verifies actual familiarity with the framework and maintainability practices.",
+      "source_evidence": [
+        "JavaScript",
+        "MVC Architecture"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "How would you use Require.js or another AMD-style approach to divide a browser application into modules, manage dependencies, and optimize assets for production?",
+      "competency": "Require.js and AMD",
+      "dimension": "Technical",
+      "target_gap": "Require.js",
+      "difficulty": "mid",
+      "rationale": "Require.js is a weak required match. The candidate's JavaScript experience makes modular-client-side design a relevant transferable-skills probe.",
+      "source_evidence": [
+        "JavaScript",
+        "TypeScript"
+      ],
+      "priority": 0.7
+    },
+    {
+      "question": "You created interactive custom charts with Highcharts.js. Choose one chart or dashboard feature you built and explain the data transformation, interaction design, performance considerations, and how you ensured users could interpret it correctly.",
+      "competency": "JavaScript graphing",
+      "dimension": "Role-Specific",
+      "target_gap": "JavaScript graphing",
+      "difficulty": "mid",
+      "rationale": "This is a profile-specific strength probe for a required partial match and directly tests the job's need for graphing and data presentation.",
+      "source_evidence": [
+        "Created interactive custom charts using Highcharts.js",
+        "Highcharts.js"
+      ],
+      "priority": 0.74
+    },
+    {
+      "question": "Describe the most significant Highcharts implementation you worked on. How did you handle changing data, series configuration, tooltips, drill-down or filtering, and browser performance?",
+      "competency": "Highcharts",
+      "dimension": "Role-Specific",
+      "target_gap": "D3.js or Highcharts",
+      "difficulty": "mid",
+      "rationale": "Highcharts is a direct partial match and documented candidate experience, so this validates depth in a relevant frontend strength.",
+      "source_evidence": [
+        "Created interactive custom charts using Highcharts.js",
+        "JavaScript"
+      ],
+      "priority": 0.71
+    },
+    {
+      "question": "A query backing a frequently used dashboard has become slow. Explain how you would diagnose it, including query plans, indexes, data volume, and application-level changes, before deciding on a fix.",
+      "competency": "SQL performance tuning",
+      "dimension": "Situational",
+      "target_gap": "Database performance",
+      "difficulty": "mid",
+      "rationale": "Database performance is a required partial match supported by database-design evidence but not explicit tuning experience.",
+      "source_evidence": [
+        "Database design",
+        "MySQL"
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "How would you design a relational schema and transactional workflow for a reservation-style system where users can modify an existing reservation using a confirmation number?",
+      "competency": "SQL and database programming",
+      "dimension": "Technical",
+      "target_gap": "SQL and database programming",
+      "difficulty": "mid",
+      "rationale": "The candidate worked on an AVIS reservation application and lists database design, making this a grounded probe of the partial SQL/database match.",
+      "source_evidence": [
+        "Developed a mobile web application for AVIS using Hibernate",
+        "Developed a screen for modifying existing reservations",
+        "Database design"
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "Explain how a browser request reaches a REST backend and returns a response. Include DNS, TLS, HTTP behavior, load balancing or proxies, and the failure points you would inspect when it works locally but not in production.",
+      "competency": "Internet architecture",
+      "dimension": "Technical",
+      "target_gap": "Web technologies and Internet architecture",
+      "difficulty": "mid",
+      "rationale": "Web technologies and Internet architecture is a partial match, and the candidate has web, REST, and proxy-layer experience that can be explored for depth.",
+      "source_evidence": [
+        "Web development",
+        "REST",
+        "Worked in the proxy layer of the AT&T network"
+      ],
+      "priority": 0.76
+    },
+    {
+      "question": "You are given a Linux host running a web service that is intermittently returning 502 errors. What commands, logs, metrics, and network checks would you use to isolate the fault safely?",
+      "competency": "Unix web-stack operations",
+      "dimension": "Situational",
+      "target_gap": "Unix server and web stack administration",
+      "difficulty": "mid",
+      "rationale": "Unix server and web stack administration is a partial match based on Unix/Linux evidence. This tests hands-on operational troubleshooting.",
+      "source_evidence": [
+        "Unix/Linux",
+        "Wireshark",
+        "SecureCRT"
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "How would you provision and operate an AWS RDS database for a production web service, including backups, high availability, connection management, schema migrations, security, and performance monitoring?",
+      "competency": "AWS RDS",
+      "dimension": "Technical",
+      "target_gap": "AWS RDS",
+      "difficulty": "hard",
+      "rationale": "AWS RDS is a high-weight missing required skill. It is directly named in the role responsibilities and should be assessed explicitly.",
+      "source_evidence": [
+        "Microsoft Azure",
+        "Database design",
+        "MySQL"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Design a DynamoDB table for an application that must retrieve a user's recent events, fetch a single event by ID, and support a time-bounded status query. Explain your keys, indexes, access patterns, and trade-offs.",
+      "competency": "Amazon DynamoDB",
+      "dimension": "Technical",
+      "target_gap": "Amazon DynamoDB",
+      "difficulty": "hard",
+      "rationale": "DynamoDB is a required weak match with no explicit AWS evidence. This assesses data-modeling reasoning for a core role technology.",
+      "source_evidence": [
+        "NoSQL",
+        "Database design"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "Describe a CI/CD pipeline you would expect for a Java or Node.js service, from pull request through automated testing, artifact creation, deployment, rollback, and production verification.",
+      "competency": "Continuous integration",
+      "dimension": "Technical",
+      "target_gap": "Continuous integration",
+      "difficulty": "mid",
+      "rationale": "Continuous integration is missing and the job explicitly requires testing and continuous deployment. This tests delivery-process readiness.",
+      "source_evidence": [
+        "Handled project activities from design through testing",
+        "Git"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "How would you configure Jenkins to build and test a service on every pull request, run quality checks, publish an artifact, and deploy only after appropriate approvals? What would you do if the pipeline becomes unreliable?",
+      "competency": "Jenkins",
+      "dimension": "Technical",
+      "target_gap": "Jenkins",
+      "difficulty": "mid",
+      "rationale": "Jenkins is a missing required skill and is specifically named by the job. The question probes practical pipeline configuration and maintenance knowledge.",
+      "source_evidence": [
+        "Git",
+        "Handled project activities from design through testing"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Give an example of how you used Git and Bitbucket on a shared codebase. How did you structure branches, review changes, resolve a difficult merge conflict, and keep releases stable?",
+      "competency": "Git collaboration",
+      "dimension": "Behavioural",
+      "target_gap": "Git",
+      "difficulty": "mid",
+      "rationale": "Git is a strong match, but a strength probe verifies real team workflow and code-quality practices expected of an individual contributor.",
+      "source_evidence": [
+        "Git",
+        "Bitbucket"
+      ],
+      "priority": 0.62
+    },
+    {
+      "question": "Describe how you planned and communicated your work when you handled a project from design through development, testing, reporting, and documentation. How did you surface risks or changing requirements to others?",
+      "competency": "Agile collaboration",
+      "dimension": "Behavioural",
+      "target_gap": "Agile software development",
+      "difficulty": "mid",
+      "rationale": "Agile software development is a partial match, and the profile claims end-to-end project activity. This validates collaboration, iterative delivery, and communication practices.",
+      "source_evidence": [
+        "Handled project activities from design through development, testing, reporting, documentation, and predictive analysis",
+        "Agile"
+      ],
+      "priority": 0.73
+    },
+    {
+      "question": "Your profile notes machine-learning models for predicting power-market prices. Explain one model-selection decision, how you evaluated predictive quality, and how you would present its uncertainty and limitations to both technical and business stakeholders.",
+      "competency": "Data presentation and communication",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This profile-specific probe validates the claimed predictive-analysis work while evaluating the role's need for data presentation and cross-functional communication.",
+      "source_evidence": [
+        "Applied machine learning algorithms to predict power market prices for different ISOs",
+        "Predictive analysis",
+        "reporting and documentation"
+      ],
+      "priority": 0.68
+    },
+    {
+      "question": "You owned internal acceptance testing for new AT&T site builds and maintenance-window testing. Describe a high-risk test you planned: what were the acceptance criteria, rollback triggers, evidence captured, and communication plan if it failed?",
+      "competency": "Quality ownership",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This validates a distinctive ownership claim in the profile and assesses the testing discipline needed in an agile, continuously deployed engineering environment.",
+      "source_evidence": [
+        "Owned internal acceptance testing for new site builds",
+        "Performed maintenance-window testing for upgraded sites",
+        "Project ownership"
+      ],
+      "priority": 0.66
+    }
+  ],
+  "valid_questions": [
+    {
+      "question": "You have built applications on Microsoft Azure. How would you map that experience to deploying a Java web service on AWS, including the AWS services you would choose for compute, networking, secrets, logging, and monitoring?",
+      "competency": "AWS platform design",
+      "dimension": "Technical",
+      "target_gap": "AWS",
+      "difficulty": "mid",
+      "rationale": "AWS is a required weak match, while the profile shows Azure rather than AWS. This tests transferable cloud architecture knowledge without assuming direct AWS production experience.",
+      "source_evidence": [
+        "Microsoft Azure",
+        "Java 8"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Design a Spring Boot service that receives a request, validates it, persists data, calls a downstream REST service, and returns a consistent error response. Which Spring components and testing approach would you use?",
+      "competency": "Spring Boot",
+      "dimension": "Technical",
+      "target_gap": "Spring Boot",
+      "difficulty": "mid",
+      "rationale": "Spring Boot is a high-weight missing required skill. The candidate's Java background provides a basis to assess readiness to use the framework.",
+      "source_evidence": [
+        "Java 8",
+        "Oracle Certified Associate, Java SE 8 Programmer"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Suppose a legacy Java application must be split into independently deployable services. How would you identify service boundaries, manage inter-service communication, and avoid distributed-data consistency problems?",
+      "competency": "Microservices architecture",
+      "dimension": "Situational",
+      "target_gap": "Microservices",
+      "difficulty": "mid",
+      "rationale": "Microservices is missing and central to the role's scalable services requirement; this assesses architectural reasoning rather than claimed hands-on experience.",
+      "source_evidence": [
+        "Java 8",
+        "REST",
+        "MVC Architecture"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Walk through a REST endpoint you have built or designed: how did you choose resource URLs, HTTP methods, validation rules, status codes, pagination, and an approach to API versioning?",
+      "competency": "Backend API design",
+      "dimension": "Technical",
+      "target_gap": "Backend REST APIs",
+      "difficulty": "mid",
+      "rationale": "The candidate lists REST and JSON, but the matrix rates backend REST API experience as weak. This distinguishes familiarity from robust backend API design experience.",
+      "source_evidence": [
+        "REST",
+        "JSON",
+        "C# server-side functionality"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "If asked to add a small Node.js service alongside an existing Java backend, how would you structure asynchronous request handling, error propagation, configuration, and automated tests?",
+      "competency": "Node.js backend development",
+      "dimension": "Technical",
+      "target_gap": "Node.js",
+      "difficulty": "mid",
+      "rationale": "Node.js is a required partial match based on JavaScript-adjacent evidence, so the question tests practical depth and ability to transition into server-side JavaScript.",
+      "source_evidence": [
+        "JavaScript",
+        "TypeScript",
+        "Highcharts.js"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Compare object-oriented Java with functional programming. Using a collection-processing example, explain when immutable data and higher-order functions would improve the design and when they may not.",
+      "competency": "Functional programming",
+      "dimension": "Technical",
+      "target_gap": "Functional programming",
+      "difficulty": "mid",
+      "rationale": "Functional programming is a required weak match. The candidate's Java 8 experience can support a concrete assessment of functional concepts and trade-offs.",
+      "source_evidence": [
+        "Java 8",
+        "Oracle Certified Associate, Java SE 8 Programmer"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "What exposure have you had to Scala, and how would you implement a transformation pipeline using case classes, immutable collections, and pattern matching? If you have not used Scala, describe how you would get productive quickly.",
+      "competency": "Scala",
+      "dimension": "Technical",
+      "target_gap": "Scala",
+      "difficulty": "mid",
+      "rationale": "Scala is a required weak match with no explicit profile evidence. This directly verifies experience while allowing the candidate to demonstrate an informed learning plan.",
+      "source_evidence": [
+        "Java 8",
+        "Data structures and algorithms"
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "This role uses Ruby in a functional-programming-oriented stack. What Ruby experience do you have, and how would you assess and close any gap before taking ownership of a production Ruby service?",
+      "competency": "Ruby readiness",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Ruby",
+      "difficulty": "mid",
+      "rationale": "Ruby is a missing required skill. This probes candor, learning strategy, and ownership for a material technology gap.",
+      "source_evidence": [
+        "Java 8",
+        "JavaScript",
+        "Full-stack developer with 3 years of professional experience"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "For a feature that needs flexible document storage and several query patterns, how would you model data in MongoDB, choose indexes, and recognize when the model should be revised?",
+      "competency": "MongoDB data modeling",
+      "dimension": "Technical",
+      "target_gap": "MongoDB",
+      "difficulty": "mid",
+      "rationale": "MongoDB is a required weak match; the profile cites database design and NoSQL but not MongoDB-specific work.",
+      "source_evidence": [
+        "NoSQL",
+        "Database design",
+        "MySQL"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "A product manager wants type-ahead search across millions of records with faceting and relevance ranking. Outline an Elasticsearch index, ingestion/update path, query strategy, and operational risks.",
+      "competency": "Elasticsearch",
+      "dimension": "Situational",
+      "target_gap": "Elasticsearch",
+      "difficulty": "hard",
+      "rationale": "Elasticsearch is missing and required. This scenario assesses whether the candidate understands search-system concepts needed in the role.",
+      "source_evidence": [
+        "Database design",
+        "Web development"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "When would you introduce Redis into a web application, and how would you design cache keys, expiration, invalidation, and protection against stale or unavailable cache data?",
+      "competency": "Redis caching",
+      "dimension": "Technical",
+      "target_gap": "Redis",
+      "difficulty": "mid",
+      "rationale": "Redis is a high-weight missing requirement. The question evaluates core caching and resilience knowledge relevant to scalable services.",
+      "source_evidence": [
+        "Web development",
+        "Microsoft Azure"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "You have JavaScript and TypeScript experience. How would you build a React page that fetches remote data, represents loading/error/empty states, and prevents unnecessary re-rendering as the page grows?",
+      "competency": "React.js",
+      "dimension": "Technical",
+      "target_gap": "React.js",
+      "difficulty": "mid",
+      "rationale": "React.js is a required weak match based on adjacent JavaScript experience. This tests whether that experience translates to component-based client development.",
+      "source_evidence": [
+        "JavaScript",
+        "TypeScript",
+        "HTML"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Given a designer's desktop-first mockup for a data-heavy dashboard, how would you turn it into a responsive, accessible Bootstrap-based interface that works on small screens?",
+      "competency": "Bootstrap and responsive UI",
+      "dimension": "Situational",
+      "target_gap": "Bootstrap",
+      "difficulty": "mid",
+      "rationale": "Bootstrap is a required weak match, and the role explicitly involves responsive applications with designers and product managers.",
+      "source_evidence": [
+        "HTML5",
+        "CSS3",
+        "Web development"
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "Describe a practical MV* structure for a client application that displays editable records, including where state, view rendering, user events, validation, and server synchronization belong.",
+      "competency": "MV* application design",
+      "dimension": "Technical",
+      "target_gap": "MV* application design",
+      "difficulty": "mid",
+      "rationale": "MV* application design is a partial match; the profile includes MVC Architecture, making this a useful depth probe of applicable design patterns.",
+      "source_evidence": [
+        "MVC Architecture",
+        "Mobile application development"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "For an existing Backbone.js application with a growing codebase, how would you organize models, collections, views, routers, and event cleanup to keep the application maintainable?",
+      "competency": "Backbone.js",
+      "dimension": "Technical",
+      "target_gap": "Backbone.js",
+      "difficulty": "mid",
+      "rationale": "Backbone.js is a required weak match with no direct profile evidence. This verifies actual familiarity with the framework and maintainability practices.",
+      "source_evidence": [
+        "JavaScript",
+        "MVC Architecture"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "How would you use Require.js or another AMD-style approach to divide a browser application into modules, manage dependencies, and optimize assets for production?",
+      "competency": "Require.js and AMD",
+      "dimension": "Technical",
+      "target_gap": "Require.js",
+      "difficulty": "mid",
+      "rationale": "Require.js is a weak required match. The candidate's JavaScript experience makes modular-client-side design a relevant transferable-skills probe.",
+      "source_evidence": [
+        "JavaScript",
+        "TypeScript"
+      ],
+      "priority": 0.7
+    },
+    {
+      "question": "You created interactive custom charts with Highcharts.js. Choose one chart or dashboard feature you built and explain the data transformation, interaction design, performance considerations, and how you ensured users could interpret it correctly.",
+      "competency": "JavaScript graphing",
+      "dimension": "Role-Specific",
+      "target_gap": "JavaScript graphing",
+      "difficulty": "mid",
+      "rationale": "This is a profile-specific strength probe for a required partial match and directly tests the job's need for graphing and data presentation.",
+      "source_evidence": [
+        "Created interactive custom charts using Highcharts.js",
+        "Highcharts.js"
+      ],
+      "priority": 0.74
+    },
+    {
+      "question": "Describe the most significant Highcharts implementation you worked on. How did you handle changing data, series configuration, tooltips, drill-down or filtering, and browser performance?",
+      "competency": "Highcharts",
+      "dimension": "Role-Specific",
+      "target_gap": "D3.js or Highcharts",
+      "difficulty": "mid",
+      "rationale": "Highcharts is a direct partial match and documented candidate experience, so this validates depth in a relevant frontend strength.",
+      "source_evidence": [
+        "Created interactive custom charts using Highcharts.js",
+        "JavaScript"
+      ],
+      "priority": 0.71
+    },
+    {
+      "question": "A query backing a frequently used dashboard has become slow. Explain how you would diagnose it, including query plans, indexes, data volume, and application-level changes, before deciding on a fix.",
+      "competency": "SQL performance tuning",
+      "dimension": "Situational",
+      "target_gap": "Database performance",
+      "difficulty": "mid",
+      "rationale": "Database performance is a required partial match supported by database-design evidence but not explicit tuning experience.",
+      "source_evidence": [
+        "Database design",
+        "MySQL"
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "How would you design a relational schema and transactional workflow for a reservation-style system where users can modify an existing reservation using a confirmation number?",
+      "competency": "SQL and database programming",
+      "dimension": "Technical",
+      "target_gap": "SQL and database programming",
+      "difficulty": "mid",
+      "rationale": "The candidate worked on an AVIS reservation application and lists database design, making this a grounded probe of the partial SQL/database match.",
+      "source_evidence": [
+        "Developed a mobile web application for AVIS using Hibernate",
+        "Developed a screen for modifying existing reservations",
+        "Database design"
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "Explain how a browser request reaches a REST backend and returns a response. Include DNS, TLS, HTTP behavior, load balancing or proxies, and the failure points you would inspect when it works locally but not in production.",
+      "competency": "Internet architecture",
+      "dimension": "Technical",
+      "target_gap": "Web technologies and Internet architecture",
+      "difficulty": "mid",
+      "rationale": "Web technologies and Internet architecture is a partial match, and the candidate has web, REST, and proxy-layer experience that can be explored for depth.",
+      "source_evidence": [
+        "Web development",
+        "REST",
+        "Worked in the proxy layer of the AT&T network"
+      ],
+      "priority": 0.76
+    },
+    {
+      "question": "You are given a Linux host running a web service that is intermittently returning 502 errors. What commands, logs, metrics, and network checks would you use to isolate the fault safely?",
+      "competency": "Unix web-stack operations",
+      "dimension": "Situational",
+      "target_gap": "Unix server and web stack administration",
+      "difficulty": "mid",
+      "rationale": "Unix server and web stack administration is a partial match based on Unix/Linux evidence. This tests hands-on operational troubleshooting.",
+      "source_evidence": [
+        "Unix/Linux",
+        "Wireshark",
+        "SecureCRT"
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "How would you provision and operate an AWS RDS database for a production web service, including backups, high availability, connection management, schema migrations, security, and performance monitoring?",
+      "competency": "AWS RDS",
+      "dimension": "Technical",
+      "target_gap": "AWS RDS",
+      "difficulty": "hard",
+      "rationale": "AWS RDS is a high-weight missing required skill. It is directly named in the role responsibilities and should be assessed explicitly.",
+      "source_evidence": [
+        "Microsoft Azure",
+        "Database design",
+        "MySQL"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Design a DynamoDB table for an application that must retrieve a user's recent events, fetch a single event by ID, and support a time-bounded status query. Explain your keys, indexes, access patterns, and trade-offs.",
+      "competency": "Amazon DynamoDB",
+      "dimension": "Technical",
+      "target_gap": "Amazon DynamoDB",
+      "difficulty": "hard",
+      "rationale": "DynamoDB is a required weak match with no explicit AWS evidence. This assesses data-modeling reasoning for a core role technology.",
+      "source_evidence": [
+        "NoSQL",
+        "Database design"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "Describe a CI/CD pipeline you would expect for a Java or Node.js service, from pull request through automated testing, artifact creation, deployment, rollback, and production verification.",
+      "competency": "Continuous integration",
+      "dimension": "Technical",
+      "target_gap": "Continuous integration",
+      "difficulty": "mid",
+      "rationale": "Continuous integration is missing and the job explicitly requires testing and continuous deployment. This tests delivery-process readiness.",
+      "source_evidence": [
+        "Handled project activities from design through testing",
+        "Git"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "How would you configure Jenkins to build and test a service on every pull request, run quality checks, publish an artifact, and deploy only after appropriate approvals? What would you do if the pipeline becomes unreliable?",
+      "competency": "Jenkins",
+      "dimension": "Technical",
+      "target_gap": "Jenkins",
+      "difficulty": "mid",
+      "rationale": "Jenkins is a missing required skill and is specifically named by the job. The question probes practical pipeline configuration and maintenance knowledge.",
+      "source_evidence": [
+        "Git",
+        "Handled project activities from design through testing"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Give an example of how you used Git and Bitbucket on a shared codebase. How did you structure branches, review changes, resolve a difficult merge conflict, and keep releases stable?",
+      "competency": "Git collaboration",
+      "dimension": "Behavioural",
+      "target_gap": "Git",
+      "difficulty": "mid",
+      "rationale": "Git is a strong match, but a strength probe verifies real team workflow and code-quality practices expected of an individual contributor.",
+      "source_evidence": [
+        "Git",
+        "Bitbucket"
+      ],
+      "priority": 0.62
+    },
+    {
+      "question": "Describe how you planned and communicated your work when you handled a project from design through development, testing, reporting, and documentation. How did you surface risks or changing requirements to others?",
+      "competency": "Agile collaboration",
+      "dimension": "Behavioural",
+      "target_gap": "Agile software development",
+      "difficulty": "mid",
+      "rationale": "Agile software development is a partial match, and the profile claims end-to-end project activity. This validates collaboration, iterative delivery, and communication practices.",
+      "source_evidence": [
+        "Handled project activities from design through development, testing, reporting, documentation, and predictive analysis",
+        "Agile"
+      ],
+      "priority": 0.73
+    },
+    {
+      "question": "Your profile notes machine-learning models for predicting power-market prices. Explain one model-selection decision, how you evaluated predictive quality, and how you would present its uncertainty and limitations to both technical and business stakeholders.",
+      "competency": "Data presentation and communication",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This profile-specific probe validates the claimed predictive-analysis work while evaluating the role's need for data presentation and cross-functional communication.",
+      "source_evidence": [
+        "Applied machine learning algorithms to predict power market prices for different ISOs",
+        "Predictive analysis",
+        "reporting and documentation"
+      ],
+      "priority": 0.68
+    },
+    {
+      "question": "You owned internal acceptance testing for new AT&T site builds and maintenance-window testing. Describe a high-risk test you planned: what were the acceptance criteria, rollback triggers, evidence captured, and communication plan if it failed?",
+      "competency": "Quality ownership",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This validates a distinctive ownership claim in the profile and assesses the testing discipline needed in an agile, continuously deployed engineering environment.",
+      "source_evidence": [
+        "Owned internal acceptance testing for new site builds",
+        "Performed maintenance-window testing for upgraded sites",
+        "Project ownership"
+      ],
+      "priority": 0.66
+    }
+  ],
+  "validation_failures": [],
+  "n_raw": 30,
+  "n_valid": 30,
+  "n_failed": 0,
+  "weights": [
+    0.7335,
+    0.9306,
+    0.9205,
+    0.6606,
+    0.3983,
+    0.7335,
+    0.726,
+    0.9236,
+    0.7006,
+    0.9203,
+    0.9338,
+    0.6615,
+    0.7337,
+    0.3993,
+    0.6645,
+    0.668,
+    0.3865,
+    0.348,
+    0.3904,
+    0.3838,
+    0.3929,
+    0.3815,
+    0.9373,
+    0.7189,
+    0.9364,
+    0.929,
+    0.1729,
+    0.3566,
+    0.5738047619047618,
+    0.5738047619047618
+  ],
+  "weight_outcomes": [
+    {
+      "rule": "exact",
+      "weight": 0.7335,
+      "matched_competency": "AWS",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9306,
+      "matched_competency": "Spring Boot",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9205,
+      "matched_competency": "Microservices",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6606,
+      "matched_competency": "Backend REST APIs",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3983,
+      "matched_competency": "Node.js",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7335,
+      "matched_competency": "Functional programming",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.726,
+      "matched_competency": "Scala",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9236,
+      "matched_competency": "Ruby",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7006,
+      "matched_competency": "MongoDB",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9203,
+      "matched_competency": "Elasticsearch",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9338,
+      "matched_competency": "Redis",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6615,
+      "matched_competency": "React.js",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7337,
+      "matched_competency": "Bootstrap",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3993,
+      "matched_competency": "MV* application design",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6645,
+      "matched_competency": "Backbone.js",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.668,
+      "matched_competency": "Require.js",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3865,
+      "matched_competency": "JavaScript graphing",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.348,
+      "matched_competency": "D3.js or Highcharts",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3904,
+      "matched_competency": "Database performance",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3838,
+      "matched_competency": "SQL and database programming",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3929,
+      "matched_competency": "Web technologies and Internet architecture",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3815,
+      "matched_competency": "Unix server and web stack administration",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9373,
+      "matched_competency": "AWS RDS",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7189,
+      "matched_competency": "Amazon DynamoDB",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9364,
+      "matched_competency": "Continuous integration",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.929,
+      "matched_competency": "Jenkins",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1729,
+      "matched_competency": "Git",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3566,
+      "matched_competency": "Agile software development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.5738047619047618,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.5738047619047618,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    }
+  ],
+  "fallback_rate": 0.0,
+  "profile_probe_rate": 0.06666666666666667,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 14047,
+    "output_tokens": 3450,
+    "cached_tokens": 0,
+    "estimated_cost": 0.069494,
+    "latency_ms": 30312.71,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.069494,
+  "cost_cny": 0.47047438,
+  "usd_cny_rate": 6.77,
+  "user_prompt_sha256": "12eb647208a0c17191866451e9d0242f61e9574157b3b99c370e770c1342a93a",
+  "generated_at": "2026-10-11T13:08:17.565814+00:00"
+}

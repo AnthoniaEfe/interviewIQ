@@ -1,0 +1,220 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "B2",
+  "selection_strategy": "plain_mmr_priority",
+  "generation_mode": "interviewiq",
+  "profile_id": "rjf_05797_c4a0628debc9",
+  "jd_id": "rjf_05797_c4a0628debc9",
+  "pair_id": "rjf_05797_c4a0628debc9",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_05797_c4a0628debc9__rjf_05797_c4a0628debc9__mid.json",
+  "n_requirements": 12,
+  "questions": [
+    {
+      "question": "Walk me through how you would build and maintain a lease accounting schedule from a new lease agreement through month-end posting, including the key inputs, journal entries, and reconciliations you would perform."
+    },
+    {
+      "question": "Imagine that, after close, a prepaid balance is materially overstated because one month of amortization was omitted. How would you quantify the impact, correct the books, assess whether prior reporting is affected, and prevent recurrence?"
+    },
+    {
+      "question": "Describe your end-to-end process for a monthly close: how do you plan the calendar, collect inputs, prepare entries and reconciliations, resolve exceptions, and determine that the close is complete?"
+    },
+    {
+      "question": "A prepaid annual insurance invoice is paid at the beginning of the year. Explain how you would set up the amortization schedule, record the initial entry, post monthly expense, and investigate a difference between the schedule and the general ledger."
+    },
+    {
+      "question": "When reviewing a reporting package, how do you perform flux analysis? Describe the thresholds you use, the questions you ask, and how you distinguish a timing difference from an error."
+    },
+    {
+      "question": "How would you design a month-end allocation for shared costs across departments when the business provides headcount, square footage, and usage data? Explain your allocation-base selection, entry, documentation, and validation steps."
+    },
+    {
+      "question": "What US GAAP principles most often affect your month-end work, and how have you used authoritative guidance or internal policy to resolve an accounting question?"
+    },
+    {
+      "question": "Give an example of a monthly accrual you prepared. What evidence supported the estimate, what journal entry did you record, and how did you reverse or true it up in the next period?"
+    },
+    {
+      "question": "Suppose a newly signed office lease has fixed monthly payments, an initial incentive, and a rent-free period. How would you determine the accounting treatment and the supporting schedule under US GAAP?"
+    },
+    {
+      "question": "Explain the difference between an accrual and a prepaid expense, including the typical initial and subsequent journal entries for each."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk me through how you would build and maintain a lease accounting schedule from a new lease agreement through month-end posting, including the key inputs, journal entries, and reconciliations you would perform.",
+      "competency": "Lease accounting",
+      "competency_type": "technical",
+      "target_gap": "Lease accounting",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Lease accounting is a weak match and is a core responsibility, so this tests practical readiness without assuming prior lease-specific experience.",
+      "source_evidence": [
+        "Weak match: Lease accounting",
+        "Candidate evidence: Accounting"
+      ],
+      "priority": 0.98,
+      "weight": 0.3933
+    },
+    {
+      "question": "Imagine that, after close, a prepaid balance is materially overstated because one month of amortization was omitted. How would you quantify the impact, correct the books, assess whether prior reporting is affected, and prevent recurrence?",
+      "competency": "Prepaids error resolution",
+      "competency_type": "other",
+      "target_gap": "Prepaids amortization",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests technical remediation, materiality judgment, and preventive controls for the most significant identified gap.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Candidate evidence: General ledger accounting",
+        "Candidate evidence: Researched and eliminated financial discrepancies in a timely manner."
+      ],
+      "priority": 0.93,
+      "weight": 0.436
+    },
+    {
+      "question": "Describe your end-to-end process for a monthly close: how do you plan the calendar, collect inputs, prepare entries and reconciliations, resolve exceptions, and determine that the close is complete?",
+      "competency": "Full-cycle accounting and close",
+      "competency_type": "domain",
+      "target_gap": "Full-cycle accounting and close",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "The candidate has month-end-close experience, but the matrix identifies only a partial match to full-cycle ownership.",
+      "source_evidence": [
+        "Partial match: Full-cycle accounting and close",
+        "Candidate evidence: Month-end close"
+      ],
+      "priority": 0.93,
+      "weight": 0.2365
+    },
+    {
+      "question": "A prepaid annual insurance invoice is paid at the beginning of the year. Explain how you would set up the amortization schedule, record the initial entry, post monthly expense, and investigate a difference between the schedule and the general ledger.",
+      "competency": "Prepaids amortization",
+      "competency_type": "technical",
+      "target_gap": "Prepaids amortization",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Prepaids amortization is the largest identified technical gap and is an explicit job responsibility.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Candidate evidence: General ledger accounting"
+      ],
+      "priority": 0.97,
+      "weight": 0.436
+    },
+    {
+      "question": "When reviewing a reporting package, how do you perform flux analysis? Describe the thresholds you use, the questions you ask, and how you distinguish a timing difference from an error.",
+      "competency": "Financial reporting and flux analysis",
+      "competency_type": "technical",
+      "target_gap": "Financial reporting",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Financial reporting is a strength, and this probes the role-specific expectation of explaining period-over-period movements.",
+      "source_evidence": [
+        "Strong match: Financial reporting",
+        "Candidate evidence: Financial reporting"
+      ],
+      "priority": 0.89,
+      "weight": 0.1011
+    },
+    {
+      "question": "How would you design a month-end allocation for shared costs across departments when the business provides headcount, square footage, and usage data? Explain your allocation-base selection, entry, documentation, and validation steps.",
+      "competency": "Month-end allocations",
+      "competency_type": "other",
+      "target_gap": "Month-end allocations",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Month-end allocations are a partial match and an explicit recurring responsibility in the role.",
+      "source_evidence": [
+        "Partial match: Month-end allocations",
+        "Candidate evidence: Month-end close"
+      ],
+      "priority": 0.9,
+      "weight": 0.2253
+    },
+    {
+      "question": "What US GAAP principles most often affect your month-end work, and how have you used authoritative guidance or internal policy to resolve an accounting question?",
+      "competency": "US GAAP application",
+      "competency_type": "technical",
+      "target_gap": "US GAAP",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The matrix shows a partial GAAP match; the question tests applied technical knowledge rather than a r\u00e9sum\u00e9 claim.",
+      "source_evidence": [
+        "Partial match: US GAAP",
+        "Candidate evidence: GAAP compliance"
+      ],
+      "priority": 0.88,
+      "weight": 0.2317
+    },
+    {
+      "question": "Give an example of a monthly accrual you prepared. What evidence supported the estimate, what journal entry did you record, and how did you reverse or true it up in the next period?",
+      "competency": "Monthly accruals",
+      "competency_type": "technical",
+      "target_gap": "Monthly accruals",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate reports monthly accrual work, while the role requires dependable recurring accrual preparation.",
+      "source_evidence": [
+        "Partial match: Monthly accruals",
+        "Candidate evidence: Performed bank reconciliations, journal entry preparation, month-end close, and monthly accruals."
+      ],
+      "priority": 0.91,
+      "weight": 0.2342
+    },
+    {
+      "question": "Suppose a newly signed office lease has fixed monthly payments, an initial incentive, and a rent-free period. How would you determine the accounting treatment and the supporting schedule under US GAAP?",
+      "competency": "Lease accounting under US GAAP",
+      "competency_type": "other",
+      "target_gap": "Lease accounting",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests whether the candidate can apply lease concepts to a realistic scenario rather than rely on general accounting experience alone.",
+      "source_evidence": [
+        "Weak match: Lease accounting",
+        "Partial match: US GAAP",
+        "Candidate evidence: Accounting"
+      ],
+      "priority": 0.95,
+      "weight": 0.3933
+    },
+    {
+      "question": "Explain the difference between an accrual and a prepaid expense, including the typical initial and subsequent journal entries for each.",
+      "competency": "Accruals and prepaids",
+      "competency_type": "technical",
+      "target_gap": "Prepaids amortization",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly assesses foundational understanding needed to close the identified prepaids-amortization gap.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Partial match: Monthly accruals",
+        "Candidate evidence: General ledger accounting"
+      ],
+      "priority": 0.92,
+      "weight": 0.436
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    0,
+    28,
+    2,
+    1,
+    6,
+    5,
+    8,
+    4,
+    3,
+    12
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.25,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:46.078513+00:00"
+}

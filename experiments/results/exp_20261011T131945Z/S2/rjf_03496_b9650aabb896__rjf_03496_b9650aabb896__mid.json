@@ -1,0 +1,221 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_03496_b9650aabb896",
+  "jd_id": "rjf_03496_b9650aabb896",
+  "pair_id": "rjf_03496_b9650aabb896",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_03496_b9650aabb896__rjf_03496_b9650aabb896__mid.json",
+  "n_requirements": 14,
+  "questions": [
+    {
+      "question": "What SDLC practices would you require before a data-pipeline change can reach production, and how would you make those practices practical for a small engineering team delivering in Scrum?"
+    },
+    {
+      "question": "In your Azure Data Factory work, how did you decide which responsibilities belonged in ADF, Spark, the target database, and orchestration infrastructure? What trade-offs did that architecture create?"
+    },
+    {
+      "question": "For a new large-scale data-platform component, what artifacts would you produce during ideation to align engineers, end users, and leadership on architecture, risks, costs, and delivery sequencing?"
+    },
+    {
+      "question": "Describe the database technologies you have used in a pipeline and how you selected data models, indexes or partitions, connection patterns, and load methods for each one."
+    },
+    {
+      "question": "How would you organize a small data engineering team to deliver a pipeline increment in Scrum while maintaining predictable quality? Discuss refinement, estimation, ownership, code review, testing, and retrospectives."
+    },
+    {
+      "question": "Describe how you would mentor a less-experienced engineer who is building their first Spark-based ingestion pipeline. What design reviews, coding standards, and learning checkpoints would you use?"
+    },
+    {
+      "question": "What would be your approach to reviewing an existing warehouse and pipeline estate for enterprise data-management risks such as unclear ownership, inconsistent definitions, uncontrolled access, poor lineage, and retention gaps?"
+    },
+    {
+      "question": "How would you establish an integration-test strategy for a pipeline that ingests source data, transforms it in Spark, and publishes warehouse tables used by reports? Include test data, failure cases, data-quality assertions, and release gates."
+    },
+    {
+      "question": "Which parts of your experience across Hadoop, Azure, and AWS best prepare you to own a component of a large-scale data platform, and where would you seek input from specialists before making a design decision?"
+    },
+    {
+      "question": "Describe a situation where you had to explain a technical data-design constraint to a business partner or product owner. How did you present options and reach a decision?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "What SDLC practices would you require before a data-pipeline change can reach production, and how would you make those practices practical for a small engineering team delivering in Scrum?",
+      "competency": "Data engineering SDLC",
+      "competency_type": "other",
+      "target_gap": "Software development lifecycle practices",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Addresses a weak match against the role's requirement to ensure industry best SDLC practices while delivering through Scrum.",
+      "source_evidence": [
+        "Used version-control tools to coordinate project development and code submissions.",
+        "Instantiated and maintained CI/CD pipelines and applied automation to environments and applications."
+      ],
+      "priority": 0.94,
+      "weight": 0.6774
+    },
+    {
+      "question": "In your Azure Data Factory work, how did you decide which responsibilities belonged in ADF, Spark, the target database, and orchestration infrastructure? What trade-offs did that architecture create?",
+      "competency": "Data integration architecture",
+      "competency_type": "technical",
+      "target_gap": "Data integration pipeline architecture",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Builds on the candidate's ADF evidence to assess architectural reasoning needed to design integration pipelines and reporting infrastructure.",
+      "source_evidence": [
+        "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations.",
+        "Developed data ingestion pipelines on Azure HDInsight Spark clusters using Azure Data Factory and Spark SQL."
+      ],
+      "priority": 0.92,
+      "weight": 0.3996
+    },
+    {
+      "question": "For a new large-scale data-platform component, what artifacts would you produce during ideation to align engineers, end users, and leadership on architecture, risks, costs, and delivery sequencing?",
+      "competency": "Platform design",
+      "competency_type": "domain",
+      "target_gap": "System architecture and integration",
+      "question_type": "Role-Specific",
+      "difficulty": "hard",
+      "rationale": "Tests a weak-match area against the role's expectation to provide high-level analysis and own key platform-component delivery.",
+      "source_evidence": [
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting.",
+        "Cloud data engineering experience across AWS and Azure."
+      ],
+      "priority": 0.77,
+      "weight": 0.6641
+    },
+    {
+      "question": "Describe the database technologies you have used in a pipeline and how you selected data models, indexes or partitions, connection patterns, and load methods for each one.",
+      "competency": "Database technologies",
+      "competency_type": "technical",
+      "target_gap": "Database technologies",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Validates breadth and practical depth behind the partial database-technologies match.",
+      "source_evidence": [
+        "Azure SQL Database",
+        "MySQL",
+        "Cassandra",
+        "Amazon RDS",
+        "DynamoDB"
+      ],
+      "priority": 0.85,
+      "weight": 0.3914
+    },
+    {
+      "question": "How would you organize a small data engineering team to deliver a pipeline increment in Scrum while maintaining predictable quality? Discuss refinement, estimation, ownership, code review, testing, and retrospectives.",
+      "competency": "Scrum delivery",
+      "competency_type": "other",
+      "target_gap": "Software development lifecycle practices",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Probes practical delivery leadership and quality practices, which are necessary for the role but only indirectly evidenced in the profile.",
+      "source_evidence": [
+        "Used version-control tools to coordinate project development and code submissions.",
+        "Coordinated tasks with other IT team members."
+      ],
+      "priority": 0.76,
+      "weight": 0.6774
+    },
+    {
+      "question": "Describe how you would mentor a less-experienced engineer who is building their first Spark-based ingestion pipeline. What design reviews, coding standards, and learning checkpoints would you use?",
+      "competency": "Technical mentoring",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "The role explicitly requires technical direction and mentoring; the profile notes task coordination but offers limited direct mentoring evidence.",
+      "source_evidence": [
+        "Coordinated tasks with other IT team members.",
+        "Around 7 years of Big Data Engineer experience"
+      ],
+      "priority": 0.62,
+      "weight": 0.43352857142857143
+    },
+    {
+      "question": "What would be your approach to reviewing an existing warehouse and pipeline estate for enterprise data-management risks such as unclear ownership, inconsistent definitions, uncontrolled access, poor lineage, and retention gaps?",
+      "competency": "Data governance assessment",
+      "competency_type": "other",
+      "target_gap": "Enterprise data management technologies",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Assesses governance and stewardship depth beyond the candidate's enterprise data-lake implementation claim.",
+      "source_evidence": [
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting.",
+        "Developed an AWS S3 security framework using AWS Lambda and DynamoDB."
+      ],
+      "priority": 0.73,
+      "weight": 0.3913
+    },
+    {
+      "question": "How would you establish an integration-test strategy for a pipeline that ingests source data, transforms it in Spark, and publishes warehouse tables used by reports? Include test data, failure cases, data-quality assertions, and release gates.",
+      "competency": "Integration testing strategy",
+      "competency_type": "other",
+      "target_gap": "Integration testing and debugging",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "The role requires coordinating integration testing; this tests a systematic approach rather than a single debugging anecdote.",
+      "source_evidence": [
+        "Developed data ingestion pipelines on Azure HDInsight Spark clusters using Azure Data Factory and Spark SQL.",
+        "Worked on data quality solutions, duplicate cleanup, and defect correction."
+      ],
+      "priority": 0.95,
+      "weight": 0.6604
+    },
+    {
+      "question": "Which parts of your experience across Hadoop, Azure, and AWS best prepare you to own a component of a large-scale data platform, and where would you seek input from specialists before making a design decision?",
+      "competency": "Platform ownership",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Assesses motivation, self-awareness, and readiness for the ownership scope of the Staff Data Engineer role without assuming unverified leadership experience.",
+      "source_evidence": [
+        "Built scalable distributed data solutions using the Hadoop ecosystem.",
+        "Cloud data engineering experience across AWS and Azure.",
+        "Designed enterprise-level data lakes and distributed data solutions"
+      ],
+      "priority": 0.6,
+      "weight": 0.43352857142857143
+    },
+    {
+      "question": "Describe a situation where you had to explain a technical data-design constraint to a business partner or product owner. How did you present options and reach a decision?",
+      "competency": "Technical communication",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Evaluates the ability to translate technical solutions for stakeholders, using the profile's documented interaction with business partners and product owners.",
+      "source_evidence": [
+        "Interacted with business partners, Business Analysts and product owner to understand requirements.",
+        "Used collective decision-making and coordinated tasks with other IT team members."
+      ],
+      "priority": 0.74,
+      "weight": 0.43352857142857143
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    4,
+    5,
+    18,
+    11,
+    19,
+    28,
+    21,
+    3,
+    29,
+    20
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.23,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:49.591450+00:00"
+}

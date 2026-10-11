@@ -1,0 +1,222 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_03558_5a71f8cf9f12",
+  "jd_id": "rjf_03558_5a71f8cf9f12",
+  "pair_id": "rjf_03558_5a71f8cf9f12",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_03558_5a71f8cf9f12__rjf_03558_5a71f8cf9f12__mid.json",
+  "n_requirements": 42,
+  "questions": [
+    {
+      "question": "You have built applications on Microsoft Azure. How would you map that experience to deploying a Java web service on AWS, including the AWS services you would choose for compute, networking, secrets, logging, and monitoring?"
+    },
+    {
+      "question": "This role uses Ruby in a functional-programming-oriented stack. What Ruby experience do you have, and how would you assess and close any gap before taking ownership of a production Ruby service?"
+    },
+    {
+      "question": "If asked to add a small Node.js service alongside an existing Java backend, how would you structure asynchronous request handling, error propagation, configuration, and automated tests?"
+    },
+    {
+      "question": "How would you provision and operate an AWS RDS database for a production web service, including backups, high availability, connection management, schema migrations, security, and performance monitoring?"
+    },
+    {
+      "question": "Walk through a REST endpoint you have built or designed: how did you choose resource URLs, HTTP methods, validation rules, status codes, pagination, and an approach to API versioning?"
+    },
+    {
+      "question": "A product manager wants type-ahead search across millions of records with faceting and relevance ranking. Outline an Elasticsearch index, ingestion/update path, query strategy, and operational risks."
+    },
+    {
+      "question": "Given a designer's desktop-first mockup for a data-heavy dashboard, how would you turn it into a responsive, accessible Bootstrap-based interface that works on small screens?"
+    },
+    {
+      "question": "Describe a CI/CD pipeline you would expect for a Java or Node.js service, from pull request through automated testing, artifact creation, deployment, rollback, and production verification."
+    },
+    {
+      "question": "For an existing Backbone.js application with a growing codebase, how would you organize models, collections, views, routers, and event cleanup to keep the application maintainable?"
+    },
+    {
+      "question": "Design a DynamoDB table for an application that must retrieve a user's recent events, fetch a single event by ID, and support a time-bounded status query. Explain your keys, indexes, access patterns, and trade-offs."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "You have built applications on Microsoft Azure. How would you map that experience to deploying a Java web service on AWS, including the AWS services you would choose for compute, networking, secrets, logging, and monitoring?",
+      "competency": "AWS platform design",
+      "competency_type": "technical",
+      "target_gap": "AWS",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "AWS is a required weak match, while the profile shows Azure rather than AWS. This tests transferable cloud architecture knowledge without assuming direct AWS production experience.",
+      "source_evidence": [
+        "Microsoft Azure",
+        "Java 8"
+      ],
+      "priority": 0.95,
+      "weight": 0.7335
+    },
+    {
+      "question": "This role uses Ruby in a functional-programming-oriented stack. What Ruby experience do you have, and how would you assess and close any gap before taking ownership of a production Ruby service?",
+      "competency": "Ruby readiness",
+      "competency_type": "soft",
+      "target_gap": "Ruby",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Ruby is a missing required skill. This probes candor, learning strategy, and ownership for a material technology gap.",
+      "source_evidence": [
+        "Java 8",
+        "JavaScript",
+        "Full-stack developer with 3 years of professional experience"
+      ],
+      "priority": 0.82,
+      "weight": 0.9236
+    },
+    {
+      "question": "If asked to add a small Node.js service alongside an existing Java backend, how would you structure asynchronous request handling, error propagation, configuration, and automated tests?",
+      "competency": "Node.js backend development",
+      "competency_type": "technical",
+      "target_gap": "Node.js",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Node.js is a required partial match based on JavaScript-adjacent evidence, so the question tests practical depth and ability to transition into server-side JavaScript.",
+      "source_evidence": [
+        "JavaScript",
+        "TypeScript",
+        "Highcharts.js"
+      ],
+      "priority": 0.82,
+      "weight": 0.3983
+    },
+    {
+      "question": "How would you provision and operate an AWS RDS database for a production web service, including backups, high availability, connection management, schema migrations, security, and performance monitoring?",
+      "competency": "AWS RDS",
+      "competency_type": "technical",
+      "target_gap": "AWS RDS",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "AWS RDS is a high-weight missing required skill. It is directly named in the role responsibilities and should be assessed explicitly.",
+      "source_evidence": [
+        "Microsoft Azure",
+        "Database design",
+        "MySQL"
+      ],
+      "priority": 0.98,
+      "weight": 0.9373
+    },
+    {
+      "question": "Walk through a REST endpoint you have built or designed: how did you choose resource URLs, HTTP methods, validation rules, status codes, pagination, and an approach to API versioning?",
+      "competency": "Backend API design",
+      "competency_type": "technical",
+      "target_gap": "Backend REST APIs",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate lists REST and JSON, but the matrix rates backend REST API experience as weak. This distinguishes familiarity from robust backend API design experience.",
+      "source_evidence": [
+        "REST",
+        "JSON",
+        "C# server-side functionality"
+      ],
+      "priority": 0.9,
+      "weight": 0.6606
+    },
+    {
+      "question": "A product manager wants type-ahead search across millions of records with faceting and relevance ranking. Outline an Elasticsearch index, ingestion/update path, query strategy, and operational risks.",
+      "competency": "Elasticsearch",
+      "competency_type": "other",
+      "target_gap": "Elasticsearch",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Elasticsearch is missing and required. This scenario assesses whether the candidate understands search-system concepts needed in the role.",
+      "source_evidence": [
+        "Database design",
+        "Web development"
+      ],
+      "priority": 0.9,
+      "weight": 0.9203
+    },
+    {
+      "question": "Given a designer's desktop-first mockup for a data-heavy dashboard, how would you turn it into a responsive, accessible Bootstrap-based interface that works on small screens?",
+      "competency": "Bootstrap and responsive UI",
+      "competency_type": "other",
+      "target_gap": "Bootstrap",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Bootstrap is a required weak match, and the role explicitly involves responsive applications with designers and product managers.",
+      "source_evidence": [
+        "HTML5",
+        "CSS3",
+        "Web development"
+      ],
+      "priority": 0.77,
+      "weight": 0.7337
+    },
+    {
+      "question": "Describe a CI/CD pipeline you would expect for a Java or Node.js service, from pull request through automated testing, artifact creation, deployment, rollback, and production verification.",
+      "competency": "Continuous integration",
+      "competency_type": "technical",
+      "target_gap": "Continuous integration",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Continuous integration is missing and the job explicitly requires testing and continuous deployment. This tests delivery-process readiness.",
+      "source_evidence": [
+        "Handled project activities from design through testing",
+        "Git"
+      ],
+      "priority": 0.95,
+      "weight": 0.9364
+    },
+    {
+      "question": "For an existing Backbone.js application with a growing codebase, how would you organize models, collections, views, routers, and event cleanup to keep the application maintainable?",
+      "competency": "Backbone.js",
+      "competency_type": "technical",
+      "target_gap": "Backbone.js",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Backbone.js is a required weak match with no direct profile evidence. This verifies actual familiarity with the framework and maintainability practices.",
+      "source_evidence": [
+        "JavaScript",
+        "MVC Architecture"
+      ],
+      "priority": 0.72,
+      "weight": 0.6645
+    },
+    {
+      "question": "Design a DynamoDB table for an application that must retrieve a user's recent events, fetch a single event by ID, and support a time-bounded status query. Explain your keys, indexes, access patterns, and trade-offs.",
+      "competency": "Amazon DynamoDB",
+      "competency_type": "technical",
+      "target_gap": "Amazon DynamoDB",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "DynamoDB is a required weak match with no explicit AWS evidence. This assesses data-modeling reasoning for a core role technology.",
+      "source_evidence": [
+        "NoSQL",
+        "Database design"
+      ],
+      "priority": 0.88,
+      "weight": 0.7189
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    0,
+    7,
+    4,
+    22,
+    3,
+    9,
+    12,
+    24,
+    14,
+    23
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.23,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:49.673765+00:00"
+}

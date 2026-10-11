@@ -1,0 +1,456 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_05901_0ce23bc466db",
+  "jd_id": "rjf_05901_0ce23bc466db",
+  "pair_id": "rjf_05901_0ce23bc466db",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 42,
+  "pool_path": "pool/rjf_05901_0ce23bc466db__rjf_05901_0ce23bc466db__mid.json",
+  "pool_stats": {
+    "n_raw": 29,
+    "n_valid": 29,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.0,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      6,
+      17,
+      16,
+      12,
+      19,
+      20,
+      2,
+      14,
+      3,
+      13
+    ],
+    "questions": [
+      {
+        "question": "Design a continuous-integration pipeline for a multi-team C++ and Java application. Which stages, quality gates, test suites, and feedback mechanisms would you require before a merge is accepted?",
+        "competency": "Continuous integration",
+        "competency_type": "technical",
+        "target_gap": "Continuous integration",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Continuous integration is a high-weight missing requirement central to the role's delivery responsibilities.",
+        "source_evidence": [
+          "Software testing",
+          "continuous integration"
+        ],
+        "priority": 0.99,
+        "weight": 0.9479
+      },
+      {
+        "question": "A SonarCloud quality gate begins failing because of newly introduced code duplication and reduced test coverage. How would you investigate, set policy, and decide whether to block the release?",
+        "competency": "Code quality governance",
+        "competency_type": "other",
+        "target_gap": "SonarCloud",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "SonarCloud is missing from the profile and the role requires management of development processes using it.",
+        "source_evidence": [
+          "Troubleshot programs and fixed functional bugs",
+          "using ... Sonar Cloud"
+        ],
+        "priority": 0.95,
+        "weight": 0.9411
+      },
+      {
+        "question": "How would you structure Confluence spaces and page templates so architecture decisions, sprint outcomes, operational runbooks, and release notes remain current and discoverable?",
+        "competency": "Confluence knowledge management",
+        "competency_type": "other",
+        "target_gap": "Confluence",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Confluence is a high-weight missing tool requirement and is important for cross-team coordination.",
+        "source_evidence": [
+          "Generated Software Description and Testing Plan documents from test reports",
+          "using ... Confluence"
+        ],
+        "priority": 0.95,
+        "weight": 0.9428
+      },
+      {
+        "question": "Explain a V2X interaction involving a vehicle, roadside equipment, and a backend service. What messages, latency concerns, security considerations, and failure cases would you expect?",
+        "competency": "V2X systems",
+        "competency_type": "technical",
+        "target_gap": "V2X",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Directly tests a required domain gap not substantiated by the candidate profile.",
+        "source_evidence": [
+          "Software testing",
+          "Strong knowledge of ... V2X"
+        ],
+        "priority": 0.94,
+        "weight": 0.7157
+      },
+      {
+        "question": "Imagine three scrum teams share a dependency that threatens two release dates. As Scrum of Scrums lead, how would you surface the issue, establish ownership, sequence work, and communicate the plan?",
+        "competency": "Scrum-of-Scrums leadership",
+        "competency_type": "other",
+        "target_gap": "Scrum Master leadership",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Scrum Master leadership is a required weak match and is critical to coordinating the role's multiple work streams.",
+        "source_evidence": [
+          "Helped plan and organize software testing",
+          "Act as scrum of scrums master"
+        ],
+        "priority": 0.98,
+        "weight": 0.7249
+      },
+      {
+        "question": "This position requires the ability to obtain and maintain a Public Trust clearance. Are you able and willing to complete the required suitability process, and is there anything relevant you would need to discuss with the employer's security team?",
+        "competency": "Clearance eligibility",
+        "competency_type": "domain",
+        "target_gap": "Public Trust security clearance",
+        "question_type": "Role-Specific",
+        "difficulty": "mid",
+        "rationale": "Clarifies the candidate's ability to satisfy a stated role condition while recognizing prior work with classified material.",
+        "source_evidence": [
+          "Worked with classified material daily",
+          "Ability to obtain and maintain a Public Trust security clearance"
+        ],
+        "priority": 0.86,
+        "weight": 0.7337
+      },
+      {
+        "question": "How would you design persistence for a scalable application that needs transactional operational data as well as high-volume event data? Explain what you would place in relational versus non-relational storage and why.",
+        "competency": "Database architecture",
+        "competency_type": "other",
+        "target_gap": "Relational and non-relational databases",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "The profile only notes assistance with SQL Server setup and maintenance, while the role requires design and management across relational and non-relational databases.",
+        "source_evidence": [
+          "Assisted with setup and maintenance of SQL Server 2014",
+          "designing, developing, and managing applications using both relational and non-relational databases"
+        ],
+        "priority": 0.96,
+        "weight": 0.6995
+      },
+      {
+        "question": "Describe the Agile practices you have actually participated in. Which ceremonies, artifacts, roles, and metrics did you use, and how did they change delivery outcomes?",
+        "competency": "Agile development",
+        "competency_type": "soft",
+        "target_gap": "Agile development",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Tests the candidate's actual Agile exposure before assigning Agile-method SME responsibilities.",
+        "source_evidence": [
+          "Helped plan and organize software testing",
+          "Agile development methods and processes"
+        ],
+        "priority": 0.92,
+        "weight": 0.7324
+      },
+      {
+        "question": "Compare a monolithic design, SOA, and microservices for a control-system application. What boundaries, failure modes, and operational trade-offs would drive your recommendation?",
+        "competency": "Architecture patterns",
+        "competency_type": "technical",
+        "target_gap": "Software architecture patterns",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Tests a major weak match against the role's complex-system architecture expectation.",
+        "source_evidence": [
+          "Software testing",
+          "common software development architectural styles and patterns (SOA, Microservices, etc.)"
+        ],
+        "priority": 0.95,
+        "weight": 0.6768
+      },
+      {
+        "question": "How would NTCIP, SAE, and IEEE standards influence requirements, interfaces, and test evidence for a connected-vehicle or traffic-management product?",
+        "competency": "ITS standards",
+        "competency_type": "technical",
+        "target_gap": "NTCIP, SAE, and IEEE standards",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "The required standards knowledge is a weak match and must be assessed separately from general defense-system testing.",
+        "source_evidence": [
+          "Defense and military systems",
+          "Knowledge of NTCIP, SAE, and IEEE standards"
+        ],
+        "priority": 0.93,
+        "weight": 0.7061
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.938421,
+      0.894045,
+      0.8956599999999999,
+      0.672758,
+      0.710402,
+      0.630982,
+      0.67152,
+      0.6738080000000001,
+      0.64296,
+      0.656673
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.18272057175636292,
+      0.2529093623161316,
+      0.15421399474143982,
+      0.32807689905166626,
+      0.14365684986114502,
+      0.2898370623588562,
+      0.3596426248550415,
+      0.34335586428642273,
+      0.45624104142189026
+    ],
+    "mmr_scores": [
+      0.6568946999999999,
+      0.5710153284730911,
+      0.5510891913051604,
+      0.42466640157756796,
+      0.3988583302845,
+      0.39859034504165647,
+      0.3831128812923431,
+      0.36377281254348753,
+      0.34706524071407313,
+      0.32279878757343283
+    ],
+    "competency_weights": [
+      0.9479,
+      0.9411,
+      0.9428,
+      0.7157,
+      0.7249,
+      0.7337,
+      0.6995,
+      0.7324,
+      0.6768,
+      0.7061
+    ]
+  },
+  "questions": [
+    {
+      "question": "Design a continuous-integration pipeline for a multi-team C++ and Java application. Which stages, quality gates, test suites, and feedback mechanisms would you require before a merge is accepted?"
+    },
+    {
+      "question": "A SonarCloud quality gate begins failing because of newly introduced code duplication and reduced test coverage. How would you investigate, set policy, and decide whether to block the release?"
+    },
+    {
+      "question": "How would you structure Confluence spaces and page templates so architecture decisions, sprint outcomes, operational runbooks, and release notes remain current and discoverable?"
+    },
+    {
+      "question": "Explain a V2X interaction involving a vehicle, roadside equipment, and a backend service. What messages, latency concerns, security considerations, and failure cases would you expect?"
+    },
+    {
+      "question": "Imagine three scrum teams share a dependency that threatens two release dates. As Scrum of Scrums lead, how would you surface the issue, establish ownership, sequence work, and communicate the plan?"
+    },
+    {
+      "question": "This position requires the ability to obtain and maintain a Public Trust clearance. Are you able and willing to complete the required suitability process, and is there anything relevant you would need to discuss with the employer's security team?"
+    },
+    {
+      "question": "How would you design persistence for a scalable application that needs transactional operational data as well as high-volume event data? Explain what you would place in relational versus non-relational storage and why."
+    },
+    {
+      "question": "Describe the Agile practices you have actually participated in. Which ceremonies, artifacts, roles, and metrics did you use, and how did they change delivery outcomes?"
+    },
+    {
+      "question": "Compare a monolithic design, SOA, and microservices for a control-system application. What boundaries, failure modes, and operational trade-offs would drive your recommendation?"
+    },
+    {
+      "question": "How would NTCIP, SAE, and IEEE standards influence requirements, interfaces, and test evidence for a connected-vehicle or traffic-management product?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Design a continuous-integration pipeline for a multi-team C++ and Java application. Which stages, quality gates, test suites, and feedback mechanisms would you require before a merge is accepted?",
+      "competency": "Continuous integration",
+      "competency_type": "technical",
+      "target_gap": "Continuous integration",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Continuous integration is a high-weight missing requirement central to the role's delivery responsibilities.",
+      "source_evidence": [
+        "Software testing",
+        "continuous integration"
+      ],
+      "priority": 0.99,
+      "weight": 0.9479
+    },
+    {
+      "question": "A SonarCloud quality gate begins failing because of newly introduced code duplication and reduced test coverage. How would you investigate, set policy, and decide whether to block the release?",
+      "competency": "Code quality governance",
+      "competency_type": "other",
+      "target_gap": "SonarCloud",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "SonarCloud is missing from the profile and the role requires management of development processes using it.",
+      "source_evidence": [
+        "Troubleshot programs and fixed functional bugs",
+        "using ... Sonar Cloud"
+      ],
+      "priority": 0.95,
+      "weight": 0.9411
+    },
+    {
+      "question": "How would you structure Confluence spaces and page templates so architecture decisions, sprint outcomes, operational runbooks, and release notes remain current and discoverable?",
+      "competency": "Confluence knowledge management",
+      "competency_type": "other",
+      "target_gap": "Confluence",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Confluence is a high-weight missing tool requirement and is important for cross-team coordination.",
+      "source_evidence": [
+        "Generated Software Description and Testing Plan documents from test reports",
+        "using ... Confluence"
+      ],
+      "priority": 0.95,
+      "weight": 0.9428
+    },
+    {
+      "question": "Explain a V2X interaction involving a vehicle, roadside equipment, and a backend service. What messages, latency concerns, security considerations, and failure cases would you expect?",
+      "competency": "V2X systems",
+      "competency_type": "technical",
+      "target_gap": "V2X",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Directly tests a required domain gap not substantiated by the candidate profile.",
+      "source_evidence": [
+        "Software testing",
+        "Strong knowledge of ... V2X"
+      ],
+      "priority": 0.94,
+      "weight": 0.7157
+    },
+    {
+      "question": "Imagine three scrum teams share a dependency that threatens two release dates. As Scrum of Scrums lead, how would you surface the issue, establish ownership, sequence work, and communicate the plan?",
+      "competency": "Scrum-of-Scrums leadership",
+      "competency_type": "other",
+      "target_gap": "Scrum Master leadership",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Scrum Master leadership is a required weak match and is critical to coordinating the role's multiple work streams.",
+      "source_evidence": [
+        "Helped plan and organize software testing",
+        "Act as scrum of scrums master"
+      ],
+      "priority": 0.98,
+      "weight": 0.7249
+    },
+    {
+      "question": "This position requires the ability to obtain and maintain a Public Trust clearance. Are you able and willing to complete the required suitability process, and is there anything relevant you would need to discuss with the employer's security team?",
+      "competency": "Clearance eligibility",
+      "competency_type": "domain",
+      "target_gap": "Public Trust security clearance",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Clarifies the candidate's ability to satisfy a stated role condition while recognizing prior work with classified material.",
+      "source_evidence": [
+        "Worked with classified material daily",
+        "Ability to obtain and maintain a Public Trust security clearance"
+      ],
+      "priority": 0.86,
+      "weight": 0.7337
+    },
+    {
+      "question": "How would you design persistence for a scalable application that needs transactional operational data as well as high-volume event data? Explain what you would place in relational versus non-relational storage and why.",
+      "competency": "Database architecture",
+      "competency_type": "other",
+      "target_gap": "Relational and non-relational databases",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "The profile only notes assistance with SQL Server setup and maintenance, while the role requires design and management across relational and non-relational databases.",
+      "source_evidence": [
+        "Assisted with setup and maintenance of SQL Server 2014",
+        "designing, developing, and managing applications using both relational and non-relational databases"
+      ],
+      "priority": 0.96,
+      "weight": 0.6995
+    },
+    {
+      "question": "Describe the Agile practices you have actually participated in. Which ceremonies, artifacts, roles, and metrics did you use, and how did they change delivery outcomes?",
+      "competency": "Agile development",
+      "competency_type": "soft",
+      "target_gap": "Agile development",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests the candidate's actual Agile exposure before assigning Agile-method SME responsibilities.",
+      "source_evidence": [
+        "Helped plan and organize software testing",
+        "Agile development methods and processes"
+      ],
+      "priority": 0.92,
+      "weight": 0.7324
+    },
+    {
+      "question": "Compare a monolithic design, SOA, and microservices for a control-system application. What boundaries, failure modes, and operational trade-offs would drive your recommendation?",
+      "competency": "Architecture patterns",
+      "competency_type": "technical",
+      "target_gap": "Software architecture patterns",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Tests a major weak match against the role's complex-system architecture expectation.",
+      "source_evidence": [
+        "Software testing",
+        "common software development architectural styles and patterns (SOA, Microservices, etc.)"
+      ],
+      "priority": 0.95,
+      "weight": 0.6768
+    },
+    {
+      "question": "How would NTCIP, SAE, and IEEE standards influence requirements, interfaces, and test evidence for a connected-vehicle or traffic-management product?",
+      "competency": "ITS standards",
+      "competency_type": "technical",
+      "target_gap": "NTCIP, SAE, and IEEE standards",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "The required standards knowledge is a weak match and must be assessed separately from general defense-system testing.",
+      "source_evidence": [
+        "Defense and military systems",
+        "Knowledge of NTCIP, SAE, and IEEE standards"
+      ],
+      "priority": 0.93,
+      "weight": 0.7061
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 13750,
+    "output_tokens": 3362,
+    "cached_tokens": 0,
+    "estimated_cost": 0.067844,
+    "latency_ms": 26921.02,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.067844,
+  "cost_cny": 0.45930388,
+  "selection_latency_ms": 49.77,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:16:27.671429+00:00"
+}

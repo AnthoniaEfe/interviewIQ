@@ -1,0 +1,226 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S1",
+  "selection_strategy": "top_priority",
+  "generation_mode": null,
+  "profile_id": "rjf_03611_ef2aa407d208",
+  "jd_id": "rjf_03611_ef2aa407d208",
+  "pair_id": "rjf_03611_ef2aa407d208",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_03611_ef2aa407d208__rjf_03611_ef2aa407d208__mid.json",
+  "n_requirements": 16,
+  "questions": [
+    {
+      "question": "Describe a technical implementation you led from initial design through rollout. How did you divide work, manage risks and dependencies, make key decisions, and ensure delivery?"
+    },
+    {
+      "question": "Design a React-based screen for reviewing invoice-validation outliers, including its component boundaries, client-side state, loading/error states, and how it would call a backend API. What trade-offs would you make?"
+    },
+    {
+      "question": "A team is split between rapidly delivering an invoice-processing feature and redesigning a shared API first. How would you facilitate the decision, establish a plan, and keep the team aligned on scope and delivery?"
+    },
+    {
+      "question": "Explain how you would structure a Nest.js or comparable backend service for order-status updates: modules, controllers, services, persistence boundaries, validation, and error handling."
+    },
+    {
+      "question": "What attracts you to building a B2B SaaS product, and how would you distinguish the needs of business administrators, account-level users, and internal support teams when prioritizing a feature?"
+    },
+    {
+      "question": "Tell us about a time you helped another engineer understand a technical problem or improve an implementation. How did you tailor your support, and what changed as a result?"
+    },
+    {
+      "question": "How would you design tenant isolation, authorization, and safe configuration changes for a B2B SaaS application used by multiple customer organizations?"
+    },
+    {
+      "question": "You are asked to add a new workflow to a Node.js service, but most of your background is in Java and Spring. How would you learn the existing codebase, implement the change safely, and validate it before release?"
+    },
+    {
+      "question": "A junior engineer repeatedly submits Spring service changes with incomplete tests and unclear error handling. How would you coach them over the next few weeks while still protecting release quality and delivery commitments?"
+    },
+    {
+      "question": "An enterprise web application starts timing out during a peak billing run. Describe how you would isolate whether the bottleneck is in the browser, API layer, application code, database, or downstream dependency, then prioritize fixes."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe a technical implementation you led from initial design through rollout. How did you divide work, manage risks and dependencies, make key decisions, and ensure delivery?",
+      "competency": "Implementation leadership",
+      "competency_type": "soft",
+      "target_gap": "Technical implementation leadership",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Leading implementations is a core Lead Engineer requirement and is marked missing, so this validates whether relevant leadership experience exists beyond the written profile.",
+      "source_evidence": [
+        "Participated in design and documentation of an enhancement to a scheduled scenario module.",
+        "Technical implementation leadership"
+      ],
+      "priority": 0.99,
+      "weight": 0.9301
+    },
+    {
+      "question": "Design a React-based screen for reviewing invoice-validation outliers, including its component boundaries, client-side state, loading/error states, and how it would call a backend API. What trade-offs would you make?",
+      "competency": "React architecture",
+      "competency_type": "technical",
+      "target_gap": "React",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "React is a required skill with no direct candidate evidence, so this tests practical frontend design ability and the ability to transfer experience from enterprise billing systems.",
+      "source_evidence": [
+        "React",
+        "Billing Automation Project",
+        "JavaScript"
+      ],
+      "priority": 0.98,
+      "weight": 0.9331
+    },
+    {
+      "question": "A team is split between rapidly delivering an invoice-processing feature and redesigning a shared API first. How would you facilitate the decision, establish a plan, and keep the team aligned on scope and delivery?",
+      "competency": "Technical leadership",
+      "competency_type": "other",
+      "target_gap": "Technical implementation leadership",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "This tests the candidate's ability to make and communicate implementation decisions in a lead role when direct leadership evidence is absent.",
+      "source_evidence": [
+        "Billing Automation Project",
+        "Participated in scrum calls to plan and prioritize activities.",
+        "Technical implementation leadership"
+      ],
+      "priority": 0.97,
+      "weight": 0.9301
+    },
+    {
+      "question": "Explain how you would structure a Nest.js or comparable backend service for order-status updates: modules, controllers, services, persistence boundaries, validation, and error handling.",
+      "competency": "Backend framework design",
+      "competency_type": "technical",
+      "target_gap": "Nest.js or similar framework",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The profile has no direct Nest.js evidence, and the question assesses whether the candidate can apply Spring-style architectural experience to a modular TypeScript backend framework.",
+      "source_evidence": [
+        "Spring Boot",
+        "Purchase & Order Management System",
+        "Nest.js or similar framework"
+      ],
+      "priority": 0.96,
+      "weight": 0.926
+    },
+    {
+      "question": "What attracts you to building a B2B SaaS product, and how would you distinguish the needs of business administrators, account-level users, and internal support teams when prioritizing a feature?",
+      "competency": "B2B SaaS product thinking",
+      "competency_type": "soft",
+      "target_gap": "B2B SaaS application development",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "B2B SaaS experience is a high-weight weak match; this assesses domain understanding and product mindset without assuming undocumented SaaS experience.",
+      "source_evidence": [
+        "B2B SaaS application development",
+        "Enterprise billing and order management applications",
+        "Test Data Management Project"
+      ],
+      "priority": 0.95,
+      "weight": 0.6909
+    },
+    {
+      "question": "Tell us about a time you helped another engineer understand a technical problem or improve an implementation. How did you tailor your support, and what changed as a result?",
+      "competency": "Mentoring",
+      "competency_type": "soft",
+      "target_gap": "Team mentoring",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Mentoring is required for the lead role but is only weakly matched, so this seeks specific evidence of coaching behavior.",
+      "source_evidence": [
+        "Java",
+        "Team mentoring",
+        "Participated in scrum calls to plan and prioritize activities."
+      ],
+      "priority": 0.94,
+      "weight": 0.7254
+    },
+    {
+      "question": "How would you design tenant isolation, authorization, and safe configuration changes for a B2B SaaS application used by multiple customer organizations?",
+      "competency": "Multi-tenant SaaS design",
+      "competency_type": "technical",
+      "target_gap": "B2B SaaS application development",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "This probes architecture knowledge specific to the required B2B SaaS context, where direct candidate evidence is limited.",
+      "source_evidence": [
+        "B2B SaaS application development",
+        "Web-based application",
+        "Enterprise billing and order management applications"
+      ],
+      "priority": 0.94,
+      "weight": 0.6909
+    },
+    {
+      "question": "You are asked to add a new workflow to a Node.js service, but most of your background is in Java and Spring. How would you learn the existing codebase, implement the change safely, and validate it before release?",
+      "competency": "Node.js transition",
+      "competency_type": "other",
+      "target_gap": "Node.js",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Node.js is only weakly matched through Java evidence; this probes transferable backend engineering judgment and learning approach.",
+      "source_evidence": [
+        "Java",
+        "Spring Boot",
+        "Node.js"
+      ],
+      "priority": 0.93,
+      "weight": 0.7014
+    },
+    {
+      "question": "A junior engineer repeatedly submits Spring service changes with incomplete tests and unclear error handling. How would you coach them over the next few weeks while still protecting release quality and delivery commitments?",
+      "competency": "Engineering coaching",
+      "competency_type": "other",
+      "target_gap": "Team mentoring",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "This tests practical mentoring, feedback, and quality-accountability skills needed to lead engineers.",
+      "source_evidence": [
+        "Spring Boot",
+        "Performed unit and integration testing.",
+        "Team mentoring"
+      ],
+      "priority": 0.93,
+      "weight": 0.7254
+    },
+    {
+      "question": "An enterprise web application starts timing out during a peak billing run. Describe how you would isolate whether the bottleneck is in the browser, API layer, application code, database, or downstream dependency, then prioritize fixes.",
+      "competency": "Performance troubleshooting",
+      "competency_type": "other",
+      "target_gap": "Web application performance and scalability optimization",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Performance and scalability are only partially matched, while rapid troubleshooting and scalable enterprise design are central to the role.",
+      "source_evidence": [
+        "Billing Automation Project",
+        "Web services",
+        "Web application performance and scalability optimization"
+      ],
+      "priority": 0.92,
+      "weight": 0.3924
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    3,
+    0,
+    4,
+    2,
+    19,
+    15,
+    20,
+    1,
+    16,
+    8
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.02,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:48.760585+00:00"
+}

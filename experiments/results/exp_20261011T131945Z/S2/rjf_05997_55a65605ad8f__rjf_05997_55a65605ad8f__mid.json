@@ -1,0 +1,226 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_05997_55a65605ad8f",
+  "jd_id": "rjf_05997_55a65605ad8f",
+  "pair_id": "rjf_05997_55a65605ad8f",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_05997_55a65605ad8f__rjf_05997_55a65605ad8f__mid.json",
+  "n_requirements": 43,
+  "questions": [
+    {
+      "question": "This position requires U.S. citizenship and the ability to obtain a security clearance. Are you able to satisfy this requirement?"
+    },
+    {
+      "question": "Describe how you decide when to work independently on a problem versus when to bring in teammates or partner teams. Use an example involving a dependency or customer migration if possible."
+    },
+    {
+      "question": "Your background includes vCloud Air systems, VMware ESXi, and vCenter. How did the operational characteristics of that environment shape your approach to monitoring, load testing, and failure handling?"
+    },
+    {
+      "question": "Design the canonical asset-management API for creating, retrieving, and updating assets at high scale. How would you define resource boundaries, idempotency behavior, versioning, pagination, and error contracts?"
+    },
+    {
+      "question": "Give an example of a technology or engineering practice you had to learn quickly for a project. How did you identify the knowledge gap, validate your understanding, and apply what you learned?"
+    },
+    {
+      "question": "Describe the migration campaign for approximately 400 internal customers: how did you stage the rollout, validate availability and security improvements, respond to exceptions, and determine when the migration was complete?"
+    },
+    {
+      "question": "Please give a concise two-minute explanation of how a geo-distributed monitoring solution works, first for an operations leader and then for a senior engineer. What would you change between the two explanations?"
+    },
+    {
+      "question": "What would a production-ready CI/CD pipeline for an asset-management service include from commit through deployment and rollback? Explain the quality gates and the deployment strategy you would choose."
+    },
+    {
+      "question": "Design an observability plan for the asset API. Which SLIs, logs, traces, dashboards, and alerts would you create, and how would they help distinguish client errors, service regressions, and dependency failures?"
+    },
+    {
+      "question": "Describe a Python component you have built or would build to support an operational workflow for the platform. Why is Python appropriate, and how would you make it observable, testable, and safe to run repeatedly?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "This position requires U.S. citizenship and the ability to obtain a security clearance. Are you able to satisfy this requirement?",
+      "competency": "Clearance eligibility",
+      "competency_type": "domain",
+      "target_gap": "U.S. citizenship and ability to obtain security clearance",
+      "question_type": "Role-Specific",
+      "difficulty": "easy",
+      "rationale": "This is an explicit required job condition with insufficient candidate-profile evidence and should be confirmed through a direct, role-relevant eligibility question.",
+      "source_evidence": [
+        "US Citizens able to obtain a security clearance",
+        "U.S. citizenship and ability to obtain security clearance is marked weak_match"
+      ],
+      "priority": 0.98,
+      "weight": 0.688
+    },
+    {
+      "question": "Describe how you decide when to work independently on a problem versus when to bring in teammates or partner teams. Use an example involving a dependency or customer migration if possible.",
+      "competency": "Independent collaboration",
+      "competency_type": "soft",
+      "target_gap": "Independent and team collaboration",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests the required partial match for balancing ownership and collaboration, grounded in the candidate's migration and cross-customer work.",
+      "source_evidence": [
+        "Collaboration",
+        "Ran campaigns migrating approximately 400 internal customers",
+        "Collaborated with an agile development team"
+      ],
+      "priority": 0.81,
+      "weight": 0.352
+    },
+    {
+      "question": "Your background includes vCloud Air systems, VMware ESXi, and vCenter. How did the operational characteristics of that environment shape your approach to monitoring, load testing, and failure handling?",
+      "competency": "Infrastructure operations",
+      "competency_type": "domain",
+      "target_gap": "Data center infrastructure and operations",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Uses relevant profile-specific infrastructure experience to validate the partial match for the role's preferred operational domain knowledge.",
+      "source_evidence": [
+        "vCloud Air systems",
+        "VMware ESXi",
+        "vCenter",
+        "Built orchestration tools for system engineers across six teams to perform load tests and stress tests."
+      ],
+      "priority": 0.71,
+      "weight": 0.2266
+    },
+    {
+      "question": "Design the canonical asset-management API for creating, retrieving, and updating assets at high scale. How would you define resource boundaries, idempotency behavior, versioning, pagination, and error contracts?",
+      "competency": "REST API design",
+      "competency_type": "technical",
+      "target_gap": "REST API development",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Tests a documented strength in API development against the role's core asset-management use case and assesses depth beyond a keyword match.",
+      "source_evidence": [
+        "API development",
+        "Stateless POST request service",
+        "RESTful web services"
+      ],
+      "priority": 0.9,
+      "weight": 0.1689
+    },
+    {
+      "question": "Give an example of a technology or engineering practice you had to learn quickly for a project. How did you identify the knowledge gap, validate your understanding, and apply what you learned?",
+      "competency": "Learning agility",
+      "competency_type": "soft",
+      "target_gap": "Learning orientation",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Learning orientation is a high-weight required missing competency, so direct evidence is needed.",
+      "source_evidence": [
+        "Learning orientation is marked missing",
+        "Over 5 years of professional software development experience",
+        "Master of Science: Computer Science"
+      ],
+      "priority": 0.95,
+      "weight": 0.9377
+    },
+    {
+      "question": "Describe the migration campaign for approximately 400 internal customers: how did you stage the rollout, validate availability and security improvements, respond to exceptions, and determine when the migration was complete?",
+      "competency": "Migration execution",
+      "competency_type": "domain",
+      "target_gap": "profile_probe",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "This profile-specific probe validates a significant claimed accomplishment and reveals execution, risk-management, and stakeholder-management behaviors.",
+      "source_evidence": [
+        "Ran campaigns migrating approximately 400 internal customers to improve platform availability and security.",
+        "Unblocked more than 100 internal customers through major project delivery."
+      ],
+      "priority": 0.8,
+      "weight": 0.4816348837209302
+    },
+    {
+      "question": "Please give a concise two-minute explanation of how a geo-distributed monitoring solution works, first for an operations leader and then for a senior engineer. What would you change between the two explanations?",
+      "competency": "Audience-aware presentation",
+      "competency_type": "domain",
+      "target_gap": "Clear presentation of complex information",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Tests a weak required communication area using the candidate's documented geo-distributed monitoring work and technical presentation experience.",
+      "source_evidence": [
+        "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+        "Invited to VMware Radio 2016 for a paper presentation",
+        "Clear presentation of complex information is marked weak_match"
+      ],
+      "priority": 0.88,
+      "weight": 0.6918
+    },
+    {
+      "question": "What would a production-ready CI/CD pipeline for an asset-management service include from commit through deployment and rollback? Explain the quality gates and the deployment strategy you would choose.",
+      "competency": "Continuous delivery",
+      "competency_type": "technical",
+      "target_gap": "Continuous deployment",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Continuous deployment is missing from the profile yet important for the role's build, deploy, and operate responsibility.",
+      "source_evidence": [
+        "Continuous deployment is marked missing",
+        "Jenkins",
+        "Docker"
+      ],
+      "priority": 0.86,
+      "weight": 0.5559
+    },
+    {
+      "question": "Design an observability plan for the asset API. Which SLIs, logs, traces, dashboards, and alerts would you create, and how would they help distinguish client errors, service regressions, and dependency failures?",
+      "competency": "Observability",
+      "competency_type": "technical",
+      "target_gap": "Observability",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Observability is missing and is important for the role's operate, troubleshoot, and tune responsibilities.",
+      "source_evidence": [
+        "Observability is marked missing",
+        "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems.",
+        "Zabbix"
+      ],
+      "priority": 0.89,
+      "weight": 0.5609
+    },
+    {
+      "question": "Describe a Python component you have built or would build to support an operational workflow for the platform. Why is Python appropriate, and how would you make it observable, testable, and safe to run repeatedly?",
+      "competency": "Python engineering",
+      "competency_type": "technical",
+      "target_gap": "Python",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Python is a high-priority required strong match, but the profile provides only a skill listing rather than project detail.",
+      "source_evidence": [
+        "Python",
+        "Python is marked strong_match",
+        "Shell scripting"
+      ],
+      "priority": 0.84,
+      "weight": 0.1689
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    29,
+    26,
+    28,
+    0,
+    22,
+    30,
+    24,
+    14,
+    19,
+    12
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.23,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:50.456454+00:00"
+}

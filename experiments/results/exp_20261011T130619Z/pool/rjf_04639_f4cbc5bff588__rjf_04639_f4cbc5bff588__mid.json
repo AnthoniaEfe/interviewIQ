@@ -1,0 +1,1053 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "pool",
+  "condition": "T_pool",
+  "profile_id": "rjf_04639_f4cbc5bff588",
+  "jd_id": "rjf_04639_f4cbc5bff588",
+  "pair_id": "rjf_04639_f4cbc5bff588",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "prompt": {
+    "file": "generation/interviewiq_pool.md",
+    "version": "1.1.0",
+    "sha256": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc"
+  },
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 17,
+  "pool_size_requested": 30,
+  "raw_questions": [
+    {
+      "question": "How would you package a Java-based integration service into a Docker image, including dependency management, configuration, health checks, and a strategy for keeping the image small and secure?",
+      "competency": "Docker",
+      "dimension": "Technical",
+      "target_gap": "Docker",
+      "difficulty": "mid",
+      "rationale": "Docker is required and the profile does not show direct containerization experience; this tests practical readiness to deploy Java services.",
+      "source_evidence": [
+        "Docker: weak_match",
+        "Java"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "A containerized integration service intermittently fails after deployment to Kubernetes while its local Docker run succeeds. How would you investigate the issue across pod events, logs, configuration, networking, and resource settings?",
+      "competency": "Kubernetes troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Kubernetes",
+      "difficulty": "mid",
+      "rationale": "Kubernetes is a high-weight missing requirement, and the scenario evaluates diagnostic thinking rather than vocabulary alone.",
+      "source_evidence": [
+        "Kubernetes: missing",
+        "Analyzed application errors and performance issues."
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Describe the database schema you created and accessed through JDBC at Baroda Electrical. What entities and constraints did you model, and how did you ensure updates and deletes preserved data integrity?",
+      "competency": "Relational database design",
+      "dimension": "Technical",
+      "target_gap": "Relational databases",
+      "difficulty": "mid",
+      "rationale": "The candidate has relevant JDBC and schema experience, but the role requires confidence with relational databases; this validates depth.",
+      "source_evidence": [
+        "Created database schemas and interacted with databases to add, update, and delete records through JDBC."
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "Design a REST API that ingests source records into a financial SaaS target. Explain resource boundaries, idempotency, pagination, validation errors, versioning, and how clients would safely retry requests.",
+      "competency": "RESTful API design",
+      "dimension": "Technical",
+      "target_gap": "RESTful architecture",
+      "difficulty": "mid",
+      "rationale": "RESTful architecture is a weak match despite REST appearing in skills, so a concrete design exercise tests applied API knowledge.",
+      "source_evidence": [
+        "REST Web Services",
+        "RESTful architecture: weak_match"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "For an integration platform that must synchronize customers, invoices, and status updates, how would you decide whether to use a modular monolith or microservices? Explain service boundaries, data ownership, and failure handling.",
+      "competency": "Microservices design",
+      "dimension": "Situational",
+      "target_gap": "Microservices",
+      "difficulty": "mid",
+      "rationale": "Microservices is a required weak match; this probes architectural judgment appropriate to a mid-level engineer.",
+      "source_evidence": [
+        "Microservices: weak_match",
+        "Enterprise application development"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "What AWS services would you choose to run a Java integration API, store its configuration and secrets, persist operational data, and monitor failures? Explain the trade-offs behind your choices.",
+      "competency": "AWS architecture",
+      "dimension": "Technical",
+      "target_gap": "AWS",
+      "difficulty": "mid",
+      "rationale": "AWS is required but only weakly evidenced, so the question establishes whether the candidate can make usable cloud design choices.",
+      "source_evidence": [
+        "AWS: weak_match",
+        "Java"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "Walk through the CI/CD pipeline you would establish for a Java service: build, unit and integration tests, security checks, artifact creation, environment promotion, rollback, and deployment approval points.",
+      "competency": "CI/CD pipeline design",
+      "dimension": "Technical",
+      "target_gap": "CI/CD",
+      "difficulty": "mid",
+      "rationale": "CI/CD is a high-priority missing requirement and is central to safely delivering mission-critical integrations.",
+      "source_evidence": [
+        "CI/CD: missing",
+        "Maven",
+        "Git"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "In Java, how would you implement a client that calls an external API with timeouts, retries, exponential backoff, structured error handling, and protection against duplicate writes?",
+      "competency": "Java integration resilience",
+      "dimension": "Technical",
+      "target_gap": "Java",
+      "difficulty": "mid",
+      "rationale": "Java is a strong match, but the role needs deep Java applied to reliable system integration work.",
+      "source_evidence": [
+        "Java",
+        "REST Web Services",
+        "Java: strong_match"
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "Suppose a new integration must process high-volume source data in the cloud and send results to a SaaS application. Outline the major components, scalability approach, observability, and recovery plan.",
+      "competency": "Cloud solution design",
+      "dimension": "Role-Specific",
+      "target_gap": "Cloud technologies",
+      "difficulty": "mid",
+      "rationale": "Cloud technologies is missing and the role specifically involves mission-critical SaaS integrations.",
+      "source_evidence": [
+        "Cloud technologies: missing",
+        "Build mission-critical integrations between source data and financial SaaS applications."
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "You have previously integrated YouTube, Periscope, and Facebook APIs for live streaming. Explain one integration end to end: authentication, request/response handling, failure cases, testing, and how you diagnosed production-like issues.",
+      "competency": "External API integration",
+      "dimension": "Role-Specific",
+      "target_gap": "System integrations",
+      "difficulty": "mid",
+      "rationale": "System integrations is marked missing, while the profile contains relevant third-party API work that can clarify transferable integration capability.",
+      "source_evidence": [
+        "Integrated YouTube, Periscope, and Facebook APIs for live streaming video.",
+        "System integrations: missing"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "How would you secure a Java REST integration that receives sensitive financial data? Cover authentication and authorization, input validation, secrets management, logging, encryption, and dependency risks.",
+      "competency": "Secure coding",
+      "dimension": "Technical",
+      "target_gap": "Security coding practices",
+      "difficulty": "mid",
+      "rationale": "Security coding is required and weakly matched; the financial integration context makes practical secure-design knowledge essential.",
+      "source_evidence": [
+        "Security coding practices: weak_match",
+        "Java"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Give an example from your Agile work where requirements changed during development. How did you clarify scope, communicate the impact, and adjust your implementation or test plan?",
+      "competency": "Agile delivery",
+      "dimension": "Behavioural",
+      "target_gap": "Agile software development",
+      "difficulty": "mid",
+      "rationale": "Agile is a strong match; this confirms that the candidate can translate stated process experience into disciplined delivery behavior.",
+      "source_evidence": [
+        "Worked in Agile and Waterfall settings.",
+        "Participated in requirements gathering, development, testing, and deployment."
+      ],
+      "priority": 0.66
+    },
+    {
+      "question": "When reviewing a teammate's Java pull request for an integration feature, what issues would you look for, and how would you give feedback when the code works but is difficult to maintain?",
+      "competency": "Code reviews",
+      "dimension": "Situational",
+      "target_gap": "Code reviews",
+      "difficulty": "mid",
+      "rationale": "Code reviews is a weak match, and the role expects engineers to lead design best practices and review code constructively.",
+      "source_evidence": [
+        "Code reviews: weak_match",
+        "Fixed bugs and built reusable code."
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Describe a technical issue you explained to a non-engineering partner, designer, or tester. How did you tailor the message, document decisions, and verify shared understanding?",
+      "competency": "Technical communication",
+      "dimension": "Behavioural",
+      "target_gap": "Verbal and written communication",
+      "difficulty": "mid",
+      "rationale": "Communication is a required weak match, while the profile includes collaboration and documentation activities that can yield a concrete example.",
+      "source_evidence": [
+        "Collaborated with team members to update documentation.",
+        "Cooperated with web designers to match visual design intent."
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "How would you use Python to validate and reconcile source data before it is sent to a financial SaaS application, including duplicate detection, schema validation, error reporting, and an auditable output?",
+      "competency": "Python data validation",
+      "dimension": "Technical",
+      "target_gap": "Python",
+      "difficulty": "mid",
+      "rationale": "Python is a preferred strong match; this explores whether the listed skill can add value to integration data-quality workflows.",
+      "source_evidence": [
+        "Python",
+        "Python: strong_match"
+      ],
+      "priority": 0.53
+    },
+    {
+      "question": "Where would Kafka be appropriate in a near-real-time integration architecture, and how would you handle consumer retries, ordering, duplicate messages, and schema evolution?",
+      "competency": "Kafka event processing",
+      "dimension": "Technical",
+      "target_gap": "Apache Kafka",
+      "difficulty": "mid",
+      "rationale": "Kafka is a preferred weak match, with Apache Tomcat being the only matching evidence; this distinguishes transferable familiarity from actual event-streaming knowledge.",
+      "source_evidence": [
+        "Apache Kafka: weak_match",
+        "Apache Tomcat"
+      ],
+      "priority": 0.61
+    },
+    {
+      "question": "What additional technical and domain knowledge would you need before owning an integration into or out of a financial planning platform such as Anaplan or Oracle, and how would you acquire it?",
+      "competency": "Financial planning integrations",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Financial planning system integrations",
+      "difficulty": "mid",
+      "rationale": "This preferred domain is missing; the question assesses learning approach and realistic awareness of domain-specific integration risk.",
+      "source_evidence": [
+        "Financial planning system integrations: missing",
+        "Enterprise application development"
+      ],
+      "priority": 0.69
+    },
+    {
+      "question": "A nightly financial data sync reports success, but the target system is missing a subset of records. How would you lead the root-cause investigation with source-system, platform, and target-system teams?",
+      "competency": "Cross-functional troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "System integrations",
+      "difficulty": "mid",
+      "rationale": "The role requires cross-functional root-cause analysis, and this probes collaboration in the highest-impact missing domain.",
+      "source_evidence": [
+        "System integrations: missing",
+        "Analyzed application errors and performance issues."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "How would you model a relational schema and transaction strategy for an integration that must prevent duplicate financial records while retaining a complete audit history?",
+      "competency": "Data integrity",
+      "dimension": "Technical",
+      "target_gap": "Relational databases",
+      "difficulty": "mid",
+      "rationale": "This extends the candidate's JDBC background into the transactionality, uniqueness, and auditability required by financial integrations.",
+      "source_evidence": [
+        "Created database schemas and interacted with databases to add, update, and delete records through JDBC.",
+        "Relational databases: weak_match"
+      ],
+      "priority": 0.81
+    },
+    {
+      "question": "A Java service is experiencing increasing latency while processing API calls. Starting from the symptoms, explain how you would isolate whether the cause is application code, database access, external APIs, or infrastructure.",
+      "competency": "Performance troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Java",
+      "difficulty": "mid",
+      "rationale": "The candidate reports analyzing performance issues, and this verifies a structured debugging method using a core strength.",
+      "source_evidence": [
+        "Analyzed application errors and performance issues.",
+        "Java"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "Explain how you would manage configuration across local, test, staging, and production environments for a Dockerized Java service, ensuring that credentials never enter source control or image layers.",
+      "competency": "Secure deployment configuration",
+      "dimension": "Technical",
+      "target_gap": "Docker",
+      "difficulty": "mid",
+      "rationale": "This combines the Docker gap with security expectations and tests operational practices relevant to production integrations.",
+      "source_evidence": [
+        "Docker: weak_match",
+        "Git",
+        "Security coding practices: weak_match"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "What would a safe deployment and rollback plan look like for a Kubernetes-hosted integration service whose consumers must not receive duplicate or partially processed financial data?",
+      "competency": "Kubernetes release management",
+      "dimension": "Situational",
+      "target_gap": "Kubernetes",
+      "difficulty": "mid",
+      "rationale": "Kubernetes is missing; the scenario tests deployment safety and data-aware operational judgment, not just cluster terminology.",
+      "source_evidence": [
+        "Kubernetes: missing",
+        "Build mission-critical integrations between source data and financial SaaS applications."
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Describe a feature where you participated in requirements gathering through deployment. What was your specific contribution at each stage, and how did you ensure the delivered behavior met the requirement?",
+      "competency": "End-to-end delivery",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This probes the stated full-lifecycle participation and clarifies level of ownership beyond the summary claim.",
+      "source_evidence": [
+        "Participated in requirements gathering, development, testing, and deployment."
+      ],
+      "priority": 0.64
+    },
+    {
+      "question": "For your Windows tablet client work, how did embedding VLC through VCLJ affect the application's architecture, error handling, and performance diagnosis?",
+      "competency": "Desktop application engineering",
+      "dimension": "Technical",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This profile-specific technical probe validates a distinctive implementation and the candidate's role in solving its integration challenges.",
+      "source_evidence": [
+        "Embedded VLC media player into the application using the VCLJ library.",
+        "Analyzed application errors and performance issues."
+      ],
+      "priority": 0.49
+    },
+    {
+      "question": "Describe how you tested the responsive web interfaces you built across browsers. Which failures did you find, how did you prioritize fixes, and what did you do to prevent regressions?",
+      "competency": "Frontend quality assurance",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "The profile reports cross-browser testing and reusable-code work; this reveals rigor in testing and defect prevention.",
+      "source_evidence": [
+        "Tested websites across multiple browsers for cross-browser compatibility.",
+        "Fixed bugs and built reusable code."
+      ],
+      "priority": 0.45
+    },
+    {
+      "question": "How would you define readiness criteria for promoting an integration feature through a CI/CD pipeline when it depends on external SaaS APIs that may have rate limits or unstable test environments?",
+      "competency": "Integration delivery automation",
+      "dimension": "Role-Specific",
+      "target_gap": "CI/CD",
+      "difficulty": "mid",
+      "rationale": "CI/CD is missing, and external API experience provides a relevant basis for assessing how the candidate would adapt testing and release controls.",
+      "source_evidence": [
+        "CI/CD: missing",
+        "Integrated YouTube, Periscope, and Facebook APIs for live streaming video."
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Design the observability for a cloud-based integration: which logs, metrics, traces, correlation identifiers, dashboards, and alerts would you implement so that failures can be diagnosed across systems?",
+      "competency": "Cloud observability",
+      "dimension": "Technical",
+      "target_gap": "Cloud technologies",
+      "difficulty": "mid",
+      "rationale": "Cloud technologies is missing, while the role demands collaborative troubleshooting of production integrations.",
+      "source_evidence": [
+        "Cloud technologies: missing",
+        "Facilitate cross-functional troubleshooting and root cause analysis."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Imagine a teammate proposes splitting every integration component into a separate microservice. How would you evaluate the proposal and communicate a recommendation that balances delivery speed, operability, and long-term maintainability?",
+      "competency": "Architecture communication",
+      "dimension": "Behavioural",
+      "target_gap": "Microservices",
+      "difficulty": "mid",
+      "rationale": "This evaluates both the microservices gap and the communication expected when contributing to detailed designs across teams.",
+      "source_evidence": [
+        "Microservices: weak_match",
+        "Excellent communication skills (verbal and written)"
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "What security checks would you require before allowing a new third-party API integration to move to production, and which findings would block release versus be tracked for remediation?",
+      "competency": "Integration security governance",
+      "dimension": "Role-Specific",
+      "target_gap": "Security coding practices",
+      "difficulty": "mid",
+      "rationale": "The role handles mission-critical integrations and requires secure-system fundamentals; this tests risk-based engineering judgment.",
+      "source_evidence": [
+        "Security coding practices: weak_match",
+        "Integrated YouTube, Periscope, and Facebook APIs for live streaming video."
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "The role involves helping raise the team's technical bar. Based on your experience working with designers, developers, and documentation, how would you share a reusable integration pattern or help a teammate improve an implementation?",
+      "competency": "Technical mentorship",
+      "dimension": "Behavioural",
+      "target_gap": "Verbal and written communication",
+      "difficulty": "mid",
+      "rationale": "The role includes mentoring, while direct mentoring evidence is absent; the candidate's collaboration and documentation experience offers a grounded discussion point.",
+      "source_evidence": [
+        "Collaborated with team members to update documentation.",
+        "Cooperated with web designers to match visual design intent."
+      ],
+      "priority": 0.74
+    }
+  ],
+  "valid_questions": [
+    {
+      "question": "How would you package a Java-based integration service into a Docker image, including dependency management, configuration, health checks, and a strategy for keeping the image small and secure?",
+      "competency": "Docker",
+      "dimension": "Technical",
+      "target_gap": "Docker",
+      "difficulty": "mid",
+      "rationale": "Docker is required and the profile does not show direct containerization experience; this tests practical readiness to deploy Java services.",
+      "source_evidence": [
+        "Docker: weak_match",
+        "Java"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "A containerized integration service intermittently fails after deployment to Kubernetes while its local Docker run succeeds. How would you investigate the issue across pod events, logs, configuration, networking, and resource settings?",
+      "competency": "Kubernetes troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Kubernetes",
+      "difficulty": "mid",
+      "rationale": "Kubernetes is a high-weight missing requirement, and the scenario evaluates diagnostic thinking rather than vocabulary alone.",
+      "source_evidence": [
+        "Kubernetes: missing",
+        "Analyzed application errors and performance issues."
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Describe the database schema you created and accessed through JDBC at Baroda Electrical. What entities and constraints did you model, and how did you ensure updates and deletes preserved data integrity?",
+      "competency": "Relational database design",
+      "dimension": "Technical",
+      "target_gap": "Relational databases",
+      "difficulty": "mid",
+      "rationale": "The candidate has relevant JDBC and schema experience, but the role requires confidence with relational databases; this validates depth.",
+      "source_evidence": [
+        "Created database schemas and interacted with databases to add, update, and delete records through JDBC."
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "Design a REST API that ingests source records into a financial SaaS target. Explain resource boundaries, idempotency, pagination, validation errors, versioning, and how clients would safely retry requests.",
+      "competency": "RESTful API design",
+      "dimension": "Technical",
+      "target_gap": "RESTful architecture",
+      "difficulty": "mid",
+      "rationale": "RESTful architecture is a weak match despite REST appearing in skills, so a concrete design exercise tests applied API knowledge.",
+      "source_evidence": [
+        "REST Web Services",
+        "RESTful architecture: weak_match"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "For an integration platform that must synchronize customers, invoices, and status updates, how would you decide whether to use a modular monolith or microservices? Explain service boundaries, data ownership, and failure handling.",
+      "competency": "Microservices design",
+      "dimension": "Situational",
+      "target_gap": "Microservices",
+      "difficulty": "mid",
+      "rationale": "Microservices is a required weak match; this probes architectural judgment appropriate to a mid-level engineer.",
+      "source_evidence": [
+        "Microservices: weak_match",
+        "Enterprise application development"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "What AWS services would you choose to run a Java integration API, store its configuration and secrets, persist operational data, and monitor failures? Explain the trade-offs behind your choices.",
+      "competency": "AWS architecture",
+      "dimension": "Technical",
+      "target_gap": "AWS",
+      "difficulty": "mid",
+      "rationale": "AWS is required but only weakly evidenced, so the question establishes whether the candidate can make usable cloud design choices.",
+      "source_evidence": [
+        "AWS: weak_match",
+        "Java"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "Walk through the CI/CD pipeline you would establish for a Java service: build, unit and integration tests, security checks, artifact creation, environment promotion, rollback, and deployment approval points.",
+      "competency": "CI/CD pipeline design",
+      "dimension": "Technical",
+      "target_gap": "CI/CD",
+      "difficulty": "mid",
+      "rationale": "CI/CD is a high-priority missing requirement and is central to safely delivering mission-critical integrations.",
+      "source_evidence": [
+        "CI/CD: missing",
+        "Maven",
+        "Git"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "In Java, how would you implement a client that calls an external API with timeouts, retries, exponential backoff, structured error handling, and protection against duplicate writes?",
+      "competency": "Java integration resilience",
+      "dimension": "Technical",
+      "target_gap": "Java",
+      "difficulty": "mid",
+      "rationale": "Java is a strong match, but the role needs deep Java applied to reliable system integration work.",
+      "source_evidence": [
+        "Java",
+        "REST Web Services",
+        "Java: strong_match"
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "Suppose a new integration must process high-volume source data in the cloud and send results to a SaaS application. Outline the major components, scalability approach, observability, and recovery plan.",
+      "competency": "Cloud solution design",
+      "dimension": "Role-Specific",
+      "target_gap": "Cloud technologies",
+      "difficulty": "mid",
+      "rationale": "Cloud technologies is missing and the role specifically involves mission-critical SaaS integrations.",
+      "source_evidence": [
+        "Cloud technologies: missing",
+        "Build mission-critical integrations between source data and financial SaaS applications."
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "You have previously integrated YouTube, Periscope, and Facebook APIs for live streaming. Explain one integration end to end: authentication, request/response handling, failure cases, testing, and how you diagnosed production-like issues.",
+      "competency": "External API integration",
+      "dimension": "Role-Specific",
+      "target_gap": "System integrations",
+      "difficulty": "mid",
+      "rationale": "System integrations is marked missing, while the profile contains relevant third-party API work that can clarify transferable integration capability.",
+      "source_evidence": [
+        "Integrated YouTube, Periscope, and Facebook APIs for live streaming video.",
+        "System integrations: missing"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "How would you secure a Java REST integration that receives sensitive financial data? Cover authentication and authorization, input validation, secrets management, logging, encryption, and dependency risks.",
+      "competency": "Secure coding",
+      "dimension": "Technical",
+      "target_gap": "Security coding practices",
+      "difficulty": "mid",
+      "rationale": "Security coding is required and weakly matched; the financial integration context makes practical secure-design knowledge essential.",
+      "source_evidence": [
+        "Security coding practices: weak_match",
+        "Java"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Give an example from your Agile work where requirements changed during development. How did you clarify scope, communicate the impact, and adjust your implementation or test plan?",
+      "competency": "Agile delivery",
+      "dimension": "Behavioural",
+      "target_gap": "Agile software development",
+      "difficulty": "mid",
+      "rationale": "Agile is a strong match; this confirms that the candidate can translate stated process experience into disciplined delivery behavior.",
+      "source_evidence": [
+        "Worked in Agile and Waterfall settings.",
+        "Participated in requirements gathering, development, testing, and deployment."
+      ],
+      "priority": 0.66
+    },
+    {
+      "question": "When reviewing a teammate's Java pull request for an integration feature, what issues would you look for, and how would you give feedback when the code works but is difficult to maintain?",
+      "competency": "Code reviews",
+      "dimension": "Situational",
+      "target_gap": "Code reviews",
+      "difficulty": "mid",
+      "rationale": "Code reviews is a weak match, and the role expects engineers to lead design best practices and review code constructively.",
+      "source_evidence": [
+        "Code reviews: weak_match",
+        "Fixed bugs and built reusable code."
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Describe a technical issue you explained to a non-engineering partner, designer, or tester. How did you tailor the message, document decisions, and verify shared understanding?",
+      "competency": "Technical communication",
+      "dimension": "Behavioural",
+      "target_gap": "Verbal and written communication",
+      "difficulty": "mid",
+      "rationale": "Communication is a required weak match, while the profile includes collaboration and documentation activities that can yield a concrete example.",
+      "source_evidence": [
+        "Collaborated with team members to update documentation.",
+        "Cooperated with web designers to match visual design intent."
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "How would you use Python to validate and reconcile source data before it is sent to a financial SaaS application, including duplicate detection, schema validation, error reporting, and an auditable output?",
+      "competency": "Python data validation",
+      "dimension": "Technical",
+      "target_gap": "Python",
+      "difficulty": "mid",
+      "rationale": "Python is a preferred strong match; this explores whether the listed skill can add value to integration data-quality workflows.",
+      "source_evidence": [
+        "Python",
+        "Python: strong_match"
+      ],
+      "priority": 0.53
+    },
+    {
+      "question": "Where would Kafka be appropriate in a near-real-time integration architecture, and how would you handle consumer retries, ordering, duplicate messages, and schema evolution?",
+      "competency": "Kafka event processing",
+      "dimension": "Technical",
+      "target_gap": "Apache Kafka",
+      "difficulty": "mid",
+      "rationale": "Kafka is a preferred weak match, with Apache Tomcat being the only matching evidence; this distinguishes transferable familiarity from actual event-streaming knowledge.",
+      "source_evidence": [
+        "Apache Kafka: weak_match",
+        "Apache Tomcat"
+      ],
+      "priority": 0.61
+    },
+    {
+      "question": "What additional technical and domain knowledge would you need before owning an integration into or out of a financial planning platform such as Anaplan or Oracle, and how would you acquire it?",
+      "competency": "Financial planning integrations",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Financial planning system integrations",
+      "difficulty": "mid",
+      "rationale": "This preferred domain is missing; the question assesses learning approach and realistic awareness of domain-specific integration risk.",
+      "source_evidence": [
+        "Financial planning system integrations: missing",
+        "Enterprise application development"
+      ],
+      "priority": 0.69
+    },
+    {
+      "question": "A nightly financial data sync reports success, but the target system is missing a subset of records. How would you lead the root-cause investigation with source-system, platform, and target-system teams?",
+      "competency": "Cross-functional troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "System integrations",
+      "difficulty": "mid",
+      "rationale": "The role requires cross-functional root-cause analysis, and this probes collaboration in the highest-impact missing domain.",
+      "source_evidence": [
+        "System integrations: missing",
+        "Analyzed application errors and performance issues."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "How would you model a relational schema and transaction strategy for an integration that must prevent duplicate financial records while retaining a complete audit history?",
+      "competency": "Data integrity",
+      "dimension": "Technical",
+      "target_gap": "Relational databases",
+      "difficulty": "mid",
+      "rationale": "This extends the candidate's JDBC background into the transactionality, uniqueness, and auditability required by financial integrations.",
+      "source_evidence": [
+        "Created database schemas and interacted with databases to add, update, and delete records through JDBC.",
+        "Relational databases: weak_match"
+      ],
+      "priority": 0.81
+    },
+    {
+      "question": "A Java service is experiencing increasing latency while processing API calls. Starting from the symptoms, explain how you would isolate whether the cause is application code, database access, external APIs, or infrastructure.",
+      "competency": "Performance troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Java",
+      "difficulty": "mid",
+      "rationale": "The candidate reports analyzing performance issues, and this verifies a structured debugging method using a core strength.",
+      "source_evidence": [
+        "Analyzed application errors and performance issues.",
+        "Java"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "Explain how you would manage configuration across local, test, staging, and production environments for a Dockerized Java service, ensuring that credentials never enter source control or image layers.",
+      "competency": "Secure deployment configuration",
+      "dimension": "Technical",
+      "target_gap": "Docker",
+      "difficulty": "mid",
+      "rationale": "This combines the Docker gap with security expectations and tests operational practices relevant to production integrations.",
+      "source_evidence": [
+        "Docker: weak_match",
+        "Git",
+        "Security coding practices: weak_match"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "What would a safe deployment and rollback plan look like for a Kubernetes-hosted integration service whose consumers must not receive duplicate or partially processed financial data?",
+      "competency": "Kubernetes release management",
+      "dimension": "Situational",
+      "target_gap": "Kubernetes",
+      "difficulty": "mid",
+      "rationale": "Kubernetes is missing; the scenario tests deployment safety and data-aware operational judgment, not just cluster terminology.",
+      "source_evidence": [
+        "Kubernetes: missing",
+        "Build mission-critical integrations between source data and financial SaaS applications."
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Describe a feature where you participated in requirements gathering through deployment. What was your specific contribution at each stage, and how did you ensure the delivered behavior met the requirement?",
+      "competency": "End-to-end delivery",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This probes the stated full-lifecycle participation and clarifies level of ownership beyond the summary claim.",
+      "source_evidence": [
+        "Participated in requirements gathering, development, testing, and deployment."
+      ],
+      "priority": 0.64
+    },
+    {
+      "question": "For your Windows tablet client work, how did embedding VLC through VCLJ affect the application's architecture, error handling, and performance diagnosis?",
+      "competency": "Desktop application engineering",
+      "dimension": "Technical",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This profile-specific technical probe validates a distinctive implementation and the candidate's role in solving its integration challenges.",
+      "source_evidence": [
+        "Embedded VLC media player into the application using the VCLJ library.",
+        "Analyzed application errors and performance issues."
+      ],
+      "priority": 0.49
+    },
+    {
+      "question": "Describe how you tested the responsive web interfaces you built across browsers. Which failures did you find, how did you prioritize fixes, and what did you do to prevent regressions?",
+      "competency": "Frontend quality assurance",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "The profile reports cross-browser testing and reusable-code work; this reveals rigor in testing and defect prevention.",
+      "source_evidence": [
+        "Tested websites across multiple browsers for cross-browser compatibility.",
+        "Fixed bugs and built reusable code."
+      ],
+      "priority": 0.45
+    },
+    {
+      "question": "How would you define readiness criteria for promoting an integration feature through a CI/CD pipeline when it depends on external SaaS APIs that may have rate limits or unstable test environments?",
+      "competency": "Integration delivery automation",
+      "dimension": "Role-Specific",
+      "target_gap": "CI/CD",
+      "difficulty": "mid",
+      "rationale": "CI/CD is missing, and external API experience provides a relevant basis for assessing how the candidate would adapt testing and release controls.",
+      "source_evidence": [
+        "CI/CD: missing",
+        "Integrated YouTube, Periscope, and Facebook APIs for live streaming video."
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Design the observability for a cloud-based integration: which logs, metrics, traces, correlation identifiers, dashboards, and alerts would you implement so that failures can be diagnosed across systems?",
+      "competency": "Cloud observability",
+      "dimension": "Technical",
+      "target_gap": "Cloud technologies",
+      "difficulty": "mid",
+      "rationale": "Cloud technologies is missing, while the role demands collaborative troubleshooting of production integrations.",
+      "source_evidence": [
+        "Cloud technologies: missing",
+        "Facilitate cross-functional troubleshooting and root cause analysis."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Imagine a teammate proposes splitting every integration component into a separate microservice. How would you evaluate the proposal and communicate a recommendation that balances delivery speed, operability, and long-term maintainability?",
+      "competency": "Architecture communication",
+      "dimension": "Behavioural",
+      "target_gap": "Microservices",
+      "difficulty": "mid",
+      "rationale": "This evaluates both the microservices gap and the communication expected when contributing to detailed designs across teams.",
+      "source_evidence": [
+        "Microservices: weak_match",
+        "Excellent communication skills (verbal and written)"
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "What security checks would you require before allowing a new third-party API integration to move to production, and which findings would block release versus be tracked for remediation?",
+      "competency": "Integration security governance",
+      "dimension": "Role-Specific",
+      "target_gap": "Security coding practices",
+      "difficulty": "mid",
+      "rationale": "The role handles mission-critical integrations and requires secure-system fundamentals; this tests risk-based engineering judgment.",
+      "source_evidence": [
+        "Security coding practices: weak_match",
+        "Integrated YouTube, Periscope, and Facebook APIs for live streaming video."
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "The role involves helping raise the team's technical bar. Based on your experience working with designers, developers, and documentation, how would you share a reusable integration pattern or help a teammate improve an implementation?",
+      "competency": "Technical mentorship",
+      "dimension": "Behavioural",
+      "target_gap": "Verbal and written communication",
+      "difficulty": "mid",
+      "rationale": "The role includes mentoring, while direct mentoring evidence is absent; the candidate's collaboration and documentation experience offers a grounded discussion point.",
+      "source_evidence": [
+        "Collaborated with team members to update documentation.",
+        "Cooperated with web designers to match visual design intent."
+      ],
+      "priority": 0.74
+    }
+  ],
+  "validation_failures": [],
+  "n_raw": 30,
+  "n_valid": 30,
+  "n_failed": 0,
+  "weights": [
+    0.7345,
+    0.9397,
+    0.6787,
+    0.6861,
+    0.7095,
+    0.7335,
+    0.937,
+    0.1655,
+    0.9297,
+    0.93,
+    0.7293,
+    0.171,
+    0.6687,
+    0.6923,
+    0.0969,
+    0.3862,
+    0.5612,
+    0.93,
+    0.6787,
+    0.1655,
+    0.7345,
+    0.9397,
+    0.6323411764705883,
+    0.6323411764705883,
+    0.6323411764705883,
+    0.937,
+    0.9297,
+    0.7095,
+    0.7293,
+    0.6923
+  ],
+  "weight_outcomes": [
+    {
+      "rule": "exact",
+      "weight": 0.7345,
+      "matched_competency": "Docker",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9397,
+      "matched_competency": "Kubernetes",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6787,
+      "matched_competency": "Relational databases",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6861,
+      "matched_competency": "RESTful architecture",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7095,
+      "matched_competency": "Microservices",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7335,
+      "matched_competency": "AWS",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.937,
+      "matched_competency": "CI/CD",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1655,
+      "matched_competency": "Java",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9297,
+      "matched_competency": "Cloud technologies",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.93,
+      "matched_competency": "System integrations",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7293,
+      "matched_competency": "Security coding practices",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.171,
+      "matched_competency": "Agile software development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6687,
+      "matched_competency": "Code reviews",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6923,
+      "matched_competency": "Verbal and written communication",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.0969,
+      "matched_competency": "Python",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3862,
+      "matched_competency": "Apache Kafka",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.5612,
+      "matched_competency": "Financial planning system integrations",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.93,
+      "matched_competency": "System integrations",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6787,
+      "matched_competency": "Relational databases",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1655,
+      "matched_competency": "Java",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7345,
+      "matched_competency": "Docker",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9397,
+      "matched_competency": "Kubernetes",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.6323411764705883,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.6323411764705883,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.6323411764705883,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "exact",
+      "weight": 0.937,
+      "matched_competency": "CI/CD",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9297,
+      "matched_competency": "Cloud technologies",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7095,
+      "matched_competency": "Microservices",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7293,
+      "matched_competency": "Security coding practices",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6923,
+      "matched_competency": "Verbal and written communication",
+      "cosine": 1.0
+    }
+  ],
+  "fallback_rate": 0.0,
+  "profile_probe_rate": 0.1,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 9814,
+    "output_tokens": 3370,
+    "cached_tokens": 0,
+    "estimated_cost": 0.060068,
+    "latency_ms": 27899.18,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.060068,
+  "cost_cny": 0.40666036,
+  "usd_cny_rate": 6.77,
+  "user_prompt_sha256": "dc06c8e3c53ee42a321f6beba677218bfb58559f9b73298af0dd58493d6cb2e2",
+  "generated_at": "2026-10-11T13:11:37.864687+00:00"
+}

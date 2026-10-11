@@ -1,0 +1,1034 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "pool",
+  "condition": "T_pool",
+  "profile_id": "rjf_04729_4b4032772de3",
+  "jd_id": "rjf_04729_4b4032772de3",
+  "pair_id": "rjf_04729_4b4032772de3",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "prompt": {
+    "file": "generation/interviewiq_pool.md",
+    "version": "1.1.0",
+    "sha256": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc"
+  },
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 16,
+  "pool_size_requested": 30,
+  "raw_questions": [
+    {
+      "question": "Walk me through how you would develop the one-line diagram and perform the initial load, demand, voltage-drop, and protective-device coordination considerations for a new industrial facility distribution system.",
+      "competency": "Power distribution design",
+      "dimension": "Technical",
+      "target_gap": "Power distribution",
+      "difficulty": "hard",
+      "rationale": "Power distribution is a high-weight missing requirement, so this tests whether the candidate has directly applicable facility-design knowledge beyond test-system work.",
+      "source_evidence": [
+        "Gap matrix: Power distribution \u2014 missing",
+        "Candidate evidence: LabVIEW"
+      ],
+      "priority": 0.99
+    },
+    {
+      "question": "A contractor submits a control-panel shop drawing that does not clearly show short-circuit current rating, grounding, wire numbering, or spare capacity. How would you review it, document comments, and determine whether it can proceed?",
+      "competency": "Control panel review",
+      "dimension": "Situational",
+      "target_gap": "Control panel design",
+      "difficulty": "hard",
+      "rationale": "Tests a missing, high-priority design and review capability in a realistic construction-phase scenario.",
+      "source_evidence": [
+        "Gap matrix: Control panel design \u2014 missing",
+        "Job responsibility: review construction documents and shop drawings"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "What experience, if any, do you have designing lighting for industrial or facility spaces? Explain how you would select fixture types, establish illumination targets, address emergency lighting, and coordinate the layout with the facility design.",
+      "competency": "Lighting design",
+      "dimension": "Technical",
+      "target_gap": "Lighting design",
+      "difficulty": "mid",
+      "rationale": "Lighting design is entirely absent from the documented profile and is a required responsibility.",
+      "source_evidence": [
+        "Gap matrix: Lighting design \u2014 missing",
+        "Candidate profile: electrical design and embedded-systems experience"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Please confirm whether you are legally authorized to work in the United States and, if applicable, whether you would now or in the future require employment sponsorship.",
+      "competency": "Work authorization",
+      "dimension": "Role-Specific",
+      "target_gap": "Legal authorization to work in the United States",
+      "difficulty": "easy",
+      "rationale": "This is a stated required application criterion with no supporting profile evidence.",
+      "source_evidence": [
+        "Gap matrix: Legal authorization to work in the United States \u2014 missing",
+        "Job requirement: legally authorized to work in the United States"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "Describe the largest industrial electrical design scope you have personally owned. What facility-level deliverables did you produce, what codes or standards governed the work, and what were your design decisions?",
+      "competency": "Industrial electrical design",
+      "dimension": "Role-Specific",
+      "target_gap": "Industrial electrical design",
+      "difficulty": "hard",
+      "rationale": "Clarifies the candidate's weakly matched industrial design experience and distinguishes product/test engineering from facility electrical design.",
+      "source_evidence": [
+        "Gap matrix: Industrial electrical design \u2014 weak_match",
+        "Candidate experience: intelligent down-hole oil drilling tools",
+        "Candidate experience: automated test systems using LabVIEW and Python"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "For a three-phase motor-driven pump, explain how you would choose between across-the-line starting, a soft starter, and a variable-frequency drive, and how each choice affects protection, controls, and the electrical distribution system.",
+      "competency": "Motor control",
+      "dimension": "Technical",
+      "target_gap": "Motor control",
+      "difficulty": "hard",
+      "rationale": "Probes a weak-match requirement through a common facility motor-control design decision.",
+      "source_evidence": [
+        "Gap matrix: Motor control \u2014 weak_match",
+        "Candidate evidence: LabVIEW"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "A PLC-controlled process has intermittent false high-level alarms from a field sensor. Describe your troubleshooting sequence from the instrument through wiring, input card, PLC logic, HMI alarm configuration, and process conditions.",
+      "competency": "PLC control systems",
+      "dimension": "Situational",
+      "target_gap": "PLC control systems",
+      "difficulty": "hard",
+      "rationale": "Assesses whether embedded and sensor experience transfers to industrial PLC troubleshooting and controls integration.",
+      "source_evidence": [
+        "Gap matrix: PLC control systems \u2014 weak_match",
+        "Candidate evidence: Embedded systems",
+        "Candidate experience: sensor-based hardware/software development"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "How would you route and specify conduit and conductors for a new pump room when power, control, and instrumentation circuits must coexist in a wet, electrically noisy environment?",
+      "competency": "Conduit and wiring design",
+      "dimension": "Technical",
+      "target_gap": "Facility conduit and wiring design",
+      "difficulty": "hard",
+      "rationale": "Tests a weakly matched facility-design skill, including separation, environmental protection, maintainability, and constructability.",
+      "source_evidence": [
+        "Gap matrix: Facility conduit and wiring design \u2014 weak_match",
+        "Candidate evidence: IC testing and automated test systems"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "Describe how you would use the National Electrical Code to resolve a design question involving conductor ampacity, overcurrent protection, and equipment grounding for a motor branch circuit. Which inputs and NEC articles or tables would you consult?",
+      "competency": "NEC application",
+      "dimension": "Technical",
+      "target_gap": "National Electrical Code",
+      "difficulty": "hard",
+      "rationale": "The role requires extensive NEC implementation, while the profile does not establish direct code-compliance experience.",
+      "source_evidence": [
+        "Gap matrix: National Electrical Code \u2014 weak_match",
+        "Candidate evidence: Code Composer Studio",
+        "Job requirement: extensive knowledge and implementation of the National Electric Code"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "What CAD tools have you used for electrical drawings, and how would you create, revise, and maintain a coordinated set of plans, one-lines, wiring diagrams, and panel schedules in AutoCAD?",
+      "competency": "AutoCAD electrical documentation",
+      "dimension": "Technical",
+      "target_gap": "AutoCAD",
+      "difficulty": "mid",
+      "rationale": "Clarifies whether the listed general CAD experience includes the required AutoCAD-based facility documentation workflow.",
+      "source_evidence": [
+        "Gap matrix: AutoCAD \u2014 weak_match",
+        "Candidate skill: CAD",
+        "Candidate evidence: LabVIEW"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "You receive a 90% electrical drawing package and shop drawings shortly before bid. What checklist would you use to identify safety, constructability, coordination, and documentation issues before issuing comments?",
+      "competency": "Document and shop-drawing review",
+      "dimension": "Situational",
+      "target_gap": "Construction document and shop drawing review",
+      "difficulty": "hard",
+      "rationale": "Directly tests a core weak-match construction-phase responsibility and the candidate's review discipline.",
+      "source_evidence": [
+        "Gap matrix: Construction document and shop drawing review \u2014 weak_match",
+        "Candidate evidence: IC testing and automated test systems"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "Describe a commissioning or startup plan for a facility electrical and control system, from prefunctional checks through energization, loop checks, functional testing, punch-list closure, and turnover.",
+      "competency": "Facility testing and startup",
+      "dimension": "Technical",
+      "target_gap": "Facility testing and startup",
+      "difficulty": "hard",
+      "rationale": "Builds on the candidate's partial testing match while testing whether it extends to safe, coordinated facility commissioning.",
+      "source_evidence": [
+        "Gap matrix: Facility testing and startup \u2014 partial_match",
+        "Candidate experience: developing automated test systems using LabVIEW and Python"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Tell me about a technical project you managed from requirements through delivery. How did you define scope, manage risks and dependencies, communicate status, and respond when priorities changed?",
+      "competency": "Project management",
+      "dimension": "Behavioural",
+      "target_gap": "Project management",
+      "difficulty": "mid",
+      "rationale": "The candidate has engineering experience but no explicit project-management record; this evaluates ownership at the role's required level.",
+      "source_evidence": [
+        "Gap matrix: Project management \u2014 weak_match",
+        "Candidate experience: Electrical Design Engineer, 06/2014\u2013Present"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Given a P&ID for a chemical dosing skid, explain how you would translate the process intent into an instrument index, I/O list, control narrative, loop diagrams, and electrical/control-panel interfaces.",
+      "competency": "Instrumentation and controls implementation",
+      "dimension": "Technical",
+      "target_gap": "Instrumentation and control implementation",
+      "difficulty": "hard",
+      "rationale": "Tests whether the candidate can move from sensor experience to formal P&ID-driven industrial instrumentation and control implementation.",
+      "source_evidence": [
+        "Gap matrix: Instrumentation and control implementation \u2014 weak_match",
+        "Candidate experience: accelerometers and magnetometers",
+        "Candidate experience: sensor-based hardware/software development"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "A project requires an MCC-fed pump, PLC control panel, level transmitter, local HOA station, and remote HMI. Draw or describe the principal power and control schematics, interlocks, permissives, alarms, and fail-safe behavior you would specify.",
+      "competency": "Schematic and logic development",
+      "dimension": "Technical",
+      "target_gap": "Schematic and logic development",
+      "difficulty": "hard",
+      "rationale": "The candidate partially matches through schematic tools; this probes practical industrial control logic rather than tool familiarity alone.",
+      "source_evidence": [
+        "Gap matrix: Schematic and logic development \u2014 partial_match",
+        "Candidate skill: Cadence Schematic Editor",
+        "Candidate experience: embedded hardware and software"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "Describe your experience with water or wastewater facilities, if any. If you have not worked in that domain, how would you rapidly learn the electrical, process-safety, reliability, and regulatory considerations unique to it?",
+      "competency": "Water and wastewater domain adaptation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Water and wastewater applications",
+      "difficulty": "mid",
+      "rationale": "The preferred domain is weakly matched, so this assesses both direct exposure and a credible learning approach without assuming prior experience.",
+      "source_evidence": [
+        "Gap matrix: Water and wastewater applications \u2014 weak_match",
+        "Candidate domain: oil drilling tools",
+        "Candidate evidence: IC testing and automated test systems"
+      ],
+      "priority": 0.68
+    },
+    {
+      "question": "Our senior electrical engineers manage electrical staff. Describe a time you led, coached, or technically guided others; how did you set expectations, review work, and help someone improve?",
+      "competency": "Technical leadership",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "The job includes staff management, and the candidate's Electronics Club presidency and teaching history provide concrete leadership evidence to explore.",
+      "source_evidence": [
+        "Candidate competency: Leadership",
+        "Candidate experience: President of the Electronics Club, 2010\u20132012",
+        "Candidate experience: taught analog circuits, microcontroller programming, and sensor interfaces"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Give an example of an automated calibration system you developed for accelerometers or magnetometers. How did you establish traceability, define acceptance criteria, detect anomalous results, and verify that automation did not mask defects?",
+      "competency": "Quality assurance and test automation",
+      "dimension": "Behavioural",
+      "target_gap": "Facility testing and startup",
+      "difficulty": "mid",
+      "rationale": "Uses a documented strength to probe quality rigor that can transfer to commissioning and startup work.",
+      "source_evidence": [
+        "Candidate experience: automating calibration processes for accelerometers and magnetometers",
+        "Candidate experience: automated test systems using LabVIEW and Python",
+        "Gap matrix: Facility testing and startup \u2014 partial_match"
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "A field change increases a motor's horsepower after the design is substantially complete. How would you assess impacts on feeder sizing, overload protection, starter or VFD selection, available fault current, panel capacity, drawings, and schedule?",
+      "competency": "Electrical change impact analysis",
+      "dimension": "Situational",
+      "target_gap": "Motor control",
+      "difficulty": "hard",
+      "rationale": "Tests practical motor-control judgment and cross-discipline change management in a construction context.",
+      "source_evidence": [
+        "Gap matrix: Motor control \u2014 weak_match",
+        "Gap matrix: Power distribution \u2014 missing",
+        "Gap matrix: Construction document and shop drawing review \u2014 weak_match"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "What calculations and design checks would you perform to size a facility transformer, switchboard, feeders, and panelboards when the load includes motors, nonlinear loads, future capacity, and standby-power requirements?",
+      "competency": "Electrical distribution sizing",
+      "dimension": "Technical",
+      "target_gap": "Power distribution",
+      "difficulty": "hard",
+      "rationale": "Provides a deeper test of the highest-priority missing technical requirement.",
+      "source_evidence": [
+        "Gap matrix: Power distribution \u2014 missing",
+        "Job responsibility: support power distribution"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "If a panel schedule, one-line diagram, and control-panel wiring diagram conflict with one another, what steps would you take to identify the governing intent, resolve the discrepancy, and prevent recurrence?",
+      "competency": "Design quality control",
+      "dimension": "Situational",
+      "target_gap": "Construction document and shop drawing review",
+      "difficulty": "mid",
+      "rationale": "Assesses the quality focus and document-control habits essential to reviewing design and construction packages.",
+      "source_evidence": [
+        "Gap matrix: Construction document and shop drawing review \u2014 weak_match",
+        "Job requirement: quality focus with attention to detail"
+      ],
+      "priority": 0.83
+    },
+    {
+      "question": "Describe the embedded-systems project at Dartmouth in which you developed hardware and software using sensors. What were the requirements, architecture, debugging approach, and your individual technical contribution?",
+      "competency": "Embedded systems delivery",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Validates a central documented experience and reveals the depth of the candidate's hardware/software integration expertise.",
+      "source_evidence": [
+        "Candidate experience: Dartmouth College Product Engineering Intern",
+        "Candidate experience: developed hardware and software for embedded-systems projects using sensors"
+      ],
+      "priority": 0.67
+    },
+    {
+      "question": "How would you specify control-panel segregation, grounding, shielding, power supplies, terminal blocks, labeling, and maintainability for a panel containing 480 V motor circuits alongside 24 VDC PLC and instrument circuits?",
+      "competency": "Control panel design",
+      "dimension": "Technical",
+      "target_gap": "Control panel design",
+      "difficulty": "hard",
+      "rationale": "Probes the missing control-panel design requirement at a practical implementation level.",
+      "source_evidence": [
+        "Gap matrix: Control panel design \u2014 missing",
+        "Candidate experience: embedded hardware/software",
+        "Candidate experience: automated test systems"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "During construction, you discover that installed conduit routing conflicts with other trades and introduces inaccessible pulls and bends. How would you evaluate alternatives, communicate the issue, approve a solution, and update the record documents?",
+      "competency": "Construction coordination",
+      "dimension": "Situational",
+      "target_gap": "Facility conduit and wiring design",
+      "difficulty": "mid",
+      "rationale": "Tests construction-phase judgment for a weakly matched facility wiring responsibility.",
+      "source_evidence": [
+        "Gap matrix: Facility conduit and wiring design \u2014 weak_match",
+        "Gap matrix: Construction document and shop drawing review \u2014 weak_match"
+      ],
+      "priority": 0.81
+    },
+    {
+      "question": "How do you approach a design review when you are accountable for quality but the project schedule is constrained? Give an example of how you prioritized checks, raised issues, and balanced speed with safety and correctness.",
+      "competency": "Quality focus and attention to detail",
+      "dimension": "Behavioural",
+      "target_gap": "Construction document and shop drawing review",
+      "difficulty": "mid",
+      "rationale": "Tests the role's required quality mindset in a setting aligned with design-document review responsibilities.",
+      "source_evidence": [
+        "Job requirement: Quality focus with attention to detail",
+        "Gap matrix: Construction document and shop drawing review \u2014 weak_match"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Explain how you would design a fail-safe control philosophy for a level-controlled pumping system, including sensor failure handling, loss of communications, manual operation, alarms, and restart behavior after power restoration.",
+      "competency": "Control logic and fail-safe design",
+      "dimension": "Technical",
+      "target_gap": "PLC control systems",
+      "difficulty": "hard",
+      "rationale": "Tests whether the candidate can apply embedded and sensor knowledge to safety-conscious PLC control design.",
+      "source_evidence": [
+        "Gap matrix: PLC control systems \u2014 weak_match",
+        "Candidate experience: accelerometers and magnetometers",
+        "Candidate skill: Embedded systems"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "For the AVR microcontroller programmer firmware you developed over USB, how did you define the interface, handle communication errors, validate programming success, and debug failures between hardware and software?",
+      "competency": "Firmware and interface debugging",
+      "dimension": "Technical",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Explores a specific documented accomplishment and assesses structured debugging skills relevant to controls and test-system interfaces.",
+      "source_evidence": [
+        "Candidate experience: developed firmware for programmer to program AVR microcontrollers through a USB port",
+        "Candidate skills: USB, C, embedded systems"
+      ],
+      "priority": 0.62
+    },
+    {
+      "question": "What is your current status regarding a Maryland Professional Engineer license, and if you do not hold one, what specific path, timeline, and requirements would apply to obtaining it?",
+      "competency": "PE licensure readiness",
+      "dimension": "Role-Specific",
+      "target_gap": "Ability to obtain a Professional Engineer license in Maryland",
+      "difficulty": "easy",
+      "rationale": "The role explicitly requires a Maryland PE license or the ability to obtain one, and no license is listed in the profile.",
+      "source_evidence": [
+        "Job certification requirement: Professional Engineer license in Maryland or ability to obtain",
+        "Candidate profile: no certifications listed"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "Suppose commissioning reveals a motor that runs correctly locally but will not start in remote automatic mode. How would you use drawings, PLC diagnostics, field measurements, and stakeholder coordination to isolate and close the issue?",
+      "competency": "Startup troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Facility testing and startup",
+      "difficulty": "hard",
+      "rationale": "Tests transferable automated-test experience against an industrial startup fault involving electrical, controls, and documentation interfaces.",
+      "source_evidence": [
+        "Gap matrix: Facility testing and startup \u2014 partial_match",
+        "Candidate experience: developing automated test systems using LabVIEW and Python",
+        "Gap matrix: PLC control systems \u2014 weak_match"
+      ],
+      "priority": 0.85
+    }
+  ],
+  "valid_questions": [
+    {
+      "question": "Walk me through how you would develop the one-line diagram and perform the initial load, demand, voltage-drop, and protective-device coordination considerations for a new industrial facility distribution system.",
+      "competency": "Power distribution design",
+      "dimension": "Technical",
+      "target_gap": "Power distribution",
+      "difficulty": "hard",
+      "rationale": "Power distribution is a high-weight missing requirement, so this tests whether the candidate has directly applicable facility-design knowledge beyond test-system work.",
+      "source_evidence": [
+        "Gap matrix: Power distribution \u2014 missing",
+        "Candidate evidence: LabVIEW"
+      ],
+      "priority": 0.99
+    },
+    {
+      "question": "A contractor submits a control-panel shop drawing that does not clearly show short-circuit current rating, grounding, wire numbering, or spare capacity. How would you review it, document comments, and determine whether it can proceed?",
+      "competency": "Control panel review",
+      "dimension": "Situational",
+      "target_gap": "Control panel design",
+      "difficulty": "hard",
+      "rationale": "Tests a missing, high-priority design and review capability in a realistic construction-phase scenario.",
+      "source_evidence": [
+        "Gap matrix: Control panel design \u2014 missing",
+        "Job responsibility: review construction documents and shop drawings"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "What experience, if any, do you have designing lighting for industrial or facility spaces? Explain how you would select fixture types, establish illumination targets, address emergency lighting, and coordinate the layout with the facility design.",
+      "competency": "Lighting design",
+      "dimension": "Technical",
+      "target_gap": "Lighting design",
+      "difficulty": "mid",
+      "rationale": "Lighting design is entirely absent from the documented profile and is a required responsibility.",
+      "source_evidence": [
+        "Gap matrix: Lighting design \u2014 missing",
+        "Candidate profile: electrical design and embedded-systems experience"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Please confirm whether you are legally authorized to work in the United States and, if applicable, whether you would now or in the future require employment sponsorship.",
+      "competency": "Work authorization",
+      "dimension": "Role-Specific",
+      "target_gap": "Legal authorization to work in the United States",
+      "difficulty": "easy",
+      "rationale": "This is a stated required application criterion with no supporting profile evidence.",
+      "source_evidence": [
+        "Gap matrix: Legal authorization to work in the United States \u2014 missing",
+        "Job requirement: legally authorized to work in the United States"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "Describe the largest industrial electrical design scope you have personally owned. What facility-level deliverables did you produce, what codes or standards governed the work, and what were your design decisions?",
+      "competency": "Industrial electrical design",
+      "dimension": "Role-Specific",
+      "target_gap": "Industrial electrical design",
+      "difficulty": "hard",
+      "rationale": "Clarifies the candidate's weakly matched industrial design experience and distinguishes product/test engineering from facility electrical design.",
+      "source_evidence": [
+        "Gap matrix: Industrial electrical design \u2014 weak_match",
+        "Candidate experience: intelligent down-hole oil drilling tools",
+        "Candidate experience: automated test systems using LabVIEW and Python"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "For a three-phase motor-driven pump, explain how you would choose between across-the-line starting, a soft starter, and a variable-frequency drive, and how each choice affects protection, controls, and the electrical distribution system.",
+      "competency": "Motor control",
+      "dimension": "Technical",
+      "target_gap": "Motor control",
+      "difficulty": "hard",
+      "rationale": "Probes a weak-match requirement through a common facility motor-control design decision.",
+      "source_evidence": [
+        "Gap matrix: Motor control \u2014 weak_match",
+        "Candidate evidence: LabVIEW"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "A PLC-controlled process has intermittent false high-level alarms from a field sensor. Describe your troubleshooting sequence from the instrument through wiring, input card, PLC logic, HMI alarm configuration, and process conditions.",
+      "competency": "PLC control systems",
+      "dimension": "Situational",
+      "target_gap": "PLC control systems",
+      "difficulty": "hard",
+      "rationale": "Assesses whether embedded and sensor experience transfers to industrial PLC troubleshooting and controls integration.",
+      "source_evidence": [
+        "Gap matrix: PLC control systems \u2014 weak_match",
+        "Candidate evidence: Embedded systems",
+        "Candidate experience: sensor-based hardware/software development"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "How would you route and specify conduit and conductors for a new pump room when power, control, and instrumentation circuits must coexist in a wet, electrically noisy environment?",
+      "competency": "Conduit and wiring design",
+      "dimension": "Technical",
+      "target_gap": "Facility conduit and wiring design",
+      "difficulty": "hard",
+      "rationale": "Tests a weakly matched facility-design skill, including separation, environmental protection, maintainability, and constructability.",
+      "source_evidence": [
+        "Gap matrix: Facility conduit and wiring design \u2014 weak_match",
+        "Candidate evidence: IC testing and automated test systems"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "Describe how you would use the National Electrical Code to resolve a design question involving conductor ampacity, overcurrent protection, and equipment grounding for a motor branch circuit. Which inputs and NEC articles or tables would you consult?",
+      "competency": "NEC application",
+      "dimension": "Technical",
+      "target_gap": "National Electrical Code",
+      "difficulty": "hard",
+      "rationale": "The role requires extensive NEC implementation, while the profile does not establish direct code-compliance experience.",
+      "source_evidence": [
+        "Gap matrix: National Electrical Code \u2014 weak_match",
+        "Candidate evidence: Code Composer Studio",
+        "Job requirement: extensive knowledge and implementation of the National Electric Code"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "What CAD tools have you used for electrical drawings, and how would you create, revise, and maintain a coordinated set of plans, one-lines, wiring diagrams, and panel schedules in AutoCAD?",
+      "competency": "AutoCAD electrical documentation",
+      "dimension": "Technical",
+      "target_gap": "AutoCAD",
+      "difficulty": "mid",
+      "rationale": "Clarifies whether the listed general CAD experience includes the required AutoCAD-based facility documentation workflow.",
+      "source_evidence": [
+        "Gap matrix: AutoCAD \u2014 weak_match",
+        "Candidate skill: CAD",
+        "Candidate evidence: LabVIEW"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "You receive a 90% electrical drawing package and shop drawings shortly before bid. What checklist would you use to identify safety, constructability, coordination, and documentation issues before issuing comments?",
+      "competency": "Document and shop-drawing review",
+      "dimension": "Situational",
+      "target_gap": "Construction document and shop drawing review",
+      "difficulty": "hard",
+      "rationale": "Directly tests a core weak-match construction-phase responsibility and the candidate's review discipline.",
+      "source_evidence": [
+        "Gap matrix: Construction document and shop drawing review \u2014 weak_match",
+        "Candidate evidence: IC testing and automated test systems"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "Describe a commissioning or startup plan for a facility electrical and control system, from prefunctional checks through energization, loop checks, functional testing, punch-list closure, and turnover.",
+      "competency": "Facility testing and startup",
+      "dimension": "Technical",
+      "target_gap": "Facility testing and startup",
+      "difficulty": "hard",
+      "rationale": "Builds on the candidate's partial testing match while testing whether it extends to safe, coordinated facility commissioning.",
+      "source_evidence": [
+        "Gap matrix: Facility testing and startup \u2014 partial_match",
+        "Candidate experience: developing automated test systems using LabVIEW and Python"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Tell me about a technical project you managed from requirements through delivery. How did you define scope, manage risks and dependencies, communicate status, and respond when priorities changed?",
+      "competency": "Project management",
+      "dimension": "Behavioural",
+      "target_gap": "Project management",
+      "difficulty": "mid",
+      "rationale": "The candidate has engineering experience but no explicit project-management record; this evaluates ownership at the role's required level.",
+      "source_evidence": [
+        "Gap matrix: Project management \u2014 weak_match",
+        "Candidate experience: Electrical Design Engineer, 06/2014\u2013Present"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Given a P&ID for a chemical dosing skid, explain how you would translate the process intent into an instrument index, I/O list, control narrative, loop diagrams, and electrical/control-panel interfaces.",
+      "competency": "Instrumentation and controls implementation",
+      "dimension": "Technical",
+      "target_gap": "Instrumentation and control implementation",
+      "difficulty": "hard",
+      "rationale": "Tests whether the candidate can move from sensor experience to formal P&ID-driven industrial instrumentation and control implementation.",
+      "source_evidence": [
+        "Gap matrix: Instrumentation and control implementation \u2014 weak_match",
+        "Candidate experience: accelerometers and magnetometers",
+        "Candidate experience: sensor-based hardware/software development"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "A project requires an MCC-fed pump, PLC control panel, level transmitter, local HOA station, and remote HMI. Draw or describe the principal power and control schematics, interlocks, permissives, alarms, and fail-safe behavior you would specify.",
+      "competency": "Schematic and logic development",
+      "dimension": "Technical",
+      "target_gap": "Schematic and logic development",
+      "difficulty": "hard",
+      "rationale": "The candidate partially matches through schematic tools; this probes practical industrial control logic rather than tool familiarity alone.",
+      "source_evidence": [
+        "Gap matrix: Schematic and logic development \u2014 partial_match",
+        "Candidate skill: Cadence Schematic Editor",
+        "Candidate experience: embedded hardware and software"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "Describe your experience with water or wastewater facilities, if any. If you have not worked in that domain, how would you rapidly learn the electrical, process-safety, reliability, and regulatory considerations unique to it?",
+      "competency": "Water and wastewater domain adaptation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Water and wastewater applications",
+      "difficulty": "mid",
+      "rationale": "The preferred domain is weakly matched, so this assesses both direct exposure and a credible learning approach without assuming prior experience.",
+      "source_evidence": [
+        "Gap matrix: Water and wastewater applications \u2014 weak_match",
+        "Candidate domain: oil drilling tools",
+        "Candidate evidence: IC testing and automated test systems"
+      ],
+      "priority": 0.68
+    },
+    {
+      "question": "Our senior electrical engineers manage electrical staff. Describe a time you led, coached, or technically guided others; how did you set expectations, review work, and help someone improve?",
+      "competency": "Technical leadership",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "The job includes staff management, and the candidate's Electronics Club presidency and teaching history provide concrete leadership evidence to explore.",
+      "source_evidence": [
+        "Candidate competency: Leadership",
+        "Candidate experience: President of the Electronics Club, 2010\u20132012",
+        "Candidate experience: taught analog circuits, microcontroller programming, and sensor interfaces"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Give an example of an automated calibration system you developed for accelerometers or magnetometers. How did you establish traceability, define acceptance criteria, detect anomalous results, and verify that automation did not mask defects?",
+      "competency": "Quality assurance and test automation",
+      "dimension": "Behavioural",
+      "target_gap": "Facility testing and startup",
+      "difficulty": "mid",
+      "rationale": "Uses a documented strength to probe quality rigor that can transfer to commissioning and startup work.",
+      "source_evidence": [
+        "Candidate experience: automating calibration processes for accelerometers and magnetometers",
+        "Candidate experience: automated test systems using LabVIEW and Python",
+        "Gap matrix: Facility testing and startup \u2014 partial_match"
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "A field change increases a motor's horsepower after the design is substantially complete. How would you assess impacts on feeder sizing, overload protection, starter or VFD selection, available fault current, panel capacity, drawings, and schedule?",
+      "competency": "Electrical change impact analysis",
+      "dimension": "Situational",
+      "target_gap": "Motor control",
+      "difficulty": "hard",
+      "rationale": "Tests practical motor-control judgment and cross-discipline change management in a construction context.",
+      "source_evidence": [
+        "Gap matrix: Motor control \u2014 weak_match",
+        "Gap matrix: Power distribution \u2014 missing",
+        "Gap matrix: Construction document and shop drawing review \u2014 weak_match"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "What calculations and design checks would you perform to size a facility transformer, switchboard, feeders, and panelboards when the load includes motors, nonlinear loads, future capacity, and standby-power requirements?",
+      "competency": "Electrical distribution sizing",
+      "dimension": "Technical",
+      "target_gap": "Power distribution",
+      "difficulty": "hard",
+      "rationale": "Provides a deeper test of the highest-priority missing technical requirement.",
+      "source_evidence": [
+        "Gap matrix: Power distribution \u2014 missing",
+        "Job responsibility: support power distribution"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "If a panel schedule, one-line diagram, and control-panel wiring diagram conflict with one another, what steps would you take to identify the governing intent, resolve the discrepancy, and prevent recurrence?",
+      "competency": "Design quality control",
+      "dimension": "Situational",
+      "target_gap": "Construction document and shop drawing review",
+      "difficulty": "mid",
+      "rationale": "Assesses the quality focus and document-control habits essential to reviewing design and construction packages.",
+      "source_evidence": [
+        "Gap matrix: Construction document and shop drawing review \u2014 weak_match",
+        "Job requirement: quality focus with attention to detail"
+      ],
+      "priority": 0.83
+    },
+    {
+      "question": "Describe the embedded-systems project at Dartmouth in which you developed hardware and software using sensors. What were the requirements, architecture, debugging approach, and your individual technical contribution?",
+      "competency": "Embedded systems delivery",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Validates a central documented experience and reveals the depth of the candidate's hardware/software integration expertise.",
+      "source_evidence": [
+        "Candidate experience: Dartmouth College Product Engineering Intern",
+        "Candidate experience: developed hardware and software for embedded-systems projects using sensors"
+      ],
+      "priority": 0.67
+    },
+    {
+      "question": "How would you specify control-panel segregation, grounding, shielding, power supplies, terminal blocks, labeling, and maintainability for a panel containing 480 V motor circuits alongside 24 VDC PLC and instrument circuits?",
+      "competency": "Control panel design",
+      "dimension": "Technical",
+      "target_gap": "Control panel design",
+      "difficulty": "hard",
+      "rationale": "Probes the missing control-panel design requirement at a practical implementation level.",
+      "source_evidence": [
+        "Gap matrix: Control panel design \u2014 missing",
+        "Candidate experience: embedded hardware/software",
+        "Candidate experience: automated test systems"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "During construction, you discover that installed conduit routing conflicts with other trades and introduces inaccessible pulls and bends. How would you evaluate alternatives, communicate the issue, approve a solution, and update the record documents?",
+      "competency": "Construction coordination",
+      "dimension": "Situational",
+      "target_gap": "Facility conduit and wiring design",
+      "difficulty": "mid",
+      "rationale": "Tests construction-phase judgment for a weakly matched facility wiring responsibility.",
+      "source_evidence": [
+        "Gap matrix: Facility conduit and wiring design \u2014 weak_match",
+        "Gap matrix: Construction document and shop drawing review \u2014 weak_match"
+      ],
+      "priority": 0.81
+    },
+    {
+      "question": "How do you approach a design review when you are accountable for quality but the project schedule is constrained? Give an example of how you prioritized checks, raised issues, and balanced speed with safety and correctness.",
+      "competency": "Quality focus and attention to detail",
+      "dimension": "Behavioural",
+      "target_gap": "Construction document and shop drawing review",
+      "difficulty": "mid",
+      "rationale": "Tests the role's required quality mindset in a setting aligned with design-document review responsibilities.",
+      "source_evidence": [
+        "Job requirement: Quality focus with attention to detail",
+        "Gap matrix: Construction document and shop drawing review \u2014 weak_match"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Explain how you would design a fail-safe control philosophy for a level-controlled pumping system, including sensor failure handling, loss of communications, manual operation, alarms, and restart behavior after power restoration.",
+      "competency": "Control logic and fail-safe design",
+      "dimension": "Technical",
+      "target_gap": "PLC control systems",
+      "difficulty": "hard",
+      "rationale": "Tests whether the candidate can apply embedded and sensor knowledge to safety-conscious PLC control design.",
+      "source_evidence": [
+        "Gap matrix: PLC control systems \u2014 weak_match",
+        "Candidate experience: accelerometers and magnetometers",
+        "Candidate skill: Embedded systems"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "For the AVR microcontroller programmer firmware you developed over USB, how did you define the interface, handle communication errors, validate programming success, and debug failures between hardware and software?",
+      "competency": "Firmware and interface debugging",
+      "dimension": "Technical",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Explores a specific documented accomplishment and assesses structured debugging skills relevant to controls and test-system interfaces.",
+      "source_evidence": [
+        "Candidate experience: developed firmware for programmer to program AVR microcontrollers through a USB port",
+        "Candidate skills: USB, C, embedded systems"
+      ],
+      "priority": 0.62
+    },
+    {
+      "question": "Suppose commissioning reveals a motor that runs correctly locally but will not start in remote automatic mode. How would you use drawings, PLC diagnostics, field measurements, and stakeholder coordination to isolate and close the issue?",
+      "competency": "Startup troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Facility testing and startup",
+      "difficulty": "hard",
+      "rationale": "Tests transferable automated-test experience against an industrial startup fault involving electrical, controls, and documentation interfaces.",
+      "source_evidence": [
+        "Gap matrix: Facility testing and startup \u2014 partial_match",
+        "Candidate experience: developing automated test systems using LabVIEW and Python",
+        "Gap matrix: PLC control systems \u2014 weak_match"
+      ],
+      "priority": 0.85
+    }
+  ],
+  "validation_failures": [
+    {
+      "index": 27,
+      "reasons": [
+        "unknown_target_gap"
+      ],
+      "target_gap": "Ability to obtain a Professional Engineer license in Maryland",
+      "dimension": "Role-Specific",
+      "priority": 0.88
+    }
+  ],
+  "n_raw": 29,
+  "n_valid": 28,
+  "n_failed": 1,
+  "weights": [
+    0.941,
+    0.9507,
+    0.9503,
+    0.9049,
+    0.7245,
+    0.7299,
+    0.6429,
+    0.7036,
+    0.6357,
+    0.7072,
+    0.6802,
+    0.374,
+    0.7282,
+    0.6663,
+    0.3838,
+    0.424,
+    0.6967,
+    0.374,
+    0.7299,
+    0.941,
+    0.6802,
+    0.6967,
+    0.9507,
+    0.7036,
+    0.6802,
+    0.6429,
+    0.6967,
+    0.374
+  ],
+  "weight_outcomes": [
+    {
+      "rule": "exact",
+      "weight": 0.941,
+      "matched_competency": "Power distribution",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9507,
+      "matched_competency": "Control panel design",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9503,
+      "matched_competency": "Lighting design",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9049,
+      "matched_competency": "Legal authorization to work in the United States",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7245,
+      "matched_competency": "Industrial electrical design",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7299,
+      "matched_competency": "Motor control",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6429,
+      "matched_competency": "PLC control systems",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7036,
+      "matched_competency": "Facility conduit and wiring design",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6357,
+      "matched_competency": "National Electrical Code",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7072,
+      "matched_competency": "AutoCAD",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6802,
+      "matched_competency": "Construction document and shop drawing review",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.374,
+      "matched_competency": "Facility testing and startup",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7282,
+      "matched_competency": "Project management",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6663,
+      "matched_competency": "Instrumentation and control implementation",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3838,
+      "matched_competency": "Schematic and logic development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.424,
+      "matched_competency": "Water and wastewater applications",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.6967,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "exact",
+      "weight": 0.374,
+      "matched_competency": "Facility testing and startup",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7299,
+      "matched_competency": "Motor control",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.941,
+      "matched_competency": "Power distribution",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6802,
+      "matched_competency": "Construction document and shop drawing review",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.6967,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9507,
+      "matched_competency": "Control panel design",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7036,
+      "matched_competency": "Facility conduit and wiring design",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6802,
+      "matched_competency": "Construction document and shop drawing review",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6429,
+      "matched_competency": "PLC control systems",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.6967,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "exact",
+      "weight": 0.374,
+      "matched_competency": "Facility testing and startup",
+      "cosine": 1.0
+    }
+  ],
+  "fallback_rate": 0.0,
+  "profile_probe_rate": 0.10714285714285714,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 6748,
+    "output_tokens": 3661,
+    "cached_tokens": 0,
+    "estimated_cost": 0.057428,
+    "latency_ms": 31667.13,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.057428,
+  "cost_cny": 0.38878756,
+  "usd_cny_rate": 6.77,
+  "user_prompt_sha256": "a33273dd809c6a4490d40c3fe8722470a74aebe21394a797f179af9ee9431e82",
+  "generated_at": "2026-10-11T13:13:09.650752+00:00"
+}

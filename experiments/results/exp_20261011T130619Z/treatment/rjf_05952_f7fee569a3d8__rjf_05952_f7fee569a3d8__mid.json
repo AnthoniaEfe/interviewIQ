@@ -1,0 +1,470 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_05952_f7fee569a3d8",
+  "jd_id": "rjf_05952_f7fee569a3d8",
+  "pair_id": "rjf_05952_f7fee569a3d8",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 14,
+  "pool_path": "pool/rjf_05952_f7fee569a3d8__rjf_05952_f7fee569a3d8__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.13333333333333333,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      19,
+      9,
+      21,
+      12,
+      8,
+      23,
+      7,
+      10,
+      22,
+      20
+    ],
+    "questions": [
+      {
+        "question": "What steps would you take to analyze the impact of a requested contract change on approved requirements, scope, deliverables, and traceability?",
+        "competency": "Contract change control",
+        "competency_type": "other",
+        "target_gap": "Contract change notices",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Directly tests the missing capability to handle contract change notices tied to requirements specifications.",
+        "source_evidence": [
+          "TRACS",
+          "Supported deal documentation.",
+          "Prepared competitive bids and proposal writing for theme park projects."
+        ],
+        "priority": 0.98,
+        "weight": 0.9478
+      },
+      {
+        "question": "What experience do you have working in Agile Scrum teams, and what were your specific responsibilities during a sprint?",
+        "competency": "Agile Scrum",
+        "competency_type": "technical",
+        "target_gap": "Agile Scrum",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Clarifies whether the candidate has any practical Scrum exposure, which is missing from the profile.",
+        "source_evidence": [
+          "TRACS",
+          "Performed program testing and quality assurance for ingest templates and metadata."
+        ],
+        "priority": 0.98,
+        "weight": 0.9458
+      },
+      {
+        "question": "What is your understanding of LEAN principles, and which techniques have you personally used to reduce waste, delays, errors, or handoffs?",
+        "competency": "LEAN principles",
+        "competency_type": "technical",
+        "target_gap": "LEAN principles",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Directly verifies a missing required competency while distinguishing formal LEAN practice from general process improvement.",
+        "source_evidence": [
+          "TRACS",
+          "Supported home video distribution through data analysis and workflow improvement.",
+          "Developed a more efficient process through allocation plans in JDA."
+        ],
+        "priority": 0.96,
+        "weight": 0.939
+      },
+      {
+        "question": "A JIRA backlog contains duplicated tickets, vague requests, unestimated items, and several production defects. How would you prepare it for a planning session?",
+        "competency": "Backlog grooming",
+        "competency_type": "other",
+        "target_gap": "Backlog grooming",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Directly evaluates the missing backlog-grooming capability through a practical scenario.",
+        "source_evidence": [
+          "TRACS",
+          "Created corrective action plans and allocation plans in JDA."
+        ],
+        "priority": 0.96,
+        "weight": 0.9254
+      },
+      {
+        "question": "You are facilitating a meeting with executives, operations staff, and technical contributors who disagree on the scope of a high-impact process change. What would you do before, during, and after the meeting to drive consensus?",
+        "competency": "Executive facilitation",
+        "competency_type": "other",
+        "target_gap": "Consensus facilitation",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Evaluates facilitation structure, conflict management, decision capture, and follow-through where direct evidence is absent.",
+        "source_evidence": [
+          "TRACS",
+          "Fostered and developed client relations",
+          "communication and self motivated individual"
+        ],
+        "priority": 1.0,
+        "weight": 0.9278
+      },
+      {
+        "question": "Have you supported an LPI or similarly structured continuous-improvement initiative? Describe the goals, your role, measures used, and results.",
+        "competency": "LPI initiatives",
+        "competency_type": "soft",
+        "target_gap": "LPI initiatives",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Directly probes the missing LPI-initiative requirement and allows relevant improvement experience to surface.",
+        "source_evidence": [
+          "TRACS",
+          "Supported home video distribution through data analysis and workflow improvement.",
+          "Developed a more efficient process through allocation plans in JDA."
+        ],
+        "priority": 0.95,
+        "weight": 0.9302
+      },
+      {
+        "question": "Tell us about a time stakeholders had competing priorities or interpretations of data. How did you facilitate the discussion and help them reach a decision?",
+        "competency": "Consensus facilitation",
+        "competency_type": "soft",
+        "target_gap": "Consensus facilitation",
+        "question_type": "Behavioural",
+        "difficulty": "hard",
+        "rationale": "Directly probes a high-priority missing competency: facilitating agreement among groups with competing perspectives.",
+        "source_evidence": [
+          "TRACS",
+          "Provided consulting solutions supporting on-time service-level agreements.",
+          "Provided corrective action plans for client complaints and billing discrepancies."
+        ],
+        "priority": 0.98,
+        "weight": 0.9278
+      },
+      {
+        "question": "Suppose a team receives an urgent regulatory change halfway through a two-week sprint. How would you work with the product owner and team to decide whether and how to incorporate it?",
+        "competency": "Agile change management",
+        "competency_type": "other",
+        "target_gap": "Agile Scrum",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Tests applied Agile judgment for a role requiring Scrum work in regulated programs.",
+        "source_evidence": [
+          "TRACS",
+          "Assisted with fixes and provided technical support for regulatory updates."
+        ],
+        "priority": 0.94,
+        "weight": 0.9458
+      },
+      {
+        "question": "A process has a growing queue of incomplete requests and frequent rework. How would you use a LEAN approach to diagnose root causes and design improvements?",
+        "competency": "LEAN problem solving",
+        "competency_type": "other",
+        "target_gap": "LEAN principles",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Tests whether the candidate can apply LEAN concepts to an operational process rather than merely define them.",
+        "source_evidence": [
+          "TRACS",
+          "Provided corrective action plans for client complaints and billing discrepancies.",
+          "Maintained on-time service-level agreements for deliverables."
+        ],
+        "priority": 0.94,
+        "weight": 0.939
+      },
+      {
+        "question": "Tell me about a time a pricing, billing, or scope discrepancy required a formal correction. How did you investigate it, communicate it, and prevent recurrence?",
+        "competency": "Change documentation",
+        "competency_type": "soft",
+        "target_gap": "Contract change notices",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Uses documented billing-discrepancy experience to identify transferable change-control and corrective-action behaviors.",
+        "source_evidence": [
+          "Collected refunds, receipts, and resolved billing discrepancies.",
+          "Provided corrective action plans for client complaints and billing discrepancies.",
+          "Streamlined order entry and corrected pricing."
+        ],
+        "priority": 0.78,
+        "weight": 0.9478
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.928844,
+      0.9268839999999999,
+      0.9014399999999999,
+      0.888384,
+      0.9278,
+      0.88369,
+      0.9092439999999999,
+      0.889052,
+      0.8826599999999999,
+      0.739284
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.21870353817939758,
+      0.28037720918655396,
+      0.257074236869812,
+      0.38011255860328674,
+      0.3526301681995392,
+      0.4737486243247986,
+      0.44824379682540894,
+      0.45954272150993347,
+      0.39441004395484924
+    ],
+    "mmr_scores": [
+      0.6501908,
+      0.5832077385461807,
+      0.5468948372440336,
+      0.5447465289390563,
+      0.5354262324190139,
+      0.5127939495401382,
+      0.4943462127025603,
+      0.4878632609523772,
+      0.47999918354701987,
+      0.39917578681354526
+    ],
+    "competency_weights": [
+      0.9478,
+      0.9458,
+      0.939,
+      0.9254,
+      0.9278,
+      0.9302,
+      0.9278,
+      0.9458,
+      0.939,
+      0.9478
+    ]
+  },
+  "questions": [
+    {
+      "question": "What steps would you take to analyze the impact of a requested contract change on approved requirements, scope, deliverables, and traceability?"
+    },
+    {
+      "question": "What experience do you have working in Agile Scrum teams, and what were your specific responsibilities during a sprint?"
+    },
+    {
+      "question": "What is your understanding of LEAN principles, and which techniques have you personally used to reduce waste, delays, errors, or handoffs?"
+    },
+    {
+      "question": "A JIRA backlog contains duplicated tickets, vague requests, unestimated items, and several production defects. How would you prepare it for a planning session?"
+    },
+    {
+      "question": "You are facilitating a meeting with executives, operations staff, and technical contributors who disagree on the scope of a high-impact process change. What would you do before, during, and after the meeting to drive consensus?"
+    },
+    {
+      "question": "Have you supported an LPI or similarly structured continuous-improvement initiative? Describe the goals, your role, measures used, and results."
+    },
+    {
+      "question": "Tell us about a time stakeholders had competing priorities or interpretations of data. How did you facilitate the discussion and help them reach a decision?"
+    },
+    {
+      "question": "Suppose a team receives an urgent regulatory change halfway through a two-week sprint. How would you work with the product owner and team to decide whether and how to incorporate it?"
+    },
+    {
+      "question": "A process has a growing queue of incomplete requests and frequent rework. How would you use a LEAN approach to diagnose root causes and design improvements?"
+    },
+    {
+      "question": "Tell me about a time a pricing, billing, or scope discrepancy required a formal correction. How did you investigate it, communicate it, and prevent recurrence?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "What steps would you take to analyze the impact of a requested contract change on approved requirements, scope, deliverables, and traceability?",
+      "competency": "Contract change control",
+      "competency_type": "other",
+      "target_gap": "Contract change notices",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Directly tests the missing capability to handle contract change notices tied to requirements specifications.",
+      "source_evidence": [
+        "TRACS",
+        "Supported deal documentation.",
+        "Prepared competitive bids and proposal writing for theme park projects."
+      ],
+      "priority": 0.98,
+      "weight": 0.9478
+    },
+    {
+      "question": "What experience do you have working in Agile Scrum teams, and what were your specific responsibilities during a sprint?",
+      "competency": "Agile Scrum",
+      "competency_type": "technical",
+      "target_gap": "Agile Scrum",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Clarifies whether the candidate has any practical Scrum exposure, which is missing from the profile.",
+      "source_evidence": [
+        "TRACS",
+        "Performed program testing and quality assurance for ingest templates and metadata."
+      ],
+      "priority": 0.98,
+      "weight": 0.9458
+    },
+    {
+      "question": "What is your understanding of LEAN principles, and which techniques have you personally used to reduce waste, delays, errors, or handoffs?",
+      "competency": "LEAN principles",
+      "competency_type": "technical",
+      "target_gap": "LEAN principles",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly verifies a missing required competency while distinguishing formal LEAN practice from general process improvement.",
+      "source_evidence": [
+        "TRACS",
+        "Supported home video distribution through data analysis and workflow improvement.",
+        "Developed a more efficient process through allocation plans in JDA."
+      ],
+      "priority": 0.96,
+      "weight": 0.939
+    },
+    {
+      "question": "A JIRA backlog contains duplicated tickets, vague requests, unestimated items, and several production defects. How would you prepare it for a planning session?",
+      "competency": "Backlog grooming",
+      "competency_type": "other",
+      "target_gap": "Backlog grooming",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Directly evaluates the missing backlog-grooming capability through a practical scenario.",
+      "source_evidence": [
+        "TRACS",
+        "Created corrective action plans and allocation plans in JDA."
+      ],
+      "priority": 0.96,
+      "weight": 0.9254
+    },
+    {
+      "question": "You are facilitating a meeting with executives, operations staff, and technical contributors who disagree on the scope of a high-impact process change. What would you do before, during, and after the meeting to drive consensus?",
+      "competency": "Executive facilitation",
+      "competency_type": "other",
+      "target_gap": "Consensus facilitation",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Evaluates facilitation structure, conflict management, decision capture, and follow-through where direct evidence is absent.",
+      "source_evidence": [
+        "TRACS",
+        "Fostered and developed client relations",
+        "communication and self motivated individual"
+      ],
+      "priority": 1.0,
+      "weight": 0.9278
+    },
+    {
+      "question": "Have you supported an LPI or similarly structured continuous-improvement initiative? Describe the goals, your role, measures used, and results.",
+      "competency": "LPI initiatives",
+      "competency_type": "soft",
+      "target_gap": "LPI initiatives",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Directly probes the missing LPI-initiative requirement and allows relevant improvement experience to surface.",
+      "source_evidence": [
+        "TRACS",
+        "Supported home video distribution through data analysis and workflow improvement.",
+        "Developed a more efficient process through allocation plans in JDA."
+      ],
+      "priority": 0.95,
+      "weight": 0.9302
+    },
+    {
+      "question": "Tell us about a time stakeholders had competing priorities or interpretations of data. How did you facilitate the discussion and help them reach a decision?",
+      "competency": "Consensus facilitation",
+      "competency_type": "soft",
+      "target_gap": "Consensus facilitation",
+      "question_type": "Behavioural",
+      "difficulty": "hard",
+      "rationale": "Directly probes a high-priority missing competency: facilitating agreement among groups with competing perspectives.",
+      "source_evidence": [
+        "TRACS",
+        "Provided consulting solutions supporting on-time service-level agreements.",
+        "Provided corrective action plans for client complaints and billing discrepancies."
+      ],
+      "priority": 0.98,
+      "weight": 0.9278
+    },
+    {
+      "question": "Suppose a team receives an urgent regulatory change halfway through a two-week sprint. How would you work with the product owner and team to decide whether and how to incorporate it?",
+      "competency": "Agile change management",
+      "competency_type": "other",
+      "target_gap": "Agile Scrum",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests applied Agile judgment for a role requiring Scrum work in regulated programs.",
+      "source_evidence": [
+        "TRACS",
+        "Assisted with fixes and provided technical support for regulatory updates."
+      ],
+      "priority": 0.94,
+      "weight": 0.9458
+    },
+    {
+      "question": "A process has a growing queue of incomplete requests and frequent rework. How would you use a LEAN approach to diagnose root causes and design improvements?",
+      "competency": "LEAN problem solving",
+      "competency_type": "other",
+      "target_gap": "LEAN principles",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests whether the candidate can apply LEAN concepts to an operational process rather than merely define them.",
+      "source_evidence": [
+        "TRACS",
+        "Provided corrective action plans for client complaints and billing discrepancies.",
+        "Maintained on-time service-level agreements for deliverables."
+      ],
+      "priority": 0.94,
+      "weight": 0.939
+    },
+    {
+      "question": "Tell me about a time a pricing, billing, or scope discrepancy required a formal correction. How did you investigate it, communicate it, and prevent recurrence?",
+      "competency": "Change documentation",
+      "competency_type": "soft",
+      "target_gap": "Contract change notices",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Uses documented billing-discrepancy experience to identify transferable change-control and corrective-action behaviors.",
+      "source_evidence": [
+        "Collected refunds, receipts, and resolved billing discrepancies.",
+        "Provided corrective action plans for client complaints and billing discrepancies.",
+        "Streamlined order entry and corrected pricing."
+      ],
+      "priority": 0.78,
+      "weight": 0.9478
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 7779,
+    "output_tokens": 3520,
+    "cached_tokens": 0,
+    "estimated_cost": 0.057798,
+    "latency_ms": 26538.86,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.057798,
+  "cost_cny": 0.39129246,
+  "selection_latency_ms": 51.98,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:16:54.281508+00:00"
+}

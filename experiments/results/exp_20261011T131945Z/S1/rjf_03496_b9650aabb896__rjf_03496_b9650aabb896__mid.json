@@ -1,0 +1,217 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S1",
+  "selection_strategy": "top_priority",
+  "generation_mode": null,
+  "profile_id": "rjf_03496_b9650aabb896",
+  "jd_id": "rjf_03496_b9650aabb896",
+  "pair_id": "rjf_03496_b9650aabb896",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_03496_b9650aabb896__rjf_03496_b9650aabb896__mid.json",
+  "n_requirements": 14,
+  "questions": [
+    {
+      "question": "Describe the most complex query you have written over a large dataset. What were the joins, aggregations, partitioning strategy, and performance bottlenecks, and how did you validate both correctness and runtime?"
+    },
+    {
+      "question": "A new source system must be added to an existing data platform without disrupting reporting consumers. How would you assess its integration points, define contracts, plan schema evolution, and deploy the change safely?"
+    },
+    {
+      "question": "Walk through a production integration defect you investigated, from the first alert through root-cause isolation, remediation, regression testing, and communication to dependent teams."
+    },
+    {
+      "question": "How would you establish an integration-test strategy for a pipeline that ingests source data, transforms it in Spark, and publishes warehouse tables used by reports? Include test data, failure cases, data-quality assertions, and release gates."
+    },
+    {
+      "question": "What SDLC practices would you require before a data-pipeline change can reach production, and how would you make those practices practical for a small engineering team delivering in Scrum?"
+    },
+    {
+      "question": "In your Azure Data Factory work, how did you decide which responsibilities belonged in ADF, Spark, the target database, and orchestration infrastructure? What trade-offs did that architecture create?"
+    },
+    {
+      "question": "Tell me about the enterprise data lake you set up at Deloitte. What data zones, governance controls, storage formats, access patterns, and operational monitoring did you design, and what decisions would you change today?"
+    },
+    {
+      "question": "Design a warehouse layer for historical customer reporting where source records can arrive late, be corrected, or be duplicated. Explain your grain, key strategy, SCD approach, reconciliation controls, and deployment plan."
+    },
+    {
+      "question": "Compare an ETL implementation with an ELT implementation for loading a reporting warehouse from multiple operational systems. When would you choose each, and how would observability, cost, data quality, and recoverability differ?"
+    },
+    {
+      "question": "How have you monitored a cloud data pipeline in production? Describe the health signals, alert thresholds, retries, lineage or audit data, and the process you used when an SLA was at risk."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe the most complex query you have written over a large dataset. What were the joins, aggregations, partitioning strategy, and performance bottlenecks, and how did you validate both correctness and runtime?",
+      "competency": "Complex query writing",
+      "competency_type": "technical",
+      "target_gap": "Complex query writing",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Directly tests the weakest required match and distinguishes general Hadoop experience from demonstrable large-scale query design and tuning.",
+      "source_evidence": [
+        "Hadoop",
+        "Designed and optimized Hive tables and HQL queries using partitioning and bucketing."
+      ],
+      "priority": 0.98,
+      "weight": 0.7056
+    },
+    {
+      "question": "A new source system must be added to an existing data platform without disrupting reporting consumers. How would you assess its integration points, define contracts, plan schema evolution, and deploy the change safely?",
+      "competency": "System architecture integration",
+      "competency_type": "other",
+      "target_gap": "System architecture and integration",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's weak-match evidence for architecture-level integration, a central Staff Data Engineer responsibility.",
+      "source_evidence": [
+        "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations.",
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting."
+      ],
+      "priority": 0.97,
+      "weight": 0.6641
+    },
+    {
+      "question": "Walk through a production integration defect you investigated, from the first alert through root-cause isolation, remediation, regression testing, and communication to dependent teams.",
+      "competency": "Integration testing and debugging",
+      "competency_type": "soft",
+      "target_gap": "Integration testing and debugging",
+      "question_type": "Behavioural",
+      "difficulty": "hard",
+      "rationale": "Probes the weak match with an evidence-based production-debugging example and assesses whether the candidate can coordinate resolution beyond individual code fixes.",
+      "source_evidence": [
+        "Resolved customer issues through workarounds, debugging, and defect fixes.",
+        "Fixed SCD Type 2 date chaining defects and cleaned duplicate records."
+      ],
+      "priority": 0.96,
+      "weight": 0.6604
+    },
+    {
+      "question": "How would you establish an integration-test strategy for a pipeline that ingests source data, transforms it in Spark, and publishes warehouse tables used by reports? Include test data, failure cases, data-quality assertions, and release gates.",
+      "competency": "Integration testing strategy",
+      "competency_type": "other",
+      "target_gap": "Integration testing and debugging",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "The role requires coordinating integration testing; this tests a systematic approach rather than a single debugging anecdote.",
+      "source_evidence": [
+        "Developed data ingestion pipelines on Azure HDInsight Spark clusters using Azure Data Factory and Spark SQL.",
+        "Worked on data quality solutions, duplicate cleanup, and defect correction."
+      ],
+      "priority": 0.95,
+      "weight": 0.6604
+    },
+    {
+      "question": "What SDLC practices would you require before a data-pipeline change can reach production, and how would you make those practices practical for a small engineering team delivering in Scrum?",
+      "competency": "Data engineering SDLC",
+      "competency_type": "other",
+      "target_gap": "Software development lifecycle practices",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Addresses a weak match against the role's requirement to ensure industry best SDLC practices while delivering through Scrum.",
+      "source_evidence": [
+        "Used version-control tools to coordinate project development and code submissions.",
+        "Instantiated and maintained CI/CD pipelines and applied automation to environments and applications."
+      ],
+      "priority": 0.94,
+      "weight": 0.6774
+    },
+    {
+      "question": "In your Azure Data Factory work, how did you decide which responsibilities belonged in ADF, Spark, the target database, and orchestration infrastructure? What trade-offs did that architecture create?",
+      "competency": "Data integration architecture",
+      "competency_type": "technical",
+      "target_gap": "Data integration pipeline architecture",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Builds on the candidate's ADF evidence to assess architectural reasoning needed to design integration pipelines and reporting infrastructure.",
+      "source_evidence": [
+        "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations.",
+        "Developed data ingestion pipelines on Azure HDInsight Spark clusters using Azure Data Factory and Spark SQL."
+      ],
+      "priority": 0.92,
+      "weight": 0.3996
+    },
+    {
+      "question": "Tell me about the enterprise data lake you set up at Deloitte. What data zones, governance controls, storage formats, access patterns, and operational monitoring did you design, and what decisions would you change today?",
+      "competency": "Enterprise data management",
+      "competency_type": "domain",
+      "target_gap": "Enterprise data management technologies",
+      "question_type": "Role-Specific",
+      "difficulty": "hard",
+      "rationale": "Clarifies the depth of the partial enterprise-data-management match and tests design ownership appropriate to a platform role.",
+      "source_evidence": [
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting.",
+        "Developed an AWS S3 security framework using AWS Lambda and DynamoDB."
+      ],
+      "priority": 0.91,
+      "weight": 0.3913
+    },
+    {
+      "question": "Design a warehouse layer for historical customer reporting where source records can arrive late, be corrected, or be duplicated. Explain your grain, key strategy, SCD approach, reconciliation controls, and deployment plan.",
+      "competency": "Data warehouse development",
+      "competency_type": "other",
+      "target_gap": "Data warehouse development",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "The candidate has data modeling and SCD defect-fix experience, but the matrix marks warehouse development partial; this tests end-to-end warehouse design capability.",
+      "source_evidence": [
+        "Fixed SCD Type 2 date chaining defects and cleaned duplicate records.",
+        "Experienced in dimensional, transactional, star schema, snowflake schema, and slowly changing dimension modeling."
+      ],
+      "priority": 0.9,
+      "weight": 0.3892
+    },
+    {
+      "question": "Compare an ETL implementation with an ELT implementation for loading a reporting warehouse from multiple operational systems. When would you choose each, and how would observability, cost, data quality, and recoverability differ?",
+      "competency": "ETL and ELT design",
+      "competency_type": "technical",
+      "target_gap": "ETL and ELT application development",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Tests the partial match by asking the candidate to articulate design trade-offs across both ETL and ELT, which the role explicitly requires.",
+      "source_evidence": [
+        "Designed ETL data flows and developed ETL pipelines across multiple data sources.",
+        "Used AWS EMR to transform and move data between AWS data stores and databases."
+      ],
+      "priority": 0.89,
+      "weight": 0.3557
+    },
+    {
+      "question": "How have you monitored a cloud data pipeline in production? Describe the health signals, alert thresholds, retries, lineage or audit data, and the process you used when an SLA was at risk.",
+      "competency": "Cloud pipeline operations",
+      "competency_type": "technical",
+      "target_gap": "Cloud data solutions",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Expands the partial cloud-data-solutions evidence into the required operational capabilities of configuring, managing, and monitoring cloud applications.",
+      "source_evidence": [
+        "Integrated Apache Airflow with AWS to monitor multi-stage machine learning workflows.",
+        "Created, debugged, scheduled, and monitored jobs using Airflow."
+      ],
+      "priority": 0.88,
+      "weight": 0.3454
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.02,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:48.671708+00:00"
+}

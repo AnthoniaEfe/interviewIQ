@@ -1,0 +1,371 @@
+{
+  "experiment_id": "treatment_pilot_combined",
+  "status": "completed",
+  "stage": "pilot_compare",
+  "git_commit": "5308403e16e759a3c833dbf8bf17e189dc0baea3",
+  "library_versions": {
+    "numpy": "2.1.2",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.8.0+cu128",
+    "sentence-transformers": "6.1.0",
+    "rank-bm25": "0.2.2"
+  },
+  "embedding_model": "all-MiniLM-L6-v2",
+  "usd_cny_rate": 6.77,
+  "b0_variability": {
+    "mean_replicate_embedding_similarity": 0.9337719665633307,
+    "mean_question_text_jaccard": 0.0005847953216374269,
+    "n_pair_comparisons_sim": 90,
+    "n_pair_comparisons_overlap": 90
+  },
+  "diagnostics_summary": [
+    {
+      "condition": "B0",
+      "n_pairs": 30,
+      "n_schema_valid": 30,
+      "redundancy_mean": 0.3409707399650856,
+      "redundancy_ci_low": 0.324462973718129,
+      "redundancy_ci_high": 0.3558630836146458,
+      "coverage_0.45_mean": 0.26962767351438927,
+      "coverage_0.45_ci_low": 0.21753707657800234,
+      "coverage_0.45_ci_high": 0.33229122838176156,
+      "lexical_mean": 0.9744444444444444,
+      "lexical_ci_low": 0.9588888888888888,
+      "lexical_ci_high": 0.9866666666666666
+    },
+    {
+      "condition": "B1",
+      "n_pairs": 30,
+      "n_schema_valid": 30,
+      "redundancy_mean": 0.30122857540983855,
+      "redundancy_ci_low": 0.2867514966362742,
+      "redundancy_ci_high": 0.31519047537597794,
+      "coverage_0.45_mean": 0.27245344425046614,
+      "coverage_0.45_ci_low": 0.21120950065275002,
+      "coverage_0.45_ci_high": 0.34265933278647515,
+      "lexical_mean": 0.9933333333333333,
+      "lexical_ci_low": 0.9833333333333333,
+      "lexical_ci_high": 1.0
+    },
+    {
+      "condition": "T",
+      "n_pairs": 30,
+      "n_schema_valid": 30,
+      "redundancy_mean": 0.28576949057324474,
+      "redundancy_ci_low": 0.2638913565012972,
+      "redundancy_ci_high": 0.31042042007469306,
+      "coverage_0.45_mean": 0.2670691749492547,
+      "coverage_0.45_ci_low": 0.2238728790564172,
+      "coverage_0.45_ci_high": 0.3132217797458071,
+      "lexical_mean": 0.9166666666666666,
+      "lexical_ci_low": 0.8866666666666666,
+      "lexical_ci_high": 0.9433333333333334
+    },
+    {
+      "condition": "B2",
+      "n_pairs": 30,
+      "n_schema_valid": 30,
+      "redundancy_mean": 0.27930393966587463,
+      "redundancy_ci_low": 0.2556245794903521,
+      "redundancy_ci_high": 0.3028807775315535,
+      "coverage_0.45_mean": 0.31640367663383717,
+      "coverage_0.45_ci_low": 0.2632077484489932,
+      "coverage_0.45_ci_high": 0.3789321035682503,
+      "lexical_mean": 0.9266666666666666,
+      "lexical_ci_low": 0.8999999999999999,
+      "lexical_ci_high": 0.95
+    },
+    {
+      "condition": "S0",
+      "n_pairs": 30,
+      "n_schema_valid": 30,
+      "redundancy_mean": 0.2930167401181879,
+      "redundancy_ci_low": 0.26940652537242404,
+      "redundancy_ci_high": 0.31597590134777476,
+      "coverage_0.45_mean": 0.30273551026914103,
+      "coverage_0.45_ci_low": 0.24079286806926573,
+      "coverage_0.45_ci_high": 0.3779662678373144,
+      "lexical_mean": 0.9466666666666665,
+      "lexical_ci_low": 0.9166666666666666,
+      "lexical_ci_high": 0.9733333333333332
+    },
+    {
+      "condition": "S1",
+      "n_pairs": 30,
+      "n_schema_valid": 30,
+      "redundancy_mean": 0.32206811347683134,
+      "redundancy_ci_low": 0.2978338303797085,
+      "redundancy_ci_high": 0.3489164728542609,
+      "coverage_0.45_mean": 0.3041231851786874,
+      "coverage_0.45_ci_low": 0.2553187161095763,
+      "coverage_0.45_ci_high": 0.3595527553299406,
+      "lexical_mean": 0.9266666666666666,
+      "lexical_ci_low": 0.9,
+      "lexical_ci_high": 0.9533333333333331
+    },
+    {
+      "condition": "S2",
+      "n_pairs": 30,
+      "n_schema_valid": 30,
+      "redundancy_mean": 0.3316729856234181,
+      "redundancy_ci_low": 0.3077008001902313,
+      "redundancy_ci_high": 0.3559637605695537,
+      "coverage_0.45_mean": 0.3214282636664333,
+      "coverage_0.45_ci_low": 0.2716297769082235,
+      "coverage_0.45_ci_high": 0.38113769780052753,
+      "lexical_mean": 0.9733333333333332,
+      "lexical_ci_low": 0.9533333333333333,
+      "lexical_ci_high": 0.99
+    }
+  ],
+  "comparisons": {
+    "T_vs_B1": {
+      "redundancy": {
+        "wilcoxon": {
+          "n_pairs": 30,
+          "n_nonzero": 30,
+          "statistic": 164.0,
+          "p_value": 0.1641840822994709,
+          "rank_biserial": -0.2946236559139785
+        },
+        "diff_ci": {
+          "mean": -0.01545908483659365,
+          "ci_low": -0.03881446651299483,
+          "ci_high": 0.007681145770320049,
+          "n": 30
+        },
+        "holm_p": 0.3283681645989418
+      },
+      "coverage_0.45": {
+        "wilcoxon": {
+          "n_pairs": 30,
+          "n_nonzero": 26,
+          "statistic": 169.0,
+          "p_value": 0.8688232043446532,
+          "rank_biserial": -0.037037037037037035
+        },
+        "diff_ci": {
+          "mean": -0.00538426930121148,
+          "ci_low": -0.05891844010135852,
+          "ci_high": 0.04258548488311915,
+          "n": 30
+        },
+        "holm_p": 1.0
+      }
+    },
+    "T_vs_B0": {
+      "redundancy": {
+        "wilcoxon": {
+          "n_pairs": 30,
+          "n_nonzero": 30,
+          "statistic": 47.0,
+          "p_value": 3.904104232788086e-05,
+          "rank_biserial": -0.7978494623655914
+        },
+        "diff_ci": {
+          "mean": -0.05520124939184082,
+          "ci_low": -0.07768026635870134,
+          "ci_high": -0.03096725042680007,
+          "n": 30
+        },
+        "holm_p": 0.00011712312698364258
+      },
+      "coverage_0.45": {
+        "wilcoxon": {
+          "n_pairs": 30,
+          "n_nonzero": 27,
+          "statistic": 175.0,
+          "p_value": 0.736597810444489,
+          "rank_biserial": 0.07407407407407407
+        },
+        "diff_ci": {
+          "mean": -0.002558498565134585,
+          "ci_low": -0.05487442975797791,
+          "ci_high": 0.04597231939783683,
+          "n": 30
+        },
+        "holm_p": 1.0
+      }
+    },
+    "T_vs_B2": {
+      "redundancy": {
+        "wilcoxon": {
+          "n_pairs": 30,
+          "n_nonzero": 30,
+          "statistic": 167.0,
+          "p_value": 0.18396909348666668,
+          "rank_biserial": 0.2817204301075269
+        },
+        "diff_ci": {
+          "mean": 0.006465550907370126,
+          "ci_low": -0.0036678511062636955,
+          "ci_high": 0.01637109449492009,
+          "n": 30
+        },
+        "holm_p": 0.3283681645989418
+      },
+      "coverage_0.45": {
+        "wilcoxon": {
+          "n_pairs": 30,
+          "n_nonzero": 16,
+          "statistic": 13.0,
+          "p_value": 0.004448709532103051,
+          "rank_biserial": -0.8088235294117647
+        },
+        "diff_ci": {
+          "mean": -0.04933450168458244,
+          "ci_low": -0.0871723855457408,
+          "ci_high": -0.01925330165004083,
+          "n": 30
+        },
+        "holm_p": 0.013346128596309154
+      }
+    }
+  },
+  "overlaps": {
+    "T_B2": {
+      "mean": 0.5809274059274061,
+      "ci_low": 0.5144884976134977,
+      "ci_high": 0.6462801087801087,
+      "n": 30
+    },
+    "T_S1": {
+      "mean": 0.6083659804248038,
+      "ci_low": 0.5327655759273406,
+      "ci_high": 0.6849177905427907,
+      "n": 30
+    },
+    "T_S2": {
+      "mean": 0.19652342268441336,
+      "ci_low": 0.16114579750028665,
+      "ci_high": 0.23403555079251667,
+      "n": 30
+    }
+  },
+  "decision": {
+    "recommend_scale": false,
+    "redundancy_t_mean": 0.28576949057324474,
+    "redundancy_b1_mean": 0.30122857540983855,
+    "redundancy_t_le_b1": true,
+    "coverage_t_mean": 0.2670691749492547,
+    "coverage_b1_mean": 0.27245344425046614,
+    "coverage_t_ge_b1": false,
+    "paired_diff_ci_redundancy": {
+      "mean": -0.01545908483659365,
+      "ci_low": -0.03881446651299483,
+      "ci_high": 0.007681145770320049,
+      "n": 30
+    },
+    "paired_diff_ci_coverage": {
+      "mean": -0.00538426930121148,
+      "ci_low": -0.05891844010135852,
+      "ci_high": 0.04258548488311915,
+      "n": 30
+    },
+    "case": "T not at least as good as B1 on both proxies \u2014 diagnose components first",
+    "note": "Advisory only; proxies are not quality; decision to scale remains the researcher's."
+  },
+  "pipeline_cost_per_pair": {
+    "B0": {
+      "extraction_cny": 0.0,
+      "gap_analysis_cny": 0.0,
+      "generation_cny": 0.0517905,
+      "selection_cny": 0.0,
+      "total_usd": 0.00765,
+      "total_cny": 0.0517905,
+      "latency_s": 5.46
+    },
+    "B1": {
+      "extraction_cny": 0.04815968,
+      "gap_analysis_cny": 0.0,
+      "generation_cny": 0.13593032,
+      "selection_cny": 0.0,
+      "total_usd": 0.027192023333333332,
+      "total_cny": 0.18409,
+      "latency_s": 38.05681233333333
+    },
+    "T": {
+      "extraction_cny": 0.04815968,
+      "gap_analysis_cny": 0.0,
+      "generation_cny": 0.41654637,
+      "selection_cny": 0.0,
+      "total_usd": 0.06864195666666667,
+      "total_cny": 0.46470605,
+      "latency_s": 60.04075630107527
+    },
+    "B2": {
+      "extraction_cny": 0.04815968,
+      "gap_analysis_cny": 0.0,
+      "generation_cny": 0.41654637,
+      "selection_cny": 0.0,
+      "total_usd": 0.06864195666666667,
+      "total_cny": 0.46470605,
+      "latency_s": 60.04075630107527
+    }
+  },
+  "stage_cost_rows": [
+    {
+      "stage": "B0_generation",
+      "model": "gpt-5.6-terra",
+      "measured_on": "stored_150_mean",
+      "cost_per_pair_usd": 0.00765,
+      "cost_per_pair_cny": 0.0517905,
+      "cost_150_pairs_cny": 7.7686,
+      "latency_per_pair_s": 5.46,
+      "n_pairs": 30
+    },
+    {
+      "stage": "B1_generation",
+      "model": "gpt-5.6-terra",
+      "measured_on": "pilot",
+      "cost_per_pair_usd": 0.02007833,
+      "cost_per_pair_cny": 0.13593032,
+      "cost_150_pairs_cny": 20.3895,
+      "latency_per_pair_s": 6.7969,
+      "n_pairs": 30
+    },
+    {
+      "stage": "T_pool_generation",
+      "model": "gpt-5.6-terra",
+      "measured_on": "pilot",
+      "cost_per_pair_usd": 0.06152827,
+      "cost_per_pair_cny": 0.41654637,
+      "cost_150_pairs_cny": 62.482,
+      "latency_per_pair_s": 28.7172,
+      "n_pairs": 30
+    },
+    {
+      "stage": "selection_local",
+      "model": null,
+      "measured_on": "pilot",
+      "cost_per_pair_usd": 0.0,
+      "cost_per_pair_cny": 0.0,
+      "cost_150_pairs_cny": 0.0,
+      "latency_per_pair_s": 0.0015,
+      "n_pairs": 30
+    },
+    {
+      "stage": "extraction_attributed",
+      "model": "gpt-5.6-luna",
+      "measured_on": "stored_primary30",
+      "cost_per_pair_usd": 0.00711369,
+      "cost_per_pair_cny": 0.04815968,
+      "cost_150_pairs_cny": 7.224,
+      "latency_per_pair_s": 31.2599,
+      "n_pairs": 30
+    },
+    {
+      "stage": "gap_analysis_attributed",
+      "model": null,
+      "measured_on": "stored_primary30",
+      "cost_per_pair_usd": 0.0,
+      "cost_per_pair_cny": 0.0,
+      "cost_150_pairs_cny": 0.0,
+      "latency_per_pair_s": 0.0622,
+      "n_pairs": 30
+    }
+  ],
+  "actual_b1_cost_usd": 0.60235,
+  "actual_pool_cost_usd": 1.845848
+}

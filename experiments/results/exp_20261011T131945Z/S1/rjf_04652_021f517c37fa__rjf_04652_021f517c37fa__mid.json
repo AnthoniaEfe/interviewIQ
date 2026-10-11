@@ -1,0 +1,226 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S1",
+  "selection_strategy": "top_priority",
+  "generation_mode": null,
+  "profile_id": "rjf_04652_021f517c37fa",
+  "jd_id": "rjf_04652_021f517c37fa",
+  "pair_id": "rjf_04652_021f517c37fa",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_04652_021f517c37fa__rjf_04652_021f517c37fa__mid.json",
+  "n_requirements": 32,
+  "questions": [
+    {
+      "question": "Describe how you would plan and deliver a two-week sprint to add a new customer data feed when the mapping is still evolving. How would you break down the work, manage changes, and demonstrate progress?"
+    },
+    {
+      "question": "Give an example of a repetitive engineering or operational task you identified and automated. What was manual before, what did you build, and how did you measure reliability or time saved?"
+    },
+    {
+      "question": "This position requires legal authorization to work in the country of application. Are you currently authorized to work there, and will you now or in the future require employer sponsorship?"
+    },
+    {
+      "question": "A production load completes successfully, but downstream users report that record counts and totals no longer reconcile. Walk through your incident triage, containment, root-cause analysis, correction, and stakeholder communication."
+    },
+    {
+      "question": "Before creating a pipeline for an unfamiliar source system, what profiling queries and checks would you run, and how would those findings affect the target design and load logic?"
+    },
+    {
+      "question": "How would you turn a business requirement such as \u201cstandardize customer status across incoming feeds\u201d into a data mapping specification that another engineer could implement and test?"
+    },
+    {
+      "question": "For a new automated ETL job, which validation controls would you implement at ingestion, transformation, and target-load stages? Explain the failure thresholds and what would happen when a check fails."
+    },
+    {
+      "question": "Suppose a provided DQ rule requires every active customer to have a valid identifier and a referenceable master record. How would you enforce it, quarantine exceptions, report them, and prevent repeat issues?"
+    },
+    {
+      "question": "What is your approach to implementing and governing master-data configurations, including canonical identifiers, reference-data changes, ownership, and propagation to dependent jobs?"
+    },
+    {
+      "question": "When an existing application must consume a modified JSON or Kafka feed, how do you assess schema compatibility, manage versioning, handle malformed messages, and deploy the change safely?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe how you would plan and deliver a two-week sprint to add a new customer data feed when the mapping is still evolving. How would you break down the work, manage changes, and demonstrate progress?",
+      "competency": "Agile delivery",
+      "competency_type": "other",
+      "target_gap": "Agile methodologies",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Agile methodology is a required competency marked missing, so this tests whether the candidate can apply iterative delivery practices in a realistic data-engineering context.",
+      "source_evidence": [
+        "Gap matrix: Agile methodologies \u2014 missing",
+        "Develop data engineering jobs and workflows",
+        "Participate in requirements gathering"
+      ],
+      "priority": 0.98,
+      "weight": 0.9306
+    },
+    {
+      "question": "Give an example of a repetitive engineering or operational task you identified and automated. What was manual before, what did you build, and how did you measure reliability or time saved?",
+      "competency": "Task automation",
+      "competency_type": "soft",
+      "target_gap": "Task automation",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Task automation is a high-weight required gap; the question elicits evidence of initiative, implementation depth, and measurable operational impact.",
+      "source_evidence": [
+        "Gap matrix: Task automation \u2014 missing",
+        "Created Airflow DAGs and Python scheduling scripts",
+        "Automated SQL Server version upgrades and patch installations"
+      ],
+      "priority": 0.97,
+      "weight": 0.9279
+    },
+    {
+      "question": "This position requires legal authorization to work in the country of application. Are you currently authorized to work there, and will you now or in the future require employer sponsorship?",
+      "competency": "Work authorization",
+      "competency_type": "domain",
+      "target_gap": "Legal authorization to work",
+      "question_type": "Role-Specific",
+      "difficulty": "easy",
+      "rationale": "Legal authorization is an explicit required job criterion marked missing in the matrix and should be confirmed through a standard, job-related question.",
+      "source_evidence": [
+        "Gap matrix: Legal authorization to work \u2014 missing",
+        "Must be able to legally work in the country to which you have applied"
+      ],
+      "priority": 0.95,
+      "weight": 0.9326
+    },
+    {
+      "question": "A production load completes successfully, but downstream users report that record counts and totals no longer reconcile. Walk through your incident triage, containment, root-cause analysis, correction, and stakeholder communication.",
+      "competency": "Post-deployment support",
+      "competency_type": "other",
+      "target_gap": "Post-deployment support",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "The candidate has deployment exposure but only a weak match for post-deployment support; this probes readiness to own a data issue after release.",
+      "source_evidence": [
+        "Gap matrix: Post-deployment support \u2014 weak_match",
+        "Worked on architecture design for multistate implementation and deployment.",
+        "Data quality and reconciliation"
+      ],
+      "priority": 0.93,
+      "weight": 0.696
+    },
+    {
+      "question": "Before creating a pipeline for an unfamiliar source system, what profiling queries and checks would you run, and how would those findings affect the target design and load logic?",
+      "competency": "Data profiling",
+      "competency_type": "technical",
+      "target_gap": "Data profiling and analysis",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "This required competency is only a partial match. The question tests a disciplined approach to discovering nulls, duplicates, formats, keys, volume, and distribution issues before implementation.",
+      "source_evidence": [
+        "Gap matrix: Data profiling and analysis \u2014 partial_match",
+        "ETL and data migration",
+        "Perform data profiling and data analysis"
+      ],
+      "priority": 0.91,
+      "weight": 0.3914
+    },
+    {
+      "question": "How would you turn a business requirement such as \u201cstandardize customer status across incoming feeds\u201d into a data mapping specification that another engineer could implement and test?",
+      "competency": "Data mapping",
+      "competency_type": "domain",
+      "target_gap": "Data mapping specifications",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Data mapping specifications are a required weak match. This assesses whether the candidate can translate requirements into source-to-target fields, transformations, defaults, and acceptance rules.",
+      "source_evidence": [
+        "Gap matrix: Data mapping specifications \u2014 weak_match",
+        "Gathered business requirements and converted them into T-SQL stored procedures.",
+        "Prepared ETL design documents"
+      ],
+      "priority": 0.91,
+      "weight": 0.667
+    },
+    {
+      "question": "For a new automated ETL job, which validation controls would you implement at ingestion, transformation, and target-load stages? Explain the failure thresholds and what would happen when a check fails.",
+      "competency": "Data validation",
+      "competency_type": "technical",
+      "target_gap": "Data validation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate has some validation exposure but is a weak match on the required validation competency; this distinguishes basic checks from robust pipeline controls.",
+      "source_evidence": [
+        "Gap matrix: Data validation \u2014 weak_match",
+        "Used AWS EMR, S3, EC2, and Lambda for distributed processing, storage, Kafka infrastructure, and data validation/transformation.",
+        "Validate the data mapping results"
+      ],
+      "priority": 0.9,
+      "weight": 0.6762
+    },
+    {
+      "question": "Suppose a provided DQ rule requires every active customer to have a valid identifier and a referenceable master record. How would you enforce it, quarantine exceptions, report them, and prevent repeat issues?",
+      "competency": "Data quality management",
+      "competency_type": "other",
+      "target_gap": "Data quality management",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Data quality is central to the role and only partially evidenced. This tests implementation of rules, exception handling, monitoring, and feedback loops.",
+      "source_evidence": [
+        "Gap matrix: Data quality management \u2014 partial_match",
+        "Data quality and reconciliation",
+        "Implement and ensure compliance with Data Quality (DQ) rules"
+      ],
+      "priority": 0.9,
+      "weight": 0.3696
+    },
+    {
+      "question": "What is your approach to implementing and governing master-data configurations, including canonical identifiers, reference-data changes, ownership, and propagation to dependent jobs?",
+      "competency": "Master data management",
+      "competency_type": "technical",
+      "target_gap": "Master data management",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Master data management is a required weak match and materially affects standardization and reliable joins across customer feeds.",
+      "source_evidence": [
+        "Gap matrix: Master data management \u2014 weak_match",
+        "Supported Hadoop clusters, HDFS, capacity planning, node management, and maintenance.",
+        "Implement and control the use of master data configurations"
+      ],
+      "priority": 0.89,
+      "weight": 0.6679
+    },
+    {
+      "question": "When an existing application must consume a modified JSON or Kafka feed, how do you assess schema compatibility, manage versioning, handle malformed messages, and deploy the change safely?",
+      "competency": "Data feed integration",
+      "competency_type": "technical",
+      "target_gap": "Data feed integration",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate has relevant API and Kafka staging experience, but the required integration competency is a partial match; this probes production-safe feed evolution.",
+      "source_evidence": [
+        "Gap matrix: Data feed integration \u2014 partial_match",
+        "Staged API and Kafka JSON data into Snowflake using FLATTEN.",
+        "Data integration and orchestration"
+      ],
+      "priority": 0.88,
+      "weight": 0.3884
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    0,
+    1,
+    28,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.02,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:48.963985+00:00"
+}

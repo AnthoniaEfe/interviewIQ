@@ -1,0 +1,464 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_03311_f96e539f2ada",
+  "jd_id": "rjf_03311_f96e539f2ada",
+  "pair_id": "rjf_03311_f96e539f2ada",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 23,
+  "pool_path": "pool/rjf_03311_f96e539f2ada__rjf_03311_f96e539f2ada__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 29,
+    "n_failed": 1,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.06896551724137931,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      0,
+      24,
+      4,
+      1,
+      21,
+      2,
+      22,
+      23,
+      3,
+      12
+    ],
+    "questions": [
+      {
+        "question": "Walk me through how you would build a defensible indirect-cost allocation methodology for shared finance, facilities, and IT costs across several nonprofit programs and funding streams. What drivers would you select, and how would you validate that they are equitable and consistently applied?",
+        "competency": "Cost allocation design",
+        "competency_type": "technical",
+        "target_gap": "Cost allocation methodologies",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Directly tests a high-weight weak match in a role that requires cost allocation and cost-methodology knowledge.",
+        "source_evidence": [
+          "Weak match: Cost allocation methodologies",
+          "Candidate evidence: Account reconciliation"
+        ],
+        "priority": 0.99,
+        "weight": 0.7246
+      },
+      {
+        "question": "You discover that a proposed journal entry would improve the current month's results but lacks sufficient supporting evidence. What would you do, who would you involve, and how would you document the decision?",
+        "competency": "Accounting judgment",
+        "competency_type": "other",
+        "target_gap": "Judgment and decision-making",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Assesses a high-weight weak match around integrity and decision-making in a realistic close scenario.",
+        "source_evidence": [
+          "Weak match: Judgment and decision-making",
+          "Documented and reviewed policies and procedures annually.",
+          "Ensured compliance with internal and external accounting controls."
+        ],
+        "priority": 0.95,
+        "weight": 0.7151
+      },
+      {
+        "question": "Give an example of an accounting conclusion you have made or reviewed involving compliance with accounting policies or controls. How did you identify the applicable guidance, document your rationale, and ensure the treatment was consistently applied?",
+        "competency": "GAAP application",
+        "competency_type": "soft",
+        "target_gap": "GAAP compliance",
+        "question_type": "Behavioural",
+        "difficulty": "hard",
+        "rationale": "The profile shows control compliance but does not clearly demonstrate GAAP-specific application.",
+        "source_evidence": [
+          "Weak match: GAAP compliance",
+          "Ensured compliance with internal and external accounting controls."
+        ],
+        "priority": 0.95,
+        "weight": 0.6765
+      },
+      {
+        "question": "A restricted grant has been received in advance, and program services will be delivered over the next two quarters. How would you determine the timing of revenue recognition, the required entries, and the documentation needed to support your conclusion?",
+        "competency": "Revenue recognition",
+        "competency_type": "other",
+        "target_gap": "Revenue recognition",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Tests the candidate's limited evidenced exposure to revenue recognition in a nonprofit funding context.",
+        "source_evidence": [
+          "Weak match: Revenue recognition",
+          "Analyzed production revenue and expense."
+        ],
+        "priority": 0.98,
+        "weight": 0.6587
+      },
+      {
+        "question": "During month-end, you receive an audit request, an urgent cash-flow update, and several unreconciled accounts at once. How would you triage the work, communicate trade-offs, and protect the accuracy of the close?",
+        "competency": "Prioritization under pressure",
+        "competency_type": "other",
+        "target_gap": "Multitasking and prioritization",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Directly assesses a high-weight weak match under conditions common to the target role.",
+        "source_evidence": [
+          "Weak match: Multitasking and prioritization",
+          "Closed the books monthly, quarterly, and annually."
+        ],
+        "priority": 0.93,
+        "weight": 0.7093
+      },
+      {
+        "question": "What are the key financial-management requirements under Uniform Guidance that you would want to understand before supporting federally funded programs, and how would those requirements affect reporting, allowable costs, and audit preparation?",
+        "competency": "Federal grant compliance",
+        "competency_type": "technical",
+        "target_gap": "Uniform Guidance and OMB Circulars",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Uniform Guidance is a required domain area with only a weak match in the supplied matrix.",
+        "source_evidence": [
+          "Weak match: Uniform Guidance and OMB Circulars",
+          "Candidate evidence: Instruction and guidance"
+        ],
+        "priority": 0.98,
+        "weight": 0.6615
+      },
+      {
+        "question": "Describe a time you proactively identified an issue or improvement opportunity before it was assigned to you. What prompted you to investigate, what actions did you take, and what was the outcome?",
+        "competency": "Proactivity",
+        "competency_type": "soft",
+        "target_gap": "Self-starter and proactive work style",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Tests a weak-match work-style requirement using the candidate's documented process-improvement achievements.",
+        "source_evidence": [
+          "Weak match: Self-starter and proactive work style",
+          "Created transparency in complex accounts.",
+          "Improved multiple reconciliations."
+        ],
+        "priority": 0.87,
+        "weight": 0.7158
+      },
+      {
+        "question": "What review techniques do you use to detect small but consequential errors in reconciliations, journal entries, financial statements, or spreadsheet outputs before they are finalized?",
+        "competency": "Quality assurance",
+        "competency_type": "technical",
+        "target_gap": "Attention to detail",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Tests a weak-match attention-to-detail requirement in concrete accounting work.",
+        "source_evidence": [
+          "Weak match: Attention to detail",
+          "Ensured timely and accurate subsystem interfaces into the General Ledger.",
+          "Reconciled balance sheet accounts."
+        ],
+        "priority": 0.9,
+        "weight": 0.7098
+      },
+      {
+        "question": "Describe how you would assess whether a cost charged to a federal award is allowable, allocable, reasonable, and adequately documented. What would you do if program leadership disagreed with your conclusion?",
+        "competency": "Grant cost compliance",
+        "competency_type": "other",
+        "target_gap": "Uniform Guidance and OMB Circulars",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Probes practical application of federal-grant compliance and judgment, both important role gaps.",
+        "source_evidence": [
+          "Weak match: Uniform Guidance and OMB Circulars",
+          "Weak match: Judgment and decision-making"
+        ],
+        "priority": 0.96,
+        "weight": 0.6615
+      },
+      {
+        "question": "You have experience with SOX controls and resolved audit deficiencies. How would you map a nonprofit transaction flow\u2014from program expense initiation through financial reporting\u2014to identify key preventive and detective controls?",
+        "competency": "Internal control assessment",
+        "competency_type": "technical",
+        "target_gap": "Internal controls",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Transfers relevant controls experience to the role's weak-match requirement for financial and compliance controls.",
+        "source_evidence": [
+          "Weak match: Internal controls",
+          "Eliminated multiple SOX controls associated with reconciliations and journal entries.",
+          "Resolved audit deficiencies."
+        ],
+        "priority": 0.94,
+        "weight": 0.6496
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.717354,
+      0.679345,
+      0.642675,
+      0.6455259999999999,
+      0.659649,
+      0.64827,
+      0.622746,
+      0.63882,
+      0.6350399999999999,
+      0.610624
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.175581693649292,
+      0.2755623161792755,
+      0.32987910509109497,
+      0.3831942081451416,
+      0.4690124988555908,
+      0.4581807851791382,
+      0.5293264389038086,
+      0.5220858454704285,
+      0.4947313666343689
+    ],
+    "mmr_scores": [
+      0.5021478,
+      0.4228669919052124,
+      0.3672038051462173,
+      0.35290446847267143,
+      0.3467960375564575,
+      0.31308525034332274,
+      0.2984679644462585,
+      0.2883760683288574,
+      0.28790224635887135,
+      0.2790173900096893
+    ],
+    "competency_weights": [
+      0.7246,
+      0.7151,
+      0.6765,
+      0.6587,
+      0.7093,
+      0.6615,
+      0.7158,
+      0.7098,
+      0.6615,
+      0.6496
+    ]
+  },
+  "questions": [
+    {
+      "question": "Walk me through how you would build a defensible indirect-cost allocation methodology for shared finance, facilities, and IT costs across several nonprofit programs and funding streams. What drivers would you select, and how would you validate that they are equitable and consistently applied?"
+    },
+    {
+      "question": "You discover that a proposed journal entry would improve the current month's results but lacks sufficient supporting evidence. What would you do, who would you involve, and how would you document the decision?"
+    },
+    {
+      "question": "Give an example of an accounting conclusion you have made or reviewed involving compliance with accounting policies or controls. How did you identify the applicable guidance, document your rationale, and ensure the treatment was consistently applied?"
+    },
+    {
+      "question": "A restricted grant has been received in advance, and program services will be delivered over the next two quarters. How would you determine the timing of revenue recognition, the required entries, and the documentation needed to support your conclusion?"
+    },
+    {
+      "question": "During month-end, you receive an audit request, an urgent cash-flow update, and several unreconciled accounts at once. How would you triage the work, communicate trade-offs, and protect the accuracy of the close?"
+    },
+    {
+      "question": "What are the key financial-management requirements under Uniform Guidance that you would want to understand before supporting federally funded programs, and how would those requirements affect reporting, allowable costs, and audit preparation?"
+    },
+    {
+      "question": "Describe a time you proactively identified an issue or improvement opportunity before it was assigned to you. What prompted you to investigate, what actions did you take, and what was the outcome?"
+    },
+    {
+      "question": "What review techniques do you use to detect small but consequential errors in reconciliations, journal entries, financial statements, or spreadsheet outputs before they are finalized?"
+    },
+    {
+      "question": "Describe how you would assess whether a cost charged to a federal award is allowable, allocable, reasonable, and adequately documented. What would you do if program leadership disagreed with your conclusion?"
+    },
+    {
+      "question": "You have experience with SOX controls and resolved audit deficiencies. How would you map a nonprofit transaction flow\u2014from program expense initiation through financial reporting\u2014to identify key preventive and detective controls?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk me through how you would build a defensible indirect-cost allocation methodology for shared finance, facilities, and IT costs across several nonprofit programs and funding streams. What drivers would you select, and how would you validate that they are equitable and consistently applied?",
+      "competency": "Cost allocation design",
+      "competency_type": "technical",
+      "target_gap": "Cost allocation methodologies",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Directly tests a high-weight weak match in a role that requires cost allocation and cost-methodology knowledge.",
+      "source_evidence": [
+        "Weak match: Cost allocation methodologies",
+        "Candidate evidence: Account reconciliation"
+      ],
+      "priority": 0.99,
+      "weight": 0.7246
+    },
+    {
+      "question": "You discover that a proposed journal entry would improve the current month's results but lacks sufficient supporting evidence. What would you do, who would you involve, and how would you document the decision?",
+      "competency": "Accounting judgment",
+      "competency_type": "other",
+      "target_gap": "Judgment and decision-making",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Assesses a high-weight weak match around integrity and decision-making in a realistic close scenario.",
+      "source_evidence": [
+        "Weak match: Judgment and decision-making",
+        "Documented and reviewed policies and procedures annually.",
+        "Ensured compliance with internal and external accounting controls."
+      ],
+      "priority": 0.95,
+      "weight": 0.7151
+    },
+    {
+      "question": "Give an example of an accounting conclusion you have made or reviewed involving compliance with accounting policies or controls. How did you identify the applicable guidance, document your rationale, and ensure the treatment was consistently applied?",
+      "competency": "GAAP application",
+      "competency_type": "soft",
+      "target_gap": "GAAP compliance",
+      "question_type": "Behavioural",
+      "difficulty": "hard",
+      "rationale": "The profile shows control compliance but does not clearly demonstrate GAAP-specific application.",
+      "source_evidence": [
+        "Weak match: GAAP compliance",
+        "Ensured compliance with internal and external accounting controls."
+      ],
+      "priority": 0.95,
+      "weight": 0.6765
+    },
+    {
+      "question": "A restricted grant has been received in advance, and program services will be delivered over the next two quarters. How would you determine the timing of revenue recognition, the required entries, and the documentation needed to support your conclusion?",
+      "competency": "Revenue recognition",
+      "competency_type": "other",
+      "target_gap": "Revenue recognition",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's limited evidenced exposure to revenue recognition in a nonprofit funding context.",
+      "source_evidence": [
+        "Weak match: Revenue recognition",
+        "Analyzed production revenue and expense."
+      ],
+      "priority": 0.98,
+      "weight": 0.6587
+    },
+    {
+      "question": "During month-end, you receive an audit request, an urgent cash-flow update, and several unreconciled accounts at once. How would you triage the work, communicate trade-offs, and protect the accuracy of the close?",
+      "competency": "Prioritization under pressure",
+      "competency_type": "other",
+      "target_gap": "Multitasking and prioritization",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Directly assesses a high-weight weak match under conditions common to the target role.",
+      "source_evidence": [
+        "Weak match: Multitasking and prioritization",
+        "Closed the books monthly, quarterly, and annually."
+      ],
+      "priority": 0.93,
+      "weight": 0.7093
+    },
+    {
+      "question": "What are the key financial-management requirements under Uniform Guidance that you would want to understand before supporting federally funded programs, and how would those requirements affect reporting, allowable costs, and audit preparation?",
+      "competency": "Federal grant compliance",
+      "competency_type": "technical",
+      "target_gap": "Uniform Guidance and OMB Circulars",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Uniform Guidance is a required domain area with only a weak match in the supplied matrix.",
+      "source_evidence": [
+        "Weak match: Uniform Guidance and OMB Circulars",
+        "Candidate evidence: Instruction and guidance"
+      ],
+      "priority": 0.98,
+      "weight": 0.6615
+    },
+    {
+      "question": "Describe a time you proactively identified an issue or improvement opportunity before it was assigned to you. What prompted you to investigate, what actions did you take, and what was the outcome?",
+      "competency": "Proactivity",
+      "competency_type": "soft",
+      "target_gap": "Self-starter and proactive work style",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests a weak-match work-style requirement using the candidate's documented process-improvement achievements.",
+      "source_evidence": [
+        "Weak match: Self-starter and proactive work style",
+        "Created transparency in complex accounts.",
+        "Improved multiple reconciliations."
+      ],
+      "priority": 0.87,
+      "weight": 0.7158
+    },
+    {
+      "question": "What review techniques do you use to detect small but consequential errors in reconciliations, journal entries, financial statements, or spreadsheet outputs before they are finalized?",
+      "competency": "Quality assurance",
+      "competency_type": "technical",
+      "target_gap": "Attention to detail",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Tests a weak-match attention-to-detail requirement in concrete accounting work.",
+      "source_evidence": [
+        "Weak match: Attention to detail",
+        "Ensured timely and accurate subsystem interfaces into the General Ledger.",
+        "Reconciled balance sheet accounts."
+      ],
+      "priority": 0.9,
+      "weight": 0.7098
+    },
+    {
+      "question": "Describe how you would assess whether a cost charged to a federal award is allowable, allocable, reasonable, and adequately documented. What would you do if program leadership disagreed with your conclusion?",
+      "competency": "Grant cost compliance",
+      "competency_type": "other",
+      "target_gap": "Uniform Guidance and OMB Circulars",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Probes practical application of federal-grant compliance and judgment, both important role gaps.",
+      "source_evidence": [
+        "Weak match: Uniform Guidance and OMB Circulars",
+        "Weak match: Judgment and decision-making"
+      ],
+      "priority": 0.96,
+      "weight": 0.6615
+    },
+    {
+      "question": "You have experience with SOX controls and resolved audit deficiencies. How would you map a nonprofit transaction flow\u2014from program expense initiation through financial reporting\u2014to identify key preventive and detective controls?",
+      "competency": "Internal control assessment",
+      "competency_type": "technical",
+      "target_gap": "Internal controls",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Transfers relevant controls experience to the role's weak-match requirement for financial and compliance controls.",
+      "source_evidence": [
+        "Weak match: Internal controls",
+        "Eliminated multiple SOX controls associated with reconciliations and journal entries.",
+        "Resolved audit deficiencies."
+      ],
+      "priority": 0.94,
+      "weight": 0.6496
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 11206,
+    "output_tokens": 3643,
+    "cached_tokens": 0,
+    "estimated_cost": 0.066128,
+    "latency_ms": 31307.63,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.066128,
+  "cost_cny": 0.44768656,
+  "selection_latency_ms": 51.78,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:06:51.116766+00:00"
+}

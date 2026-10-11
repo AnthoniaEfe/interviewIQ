@@ -1,0 +1,456 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_04001_28009f597e20",
+  "jd_id": "rjf_04001_28009f597e20",
+  "pair_id": "rjf_04001_28009f597e20",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 24,
+  "pool_path": "pool/rjf_04001_28009f597e20__rjf_04001_28009f597e20__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 29,
+    "n_failed": 1,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.10344827586206896,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      0,
+      6,
+      4,
+      16,
+      23,
+      5,
+      3,
+      26,
+      22,
+      11
+    ],
+    "questions": [
+      {
+        "question": "What direct experience, if any, do you have configuring, extending, or supporting Oracle Cloud Fusion Financials, and which Financials modules did you work with?",
+        "competency": "Oracle Fusion Financials",
+        "competency_type": "technical",
+        "target_gap": "Oracle Cloud Fusion Financials",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "This is a critical stated requirement with no demonstrated Oracle Fusion Financials experience in the profile, so the interview should establish actual depth and recency.",
+        "source_evidence": [
+          "Oracle Cloud Fusion Financials",
+          "Manual testing"
+        ],
+        "priority": 0.99,
+        "weight": 0.9377
+      },
+      {
+        "question": "Describe a BI Publisher report you have created or maintained, including its data model, parameters, bursting or scheduling needs, and how you validated the output.",
+        "competency": "BI Publisher reporting",
+        "competency_type": "technical",
+        "target_gap": "BI Publisher Reports",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "The candidate has prepared QA reports, but BI Publisher development is missing and is a required reporting capability.",
+        "source_evidence": [
+          "Prepared daily and weekly defect and test execution reports.",
+          "BI Publisher Reports"
+        ],
+        "priority": 0.94,
+        "weight": 0.9174
+      },
+      {
+        "question": "You are asked to investigate intermittent failures in a cloud-hosted integration after a release. Walk through the OCI evidence you would inspect and how you would isolate an application, network, identity, or dependency cause.",
+        "competency": "Cloud troubleshooting",
+        "competency_type": "other",
+        "target_gap": "Oracle Cloud Infrastructure",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Assesses whether the candidate can apply structured diagnostics to the role's cloud operations context despite no documented OCI background.",
+        "source_evidence": [
+          "Oracle Cloud Infrastructure",
+          "Manual testing"
+        ],
+        "priority": 0.93,
+        "weight": 0.9399
+      },
+      {
+        "question": "Have you worked in a SAFe environment? If not, how would you prepare to contribute to PI planning, cross-team dependency management, and iteration execution?",
+        "competency": "SAFe",
+        "competency_type": "other",
+        "target_gap": "SAFe",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "SAFe is missing; this fairly distinguishes direct experience from the candidate's learning approach and ability to transfer Agile fundamentals.",
+        "source_evidence": [
+          "SAFe",
+          "Manual testing"
+        ],
+        "priority": 0.9,
+        "weight": 0.9373
+      },
+      {
+        "question": "What engineering practices would you introduce to make a service cloud-centric in terms of scalability, observability, resilience, security, and deployment automation?",
+        "competency": "Cloud-centric engineering",
+        "competency_type": "technical",
+        "target_gap": "Cloud-centric engineering",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "The profile lacks cloud engineering evidence, while the role explicitly requires engineering cloud-centric environments.",
+        "source_evidence": [
+          "Cloud-centric engineering",
+          "Manual testing"
+        ],
+        "priority": 0.94,
+        "weight": 0.9386
+      },
+      {
+        "question": "What exposure have you had to Oracle Cloud EPM applications, and how would you validate that an EPM data load reconciles correctly with its source financial data?",
+        "competency": "Oracle Cloud EPM",
+        "competency_type": "technical",
+        "target_gap": "Oracle Cloud EPM",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "No EPM experience is documented; the question establishes both direct exposure and transferable data-validation thinking.",
+        "source_evidence": [
+          "Oracle Cloud EPM",
+          "Manual testing"
+        ],
+        "priority": 0.95,
+        "weight": 0.9426
+      },
+      {
+        "question": "What Oracle Cloud Infrastructure services have you used, and how have you applied identity management, networking, logging, or monitoring in a production environment?",
+        "competency": "Oracle Cloud Infrastructure",
+        "competency_type": "technical",
+        "target_gap": "Oracle Cloud Infrastructure",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "OCI is required and absent from the documented profile, making direct experience and operational understanding important to verify.",
+        "source_evidence": [
+          "Oracle Cloud Infrastructure",
+          "Manual testing"
+        ],
+        "priority": 0.97,
+        "weight": 0.9399
+      },
+      {
+        "question": "The profile notes peer reviews and walkthroughs. What did you review, what standards did you apply, and how did you deliver feedback when quality or risk was a concern?",
+        "competency": "Peer review",
+        "competency_type": "soft",
+        "target_gap": "Peer review",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Peer review is marked missing despite related walkthrough and review experience, so this clarifies whether the candidate has a repeatable review practice.",
+        "source_evidence": [
+          "Provided walkthroughs, peer reviews and QA status reporting.",
+          "Peer review"
+        ],
+        "priority": 0.87,
+        "weight": 0.9462
+      },
+      {
+        "question": "How would you assess an on-premises finance-related application for migration to Oracle Cloud, including dependencies, data, integrations, security, testing, cutover, and rollback?",
+        "competency": "Cloud migration",
+        "competency_type": "other",
+        "target_gap": "Cloud migration",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Cloud migration is missing and critical to the target role; this probes structured thinking without assuming previous cloud-migration experience.",
+        "source_evidence": [
+          "Cloud migration",
+          "Manual testing"
+        ],
+        "priority": 0.95,
+        "weight": 0.944
+      },
+      {
+        "question": "When reviewing a proposed integration or reporting solution, which architecture patterns or design principles would you consider, and what trade-offs would you communicate?",
+        "competency": "Architecture patterns",
+        "competency_type": "technical",
+        "target_gap": "Software architecture patterns",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Architecture-pattern knowledge is a required weak match and is not specifically demonstrated in the candidate profile.",
+        "source_evidence": [
+          "Software architecture patterns",
+          "Supervised three junior software QA testers."
+        ],
+        "priority": 0.9,
+        "weight": 0.7042
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.928323,
+      0.8623559999999999,
+      0.874107,
+      0.84357,
+      0.882284,
+      0.89547,
+      0.9117029999999999,
+      0.823194,
+      0.8967999999999999,
+      0.63378
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.12115567922592163,
+      0.274227499961853,
+      0.23855377733707428,
+      0.38548538088798523,
+      0.5054215788841248,
+      0.6176414489746094,
+      0.41501080989837646,
+      0.6176269054412842,
+      0.4228164255619049
+    ],
+    "mmr_scores": [
+      0.6498261,
+      0.5673024962322234,
+      0.529606650011444,
+      0.5189328667988777,
+      0.5019531857336044,
+      0.4752025263347625,
+      0.45289966530761705,
+      0.451732557030487,
+      0.4424719283676146,
+      0.3168010723314285
+    ],
+    "competency_weights": [
+      0.9377,
+      0.9174,
+      0.9399,
+      0.9373,
+      0.9386,
+      0.9426,
+      0.9399,
+      0.9462,
+      0.944,
+      0.7042
+    ]
+  },
+  "questions": [
+    {
+      "question": "What direct experience, if any, do you have configuring, extending, or supporting Oracle Cloud Fusion Financials, and which Financials modules did you work with?"
+    },
+    {
+      "question": "Describe a BI Publisher report you have created or maintained, including its data model, parameters, bursting or scheduling needs, and how you validated the output."
+    },
+    {
+      "question": "You are asked to investigate intermittent failures in a cloud-hosted integration after a release. Walk through the OCI evidence you would inspect and how you would isolate an application, network, identity, or dependency cause."
+    },
+    {
+      "question": "Have you worked in a SAFe environment? If not, how would you prepare to contribute to PI planning, cross-team dependency management, and iteration execution?"
+    },
+    {
+      "question": "What engineering practices would you introduce to make a service cloud-centric in terms of scalability, observability, resilience, security, and deployment automation?"
+    },
+    {
+      "question": "What exposure have you had to Oracle Cloud EPM applications, and how would you validate that an EPM data load reconciles correctly with its source financial data?"
+    },
+    {
+      "question": "What Oracle Cloud Infrastructure services have you used, and how have you applied identity management, networking, logging, or monitoring in a production environment?"
+    },
+    {
+      "question": "The profile notes peer reviews and walkthroughs. What did you review, what standards did you apply, and how did you deliver feedback when quality or risk was a concern?"
+    },
+    {
+      "question": "How would you assess an on-premises finance-related application for migration to Oracle Cloud, including dependencies, data, integrations, security, testing, cutover, and rollback?"
+    },
+    {
+      "question": "When reviewing a proposed integration or reporting solution, which architecture patterns or design principles would you consider, and what trade-offs would you communicate?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "What direct experience, if any, do you have configuring, extending, or supporting Oracle Cloud Fusion Financials, and which Financials modules did you work with?",
+      "competency": "Oracle Fusion Financials",
+      "competency_type": "technical",
+      "target_gap": "Oracle Cloud Fusion Financials",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "This is a critical stated requirement with no demonstrated Oracle Fusion Financials experience in the profile, so the interview should establish actual depth and recency.",
+      "source_evidence": [
+        "Oracle Cloud Fusion Financials",
+        "Manual testing"
+      ],
+      "priority": 0.99,
+      "weight": 0.9377
+    },
+    {
+      "question": "Describe a BI Publisher report you have created or maintained, including its data model, parameters, bursting or scheduling needs, and how you validated the output.",
+      "competency": "BI Publisher reporting",
+      "competency_type": "technical",
+      "target_gap": "BI Publisher Reports",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate has prepared QA reports, but BI Publisher development is missing and is a required reporting capability.",
+      "source_evidence": [
+        "Prepared daily and weekly defect and test execution reports.",
+        "BI Publisher Reports"
+      ],
+      "priority": 0.94,
+      "weight": 0.9174
+    },
+    {
+      "question": "You are asked to investigate intermittent failures in a cloud-hosted integration after a release. Walk through the OCI evidence you would inspect and how you would isolate an application, network, identity, or dependency cause.",
+      "competency": "Cloud troubleshooting",
+      "competency_type": "other",
+      "target_gap": "Oracle Cloud Infrastructure",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Assesses whether the candidate can apply structured diagnostics to the role's cloud operations context despite no documented OCI background.",
+      "source_evidence": [
+        "Oracle Cloud Infrastructure",
+        "Manual testing"
+      ],
+      "priority": 0.93,
+      "weight": 0.9399
+    },
+    {
+      "question": "Have you worked in a SAFe environment? If not, how would you prepare to contribute to PI planning, cross-team dependency management, and iteration execution?",
+      "competency": "SAFe",
+      "competency_type": "other",
+      "target_gap": "SAFe",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "SAFe is missing; this fairly distinguishes direct experience from the candidate's learning approach and ability to transfer Agile fundamentals.",
+      "source_evidence": [
+        "SAFe",
+        "Manual testing"
+      ],
+      "priority": 0.9,
+      "weight": 0.9373
+    },
+    {
+      "question": "What engineering practices would you introduce to make a service cloud-centric in terms of scalability, observability, resilience, security, and deployment automation?",
+      "competency": "Cloud-centric engineering",
+      "competency_type": "technical",
+      "target_gap": "Cloud-centric engineering",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The profile lacks cloud engineering evidence, while the role explicitly requires engineering cloud-centric environments.",
+      "source_evidence": [
+        "Cloud-centric engineering",
+        "Manual testing"
+      ],
+      "priority": 0.94,
+      "weight": 0.9386
+    },
+    {
+      "question": "What exposure have you had to Oracle Cloud EPM applications, and how would you validate that an EPM data load reconciles correctly with its source financial data?",
+      "competency": "Oracle Cloud EPM",
+      "competency_type": "technical",
+      "target_gap": "Oracle Cloud EPM",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "No EPM experience is documented; the question establishes both direct exposure and transferable data-validation thinking.",
+      "source_evidence": [
+        "Oracle Cloud EPM",
+        "Manual testing"
+      ],
+      "priority": 0.95,
+      "weight": 0.9426
+    },
+    {
+      "question": "What Oracle Cloud Infrastructure services have you used, and how have you applied identity management, networking, logging, or monitoring in a production environment?",
+      "competency": "Oracle Cloud Infrastructure",
+      "competency_type": "technical",
+      "target_gap": "Oracle Cloud Infrastructure",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "OCI is required and absent from the documented profile, making direct experience and operational understanding important to verify.",
+      "source_evidence": [
+        "Oracle Cloud Infrastructure",
+        "Manual testing"
+      ],
+      "priority": 0.97,
+      "weight": 0.9399
+    },
+    {
+      "question": "The profile notes peer reviews and walkthroughs. What did you review, what standards did you apply, and how did you deliver feedback when quality or risk was a concern?",
+      "competency": "Peer review",
+      "competency_type": "soft",
+      "target_gap": "Peer review",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Peer review is marked missing despite related walkthrough and review experience, so this clarifies whether the candidate has a repeatable review practice.",
+      "source_evidence": [
+        "Provided walkthroughs, peer reviews and QA status reporting.",
+        "Peer review"
+      ],
+      "priority": 0.87,
+      "weight": 0.9462
+    },
+    {
+      "question": "How would you assess an on-premises finance-related application for migration to Oracle Cloud, including dependencies, data, integrations, security, testing, cutover, and rollback?",
+      "competency": "Cloud migration",
+      "competency_type": "other",
+      "target_gap": "Cloud migration",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Cloud migration is missing and critical to the target role; this probes structured thinking without assuming previous cloud-migration experience.",
+      "source_evidence": [
+        "Cloud migration",
+        "Manual testing"
+      ],
+      "priority": 0.95,
+      "weight": 0.944
+    },
+    {
+      "question": "When reviewing a proposed integration or reporting solution, which architecture patterns or design principles would you consider, and what trade-offs would you communicate?",
+      "competency": "Architecture patterns",
+      "competency_type": "technical",
+      "target_gap": "Software architecture patterns",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Architecture-pattern knowledge is a required weak match and is not specifically demonstrated in the candidate profile.",
+      "source_evidence": [
+        "Software architecture patterns",
+        "Supervised three junior software QA testers."
+      ],
+      "priority": 0.9,
+      "weight": 0.7042
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 13883,
+    "output_tokens": 3216,
+    "cached_tokens": 0,
+    "estimated_cost": 0.066358,
+    "latency_ms": 27231.96,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.066358,
+  "cost_cny": 0.44924366,
+  "selection_latency_ms": 31.54,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:10:13.580081+00:00"
+}

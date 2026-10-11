@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_04639_f4cbc5bff588",
+  "jd_id": "rjf_04639_f4cbc5bff588",
+  "pair_id": "rjf_04639_f4cbc5bff588",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Technical: You list Java 7, Spring, Hibernate, JDBC, REST web services, and relational databases including MySQL and SQLite. Describe a Java REST API you have designed or implemented: how did you structure the endpoint, validate requests, model persistence, handle errors, and test it?"
+    },
+    {
+      "question": "Technical: Your work at Within3 integrated YouTube, Periscope, and Facebook APIs for live-streaming video. Walk us through one integration\u2019s authentication, failure handling, data flow, and the performance or reliability issue you had to resolve."
+    },
+    {
+      "question": "Situational: This role builds mission-critical integrations from source data into financial SaaS applications. How would you design a resilient, idempotent integration service that handles retries, duplicate events, partial failures, reconciliation, and auditability?"
+    },
+    {
+      "question": "Technical: Docker, Kubernetes, AWS, and CI/CD are requirements not explicitly reflected in your profile. What hands-on exposure do you have with these tools, and if you were asked to containerize and deploy a Java service to Kubernetes on AWS, what would your approach be from build through monitoring and rollback?"
+    },
+    {
+      "question": "Technical: The role requires secure coding practices. For a Java REST integration that receives financial data, what specific controls would you implement for authentication, authorization, input validation, secret management, encryption, logging, and dependency security?"
+    },
+    {
+      "question": "Behavioural: At Motion Recruitment, you worked with web designers on profile screens and deployed beta builds to users\u2019 phones. Describe a time design intent, user feedback, or technical constraints conflicted; how did you communicate the trade-offs and what was the outcome?"
+    },
+    {
+      "question": "Role-Specific: You participated in requirements gathering, development, testing, and deployment for the Windows tablet application at Within3. How would you turn an ambiguous request for a new financial-system integration into a detailed feature design with clear interfaces, failure scenarios, acceptance criteria, and ownership across teams?"
+    },
+    {
+      "question": "Behavioural: Tell us about a specific application error or performance issue you analyzed at Within3. How did you isolate the root cause, involve others where necessary, validate the fix, and document what you learned?"
+    },
+    {
+      "question": "Role-Specific: This position expects engineers to contribute to design best practices, conduct code reviews, and mentor teammates. What do you look for when reviewing a Java pull request, and how would you give actionable feedback to a less experienced engineer?"
+    },
+    {
+      "question": "Cultural/Motivational: Your background spans web, mobile, enterprise applications, live streaming, and energy measurement. What motivates you to move into mission-critical financial SaaS integrations, and how would you build domain understanding of systems such as Anaplan or Oracle while contributing effectively?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 7655,
+    "output_tokens": 558,
+    "cached_tokens": 0,
+    "estimated_cost": 0.022006,
+    "latency_ms": 6150.26,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.022006,
+  "cost_cny": 0.14898062,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:04:25.981437+00:00",
+  "user_prompt_sha256": "069ff57854faa8839c5df5a1854ffabca6d65ee8df62cced7a029dd07e7a7101"
+}

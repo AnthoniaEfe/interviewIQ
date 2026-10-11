@@ -1,0 +1,1039 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "pool",
+  "condition": "T_pool",
+  "profile_id": "rjf_04553_ea8f275312b4",
+  "jd_id": "rjf_04553_ea8f275312b4",
+  "pair_id": "rjf_04553_ea8f275312b4",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "prompt": {
+    "file": "generation/interviewiq_pool.md",
+    "version": "1.1.0",
+    "sha256": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc"
+  },
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 20,
+  "pool_size_requested": 30,
+  "raw_questions": [
+    {
+      "question": "Walk me through how you maintained the general ledger and chart of accounts in your Staff Accountant role. What checks did you use to ensure account balances remained complete and accurate through close?",
+      "competency": "General ledger accounting",
+      "dimension": "Technical",
+      "target_gap": "General ledger accounting",
+      "difficulty": "mid",
+      "rationale": "Tests the candidate's strongest documented match in a close-process context relevant to maintaining an accurate ledger.",
+      "source_evidence": [
+        "Maintained the general ledger and chart of accounts",
+        "General ledger accounting: strong_match"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Describe a cash, accounts receivable, accounts payable, or investment reconciliation that was difficult to clear. How did you identify the reconciling items, resolve them, and document the final support?",
+      "competency": "Account reconciliations",
+      "dimension": "Technical",
+      "target_gap": "Account reconciliations",
+      "difficulty": "mid",
+      "rationale": "Validates the depth and ownership of the candidate's documented reconciliation experience for general-ledger account reconciliations.",
+      "source_evidence": [
+        "Performed cash, AR, AP, and investment reconciliations",
+        "Account reconciliations: partial_match"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "If a balance-sheet account reconciliation contains an unexplained difference shortly before close, how would you investigate it, decide whether a journal entry is needed, and communicate the issue?",
+      "competency": "Close issue resolution",
+      "dimension": "Situational",
+      "target_gap": "Journal entries",
+      "difficulty": "mid",
+      "rationale": "Probes a weakly evidenced requirement to analyze and post journal entries while connecting it to the candidate's reconciliation background.",
+      "source_evidence": [
+        "Account reconciliation specialist",
+        "Journal entries: weak_match"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Give an example of a journal entry you have prepared, reviewed, or supported. What was the business purpose, what documentation supported it, and how did you confirm the debit-and-credit treatment?",
+      "competency": "Journal entry preparation",
+      "dimension": "Technical",
+      "target_gap": "Journal entries",
+      "difficulty": "mid",
+      "rationale": "Directly tests practical experience that is not explicitly demonstrated in the profile.",
+      "source_evidence": [
+        "Maintained general ledger",
+        "Journal entries: weak_match"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "How do you determine whether an accounting treatment complies with U.S. GAAP when the facts are not straightforward? Please describe the sources you would consult and how you would document your conclusion.",
+      "competency": "U.S. GAAP application",
+      "dimension": "Technical",
+      "target_gap": "U.S. GAAP",
+      "difficulty": "mid",
+      "rationale": "Tests a high-priority weak match and the candidate's approach to defensible GAAP conclusions.",
+      "source_evidence": [
+        "Accounting",
+        "U.S. GAAP: weak_match"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "A new office lease includes fixed payments, a tenant-improvement allowance, and a renewal option that is reasonably certain to be exercised. Explain how you would evaluate and account for it under ASC 842 from commencement onward.",
+      "competency": "Lease accounting",
+      "dimension": "Technical",
+      "target_gap": "ASC 842 lease accounting",
+      "difficulty": "hard",
+      "rationale": "Assesses a major technical-accounting gap through a realistic fact pattern requiring both initial and subsequent accounting judgment.",
+      "source_evidence": [
+        "Accounting",
+        "ASC 842 lease accounting: weak_match"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "What inputs and judgments would you expect to evaluate when calculating an allowance for credit losses under CECL for a portfolio of trade receivables?",
+      "competency": "CECL credit loss accounting",
+      "dimension": "Technical",
+      "target_gap": "CECL credit loss accounting",
+      "difficulty": "hard",
+      "rationale": "Tests knowledge in a high-priority weak-match area central to the role's complex accounting responsibilities.",
+      "source_evidence": [
+        "Accounts receivable",
+        "CECL credit loss accounting: weak_match"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Tell me about a reporting or accounting issue you researched. How did you frame the question, evaluate authority or evidence, reach a recommendation, and communicate it to others?",
+      "competency": "Accounting research",
+      "dimension": "Behavioural",
+      "target_gap": "Accounting research",
+      "difficulty": "mid",
+      "rationale": "Builds on the candidate's stated reporting-issue research while assessing a structured research process.",
+      "source_evidence": [
+        "Researched reporting issues",
+        "Accounting research: partial_match"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "Describe an instance in which internal-control testing identified a deficiency or a process that could be improved. What was the risk, what recommendation did you make, and what happened afterward?",
+      "competency": "Internal controls",
+      "dimension": "Behavioural",
+      "target_gap": "Internal controls",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate can translate documented control-testing experience into remediation-oriented ownership.",
+      "source_evidence": [
+        "Performed internal control testing",
+        "Internal controls: partial_match"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "How would you update a control narrative and process flow for a disbursements process after finding that approvals were inconsistently evidenced? Include the control objective, key risks, and remediation steps.",
+      "competency": "Control documentation",
+      "dimension": "Situational",
+      "target_gap": "Internal controls",
+      "difficulty": "hard",
+      "rationale": "Expands the candidate's control-testing experience to the role's responsibility for narratives, flowcharts, and remediation.",
+      "source_evidence": [
+        "Tested cash disbursements",
+        "Performed internal control testing"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Describe your role in an audit engagement from planning through fieldwork. How did you coordinate requests, assess evidence quality, manage deadlines, and handle open items?",
+      "competency": "Audit support",
+      "dimension": "Behavioural",
+      "target_gap": "Audit support",
+      "difficulty": "mid",
+      "rationale": "Probes transferable audit experience and readiness to support internal and external audits from the company side.",
+      "source_evidence": [
+        "Completed audits, reviews, and attestation services",
+        "Managed preliminary fieldwork audit engagements"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "When preparing financial statements, what review procedures do you perform to identify classification, presentation, tie-out, or analytical issues before the statements are finalized?",
+      "competency": "Financial statement review",
+      "dimension": "Technical",
+      "target_gap": "Statutory financial statements",
+      "difficulty": "mid",
+      "rationale": "Tests whether documented financial-statement preparation experience extends to the more rigorous preparation and review expected for statutory reporting.",
+      "source_evidence": [
+        "Compiled and prepared financial statements",
+        "Performed financial statement analytical procedures"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Suppose several subsidiaries submit reporting packages with inconsistent intercompany balances and disclosure support. How would you coordinate resolution and produce a reliable consolidated reporting package?",
+      "competency": "Consolidated reporting",
+      "dimension": "Situational",
+      "target_gap": "External and consolidated reporting",
+      "difficulty": "hard",
+      "rationale": "Tests a partial match against a reporting responsibility not explicitly evidenced in the candidate profile.",
+      "source_evidence": [
+        "Researched reporting issues",
+        "External and consolidated reporting: partial_match"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Tell me about a complex or unusual accounting matter you analyzed, such as an atypical contract cost, financial-statement classification issue, or nonroutine transaction. What made it complex and how did you reach the treatment?",
+      "competency": "Complex transaction analysis",
+      "dimension": "Behavioural",
+      "target_gap": "Complex accounting transactions",
+      "difficulty": "mid",
+      "rationale": "Tests the candidate's ability to apply accounting judgment beyond routine audit and reconciliation activities.",
+      "source_evidence": [
+        "Analyzed contract schedules and costs",
+        "Complex accounting transactions: partial_match"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "A company acquires a smaller business for cash, with identifiable inventory, customer relationships, equipment, assumed liabilities, and a contingent payment. How would you organize the analysis to determine the accounting considerations and information needed?",
+      "competency": "Business combination accounting",
+      "dimension": "Technical",
+      "target_gap": "Business combination accounting",
+      "difficulty": "hard",
+      "rationale": "Assesses readiness for a complex technical area where the matrix shows only a partial match.",
+      "source_evidence": [
+        "Accounting",
+        "Business combination accounting: partial_match"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "What accounting questions would you investigate when a company disposes of a component of its business, and how would you ensure the disposal is reflected appropriately in the financial statements?",
+      "competency": "Divestiture accounting",
+      "dimension": "Technical",
+      "target_gap": "Divestiture accounting",
+      "difficulty": "hard",
+      "rationale": "Tests conceptual and research-based readiness for a specialized responsibility not directly shown in the profile.",
+      "source_evidence": [
+        "Accounting",
+        "Divestiture accounting: partial_match"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "An investee is 35% owned, and the investor has significant influence but no control. Explain the core mechanics of equity method accounting and the events that would cause you to reassess the investment.",
+      "competency": "Equity method accounting",
+      "dimension": "Technical",
+      "target_gap": "Equity method accounting",
+      "difficulty": "hard",
+      "rationale": "Directly assesses a specialized technical-accounting requirement with only partial evidence in the gap matrix.",
+      "source_evidence": [
+        "Accounting",
+        "Equity method accounting: partial_match"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Describe how you would help implement a new accounting standard across a finance organization, from scoping and gap assessment through policy, systems, controls, training, and disclosures.",
+      "competency": "Accounting standards implementation",
+      "dimension": "Situational",
+      "target_gap": "Accounting standards implementation",
+      "difficulty": "hard",
+      "rationale": "Tests implementation planning and cross-functional execution beyond the candidate's documented software implementation experience.",
+      "source_evidence": [
+        "Configured and implemented Amelio Software System",
+        "Accounting standards implementation: partial_match"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "When reviewing a business contract, which terms do you focus on first to identify accounting consequences, and how do you capture those conclusions for accounting and audit support?",
+      "competency": "Contract accounting review",
+      "dimension": "Technical",
+      "target_gap": "Business contract accounting review",
+      "difficulty": "mid",
+      "rationale": "Leverages the candidate's contract-schedule and cost analysis experience while testing the accounting-review dimension of contracts.",
+      "source_evidence": [
+        "Analyzed contract schedules and costs",
+        "Business contract accounting review: partial_match"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "A forecast supporting a goodwill impairment analysis changes because projected revenue growth declines. What assumptions, sensitivity analyses, and evidence would you review before relying on the valuation conclusion?",
+      "competency": "Valuation analysis",
+      "dimension": "Technical",
+      "target_gap": "Valuation analysis",
+      "difficulty": "hard",
+      "rationale": "Addresses a high-priority weak match in valuation and forecast-model review using a role-relevant scenario.",
+      "source_evidence": [
+        "Budget analysis",
+        "Valuation analysis: weak_match"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Tell me about a time you improved an accounting operations procedure. What problem did you identify, how did you design the change, and how did you ensure it was adopted consistently?",
+      "competency": "Policy and procedure compliance",
+      "dimension": "Behavioural",
+      "target_gap": "Accounting policies and procedures compliance",
+      "difficulty": "mid",
+      "rationale": "Tests the candidate's stated process-improvement experience and ability to balance improvement with controlled compliance.",
+      "source_evidence": [
+        "Improved accounting operations procedures",
+        "Accounting policies and procedures compliance: partial_match"
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "This role must support both auditors and internal stakeholders during compressed reporting cycles. Describe how you prioritize competing requests while preserving accuracy, documentation, and timely follow-up.",
+      "competency": "Stakeholder coordination",
+      "dimension": "Situational",
+      "target_gap": "Audit support",
+      "difficulty": "mid",
+      "rationale": "Assesses coordination and execution under deadline pressure using the candidate's audit and client-service background.",
+      "source_evidence": [
+        "Adhered to strict timelines and budget demands",
+        "Completed audits and attestation services"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "What analytical relationships or trend tests have you used on financial statements, and can you give an example of how an unexpected result changed your next steps?",
+      "competency": "Financial statement analysis",
+      "dimension": "Technical",
+      "target_gap": "Accounting reporting and analysis",
+      "difficulty": "mid",
+      "rationale": "Probes a documented strength while confirming the candidate can use analysis to drive investigation and reporting quality.",
+      "source_evidence": [
+        "Performed financial statement analytical procedures",
+        "Financial statement analysis"
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "Tell me about your implementation of the Amelio Software System for the Construction Industry Services Group. What was your role, how did you manage readiness before busy season, and what accounting-process impacts did you monitor?",
+      "competency": "Systems implementation",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Explores a concrete candidate-specific accomplishment that may indicate transferable implementation and change-management capability.",
+      "source_evidence": [
+        "Configured and implemented Amelio Software System",
+        "Ensured efficient implementation before busy season"
+      ],
+      "priority": 0.7
+    },
+    {
+      "question": "You managed inexperienced staff during preliminary audit fieldwork. How did you assign work, review it, give feedback, and intervene when quality or timing was at risk?",
+      "competency": "Staff leadership",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Tests demonstrated supervisory behavior and quality management relevant to a senior accountant who may coordinate others.",
+      "source_evidence": [
+        "Managed inexperienced staff on preliminary fieldwork audit engagements"
+      ],
+      "priority": 0.68
+    },
+    {
+      "question": "What attracts you to moving from your audit, tax, and client-service background into a Senior Accountant II role with ongoing ownership of close, reporting, and technical accounting matters?",
+      "competency": "Role motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Clarifies motivation and readiness for the role's in-house accounting scope without assuming unlisted experience.",
+      "source_evidence": [
+        "Experience in audits, tax preparation, financial statement analysis, and reconciliations",
+        "Senior Accountant II role"
+      ],
+      "priority": 0.64
+    },
+    {
+      "question": "Describe a time you had to explain a technical or operational issue to a nontechnical stakeholder, such as a client, manager, parent, or teammate. How did you tailor the message and confirm understanding?",
+      "competency": "Communication",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Evaluates communication across audiences using documented client-service and swim-team parent communication experience.",
+      "source_evidence": [
+        "Communicated with parents about team events",
+        "Provided efficient, excellent service"
+      ],
+      "priority": 0.62
+    },
+    {
+      "question": "Give an example of a deadline-driven period in which you had to maintain detail and accuracy across several deliverables. How did you organize the work and what quality checks did you use?",
+      "competency": "Execution under pressure",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Tests self-management, attention to detail, and reliability under the close and reporting pressures expected in the role.",
+      "source_evidence": [
+        "Great attention to detail",
+        "Adhering to strict timelines and budget demands"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "How have your experiences across government contracting, construction, and real estate affected the questions you ask when reviewing financial data, contract schedules, or unusual balances?",
+      "competency": "Industry-informed analysis",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Draws out how the candidate's documented industry exposure shapes accounting judgment and analytical rigor.",
+      "source_evidence": [
+        "Government contracting, construction, and real estate clients",
+        "Analyzed contract schedules, costs, and financial indexes"
+      ],
+      "priority": 0.58
+    },
+    {
+      "question": "This role requires independently surfacing issues rather than waiting for direction. Describe a time you noticed a risk or inefficiency, took initiative to investigate it, and drove it toward resolution.",
+      "competency": "Self-motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Assesses the job's self-motivation expectation using the candidate's stated self-motivation and process-improvement experience.",
+      "source_evidence": [
+        "Self-motivated professional",
+        "Improved accounting operations procedures"
+      ],
+      "priority": 0.7
+    }
+  ],
+  "valid_questions": [
+    {
+      "question": "Walk me through how you maintained the general ledger and chart of accounts in your Staff Accountant role. What checks did you use to ensure account balances remained complete and accurate through close?",
+      "competency": "General ledger accounting",
+      "dimension": "Technical",
+      "target_gap": "General ledger accounting",
+      "difficulty": "mid",
+      "rationale": "Tests the candidate's strongest documented match in a close-process context relevant to maintaining an accurate ledger.",
+      "source_evidence": [
+        "Maintained the general ledger and chart of accounts",
+        "General ledger accounting: strong_match"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Describe a cash, accounts receivable, accounts payable, or investment reconciliation that was difficult to clear. How did you identify the reconciling items, resolve them, and document the final support?",
+      "competency": "Account reconciliations",
+      "dimension": "Technical",
+      "target_gap": "Account reconciliations",
+      "difficulty": "mid",
+      "rationale": "Validates the depth and ownership of the candidate's documented reconciliation experience for general-ledger account reconciliations.",
+      "source_evidence": [
+        "Performed cash, AR, AP, and investment reconciliations",
+        "Account reconciliations: partial_match"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "If a balance-sheet account reconciliation contains an unexplained difference shortly before close, how would you investigate it, decide whether a journal entry is needed, and communicate the issue?",
+      "competency": "Close issue resolution",
+      "dimension": "Situational",
+      "target_gap": "Journal entries",
+      "difficulty": "mid",
+      "rationale": "Probes a weakly evidenced requirement to analyze and post journal entries while connecting it to the candidate's reconciliation background.",
+      "source_evidence": [
+        "Account reconciliation specialist",
+        "Journal entries: weak_match"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Give an example of a journal entry you have prepared, reviewed, or supported. What was the business purpose, what documentation supported it, and how did you confirm the debit-and-credit treatment?",
+      "competency": "Journal entry preparation",
+      "dimension": "Technical",
+      "target_gap": "Journal entries",
+      "difficulty": "mid",
+      "rationale": "Directly tests practical experience that is not explicitly demonstrated in the profile.",
+      "source_evidence": [
+        "Maintained general ledger",
+        "Journal entries: weak_match"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "How do you determine whether an accounting treatment complies with U.S. GAAP when the facts are not straightforward? Please describe the sources you would consult and how you would document your conclusion.",
+      "competency": "U.S. GAAP application",
+      "dimension": "Technical",
+      "target_gap": "U.S. GAAP",
+      "difficulty": "mid",
+      "rationale": "Tests a high-priority weak match and the candidate's approach to defensible GAAP conclusions.",
+      "source_evidence": [
+        "Accounting",
+        "U.S. GAAP: weak_match"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "A new office lease includes fixed payments, a tenant-improvement allowance, and a renewal option that is reasonably certain to be exercised. Explain how you would evaluate and account for it under ASC 842 from commencement onward.",
+      "competency": "Lease accounting",
+      "dimension": "Technical",
+      "target_gap": "ASC 842 lease accounting",
+      "difficulty": "hard",
+      "rationale": "Assesses a major technical-accounting gap through a realistic fact pattern requiring both initial and subsequent accounting judgment.",
+      "source_evidence": [
+        "Accounting",
+        "ASC 842 lease accounting: weak_match"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "What inputs and judgments would you expect to evaluate when calculating an allowance for credit losses under CECL for a portfolio of trade receivables?",
+      "competency": "CECL credit loss accounting",
+      "dimension": "Technical",
+      "target_gap": "CECL credit loss accounting",
+      "difficulty": "hard",
+      "rationale": "Tests knowledge in a high-priority weak-match area central to the role's complex accounting responsibilities.",
+      "source_evidence": [
+        "Accounts receivable",
+        "CECL credit loss accounting: weak_match"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Tell me about a reporting or accounting issue you researched. How did you frame the question, evaluate authority or evidence, reach a recommendation, and communicate it to others?",
+      "competency": "Accounting research",
+      "dimension": "Behavioural",
+      "target_gap": "Accounting research",
+      "difficulty": "mid",
+      "rationale": "Builds on the candidate's stated reporting-issue research while assessing a structured research process.",
+      "source_evidence": [
+        "Researched reporting issues",
+        "Accounting research: partial_match"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "Describe an instance in which internal-control testing identified a deficiency or a process that could be improved. What was the risk, what recommendation did you make, and what happened afterward?",
+      "competency": "Internal controls",
+      "dimension": "Behavioural",
+      "target_gap": "Internal controls",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate can translate documented control-testing experience into remediation-oriented ownership.",
+      "source_evidence": [
+        "Performed internal control testing",
+        "Internal controls: partial_match"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "How would you update a control narrative and process flow for a disbursements process after finding that approvals were inconsistently evidenced? Include the control objective, key risks, and remediation steps.",
+      "competency": "Control documentation",
+      "dimension": "Situational",
+      "target_gap": "Internal controls",
+      "difficulty": "hard",
+      "rationale": "Expands the candidate's control-testing experience to the role's responsibility for narratives, flowcharts, and remediation.",
+      "source_evidence": [
+        "Tested cash disbursements",
+        "Performed internal control testing"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Describe your role in an audit engagement from planning through fieldwork. How did you coordinate requests, assess evidence quality, manage deadlines, and handle open items?",
+      "competency": "Audit support",
+      "dimension": "Behavioural",
+      "target_gap": "Audit support",
+      "difficulty": "mid",
+      "rationale": "Probes transferable audit experience and readiness to support internal and external audits from the company side.",
+      "source_evidence": [
+        "Completed audits, reviews, and attestation services",
+        "Managed preliminary fieldwork audit engagements"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "When preparing financial statements, what review procedures do you perform to identify classification, presentation, tie-out, or analytical issues before the statements are finalized?",
+      "competency": "Financial statement review",
+      "dimension": "Technical",
+      "target_gap": "Statutory financial statements",
+      "difficulty": "mid",
+      "rationale": "Tests whether documented financial-statement preparation experience extends to the more rigorous preparation and review expected for statutory reporting.",
+      "source_evidence": [
+        "Compiled and prepared financial statements",
+        "Performed financial statement analytical procedures"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Suppose several subsidiaries submit reporting packages with inconsistent intercompany balances and disclosure support. How would you coordinate resolution and produce a reliable consolidated reporting package?",
+      "competency": "Consolidated reporting",
+      "dimension": "Situational",
+      "target_gap": "External and consolidated reporting",
+      "difficulty": "hard",
+      "rationale": "Tests a partial match against a reporting responsibility not explicitly evidenced in the candidate profile.",
+      "source_evidence": [
+        "Researched reporting issues",
+        "External and consolidated reporting: partial_match"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Tell me about a complex or unusual accounting matter you analyzed, such as an atypical contract cost, financial-statement classification issue, or nonroutine transaction. What made it complex and how did you reach the treatment?",
+      "competency": "Complex transaction analysis",
+      "dimension": "Behavioural",
+      "target_gap": "Complex accounting transactions",
+      "difficulty": "mid",
+      "rationale": "Tests the candidate's ability to apply accounting judgment beyond routine audit and reconciliation activities.",
+      "source_evidence": [
+        "Analyzed contract schedules and costs",
+        "Complex accounting transactions: partial_match"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "A company acquires a smaller business for cash, with identifiable inventory, customer relationships, equipment, assumed liabilities, and a contingent payment. How would you organize the analysis to determine the accounting considerations and information needed?",
+      "competency": "Business combination accounting",
+      "dimension": "Technical",
+      "target_gap": "Business combination accounting",
+      "difficulty": "hard",
+      "rationale": "Assesses readiness for a complex technical area where the matrix shows only a partial match.",
+      "source_evidence": [
+        "Accounting",
+        "Business combination accounting: partial_match"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "What accounting questions would you investigate when a company disposes of a component of its business, and how would you ensure the disposal is reflected appropriately in the financial statements?",
+      "competency": "Divestiture accounting",
+      "dimension": "Technical",
+      "target_gap": "Divestiture accounting",
+      "difficulty": "hard",
+      "rationale": "Tests conceptual and research-based readiness for a specialized responsibility not directly shown in the profile.",
+      "source_evidence": [
+        "Accounting",
+        "Divestiture accounting: partial_match"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "An investee is 35% owned, and the investor has significant influence but no control. Explain the core mechanics of equity method accounting and the events that would cause you to reassess the investment.",
+      "competency": "Equity method accounting",
+      "dimension": "Technical",
+      "target_gap": "Equity method accounting",
+      "difficulty": "hard",
+      "rationale": "Directly assesses a specialized technical-accounting requirement with only partial evidence in the gap matrix.",
+      "source_evidence": [
+        "Accounting",
+        "Equity method accounting: partial_match"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Describe how you would help implement a new accounting standard across a finance organization, from scoping and gap assessment through policy, systems, controls, training, and disclosures.",
+      "competency": "Accounting standards implementation",
+      "dimension": "Situational",
+      "target_gap": "Accounting standards implementation",
+      "difficulty": "hard",
+      "rationale": "Tests implementation planning and cross-functional execution beyond the candidate's documented software implementation experience.",
+      "source_evidence": [
+        "Configured and implemented Amelio Software System",
+        "Accounting standards implementation: partial_match"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "When reviewing a business contract, which terms do you focus on first to identify accounting consequences, and how do you capture those conclusions for accounting and audit support?",
+      "competency": "Contract accounting review",
+      "dimension": "Technical",
+      "target_gap": "Business contract accounting review",
+      "difficulty": "mid",
+      "rationale": "Leverages the candidate's contract-schedule and cost analysis experience while testing the accounting-review dimension of contracts.",
+      "source_evidence": [
+        "Analyzed contract schedules and costs",
+        "Business contract accounting review: partial_match"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "A forecast supporting a goodwill impairment analysis changes because projected revenue growth declines. What assumptions, sensitivity analyses, and evidence would you review before relying on the valuation conclusion?",
+      "competency": "Valuation analysis",
+      "dimension": "Technical",
+      "target_gap": "Valuation analysis",
+      "difficulty": "hard",
+      "rationale": "Addresses a high-priority weak match in valuation and forecast-model review using a role-relevant scenario.",
+      "source_evidence": [
+        "Budget analysis",
+        "Valuation analysis: weak_match"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Tell me about a time you improved an accounting operations procedure. What problem did you identify, how did you design the change, and how did you ensure it was adopted consistently?",
+      "competency": "Policy and procedure compliance",
+      "dimension": "Behavioural",
+      "target_gap": "Accounting policies and procedures compliance",
+      "difficulty": "mid",
+      "rationale": "Tests the candidate's stated process-improvement experience and ability to balance improvement with controlled compliance.",
+      "source_evidence": [
+        "Improved accounting operations procedures",
+        "Accounting policies and procedures compliance: partial_match"
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "This role must support both auditors and internal stakeholders during compressed reporting cycles. Describe how you prioritize competing requests while preserving accuracy, documentation, and timely follow-up.",
+      "competency": "Stakeholder coordination",
+      "dimension": "Situational",
+      "target_gap": "Audit support",
+      "difficulty": "mid",
+      "rationale": "Assesses coordination and execution under deadline pressure using the candidate's audit and client-service background.",
+      "source_evidence": [
+        "Adhered to strict timelines and budget demands",
+        "Completed audits and attestation services"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Tell me about your implementation of the Amelio Software System for the Construction Industry Services Group. What was your role, how did you manage readiness before busy season, and what accounting-process impacts did you monitor?",
+      "competency": "Systems implementation",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Explores a concrete candidate-specific accomplishment that may indicate transferable implementation and change-management capability.",
+      "source_evidence": [
+        "Configured and implemented Amelio Software System",
+        "Ensured efficient implementation before busy season"
+      ],
+      "priority": 0.7
+    },
+    {
+      "question": "You managed inexperienced staff during preliminary audit fieldwork. How did you assign work, review it, give feedback, and intervene when quality or timing was at risk?",
+      "competency": "Staff leadership",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Tests demonstrated supervisory behavior and quality management relevant to a senior accountant who may coordinate others.",
+      "source_evidence": [
+        "Managed inexperienced staff on preliminary fieldwork audit engagements"
+      ],
+      "priority": 0.68
+    },
+    {
+      "question": "What attracts you to moving from your audit, tax, and client-service background into a Senior Accountant II role with ongoing ownership of close, reporting, and technical accounting matters?",
+      "competency": "Role motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Clarifies motivation and readiness for the role's in-house accounting scope without assuming unlisted experience.",
+      "source_evidence": [
+        "Experience in audits, tax preparation, financial statement analysis, and reconciliations",
+        "Senior Accountant II role"
+      ],
+      "priority": 0.64
+    },
+    {
+      "question": "Describe a time you had to explain a technical or operational issue to a nontechnical stakeholder, such as a client, manager, parent, or teammate. How did you tailor the message and confirm understanding?",
+      "competency": "Communication",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Evaluates communication across audiences using documented client-service and swim-team parent communication experience.",
+      "source_evidence": [
+        "Communicated with parents about team events",
+        "Provided efficient, excellent service"
+      ],
+      "priority": 0.62
+    },
+    {
+      "question": "Give an example of a deadline-driven period in which you had to maintain detail and accuracy across several deliverables. How did you organize the work and what quality checks did you use?",
+      "competency": "Execution under pressure",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Tests self-management, attention to detail, and reliability under the close and reporting pressures expected in the role.",
+      "source_evidence": [
+        "Great attention to detail",
+        "Adhering to strict timelines and budget demands"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "How have your experiences across government contracting, construction, and real estate affected the questions you ask when reviewing financial data, contract schedules, or unusual balances?",
+      "competency": "Industry-informed analysis",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Draws out how the candidate's documented industry exposure shapes accounting judgment and analytical rigor.",
+      "source_evidence": [
+        "Government contracting, construction, and real estate clients",
+        "Analyzed contract schedules, costs, and financial indexes"
+      ],
+      "priority": 0.58
+    },
+    {
+      "question": "This role requires independently surfacing issues rather than waiting for direction. Describe a time you noticed a risk or inefficiency, took initiative to investigate it, and drove it toward resolution.",
+      "competency": "Self-motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Assesses the job's self-motivation expectation using the candidate's stated self-motivation and process-improvement experience.",
+      "source_evidence": [
+        "Self-motivated professional",
+        "Improved accounting operations procedures"
+      ],
+      "priority": 0.7
+    }
+  ],
+  "validation_failures": [
+    {
+      "index": 22,
+      "reasons": [
+        "unknown_target_gap"
+      ],
+      "target_gap": "Accounting reporting and analysis",
+      "dimension": "Technical",
+      "priority": 0.78
+    }
+  ],
+  "n_raw": 30,
+  "n_valid": 29,
+  "n_failed": 1,
+  "weights": [
+    0.1712,
+    0.3554,
+    0.7349,
+    0.7349,
+    0.728,
+    0.669,
+    0.6655,
+    0.3801,
+    0.4012,
+    0.4012,
+    0.4192,
+    0.3748,
+    0.392,
+    0.3934,
+    0.3966,
+    0.399,
+    0.3971,
+    0.3972,
+    0.4016,
+    0.6562,
+    0.3737,
+    0.4192,
+    0.454435,
+    0.454435,
+    0.454435,
+    0.454435,
+    0.454435,
+    0.454435,
+    0.454435
+  ],
+  "weight_outcomes": [
+    {
+      "rule": "exact",
+      "weight": 0.1712,
+      "matched_competency": "General ledger accounting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3554,
+      "matched_competency": "Account reconciliations",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7349,
+      "matched_competency": "Journal entries",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7349,
+      "matched_competency": "Journal entries",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.728,
+      "matched_competency": "U.S. GAAP",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.669,
+      "matched_competency": "ASC 842 lease accounting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6655,
+      "matched_competency": "CECL credit loss accounting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3801,
+      "matched_competency": "Accounting research",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4012,
+      "matched_competency": "Internal controls",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4012,
+      "matched_competency": "Internal controls",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4192,
+      "matched_competency": "Audit support",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3748,
+      "matched_competency": "Statutory financial statements",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.392,
+      "matched_competency": "External and consolidated reporting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3934,
+      "matched_competency": "Complex accounting transactions",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3966,
+      "matched_competency": "Business combination accounting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.399,
+      "matched_competency": "Divestiture accounting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3971,
+      "matched_competency": "Equity method accounting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3972,
+      "matched_competency": "Accounting standards implementation",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4016,
+      "matched_competency": "Business contract accounting review",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6562,
+      "matched_competency": "Valuation analysis",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3737,
+      "matched_competency": "Accounting policies and procedures compliance",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4192,
+      "matched_competency": "Audit support",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.454435,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.454435,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.454435,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.454435,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.454435,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.454435,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.454435,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    }
+  ],
+  "fallback_rate": 0.0,
+  "profile_probe_rate": 0.2413793103448276,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 8790,
+    "output_tokens": 3271,
+    "cached_tokens": 0,
+    "estimated_cost": 0.056832,
+    "latency_ms": 27383.33,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.056832,
+  "cost_cny": 0.38475264,
+  "usd_cny_rate": 6.77,
+  "user_prompt_sha256": "d06d466e750e3c9c12d58628076ced731d588700bf19c683fb06681c9e93391c",
+  "generated_at": "2026-10-11T13:11:09.915345+00:00"
+}

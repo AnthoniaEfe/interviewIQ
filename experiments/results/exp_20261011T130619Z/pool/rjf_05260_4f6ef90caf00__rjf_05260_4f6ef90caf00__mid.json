@@ -1,0 +1,1109 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "pool",
+  "condition": "T_pool",
+  "profile_id": "rjf_05260_4f6ef90caf00",
+  "jd_id": "rjf_05260_4f6ef90caf00",
+  "pair_id": "rjf_05260_4f6ef90caf00",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "prompt": {
+    "file": "generation/interviewiq_pool.md",
+    "version": "1.1.0",
+    "sha256": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc"
+  },
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 28,
+  "pool_size_requested": 30,
+  "raw_questions": [
+    {
+      "question": "Describe the most complex digital circuit or electronic assembly you have diagnosed or tested. How did you move from the schematic and observed symptoms to a defensible root-cause conclusion?",
+      "competency": "Digital circuit design",
+      "dimension": "Technical",
+      "target_gap": "Digital electronic circuit design",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate's circuit fundamentals and component-level debug experience extend to design-level digital reasoning required for the role.",
+      "source_evidence": [
+        "Circuit fundamentals",
+        "Electronics debugging and repair",
+        "Reading schematics"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Walk me through how you would review a captured schematic for a new microcontroller-based image-capture board before it is released for layout. What checks would you make for power, reset, clocks, interfaces, and testability?",
+      "competency": "Schematic review",
+      "dimension": "Situational",
+      "target_gap": "Electronic schematics",
+      "difficulty": "mid",
+      "rationale": "The profile shows schematic-reading experience, while the role requires schematic capture and design review rather than only interpretation.",
+      "source_evidence": [
+        "Reading schematics",
+        "Electronic schematics"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "What microprocessor- or microcontroller-based hardware have you personally worked with, and what was your specific responsibility in its design, programming, bring-up, or test?",
+      "competency": "Microprocessor design exposure",
+      "dimension": "Technical",
+      "target_gap": "Microprocessor-based design",
+      "difficulty": "mid",
+      "rationale": "Directly clarifies a weakly matched core requirement without assuming that the candidate has microprocessor design experience.",
+      "source_evidence": [
+        "Shell scripting",
+        "Electronic component and assembly testing"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Please write or describe a small C routine for an interrupt-driven peripheral interface that safely shares data with a main loop. Explain your choices around volatile data, buffering, timing, and error handling.",
+      "competency": "Embedded C",
+      "dimension": "Technical",
+      "target_gap": "C programming",
+      "difficulty": "hard",
+      "rationale": "C programming is a central stated requirement, but the profile documents scripting and test procedures rather than demonstrated C development.",
+      "source_evidence": [
+        "Created and revised programming and testing procedures",
+        "Shell scripting",
+        "C programming"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Suppose an image-capture subsystem intermittently stops responding after several hours in the field. How would you design the embedded controller architecture and diagnostic strategy to isolate and recover from the fault?",
+      "competency": "Embedded controller implementation",
+      "dimension": "Situational",
+      "target_gap": "Embedded controller implementation",
+      "difficulty": "hard",
+      "rationale": "Embedded controller implementation is the highest-weight missing requirement and is central to the job's product work.",
+      "source_evidence": [
+        "Embedded controller implementation",
+        "Hardware testing",
+        "Test automation"
+      ],
+      "priority": 1.0
+    },
+    {
+      "question": "Describe a microcontroller project you have built or supported, including the device family, peripheral interfaces, firmware structure, debug method, and the outcome. If you have not done one, explain how you would approach learning and delivering it.",
+      "competency": "Microcontroller development",
+      "dimension": "Technical",
+      "target_gap": "Microcontroller development",
+      "difficulty": "mid",
+      "rationale": "Separates direct microcontroller experience from the candidate's documented software-development and test-automation background.",
+      "source_evidence": [
+        "Software development and documentation",
+        "Test automation",
+        "Microcontroller development"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "How would you partition responsibilities between an FPGA and a microcontroller in a high-throughput image-capture system, particularly for timing-critical acquisition, buffering, configuration, and diagnostics?",
+      "competency": "FPGA system partitioning",
+      "dimension": "Technical",
+      "target_gap": "FPGA development",
+      "difficulty": "hard",
+      "rationale": "Probes a weakly matched required FPGA capability through a role-relevant architecture decision.",
+      "source_evidence": [
+        "Software development and documentation",
+        "FPGA development",
+        "Image capture systems"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "A PCB designer asks for guidance on routing a board containing a microcontroller, image sensor interface, power regulators, and fast digital lines. What placement and routing constraints would you provide, and why?",
+      "competency": "PCB layout guidance",
+      "dimension": "Situational",
+      "target_gap": "PCB layout and routing",
+      "difficulty": "hard",
+      "rationale": "The role requires layout and routing guidance, while the profile primarily establishes test procedure and hardware-test experience.",
+      "source_evidence": [
+        "Created and revised programming and testing procedures",
+        "Reading schematics",
+        "PCB layout and routing"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Have you created a PCB design from requirements through schematic, placement, layout review, and fabrication output? Please distinguish clearly between work you personally performed and work you reviewed or tested.",
+      "competency": "PCB design ownership",
+      "dimension": "Technical",
+      "target_gap": "PCB design",
+      "difficulty": "mid",
+      "rationale": "PCB design is a high-weight missing competency; the wording verifies scope without inferring undocumented design ownership.",
+      "source_evidence": [
+        "PCB design",
+        "Hardware Test Engineer",
+        "Electronics Technician"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Which development environments have you used to build, flash, debug, and version embedded software? Describe the workflow you would establish when joining a team that uses an unfamiliar IDE.",
+      "competency": "Embedded IDE workflow",
+      "dimension": "Technical",
+      "target_gap": "IDE tools",
+      "difficulty": "mid",
+      "rationale": "No IDE-tool experience is documented, so this assesses both direct exposure and an evidence-based learning approach.",
+      "source_evidence": [
+        "Linux",
+        "Bash",
+        "Shell scripting",
+        "IDE tools"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "What experience, if any, do you have with Texas Instruments Code Composer Studio? If it is new to you, outline how you would bring up, build, flash, and debug a TI microcontroller project during your first week.",
+      "competency": "Code Composer Studio",
+      "dimension": "Situational",
+      "target_gap": "Code Composer Studio",
+      "difficulty": "mid",
+      "rationale": "Code Composer Studio is explicitly required and missing from the documented profile.",
+      "source_evidence": [
+        "Code Composer Studio",
+        "Linux",
+        "Bash shell scripts"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Describe the closest work you have done to firmware development. What code or automation did you personally create, how was it tested, and how did you manage failures or regressions?",
+      "competency": "Firmware development evidence",
+      "dimension": "Technical",
+      "target_gap": "Firmware development",
+      "difficulty": "mid",
+      "rationale": "The candidate developed test automation and procedures, but the profile does not establish production firmware ownership.",
+      "source_evidence": [
+        "Developed and maintained an in-house test automation framework",
+        "Software development and documentation",
+        "Firmware development"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Give an example of a programming or test procedure you revised that improved repeatability or reduced manufacturing errors. How did you control revisions, train users, and verify that the change worked on the production floor?",
+      "competency": "Manufacturing documentation",
+      "dimension": "Behavioural",
+      "target_gap": "Manufacturing documentation",
+      "difficulty": "mid",
+      "rationale": "Builds on the candidate's documented procedure, documentation, and training experience while testing the manufacturing-facing documentation requirement.",
+      "source_evidence": [
+        "Created and revised programming and testing procedures",
+        "Trained staff on test procedure software development and documentation",
+        "Manufacturing documentation"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "What exposure have you had to assembly language or low-level debugging? Describe a case where inspecting registers, memory, startup code, or disassembly helped resolve a hardware-software issue.",
+      "competency": "Assembler programming",
+      "dimension": "Technical",
+      "target_gap": "Assembler programming",
+      "difficulty": "hard",
+      "rationale": "Assembler is preferred and only weakly supported by general programming-procedure evidence.",
+      "source_evidence": [
+        "Created and revised programming and testing procedures",
+        "Assembler programming",
+        "Terminal macros"
+      ],
+      "priority": 0.55
+    },
+    {
+      "question": "Have you used DX Designer for schematic capture or PCB design? If not, how would you transfer your schematic-reading and hardware-test knowledge into a DX Designer design-review workflow?",
+      "competency": "DX Designer adoption",
+      "dimension": "Situational",
+      "target_gap": "DX Designer",
+      "difficulty": "mid",
+      "rationale": "Tests an undocumented preferred tool while connecting the question to verified schematic experience.",
+      "source_evidence": [
+        "DX Designer",
+        "Reading schematics",
+        "Hardware testing"
+      ],
+      "priority": 0.58
+    },
+    {
+      "question": "What PCB CAD tools have you used, including Altium if applicable? Describe a specific design or review task you performed in the tool and the outputs you produced or checked.",
+      "competency": "Altium experience",
+      "dimension": "Technical",
+      "target_gap": "Altium",
+      "difficulty": "mid",
+      "rationale": "Altium is a missing preferred skill; the question distinguishes direct tool experience from adjacent hardware work.",
+      "source_evidence": [
+        "Altium",
+        "Reading schematics",
+        "Electronics Technician"
+      ],
+      "priority": 0.57
+    },
+    {
+      "question": "This team may use PAD PCB design tools. How would you learn the tool while ensuring that library choices, design rules, and manufacturing outputs are reliable?",
+      "competency": "PAD tool readiness",
+      "dimension": "Situational",
+      "target_gap": "PAD PCB design tools",
+      "difficulty": "mid",
+      "rationale": "Assesses readiness for a missing preferred tool and the candidate's ability to work methodically in a production context.",
+      "source_evidence": [
+        "PAD PCB design tools",
+        "Manufacturing documentation",
+        "Test procedure software development and documentation"
+      ],
+      "priority": 0.59
+    },
+    {
+      "question": "For a high-speed digital interface that shows intermittent data errors, what would you investigate first in the schematic, layout, probing setup, and firmware configuration?",
+      "competency": "High-speed digital design",
+      "dimension": "Technical",
+      "target_gap": "High-speed digital design",
+      "difficulty": "hard",
+      "rationale": "High-speed design is missing from the profile and relevant to the role's FPGA and image-capture context.",
+      "source_evidence": [
+        "High-speed digital design",
+        "Electronics debugging and repair",
+        "Hardware testing"
+      ],
+      "priority": 0.74
+    },
+    {
+      "question": "You have environmental-chamber test experience. How would you adapt a test plan to investigate suspected signal-integrity problems, and which measurements or pass/fail criteria would you use?",
+      "competency": "Signal integrity testing",
+      "dimension": "Situational",
+      "target_gap": "Signal integrity testing",
+      "difficulty": "hard",
+      "rationale": "Uses the candidate's environmental-testing strength to probe the partial match in signal-integrity testing.",
+      "source_evidence": [
+        "Environmental testing",
+        "Stress-tested electronic assemblies using environmental test chambers",
+        "Signal integrity testing"
+      ],
+      "priority": 0.63
+    },
+    {
+      "question": "Describe any EMC-related issue you have encountered in testing or repair. If you have not performed EMC testing directly, explain how you would prepare a product for pre-compliance evaluation and act on a failure result.",
+      "competency": "EMC testing",
+      "dimension": "Technical",
+      "target_gap": "EMC testing",
+      "difficulty": "mid",
+      "rationale": "EMC testing is only partially supported by general environmental test experience, so direct exposure needs validation.",
+      "source_evidence": [
+        "Environmental testing",
+        "EMC testing",
+        "Electronics debugging and repair"
+      ],
+      "priority": 0.62
+    },
+    {
+      "question": "What is your understanding of how a system-on-chip differs from a discrete microcontroller-plus-FPGA design, and what factors would influence the choice for an image-capture product?",
+      "competency": "SoC architecture",
+      "dimension": "Technical",
+      "target_gap": "System-on-chip (SoC) development",
+      "difficulty": "hard",
+      "rationale": "Evaluates the partial SoC match through a practical architecture tradeoff rather than presuming hands-on SoC development.",
+      "source_evidence": [
+        "Trained staff on test procedure software development and documentation",
+        "System-on-chip (SoC) development",
+        "Image capture systems"
+      ],
+      "priority": 0.54
+    },
+    {
+      "question": "What FPGA vendor tools or device families have you used, especially Xilinx? Describe how you would validate an unfamiliar FPGA design's configuration, clocks, I/O constraints, and hardware behavior.",
+      "competency": "Xilinx FPGA workflow",
+      "dimension": "Technical",
+      "target_gap": "Xilinx",
+      "difficulty": "hard",
+      "rationale": "Xilinx is a preferred but missing skill, and this probes both direct experience and a credible validation method.",
+      "source_evidence": [
+        "Xilinx",
+        "FPGA development",
+        "Hardware testing"
+      ],
+      "priority": 0.61
+    },
+    {
+      "question": "Have you worked with Altera devices or toolchains? If not, how would you approach learning an existing Altera-based design well enough to support board bring-up and test?",
+      "competency": "Altera FPGA readiness",
+      "dimension": "Situational",
+      "target_gap": "Altera",
+      "difficulty": "mid",
+      "rationale": "Altera is missing from the profile; the scenario tests learning agility in a hardware-support context.",
+      "source_evidence": [
+        "Altera",
+        "Test automation",
+        "Hardware Test Engineer"
+      ],
+      "priority": 0.52
+    },
+    {
+      "question": "What exposure have you had to Lattice FPGAs or their development tools, and how would you troubleshoot an FPGA configuration failure on a new board?",
+      "competency": "Lattice FPGA readiness",
+      "dimension": "Technical",
+      "target_gap": "Lattice",
+      "difficulty": "mid",
+      "rationale": "Clarifies missing Lattice experience while leveraging the candidate's established debug background.",
+      "source_evidence": [
+        "Lattice",
+        "Electronics debugging and repair",
+        "Hardware testing"
+      ],
+      "priority": 0.51
+    },
+    {
+      "question": "Have you programmed or tested an MSP430-based product? If not, compare the steps you would take to bring up an MSP430 board with the test automation and hardware-debug workflows you have used.",
+      "competency": "MSP430 bring-up",
+      "dimension": "Situational",
+      "target_gap": "MSP430",
+      "difficulty": "mid",
+      "rationale": "MSP430 is a missing preferred device skill; the question tests practical adaptation without assuming prior use.",
+      "source_evidence": [
+        "MSP430",
+        "Developed and maintained an in-house test automation framework",
+        "Electronics debugging and repair"
+      ],
+      "priority": 0.52
+    },
+    {
+      "question": "What experience do you have with TM4C microcontrollers? Walk through your plan for validating clocks, reset, power, JTAG access, and a first peripheral on a newly assembled TM4C board.",
+      "competency": "TM4C board bring-up",
+      "dimension": "Technical",
+      "target_gap": "TM4C",
+      "difficulty": "mid",
+      "rationale": "TM4C is missing from the profile, and the question tests core board bring-up reasoning relevant to the position.",
+      "source_evidence": [
+        "TM4C",
+        "Electronic component and assembly testing",
+        "Reading schematics"
+      ],
+      "priority": 0.52
+    },
+    {
+      "question": "What experience do you have with the NXP i.MX family or similar application processors? How would you structure early hardware and firmware bring-up for a board using one?",
+      "competency": "NXP i.MX readiness",
+      "dimension": "Technical",
+      "target_gap": "NXP i.MX family",
+      "difficulty": "hard",
+      "rationale": "NXP i.MX is a missing preferred skill and is relevant to sophisticated embedded image-capture systems.",
+      "source_evidence": [
+        "NXP i.MX family",
+        "Linux",
+        "Unix file systems"
+      ],
+      "priority": 0.55
+    },
+    {
+      "question": "Describe a software-development task from your test-automation work that required you to interface with hardware or test equipment. How would you translate that experience into developing and debugging microprocessor firmware?",
+      "competency": "Microprocessor firmware transition",
+      "dimension": "Behavioural",
+      "target_gap": "Microprocessor firmware development",
+      "difficulty": "mid",
+      "rationale": "Connects the candidate's verified automation experience to the weakly matched preferred microprocessor-firmware requirement while testing transferability.",
+      "source_evidence": [
+        "Developed and maintained an in-house test automation framework",
+        "Software development and documentation",
+        "Microprocessor firmware development"
+      ],
+      "priority": 0.6
+    },
+    {
+      "question": "At Zoom, you overhauled programming and testing processes with management. Describe how you identified the problem, aligned stakeholders, introduced the new process, and measured whether it improved delivery or quality.",
+      "competency": "Process improvement leadership",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Probes a documented leadership and process-improvement accomplishment that can indicate effectiveness in a cross-functional engineering environment.",
+      "source_evidence": [
+        "Overhauled programming and testing processes and infrastructure with management",
+        "Team lead experience",
+        "Scheduled due dates and tracked projects to completion"
+      ],
+      "priority": 0.69
+    },
+    {
+      "question": "This position requires onsite work five days per week and close interaction with manufacturing. What specifically motivates you to move from hardware test and repair into this hands-on digital engineering role, and how would you build effective day-to-day relationships with production partners?",
+      "competency": "Role motivation and collaboration",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Assesses motivation for the transition and collaboration style using the candidate's documented training, manufacturing-adjacent, and hardware-test background.",
+      "source_evidence": [
+        "Primary trainer on test procedure software development and documentation",
+        "Assembled and maintained records for component kits for shipment to manufacturing",
+        "Hardware Test Engineer"
+      ],
+      "priority": 0.78
+    }
+  ],
+  "valid_questions": [
+    {
+      "question": "Describe the most complex digital circuit or electronic assembly you have diagnosed or tested. How did you move from the schematic and observed symptoms to a defensible root-cause conclusion?",
+      "competency": "Digital circuit design",
+      "dimension": "Technical",
+      "target_gap": "Digital electronic circuit design",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate's circuit fundamentals and component-level debug experience extend to design-level digital reasoning required for the role.",
+      "source_evidence": [
+        "Circuit fundamentals",
+        "Electronics debugging and repair",
+        "Reading schematics"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Walk me through how you would review a captured schematic for a new microcontroller-based image-capture board before it is released for layout. What checks would you make for power, reset, clocks, interfaces, and testability?",
+      "competency": "Schematic review",
+      "dimension": "Situational",
+      "target_gap": "Electronic schematics",
+      "difficulty": "mid",
+      "rationale": "The profile shows schematic-reading experience, while the role requires schematic capture and design review rather than only interpretation.",
+      "source_evidence": [
+        "Reading schematics",
+        "Electronic schematics"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "What microprocessor- or microcontroller-based hardware have you personally worked with, and what was your specific responsibility in its design, programming, bring-up, or test?",
+      "competency": "Microprocessor design exposure",
+      "dimension": "Technical",
+      "target_gap": "Microprocessor-based design",
+      "difficulty": "mid",
+      "rationale": "Directly clarifies a weakly matched core requirement without assuming that the candidate has microprocessor design experience.",
+      "source_evidence": [
+        "Shell scripting",
+        "Electronic component and assembly testing"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Please write or describe a small C routine for an interrupt-driven peripheral interface that safely shares data with a main loop. Explain your choices around volatile data, buffering, timing, and error handling.",
+      "competency": "Embedded C",
+      "dimension": "Technical",
+      "target_gap": "C programming",
+      "difficulty": "hard",
+      "rationale": "C programming is a central stated requirement, but the profile documents scripting and test procedures rather than demonstrated C development.",
+      "source_evidence": [
+        "Created and revised programming and testing procedures",
+        "Shell scripting",
+        "C programming"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Suppose an image-capture subsystem intermittently stops responding after several hours in the field. How would you design the embedded controller architecture and diagnostic strategy to isolate and recover from the fault?",
+      "competency": "Embedded controller implementation",
+      "dimension": "Situational",
+      "target_gap": "Embedded controller implementation",
+      "difficulty": "hard",
+      "rationale": "Embedded controller implementation is the highest-weight missing requirement and is central to the job's product work.",
+      "source_evidence": [
+        "Embedded controller implementation",
+        "Hardware testing",
+        "Test automation"
+      ],
+      "priority": 1.0
+    },
+    {
+      "question": "Describe a microcontroller project you have built or supported, including the device family, peripheral interfaces, firmware structure, debug method, and the outcome. If you have not done one, explain how you would approach learning and delivering it.",
+      "competency": "Microcontroller development",
+      "dimension": "Technical",
+      "target_gap": "Microcontroller development",
+      "difficulty": "mid",
+      "rationale": "Separates direct microcontroller experience from the candidate's documented software-development and test-automation background.",
+      "source_evidence": [
+        "Software development and documentation",
+        "Test automation",
+        "Microcontroller development"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "How would you partition responsibilities between an FPGA and a microcontroller in a high-throughput image-capture system, particularly for timing-critical acquisition, buffering, configuration, and diagnostics?",
+      "competency": "FPGA system partitioning",
+      "dimension": "Technical",
+      "target_gap": "FPGA development",
+      "difficulty": "hard",
+      "rationale": "Probes a weakly matched required FPGA capability through a role-relevant architecture decision.",
+      "source_evidence": [
+        "Software development and documentation",
+        "FPGA development",
+        "Image capture systems"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "A PCB designer asks for guidance on routing a board containing a microcontroller, image sensor interface, power regulators, and fast digital lines. What placement and routing constraints would you provide, and why?",
+      "competency": "PCB layout guidance",
+      "dimension": "Situational",
+      "target_gap": "PCB layout and routing",
+      "difficulty": "hard",
+      "rationale": "The role requires layout and routing guidance, while the profile primarily establishes test procedure and hardware-test experience.",
+      "source_evidence": [
+        "Created and revised programming and testing procedures",
+        "Reading schematics",
+        "PCB layout and routing"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Have you created a PCB design from requirements through schematic, placement, layout review, and fabrication output? Please distinguish clearly between work you personally performed and work you reviewed or tested.",
+      "competency": "PCB design ownership",
+      "dimension": "Technical",
+      "target_gap": "PCB design",
+      "difficulty": "mid",
+      "rationale": "PCB design is a high-weight missing competency; the wording verifies scope without inferring undocumented design ownership.",
+      "source_evidence": [
+        "PCB design",
+        "Hardware Test Engineer",
+        "Electronics Technician"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Which development environments have you used to build, flash, debug, and version embedded software? Describe the workflow you would establish when joining a team that uses an unfamiliar IDE.",
+      "competency": "Embedded IDE workflow",
+      "dimension": "Technical",
+      "target_gap": "IDE tools",
+      "difficulty": "mid",
+      "rationale": "No IDE-tool experience is documented, so this assesses both direct exposure and an evidence-based learning approach.",
+      "source_evidence": [
+        "Linux",
+        "Bash",
+        "Shell scripting",
+        "IDE tools"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "What experience, if any, do you have with Texas Instruments Code Composer Studio? If it is new to you, outline how you would bring up, build, flash, and debug a TI microcontroller project during your first week.",
+      "competency": "Code Composer Studio",
+      "dimension": "Situational",
+      "target_gap": "Code Composer Studio",
+      "difficulty": "mid",
+      "rationale": "Code Composer Studio is explicitly required and missing from the documented profile.",
+      "source_evidence": [
+        "Code Composer Studio",
+        "Linux",
+        "Bash shell scripts"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Describe the closest work you have done to firmware development. What code or automation did you personally create, how was it tested, and how did you manage failures or regressions?",
+      "competency": "Firmware development evidence",
+      "dimension": "Technical",
+      "target_gap": "Firmware development",
+      "difficulty": "mid",
+      "rationale": "The candidate developed test automation and procedures, but the profile does not establish production firmware ownership.",
+      "source_evidence": [
+        "Developed and maintained an in-house test automation framework",
+        "Software development and documentation",
+        "Firmware development"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Give an example of a programming or test procedure you revised that improved repeatability or reduced manufacturing errors. How did you control revisions, train users, and verify that the change worked on the production floor?",
+      "competency": "Manufacturing documentation",
+      "dimension": "Behavioural",
+      "target_gap": "Manufacturing documentation",
+      "difficulty": "mid",
+      "rationale": "Builds on the candidate's documented procedure, documentation, and training experience while testing the manufacturing-facing documentation requirement.",
+      "source_evidence": [
+        "Created and revised programming and testing procedures",
+        "Trained staff on test procedure software development and documentation",
+        "Manufacturing documentation"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "What exposure have you had to assembly language or low-level debugging? Describe a case where inspecting registers, memory, startup code, or disassembly helped resolve a hardware-software issue.",
+      "competency": "Assembler programming",
+      "dimension": "Technical",
+      "target_gap": "Assembler programming",
+      "difficulty": "hard",
+      "rationale": "Assembler is preferred and only weakly supported by general programming-procedure evidence.",
+      "source_evidence": [
+        "Created and revised programming and testing procedures",
+        "Assembler programming",
+        "Terminal macros"
+      ],
+      "priority": 0.55
+    },
+    {
+      "question": "Have you used DX Designer for schematic capture or PCB design? If not, how would you transfer your schematic-reading and hardware-test knowledge into a DX Designer design-review workflow?",
+      "competency": "DX Designer adoption",
+      "dimension": "Situational",
+      "target_gap": "DX Designer",
+      "difficulty": "mid",
+      "rationale": "Tests an undocumented preferred tool while connecting the question to verified schematic experience.",
+      "source_evidence": [
+        "DX Designer",
+        "Reading schematics",
+        "Hardware testing"
+      ],
+      "priority": 0.58
+    },
+    {
+      "question": "What PCB CAD tools have you used, including Altium if applicable? Describe a specific design or review task you performed in the tool and the outputs you produced or checked.",
+      "competency": "Altium experience",
+      "dimension": "Technical",
+      "target_gap": "Altium",
+      "difficulty": "mid",
+      "rationale": "Altium is a missing preferred skill; the question distinguishes direct tool experience from adjacent hardware work.",
+      "source_evidence": [
+        "Altium",
+        "Reading schematics",
+        "Electronics Technician"
+      ],
+      "priority": 0.57
+    },
+    {
+      "question": "This team may use PAD PCB design tools. How would you learn the tool while ensuring that library choices, design rules, and manufacturing outputs are reliable?",
+      "competency": "PAD tool readiness",
+      "dimension": "Situational",
+      "target_gap": "PAD PCB design tools",
+      "difficulty": "mid",
+      "rationale": "Assesses readiness for a missing preferred tool and the candidate's ability to work methodically in a production context.",
+      "source_evidence": [
+        "PAD PCB design tools",
+        "Manufacturing documentation",
+        "Test procedure software development and documentation"
+      ],
+      "priority": 0.59
+    },
+    {
+      "question": "For a high-speed digital interface that shows intermittent data errors, what would you investigate first in the schematic, layout, probing setup, and firmware configuration?",
+      "competency": "High-speed digital design",
+      "dimension": "Technical",
+      "target_gap": "High-speed digital design",
+      "difficulty": "hard",
+      "rationale": "High-speed design is missing from the profile and relevant to the role's FPGA and image-capture context.",
+      "source_evidence": [
+        "High-speed digital design",
+        "Electronics debugging and repair",
+        "Hardware testing"
+      ],
+      "priority": 0.74
+    },
+    {
+      "question": "You have environmental-chamber test experience. How would you adapt a test plan to investigate suspected signal-integrity problems, and which measurements or pass/fail criteria would you use?",
+      "competency": "Signal integrity testing",
+      "dimension": "Situational",
+      "target_gap": "Signal integrity testing",
+      "difficulty": "hard",
+      "rationale": "Uses the candidate's environmental-testing strength to probe the partial match in signal-integrity testing.",
+      "source_evidence": [
+        "Environmental testing",
+        "Stress-tested electronic assemblies using environmental test chambers",
+        "Signal integrity testing"
+      ],
+      "priority": 0.63
+    },
+    {
+      "question": "Describe any EMC-related issue you have encountered in testing or repair. If you have not performed EMC testing directly, explain how you would prepare a product for pre-compliance evaluation and act on a failure result.",
+      "competency": "EMC testing",
+      "dimension": "Technical",
+      "target_gap": "EMC testing",
+      "difficulty": "mid",
+      "rationale": "EMC testing is only partially supported by general environmental test experience, so direct exposure needs validation.",
+      "source_evidence": [
+        "Environmental testing",
+        "EMC testing",
+        "Electronics debugging and repair"
+      ],
+      "priority": 0.62
+    },
+    {
+      "question": "What is your understanding of how a system-on-chip differs from a discrete microcontroller-plus-FPGA design, and what factors would influence the choice for an image-capture product?",
+      "competency": "SoC architecture",
+      "dimension": "Technical",
+      "target_gap": "System-on-chip (SoC) development",
+      "difficulty": "hard",
+      "rationale": "Evaluates the partial SoC match through a practical architecture tradeoff rather than presuming hands-on SoC development.",
+      "source_evidence": [
+        "Trained staff on test procedure software development and documentation",
+        "System-on-chip (SoC) development",
+        "Image capture systems"
+      ],
+      "priority": 0.54
+    },
+    {
+      "question": "What FPGA vendor tools or device families have you used, especially Xilinx? Describe how you would validate an unfamiliar FPGA design's configuration, clocks, I/O constraints, and hardware behavior.",
+      "competency": "Xilinx FPGA workflow",
+      "dimension": "Technical",
+      "target_gap": "Xilinx",
+      "difficulty": "hard",
+      "rationale": "Xilinx is a preferred but missing skill, and this probes both direct experience and a credible validation method.",
+      "source_evidence": [
+        "Xilinx",
+        "FPGA development",
+        "Hardware testing"
+      ],
+      "priority": 0.61
+    },
+    {
+      "question": "Have you worked with Altera devices or toolchains? If not, how would you approach learning an existing Altera-based design well enough to support board bring-up and test?",
+      "competency": "Altera FPGA readiness",
+      "dimension": "Situational",
+      "target_gap": "Altera",
+      "difficulty": "mid",
+      "rationale": "Altera is missing from the profile; the scenario tests learning agility in a hardware-support context.",
+      "source_evidence": [
+        "Altera",
+        "Test automation",
+        "Hardware Test Engineer"
+      ],
+      "priority": 0.52
+    },
+    {
+      "question": "What exposure have you had to Lattice FPGAs or their development tools, and how would you troubleshoot an FPGA configuration failure on a new board?",
+      "competency": "Lattice FPGA readiness",
+      "dimension": "Technical",
+      "target_gap": "Lattice",
+      "difficulty": "mid",
+      "rationale": "Clarifies missing Lattice experience while leveraging the candidate's established debug background.",
+      "source_evidence": [
+        "Lattice",
+        "Electronics debugging and repair",
+        "Hardware testing"
+      ],
+      "priority": 0.51
+    },
+    {
+      "question": "Have you programmed or tested an MSP430-based product? If not, compare the steps you would take to bring up an MSP430 board with the test automation and hardware-debug workflows you have used.",
+      "competency": "MSP430 bring-up",
+      "dimension": "Situational",
+      "target_gap": "MSP430",
+      "difficulty": "mid",
+      "rationale": "MSP430 is a missing preferred device skill; the question tests practical adaptation without assuming prior use.",
+      "source_evidence": [
+        "MSP430",
+        "Developed and maintained an in-house test automation framework",
+        "Electronics debugging and repair"
+      ],
+      "priority": 0.52
+    },
+    {
+      "question": "What experience do you have with TM4C microcontrollers? Walk through your plan for validating clocks, reset, power, JTAG access, and a first peripheral on a newly assembled TM4C board.",
+      "competency": "TM4C board bring-up",
+      "dimension": "Technical",
+      "target_gap": "TM4C",
+      "difficulty": "mid",
+      "rationale": "TM4C is missing from the profile, and the question tests core board bring-up reasoning relevant to the position.",
+      "source_evidence": [
+        "TM4C",
+        "Electronic component and assembly testing",
+        "Reading schematics"
+      ],
+      "priority": 0.52
+    },
+    {
+      "question": "What experience do you have with the NXP i.MX family or similar application processors? How would you structure early hardware and firmware bring-up for a board using one?",
+      "competency": "NXP i.MX readiness",
+      "dimension": "Technical",
+      "target_gap": "NXP i.MX family",
+      "difficulty": "hard",
+      "rationale": "NXP i.MX is a missing preferred skill and is relevant to sophisticated embedded image-capture systems.",
+      "source_evidence": [
+        "NXP i.MX family",
+        "Linux",
+        "Unix file systems"
+      ],
+      "priority": 0.55
+    },
+    {
+      "question": "Describe a software-development task from your test-automation work that required you to interface with hardware or test equipment. How would you translate that experience into developing and debugging microprocessor firmware?",
+      "competency": "Microprocessor firmware transition",
+      "dimension": "Behavioural",
+      "target_gap": "Microprocessor firmware development",
+      "difficulty": "mid",
+      "rationale": "Connects the candidate's verified automation experience to the weakly matched preferred microprocessor-firmware requirement while testing transferability.",
+      "source_evidence": [
+        "Developed and maintained an in-house test automation framework",
+        "Software development and documentation",
+        "Microprocessor firmware development"
+      ],
+      "priority": 0.6
+    },
+    {
+      "question": "At Zoom, you overhauled programming and testing processes with management. Describe how you identified the problem, aligned stakeholders, introduced the new process, and measured whether it improved delivery or quality.",
+      "competency": "Process improvement leadership",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Probes a documented leadership and process-improvement accomplishment that can indicate effectiveness in a cross-functional engineering environment.",
+      "source_evidence": [
+        "Overhauled programming and testing processes and infrastructure with management",
+        "Team lead experience",
+        "Scheduled due dates and tracked projects to completion"
+      ],
+      "priority": 0.69
+    },
+    {
+      "question": "This position requires onsite work five days per week and close interaction with manufacturing. What specifically motivates you to move from hardware test and repair into this hands-on digital engineering role, and how would you build effective day-to-day relationships with production partners?",
+      "competency": "Role motivation and collaboration",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Assesses motivation for the transition and collaboration style using the candidate's documented training, manufacturing-adjacent, and hardware-test background.",
+      "source_evidence": [
+        "Primary trainer on test procedure software development and documentation",
+        "Assembled and maintained records for component kits for shipment to manufacturing",
+        "Hardware Test Engineer"
+      ],
+      "priority": 0.78
+    }
+  ],
+  "validation_failures": [],
+  "n_raw": 30,
+  "n_valid": 30,
+  "n_failed": 0,
+  "weights": [
+    0.3664,
+    0.3532,
+    0.7293,
+    0.6533,
+    0.9516,
+    0.6503,
+    0.6569,
+    0.7106,
+    0.9352,
+    0.9212,
+    0.9322,
+    0.6473,
+    0.3832,
+    0.392,
+    0.5672,
+    0.5568,
+    0.5633,
+    0.5533,
+    0.2369,
+    0.2399,
+    0.2331,
+    0.558,
+    0.5665,
+    0.571,
+    0.5687,
+    0.5678,
+    0.573,
+    0.3883,
+    0.572375,
+    0.572375
+  ],
+  "weight_outcomes": [
+    {
+      "rule": "exact",
+      "weight": 0.3664,
+      "matched_competency": "Digital electronic circuit design",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3532,
+      "matched_competency": "Electronic schematics",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7293,
+      "matched_competency": "Microprocessor-based design",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6533,
+      "matched_competency": "C programming",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9516,
+      "matched_competency": "Embedded controller implementation",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6503,
+      "matched_competency": "Microcontroller development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6569,
+      "matched_competency": "FPGA development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7106,
+      "matched_competency": "PCB layout and routing",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9352,
+      "matched_competency": "PCB design",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9212,
+      "matched_competency": "IDE tools",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9322,
+      "matched_competency": "Code Composer Studio",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6473,
+      "matched_competency": "Firmware development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3832,
+      "matched_competency": "Manufacturing documentation",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.392,
+      "matched_competency": "Assembler programming",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.5672,
+      "matched_competency": "DX Designer",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.5568,
+      "matched_competency": "Altium",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.5633,
+      "matched_competency": "PAD PCB design tools",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.5533,
+      "matched_competency": "High-speed digital design",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2369,
+      "matched_competency": "Signal integrity testing",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2399,
+      "matched_competency": "EMC testing",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2331,
+      "matched_competency": "System-on-chip (SoC) development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.558,
+      "matched_competency": "Xilinx",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.5665,
+      "matched_competency": "Altera",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.571,
+      "matched_competency": "Lattice",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.5687,
+      "matched_competency": "MSP430",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.5678,
+      "matched_competency": "TM4C",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.573,
+      "matched_competency": "NXP i.MX family",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3883,
+      "matched_competency": "Microprocessor firmware development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.572375,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.572375,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    }
+  ],
+  "fallback_rate": 0.0,
+  "profile_probe_rate": 0.06666666666666667,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 8917,
+    "output_tokens": 3437,
+    "cached_tokens": 0,
+    "estimated_cost": 0.059078,
+    "latency_ms": 28465.38,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.059078,
+  "cost_cny": 0.39995806,
+  "usd_cny_rate": 6.77,
+  "user_prompt_sha256": "86bee9fda8d2fb72c6a98a2affac60f9740b9d41b026cfaabf77f791b9a79ccd",
+  "generated_at": "2026-10-11T13:14:05.818244+00:00"
+}

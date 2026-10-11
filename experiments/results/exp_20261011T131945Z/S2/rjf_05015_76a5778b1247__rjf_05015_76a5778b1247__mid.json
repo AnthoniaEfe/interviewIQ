@@ -1,0 +1,219 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_05015_76a5778b1247",
+  "jd_id": "rjf_05015_76a5778b1247",
+  "pair_id": "rjf_05015_76a5778b1247",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_05015_76a5778b1247__rjf_05015_76a5778b1247__mid.json",
+  "n_requirements": 22,
+  "questions": [
+    {
+      "question": "When should a cost accountant capitalize production-related costs into inventory versus expense them, and how would that treatment affect gross margin and variance reporting?"
+    },
+    {
+      "question": "Your experience includes Oracle and Hyperion. Describe how you have used each system in accounting work, including the transactions or reports you owned and the controls you relied on."
+    },
+    {
+      "question": "What would be your month-end close checklist for a plant accounting function, including subsystem cutoffs, reconciliations, inventory-related activities, journal entries, review, and escalation?"
+    },
+    {
+      "question": "What US GAAP areas have you applied directly, and how did you make sure a journal entry or financial statement presentation complied with the applicable guidance?"
+    },
+    {
+      "question": "This role supports a contract manufacturer of in-vitro diagnostics and medical devices. What accounting risks would you expect in a regulated manufacturing environment, and how would you partner with Quality and Operations without compromising financial-control responsibilities?"
+    },
+    {
+      "question": "Describe how you would prepare and reconcile the accounting records before, during, and after a semi-annual physical inventory count. What discrepancies would require escalation?"
+    },
+    {
+      "question": "Describe the accounting data flows you would expect in a manufacturing ERP from production transactions through inventory valuation, cost of goods sold, and the general ledger. Where would you place key reconciliation controls?"
+    },
+    {
+      "question": "You inherit two accounting-data-entry staff members whose accuracy and timeliness are inconsistent during close. How would you set expectations, review work, coach them, and measure improvement?"
+    },
+    {
+      "question": "Walk me through how you would translate a set of local GAAP ledger balances into IFRS reporting adjustments for a parent-company reporting package. Which differences would you validate first, and how would you document your conclusions?"
+    },
+    {
+      "question": "What does profit-center accounting measure, and how would you ensure that revenue, transfer prices, direct costs, and shared costs support meaningful profitability reporting?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "When should a cost accountant capitalize production-related costs into inventory versus expense them, and how would that treatment affect gross margin and variance reporting?",
+      "competency": "Inventory cost accounting",
+      "competency_type": "technical",
+      "target_gap": "Standard costing",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "This tests foundational cost-accounting judgment that is not evidenced by the candidate's general accounting background.",
+      "source_evidence": [
+        "standard costing",
+        "semi-annual physical inventory management"
+      ],
+      "priority": 0.88,
+      "weight": 0.7122
+    },
+    {
+      "question": "Your experience includes Oracle and Hyperion. Describe how you have used each system in accounting work, including the transactions or reports you owned and the controls you relied on.",
+      "competency": "ERP experience validation",
+      "competency_type": "technical",
+      "target_gap": "profile_probe",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "This profile-specific probe clarifies the depth and transferability of the candidate's stated enterprise-system experience.",
+      "source_evidence": [
+        "Oracle",
+        "Hyperion",
+        "Staff Accountant, Education First, 12/2017\u201311/2018"
+      ],
+      "priority": 0.72,
+      "weight": 0.5665363636363637
+    },
+    {
+      "question": "What would be your month-end close checklist for a plant accounting function, including subsystem cutoffs, reconciliations, inventory-related activities, journal entries, review, and escalation?",
+      "competency": "Month-end closing",
+      "competency_type": "domain",
+      "target_gap": "Month-end closing",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Closing Processes is listed, but the weak match warrants confirming ownership depth in a manufacturing close.",
+      "source_evidence": [
+        "monthly closing",
+        "Closing Processes",
+        "Monthly Journal Entries"
+      ],
+      "priority": 0.88,
+      "weight": 0.653
+    },
+    {
+      "question": "What US GAAP areas have you applied directly, and how did you make sure a journal entry or financial statement presentation complied with the applicable guidance?",
+      "competency": "US GAAP application",
+      "competency_type": "technical",
+      "target_gap": "US GAAP",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate claims GAAP compliance, while the role requires demonstrated application of US GAAP.",
+      "source_evidence": [
+        "US GAAP",
+        "GAAP Compliance"
+      ],
+      "priority": 0.77,
+      "weight": 0.3887
+    },
+    {
+      "question": "This role supports a contract manufacturer of in-vitro diagnostics and medical devices. What accounting risks would you expect in a regulated manufacturing environment, and how would you partner with Quality and Operations without compromising financial-control responsibilities?",
+      "competency": "Regulated manufacturing awareness",
+      "competency_type": "domain",
+      "target_gap": "Manufacturing ERP systems",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "The profile does not evidence manufacturing experience; this tests the candidate's ability to reason about the operating context tied to ERP and controls.",
+      "source_evidence": [
+        "contract manufacturer for in-vitro diagnostics",
+        "manufacturing ERP systems"
+      ],
+      "priority": 0.82,
+      "weight": 0.927
+    },
+    {
+      "question": "Describe how you would prepare and reconcile the accounting records before, during, and after a semi-annual physical inventory count. What discrepancies would require escalation?",
+      "competency": "Physical inventory management",
+      "competency_type": "domain",
+      "target_gap": "Physical inventory management",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "The candidate has prior inventory exposure, but no direct physical-inventory-management evidence is provided.",
+      "source_evidence": [
+        "semi-annual physical inventory management",
+        "Inventory"
+      ],
+      "priority": 0.85,
+      "weight": 0.383
+    },
+    {
+      "question": "Describe the accounting data flows you would expect in a manufacturing ERP from production transactions through inventory valuation, cost of goods sold, and the general ledger. Where would you place key reconciliation controls?",
+      "competency": "Manufacturing ERP systems",
+      "competency_type": "technical",
+      "target_gap": "Manufacturing ERP systems",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Manufacturing ERP experience is missing and is central to reliable cost accounting and month-end reporting.",
+      "source_evidence": [
+        "manufacturing ERP systems",
+        "General Ledger"
+      ],
+      "priority": 0.95,
+      "weight": 0.927
+    },
+    {
+      "question": "You inherit two accounting-data-entry staff members whose accuracy and timeliness are inconsistent during close. How would you set expectations, review work, coach them, and measure improvement?",
+      "competency": "Staff management",
+      "competency_type": "other",
+      "target_gap": "Staff management",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "The candidate trained new employees but has no clear evidence of direct staff management accountability.",
+      "source_evidence": [
+        "Manage staff responsible for accounting data entry",
+        "Trained new employees on company procedures."
+      ],
+      "priority": 0.75,
+      "weight": 0.4047
+    },
+    {
+      "question": "Walk me through how you would translate a set of local GAAP ledger balances into IFRS reporting adjustments for a parent-company reporting package. Which differences would you validate first, and how would you document your conclusions?",
+      "competency": "IFRS reporting",
+      "competency_type": "technical",
+      "target_gap": "IFRS",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "IFRS is a required capability with no demonstrated candidate evidence; this tests practical technical understanding and documentation discipline.",
+      "source_evidence": [
+        "IFRS",
+        "GAAP Compliance"
+      ],
+      "priority": 0.98,
+      "weight": 0.9571
+    },
+    {
+      "question": "What does profit-center accounting measure, and how would you ensure that revenue, transfer prices, direct costs, and shared costs support meaningful profitability reporting?",
+      "competency": "Profit center accounting",
+      "competency_type": "technical",
+      "target_gap": "Profit center accounting",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "The profile demonstrates accounting experience but gives limited direct evidence of profit-center methodology.",
+      "source_evidence": [
+        "Cost & Profit Center Accounting methods",
+        "Accounting"
+      ],
+      "priority": 0.81,
+      "weight": 0.404
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    27,
+    22,
+    6,
+    14,
+    21,
+    8,
+    2,
+    16,
+    0,
+    11
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.22,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:50.129841+00:00"
+}

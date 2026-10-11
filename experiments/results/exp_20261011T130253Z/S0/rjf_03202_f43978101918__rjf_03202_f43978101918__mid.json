@@ -1,0 +1,1087 @@
+{
+  "experiment_id": "exp_20261011T130253Z",
+  "stage": "selection_ablation",
+  "condition": "S0",
+  "selection_strategy": "random",
+  "generation_mode": null,
+  "profile_id": "rjf_03202_f43978101918",
+  "jd_id": "rjf_03202_f43978101918",
+  "pair_id": "rjf_03202_f43978101918",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130156Z/pool/rjf_03202_f43978101918__rjf_03202_f43978101918__mid.json",
+  "n_requirements": 5,
+  "questions": [
+    {
+      "question": "What artifacts, participants, and evidence would you expect before approving an FMEA review, and how would you ensure open actions are owned and tracked?"
+    },
+    {
+      "question": "Using a relay-control assembly as an example, explain how you would trace a customer or system need through requirements, design evidence, verification tests, and validation evidence."
+    },
+    {
+      "question": "Suppose a relay-control hardware change could cause an incorrect trip signal in a substation. How would you build the failure chain in an FMEA and decide which controls or design changes are warranted?"
+    },
+    {
+      "question": "Tell us about a time when a test, simulation, or technical result did not match your expectation. How did you isolate the cause and report the outcome?"
+    },
+    {
+      "question": "Describe the medium-voltage circuit breaker simulator you built at Siemens: what panel behaviours did it emulate, what interfaces or signals were involved, and what conditions could it test?"
+    },
+    {
+      "question": "How did you decide that the circuit breaker simulator was sufficiently representative of the actual breaker for panel testing, and what limitations did you communicate?"
+    },
+    {
+      "question": "How would you communicate a validation limitation to a project team when the available test environment cannot fully represent the field environment?"
+    },
+    {
+      "question": "Your background includes smart-card encryption, mobile-cloud security, and SDN security presentations. How do you decide which security concerns are relevant to a hardware verification or design-review activity rather than treating security as a separate concern?"
+    },
+    {
+      "question": "Given a power schematic and a proposed component substitution, how would you determine whether the WCCA needs updating, which operating cases to reanalyze, and what documentation must change?"
+    },
+    {
+      "question": "How would you decide whether a problem can be addressed by a configuration or firmware change versus requiring a physical hardware update? What evidence would support the decision?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "What artifacts, participants, and evidence would you expect before approving an FMEA review, and how would you ensure open actions are owned and tracked?",
+      "competency": "FMEA review governance",
+      "competency_type": "domain",
+      "target_gap": "DFMEA/FMEA reviews",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate understands that FMEA is a cross-functional review and action-management process, not only a worksheet.",
+      "source_evidence": [
+        "Gap: DFMEA/FMEA reviews \u2014 missing",
+        "Organize schedules"
+      ],
+      "priority": 0.92,
+      "weight": 0.959
+    },
+    {
+      "question": "Using a relay-control assembly as an example, explain how you would trace a customer or system need through requirements, design evidence, verification tests, and validation evidence.",
+      "competency": "Requirements traceability",
+      "competency_type": "domain",
+      "target_gap": "Hardware verification and validation",
+      "question_type": "Role-Specific",
+      "difficulty": "hard",
+      "rationale": "Tests end-to-end V&V traceability in a domain connected to the candidate's electrical engineering experience.",
+      "source_evidence": [
+        "Worked on relay settings for electrical equipment used in substations",
+        "Gap: Hardware verification and validation \u2014 partial_match"
+      ],
+      "priority": 0.88,
+      "weight": 0.3869
+    },
+    {
+      "question": "Suppose a relay-control hardware change could cause an incorrect trip signal in a substation. How would you build the failure chain in an FMEA and decide which controls or design changes are warranted?",
+      "competency": "Failure-mode analysis",
+      "competency_type": "other",
+      "target_gap": "DFMEA/FMEA reviews",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Uses the candidate's substation-relay background to determine whether they can apply formal risk analysis to a relevant hardware scenario.",
+      "source_evidence": [
+        "Worked on relay settings for electrical equipment used in substations",
+        "Gap: DFMEA/FMEA reviews \u2014 missing"
+      ],
+      "priority": 0.96,
+      "weight": 0.959
+    },
+    {
+      "question": "Tell us about a time when a test, simulation, or technical result did not match your expectation. How did you isolate the cause and report the outcome?",
+      "competency": "Test problem solving",
+      "competency_type": "soft",
+      "target_gap": "DV testing",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests diagnostic ownership and communication using the candidate's actual testing, simulation, or academic project background.",
+      "source_evidence": [
+        "Built a Medium Voltage Circuit Breaker Simulator",
+        "Matrix Multiplication Using Verilog",
+        "Simulated OS using Java"
+      ],
+      "priority": 0.78,
+      "weight": 0.3927
+    },
+    {
+      "question": "Describe the medium-voltage circuit breaker simulator you built at Siemens: what panel behaviours did it emulate, what interfaces or signals were involved, and what conditions could it test?",
+      "competency": "DV testing",
+      "competency_type": "domain",
+      "target_gap": "DV testing",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "The circuit-breaker simulator is the strongest direct evidence for DV testing and should be explored for technical depth and individual ownership.",
+      "source_evidence": [
+        "Built a Medium Voltage Circuit Breaker Simulator",
+        "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker"
+      ],
+      "priority": 0.91,
+      "weight": 0.3927
+    },
+    {
+      "question": "How did you decide that the circuit breaker simulator was sufficiently representative of the actual breaker for panel testing, and what limitations did you communicate?",
+      "competency": "Test representativeness",
+      "competency_type": "technical",
+      "target_gap": "DV testing",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Distinguishes simply building a simulator from understanding validation fidelity, test coverage, and residual risk.",
+      "source_evidence": [
+        "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker",
+        "Gap: DV testing \u2014 partial_match"
+      ],
+      "priority": 0.9,
+      "weight": 0.3927
+    },
+    {
+      "question": "How would you communicate a validation limitation to a project team when the available test environment cannot fully represent the field environment?",
+      "competency": "Validation risk communication",
+      "competency_type": "soft",
+      "target_gap": "Hardware verification and validation",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests communication of residual risk, a key capability when test environments or prototypes are constrained.",
+      "source_evidence": [
+        "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker",
+        "Gap: Hardware verification and validation \u2014 partial_match"
+      ],
+      "priority": 0.79,
+      "weight": 0.3869
+    },
+    {
+      "question": "Your background includes smart-card encryption, mobile-cloud security, and SDN security presentations. How do you decide which security concerns are relevant to a hardware verification or design-review activity rather than treating security as a separate concern?",
+      "competency": "Security-aware engineering",
+      "competency_type": "domain",
+      "target_gap": "profile_probe",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate can translate documented security knowledge into practical engineering-review considerations.",
+      "source_evidence": [
+        "Comparison of symmetric and asymmetric encryption algorithms for smart-card security",
+        "ZKP authentication; analysis of Twofish and Blowfish",
+        "SDN security and traffic measurement presentation"
+      ],
+      "priority": 0.56,
+      "weight": 0.66116
+    },
+    {
+      "question": "Given a power schematic and a proposed component substitution, how would you determine whether the WCCA needs updating, which operating cases to reanalyze, and what documentation must change?",
+      "competency": "WCCA change impact analysis",
+      "competency_type": "other",
+      "target_gap": "WCCA updates and reviews",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests ability to connect engineering changes, analysis updates, and configuration-controlled documentation.",
+      "source_evidence": [
+        "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings",
+        "Gap: WCCA updates and reviews \u2014 weak_match"
+      ],
+      "priority": 0.84,
+      "weight": 0.6444
+    },
+    {
+      "question": "How would you decide whether a problem can be addressed by a configuration or firmware change versus requiring a physical hardware update? What evidence would support the decision?",
+      "competency": "Engineering change decision-making",
+      "competency_type": "technical",
+      "target_gap": "Hardware updates",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Tests engineering trade-off thinking and ability to use diagnostic evidence in a hardware-update decision.",
+      "source_evidence": [
+        "Gap: Hardware updates \u2014 missing",
+        "Built a Medium Voltage Circuit Breaker Simulator"
+      ],
+      "priority": 0.9,
+      "weight": 0.9228
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    2,
+    17,
+    1,
+    15,
+    10,
+    11,
+    20,
+    30,
+    6,
+    23
+  ],
+  "repeats": [
+    {
+      "repeat": 0,
+      "selected_indices": [
+        2,
+        17,
+        1,
+        15,
+        10,
+        11,
+        20,
+        30,
+        6,
+        23
+      ],
+      "questions": [
+        {
+          "question": "What artifacts, participants, and evidence would you expect before approving an FMEA review, and how would you ensure open actions are owned and tracked?",
+          "competency": "FMEA review governance",
+          "competency_type": "domain",
+          "target_gap": "DFMEA/FMEA reviews",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Tests whether the candidate understands that FMEA is a cross-functional review and action-management process, not only a worksheet.",
+          "source_evidence": [
+            "Gap: DFMEA/FMEA reviews \u2014 missing",
+            "Organize schedules"
+          ],
+          "priority": 0.92,
+          "weight": 0.959
+        },
+        {
+          "question": "Using a relay-control assembly as an example, explain how you would trace a customer or system need through requirements, design evidence, verification tests, and validation evidence.",
+          "competency": "Requirements traceability",
+          "competency_type": "domain",
+          "target_gap": "Hardware verification and validation",
+          "question_type": "Role-Specific",
+          "difficulty": "hard",
+          "rationale": "Tests end-to-end V&V traceability in a domain connected to the candidate's electrical engineering experience.",
+          "source_evidence": [
+            "Worked on relay settings for electrical equipment used in substations",
+            "Gap: Hardware verification and validation \u2014 partial_match"
+          ],
+          "priority": 0.88,
+          "weight": 0.3869
+        },
+        {
+          "question": "Suppose a relay-control hardware change could cause an incorrect trip signal in a substation. How would you build the failure chain in an FMEA and decide which controls or design changes are warranted?",
+          "competency": "Failure-mode analysis",
+          "competency_type": "other",
+          "target_gap": "DFMEA/FMEA reviews",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Uses the candidate's substation-relay background to determine whether they can apply formal risk analysis to a relevant hardware scenario.",
+          "source_evidence": [
+            "Worked on relay settings for electrical equipment used in substations",
+            "Gap: DFMEA/FMEA reviews \u2014 missing"
+          ],
+          "priority": 0.96,
+          "weight": 0.959
+        },
+        {
+          "question": "Tell us about a time when a test, simulation, or technical result did not match your expectation. How did you isolate the cause and report the outcome?",
+          "competency": "Test problem solving",
+          "competency_type": "soft",
+          "target_gap": "DV testing",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests diagnostic ownership and communication using the candidate's actual testing, simulation, or academic project background.",
+          "source_evidence": [
+            "Built a Medium Voltage Circuit Breaker Simulator",
+            "Matrix Multiplication Using Verilog",
+            "Simulated OS using Java"
+          ],
+          "priority": 0.78,
+          "weight": 0.3927
+        },
+        {
+          "question": "Describe the medium-voltage circuit breaker simulator you built at Siemens: what panel behaviours did it emulate, what interfaces or signals were involved, and what conditions could it test?",
+          "competency": "DV testing",
+          "competency_type": "domain",
+          "target_gap": "DV testing",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "The circuit-breaker simulator is the strongest direct evidence for DV testing and should be explored for technical depth and individual ownership.",
+          "source_evidence": [
+            "Built a Medium Voltage Circuit Breaker Simulator",
+            "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker"
+          ],
+          "priority": 0.91,
+          "weight": 0.3927
+        },
+        {
+          "question": "How did you decide that the circuit breaker simulator was sufficiently representative of the actual breaker for panel testing, and what limitations did you communicate?",
+          "competency": "Test representativeness",
+          "competency_type": "technical",
+          "target_gap": "DV testing",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Distinguishes simply building a simulator from understanding validation fidelity, test coverage, and residual risk.",
+          "source_evidence": [
+            "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker",
+            "Gap: DV testing \u2014 partial_match"
+          ],
+          "priority": 0.9,
+          "weight": 0.3927
+        },
+        {
+          "question": "How would you communicate a validation limitation to a project team when the available test environment cannot fully represent the field environment?",
+          "competency": "Validation risk communication",
+          "competency_type": "soft",
+          "target_gap": "Hardware verification and validation",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests communication of residual risk, a key capability when test environments or prototypes are constrained.",
+          "source_evidence": [
+            "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker",
+            "Gap: Hardware verification and validation \u2014 partial_match"
+          ],
+          "priority": 0.79,
+          "weight": 0.3869
+        },
+        {
+          "question": "Your background includes smart-card encryption, mobile-cloud security, and SDN security presentations. How do you decide which security concerns are relevant to a hardware verification or design-review activity rather than treating security as a separate concern?",
+          "competency": "Security-aware engineering",
+          "competency_type": "domain",
+          "target_gap": "profile_probe",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Tests whether the candidate can translate documented security knowledge into practical engineering-review considerations.",
+          "source_evidence": [
+            "Comparison of symmetric and asymmetric encryption algorithms for smart-card security",
+            "ZKP authentication; analysis of Twofish and Blowfish",
+            "SDN security and traffic measurement presentation"
+          ],
+          "priority": 0.56,
+          "weight": 0.66116
+        },
+        {
+          "question": "Given a power schematic and a proposed component substitution, how would you determine whether the WCCA needs updating, which operating cases to reanalyze, and what documentation must change?",
+          "competency": "WCCA change impact analysis",
+          "competency_type": "other",
+          "target_gap": "WCCA updates and reviews",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests ability to connect engineering changes, analysis updates, and configuration-controlled documentation.",
+          "source_evidence": [
+            "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings",
+            "Gap: WCCA updates and reviews \u2014 weak_match"
+          ],
+          "priority": 0.84,
+          "weight": 0.6444
+        },
+        {
+          "question": "How would you decide whether a problem can be addressed by a configuration or firmware change versus requiring a physical hardware update? What evidence would support the decision?",
+          "competency": "Engineering change decision-making",
+          "competency_type": "technical",
+          "target_gap": "Hardware updates",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests engineering trade-off thinking and ability to use diagnostic evidence in a hardware-update decision.",
+          "source_evidence": [
+            "Gap: Hardware updates \u2014 missing",
+            "Built a Medium Voltage Circuit Breaker Simulator"
+          ],
+          "priority": 0.9,
+          "weight": 0.9228
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 1,
+      "selected_indices": [
+        11,
+        24,
+        1,
+        25,
+        15,
+        13,
+        0,
+        7,
+        9,
+        18
+      ],
+      "questions": [
+        {
+          "question": "How did you decide that the circuit breaker simulator was sufficiently representative of the actual breaker for panel testing, and what limitations did you communicate?",
+          "competency": "Test representativeness",
+          "competency_type": "technical",
+          "target_gap": "DV testing",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Distinguishes simply building a simulator from understanding validation fidelity, test coverage, and residual risk.",
+          "source_evidence": [
+            "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker",
+            "Gap: DV testing \u2014 partial_match"
+          ],
+          "priority": 0.9,
+          "weight": 0.3927
+        },
+        {
+          "question": "Describe a time you updated a design document, codebase, schematic, or project deliverable after receiving feedback. How did you ensure the revision did not introduce new issues?",
+          "competency": "Revision discipline",
+          "competency_type": "soft",
+          "target_gap": "Hardware updates",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Obtains behavioural evidence for careful iterative work where direct hardware-update experience is absent.",
+          "source_evidence": [
+            "Prepared electrical drawings using AutoCAD",
+            "Simulated OS using Java"
+          ],
+          "priority": 0.77,
+          "weight": 0.9228
+        },
+        {
+          "question": "Suppose a relay-control hardware change could cause an incorrect trip signal in a substation. How would you build the failure chain in an FMEA and decide which controls or design changes are warranted?",
+          "competency": "Failure-mode analysis",
+          "competency_type": "other",
+          "target_gap": "DFMEA/FMEA reviews",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Uses the candidate's substation-relay background to determine whether they can apply formal risk analysis to a relevant hardware scenario.",
+          "source_evidence": [
+            "Worked on relay settings for electrical equipment used in substations",
+            "Gap: DFMEA/FMEA reviews \u2014 missing"
+          ],
+          "priority": 0.96,
+          "weight": 0.959
+        },
+        {
+          "question": "What attracts you to a role centered on hardware reliability, analysis reviews, verification, and controlled engineering updates, given your mix of electrical and computer engineering experience?",
+          "competency": "Role motivation",
+          "competency_type": "soft",
+          "target_gap": "profile_probe",
+          "question_type": "Cultural/Motivational",
+          "difficulty": "mid",
+          "rationale": "Assesses the candidate's motivation for this specialized role and whether their career direction is intentional.",
+          "source_evidence": [
+            "Actively seeking full-time opportunities in computer engineering and engineering industry",
+            "B.E. Electrical Engineering",
+            "M.S. Computer Engineering"
+          ],
+          "priority": 0.7,
+          "weight": 0.66116
+        },
+        {
+          "question": "Tell us about a time when a test, simulation, or technical result did not match your expectation. How did you isolate the cause and report the outcome?",
+          "competency": "Test problem solving",
+          "competency_type": "soft",
+          "target_gap": "DV testing",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests diagnostic ownership and communication using the candidate's actual testing, simulation, or academic project background.",
+          "source_evidence": [
+            "Built a Medium Voltage Circuit Breaker Simulator",
+            "Matrix Multiplication Using Verilog",
+            "Simulated OS using Java"
+          ],
+          "priority": 0.78,
+          "weight": 0.3927
+        },
+        {
+          "question": "A verification test passes in nominal conditions but fails intermittently at a voltage or temperature corner. What steps would you take before deciding whether the issue is in the design, test setup, or requirement?",
+          "competency": "Test failure triage",
+          "competency_type": "other",
+          "target_gap": "DV testing",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Assesses systematic troubleshooting and evidence gathering in a realistic hardware DV scenario.",
+          "source_evidence": [
+            "Gap: DV testing \u2014 partial_match",
+            "Worked on relay settings for electrical equipment used in substations"
+          ],
+          "priority": 0.89,
+          "weight": 0.3927
+        },
+        {
+          "question": "Walk me through how you would facilitate a DFMEA review for a new hardware design: how would you define functions, identify failure modes and effects, score risk, and drive actions to closure?",
+          "competency": "DFMEA/FMEA reviews",
+          "competency_type": "technical",
+          "target_gap": "DFMEA/FMEA reviews",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "DFMEA/FMEA is a high-weight required competency with no demonstrated candidate experience, so this tests practical method knowledge and readiness to learn the process.",
+          "source_evidence": [
+            "Gap: DFMEA/FMEA reviews \u2014 missing",
+            "Candidate evidence: C"
+          ],
+          "priority": 0.98,
+          "weight": 0.959
+        },
+        {
+          "question": "When preparing electrical drawings at Power Consultants, how did you verify consistency among one-line diagrams, schematics, layouts, interconnection diagrams, and installation drawings?",
+          "competency": "Electrical documentation review",
+          "competency_type": "domain",
+          "target_gap": "WCCA updates and reviews",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Clarifies the depth of the candidate's closest relevant experience and their discipline in reviewing interdependent design artifacts.",
+          "source_evidence": [
+            "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings"
+          ],
+          "priority": 0.76,
+          "weight": 0.6444
+        },
+        {
+          "question": "A reviewer finds that a WCCA conclusion conflicts with a drawing revision and a test result. How would you investigate, communicate the risk, and close the discrepancy?",
+          "competency": "Technical review resolution",
+          "competency_type": "other",
+          "target_gap": "WCCA updates and reviews",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests structured discrepancy resolution across documentation, analysis, and test evidence.",
+          "source_evidence": [
+            "Prepared electrical drawings",
+            "Built a medium-voltage circuit breaker simulator for testing panels"
+          ],
+          "priority": 0.83,
+          "weight": 0.6444
+        },
+        {
+          "question": "If a drawing, schematic, and physical unit disagree during hardware validation, how would you establish the as-built configuration and decide what can be used as valid evidence?",
+          "competency": "Configuration control",
+          "competency_type": "other",
+          "target_gap": "Hardware verification and validation",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Assesses practical V&V rigor around configuration integrity and valid test evidence.",
+          "source_evidence": [
+            "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings",
+            "Gap: Hardware verification and validation \u2014 partial_match"
+          ],
+          "priority": 0.87,
+          "weight": 0.3869
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 2,
+      "selected_indices": [
+        10,
+        6,
+        19,
+        17,
+        27,
+        16,
+        2,
+        14,
+        28,
+        5
+      ],
+      "questions": [
+        {
+          "question": "Describe the medium-voltage circuit breaker simulator you built at Siemens: what panel behaviours did it emulate, what interfaces or signals were involved, and what conditions could it test?",
+          "competency": "DV testing",
+          "competency_type": "domain",
+          "target_gap": "DV testing",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "The circuit-breaker simulator is the strongest direct evidence for DV testing and should be explored for technical depth and individual ownership.",
+          "source_evidence": [
+            "Built a Medium Voltage Circuit Breaker Simulator",
+            "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker"
+          ],
+          "priority": 0.91,
+          "weight": 0.3927
+        },
+        {
+          "question": "Given a power schematic and a proposed component substitution, how would you determine whether the WCCA needs updating, which operating cases to reanalyze, and what documentation must change?",
+          "competency": "WCCA change impact analysis",
+          "competency_type": "other",
+          "target_gap": "WCCA updates and reviews",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests ability to connect engineering changes, analysis updates, and configuration-controlled documentation.",
+          "source_evidence": [
+            "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings",
+            "Gap: WCCA updates and reviews \u2014 weak_match"
+          ],
+          "priority": 0.84,
+          "weight": 0.6444
+        },
+        {
+          "question": "Describe how you would use a logic analyzer, oscilloscope, or signal generator to diagnose a suspected timing or signal-integrity issue during hardware verification.",
+          "competency": "Hardware debug instrumentation",
+          "competency_type": "technical",
+          "target_gap": "Hardware verification and validation",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Builds on the candidate's listed laboratory equipment while testing how effectively they can apply it in V&V work.",
+          "source_evidence": [
+            "Logic analyzer",
+            "Oscilloscope",
+            "Signal generator"
+          ],
+          "priority": 0.8,
+          "weight": 0.3869
+        },
+        {
+          "question": "Using a relay-control assembly as an example, explain how you would trace a customer or system need through requirements, design evidence, verification tests, and validation evidence.",
+          "competency": "Requirements traceability",
+          "competency_type": "domain",
+          "target_gap": "Hardware verification and validation",
+          "question_type": "Role-Specific",
+          "difficulty": "hard",
+          "rationale": "Tests end-to-end V&V traceability in a domain connected to the candidate's electrical engineering experience.",
+          "source_evidence": [
+            "Worked on relay settings for electrical equipment used in substations",
+            "Gap: Hardware verification and validation \u2014 partial_match"
+          ],
+          "priority": 0.88,
+          "weight": 0.3869
+        },
+        {
+          "question": "For your Verilog integer-multiplication ALU expansion, what architecture did you choose for signed 32-bit multiplication, and how did you verify correctness of the 64-bit output?",
+          "competency": "Digital design verification",
+          "competency_type": "technical",
+          "target_gap": "profile_probe",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Explores relevant digital-hardware design and verification practices that may transfer to the role's hardware V&V responsibilities.",
+          "source_evidence": [
+            "Expanded basic ALU for 32-bit integer multiplication using Verilog",
+            "Verilog"
+          ],
+          "priority": 0.72,
+          "weight": 0.66116
+        },
+        {
+          "question": "How would you distinguish verification from validation for a hardware product, and what evidence would each require?",
+          "competency": "Hardware V&V fundamentals",
+          "competency_type": "technical",
+          "target_gap": "Hardware verification and validation",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Directly probes foundational V&V knowledge where the candidate has a partial rather than proven match.",
+          "source_evidence": [
+            "Gap: Hardware verification and validation \u2014 partial_match",
+            "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings"
+          ],
+          "priority": 0.9,
+          "weight": 0.3869
+        },
+        {
+          "question": "What artifacts, participants, and evidence would you expect before approving an FMEA review, and how would you ensure open actions are owned and tracked?",
+          "competency": "FMEA review governance",
+          "competency_type": "domain",
+          "target_gap": "DFMEA/FMEA reviews",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Tests whether the candidate understands that FMEA is a cross-functional review and action-management process, not only a worksheet.",
+          "source_evidence": [
+            "Gap: DFMEA/FMEA reviews \u2014 missing",
+            "Organize schedules"
+          ],
+          "priority": 0.92,
+          "weight": 0.959
+        },
+        {
+          "question": "What test data, test procedures, configuration information, and defect records would you retain to make a DV result traceable and reviewable?",
+          "competency": "DV traceability",
+          "competency_type": "domain",
+          "target_gap": "DV testing",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Evaluates whether the candidate understands the documentation discipline required to substantiate verification results.",
+          "source_evidence": [
+            "Gap: DV testing \u2014 partial_match",
+            "Prepared detailed installation drawings"
+          ],
+          "priority": 0.81,
+          "weight": 0.3927
+        },
+        {
+          "question": "When supporting lab devices and monitoring students, how did you prioritize competing technical-assistance requests while maintaining a safe and orderly environment?",
+          "competency": "Prioritization and support",
+          "competency_type": "soft",
+          "target_gap": "profile_probe",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests practical prioritization, service orientation, and composure from a documented work setting.",
+          "source_evidence": [
+            "Provided technical assistance for lab devices",
+            "Monitored students",
+            "Maintained order in the study hall"
+          ],
+          "priority": 0.52,
+          "weight": 0.66116
+        },
+        {
+          "question": "What is your understanding of WCCA updates and reviews, and how would you learn the organization\u2019s assumptions, templates, and acceptance criteria before contributing to one?",
+          "competency": "WCCA methodology",
+          "competency_type": "technical",
+          "target_gap": "WCCA updates and reviews",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "WCCA is only weakly matched through electrical-drawing work; this directly establishes baseline familiarity and a credible ramp-up approach.",
+          "source_evidence": [
+            "Gap: WCCA updates and reviews \u2014 weak_match",
+            "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings"
+          ],
+          "priority": 0.82,
+          "weight": 0.6444
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 3,
+      "selected_indices": [
+        20,
+        19,
+        24,
+        13,
+        17,
+        16,
+        26,
+        15,
+        23,
+        25
+      ],
+      "questions": [
+        {
+          "question": "How would you communicate a validation limitation to a project team when the available test environment cannot fully represent the field environment?",
+          "competency": "Validation risk communication",
+          "competency_type": "soft",
+          "target_gap": "Hardware verification and validation",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests communication of residual risk, a key capability when test environments or prototypes are constrained.",
+          "source_evidence": [
+            "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker",
+            "Gap: Hardware verification and validation \u2014 partial_match"
+          ],
+          "priority": 0.79,
+          "weight": 0.3869
+        },
+        {
+          "question": "Describe how you would use a logic analyzer, oscilloscope, or signal generator to diagnose a suspected timing or signal-integrity issue during hardware verification.",
+          "competency": "Hardware debug instrumentation",
+          "competency_type": "technical",
+          "target_gap": "Hardware verification and validation",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Builds on the candidate's listed laboratory equipment while testing how effectively they can apply it in V&V work.",
+          "source_evidence": [
+            "Logic analyzer",
+            "Oscilloscope",
+            "Signal generator"
+          ],
+          "priority": 0.8,
+          "weight": 0.3869
+        },
+        {
+          "question": "Describe a time you updated a design document, codebase, schematic, or project deliverable after receiving feedback. How did you ensure the revision did not introduce new issues?",
+          "competency": "Revision discipline",
+          "competency_type": "soft",
+          "target_gap": "Hardware updates",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Obtains behavioural evidence for careful iterative work where direct hardware-update experience is absent.",
+          "source_evidence": [
+            "Prepared electrical drawings using AutoCAD",
+            "Simulated OS using Java"
+          ],
+          "priority": 0.77,
+          "weight": 0.9228
+        },
+        {
+          "question": "A verification test passes in nominal conditions but fails intermittently at a voltage or temperature corner. What steps would you take before deciding whether the issue is in the design, test setup, or requirement?",
+          "competency": "Test failure triage",
+          "competency_type": "other",
+          "target_gap": "DV testing",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Assesses systematic troubleshooting and evidence gathering in a realistic hardware DV scenario.",
+          "source_evidence": [
+            "Gap: DV testing \u2014 partial_match",
+            "Worked on relay settings for electrical equipment used in substations"
+          ],
+          "priority": 0.89,
+          "weight": 0.3927
+        },
+        {
+          "question": "Using a relay-control assembly as an example, explain how you would trace a customer or system need through requirements, design evidence, verification tests, and validation evidence.",
+          "competency": "Requirements traceability",
+          "competency_type": "domain",
+          "target_gap": "Hardware verification and validation",
+          "question_type": "Role-Specific",
+          "difficulty": "hard",
+          "rationale": "Tests end-to-end V&V traceability in a domain connected to the candidate's electrical engineering experience.",
+          "source_evidence": [
+            "Worked on relay settings for electrical equipment used in substations",
+            "Gap: Hardware verification and validation \u2014 partial_match"
+          ],
+          "priority": 0.88,
+          "weight": 0.3869
+        },
+        {
+          "question": "How would you distinguish verification from validation for a hardware product, and what evidence would each require?",
+          "competency": "Hardware V&V fundamentals",
+          "competency_type": "technical",
+          "target_gap": "Hardware verification and validation",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Directly probes foundational V&V knowledge where the candidate has a partial rather than proven match.",
+          "source_evidence": [
+            "Gap: Hardware verification and validation \u2014 partial_match",
+            "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings"
+          ],
+          "priority": 0.9,
+          "weight": 0.3869
+        },
+        {
+          "question": "In your Java simulated operating-system project, how did you implement and test the process control block, scheduling algorithms, and memory-allocation algorithms?",
+          "competency": "Software design and testing",
+          "competency_type": "technical",
+          "target_gap": "profile_probe",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Probes a substantial technical project to assess engineering rigor, testing habits, and ability to explain implementation choices.",
+          "source_evidence": [
+            "Simulated OS using Java; PCB, SJF, non-preemptive priority, FCFS, Round Robin, first fit, best fit, worst fit"
+          ],
+          "priority": 0.62,
+          "weight": 0.66116
+        },
+        {
+          "question": "Tell us about a time when a test, simulation, or technical result did not match your expectation. How did you isolate the cause and report the outcome?",
+          "competency": "Test problem solving",
+          "competency_type": "soft",
+          "target_gap": "DV testing",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests diagnostic ownership and communication using the candidate's actual testing, simulation, or academic project background.",
+          "source_evidence": [
+            "Built a Medium Voltage Circuit Breaker Simulator",
+            "Matrix Multiplication Using Verilog",
+            "Simulated OS using Java"
+          ],
+          "priority": 0.78,
+          "weight": 0.3927
+        },
+        {
+          "question": "How would you decide whether a problem can be addressed by a configuration or firmware change versus requiring a physical hardware update? What evidence would support the decision?",
+          "competency": "Engineering change decision-making",
+          "competency_type": "technical",
+          "target_gap": "Hardware updates",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests engineering trade-off thinking and ability to use diagnostic evidence in a hardware-update decision.",
+          "source_evidence": [
+            "Gap: Hardware updates \u2014 missing",
+            "Built a Medium Voltage Circuit Breaker Simulator"
+          ],
+          "priority": 0.9,
+          "weight": 0.9228
+        },
+        {
+          "question": "What attracts you to a role centered on hardware reliability, analysis reviews, verification, and controlled engineering updates, given your mix of electrical and computer engineering experience?",
+          "competency": "Role motivation",
+          "competency_type": "soft",
+          "target_gap": "profile_probe",
+          "question_type": "Cultural/Motivational",
+          "difficulty": "mid",
+          "rationale": "Assesses the candidate's motivation for this specialized role and whether their career direction is intentional.",
+          "source_evidence": [
+            "Actively seeking full-time opportunities in computer engineering and engineering industry",
+            "B.E. Electrical Engineering",
+            "M.S. Computer Engineering"
+          ],
+          "priority": 0.7,
+          "weight": 0.66116
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 4,
+      "selected_indices": [
+        5,
+        7,
+        20,
+        28,
+        1,
+        18,
+        14,
+        6,
+        11,
+        4
+      ],
+      "questions": [
+        {
+          "question": "What is your understanding of WCCA updates and reviews, and how would you learn the organization\u2019s assumptions, templates, and acceptance criteria before contributing to one?",
+          "competency": "WCCA methodology",
+          "competency_type": "technical",
+          "target_gap": "WCCA updates and reviews",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "WCCA is only weakly matched through electrical-drawing work; this directly establishes baseline familiarity and a credible ramp-up approach.",
+          "source_evidence": [
+            "Gap: WCCA updates and reviews \u2014 weak_match",
+            "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings"
+          ],
+          "priority": 0.82,
+          "weight": 0.6444
+        },
+        {
+          "question": "When preparing electrical drawings at Power Consultants, how did you verify consistency among one-line diagrams, schematics, layouts, interconnection diagrams, and installation drawings?",
+          "competency": "Electrical documentation review",
+          "competency_type": "domain",
+          "target_gap": "WCCA updates and reviews",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Clarifies the depth of the candidate's closest relevant experience and their discipline in reviewing interdependent design artifacts.",
+          "source_evidence": [
+            "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings"
+          ],
+          "priority": 0.76,
+          "weight": 0.6444
+        },
+        {
+          "question": "How would you communicate a validation limitation to a project team when the available test environment cannot fully represent the field environment?",
+          "competency": "Validation risk communication",
+          "competency_type": "soft",
+          "target_gap": "Hardware verification and validation",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests communication of residual risk, a key capability when test environments or prototypes are constrained.",
+          "source_evidence": [
+            "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker",
+            "Gap: Hardware verification and validation \u2014 partial_match"
+          ],
+          "priority": 0.79,
+          "weight": 0.3869
+        },
+        {
+          "question": "When supporting lab devices and monitoring students, how did you prioritize competing technical-assistance requests while maintaining a safe and orderly environment?",
+          "competency": "Prioritization and support",
+          "competency_type": "soft",
+          "target_gap": "profile_probe",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests practical prioritization, service orientation, and composure from a documented work setting.",
+          "source_evidence": [
+            "Provided technical assistance for lab devices",
+            "Monitored students",
+            "Maintained order in the study hall"
+          ],
+          "priority": 0.52,
+          "weight": 0.66116
+        },
+        {
+          "question": "Suppose a relay-control hardware change could cause an incorrect trip signal in a substation. How would you build the failure chain in an FMEA and decide which controls or design changes are warranted?",
+          "competency": "Failure-mode analysis",
+          "competency_type": "other",
+          "target_gap": "DFMEA/FMEA reviews",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Uses the candidate's substation-relay background to determine whether they can apply formal risk analysis to a relevant hardware scenario.",
+          "source_evidence": [
+            "Worked on relay settings for electrical equipment used in substations",
+            "Gap: DFMEA/FMEA reviews \u2014 missing"
+          ],
+          "priority": 0.96,
+          "weight": 0.959
+        },
+        {
+          "question": "If a drawing, schematic, and physical unit disagree during hardware validation, how would you establish the as-built configuration and decide what can be used as valid evidence?",
+          "competency": "Configuration control",
+          "competency_type": "other",
+          "target_gap": "Hardware verification and validation",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Assesses practical V&V rigor around configuration integrity and valid test evidence.",
+          "source_evidence": [
+            "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings",
+            "Gap: Hardware verification and validation \u2014 partial_match"
+          ],
+          "priority": 0.87,
+          "weight": 0.3869
+        },
+        {
+          "question": "What test data, test procedures, configuration information, and defect records would you retain to make a DV result traceable and reviewable?",
+          "competency": "DV traceability",
+          "competency_type": "domain",
+          "target_gap": "DV testing",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Evaluates whether the candidate understands the documentation discipline required to substantiate verification results.",
+          "source_evidence": [
+            "Gap: DV testing \u2014 partial_match",
+            "Prepared detailed installation drawings"
+          ],
+          "priority": 0.81,
+          "weight": 0.3927
+        },
+        {
+          "question": "Given a power schematic and a proposed component substitution, how would you determine whether the WCCA needs updating, which operating cases to reanalyze, and what documentation must change?",
+          "competency": "WCCA change impact analysis",
+          "competency_type": "other",
+          "target_gap": "WCCA updates and reviews",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests ability to connect engineering changes, analysis updates, and configuration-controlled documentation.",
+          "source_evidence": [
+            "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings",
+            "Gap: WCCA updates and reviews \u2014 weak_match"
+          ],
+          "priority": 0.84,
+          "weight": 0.6444
+        },
+        {
+          "question": "How did you decide that the circuit breaker simulator was sufficiently representative of the actual breaker for panel testing, and what limitations did you communicate?",
+          "competency": "Test representativeness",
+          "competency_type": "technical",
+          "target_gap": "DV testing",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Distinguishes simply building a simulator from understanding validation fidelity, test coverage, and residual risk.",
+          "source_evidence": [
+            "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker",
+            "Gap: DV testing \u2014 partial_match"
+          ],
+          "priority": 0.9,
+          "weight": 0.3927
+        },
+        {
+          "question": "You inherit an existing DFMEA whose severity, occurrence, and detection ratings are poorly justified. How would you review the ratings and resolve disagreements among design, test, and manufacturing stakeholders?",
+          "competency": "FMEA judgment",
+          "competency_type": "other",
+          "target_gap": "DFMEA/FMEA reviews",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Assesses practical judgment, evidence-based risk scoring, and cross-functional communication for a missing critical skill.",
+          "source_evidence": [
+            "Gap: DFMEA/FMEA reviews \u2014 missing",
+            "Technical presenter in national-level competition"
+          ],
+          "priority": 0.9,
+          "weight": 0.959
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    }
+  ],
+  "selection_latency_ms": 0.07,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:02:54.144103+00:00"
+}

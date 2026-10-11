@@ -1,0 +1,462 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_03558_5a71f8cf9f12",
+  "jd_id": "rjf_03558_5a71f8cf9f12",
+  "pair_id": "rjf_03558_5a71f8cf9f12",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 42,
+  "pool_path": "pool/rjf_03558_5a71f8cf9f12__rjf_03558_5a71f8cf9f12__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.06666666666666667,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      22,
+      1,
+      24,
+      2,
+      9,
+      10,
+      25,
+      7,
+      5,
+      23
+    ],
+    "questions": [
+      {
+        "question": "How would you provision and operate an AWS RDS database for a production web service, including backups, high availability, connection management, schema migrations, security, and performance monitoring?",
+        "competency": "AWS RDS",
+        "competency_type": "technical",
+        "target_gap": "AWS RDS",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "AWS RDS is a high-weight missing required skill. It is directly named in the role responsibilities and should be assessed explicitly.",
+        "source_evidence": [
+          "Microsoft Azure",
+          "Database design",
+          "MySQL"
+        ],
+        "priority": 0.98,
+        "weight": 0.9373
+      },
+      {
+        "question": "Design a Spring Boot service that receives a request, validates it, persists data, calls a downstream REST service, and returns a consistent error response. Which Spring components and testing approach would you use?",
+        "competency": "Spring Boot",
+        "competency_type": "technical",
+        "target_gap": "Spring Boot",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Spring Boot is a high-weight missing required skill. The candidate's Java background provides a basis to assess readiness to use the framework.",
+        "source_evidence": [
+          "Java 8",
+          "Oracle Certified Associate, Java SE 8 Programmer"
+        ],
+        "priority": 0.98,
+        "weight": 0.9306
+      },
+      {
+        "question": "Describe a CI/CD pipeline you would expect for a Java or Node.js service, from pull request through automated testing, artifact creation, deployment, rollback, and production verification.",
+        "competency": "Continuous integration",
+        "competency_type": "technical",
+        "target_gap": "Continuous integration",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Continuous integration is missing and the job explicitly requires testing and continuous deployment. This tests delivery-process readiness.",
+        "source_evidence": [
+          "Handled project activities from design through testing",
+          "Git"
+        ],
+        "priority": 0.95,
+        "weight": 0.9364
+      },
+      {
+        "question": "Suppose a legacy Java application must be split into independently deployable services. How would you identify service boundaries, manage inter-service communication, and avoid distributed-data consistency problems?",
+        "competency": "Microservices architecture",
+        "competency_type": "other",
+        "target_gap": "Microservices",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Microservices is missing and central to the role's scalable services requirement; this assesses architectural reasoning rather than claimed hands-on experience.",
+        "source_evidence": [
+          "Java 8",
+          "REST",
+          "MVC Architecture"
+        ],
+        "priority": 0.97,
+        "weight": 0.9205
+      },
+      {
+        "question": "A product manager wants type-ahead search across millions of records with faceting and relevance ranking. Outline an Elasticsearch index, ingestion/update path, query strategy, and operational risks.",
+        "competency": "Elasticsearch",
+        "competency_type": "other",
+        "target_gap": "Elasticsearch",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Elasticsearch is missing and required. This scenario assesses whether the candidate understands search-system concepts needed in the role.",
+        "source_evidence": [
+          "Database design",
+          "Web development"
+        ],
+        "priority": 0.9,
+        "weight": 0.9203
+      },
+      {
+        "question": "When would you introduce Redis into a web application, and how would you design cache keys, expiration, invalidation, and protection against stale or unavailable cache data?",
+        "competency": "Redis caching",
+        "competency_type": "technical",
+        "target_gap": "Redis",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Redis is a high-weight missing requirement. The question evaluates core caching and resilience knowledge relevant to scalable services.",
+        "source_evidence": [
+          "Web development",
+          "Microsoft Azure"
+        ],
+        "priority": 0.9,
+        "weight": 0.9338
+      },
+      {
+        "question": "How would you configure Jenkins to build and test a service on every pull request, run quality checks, publish an artifact, and deploy only after appropriate approvals? What would you do if the pipeline becomes unreliable?",
+        "competency": "Jenkins",
+        "competency_type": "technical",
+        "target_gap": "Jenkins",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Jenkins is a missing required skill and is specifically named by the job. The question probes practical pipeline configuration and maintenance knowledge.",
+        "source_evidence": [
+          "Git",
+          "Handled project activities from design through testing"
+        ],
+        "priority": 0.93,
+        "weight": 0.929
+      },
+      {
+        "question": "This role uses Ruby in a functional-programming-oriented stack. What Ruby experience do you have, and how would you assess and close any gap before taking ownership of a production Ruby service?",
+        "competency": "Ruby readiness",
+        "competency_type": "soft",
+        "target_gap": "Ruby",
+        "question_type": "Cultural/Motivational",
+        "difficulty": "mid",
+        "rationale": "Ruby is a missing required skill. This probes candor, learning strategy, and ownership for a material technology gap.",
+        "source_evidence": [
+          "Java 8",
+          "JavaScript",
+          "Full-stack developer with 3 years of professional experience"
+        ],
+        "priority": 0.82,
+        "weight": 0.9236
+      },
+      {
+        "question": "Compare object-oriented Java with functional programming. Using a collection-processing example, explain when immutable data and higher-order functions would improve the design and when they may not.",
+        "competency": "Functional programming",
+        "competency_type": "technical",
+        "target_gap": "Functional programming",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Functional programming is a required weak match. The candidate's Java 8 experience can support a concrete assessment of functional concepts and trade-offs.",
+        "source_evidence": [
+          "Java 8",
+          "Oracle Certified Associate, Java SE 8 Programmer"
+        ],
+        "priority": 0.87,
+        "weight": 0.7335
+      },
+      {
+        "question": "Design a DynamoDB table for an application that must retrieve a user's recent events, fetch a single event by ID, and support a time-bounded status query. Explain your keys, indexes, access patterns, and trade-offs.",
+        "competency": "Amazon DynamoDB",
+        "competency_type": "technical",
+        "target_gap": "Amazon DynamoDB",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "DynamoDB is a required weak match with no explicit AWS evidence. This assesses data-modeling reasoning for a core role technology.",
+        "source_evidence": [
+          "NoSQL",
+          "Database design"
+        ],
+        "priority": 0.88,
+        "weight": 0.7189
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.918554,
+      0.911988,
+      0.8895799999999999,
+      0.8928849999999999,
+      0.8282700000000001,
+      0.84042,
+      0.8639700000000001,
+      0.7573519999999999,
+      0.6381450000000001,
+      0.632632
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.28566181659698486,
+      0.31170016527175903,
+      0.4104849696159363,
+      0.2793298363685608,
+      0.34669560194015503,
+      0.5632258653640747,
+      0.3488261103630066,
+      0.20741257071495056,
+      0.358364075422287
+    ],
+    "mmr_scores": [
+      0.6429878,
+      0.5526930550209045,
+      0.5291959504184721,
+      0.5018740091152191,
+      0.4959900490894318,
+      0.48428531941795333,
+      0.4358112403907776,
+      0.4254985668910979,
+      0.38447772878551484,
+      0.33533317737331386
+    ],
+    "competency_weights": [
+      0.9373,
+      0.9306,
+      0.9364,
+      0.9205,
+      0.9203,
+      0.9338,
+      0.929,
+      0.9236,
+      0.7335,
+      0.7189
+    ]
+  },
+  "questions": [
+    {
+      "question": "How would you provision and operate an AWS RDS database for a production web service, including backups, high availability, connection management, schema migrations, security, and performance monitoring?"
+    },
+    {
+      "question": "Design a Spring Boot service that receives a request, validates it, persists data, calls a downstream REST service, and returns a consistent error response. Which Spring components and testing approach would you use?"
+    },
+    {
+      "question": "Describe a CI/CD pipeline you would expect for a Java or Node.js service, from pull request through automated testing, artifact creation, deployment, rollback, and production verification."
+    },
+    {
+      "question": "Suppose a legacy Java application must be split into independently deployable services. How would you identify service boundaries, manage inter-service communication, and avoid distributed-data consistency problems?"
+    },
+    {
+      "question": "A product manager wants type-ahead search across millions of records with faceting and relevance ranking. Outline an Elasticsearch index, ingestion/update path, query strategy, and operational risks."
+    },
+    {
+      "question": "When would you introduce Redis into a web application, and how would you design cache keys, expiration, invalidation, and protection against stale or unavailable cache data?"
+    },
+    {
+      "question": "How would you configure Jenkins to build and test a service on every pull request, run quality checks, publish an artifact, and deploy only after appropriate approvals? What would you do if the pipeline becomes unreliable?"
+    },
+    {
+      "question": "This role uses Ruby in a functional-programming-oriented stack. What Ruby experience do you have, and how would you assess and close any gap before taking ownership of a production Ruby service?"
+    },
+    {
+      "question": "Compare object-oriented Java with functional programming. Using a collection-processing example, explain when immutable data and higher-order functions would improve the design and when they may not."
+    },
+    {
+      "question": "Design a DynamoDB table for an application that must retrieve a user's recent events, fetch a single event by ID, and support a time-bounded status query. Explain your keys, indexes, access patterns, and trade-offs."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "How would you provision and operate an AWS RDS database for a production web service, including backups, high availability, connection management, schema migrations, security, and performance monitoring?",
+      "competency": "AWS RDS",
+      "competency_type": "technical",
+      "target_gap": "AWS RDS",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "AWS RDS is a high-weight missing required skill. It is directly named in the role responsibilities and should be assessed explicitly.",
+      "source_evidence": [
+        "Microsoft Azure",
+        "Database design",
+        "MySQL"
+      ],
+      "priority": 0.98,
+      "weight": 0.9373
+    },
+    {
+      "question": "Design a Spring Boot service that receives a request, validates it, persists data, calls a downstream REST service, and returns a consistent error response. Which Spring components and testing approach would you use?",
+      "competency": "Spring Boot",
+      "competency_type": "technical",
+      "target_gap": "Spring Boot",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Spring Boot is a high-weight missing required skill. The candidate's Java background provides a basis to assess readiness to use the framework.",
+      "source_evidence": [
+        "Java 8",
+        "Oracle Certified Associate, Java SE 8 Programmer"
+      ],
+      "priority": 0.98,
+      "weight": 0.9306
+    },
+    {
+      "question": "Describe a CI/CD pipeline you would expect for a Java or Node.js service, from pull request through automated testing, artifact creation, deployment, rollback, and production verification.",
+      "competency": "Continuous integration",
+      "competency_type": "technical",
+      "target_gap": "Continuous integration",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Continuous integration is missing and the job explicitly requires testing and continuous deployment. This tests delivery-process readiness.",
+      "source_evidence": [
+        "Handled project activities from design through testing",
+        "Git"
+      ],
+      "priority": 0.95,
+      "weight": 0.9364
+    },
+    {
+      "question": "Suppose a legacy Java application must be split into independently deployable services. How would you identify service boundaries, manage inter-service communication, and avoid distributed-data consistency problems?",
+      "competency": "Microservices architecture",
+      "competency_type": "other",
+      "target_gap": "Microservices",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Microservices is missing and central to the role's scalable services requirement; this assesses architectural reasoning rather than claimed hands-on experience.",
+      "source_evidence": [
+        "Java 8",
+        "REST",
+        "MVC Architecture"
+      ],
+      "priority": 0.97,
+      "weight": 0.9205
+    },
+    {
+      "question": "A product manager wants type-ahead search across millions of records with faceting and relevance ranking. Outline an Elasticsearch index, ingestion/update path, query strategy, and operational risks.",
+      "competency": "Elasticsearch",
+      "competency_type": "other",
+      "target_gap": "Elasticsearch",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Elasticsearch is missing and required. This scenario assesses whether the candidate understands search-system concepts needed in the role.",
+      "source_evidence": [
+        "Database design",
+        "Web development"
+      ],
+      "priority": 0.9,
+      "weight": 0.9203
+    },
+    {
+      "question": "When would you introduce Redis into a web application, and how would you design cache keys, expiration, invalidation, and protection against stale or unavailable cache data?",
+      "competency": "Redis caching",
+      "competency_type": "technical",
+      "target_gap": "Redis",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Redis is a high-weight missing requirement. The question evaluates core caching and resilience knowledge relevant to scalable services.",
+      "source_evidence": [
+        "Web development",
+        "Microsoft Azure"
+      ],
+      "priority": 0.9,
+      "weight": 0.9338
+    },
+    {
+      "question": "How would you configure Jenkins to build and test a service on every pull request, run quality checks, publish an artifact, and deploy only after appropriate approvals? What would you do if the pipeline becomes unreliable?",
+      "competency": "Jenkins",
+      "competency_type": "technical",
+      "target_gap": "Jenkins",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Jenkins is a missing required skill and is specifically named by the job. The question probes practical pipeline configuration and maintenance knowledge.",
+      "source_evidence": [
+        "Git",
+        "Handled project activities from design through testing"
+      ],
+      "priority": 0.93,
+      "weight": 0.929
+    },
+    {
+      "question": "This role uses Ruby in a functional-programming-oriented stack. What Ruby experience do you have, and how would you assess and close any gap before taking ownership of a production Ruby service?",
+      "competency": "Ruby readiness",
+      "competency_type": "soft",
+      "target_gap": "Ruby",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Ruby is a missing required skill. This probes candor, learning strategy, and ownership for a material technology gap.",
+      "source_evidence": [
+        "Java 8",
+        "JavaScript",
+        "Full-stack developer with 3 years of professional experience"
+      ],
+      "priority": 0.82,
+      "weight": 0.9236
+    },
+    {
+      "question": "Compare object-oriented Java with functional programming. Using a collection-processing example, explain when immutable data and higher-order functions would improve the design and when they may not.",
+      "competency": "Functional programming",
+      "competency_type": "technical",
+      "target_gap": "Functional programming",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Functional programming is a required weak match. The candidate's Java 8 experience can support a concrete assessment of functional concepts and trade-offs.",
+      "source_evidence": [
+        "Java 8",
+        "Oracle Certified Associate, Java SE 8 Programmer"
+      ],
+      "priority": 0.87,
+      "weight": 0.7335
+    },
+    {
+      "question": "Design a DynamoDB table for an application that must retrieve a user's recent events, fetch a single event by ID, and support a time-bounded status query. Explain your keys, indexes, access patterns, and trade-offs.",
+      "competency": "Amazon DynamoDB",
+      "competency_type": "technical",
+      "target_gap": "Amazon DynamoDB",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "DynamoDB is a required weak match with no explicit AWS evidence. This assesses data-modeling reasoning for a core role technology.",
+      "source_evidence": [
+        "NoSQL",
+        "Database design"
+      ],
+      "priority": 0.88,
+      "weight": 0.7189
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 14047,
+    "output_tokens": 3450,
+    "cached_tokens": 0,
+    "estimated_cost": 0.069494,
+    "latency_ms": 30312.71,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.069494,
+  "cost_cny": 0.47047438,
+  "selection_latency_ms": 48.03,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:08:17.617959+00:00"
+}

@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_04729_4b4032772de3",
+  "jd_id": "rjf_04729_4b4032772de3",
+  "pair_id": "rjf_04729_4b4032772de3",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Walk us through an automated calibration or test system you developed for accelerometers or magnetometers in LabVIEW and Python. How did you establish measurement accuracy, handle failures or outliers, and document the results?"
+    },
+    {
+      "question": "Your current work is on intelligent down-hole drilling tools. Which parts of that electrical design experience transfer to industrial-facility power distribution, motor control, and control-panel design, and where would you need to build depth?"
+    },
+    {
+      "question": "Describe a time you found a quality issue in an electrical design, test setup, or data set\u2014for example during your automated testing work or cotton-fiber scan research. What was your investigation process and what changed as a result?"
+    },
+    {
+      "question": "This role requires practical application of the National Electrical Code. What experience do you have interpreting or applying electrical codes and standards, and how would you close any gaps before approving a facility design?"
+    },
+    {
+      "question": "Imagine you are reviewing a contractor shop drawing for a control panel containing PLC-controlled motors, field instrumentation, and facility wiring. What would you check in the drawing package before approving it, and what issues would cause you to return it for revision?"
+    },
+    {
+      "question": "Tell us about your embedded hardware, firmware, and sensor-interface work at Dartmouth College. How did you translate system needs into schematics, interfaces, firmware behavior, and verification testing?"
+    },
+    {
+      "question": "What is your experience creating or reviewing P&IDs, and how would you use a P&ID to define instrumentation, I/O, alarms, control logic, and PLC implementation for a water or wastewater facility?"
+    },
+    {
+      "question": "Describe an occasion when you led, taught, or mentored others, such as your time as President of the Electronics Club or teaching analog circuits and microcontroller programming. How would that approach translate to managing and developing electrical staff?"
+    },
+    {
+      "question": "The role includes construction-phase support, facility testing, and startup. If a newly commissioned control system intermittently lost a sensor signal during startup, how would you coordinate troubleshooting among the contractor, controls team, and operations personnel while protecting schedule and safety?"
+    },
+    {
+      "question": "This position requires a Maryland Professional Engineer license or the ability to obtain one. What is your current licensure status, and what is your concrete plan and timeline for meeting this requirement?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 4583,
+    "output_tokens": 547,
+    "cached_tokens": 0,
+    "estimated_cost": 0.01573,
+    "latency_ms": 7159.03,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.01573,
+  "cost_cny": 0.1064921,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:04:46.718410+00:00",
+  "user_prompt_sha256": "b49caafe4d5e848d3391f4a0bc809f98e01ab0483b422562c56454e84dc3144f"
+}

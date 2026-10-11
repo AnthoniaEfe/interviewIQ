@@ -1,0 +1,462 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_05797_c4a0628debc9",
+  "jd_id": "rjf_05797_c4a0628debc9",
+  "pair_id": "rjf_05797_c4a0628debc9",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 12,
+  "pool_path": "pool/rjf_05797_c4a0628debc9__rjf_05797_c4a0628debc9__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.1,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      1,
+      0,
+      28,
+      12,
+      3,
+      9,
+      15,
+      2,
+      26,
+      23
+    ],
+    "questions": [
+      {
+        "question": "A prepaid annual insurance invoice is paid at the beginning of the year. Explain how you would set up the amortization schedule, record the initial entry, post monthly expense, and investigate a difference between the schedule and the general ledger.",
+        "competency": "Prepaids amortization",
+        "competency_type": "technical",
+        "target_gap": "Prepaids amortization",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Prepaids amortization is the largest identified technical gap and is an explicit job responsibility.",
+        "source_evidence": [
+          "Weak match: Prepaids amortization",
+          "Candidate evidence: General ledger accounting"
+        ],
+        "priority": 0.97,
+        "weight": 0.436
+      },
+      {
+        "question": "Walk me through how you would build and maintain a lease accounting schedule from a new lease agreement through month-end posting, including the key inputs, journal entries, and reconciliations you would perform.",
+        "competency": "Lease accounting",
+        "competency_type": "technical",
+        "target_gap": "Lease accounting",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Lease accounting is a weak match and is a core responsibility, so this tests practical readiness without assuming prior lease-specific experience.",
+        "source_evidence": [
+          "Weak match: Lease accounting",
+          "Candidate evidence: Accounting"
+        ],
+        "priority": 0.98,
+        "weight": 0.3933
+      },
+      {
+        "question": "Imagine that, after close, a prepaid balance is materially overstated because one month of amortization was omitted. How would you quantify the impact, correct the books, assess whether prior reporting is affected, and prevent recurrence?",
+        "competency": "Prepaids error resolution",
+        "competency_type": "other",
+        "target_gap": "Prepaids amortization",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Tests technical remediation, materiality judgment, and preventive controls for the most significant identified gap.",
+        "source_evidence": [
+          "Weak match: Prepaids amortization",
+          "Candidate evidence: General ledger accounting",
+          "Candidate evidence: Researched and eliminated financial discrepancies in a timely manner."
+        ],
+        "priority": 0.93,
+        "weight": 0.436
+      },
+      {
+        "question": "Explain the difference between an accrual and a prepaid expense, including the typical initial and subsequent journal entries for each.",
+        "competency": "Accruals and prepaids",
+        "competency_type": "technical",
+        "target_gap": "Prepaids amortization",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Directly assesses foundational understanding needed to close the identified prepaids-amortization gap.",
+        "source_evidence": [
+          "Weak match: Prepaids amortization",
+          "Partial match: Monthly accruals",
+          "Candidate evidence: General ledger accounting"
+        ],
+        "priority": 0.92,
+        "weight": 0.436
+      },
+      {
+        "question": "Suppose a newly signed office lease has fixed monthly payments, an initial incentive, and a rent-free period. How would you determine the accounting treatment and the supporting schedule under US GAAP?",
+        "competency": "Lease accounting under US GAAP",
+        "competency_type": "other",
+        "target_gap": "Lease accounting",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Tests whether the candidate can apply lease concepts to a realistic scenario rather than rely on general accounting experience alone.",
+        "source_evidence": [
+          "Weak match: Lease accounting",
+          "Partial match: US GAAP",
+          "Candidate evidence: Accounting"
+        ],
+        "priority": 0.95,
+        "weight": 0.3933
+      },
+      {
+        "question": "A department leader says an operational report is not useful because it arrives after decisions have been made. How would you clarify their needs and redesign the report's metrics, cadence, and presentation?",
+        "competency": "Operational reporting",
+        "competency_type": "other",
+        "target_gap": "Operational reporting",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Operational reporting is a partial match and requires translating accounting data into useful information for non-finance partners.",
+        "source_evidence": [
+          "Partial match: Operational reporting",
+          "Candidate evidence: Financial reporting"
+        ],
+        "priority": 0.85,
+        "weight": 0.245
+      },
+      {
+        "question": "How would you create a rent schedule that Accounts Payable can use each month, and what reconciliation would you perform between the schedule, AP activity, and the general ledger?",
+        "competency": "Rent schedule management",
+        "competency_type": "domain",
+        "target_gap": "Lease accounting",
+        "question_type": "Role-Specific",
+        "difficulty": "mid",
+        "rationale": "The role specifically requires maintaining a rent schedule and providing it to AP; the candidate has no explicit lease evidence.",
+        "source_evidence": [
+          "Weak match: Lease accounting",
+          "Candidate evidence: Accounting"
+        ],
+        "priority": 0.94,
+        "weight": 0.3933
+      },
+      {
+        "question": "Describe your end-to-end process for a monthly close: how do you plan the calendar, collect inputs, prepare entries and reconciliations, resolve exceptions, and determine that the close is complete?",
+        "competency": "Full-cycle accounting and close",
+        "competency_type": "domain",
+        "target_gap": "Full-cycle accounting and close",
+        "question_type": "Role-Specific",
+        "difficulty": "mid",
+        "rationale": "The candidate has month-end-close experience, but the matrix identifies only a partial match to full-cycle ownership.",
+        "source_evidence": [
+          "Partial match: Full-cycle accounting and close",
+          "Candidate evidence: Month-end close"
+        ],
+        "priority": 0.93,
+        "weight": 0.2365
+      },
+      {
+        "question": "You developed a new employee evaluation process at Ellwood Group. What problem were you solving, how did you gain buy-in, and what evidence showed performance improved?",
+        "competency": "Process improvement",
+        "competency_type": "soft",
+        "target_gap": "profile_probe",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Explores a documented achievement that can reveal initiative, change management, and evidence-based improvement.",
+        "source_evidence": [
+          "Developed a new process for employee evaluation that resulted in marked performance improvements."
+        ],
+        "priority": 0.69,
+        "weight": 0.23484166666666664
+      },
+      {
+        "question": "How would you handle a situation in which a department disputes an allocation methodology that finance considers reasonable?",
+        "competency": "Stakeholder management",
+        "competency_type": "other",
+        "target_gap": "Operational reporting",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Tests communication and collaboration required when providing department-facing reporting and allocations.",
+        "source_evidence": [
+          "Partial match: Operational reporting",
+          "Partial match: Month-end allocations",
+          "Candidate evidence: Excellent communication skills"
+        ],
+        "priority": 0.76,
+        "weight": 0.245
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.42291999999999996,
+      0.385434,
+      0.40548,
+      0.40112000000000003,
+      0.37363499999999994,
+      0.20825,
+      0.369702,
+      0.219945,
+      0.16204074999999998,
+      0.1862
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.41377919912338257,
+      0.47330278158187866,
+      0.5860395431518555,
+      0.6061509251594543,
+      0.28150033950805664,
+      0.6874114274978638,
+      0.3577042818069458,
+      0.30247777700424194,
+      0.36265549063682556
+    ],
+    "mmr_scores": [
+      0.296044,
+      0.1456700402629852,
+      0.14184516552543636,
+      0.1049721370544433,
+      0.07969922245216363,
+      0.061324898147582976,
+      0.05256797175064079,
+      0.04665021545791624,
+      0.022685191898727378,
+      0.021543352808952296
+    ],
+    "competency_weights": [
+      0.436,
+      0.3933,
+      0.436,
+      0.436,
+      0.3933,
+      0.245,
+      0.3933,
+      0.2365,
+      0.23484166666666664,
+      0.245
+    ]
+  },
+  "questions": [
+    {
+      "question": "A prepaid annual insurance invoice is paid at the beginning of the year. Explain how you would set up the amortization schedule, record the initial entry, post monthly expense, and investigate a difference between the schedule and the general ledger."
+    },
+    {
+      "question": "Walk me through how you would build and maintain a lease accounting schedule from a new lease agreement through month-end posting, including the key inputs, journal entries, and reconciliations you would perform."
+    },
+    {
+      "question": "Imagine that, after close, a prepaid balance is materially overstated because one month of amortization was omitted. How would you quantify the impact, correct the books, assess whether prior reporting is affected, and prevent recurrence?"
+    },
+    {
+      "question": "Explain the difference between an accrual and a prepaid expense, including the typical initial and subsequent journal entries for each."
+    },
+    {
+      "question": "Suppose a newly signed office lease has fixed monthly payments, an initial incentive, and a rent-free period. How would you determine the accounting treatment and the supporting schedule under US GAAP?"
+    },
+    {
+      "question": "A department leader says an operational report is not useful because it arrives after decisions have been made. How would you clarify their needs and redesign the report's metrics, cadence, and presentation?"
+    },
+    {
+      "question": "How would you create a rent schedule that Accounts Payable can use each month, and what reconciliation would you perform between the schedule, AP activity, and the general ledger?"
+    },
+    {
+      "question": "Describe your end-to-end process for a monthly close: how do you plan the calendar, collect inputs, prepare entries and reconciliations, resolve exceptions, and determine that the close is complete?"
+    },
+    {
+      "question": "You developed a new employee evaluation process at Ellwood Group. What problem were you solving, how did you gain buy-in, and what evidence showed performance improved?"
+    },
+    {
+      "question": "How would you handle a situation in which a department disputes an allocation methodology that finance considers reasonable?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "A prepaid annual insurance invoice is paid at the beginning of the year. Explain how you would set up the amortization schedule, record the initial entry, post monthly expense, and investigate a difference between the schedule and the general ledger.",
+      "competency": "Prepaids amortization",
+      "competency_type": "technical",
+      "target_gap": "Prepaids amortization",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Prepaids amortization is the largest identified technical gap and is an explicit job responsibility.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Candidate evidence: General ledger accounting"
+      ],
+      "priority": 0.97,
+      "weight": 0.436
+    },
+    {
+      "question": "Walk me through how you would build and maintain a lease accounting schedule from a new lease agreement through month-end posting, including the key inputs, journal entries, and reconciliations you would perform.",
+      "competency": "Lease accounting",
+      "competency_type": "technical",
+      "target_gap": "Lease accounting",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Lease accounting is a weak match and is a core responsibility, so this tests practical readiness without assuming prior lease-specific experience.",
+      "source_evidence": [
+        "Weak match: Lease accounting",
+        "Candidate evidence: Accounting"
+      ],
+      "priority": 0.98,
+      "weight": 0.3933
+    },
+    {
+      "question": "Imagine that, after close, a prepaid balance is materially overstated because one month of amortization was omitted. How would you quantify the impact, correct the books, assess whether prior reporting is affected, and prevent recurrence?",
+      "competency": "Prepaids error resolution",
+      "competency_type": "other",
+      "target_gap": "Prepaids amortization",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests technical remediation, materiality judgment, and preventive controls for the most significant identified gap.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Candidate evidence: General ledger accounting",
+        "Candidate evidence: Researched and eliminated financial discrepancies in a timely manner."
+      ],
+      "priority": 0.93,
+      "weight": 0.436
+    },
+    {
+      "question": "Explain the difference between an accrual and a prepaid expense, including the typical initial and subsequent journal entries for each.",
+      "competency": "Accruals and prepaids",
+      "competency_type": "technical",
+      "target_gap": "Prepaids amortization",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly assesses foundational understanding needed to close the identified prepaids-amortization gap.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Partial match: Monthly accruals",
+        "Candidate evidence: General ledger accounting"
+      ],
+      "priority": 0.92,
+      "weight": 0.436
+    },
+    {
+      "question": "Suppose a newly signed office lease has fixed monthly payments, an initial incentive, and a rent-free period. How would you determine the accounting treatment and the supporting schedule under US GAAP?",
+      "competency": "Lease accounting under US GAAP",
+      "competency_type": "other",
+      "target_gap": "Lease accounting",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests whether the candidate can apply lease concepts to a realistic scenario rather than rely on general accounting experience alone.",
+      "source_evidence": [
+        "Weak match: Lease accounting",
+        "Partial match: US GAAP",
+        "Candidate evidence: Accounting"
+      ],
+      "priority": 0.95,
+      "weight": 0.3933
+    },
+    {
+      "question": "A department leader says an operational report is not useful because it arrives after decisions have been made. How would you clarify their needs and redesign the report's metrics, cadence, and presentation?",
+      "competency": "Operational reporting",
+      "competency_type": "other",
+      "target_gap": "Operational reporting",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Operational reporting is a partial match and requires translating accounting data into useful information for non-finance partners.",
+      "source_evidence": [
+        "Partial match: Operational reporting",
+        "Candidate evidence: Financial reporting"
+      ],
+      "priority": 0.85,
+      "weight": 0.245
+    },
+    {
+      "question": "How would you create a rent schedule that Accounts Payable can use each month, and what reconciliation would you perform between the schedule, AP activity, and the general ledger?",
+      "competency": "Rent schedule management",
+      "competency_type": "domain",
+      "target_gap": "Lease accounting",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "The role specifically requires maintaining a rent schedule and providing it to AP; the candidate has no explicit lease evidence.",
+      "source_evidence": [
+        "Weak match: Lease accounting",
+        "Candidate evidence: Accounting"
+      ],
+      "priority": 0.94,
+      "weight": 0.3933
+    },
+    {
+      "question": "Describe your end-to-end process for a monthly close: how do you plan the calendar, collect inputs, prepare entries and reconciliations, resolve exceptions, and determine that the close is complete?",
+      "competency": "Full-cycle accounting and close",
+      "competency_type": "domain",
+      "target_gap": "Full-cycle accounting and close",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "The candidate has month-end-close experience, but the matrix identifies only a partial match to full-cycle ownership.",
+      "source_evidence": [
+        "Partial match: Full-cycle accounting and close",
+        "Candidate evidence: Month-end close"
+      ],
+      "priority": 0.93,
+      "weight": 0.2365
+    },
+    {
+      "question": "You developed a new employee evaluation process at Ellwood Group. What problem were you solving, how did you gain buy-in, and what evidence showed performance improved?",
+      "competency": "Process improvement",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Explores a documented achievement that can reveal initiative, change management, and evidence-based improvement.",
+      "source_evidence": [
+        "Developed a new process for employee evaluation that resulted in marked performance improvements."
+      ],
+      "priority": 0.69,
+      "weight": 0.23484166666666664
+    },
+    {
+      "question": "How would you handle a situation in which a department disputes an allocation methodology that finance considers reasonable?",
+      "competency": "Stakeholder management",
+      "competency_type": "other",
+      "target_gap": "Operational reporting",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Tests communication and collaboration required when providing department-facing reporting and allocations.",
+      "source_evidence": [
+        "Partial match: Operational reporting",
+        "Partial match: Month-end allocations",
+        "Candidate evidence: Excellent communication skills"
+      ],
+      "priority": 0.76,
+      "weight": 0.245
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 8216,
+    "output_tokens": 3455,
+    "cached_tokens": 0,
+    "estimated_cost": 0.057892,
+    "latency_ms": 28968.05,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.057892,
+  "cost_cny": 0.39192884,
+  "selection_latency_ms": 30.11,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:15:31.705145+00:00"
+}

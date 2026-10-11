@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_03611_ef2aa407d208",
+  "jd_id": "rjf_03611_ef2aa407d208",
+  "pair_id": "rjf_03611_ef2aa407d208",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Technical: Your background shows JavaScript, but not React or Node.js. How would you design and implement a small React feature backed by a Node.js/Nest.js API, and which concepts from your Spring Boot and REST API experience would transfer directly?"
+    },
+    {
+      "question": "Technical: In the Test Data Management Project, data was synchronized across systems using Oracle, MariaDB, and DB2. Describe how you would diagnose and improve a slow, high-volume synchronization workflow while preserving data consistency and safe recovery from failures."
+    },
+    {
+      "question": "Technical: You used JUnit and Cucumber on the Billing Automation Project. What makes a unit test effective for invoice-validation rules, and how would you decide which cases belong in unit, integration, and end-to-end tests?"
+    },
+    {
+      "question": "Behavioural: Tell us about a production-support issue at Panjiva or a defect you corrected at Pearson: how did you investigate it, communicate progress, validate the fix, and prevent recurrence?"
+    },
+    {
+      "question": "Behavioural: You participated in Scrum planning and prioritization. Give an example of a time when competing work, such as a production issue and a planned enhancement, required you to negotiate priorities with teammates or stakeholders."
+    },
+    {
+      "question": "Situational: You are asked to lead delivery of a new self-storage B2B SaaS workflow with an immovable deadline. How would you break down the technical plan, identify risks and dependencies, assign work, and maintain quality while keeping the team on schedule?"
+    },
+    {
+      "question": "Situational: During a code review, a teammate submits a functional change that risks inefficient database access and has limited test coverage. How would you provide feedback, help resolve the issue, and decide whether the change is ready to release?"
+    },
+    {
+      "question": "Cultural/Motivational: This role involves building and evolving a product for the self-storage industry and values people who enjoy building from scratch. What interests you about moving from billing, order-management, and test-data systems into this B2B SaaS product domain?"
+    },
+    {
+      "question": "Role-Specific: This Lead Engineer role requires mentoring engineers and participating in hiring, while your profile primarily describes individual development contributions. What leadership or knowledge-sharing experiences can you point to, and how would you approach mentoring and evaluating candidates in this role?"
+    },
+    {
+      "question": "Role-Specific: You have built enterprise web applications with Spring Boot, relational databases, Jenkins, Maven, and Git. How would you use that experience to establish a scalable architecture and engineering practices for a JavaScript/React/Node-based team, including CI, code review, observability, and deployment standards?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 7407,
+    "output_tokens": 531,
+    "cached_tokens": 0,
+    "estimated_cost": 0.021186,
+    "latency_ms": 6259.4,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.021186,
+  "cost_cny": 0.14342922,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:03:45.143129+00:00",
+  "user_prompt_sha256": "88bd4154764ed45782c7b9fc196d8975c6be33d5db6d635a82001a2a16e881a9"
+}

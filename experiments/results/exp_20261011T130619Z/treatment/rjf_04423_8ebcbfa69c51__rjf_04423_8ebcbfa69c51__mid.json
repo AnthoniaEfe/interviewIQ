@@ -1,0 +1,468 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_04423_8ebcbfa69c51",
+  "jd_id": "rjf_04423_8ebcbfa69c51",
+  "pair_id": "rjf_04423_8ebcbfa69c51",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 22,
+  "pool_path": "pool/rjf_04423_8ebcbfa69c51__rjf_04423_8ebcbfa69c51__mid.json",
+  "pool_stats": {
+    "n_raw": 31,
+    "n_valid": 26,
+    "n_failed": 5,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.07692307692307693,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      1,
+      19,
+      2,
+      3,
+      13,
+      0,
+      21,
+      12,
+      6,
+      5
+    ],
+    "questions": [
+      {
+        "question": "Describe your approach to working in a fully paperless tax and accounting environment. How would you organize source documents, review notes, approvals, and final workpapers so another team member can follow the audit trail?",
+        "competency": "Paperless workflow",
+        "competency_type": "other",
+        "target_gap": "Paperless environment proficiency",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Paperless-environment proficiency is marked missing and is a required operating condition for the role.",
+        "source_evidence": [
+          "Paperless environment proficiency: missing",
+          "Comfortable in a paperless environment"
+        ],
+        "priority": 0.96,
+        "weight": 0.9492
+      },
+      {
+        "question": "This is an in-person role in Westlake Village. Are you currently able to work in the office every day and reside within 15 miles of the office, or can you meet those requirements by your start date?",
+        "competency": "Work-location eligibility",
+        "competency_type": "domain",
+        "target_gap": "Residence within 15 miles of Westlake Village",
+        "question_type": "Role-Specific",
+        "difficulty": "easy",
+        "rationale": "Local residence is an explicit required condition and is marked missing because no location evidence is provided.",
+        "source_evidence": [
+          "Residence within 15 miles of Westlake Village: missing",
+          "In person in office only"
+        ],
+        "priority": 0.9,
+        "weight": 0.9057
+      },
+      {
+        "question": "A client\u2019s books show a material year-end discrepancy between revenue, bank activity, and sales-tax filings. How would you investigate the issue, determine the correcting entries, and communicate the result?",
+        "competency": "Analytical problem solving",
+        "competency_type": "other",
+        "target_gap": "Analytical skills",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Analytical skills are marked missing, while this role requires sound analysis across tax and accounting engagements.",
+        "source_evidence": [
+          "Analytical skills: missing",
+          "Reconciled balance sheets and tax accounts",
+          "Sales and use tax reporting"
+        ],
+        "priority": 0.95,
+        "weight": 0.9248
+      },
+      {
+        "question": "Tell me about a difficult accounting discrepancy, coding issue, or control breakdown you uncovered. What evidence did you examine, what actions did you take, and what was the outcome?",
+        "competency": "Problem solving",
+        "competency_type": "soft",
+        "target_gap": "Problem solving",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Problem solving is marked missing; this probes a concrete example without assuming one from the resume.",
+        "source_evidence": [
+          "Problem solving: missing",
+          "Monitored invoices and work orders for correct coding",
+          "Performed account reconciliations"
+        ],
+        "priority": 0.95,
+        "weight": 0.9276
+      },
+      {
+        "question": "Describe how you handled a reconciliation that did not tie out. What was your step-by-step process, and how did you document the resolution for review?",
+        "competency": "Reconciliation analysis",
+        "competency_type": "technical",
+        "target_gap": "Analytical skills",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "The candidate has substantial reconciliation experience; this strength probe tests the analytical rigor that is otherwise marked missing.",
+        "source_evidence": [
+          "Reconciled balance sheets",
+          "Performed account reconciliations",
+          "Reconciled cost of goods and bank accounts"
+        ],
+        "priority": 0.84,
+        "weight": 0.9248
+      },
+      {
+        "question": "This position relies on QuickBooks. What hands-on experience do you have with QuickBooks, and if it is limited, how would you become productive in it while maintaining the accuracy of client books?",
+        "competency": "QuickBooks",
+        "competency_type": "technical",
+        "target_gap": "QuickBooks",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "QuickBooks is required and is only a weak match; the candidate lists SAP, AS400, CAMS, and JDE rather than QuickBooks.",
+        "source_evidence": [
+          "SAP, AS400, CAMS, JDE",
+          "QuickBooks accounting software skills"
+        ],
+        "priority": 0.97,
+        "weight": 0.7186
+      },
+      {
+        "question": "Describe a time you received difficult feedback, encountered an error, or faced a demanding stakeholder. How did you respond constructively and keep the relationship productive?",
+        "competency": "Positive attitude and resilience",
+        "competency_type": "soft",
+        "target_gap": "Positive attitude",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Positive attitude is a required competency marked missing, and this probes observable behavior under pressure.",
+        "source_evidence": [
+          "Positive attitude: missing",
+          "Provided vendor support and feedback",
+          "Acted as a go-to person for questions and concerns"
+        ],
+        "priority": 0.76,
+        "weight": 0.9408
+      },
+      {
+        "question": "When several clients have simultaneous month-end close tasks, tax notices, and incomplete records, what system would you use to track status, due dates, dependencies, and reviewer feedback?",
+        "competency": "Work organization",
+        "competency_type": "other",
+        "target_gap": "Organization",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Organization is a required weak match, and managing concurrent client work is central to an accounting manager or senior tax accountant role.",
+        "source_evidence": [
+          "Organization: weak match",
+          "Performed month-end duties",
+          "Closed accounts at month-end and year-end"
+        ],
+        "priority": 0.84,
+        "weight": 0.7306
+      },
+      {
+        "question": "What controls would you use to prevent errors when entering or reviewing year-end adjusting entries, tax accruals, and client-provided data?",
+        "competency": "Accuracy and quality control",
+        "competency_type": "technical",
+        "target_gap": "Attention to detail and accuracy",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Attention to detail and accuracy are required and only weakly evidenced, despite the role\u2019s tax-return and close responsibilities.",
+        "source_evidence": [
+          "Attention to detail and accuracy: weak match",
+          "Entered journal entries and accruals",
+          "Prepared amended returns and accrued use-tax liabilities"
+        ],
+        "priority": 0.91,
+        "weight": 0.7238
+      },
+      {
+        "question": "During a compressed filing deadline, how would you prioritize several client returns, outstanding bookkeeping questions, and staff review requests while preserving accuracy?",
+        "competency": "Deadline management",
+        "competency_type": "other",
+        "target_gap": "Fast-paced, deadline-oriented work",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "The role is deadline-oriented and this competency is only a weak match in the gap matrix.",
+        "source_evidence": [
+          "Fast-paced, deadline-oriented work: weak match",
+          "Month-end and year-end close experience"
+        ],
+        "priority": 0.91,
+        "weight": 0.6823
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.911232,
+      0.81513,
+      0.8785599999999999,
+      0.8812199999999999,
+      0.776832,
+      0.697042,
+      0.715008,
+      0.613704,
+      0.6586580000000001,
+      0.620893
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.1598847657442093,
+      0.3881377577781677,
+      0.5098204612731934,
+      0.5152357816696167,
+      0.3809775114059448,
+      0.5877527594566345,
+      0.4282081723213196,
+      0.5472906827926636,
+      0.4812842607498169
+    ],
+    "mmr_scores": [
+      0.6378623999999999,
+      0.5226255702767372,
+      0.4985506726665495,
+      0.4639078616180419,
+      0.38921166549911485,
+      0.37363614657821653,
+      0.32417977216300964,
+      0.3011303483036041,
+      0.29687339516220096,
+      0.2902398217750549
+    ],
+    "competency_weights": [
+      0.9492,
+      0.9057,
+      0.9248,
+      0.9276,
+      0.9248,
+      0.7186,
+      0.9408,
+      0.7306,
+      0.7238,
+      0.6823
+    ]
+  },
+  "questions": [
+    {
+      "question": "Describe your approach to working in a fully paperless tax and accounting environment. How would you organize source documents, review notes, approvals, and final workpapers so another team member can follow the audit trail?"
+    },
+    {
+      "question": "This is an in-person role in Westlake Village. Are you currently able to work in the office every day and reside within 15 miles of the office, or can you meet those requirements by your start date?"
+    },
+    {
+      "question": "A client\u2019s books show a material year-end discrepancy between revenue, bank activity, and sales-tax filings. How would you investigate the issue, determine the correcting entries, and communicate the result?"
+    },
+    {
+      "question": "Tell me about a difficult accounting discrepancy, coding issue, or control breakdown you uncovered. What evidence did you examine, what actions did you take, and what was the outcome?"
+    },
+    {
+      "question": "Describe how you handled a reconciliation that did not tie out. What was your step-by-step process, and how did you document the resolution for review?"
+    },
+    {
+      "question": "This position relies on QuickBooks. What hands-on experience do you have with QuickBooks, and if it is limited, how would you become productive in it while maintaining the accuracy of client books?"
+    },
+    {
+      "question": "Describe a time you received difficult feedback, encountered an error, or faced a demanding stakeholder. How did you respond constructively and keep the relationship productive?"
+    },
+    {
+      "question": "When several clients have simultaneous month-end close tasks, tax notices, and incomplete records, what system would you use to track status, due dates, dependencies, and reviewer feedback?"
+    },
+    {
+      "question": "What controls would you use to prevent errors when entering or reviewing year-end adjusting entries, tax accruals, and client-provided data?"
+    },
+    {
+      "question": "During a compressed filing deadline, how would you prioritize several client returns, outstanding bookkeeping questions, and staff review requests while preserving accuracy?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe your approach to working in a fully paperless tax and accounting environment. How would you organize source documents, review notes, approvals, and final workpapers so another team member can follow the audit trail?",
+      "competency": "Paperless workflow",
+      "competency_type": "other",
+      "target_gap": "Paperless environment proficiency",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Paperless-environment proficiency is marked missing and is a required operating condition for the role.",
+      "source_evidence": [
+        "Paperless environment proficiency: missing",
+        "Comfortable in a paperless environment"
+      ],
+      "priority": 0.96,
+      "weight": 0.9492
+    },
+    {
+      "question": "This is an in-person role in Westlake Village. Are you currently able to work in the office every day and reside within 15 miles of the office, or can you meet those requirements by your start date?",
+      "competency": "Work-location eligibility",
+      "competency_type": "domain",
+      "target_gap": "Residence within 15 miles of Westlake Village",
+      "question_type": "Role-Specific",
+      "difficulty": "easy",
+      "rationale": "Local residence is an explicit required condition and is marked missing because no location evidence is provided.",
+      "source_evidence": [
+        "Residence within 15 miles of Westlake Village: missing",
+        "In person in office only"
+      ],
+      "priority": 0.9,
+      "weight": 0.9057
+    },
+    {
+      "question": "A client\u2019s books show a material year-end discrepancy between revenue, bank activity, and sales-tax filings. How would you investigate the issue, determine the correcting entries, and communicate the result?",
+      "competency": "Analytical problem solving",
+      "competency_type": "other",
+      "target_gap": "Analytical skills",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Analytical skills are marked missing, while this role requires sound analysis across tax and accounting engagements.",
+      "source_evidence": [
+        "Analytical skills: missing",
+        "Reconciled balance sheets and tax accounts",
+        "Sales and use tax reporting"
+      ],
+      "priority": 0.95,
+      "weight": 0.9248
+    },
+    {
+      "question": "Tell me about a difficult accounting discrepancy, coding issue, or control breakdown you uncovered. What evidence did you examine, what actions did you take, and what was the outcome?",
+      "competency": "Problem solving",
+      "competency_type": "soft",
+      "target_gap": "Problem solving",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Problem solving is marked missing; this probes a concrete example without assuming one from the resume.",
+      "source_evidence": [
+        "Problem solving: missing",
+        "Monitored invoices and work orders for correct coding",
+        "Performed account reconciliations"
+      ],
+      "priority": 0.95,
+      "weight": 0.9276
+    },
+    {
+      "question": "Describe how you handled a reconciliation that did not tie out. What was your step-by-step process, and how did you document the resolution for review?",
+      "competency": "Reconciliation analysis",
+      "competency_type": "technical",
+      "target_gap": "Analytical skills",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate has substantial reconciliation experience; this strength probe tests the analytical rigor that is otherwise marked missing.",
+      "source_evidence": [
+        "Reconciled balance sheets",
+        "Performed account reconciliations",
+        "Reconciled cost of goods and bank accounts"
+      ],
+      "priority": 0.84,
+      "weight": 0.9248
+    },
+    {
+      "question": "This position relies on QuickBooks. What hands-on experience do you have with QuickBooks, and if it is limited, how would you become productive in it while maintaining the accuracy of client books?",
+      "competency": "QuickBooks",
+      "competency_type": "technical",
+      "target_gap": "QuickBooks",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "QuickBooks is required and is only a weak match; the candidate lists SAP, AS400, CAMS, and JDE rather than QuickBooks.",
+      "source_evidence": [
+        "SAP, AS400, CAMS, JDE",
+        "QuickBooks accounting software skills"
+      ],
+      "priority": 0.97,
+      "weight": 0.7186
+    },
+    {
+      "question": "Describe a time you received difficult feedback, encountered an error, or faced a demanding stakeholder. How did you respond constructively and keep the relationship productive?",
+      "competency": "Positive attitude and resilience",
+      "competency_type": "soft",
+      "target_gap": "Positive attitude",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Positive attitude is a required competency marked missing, and this probes observable behavior under pressure.",
+      "source_evidence": [
+        "Positive attitude: missing",
+        "Provided vendor support and feedback",
+        "Acted as a go-to person for questions and concerns"
+      ],
+      "priority": 0.76,
+      "weight": 0.9408
+    },
+    {
+      "question": "When several clients have simultaneous month-end close tasks, tax notices, and incomplete records, what system would you use to track status, due dates, dependencies, and reviewer feedback?",
+      "competency": "Work organization",
+      "competency_type": "other",
+      "target_gap": "Organization",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Organization is a required weak match, and managing concurrent client work is central to an accounting manager or senior tax accountant role.",
+      "source_evidence": [
+        "Organization: weak match",
+        "Performed month-end duties",
+        "Closed accounts at month-end and year-end"
+      ],
+      "priority": 0.84,
+      "weight": 0.7306
+    },
+    {
+      "question": "What controls would you use to prevent errors when entering or reviewing year-end adjusting entries, tax accruals, and client-provided data?",
+      "competency": "Accuracy and quality control",
+      "competency_type": "technical",
+      "target_gap": "Attention to detail and accuracy",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Attention to detail and accuracy are required and only weakly evidenced, despite the role\u2019s tax-return and close responsibilities.",
+      "source_evidence": [
+        "Attention to detail and accuracy: weak match",
+        "Entered journal entries and accruals",
+        "Prepared amended returns and accrued use-tax liabilities"
+      ],
+      "priority": 0.91,
+      "weight": 0.7238
+    },
+    {
+      "question": "During a compressed filing deadline, how would you prioritize several client returns, outstanding bookkeeping questions, and staff review requests while preserving accuracy?",
+      "competency": "Deadline management",
+      "competency_type": "other",
+      "target_gap": "Fast-paced, deadline-oriented work",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "The role is deadline-oriented and this competency is only a weak match in the gap matrix.",
+      "source_evidence": [
+        "Fast-paced, deadline-oriented work: weak match",
+        "Month-end and year-end close experience"
+      ],
+      "priority": 0.91,
+      "weight": 0.6823
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 9315,
+    "output_tokens": 3736,
+    "cached_tokens": 0,
+    "estimated_cost": 0.063462,
+    "latency_ms": 28900.58,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.063462,
+  "cost_cny": 0.42963774,
+  "selection_latency_ms": 30.41,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:10:42.521489+00:00"
+}

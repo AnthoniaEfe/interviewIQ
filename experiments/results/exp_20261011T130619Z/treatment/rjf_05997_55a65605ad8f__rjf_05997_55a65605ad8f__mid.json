@@ -1,0 +1,468 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_05997_55a65605ad8f",
+  "jd_id": "rjf_05997_55a65605ad8f",
+  "pair_id": "rjf_05997_55a65605ad8f",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 43,
+  "pool_path": "pool/rjf_05997_55a65605ad8f__rjf_05997_55a65605ad8f__mid.json",
+  "pool_stats": {
+    "n_raw": 31,
+    "n_valid": 31,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.03225806451612903,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      22,
+      20,
+      29,
+      3,
+      24,
+      1,
+      23,
+      21,
+      8,
+      10
+    ],
+    "questions": [
+      {
+        "question": "Give an example of a technology or engineering practice you had to learn quickly for a project. How did you identify the knowledge gap, validate your understanding, and apply what you learned?",
+        "competency": "Learning agility",
+        "competency_type": "soft",
+        "target_gap": "Learning orientation",
+        "question_type": "Cultural/Motivational",
+        "difficulty": "mid",
+        "rationale": "Learning orientation is a high-weight required missing competency, so direct evidence is needed.",
+        "source_evidence": [
+          "Learning orientation is marked missing",
+          "Over 5 years of professional software development experience",
+          "Master of Science: Computer Science"
+        ],
+        "priority": 0.95,
+        "weight": 0.9377
+      },
+      {
+        "question": "Tell me about one of the four major projects you led from press release to delivery. How did you set measurable outcomes, track progress, handle risks, and decide whether the delivered result was successful?",
+        "competency": "Results-driven delivery",
+        "competency_type": "soft",
+        "target_gap": "Results-driven execution",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Results-driven execution is marked missing despite strong achievement claims; this elicits concrete outcome definition and accountability.",
+        "source_evidence": [
+          "Completed four major projects from press release to final delivery across all SDLC processes.",
+          "Successfully led 4 major projects at Amazon",
+          "Unblocked more than 100 internal customers through major project delivery."
+        ],
+        "priority": 0.96,
+        "weight": 0.9227
+      },
+      {
+        "question": "This position requires U.S. citizenship and the ability to obtain a security clearance. Are you able to satisfy this requirement?",
+        "competency": "Clearance eligibility",
+        "competency_type": "domain",
+        "target_gap": "U.S. citizenship and ability to obtain security clearance",
+        "question_type": "Role-Specific",
+        "difficulty": "easy",
+        "rationale": "This is an explicit required job condition with insufficient candidate-profile evidence and should be confirmed through a direct, role-relevant eligibility question.",
+        "source_evidence": [
+          "US Citizens able to obtain a security clearance",
+          "U.S. citizenship and ability to obtain security clearance is marked weak_match"
+        ],
+        "priority": 0.98,
+        "weight": 0.688
+      },
+      {
+        "question": "How would you design distributed persistence for asset metadata and large associated artifacts when writes can arrive in multiple regions and clients require predictable read behavior?",
+        "competency": "Distributed persistence",
+        "competency_type": "technical",
+        "target_gap": "Distributed persistence",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Distributed persistence is a high-weight weak match and is central to building a scalable canonical system.",
+        "source_evidence": [
+          "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+          "Distributed persistence is marked weak_match"
+        ],
+        "priority": 0.96,
+        "weight": 0.7129
+      },
+      {
+        "question": "Please give a concise two-minute explanation of how a geo-distributed monitoring solution works, first for an operations leader and then for a senior engineer. What would you change between the two explanations?",
+        "competency": "Audience-aware presentation",
+        "competency_type": "domain",
+        "target_gap": "Clear presentation of complex information",
+        "question_type": "Role-Specific",
+        "difficulty": "mid",
+        "rationale": "Tests a weak required communication area using the candidate's documented geo-distributed monitoring work and technical presentation experience.",
+        "source_evidence": [
+          "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+          "Invited to VMware Radio 2016 for a paper presentation",
+          "Clear presentation of complex information is marked weak_match"
+        ],
+        "priority": 0.88,
+        "weight": 0.6918
+      },
+      {
+        "question": "Walk me through how you would decompose an asset-management platform into microservices. Which services would own which data, and how would you handle cross-service workflows without creating tightly coupled synchronous dependencies?",
+        "competency": "Microservice architecture",
+        "competency_type": "technical",
+        "target_gap": "Microservices",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Microservices is a required weak match, so this probes architectural judgment for a central role responsibility.",
+        "source_evidence": [
+          "Highly scalable backend systems",
+          "Led development of multi-tenant, highly scalable software solutions.",
+          "Microservices is marked weak_match"
+        ],
+        "priority": 0.97,
+        "weight": 0.7208
+      },
+      {
+        "question": "How would you explain a trade-off between eventual consistency and stronger consistency in the asset platform to a non-technical stakeholder deciding on user-visible behavior?",
+        "competency": "Stakeholder communication",
+        "competency_type": "domain",
+        "target_gap": "Communication",
+        "question_type": "Role-Specific",
+        "difficulty": "mid",
+        "rationale": "Communication is a required weak match; this directly evaluates the ability to translate a central distributed-systems trade-off for non-technical audiences.",
+        "source_evidence": [
+          "Communication is marked weak_match",
+          "Technical writing",
+          "paper presentation on Geo Distributed Monitoring Systems"
+        ],
+        "priority": 0.92,
+        "weight": 0.716
+      },
+      {
+        "question": "Describe a time when requirements for a technical project were incomplete or changing. What assumptions did you make explicit, how did you seek alignment, and what did you do when new information invalidated the plan?",
+        "competency": "Ambiguity management",
+        "competency_type": "soft",
+        "target_gap": "Adaptability to ambiguity and uncertainty",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Adaptability is a required weak match; this tests a behavior essential to a fast-moving multi-project environment.",
+        "source_evidence": [
+          "Completed four major projects from press release to final delivery across all SDLC processes.",
+          "Adaptability to ambiguity and uncertainty is marked weak_match"
+        ],
+        "priority": 0.9,
+        "weight": 0.695
+      },
+      {
+        "question": "You need to detect duplicate assets across tens of millions of records while keeping a bounded memory footprint. What data structures and algorithm would you choose, and how would the approach change if exactness were required versus approximate detection were acceptable?",
+        "competency": "Algorithms and data structures",
+        "competency_type": "technical",
+        "target_gap": "Data structures and algorithms",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "A required weak match with little direct profile evidence; this tests core engineering problem-solving independently of prior domain exposure.",
+        "source_evidence": [
+          "Data structures and algorithms is marked weak_match",
+          "Software Engineer with over 5 years of professional software development experience"
+        ],
+        "priority": 0.94,
+        "weight": 0.6977
+      },
+      {
+        "question": "What storage characteristics matter when designing a service that keeps asset metadata plus potentially large immutable artifacts? Discuss durability, replication, throughput, latency, lifecycle management, and failure recovery.",
+        "competency": "Storage architecture",
+        "competency_type": "technical",
+        "target_gap": "Storage",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Storage is a required weak match and is directly relevant to an asset-management system.",
+        "source_evidence": [
+          "Storage is marked weak_match",
+          "Cloud infrastructure",
+          "Backend systems"
+        ],
+        "priority": 0.92,
+        "weight": 0.7326
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.8908149999999999,
+      0.8857919999999999,
+      0.67424,
+      0.684384,
+      0.608784,
+      0.699176,
+      0.65872,
+      0.6255,
+      0.6558379999999999,
+      0.673992
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.3452516794204712,
+      0.02612706460058689,
+      0.11973133683204651,
+      0.25898948311805725,
+      0.5271099209785461,
+      0.44126826524734497,
+      0.4319642186164856,
+      0.530378520488739,
+      0.6526179313659668
+    ],
+    "mmr_scores": [
+      0.6235704999999999,
+      0.5164788961738586,
+      0.46412988061982385,
+      0.443149398950386,
+      0.3484519550645828,
+      0.3312902237064361,
+      0.32872352042579644,
+      0.3082607344150542,
+      0.2999730438533782,
+      0.27600902059020993
+    ],
+    "competency_weights": [
+      0.9377,
+      0.9227,
+      0.688,
+      0.7129,
+      0.6918,
+      0.7208,
+      0.716,
+      0.695,
+      0.6977,
+      0.7326
+    ]
+  },
+  "questions": [
+    {
+      "question": "Give an example of a technology or engineering practice you had to learn quickly for a project. How did you identify the knowledge gap, validate your understanding, and apply what you learned?"
+    },
+    {
+      "question": "Tell me about one of the four major projects you led from press release to delivery. How did you set measurable outcomes, track progress, handle risks, and decide whether the delivered result was successful?"
+    },
+    {
+      "question": "This position requires U.S. citizenship and the ability to obtain a security clearance. Are you able to satisfy this requirement?"
+    },
+    {
+      "question": "How would you design distributed persistence for asset metadata and large associated artifacts when writes can arrive in multiple regions and clients require predictable read behavior?"
+    },
+    {
+      "question": "Please give a concise two-minute explanation of how a geo-distributed monitoring solution works, first for an operations leader and then for a senior engineer. What would you change between the two explanations?"
+    },
+    {
+      "question": "Walk me through how you would decompose an asset-management platform into microservices. Which services would own which data, and how would you handle cross-service workflows without creating tightly coupled synchronous dependencies?"
+    },
+    {
+      "question": "How would you explain a trade-off between eventual consistency and stronger consistency in the asset platform to a non-technical stakeholder deciding on user-visible behavior?"
+    },
+    {
+      "question": "Describe a time when requirements for a technical project were incomplete or changing. What assumptions did you make explicit, how did you seek alignment, and what did you do when new information invalidated the plan?"
+    },
+    {
+      "question": "You need to detect duplicate assets across tens of millions of records while keeping a bounded memory footprint. What data structures and algorithm would you choose, and how would the approach change if exactness were required versus approximate detection were acceptable?"
+    },
+    {
+      "question": "What storage characteristics matter when designing a service that keeps asset metadata plus potentially large immutable artifacts? Discuss durability, replication, throughput, latency, lifecycle management, and failure recovery."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Give an example of a technology or engineering practice you had to learn quickly for a project. How did you identify the knowledge gap, validate your understanding, and apply what you learned?",
+      "competency": "Learning agility",
+      "competency_type": "soft",
+      "target_gap": "Learning orientation",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Learning orientation is a high-weight required missing competency, so direct evidence is needed.",
+      "source_evidence": [
+        "Learning orientation is marked missing",
+        "Over 5 years of professional software development experience",
+        "Master of Science: Computer Science"
+      ],
+      "priority": 0.95,
+      "weight": 0.9377
+    },
+    {
+      "question": "Tell me about one of the four major projects you led from press release to delivery. How did you set measurable outcomes, track progress, handle risks, and decide whether the delivered result was successful?",
+      "competency": "Results-driven delivery",
+      "competency_type": "soft",
+      "target_gap": "Results-driven execution",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Results-driven execution is marked missing despite strong achievement claims; this elicits concrete outcome definition and accountability.",
+      "source_evidence": [
+        "Completed four major projects from press release to final delivery across all SDLC processes.",
+        "Successfully led 4 major projects at Amazon",
+        "Unblocked more than 100 internal customers through major project delivery."
+      ],
+      "priority": 0.96,
+      "weight": 0.9227
+    },
+    {
+      "question": "This position requires U.S. citizenship and the ability to obtain a security clearance. Are you able to satisfy this requirement?",
+      "competency": "Clearance eligibility",
+      "competency_type": "domain",
+      "target_gap": "U.S. citizenship and ability to obtain security clearance",
+      "question_type": "Role-Specific",
+      "difficulty": "easy",
+      "rationale": "This is an explicit required job condition with insufficient candidate-profile evidence and should be confirmed through a direct, role-relevant eligibility question.",
+      "source_evidence": [
+        "US Citizens able to obtain a security clearance",
+        "U.S. citizenship and ability to obtain security clearance is marked weak_match"
+      ],
+      "priority": 0.98,
+      "weight": 0.688
+    },
+    {
+      "question": "How would you design distributed persistence for asset metadata and large associated artifacts when writes can arrive in multiple regions and clients require predictable read behavior?",
+      "competency": "Distributed persistence",
+      "competency_type": "technical",
+      "target_gap": "Distributed persistence",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Distributed persistence is a high-weight weak match and is central to building a scalable canonical system.",
+      "source_evidence": [
+        "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+        "Distributed persistence is marked weak_match"
+      ],
+      "priority": 0.96,
+      "weight": 0.7129
+    },
+    {
+      "question": "Please give a concise two-minute explanation of how a geo-distributed monitoring solution works, first for an operations leader and then for a senior engineer. What would you change between the two explanations?",
+      "competency": "Audience-aware presentation",
+      "competency_type": "domain",
+      "target_gap": "Clear presentation of complex information",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Tests a weak required communication area using the candidate's documented geo-distributed monitoring work and technical presentation experience.",
+      "source_evidence": [
+        "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+        "Invited to VMware Radio 2016 for a paper presentation",
+        "Clear presentation of complex information is marked weak_match"
+      ],
+      "priority": 0.88,
+      "weight": 0.6918
+    },
+    {
+      "question": "Walk me through how you would decompose an asset-management platform into microservices. Which services would own which data, and how would you handle cross-service workflows without creating tightly coupled synchronous dependencies?",
+      "competency": "Microservice architecture",
+      "competency_type": "technical",
+      "target_gap": "Microservices",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Microservices is a required weak match, so this probes architectural judgment for a central role responsibility.",
+      "source_evidence": [
+        "Highly scalable backend systems",
+        "Led development of multi-tenant, highly scalable software solutions.",
+        "Microservices is marked weak_match"
+      ],
+      "priority": 0.97,
+      "weight": 0.7208
+    },
+    {
+      "question": "How would you explain a trade-off between eventual consistency and stronger consistency in the asset platform to a non-technical stakeholder deciding on user-visible behavior?",
+      "competency": "Stakeholder communication",
+      "competency_type": "domain",
+      "target_gap": "Communication",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Communication is a required weak match; this directly evaluates the ability to translate a central distributed-systems trade-off for non-technical audiences.",
+      "source_evidence": [
+        "Communication is marked weak_match",
+        "Technical writing",
+        "paper presentation on Geo Distributed Monitoring Systems"
+      ],
+      "priority": 0.92,
+      "weight": 0.716
+    },
+    {
+      "question": "Describe a time when requirements for a technical project were incomplete or changing. What assumptions did you make explicit, how did you seek alignment, and what did you do when new information invalidated the plan?",
+      "competency": "Ambiguity management",
+      "competency_type": "soft",
+      "target_gap": "Adaptability to ambiguity and uncertainty",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Adaptability is a required weak match; this tests a behavior essential to a fast-moving multi-project environment.",
+      "source_evidence": [
+        "Completed four major projects from press release to final delivery across all SDLC processes.",
+        "Adaptability to ambiguity and uncertainty is marked weak_match"
+      ],
+      "priority": 0.9,
+      "weight": 0.695
+    },
+    {
+      "question": "You need to detect duplicate assets across tens of millions of records while keeping a bounded memory footprint. What data structures and algorithm would you choose, and how would the approach change if exactness were required versus approximate detection were acceptable?",
+      "competency": "Algorithms and data structures",
+      "competency_type": "technical",
+      "target_gap": "Data structures and algorithms",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "A required weak match with little direct profile evidence; this tests core engineering problem-solving independently of prior domain exposure.",
+      "source_evidence": [
+        "Data structures and algorithms is marked weak_match",
+        "Software Engineer with over 5 years of professional software development experience"
+      ],
+      "priority": 0.94,
+      "weight": 0.6977
+    },
+    {
+      "question": "What storage characteristics matter when designing a service that keeps asset metadata plus potentially large immutable artifacts? Discuss durability, replication, throughput, latency, lifecycle management, and failure recovery.",
+      "competency": "Storage architecture",
+      "competency_type": "technical",
+      "target_gap": "Storage",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Storage is a required weak match and is directly relevant to an asset-management system.",
+      "source_evidence": [
+        "Storage is marked weak_match",
+        "Cloud infrastructure",
+        "Backend systems"
+      ],
+      "priority": 0.92,
+      "weight": 0.7326
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 12965,
+    "output_tokens": 3760,
+    "cached_tokens": 0,
+    "estimated_cost": 0.07105,
+    "latency_ms": 30856.15,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.07105,
+  "cost_cny": 0.4810085,
+  "selection_latency_ms": 27.73,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:17:25.182553+00:00"
+}

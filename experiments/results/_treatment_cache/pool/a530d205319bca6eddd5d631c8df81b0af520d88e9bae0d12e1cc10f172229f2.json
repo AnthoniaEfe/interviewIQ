@@ -1,0 +1,1061 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "pool",
+  "condition": "T_pool",
+  "profile_id": "rjf_03496_b9650aabb896",
+  "jd_id": "rjf_03496_b9650aabb896",
+  "pair_id": "rjf_03496_b9650aabb896",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "prompt": {
+    "file": "generation/interviewiq_pool.md",
+    "version": "1.1.0",
+    "sha256": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc"
+  },
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 14,
+  "pool_size_requested": 30,
+  "raw_questions": [
+    {
+      "question": "Describe the most complex query you have written over a large dataset. What were the joins, aggregations, partitioning strategy, and performance bottlenecks, and how did you validate both correctness and runtime?",
+      "competency": "Complex query writing",
+      "dimension": "Technical",
+      "target_gap": "Complex query writing",
+      "difficulty": "hard",
+      "rationale": "Directly tests the weakest required match and distinguishes general Hadoop experience from demonstrable large-scale query design and tuning.",
+      "source_evidence": [
+        "Hadoop",
+        "Designed and optimized Hive tables and HQL queries using partitioning and bucketing."
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "A new source system must be added to an existing data platform without disrupting reporting consumers. How would you assess its integration points, define contracts, plan schema evolution, and deploy the change safely?",
+      "competency": "System architecture integration",
+      "dimension": "Situational",
+      "target_gap": "System architecture and integration",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's weak-match evidence for architecture-level integration, a central Staff Data Engineer responsibility.",
+      "source_evidence": [
+        "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations.",
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting."
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Walk through a production integration defect you investigated, from the first alert through root-cause isolation, remediation, regression testing, and communication to dependent teams.",
+      "competency": "Integration testing and debugging",
+      "dimension": "Behavioural",
+      "target_gap": "Integration testing and debugging",
+      "difficulty": "hard",
+      "rationale": "Probes the weak match with an evidence-based production-debugging example and assesses whether the candidate can coordinate resolution beyond individual code fixes.",
+      "source_evidence": [
+        "Resolved customer issues through workarounds, debugging, and defect fixes.",
+        "Fixed SCD Type 2 date chaining defects and cleaned duplicate records."
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "How would you establish an integration-test strategy for a pipeline that ingests source data, transforms it in Spark, and publishes warehouse tables used by reports? Include test data, failure cases, data-quality assertions, and release gates.",
+      "competency": "Integration testing strategy",
+      "dimension": "Situational",
+      "target_gap": "Integration testing and debugging",
+      "difficulty": "hard",
+      "rationale": "The role requires coordinating integration testing; this tests a systematic approach rather than a single debugging anecdote.",
+      "source_evidence": [
+        "Developed data ingestion pipelines on Azure HDInsight Spark clusters using Azure Data Factory and Spark SQL.",
+        "Worked on data quality solutions, duplicate cleanup, and defect correction."
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "What SDLC practices would you require before a data-pipeline change can reach production, and how would you make those practices practical for a small engineering team delivering in Scrum?",
+      "competency": "Data engineering SDLC",
+      "dimension": "Situational",
+      "target_gap": "Software development lifecycle practices",
+      "difficulty": "hard",
+      "rationale": "Addresses a weak match against the role's requirement to ensure industry best SDLC practices while delivering through Scrum.",
+      "source_evidence": [
+        "Used version-control tools to coordinate project development and code submissions.",
+        "Instantiated and maintained CI/CD pipelines and applied automation to environments and applications."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "In your Azure Data Factory work, how did you decide which responsibilities belonged in ADF, Spark, the target database, and orchestration infrastructure? What trade-offs did that architecture create?",
+      "competency": "Data integration architecture",
+      "dimension": "Technical",
+      "target_gap": "Data integration pipeline architecture",
+      "difficulty": "hard",
+      "rationale": "Builds on the candidate's ADF evidence to assess architectural reasoning needed to design integration pipelines and reporting infrastructure.",
+      "source_evidence": [
+        "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations.",
+        "Developed data ingestion pipelines on Azure HDInsight Spark clusters using Azure Data Factory and Spark SQL."
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Tell me about the enterprise data lake you set up at Deloitte. What data zones, governance controls, storage formats, access patterns, and operational monitoring did you design, and what decisions would you change today?",
+      "competency": "Enterprise data management",
+      "dimension": "Role-Specific",
+      "target_gap": "Enterprise data management technologies",
+      "difficulty": "hard",
+      "rationale": "Clarifies the depth of the partial enterprise-data-management match and tests design ownership appropriate to a platform role.",
+      "source_evidence": [
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting.",
+        "Developed an AWS S3 security framework using AWS Lambda and DynamoDB."
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "Design a warehouse layer for historical customer reporting where source records can arrive late, be corrected, or be duplicated. Explain your grain, key strategy, SCD approach, reconciliation controls, and deployment plan.",
+      "competency": "Data warehouse development",
+      "dimension": "Situational",
+      "target_gap": "Data warehouse development",
+      "difficulty": "hard",
+      "rationale": "The candidate has data modeling and SCD defect-fix experience, but the matrix marks warehouse development partial; this tests end-to-end warehouse design capability.",
+      "source_evidence": [
+        "Fixed SCD Type 2 date chaining defects and cleaned duplicate records.",
+        "Experienced in dimensional, transactional, star schema, snowflake schema, and slowly changing dimension modeling."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Compare an ETL implementation with an ELT implementation for loading a reporting warehouse from multiple operational systems. When would you choose each, and how would observability, cost, data quality, and recoverability differ?",
+      "competency": "ETL and ELT design",
+      "dimension": "Technical",
+      "target_gap": "ETL and ELT application development",
+      "difficulty": "hard",
+      "rationale": "Tests the partial match by asking the candidate to articulate design trade-offs across both ETL and ELT, which the role explicitly requires.",
+      "source_evidence": [
+        "Designed ETL data flows and developed ETL pipelines across multiple data sources.",
+        "Used AWS EMR to transform and move data between AWS data stores and databases."
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "How have you monitored a cloud data pipeline in production? Describe the health signals, alert thresholds, retries, lineage or audit data, and the process you used when an SLA was at risk.",
+      "competency": "Cloud pipeline operations",
+      "dimension": "Technical",
+      "target_gap": "Cloud data solutions",
+      "difficulty": "hard",
+      "rationale": "Expands the partial cloud-data-solutions evidence into the required operational capabilities of configuring, managing, and monitoring cloud applications.",
+      "source_evidence": [
+        "Integrated Apache Airflow with AWS to monitor multi-stage machine learning workflows.",
+        "Created, debugged, scheduled, and monitored jobs using Airflow."
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "You inherit a pipeline that loads inconsistent records from MySQL and Cassandra into cloud storage and an analytics database. How would you profile the sources, define data-quality rules, handle rejects, and demonstrate that the published data is trustworthy?",
+      "competency": "Structured data processing",
+      "dimension": "Situational",
+      "target_gap": "Structured data processing",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's partial structured-processing match through a realistic multi-source and quality-sensitive design scenario.",
+      "source_evidence": [
+        "Integrated on-premises MySQL and Cassandra data with cloud Blob Storage and Azure SQL Database using Azure Data Factory.",
+        "Worked on data quality solutions, duplicate cleanup, and defect correction."
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Describe the database technologies you have used in a pipeline and how you selected data models, indexes or partitions, connection patterns, and load methods for each one.",
+      "competency": "Database technologies",
+      "dimension": "Technical",
+      "target_gap": "Database technologies",
+      "difficulty": "mid",
+      "rationale": "Validates breadth and practical depth behind the partial database-technologies match.",
+      "source_evidence": [
+        "Azure SQL Database",
+        "MySQL",
+        "Cassandra",
+        "Amazon RDS",
+        "DynamoDB"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "Give an example of an ETL pipeline you built from source ingestion through publication. How did you make it idempotent, restartable, observable, and safe to rerun after a partial failure?",
+      "competency": "ETL engineering",
+      "dimension": "Technical",
+      "target_gap": "ETL technologies",
+      "difficulty": "hard",
+      "rationale": "The candidate has broad ETL claims, while the matrix is partial; this probes production-grade implementation details.",
+      "source_evidence": [
+        "Developed ETL processes to load data from multiple sources into HDFS using Flume and Sqoop.",
+        "Created pipelines to load Azure Data Lake data into staging SQL databases and Azure SQL Database."
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Explain a Spark SQL workload you optimized. How did you inspect the execution plan, address skew or shuffle cost, choose partitioning, and verify that the optimization did not change results?",
+      "competency": "Spark SQL optimization",
+      "dimension": "Technical",
+      "target_gap": "Spark SQL",
+      "difficulty": "hard",
+      "rationale": "Uses a strong match as a depth probe for a core required technology and assesses optimization practices relevant to large-scale pipelines.",
+      "source_evidence": [
+        "Spark SQL",
+        "Developed Spark scripts and UDFs using Spark DSL and Spark SQL for aggregation and RDBMS loading."
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Show how you would structure a Python-based data-processing component for maintainability: configuration, schema validation, logging, error handling, unit tests, and integration with Spark SQL.",
+      "competency": "Python data engineering",
+      "dimension": "Technical",
+      "target_gap": "Python",
+      "difficulty": "hard",
+      "rationale": "Although Python is a strong match, the question tests engineering quality and maintainability rather than familiarity alone.",
+      "source_evidence": [
+        "Python",
+        "Imported data from HDFS and HBase into Spark RDDs and performed computations with PySpark."
+      ],
+      "priority": 0.81
+    },
+    {
+      "question": "When business users request a new dashboard metric, how do you turn the request into a precise use case, identify source-of-truth data, define metric logic, and communicate trade-offs before building the pipeline?",
+      "competency": "Requirements analysis",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "The role relies on collaboration with end users and technical translation; the candidate profile indicates stakeholder interaction but does not give a detailed example.",
+      "source_evidence": [
+        "Interacted with business partners, Business Analysts and product owner to understand requirements.",
+        "Developed dashboards and visualizations using SSRS and Power BI."
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "Describe how you would design the data-integration infrastructure behind a reporting environment that needs daily curated datasets and near-real-time operational metrics. Which components would you separate, and why?",
+      "competency": "Reporting data infrastructure",
+      "dimension": "Situational",
+      "target_gap": "Data integration pipeline architecture",
+      "difficulty": "hard",
+      "rationale": "Directly tests the job's reporting-and-analysis infrastructure requirement and the candidate's ability to combine batch and streaming experience.",
+      "source_evidence": [
+        "Developed Spark Streaming programs for near-real-time Kafka data.",
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting."
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "Tell me about a time a data-quality issue affected a downstream consumer. How did you quantify impact, correct the data, prevent recurrence, and decide whether a backfill was necessary?",
+      "competency": "Data quality ownership",
+      "dimension": "Behavioural",
+      "target_gap": "ETL and ELT application development",
+      "difficulty": "mid",
+      "rationale": "Assesses operational ownership in ETL/ELT delivery using the candidate's documented duplicate-cleanup and SCD defect experience.",
+      "source_evidence": [
+        "Fixed SCD Type 2 date chaining defects and cleaned duplicate records.",
+        "Worked on data quality solutions, duplicate cleanup, and defect correction."
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "For a new large-scale data-platform component, what artifacts would you produce during ideation to align engineers, end users, and leadership on architecture, risks, costs, and delivery sequencing?",
+      "competency": "Platform design",
+      "dimension": "Role-Specific",
+      "target_gap": "System architecture and integration",
+      "difficulty": "hard",
+      "rationale": "Tests a weak-match area against the role's expectation to provide high-level analysis and own key platform-component delivery.",
+      "source_evidence": [
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting.",
+        "Cloud data engineering experience across AWS and Azure."
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "How would you organize a small data engineering team to deliver a pipeline increment in Scrum while maintaining predictable quality? Discuss refinement, estimation, ownership, code review, testing, and retrospectives.",
+      "competency": "Scrum delivery",
+      "dimension": "Situational",
+      "target_gap": "Software development lifecycle practices",
+      "difficulty": "hard",
+      "rationale": "Probes practical delivery leadership and quality practices, which are necessary for the role but only indirectly evidenced in the profile.",
+      "source_evidence": [
+        "Used version-control tools to coordinate project development and code submissions.",
+        "Coordinated tasks with other IT team members."
+      ],
+      "priority": 0.76
+    },
+    {
+      "question": "Describe a situation where you had to explain a technical data-design constraint to a business partner or product owner. How did you present options and reach a decision?",
+      "competency": "Technical communication",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Evaluates the ability to translate technical solutions for stakeholders, using the profile's documented interaction with business partners and product owners.",
+      "source_evidence": [
+        "Interacted with business partners, Business Analysts and product owner to understand requirements.",
+        "Used collective decision-making and coordinated tasks with other IT team members."
+      ],
+      "priority": 0.74
+    },
+    {
+      "question": "What would be your approach to reviewing an existing warehouse and pipeline estate for enterprise data-management risks such as unclear ownership, inconsistent definitions, uncontrolled access, poor lineage, and retention gaps?",
+      "competency": "Data governance assessment",
+      "dimension": "Situational",
+      "target_gap": "Enterprise data management technologies",
+      "difficulty": "hard",
+      "rationale": "Assesses governance and stewardship depth beyond the candidate's enterprise data-lake implementation claim.",
+      "source_evidence": [
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting.",
+        "Developed an AWS S3 security framework using AWS Lambda and DynamoDB."
+      ],
+      "priority": 0.73
+    },
+    {
+      "question": "At Deloitte, you configured Kerberos principals and tested access across HDFS, Hive, Pig, and MapReduce. How did you troubleshoot access failures, and what security principles from that work would you carry into a cloud data platform?",
+      "competency": "Data platform security",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "hard",
+      "rationale": "Uses a distinctive, documented profile detail to assess security troubleshooting and transferable platform-design judgment.",
+      "source_evidence": [
+        "Configured Kerberos authentication principals and tested HDFS, Hive, Pig, and MapReduce access.",
+        "Developed an AWS S3 security framework using AWS Lambda and DynamoDB."
+      ],
+      "priority": 0.71
+    },
+    {
+      "question": "Tell me how you would assess and tune a query that joins several large fact-like datasets and produces a reporting aggregate. What evidence would lead you to change the physical design rather than only rewrite SQL?",
+      "competency": "Large-scale query tuning",
+      "dimension": "Situational",
+      "target_gap": "Complex query writing",
+      "difficulty": "hard",
+      "rationale": "Further tests the highest-priority weak match through judgment about SQL, storage, and physical design trade-offs.",
+      "source_evidence": [
+        "Created and optimized Hive tables and HQL queries using partitioning and bucketing.",
+        "Migrated large datasets to Databricks and administered clusters and data pipelines."
+      ],
+      "priority": 0.7
+    },
+    {
+      "question": "How would you implement safe schema evolution for Parquet data consumed by Spark jobs and warehouse loads, including backward compatibility, validation, and rollback?",
+      "competency": "Schema evolution",
+      "dimension": "Technical",
+      "target_gap": "Structured data processing",
+      "difficulty": "hard",
+      "rationale": "Tests structured data-processing depth and integration robustness using formats and Spark experience explicitly present in the profile.",
+      "source_evidence": [
+        "Parquet",
+        "Apache Spark",
+        "Developed Spark scripts and UDFs using Spark DSL and Spark SQL for aggregation and RDBMS loading."
+      ],
+      "priority": 0.69
+    },
+    {
+      "question": "What is your method for balancing a request for rapid delivery against the need for architecture review, automated testing, documentation, and operational readiness?",
+      "competency": "Engineering judgment",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Software development lifecycle practices",
+      "difficulty": "mid",
+      "rationale": "Reveals the candidate's quality mindset and decision-making under delivery pressure, important to the role's SDLC expectations.",
+      "source_evidence": [
+        "Instantiated and maintained CI/CD pipelines and applied automation to environments and applications.",
+        "Used Git and GitHub for versioning and CI/CD development."
+      ],
+      "priority": 0.67
+    },
+    {
+      "question": "Describe the decision process behind reducing EC2 costs by deregistering unused AMIs. How did you identify candidates, protect needed images, automate the action, and measure the outcome?",
+      "competency": "Cloud automation",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Provides a profile-specific probe into automation, risk control, and measurable operational outcomes.",
+      "source_evidence": [
+        "Created AWS Lambda functions with Boto3 to deregister unused AMIs.",
+        "Reduced EC2 resource costs by deregistering unused AMIs."
+      ],
+      "priority": 0.64
+    },
+    {
+      "question": "Imagine an Airflow-orchestrated pipeline begins failing intermittently after a downstream schema change. How would you use orchestration metadata, logs, retries, and stakeholder communication to restore service and prevent recurrence?",
+      "competency": "Pipeline incident management",
+      "dimension": "Situational",
+      "target_gap": "Cloud data solutions",
+      "difficulty": "hard",
+      "rationale": "Combines the candidate's Airflow experience with the role's need for reliable cloud solution monitoring and incident handling.",
+      "source_evidence": [
+        "Integrated Apache Airflow with AWS to monitor multi-stage machine learning workflows.",
+        "Created, debugged, scheduled, and monitored jobs using Airflow."
+      ],
+      "priority": 0.63
+    },
+    {
+      "question": "Describe how you would mentor a less-experienced engineer who is building their first Spark-based ingestion pipeline. What design reviews, coding standards, and learning checkpoints would you use?",
+      "competency": "Technical mentoring",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "The role explicitly requires technical direction and mentoring; the profile notes task coordination but offers limited direct mentoring evidence.",
+      "source_evidence": [
+        "Coordinated tasks with other IT team members.",
+        "Around 7 years of Big Data Engineer experience"
+      ],
+      "priority": 0.62
+    },
+    {
+      "question": "Which parts of your experience across Hadoop, Azure, and AWS best prepare you to own a component of a large-scale data platform, and where would you seek input from specialists before making a design decision?",
+      "competency": "Platform ownership",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Assesses motivation, self-awareness, and readiness for the ownership scope of the Staff Data Engineer role without assuming unverified leadership experience.",
+      "source_evidence": [
+        "Built scalable distributed data solutions using the Hadoop ecosystem.",
+        "Cloud data engineering experience across AWS and Azure.",
+        "Designed enterprise-level data lakes and distributed data solutions"
+      ],
+      "priority": 0.6
+    }
+  ],
+  "valid_questions": [
+    {
+      "question": "Describe the most complex query you have written over a large dataset. What were the joins, aggregations, partitioning strategy, and performance bottlenecks, and how did you validate both correctness and runtime?",
+      "competency": "Complex query writing",
+      "dimension": "Technical",
+      "target_gap": "Complex query writing",
+      "difficulty": "hard",
+      "rationale": "Directly tests the weakest required match and distinguishes general Hadoop experience from demonstrable large-scale query design and tuning.",
+      "source_evidence": [
+        "Hadoop",
+        "Designed and optimized Hive tables and HQL queries using partitioning and bucketing."
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "A new source system must be added to an existing data platform without disrupting reporting consumers. How would you assess its integration points, define contracts, plan schema evolution, and deploy the change safely?",
+      "competency": "System architecture integration",
+      "dimension": "Situational",
+      "target_gap": "System architecture and integration",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's weak-match evidence for architecture-level integration, a central Staff Data Engineer responsibility.",
+      "source_evidence": [
+        "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations.",
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting."
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Walk through a production integration defect you investigated, from the first alert through root-cause isolation, remediation, regression testing, and communication to dependent teams.",
+      "competency": "Integration testing and debugging",
+      "dimension": "Behavioural",
+      "target_gap": "Integration testing and debugging",
+      "difficulty": "hard",
+      "rationale": "Probes the weak match with an evidence-based production-debugging example and assesses whether the candidate can coordinate resolution beyond individual code fixes.",
+      "source_evidence": [
+        "Resolved customer issues through workarounds, debugging, and defect fixes.",
+        "Fixed SCD Type 2 date chaining defects and cleaned duplicate records."
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "How would you establish an integration-test strategy for a pipeline that ingests source data, transforms it in Spark, and publishes warehouse tables used by reports? Include test data, failure cases, data-quality assertions, and release gates.",
+      "competency": "Integration testing strategy",
+      "dimension": "Situational",
+      "target_gap": "Integration testing and debugging",
+      "difficulty": "hard",
+      "rationale": "The role requires coordinating integration testing; this tests a systematic approach rather than a single debugging anecdote.",
+      "source_evidence": [
+        "Developed data ingestion pipelines on Azure HDInsight Spark clusters using Azure Data Factory and Spark SQL.",
+        "Worked on data quality solutions, duplicate cleanup, and defect correction."
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "What SDLC practices would you require before a data-pipeline change can reach production, and how would you make those practices practical for a small engineering team delivering in Scrum?",
+      "competency": "Data engineering SDLC",
+      "dimension": "Situational",
+      "target_gap": "Software development lifecycle practices",
+      "difficulty": "hard",
+      "rationale": "Addresses a weak match against the role's requirement to ensure industry best SDLC practices while delivering through Scrum.",
+      "source_evidence": [
+        "Used version-control tools to coordinate project development and code submissions.",
+        "Instantiated and maintained CI/CD pipelines and applied automation to environments and applications."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "In your Azure Data Factory work, how did you decide which responsibilities belonged in ADF, Spark, the target database, and orchestration infrastructure? What trade-offs did that architecture create?",
+      "competency": "Data integration architecture",
+      "dimension": "Technical",
+      "target_gap": "Data integration pipeline architecture",
+      "difficulty": "hard",
+      "rationale": "Builds on the candidate's ADF evidence to assess architectural reasoning needed to design integration pipelines and reporting infrastructure.",
+      "source_evidence": [
+        "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations.",
+        "Developed data ingestion pipelines on Azure HDInsight Spark clusters using Azure Data Factory and Spark SQL."
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Tell me about the enterprise data lake you set up at Deloitte. What data zones, governance controls, storage formats, access patterns, and operational monitoring did you design, and what decisions would you change today?",
+      "competency": "Enterprise data management",
+      "dimension": "Role-Specific",
+      "target_gap": "Enterprise data management technologies",
+      "difficulty": "hard",
+      "rationale": "Clarifies the depth of the partial enterprise-data-management match and tests design ownership appropriate to a platform role.",
+      "source_evidence": [
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting.",
+        "Developed an AWS S3 security framework using AWS Lambda and DynamoDB."
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "Design a warehouse layer for historical customer reporting where source records can arrive late, be corrected, or be duplicated. Explain your grain, key strategy, SCD approach, reconciliation controls, and deployment plan.",
+      "competency": "Data warehouse development",
+      "dimension": "Situational",
+      "target_gap": "Data warehouse development",
+      "difficulty": "hard",
+      "rationale": "The candidate has data modeling and SCD defect-fix experience, but the matrix marks warehouse development partial; this tests end-to-end warehouse design capability.",
+      "source_evidence": [
+        "Fixed SCD Type 2 date chaining defects and cleaned duplicate records.",
+        "Experienced in dimensional, transactional, star schema, snowflake schema, and slowly changing dimension modeling."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Compare an ETL implementation with an ELT implementation for loading a reporting warehouse from multiple operational systems. When would you choose each, and how would observability, cost, data quality, and recoverability differ?",
+      "competency": "ETL and ELT design",
+      "dimension": "Technical",
+      "target_gap": "ETL and ELT application development",
+      "difficulty": "hard",
+      "rationale": "Tests the partial match by asking the candidate to articulate design trade-offs across both ETL and ELT, which the role explicitly requires.",
+      "source_evidence": [
+        "Designed ETL data flows and developed ETL pipelines across multiple data sources.",
+        "Used AWS EMR to transform and move data between AWS data stores and databases."
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "How have you monitored a cloud data pipeline in production? Describe the health signals, alert thresholds, retries, lineage or audit data, and the process you used when an SLA was at risk.",
+      "competency": "Cloud pipeline operations",
+      "dimension": "Technical",
+      "target_gap": "Cloud data solutions",
+      "difficulty": "hard",
+      "rationale": "Expands the partial cloud-data-solutions evidence into the required operational capabilities of configuring, managing, and monitoring cloud applications.",
+      "source_evidence": [
+        "Integrated Apache Airflow with AWS to monitor multi-stage machine learning workflows.",
+        "Created, debugged, scheduled, and monitored jobs using Airflow."
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "You inherit a pipeline that loads inconsistent records from MySQL and Cassandra into cloud storage and an analytics database. How would you profile the sources, define data-quality rules, handle rejects, and demonstrate that the published data is trustworthy?",
+      "competency": "Structured data processing",
+      "dimension": "Situational",
+      "target_gap": "Structured data processing",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's partial structured-processing match through a realistic multi-source and quality-sensitive design scenario.",
+      "source_evidence": [
+        "Integrated on-premises MySQL and Cassandra data with cloud Blob Storage and Azure SQL Database using Azure Data Factory.",
+        "Worked on data quality solutions, duplicate cleanup, and defect correction."
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Describe the database technologies you have used in a pipeline and how you selected data models, indexes or partitions, connection patterns, and load methods for each one.",
+      "competency": "Database technologies",
+      "dimension": "Technical",
+      "target_gap": "Database technologies",
+      "difficulty": "mid",
+      "rationale": "Validates breadth and practical depth behind the partial database-technologies match.",
+      "source_evidence": [
+        "Azure SQL Database",
+        "MySQL",
+        "Cassandra",
+        "Amazon RDS",
+        "DynamoDB"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "Give an example of an ETL pipeline you built from source ingestion through publication. How did you make it idempotent, restartable, observable, and safe to rerun after a partial failure?",
+      "competency": "ETL engineering",
+      "dimension": "Technical",
+      "target_gap": "ETL technologies",
+      "difficulty": "hard",
+      "rationale": "The candidate has broad ETL claims, while the matrix is partial; this probes production-grade implementation details.",
+      "source_evidence": [
+        "Developed ETL processes to load data from multiple sources into HDFS using Flume and Sqoop.",
+        "Created pipelines to load Azure Data Lake data into staging SQL databases and Azure SQL Database."
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Explain a Spark SQL workload you optimized. How did you inspect the execution plan, address skew or shuffle cost, choose partitioning, and verify that the optimization did not change results?",
+      "competency": "Spark SQL optimization",
+      "dimension": "Technical",
+      "target_gap": "Spark SQL",
+      "difficulty": "hard",
+      "rationale": "Uses a strong match as a depth probe for a core required technology and assesses optimization practices relevant to large-scale pipelines.",
+      "source_evidence": [
+        "Spark SQL",
+        "Developed Spark scripts and UDFs using Spark DSL and Spark SQL for aggregation and RDBMS loading."
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Show how you would structure a Python-based data-processing component for maintainability: configuration, schema validation, logging, error handling, unit tests, and integration with Spark SQL.",
+      "competency": "Python data engineering",
+      "dimension": "Technical",
+      "target_gap": "Python",
+      "difficulty": "hard",
+      "rationale": "Although Python is a strong match, the question tests engineering quality and maintainability rather than familiarity alone.",
+      "source_evidence": [
+        "Python",
+        "Imported data from HDFS and HBase into Spark RDDs and performed computations with PySpark."
+      ],
+      "priority": 0.81
+    },
+    {
+      "question": "When business users request a new dashboard metric, how do you turn the request into a precise use case, identify source-of-truth data, define metric logic, and communicate trade-offs before building the pipeline?",
+      "competency": "Requirements analysis",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "The role relies on collaboration with end users and technical translation; the candidate profile indicates stakeholder interaction but does not give a detailed example.",
+      "source_evidence": [
+        "Interacted with business partners, Business Analysts and product owner to understand requirements.",
+        "Developed dashboards and visualizations using SSRS and Power BI."
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "Describe how you would design the data-integration infrastructure behind a reporting environment that needs daily curated datasets and near-real-time operational metrics. Which components would you separate, and why?",
+      "competency": "Reporting data infrastructure",
+      "dimension": "Situational",
+      "target_gap": "Data integration pipeline architecture",
+      "difficulty": "hard",
+      "rationale": "Directly tests the job's reporting-and-analysis infrastructure requirement and the candidate's ability to combine batch and streaming experience.",
+      "source_evidence": [
+        "Developed Spark Streaming programs for near-real-time Kafka data.",
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting."
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "Tell me about a time a data-quality issue affected a downstream consumer. How did you quantify impact, correct the data, prevent recurrence, and decide whether a backfill was necessary?",
+      "competency": "Data quality ownership",
+      "dimension": "Behavioural",
+      "target_gap": "ETL and ELT application development",
+      "difficulty": "mid",
+      "rationale": "Assesses operational ownership in ETL/ELT delivery using the candidate's documented duplicate-cleanup and SCD defect experience.",
+      "source_evidence": [
+        "Fixed SCD Type 2 date chaining defects and cleaned duplicate records.",
+        "Worked on data quality solutions, duplicate cleanup, and defect correction."
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "For a new large-scale data-platform component, what artifacts would you produce during ideation to align engineers, end users, and leadership on architecture, risks, costs, and delivery sequencing?",
+      "competency": "Platform design",
+      "dimension": "Role-Specific",
+      "target_gap": "System architecture and integration",
+      "difficulty": "hard",
+      "rationale": "Tests a weak-match area against the role's expectation to provide high-level analysis and own key platform-component delivery.",
+      "source_evidence": [
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting.",
+        "Cloud data engineering experience across AWS and Azure."
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "How would you organize a small data engineering team to deliver a pipeline increment in Scrum while maintaining predictable quality? Discuss refinement, estimation, ownership, code review, testing, and retrospectives.",
+      "competency": "Scrum delivery",
+      "dimension": "Situational",
+      "target_gap": "Software development lifecycle practices",
+      "difficulty": "hard",
+      "rationale": "Probes practical delivery leadership and quality practices, which are necessary for the role but only indirectly evidenced in the profile.",
+      "source_evidence": [
+        "Used version-control tools to coordinate project development and code submissions.",
+        "Coordinated tasks with other IT team members."
+      ],
+      "priority": 0.76
+    },
+    {
+      "question": "Describe a situation where you had to explain a technical data-design constraint to a business partner or product owner. How did you present options and reach a decision?",
+      "competency": "Technical communication",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Evaluates the ability to translate technical solutions for stakeholders, using the profile's documented interaction with business partners and product owners.",
+      "source_evidence": [
+        "Interacted with business partners, Business Analysts and product owner to understand requirements.",
+        "Used collective decision-making and coordinated tasks with other IT team members."
+      ],
+      "priority": 0.74
+    },
+    {
+      "question": "What would be your approach to reviewing an existing warehouse and pipeline estate for enterprise data-management risks such as unclear ownership, inconsistent definitions, uncontrolled access, poor lineage, and retention gaps?",
+      "competency": "Data governance assessment",
+      "dimension": "Situational",
+      "target_gap": "Enterprise data management technologies",
+      "difficulty": "hard",
+      "rationale": "Assesses governance and stewardship depth beyond the candidate's enterprise data-lake implementation claim.",
+      "source_evidence": [
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting.",
+        "Developed an AWS S3 security framework using AWS Lambda and DynamoDB."
+      ],
+      "priority": 0.73
+    },
+    {
+      "question": "At Deloitte, you configured Kerberos principals and tested access across HDFS, Hive, Pig, and MapReduce. How did you troubleshoot access failures, and what security principles from that work would you carry into a cloud data platform?",
+      "competency": "Data platform security",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "hard",
+      "rationale": "Uses a distinctive, documented profile detail to assess security troubleshooting and transferable platform-design judgment.",
+      "source_evidence": [
+        "Configured Kerberos authentication principals and tested HDFS, Hive, Pig, and MapReduce access.",
+        "Developed an AWS S3 security framework using AWS Lambda and DynamoDB."
+      ],
+      "priority": 0.71
+    },
+    {
+      "question": "Tell me how you would assess and tune a query that joins several large fact-like datasets and produces a reporting aggregate. What evidence would lead you to change the physical design rather than only rewrite SQL?",
+      "competency": "Large-scale query tuning",
+      "dimension": "Situational",
+      "target_gap": "Complex query writing",
+      "difficulty": "hard",
+      "rationale": "Further tests the highest-priority weak match through judgment about SQL, storage, and physical design trade-offs.",
+      "source_evidence": [
+        "Created and optimized Hive tables and HQL queries using partitioning and bucketing.",
+        "Migrated large datasets to Databricks and administered clusters and data pipelines."
+      ],
+      "priority": 0.7
+    },
+    {
+      "question": "How would you implement safe schema evolution for Parquet data consumed by Spark jobs and warehouse loads, including backward compatibility, validation, and rollback?",
+      "competency": "Schema evolution",
+      "dimension": "Technical",
+      "target_gap": "Structured data processing",
+      "difficulty": "hard",
+      "rationale": "Tests structured data-processing depth and integration robustness using formats and Spark experience explicitly present in the profile.",
+      "source_evidence": [
+        "Parquet",
+        "Apache Spark",
+        "Developed Spark scripts and UDFs using Spark DSL and Spark SQL for aggregation and RDBMS loading."
+      ],
+      "priority": 0.69
+    },
+    {
+      "question": "What is your method for balancing a request for rapid delivery against the need for architecture review, automated testing, documentation, and operational readiness?",
+      "competency": "Engineering judgment",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Software development lifecycle practices",
+      "difficulty": "mid",
+      "rationale": "Reveals the candidate's quality mindset and decision-making under delivery pressure, important to the role's SDLC expectations.",
+      "source_evidence": [
+        "Instantiated and maintained CI/CD pipelines and applied automation to environments and applications.",
+        "Used Git and GitHub for versioning and CI/CD development."
+      ],
+      "priority": 0.67
+    },
+    {
+      "question": "Describe the decision process behind reducing EC2 costs by deregistering unused AMIs. How did you identify candidates, protect needed images, automate the action, and measure the outcome?",
+      "competency": "Cloud automation",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Provides a profile-specific probe into automation, risk control, and measurable operational outcomes.",
+      "source_evidence": [
+        "Created AWS Lambda functions with Boto3 to deregister unused AMIs.",
+        "Reduced EC2 resource costs by deregistering unused AMIs."
+      ],
+      "priority": 0.64
+    },
+    {
+      "question": "Imagine an Airflow-orchestrated pipeline begins failing intermittently after a downstream schema change. How would you use orchestration metadata, logs, retries, and stakeholder communication to restore service and prevent recurrence?",
+      "competency": "Pipeline incident management",
+      "dimension": "Situational",
+      "target_gap": "Cloud data solutions",
+      "difficulty": "hard",
+      "rationale": "Combines the candidate's Airflow experience with the role's need for reliable cloud solution monitoring and incident handling.",
+      "source_evidence": [
+        "Integrated Apache Airflow with AWS to monitor multi-stage machine learning workflows.",
+        "Created, debugged, scheduled, and monitored jobs using Airflow."
+      ],
+      "priority": 0.63
+    },
+    {
+      "question": "Describe how you would mentor a less-experienced engineer who is building their first Spark-based ingestion pipeline. What design reviews, coding standards, and learning checkpoints would you use?",
+      "competency": "Technical mentoring",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "The role explicitly requires technical direction and mentoring; the profile notes task coordination but offers limited direct mentoring evidence.",
+      "source_evidence": [
+        "Coordinated tasks with other IT team members.",
+        "Around 7 years of Big Data Engineer experience"
+      ],
+      "priority": 0.62
+    },
+    {
+      "question": "Which parts of your experience across Hadoop, Azure, and AWS best prepare you to own a component of a large-scale data platform, and where would you seek input from specialists before making a design decision?",
+      "competency": "Platform ownership",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Assesses motivation, self-awareness, and readiness for the ownership scope of the Staff Data Engineer role without assuming unverified leadership experience.",
+      "source_evidence": [
+        "Built scalable distributed data solutions using the Hadoop ecosystem.",
+        "Cloud data engineering experience across AWS and Azure.",
+        "Designed enterprise-level data lakes and distributed data solutions"
+      ],
+      "priority": 0.6
+    }
+  ],
+  "validation_failures": [],
+  "n_raw": 30,
+  "n_valid": 30,
+  "n_failed": 0,
+  "weights": [
+    0.7056,
+    0.6641,
+    0.6604,
+    0.6604,
+    0.6774,
+    0.3996,
+    0.3913,
+    0.3892,
+    0.3557,
+    0.3454,
+    0.4039,
+    0.3914,
+    0.3584,
+    0.157,
+    0.17,
+    0.43352857142857143,
+    0.3996,
+    0.3557,
+    0.6641,
+    0.6774,
+    0.43352857142857143,
+    0.3913,
+    0.43352857142857143,
+    0.7056,
+    0.4039,
+    0.6774,
+    0.43352857142857143,
+    0.3454,
+    0.43352857142857143,
+    0.43352857142857143
+  ],
+  "weight_outcomes": [
+    {
+      "rule": "exact",
+      "weight": 0.7056,
+      "matched_competency": "Complex query writing",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6641,
+      "matched_competency": "System architecture and integration",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6604,
+      "matched_competency": "Integration testing and debugging",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6604,
+      "matched_competency": "Integration testing and debugging",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6774,
+      "matched_competency": "Software development lifecycle practices",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3996,
+      "matched_competency": "Data integration pipeline architecture",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3913,
+      "matched_competency": "Enterprise data management technologies",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3892,
+      "matched_competency": "Data warehouse development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3557,
+      "matched_competency": "ETL and ELT application development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3454,
+      "matched_competency": "Cloud data solutions",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4039,
+      "matched_competency": "Structured data processing",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3914,
+      "matched_competency": "Database technologies",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3584,
+      "matched_competency": "ETL technologies",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.157,
+      "matched_competency": "Spark SQL",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.17,
+      "matched_competency": "Python",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.43352857142857143,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3996,
+      "matched_competency": "Data integration pipeline architecture",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3557,
+      "matched_competency": "ETL and ELT application development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6641,
+      "matched_competency": "System architecture and integration",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6774,
+      "matched_competency": "Software development lifecycle practices",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.43352857142857143,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3913,
+      "matched_competency": "Enterprise data management technologies",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.43352857142857143,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7056,
+      "matched_competency": "Complex query writing",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4039,
+      "matched_competency": "Structured data processing",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6774,
+      "matched_competency": "Software development lifecycle practices",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.43352857142857143,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3454,
+      "matched_competency": "Cloud data solutions",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.43352857142857143,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.43352857142857143,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    }
+  ],
+  "fallback_rate": 0.0,
+  "profile_probe_rate": 0.2,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 9726,
+    "output_tokens": 3927,
+    "cached_tokens": 0,
+    "estimated_cost": 0.066576,
+    "latency_ms": 30460.57,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.066576,
+  "cost_cny": 0.45071952,
+  "usd_cny_rate": 6.77,
+  "user_prompt_sha256": "4e9b0941e09af3c0a6ab8622de1b63d265dddfcdcf11ea32be1eae552e2c3791",
+  "generated_at": "2026-10-11T13:07:21.586171+00:00"
+}

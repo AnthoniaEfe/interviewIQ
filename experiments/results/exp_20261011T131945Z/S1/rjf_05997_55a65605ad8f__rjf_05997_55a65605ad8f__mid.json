@@ -1,0 +1,223 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S1",
+  "selection_strategy": "top_priority",
+  "generation_mode": null,
+  "profile_id": "rjf_05997_55a65605ad8f",
+  "jd_id": "rjf_05997_55a65605ad8f",
+  "pair_id": "rjf_05997_55a65605ad8f",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_05997_55a65605ad8f__rjf_05997_55a65605ad8f__mid.json",
+  "n_requirements": 43,
+  "questions": [
+    {
+      "question": "This position requires U.S. citizenship and the ability to obtain a security clearance. Are you able to satisfy this requirement?"
+    },
+    {
+      "question": "Walk me through how you would decompose an asset-management platform into microservices. Which services would own which data, and how would you handle cross-service workflows without creating tightly coupled synchronous dependencies?"
+    },
+    {
+      "question": "How would you design distributed persistence for asset metadata and large associated artifacts when writes can arrive in multiple regions and clients require predictable read behavior?"
+    },
+    {
+      "question": "Tell me about one of the four major projects you led from press release to delivery. How did you set measurable outcomes, track progress, handle risks, and decide whether the delivered result was successful?"
+    },
+    {
+      "question": "Give an example of a technology or engineering practice you had to learn quickly for a project. How did you identify the knowledge gap, validate your understanding, and apply what you learned?"
+    },
+    {
+      "question": "Given an asset record that must remain available across regions, compare a relational database, document store, and key-value store for the primary data model. What consistency, indexing, and query trade-offs would drive your choice?"
+    },
+    {
+      "question": "You need to detect duplicate assets across tens of millions of records while keeping a bounded memory footprint. What data structures and algorithm would you choose, and how would the approach change if exactness were required versus approximate detection were acceptable?"
+    },
+    {
+      "question": "A rollout causes two regions to return conflicting versions of the same asset. How would you reason about the consistency model, diagnose the conflict, remediate affected records, and prevent recurrence?"
+    },
+    {
+      "question": "An asset lookup endpoint has rising p99 latency, but CPU utilization is normal. Describe your investigation from request tracing through database, network, and storage layers, including how you would isolate the bottleneck safely in production."
+    },
+    {
+      "question": "What storage characteristics matter when designing a service that keeps asset metadata plus potentially large immutable artifacts? Discuss durability, replication, throughput, latency, lifecycle management, and failure recovery."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "This position requires U.S. citizenship and the ability to obtain a security clearance. Are you able to satisfy this requirement?",
+      "competency": "Clearance eligibility",
+      "competency_type": "domain",
+      "target_gap": "U.S. citizenship and ability to obtain security clearance",
+      "question_type": "Role-Specific",
+      "difficulty": "easy",
+      "rationale": "This is an explicit required job condition with insufficient candidate-profile evidence and should be confirmed through a direct, role-relevant eligibility question.",
+      "source_evidence": [
+        "US Citizens able to obtain a security clearance",
+        "U.S. citizenship and ability to obtain security clearance is marked weak_match"
+      ],
+      "priority": 0.98,
+      "weight": 0.688
+    },
+    {
+      "question": "Walk me through how you would decompose an asset-management platform into microservices. Which services would own which data, and how would you handle cross-service workflows without creating tightly coupled synchronous dependencies?",
+      "competency": "Microservice architecture",
+      "competency_type": "technical",
+      "target_gap": "Microservices",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Microservices is a required weak match, so this probes architectural judgment for a central role responsibility.",
+      "source_evidence": [
+        "Highly scalable backend systems",
+        "Led development of multi-tenant, highly scalable software solutions.",
+        "Microservices is marked weak_match"
+      ],
+      "priority": 0.97,
+      "weight": 0.7208
+    },
+    {
+      "question": "How would you design distributed persistence for asset metadata and large associated artifacts when writes can arrive in multiple regions and clients require predictable read behavior?",
+      "competency": "Distributed persistence",
+      "competency_type": "technical",
+      "target_gap": "Distributed persistence",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Distributed persistence is a high-weight weak match and is central to building a scalable canonical system.",
+      "source_evidence": [
+        "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+        "Distributed persistence is marked weak_match"
+      ],
+      "priority": 0.96,
+      "weight": 0.7129
+    },
+    {
+      "question": "Tell me about one of the four major projects you led from press release to delivery. How did you set measurable outcomes, track progress, handle risks, and decide whether the delivered result was successful?",
+      "competency": "Results-driven delivery",
+      "competency_type": "soft",
+      "target_gap": "Results-driven execution",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Results-driven execution is marked missing despite strong achievement claims; this elicits concrete outcome definition and accountability.",
+      "source_evidence": [
+        "Completed four major projects from press release to final delivery across all SDLC processes.",
+        "Successfully led 4 major projects at Amazon",
+        "Unblocked more than 100 internal customers through major project delivery."
+      ],
+      "priority": 0.96,
+      "weight": 0.9227
+    },
+    {
+      "question": "Give an example of a technology or engineering practice you had to learn quickly for a project. How did you identify the knowledge gap, validate your understanding, and apply what you learned?",
+      "competency": "Learning agility",
+      "competency_type": "soft",
+      "target_gap": "Learning orientation",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Learning orientation is a high-weight required missing competency, so direct evidence is needed.",
+      "source_evidence": [
+        "Learning orientation is marked missing",
+        "Over 5 years of professional software development experience",
+        "Master of Science: Computer Science"
+      ],
+      "priority": 0.95,
+      "weight": 0.9377
+    },
+    {
+      "question": "Given an asset record that must remain available across regions, compare a relational database, document store, and key-value store for the primary data model. What consistency, indexing, and query trade-offs would drive your choice?",
+      "competency": "Data-store selection",
+      "competency_type": "technical",
+      "target_gap": "Relational databases",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "The profile lists SQL but the matrix marks relational databases weak; this verifies practical data-modeling depth and contrasts it with NoSQL alternatives.",
+      "source_evidence": [
+        "SQL",
+        "Relational databases is marked weak_match",
+        "NoSQL systems is marked weak_match"
+      ],
+      "priority": 0.94,
+      "weight": 0.6992
+    },
+    {
+      "question": "You need to detect duplicate assets across tens of millions of records while keeping a bounded memory footprint. What data structures and algorithm would you choose, and how would the approach change if exactness were required versus approximate detection were acceptable?",
+      "competency": "Algorithms and data structures",
+      "competency_type": "technical",
+      "target_gap": "Data structures and algorithms",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "A required weak match with little direct profile evidence; this tests core engineering problem-solving independently of prior domain exposure.",
+      "source_evidence": [
+        "Data structures and algorithms is marked weak_match",
+        "Software Engineer with over 5 years of professional software development experience"
+      ],
+      "priority": 0.94,
+      "weight": 0.6977
+    },
+    {
+      "question": "A rollout causes two regions to return conflicting versions of the same asset. How would you reason about the consistency model, diagnose the conflict, remediate affected records, and prevent recurrence?",
+      "competency": "Distributed-systems reliability",
+      "competency_type": "other",
+      "target_gap": "Distributed systems",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests a required partial match using the candidate's geo-distributed background while focusing on failure and consistency reasoning.",
+      "source_evidence": [
+        "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+        "Distributed systems is marked partial_match"
+      ],
+      "priority": 0.94,
+      "weight": 0.3995
+    },
+    {
+      "question": "An asset lookup endpoint has rising p99 latency, but CPU utilization is normal. Describe your investigation from request tracing through database, network, and storage layers, including how you would isolate the bottleneck safely in production.",
+      "competency": "Performance diagnosis",
+      "competency_type": "other",
+      "target_gap": "Performance tuning",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Builds on the candidate's performance-optimization experience while testing the operational performance-tuning depth required by the role.",
+      "source_evidence": [
+        "Performance optimization",
+        "Improved backend requests for Amazon products by 7\u20139%.",
+        "Delivered performance optimizations resulting in approximately 7% or $10 million in IMR savings."
+      ],
+      "priority": 0.93,
+      "weight": 0.3736
+    },
+    {
+      "question": "What storage characteristics matter when designing a service that keeps asset metadata plus potentially large immutable artifacts? Discuss durability, replication, throughput, latency, lifecycle management, and failure recovery.",
+      "competency": "Storage architecture",
+      "competency_type": "technical",
+      "target_gap": "Storage",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Storage is a required weak match and is directly relevant to an asset-management system.",
+      "source_evidence": [
+        "Storage is marked weak_match",
+        "Cloud infrastructure",
+        "Backend systems"
+      ],
+      "priority": 0.92,
+      "weight": 0.7326
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    29,
+    1,
+    3,
+    20,
+    22,
+    2,
+    8,
+    9,
+    4,
+    10
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.03,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:49.277074+00:00"
+}

@@ -1,0 +1,225 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_04652_021f517c37fa",
+  "jd_id": "rjf_04652_021f517c37fa",
+  "pair_id": "rjf_04652_021f517c37fa",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_04652_021f517c37fa__rjf_04652_021f517c37fa__mid.json",
+  "n_requirements": 32,
+  "questions": [
+    {
+      "question": "Describe how you would configure CI/CD for a data pipeline that includes SQL transformations, Python code, Airflow DAGs, and container images. Which automated tests and deployment gates would you require?"
+    },
+    {
+      "question": "What attracts you to a data-engineering role centered on standardizing customer data feeds, data quality, and analytics enablement, and which areas would you deliberately learn first if selected?"
+    },
+    {
+      "question": "Describe how you would plan and deliver a two-week sprint to add a new customer data feed when the mapping is still evolving. How would you break down the work, manage changes, and demonstrate progress?"
+    },
+    {
+      "question": "What is your approach to implementing and governing master-data configurations, including canonical identifiers, reference-data changes, ownership, and propagation to dependent jobs?"
+    },
+    {
+      "question": "Describe the architecture and operating model of an Airflow DAG you created for ingestion or reporting. How did you manage dependencies, retries, backfills, parameterization, and alerting?"
+    },
+    {
+      "question": "Before creating a pipeline for an unfamiliar source system, what profiling queries and checks would you run, and how would those findings affect the target design and load logic?"
+    },
+    {
+      "question": "How would you turn a business requirement such as \u201cstandardize customer status across incoming feeds\u201d into a data mapping specification that another engineer could implement and test?"
+    },
+    {
+      "question": "Tell us about the Redshift warehouse you designed and built: how did you select distribution and sort strategies, model data for analytics, and tune queries used by Tableau or SAS Visual Analytics?"
+    },
+    {
+      "question": "The role may involve aircraft data frames such as DFDR, QAR, ARINC-717, and ARINC-429. What is your approach to learning an unfamiliar domain data format and safely translating its documentation into a validated ingestion design?"
+    },
+    {
+      "question": "For a new automated ETL job, which validation controls would you implement at ingestion, transformation, and target-load stages? Explain the failure thresholds and what would happen when a check fails."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe how you would configure CI/CD for a data pipeline that includes SQL transformations, Python code, Airflow DAGs, and container images. Which automated tests and deployment gates would you require?",
+      "competency": "Data pipeline delivery",
+      "competency_type": "technical",
+      "target_gap": "Post-deployment support",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate reports Docker, Kubernetes, CI/CD, and pipeline testing experience, while post-deployment support is weak. This assesses whether delivery practices reduce production support risk.",
+      "source_evidence": [
+        "Built Docker images and maintained Docker and Kubernetes environments for pipeline testing and CI/CD.",
+        "Post-deployment support \u2014 weak_match"
+      ],
+      "priority": 0.75,
+      "weight": 0.696
+    },
+    {
+      "question": "What attracts you to a data-engineering role centered on standardizing customer data feeds, data quality, and analytics enablement, and which areas would you deliberately learn first if selected?",
+      "competency": "Role motivation",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "This assesses motivation and learning priorities for the specific role without assuming unlisted domain experience.",
+      "source_evidence": [
+        "Professional IT experience in data engineering and data analytics",
+        "Data integration and orchestration",
+        "Data quality and reconciliation"
+      ],
+      "priority": 0.66,
+      "weight": 0.4312625
+    },
+    {
+      "question": "Describe how you would plan and deliver a two-week sprint to add a new customer data feed when the mapping is still evolving. How would you break down the work, manage changes, and demonstrate progress?",
+      "competency": "Agile delivery",
+      "competency_type": "other",
+      "target_gap": "Agile methodologies",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Agile methodology is a required competency marked missing, so this tests whether the candidate can apply iterative delivery practices in a realistic data-engineering context.",
+      "source_evidence": [
+        "Gap matrix: Agile methodologies \u2014 missing",
+        "Develop data engineering jobs and workflows",
+        "Participate in requirements gathering"
+      ],
+      "priority": 0.98,
+      "weight": 0.9306
+    },
+    {
+      "question": "What is your approach to implementing and governing master-data configurations, including canonical identifiers, reference-data changes, ownership, and propagation to dependent jobs?",
+      "competency": "Master data management",
+      "competency_type": "technical",
+      "target_gap": "Master data management",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Master data management is a required weak match and materially affects standardization and reliable joins across customer feeds.",
+      "source_evidence": [
+        "Gap matrix: Master data management \u2014 weak_match",
+        "Supported Hadoop clusters, HDFS, capacity planning, node management, and maintenance.",
+        "Implement and control the use of master data configurations"
+      ],
+      "priority": 0.89,
+      "weight": 0.6679
+    },
+    {
+      "question": "Describe the architecture and operating model of an Airflow DAG you created for ingestion or reporting. How did you manage dependencies, retries, backfills, parameterization, and alerting?",
+      "competency": "Workflow orchestration",
+      "competency_type": "technical",
+      "target_gap": "Data engineering workflows",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate explicitly lists Airflow DAG work. This probes a relevant strength while verifying production orchestration depth for the role's workflow responsibility.",
+      "source_evidence": [
+        "Created Airflow DAGs and Python scheduling scripts for ingestion, ETL jobs, and business reports.",
+        "Apache Airflow"
+      ],
+      "priority": 0.81,
+      "weight": 0.362
+    },
+    {
+      "question": "Before creating a pipeline for an unfamiliar source system, what profiling queries and checks would you run, and how would those findings affect the target design and load logic?",
+      "competency": "Data profiling",
+      "competency_type": "technical",
+      "target_gap": "Data profiling and analysis",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "This required competency is only a partial match. The question tests a disciplined approach to discovering nulls, duplicates, formats, keys, volume, and distribution issues before implementation.",
+      "source_evidence": [
+        "Gap matrix: Data profiling and analysis \u2014 partial_match",
+        "ETL and data migration",
+        "Perform data profiling and data analysis"
+      ],
+      "priority": 0.91,
+      "weight": 0.3914
+    },
+    {
+      "question": "How would you turn a business requirement such as \u201cstandardize customer status across incoming feeds\u201d into a data mapping specification that another engineer could implement and test?",
+      "competency": "Data mapping",
+      "competency_type": "domain",
+      "target_gap": "Data mapping specifications",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Data mapping specifications are a required weak match. This assesses whether the candidate can translate requirements into source-to-target fields, transformations, defaults, and acceptance rules.",
+      "source_evidence": [
+        "Gap matrix: Data mapping specifications \u2014 weak_match",
+        "Gathered business requirements and converted them into T-SQL stored procedures.",
+        "Prepared ETL design documents"
+      ],
+      "priority": 0.91,
+      "weight": 0.667
+    },
+    {
+      "question": "Tell us about the Redshift warehouse you designed and built: how did you select distribution and sort strategies, model data for analytics, and tune queries used by Tableau or SAS Visual Analytics?",
+      "competency": "Warehouse design",
+      "competency_type": "domain",
+      "target_gap": "Data analytics and reporting solutions",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "This is a strength probe for a strong required match and explores whether the candidate can connect warehouse design decisions to reporting performance.",
+      "source_evidence": [
+        "Gap matrix: Data analytics and reporting solutions \u2014 strong_match",
+        "Designed and built a multi-terabyte data warehouse on Redshift.",
+        "Optimized and tuned Redshift queries for Tableau and SAS Visual Analytics."
+      ],
+      "priority": 0.79,
+      "weight": 0.1623
+    },
+    {
+      "question": "The role may involve aircraft data frames such as DFDR, QAR, ARINC-717, and ARINC-429. What is your approach to learning an unfamiliar domain data format and safely translating its documentation into a validated ingestion design?",
+      "competency": "Domain learning",
+      "competency_type": "other",
+      "target_gap": "Aircraft data frames",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Aircraft data frames are a preferred weak match with no direct profile evidence. This fairly tests learning strategy and disciplined handling of unfamiliar, structured data.",
+      "source_evidence": [
+        "Gap matrix: Aircraft data frames \u2014 weak_match",
+        "Data engineering",
+        "Learning agility"
+      ],
+      "priority": 0.64,
+      "weight": 0.4249
+    },
+    {
+      "question": "For a new automated ETL job, which validation controls would you implement at ingestion, transformation, and target-load stages? Explain the failure thresholds and what would happen when a check fails.",
+      "competency": "Data validation",
+      "competency_type": "technical",
+      "target_gap": "Data validation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate has some validation exposure but is a weak match on the required validation competency; this distinguishes basic checks from robust pipeline controls.",
+      "source_evidence": [
+        "Gap matrix: Data validation \u2014 weak_match",
+        "Used AWS EMR, S3, EC2, and Lambda for distributed processing, storage, Kafka infrastructure, and data validation/transformation.",
+        "Validate the data mapping results"
+      ],
+      "priority": 0.9,
+      "weight": 0.6762
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    24,
+    27,
+    0,
+    7,
+    16,
+    3,
+    4,
+    18,
+    22,
+    5
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.23,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:50.004373+00:00"
+}

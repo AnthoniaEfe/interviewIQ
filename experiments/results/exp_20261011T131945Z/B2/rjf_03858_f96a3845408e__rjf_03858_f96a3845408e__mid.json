@@ -1,0 +1,225 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "B2",
+  "selection_strategy": "plain_mmr_priority",
+  "generation_mode": "interviewiq",
+  "profile_id": "rjf_03858_f96a3845408e",
+  "jd_id": "rjf_03858_f96a3845408e",
+  "pair_id": "rjf_03858_f96a3845408e",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_03858_f96a3845408e__rjf_03858_f96a3845408e__mid.json",
+  "n_requirements": 14,
+  "questions": [
+    {
+      "question": "This team works in Scrum. Walk through how you would turn an ambiguous request for a new curated dataset into a backlog item, acceptance criteria, estimates, and a demonstrable sprint increment."
+    },
+    {
+      "question": "How would you test a pipeline that reads source records, applies PySpark business rules, writes curated tables, and triggers downstream reporting? Distinguish unit, integration, data-quality, and end-to-end tests."
+    },
+    {
+      "question": "Give an example of when you would choose a NoSQL store rather than a relational warehouse for a data-product requirement. How would access patterns, schema evolution, consistency, and cost affect the decision?"
+    },
+    {
+      "question": "How would you translate an existing Spark workload into Azure Databricks, including cluster configuration, notebook or package structure, secrets handling, and promotion across environments?"
+    },
+    {
+      "question": "A release introduces a subtle schema change that only affects one downstream consumer. What evidence would you gather, how would you contain the impact, and how would you prevent recurrence?"
+    },
+    {
+      "question": "Design an Azure Data Factory solution that ingests daily files and database extracts, invokes transformations, handles late-arriving data, and makes curated data available to analysts. What pipelines, triggers, parameters, and failure paths would you use?"
+    },
+    {
+      "question": "What monitoring signals would you expose for a production pipeline, and which thresholds would produce an automatic retry, a team alert, or an incident escalation?"
+    },
+    {
+      "question": "You already use row counts, schema validation, and hash-key validation. How would you develop these into a reusable data-hygiene framework with quality dimensions, thresholds, exception handling, and remediation ownership?"
+    },
+    {
+      "question": "Describe the CI/CD pipeline you would establish for a Python/PySpark data application deployed to Azure. How would you manage automated checks, artifacts, environment configuration, approvals, and rollback?"
+    },
+    {
+      "question": "What relational data-modeling and query-performance decisions would you make for a curated analytics layer with high-volume incremental loads and frequent dashboard queries?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "This team works in Scrum. Walk through how you would turn an ambiguous request for a new curated dataset into a backlog item, acceptance criteria, estimates, and a demonstrable sprint increment.",
+      "competency": "Agile delivery",
+      "competency_type": "other",
+      "target_gap": "Agile/Scrum",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Agile/Scrum is marked missing and is central to the role's expected delivery model.",
+      "source_evidence": [
+        "Gap matrix: Agile/Scrum \u2014 missing",
+        "Job: deliver high-quality software using Agile/Scrum methodologies",
+        "Candidate: translates business questions into quantitative questions"
+      ],
+      "priority": 0.97,
+      "weight": 0.9376
+    },
+    {
+      "question": "How would you test a pipeline that reads source records, applies PySpark business rules, writes curated tables, and triggers downstream reporting? Distinguish unit, integration, data-quality, and end-to-end tests.",
+      "competency": "Software testing",
+      "competency_type": "technical",
+      "target_gap": "Software testing",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Tests a missing requirement and whether the candidate can extend existing data checks into a complete software-testing strategy.",
+      "source_evidence": [
+        "Gap matrix: Software testing \u2014 missing",
+        "Candidate: performed row count, schema validation, and hash key validation",
+        "Job: support system and integration testing activities"
+      ],
+      "priority": 0.97,
+      "weight": 0.9288
+    },
+    {
+      "question": "Give an example of when you would choose a NoSQL store rather than a relational warehouse for a data-product requirement. How would access patterns, schema evolution, consistency, and cost affect the decision?",
+      "competency": "NoSQL databases",
+      "competency_type": "other",
+      "target_gap": "NoSQL databases",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "NoSQL is a weak match with no direct database evidence, so the question identifies transferable design judgment and hands-on exposure.",
+      "source_evidence": [
+        "Gap matrix: NoSQL databases \u2014 weak_match",
+        "Candidate: designed analytical solutions for large datasets",
+        "Job: requires non-relational/NoSQL database experience"
+      ],
+      "priority": 0.91,
+      "weight": 0.7321
+    },
+    {
+      "question": "How would you translate an existing Spark workload into Azure Databricks, including cluster configuration, notebook or package structure, secrets handling, and promotion across environments?",
+      "competency": "Azure Databricks",
+      "competency_type": "technical",
+      "target_gap": "Azure Databricks",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly assesses a high-weight weak match in the target Azure platform while grounding the discussion in the candidate's Spark background.",
+      "source_evidence": [
+        "Gap matrix: Azure Databricks \u2014 weak_match",
+        "Candidate: developed Spark jobs to transform data"
+      ],
+      "priority": 0.96,
+      "weight": 0.73
+    },
+    {
+      "question": "A release introduces a subtle schema change that only affects one downstream consumer. What evidence would you gather, how would you contain the impact, and how would you prevent recurrence?",
+      "competency": "Incident resolution",
+      "competency_type": "other",
+      "target_gap": "Root cause analysis",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Assesses disciplined root-cause analysis and corrective actions for a realistic integration failure.",
+      "source_evidence": [
+        "Gap matrix: Root cause analysis \u2014 weak_match",
+        "Candidate: performed schema validation",
+        "Job: identify permanent resolutions to software or business process issues"
+      ],
+      "priority": 0.88,
+      "weight": 0.6612
+    },
+    {
+      "question": "Design an Azure Data Factory solution that ingests daily files and database extracts, invokes transformations, handles late-arriving data, and makes curated data available to analysts. What pipelines, triggers, parameters, and failure paths would you use?",
+      "competency": "Azure Data Factory",
+      "competency_type": "other",
+      "target_gap": "Azure Data Factory",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Tests the candidate's ability to apply existing ingestion and warehousing experience in the required ADF service, where evidence is weak.",
+      "source_evidence": [
+        "Gap matrix: Azure Data Factory \u2014 weak_match",
+        "Candidate: data ingestion pipeline design",
+        "Candidate: large-scale data warehousing"
+      ],
+      "priority": 0.95,
+      "weight": 0.6871
+    },
+    {
+      "question": "What monitoring signals would you expose for a production pipeline, and which thresholds would produce an automatic retry, a team alert, or an incident escalation?",
+      "competency": "Pipeline observability",
+      "competency_type": "technical",
+      "target_gap": "Production pipeline operationalization",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate has Splunk experience and AWS integration experience; this probes how comprehensively they turn monitoring into operational practice.",
+      "source_evidence": [
+        "Gap matrix: Production pipeline operationalization \u2014 weak_match",
+        "Candidate: created Splunk SPL queries, reports, alerts, and dashboards",
+        "Candidate: maintained AWS data processing integrations"
+      ],
+      "priority": 0.89,
+      "weight": 0.6667
+    },
+    {
+      "question": "You already use row counts, schema validation, and hash-key validation. How would you develop these into a reusable data-hygiene framework with quality dimensions, thresholds, exception handling, and remediation ownership?",
+      "competency": "Data hygiene",
+      "competency_type": "technical",
+      "target_gap": "Data hygiene",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Builds directly on the candidate's partial match and reveals whether their checks can support durable hygiene routines and models.",
+      "source_evidence": [
+        "Gap matrix: Data hygiene \u2014 partial_match",
+        "Candidate: row count, schema validation, and hash key validation"
+      ],
+      "priority": 0.87,
+      "weight": 0.3996
+    },
+    {
+      "question": "Describe the CI/CD pipeline you would establish for a Python/PySpark data application deployed to Azure. How would you manage automated checks, artifacts, environment configuration, approvals, and rollback?",
+      "competency": "CI/CD",
+      "competency_type": "technical",
+      "target_gap": "Continuous integration and continuous delivery (CI/CD)",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "CI/CD is a high-weight weak match; Git and Jenkins are listed, but end-to-end build and deployment practice is not evidenced.",
+      "source_evidence": [
+        "Gap matrix: Continuous integration and continuous delivery (CI/CD) \u2014 weak_match",
+        "Candidate: used Git for branching, merging, labeling/tagging, and integration",
+        "Candidate skill: Jenkins"
+      ],
+      "priority": 0.94,
+      "weight": 0.6864
+    },
+    {
+      "question": "What relational data-modeling and query-performance decisions would you make for a curated analytics layer with high-volume incremental loads and frequent dashboard queries?",
+      "competency": "Relational databases",
+      "competency_type": "technical",
+      "target_gap": "Relational databases",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Relational database experience is a weak match despite exposure to SQL Server, Teradata, Hive, and Snowflake-related work; this clarifies practical depth.",
+      "source_evidence": [
+        "Gap matrix: Relational databases \u2014 weak_match",
+        "Candidate: moved data from Teradata and SQL Server using Sqoop",
+        "Candidate skill: SQL"
+      ],
+      "priority": 0.9,
+      "weight": 0.6992
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    4,
+    5,
+    7,
+    0,
+    15,
+    1,
+    17,
+    8,
+    3,
+    6
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.41,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:45.726720+00:00"
+}

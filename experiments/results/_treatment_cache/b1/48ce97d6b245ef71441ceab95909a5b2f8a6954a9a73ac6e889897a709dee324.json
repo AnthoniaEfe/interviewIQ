@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_05997_55a65605ad8f",
+  "jd_id": "rjf_05997_55a65605ad8f",
+  "pair_id": "rjf_05997_55a65605ad8f",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Technical: Your profile lists Python and Java, while this role requires 4+ years of Python and 3+ years of Java. Walk us through the production services you have built in each language, your duration and depth of use, and why you selected one over the other."
+    },
+    {
+      "question": "Technical: You built a solution reported to handle 1.4 million transactions per second with a 30% adoption rate. Describe its architecture, scaling bottleneck, performance metrics, and the specific changes that enabled that throughput."
+    },
+    {
+      "question": "Technical: For a canonical asset-management system, how would you design a microservices-based API that maintains correct asset state across regions while handling retries, duplicate requests, partial failures, and concurrent updates?"
+    },
+    {
+      "question": "Technical: The role requires relational and NoSQL databases, storage, and distributed persistence, which are not detailed in your profile. Compare how you would model and persist asset inventory data in a relational database versus a NoSQL store, including consistency, indexing, and recovery trade-offs."
+    },
+    {
+      "question": "Technical: Given your Linux, shell-scripting, Docker, Jenkins, and monitoring background, how would you diagnose a containerized service whose p99 latency and error rate rise after a deployment? Describe the Linux- and application-level evidence you would collect and how you would safely mitigate the incident."
+    },
+    {
+      "question": "Behavioural: You led four major projects from press release through delivery and migrated about 400 internal customers. Choose one migration and explain how you planned the rollout, handled resistance or compatibility issues, communicated status, and measured availability and security outcomes."
+    },
+    {
+      "question": "Behavioural: Tell us about a time your performance work improved backend requests for Amazon Music or Alexa by 7\u20139%, or produced the reported $10 million in IMR savings. How did you identify the root cause, validate the improvement, and prevent regression?"
+    },
+    {
+      "question": "Situational: Two high-priority asset-management initiatives are competing for the same team, while a production issue is affecting global users. How would you triage the work, establish ownership, communicate trade-offs to technical and non-technical stakeholders, and revise the plan as new information emerges?"
+    },
+    {
+      "question": "Cultural/Motivational: This role involves independently operating critical systems while collaborating across global time zones and learning unfamiliar technologies such as Kubernetes where needed. What aspects of that environment motivate you, and how do you decide when to act autonomously versus seek alignment?"
+    },
+    {
+      "question": "Role-Specific: Your earlier work included geo-distributed real-time monitoring for vCloud Air and orchestration tools for load and stress testing. How would you apply those experiences to define observability, reliability targets, load testing, and operational readiness for this asset-management platform?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 7638,
+    "output_tokens": 560,
+    "cached_tokens": 0,
+    "estimated_cost": 0.021996,
+    "latency_ms": 7162.85,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.021996,
+  "cost_cny": 0.14891292,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:05:47.739149+00:00",
+  "user_prompt_sha256": "36b8b6af027542c1550ee7b5d51693642f42066ddfc0d82e079a87e9476da311"
+}

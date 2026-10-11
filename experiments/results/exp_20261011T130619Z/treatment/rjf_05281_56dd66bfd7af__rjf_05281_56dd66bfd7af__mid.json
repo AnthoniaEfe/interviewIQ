@@ -1,0 +1,462 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_05281_56dd66bfd7af",
+  "jd_id": "rjf_05281_56dd66bfd7af",
+  "pair_id": "rjf_05281_56dd66bfd7af",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 14,
+  "pool_path": "pool/rjf_05281_56dd66bfd7af__rjf_05281_56dd66bfd7af__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.06666666666666667,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      5,
+      8,
+      19,
+      1,
+      6,
+      3,
+      7,
+      4,
+      2,
+      20
+    ],
+    "questions": [
+      {
+        "question": "What exposure have you had to Spring or Spring Boot, and how would you organize controllers, services, repositories, configuration, and tests in a small Spring application?",
+        "competency": "Spring Framework",
+        "competency_type": "technical",
+        "target_gap": "Spring Framework",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Spring is a required but undocumented capability; the question separates direct experience from conceptual knowledge.",
+        "source_evidence": [
+          "Gap matrix: Spring Framework \u2014 missing",
+          "Gap evidence matched to Relational databases"
+        ],
+        "priority": 0.98,
+        "weight": 0.9555
+      },
+      {
+        "question": "How would you make an API that receives the same correction request more than once safe and predictable, while preserving an audit trail?",
+        "competency": "API reliability",
+        "competency_type": "other",
+        "target_gap": "REST API development",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Probes idempotency, traceability, and data integrity\u2014important production concerns not evidenced by the profile.",
+        "source_evidence": [
+          "Gap matrix: REST API development \u2014 missing",
+          "Maintained data integrity and performed routine data audits."
+        ],
+        "priority": 0.91,
+        "weight": 0.9464
+      },
+      {
+        "question": "This position asks for extensive professional engineering experience. How does your experience to date map to engineering work, and what concrete steps have you taken to build software-engineering capability?",
+        "competency": "Engineering readiness",
+        "competency_type": "soft",
+        "target_gap": "Professional engineering",
+        "question_type": "Cultural/Motivational",
+        "difficulty": "mid",
+        "rationale": "Directly addresses the documented absence of professional engineering experience while allowing the candidate to explain relevant preparation accurately.",
+        "source_evidence": [
+          "Gap matrix: Professional engineering \u2014 missing",
+          "Student Data Assistant, 01/2018-Current",
+          "Data management and relational databases"
+        ],
+        "priority": 0.98,
+        "weight": 0.9258
+      },
+      {
+        "question": "Suppose a daily Spark job must join large student-enrollment and attendance datasets and is running slowly. How would you diagnose the bottleneck and improve the job?",
+        "competency": "Spark performance tuning",
+        "competency_type": "other",
+        "target_gap": "Scala and Apache Spark",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Tests practical Spark reasoning for a high-priority missing requirement while using a domain familiar from the candidate's school-data background.",
+        "source_evidence": [
+          "Gap matrix: Scala and Apache Spark \u2014 missing",
+          "Performed data management, audits, analysis, reporting, and quality-control activities."
+        ],
+        "priority": 0.98,
+        "weight": 0.9017
+      },
+      {
+        "question": "A Spring REST endpoint begins returning intermittent 500 errors after a database change. Walk through how you would investigate, contain, and correct the issue.",
+        "competency": "Spring troubleshooting",
+        "competency_type": "other",
+        "target_gap": "Spring Framework",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Evaluates operational debugging discipline for a key missing framework requirement.",
+        "source_evidence": [
+          "Gap matrix: Spring Framework \u2014 missing",
+          "Detected and resolved data quality issues and discrepancies."
+        ],
+        "priority": 0.93,
+        "weight": 0.9555
+      },
+      {
+        "question": "What Java applications or components have you built, maintained, or studied, and what was your specific contribution in each?",
+        "competency": "Java development",
+        "competency_type": "technical",
+        "target_gap": "Java",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Java is required and no Java development is documented, so this establishes the candidate's actual baseline without assuming experience.",
+        "source_evidence": [
+          "Gap matrix: Java \u2014 missing",
+          "Candidate technical skills list relational databases and data management, but not Java."
+        ],
+        "priority": 0.98,
+        "weight": 0.9253
+      },
+      {
+        "question": "Design a REST API for submitting and retrieving data-quality exceptions. What endpoints, request validation, status codes, pagination, and error responses would you define?",
+        "competency": "REST API design",
+        "competency_type": "technical",
+        "target_gap": "REST API development",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Tests concrete API-design ability for a required capability absent from the profile, grounded in the candidate's documented quality-control work.",
+        "source_evidence": [
+          "Gap matrix: REST API development \u2014 missing",
+          "Performed routine data audits and quality-control activities."
+        ],
+        "priority": 0.97,
+        "weight": 0.9464
+      },
+      {
+        "question": "How would you structure a Java service that validates an incoming record, persists it to a relational database, and returns useful errors to its caller?",
+        "competency": "Java application design",
+        "competency_type": "other",
+        "target_gap": "Java",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Assesses transferable software-design thinking against a required gap, including persistence and validation relevant to the candidate's data-quality experience.",
+        "source_evidence": [
+          "Gap matrix: Java \u2014 missing",
+          "Detected and resolved data quality issues and discrepancies.",
+          "Relational databases"
+        ],
+        "priority": 0.94,
+        "weight": 0.9253
+      },
+      {
+        "question": "Describe the Scala constructs and testing practices you would use to make a Spark transformation pipeline reliable, readable, and safe to rerun.",
+        "competency": "Scala data engineering",
+        "competency_type": "technical",
+        "target_gap": "Scala and Apache Spark",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Probes whether any claimed or developing Scala knowledge extends beyond surface-level Spark familiarity.",
+        "source_evidence": [
+          "Gap matrix: Scala and Apache Spark \u2014 missing",
+          "Data verification and testing"
+        ],
+        "priority": 0.95,
+        "weight": 0.9017
+      },
+      {
+        "question": "Describe the most technical problem you have owned from problem definition through implementation, validation, documentation, and ongoing support. What artifacts did you produce?",
+        "competency": "Engineering ownership",
+        "competency_type": "soft",
+        "target_gap": "Professional engineering",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Tests end-to-end ownership and technical rigor without presuming that the candidate has held a software-engineering title.",
+        "source_evidence": [
+          "Gap matrix: Professional engineering \u2014 missing",
+          "Established administrative procedures to minimize errors and avoidable delays.",
+          "Data verification and testing"
+        ],
+        "priority": 0.92,
+        "weight": 0.9258
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.93639,
+      0.8612240000000001,
+      0.907284,
+      0.883666,
+      0.888615,
+      0.906794,
+      0.918008,
+      0.8697819999999999,
+      0.8566149999999999,
+      0.851736
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.02559605985879898,
+      0.14363420009613037,
+      0.18885743618011475,
+      0.26803824305534363,
+      0.36105796694755554,
+      0.4097100496292114,
+      0.4456785321235657,
+      0.46647992730140686,
+      0.49311965703964233
+    ],
+    "mmr_scores": [
+      0.655473,
+      0.5951779820423604,
+      0.5920085399711609,
+      0.5619089691459656,
+      0.5416190270833969,
+      0.5264384099157333,
+      0.5196925851112365,
+      0.4751438403629302,
+      0.45968652180957775,
+      0.44827930288810725
+    ],
+    "competency_weights": [
+      0.9555,
+      0.9464,
+      0.9258,
+      0.9017,
+      0.9555,
+      0.9253,
+      0.9464,
+      0.9253,
+      0.9017,
+      0.9258
+    ]
+  },
+  "questions": [
+    {
+      "question": "What exposure have you had to Spring or Spring Boot, and how would you organize controllers, services, repositories, configuration, and tests in a small Spring application?"
+    },
+    {
+      "question": "How would you make an API that receives the same correction request more than once safe and predictable, while preserving an audit trail?"
+    },
+    {
+      "question": "This position asks for extensive professional engineering experience. How does your experience to date map to engineering work, and what concrete steps have you taken to build software-engineering capability?"
+    },
+    {
+      "question": "Suppose a daily Spark job must join large student-enrollment and attendance datasets and is running slowly. How would you diagnose the bottleneck and improve the job?"
+    },
+    {
+      "question": "A Spring REST endpoint begins returning intermittent 500 errors after a database change. Walk through how you would investigate, contain, and correct the issue."
+    },
+    {
+      "question": "What Java applications or components have you built, maintained, or studied, and what was your specific contribution in each?"
+    },
+    {
+      "question": "Design a REST API for submitting and retrieving data-quality exceptions. What endpoints, request validation, status codes, pagination, and error responses would you define?"
+    },
+    {
+      "question": "How would you structure a Java service that validates an incoming record, persists it to a relational database, and returns useful errors to its caller?"
+    },
+    {
+      "question": "Describe the Scala constructs and testing practices you would use to make a Spark transformation pipeline reliable, readable, and safe to rerun."
+    },
+    {
+      "question": "Describe the most technical problem you have owned from problem definition through implementation, validation, documentation, and ongoing support. What artifacts did you produce?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "What exposure have you had to Spring or Spring Boot, and how would you organize controllers, services, repositories, configuration, and tests in a small Spring application?",
+      "competency": "Spring Framework",
+      "competency_type": "technical",
+      "target_gap": "Spring Framework",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Spring is a required but undocumented capability; the question separates direct experience from conceptual knowledge.",
+      "source_evidence": [
+        "Gap matrix: Spring Framework \u2014 missing",
+        "Gap evidence matched to Relational databases"
+      ],
+      "priority": 0.98,
+      "weight": 0.9555
+    },
+    {
+      "question": "How would you make an API that receives the same correction request more than once safe and predictable, while preserving an audit trail?",
+      "competency": "API reliability",
+      "competency_type": "other",
+      "target_gap": "REST API development",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Probes idempotency, traceability, and data integrity\u2014important production concerns not evidenced by the profile.",
+      "source_evidence": [
+        "Gap matrix: REST API development \u2014 missing",
+        "Maintained data integrity and performed routine data audits."
+      ],
+      "priority": 0.91,
+      "weight": 0.9464
+    },
+    {
+      "question": "This position asks for extensive professional engineering experience. How does your experience to date map to engineering work, and what concrete steps have you taken to build software-engineering capability?",
+      "competency": "Engineering readiness",
+      "competency_type": "soft",
+      "target_gap": "Professional engineering",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Directly addresses the documented absence of professional engineering experience while allowing the candidate to explain relevant preparation accurately.",
+      "source_evidence": [
+        "Gap matrix: Professional engineering \u2014 missing",
+        "Student Data Assistant, 01/2018-Current",
+        "Data management and relational databases"
+      ],
+      "priority": 0.98,
+      "weight": 0.9258
+    },
+    {
+      "question": "Suppose a daily Spark job must join large student-enrollment and attendance datasets and is running slowly. How would you diagnose the bottleneck and improve the job?",
+      "competency": "Spark performance tuning",
+      "competency_type": "other",
+      "target_gap": "Scala and Apache Spark",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests practical Spark reasoning for a high-priority missing requirement while using a domain familiar from the candidate's school-data background.",
+      "source_evidence": [
+        "Gap matrix: Scala and Apache Spark \u2014 missing",
+        "Performed data management, audits, analysis, reporting, and quality-control activities."
+      ],
+      "priority": 0.98,
+      "weight": 0.9017
+    },
+    {
+      "question": "A Spring REST endpoint begins returning intermittent 500 errors after a database change. Walk through how you would investigate, contain, and correct the issue.",
+      "competency": "Spring troubleshooting",
+      "competency_type": "other",
+      "target_gap": "Spring Framework",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Evaluates operational debugging discipline for a key missing framework requirement.",
+      "source_evidence": [
+        "Gap matrix: Spring Framework \u2014 missing",
+        "Detected and resolved data quality issues and discrepancies."
+      ],
+      "priority": 0.93,
+      "weight": 0.9555
+    },
+    {
+      "question": "What Java applications or components have you built, maintained, or studied, and what was your specific contribution in each?",
+      "competency": "Java development",
+      "competency_type": "technical",
+      "target_gap": "Java",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Java is required and no Java development is documented, so this establishes the candidate's actual baseline without assuming experience.",
+      "source_evidence": [
+        "Gap matrix: Java \u2014 missing",
+        "Candidate technical skills list relational databases and data management, but not Java."
+      ],
+      "priority": 0.98,
+      "weight": 0.9253
+    },
+    {
+      "question": "Design a REST API for submitting and retrieving data-quality exceptions. What endpoints, request validation, status codes, pagination, and error responses would you define?",
+      "competency": "REST API design",
+      "competency_type": "technical",
+      "target_gap": "REST API development",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Tests concrete API-design ability for a required capability absent from the profile, grounded in the candidate's documented quality-control work.",
+      "source_evidence": [
+        "Gap matrix: REST API development \u2014 missing",
+        "Performed routine data audits and quality-control activities."
+      ],
+      "priority": 0.97,
+      "weight": 0.9464
+    },
+    {
+      "question": "How would you structure a Java service that validates an incoming record, persists it to a relational database, and returns useful errors to its caller?",
+      "competency": "Java application design",
+      "competency_type": "other",
+      "target_gap": "Java",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Assesses transferable software-design thinking against a required gap, including persistence and validation relevant to the candidate's data-quality experience.",
+      "source_evidence": [
+        "Gap matrix: Java \u2014 missing",
+        "Detected and resolved data quality issues and discrepancies.",
+        "Relational databases"
+      ],
+      "priority": 0.94,
+      "weight": 0.9253
+    },
+    {
+      "question": "Describe the Scala constructs and testing practices you would use to make a Spark transformation pipeline reliable, readable, and safe to rerun.",
+      "competency": "Scala data engineering",
+      "competency_type": "technical",
+      "target_gap": "Scala and Apache Spark",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Probes whether any claimed or developing Scala knowledge extends beyond surface-level Spark familiarity.",
+      "source_evidence": [
+        "Gap matrix: Scala and Apache Spark \u2014 missing",
+        "Data verification and testing"
+      ],
+      "priority": 0.95,
+      "weight": 0.9017
+    },
+    {
+      "question": "Describe the most technical problem you have owned from problem definition through implementation, validation, documentation, and ongoing support. What artifacts did you produce?",
+      "competency": "Engineering ownership",
+      "competency_type": "soft",
+      "target_gap": "Professional engineering",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests end-to-end ownership and technical rigor without presuming that the candidate has held a software-engineering title.",
+      "source_evidence": [
+        "Gap matrix: Professional engineering \u2014 missing",
+        "Established administrative procedures to minimize errors and avoidable delays.",
+        "Data verification and testing"
+      ],
+      "priority": 0.92,
+      "weight": 0.9258
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 6876,
+    "output_tokens": 3520,
+    "cached_tokens": 0,
+    "estimated_cost": 0.055992,
+    "latency_ms": 27873.45,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.055992,
+  "cost_cny": 0.37906584,
+  "selection_latency_ms": 49.07,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:15:02.696371+00:00"
+}

@@ -9,7 +9,7 @@ This repository currently contains:
 3. `prompts/` — versioned prompt files.
 4. `experiments/` — experiment config and runner scaffold.
 
-LLM extraction and full baseline vs InterviewIQ generation are the next implementation phases. Algorithmic components are implemented and tested without calling the LLM.
+Implemented: Luna extraction, gap analysis, stored Terra flat-prompt baselines (B0), profile-aware baseline (B1), InterviewIQ pool→MMR treatment (T), plain-MMR / selection ablations (B2, S0–S2), and the primary-30 treatment pilot runner (`experiments/scripts/run_treatment_pilot.py`). See `docs/treatment_pilot_report.md`.
 
 ## Architecture
 

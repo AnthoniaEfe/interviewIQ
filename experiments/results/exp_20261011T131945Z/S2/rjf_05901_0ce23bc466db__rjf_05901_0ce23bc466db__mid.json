@@ -1,0 +1,219 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_05901_0ce23bc466db",
+  "jd_id": "rjf_05901_0ce23bc466db",
+  "pair_id": "rjf_05901_0ce23bc466db",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_05901_0ce23bc466db__rjf_05901_0ce23bc466db__mid.json",
+  "n_requirements": 42,
+  "questions": [
+    {
+      "question": "Describe the Agile practices you have actually participated in. Which ceremonies, artifacts, roles, and metrics did you use, and how did they change delivery outcomes?"
+    },
+    {
+      "question": "The profile shows Jira-based manual testing and bug tracking. How would you configure Jira workflows, boards, fields, and dashboards so multiple scrum teams can manage dependencies and release readiness?"
+    },
+    {
+      "question": "You led an Army element of six personnel. Describe how you set expectations, addressed an individual performance issue, and maintained morale; then explain how you would adapt that approach to supervising 15\u201320 software staff."
+    },
+    {
+      "question": "This role requires authorization to work in the United States. Can you confirm that you can meet this requirement without describing any personal details beyond what is necessary?"
+    },
+    {
+      "question": "You list Java, but the profile does not describe a Java deliverable. Walk through a Java or J2EE application you have built or maintained, including its layers, dependencies, and your personal contribution."
+    },
+    {
+      "question": "Design a continuous-integration pipeline for a multi-team C++ and Java application. Which stages, quality gates, test suites, and feedback mechanisms would you require before a merge is accepted?"
+    },
+    {
+      "question": "Using your experience maintaining a Requirements Verification Traceability Matrix, explain how requirements move through a full software lifecycle\u2014from intake and design through test, release, defects, and change control."
+    },
+    {
+      "question": "Imagine three scrum teams share a dependency that threatens two release dates. As Scrum of Scrums lead, how would you surface the issue, establish ownership, sequence work, and communicate the plan?"
+    },
+    {
+      "question": "What is your current understanding of Intelligent Transportation Systems, and how would you build enough domain knowledge in your first 60 days to make sound technical and delivery decisions?"
+    },
+    {
+      "question": "The position requires a local candidate in McLean, Virginia. Can you meet the role's location and onsite-work expectations, including the anticipated start timeframe?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe the Agile practices you have actually participated in. Which ceremonies, artifacts, roles, and metrics did you use, and how did they change delivery outcomes?",
+      "competency": "Agile development",
+      "competency_type": "soft",
+      "target_gap": "Agile development",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests the candidate's actual Agile exposure before assigning Agile-method SME responsibilities.",
+      "source_evidence": [
+        "Helped plan and organize software testing",
+        "Agile development methods and processes"
+      ],
+      "priority": 0.92,
+      "weight": 0.7324
+    },
+    {
+      "question": "The profile shows Jira-based manual testing and bug tracking. How would you configure Jira workflows, boards, fields, and dashboards so multiple scrum teams can manage dependencies and release readiness?",
+      "competency": "Jira administration and delivery",
+      "competency_type": "technical",
+      "target_gap": "Atlassian Jira",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Uses documented Jira experience to probe the broader operational Jira capability required by the role.",
+      "source_evidence": [
+        "Manually tested products in Jira",
+        "Worked on a team of 8 monitoring and tracking application bugs",
+        "using ... Atlassian Jira"
+      ],
+      "priority": 0.8,
+      "weight": 0.3597
+    },
+    {
+      "question": "You led an Army element of six personnel. Describe how you set expectations, addressed an individual performance issue, and maintained morale; then explain how you would adapt that approach to supervising 15\u201320 software staff.",
+      "competency": "Staff management",
+      "competency_type": "soft",
+      "target_gap": "Staff management and development",
+      "question_type": "Behavioural",
+      "difficulty": "hard",
+      "rationale": "The candidate has some documented leadership, but the role's people-management scope is substantially larger and requires direct evaluation.",
+      "source_evidence": [
+        "Conducted Team Leader duties for an element of 6 personnel",
+        "Led an element of 6 personnel",
+        "Manage and develop staff, supervising approximately 15\u201320 people"
+      ],
+      "priority": 0.98,
+      "weight": 0.3987
+    },
+    {
+      "question": "This role requires authorization to work in the United States. Can you confirm that you can meet this requirement without describing any personal details beyond what is necessary?",
+      "competency": "Work authorization",
+      "competency_type": "domain",
+      "target_gap": "U.S. work authorization",
+      "question_type": "Role-Specific",
+      "difficulty": "junior",
+      "rationale": "Confirms a stated job requirement; the profile's Army service is not sufficient evidence on its own.",
+      "source_evidence": [
+        "Completed U.S. Army EOD training",
+        "US Citizenship or Authorization to work in US required"
+      ],
+      "priority": 0.72,
+      "weight": 0.3879
+    },
+    {
+      "question": "You list Java, but the profile does not describe a Java deliverable. Walk through a Java or J2EE application you have built or maintained, including its layers, dependencies, and your personal contribution.",
+      "competency": "Java/J2EE development",
+      "competency_type": "technical",
+      "target_gap": "Java/J2EE",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The Java/J2EE match is partial and needs verification of practical enterprise Java experience.",
+      "source_evidence": [
+        "Programming: Java",
+        "Java/J2EE software development"
+      ],
+      "priority": 0.91,
+      "weight": 0.3493
+    },
+    {
+      "question": "Design a continuous-integration pipeline for a multi-team C++ and Java application. Which stages, quality gates, test suites, and feedback mechanisms would you require before a merge is accepted?",
+      "competency": "Continuous integration",
+      "competency_type": "technical",
+      "target_gap": "Continuous integration",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Continuous integration is a high-weight missing requirement central to the role's delivery responsibilities.",
+      "source_evidence": [
+        "Software testing",
+        "continuous integration"
+      ],
+      "priority": 0.99,
+      "weight": 0.9479
+    },
+    {
+      "question": "Using your experience maintaining a Requirements Verification Traceability Matrix, explain how requirements move through a full software lifecycle\u2014from intake and design through test, release, defects, and change control.",
+      "competency": "Software lifecycle management",
+      "competency_type": "domain",
+      "target_gap": "Software development methodologies and lifecycle",
+      "question_type": "Role-Specific",
+      "difficulty": "hard",
+      "rationale": "Builds on concrete requirements-verification work while testing the broader lifecycle knowledge that is only weakly evidenced.",
+      "source_evidence": [
+        "Prepared and maintained a Requirements Verification Traceability Matrix",
+        "Verified software and hardware against software requirements"
+      ],
+      "priority": 0.9,
+      "weight": 0.6432
+    },
+    {
+      "question": "Imagine three scrum teams share a dependency that threatens two release dates. As Scrum of Scrums lead, how would you surface the issue, establish ownership, sequence work, and communicate the plan?",
+      "competency": "Scrum-of-Scrums leadership",
+      "competency_type": "other",
+      "target_gap": "Scrum Master leadership",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Scrum Master leadership is a required weak match and is critical to coordinating the role's multiple work streams.",
+      "source_evidence": [
+        "Helped plan and organize software testing",
+        "Act as scrum of scrums master"
+      ],
+      "priority": 0.98,
+      "weight": 0.7249
+    },
+    {
+      "question": "What is your current understanding of Intelligent Transportation Systems, and how would you build enough domain knowledge in your first 60 days to make sound technical and delivery decisions?",
+      "competency": "ITS domain knowledge",
+      "competency_type": "soft",
+      "target_gap": "Intelligent Transportation Systems (ITS)",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "ITS is a required domain area with only a weak match from prior defense-system experience.",
+      "source_evidence": [
+        "Software testing for Navy and JTCG/ME programs",
+        "Strong knowledge of ITS"
+      ],
+      "priority": 0.94,
+      "weight": 0.6722
+    },
+    {
+      "question": "The position requires a local candidate in McLean, Virginia. Can you meet the role's location and onsite-work expectations, including the anticipated start timeframe?",
+      "competency": "Location availability",
+      "competency_type": "domain",
+      "target_gap": "Local candidate in McLean, Virginia",
+      "question_type": "Role-Specific",
+      "difficulty": "junior",
+      "rationale": "Location is an explicit role requirement and the profile provides no location information.",
+      "source_evidence": [
+        "Manually tested products in Jira",
+        "requires a local candidate in Mclean, VA"
+      ],
+      "priority": 0.73,
+      "weight": 0.7117
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    14,
+    15,
+    18,
+    21,
+    1,
+    6,
+    9,
+    19,
+    11,
+    22
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.22,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:50.372356+00:00"
+}

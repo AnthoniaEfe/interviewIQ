@@ -1,0 +1,221 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_06019_4cdecdd79857",
+  "jd_id": "rjf_06019_4cdecdd79857",
+  "pair_id": "rjf_06019_4cdecdd79857",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_06019_4cdecdd79857__rjf_06019_4cdecdd79857__mid.json",
+  "n_requirements": 38,
+  "questions": [
+    {
+      "question": "Your background is primarily senior QA and operations, while this role is senior software engineering. What motivates this transition, and what concrete plan would you follow to close development gaps in the first 90 days?"
+    },
+    {
+      "question": "How would you decompose a warehouse-management capability into microservices, and what trade-offs would you consider around service boundaries, data ownership, reliability, and observability?"
+    },
+    {
+      "question": "This role may require nights or weekends for releases or production support. Based on your experience managing critical billing runs and production testing, how do you prepare for and communicate during off-hours support?"
+    },
+    {
+      "question": "What is your experience with build and release pipelines, and how would you add automated quality gates before a change can reach production?"
+    },
+    {
+      "question": "What hands-on Java development experience do you have beyond testing Java-based applications, and can you walk through a class or service you personally implemented?"
+    },
+    {
+      "question": "Describe the automation you created with QTP for Amdocs iCare. What did it cover, how was it maintained, and what limitations would you address when moving toward developer-owned automated tests?"
+    },
+    {
+      "question": "Describe a time you had to coordinate an issue involving an external vendor, package provider, or another organization. How did you establish ownership, share evidence, and drive resolution?"
+    },
+    {
+      "question": "What Oracle-specific experience do you have, such as writing or tuning Oracle SQL, working with execution plans, or managing database-specific behavior?"
+    },
+    {
+      "question": "What JavaScript experience do you have, and how would you debug a defect where a web UI displays inventory data differently from the API response?"
+    },
+    {
+      "question": "What direct experience do you have with JIRA and Confluence? If you have used other tools, describe how you would document an architectural decision and link it to implementation and delivery work."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Your background is primarily senior QA and operations, while this role is senior software engineering. What motivates this transition, and what concrete plan would you follow to close development gaps in the first 90 days?",
+      "competency": "Engineering transition motivation",
+      "competency_type": "soft",
+      "target_gap": "Software development experience",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Directly examines the documented career-background mismatch and the candidate's readiness to move from testing-focused work into hands-on software development.",
+      "source_evidence": [
+        "Senior Software Quality Assurance Tester",
+        "QA Tester (Senior SME)",
+        "Software development experience"
+      ],
+      "priority": 0.93,
+      "weight": 0.6748
+    },
+    {
+      "question": "How would you decompose a warehouse-management capability into microservices, and what trade-offs would you consider around service boundaries, data ownership, reliability, and observability?",
+      "competency": "Microservice architecture",
+      "competency_type": "technical",
+      "target_gap": "Microservice architecture",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Tests an explicitly missing preferred architecture competency relevant to the full-stack application context.",
+      "source_evidence": [
+        "Microservice architecture",
+        "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+      ],
+      "priority": 0.68,
+      "weight": 0.5595
+    },
+    {
+      "question": "This role may require nights or weekends for releases or production support. Based on your experience managing critical billing runs and production testing, how do you prepare for and communicate during off-hours support?",
+      "competency": "Production support readiness",
+      "competency_type": "soft",
+      "target_gap": "Flexible schedule",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Tests availability and operational approach using the candidate's directly relevant batch and production-support experience.",
+      "source_evidence": [
+        "Managed batch operations and critical billing runs.",
+        "Participated in production testing.",
+        "Flexible schedule"
+      ],
+      "priority": 0.78,
+      "weight": 0.6876
+    },
+    {
+      "question": "What is your experience with build and release pipelines, and how would you add automated quality gates before a change can reach production?",
+      "competency": "Build and release engineering",
+      "competency_type": "technical",
+      "target_gap": "Build and release engineering",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "The candidate has strong release-validation exposure, but this tests whether it extends to building and operating release processes.",
+      "source_evidence": [
+        "Performed post-release production sanity testing.",
+        "Tested hotfix packages and production changes.",
+        "Certified patches for production."
+      ],
+      "priority": 0.8,
+      "weight": 0.3836
+    },
+    {
+      "question": "What hands-on Java development experience do you have beyond testing Java-based applications, and can you walk through a class or service you personally implemented?",
+      "competency": "Java development",
+      "competency_type": "technical",
+      "target_gap": "Java",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Java is a core requirement, while the profile primarily evidences QA work rather than implemented application code.",
+      "source_evidence": [
+        "Functional Testing",
+        "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+      ],
+      "priority": 0.96,
+      "weight": 0.7177
+    },
+    {
+      "question": "Describe the automation you created with QTP for Amdocs iCare. What did it cover, how was it maintained, and what limitations would you address when moving toward developer-owned automated tests?",
+      "competency": "Automation strategy",
+      "competency_type": "technical",
+      "target_gap": "Automation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Uses a documented strength to assess automation depth and transferability to an engineering role.",
+      "source_evidence": [
+        "Created Amdocs iCare automation test cases using QTP.",
+        "Test Automation"
+      ],
+      "priority": 0.76,
+      "weight": 0.365
+    },
+    {
+      "question": "Describe a time you had to coordinate an issue involving an external vendor, package provider, or another organization. How did you establish ownership, share evidence, and drive resolution?",
+      "competency": "Vendor communication",
+      "competency_type": "soft",
+      "target_gap": "Vendor communication",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Vendor communication is only a partial match, and no specific vendor interaction is documented.",
+      "source_evidence": [
+        "Vendor communication",
+        "Followed escalation procedures and coordinated with development teams."
+      ],
+      "priority": 0.7,
+      "weight": 0.3784
+    },
+    {
+      "question": "What Oracle-specific experience do you have, such as writing or tuning Oracle SQL, working with execution plans, or managing database-specific behavior?",
+      "competency": "Oracle",
+      "competency_type": "technical",
+      "target_gap": "Oracle",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Oracle is required but is not named in the profile; this distinguishes transferable SQL exposure from Oracle proficiency.",
+      "source_evidence": [
+        "Oracle",
+        "SQL"
+      ],
+      "priority": 0.87,
+      "weight": 0.7006
+    },
+    {
+      "question": "What JavaScript experience do you have, and how would you debug a defect where a web UI displays inventory data differently from the API response?",
+      "competency": "JavaScript debugging",
+      "competency_type": "technical",
+      "target_gap": "JavaScript",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "JavaScript is a role technology with no direct evidence, while the candidate does have web-application and API testing exposure to anchor the scenario.",
+      "source_evidence": [
+        "JavaScript",
+        "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+      ],
+      "priority": 0.67,
+      "weight": 0.5548
+    },
+    {
+      "question": "What direct experience do you have with JIRA and Confluence? If you have used other tools, describe how you would document an architectural decision and link it to implementation and delivery work.",
+      "competency": "Engineering collaboration tools",
+      "competency_type": "technical",
+      "target_gap": "JIRA",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "JIRA is missing, and the role requires work tracking and advanced technical documentation.",
+      "source_evidence": [
+        "JIRA",
+        "QC/ALM",
+        "Documented defects using QC/ALM"
+      ],
+      "priority": 0.95,
+      "weight": 0.9368
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    29,
+    26,
+    28,
+    13,
+    0,
+    14,
+    21,
+    5,
+    25,
+    18
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.23,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:50.498485+00:00"
+}

@@ -1,0 +1,456 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_03496_b9650aabb896",
+  "jd_id": "rjf_03496_b9650aabb896",
+  "pair_id": "rjf_03496_b9650aabb896",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 14,
+  "pool_path": "pool/rjf_03496_b9650aabb896__rjf_03496_b9650aabb896__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.2,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      0,
+      2,
+      1,
+      4,
+      3,
+      18,
+      25,
+      23,
+      19,
+      5
+    ],
+    "questions": [
+      {
+        "question": "Describe the most complex query you have written over a large dataset. What were the joins, aggregations, partitioning strategy, and performance bottlenecks, and how did you validate both correctness and runtime?",
+        "competency": "Complex query writing",
+        "competency_type": "technical",
+        "target_gap": "Complex query writing",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Directly tests the weakest required match and distinguishes general Hadoop experience from demonstrable large-scale query design and tuning.",
+        "source_evidence": [
+          "Hadoop",
+          "Designed and optimized Hive tables and HQL queries using partitioning and bucketing."
+        ],
+        "priority": 0.98,
+        "weight": 0.7056
+      },
+      {
+        "question": "Walk through a production integration defect you investigated, from the first alert through root-cause isolation, remediation, regression testing, and communication to dependent teams.",
+        "competency": "Integration testing and debugging",
+        "competency_type": "soft",
+        "target_gap": "Integration testing and debugging",
+        "question_type": "Behavioural",
+        "difficulty": "hard",
+        "rationale": "Probes the weak match with an evidence-based production-debugging example and assesses whether the candidate can coordinate resolution beyond individual code fixes.",
+        "source_evidence": [
+          "Resolved customer issues through workarounds, debugging, and defect fixes.",
+          "Fixed SCD Type 2 date chaining defects and cleaned duplicate records."
+        ],
+        "priority": 0.96,
+        "weight": 0.6604
+      },
+      {
+        "question": "A new source system must be added to an existing data platform without disrupting reporting consumers. How would you assess its integration points, define contracts, plan schema evolution, and deploy the change safely?",
+        "competency": "System architecture integration",
+        "competency_type": "other",
+        "target_gap": "System architecture and integration",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Tests the candidate's weak-match evidence for architecture-level integration, a central Staff Data Engineer responsibility.",
+        "source_evidence": [
+          "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations.",
+          "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting."
+        ],
+        "priority": 0.97,
+        "weight": 0.6641
+      },
+      {
+        "question": "What SDLC practices would you require before a data-pipeline change can reach production, and how would you make those practices practical for a small engineering team delivering in Scrum?",
+        "competency": "Data engineering SDLC",
+        "competency_type": "other",
+        "target_gap": "Software development lifecycle practices",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Addresses a weak match against the role's requirement to ensure industry best SDLC practices while delivering through Scrum.",
+        "source_evidence": [
+          "Used version-control tools to coordinate project development and code submissions.",
+          "Instantiated and maintained CI/CD pipelines and applied automation to environments and applications."
+        ],
+        "priority": 0.94,
+        "weight": 0.6774
+      },
+      {
+        "question": "How would you establish an integration-test strategy for a pipeline that ingests source data, transforms it in Spark, and publishes warehouse tables used by reports? Include test data, failure cases, data-quality assertions, and release gates.",
+        "competency": "Integration testing strategy",
+        "competency_type": "other",
+        "target_gap": "Integration testing and debugging",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "The role requires coordinating integration testing; this tests a systematic approach rather than a single debugging anecdote.",
+        "source_evidence": [
+          "Developed data ingestion pipelines on Azure HDInsight Spark clusters using Azure Data Factory and Spark SQL.",
+          "Worked on data quality solutions, duplicate cleanup, and defect correction."
+        ],
+        "priority": 0.95,
+        "weight": 0.6604
+      },
+      {
+        "question": "For a new large-scale data-platform component, what artifacts would you produce during ideation to align engineers, end users, and leadership on architecture, risks, costs, and delivery sequencing?",
+        "competency": "Platform design",
+        "competency_type": "domain",
+        "target_gap": "System architecture and integration",
+        "question_type": "Role-Specific",
+        "difficulty": "hard",
+        "rationale": "Tests a weak-match area against the role's expectation to provide high-level analysis and own key platform-component delivery.",
+        "source_evidence": [
+          "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting.",
+          "Cloud data engineering experience across AWS and Azure."
+        ],
+        "priority": 0.77,
+        "weight": 0.6641
+      },
+      {
+        "question": "What is your method for balancing a request for rapid delivery against the need for architecture review, automated testing, documentation, and operational readiness?",
+        "competency": "Engineering judgment",
+        "competency_type": "soft",
+        "target_gap": "Software development lifecycle practices",
+        "question_type": "Cultural/Motivational",
+        "difficulty": "mid",
+        "rationale": "Reveals the candidate's quality mindset and decision-making under delivery pressure, important to the role's SDLC expectations.",
+        "source_evidence": [
+          "Instantiated and maintained CI/CD pipelines and applied automation to environments and applications.",
+          "Used Git and GitHub for versioning and CI/CD development."
+        ],
+        "priority": 0.67,
+        "weight": 0.6774
+      },
+      {
+        "question": "Tell me how you would assess and tune a query that joins several large fact-like datasets and produces a reporting aggregate. What evidence would lead you to change the physical design rather than only rewrite SQL?",
+        "competency": "Large-scale query tuning",
+        "competency_type": "other",
+        "target_gap": "Complex query writing",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Further tests the highest-priority weak match through judgment about SQL, storage, and physical design trade-offs.",
+        "source_evidence": [
+          "Created and optimized Hive tables and HQL queries using partitioning and bucketing.",
+          "Migrated large datasets to Databricks and administered clusters and data pipelines."
+        ],
+        "priority": 0.7,
+        "weight": 0.7056
+      },
+      {
+        "question": "How would you organize a small data engineering team to deliver a pipeline increment in Scrum while maintaining predictable quality? Discuss refinement, estimation, ownership, code review, testing, and retrospectives.",
+        "competency": "Scrum delivery",
+        "competency_type": "other",
+        "target_gap": "Software development lifecycle practices",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Probes practical delivery leadership and quality practices, which are necessary for the role but only indirectly evidenced in the profile.",
+        "source_evidence": [
+          "Used version-control tools to coordinate project development and code submissions.",
+          "Coordinated tasks with other IT team members."
+        ],
+        "priority": 0.76,
+        "weight": 0.6774
+      },
+      {
+        "question": "In your Azure Data Factory work, how did you decide which responsibilities belonged in ADF, Spark, the target database, and orchestration infrastructure? What trade-offs did that architecture create?",
+        "competency": "Data integration architecture",
+        "competency_type": "technical",
+        "target_gap": "Data integration pipeline architecture",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Builds on the candidate's ADF evidence to assess architectural reasoning needed to design integration pipelines and reporting infrastructure.",
+        "source_evidence": [
+          "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations.",
+          "Developed data ingestion pipelines on Azure HDInsight Spark clusters using Azure Data Factory and Spark SQL."
+        ],
+        "priority": 0.92,
+        "weight": 0.3996
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.691488,
+      0.633984,
+      0.644177,
+      0.636756,
+      0.6273799999999999,
+      0.5113570000000001,
+      0.45385800000000004,
+      0.49391999999999997,
+      0.5148240000000001,
+      0.367632
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.08513522148132324,
+      0.3253859877586365,
+      0.49704697728157043,
+      0.5146802663803101,
+      0.5817142128944397,
+      0.5201365947723389,
+      0.6475428342819214,
+      0.7129634618759155,
+      0.4259682297706604
+    ],
+    "mmr_scores": [
+      0.48404159999999996,
+      0.41824823355560303,
+      0.35330810367240906,
+      0.2966151068155288,
+      0.2847619200859069,
+      0.1834356361316681,
+      0.16165962156829833,
+      0.1514811497154235,
+      0.1464877614372253,
+      0.12955193106880183
+    ],
+    "competency_weights": [
+      0.7056,
+      0.6604,
+      0.6641,
+      0.6774,
+      0.6604,
+      0.6641,
+      0.6774,
+      0.7056,
+      0.6774,
+      0.3996
+    ]
+  },
+  "questions": [
+    {
+      "question": "Describe the most complex query you have written over a large dataset. What were the joins, aggregations, partitioning strategy, and performance bottlenecks, and how did you validate both correctness and runtime?"
+    },
+    {
+      "question": "Walk through a production integration defect you investigated, from the first alert through root-cause isolation, remediation, regression testing, and communication to dependent teams."
+    },
+    {
+      "question": "A new source system must be added to an existing data platform without disrupting reporting consumers. How would you assess its integration points, define contracts, plan schema evolution, and deploy the change safely?"
+    },
+    {
+      "question": "What SDLC practices would you require before a data-pipeline change can reach production, and how would you make those practices practical for a small engineering team delivering in Scrum?"
+    },
+    {
+      "question": "How would you establish an integration-test strategy for a pipeline that ingests source data, transforms it in Spark, and publishes warehouse tables used by reports? Include test data, failure cases, data-quality assertions, and release gates."
+    },
+    {
+      "question": "For a new large-scale data-platform component, what artifacts would you produce during ideation to align engineers, end users, and leadership on architecture, risks, costs, and delivery sequencing?"
+    },
+    {
+      "question": "What is your method for balancing a request for rapid delivery against the need for architecture review, automated testing, documentation, and operational readiness?"
+    },
+    {
+      "question": "Tell me how you would assess and tune a query that joins several large fact-like datasets and produces a reporting aggregate. What evidence would lead you to change the physical design rather than only rewrite SQL?"
+    },
+    {
+      "question": "How would you organize a small data engineering team to deliver a pipeline increment in Scrum while maintaining predictable quality? Discuss refinement, estimation, ownership, code review, testing, and retrospectives."
+    },
+    {
+      "question": "In your Azure Data Factory work, how did you decide which responsibilities belonged in ADF, Spark, the target database, and orchestration infrastructure? What trade-offs did that architecture create?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe the most complex query you have written over a large dataset. What were the joins, aggregations, partitioning strategy, and performance bottlenecks, and how did you validate both correctness and runtime?",
+      "competency": "Complex query writing",
+      "competency_type": "technical",
+      "target_gap": "Complex query writing",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Directly tests the weakest required match and distinguishes general Hadoop experience from demonstrable large-scale query design and tuning.",
+      "source_evidence": [
+        "Hadoop",
+        "Designed and optimized Hive tables and HQL queries using partitioning and bucketing."
+      ],
+      "priority": 0.98,
+      "weight": 0.7056
+    },
+    {
+      "question": "Walk through a production integration defect you investigated, from the first alert through root-cause isolation, remediation, regression testing, and communication to dependent teams.",
+      "competency": "Integration testing and debugging",
+      "competency_type": "soft",
+      "target_gap": "Integration testing and debugging",
+      "question_type": "Behavioural",
+      "difficulty": "hard",
+      "rationale": "Probes the weak match with an evidence-based production-debugging example and assesses whether the candidate can coordinate resolution beyond individual code fixes.",
+      "source_evidence": [
+        "Resolved customer issues through workarounds, debugging, and defect fixes.",
+        "Fixed SCD Type 2 date chaining defects and cleaned duplicate records."
+      ],
+      "priority": 0.96,
+      "weight": 0.6604
+    },
+    {
+      "question": "A new source system must be added to an existing data platform without disrupting reporting consumers. How would you assess its integration points, define contracts, plan schema evolution, and deploy the change safely?",
+      "competency": "System architecture integration",
+      "competency_type": "other",
+      "target_gap": "System architecture and integration",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's weak-match evidence for architecture-level integration, a central Staff Data Engineer responsibility.",
+      "source_evidence": [
+        "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations.",
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting."
+      ],
+      "priority": 0.97,
+      "weight": 0.6641
+    },
+    {
+      "question": "What SDLC practices would you require before a data-pipeline change can reach production, and how would you make those practices practical for a small engineering team delivering in Scrum?",
+      "competency": "Data engineering SDLC",
+      "competency_type": "other",
+      "target_gap": "Software development lifecycle practices",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Addresses a weak match against the role's requirement to ensure industry best SDLC practices while delivering through Scrum.",
+      "source_evidence": [
+        "Used version-control tools to coordinate project development and code submissions.",
+        "Instantiated and maintained CI/CD pipelines and applied automation to environments and applications."
+      ],
+      "priority": 0.94,
+      "weight": 0.6774
+    },
+    {
+      "question": "How would you establish an integration-test strategy for a pipeline that ingests source data, transforms it in Spark, and publishes warehouse tables used by reports? Include test data, failure cases, data-quality assertions, and release gates.",
+      "competency": "Integration testing strategy",
+      "competency_type": "other",
+      "target_gap": "Integration testing and debugging",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "The role requires coordinating integration testing; this tests a systematic approach rather than a single debugging anecdote.",
+      "source_evidence": [
+        "Developed data ingestion pipelines on Azure HDInsight Spark clusters using Azure Data Factory and Spark SQL.",
+        "Worked on data quality solutions, duplicate cleanup, and defect correction."
+      ],
+      "priority": 0.95,
+      "weight": 0.6604
+    },
+    {
+      "question": "For a new large-scale data-platform component, what artifacts would you produce during ideation to align engineers, end users, and leadership on architecture, risks, costs, and delivery sequencing?",
+      "competency": "Platform design",
+      "competency_type": "domain",
+      "target_gap": "System architecture and integration",
+      "question_type": "Role-Specific",
+      "difficulty": "hard",
+      "rationale": "Tests a weak-match area against the role's expectation to provide high-level analysis and own key platform-component delivery.",
+      "source_evidence": [
+        "Designed and set up an enterprise data lake for analytics, processing, storage, and reporting.",
+        "Cloud data engineering experience across AWS and Azure."
+      ],
+      "priority": 0.77,
+      "weight": 0.6641
+    },
+    {
+      "question": "What is your method for balancing a request for rapid delivery against the need for architecture review, automated testing, documentation, and operational readiness?",
+      "competency": "Engineering judgment",
+      "competency_type": "soft",
+      "target_gap": "Software development lifecycle practices",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Reveals the candidate's quality mindset and decision-making under delivery pressure, important to the role's SDLC expectations.",
+      "source_evidence": [
+        "Instantiated and maintained CI/CD pipelines and applied automation to environments and applications.",
+        "Used Git and GitHub for versioning and CI/CD development."
+      ],
+      "priority": 0.67,
+      "weight": 0.6774
+    },
+    {
+      "question": "Tell me how you would assess and tune a query that joins several large fact-like datasets and produces a reporting aggregate. What evidence would lead you to change the physical design rather than only rewrite SQL?",
+      "competency": "Large-scale query tuning",
+      "competency_type": "other",
+      "target_gap": "Complex query writing",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Further tests the highest-priority weak match through judgment about SQL, storage, and physical design trade-offs.",
+      "source_evidence": [
+        "Created and optimized Hive tables and HQL queries using partitioning and bucketing.",
+        "Migrated large datasets to Databricks and administered clusters and data pipelines."
+      ],
+      "priority": 0.7,
+      "weight": 0.7056
+    },
+    {
+      "question": "How would you organize a small data engineering team to deliver a pipeline increment in Scrum while maintaining predictable quality? Discuss refinement, estimation, ownership, code review, testing, and retrospectives.",
+      "competency": "Scrum delivery",
+      "competency_type": "other",
+      "target_gap": "Software development lifecycle practices",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Probes practical delivery leadership and quality practices, which are necessary for the role but only indirectly evidenced in the profile.",
+      "source_evidence": [
+        "Used version-control tools to coordinate project development and code submissions.",
+        "Coordinated tasks with other IT team members."
+      ],
+      "priority": 0.76,
+      "weight": 0.6774
+    },
+    {
+      "question": "In your Azure Data Factory work, how did you decide which responsibilities belonged in ADF, Spark, the target database, and orchestration infrastructure? What trade-offs did that architecture create?",
+      "competency": "Data integration architecture",
+      "competency_type": "technical",
+      "target_gap": "Data integration pipeline architecture",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Builds on the candidate's ADF evidence to assess architectural reasoning needed to design integration pipelines and reporting infrastructure.",
+      "source_evidence": [
+        "Configured Azure Data Factory transformations, integration runtimes, Key Vaults, triggers, and ARM template migrations.",
+        "Developed data ingestion pipelines on Azure HDInsight Spark clusters using Azure Data Factory and Spark SQL."
+      ],
+      "priority": 0.92,
+      "weight": 0.3996
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 9726,
+    "output_tokens": 3927,
+    "cached_tokens": 0,
+    "estimated_cost": 0.066576,
+    "latency_ms": 30460.57,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.066576,
+  "cost_cny": 0.45071952,
+  "selection_latency_ms": 28.69,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:07:21.616706+00:00"
+}

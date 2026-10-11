@@ -1,0 +1,456 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_03497_3352c5d0c630",
+  "jd_id": "rjf_03497_3352c5d0c630",
+  "pair_id": "rjf_03497_3352c5d0c630",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 41,
+  "pool_path": "pool/rjf_03497_3352c5d0c630__rjf_03497_3352c5d0c630__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.03333333333333333,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      5,
+      13,
+      8,
+      10,
+      9,
+      14,
+      12,
+      11,
+      27,
+      3
+    ],
+    "questions": [
+      {
+        "question": "Describe a Spark or PySpark workload you have developed. How did you address partitioning, joins, data skew, and operational failures?",
+        "competency": "Apache Spark",
+        "competency_type": "technical",
+        "target_gap": "Apache Spark",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Apache Spark is a high-weight missing skill and requires direct technical validation.",
+        "source_evidence": [
+          "Microsoft Excel",
+          "SparkPyspark and JSON"
+        ],
+        "priority": 0.95,
+        "weight": 0.9552
+      },
+      {
+        "question": "Describe your use of GitLab for source control and delivery pipelines. How did you structure merge requests, code review, testing, and release approvals?",
+        "competency": "GitLab delivery practices",
+        "competency_type": "technical",
+        "target_gap": "GitLab",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Tests a missing required engineering-practice skill needed for controlled delivery of data solutions.",
+        "source_evidence": [
+          "Microsoft Excel",
+          "Proficient with GitLab"
+        ],
+        "priority": 0.93,
+        "weight": 0.9565
+      },
+      {
+        "question": "What is the difference between JSON as a data interchange format and a relational table, and how would you validate and transform nested JSON for analytics?",
+        "competency": "JSON data processing",
+        "competency_type": "technical",
+        "target_gap": "JSON",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "JSON is a missing required skill; the question distinguishes general data-entry experience from modern semi-structured data processing.",
+        "source_evidence": [
+          "Microsoft Excel",
+          "Experience with SparkPyspark and JSON"
+        ],
+        "priority": 0.92,
+        "weight": 0.935
+      },
+      {
+        "question": "Design an Airflow-style DAG for daily ingestion, validation, transformation, publishing, and alerting. Which tasks depend on others, and how would you handle retries and backfills?",
+        "competency": "Workflow orchestration",
+        "competency_type": "other",
+        "target_gap": "Directed acyclic graphs",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Tests understanding of DAG-based production orchestration, which is missing from the profile.",
+        "source_evidence": [
+          "Microsoft Excel",
+          "execution engines, DAGs"
+        ],
+        "priority": 0.93,
+        "weight": 0.9374
+      },
+      {
+        "question": "How would you use pandas DataFrames to profile a newly received file, handle missing values and duplicates, and produce a reproducible quality report?",
+        "competency": "Pandas DataFrames",
+        "competency_type": "technical",
+        "target_gap": "Pandas DataFrames",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Validates a specifically required but missing technical skill, while connecting to the candidate's stated attention to data accuracy.",
+        "source_evidence": [
+          "Performed highly accurate and detailed data entry",
+          "Must have Panda Data Frames knowledge and best practices"
+        ],
+        "priority": 0.92,
+        "weight": 0.94
+      },
+      {
+        "question": "How would you build a Power BI semantic model and dashboard for business leaders while ensuring that metrics, refreshes, and security are reliable?",
+        "competency": "Power BI",
+        "competency_type": "other",
+        "target_gap": "Power BI",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Power BI is a missing required skill; the question tests both reporting knowledge and operational discipline.",
+        "source_evidence": [
+          "Prepared monthly and special reports for management",
+          "BI reporting with PowerBI"
+        ],
+        "priority": 0.91,
+        "weight": 0.9392
+      },
+      {
+        "question": "Explain how you have used Kubernetes to deploy or operate data workloads. How did you approach scaling, secrets, configuration, and incident recovery?",
+        "competency": "Kubernetes operations",
+        "competency_type": "technical",
+        "target_gap": "Kubernetes",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Kubernetes is a missing required platform skill and needs explicit hands-on validation.",
+        "source_evidence": [
+          "Microsoft Excel",
+          "and Kubernetes"
+        ],
+        "priority": 0.93,
+        "weight": 0.9494
+      },
+      {
+        "question": "What workflow orchestration tools have you used, such as Airflow, Dagster, or Luigi, and how did you monitor failures and manage dependencies?",
+        "competency": "Workflow orchestration tools",
+        "competency_type": "technical",
+        "target_gap": "Workflow orchestration tools",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Seeks concrete evidence for a missing operational requirement that is critical to production pipeline delivery.",
+        "source_evidence": [
+          "Microsoft Excel",
+          "DAGs (airflow, dagster, luigi, etc.)"
+        ],
+        "priority": 0.92,
+        "weight": 0.9351
+      },
+      {
+        "question": "How have you planned and tracked work when several requests had competing deadlines? If you have used Agile or Kanban, describe your specific role; if not, explain how you would adapt your approach.",
+        "competency": "Agile delivery",
+        "competency_type": "soft",
+        "target_gap": "Agile methodologies",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Agile is missing from the profile; the question fairly assesses transferable prioritization from multi-project administrative work while seeking direct evidence.",
+        "source_evidence": [
+          "Prepared weekly spreadsheets monitoring more than 15 ongoing projects",
+          "Experience with Agile methodologies"
+        ],
+        "priority": 0.86,
+        "weight": 0.9349
+      },
+      {
+        "question": "Describe a data-governance framework you have applied. How did you establish ownership, quality rules, access controls, and issue resolution?",
+        "competency": "Data governance",
+        "competency_type": "technical",
+        "target_gap": "Data governance",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Probes a required governance capability absent from the candidate's stated records and spreadsheet experience.",
+        "source_evidence": [
+          "Organization of filing systems; filed and maintained loan records",
+          "data lake with governance"
+        ],
+        "priority": 0.96,
+        "weight": 0.6873
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.90744,
+      0.889545,
+      0.8602000000000001,
+      0.8717820000000001,
+      0.8648,
+      0.8546720000000001,
+      0.8829420000000001,
+      0.8602920000000001,
+      0.8040139999999999,
+      0.659808
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.25412675738334656,
+      0.20554083585739136,
+      0.2575090825557709,
+      0.31048816442489624,
+      0.29949015378952026,
+      0.38811999559402466,
+      0.47683170437812805,
+      0.36313483119010925,
+      0.327276349067688
+    ],
+    "mmr_scores": [
+      0.635208,
+      0.546443472784996,
+      0.5404777492427826,
+      0.5329946752332687,
+      0.5122135506725312,
+      0.5084233538631439,
+      0.5016234013217926,
+      0.4591548886865615,
+      0.45386935064296713,
+      0.36368269527969355
+    ],
+    "competency_weights": [
+      0.9552,
+      0.9565,
+      0.935,
+      0.9374,
+      0.94,
+      0.9392,
+      0.9494,
+      0.9351,
+      0.9349,
+      0.6873
+    ]
+  },
+  "questions": [
+    {
+      "question": "Describe a Spark or PySpark workload you have developed. How did you address partitioning, joins, data skew, and operational failures?"
+    },
+    {
+      "question": "Describe your use of GitLab for source control and delivery pipelines. How did you structure merge requests, code review, testing, and release approvals?"
+    },
+    {
+      "question": "What is the difference between JSON as a data interchange format and a relational table, and how would you validate and transform nested JSON for analytics?"
+    },
+    {
+      "question": "Design an Airflow-style DAG for daily ingestion, validation, transformation, publishing, and alerting. Which tasks depend on others, and how would you handle retries and backfills?"
+    },
+    {
+      "question": "How would you use pandas DataFrames to profile a newly received file, handle missing values and duplicates, and produce a reproducible quality report?"
+    },
+    {
+      "question": "How would you build a Power BI semantic model and dashboard for business leaders while ensuring that metrics, refreshes, and security are reliable?"
+    },
+    {
+      "question": "Explain how you have used Kubernetes to deploy or operate data workloads. How did you approach scaling, secrets, configuration, and incident recovery?"
+    },
+    {
+      "question": "What workflow orchestration tools have you used, such as Airflow, Dagster, or Luigi, and how did you monitor failures and manage dependencies?"
+    },
+    {
+      "question": "How have you planned and tracked work when several requests had competing deadlines? If you have used Agile or Kanban, describe your specific role; if not, explain how you would adapt your approach."
+    },
+    {
+      "question": "Describe a data-governance framework you have applied. How did you establish ownership, quality rules, access controls, and issue resolution?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe a Spark or PySpark workload you have developed. How did you address partitioning, joins, data skew, and operational failures?",
+      "competency": "Apache Spark",
+      "competency_type": "technical",
+      "target_gap": "Apache Spark",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Apache Spark is a high-weight missing skill and requires direct technical validation.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "SparkPyspark and JSON"
+      ],
+      "priority": 0.95,
+      "weight": 0.9552
+    },
+    {
+      "question": "Describe your use of GitLab for source control and delivery pipelines. How did you structure merge requests, code review, testing, and release approvals?",
+      "competency": "GitLab delivery practices",
+      "competency_type": "technical",
+      "target_gap": "GitLab",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Tests a missing required engineering-practice skill needed for controlled delivery of data solutions.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "Proficient with GitLab"
+      ],
+      "priority": 0.93,
+      "weight": 0.9565
+    },
+    {
+      "question": "What is the difference between JSON as a data interchange format and a relational table, and how would you validate and transform nested JSON for analytics?",
+      "competency": "JSON data processing",
+      "competency_type": "technical",
+      "target_gap": "JSON",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "JSON is a missing required skill; the question distinguishes general data-entry experience from modern semi-structured data processing.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "Experience with SparkPyspark and JSON"
+      ],
+      "priority": 0.92,
+      "weight": 0.935
+    },
+    {
+      "question": "Design an Airflow-style DAG for daily ingestion, validation, transformation, publishing, and alerting. Which tasks depend on others, and how would you handle retries and backfills?",
+      "competency": "Workflow orchestration",
+      "competency_type": "other",
+      "target_gap": "Directed acyclic graphs",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests understanding of DAG-based production orchestration, which is missing from the profile.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "execution engines, DAGs"
+      ],
+      "priority": 0.93,
+      "weight": 0.9374
+    },
+    {
+      "question": "How would you use pandas DataFrames to profile a newly received file, handle missing values and duplicates, and produce a reproducible quality report?",
+      "competency": "Pandas DataFrames",
+      "competency_type": "technical",
+      "target_gap": "Pandas DataFrames",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Validates a specifically required but missing technical skill, while connecting to the candidate's stated attention to data accuracy.",
+      "source_evidence": [
+        "Performed highly accurate and detailed data entry",
+        "Must have Panda Data Frames knowledge and best practices"
+      ],
+      "priority": 0.92,
+      "weight": 0.94
+    },
+    {
+      "question": "How would you build a Power BI semantic model and dashboard for business leaders while ensuring that metrics, refreshes, and security are reliable?",
+      "competency": "Power BI",
+      "competency_type": "other",
+      "target_gap": "Power BI",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Power BI is a missing required skill; the question tests both reporting knowledge and operational discipline.",
+      "source_evidence": [
+        "Prepared monthly and special reports for management",
+        "BI reporting with PowerBI"
+      ],
+      "priority": 0.91,
+      "weight": 0.9392
+    },
+    {
+      "question": "Explain how you have used Kubernetes to deploy or operate data workloads. How did you approach scaling, secrets, configuration, and incident recovery?",
+      "competency": "Kubernetes operations",
+      "competency_type": "technical",
+      "target_gap": "Kubernetes",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Kubernetes is a missing required platform skill and needs explicit hands-on validation.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "and Kubernetes"
+      ],
+      "priority": 0.93,
+      "weight": 0.9494
+    },
+    {
+      "question": "What workflow orchestration tools have you used, such as Airflow, Dagster, or Luigi, and how did you monitor failures and manage dependencies?",
+      "competency": "Workflow orchestration tools",
+      "competency_type": "technical",
+      "target_gap": "Workflow orchestration tools",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Seeks concrete evidence for a missing operational requirement that is critical to production pipeline delivery.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "DAGs (airflow, dagster, luigi, etc.)"
+      ],
+      "priority": 0.92,
+      "weight": 0.9351
+    },
+    {
+      "question": "How have you planned and tracked work when several requests had competing deadlines? If you have used Agile or Kanban, describe your specific role; if not, explain how you would adapt your approach.",
+      "competency": "Agile delivery",
+      "competency_type": "soft",
+      "target_gap": "Agile methodologies",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Agile is missing from the profile; the question fairly assesses transferable prioritization from multi-project administrative work while seeking direct evidence.",
+      "source_evidence": [
+        "Prepared weekly spreadsheets monitoring more than 15 ongoing projects",
+        "Experience with Agile methodologies"
+      ],
+      "priority": 0.86,
+      "weight": 0.9349
+    },
+    {
+      "question": "Describe a data-governance framework you have applied. How did you establish ownership, quality rules, access controls, and issue resolution?",
+      "competency": "Data governance",
+      "competency_type": "technical",
+      "target_gap": "Data governance",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Probes a required governance capability absent from the candidate's stated records and spreadsheet experience.",
+      "source_evidence": [
+        "Organization of filing systems; filed and maintained loan records",
+        "data lake with governance"
+      ],
+      "priority": 0.96,
+      "weight": 0.6873
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 14130,
+    "output_tokens": 3216,
+    "cached_tokens": 0,
+    "estimated_cost": 0.066852,
+    "latency_ms": 25559.21,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.066852,
+  "cost_cny": 0.45258804,
+  "selection_latency_ms": 36.29,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:07:47.230687+00:00"
+}

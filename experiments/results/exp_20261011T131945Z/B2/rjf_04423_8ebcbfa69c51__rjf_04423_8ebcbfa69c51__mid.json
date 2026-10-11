@@ -1,0 +1,222 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "B2",
+  "selection_strategy": "plain_mmr_priority",
+  "generation_mode": "interviewiq",
+  "profile_id": "rjf_04423_8ebcbfa69c51",
+  "jd_id": "rjf_04423_8ebcbfa69c51",
+  "pair_id": "rjf_04423_8ebcbfa69c51",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_04423_8ebcbfa69c51__rjf_04423_8ebcbfa69c51__mid.json",
+  "n_requirements": 22,
+  "questions": [
+    {
+      "question": "This position relies on QuickBooks. What hands-on experience do you have with QuickBooks, and if it is limited, how would you become productive in it while maintaining the accuracy of client books?"
+    },
+    {
+      "question": "Describe a tax or accounting project you led from planning through completion. How did you define responsibilities, monitor progress, resolve blockers, and ensure the final work met quality standards?"
+    },
+    {
+      "question": "This is an in-person role in Westlake Village. Are you currently able to work in the office every day and reside within 15 miles of the office, or can you meet those requirements by your start date?"
+    },
+    {
+      "question": "A client\u2019s books show a material year-end discrepancy between revenue, bank activity, and sales-tax filings. How would you investigate the issue, determine the correcting entries, and communicate the result?"
+    },
+    {
+      "question": "Tell me about a difficult accounting discrepancy, coding issue, or control breakdown you uncovered. What evidence did you examine, what actions did you take, and what was the outcome?"
+    },
+    {
+      "question": "Describe your approach to working in a fully paperless tax and accounting environment. How would you organize source documents, review notes, approvals, and final workpapers so another team member can follow the audit trail?"
+    },
+    {
+      "question": "During a compressed filing deadline, how would you prioritize several client returns, outstanding bookkeeping questions, and staff review requests while preserving accuracy?"
+    },
+    {
+      "question": "How would you structure your digital workday when using multiple monitors to compare client source documents, QuickBooks records, tax software, and review notes without losing track of versions or sensitive information?"
+    },
+    {
+      "question": "What controls would you use to prevent errors when entering or reviewing year-end adjusting entries, tax accruals, and client-provided data?"
+    },
+    {
+      "question": "Give an example of a time you independently identified work that needed to be done or improved without being asked. How did you decide on the next steps and keep stakeholders informed?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "This position relies on QuickBooks. What hands-on experience do you have with QuickBooks, and if it is limited, how would you become productive in it while maintaining the accuracy of client books?",
+      "competency": "QuickBooks",
+      "competency_type": "technical",
+      "target_gap": "QuickBooks",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "QuickBooks is required and is only a weak match; the candidate lists SAP, AS400, CAMS, and JDE rather than QuickBooks.",
+      "source_evidence": [
+        "SAP, AS400, CAMS, JDE",
+        "QuickBooks accounting software skills"
+      ],
+      "priority": 0.97,
+      "weight": 0.7186
+    },
+    {
+      "question": "Describe a tax or accounting project you led from planning through completion. How did you define responsibilities, monitor progress, resolve blockers, and ensure the final work met quality standards?",
+      "competency": "Project leadership",
+      "competency_type": "soft",
+      "target_gap": "Project leadership",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Project leadership is a partial match based on training experience, but the role requires leading projects and staff.",
+      "source_evidence": [
+        "Trained associates on new tax procedures",
+        "Trained new accounting assistants",
+        "Lead and manage tax and accounting projects and staff"
+      ],
+      "priority": 0.93,
+      "weight": 0.3829
+    },
+    {
+      "question": "This is an in-person role in Westlake Village. Are you currently able to work in the office every day and reside within 15 miles of the office, or can you meet those requirements by your start date?",
+      "competency": "Work-location eligibility",
+      "competency_type": "domain",
+      "target_gap": "Residence within 15 miles of Westlake Village",
+      "question_type": "Role-Specific",
+      "difficulty": "easy",
+      "rationale": "Local residence is an explicit required condition and is marked missing because no location evidence is provided.",
+      "source_evidence": [
+        "Residence within 15 miles of Westlake Village: missing",
+        "In person in office only"
+      ],
+      "priority": 0.9,
+      "weight": 0.9057
+    },
+    {
+      "question": "A client\u2019s books show a material year-end discrepancy between revenue, bank activity, and sales-tax filings. How would you investigate the issue, determine the correcting entries, and communicate the result?",
+      "competency": "Analytical problem solving",
+      "competency_type": "other",
+      "target_gap": "Analytical skills",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Analytical skills are marked missing, while this role requires sound analysis across tax and accounting engagements.",
+      "source_evidence": [
+        "Analytical skills: missing",
+        "Reconciled balance sheets and tax accounts",
+        "Sales and use tax reporting"
+      ],
+      "priority": 0.95,
+      "weight": 0.9248
+    },
+    {
+      "question": "Tell me about a difficult accounting discrepancy, coding issue, or control breakdown you uncovered. What evidence did you examine, what actions did you take, and what was the outcome?",
+      "competency": "Problem solving",
+      "competency_type": "soft",
+      "target_gap": "Problem solving",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Problem solving is marked missing; this probes a concrete example without assuming one from the resume.",
+      "source_evidence": [
+        "Problem solving: missing",
+        "Monitored invoices and work orders for correct coding",
+        "Performed account reconciliations"
+      ],
+      "priority": 0.95,
+      "weight": 0.9276
+    },
+    {
+      "question": "Describe your approach to working in a fully paperless tax and accounting environment. How would you organize source documents, review notes, approvals, and final workpapers so another team member can follow the audit trail?",
+      "competency": "Paperless workflow",
+      "competency_type": "other",
+      "target_gap": "Paperless environment proficiency",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Paperless-environment proficiency is marked missing and is a required operating condition for the role.",
+      "source_evidence": [
+        "Paperless environment proficiency: missing",
+        "Comfortable in a paperless environment"
+      ],
+      "priority": 0.96,
+      "weight": 0.9492
+    },
+    {
+      "question": "During a compressed filing deadline, how would you prioritize several client returns, outstanding bookkeeping questions, and staff review requests while preserving accuracy?",
+      "competency": "Deadline management",
+      "competency_type": "other",
+      "target_gap": "Fast-paced, deadline-oriented work",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "The role is deadline-oriented and this competency is only a weak match in the gap matrix.",
+      "source_evidence": [
+        "Fast-paced, deadline-oriented work: weak match",
+        "Month-end and year-end close experience"
+      ],
+      "priority": 0.91,
+      "weight": 0.6823
+    },
+    {
+      "question": "How would you structure your digital workday when using multiple monitors to compare client source documents, QuickBooks records, tax software, and review notes without losing track of versions or sensitive information?",
+      "competency": "Multi-screen workflow",
+      "competency_type": "other",
+      "target_gap": "Multi-screen computer use",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Multi-screen computer use is required and weakly matched; the question tests practical workflow discipline.",
+      "source_evidence": [
+        "Multi-screen computer use: weak match",
+        "Microsoft Office Suite",
+        "QuickBooks accounting software skills"
+      ],
+      "priority": 0.88,
+      "weight": 0.7023
+    },
+    {
+      "question": "What controls would you use to prevent errors when entering or reviewing year-end adjusting entries, tax accruals, and client-provided data?",
+      "competency": "Accuracy and quality control",
+      "competency_type": "technical",
+      "target_gap": "Attention to detail and accuracy",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Attention to detail and accuracy are required and only weakly evidenced, despite the role\u2019s tax-return and close responsibilities.",
+      "source_evidence": [
+        "Attention to detail and accuracy: weak match",
+        "Entered journal entries and accruals",
+        "Prepared amended returns and accrued use-tax liabilities"
+      ],
+      "priority": 0.91,
+      "weight": 0.7238
+    },
+    {
+      "question": "Give an example of a time you independently identified work that needed to be done or improved without being asked. How did you decide on the next steps and keep stakeholders informed?",
+      "competency": "Independent initiative",
+      "competency_type": "soft",
+      "target_gap": "Self-starting and independent work",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Independent work is a required competency with a weak match, and this role will require self-directed execution.",
+      "source_evidence": [
+        "Self-starting and independent work: weak match",
+        "Developed and implemented a tax collection and reporting strategy"
+      ],
+      "priority": 0.9,
+      "weight": 0.6588
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    0,
+    4,
+    19,
+    2,
+    3,
+    1,
+    5,
+    8,
+    6,
+    7
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.2,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:45.785764+00:00"
+}

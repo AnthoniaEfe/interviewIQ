@@ -1,0 +1,224 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_04729_4b4032772de3",
+  "jd_id": "rjf_04729_4b4032772de3",
+  "pair_id": "rjf_04729_4b4032772de3",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_04729_4b4032772de3__rjf_04729_4b4032772de3__mid.json",
+  "n_requirements": 16,
+  "questions": [
+    {
+      "question": "Describe the largest industrial electrical design scope you have personally owned. What facility-level deliverables did you produce, what codes or standards governed the work, and what were your design decisions?"
+    },
+    {
+      "question": "Please confirm whether you are legally authorized to work in the United States and, if applicable, whether you would now or in the future require employment sponsorship."
+    },
+    {
+      "question": "Given a P&ID for a chemical dosing skid, explain how you would translate the process intent into an instrument index, I/O list, control narrative, loop diagrams, and electrical/control-panel interfaces."
+    },
+    {
+      "question": "What CAD tools have you used for electrical drawings, and how would you create, revise, and maintain a coordinated set of plans, one-lines, wiring diagrams, and panel schedules in AutoCAD?"
+    },
+    {
+      "question": "Our senior electrical engineers manage electrical staff. Describe a time you led, coached, or technically guided others; how did you set expectations, review work, and help someone improve?"
+    },
+    {
+      "question": "A project requires an MCC-fed pump, PLC control panel, level transmitter, local HOA station, and remote HMI. Draw or describe the principal power and control schematics, interlocks, permissives, alarms, and fail-safe behavior you would specify."
+    },
+    {
+      "question": "Describe your experience with water or wastewater facilities, if any. If you have not worked in that domain, how would you rapidly learn the electrical, process-safety, reliability, and regulatory considerations unique to it?"
+    },
+    {
+      "question": "Describe how you would use the National Electrical Code to resolve a design question involving conductor ampacity, overcurrent protection, and equipment grounding for a motor branch circuit. Which inputs and NEC articles or tables would you consult?"
+    },
+    {
+      "question": "You receive a 90% electrical drawing package and shop drawings shortly before bid. What checklist would you use to identify safety, constructability, coordination, and documentation issues before issuing comments?"
+    },
+    {
+      "question": "Describe the embedded-systems project at Dartmouth in which you developed hardware and software using sensors. What were the requirements, architecture, debugging approach, and your individual technical contribution?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe the largest industrial electrical design scope you have personally owned. What facility-level deliverables did you produce, what codes or standards governed the work, and what were your design decisions?",
+      "competency": "Industrial electrical design",
+      "competency_type": "domain",
+      "target_gap": "Industrial electrical design",
+      "question_type": "Role-Specific",
+      "difficulty": "hard",
+      "rationale": "Clarifies the candidate's weakly matched industrial design experience and distinguishes product/test engineering from facility electrical design.",
+      "source_evidence": [
+        "Gap matrix: Industrial electrical design \u2014 weak_match",
+        "Candidate experience: intelligent down-hole oil drilling tools",
+        "Candidate experience: automated test systems using LabVIEW and Python"
+      ],
+      "priority": 0.95,
+      "weight": 0.7245
+    },
+    {
+      "question": "Please confirm whether you are legally authorized to work in the United States and, if applicable, whether you would now or in the future require employment sponsorship.",
+      "competency": "Work authorization",
+      "competency_type": "domain",
+      "target_gap": "Legal authorization to work in the United States",
+      "question_type": "Role-Specific",
+      "difficulty": "easy",
+      "rationale": "This is a stated required application criterion with no supporting profile evidence.",
+      "source_evidence": [
+        "Gap matrix: Legal authorization to work in the United States \u2014 missing",
+        "Job requirement: legally authorized to work in the United States"
+      ],
+      "priority": 0.96,
+      "weight": 0.9049
+    },
+    {
+      "question": "Given a P&ID for a chemical dosing skid, explain how you would translate the process intent into an instrument index, I/O list, control narrative, loop diagrams, and electrical/control-panel interfaces.",
+      "competency": "Instrumentation and controls implementation",
+      "competency_type": "technical",
+      "target_gap": "Instrumentation and control implementation",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Tests whether the candidate can move from sensor experience to formal P&ID-driven industrial instrumentation and control implementation.",
+      "source_evidence": [
+        "Gap matrix: Instrumentation and control implementation \u2014 weak_match",
+        "Candidate experience: accelerometers and magnetometers",
+        "Candidate experience: sensor-based hardware/software development"
+      ],
+      "priority": 0.86,
+      "weight": 0.6663
+    },
+    {
+      "question": "What CAD tools have you used for electrical drawings, and how would you create, revise, and maintain a coordinated set of plans, one-lines, wiring diagrams, and panel schedules in AutoCAD?",
+      "competency": "AutoCAD electrical documentation",
+      "competency_type": "technical",
+      "target_gap": "AutoCAD",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Clarifies whether the listed general CAD experience includes the required AutoCAD-based facility documentation workflow.",
+      "source_evidence": [
+        "Gap matrix: AutoCAD \u2014 weak_match",
+        "Candidate skill: CAD",
+        "Candidate evidence: LabVIEW"
+      ],
+      "priority": 0.89,
+      "weight": 0.7072
+    },
+    {
+      "question": "Our senior electrical engineers manage electrical staff. Describe a time you led, coached, or technically guided others; how did you set expectations, review work, and help someone improve?",
+      "competency": "Technical leadership",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "The job includes staff management, and the candidate's Electronics Club presidency and teaching history provide concrete leadership evidence to explore.",
+      "source_evidence": [
+        "Candidate competency: Leadership",
+        "Candidate experience: President of the Electronics Club, 2010\u20132012",
+        "Candidate experience: taught analog circuits, microcontroller programming, and sensor interfaces"
+      ],
+      "priority": 0.82,
+      "weight": 0.6967
+    },
+    {
+      "question": "A project requires an MCC-fed pump, PLC control panel, level transmitter, local HOA station, and remote HMI. Draw or describe the principal power and control schematics, interlocks, permissives, alarms, and fail-safe behavior you would specify.",
+      "competency": "Schematic and logic development",
+      "competency_type": "technical",
+      "target_gap": "Schematic and logic development",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "The candidate partially matches through schematic tools; this probes practical industrial control logic rather than tool familiarity alone.",
+      "source_evidence": [
+        "Gap matrix: Schematic and logic development \u2014 partial_match",
+        "Candidate skill: Cadence Schematic Editor",
+        "Candidate experience: embedded hardware and software"
+      ],
+      "priority": 0.85,
+      "weight": 0.3838
+    },
+    {
+      "question": "Describe your experience with water or wastewater facilities, if any. If you have not worked in that domain, how would you rapidly learn the electrical, process-safety, reliability, and regulatory considerations unique to it?",
+      "competency": "Water and wastewater domain adaptation",
+      "competency_type": "soft",
+      "target_gap": "Water and wastewater applications",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "The preferred domain is weakly matched, so this assesses both direct exposure and a credible learning approach without assuming prior experience.",
+      "source_evidence": [
+        "Gap matrix: Water and wastewater applications \u2014 weak_match",
+        "Candidate domain: oil drilling tools",
+        "Candidate evidence: IC testing and automated test systems"
+      ],
+      "priority": 0.68,
+      "weight": 0.424
+    },
+    {
+      "question": "Describe how you would use the National Electrical Code to resolve a design question involving conductor ampacity, overcurrent protection, and equipment grounding for a motor branch circuit. Which inputs and NEC articles or tables would you consult?",
+      "competency": "NEC application",
+      "competency_type": "technical",
+      "target_gap": "National Electrical Code",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "The role requires extensive NEC implementation, while the profile does not establish direct code-compliance experience.",
+      "source_evidence": [
+        "Gap matrix: National Electrical Code \u2014 weak_match",
+        "Candidate evidence: Code Composer Studio",
+        "Job requirement: extensive knowledge and implementation of the National Electric Code"
+      ],
+      "priority": 0.91,
+      "weight": 0.6357
+    },
+    {
+      "question": "You receive a 90% electrical drawing package and shop drawings shortly before bid. What checklist would you use to identify safety, constructability, coordination, and documentation issues before issuing comments?",
+      "competency": "Document and shop-drawing review",
+      "competency_type": "other",
+      "target_gap": "Construction document and shop drawing review",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Directly tests a core weak-match construction-phase responsibility and the candidate's review discipline.",
+      "source_evidence": [
+        "Gap matrix: Construction document and shop drawing review \u2014 weak_match",
+        "Candidate evidence: IC testing and automated test systems"
+      ],
+      "priority": 0.89,
+      "weight": 0.6802
+    },
+    {
+      "question": "Describe the embedded-systems project at Dartmouth in which you developed hardware and software using sensors. What were the requirements, architecture, debugging approach, and your individual technical contribution?",
+      "competency": "Embedded systems delivery",
+      "competency_type": "domain",
+      "target_gap": "profile_probe",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Validates a central documented experience and reveals the depth of the candidate's hardware/software integration expertise.",
+      "source_evidence": [
+        "Candidate experience: Dartmouth College Product Engineering Intern",
+        "Candidate experience: developed hardware and software for embedded-systems projects using sensors"
+      ],
+      "priority": 0.67,
+      "weight": 0.6967
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    4,
+    3,
+    13,
+    9,
+    16,
+    14,
+    15,
+    8,
+    10,
+    21
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.21,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:50.085409+00:00"
+}

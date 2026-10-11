@@ -1,0 +1,1041 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "pool",
+  "condition": "T_pool",
+  "profile_id": "rjf_04001_28009f597e20",
+  "jd_id": "rjf_04001_28009f597e20",
+  "pair_id": "rjf_04001_28009f597e20",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "prompt": {
+    "file": "generation/interviewiq_pool.md",
+    "version": "1.1.0",
+    "sha256": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc"
+  },
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 24,
+  "pool_size_requested": 30,
+  "raw_questions": [
+    {
+      "question": "What direct experience, if any, do you have configuring, extending, or supporting Oracle Cloud Fusion Financials, and which Financials modules did you work with?",
+      "competency": "Oracle Fusion Financials",
+      "dimension": "Technical",
+      "target_gap": "Oracle Cloud Fusion Financials",
+      "difficulty": "mid",
+      "rationale": "This is a critical stated requirement with no demonstrated Oracle Fusion Financials experience in the profile, so the interview should establish actual depth and recency.",
+      "source_evidence": [
+        "Oracle Cloud Fusion Financials",
+        "Manual testing"
+      ],
+      "priority": 0.99
+    },
+    {
+      "question": "Describe an Oracle Integration Cloud integration you have built or supported. How did you handle orchestration, error handling, security, monitoring, and reprocessing?",
+      "competency": "Oracle Integration Cloud",
+      "dimension": "Technical",
+      "target_gap": "Oracle Integration Cloud",
+      "difficulty": "mid",
+      "rationale": "The profile shows integration testing rather than Oracle integration development; this separates transferable testing knowledge from hands-on OIC capability.",
+      "source_evidence": [
+        "Integration testing",
+        "Oracle Integration Cloud"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "If a Fusion Financials module must exchange supplier data with an external system, how would you design an Oracle Integration Cloud solution and define its failure-recovery approach?",
+      "competency": "Integration solution design",
+      "dimension": "Situational",
+      "target_gap": "Oracle Integration Cloud",
+      "difficulty": "mid",
+      "rationale": "Tests practical integration-design judgment for a required platform where direct candidate evidence is weak.",
+      "source_evidence": [
+        "Integration testing",
+        "Experience in integration development using Oracle integration cloud is a must"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "What Oracle Cloud Infrastructure services have you used, and how have you applied identity management, networking, logging, or monitoring in a production environment?",
+      "competency": "Oracle Cloud Infrastructure",
+      "dimension": "Technical",
+      "target_gap": "Oracle Cloud Infrastructure",
+      "difficulty": "mid",
+      "rationale": "OCI is required and absent from the documented profile, making direct experience and operational understanding important to verify.",
+      "source_evidence": [
+        "Oracle Cloud Infrastructure",
+        "Manual testing"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "You are asked to investigate intermittent failures in a cloud-hosted integration after a release. Walk through the OCI evidence you would inspect and how you would isolate an application, network, identity, or dependency cause.",
+      "competency": "Cloud troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Oracle Cloud Infrastructure",
+      "difficulty": "mid",
+      "rationale": "Assesses whether the candidate can apply structured diagnostics to the role's cloud operations context despite no documented OCI background.",
+      "source_evidence": [
+        "Oracle Cloud Infrastructure",
+        "Manual testing"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "What exposure have you had to Oracle Cloud EPM applications, and how would you validate that an EPM data load reconciles correctly with its source financial data?",
+      "competency": "Oracle Cloud EPM",
+      "dimension": "Technical",
+      "target_gap": "Oracle Cloud EPM",
+      "difficulty": "mid",
+      "rationale": "No EPM experience is documented; the question establishes both direct exposure and transferable data-validation thinking.",
+      "source_evidence": [
+        "Oracle Cloud EPM",
+        "Manual testing"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Describe a BI Publisher report you have created or maintained, including its data model, parameters, bursting or scheduling needs, and how you validated the output.",
+      "competency": "BI Publisher reporting",
+      "dimension": "Technical",
+      "target_gap": "BI Publisher Reports",
+      "difficulty": "mid",
+      "rationale": "The candidate has prepared QA reports, but BI Publisher development is missing and is a required reporting capability.",
+      "source_evidence": [
+        "Prepared daily and weekly defect and test execution reports.",
+        "BI Publisher Reports"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "How would you work with a finance stakeholder to turn a request for an OTBI dashboard into subject areas, measures, filters, security requirements, and acceptance criteria?",
+      "competency": "OTBI reporting requirements",
+      "dimension": "Situational",
+      "target_gap": "OTBI Reports",
+      "difficulty": "mid",
+      "rationale": "Tests reporting analysis and stakeholder translation where the profile only evidences QA reporting, not OTBI.",
+      "source_evidence": [
+        "Prepared daily and weekly defect and test execution reports.",
+        "OTBI Reports"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Give an example of a SQL query you used to validate application data. How did you confirm joins, aggregates, null handling, and the expected result set?",
+      "competency": "SQL",
+      "dimension": "Technical",
+      "target_gap": "SQL",
+      "difficulty": "mid",
+      "rationale": "SQL is a partial match; this verifies practical query quality beyond the stated database-testing experience.",
+      "source_evidence": [
+        "SQL",
+        "Tested data in databases using SQL queries."
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "A financial report total does not match the underlying transactions. How would you write and iteratively refine SQL to identify the source of the discrepancy?",
+      "competency": "SQL problem solving",
+      "dimension": "Situational",
+      "target_gap": "SQL",
+      "difficulty": "mid",
+      "rationale": "Assesses applied SQL reasoning in a finance-reporting scenario relevant to the target role.",
+      "source_evidence": [
+        "SQL",
+        "Database testing"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Which parts of the software development life cycle have you personally owned beyond QA, and how did your decisions affect design, build, deployment, and production support?",
+      "competency": "End-to-end SDLC ownership",
+      "dimension": "Role-Specific",
+      "target_gap": "Software Development Life Cycle",
+      "difficulty": "mid",
+      "rationale": "The candidate participated across QA lifecycle activities, but the role requires engineering ownership through the entire SDLC.",
+      "source_evidence": [
+        "Participated in SDLC activities from requirements gathering through release and go-live.",
+        "Supervised three junior software QA testers."
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "When reviewing a proposed integration or reporting solution, which architecture patterns or design principles would you consider, and what trade-offs would you communicate?",
+      "competency": "Architecture patterns",
+      "dimension": "Technical",
+      "target_gap": "Software architecture patterns",
+      "difficulty": "mid",
+      "rationale": "Architecture-pattern knowledge is a required weak match and is not specifically demonstrated in the candidate profile.",
+      "source_evidence": [
+        "Software architecture patterns",
+        "Supervised three junior software QA testers."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Explain how you would communicate a proposed cloud integration architecture differently to a solution architect, a developer, and a non-technical finance manager.",
+      "competency": "Architecture communication",
+      "dimension": "Role-Specific",
+      "target_gap": "Architecture communication",
+      "difficulty": "mid",
+      "rationale": "The position requires architecture communication to mixed audiences, while the profile shows general coordination rather than architecture communication.",
+      "source_evidence": [
+        "Communication and coordination",
+        "communicate solution requirements ... with both technical and non-technical stakeholders"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "Tell me about a time you translated unclear business requirements into testable requirements and aligned multiple teams on what would be delivered.",
+      "competency": "Requirements communication",
+      "dimension": "Behavioural",
+      "target_gap": "Solution requirements communication",
+      "difficulty": "mid",
+      "rationale": "Builds on the candidate's requirements-analysis and coordination background while testing a partial match required for stakeholder-facing engineering work.",
+      "source_evidence": [
+        "Communication and coordination",
+        "Analyzed business requirements, system requirements and use cases"
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "How have you worked in Agile delivery teams, and what did you personally contribute during planning, refinement, daily coordination, reviews, and retrospectives?",
+      "competency": "Agile delivery",
+      "dimension": "Behavioural",
+      "target_gap": "Agile software development",
+      "difficulty": "mid",
+      "rationale": "Agile is a partial match with relevant experience; the question tests depth of delivery participation and contribution.",
+      "source_evidence": [
+        "Participated in Agile estimation, sprint planning, reviews, defect triage and stand-ups.",
+        "Agile"
+      ],
+      "priority": 0.76
+    },
+    {
+      "question": "What is your experience with Scrum roles, artifacts, and ceremonies, and how have you helped a team resolve a sprint-risk or scope issue?",
+      "competency": "Scrum",
+      "dimension": "Technical",
+      "target_gap": "Scrum",
+      "difficulty": "mid",
+      "rationale": "The profile indicates Agile participation but not explicit Scrum practice, so this probes the weak match directly.",
+      "source_evidence": [
+        "Agile",
+        "Scrum"
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "Have you worked in a SAFe environment? If not, how would you prepare to contribute to PI planning, cross-team dependency management, and iteration execution?",
+      "competency": "SAFe",
+      "dimension": "Situational",
+      "target_gap": "SAFe",
+      "difficulty": "mid",
+      "rationale": "SAFe is missing; this fairly distinguishes direct experience from the candidate's learning approach and ability to transfer Agile fundamentals.",
+      "source_evidence": [
+        "SAFe",
+        "Manual testing"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Describe how you have used JIRA to manage work from requirement through defect resolution or release. Which workflows, dashboards, or metrics did you rely on?",
+      "competency": "JIRA delivery management",
+      "dimension": "Technical",
+      "target_gap": "JIRA",
+      "difficulty": "mid",
+      "rationale": "JIRA is a partial strength; this verifies use beyond defect logging and tracking.",
+      "source_evidence": [
+        "Logged and tracked defects to closure using JIRA.",
+        "JIRA"
+      ],
+      "priority": 0.71
+    },
+    {
+      "question": "Walk me through your Git workflow for a change that requires a feature branch, pull request, conflict resolution, review feedback, and release tagging.",
+      "competency": "Git workflow",
+      "dimension": "Technical",
+      "target_gap": "Git",
+      "difficulty": "mid",
+      "rationale": "Git is listed in the profile but has no supporting delivery example; this tests working proficiency expected of an engineer.",
+      "source_evidence": [
+        "Git",
+        "including ... Git"
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "What CI/CD pipelines have you used or supported? Explain how you would set quality gates, automated tests, approvals, and rollback controls for a cloud integration deployment.",
+      "competency": "CI/CD",
+      "dimension": "Technical",
+      "target_gap": "Continuous integration and continuous delivery",
+      "difficulty": "mid",
+      "rationale": "The match is only partial and based on continuous improvement rather than pipeline experience, so deployment engineering depth needs validation.",
+      "source_evidence": [
+        "Interpreted testing results and developed continuous improvement processes.",
+        "CICD"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "A production deployment of a new Oracle module fails after a database change. What immediate steps would you take to contain impact, diagnose the failure, communicate status, and decide on rollback?",
+      "competency": "Production troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Troubleshooting",
+      "difficulty": "mid",
+      "rationale": "The candidate has production patch and release support experience, but troubleshooting is only a weak match and is central to the role.",
+      "source_evidence": [
+        "Supported production patches, hot fixes, monthly releases and new feature releases.",
+        "Troubleshooting"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Describe a root-cause analysis you led for a defect or production issue. What evidence did you collect, what corrective action resulted, and how did you prevent recurrence?",
+      "competency": "Root cause analysis",
+      "dimension": "Behavioural",
+      "target_gap": "Root cause analysis",
+      "difficulty": "mid",
+      "rationale": "Root cause analysis is a strong match; this confirms the quality and impact of a documented strength relevant to operational problem solving.",
+      "source_evidence": [
+        "Detailed analysis of the reported issue (RCA)",
+        "Root cause analysis"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "How would you assess an on-premises finance-related application for migration to Oracle Cloud, including dependencies, data, integrations, security, testing, cutover, and rollback?",
+      "competency": "Cloud migration",
+      "dimension": "Situational",
+      "target_gap": "Cloud migration",
+      "difficulty": "mid",
+      "rationale": "Cloud migration is missing and critical to the target role; this probes structured thinking without assuming previous cloud-migration experience.",
+      "source_evidence": [
+        "Cloud migration",
+        "Manual testing"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "What engineering practices would you introduce to make a service cloud-centric in terms of scalability, observability, resilience, security, and deployment automation?",
+      "competency": "Cloud-centric engineering",
+      "dimension": "Technical",
+      "target_gap": "Cloud-centric engineering",
+      "difficulty": "mid",
+      "rationale": "The profile lacks cloud engineering evidence, while the role explicitly requires engineering cloud-centric environments.",
+      "source_evidence": [
+        "Cloud-centric engineering",
+        "Manual testing"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Compare private, public, and hybrid cloud infrastructure for a regulated financial workload. What factors would drive your recommendation?",
+      "competency": "Cloud infrastructure strategy",
+      "dimension": "Technical",
+      "target_gap": "Private, public, and hybrid cloud infrastructure",
+      "difficulty": "mid",
+      "rationale": "This preferred capability is absent from the profile and is relevant to informed infrastructure and risk discussions.",
+      "source_evidence": [
+        "private, public, and hybrid cloud infrastructure",
+        "Communication and coordination"
+      ],
+      "priority": 0.65
+    },
+    {
+      "question": "Describe a project where you supervised or mentored junior QA testers. How did you set expectations, review their work, and improve their independence?",
+      "competency": "Technical mentoring",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "The candidate reports supervising and mentoring three junior testers; this profile-specific probe evaluates transferable coaching capability for a role that mentors engineers.",
+      "source_evidence": [
+        "Supervised three junior software QA testers.",
+        "Supervised and mentored junior QA testers."
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "The profile notes peer reviews and walkthroughs. What did you review, what standards did you apply, and how did you deliver feedback when quality or risk was a concern?",
+      "competency": "Peer review",
+      "dimension": "Behavioural",
+      "target_gap": "Peer review",
+      "difficulty": "mid",
+      "rationale": "Peer review is marked missing despite related walkthrough and review experience, so this clarifies whether the candidate has a repeatable review practice.",
+      "source_evidence": [
+        "Provided walkthroughs, peer reviews and QA status reporting.",
+        "Peer review"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "You have tested banking and online-payment applications. What finance or accounting concepts did you need to understand, and how would you build sufficient domain knowledge for Fusion Financials work?",
+      "competency": "Finance domain learning",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Finance or Accounting",
+      "difficulty": "mid",
+      "rationale": "The candidate has adjacent banking and payments experience but no documented accounting expertise; this assesses motivation and a credible learning path for a preferred domain.",
+      "source_evidence": [
+        "Banking applications",
+        "Online payments"
+      ],
+      "priority": 0.69
+    },
+    {
+      "question": "As the sole QA member on the logistics solution, how did you prioritize work, manage stakeholder expectations, and make decisions when requirements or timelines changed?",
+      "competency": "Ownership and proactivity",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This verifies a documented example of autonomous ownership and proactivity that can transfer to leading an engineering work stream.",
+      "source_evidence": [
+        "Was the sole QA member responsible for end-to-end business understanding, test design, execution, reporting and client demonstrations.",
+        "Integrated Logistics Solution"
+      ],
+      "priority": 0.75
+    },
+    {
+      "question": "What attracts you to moving from senior QA and test automation into a Senior Software Engineer role focused on Oracle Cloud, and what concrete steps have you taken to close the platform and development gaps?",
+      "competency": "Role transition motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "The role demands several Oracle and cloud capabilities not evidenced in the profile; this assesses motivation, self-awareness, and learning discipline without presuming unlisted experience.",
+      "source_evidence": [
+        "Senior Software QA Tester",
+        "Selenium framework development using Java"
+      ],
+      "priority": 0.92
+    }
+  ],
+  "valid_questions": [
+    {
+      "question": "What direct experience, if any, do you have configuring, extending, or supporting Oracle Cloud Fusion Financials, and which Financials modules did you work with?",
+      "competency": "Oracle Fusion Financials",
+      "dimension": "Technical",
+      "target_gap": "Oracle Cloud Fusion Financials",
+      "difficulty": "mid",
+      "rationale": "This is a critical stated requirement with no demonstrated Oracle Fusion Financials experience in the profile, so the interview should establish actual depth and recency.",
+      "source_evidence": [
+        "Oracle Cloud Fusion Financials",
+        "Manual testing"
+      ],
+      "priority": 0.99
+    },
+    {
+      "question": "Describe an Oracle Integration Cloud integration you have built or supported. How did you handle orchestration, error handling, security, monitoring, and reprocessing?",
+      "competency": "Oracle Integration Cloud",
+      "dimension": "Technical",
+      "target_gap": "Oracle Integration Cloud",
+      "difficulty": "mid",
+      "rationale": "The profile shows integration testing rather than Oracle integration development; this separates transferable testing knowledge from hands-on OIC capability.",
+      "source_evidence": [
+        "Integration testing",
+        "Oracle Integration Cloud"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "If a Fusion Financials module must exchange supplier data with an external system, how would you design an Oracle Integration Cloud solution and define its failure-recovery approach?",
+      "competency": "Integration solution design",
+      "dimension": "Situational",
+      "target_gap": "Oracle Integration Cloud",
+      "difficulty": "mid",
+      "rationale": "Tests practical integration-design judgment for a required platform where direct candidate evidence is weak.",
+      "source_evidence": [
+        "Integration testing",
+        "Experience in integration development using Oracle integration cloud is a must"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "What Oracle Cloud Infrastructure services have you used, and how have you applied identity management, networking, logging, or monitoring in a production environment?",
+      "competency": "Oracle Cloud Infrastructure",
+      "dimension": "Technical",
+      "target_gap": "Oracle Cloud Infrastructure",
+      "difficulty": "mid",
+      "rationale": "OCI is required and absent from the documented profile, making direct experience and operational understanding important to verify.",
+      "source_evidence": [
+        "Oracle Cloud Infrastructure",
+        "Manual testing"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "You are asked to investigate intermittent failures in a cloud-hosted integration after a release. Walk through the OCI evidence you would inspect and how you would isolate an application, network, identity, or dependency cause.",
+      "competency": "Cloud troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Oracle Cloud Infrastructure",
+      "difficulty": "mid",
+      "rationale": "Assesses whether the candidate can apply structured diagnostics to the role's cloud operations context despite no documented OCI background.",
+      "source_evidence": [
+        "Oracle Cloud Infrastructure",
+        "Manual testing"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "What exposure have you had to Oracle Cloud EPM applications, and how would you validate that an EPM data load reconciles correctly with its source financial data?",
+      "competency": "Oracle Cloud EPM",
+      "dimension": "Technical",
+      "target_gap": "Oracle Cloud EPM",
+      "difficulty": "mid",
+      "rationale": "No EPM experience is documented; the question establishes both direct exposure and transferable data-validation thinking.",
+      "source_evidence": [
+        "Oracle Cloud EPM",
+        "Manual testing"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Describe a BI Publisher report you have created or maintained, including its data model, parameters, bursting or scheduling needs, and how you validated the output.",
+      "competency": "BI Publisher reporting",
+      "dimension": "Technical",
+      "target_gap": "BI Publisher Reports",
+      "difficulty": "mid",
+      "rationale": "The candidate has prepared QA reports, but BI Publisher development is missing and is a required reporting capability.",
+      "source_evidence": [
+        "Prepared daily and weekly defect and test execution reports.",
+        "BI Publisher Reports"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "How would you work with a finance stakeholder to turn a request for an OTBI dashboard into subject areas, measures, filters, security requirements, and acceptance criteria?",
+      "competency": "OTBI reporting requirements",
+      "dimension": "Situational",
+      "target_gap": "OTBI Reports",
+      "difficulty": "mid",
+      "rationale": "Tests reporting analysis and stakeholder translation where the profile only evidences QA reporting, not OTBI.",
+      "source_evidence": [
+        "Prepared daily and weekly defect and test execution reports.",
+        "OTBI Reports"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Give an example of a SQL query you used to validate application data. How did you confirm joins, aggregates, null handling, and the expected result set?",
+      "competency": "SQL",
+      "dimension": "Technical",
+      "target_gap": "SQL",
+      "difficulty": "mid",
+      "rationale": "SQL is a partial match; this verifies practical query quality beyond the stated database-testing experience.",
+      "source_evidence": [
+        "SQL",
+        "Tested data in databases using SQL queries."
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "A financial report total does not match the underlying transactions. How would you write and iteratively refine SQL to identify the source of the discrepancy?",
+      "competency": "SQL problem solving",
+      "dimension": "Situational",
+      "target_gap": "SQL",
+      "difficulty": "mid",
+      "rationale": "Assesses applied SQL reasoning in a finance-reporting scenario relevant to the target role.",
+      "source_evidence": [
+        "SQL",
+        "Database testing"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Which parts of the software development life cycle have you personally owned beyond QA, and how did your decisions affect design, build, deployment, and production support?",
+      "competency": "End-to-end SDLC ownership",
+      "dimension": "Role-Specific",
+      "target_gap": "Software Development Life Cycle",
+      "difficulty": "mid",
+      "rationale": "The candidate participated across QA lifecycle activities, but the role requires engineering ownership through the entire SDLC.",
+      "source_evidence": [
+        "Participated in SDLC activities from requirements gathering through release and go-live.",
+        "Supervised three junior software QA testers."
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "When reviewing a proposed integration or reporting solution, which architecture patterns or design principles would you consider, and what trade-offs would you communicate?",
+      "competency": "Architecture patterns",
+      "dimension": "Technical",
+      "target_gap": "Software architecture patterns",
+      "difficulty": "mid",
+      "rationale": "Architecture-pattern knowledge is a required weak match and is not specifically demonstrated in the candidate profile.",
+      "source_evidence": [
+        "Software architecture patterns",
+        "Supervised three junior software QA testers."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Explain how you would communicate a proposed cloud integration architecture differently to a solution architect, a developer, and a non-technical finance manager.",
+      "competency": "Architecture communication",
+      "dimension": "Role-Specific",
+      "target_gap": "Architecture communication",
+      "difficulty": "mid",
+      "rationale": "The position requires architecture communication to mixed audiences, while the profile shows general coordination rather than architecture communication.",
+      "source_evidence": [
+        "Communication and coordination",
+        "communicate solution requirements ... with both technical and non-technical stakeholders"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "Tell me about a time you translated unclear business requirements into testable requirements and aligned multiple teams on what would be delivered.",
+      "competency": "Requirements communication",
+      "dimension": "Behavioural",
+      "target_gap": "Solution requirements communication",
+      "difficulty": "mid",
+      "rationale": "Builds on the candidate's requirements-analysis and coordination background while testing a partial match required for stakeholder-facing engineering work.",
+      "source_evidence": [
+        "Communication and coordination",
+        "Analyzed business requirements, system requirements and use cases"
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "How have you worked in Agile delivery teams, and what did you personally contribute during planning, refinement, daily coordination, reviews, and retrospectives?",
+      "competency": "Agile delivery",
+      "dimension": "Behavioural",
+      "target_gap": "Agile software development",
+      "difficulty": "mid",
+      "rationale": "Agile is a partial match with relevant experience; the question tests depth of delivery participation and contribution.",
+      "source_evidence": [
+        "Participated in Agile estimation, sprint planning, reviews, defect triage and stand-ups.",
+        "Agile"
+      ],
+      "priority": 0.76
+    },
+    {
+      "question": "What is your experience with Scrum roles, artifacts, and ceremonies, and how have you helped a team resolve a sprint-risk or scope issue?",
+      "competency": "Scrum",
+      "dimension": "Technical",
+      "target_gap": "Scrum",
+      "difficulty": "mid",
+      "rationale": "The profile indicates Agile participation but not explicit Scrum practice, so this probes the weak match directly.",
+      "source_evidence": [
+        "Agile",
+        "Scrum"
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "Have you worked in a SAFe environment? If not, how would you prepare to contribute to PI planning, cross-team dependency management, and iteration execution?",
+      "competency": "SAFe",
+      "dimension": "Situational",
+      "target_gap": "SAFe",
+      "difficulty": "mid",
+      "rationale": "SAFe is missing; this fairly distinguishes direct experience from the candidate's learning approach and ability to transfer Agile fundamentals.",
+      "source_evidence": [
+        "SAFe",
+        "Manual testing"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Describe how you have used JIRA to manage work from requirement through defect resolution or release. Which workflows, dashboards, or metrics did you rely on?",
+      "competency": "JIRA delivery management",
+      "dimension": "Technical",
+      "target_gap": "JIRA",
+      "difficulty": "mid",
+      "rationale": "JIRA is a partial strength; this verifies use beyond defect logging and tracking.",
+      "source_evidence": [
+        "Logged and tracked defects to closure using JIRA.",
+        "JIRA"
+      ],
+      "priority": 0.71
+    },
+    {
+      "question": "Walk me through your Git workflow for a change that requires a feature branch, pull request, conflict resolution, review feedback, and release tagging.",
+      "competency": "Git workflow",
+      "dimension": "Technical",
+      "target_gap": "Git",
+      "difficulty": "mid",
+      "rationale": "Git is listed in the profile but has no supporting delivery example; this tests working proficiency expected of an engineer.",
+      "source_evidence": [
+        "Git",
+        "including ... Git"
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "What CI/CD pipelines have you used or supported? Explain how you would set quality gates, automated tests, approvals, and rollback controls for a cloud integration deployment.",
+      "competency": "CI/CD",
+      "dimension": "Technical",
+      "target_gap": "Continuous integration and continuous delivery",
+      "difficulty": "mid",
+      "rationale": "The match is only partial and based on continuous improvement rather than pipeline experience, so deployment engineering depth needs validation.",
+      "source_evidence": [
+        "Interpreted testing results and developed continuous improvement processes.",
+        "CICD"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "A production deployment of a new Oracle module fails after a database change. What immediate steps would you take to contain impact, diagnose the failure, communicate status, and decide on rollback?",
+      "competency": "Production troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Troubleshooting",
+      "difficulty": "mid",
+      "rationale": "The candidate has production patch and release support experience, but troubleshooting is only a weak match and is central to the role.",
+      "source_evidence": [
+        "Supported production patches, hot fixes, monthly releases and new feature releases.",
+        "Troubleshooting"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Describe a root-cause analysis you led for a defect or production issue. What evidence did you collect, what corrective action resulted, and how did you prevent recurrence?",
+      "competency": "Root cause analysis",
+      "dimension": "Behavioural",
+      "target_gap": "Root cause analysis",
+      "difficulty": "mid",
+      "rationale": "Root cause analysis is a strong match; this confirms the quality and impact of a documented strength relevant to operational problem solving.",
+      "source_evidence": [
+        "Detailed analysis of the reported issue (RCA)",
+        "Root cause analysis"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "How would you assess an on-premises finance-related application for migration to Oracle Cloud, including dependencies, data, integrations, security, testing, cutover, and rollback?",
+      "competency": "Cloud migration",
+      "dimension": "Situational",
+      "target_gap": "Cloud migration",
+      "difficulty": "mid",
+      "rationale": "Cloud migration is missing and critical to the target role; this probes structured thinking without assuming previous cloud-migration experience.",
+      "source_evidence": [
+        "Cloud migration",
+        "Manual testing"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "What engineering practices would you introduce to make a service cloud-centric in terms of scalability, observability, resilience, security, and deployment automation?",
+      "competency": "Cloud-centric engineering",
+      "dimension": "Technical",
+      "target_gap": "Cloud-centric engineering",
+      "difficulty": "mid",
+      "rationale": "The profile lacks cloud engineering evidence, while the role explicitly requires engineering cloud-centric environments.",
+      "source_evidence": [
+        "Cloud-centric engineering",
+        "Manual testing"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Compare private, public, and hybrid cloud infrastructure for a regulated financial workload. What factors would drive your recommendation?",
+      "competency": "Cloud infrastructure strategy",
+      "dimension": "Technical",
+      "target_gap": "Private, public, and hybrid cloud infrastructure",
+      "difficulty": "mid",
+      "rationale": "This preferred capability is absent from the profile and is relevant to informed infrastructure and risk discussions.",
+      "source_evidence": [
+        "private, public, and hybrid cloud infrastructure",
+        "Communication and coordination"
+      ],
+      "priority": 0.65
+    },
+    {
+      "question": "Describe a project where you supervised or mentored junior QA testers. How did you set expectations, review their work, and improve their independence?",
+      "competency": "Technical mentoring",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "The candidate reports supervising and mentoring three junior testers; this profile-specific probe evaluates transferable coaching capability for a role that mentors engineers.",
+      "source_evidence": [
+        "Supervised three junior software QA testers.",
+        "Supervised and mentored junior QA testers."
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "The profile notes peer reviews and walkthroughs. What did you review, what standards did you apply, and how did you deliver feedback when quality or risk was a concern?",
+      "competency": "Peer review",
+      "dimension": "Behavioural",
+      "target_gap": "Peer review",
+      "difficulty": "mid",
+      "rationale": "Peer review is marked missing despite related walkthrough and review experience, so this clarifies whether the candidate has a repeatable review practice.",
+      "source_evidence": [
+        "Provided walkthroughs, peer reviews and QA status reporting.",
+        "Peer review"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "As the sole QA member on the logistics solution, how did you prioritize work, manage stakeholder expectations, and make decisions when requirements or timelines changed?",
+      "competency": "Ownership and proactivity",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This verifies a documented example of autonomous ownership and proactivity that can transfer to leading an engineering work stream.",
+      "source_evidence": [
+        "Was the sole QA member responsible for end-to-end business understanding, test design, execution, reporting and client demonstrations.",
+        "Integrated Logistics Solution"
+      ],
+      "priority": 0.75
+    },
+    {
+      "question": "What attracts you to moving from senior QA and test automation into a Senior Software Engineer role focused on Oracle Cloud, and what concrete steps have you taken to close the platform and development gaps?",
+      "competency": "Role transition motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "The role demands several Oracle and cloud capabilities not evidenced in the profile; this assesses motivation, self-awareness, and learning discipline without presuming unlisted experience.",
+      "source_evidence": [
+        "Senior Software QA Tester",
+        "Selenium framework development using Java"
+      ],
+      "priority": 0.92
+    }
+  ],
+  "validation_failures": [
+    {
+      "index": 27,
+      "reasons": [
+        "unknown_target_gap"
+      ],
+      "target_gap": "Finance or Accounting",
+      "dimension": "Cultural/Motivational",
+      "priority": 0.69
+    }
+  ],
+  "n_raw": 30,
+  "n_valid": 29,
+  "n_failed": 1,
+  "weights": [
+    0.9377,
+    0.6991,
+    0.6991,
+    0.9399,
+    0.9399,
+    0.9426,
+    0.9174,
+    0.7166,
+    0.3658,
+    0.3658,
+    0.6913,
+    0.7042,
+    0.6794,
+    0.4001,
+    0.3824,
+    0.6897,
+    0.9373,
+    0.3691,
+    0.3622,
+    0.399,
+    0.7306,
+    0.1609,
+    0.944,
+    0.9386,
+    0.5517,
+    0.6714125000000001,
+    0.9462,
+    0.6714125000000001,
+    0.6714125000000001
+  ],
+  "weight_outcomes": [
+    {
+      "rule": "exact",
+      "weight": 0.9377,
+      "matched_competency": "Oracle Cloud Fusion Financials",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6991,
+      "matched_competency": "Oracle Integration Cloud",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6991,
+      "matched_competency": "Oracle Integration Cloud",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9399,
+      "matched_competency": "Oracle Cloud Infrastructure",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9399,
+      "matched_competency": "Oracle Cloud Infrastructure",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9426,
+      "matched_competency": "Oracle Cloud EPM",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9174,
+      "matched_competency": "BI Publisher Reports",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7166,
+      "matched_competency": "OTBI Reports",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3658,
+      "matched_competency": "SQL",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3658,
+      "matched_competency": "SQL",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6913,
+      "matched_competency": "Software Development Life Cycle",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7042,
+      "matched_competency": "Software architecture patterns",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6794,
+      "matched_competency": "Architecture communication",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4001,
+      "matched_competency": "Solution requirements communication",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3824,
+      "matched_competency": "Agile software development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6897,
+      "matched_competency": "Scrum",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9373,
+      "matched_competency": "SAFe",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3691,
+      "matched_competency": "JIRA",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3622,
+      "matched_competency": "Git",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.399,
+      "matched_competency": "Continuous integration and continuous delivery",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7306,
+      "matched_competency": "Troubleshooting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1609,
+      "matched_competency": "Root cause analysis",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.944,
+      "matched_competency": "Cloud migration",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9386,
+      "matched_competency": "Cloud-centric engineering",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.5517,
+      "matched_competency": "Private, public, and hybrid cloud infrastructure",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.6714125000000001,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9462,
+      "matched_competency": "Peer review",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.6714125000000001,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.6714125000000001,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    }
+  ],
+  "fallback_rate": 0.0,
+  "profile_probe_rate": 0.10344827586206896,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 13883,
+    "output_tokens": 3216,
+    "cached_tokens": 0,
+    "estimated_cost": 0.066358,
+    "latency_ms": 27231.96,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.066358,
+  "cost_cny": 0.44924366,
+  "usd_cny_rate": 6.77,
+  "user_prompt_sha256": "813e3d45dab09fa7f25482103dfea374f8d9771037cf644991b6f90fb360683c",
+  "generated_at": "2026-10-11T13:10:13.546588+00:00"
+}

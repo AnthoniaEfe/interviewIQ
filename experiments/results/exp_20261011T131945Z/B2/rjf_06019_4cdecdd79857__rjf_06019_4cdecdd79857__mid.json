@@ -1,0 +1,221 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "B2",
+  "selection_strategy": "plain_mmr_priority",
+  "generation_mode": "interviewiq",
+  "profile_id": "rjf_06019_4cdecdd79857",
+  "jd_id": "rjf_06019_4cdecdd79857",
+  "pair_id": "rjf_06019_4cdecdd79857",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_06019_4cdecdd79857__rjf_06019_4cdecdd79857__mid.json",
+  "n_requirements": 38,
+  "questions": [
+    {
+      "question": "If asked to build a Spring Boot REST endpoint for creating a warehouse inventory adjustment, how would you structure the controller, service, validation, error handling, and tests?"
+    },
+    {
+      "question": "Explain the Git workflow you would use to deliver an urgent production fix while preserving review quality, traceability, and a safe path to rollback."
+    },
+    {
+      "question": "Describe any direct experience you have using Hibernate or another ORM. How did you model relationships, manage transactions, and avoid inefficient queries?"
+    },
+    {
+      "question": "What hands-on Java development experience do you have beyond testing Java-based applications, and can you walk through a class or service you personally implemented?"
+    },
+    {
+      "question": "How would you design a Jenkins CI/CD pipeline for a Java service so that it builds, runs unit and integration tests, publishes artifacts, deploys safely, and supports rollback?"
+    },
+    {
+      "question": "Have you worked with a NoSQL datastore? If not, how would you decide whether an inventory service should use a relational model or a document model?"
+    },
+    {
+      "question": "When reviewing a pull request for a Java service, what coding-standard issues would you look for, and how would you explain and prioritize your feedback?"
+    },
+    {
+      "question": "Your background is primarily senior QA and operations, while this role is senior software engineering. What motivates this transition, and what concrete plan would you follow to close development gaps in the first 90 days?"
+    },
+    {
+      "question": "What direct experience do you have with JIRA and Confluence? If you have used other tools, describe how you would document an architectural decision and link it to implementation and delivery work."
+    },
+    {
+      "question": "You have listed SQL. Describe a query you wrote or amended to investigate a production or test-data issue: what tables were involved, what was the query logic, and how did you validate the result?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "If asked to build a Spring Boot REST endpoint for creating a warehouse inventory adjustment, how would you structure the controller, service, validation, error handling, and tests?",
+      "competency": "Spring Boot",
+      "competency_type": "other",
+      "target_gap": "Spring Boot",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests an explicitly missing core framework skill in a realistic application-development scenario.",
+      "source_evidence": [
+        "Spring Boot",
+        "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+      ],
+      "priority": 0.99,
+      "weight": 0.9254
+    },
+    {
+      "question": "Explain the Git workflow you would use to deliver an urgent production fix while preserving review quality, traceability, and a safe path to rollback.",
+      "competency": "Git workflow",
+      "competency_type": "other",
+      "target_gap": "Git",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Git is missing from the profile and is essential for safe collaborative engineering and production support.",
+      "source_evidence": [
+        "Git",
+        "Tested hotfix packages and production changes.",
+        "Certified patches for production."
+      ],
+      "priority": 0.98,
+      "weight": 0.9254
+    },
+    {
+      "question": "Describe any direct experience you have using Hibernate or another ORM. How did you model relationships, manage transactions, and avoid inefficient queries?",
+      "competency": "ORM persistence",
+      "competency_type": "technical",
+      "target_gap": "Hibernate",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Hibernate is required and has no direct supporting evidence in the candidate profile.",
+      "source_evidence": [
+        "Hibernate",
+        "SQL"
+      ],
+      "priority": 0.99,
+      "weight": 0.9447
+    },
+    {
+      "question": "What hands-on Java development experience do you have beyond testing Java-based applications, and can you walk through a class or service you personally implemented?",
+      "competency": "Java development",
+      "competency_type": "technical",
+      "target_gap": "Java",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Java is a core requirement, while the profile primarily evidences QA work rather than implemented application code.",
+      "source_evidence": [
+        "Functional Testing",
+        "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+      ],
+      "priority": 0.96,
+      "weight": 0.7177
+    },
+    {
+      "question": "How would you design a Jenkins CI/CD pipeline for a Java service so that it builds, runs unit and integration tests, publishes artifacts, deploys safely, and supports rollback?",
+      "competency": "Jenkins CI/CD",
+      "competency_type": "other",
+      "target_gap": "Jenkins",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Jenkins is a missing required tool, and the question tests practical continuous-delivery capability.",
+      "source_evidence": [
+        "Jenkins",
+        "Performed post-release production sanity testing."
+      ],
+      "priority": 0.98,
+      "weight": 0.9374
+    },
+    {
+      "question": "Have you worked with a NoSQL datastore? If not, how would you decide whether an inventory service should use a relational model or a document model?",
+      "competency": "NoSQL data modeling",
+      "competency_type": "other",
+      "target_gap": "NoSQL databases",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Assesses an explicitly missing required competency and the candidate's engineering judgment when direct experience is limited.",
+      "source_evidence": [
+        "NoSQL databases",
+        "Data interface and migration testing"
+      ],
+      "priority": 0.97,
+      "weight": 0.9395
+    },
+    {
+      "question": "When reviewing a pull request for a Java service, what coding-standard issues would you look for, and how would you explain and prioritize your feedback?",
+      "competency": "Coding standards",
+      "competency_type": "other",
+      "target_gap": "Coding standards",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Coding standards are explicitly missing and are central to the role's responsibility for sustainable code.",
+      "source_evidence": [
+        "Coding standards",
+        "Conducted test calendar reviews with development teams and clients."
+      ],
+      "priority": 0.98,
+      "weight": 0.9246
+    },
+    {
+      "question": "Your background is primarily senior QA and operations, while this role is senior software engineering. What motivates this transition, and what concrete plan would you follow to close development gaps in the first 90 days?",
+      "competency": "Engineering transition motivation",
+      "competency_type": "soft",
+      "target_gap": "Software development experience",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Directly examines the documented career-background mismatch and the candidate's readiness to move from testing-focused work into hands-on software development.",
+      "source_evidence": [
+        "Senior Software Quality Assurance Tester",
+        "QA Tester (Senior SME)",
+        "Software development experience"
+      ],
+      "priority": 0.93,
+      "weight": 0.6748
+    },
+    {
+      "question": "What direct experience do you have with JIRA and Confluence? If you have used other tools, describe how you would document an architectural decision and link it to implementation and delivery work.",
+      "competency": "Engineering collaboration tools",
+      "competency_type": "technical",
+      "target_gap": "JIRA",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "JIRA is missing, and the role requires work tracking and advanced technical documentation.",
+      "source_evidence": [
+        "JIRA",
+        "QC/ALM",
+        "Documented defects using QC/ALM"
+      ],
+      "priority": 0.95,
+      "weight": 0.9368
+    },
+    {
+      "question": "You have listed SQL. Describe a query you wrote or amended to investigate a production or test-data issue: what tables were involved, what was the query logic, and how did you validate the result?",
+      "competency": "SQL querying",
+      "competency_type": "technical",
+      "target_gap": "Database query writing and modification",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Clarifies the depth of the candidate's SQL experience, which is evidenced but not specifically as query authoring or modification.",
+      "source_evidence": [
+        "SQL",
+        "Performed data creation and analysis",
+        "Analyzed and interpreted test data and prepared technical reports."
+      ],
+      "priority": 0.88,
+      "weight": 0.6678
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    1,
+    12,
+    2,
+    0,
+    15,
+    7,
+    10,
+    29,
+    18,
+    3
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.24,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:46.221844+00:00"
+}

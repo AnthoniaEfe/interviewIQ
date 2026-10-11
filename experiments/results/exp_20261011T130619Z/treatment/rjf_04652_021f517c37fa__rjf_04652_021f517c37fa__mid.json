@@ -1,0 +1,472 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_04652_021f517c37fa",
+  "jd_id": "rjf_04652_021f517c37fa",
+  "pair_id": "rjf_04652_021f517c37fa",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 32,
+  "pool_path": "pool/rjf_04652_021f517c37fa__rjf_04652_021f517c37fa__mid.json",
+  "pool_stats": {
+    "n_raw": 29,
+    "n_valid": 29,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.034482758620689655,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      0,
+      28,
+      1,
+      2,
+      11,
+      14,
+      7,
+      5,
+      12,
+      4
+    ],
+    "questions": [
+      {
+        "question": "Describe how you would plan and deliver a two-week sprint to add a new customer data feed when the mapping is still evolving. How would you break down the work, manage changes, and demonstrate progress?",
+        "competency": "Agile delivery",
+        "competency_type": "other",
+        "target_gap": "Agile methodologies",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Agile methodology is a required competency marked missing, so this tests whether the candidate can apply iterative delivery practices in a realistic data-engineering context.",
+        "source_evidence": [
+          "Gap matrix: Agile methodologies \u2014 missing",
+          "Develop data engineering jobs and workflows",
+          "Participate in requirements gathering"
+        ],
+        "priority": 0.98,
+        "weight": 0.9306
+      },
+      {
+        "question": "This position requires legal authorization to work in the country of application. Are you currently authorized to work there, and will you now or in the future require employer sponsorship?",
+        "competency": "Work authorization",
+        "competency_type": "domain",
+        "target_gap": "Legal authorization to work",
+        "question_type": "Role-Specific",
+        "difficulty": "easy",
+        "rationale": "Legal authorization is an explicit required job criterion marked missing in the matrix and should be confirmed through a standard, job-related question.",
+        "source_evidence": [
+          "Gap matrix: Legal authorization to work \u2014 missing",
+          "Must be able to legally work in the country to which you have applied"
+        ],
+        "priority": 0.95,
+        "weight": 0.9326
+      },
+      {
+        "question": "Give an example of a repetitive engineering or operational task you identified and automated. What was manual before, what did you build, and how did you measure reliability or time saved?",
+        "competency": "Task automation",
+        "competency_type": "soft",
+        "target_gap": "Task automation",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Task automation is a high-weight required gap; the question elicits evidence of initiative, implementation depth, and measurable operational impact.",
+        "source_evidence": [
+          "Gap matrix: Task automation \u2014 missing",
+          "Created Airflow DAGs and Python scheduling scripts",
+          "Automated SQL Server version upgrades and patch installations"
+        ],
+        "priority": 0.97,
+        "weight": 0.9279
+      },
+      {
+        "question": "A production load completes successfully, but downstream users report that record counts and totals no longer reconcile. Walk through your incident triage, containment, root-cause analysis, correction, and stakeholder communication.",
+        "competency": "Post-deployment support",
+        "competency_type": "other",
+        "target_gap": "Post-deployment support",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "The candidate has deployment exposure but only a weak match for post-deployment support; this probes readiness to own a data issue after release.",
+        "source_evidence": [
+          "Gap matrix: Post-deployment support \u2014 weak_match",
+          "Worked on architecture design for multistate implementation and deployment.",
+          "Data quality and reconciliation"
+        ],
+        "priority": 0.93,
+        "weight": 0.696
+      },
+      {
+        "question": "Tell us about a requirements session with business users or customers where the initial request was ambiguous. How did you surface assumptions, confirm data definitions, and keep the group aligned through implementation?",
+        "competency": "Requirements gathering",
+        "competency_type": "soft",
+        "target_gap": "Requirements gathering",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "The candidate has gathered requirements in a SQL Developer role, but the matrix rates this required capability as weak; this tests stakeholder-facing discovery skills.",
+        "source_evidence": [
+          "Gap matrix: Requirements gathering \u2014 weak_match",
+          "Gathered business requirements and converted them into T-SQL stored procedures.",
+          "Participated in Joint Application Development sessions with business clients."
+        ],
+        "priority": 0.86,
+        "weight": 0.694
+      },
+      {
+        "question": "Your resume notes a SQL Server-to-Snowflake migration using Python and SnowSQL. How did you establish source-target reconciliation, deal with data-type differences, and decide that the migration was complete?",
+        "competency": "Migration reconciliation",
+        "competency_type": "domain",
+        "target_gap": "Data validation",
+        "question_type": "Role-Specific",
+        "difficulty": "mid",
+        "rationale": "This profile-specific technical example gives the candidate an opportunity to substantiate weakly matched validation skills using documented migration experience.",
+        "source_evidence": [
+          "Implemented one-time data migration from SQL Server to Snowflake using Python and SnowSQL.",
+          "Data quality and reconciliation"
+        ],
+        "priority": 0.83,
+        "weight": 0.6762
+      },
+      {
+        "question": "What is your approach to implementing and governing master-data configurations, including canonical identifiers, reference-data changes, ownership, and propagation to dependent jobs?",
+        "competency": "Master data management",
+        "competency_type": "technical",
+        "target_gap": "Master data management",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Master data management is a required weak match and materially affects standardization and reliable joins across customer feeds.",
+        "source_evidence": [
+          "Gap matrix: Master data management \u2014 weak_match",
+          "Supported Hadoop clusters, HDFS, capacity planning, node management, and maintenance.",
+          "Implement and control the use of master data configurations"
+        ],
+        "priority": 0.89,
+        "weight": 0.6679
+      },
+      {
+        "question": "For a new automated ETL job, which validation controls would you implement at ingestion, transformation, and target-load stages? Explain the failure thresholds and what would happen when a check fails.",
+        "competency": "Data validation",
+        "competency_type": "technical",
+        "target_gap": "Data validation",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "The candidate has some validation exposure but is a weak match on the required validation competency; this distinguishes basic checks from robust pipeline controls.",
+        "source_evidence": [
+          "Gap matrix: Data validation \u2014 weak_match",
+          "Used AWS EMR, S3, EC2, and Lambda for distributed processing, storage, Kafka infrastructure, and data validation/transformation.",
+          "Validate the data mapping results"
+        ],
+        "priority": 0.9,
+        "weight": 0.6762
+      },
+      {
+        "question": "Describe a solution you implemented to address a customer or business need. How did you choose the approach, validate that it solved the need, and respond to feedback after rollout?",
+        "competency": "Solution implementation",
+        "competency_type": "soft",
+        "target_gap": "Solution implementation",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "This required competency is a weak match. The question assesses end-to-end ownership beyond building a technical component.",
+        "source_evidence": [
+          "Gap matrix: Solution implementation \u2014 weak_match",
+          "Worked on architecture design for multistate implementation and deployment.",
+          "Implemented one-time data migration from SQL Server to Snowflake"
+        ],
+        "priority": 0.85,
+        "weight": 0.6842
+      },
+      {
+        "question": "How would you turn a business requirement such as \u201cstandardize customer status across incoming feeds\u201d into a data mapping specification that another engineer could implement and test?",
+        "competency": "Data mapping",
+        "competency_type": "domain",
+        "target_gap": "Data mapping specifications",
+        "question_type": "Role-Specific",
+        "difficulty": "mid",
+        "rationale": "Data mapping specifications are a required weak match. This assesses whether the candidate can translate requirements into source-to-target fields, transformations, defaults, and acceptance rules.",
+        "source_evidence": [
+          "Gap matrix: Data mapping specifications \u2014 weak_match",
+          "Gathered business requirements and converted them into T-SQL stored procedures.",
+          "Prepared ETL design documents"
+        ],
+        "priority": 0.91,
+        "weight": 0.667
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.911988,
+      0.8859699999999999,
+      0.900063,
+      0.64728,
+      0.5968399999999999,
+      0.561246,
+      0.594431,
+      0.60858,
+      0.58157,
+      0.60697
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.008924737572669983,
+      0.3240956664085388,
+      0.28956350684165955,
+      0.24183154106140137,
+      0.21648624539375305,
+      0.3430631160736084,
+      0.37863487005233765,
+      0.45294681191444397,
+      0.5365810394287109
+    ],
+    "mmr_scores": [
+      0.6383916,
+      0.6175015787281989,
+      0.5328154000774382,
+      0.36622694794750205,
+      0.3452385376815795,
+      0.3279263263818741,
+      0.3131827651779175,
+      0.3124155389842987,
+      0.2712149564256668,
+      0.2639046881713867
+    ],
+    "competency_weights": [
+      0.9306,
+      0.9326,
+      0.9279,
+      0.696,
+      0.694,
+      0.6762,
+      0.6679,
+      0.6762,
+      0.6842,
+      0.667
+    ]
+  },
+  "questions": [
+    {
+      "question": "Describe how you would plan and deliver a two-week sprint to add a new customer data feed when the mapping is still evolving. How would you break down the work, manage changes, and demonstrate progress?"
+    },
+    {
+      "question": "This position requires legal authorization to work in the country of application. Are you currently authorized to work there, and will you now or in the future require employer sponsorship?"
+    },
+    {
+      "question": "Give an example of a repetitive engineering or operational task you identified and automated. What was manual before, what did you build, and how did you measure reliability or time saved?"
+    },
+    {
+      "question": "A production load completes successfully, but downstream users report that record counts and totals no longer reconcile. Walk through your incident triage, containment, root-cause analysis, correction, and stakeholder communication."
+    },
+    {
+      "question": "Tell us about a requirements session with business users or customers where the initial request was ambiguous. How did you surface assumptions, confirm data definitions, and keep the group aligned through implementation?"
+    },
+    {
+      "question": "Your resume notes a SQL Server-to-Snowflake migration using Python and SnowSQL. How did you establish source-target reconciliation, deal with data-type differences, and decide that the migration was complete?"
+    },
+    {
+      "question": "What is your approach to implementing and governing master-data configurations, including canonical identifiers, reference-data changes, ownership, and propagation to dependent jobs?"
+    },
+    {
+      "question": "For a new automated ETL job, which validation controls would you implement at ingestion, transformation, and target-load stages? Explain the failure thresholds and what would happen when a check fails."
+    },
+    {
+      "question": "Describe a solution you implemented to address a customer or business need. How did you choose the approach, validate that it solved the need, and respond to feedback after rollout?"
+    },
+    {
+      "question": "How would you turn a business requirement such as \u201cstandardize customer status across incoming feeds\u201d into a data mapping specification that another engineer could implement and test?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe how you would plan and deliver a two-week sprint to add a new customer data feed when the mapping is still evolving. How would you break down the work, manage changes, and demonstrate progress?",
+      "competency": "Agile delivery",
+      "competency_type": "other",
+      "target_gap": "Agile methodologies",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Agile methodology is a required competency marked missing, so this tests whether the candidate can apply iterative delivery practices in a realistic data-engineering context.",
+      "source_evidence": [
+        "Gap matrix: Agile methodologies \u2014 missing",
+        "Develop data engineering jobs and workflows",
+        "Participate in requirements gathering"
+      ],
+      "priority": 0.98,
+      "weight": 0.9306
+    },
+    {
+      "question": "This position requires legal authorization to work in the country of application. Are you currently authorized to work there, and will you now or in the future require employer sponsorship?",
+      "competency": "Work authorization",
+      "competency_type": "domain",
+      "target_gap": "Legal authorization to work",
+      "question_type": "Role-Specific",
+      "difficulty": "easy",
+      "rationale": "Legal authorization is an explicit required job criterion marked missing in the matrix and should be confirmed through a standard, job-related question.",
+      "source_evidence": [
+        "Gap matrix: Legal authorization to work \u2014 missing",
+        "Must be able to legally work in the country to which you have applied"
+      ],
+      "priority": 0.95,
+      "weight": 0.9326
+    },
+    {
+      "question": "Give an example of a repetitive engineering or operational task you identified and automated. What was manual before, what did you build, and how did you measure reliability or time saved?",
+      "competency": "Task automation",
+      "competency_type": "soft",
+      "target_gap": "Task automation",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Task automation is a high-weight required gap; the question elicits evidence of initiative, implementation depth, and measurable operational impact.",
+      "source_evidence": [
+        "Gap matrix: Task automation \u2014 missing",
+        "Created Airflow DAGs and Python scheduling scripts",
+        "Automated SQL Server version upgrades and patch installations"
+      ],
+      "priority": 0.97,
+      "weight": 0.9279
+    },
+    {
+      "question": "A production load completes successfully, but downstream users report that record counts and totals no longer reconcile. Walk through your incident triage, containment, root-cause analysis, correction, and stakeholder communication.",
+      "competency": "Post-deployment support",
+      "competency_type": "other",
+      "target_gap": "Post-deployment support",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "The candidate has deployment exposure but only a weak match for post-deployment support; this probes readiness to own a data issue after release.",
+      "source_evidence": [
+        "Gap matrix: Post-deployment support \u2014 weak_match",
+        "Worked on architecture design for multistate implementation and deployment.",
+        "Data quality and reconciliation"
+      ],
+      "priority": 0.93,
+      "weight": 0.696
+    },
+    {
+      "question": "Tell us about a requirements session with business users or customers where the initial request was ambiguous. How did you surface assumptions, confirm data definitions, and keep the group aligned through implementation?",
+      "competency": "Requirements gathering",
+      "competency_type": "soft",
+      "target_gap": "Requirements gathering",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "The candidate has gathered requirements in a SQL Developer role, but the matrix rates this required capability as weak; this tests stakeholder-facing discovery skills.",
+      "source_evidence": [
+        "Gap matrix: Requirements gathering \u2014 weak_match",
+        "Gathered business requirements and converted them into T-SQL stored procedures.",
+        "Participated in Joint Application Development sessions with business clients."
+      ],
+      "priority": 0.86,
+      "weight": 0.694
+    },
+    {
+      "question": "Your resume notes a SQL Server-to-Snowflake migration using Python and SnowSQL. How did you establish source-target reconciliation, deal with data-type differences, and decide that the migration was complete?",
+      "competency": "Migration reconciliation",
+      "competency_type": "domain",
+      "target_gap": "Data validation",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "This profile-specific technical example gives the candidate an opportunity to substantiate weakly matched validation skills using documented migration experience.",
+      "source_evidence": [
+        "Implemented one-time data migration from SQL Server to Snowflake using Python and SnowSQL.",
+        "Data quality and reconciliation"
+      ],
+      "priority": 0.83,
+      "weight": 0.6762
+    },
+    {
+      "question": "What is your approach to implementing and governing master-data configurations, including canonical identifiers, reference-data changes, ownership, and propagation to dependent jobs?",
+      "competency": "Master data management",
+      "competency_type": "technical",
+      "target_gap": "Master data management",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Master data management is a required weak match and materially affects standardization and reliable joins across customer feeds.",
+      "source_evidence": [
+        "Gap matrix: Master data management \u2014 weak_match",
+        "Supported Hadoop clusters, HDFS, capacity planning, node management, and maintenance.",
+        "Implement and control the use of master data configurations"
+      ],
+      "priority": 0.89,
+      "weight": 0.6679
+    },
+    {
+      "question": "For a new automated ETL job, which validation controls would you implement at ingestion, transformation, and target-load stages? Explain the failure thresholds and what would happen when a check fails.",
+      "competency": "Data validation",
+      "competency_type": "technical",
+      "target_gap": "Data validation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate has some validation exposure but is a weak match on the required validation competency; this distinguishes basic checks from robust pipeline controls.",
+      "source_evidence": [
+        "Gap matrix: Data validation \u2014 weak_match",
+        "Used AWS EMR, S3, EC2, and Lambda for distributed processing, storage, Kafka infrastructure, and data validation/transformation.",
+        "Validate the data mapping results"
+      ],
+      "priority": 0.9,
+      "weight": 0.6762
+    },
+    {
+      "question": "Describe a solution you implemented to address a customer or business need. How did you choose the approach, validate that it solved the need, and respond to feedback after rollout?",
+      "competency": "Solution implementation",
+      "competency_type": "soft",
+      "target_gap": "Solution implementation",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "This required competency is a weak match. The question assesses end-to-end ownership beyond building a technical component.",
+      "source_evidence": [
+        "Gap matrix: Solution implementation \u2014 weak_match",
+        "Worked on architecture design for multistate implementation and deployment.",
+        "Implemented one-time data migration from SQL Server to Snowflake"
+      ],
+      "priority": 0.85,
+      "weight": 0.6842
+    },
+    {
+      "question": "How would you turn a business requirement such as \u201cstandardize customer status across incoming feeds\u201d into a data mapping specification that another engineer could implement and test?",
+      "competency": "Data mapping",
+      "competency_type": "domain",
+      "target_gap": "Data mapping specifications",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Data mapping specifications are a required weak match. This assesses whether the candidate can translate requirements into source-to-target fields, transformations, defaults, and acceptance rules.",
+      "source_evidence": [
+        "Gap matrix: Data mapping specifications \u2014 weak_match",
+        "Gathered business requirements and converted them into T-SQL stored procedures.",
+        "Prepared ETL design documents"
+      ],
+      "priority": 0.91,
+      "weight": 0.667
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 14243,
+    "output_tokens": 3899,
+    "cached_tokens": 0,
+    "estimated_cost": 0.075274,
+    "latency_ms": 30947.81,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.075274,
+  "cost_cny": 0.50960498,
+  "selection_latency_ms": 36.69,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:12:08.903208+00:00"
+}

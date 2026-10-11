@@ -1,0 +1,217 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "B2",
+  "selection_strategy": "plain_mmr_priority",
+  "generation_mode": "interviewiq",
+  "profile_id": "rjf_03794_301991d452b9",
+  "jd_id": "rjf_03794_301991d452b9",
+  "pair_id": "rjf_03794_301991d452b9",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_03794_301991d452b9__rjf_03794_301991d452b9__mid.json",
+  "n_requirements": 12,
+  "questions": [
+    {
+      "question": "Imagine a funding agreement restricts a cost category, but an expense is coded there and has already appeared in a draft report. How would you validate the restriction, correct the accounting, and explain the resolution to the program owner?"
+    },
+    {
+      "question": "When a financial-data trend looks unusual but is not yet clearly erroneous, how do you investigate it? Describe the comparisons, stakeholders, and evidence you would use before drawing a conclusion."
+    },
+    {
+      "question": "Walk me through how you would turn a completed period close package into a set of financial statements. Which reconciliations, review steps, and supporting schedules would you complete before issuing the statements?"
+    },
+    {
+      "question": "Tell me about a time your review identified an error, inconsistency, or missing support in a filing or workpaper. What did you do, and how did you communicate the issue to the right people?"
+    },
+    {
+      "question": "Suppose actual spending is trending above budget halfway through the year. How would you develop a revised projection, identify the drivers of the variance, and communicate the outlook to program leadership?"
+    },
+    {
+      "question": "What do you understand by funding source regulations and requirements, and what approach would you take in your first 90 days to learn the specific restrictions that govern assigned programs?"
+    },
+    {
+      "question": "Describe a journal entry you have calculated, documented, reviewed, and posted or otherwise prepared for posting. What was the business purpose, what support did you retain, and how did you validate the debit-credit logic?"
+    },
+    {
+      "question": "An external auditor requests a schedule that does not tie to the general ledger two days before fieldwork ends. What steps would you take to investigate the discrepancy, respond to the auditor, and prevent recurrence?"
+    },
+    {
+      "question": "How would you reconcile a program-level expense report to the general ledger and then to the financial-statement line item? Please describe the sequence of checks and the types of differences you would expect."
+    },
+    {
+      "question": "Tell me about a technical international-tax issue you researched where the answer was not immediately clear. What sources did you consult, how did you validate your interpretation, and how did you document your conclusion?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Imagine a funding agreement restricts a cost category, but an expense is coded there and has already appeared in a draft report. How would you validate the restriction, correct the accounting, and explain the resolution to the program owner?",
+      "competency": "Funding compliance",
+      "competency_type": "other",
+      "target_gap": "profile_probe",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Directly tests judgment in the role's funding-regulation context, where the candidate has no stated experience.",
+      "source_evidence": [
+        "applicable funding source regulations and requirements",
+        "accountable for program accounting"
+      ],
+      "priority": 0.96,
+      "weight": 0.5527666666666667
+    },
+    {
+      "question": "When a financial-data trend looks unusual but is not yet clearly erroneous, how do you investigate it? Describe the comparisons, stakeholders, and evidence you would use before drawing a conclusion.",
+      "competency": "Data analysis",
+      "competency_type": "other",
+      "target_gap": "Financial data analysis",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Evaluates a structured approach to financial analysis and early issue identification.",
+      "source_evidence": [
+        "Financial data analysis \u2014 partial_match",
+        "Analytical skills"
+      ],
+      "priority": 0.88,
+      "weight": 0.3844
+    },
+    {
+      "question": "Walk me through how you would turn a completed period close package into a set of financial statements. Which reconciliations, review steps, and supporting schedules would you complete before issuing the statements?",
+      "competency": "Financial statement preparation",
+      "competency_type": "technical",
+      "target_gap": "Financial statement preparation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate's tax-return preparation experience is adjacent to, but does not establish, end-to-end financial statement preparation.",
+      "source_evidence": [
+        "Tax return preparation",
+        "Financial statement preparation \u2014 partial_match"
+      ],
+      "priority": 0.93,
+      "weight": 0.3792
+    },
+    {
+      "question": "Tell me about a time your review identified an error, inconsistency, or missing support in a filing or workpaper. What did you do, and how did you communicate the issue to the right people?",
+      "competency": "Issue identification",
+      "competency_type": "soft",
+      "target_gap": "Financial data analysis",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Assesses error detection and proactive communication, both relevant to financial analysis and the role's issue-recognition expectation.",
+      "source_evidence": [
+        "Attention to detail",
+        "Financial data analysis \u2014 partial_match"
+      ],
+      "priority": 0.9,
+      "weight": 0.3844
+    },
+    {
+      "question": "Suppose actual spending is trending above budget halfway through the year. How would you develop a revised projection, identify the drivers of the variance, and communicate the outlook to program leadership?",
+      "competency": "Financial forecasting",
+      "competency_type": "other",
+      "target_gap": "Financial projections",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Financial projections are a weak match and are important for managing assigned programs.",
+      "source_evidence": [
+        "International tax reporting",
+        "Financial projections \u2014 weak_match"
+      ],
+      "priority": 0.94,
+      "weight": 0.7168
+    },
+    {
+      "question": "What do you understand by funding source regulations and requirements, and what approach would you take in your first 90 days to learn the specific restrictions that govern assigned programs?",
+      "competency": "Funding compliance",
+      "competency_type": "domain",
+      "target_gap": "profile_probe",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Funding-source knowledge is central to the role but is not represented in the gap matrix; the question assesses learning strategy without assuming prior experience.",
+      "source_evidence": [
+        "International taxation",
+        "Maintains high degree of working knowledge of applicable funding source regulations and requirements"
+      ],
+      "priority": 0.95,
+      "weight": 0.5527666666666667
+    },
+    {
+      "question": "Describe a journal entry you have calculated, documented, reviewed, and posted or otherwise prepared for posting. What was the business purpose, what support did you retain, and how did you validate the debit-credit logic?",
+      "competency": "Journal entries",
+      "competency_type": "technical",
+      "target_gap": "Journal entry preparation and posting",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Direct journal-entry calculation and posting are core job duties but are not explicitly demonstrated in the profile.",
+      "source_evidence": [
+        "Tax return preparation",
+        "Journal entry preparation and posting \u2014 partial_match"
+      ],
+      "priority": 0.92,
+      "weight": 0.3823
+    },
+    {
+      "question": "An external auditor requests a schedule that does not tie to the general ledger two days before fieldwork ends. What steps would you take to investigate the discrepancy, respond to the auditor, and prevent recurrence?",
+      "competency": "Audit support",
+      "competency_type": "other",
+      "target_gap": "Audit documentation",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Assesses audit responsiveness, reconciliation discipline, and communication under time pressure.",
+      "source_evidence": [
+        "Audit documentation \u2014 partial_match",
+        "managing multiple projects and meeting deadlines under pressure"
+      ],
+      "priority": 0.9,
+      "weight": 0.3986
+    },
+    {
+      "question": "How would you reconcile a program-level expense report to the general ledger and then to the financial-statement line item? Please describe the sequence of checks and the types of differences you would expect.",
+      "competency": "Account reconciliation",
+      "competency_type": "technical",
+      "target_gap": "Financial statement preparation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Tests a foundational bridge between transaction-level program accounting and financial statement preparation.",
+      "source_evidence": [
+        "Financial statement preparation \u2014 partial_match",
+        "Accounting"
+      ],
+      "priority": 0.91,
+      "weight": 0.3792
+    },
+    {
+      "question": "Tell me about a technical international-tax issue you researched where the answer was not immediately clear. What sources did you consult, how did you validate your interpretation, and how did you document your conclusion?",
+      "competency": "Technical research",
+      "competency_type": "soft",
+      "target_gap": "Technical issue research",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "The candidate reports researching international-tax issues, but the matrix rates direct alignment as weak; this probes research quality and defensibility.",
+      "source_evidence": [
+        "Researched technical issues regarding international tax matters",
+        "Technical issue research \u2014 weak_match"
+      ],
+      "priority": 0.86,
+      "weight": 0.6511
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    23,
+    11,
+    0,
+    21,
+    4,
+    22,
+    1,
+    7,
+    27,
+    12
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.23,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:45.692007+00:00"
+}

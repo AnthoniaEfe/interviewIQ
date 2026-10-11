@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_06021_14549a02aa4a",
+  "jd_id": "rjf_06021_14549a02aa4a",
+  "pair_id": "rjf_06021_14549a02aa4a",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Your background includes SAP-based bank and financial-account reconciliations at Blue Ridge Healthcare System. Which SAP version and finance modules did you use, and how have you used SAP to create, review, or post general-ledger journal entries?"
+    },
+    {
+      "question": "Walk us through a month-end close you managed, including how you established cut-off, prepared or reviewed journal entries, resolved reconciling items, and kept the close on schedule."
+    },
+    {
+      "question": "This role requires payroll and cost accruals. Describe how you have reconciled corporate payroll and tax activities, and explain how you would calculate and validate a payroll accrual when final payroll data is not yet available at month-end."
+    },
+    {
+      "question": "You have developed accounting policies and business-process documentation to strengthen internal controls. Tell us about one control improvement you implemented, the risk it addressed, and how you determined whether it reduced errors or improved compliance."
+    },
+    {
+      "question": "The role involves maintaining the chart of accounts and cost-center reporting. If a department requested a new cost center or account that could overlap with an existing one, how would you assess the request and protect reporting consistency?"
+    },
+    {
+      "question": "Your experience includes analyzing budgets, revenues, and expenditure trends and advising management on forecasting. Give an example of an analysis that identified a meaningful variance or trend, the drivers you investigated, and how your recommendation influenced a management decision."
+    },
+    {
+      "question": "How would you build a cross-margin profitability analysis for a project or business area when revenue, direct costs, shared overhead, and timing differences are recorded across several cost centers?"
+    },
+    {
+      "question": "You list GAAP accounting practices and tax-return preparation. What experience do you have applying US GAAP to complex accounting judgments, and what exposure, if any, have you had to IFRS accounting?"
+    },
+    {
+      "question": "Describe the most advanced Excel analyses or reporting tools you have used in accounting or financial reporting. How would you use Excel and PowerPoint to communicate a month-end result or profitability issue clearly to non-finance stakeholders?"
+    },
+    {
+      "question": "This position works in an international and cross-cultural environment. Drawing on your cross-functional work with auditors, payroll stakeholders, or HR teams, how would you adapt your communication and coordinate close activities with colleagues in different locations or working styles?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 6080,
+    "output_tokens": 526,
+    "cached_tokens": 0,
+    "estimated_cost": 0.018472,
+    "latency_ms": 6604.92,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.018472,
+  "cost_cny": 0.12505544,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:06:01.688692+00:00",
+  "user_prompt_sha256": "9b3a582bfd17127e5746f4db86a7af869cb79f193c0ed0df8ec5b3496cbbbe0f"
+}

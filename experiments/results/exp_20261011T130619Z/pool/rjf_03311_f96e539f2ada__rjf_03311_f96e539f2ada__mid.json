@@ -1,0 +1,1062 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "pool",
+  "condition": "T_pool",
+  "profile_id": "rjf_03311_f96e539f2ada",
+  "jd_id": "rjf_03311_f96e539f2ada",
+  "pair_id": "rjf_03311_f96e539f2ada",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "prompt": {
+    "file": "generation/interviewiq_pool.md",
+    "version": "1.1.0",
+    "sha256": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc"
+  },
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 23,
+  "pool_size_requested": 30,
+  "raw_questions": [
+    {
+      "question": "Walk me through how you would build a defensible indirect-cost allocation methodology for shared finance, facilities, and IT costs across several nonprofit programs and funding streams. What drivers would you select, and how would you validate that they are equitable and consistently applied?",
+      "competency": "Cost allocation design",
+      "dimension": "Technical",
+      "target_gap": "Cost allocation methodologies",
+      "difficulty": "hard",
+      "rationale": "Directly tests a high-weight weak match in a role that requires cost allocation and cost-methodology knowledge.",
+      "source_evidence": [
+        "Weak match: Cost allocation methodologies",
+        "Candidate evidence: Account reconciliation"
+      ],
+      "priority": 0.99
+    },
+    {
+      "question": "A restricted grant has been received in advance, and program services will be delivered over the next two quarters. How would you determine the timing of revenue recognition, the required entries, and the documentation needed to support your conclusion?",
+      "competency": "Revenue recognition",
+      "dimension": "Situational",
+      "target_gap": "Revenue recognition",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's limited evidenced exposure to revenue recognition in a nonprofit funding context.",
+      "source_evidence": [
+        "Weak match: Revenue recognition",
+        "Analyzed production revenue and expense."
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "What are the key financial-management requirements under Uniform Guidance that you would want to understand before supporting federally funded programs, and how would those requirements affect reporting, allowable costs, and audit preparation?",
+      "competency": "Federal grant compliance",
+      "dimension": "Technical",
+      "target_gap": "Uniform Guidance and OMB Circulars",
+      "difficulty": "hard",
+      "rationale": "Uniform Guidance is a required domain area with only a weak match in the supplied matrix.",
+      "source_evidence": [
+        "Weak match: Uniform Guidance and OMB Circulars",
+        "Candidate evidence: Instruction and guidance"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Describe how you would assess whether a cost charged to a federal award is allowable, allocable, reasonable, and adequately documented. What would you do if program leadership disagreed with your conclusion?",
+      "competency": "Grant cost compliance",
+      "dimension": "Situational",
+      "target_gap": "Uniform Guidance and OMB Circulars",
+      "difficulty": "hard",
+      "rationale": "Probes practical application of federal-grant compliance and judgment, both important role gaps.",
+      "source_evidence": [
+        "Weak match: Uniform Guidance and OMB Circulars",
+        "Weak match: Judgment and decision-making"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "Give an example of an accounting conclusion you have made or reviewed involving compliance with accounting policies or controls. How did you identify the applicable guidance, document your rationale, and ensure the treatment was consistently applied?",
+      "competency": "GAAP application",
+      "dimension": "Behavioural",
+      "target_gap": "GAAP compliance",
+      "difficulty": "hard",
+      "rationale": "The profile shows control compliance but does not clearly demonstrate GAAP-specific application.",
+      "source_evidence": [
+        "Weak match: GAAP compliance",
+        "Ensured compliance with internal and external accounting controls."
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Your monthly financials show a material unfavorable variance in a program. Explain the sequence of analysis you would perform to separate timing differences, coding errors, volume changes, staffing reclassifications, and a genuine operating overrun, then explain how you would communicate the result.",
+      "competency": "Variance investigation",
+      "dimension": "Situational",
+      "target_gap": "Financial analysis",
+      "difficulty": "hard",
+      "rationale": "Validates a strong match through a role-relevant, end-to-end analytical scenario rather than relying on stated experience alone.",
+      "source_evidence": [
+        "Strong match: Financial analysis",
+        "Provided monthly variance analysis against budget, forecast, and prior-year results."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Tell us about a monthly variance analysis you prepared against budget, forecast, and prior-year results. Which drivers proved most important, and what action or decision followed from your analysis?",
+      "competency": "Performance analytics",
+      "dimension": "Behavioural",
+      "target_gap": "Financial analysis",
+      "difficulty": "mid",
+      "rationale": "Builds on demonstrated variance-analysis experience and assesses whether insights led to action.",
+      "source_evidence": [
+        "Strong match: Financial analysis",
+        "Provided monthly variance analysis against budget, forecast, and prior-year results."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "How would you structure a forecast model when program volume, staffing levels, and funding assumptions may change midyear? Describe the assumptions, scenarios, control checks, and outputs you would provide to leadership.",
+      "competency": "Scenario forecasting",
+      "dimension": "Technical",
+      "target_gap": "Budgeting and forecasting",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's strong budgeting background against the role's need for scenario planning under changing assumptions.",
+      "source_evidence": [
+        "Strong match: Budgeting and forecasting",
+        "Comparison to budget, forecast, and prior-year results."
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Describe a financial model you developed using spreadsheets, queries, or pivot tables. What business question did it answer, how did you validate inputs, and how did stakeholders use the output?",
+      "competency": "Financial modeling",
+      "dimension": "Behavioural",
+      "target_gap": "Financial analysis",
+      "difficulty": "mid",
+      "rationale": "Uses the candidate's stated modeling experience to assess rigor, validation, and business impact.",
+      "source_evidence": [
+        "Performed financial modeling using statistical data, spreadsheets, queries, and pivot tables.",
+        "Strong match: Financial analysis"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "What process would you use to prepare monthly financial statements with both actual and projected financial positions, while ensuring that management receives clear explanations of significant movements?",
+      "competency": "Financial statement preparation",
+      "dimension": "Role-Specific",
+      "target_gap": "Financial reporting",
+      "difficulty": "hard",
+      "rationale": "Assesses an established strength against a central responsibility of the position.",
+      "source_evidence": [
+        "Strong match: Financial reporting",
+        "Closed the books monthly, quarterly, and annually for corporate holding and subsidiaries."
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "Tell us about a reconciliation process you improved by identifying new data sources or clearer clearing procedures. What was the original failure point, what changed, and how did you confirm the revised process was reliable?",
+      "competency": "Reconciliation improvement",
+      "dimension": "Behavioural",
+      "target_gap": "Accounting",
+      "difficulty": "mid",
+      "rationale": "The candidate reports meaningful reconciliation improvements; this clarifies depth of accounting ownership within a partial match.",
+      "source_evidence": [
+        "Partial match: Accounting",
+        "Improved multiple reconciliations by identifying data sources and clearing processes."
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "You inherit a balance-sheet reconciliation with several old unexplained items and an approaching close deadline. How would you prioritize investigation, determine necessary adjustments, and decide what must be escalated?",
+      "competency": "Close judgment",
+      "dimension": "Situational",
+      "target_gap": "Accounting",
+      "difficulty": "hard",
+      "rationale": "Tests accounting depth, judgment, accuracy, and close management in a realistic scenario.",
+      "source_evidence": [
+        "Partial match: Accounting",
+        "Reconciled balance sheet accounts for corporate and other entities."
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "You have experience with SOX controls and resolved audit deficiencies. How would you map a nonprofit transaction flow\u2014from program expense initiation through financial reporting\u2014to identify key preventive and detective controls?",
+      "competency": "Internal control assessment",
+      "dimension": "Technical",
+      "target_gap": "Internal controls",
+      "difficulty": "hard",
+      "rationale": "Transfers relevant controls experience to the role's weak-match requirement for financial and compliance controls.",
+      "source_evidence": [
+        "Weak match: Internal controls",
+        "Eliminated multiple SOX controls associated with reconciliations and journal entries.",
+        "Resolved audit deficiencies."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Describe an occasion when you found a material processing inaccuracy affecting a revenue-generating application. How did you quantify the impact, correct the issue, communicate it, and prevent recurrence?",
+      "competency": "Control remediation",
+      "dimension": "Behavioural",
+      "target_gap": "Internal controls",
+      "difficulty": "hard",
+      "rationale": "Probes a specific documented achievement and the candidate's remediation discipline.",
+      "source_evidence": [
+        "Identified and corrected material operational processing inaccuracies affecting revenue-generating applications.",
+        "Weak match: Internal controls"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "When is it appropriate to eliminate, simplify, or automate a control, and what evidence would you require before recommending that change to management or auditors?",
+      "competency": "Control optimization",
+      "dimension": "Situational",
+      "target_gap": "Internal controls",
+      "difficulty": "hard",
+      "rationale": "Examines the candidate's stated elimination of SOX controls while testing risk-based judgment.",
+      "source_evidence": [
+        "Eliminated multiple SOX controls associated with reconciliations and journal entries.",
+        "Weak match: Internal controls"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "Please describe the most advanced Excel workbook you have built or maintained for accounting or analysis. Which functions, pivots, data-validation methods, automation, and error checks did you use, and how did you make it usable for others?",
+      "competency": "Advanced Excel",
+      "dimension": "Technical",
+      "target_gap": "Advanced Microsoft Excel",
+      "difficulty": "mid",
+      "rationale": "The candidate lists Excel Level 3, macros, pivots, and modeling, but the matrix identifies only a partial match to advanced Excel.",
+      "source_evidence": [
+        "Partial match: Advanced Microsoft Excel",
+        "Microsoft Excel Level 3; spreadsheets and pivot tables",
+        "Developed macros that simplified account postings and reconciliations."
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "You need to combine recurring general-ledger, payroll, and program data into a monthly variance package. How would you design an Excel-based workflow that is auditable, minimizes manual errors, and can be refreshed each month?",
+      "competency": "Excel reporting automation",
+      "dimension": "Situational",
+      "target_gap": "Advanced Microsoft Excel",
+      "difficulty": "hard",
+      "rationale": "Tests applied advanced Excel capability in the reporting environment required by this role.",
+      "source_evidence": [
+        "Partial match: Advanced Microsoft Excel",
+        "Developed, implemented, and trained employees on macros.",
+        "Performed financial modeling using spreadsheets, queries, and pivot tables."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "What would be your plan for becoming productive in Financial Edge if hired, including how you would learn its chart of accounts, reporting structure, transaction workflows, and control points?",
+      "competency": "Financial Edge onboarding",
+      "dimension": "Situational",
+      "target_gap": "Financial Edge",
+      "difficulty": "mid",
+      "rationale": "Financial Edge is preferred and absent from the profile; the question assesses learning approach without assuming prior experience.",
+      "source_evidence": [
+        "Weak match: Financial Edge",
+        "Oracle and General Ledger experience",
+        "Experience with Financial Edge not required but preferred"
+      ],
+      "priority": 0.68
+    },
+    {
+      "question": "Describe the written and verbal communication you used when presenting a new financial process or analysis to people with different levels of accounting knowledge. How did you tailor the message, and how did you know it was understood?",
+      "competency": "Financial communication",
+      "dimension": "Behavioural",
+      "target_gap": "Written and verbal communication",
+      "difficulty": "mid",
+      "rationale": "The profile shows presentations and process communication, while the matrix indicates a partial match for this requirement.",
+      "source_evidence": [
+        "Partial match: Written and verbal communication",
+        "Developed and delivered presentations on new processes and financial activities."
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "A program director challenges your explanation for an unfavorable budget variance and believes Finance is misinterpreting the program's operations. How would you handle the conversation and reach a shared, evidence-based conclusion?",
+      "competency": "Stakeholder partnership",
+      "dimension": "Situational",
+      "target_gap": "Interpersonal skills",
+      "difficulty": "hard",
+      "rationale": "Tests a weak-match interpersonal skill in the cross-functional setting central to departmental and programmatic analysis.",
+      "source_evidence": [
+        "Weak match: Interpersonal skills",
+        "Coordinated reporting activities with corporate offices, districts, and countries."
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "Tell us about a time you coordinated accounting or reporting work across multiple teams, entities, or locations. What friction arose, and what did you do to keep the work accurate and collaborative?",
+      "competency": "Cross-functional teamwork",
+      "dimension": "Behavioural",
+      "target_gap": "Teamwork",
+      "difficulty": "mid",
+      "rationale": "The candidate has multi-entity and international coordination experience, but teamwork is classified as a weak match.",
+      "source_evidence": [
+        "Weak match: Teamwork",
+        "Coordinated reporting activities with corporate offices, districts, and countries.",
+        "Oversaw international accounts in the Philippines, Sri Lanka, and Japan."
+      ],
+      "priority": 0.83
+    },
+    {
+      "question": "During month-end, you receive an audit request, an urgent cash-flow update, and several unreconciled accounts at once. How would you triage the work, communicate trade-offs, and protect the accuracy of the close?",
+      "competency": "Prioritization under pressure",
+      "dimension": "Situational",
+      "target_gap": "Multitasking and prioritization",
+      "difficulty": "hard",
+      "rationale": "Directly assesses a high-weight weak match under conditions common to the target role.",
+      "source_evidence": [
+        "Weak match: Multitasking and prioritization",
+        "Closed the books monthly, quarterly, and annually."
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Describe a time you proactively identified an issue or improvement opportunity before it was assigned to you. What prompted you to investigate, what actions did you take, and what was the outcome?",
+      "competency": "Proactivity",
+      "dimension": "Behavioural",
+      "target_gap": "Self-starter and proactive work style",
+      "difficulty": "mid",
+      "rationale": "Tests a weak-match work-style requirement using the candidate's documented process-improvement achievements.",
+      "source_evidence": [
+        "Weak match: Self-starter and proactive work style",
+        "Created transparency in complex accounts.",
+        "Improved multiple reconciliations."
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "What review techniques do you use to detect small but consequential errors in reconciliations, journal entries, financial statements, or spreadsheet outputs before they are finalized?",
+      "competency": "Quality assurance",
+      "dimension": "Technical",
+      "target_gap": "Attention to detail",
+      "difficulty": "mid",
+      "rationale": "Tests a weak-match attention-to-detail requirement in concrete accounting work.",
+      "source_evidence": [
+        "Weak match: Attention to detail",
+        "Ensured timely and accurate subsystem interfaces into the General Ledger.",
+        "Reconciled balance sheet accounts."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "You discover that a proposed journal entry would improve the current month's results but lacks sufficient supporting evidence. What would you do, who would you involve, and how would you document the decision?",
+      "competency": "Accounting judgment",
+      "dimension": "Situational",
+      "target_gap": "Judgment and decision-making",
+      "difficulty": "hard",
+      "rationale": "Assesses a high-weight weak match around integrity and decision-making in a realistic close scenario.",
+      "source_evidence": [
+        "Weak match: Judgment and decision-making",
+        "Documented and reviewed policies and procedures annually.",
+        "Ensured compliance with internal and external accounting controls."
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "How would you develop an understanding of a nonprofit's programs, funding streams, and cost structure during your first 90 days so that your financial analyses reflect operational reality?",
+      "competency": "Nonprofit finance ramp-up",
+      "dimension": "Role-Specific",
+      "target_gap": "Nonprofit accounting",
+      "difficulty": "hard",
+      "rationale": "The required nonprofit accounting experience is not evidenced in the candidate profile, making readiness and learning approach essential to assess.",
+      "source_evidence": [
+        "Missing: Nonprofit human services experience",
+        "Required nonprofit accounting experience",
+        "Corporate accounting experience"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "What specifically motivates you to move from your prior accounting environments into a nonprofit human-services organization, and how would you connect rigorous financial stewardship to services for individuals in need?",
+      "competency": "Mission alignment",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Nonprofit human services experience",
+      "difficulty": "mid",
+      "rationale": "Explores the sole missing competency and the role's stated preference for mission-driven human-services interest without presuming prior nonprofit work.",
+      "source_evidence": [
+        "Missing: Nonprofit human services experience",
+        "Professional summary: career in finance and accounting",
+        "Passion for working in a non-profit, human services organization"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "This position works closely with Finance and Accounting colleagues to identify process improvements. Describe how you would introduce an improvement idea when coworkers are comfortable with the current process and have concerns about additional workload.",
+      "competency": "Collaborative change management",
+      "dimension": "Situational",
+      "target_gap": "Collaborative and professional work environment fit",
+      "difficulty": "mid",
+      "rationale": "Tests collaborative fit and change-management behavior, both relevant to the role and only weakly evidenced.",
+      "source_evidence": [
+        "Weak match: Collaborative and professional work environment fit",
+        "Change Management",
+        "Documented and reviewed policies and procedures annually."
+      ],
+      "priority": 0.73
+    },
+    {
+      "question": "At Adventist Health System, you tested, mapped, and verified an Oracle and internal commissions-system upgrade. Walk us through your role: how did you define test cases, validate interfaces into the General Ledger, log defects, and determine readiness for deployment?",
+      "competency": "Financial systems implementation",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "hard",
+      "rationale": "Examines a distinctive, relevant systems-upgrade experience in the profile and provides evidence of technical rigor beyond the listed requirements.",
+      "source_evidence": [
+        "Tested, mapped, and verified an Oracle and internal commissions system upgrade.",
+        "Ensured timely and accurate subsystem interfaces into the General Ledger."
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "You report having delegated work and guided less-experienced employees. How did you decide what to delegate, set quality expectations, review outputs, and coach someone whose work needed correction?",
+      "competency": "Informal leadership",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Probes documented leadership behaviors that can support a senior-accountant role even though formal leadership is not a stated job requirement.",
+      "source_evidence": [
+        "Delegated and directed work to other employees.",
+        "Provided instruction and guidance to less-experienced employees."
+      ],
+      "priority": 0.72
+    }
+  ],
+  "valid_questions": [
+    {
+      "question": "Walk me through how you would build a defensible indirect-cost allocation methodology for shared finance, facilities, and IT costs across several nonprofit programs and funding streams. What drivers would you select, and how would you validate that they are equitable and consistently applied?",
+      "competency": "Cost allocation design",
+      "dimension": "Technical",
+      "target_gap": "Cost allocation methodologies",
+      "difficulty": "hard",
+      "rationale": "Directly tests a high-weight weak match in a role that requires cost allocation and cost-methodology knowledge.",
+      "source_evidence": [
+        "Weak match: Cost allocation methodologies",
+        "Candidate evidence: Account reconciliation"
+      ],
+      "priority": 0.99
+    },
+    {
+      "question": "A restricted grant has been received in advance, and program services will be delivered over the next two quarters. How would you determine the timing of revenue recognition, the required entries, and the documentation needed to support your conclusion?",
+      "competency": "Revenue recognition",
+      "dimension": "Situational",
+      "target_gap": "Revenue recognition",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's limited evidenced exposure to revenue recognition in a nonprofit funding context.",
+      "source_evidence": [
+        "Weak match: Revenue recognition",
+        "Analyzed production revenue and expense."
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "What are the key financial-management requirements under Uniform Guidance that you would want to understand before supporting federally funded programs, and how would those requirements affect reporting, allowable costs, and audit preparation?",
+      "competency": "Federal grant compliance",
+      "dimension": "Technical",
+      "target_gap": "Uniform Guidance and OMB Circulars",
+      "difficulty": "hard",
+      "rationale": "Uniform Guidance is a required domain area with only a weak match in the supplied matrix.",
+      "source_evidence": [
+        "Weak match: Uniform Guidance and OMB Circulars",
+        "Candidate evidence: Instruction and guidance"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Describe how you would assess whether a cost charged to a federal award is allowable, allocable, reasonable, and adequately documented. What would you do if program leadership disagreed with your conclusion?",
+      "competency": "Grant cost compliance",
+      "dimension": "Situational",
+      "target_gap": "Uniform Guidance and OMB Circulars",
+      "difficulty": "hard",
+      "rationale": "Probes practical application of federal-grant compliance and judgment, both important role gaps.",
+      "source_evidence": [
+        "Weak match: Uniform Guidance and OMB Circulars",
+        "Weak match: Judgment and decision-making"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "Give an example of an accounting conclusion you have made or reviewed involving compliance with accounting policies or controls. How did you identify the applicable guidance, document your rationale, and ensure the treatment was consistently applied?",
+      "competency": "GAAP application",
+      "dimension": "Behavioural",
+      "target_gap": "GAAP compliance",
+      "difficulty": "hard",
+      "rationale": "The profile shows control compliance but does not clearly demonstrate GAAP-specific application.",
+      "source_evidence": [
+        "Weak match: GAAP compliance",
+        "Ensured compliance with internal and external accounting controls."
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Your monthly financials show a material unfavorable variance in a program. Explain the sequence of analysis you would perform to separate timing differences, coding errors, volume changes, staffing reclassifications, and a genuine operating overrun, then explain how you would communicate the result.",
+      "competency": "Variance investigation",
+      "dimension": "Situational",
+      "target_gap": "Financial analysis",
+      "difficulty": "hard",
+      "rationale": "Validates a strong match through a role-relevant, end-to-end analytical scenario rather than relying on stated experience alone.",
+      "source_evidence": [
+        "Strong match: Financial analysis",
+        "Provided monthly variance analysis against budget, forecast, and prior-year results."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Tell us about a monthly variance analysis you prepared against budget, forecast, and prior-year results. Which drivers proved most important, and what action or decision followed from your analysis?",
+      "competency": "Performance analytics",
+      "dimension": "Behavioural",
+      "target_gap": "Financial analysis",
+      "difficulty": "mid",
+      "rationale": "Builds on demonstrated variance-analysis experience and assesses whether insights led to action.",
+      "source_evidence": [
+        "Strong match: Financial analysis",
+        "Provided monthly variance analysis against budget, forecast, and prior-year results."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "How would you structure a forecast model when program volume, staffing levels, and funding assumptions may change midyear? Describe the assumptions, scenarios, control checks, and outputs you would provide to leadership.",
+      "competency": "Scenario forecasting",
+      "dimension": "Technical",
+      "target_gap": "Budgeting and forecasting",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's strong budgeting background against the role's need for scenario planning under changing assumptions.",
+      "source_evidence": [
+        "Strong match: Budgeting and forecasting",
+        "Comparison to budget, forecast, and prior-year results."
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Describe a financial model you developed using spreadsheets, queries, or pivot tables. What business question did it answer, how did you validate inputs, and how did stakeholders use the output?",
+      "competency": "Financial modeling",
+      "dimension": "Behavioural",
+      "target_gap": "Financial analysis",
+      "difficulty": "mid",
+      "rationale": "Uses the candidate's stated modeling experience to assess rigor, validation, and business impact.",
+      "source_evidence": [
+        "Performed financial modeling using statistical data, spreadsheets, queries, and pivot tables.",
+        "Strong match: Financial analysis"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "What process would you use to prepare monthly financial statements with both actual and projected financial positions, while ensuring that management receives clear explanations of significant movements?",
+      "competency": "Financial statement preparation",
+      "dimension": "Role-Specific",
+      "target_gap": "Financial reporting",
+      "difficulty": "hard",
+      "rationale": "Assesses an established strength against a central responsibility of the position.",
+      "source_evidence": [
+        "Strong match: Financial reporting",
+        "Closed the books monthly, quarterly, and annually for corporate holding and subsidiaries."
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "Tell us about a reconciliation process you improved by identifying new data sources or clearer clearing procedures. What was the original failure point, what changed, and how did you confirm the revised process was reliable?",
+      "competency": "Reconciliation improvement",
+      "dimension": "Behavioural",
+      "target_gap": "Accounting",
+      "difficulty": "mid",
+      "rationale": "The candidate reports meaningful reconciliation improvements; this clarifies depth of accounting ownership within a partial match.",
+      "source_evidence": [
+        "Partial match: Accounting",
+        "Improved multiple reconciliations by identifying data sources and clearing processes."
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "You inherit a balance-sheet reconciliation with several old unexplained items and an approaching close deadline. How would you prioritize investigation, determine necessary adjustments, and decide what must be escalated?",
+      "competency": "Close judgment",
+      "dimension": "Situational",
+      "target_gap": "Accounting",
+      "difficulty": "hard",
+      "rationale": "Tests accounting depth, judgment, accuracy, and close management in a realistic scenario.",
+      "source_evidence": [
+        "Partial match: Accounting",
+        "Reconciled balance sheet accounts for corporate and other entities."
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "You have experience with SOX controls and resolved audit deficiencies. How would you map a nonprofit transaction flow\u2014from program expense initiation through financial reporting\u2014to identify key preventive and detective controls?",
+      "competency": "Internal control assessment",
+      "dimension": "Technical",
+      "target_gap": "Internal controls",
+      "difficulty": "hard",
+      "rationale": "Transfers relevant controls experience to the role's weak-match requirement for financial and compliance controls.",
+      "source_evidence": [
+        "Weak match: Internal controls",
+        "Eliminated multiple SOX controls associated with reconciliations and journal entries.",
+        "Resolved audit deficiencies."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Describe an occasion when you found a material processing inaccuracy affecting a revenue-generating application. How did you quantify the impact, correct the issue, communicate it, and prevent recurrence?",
+      "competency": "Control remediation",
+      "dimension": "Behavioural",
+      "target_gap": "Internal controls",
+      "difficulty": "hard",
+      "rationale": "Probes a specific documented achievement and the candidate's remediation discipline.",
+      "source_evidence": [
+        "Identified and corrected material operational processing inaccuracies affecting revenue-generating applications.",
+        "Weak match: Internal controls"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "When is it appropriate to eliminate, simplify, or automate a control, and what evidence would you require before recommending that change to management or auditors?",
+      "competency": "Control optimization",
+      "dimension": "Situational",
+      "target_gap": "Internal controls",
+      "difficulty": "hard",
+      "rationale": "Examines the candidate's stated elimination of SOX controls while testing risk-based judgment.",
+      "source_evidence": [
+        "Eliminated multiple SOX controls associated with reconciliations and journal entries.",
+        "Weak match: Internal controls"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "Please describe the most advanced Excel workbook you have built or maintained for accounting or analysis. Which functions, pivots, data-validation methods, automation, and error checks did you use, and how did you make it usable for others?",
+      "competency": "Advanced Excel",
+      "dimension": "Technical",
+      "target_gap": "Advanced Microsoft Excel",
+      "difficulty": "mid",
+      "rationale": "The candidate lists Excel Level 3, macros, pivots, and modeling, but the matrix identifies only a partial match to advanced Excel.",
+      "source_evidence": [
+        "Partial match: Advanced Microsoft Excel",
+        "Microsoft Excel Level 3; spreadsheets and pivot tables",
+        "Developed macros that simplified account postings and reconciliations."
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "You need to combine recurring general-ledger, payroll, and program data into a monthly variance package. How would you design an Excel-based workflow that is auditable, minimizes manual errors, and can be refreshed each month?",
+      "competency": "Excel reporting automation",
+      "dimension": "Situational",
+      "target_gap": "Advanced Microsoft Excel",
+      "difficulty": "hard",
+      "rationale": "Tests applied advanced Excel capability in the reporting environment required by this role.",
+      "source_evidence": [
+        "Partial match: Advanced Microsoft Excel",
+        "Developed, implemented, and trained employees on macros.",
+        "Performed financial modeling using spreadsheets, queries, and pivot tables."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "What would be your plan for becoming productive in Financial Edge if hired, including how you would learn its chart of accounts, reporting structure, transaction workflows, and control points?",
+      "competency": "Financial Edge onboarding",
+      "dimension": "Situational",
+      "target_gap": "Financial Edge",
+      "difficulty": "mid",
+      "rationale": "Financial Edge is preferred and absent from the profile; the question assesses learning approach without assuming prior experience.",
+      "source_evidence": [
+        "Weak match: Financial Edge",
+        "Oracle and General Ledger experience",
+        "Experience with Financial Edge not required but preferred"
+      ],
+      "priority": 0.68
+    },
+    {
+      "question": "Describe the written and verbal communication you used when presenting a new financial process or analysis to people with different levels of accounting knowledge. How did you tailor the message, and how did you know it was understood?",
+      "competency": "Financial communication",
+      "dimension": "Behavioural",
+      "target_gap": "Written and verbal communication",
+      "difficulty": "mid",
+      "rationale": "The profile shows presentations and process communication, while the matrix indicates a partial match for this requirement.",
+      "source_evidence": [
+        "Partial match: Written and verbal communication",
+        "Developed and delivered presentations on new processes and financial activities."
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "A program director challenges your explanation for an unfavorable budget variance and believes Finance is misinterpreting the program's operations. How would you handle the conversation and reach a shared, evidence-based conclusion?",
+      "competency": "Stakeholder partnership",
+      "dimension": "Situational",
+      "target_gap": "Interpersonal skills",
+      "difficulty": "hard",
+      "rationale": "Tests a weak-match interpersonal skill in the cross-functional setting central to departmental and programmatic analysis.",
+      "source_evidence": [
+        "Weak match: Interpersonal skills",
+        "Coordinated reporting activities with corporate offices, districts, and countries."
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "Tell us about a time you coordinated accounting or reporting work across multiple teams, entities, or locations. What friction arose, and what did you do to keep the work accurate and collaborative?",
+      "competency": "Cross-functional teamwork",
+      "dimension": "Behavioural",
+      "target_gap": "Teamwork",
+      "difficulty": "mid",
+      "rationale": "The candidate has multi-entity and international coordination experience, but teamwork is classified as a weak match.",
+      "source_evidence": [
+        "Weak match: Teamwork",
+        "Coordinated reporting activities with corporate offices, districts, and countries.",
+        "Oversaw international accounts in the Philippines, Sri Lanka, and Japan."
+      ],
+      "priority": 0.83
+    },
+    {
+      "question": "During month-end, you receive an audit request, an urgent cash-flow update, and several unreconciled accounts at once. How would you triage the work, communicate trade-offs, and protect the accuracy of the close?",
+      "competency": "Prioritization under pressure",
+      "dimension": "Situational",
+      "target_gap": "Multitasking and prioritization",
+      "difficulty": "hard",
+      "rationale": "Directly assesses a high-weight weak match under conditions common to the target role.",
+      "source_evidence": [
+        "Weak match: Multitasking and prioritization",
+        "Closed the books monthly, quarterly, and annually."
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Describe a time you proactively identified an issue or improvement opportunity before it was assigned to you. What prompted you to investigate, what actions did you take, and what was the outcome?",
+      "competency": "Proactivity",
+      "dimension": "Behavioural",
+      "target_gap": "Self-starter and proactive work style",
+      "difficulty": "mid",
+      "rationale": "Tests a weak-match work-style requirement using the candidate's documented process-improvement achievements.",
+      "source_evidence": [
+        "Weak match: Self-starter and proactive work style",
+        "Created transparency in complex accounts.",
+        "Improved multiple reconciliations."
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "What review techniques do you use to detect small but consequential errors in reconciliations, journal entries, financial statements, or spreadsheet outputs before they are finalized?",
+      "competency": "Quality assurance",
+      "dimension": "Technical",
+      "target_gap": "Attention to detail",
+      "difficulty": "mid",
+      "rationale": "Tests a weak-match attention-to-detail requirement in concrete accounting work.",
+      "source_evidence": [
+        "Weak match: Attention to detail",
+        "Ensured timely and accurate subsystem interfaces into the General Ledger.",
+        "Reconciled balance sheet accounts."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "You discover that a proposed journal entry would improve the current month's results but lacks sufficient supporting evidence. What would you do, who would you involve, and how would you document the decision?",
+      "competency": "Accounting judgment",
+      "dimension": "Situational",
+      "target_gap": "Judgment and decision-making",
+      "difficulty": "hard",
+      "rationale": "Assesses a high-weight weak match around integrity and decision-making in a realistic close scenario.",
+      "source_evidence": [
+        "Weak match: Judgment and decision-making",
+        "Documented and reviewed policies and procedures annually.",
+        "Ensured compliance with internal and external accounting controls."
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "What specifically motivates you to move from your prior accounting environments into a nonprofit human-services organization, and how would you connect rigorous financial stewardship to services for individuals in need?",
+      "competency": "Mission alignment",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Nonprofit human services experience",
+      "difficulty": "mid",
+      "rationale": "Explores the sole missing competency and the role's stated preference for mission-driven human-services interest without presuming prior nonprofit work.",
+      "source_evidence": [
+        "Missing: Nonprofit human services experience",
+        "Professional summary: career in finance and accounting",
+        "Passion for working in a non-profit, human services organization"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "This position works closely with Finance and Accounting colleagues to identify process improvements. Describe how you would introduce an improvement idea when coworkers are comfortable with the current process and have concerns about additional workload.",
+      "competency": "Collaborative change management",
+      "dimension": "Situational",
+      "target_gap": "Collaborative and professional work environment fit",
+      "difficulty": "mid",
+      "rationale": "Tests collaborative fit and change-management behavior, both relevant to the role and only weakly evidenced.",
+      "source_evidence": [
+        "Weak match: Collaborative and professional work environment fit",
+        "Change Management",
+        "Documented and reviewed policies and procedures annually."
+      ],
+      "priority": 0.73
+    },
+    {
+      "question": "At Adventist Health System, you tested, mapped, and verified an Oracle and internal commissions-system upgrade. Walk us through your role: how did you define test cases, validate interfaces into the General Ledger, log defects, and determine readiness for deployment?",
+      "competency": "Financial systems implementation",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "hard",
+      "rationale": "Examines a distinctive, relevant systems-upgrade experience in the profile and provides evidence of technical rigor beyond the listed requirements.",
+      "source_evidence": [
+        "Tested, mapped, and verified an Oracle and internal commissions system upgrade.",
+        "Ensured timely and accurate subsystem interfaces into the General Ledger."
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "You report having delegated work and guided less-experienced employees. How did you decide what to delegate, set quality expectations, review outputs, and coach someone whose work needed correction?",
+      "competency": "Informal leadership",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Probes documented leadership behaviors that can support a senior-accountant role even though formal leadership is not a stated job requirement.",
+      "source_evidence": [
+        "Delegated and directed work to other employees.",
+        "Provided instruction and guidance to less-experienced employees."
+      ],
+      "priority": 0.72
+    }
+  ],
+  "validation_failures": [
+    {
+      "index": 25,
+      "reasons": [
+        "unknown_target_gap"
+      ],
+      "target_gap": "Nonprofit accounting",
+      "dimension": "Role-Specific",
+      "priority": 0.97
+    }
+  ],
+  "n_raw": 30,
+  "n_valid": 29,
+  "n_failed": 1,
+  "weights": [
+    0.7246,
+    0.6587,
+    0.6615,
+    0.6615,
+    0.6765,
+    0.1704,
+    0.1704,
+    0.1479,
+    0.1704,
+    0.1694,
+    0.3659,
+    0.3659,
+    0.6496,
+    0.6496,
+    0.6496,
+    0.3483,
+    0.3483,
+    0.4016,
+    0.3633,
+    0.6528,
+    0.7115,
+    0.7093,
+    0.7158,
+    0.7098,
+    0.7151,
+    0.5552,
+    0.4293,
+    0.5105086956521739,
+    0.5105086956521739
+  ],
+  "weight_outcomes": [
+    {
+      "rule": "exact",
+      "weight": 0.7246,
+      "matched_competency": "Cost allocation methodologies",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6587,
+      "matched_competency": "Revenue recognition",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6615,
+      "matched_competency": "Uniform Guidance and OMB Circulars",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6615,
+      "matched_competency": "Uniform Guidance and OMB Circulars",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6765,
+      "matched_competency": "GAAP compliance",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1704,
+      "matched_competency": "Financial analysis",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1704,
+      "matched_competency": "Financial analysis",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1479,
+      "matched_competency": "Budgeting and forecasting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1704,
+      "matched_competency": "Financial analysis",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1694,
+      "matched_competency": "Financial reporting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3659,
+      "matched_competency": "Accounting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3659,
+      "matched_competency": "Accounting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6496,
+      "matched_competency": "Internal controls",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6496,
+      "matched_competency": "Internal controls",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6496,
+      "matched_competency": "Internal controls",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3483,
+      "matched_competency": "Advanced Microsoft Excel",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3483,
+      "matched_competency": "Advanced Microsoft Excel",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4016,
+      "matched_competency": "Financial Edge",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3633,
+      "matched_competency": "Written and verbal communication",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6528,
+      "matched_competency": "Interpersonal skills",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7115,
+      "matched_competency": "Teamwork",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7093,
+      "matched_competency": "Multitasking and prioritization",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7158,
+      "matched_competency": "Self-starter and proactive work style",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7098,
+      "matched_competency": "Attention to detail",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7151,
+      "matched_competency": "Judgment and decision-making",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.5552,
+      "matched_competency": "Nonprofit human services experience",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4293,
+      "matched_competency": "Collaborative and professional work environment fit",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.5105086956521739,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.5105086956521739,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    }
+  ],
+  "fallback_rate": 0.0,
+  "profile_probe_rate": 0.06896551724137931,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 11206,
+    "output_tokens": 3643,
+    "cached_tokens": 0,
+    "estimated_cost": 0.066128,
+    "latency_ms": 31307.63,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.066128,
+  "cost_cny": 0.44768656,
+  "usd_cny_rate": 6.77,
+  "user_prompt_sha256": "d9cd879f0f521c8afbed358c09800ba81185f4b53dd8f20bfecbf9cf5ca167ff",
+  "generated_at": "2026-10-11T13:06:51.060427+00:00"
+}

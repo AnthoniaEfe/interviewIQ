@@ -1,0 +1,218 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "B2",
+  "selection_strategy": "plain_mmr_priority",
+  "generation_mode": "interviewiq",
+  "profile_id": "rjf_04639_f4cbc5bff588",
+  "jd_id": "rjf_04639_f4cbc5bff588",
+  "pair_id": "rjf_04639_f4cbc5bff588",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_04639_f4cbc5bff588__rjf_04639_f4cbc5bff588__mid.json",
+  "n_requirements": 17,
+  "questions": [
+    {
+      "question": "A containerized integration service intermittently fails after deployment to Kubernetes while its local Docker run succeeds. How would you investigate the issue across pod events, logs, configuration, networking, and resource settings?"
+    },
+    {
+      "question": "You have previously integrated YouTube, Periscope, and Facebook APIs for live streaming. Explain one integration end to end: authentication, request/response handling, failure cases, testing, and how you diagnosed production-like issues."
+    },
+    {
+      "question": "Walk through the CI/CD pipeline you would establish for a Java service: build, unit and integration tests, security checks, artifact creation, environment promotion, rollback, and deployment approval points."
+    },
+    {
+      "question": "A nightly financial data sync reports success, but the target system is missing a subset of records. How would you lead the root-cause investigation with source-system, platform, and target-system teams?"
+    },
+    {
+      "question": "Suppose a new integration must process high-volume source data in the cloud and send results to a SaaS application. Outline the major components, scalability approach, observability, and recovery plan."
+    },
+    {
+      "question": "What would a safe deployment and rollback plan look like for a Kubernetes-hosted integration service whose consumers must not receive duplicate or partially processed financial data?"
+    },
+    {
+      "question": "How would you define readiness criteria for promoting an integration feature through a CI/CD pipeline when it depends on external SaaS APIs that may have rate limits or unstable test environments?"
+    },
+    {
+      "question": "Describe a technical issue you explained to a non-engineering partner, designer, or tester. How did you tailor the message, document decisions, and verify shared understanding?"
+    },
+    {
+      "question": "How would you secure a Java REST integration that receives sensitive financial data? Cover authentication and authorization, input validation, secrets management, logging, encryption, and dependency risks."
+    },
+    {
+      "question": "For an integration platform that must synchronize customers, invoices, and status updates, how would you decide whether to use a modular monolith or microservices? Explain service boundaries, data ownership, and failure handling."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "A containerized integration service intermittently fails after deployment to Kubernetes while its local Docker run succeeds. How would you investigate the issue across pod events, logs, configuration, networking, and resource settings?",
+      "competency": "Kubernetes troubleshooting",
+      "competency_type": "other",
+      "target_gap": "Kubernetes",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Kubernetes is a high-weight missing requirement, and the scenario evaluates diagnostic thinking rather than vocabulary alone.",
+      "source_evidence": [
+        "Kubernetes: missing",
+        "Analyzed application errors and performance issues."
+      ],
+      "priority": 0.97,
+      "weight": 0.9397
+    },
+    {
+      "question": "You have previously integrated YouTube, Periscope, and Facebook APIs for live streaming. Explain one integration end to end: authentication, request/response handling, failure cases, testing, and how you diagnosed production-like issues.",
+      "competency": "External API integration",
+      "competency_type": "domain",
+      "target_gap": "System integrations",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "System integrations is marked missing, while the profile contains relevant third-party API work that can clarify transferable integration capability.",
+      "source_evidence": [
+        "Integrated YouTube, Periscope, and Facebook APIs for live streaming video.",
+        "System integrations: missing"
+      ],
+      "priority": 0.96,
+      "weight": 0.93
+    },
+    {
+      "question": "Walk through the CI/CD pipeline you would establish for a Java service: build, unit and integration tests, security checks, artifact creation, environment promotion, rollback, and deployment approval points.",
+      "competency": "CI/CD pipeline design",
+      "competency_type": "technical",
+      "target_gap": "CI/CD",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "CI/CD is a high-priority missing requirement and is central to safely delivering mission-critical integrations.",
+      "source_evidence": [
+        "CI/CD: missing",
+        "Maven",
+        "Git"
+      ],
+      "priority": 0.96,
+      "weight": 0.937
+    },
+    {
+      "question": "A nightly financial data sync reports success, but the target system is missing a subset of records. How would you lead the root-cause investigation with source-system, platform, and target-system teams?",
+      "competency": "Cross-functional troubleshooting",
+      "competency_type": "other",
+      "target_gap": "System integrations",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "The role requires cross-functional root-cause analysis, and this probes collaboration in the highest-impact missing domain.",
+      "source_evidence": [
+        "System integrations: missing",
+        "Analyzed application errors and performance issues."
+      ],
+      "priority": 0.94,
+      "weight": 0.93
+    },
+    {
+      "question": "Suppose a new integration must process high-volume source data in the cloud and send results to a SaaS application. Outline the major components, scalability approach, observability, and recovery plan.",
+      "competency": "Cloud solution design",
+      "competency_type": "domain",
+      "target_gap": "Cloud technologies",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Cloud technologies is missing and the role specifically involves mission-critical SaaS integrations.",
+      "source_evidence": [
+        "Cloud technologies: missing",
+        "Build mission-critical integrations between source data and financial SaaS applications."
+      ],
+      "priority": 0.95,
+      "weight": 0.9297
+    },
+    {
+      "question": "What would a safe deployment and rollback plan look like for a Kubernetes-hosted integration service whose consumers must not receive duplicate or partially processed financial data?",
+      "competency": "Kubernetes release management",
+      "competency_type": "other",
+      "target_gap": "Kubernetes",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Kubernetes is missing; the scenario tests deployment safety and data-aware operational judgment, not just cluster terminology.",
+      "source_evidence": [
+        "Kubernetes: missing",
+        "Build mission-critical integrations between source data and financial SaaS applications."
+      ],
+      "priority": 0.93,
+      "weight": 0.9397
+    },
+    {
+      "question": "How would you define readiness criteria for promoting an integration feature through a CI/CD pipeline when it depends on external SaaS APIs that may have rate limits or unstable test environments?",
+      "competency": "Integration delivery automation",
+      "competency_type": "domain",
+      "target_gap": "CI/CD",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "CI/CD is missing, and external API experience provides a relevant basis for assessing how the candidate would adapt testing and release controls.",
+      "source_evidence": [
+        "CI/CD: missing",
+        "Integrated YouTube, Periscope, and Facebook APIs for live streaming video."
+      ],
+      "priority": 0.92,
+      "weight": 0.937
+    },
+    {
+      "question": "Describe a technical issue you explained to a non-engineering partner, designer, or tester. How did you tailor the message, document decisions, and verify shared understanding?",
+      "competency": "Technical communication",
+      "competency_type": "soft",
+      "target_gap": "Verbal and written communication",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Communication is a required weak match, while the profile includes collaboration and documentation activities that can yield a concrete example.",
+      "source_evidence": [
+        "Collaborated with team members to update documentation.",
+        "Cooperated with web designers to match visual design intent."
+      ],
+      "priority": 0.82,
+      "weight": 0.6923
+    },
+    {
+      "question": "How would you secure a Java REST integration that receives sensitive financial data? Cover authentication and authorization, input validation, secrets management, logging, encryption, and dependency risks.",
+      "competency": "Secure coding",
+      "competency_type": "technical",
+      "target_gap": "Security coding practices",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Security coding is required and weakly matched; the financial integration context makes practical secure-design knowledge essential.",
+      "source_evidence": [
+        "Security coding practices: weak_match",
+        "Java"
+      ],
+      "priority": 0.87,
+      "weight": 0.7293
+    },
+    {
+      "question": "For an integration platform that must synchronize customers, invoices, and status updates, how would you decide whether to use a modular monolith or microservices? Explain service boundaries, data ownership, and failure handling.",
+      "competency": "Microservices design",
+      "competency_type": "other",
+      "target_gap": "Microservices",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Microservices is a required weak match; this probes architectural judgment appropriate to a mid-level engineer.",
+      "source_evidence": [
+        "Microservices: weak_match",
+        "Enterprise application development"
+      ],
+      "priority": 0.86,
+      "weight": 0.7095
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    1,
+    9,
+    6,
+    17,
+    8,
+    21,
+    25,
+    13,
+    10,
+    4
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.24,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:45.843094+00:00"
+}

@@ -1,0 +1,219 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_03202_f43978101918",
+  "jd_id": "rjf_03202_f43978101918",
+  "pair_id": "rjf_03202_f43978101918",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_03202_f43978101918__rjf_03202_f43978101918__mid.json",
+  "n_requirements": 5,
+  "questions": [
+    {
+      "question": "What attracts you to a role centered on hardware reliability, analysis reviews, verification, and controlled engineering updates, given your mix of electrical and computer engineering experience?"
+    },
+    {
+      "question": "When supporting lab devices and monitoring students, how did you prioritize competing technical-assistance requests while maintaining a safe and orderly environment?"
+    },
+    {
+      "question": "Using a relay-control assembly as an example, explain how you would trace a customer or system need through requirements, design evidence, verification tests, and validation evidence."
+    },
+    {
+      "question": "How would you communicate a validation limitation to a project team when the available test environment cannot fully represent the field environment?"
+    },
+    {
+      "question": "What is your understanding of WCCA updates and reviews, and how would you learn the organization\u2019s assumptions, templates, and acceptance criteria before contributing to one?"
+    },
+    {
+      "question": "How would you distinguish verification from validation for a hardware product, and what evidence would each require?"
+    },
+    {
+      "question": "When preparing electrical drawings at Power Consultants, how did you verify consistency among one-line diagrams, schematics, layouts, interconnection diagrams, and installation drawings?"
+    },
+    {
+      "question": "Describe a situation where risk or a potential failure in an electrical or software project was identified late. What did you do, and what would you change to identify it earlier?"
+    },
+    {
+      "question": "Walk me through how you would facilitate a DFMEA review for a new hardware design: how would you define functions, identify failure modes and effects, score risk, and drive actions to closure?"
+    },
+    {
+      "question": "Your background includes smart-card encryption, mobile-cloud security, and SDN security presentations. How do you decide which security concerns are relevant to a hardware verification or design-review activity rather than treating security as a separate concern?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "What attracts you to a role centered on hardware reliability, analysis reviews, verification, and controlled engineering updates, given your mix of electrical and computer engineering experience?",
+      "competency": "Role motivation",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Assesses the candidate's motivation for this specialized role and whether their career direction is intentional.",
+      "source_evidence": [
+        "Actively seeking full-time opportunities in computer engineering and engineering industry",
+        "B.E. Electrical Engineering",
+        "M.S. Computer Engineering"
+      ],
+      "priority": 0.7,
+      "weight": 0.66116
+    },
+    {
+      "question": "When supporting lab devices and monitoring students, how did you prioritize competing technical-assistance requests while maintaining a safe and orderly environment?",
+      "competency": "Prioritization and support",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests practical prioritization, service orientation, and composure from a documented work setting.",
+      "source_evidence": [
+        "Provided technical assistance for lab devices",
+        "Monitored students",
+        "Maintained order in the study hall"
+      ],
+      "priority": 0.52,
+      "weight": 0.66116
+    },
+    {
+      "question": "Using a relay-control assembly as an example, explain how you would trace a customer or system need through requirements, design evidence, verification tests, and validation evidence.",
+      "competency": "Requirements traceability",
+      "competency_type": "domain",
+      "target_gap": "Hardware verification and validation",
+      "question_type": "Role-Specific",
+      "difficulty": "hard",
+      "rationale": "Tests end-to-end V&V traceability in a domain connected to the candidate's electrical engineering experience.",
+      "source_evidence": [
+        "Worked on relay settings for electrical equipment used in substations",
+        "Gap: Hardware verification and validation \u2014 partial_match"
+      ],
+      "priority": 0.88,
+      "weight": 0.3869
+    },
+    {
+      "question": "How would you communicate a validation limitation to a project team when the available test environment cannot fully represent the field environment?",
+      "competency": "Validation risk communication",
+      "competency_type": "soft",
+      "target_gap": "Hardware verification and validation",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests communication of residual risk, a key capability when test environments or prototypes are constrained.",
+      "source_evidence": [
+        "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker",
+        "Gap: Hardware verification and validation \u2014 partial_match"
+      ],
+      "priority": 0.79,
+      "weight": 0.3869
+    },
+    {
+      "question": "What is your understanding of WCCA updates and reviews, and how would you learn the organization\u2019s assumptions, templates, and acceptance criteria before contributing to one?",
+      "competency": "WCCA methodology",
+      "competency_type": "technical",
+      "target_gap": "WCCA updates and reviews",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "WCCA is only weakly matched through electrical-drawing work; this directly establishes baseline familiarity and a credible ramp-up approach.",
+      "source_evidence": [
+        "Gap: WCCA updates and reviews \u2014 weak_match",
+        "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings"
+      ],
+      "priority": 0.82,
+      "weight": 0.6444
+    },
+    {
+      "question": "How would you distinguish verification from validation for a hardware product, and what evidence would each require?",
+      "competency": "Hardware V&V fundamentals",
+      "competency_type": "technical",
+      "target_gap": "Hardware verification and validation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly probes foundational V&V knowledge where the candidate has a partial rather than proven match.",
+      "source_evidence": [
+        "Gap: Hardware verification and validation \u2014 partial_match",
+        "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings"
+      ],
+      "priority": 0.9,
+      "weight": 0.3869
+    },
+    {
+      "question": "When preparing electrical drawings at Power Consultants, how did you verify consistency among one-line diagrams, schematics, layouts, interconnection diagrams, and installation drawings?",
+      "competency": "Electrical documentation review",
+      "competency_type": "domain",
+      "target_gap": "WCCA updates and reviews",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Clarifies the depth of the candidate's closest relevant experience and their discipline in reviewing interdependent design artifacts.",
+      "source_evidence": [
+        "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings"
+      ],
+      "priority": 0.76,
+      "weight": 0.6444
+    },
+    {
+      "question": "Describe a situation where risk or a potential failure in an electrical or software project was identified late. What did you do, and what would you change to identify it earlier?",
+      "competency": "Proactive risk management",
+      "competency_type": "soft",
+      "target_gap": "DFMEA/FMEA reviews",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Provides a behavioural signal for the risk-oriented mindset required by FMEA despite the documented experience gap.",
+      "source_evidence": [
+        "Built a Medium Voltage Circuit Breaker Simulator",
+        "Simulated OS using Java"
+      ],
+      "priority": 0.85,
+      "weight": 0.959
+    },
+    {
+      "question": "Walk me through how you would facilitate a DFMEA review for a new hardware design: how would you define functions, identify failure modes and effects, score risk, and drive actions to closure?",
+      "competency": "DFMEA/FMEA reviews",
+      "competency_type": "technical",
+      "target_gap": "DFMEA/FMEA reviews",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "DFMEA/FMEA is a high-weight required competency with no demonstrated candidate experience, so this tests practical method knowledge and readiness to learn the process.",
+      "source_evidence": [
+        "Gap: DFMEA/FMEA reviews \u2014 missing",
+        "Candidate evidence: C"
+      ],
+      "priority": 0.98,
+      "weight": 0.959
+    },
+    {
+      "question": "Your background includes smart-card encryption, mobile-cloud security, and SDN security presentations. How do you decide which security concerns are relevant to a hardware verification or design-review activity rather than treating security as a separate concern?",
+      "competency": "Security-aware engineering",
+      "competency_type": "domain",
+      "target_gap": "profile_probe",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate can translate documented security knowledge into practical engineering-review considerations.",
+      "source_evidence": [
+        "Comparison of symmetric and asymmetric encryption algorithms for smart-card security",
+        "ZKP authentication; analysis of Twofish and Blowfish",
+        "SDN security and traffic measurement presentation"
+      ],
+      "priority": 0.56,
+      "weight": 0.66116
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    25,
+    28,
+    17,
+    20,
+    5,
+    16,
+    7,
+    3,
+    0,
+    30
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.24,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:49.506836+00:00"
+}

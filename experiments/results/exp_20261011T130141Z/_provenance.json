@@ -1,0 +1,36 @@
+{
+  "git_commit": "5308403e16e759a3c833dbf8bf17e189dc0baea3",
+  "library_versions": {
+    "numpy": "2.1.2",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.8.0+cu128",
+    "sentence-transformers": "6.1.0",
+    "rank-bm25": "0.2.2"
+  },
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "prompt_meta": {
+    "profile_aware_baseline": {
+      "file": "generation/profile_aware_baseline.md",
+      "version": "1.0.0",
+      "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+    },
+    "interviewiq_pool": {
+      "file": "generation/interviewiq_pool.md",
+      "version": "1.1.0",
+      "sha256": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc"
+    }
+  },
+  "device": "auto",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "usd_cny_rate": 6.77,
+  "temperature_setting": null,
+  "reasoning_effort": "medium",
+  "max_output_tokens": 12000,
+  "config": "experiments/configs/primary_hf.yaml"
+}

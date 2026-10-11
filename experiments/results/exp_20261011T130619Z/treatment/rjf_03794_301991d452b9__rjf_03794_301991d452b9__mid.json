@@ -1,0 +1,454 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_03794_301991d452b9",
+  "jd_id": "rjf_03794_301991d452b9",
+  "pair_id": "rjf_03794_301991d452b9",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 12,
+  "pool_path": "pool/rjf_03794_301991d452b9__rjf_03794_301991d452b9__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.23333333333333334,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      4,
+      12,
+      16,
+      17,
+      28,
+      22,
+      5,
+      13,
+      23,
+      25
+    ],
+    "questions": [
+      {
+        "question": "Suppose actual spending is trending above budget halfway through the year. How would you develop a revised projection, identify the drivers of the variance, and communicate the outlook to program leadership?",
+        "competency": "Financial forecasting",
+        "competency_type": "other",
+        "target_gap": "Financial projections",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Financial projections are a weak match and are important for managing assigned programs.",
+        "source_evidence": [
+          "International tax reporting",
+          "Financial projections \u2014 weak_match"
+        ],
+        "priority": 0.94,
+        "weight": 0.7168
+      },
+      {
+        "question": "Tell me about a technical international-tax issue you researched where the answer was not immediately clear. What sources did you consult, how did you validate your interpretation, and how did you document your conclusion?",
+        "competency": "Technical research",
+        "competency_type": "soft",
+        "target_gap": "Technical issue research",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "The candidate reports researching international-tax issues, but the matrix rates direct alignment as weak; this probes research quality and defensibility.",
+        "source_evidence": [
+          "Researched technical issues regarding international tax matters",
+          "Technical issue research \u2014 weak_match"
+        ],
+        "priority": 0.86,
+        "weight": 0.6511
+      },
+      {
+        "question": "What Windows-based tools and file-management practices do you use to securely store, find, version, and share accounting support during a close or audit?",
+        "competency": "Windows PC skills",
+        "competency_type": "technical",
+        "target_gap": "Microsoft Windows PC",
+        "question_type": "Technical",
+        "difficulty": "easy",
+        "rationale": "Windows PC proficiency is listed as missing and should be confirmed efficiently because it is a baseline job requirement.",
+        "source_evidence": [
+          "Microsoft Windows PC \u2014 missing",
+          "Prepared and maintained support documentation"
+        ],
+        "priority": 0.58,
+        "weight": 0.9444
+      },
+      {
+        "question": "When researching accounting or funding requirements online, how do you judge whether a source is authoritative, preserve the relevant evidence, and make sure you are using the current version?",
+        "competency": "Web research",
+        "competency_type": "technical",
+        "target_gap": "Web browsing",
+        "question_type": "Technical",
+        "difficulty": "easy",
+        "rationale": "Web browsing is marked missing; the question verifies functional research habits relevant to regulatory work.",
+        "source_evidence": [
+          "Web browsing \u2014 missing",
+          "Researched technical issues regarding international tax matters"
+        ],
+        "priority": 0.62,
+        "weight": 0.9538
+      },
+      {
+        "question": "A department leader disagrees with your forecast because it shows an unfavorable year-end result. How would you explain the assumptions, invite challenge, and decide whether the projection should be revised?",
+        "competency": "Financial communication",
+        "competency_type": "other",
+        "target_gap": "Financial projections",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Assesses communication and professional judgment in a high-stakes forecasting discussion.",
+        "source_evidence": [
+          "Financial projections \u2014 weak_match",
+          "Communication"
+        ],
+        "priority": 0.87,
+        "weight": 0.7168
+      },
+      {
+        "question": "What do you understand by funding source regulations and requirements, and what approach would you take in your first 90 days to learn the specific restrictions that govern assigned programs?",
+        "competency": "Funding compliance",
+        "competency_type": "domain",
+        "target_gap": "profile_probe",
+        "question_type": "Role-Specific",
+        "difficulty": "mid",
+        "rationale": "Funding-source knowledge is central to the role but is not represented in the gap matrix; the question assesses learning strategy without assuming prior experience.",
+        "source_evidence": [
+          "International taxation",
+          "Maintains high degree of working knowledge of applicable funding source regulations and requirements"
+        ],
+        "priority": 0.95,
+        "weight": 0.5527666666666667
+      },
+      {
+        "question": "How would you distinguish a timing variance from a sustained change in a program's cost base when preparing a periodic financial projection? What data would you seek before revising the forecast?",
+        "competency": "Financial projections",
+        "competency_type": "technical",
+        "target_gap": "Financial projections",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Probes the candidate's ability to apply analytical judgment to ongoing forecasts, an area not evidenced directly in the profile.",
+        "source_evidence": [
+          "Financial projections \u2014 weak_match",
+          "Analytical skills"
+        ],
+        "priority": 0.89,
+        "weight": 0.7168
+      },
+      {
+        "question": "If you were asked to research an unfamiliar accounting treatment affecting a program's financial statements, how would you frame the question, identify authoritative guidance, and communicate a recommendation with any remaining uncertainty?",
+        "competency": "Accounting research",
+        "competency_type": "other",
+        "target_gap": "Technical issue research",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Tests whether the candidate can transfer tax-research skills to accounting issues and communicate a usable conclusion.",
+        "source_evidence": [
+          "Technical issue research \u2014 weak_match",
+          "Researched technical issues regarding international tax matters"
+        ],
+        "priority": 0.89,
+        "weight": 0.6511
+      },
+      {
+        "question": "Imagine a funding agreement restricts a cost category, but an expense is coded there and has already appeared in a draft report. How would you validate the restriction, correct the accounting, and explain the resolution to the program owner?",
+        "competency": "Funding compliance",
+        "competency_type": "other",
+        "target_gap": "profile_probe",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Directly tests judgment in the role's funding-regulation context, where the candidate has no stated experience.",
+        "source_evidence": [
+          "applicable funding source regulations and requirements",
+          "accountable for program accounting"
+        ],
+        "priority": 0.96,
+        "weight": 0.5527666666666667
+      },
+      {
+        "question": "Your background includes preparation of Forms 5471, 8858, 8865, 1120-F, and IC-DISC returns. Choose one engagement and explain the end-to-end workflow, key data dependencies, review controls, and deadline risks.",
+        "competency": "Complex reporting execution",
+        "competency_type": "domain",
+        "target_gap": "profile_probe",
+        "question_type": "Role-Specific",
+        "difficulty": "mid",
+        "rationale": "Provides a profile-specific depth probe into a substantial stated strength and reveals transferable process-management skills.",
+        "source_evidence": [
+          "Prepared foreign tax forms including 5471, 8858, 8865, 1120-F, and IC-DISC returns"
+        ],
+        "priority": 0.76,
+        "weight": 0.5527666666666667
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.673792,
+      0.559946,
+      0.547752,
+      0.591356,
+      0.623616,
+      0.5251283333333334,
+      0.637952,
+      0.579479,
+      0.530656,
+      0.42010266666666674
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.133313849568367,
+      0.1595287322998047,
+      0.37429922819137573,
+      0.5115824937820435,
+      0.3031367063522339,
+      0.6084377765655518,
+      0.5468699932098389,
+      0.47613537311553955,
+      0.27701741456985474
+    ],
+    "mmr_scores": [
+      0.4716543999999999,
+      0.3519680451294899,
+      0.33556778031005857,
+      0.30165943154258723,
+      0.28305645186538686,
+      0.2766488214276632,
+      0.26403506703033436,
+      0.2415743020370483,
+      0.2286185880653381,
+      0.21096664229571024
+    ],
+    "competency_weights": [
+      0.7168,
+      0.6511,
+      0.9444,
+      0.9538,
+      0.7168,
+      0.5527666666666667,
+      0.7168,
+      0.6511,
+      0.5527666666666667,
+      0.5527666666666667
+    ]
+  },
+  "questions": [
+    {
+      "question": "Suppose actual spending is trending above budget halfway through the year. How would you develop a revised projection, identify the drivers of the variance, and communicate the outlook to program leadership?"
+    },
+    {
+      "question": "Tell me about a technical international-tax issue you researched where the answer was not immediately clear. What sources did you consult, how did you validate your interpretation, and how did you document your conclusion?"
+    },
+    {
+      "question": "What Windows-based tools and file-management practices do you use to securely store, find, version, and share accounting support during a close or audit?"
+    },
+    {
+      "question": "When researching accounting or funding requirements online, how do you judge whether a source is authoritative, preserve the relevant evidence, and make sure you are using the current version?"
+    },
+    {
+      "question": "A department leader disagrees with your forecast because it shows an unfavorable year-end result. How would you explain the assumptions, invite challenge, and decide whether the projection should be revised?"
+    },
+    {
+      "question": "What do you understand by funding source regulations and requirements, and what approach would you take in your first 90 days to learn the specific restrictions that govern assigned programs?"
+    },
+    {
+      "question": "How would you distinguish a timing variance from a sustained change in a program's cost base when preparing a periodic financial projection? What data would you seek before revising the forecast?"
+    },
+    {
+      "question": "If you were asked to research an unfamiliar accounting treatment affecting a program's financial statements, how would you frame the question, identify authoritative guidance, and communicate a recommendation with any remaining uncertainty?"
+    },
+    {
+      "question": "Imagine a funding agreement restricts a cost category, but an expense is coded there and has already appeared in a draft report. How would you validate the restriction, correct the accounting, and explain the resolution to the program owner?"
+    },
+    {
+      "question": "Your background includes preparation of Forms 5471, 8858, 8865, 1120-F, and IC-DISC returns. Choose one engagement and explain the end-to-end workflow, key data dependencies, review controls, and deadline risks."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Suppose actual spending is trending above budget halfway through the year. How would you develop a revised projection, identify the drivers of the variance, and communicate the outlook to program leadership?",
+      "competency": "Financial forecasting",
+      "competency_type": "other",
+      "target_gap": "Financial projections",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Financial projections are a weak match and are important for managing assigned programs.",
+      "source_evidence": [
+        "International tax reporting",
+        "Financial projections \u2014 weak_match"
+      ],
+      "priority": 0.94,
+      "weight": 0.7168
+    },
+    {
+      "question": "Tell me about a technical international-tax issue you researched where the answer was not immediately clear. What sources did you consult, how did you validate your interpretation, and how did you document your conclusion?",
+      "competency": "Technical research",
+      "competency_type": "soft",
+      "target_gap": "Technical issue research",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "The candidate reports researching international-tax issues, but the matrix rates direct alignment as weak; this probes research quality and defensibility.",
+      "source_evidence": [
+        "Researched technical issues regarding international tax matters",
+        "Technical issue research \u2014 weak_match"
+      ],
+      "priority": 0.86,
+      "weight": 0.6511
+    },
+    {
+      "question": "What Windows-based tools and file-management practices do you use to securely store, find, version, and share accounting support during a close or audit?",
+      "competency": "Windows PC skills",
+      "competency_type": "technical",
+      "target_gap": "Microsoft Windows PC",
+      "question_type": "Technical",
+      "difficulty": "easy",
+      "rationale": "Windows PC proficiency is listed as missing and should be confirmed efficiently because it is a baseline job requirement.",
+      "source_evidence": [
+        "Microsoft Windows PC \u2014 missing",
+        "Prepared and maintained support documentation"
+      ],
+      "priority": 0.58,
+      "weight": 0.9444
+    },
+    {
+      "question": "When researching accounting or funding requirements online, how do you judge whether a source is authoritative, preserve the relevant evidence, and make sure you are using the current version?",
+      "competency": "Web research",
+      "competency_type": "technical",
+      "target_gap": "Web browsing",
+      "question_type": "Technical",
+      "difficulty": "easy",
+      "rationale": "Web browsing is marked missing; the question verifies functional research habits relevant to regulatory work.",
+      "source_evidence": [
+        "Web browsing \u2014 missing",
+        "Researched technical issues regarding international tax matters"
+      ],
+      "priority": 0.62,
+      "weight": 0.9538
+    },
+    {
+      "question": "A department leader disagrees with your forecast because it shows an unfavorable year-end result. How would you explain the assumptions, invite challenge, and decide whether the projection should be revised?",
+      "competency": "Financial communication",
+      "competency_type": "other",
+      "target_gap": "Financial projections",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Assesses communication and professional judgment in a high-stakes forecasting discussion.",
+      "source_evidence": [
+        "Financial projections \u2014 weak_match",
+        "Communication"
+      ],
+      "priority": 0.87,
+      "weight": 0.7168
+    },
+    {
+      "question": "What do you understand by funding source regulations and requirements, and what approach would you take in your first 90 days to learn the specific restrictions that govern assigned programs?",
+      "competency": "Funding compliance",
+      "competency_type": "domain",
+      "target_gap": "profile_probe",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Funding-source knowledge is central to the role but is not represented in the gap matrix; the question assesses learning strategy without assuming prior experience.",
+      "source_evidence": [
+        "International taxation",
+        "Maintains high degree of working knowledge of applicable funding source regulations and requirements"
+      ],
+      "priority": 0.95,
+      "weight": 0.5527666666666667
+    },
+    {
+      "question": "How would you distinguish a timing variance from a sustained change in a program's cost base when preparing a periodic financial projection? What data would you seek before revising the forecast?",
+      "competency": "Financial projections",
+      "competency_type": "technical",
+      "target_gap": "Financial projections",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Probes the candidate's ability to apply analytical judgment to ongoing forecasts, an area not evidenced directly in the profile.",
+      "source_evidence": [
+        "Financial projections \u2014 weak_match",
+        "Analytical skills"
+      ],
+      "priority": 0.89,
+      "weight": 0.7168
+    },
+    {
+      "question": "If you were asked to research an unfamiliar accounting treatment affecting a program's financial statements, how would you frame the question, identify authoritative guidance, and communicate a recommendation with any remaining uncertainty?",
+      "competency": "Accounting research",
+      "competency_type": "other",
+      "target_gap": "Technical issue research",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate can transfer tax-research skills to accounting issues and communicate a usable conclusion.",
+      "source_evidence": [
+        "Technical issue research \u2014 weak_match",
+        "Researched technical issues regarding international tax matters"
+      ],
+      "priority": 0.89,
+      "weight": 0.6511
+    },
+    {
+      "question": "Imagine a funding agreement restricts a cost category, but an expense is coded there and has already appeared in a draft report. How would you validate the restriction, correct the accounting, and explain the resolution to the program owner?",
+      "competency": "Funding compliance",
+      "competency_type": "other",
+      "target_gap": "profile_probe",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Directly tests judgment in the role's funding-regulation context, where the candidate has no stated experience.",
+      "source_evidence": [
+        "applicable funding source regulations and requirements",
+        "accountable for program accounting"
+      ],
+      "priority": 0.96,
+      "weight": 0.5527666666666667
+    },
+    {
+      "question": "Your background includes preparation of Forms 5471, 8858, 8865, 1120-F, and IC-DISC returns. Choose one engagement and explain the end-to-end workflow, key data dependencies, review controls, and deadline risks.",
+      "competency": "Complex reporting execution",
+      "competency_type": "domain",
+      "target_gap": "profile_probe",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Provides a profile-specific depth probe into a substantial stated strength and reveals transferable process-management skills.",
+      "source_evidence": [
+        "Prepared foreign tax forms including 5471, 8858, 8865, 1120-F, and IC-DISC returns"
+      ],
+      "priority": 0.76,
+      "weight": 0.5527666666666667
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 5642,
+    "output_tokens": 3366,
+    "cached_tokens": 0,
+    "estimated_cost": 0.051676,
+    "latency_ms": 28117.65,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.051676,
+  "cost_cny": 0.34984652,
+  "selection_latency_ms": 38.21,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:09:16.730805+00:00"
+}

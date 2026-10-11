@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_05015_76a5778b1247",
+  "jd_id": "rjf_05015_76a5778b1247",
+  "pair_id": "rjf_05015_76a5778b1247",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "At Education First, you prepared balance-sheet reconciliations and journal-entry schedules using Oracle and Hyperion. Walk us through your month-end close process, including how you investigated reconciling items, validated entries, and escalated unresolved issues."
+    },
+    {
+      "question": "This role requires closing under local GAAP and IFRS or US GAAP. Your profile cites GAAP compliance; what exposure have you had to different accounting frameworks, and how would you identify and address a reporting treatment that differs between US GAAP and IFRS?"
+    },
+    {
+      "question": "Your background includes P&L analysis, budgeting, and variance analysis, but not stated manufacturing cost accounting. How would you build an understanding of standard costing, cost centers, profit centers, and project-based costing after joining a manufacturing organization?"
+    },
+    {
+      "question": "Imagine Production reports that actual material and labor costs for a diagnostic-device project are materially above standard cost shortly before month-end. How would you analyze the variance, determine the appropriate accounting treatment, and communicate findings to Production, Engineering, and Finance?"
+    },
+    {
+      "question": "Describe a specific time at Education First when you identified an accuracy or completeness issue in financial records. What analysis did you perform, who did you involve, and what process or control changed as a result?"
+    },
+    {
+      "question": "The position oversees subsystems supporting month-end close and semi-annual physical inventories. What experience do you have reconciling inventory-related transactions or investigating differences between operational records and the general ledger, and where would you need to develop further?"
+    },
+    {
+      "question": "You trained new employees on procedures at Accura Healthcare. How would you set clear expectations and quality controls for accounting data-entry staff while maintaining timely close deadlines?"
+    },
+    {
+      "question": "Give an example of how you resolved a conflict with a business partner or client when accounting records, billing, or contract information did not align. How did you balance relationship management with the need for accurate financial reporting?"
+    },
+    {
+      "question": "The company is a contract manufacturer of in-vitro diagnostics and medical devices and must coordinate accounting activities across non-reporting functions. What attracts you to moving from your prior accounting and service environments into this regulated manufacturing setting, and how would you build credibility with operational teams?"
+    },
+    {
+      "question": "You have worked with Oracle, Hyperion, and Excel, while this role uses IQMS by Dassault and integrates accounting systems with publicly listed parent Stratec SE. Describe how you would approach learning IQMS, validating data flows during an integration, and ensuring reporting remains accurate through the transition."
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 5624,
+    "output_tokens": 544,
+    "cached_tokens": 0,
+    "estimated_cost": 0.017776,
+    "latency_ms": 6847.43,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.017776,
+  "cost_cny": 0.12034352,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:04:53.569137+00:00",
+  "user_prompt_sha256": "3044ee04091c8d6de546b28c1d3997ac2ed47f98d683dbbbcfa9dad5a513c51e"
+}

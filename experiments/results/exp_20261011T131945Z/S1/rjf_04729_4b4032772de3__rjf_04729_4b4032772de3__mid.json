@@ -1,0 +1,220 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S1",
+  "selection_strategy": "top_priority",
+  "generation_mode": null,
+  "profile_id": "rjf_04729_4b4032772de3",
+  "jd_id": "rjf_04729_4b4032772de3",
+  "pair_id": "rjf_04729_4b4032772de3",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_04729_4b4032772de3__rjf_04729_4b4032772de3__mid.json",
+  "n_requirements": 16,
+  "questions": [
+    {
+      "question": "Walk me through how you would develop the one-line diagram and perform the initial load, demand, voltage-drop, and protective-device coordination considerations for a new industrial facility distribution system."
+    },
+    {
+      "question": "A contractor submits a control-panel shop drawing that does not clearly show short-circuit current rating, grounding, wire numbering, or spare capacity. How would you review it, document comments, and determine whether it can proceed?"
+    },
+    {
+      "question": "What experience, if any, do you have designing lighting for industrial or facility spaces? Explain how you would select fixture types, establish illumination targets, address emergency lighting, and coordinate the layout with the facility design."
+    },
+    {
+      "question": "Please confirm whether you are legally authorized to work in the United States and, if applicable, whether you would now or in the future require employment sponsorship."
+    },
+    {
+      "question": "Describe the largest industrial electrical design scope you have personally owned. What facility-level deliverables did you produce, what codes or standards governed the work, and what were your design decisions?"
+    },
+    {
+      "question": "What calculations and design checks would you perform to size a facility transformer, switchboard, feeders, and panelboards when the load includes motors, nonlinear loads, future capacity, and standby-power requirements?"
+    },
+    {
+      "question": "For a three-phase motor-driven pump, explain how you would choose between across-the-line starting, a soft starter, and a variable-frequency drive, and how each choice affects protection, controls, and the electrical distribution system."
+    },
+    {
+      "question": "How would you specify control-panel segregation, grounding, shielding, power supplies, terminal blocks, labeling, and maintainability for a panel containing 480 V motor circuits alongside 24 VDC PLC and instrument circuits?"
+    },
+    {
+      "question": "A PLC-controlled process has intermittent false high-level alarms from a field sensor. Describe your troubleshooting sequence from the instrument through wiring, input card, PLC logic, HMI alarm configuration, and process conditions."
+    },
+    {
+      "question": "How would you route and specify conduit and conductors for a new pump room when power, control, and instrumentation circuits must coexist in a wet, electrically noisy environment?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk me through how you would develop the one-line diagram and perform the initial load, demand, voltage-drop, and protective-device coordination considerations for a new industrial facility distribution system.",
+      "competency": "Power distribution design",
+      "competency_type": "technical",
+      "target_gap": "Power distribution",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Power distribution is a high-weight missing requirement, so this tests whether the candidate has directly applicable facility-design knowledge beyond test-system work.",
+      "source_evidence": [
+        "Gap matrix: Power distribution \u2014 missing",
+        "Candidate evidence: LabVIEW"
+      ],
+      "priority": 0.99,
+      "weight": 0.941
+    },
+    {
+      "question": "A contractor submits a control-panel shop drawing that does not clearly show short-circuit current rating, grounding, wire numbering, or spare capacity. How would you review it, document comments, and determine whether it can proceed?",
+      "competency": "Control panel review",
+      "competency_type": "other",
+      "target_gap": "Control panel design",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests a missing, high-priority design and review capability in a realistic construction-phase scenario.",
+      "source_evidence": [
+        "Gap matrix: Control panel design \u2014 missing",
+        "Job responsibility: review construction documents and shop drawings"
+      ],
+      "priority": 0.98,
+      "weight": 0.9507
+    },
+    {
+      "question": "What experience, if any, do you have designing lighting for industrial or facility spaces? Explain how you would select fixture types, establish illumination targets, address emergency lighting, and coordinate the layout with the facility design.",
+      "competency": "Lighting design",
+      "competency_type": "technical",
+      "target_gap": "Lighting design",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Lighting design is entirely absent from the documented profile and is a required responsibility.",
+      "source_evidence": [
+        "Gap matrix: Lighting design \u2014 missing",
+        "Candidate profile: electrical design and embedded-systems experience"
+      ],
+      "priority": 0.97,
+      "weight": 0.9503
+    },
+    {
+      "question": "Please confirm whether you are legally authorized to work in the United States and, if applicable, whether you would now or in the future require employment sponsorship.",
+      "competency": "Work authorization",
+      "competency_type": "domain",
+      "target_gap": "Legal authorization to work in the United States",
+      "question_type": "Role-Specific",
+      "difficulty": "easy",
+      "rationale": "This is a stated required application criterion with no supporting profile evidence.",
+      "source_evidence": [
+        "Gap matrix: Legal authorization to work in the United States \u2014 missing",
+        "Job requirement: legally authorized to work in the United States"
+      ],
+      "priority": 0.96,
+      "weight": 0.9049
+    },
+    {
+      "question": "Describe the largest industrial electrical design scope you have personally owned. What facility-level deliverables did you produce, what codes or standards governed the work, and what were your design decisions?",
+      "competency": "Industrial electrical design",
+      "competency_type": "domain",
+      "target_gap": "Industrial electrical design",
+      "question_type": "Role-Specific",
+      "difficulty": "hard",
+      "rationale": "Clarifies the candidate's weakly matched industrial design experience and distinguishes product/test engineering from facility electrical design.",
+      "source_evidence": [
+        "Gap matrix: Industrial electrical design \u2014 weak_match",
+        "Candidate experience: intelligent down-hole oil drilling tools",
+        "Candidate experience: automated test systems using LabVIEW and Python"
+      ],
+      "priority": 0.95,
+      "weight": 0.7245
+    },
+    {
+      "question": "What calculations and design checks would you perform to size a facility transformer, switchboard, feeders, and panelboards when the load includes motors, nonlinear loads, future capacity, and standby-power requirements?",
+      "competency": "Electrical distribution sizing",
+      "competency_type": "technical",
+      "target_gap": "Power distribution",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Provides a deeper test of the highest-priority missing technical requirement.",
+      "source_evidence": [
+        "Gap matrix: Power distribution \u2014 missing",
+        "Job responsibility: support power distribution"
+      ],
+      "priority": 0.95,
+      "weight": 0.941
+    },
+    {
+      "question": "For a three-phase motor-driven pump, explain how you would choose between across-the-line starting, a soft starter, and a variable-frequency drive, and how each choice affects protection, controls, and the electrical distribution system.",
+      "competency": "Motor control",
+      "competency_type": "technical",
+      "target_gap": "Motor control",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Probes a weak-match requirement through a common facility motor-control design decision.",
+      "source_evidence": [
+        "Gap matrix: Motor control \u2014 weak_match",
+        "Candidate evidence: LabVIEW"
+      ],
+      "priority": 0.94,
+      "weight": 0.7299
+    },
+    {
+      "question": "How would you specify control-panel segregation, grounding, shielding, power supplies, terminal blocks, labeling, and maintainability for a panel containing 480 V motor circuits alongside 24 VDC PLC and instrument circuits?",
+      "competency": "Control panel design",
+      "competency_type": "technical",
+      "target_gap": "Control panel design",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Probes the missing control-panel design requirement at a practical implementation level.",
+      "source_evidence": [
+        "Gap matrix: Control panel design \u2014 missing",
+        "Candidate experience: embedded hardware/software",
+        "Candidate experience: automated test systems"
+      ],
+      "priority": 0.93,
+      "weight": 0.9507
+    },
+    {
+      "question": "A PLC-controlled process has intermittent false high-level alarms from a field sensor. Describe your troubleshooting sequence from the instrument through wiring, input card, PLC logic, HMI alarm configuration, and process conditions.",
+      "competency": "PLC control systems",
+      "competency_type": "other",
+      "target_gap": "PLC control systems",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Assesses whether embedded and sensor experience transfers to industrial PLC troubleshooting and controls integration.",
+      "source_evidence": [
+        "Gap matrix: PLC control systems \u2014 weak_match",
+        "Candidate evidence: Embedded systems",
+        "Candidate experience: sensor-based hardware/software development"
+      ],
+      "priority": 0.92,
+      "weight": 0.6429
+    },
+    {
+      "question": "How would you route and specify conduit and conductors for a new pump room when power, control, and instrumentation circuits must coexist in a wet, electrically noisy environment?",
+      "competency": "Conduit and wiring design",
+      "competency_type": "technical",
+      "target_gap": "Facility conduit and wiring design",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Tests a weakly matched facility-design skill, including separation, environmental protection, maintainability, and constructability.",
+      "source_evidence": [
+        "Gap matrix: Facility conduit and wiring design \u2014 weak_match",
+        "Candidate evidence: IC testing and automated test systems"
+      ],
+      "priority": 0.91,
+      "weight": 0.7036
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    19,
+    5,
+    22,
+    6,
+    7
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.02,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:49.020804+00:00"
+}

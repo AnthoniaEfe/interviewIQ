@@ -1,0 +1,227 @@
+{
+  "experiment_id": "exp_20261011T130253Z",
+  "stage": "selection_ablation",
+  "condition": "S1",
+  "selection_strategy": "top_priority",
+  "generation_mode": null,
+  "profile_id": "rjf_03173_9a0a3c4d8ba0",
+  "jd_id": "rjf_03173_9a0a3c4d8ba0",
+  "pair_id": "rjf_03173_9a0a3c4d8ba0",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130156Z/pool/rjf_03173_9a0a3c4d8ba0__rjf_03173_9a0a3c4d8ba0__mid.json",
+  "n_requirements": 2,
+  "questions": [
+    {
+      "question": "Walk me through the sales and use tax reconciliation reports you prepared at Graphic Packaging: what data did you compare, how did you investigate differences, and what was your role in resolving them?"
+    },
+    {
+      "question": "If a sales and use tax reconciliation does not agree to the general ledger near close, how would you determine whether the cause is timing, coding, a missing transaction, or an incorrect tax treatment?"
+    },
+    {
+      "question": "Describe a tax-related reconciliation difference you resolved. What evidence did you use, which stakeholders did you involve, and how did you confirm the final correction was appropriate?"
+    },
+    {
+      "question": "What parts of taxation have you handled directly versus supported through reconciliation, reporting, or documentation?"
+    },
+    {
+      "question": "What controls would you expect around sales and use tax data from invoice or subledger entry through tax return support and general-ledger reconciliation?"
+    },
+    {
+      "question": "Suppose an invoice was recorded without the expected use tax and the month has already closed. How would you assess the issue, record any adjustment, and document the resolution?"
+    },
+    {
+      "question": "How do you distinguish a sales tax issue from a use tax issue in an accounting workflow, and what information would you need before deciding on the accounting treatment?"
+    },
+    {
+      "question": "How would you use general-ledger balances, subledger detail, and source invoices to build a monthly tax reconciliation from scratch?"
+    },
+    {
+      "question": "When you find a recurring tax reconciliation exception, how would you determine whether it needs a one-time correction, a process change, or escalation to a tax specialist?"
+    },
+    {
+      "question": "What documentation would you retain to support a sales and use tax reconciliation and make it reviewable by an auditor or tax reviewer?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk me through the sales and use tax reconciliation reports you prepared at Graphic Packaging: what data did you compare, how did you investigate differences, and what was your role in resolving them?",
+      "competency": "Sales and use tax reconciliation",
+      "competency_type": "technical",
+      "target_gap": "Taxation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Taxation is the highest-weight weak match, while the profile specifically mentions sales and use tax reconciliation work that should be validated in depth.",
+      "source_evidence": [
+        "Taxation: weak_match; weight 0.6974",
+        "Prepared sales use and tax reconciliation reports and resolved differences."
+      ],
+      "priority": 0.98,
+      "weight": 0.6974
+    },
+    {
+      "question": "If a sales and use tax reconciliation does not agree to the general ledger near close, how would you determine whether the cause is timing, coding, a missing transaction, or an incorrect tax treatment?",
+      "competency": "Tax discrepancy investigation",
+      "competency_type": "other",
+      "target_gap": "Taxation",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Tests practical tax problem-solving for the identified weak requirement and the candidate's stated reconciliation background.",
+      "source_evidence": [
+        "Taxation: weak_match; weight 0.6974",
+        "Sales use and tax reconciliation reports",
+        "General ledger accounting"
+      ],
+      "priority": 0.97,
+      "weight": 0.6974
+    },
+    {
+      "question": "Describe a tax-related reconciliation difference you resolved. What evidence did you use, which stakeholders did you involve, and how did you confirm the final correction was appropriate?",
+      "competency": "Tax issue resolution",
+      "competency_type": "soft",
+      "target_gap": "Taxation",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Assesses whether the candidate has hands-on ownership of tax exceptions rather than only report preparation experience.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "Prepared sales use and tax reconciliation reports and resolved differences.",
+        "Researched and resolved reconciliation items with various departments."
+      ],
+      "priority": 0.95,
+      "weight": 0.6974
+    },
+    {
+      "question": "What parts of taxation have you handled directly versus supported through reconciliation, reporting, or documentation?",
+      "competency": "Tax scope of experience",
+      "competency_type": "domain",
+      "target_gap": "Taxation",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Clarifies the depth and boundaries of the candidate's tax experience, which is the principal weakly matched requirement.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "General and tax accounting",
+        "Prepared sales use and tax reconciliation reports and resolved differences."
+      ],
+      "priority": 0.94,
+      "weight": 0.6974
+    },
+    {
+      "question": "What controls would you expect around sales and use tax data from invoice or subledger entry through tax return support and general-ledger reconciliation?",
+      "competency": "Tax controls",
+      "competency_type": "technical",
+      "target_gap": "Taxation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The role includes taxes, so this probes the candidate's understanding of reliable tax accounting processes beyond the weak-match label.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "Ensured accuracy of subledger postings and compliance with GAAP and company policies.",
+        "Reviewed and analyzed balance sheet account reconciliations."
+      ],
+      "priority": 0.93,
+      "weight": 0.6974
+    },
+    {
+      "question": "Suppose an invoice was recorded without the expected use tax and the month has already closed. How would you assess the issue, record any adjustment, and document the resolution?",
+      "competency": "Use tax adjustment",
+      "competency_type": "other",
+      "target_gap": "Taxation",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Evaluates judgment on a realistic tax-accounting exception and the link between tax treatment, journal entries, and close.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "Prepared and posted journal entries",
+        "Participated in the month-end close process."
+      ],
+      "priority": 0.92,
+      "weight": 0.6974
+    },
+    {
+      "question": "How do you distinguish a sales tax issue from a use tax issue in an accounting workflow, and what information would you need before deciding on the accounting treatment?",
+      "competency": "Sales versus use tax",
+      "competency_type": "technical",
+      "target_gap": "Taxation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly assesses foundational tax knowledge where the matrix indicates only a weak match.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "Sales Use & Tax reconciliation",
+        "General and tax accounting"
+      ],
+      "priority": 0.91,
+      "weight": 0.6974
+    },
+    {
+      "question": "How would you use general-ledger balances, subledger detail, and source invoices to build a monthly tax reconciliation from scratch?",
+      "competency": "Tax reconciliation process",
+      "competency_type": "technical",
+      "target_gap": "Taxation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Tests a repeatable end-to-end approach to the role's tax requirement and connects to the candidate's GL and subledger experience.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "Verified and posted business transactions to the general ledger.",
+        "Ensured accuracy of subledger postings.",
+        "Prepared sales use and tax reconciliation reports."
+      ],
+      "priority": 0.9,
+      "weight": 0.6974
+    },
+    {
+      "question": "When you find a recurring tax reconciliation exception, how would you determine whether it needs a one-time correction, a process change, or escalation to a tax specialist?",
+      "competency": "Tax exception management",
+      "competency_type": "other",
+      "target_gap": "Taxation",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Tests risk-based judgment and continuous improvement in a tax-supporting accounting role.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "Resolved differences",
+        "Created an accounts payable submission invoice tracking sheet to reduce discrepancies."
+      ],
+      "priority": 0.89,
+      "weight": 0.6974
+    },
+    {
+      "question": "What documentation would you retain to support a sales and use tax reconciliation and make it reviewable by an auditor or tax reviewer?",
+      "competency": "Tax documentation",
+      "competency_type": "technical",
+      "target_gap": "Taxation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Tax support requires defensible records; the candidate's audit-support experience provides relevant context to probe.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "Provided audit support to internal auditors and EY, including supporting documentation and audit walkthroughs.",
+        "Prepared sales use and tax reconciliation reports."
+      ],
+      "priority": 0.88,
+      "weight": 0.6974
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    0,
+    1,
+    2,
+    10,
+    3,
+    4,
+    5,
+    13,
+    6,
+    7
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.03,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:02:54.173068+00:00"
+}

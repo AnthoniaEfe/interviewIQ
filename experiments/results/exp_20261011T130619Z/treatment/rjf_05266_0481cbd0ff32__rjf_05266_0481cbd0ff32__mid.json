@@ -1,0 +1,456 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_05266_0481cbd0ff32",
+  "jd_id": "rjf_05266_0481cbd0ff32",
+  "pair_id": "rjf_05266_0481cbd0ff32",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 26,
+  "pool_path": "pool/rjf_05266_0481cbd0ff32__rjf_05266_0481cbd0ff32__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 26,
+    "n_failed": 4,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.07692307692307693,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      4,
+      3,
+      12,
+      8,
+      9,
+      14,
+      11,
+      2,
+      24,
+      13
+    ],
+    "questions": [
+      {
+        "question": "When reviewing a high volume of invoices and payment requests, what specific checks do you use to ensure vendor, amount, coding, approval, and supporting-document accuracy before processing?",
+        "competency": "Accuracy and controls",
+        "competency_type": "technical",
+        "target_gap": "Detail orientation",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "The candidate reviewed invoices and documentation; this clarifies the precision and control practices behind that experience.",
+        "source_evidence": [
+          "Reviewed supplier and subcontractor invoices, bills and payment requests.",
+          "Uploaded vendor and contractor invoices to IMS."
+        ],
+        "priority": 0.94,
+        "weight": 0.9466
+      },
+      {
+        "question": "Give an example of how you would organize the close of several client accounts with overlapping deadlines. How would you track outstanding reconciliations, approvals, supporting schedules, and open questions?",
+        "competency": "Close organization",
+        "competency_type": "other",
+        "target_gap": "Organizational skills",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "The role requires recurring close support across client accounts, and organization is marked missing despite the candidate's file-management background.",
+        "source_evidence": [
+          "Organized technical, administrative and financial files.",
+          "Maintained office administrative and financial records."
+        ],
+        "priority": 0.94,
+        "weight": 0.9221
+      },
+      {
+        "question": "What is an example of a repetitive finance or records task you would examine for improvement? Describe the current-state steps, the control risks, and a practical improvement you would propose to management.",
+        "competency": "Process improvement",
+        "competency_type": "domain",
+        "target_gap": "Process improvement",
+        "question_type": "Role-Specific",
+        "difficulty": "mid",
+        "rationale": "Directly tests a required responsibility for identifying processing-efficiency improvements, which is not evidenced in the profile.",
+        "source_evidence": [
+          "Developed and maintained a filing system for an IED project.",
+          "Entered transactions into WEBFCR and uploaded supporting documentation."
+        ],
+        "priority": 0.89,
+        "weight": 0.9349
+      },
+      {
+        "question": "Describe a situation in which you had to explain a finance requirement, missing documentation, or payment issue to someone outside the finance team. How did you make the message clear and obtain a timely response?",
+        "competency": "Professional stakeholder communication",
+        "competency_type": "soft",
+        "target_gap": "Professional communication",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "The role requires fluent communication with management and clients, while direct stakeholder communication evidence is limited.",
+        "source_evidence": [
+          "Managed correspondence between Kabul and Washington, DC.",
+          "Reviewed accounting documents and transactions for supporting documentation."
+        ],
+        "priority": 0.9,
+        "weight": 0.9415
+      },
+      {
+        "question": "Draft the key points you would include in an email to a vendor or internal requestor whose invoice cannot be processed because the approval and receipt are missing. How would you keep the tone professional while protecting the control process?",
+        "competency": "Written finance communication",
+        "competency_type": "other",
+        "target_gap": "Written business communication",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Evaluates practical written communication in a common accounts-payable control scenario.",
+        "source_evidence": [
+          "Managed correspondence between Kabul and Washington, DC.",
+          "Reviewed supplier and subcontractor invoices, bills and payment requests."
+        ],
+        "priority": 0.9,
+        "weight": 0.925
+      },
+      {
+        "question": "Describe a time you received corrective feedback on your work, process, or documentation. What did you do with the feedback, and what changed afterward?",
+        "competency": "Feedback receptiveness",
+        "competency_type": "soft",
+        "target_gap": "Coaching and feedback receptiveness",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Assesses openness to coaching, a required team behavior absent from the documented profile.",
+        "source_evidence": [
+          "Administrative & Finance Coordinator",
+          "Project Accountant"
+        ],
+        "priority": 0.87,
+        "weight": 0.9176
+      },
+      {
+        "question": "If a manager asks for an urgent cash-flow report while you are completing a bank reconciliation and processing approved invoices, how would you prioritize, communicate trade-offs, and maintain accuracy?",
+        "competency": "Prioritization under pressure",
+        "competency_type": "other",
+        "target_gap": "Adaptability",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Tests the ability to adapt to changing priorities in a finance environment without weakening financial controls.",
+        "source_evidence": [
+          "Prepared cash flow forecasts for upcoming months.",
+          "Performed monthly bank account reconciliations."
+        ],
+        "priority": 0.89,
+        "weight": 0.9542
+      },
+      {
+        "question": "Describe a time you found an inconsistency, missing support, or potential error while reviewing an accounting document or transaction. How did you investigate it, resolve it, and prevent an unsupported payment?",
+        "competency": "Financial problem solving",
+        "competency_type": "soft",
+        "target_gap": "Problem solving",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "The candidate has transaction-review experience; this probes the reasoning and escalation behavior not explicitly evidenced in the profile.",
+        "source_evidence": [
+          "Reviewed accounting documents and transactions for supporting documentation.",
+          "Reviewed supplier and subcontractor invoices, bills and payment requests."
+        ],
+        "priority": 0.95,
+        "weight": 0.9282
+      },
+      {
+        "question": "The role is client-facing and requires swift, professional responses. How would you set expectations and keep a client informed when you cannot complete a requested analysis until you receive missing data?",
+        "competency": "Client communication",
+        "competency_type": "other",
+        "target_gap": "Interpersonal skills",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Tests interpersonal judgment and responsiveness, both important requirements with no direct match in the evidence.",
+        "source_evidence": [
+          "Managed correspondence between Kabul and Washington, DC.",
+          "Prepared weekly financial reports with supporting backups."
+        ],
+        "priority": 0.83,
+        "weight": 0.9475
+      },
+      {
+        "question": "Imagine you receive a new client\u2019s accounting policy, chart of accounts, and close calendar. How would you read, assimilate, and turn those materials into a checklist for your first month of work?",
+        "competency": "Policy assimilation",
+        "competency_type": "other",
+        "target_gap": "Reading and information assimilation",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Tests how the candidate would absorb client policies and procedures, a stated requirement with no direct match evidence.",
+        "source_evidence": [
+          "Organized data and maintained project records, documents and control plans.",
+          "Coded payments by account type using GL accounts."
+        ],
+        "priority": 0.88,
+        "weight": 0.9181
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.8898039999999999,
+      0.8667739999999999,
+      0.8320609999999999,
+      0.84735,
+      0.8325,
+      0.798312,
+      0.849238,
+      0.88179,
+      0.7864249999999999,
+      0.807928
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.3202793002128601,
+      0.32393738627433777,
+      0.36792945861816406,
+      0.4708089232444763,
+      0.4428783655166626,
+      0.5669784545898438,
+      0.6479073762893677,
+      0.4468275308609009,
+      0.5055864453315735
+    ],
+    "mmr_scores": [
+      0.6228627999999999,
+      0.5106580099361419,
+      0.48526148411769854,
+      0.4827661624145508,
+      0.4415073230266571,
+      0.4259548903450011,
+      0.42437306362304683,
+      0.4228807871131896,
+      0.41644924074172956,
+      0.4138736664005279
+    ],
+    "competency_weights": [
+      0.9466,
+      0.9221,
+      0.9349,
+      0.9415,
+      0.925,
+      0.9176,
+      0.9542,
+      0.9282,
+      0.9475,
+      0.9181
+    ]
+  },
+  "questions": [
+    {
+      "question": "When reviewing a high volume of invoices and payment requests, what specific checks do you use to ensure vendor, amount, coding, approval, and supporting-document accuracy before processing?"
+    },
+    {
+      "question": "Give an example of how you would organize the close of several client accounts with overlapping deadlines. How would you track outstanding reconciliations, approvals, supporting schedules, and open questions?"
+    },
+    {
+      "question": "What is an example of a repetitive finance or records task you would examine for improvement? Describe the current-state steps, the control risks, and a practical improvement you would propose to management."
+    },
+    {
+      "question": "Describe a situation in which you had to explain a finance requirement, missing documentation, or payment issue to someone outside the finance team. How did you make the message clear and obtain a timely response?"
+    },
+    {
+      "question": "Draft the key points you would include in an email to a vendor or internal requestor whose invoice cannot be processed because the approval and receipt are missing. How would you keep the tone professional while protecting the control process?"
+    },
+    {
+      "question": "Describe a time you received corrective feedback on your work, process, or documentation. What did you do with the feedback, and what changed afterward?"
+    },
+    {
+      "question": "If a manager asks for an urgent cash-flow report while you are completing a bank reconciliation and processing approved invoices, how would you prioritize, communicate trade-offs, and maintain accuracy?"
+    },
+    {
+      "question": "Describe a time you found an inconsistency, missing support, or potential error while reviewing an accounting document or transaction. How did you investigate it, resolve it, and prevent an unsupported payment?"
+    },
+    {
+      "question": "The role is client-facing and requires swift, professional responses. How would you set expectations and keep a client informed when you cannot complete a requested analysis until you receive missing data?"
+    },
+    {
+      "question": "Imagine you receive a new client\u2019s accounting policy, chart of accounts, and close calendar. How would you read, assimilate, and turn those materials into a checklist for your first month of work?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "When reviewing a high volume of invoices and payment requests, what specific checks do you use to ensure vendor, amount, coding, approval, and supporting-document accuracy before processing?",
+      "competency": "Accuracy and controls",
+      "competency_type": "technical",
+      "target_gap": "Detail orientation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate reviewed invoices and documentation; this clarifies the precision and control practices behind that experience.",
+      "source_evidence": [
+        "Reviewed supplier and subcontractor invoices, bills and payment requests.",
+        "Uploaded vendor and contractor invoices to IMS."
+      ],
+      "priority": 0.94,
+      "weight": 0.9466
+    },
+    {
+      "question": "Give an example of how you would organize the close of several client accounts with overlapping deadlines. How would you track outstanding reconciliations, approvals, supporting schedules, and open questions?",
+      "competency": "Close organization",
+      "competency_type": "other",
+      "target_gap": "Organizational skills",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "The role requires recurring close support across client accounts, and organization is marked missing despite the candidate's file-management background.",
+      "source_evidence": [
+        "Organized technical, administrative and financial files.",
+        "Maintained office administrative and financial records."
+      ],
+      "priority": 0.94,
+      "weight": 0.9221
+    },
+    {
+      "question": "What is an example of a repetitive finance or records task you would examine for improvement? Describe the current-state steps, the control risks, and a practical improvement you would propose to management.",
+      "competency": "Process improvement",
+      "competency_type": "domain",
+      "target_gap": "Process improvement",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Directly tests a required responsibility for identifying processing-efficiency improvements, which is not evidenced in the profile.",
+      "source_evidence": [
+        "Developed and maintained a filing system for an IED project.",
+        "Entered transactions into WEBFCR and uploaded supporting documentation."
+      ],
+      "priority": 0.89,
+      "weight": 0.9349
+    },
+    {
+      "question": "Describe a situation in which you had to explain a finance requirement, missing documentation, or payment issue to someone outside the finance team. How did you make the message clear and obtain a timely response?",
+      "competency": "Professional stakeholder communication",
+      "competency_type": "soft",
+      "target_gap": "Professional communication",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "The role requires fluent communication with management and clients, while direct stakeholder communication evidence is limited.",
+      "source_evidence": [
+        "Managed correspondence between Kabul and Washington, DC.",
+        "Reviewed accounting documents and transactions for supporting documentation."
+      ],
+      "priority": 0.9,
+      "weight": 0.9415
+    },
+    {
+      "question": "Draft the key points you would include in an email to a vendor or internal requestor whose invoice cannot be processed because the approval and receipt are missing. How would you keep the tone professional while protecting the control process?",
+      "competency": "Written finance communication",
+      "competency_type": "other",
+      "target_gap": "Written business communication",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Evaluates practical written communication in a common accounts-payable control scenario.",
+      "source_evidence": [
+        "Managed correspondence between Kabul and Washington, DC.",
+        "Reviewed supplier and subcontractor invoices, bills and payment requests."
+      ],
+      "priority": 0.9,
+      "weight": 0.925
+    },
+    {
+      "question": "Describe a time you received corrective feedback on your work, process, or documentation. What did you do with the feedback, and what changed afterward?",
+      "competency": "Feedback receptiveness",
+      "competency_type": "soft",
+      "target_gap": "Coaching and feedback receptiveness",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Assesses openness to coaching, a required team behavior absent from the documented profile.",
+      "source_evidence": [
+        "Administrative & Finance Coordinator",
+        "Project Accountant"
+      ],
+      "priority": 0.87,
+      "weight": 0.9176
+    },
+    {
+      "question": "If a manager asks for an urgent cash-flow report while you are completing a bank reconciliation and processing approved invoices, how would you prioritize, communicate trade-offs, and maintain accuracy?",
+      "competency": "Prioritization under pressure",
+      "competency_type": "other",
+      "target_gap": "Adaptability",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Tests the ability to adapt to changing priorities in a finance environment without weakening financial controls.",
+      "source_evidence": [
+        "Prepared cash flow forecasts for upcoming months.",
+        "Performed monthly bank account reconciliations."
+      ],
+      "priority": 0.89,
+      "weight": 0.9542
+    },
+    {
+      "question": "Describe a time you found an inconsistency, missing support, or potential error while reviewing an accounting document or transaction. How did you investigate it, resolve it, and prevent an unsupported payment?",
+      "competency": "Financial problem solving",
+      "competency_type": "soft",
+      "target_gap": "Problem solving",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "The candidate has transaction-review experience; this probes the reasoning and escalation behavior not explicitly evidenced in the profile.",
+      "source_evidence": [
+        "Reviewed accounting documents and transactions for supporting documentation.",
+        "Reviewed supplier and subcontractor invoices, bills and payment requests."
+      ],
+      "priority": 0.95,
+      "weight": 0.9282
+    },
+    {
+      "question": "The role is client-facing and requires swift, professional responses. How would you set expectations and keep a client informed when you cannot complete a requested analysis until you receive missing data?",
+      "competency": "Client communication",
+      "competency_type": "other",
+      "target_gap": "Interpersonal skills",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Tests interpersonal judgment and responsiveness, both important requirements with no direct match in the evidence.",
+      "source_evidence": [
+        "Managed correspondence between Kabul and Washington, DC.",
+        "Prepared weekly financial reports with supporting backups."
+      ],
+      "priority": 0.83,
+      "weight": 0.9475
+    },
+    {
+      "question": "Imagine you receive a new client\u2019s accounting policy, chart of accounts, and close calendar. How would you read, assimilate, and turn those materials into a checklist for your first month of work?",
+      "competency": "Policy assimilation",
+      "competency_type": "other",
+      "target_gap": "Reading and information assimilation",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Tests how the candidate would absorb client policies and procedures, a stated requirement with no direct match evidence.",
+      "source_evidence": [
+        "Organized data and maintained project records, documents and control plans.",
+        "Coded payments by account type using GL accounts."
+      ],
+      "priority": 0.88,
+      "weight": 0.9181
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 9108,
+    "output_tokens": 3502,
+    "cached_tokens": 0,
+    "estimated_cost": 0.06024,
+    "latency_ms": 28857.95,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.06024,
+  "cost_cny": 0.4078248,
+  "selection_latency_ms": 34.93,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:14:34.755853+00:00"
+}

@@ -1,0 +1,220 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S1",
+  "selection_strategy": "top_priority",
+  "generation_mode": null,
+  "profile_id": "rjf_03558_5a71f8cf9f12",
+  "jd_id": "rjf_03558_5a71f8cf9f12",
+  "pair_id": "rjf_03558_5a71f8cf9f12",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_03558_5a71f8cf9f12__rjf_03558_5a71f8cf9f12__mid.json",
+  "n_requirements": 42,
+  "questions": [
+    {
+      "question": "Design a Spring Boot service that receives a request, validates it, persists data, calls a downstream REST service, and returns a consistent error response. Which Spring components and testing approach would you use?"
+    },
+    {
+      "question": "How would you provision and operate an AWS RDS database for a production web service, including backups, high availability, connection management, schema migrations, security, and performance monitoring?"
+    },
+    {
+      "question": "Suppose a legacy Java application must be split into independently deployable services. How would you identify service boundaries, manage inter-service communication, and avoid distributed-data consistency problems?"
+    },
+    {
+      "question": "You have built applications on Microsoft Azure. How would you map that experience to deploying a Java web service on AWS, including the AWS services you would choose for compute, networking, secrets, logging, and monitoring?"
+    },
+    {
+      "question": "Describe a CI/CD pipeline you would expect for a Java or Node.js service, from pull request through automated testing, artifact creation, deployment, rollback, and production verification."
+    },
+    {
+      "question": "How would you configure Jenkins to build and test a service on every pull request, run quality checks, publish an artifact, and deploy only after appropriate approvals? What would you do if the pipeline becomes unreliable?"
+    },
+    {
+      "question": "Walk through a REST endpoint you have built or designed: how did you choose resource URLs, HTTP methods, validation rules, status codes, pagination, and an approach to API versioning?"
+    },
+    {
+      "question": "A product manager wants type-ahead search across millions of records with faceting and relevance ranking. Outline an Elasticsearch index, ingestion/update path, query strategy, and operational risks."
+    },
+    {
+      "question": "When would you introduce Redis into a web application, and how would you design cache keys, expiration, invalidation, and protection against stale or unavailable cache data?"
+    },
+    {
+      "question": "Design a DynamoDB table for an application that must retrieve a user's recent events, fetch a single event by ID, and support a time-bounded status query. Explain your keys, indexes, access patterns, and trade-offs."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Design a Spring Boot service that receives a request, validates it, persists data, calls a downstream REST service, and returns a consistent error response. Which Spring components and testing approach would you use?",
+      "competency": "Spring Boot",
+      "competency_type": "technical",
+      "target_gap": "Spring Boot",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Spring Boot is a high-weight missing required skill. The candidate's Java background provides a basis to assess readiness to use the framework.",
+      "source_evidence": [
+        "Java 8",
+        "Oracle Certified Associate, Java SE 8 Programmer"
+      ],
+      "priority": 0.98,
+      "weight": 0.9306
+    },
+    {
+      "question": "How would you provision and operate an AWS RDS database for a production web service, including backups, high availability, connection management, schema migrations, security, and performance monitoring?",
+      "competency": "AWS RDS",
+      "competency_type": "technical",
+      "target_gap": "AWS RDS",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "AWS RDS is a high-weight missing required skill. It is directly named in the role responsibilities and should be assessed explicitly.",
+      "source_evidence": [
+        "Microsoft Azure",
+        "Database design",
+        "MySQL"
+      ],
+      "priority": 0.98,
+      "weight": 0.9373
+    },
+    {
+      "question": "Suppose a legacy Java application must be split into independently deployable services. How would you identify service boundaries, manage inter-service communication, and avoid distributed-data consistency problems?",
+      "competency": "Microservices architecture",
+      "competency_type": "other",
+      "target_gap": "Microservices",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Microservices is missing and central to the role's scalable services requirement; this assesses architectural reasoning rather than claimed hands-on experience.",
+      "source_evidence": [
+        "Java 8",
+        "REST",
+        "MVC Architecture"
+      ],
+      "priority": 0.97,
+      "weight": 0.9205
+    },
+    {
+      "question": "You have built applications on Microsoft Azure. How would you map that experience to deploying a Java web service on AWS, including the AWS services you would choose for compute, networking, secrets, logging, and monitoring?",
+      "competency": "AWS platform design",
+      "competency_type": "technical",
+      "target_gap": "AWS",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "AWS is a required weak match, while the profile shows Azure rather than AWS. This tests transferable cloud architecture knowledge without assuming direct AWS production experience.",
+      "source_evidence": [
+        "Microsoft Azure",
+        "Java 8"
+      ],
+      "priority": 0.95,
+      "weight": 0.7335
+    },
+    {
+      "question": "Describe a CI/CD pipeline you would expect for a Java or Node.js service, from pull request through automated testing, artifact creation, deployment, rollback, and production verification.",
+      "competency": "Continuous integration",
+      "competency_type": "technical",
+      "target_gap": "Continuous integration",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Continuous integration is missing and the job explicitly requires testing and continuous deployment. This tests delivery-process readiness.",
+      "source_evidence": [
+        "Handled project activities from design through testing",
+        "Git"
+      ],
+      "priority": 0.95,
+      "weight": 0.9364
+    },
+    {
+      "question": "How would you configure Jenkins to build and test a service on every pull request, run quality checks, publish an artifact, and deploy only after appropriate approvals? What would you do if the pipeline becomes unreliable?",
+      "competency": "Jenkins",
+      "competency_type": "technical",
+      "target_gap": "Jenkins",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Jenkins is a missing required skill and is specifically named by the job. The question probes practical pipeline configuration and maintenance knowledge.",
+      "source_evidence": [
+        "Git",
+        "Handled project activities from design through testing"
+      ],
+      "priority": 0.93,
+      "weight": 0.929
+    },
+    {
+      "question": "Walk through a REST endpoint you have built or designed: how did you choose resource URLs, HTTP methods, validation rules, status codes, pagination, and an approach to API versioning?",
+      "competency": "Backend API design",
+      "competency_type": "technical",
+      "target_gap": "Backend REST APIs",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate lists REST and JSON, but the matrix rates backend REST API experience as weak. This distinguishes familiarity from robust backend API design experience.",
+      "source_evidence": [
+        "REST",
+        "JSON",
+        "C# server-side functionality"
+      ],
+      "priority": 0.9,
+      "weight": 0.6606
+    },
+    {
+      "question": "A product manager wants type-ahead search across millions of records with faceting and relevance ranking. Outline an Elasticsearch index, ingestion/update path, query strategy, and operational risks.",
+      "competency": "Elasticsearch",
+      "competency_type": "other",
+      "target_gap": "Elasticsearch",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Elasticsearch is missing and required. This scenario assesses whether the candidate understands search-system concepts needed in the role.",
+      "source_evidence": [
+        "Database design",
+        "Web development"
+      ],
+      "priority": 0.9,
+      "weight": 0.9203
+    },
+    {
+      "question": "When would you introduce Redis into a web application, and how would you design cache keys, expiration, invalidation, and protection against stale or unavailable cache data?",
+      "competency": "Redis caching",
+      "competency_type": "technical",
+      "target_gap": "Redis",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Redis is a high-weight missing requirement. The question evaluates core caching and resilience knowledge relevant to scalable services.",
+      "source_evidence": [
+        "Web development",
+        "Microsoft Azure"
+      ],
+      "priority": 0.9,
+      "weight": 0.9338
+    },
+    {
+      "question": "Design a DynamoDB table for an application that must retrieve a user's recent events, fetch a single event by ID, and support a time-bounded status query. Explain your keys, indexes, access patterns, and trade-offs.",
+      "competency": "Amazon DynamoDB",
+      "competency_type": "technical",
+      "target_gap": "Amazon DynamoDB",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "DynamoDB is a required weak match with no explicit AWS evidence. This assesses data-modeling reasoning for a core role technology.",
+      "source_evidence": [
+        "NoSQL",
+        "Database design"
+      ],
+      "priority": 0.88,
+      "weight": 0.7189
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    1,
+    22,
+    2,
+    0,
+    24,
+    25,
+    3,
+    9,
+    10,
+    23
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.02,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:48.730735+00:00"
+}

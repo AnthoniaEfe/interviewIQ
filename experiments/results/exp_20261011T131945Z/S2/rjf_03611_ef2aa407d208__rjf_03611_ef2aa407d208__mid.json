@@ -1,0 +1,230 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_03611_ef2aa407d208",
+  "jd_id": "rjf_03611_ef2aa407d208",
+  "pair_id": "rjf_03611_ef2aa407d208",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_03611_ef2aa407d208__rjf_03611_ef2aa407d208__mid.json",
+  "n_requirements": 16,
+  "questions": [
+    {
+      "question": "Walk through the architecture of one web-based application you worked on, from browser or client interaction through web services, application components, databases, batch jobs, and deployment. What was your own contribution?"
+    },
+    {
+      "question": "What attracts you to building a B2B SaaS product, and how would you distinguish the needs of business administrators, account-level users, and internal support teams when prioritizing a feature?"
+    },
+    {
+      "question": "You have worked on Jenkins, Maven, Git, Sonar, and application deployment. How would you design a CI/CD pipeline for a React and Node.js service that enforces quality gates, manages environments, supports rollback, and keeps releases fast?"
+    },
+    {
+      "question": "Describe a technical implementation you led from initial design through rollout. How did you divide work, manage risks and dependencies, make key decisions, and ensure delivery?"
+    },
+    {
+      "question": "Your resume shows Software Developer roles at Panjiva and Pearson both dated 10/2016-Current. Can you clarify the employment arrangement, your responsibilities in each engagement, and the scope and recency of your work?"
+    },
+    {
+      "question": "An enterprise web application starts timing out during a peak billing run. Describe how you would isolate whether the bottleneck is in the browser, API layer, application code, database, or downstream dependency, then prioritize fixes."
+    },
+    {
+      "question": "If you were starting a new self-service workflow for self-storage operators with only a problem statement and a small team, what would you build first, what assumptions would you test, and what technical foundations would you establish early?"
+    },
+    {
+      "question": "How would you evolve a legacy JSP/Servlet-based workflow into a modern React frontend with API-backed services while minimizing disruption to users and enabling incremental releases?"
+    },
+    {
+      "question": "Tell us about a component, module, or service you built with substantial ownership. How did you move from an initial problem to a working design, and what would you do differently if building it again?"
+    },
+    {
+      "question": "Before accepting a change to a shared database schema, what would you look for in the implementation plan and code review, and how would you give feedback if the proposed migration created operational risk?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk through the architecture of one web-based application you worked on, from browser or client interaction through web services, application components, databases, batch jobs, and deployment. What was your own contribution?",
+      "competency": "Web application architecture",
+      "competency_type": "technical",
+      "target_gap": "Web application development",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Web application development is a partial match; the candidate's listed web-based projects provide a concrete basis to validate end-to-end understanding and ownership.",
+      "source_evidence": [
+        "Test Data Management Project",
+        "Purchase & Order Management System",
+        "Web services",
+        "Spring Boot",
+        "Apache Tomcat"
+      ],
+      "priority": 0.84,
+      "weight": 0.3914
+    },
+    {
+      "question": "What attracts you to building a B2B SaaS product, and how would you distinguish the needs of business administrators, account-level users, and internal support teams when prioritizing a feature?",
+      "competency": "B2B SaaS product thinking",
+      "competency_type": "soft",
+      "target_gap": "B2B SaaS application development",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "B2B SaaS experience is a high-weight weak match; this assesses domain understanding and product mindset without assuming undocumented SaaS experience.",
+      "source_evidence": [
+        "B2B SaaS application development",
+        "Enterprise billing and order management applications",
+        "Test Data Management Project"
+      ],
+      "priority": 0.95,
+      "weight": 0.6909
+    },
+    {
+      "question": "You have worked on Jenkins, Maven, Git, Sonar, and application deployment. How would you design a CI/CD pipeline for a React and Node.js service that enforces quality gates, manages environments, supports rollback, and keeps releases fast?",
+      "competency": "Delivery engineering",
+      "competency_type": "technical",
+      "target_gap": "Product and software quality orientation",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "This is a strength-based probe that connects the candidate's documented CI experience to the role's expectation of strong engineering practices and quality delivery.",
+      "source_evidence": [
+        "Completed an end-to-end continuous integration pipeline using Jenkins, Maven, Git, and Sonar.",
+        "Worked on application deployment and Maven build configuration.",
+        "Jenkins",
+        "SonarQube",
+        "Git"
+      ],
+      "priority": 0.82,
+      "weight": 0.3854
+    },
+    {
+      "question": "Describe a technical implementation you led from initial design through rollout. How did you divide work, manage risks and dependencies, make key decisions, and ensure delivery?",
+      "competency": "Implementation leadership",
+      "competency_type": "soft",
+      "target_gap": "Technical implementation leadership",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Leading implementations is a core Lead Engineer requirement and is marked missing, so this validates whether relevant leadership experience exists beyond the written profile.",
+      "source_evidence": [
+        "Participated in design and documentation of an enhancement to a scheduled scenario module.",
+        "Technical implementation leadership"
+      ],
+      "priority": 0.99,
+      "weight": 0.9301
+    },
+    {
+      "question": "Your resume shows Software Developer roles at Panjiva and Pearson both dated 10/2016-Current. Can you clarify the employment arrangement, your responsibilities in each engagement, and the scope and recency of your work?",
+      "competency": "Experience chronology",
+      "competency_type": "domain",
+      "target_gap": "profile_probe",
+      "question_type": "Role-Specific",
+      "difficulty": "easy",
+      "rationale": "The overlapping current dates are ambiguous; clarification helps establish the candidate's employment timeline and level of ownership without making assumptions.",
+      "source_evidence": [
+        "Panjiva - Software Developer; Test Data Management Project; 10/2016-Current",
+        "Pearson - Software Developer; Billing Automation Project; 10/2016-Current"
+      ],
+      "priority": 0.63,
+      "weight": 0.61426875
+    },
+    {
+      "question": "An enterprise web application starts timing out during a peak billing run. Describe how you would isolate whether the bottleneck is in the browser, API layer, application code, database, or downstream dependency, then prioritize fixes.",
+      "competency": "Performance troubleshooting",
+      "competency_type": "other",
+      "target_gap": "Web application performance and scalability optimization",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Performance and scalability are only partially matched, while rapid troubleshooting and scalable enterprise design are central to the role.",
+      "source_evidence": [
+        "Billing Automation Project",
+        "Web services",
+        "Web application performance and scalability optimization"
+      ],
+      "priority": 0.92,
+      "weight": 0.3924
+    },
+    {
+      "question": "If you were starting a new self-service workflow for self-storage operators with only a problem statement and a small team, what would you build first, what assumptions would you test, and what technical foundations would you establish early?",
+      "competency": "Building from scratch",
+      "competency_type": "other",
+      "target_gap": "Passion for building from scratch",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "This assesses appetite for early-stage product delivery and intentional technical foundations, a stated role expectation.",
+      "source_evidence": [
+        "Passion for building from scratch",
+        "Self-storage industry",
+        "Web-based application"
+      ],
+      "priority": 0.86,
+      "weight": 0.7049
+    },
+    {
+      "question": "How would you evolve a legacy JSP/Servlet-based workflow into a modern React frontend with API-backed services while minimizing disruption to users and enabling incremental releases?",
+      "competency": "Web modernization",
+      "competency_type": "technical",
+      "target_gap": "Web application development",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "This combines the candidate's documented JSP and servlet background with the role's React-oriented web stack, testing migration judgment.",
+      "source_evidence": [
+        "Servlets",
+        "JSP",
+        "React",
+        "REST API"
+      ],
+      "priority": 0.9,
+      "weight": 0.3914
+    },
+    {
+      "question": "Tell us about a component, module, or service you built with substantial ownership. How did you move from an initial problem to a working design, and what would you do differently if building it again?",
+      "competency": "Greenfield ownership",
+      "competency_type": "soft",
+      "target_gap": "Passion for building from scratch",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "The candidate built payment, notification, and tracking modules; this explores ownership and enthusiasm for creating solutions, which is weakly matched in the matrix.",
+      "source_evidence": [
+        "Designed and developed a notification module using Spring, JavaMail, and JDBC Template.",
+        "Implemented a payment module using Java, Spring Batch, Spring Boot, JSON, and JSP.",
+        "Developed and implemented a tracking module using Python and JSON."
+      ],
+      "priority": 0.83,
+      "weight": 0.7049
+    },
+    {
+      "question": "Before accepting a change to a shared database schema, what would you look for in the implementation plan and code review, and how would you give feedback if the proposed migration created operational risk?",
+      "competency": "Code review and planning",
+      "competency_type": "other",
+      "target_gap": "Technical planning and code review",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Technical planning and code review are weakly matched; this evaluates concrete review standards using the candidate's database background.",
+      "source_evidence": [
+        "Developed stored procedures and triggers using MariaDB and Oracle.",
+        "Participated in design and documentation of an enhancement to a scheduled scenario module.",
+        "Technical planning and code review"
+      ],
+      "priority": 0.91,
+      "weight": 0.6896
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    25,
+    19,
+    28,
+    3,
+    29,
+    8,
+    22,
+    26,
+    21,
+    12
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.24,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:49.715415+00:00"
+}

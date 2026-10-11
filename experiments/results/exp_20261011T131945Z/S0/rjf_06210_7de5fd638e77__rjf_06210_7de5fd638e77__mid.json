@@ -1,0 +1,1123 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S0",
+  "selection_strategy": "random",
+  "generation_mode": null,
+  "profile_id": "rjf_06210_7de5fd638e77",
+  "jd_id": "rjf_06210_7de5fd638e77",
+  "pair_id": "rjf_06210_7de5fd638e77",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_06210_7de5fd638e77__rjf_06210_7de5fd638e77__mid.json",
+  "n_requirements": 8,
+  "questions": [
+    {
+      "question": "A Java service running on AWS starts timing out intermittently after traffic doubles. Describe the metrics, logs, traces, and AWS components you would inspect first, and how you would isolate the bottleneck."
+    },
+    {
+      "question": "Describe a time when a database or infrastructure constraint forced a change in an application design. How did you work with developers and stakeholders to reach a workable solution?"
+    },
+    {
+      "question": "Walk through how you would deploy a Java API to AWS from source control through production, including artifact management, environment configuration, secrets, rollback, and post-deployment verification."
+    },
+    {
+      "question": "Suppose the team needs to deliver a new customer-facing feature with a Java backend, web UI, SQL persistence, and AWS deployment in six weeks. How would you break down the work, sequence risks, and define a minimum viable release?"
+    },
+    {
+      "question": "Your background emphasizes infrastructure, databases, and enterprise architecture. Give a concrete example of software you personally designed or implemented, including the language, your code-level contribution, testing approach, and production outcome."
+    },
+    {
+      "question": "In Java, how would you diagnose and correct a service whose throughput drops because database calls are slow and its request threads become exhausted?"
+    },
+    {
+      "question": "Tell me about a delivery that required alignment among technical teams, business stakeholders, and an external vendor. What conflicts arose, what did you do, and what was the outcome?"
+    },
+    {
+      "question": "You have led teams and served as an acting supervisor. What motivates you to move into a lead software developer role, and how would you balance hands-on technical contribution with coaching engineers?"
+    },
+    {
+      "question": "What aspects of your work on accounts receivable and collection systems would transfer to a fintech product, and what domain knowledge would you need to build before making design decisions?"
+    },
+    {
+      "question": "You inherit a team split between a frontend group and a platform group, with recurring handoff failures. What operating model, interfaces, and metrics would you introduce to improve end-to-end accountability?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "A Java service running on AWS starts timing out intermittently after traffic doubles. Describe the metrics, logs, traces, and AWS components you would inspect first, and how you would isolate the bottleneck.",
+      "competency": "AWS performance troubleshooting",
+      "competency_type": "other",
+      "target_gap": "Amazon Web Services (AWS)",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests cloud operational depth for the role's reliability, efficiency, and scale expectations.",
+      "source_evidence": [
+        "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+        "Job responsibility: Ensure services run reliably and efficiently at scale.",
+        "Candidate experience: performance tuning and query analysis"
+      ],
+      "priority": 0.96,
+      "weight": 0.9433
+    },
+    {
+      "question": "Describe a time when a database or infrastructure constraint forced a change in an application design. How did you work with developers and stakeholders to reach a workable solution?",
+      "competency": "Application-infrastructure integration",
+      "competency_type": "soft",
+      "target_gap": "Full-stack software development",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Draws on the candidate's documented infrastructure and database architecture experience while probing collaboration with application delivery.",
+      "source_evidence": [
+        "Candidate experience: technical lead for infrastructure and database architecture for PASS and ARCS",
+        "Candidate experience: database performance tuning and query analysis",
+        "Gap matrix: Full-stack software development \u2014 weak_match"
+      ],
+      "priority": 0.84,
+      "weight": 0.6871
+    },
+    {
+      "question": "Walk through how you would deploy a Java API to AWS from source control through production, including artifact management, environment configuration, secrets, rollback, and post-deployment verification.",
+      "competency": "AWS delivery practices",
+      "competency_type": "technical",
+      "target_gap": "Amazon Web Services (AWS)",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Assesses whether the candidate can translate infrastructure and systems experience into practical cloud-based software delivery.",
+      "source_evidence": [
+        "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+        "Candidate experience: planned and managed upgrade, migration, and conversion projects"
+      ],
+      "priority": 0.97,
+      "weight": 0.9433
+    },
+    {
+      "question": "Suppose the team needs to deliver a new customer-facing feature with a Java backend, web UI, SQL persistence, and AWS deployment in six weeks. How would you break down the work, sequence risks, and define a minimum viable release?",
+      "competency": "Full-stack planning",
+      "competency_type": "other",
+      "target_gap": "Full-stack software development",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests ability to lead integrated delivery across the layers named in the role rather than only infrastructure work.",
+      "source_evidence": [
+        "Gap matrix: Full-stack software development \u2014 weak_match",
+        "Job responsibility: Lead the full stack team.",
+        "Candidate experience: managed multiple enterprise projects"
+      ],
+      "priority": 0.9,
+      "weight": 0.6871
+    },
+    {
+      "question": "Your background emphasizes infrastructure, databases, and enterprise architecture. Give a concrete example of software you personally designed or implemented, including the language, your code-level contribution, testing approach, and production outcome.",
+      "competency": "Software engineering depth",
+      "competency_type": "domain",
+      "target_gap": "Software engineering experience",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Clarifies the weak evidence for sustained hands-on software engineering versus systems and infrastructure leadership.",
+      "source_evidence": [
+        "Gap matrix: Software engineering experience \u2014 weak_match",
+        "Candidate evidence: Installed, configured, tested, and maintained database management software.",
+        "Candidate experience: analyzed, designed, developed, tested, and implemented ARCS automated processes"
+      ],
+      "priority": 0.91,
+      "weight": 0.6905
+    },
+    {
+      "question": "In Java, how would you diagnose and correct a service whose throughput drops because database calls are slow and its request threads become exhausted?",
+      "competency": "Java performance engineering",
+      "competency_type": "technical",
+      "target_gap": "Java",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Builds on the candidate's Java and database performance background while testing application-level performance engineering.",
+      "source_evidence": [
+        "Gap matrix: Java \u2014 strong_match",
+        "Candidate experience: performance tuning and query analysis",
+        "Job responsibility: ensure services run reliably and efficiently at scale."
+      ],
+      "priority": 0.84,
+      "weight": 0.1619
+    },
+    {
+      "question": "Tell me about a delivery that required alignment among technical teams, business stakeholders, and an external vendor. What conflicts arose, what did you do, and what was the outcome?",
+      "competency": "Cross-functional collaboration",
+      "competency_type": "soft",
+      "target_gap": "Cross-functional collaboration",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests the weakly matched collaboration requirement using the candidate's documented vendor and multi-team coordination experience.",
+      "source_evidence": [
+        "Gap matrix: Cross-functional collaboration \u2014 weak_match",
+        "Candidate experience: communicated with vendors and multiple teams to resolve technical issues and allocate resources",
+        "Candidate experience: managed reporting requirements for SDIO and CUBS"
+      ],
+      "priority": 0.9,
+      "weight": 0.7243
+    },
+    {
+      "question": "You have led teams and served as an acting supervisor. What motivates you to move into a lead software developer role, and how would you balance hands-on technical contribution with coaching engineers?",
+      "competency": "Leadership motivation",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Explores motivation and the candidate's intended leadership style during the transition from enterprise systems leadership to a software development lead role.",
+      "source_evidence": [
+        "Candidate achievement: served as acting supervisor",
+        "Candidate achievement: led and mentored multiple teams",
+        "Candidate professional summary: systems software specialist and lead architect"
+      ],
+      "priority": 0.7,
+      "weight": 0.6088
+    },
+    {
+      "question": "What aspects of your work on accounts receivable and collection systems would transfer to a fintech product, and what domain knowledge would you need to build before making design decisions?",
+      "competency": "Fintech domain transfer",
+      "competency_type": "domain",
+      "target_gap": "Fintech",
+      "question_type": "Role-Specific",
+      "difficulty": "medium",
+      "rationale": "Uses the candidate's adjacent collections experience to evaluate honest domain transfer and learning strategy.",
+      "source_evidence": [
+        "Gap matrix: Fintech \u2014 missing",
+        "Candidate experience: Accounts Receivable Collection System (ARCS)",
+        "Candidate experience: solutions for directives affecting collection systems"
+      ],
+      "priority": 0.93,
+      "weight": 0.9327
+    },
+    {
+      "question": "You inherit a team split between a frontend group and a platform group, with recurring handoff failures. What operating model, interfaces, and metrics would you introduce to improve end-to-end accountability?",
+      "competency": "Cross-functional team alignment",
+      "competency_type": "other",
+      "target_gap": "Cross-functional collaboration",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests a lead developer's ability to improve collaboration across full-stack delivery boundaries.",
+      "source_evidence": [
+        "Gap matrix: Cross-functional collaboration \u2014 weak_match",
+        "Job requirement: Lead the full stack team.",
+        "Candidate experience: led and mentored multiple teams"
+      ],
+      "priority": 0.86,
+      "weight": 0.7243
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    2,
+    17,
+    1,
+    15,
+    10,
+    24,
+    19,
+    29,
+    5,
+    22
+  ],
+  "repeats": [
+    {
+      "repeat": 0,
+      "selected_indices": [
+        2,
+        17,
+        1,
+        15,
+        10,
+        24,
+        19,
+        29,
+        5,
+        22
+      ],
+      "questions": [
+        {
+          "question": "A Java service running on AWS starts timing out intermittently after traffic doubles. Describe the metrics, logs, traces, and AWS components you would inspect first, and how you would isolate the bottleneck.",
+          "competency": "AWS performance troubleshooting",
+          "competency_type": "other",
+          "target_gap": "Amazon Web Services (AWS)",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests cloud operational depth for the role's reliability, efficiency, and scale expectations.",
+          "source_evidence": [
+            "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+            "Job responsibility: Ensure services run reliably and efficiently at scale.",
+            "Candidate experience: performance tuning and query analysis"
+          ],
+          "priority": 0.96,
+          "weight": 0.9433
+        },
+        {
+          "question": "Describe a time when a database or infrastructure constraint forced a change in an application design. How did you work with developers and stakeholders to reach a workable solution?",
+          "competency": "Application-infrastructure integration",
+          "competency_type": "soft",
+          "target_gap": "Full-stack software development",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Draws on the candidate's documented infrastructure and database architecture experience while probing collaboration with application delivery.",
+          "source_evidence": [
+            "Candidate experience: technical lead for infrastructure and database architecture for PASS and ARCS",
+            "Candidate experience: database performance tuning and query analysis",
+            "Gap matrix: Full-stack software development \u2014 weak_match"
+          ],
+          "priority": 0.84,
+          "weight": 0.6871
+        },
+        {
+          "question": "Walk through how you would deploy a Java API to AWS from source control through production, including artifact management, environment configuration, secrets, rollback, and post-deployment verification.",
+          "competency": "AWS delivery practices",
+          "competency_type": "technical",
+          "target_gap": "Amazon Web Services (AWS)",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Assesses whether the candidate can translate infrastructure and systems experience into practical cloud-based software delivery.",
+          "source_evidence": [
+            "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+            "Candidate experience: planned and managed upgrade, migration, and conversion projects"
+          ],
+          "priority": 0.97,
+          "weight": 0.9433
+        },
+        {
+          "question": "Suppose the team needs to deliver a new customer-facing feature with a Java backend, web UI, SQL persistence, and AWS deployment in six weeks. How would you break down the work, sequence risks, and define a minimum viable release?",
+          "competency": "Full-stack planning",
+          "competency_type": "other",
+          "target_gap": "Full-stack software development",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests ability to lead integrated delivery across the layers named in the role rather than only infrastructure work.",
+          "source_evidence": [
+            "Gap matrix: Full-stack software development \u2014 weak_match",
+            "Job responsibility: Lead the full stack team.",
+            "Candidate experience: managed multiple enterprise projects"
+          ],
+          "priority": 0.9,
+          "weight": 0.6871
+        },
+        {
+          "question": "Your background emphasizes infrastructure, databases, and enterprise architecture. Give a concrete example of software you personally designed or implemented, including the language, your code-level contribution, testing approach, and production outcome.",
+          "competency": "Software engineering depth",
+          "competency_type": "domain",
+          "target_gap": "Software engineering experience",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Clarifies the weak evidence for sustained hands-on software engineering versus systems and infrastructure leadership.",
+          "source_evidence": [
+            "Gap matrix: Software engineering experience \u2014 weak_match",
+            "Candidate evidence: Installed, configured, tested, and maintained database management software.",
+            "Candidate experience: analyzed, designed, developed, tested, and implemented ARCS automated processes"
+          ],
+          "priority": 0.91,
+          "weight": 0.6905
+        },
+        {
+          "question": "In Java, how would you diagnose and correct a service whose throughput drops because database calls are slow and its request threads become exhausted?",
+          "competency": "Java performance engineering",
+          "competency_type": "technical",
+          "target_gap": "Java",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Builds on the candidate's Java and database performance background while testing application-level performance engineering.",
+          "source_evidence": [
+            "Gap matrix: Java \u2014 strong_match",
+            "Candidate experience: performance tuning and query analysis",
+            "Job responsibility: ensure services run reliably and efficiently at scale."
+          ],
+          "priority": 0.84,
+          "weight": 0.1619
+        },
+        {
+          "question": "Tell me about a delivery that required alignment among technical teams, business stakeholders, and an external vendor. What conflicts arose, what did you do, and what was the outcome?",
+          "competency": "Cross-functional collaboration",
+          "competency_type": "soft",
+          "target_gap": "Cross-functional collaboration",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests the weakly matched collaboration requirement using the candidate's documented vendor and multi-team coordination experience.",
+          "source_evidence": [
+            "Gap matrix: Cross-functional collaboration \u2014 weak_match",
+            "Candidate experience: communicated with vendors and multiple teams to resolve technical issues and allocate resources",
+            "Candidate experience: managed reporting requirements for SDIO and CUBS"
+          ],
+          "priority": 0.9,
+          "weight": 0.7243
+        },
+        {
+          "question": "You have led teams and served as an acting supervisor. What motivates you to move into a lead software developer role, and how would you balance hands-on technical contribution with coaching engineers?",
+          "competency": "Leadership motivation",
+          "competency_type": "soft",
+          "target_gap": "profile_probe",
+          "question_type": "Cultural/Motivational",
+          "difficulty": "mid",
+          "rationale": "Explores motivation and the candidate's intended leadership style during the transition from enterprise systems leadership to a software development lead role.",
+          "source_evidence": [
+            "Candidate achievement: served as acting supervisor",
+            "Candidate achievement: led and mentored multiple teams",
+            "Candidate professional summary: systems software specialist and lead architect"
+          ],
+          "priority": 0.7,
+          "weight": 0.6088
+        },
+        {
+          "question": "What aspects of your work on accounts receivable and collection systems would transfer to a fintech product, and what domain knowledge would you need to build before making design decisions?",
+          "competency": "Fintech domain transfer",
+          "competency_type": "domain",
+          "target_gap": "Fintech",
+          "question_type": "Role-Specific",
+          "difficulty": "medium",
+          "rationale": "Uses the candidate's adjacent collections experience to evaluate honest domain transfer and learning strategy.",
+          "source_evidence": [
+            "Gap matrix: Fintech \u2014 missing",
+            "Candidate experience: Accounts Receivable Collection System (ARCS)",
+            "Candidate experience: solutions for directives affecting collection systems"
+          ],
+          "priority": 0.93,
+          "weight": 0.9327
+        },
+        {
+          "question": "You inherit a team split between a frontend group and a platform group, with recurring handoff failures. What operating model, interfaces, and metrics would you introduce to improve end-to-end accountability?",
+          "competency": "Cross-functional team alignment",
+          "competency_type": "other",
+          "target_gap": "Cross-functional collaboration",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests a lead developer's ability to improve collaboration across full-stack delivery boundaries.",
+          "source_evidence": [
+            "Gap matrix: Cross-functional collaboration \u2014 weak_match",
+            "Job requirement: Lead the full stack team.",
+            "Candidate experience: led and mentored multiple teams"
+          ],
+          "priority": 0.86,
+          "weight": 0.7243
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 1,
+      "selected_indices": [
+        10,
+        23,
+        1,
+        24,
+        14,
+        13,
+        0,
+        7,
+        9,
+        17
+      ],
+      "questions": [
+        {
+          "question": "Your background emphasizes infrastructure, databases, and enterprise architecture. Give a concrete example of software you personally designed or implemented, including the language, your code-level contribution, testing approach, and production outcome.",
+          "competency": "Software engineering depth",
+          "competency_type": "domain",
+          "target_gap": "Software engineering experience",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Clarifies the weak evidence for sustained hands-on software engineering versus systems and infrastructure leadership.",
+          "source_evidence": [
+            "Gap matrix: Software engineering experience \u2014 weak_match",
+            "Candidate evidence: Installed, configured, tested, and maintained database management software.",
+            "Candidate experience: analyzed, designed, developed, tested, and implemented ARCS automated processes"
+          ],
+          "priority": 0.91,
+          "weight": 0.6905
+        },
+        {
+          "question": "What is your current level of hands-on Java development, and describe the most recent Java component you wrote or materially modified, including its tests and how it was deployed?",
+          "competency": "Java development",
+          "competency_type": "technical",
+          "target_gap": "Java",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Validates the strong Java match and establishes recency and depth relevant to a lead developer position.",
+          "source_evidence": [
+            "Gap matrix: Java \u2014 strong_match",
+            "Candidate skill: Java",
+            "Job requirement: Experience with Java, AWS, SQL."
+          ],
+          "priority": 0.82,
+          "weight": 0.1619
+        },
+        {
+          "question": "Walk through how you would deploy a Java API to AWS from source control through production, including artifact management, environment configuration, secrets, rollback, and post-deployment verification.",
+          "competency": "AWS delivery practices",
+          "competency_type": "technical",
+          "target_gap": "Amazon Web Services (AWS)",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Assesses whether the candidate can translate infrastructure and systems experience into practical cloud-based software delivery.",
+          "source_evidence": [
+            "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+            "Candidate experience: planned and managed upgrade, migration, and conversion projects"
+          ],
+          "priority": 0.97,
+          "weight": 0.9433
+        },
+        {
+          "question": "In Java, how would you diagnose and correct a service whose throughput drops because database calls are slow and its request threads become exhausted?",
+          "competency": "Java performance engineering",
+          "competency_type": "technical",
+          "target_gap": "Java",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Builds on the candidate's Java and database performance background while testing application-level performance engineering.",
+          "source_evidence": [
+            "Gap matrix: Java \u2014 strong_match",
+            "Candidate experience: performance tuning and query analysis",
+            "Job responsibility: ensure services run reliably and efficiently at scale."
+          ],
+          "priority": 0.84,
+          "weight": 0.1619
+        },
+        {
+          "question": "Which parts of the full stack have you personally delivered\u2014frontend, APIs, backend services, data layer, deployment, and observability\u2014and where have you primarily led or supported others?",
+          "competency": "Full-stack delivery scope",
+          "competency_type": "domain",
+          "target_gap": "Full-stack software development",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Directly distinguishes hands-on full-stack breadth from the profile's stronger infrastructure and database background.",
+          "source_evidence": [
+            "Gap matrix: Full-stack software development \u2014 weak_match",
+            "Candidate evidence: Installed, configured, tested, and maintained database management software.",
+            "Candidate skills: JavaScript, HTML, Java, C#/.NET"
+          ],
+          "priority": 0.91,
+          "weight": 0.6871
+        },
+        {
+          "question": "What engineering practices would you put in place to ensure that a team can safely maintain a Java service over several years as requirements and team membership change?",
+          "competency": "Maintainable software",
+          "competency_type": "technical",
+          "target_gap": "Software engineering experience",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Evaluates practical judgment on code quality, test strategy, documentation, reviews, and operational ownership.",
+          "source_evidence": [
+            "Gap matrix: Software engineering experience \u2014 weak_match",
+            "Job responsibility: develop, test, and maintain software applications and systems"
+          ],
+          "priority": 0.87,
+          "weight": 0.6905
+        },
+        {
+          "question": "The role requires AWS, which is not reflected in your profile. How would you design and operate a Java service on AWS that must remain available during an Availability Zone failure?",
+          "competency": "AWS architecture",
+          "competency_type": "technical",
+          "target_gap": "Amazon Web Services (AWS)",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Directly tests the highest-priority missing requirement through a production resilience scenario relevant to a lead developer role.",
+          "source_evidence": [
+            "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+            "Job requirement: Experience with Java, AWS, SQL."
+          ],
+          "priority": 0.99,
+          "weight": 0.9433
+        },
+        {
+          "question": "You join a team with established payment and compliance rules that you have not previously worked with. How would you rapidly learn the domain while avoiding risky assumptions in early technical decisions?",
+          "competency": "Domain onboarding",
+          "competency_type": "soft",
+          "target_gap": "Fintech",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Evaluates the candidate's approach to closing a material domain gap in a safety-conscious manner.",
+          "source_evidence": [
+            "Gap matrix: Fintech \u2014 missing",
+            "Candidate experience: led and mentored multiple teams",
+            "Job requires strong Fintech background"
+          ],
+          "priority": 0.89,
+          "weight": 0.9327
+        },
+        {
+          "question": "How would you design reconciliation between an internal payments ledger and an external processor when events may arrive late, be duplicated, or fail partway through processing?",
+          "competency": "Payments reconciliation",
+          "competency_type": "technical",
+          "target_gap": "Payments",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests understanding of a key payments engineering concern where the profile contains no direct evidence.",
+          "source_evidence": [
+            "Gap matrix: Payments \u2014 missing",
+            "Job preference: Payments experience is a plus"
+          ],
+          "priority": 0.75,
+          "weight": 0.5614
+        },
+        {
+          "question": "Describe a time when a database or infrastructure constraint forced a change in an application design. How did you work with developers and stakeholders to reach a workable solution?",
+          "competency": "Application-infrastructure integration",
+          "competency_type": "soft",
+          "target_gap": "Full-stack software development",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Draws on the candidate's documented infrastructure and database architecture experience while probing collaboration with application delivery.",
+          "source_evidence": [
+            "Candidate experience: technical lead for infrastructure and database architecture for PASS and ARCS",
+            "Candidate experience: database performance tuning and query analysis",
+            "Gap matrix: Full-stack software development \u2014 weak_match"
+          ],
+          "priority": 0.84,
+          "weight": 0.6871
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 2,
+      "selected_indices": [
+        10,
+        6,
+        18,
+        16,
+        26,
+        15,
+        2,
+        14,
+        27,
+        4
+      ],
+      "questions": [
+        {
+          "question": "Your background emphasizes infrastructure, databases, and enterprise architecture. Give a concrete example of software you personally designed or implemented, including the language, your code-level contribution, testing approach, and production outcome.",
+          "competency": "Software engineering depth",
+          "competency_type": "domain",
+          "target_gap": "Software engineering experience",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Clarifies the weak evidence for sustained hands-on software engineering versus systems and infrastructure leadership.",
+          "source_evidence": [
+            "Gap matrix: Software engineering experience \u2014 weak_match",
+            "Candidate evidence: Installed, configured, tested, and maintained database management software.",
+            "Candidate experience: analyzed, designed, developed, tested, and implemented ARCS automated processes"
+          ],
+          "priority": 0.91,
+          "weight": 0.6905
+        },
+        {
+          "question": "Describe how you would model a money-movement workflow so that retries cannot create duplicate transactions and every state change is auditable.",
+          "competency": "Financial transaction integrity",
+          "competency_type": "technical",
+          "target_gap": "Fintech",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests core fintech engineering concepts\u2014idempotency, state management, and auditability\u2014without presuming direct payments experience.",
+          "source_evidence": [
+            "Gap matrix: Fintech \u2014 missing",
+            "Job requires a strong Fintech background"
+          ],
+          "priority": 0.92,
+          "weight": 0.9327
+        },
+        {
+          "question": "When leading a full-stack team, how would you set expectations for code review, automated testing, incident ownership, and technical debt so that delivery speed does not compromise reliability?",
+          "competency": "Full-stack technical leadership",
+          "competency_type": "domain",
+          "target_gap": "Full-stack software development",
+          "question_type": "Role-Specific",
+          "difficulty": "hard",
+          "rationale": "Evaluates whether the candidate can translate existing team-lead experience into software-engineering operating practices.",
+          "source_evidence": [
+            "Gap matrix: Full-stack software development \u2014 weak_match",
+            "Candidate experience: led and mentored multiple teams",
+            "Job responsibility: Lead the full stack team."
+          ],
+          "priority": 0.89,
+          "weight": 0.6871
+        },
+        {
+          "question": "How would you decide whether validation, authorization checks, and business rules belong in the client, the Java API, or both for a customer-facing financial workflow?",
+          "competency": "Full-stack boundary design",
+          "competency_type": "technical",
+          "target_gap": "Full-stack software development",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Assesses cross-layer design judgment and security awareness needed to lead a full-stack team.",
+          "source_evidence": [
+            "Gap matrix: Full-stack software development \u2014 weak_match",
+            "Job responsibility: meet security requirements.",
+            "Candidate skills: Java, JavaScript, HTML"
+          ],
+          "priority": 0.88,
+          "weight": 0.6871
+        },
+        {
+          "question": "Describe a SQL performance issue you investigated. What did you observe, which query or database changes did you make, and how did you validate the improvement without introducing regression risk?",
+          "competency": "SQL performance tuning",
+          "competency_type": "technical",
+          "target_gap": "SQL",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Validates a strong SQL match with evidence of practical query analysis and performance tuning.",
+          "source_evidence": [
+            "Gap matrix: SQL \u2014 strong_match",
+            "Candidate experience: provided technical assistance in performance tuning and query analysis",
+            "Candidate technologies: SQL Server, Oracle, Sybase"
+          ],
+          "priority": 0.82,
+          "weight": 0.1692
+        },
+        {
+          "question": "Suppose the team needs to deliver a new customer-facing feature with a Java backend, web UI, SQL persistence, and AWS deployment in six weeks. How would you break down the work, sequence risks, and define a minimum viable release?",
+          "competency": "Full-stack planning",
+          "competency_type": "other",
+          "target_gap": "Full-stack software development",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests ability to lead integrated delivery across the layers named in the role rather than only infrastructure work.",
+          "source_evidence": [
+            "Gap matrix: Full-stack software development \u2014 weak_match",
+            "Job responsibility: Lead the full stack team.",
+            "Candidate experience: managed multiple enterprise projects"
+          ],
+          "priority": 0.9,
+          "weight": 0.6871
+        },
+        {
+          "question": "A Java service running on AWS starts timing out intermittently after traffic doubles. Describe the metrics, logs, traces, and AWS components you would inspect first, and how you would isolate the bottleneck.",
+          "competency": "AWS performance troubleshooting",
+          "competency_type": "other",
+          "target_gap": "Amazon Web Services (AWS)",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests cloud operational depth for the role's reliability, efficiency, and scale expectations.",
+          "source_evidence": [
+            "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+            "Job responsibility: Ensure services run reliably and efficiently at scale.",
+            "Candidate experience: performance tuning and query analysis"
+          ],
+          "priority": 0.96,
+          "weight": 0.9433
+        },
+        {
+          "question": "Which parts of the full stack have you personally delivered\u2014frontend, APIs, backend services, data layer, deployment, and observability\u2014and where have you primarily led or supported others?",
+          "competency": "Full-stack delivery scope",
+          "competency_type": "domain",
+          "target_gap": "Full-stack software development",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Directly distinguishes hands-on full-stack breadth from the profile's stronger infrastructure and database background.",
+          "source_evidence": [
+            "Gap matrix: Full-stack software development \u2014 weak_match",
+            "Candidate evidence: Installed, configured, tested, and maintained database management software.",
+            "Candidate skills: JavaScript, HTML, Java, C#/.NET"
+          ],
+          "priority": 0.91,
+          "weight": 0.6871
+        },
+        {
+          "question": "For a high-volume Java service backed by SQL, how would you choose indexes, transaction boundaries, connection-pool settings, and query patterns to preserve correctness and performance at scale?",
+          "competency": "SQL service design",
+          "competency_type": "technical",
+          "target_gap": "SQL",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Assesses ability to apply database expertise to the role's scalable service requirements.",
+          "source_evidence": [
+            "Gap matrix: SQL \u2014 strong_match",
+            "Candidate experience: database architecture and SQL clustering",
+            "Job responsibility: ensure services run reliably and efficiently at scale."
+          ],
+          "priority": 0.84,
+          "weight": 0.1692
+        },
+        {
+          "question": "For a new payment-related API handling sensitive financial data, how would you define the security controls around authentication, authorization, encryption, secrets, audit logging, and data retention before development begins?",
+          "competency": "Fintech security",
+          "competency_type": "other",
+          "target_gap": "Fintech",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Probes readiness for a fintech environment where security and regulated data handling are central, despite no explicit fintech background.",
+          "source_evidence": [
+            "Gap matrix: Fintech \u2014 missing",
+            "Job responsibility: meet security, scalability, and performance requirements."
+          ],
+          "priority": 0.95,
+          "weight": 0.9327
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 3,
+      "selected_indices": [
+        19,
+        26,
+        23,
+        12,
+        16,
+        28,
+        25,
+        15,
+        22,
+        13
+      ],
+      "questions": [
+        {
+          "question": "Tell me about a delivery that required alignment among technical teams, business stakeholders, and an external vendor. What conflicts arose, what did you do, and what was the outcome?",
+          "competency": "Cross-functional collaboration",
+          "competency_type": "soft",
+          "target_gap": "Cross-functional collaboration",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests the weakly matched collaboration requirement using the candidate's documented vendor and multi-team coordination experience.",
+          "source_evidence": [
+            "Gap matrix: Cross-functional collaboration \u2014 weak_match",
+            "Candidate experience: communicated with vendors and multiple teams to resolve technical issues and allocate resources",
+            "Candidate experience: managed reporting requirements for SDIO and CUBS"
+          ],
+          "priority": 0.9,
+          "weight": 0.7243
+        },
+        {
+          "question": "Describe a SQL performance issue you investigated. What did you observe, which query or database changes did you make, and how did you validate the improvement without introducing regression risk?",
+          "competency": "SQL performance tuning",
+          "competency_type": "technical",
+          "target_gap": "SQL",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Validates a strong SQL match with evidence of practical query analysis and performance tuning.",
+          "source_evidence": [
+            "Gap matrix: SQL \u2014 strong_match",
+            "Candidate experience: provided technical assistance in performance tuning and query analysis",
+            "Candidate technologies: SQL Server, Oracle, Sybase"
+          ],
+          "priority": 0.82,
+          "weight": 0.1692
+        },
+        {
+          "question": "What is your current level of hands-on Java development, and describe the most recent Java component you wrote or materially modified, including its tests and how it was deployed?",
+          "competency": "Java development",
+          "competency_type": "technical",
+          "target_gap": "Java",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Validates the strong Java match and establishes recency and depth relevant to a lead developer position.",
+          "source_evidence": [
+            "Gap matrix: Java \u2014 strong_match",
+            "Candidate skill: Java",
+            "Job requirement: Experience with Java, AWS, SQL."
+          ],
+          "priority": 0.82,
+          "weight": 0.1619
+        },
+        {
+          "question": "Describe a difficult defect you found in an ARCS automated or batch process. How did you reproduce it, determine root cause, test the fix, and ensure it did not recur?",
+          "competency": "Software debugging",
+          "competency_type": "soft",
+          "target_gap": "Software engineering experience",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Uses a documented development and batch-processing context to elicit evidence of engineering problem solving.",
+          "source_evidence": [
+            "Candidate experience: developed and implemented ARCS automated processes",
+            "Candidate experience: performed unit, integration, and performance testing of batch processes",
+            "Gap matrix: Software engineering experience \u2014 weak_match"
+          ],
+          "priority": 0.87,
+          "weight": 0.6905
+        },
+        {
+          "question": "How would you decide whether validation, authorization checks, and business rules belong in the client, the Java API, or both for a customer-facing financial workflow?",
+          "competency": "Full-stack boundary design",
+          "competency_type": "technical",
+          "target_gap": "Full-stack software development",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Assesses cross-layer design judgment and security awareness needed to lead a full-stack team.",
+          "source_evidence": [
+            "Gap matrix: Full-stack software development \u2014 weak_match",
+            "Job responsibility: meet security requirements.",
+            "Candidate skills: Java, JavaScript, HTML"
+          ],
+          "priority": 0.88,
+          "weight": 0.6871
+        },
+        {
+          "question": "Your profile describes leading a hardware and software refresh for a Business Intelligence Competency Center. What was the most consequential architectural decision, how did you evaluate options, and what measurable result followed?",
+          "competency": "Architecture leadership",
+          "competency_type": "soft",
+          "target_gap": "profile_probe",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Elicits concrete evidence from a prominent candidate-specific leadership and architecture achievement.",
+          "source_evidence": [
+            "Candidate experience: managed BICC hardware and software refresh projects",
+            "Candidate achievement: technical lead for enterprise-wide data warehouse infrastructure"
+          ],
+          "priority": 0.72,
+          "weight": 0.6088
+        },
+        {
+          "question": "Describe how you would test a Java service that processes financial events, including unit, integration, contract, performance, and failure-mode tests.",
+          "competency": "Java testing strategy",
+          "competency_type": "technical",
+          "target_gap": "Java",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests whether the candidate can apply documented testing experience to a modern, high-reliability Java service.",
+          "source_evidence": [
+            "Gap matrix: Java \u2014 strong_match",
+            "Candidate experience: performed unit, integration, and performance testing",
+            "Job responsibility: develop, test, and maintain software applications"
+          ],
+          "priority": 0.81,
+          "weight": 0.1619
+        },
+        {
+          "question": "Suppose the team needs to deliver a new customer-facing feature with a Java backend, web UI, SQL persistence, and AWS deployment in six weeks. How would you break down the work, sequence risks, and define a minimum viable release?",
+          "competency": "Full-stack planning",
+          "competency_type": "other",
+          "target_gap": "Full-stack software development",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests ability to lead integrated delivery across the layers named in the role rather than only infrastructure work.",
+          "source_evidence": [
+            "Gap matrix: Full-stack software development \u2014 weak_match",
+            "Job responsibility: Lead the full stack team.",
+            "Candidate experience: managed multiple enterprise projects"
+          ],
+          "priority": 0.9,
+          "weight": 0.6871
+        },
+        {
+          "question": "You inherit a team split between a frontend group and a platform group, with recurring handoff failures. What operating model, interfaces, and metrics would you introduce to improve end-to-end accountability?",
+          "competency": "Cross-functional team alignment",
+          "competency_type": "other",
+          "target_gap": "Cross-functional collaboration",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests a lead developer's ability to improve collaboration across full-stack delivery boundaries.",
+          "source_evidence": [
+            "Gap matrix: Cross-functional collaboration \u2014 weak_match",
+            "Job requirement: Lead the full stack team.",
+            "Candidate experience: led and mentored multiple teams"
+          ],
+          "priority": 0.86,
+          "weight": 0.7243
+        },
+        {
+          "question": "What engineering practices would you put in place to ensure that a team can safely maintain a Java service over several years as requirements and team membership change?",
+          "competency": "Maintainable software",
+          "competency_type": "technical",
+          "target_gap": "Software engineering experience",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Evaluates practical judgment on code quality, test strategy, documentation, reviews, and operational ownership.",
+          "source_evidence": [
+            "Gap matrix: Software engineering experience \u2014 weak_match",
+            "Job responsibility: develop, test, and maintain software applications and systems"
+          ],
+          "priority": 0.87,
+          "weight": 0.6905
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 4,
+      "selected_indices": [
+        5,
+        7,
+        19,
+        28,
+        1,
+        17,
+        13,
+        6,
+        10,
+        3
+      ],
+      "questions": [
+        {
+          "question": "What aspects of your work on accounts receivable and collection systems would transfer to a fintech product, and what domain knowledge would you need to build before making design decisions?",
+          "competency": "Fintech domain transfer",
+          "competency_type": "domain",
+          "target_gap": "Fintech",
+          "question_type": "Role-Specific",
+          "difficulty": "medium",
+          "rationale": "Uses the candidate's adjacent collections experience to evaluate honest domain transfer and learning strategy.",
+          "source_evidence": [
+            "Gap matrix: Fintech \u2014 missing",
+            "Candidate experience: Accounts Receivable Collection System (ARCS)",
+            "Candidate experience: solutions for directives affecting collection systems"
+          ],
+          "priority": 0.93,
+          "weight": 0.9327
+        },
+        {
+          "question": "You join a team with established payment and compliance rules that you have not previously worked with. How would you rapidly learn the domain while avoiding risky assumptions in early technical decisions?",
+          "competency": "Domain onboarding",
+          "competency_type": "soft",
+          "target_gap": "Fintech",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Evaluates the candidate's approach to closing a material domain gap in a safety-conscious manner.",
+          "source_evidence": [
+            "Gap matrix: Fintech \u2014 missing",
+            "Candidate experience: led and mentored multiple teams",
+            "Job requires strong Fintech background"
+          ],
+          "priority": 0.89,
+          "weight": 0.9327
+        },
+        {
+          "question": "Tell me about a delivery that required alignment among technical teams, business stakeholders, and an external vendor. What conflicts arose, what did you do, and what was the outcome?",
+          "competency": "Cross-functional collaboration",
+          "competency_type": "soft",
+          "target_gap": "Cross-functional collaboration",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests the weakly matched collaboration requirement using the candidate's documented vendor and multi-team coordination experience.",
+          "source_evidence": [
+            "Gap matrix: Cross-functional collaboration \u2014 weak_match",
+            "Candidate experience: communicated with vendors and multiple teams to resolve technical issues and allocate resources",
+            "Candidate experience: managed reporting requirements for SDIO and CUBS"
+          ],
+          "priority": 0.9,
+          "weight": 0.7243
+        },
+        {
+          "question": "Your profile describes leading a hardware and software refresh for a Business Intelligence Competency Center. What was the most consequential architectural decision, how did you evaluate options, and what measurable result followed?",
+          "competency": "Architecture leadership",
+          "competency_type": "soft",
+          "target_gap": "profile_probe",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Elicits concrete evidence from a prominent candidate-specific leadership and architecture achievement.",
+          "source_evidence": [
+            "Candidate experience: managed BICC hardware and software refresh projects",
+            "Candidate achievement: technical lead for enterprise-wide data warehouse infrastructure"
+          ],
+          "priority": 0.72,
+          "weight": 0.6088
+        },
+        {
+          "question": "Walk through how you would deploy a Java API to AWS from source control through production, including artifact management, environment configuration, secrets, rollback, and post-deployment verification.",
+          "competency": "AWS delivery practices",
+          "competency_type": "technical",
+          "target_gap": "Amazon Web Services (AWS)",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Assesses whether the candidate can translate infrastructure and systems experience into practical cloud-based software delivery.",
+          "source_evidence": [
+            "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+            "Candidate experience: planned and managed upgrade, migration, and conversion projects"
+          ],
+          "priority": 0.97,
+          "weight": 0.9433
+        },
+        {
+          "question": "Describe a time when a database or infrastructure constraint forced a change in an application design. How did you work with developers and stakeholders to reach a workable solution?",
+          "competency": "Application-infrastructure integration",
+          "competency_type": "soft",
+          "target_gap": "Full-stack software development",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Draws on the candidate's documented infrastructure and database architecture experience while probing collaboration with application delivery.",
+          "source_evidence": [
+            "Candidate experience: technical lead for infrastructure and database architecture for PASS and ARCS",
+            "Candidate experience: database performance tuning and query analysis",
+            "Gap matrix: Full-stack software development \u2014 weak_match"
+          ],
+          "priority": 0.84,
+          "weight": 0.6871
+        },
+        {
+          "question": "What engineering practices would you put in place to ensure that a team can safely maintain a Java service over several years as requirements and team membership change?",
+          "competency": "Maintainable software",
+          "competency_type": "technical",
+          "target_gap": "Software engineering experience",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Evaluates practical judgment on code quality, test strategy, documentation, reviews, and operational ownership.",
+          "source_evidence": [
+            "Gap matrix: Software engineering experience \u2014 weak_match",
+            "Job responsibility: develop, test, and maintain software applications and systems"
+          ],
+          "priority": 0.87,
+          "weight": 0.6905
+        },
+        {
+          "question": "Describe how you would model a money-movement workflow so that retries cannot create duplicate transactions and every state change is auditable.",
+          "competency": "Financial transaction integrity",
+          "competency_type": "technical",
+          "target_gap": "Fintech",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests core fintech engineering concepts\u2014idempotency, state management, and auditability\u2014without presuming direct payments experience.",
+          "source_evidence": [
+            "Gap matrix: Fintech \u2014 missing",
+            "Job requires a strong Fintech background"
+          ],
+          "priority": 0.92,
+          "weight": 0.9327
+        },
+        {
+          "question": "Your background emphasizes infrastructure, databases, and enterprise architecture. Give a concrete example of software you personally designed or implemented, including the language, your code-level contribution, testing approach, and production outcome.",
+          "competency": "Software engineering depth",
+          "competency_type": "domain",
+          "target_gap": "Software engineering experience",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Clarifies the weak evidence for sustained hands-on software engineering versus systems and infrastructure leadership.",
+          "source_evidence": [
+            "Gap matrix: Software engineering experience \u2014 weak_match",
+            "Candidate evidence: Installed, configured, tested, and maintained database management software.",
+            "Candidate experience: analyzed, designed, developed, tested, and implemented ARCS automated processes"
+          ],
+          "priority": 0.91,
+          "weight": 0.6905
+        },
+        {
+          "question": "What is your hands-on AWS experience, if any, and which services have you used to build, deploy, secure, or monitor applications? Please distinguish direct implementation from architectural oversight.",
+          "competency": "AWS hands-on experience",
+          "competency_type": "domain",
+          "target_gap": "Amazon Web Services (AWS)",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Clarifies the extent of a stated gap without assuming AWS experience that is absent from the profile.",
+          "source_evidence": [
+            "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+            "Candidate profile lists Hyper-V and VMware but no AWS"
+          ],
+          "priority": 0.95,
+          "weight": 0.9433
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    }
+  ],
+  "selection_latency_ms": 0.07,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:48.556176+00:00"
+}

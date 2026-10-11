@@ -1,0 +1,1160 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "pool",
+  "condition": "T_pool",
+  "profile_id": "rjf_03611_ef2aa407d208",
+  "jd_id": "rjf_03611_ef2aa407d208",
+  "pair_id": "rjf_03611_ef2aa407d208",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "prompt": {
+    "file": "generation/interviewiq_pool.md",
+    "version": "1.1.0",
+    "sha256": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc"
+  },
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 16,
+  "pool_size_requested": 30,
+  "raw_questions": [
+    {
+      "question": "Design a React-based screen for reviewing invoice-validation outliers, including its component boundaries, client-side state, loading/error states, and how it would call a backend API. What trade-offs would you make?",
+      "competency": "React architecture",
+      "dimension": "Technical",
+      "target_gap": "React",
+      "difficulty": "mid",
+      "rationale": "React is a required skill with no direct candidate evidence, so this tests practical frontend design ability and the ability to transfer experience from enterprise billing systems.",
+      "source_evidence": [
+        "React",
+        "Billing Automation Project",
+        "JavaScript"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "You are asked to add a new workflow to a Node.js service, but most of your background is in Java and Spring. How would you learn the existing codebase, implement the change safely, and validate it before release?",
+      "competency": "Node.js transition",
+      "dimension": "Situational",
+      "target_gap": "Node.js",
+      "difficulty": "mid",
+      "rationale": "Node.js is only weakly matched through Java evidence; this probes transferable backend engineering judgment and learning approach.",
+      "source_evidence": [
+        "Java",
+        "Spring Boot",
+        "Node.js"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Explain how you would structure a Nest.js or comparable backend service for order-status updates: modules, controllers, services, persistence boundaries, validation, and error handling.",
+      "competency": "Backend framework design",
+      "dimension": "Technical",
+      "target_gap": "Nest.js or similar framework",
+      "difficulty": "mid",
+      "rationale": "The profile has no direct Nest.js evidence, and the question assesses whether the candidate can apply Spring-style architectural experience to a modular TypeScript backend framework.",
+      "source_evidence": [
+        "Spring Boot",
+        "Purchase & Order Management System",
+        "Nest.js or similar framework"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "Describe a technical implementation you led from initial design through rollout. How did you divide work, manage risks and dependencies, make key decisions, and ensure delivery?",
+      "competency": "Implementation leadership",
+      "dimension": "Behavioural",
+      "target_gap": "Technical implementation leadership",
+      "difficulty": "mid",
+      "rationale": "Leading implementations is a core Lead Engineer requirement and is marked missing, so this validates whether relevant leadership experience exists beyond the written profile.",
+      "source_evidence": [
+        "Participated in design and documentation of an enhancement to a scheduled scenario module.",
+        "Technical implementation leadership"
+      ],
+      "priority": 0.99
+    },
+    {
+      "question": "A team is split between rapidly delivering an invoice-processing feature and redesigning a shared API first. How would you facilitate the decision, establish a plan, and keep the team aligned on scope and delivery?",
+      "competency": "Technical leadership",
+      "dimension": "Situational",
+      "target_gap": "Technical implementation leadership",
+      "difficulty": "mid",
+      "rationale": "This tests the candidate's ability to make and communicate implementation decisions in a lead role when direct leadership evidence is absent.",
+      "source_evidence": [
+        "Billing Automation Project",
+        "Participated in scrum calls to plan and prioritize activities.",
+        "Technical implementation leadership"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Walk us through a Java domain model you have designed or would design for invoices, payments, and validation outcomes. How would you enforce invariants, manage object relationships, and avoid a model that becomes difficult to change?",
+      "competency": "Object-oriented design",
+      "dimension": "Technical",
+      "target_gap": "Object-oriented programming",
+      "difficulty": "mid",
+      "rationale": "Java is present, but the matrix classifies object-oriented programming as a weak match; this probes depth beyond language familiarity.",
+      "source_evidence": [
+        "Java",
+        "Implemented a payment module using Java, Spring Batch, Spring Boot, JSON, and JSP.",
+        "Object-oriented programming"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "For the Test Data Management application, how would you model and operate a relational database that synchronizes test data across systems while preserving referential integrity and supporting repeatable refreshes?",
+      "competency": "Relational database design",
+      "dimension": "Technical",
+      "target_gap": "Relational database management",
+      "difficulty": "mid",
+      "rationale": "The candidate has Oracle, MariaDB, DB2, and stored-procedure experience; this explores practical database design depth for a core requirement.",
+      "source_evidence": [
+        "Test Data Management Project",
+        "Developed stored procedures and triggers using MariaDB and Oracle.",
+        "Oracle",
+        "MariaDB",
+        "DB2"
+      ],
+      "priority": 0.81
+    },
+    {
+      "question": "Describe a stored procedure or trigger you developed in Oracle, MySQL, or MariaDB. What business rule did it implement, and how did you address transactions, failure handling, performance, and testability?",
+      "competency": "Database implementation",
+      "dimension": "Technical",
+      "target_gap": "Relational database management",
+      "difficulty": "mid",
+      "rationale": "This is a targeted strength probe that verifies the candidate's stated database implementation experience and its production implications.",
+      "source_evidence": [
+        "Developed stored procedures and triggers using MariaDB and Oracle.",
+        "Developed stored procedures and triggers using MySQL and Oracle."
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "An enterprise web application starts timing out during a peak billing run. Describe how you would isolate whether the bottleneck is in the browser, API layer, application code, database, or downstream dependency, then prioritize fixes.",
+      "competency": "Performance troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Web application performance and scalability optimization",
+      "difficulty": "hard",
+      "rationale": "Performance and scalability are only partially matched, while rapid troubleshooting and scalable enterprise design are central to the role.",
+      "source_evidence": [
+        "Billing Automation Project",
+        "Web services",
+        "Web application performance and scalability optimization"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "How would you scale a web application that validates large volumes of invoices against historical data without allowing long-running work to degrade the interactive user experience?",
+      "competency": "Scalable web architecture",
+      "dimension": "Technical",
+      "target_gap": "Web application performance and scalability optimization",
+      "difficulty": "hard",
+      "rationale": "The candidate has Spring Batch and billing-domain experience, making this a grounded way to assess scalability design and asynchronous processing choices.",
+      "source_evidence": [
+        "Spring Batch",
+        "Billing Automation Project",
+        "Billing software used to validate invoices, identify outliers against historical data."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Give an example of a unit or integration test you wrote for a defect or edge case. What was the risk, what did the test isolate, and how did you decide whether it belonged at the unit, integration, or end-to-end level?",
+      "competency": "Test strategy",
+      "dimension": "Behavioural",
+      "target_gap": "Unit testing",
+      "difficulty": "mid",
+      "rationale": "The profile explicitly cites JUnit, Cucumber, and unit/integration testing; this validates the depth and effectiveness of that experience.",
+      "source_evidence": [
+        "Performed unit and integration testing.",
+        "Wrote test cases using test-driven development with JUnit and Cucumber.",
+        "JUnit",
+        "Cucumber"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "How would you test a React UI and Node API for a critical payment or invoice-validation workflow? Identify the most valuable unit, integration, contract, and end-to-end tests, including what you would deliberately not test at each layer.",
+      "competency": "Full-stack test design",
+      "dimension": "Technical",
+      "target_gap": "Unit testing",
+      "difficulty": "hard",
+      "rationale": "The role requires effective unit testing across a stack where the candidate's documented testing experience is primarily Java-based.",
+      "source_evidence": [
+        "Writing test cases using test-driven development with JUnit and Cucumber.",
+        "Payment module",
+        "React",
+        "Node.js"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Before accepting a change to a shared database schema, what would you look for in the implementation plan and code review, and how would you give feedback if the proposed migration created operational risk?",
+      "competency": "Code review and planning",
+      "dimension": "Situational",
+      "target_gap": "Technical planning and code review",
+      "difficulty": "mid",
+      "rationale": "Technical planning and code review are weakly matched; this evaluates concrete review standards using the candidate's database background.",
+      "source_evidence": [
+        "Developed stored procedures and triggers using MariaDB and Oracle.",
+        "Participated in design and documentation of an enhancement to a scheduled scenario module.",
+        "Technical planning and code review"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "Describe how you would turn a broadly stated request\u2014such as improving order synchronization reliability\u2014into an implementation plan with milestones, estimates, dependencies, test strategy, and rollout criteria.",
+      "competency": "Technical planning",
+      "dimension": "Role-Specific",
+      "target_gap": "Technical planning and code review",
+      "difficulty": "mid",
+      "rationale": "The Lead Engineer role requires planning and reliable delivery; the profile shows Scrum participation and design documentation but limited explicit planning ownership.",
+      "source_evidence": [
+        "Purchase & Order Management System",
+        "Participated in scrum calls to plan and prioritize activities.",
+        "Involved in design and documentation of enhancement"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "What does a high-quality code review look like to you for a pull request that changes a REST endpoint and its database writes? How would you balance correctness, maintainability, performance, security, and reviewer turnaround time?",
+      "competency": "Code review practice",
+      "dimension": "Technical",
+      "target_gap": "Technical planning and code review",
+      "difficulty": "mid",
+      "rationale": "This directly tests a required lead responsibility that is not explicitly demonstrated in the candidate profile.",
+      "source_evidence": [
+        "REST API",
+        "Developed stored procedures and triggers using MariaDB and Oracle.",
+        "Technical planning and code review"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Tell us about a time you helped another engineer understand a technical problem or improve an implementation. How did you tailor your support, and what changed as a result?",
+      "competency": "Mentoring",
+      "dimension": "Behavioural",
+      "target_gap": "Team mentoring",
+      "difficulty": "mid",
+      "rationale": "Mentoring is required for the lead role but is only weakly matched, so this seeks specific evidence of coaching behavior.",
+      "source_evidence": [
+        "Java",
+        "Team mentoring",
+        "Participated in scrum calls to plan and prioritize activities."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "A junior engineer repeatedly submits Spring service changes with incomplete tests and unclear error handling. How would you coach them over the next few weeks while still protecting release quality and delivery commitments?",
+      "competency": "Engineering coaching",
+      "dimension": "Situational",
+      "target_gap": "Team mentoring",
+      "difficulty": "mid",
+      "rationale": "This tests practical mentoring, feedback, and quality-accountability skills needed to lead engineers.",
+      "source_evidence": [
+        "Spring Boot",
+        "Performed unit and integration testing.",
+        "Team mentoring"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Describe a situation where you had to coordinate with teammates during a production issue or a time-sensitive release. How did you keep communication clear and help the group reach resolution?",
+      "competency": "Team collaboration",
+      "dimension": "Behavioural",
+      "target_gap": "Team collaboration",
+      "difficulty": "mid",
+      "rationale": "The profile notes production support and Scrum participation, while collaboration is classified as a weak match; this probes demonstrated team behavior.",
+      "source_evidence": [
+        "Provided daily production support.",
+        "Participated in scrum calls to plan and prioritize activities.",
+        "Team collaboration"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "You discover a production data issue affecting a billing workflow late in the day, while product stakeholders want the planned release to proceed. How would you communicate the issue, organize the response, and decide whether to release?",
+      "competency": "Cross-functional incident collaboration",
+      "dimension": "Situational",
+      "target_gap": "Team collaboration",
+      "difficulty": "hard",
+      "rationale": "This evaluates collaboration, judgment, and clear escalation in a scenario aligned with the candidate's production support and billing experience.",
+      "source_evidence": [
+        "Provided daily production support.",
+        "Billing Automation Project",
+        "Team collaboration"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "What attracts you to building a B2B SaaS product, and how would you distinguish the needs of business administrators, account-level users, and internal support teams when prioritizing a feature?",
+      "competency": "B2B SaaS product thinking",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "B2B SaaS application development",
+      "difficulty": "mid",
+      "rationale": "B2B SaaS experience is a high-weight weak match; this assesses domain understanding and product mindset without assuming undocumented SaaS experience.",
+      "source_evidence": [
+        "B2B SaaS application development",
+        "Enterprise billing and order management applications",
+        "Test Data Management Project"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "How would you design tenant isolation, authorization, and safe configuration changes for a B2B SaaS application used by multiple customer organizations?",
+      "competency": "Multi-tenant SaaS design",
+      "dimension": "Technical",
+      "target_gap": "B2B SaaS application development",
+      "difficulty": "hard",
+      "rationale": "This probes architecture knowledge specific to the required B2B SaaS context, where direct candidate evidence is limited.",
+      "source_evidence": [
+        "B2B SaaS application development",
+        "Web-based application",
+        "Enterprise billing and order management applications"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Tell us about a component, module, or service you built with substantial ownership. How did you move from an initial problem to a working design, and what would you do differently if building it again?",
+      "competency": "Greenfield ownership",
+      "dimension": "Behavioural",
+      "target_gap": "Passion for building from scratch",
+      "difficulty": "mid",
+      "rationale": "The candidate built payment, notification, and tracking modules; this explores ownership and enthusiasm for creating solutions, which is weakly matched in the matrix.",
+      "source_evidence": [
+        "Designed and developed a notification module using Spring, JavaMail, and JDBC Template.",
+        "Implemented a payment module using Java, Spring Batch, Spring Boot, JSON, and JSP.",
+        "Developed and implemented a tracking module using Python and JSON."
+      ],
+      "priority": 0.83
+    },
+    {
+      "question": "If you were starting a new self-service workflow for self-storage operators with only a problem statement and a small team, what would you build first, what assumptions would you test, and what technical foundations would you establish early?",
+      "competency": "Building from scratch",
+      "dimension": "Situational",
+      "target_gap": "Passion for building from scratch",
+      "difficulty": "mid",
+      "rationale": "This assesses appetite for early-stage product delivery and intentional technical foundations, a stated role expectation.",
+      "source_evidence": [
+        "Passion for building from scratch",
+        "Self-storage industry",
+        "Web-based application"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "In the Billing Automation Project, how would you define quality for invoice validation beyond code coverage\u2014for example, correctness of business rules, data quality, explainability of outliers, and operational reliability?",
+      "competency": "Product quality",
+      "dimension": "Role-Specific",
+      "target_gap": "Product and software quality orientation",
+      "difficulty": "mid",
+      "rationale": "The candidate has direct billing and quality-activity evidence; this checks whether quality thinking extends from testing into product outcomes.",
+      "source_evidence": [
+        "Billing Automation Project",
+        "Responsible for ... quality related activities.",
+        "Billing software used to validate invoices, identify outliers against historical data."
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "Describe a defect you identified and corrected using Java, Spring, and Oracle. How did you confirm the root cause, prevent recurrence, and determine that the fix was safe to ship?",
+      "competency": "Defect quality ownership",
+      "dimension": "Behavioural",
+      "target_gap": "Product and software quality orientation",
+      "difficulty": "mid",
+      "rationale": "This validates the candidate's stated defect-fixing and test-result experience while probing ownership of durable quality improvements.",
+      "source_evidence": [
+        "Identified, corrected, and verified defects using Java, Spring, and Oracle.",
+        "Prepared test cases and test results during unit testing."
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "Walk through the architecture of one web-based application you worked on, from browser or client interaction through web services, application components, databases, batch jobs, and deployment. What was your own contribution?",
+      "competency": "Web application architecture",
+      "dimension": "Technical",
+      "target_gap": "Web application development",
+      "difficulty": "mid",
+      "rationale": "Web application development is a partial match; the candidate's listed web-based projects provide a concrete basis to validate end-to-end understanding and ownership.",
+      "source_evidence": [
+        "Test Data Management Project",
+        "Purchase & Order Management System",
+        "Web services",
+        "Spring Boot",
+        "Apache Tomcat"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "How would you evolve a legacy JSP/Servlet-based workflow into a modern React frontend with API-backed services while minimizing disruption to users and enabling incremental releases?",
+      "competency": "Web modernization",
+      "dimension": "Technical",
+      "target_gap": "Web application development",
+      "difficulty": "hard",
+      "rationale": "This combines the candidate's documented JSP and servlet background with the role's React-oriented web stack, testing migration judgment.",
+      "source_evidence": [
+        "Servlets",
+        "JSP",
+        "React",
+        "REST API"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Your profile lists JavaScript alongside Java, JSP, and jQuery. Describe a JavaScript feature you implemented: how you handled asynchronous behavior, state or DOM updates, errors, and browser-side testing.",
+      "competency": "JavaScript proficiency",
+      "dimension": "Technical",
+      "target_gap": "JavaScript",
+      "difficulty": "mid",
+      "rationale": "JavaScript is a strong match, but the profile provides limited implementation detail; this verifies current practical proficiency relevant to the frontend stack.",
+      "source_evidence": [
+        "JavaScript",
+        "jQuery",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
+      "priority": 0.7
+    },
+    {
+      "question": "You have worked on Jenkins, Maven, Git, Sonar, and application deployment. How would you design a CI/CD pipeline for a React and Node.js service that enforces quality gates, manages environments, supports rollback, and keeps releases fast?",
+      "competency": "Delivery engineering",
+      "dimension": "Technical",
+      "target_gap": "Product and software quality orientation",
+      "difficulty": "hard",
+      "rationale": "This is a strength-based probe that connects the candidate's documented CI experience to the role's expectation of strong engineering practices and quality delivery.",
+      "source_evidence": [
+        "Completed an end-to-end continuous integration pipeline using Jenkins, Maven, Git, and Sonar.",
+        "Worked on application deployment and Maven build configuration.",
+        "Jenkins",
+        "SonarQube",
+        "Git"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Your resume shows Software Developer roles at Panjiva and Pearson both dated 10/2016-Current. Can you clarify the employment arrangement, your responsibilities in each engagement, and the scope and recency of your work?",
+      "competency": "Experience chronology",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "easy",
+      "rationale": "The overlapping current dates are ambiguous; clarification helps establish the candidate's employment timeline and level of ownership without making assumptions.",
+      "source_evidence": [
+        "Panjiva - Software Developer; Test Data Management Project; 10/2016-Current",
+        "Pearson - Software Developer; Billing Automation Project; 10/2016-Current"
+      ],
+      "priority": 0.63
+    },
+    {
+      "question": "For the notification module you designed with Spring, JavaMail, and JDBC Template, explain the design, failure and retry behavior, data model, monitoring, and how you tested it in a production-like environment.",
+      "competency": "Module ownership",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This profile-specific probe tests depth of ownership across design, reliability, testing, and operations in a stated project contribution.",
+      "source_evidence": [
+        "Designed and developed a notification module using Spring, JavaMail, and JDBC Template.",
+        "Performed unit and integration testing.",
+        "Provided daily production support."
+      ],
+      "priority": 0.76
+    }
+  ],
+  "valid_questions": [
+    {
+      "question": "Design a React-based screen for reviewing invoice-validation outliers, including its component boundaries, client-side state, loading/error states, and how it would call a backend API. What trade-offs would you make?",
+      "competency": "React architecture",
+      "dimension": "Technical",
+      "target_gap": "React",
+      "difficulty": "mid",
+      "rationale": "React is a required skill with no direct candidate evidence, so this tests practical frontend design ability and the ability to transfer experience from enterprise billing systems.",
+      "source_evidence": [
+        "React",
+        "Billing Automation Project",
+        "JavaScript"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "You are asked to add a new workflow to a Node.js service, but most of your background is in Java and Spring. How would you learn the existing codebase, implement the change safely, and validate it before release?",
+      "competency": "Node.js transition",
+      "dimension": "Situational",
+      "target_gap": "Node.js",
+      "difficulty": "mid",
+      "rationale": "Node.js is only weakly matched through Java evidence; this probes transferable backend engineering judgment and learning approach.",
+      "source_evidence": [
+        "Java",
+        "Spring Boot",
+        "Node.js"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Explain how you would structure a Nest.js or comparable backend service for order-status updates: modules, controllers, services, persistence boundaries, validation, and error handling.",
+      "competency": "Backend framework design",
+      "dimension": "Technical",
+      "target_gap": "Nest.js or similar framework",
+      "difficulty": "mid",
+      "rationale": "The profile has no direct Nest.js evidence, and the question assesses whether the candidate can apply Spring-style architectural experience to a modular TypeScript backend framework.",
+      "source_evidence": [
+        "Spring Boot",
+        "Purchase & Order Management System",
+        "Nest.js or similar framework"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "Describe a technical implementation you led from initial design through rollout. How did you divide work, manage risks and dependencies, make key decisions, and ensure delivery?",
+      "competency": "Implementation leadership",
+      "dimension": "Behavioural",
+      "target_gap": "Technical implementation leadership",
+      "difficulty": "mid",
+      "rationale": "Leading implementations is a core Lead Engineer requirement and is marked missing, so this validates whether relevant leadership experience exists beyond the written profile.",
+      "source_evidence": [
+        "Participated in design and documentation of an enhancement to a scheduled scenario module.",
+        "Technical implementation leadership"
+      ],
+      "priority": 0.99
+    },
+    {
+      "question": "A team is split between rapidly delivering an invoice-processing feature and redesigning a shared API first. How would you facilitate the decision, establish a plan, and keep the team aligned on scope and delivery?",
+      "competency": "Technical leadership",
+      "dimension": "Situational",
+      "target_gap": "Technical implementation leadership",
+      "difficulty": "mid",
+      "rationale": "This tests the candidate's ability to make and communicate implementation decisions in a lead role when direct leadership evidence is absent.",
+      "source_evidence": [
+        "Billing Automation Project",
+        "Participated in scrum calls to plan and prioritize activities.",
+        "Technical implementation leadership"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Walk us through a Java domain model you have designed or would design for invoices, payments, and validation outcomes. How would you enforce invariants, manage object relationships, and avoid a model that becomes difficult to change?",
+      "competency": "Object-oriented design",
+      "dimension": "Technical",
+      "target_gap": "Object-oriented programming",
+      "difficulty": "mid",
+      "rationale": "Java is present, but the matrix classifies object-oriented programming as a weak match; this probes depth beyond language familiarity.",
+      "source_evidence": [
+        "Java",
+        "Implemented a payment module using Java, Spring Batch, Spring Boot, JSON, and JSP.",
+        "Object-oriented programming"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "For the Test Data Management application, how would you model and operate a relational database that synchronizes test data across systems while preserving referential integrity and supporting repeatable refreshes?",
+      "competency": "Relational database design",
+      "dimension": "Technical",
+      "target_gap": "Relational database management",
+      "difficulty": "mid",
+      "rationale": "The candidate has Oracle, MariaDB, DB2, and stored-procedure experience; this explores practical database design depth for a core requirement.",
+      "source_evidence": [
+        "Test Data Management Project",
+        "Developed stored procedures and triggers using MariaDB and Oracle.",
+        "Oracle",
+        "MariaDB",
+        "DB2"
+      ],
+      "priority": 0.81
+    },
+    {
+      "question": "Describe a stored procedure or trigger you developed in Oracle, MySQL, or MariaDB. What business rule did it implement, and how did you address transactions, failure handling, performance, and testability?",
+      "competency": "Database implementation",
+      "dimension": "Technical",
+      "target_gap": "Relational database management",
+      "difficulty": "mid",
+      "rationale": "This is a targeted strength probe that verifies the candidate's stated database implementation experience and its production implications.",
+      "source_evidence": [
+        "Developed stored procedures and triggers using MariaDB and Oracle.",
+        "Developed stored procedures and triggers using MySQL and Oracle."
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "An enterprise web application starts timing out during a peak billing run. Describe how you would isolate whether the bottleneck is in the browser, API layer, application code, database, or downstream dependency, then prioritize fixes.",
+      "competency": "Performance troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Web application performance and scalability optimization",
+      "difficulty": "hard",
+      "rationale": "Performance and scalability are only partially matched, while rapid troubleshooting and scalable enterprise design are central to the role.",
+      "source_evidence": [
+        "Billing Automation Project",
+        "Web services",
+        "Web application performance and scalability optimization"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "How would you scale a web application that validates large volumes of invoices against historical data without allowing long-running work to degrade the interactive user experience?",
+      "competency": "Scalable web architecture",
+      "dimension": "Technical",
+      "target_gap": "Web application performance and scalability optimization",
+      "difficulty": "hard",
+      "rationale": "The candidate has Spring Batch and billing-domain experience, making this a grounded way to assess scalability design and asynchronous processing choices.",
+      "source_evidence": [
+        "Spring Batch",
+        "Billing Automation Project",
+        "Billing software used to validate invoices, identify outliers against historical data."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Give an example of a unit or integration test you wrote for a defect or edge case. What was the risk, what did the test isolate, and how did you decide whether it belonged at the unit, integration, or end-to-end level?",
+      "competency": "Test strategy",
+      "dimension": "Behavioural",
+      "target_gap": "Unit testing",
+      "difficulty": "mid",
+      "rationale": "The profile explicitly cites JUnit, Cucumber, and unit/integration testing; this validates the depth and effectiveness of that experience.",
+      "source_evidence": [
+        "Performed unit and integration testing.",
+        "Wrote test cases using test-driven development with JUnit and Cucumber.",
+        "JUnit",
+        "Cucumber"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "How would you test a React UI and Node API for a critical payment or invoice-validation workflow? Identify the most valuable unit, integration, contract, and end-to-end tests, including what you would deliberately not test at each layer.",
+      "competency": "Full-stack test design",
+      "dimension": "Technical",
+      "target_gap": "Unit testing",
+      "difficulty": "hard",
+      "rationale": "The role requires effective unit testing across a stack where the candidate's documented testing experience is primarily Java-based.",
+      "source_evidence": [
+        "Writing test cases using test-driven development with JUnit and Cucumber.",
+        "Payment module",
+        "React",
+        "Node.js"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Before accepting a change to a shared database schema, what would you look for in the implementation plan and code review, and how would you give feedback if the proposed migration created operational risk?",
+      "competency": "Code review and planning",
+      "dimension": "Situational",
+      "target_gap": "Technical planning and code review",
+      "difficulty": "mid",
+      "rationale": "Technical planning and code review are weakly matched; this evaluates concrete review standards using the candidate's database background.",
+      "source_evidence": [
+        "Developed stored procedures and triggers using MariaDB and Oracle.",
+        "Participated in design and documentation of an enhancement to a scheduled scenario module.",
+        "Technical planning and code review"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "Describe how you would turn a broadly stated request\u2014such as improving order synchronization reliability\u2014into an implementation plan with milestones, estimates, dependencies, test strategy, and rollout criteria.",
+      "competency": "Technical planning",
+      "dimension": "Role-Specific",
+      "target_gap": "Technical planning and code review",
+      "difficulty": "mid",
+      "rationale": "The Lead Engineer role requires planning and reliable delivery; the profile shows Scrum participation and design documentation but limited explicit planning ownership.",
+      "source_evidence": [
+        "Purchase & Order Management System",
+        "Participated in scrum calls to plan and prioritize activities.",
+        "Involved in design and documentation of enhancement"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "What does a high-quality code review look like to you for a pull request that changes a REST endpoint and its database writes? How would you balance correctness, maintainability, performance, security, and reviewer turnaround time?",
+      "competency": "Code review practice",
+      "dimension": "Technical",
+      "target_gap": "Technical planning and code review",
+      "difficulty": "mid",
+      "rationale": "This directly tests a required lead responsibility that is not explicitly demonstrated in the candidate profile.",
+      "source_evidence": [
+        "REST API",
+        "Developed stored procedures and triggers using MariaDB and Oracle.",
+        "Technical planning and code review"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Tell us about a time you helped another engineer understand a technical problem or improve an implementation. How did you tailor your support, and what changed as a result?",
+      "competency": "Mentoring",
+      "dimension": "Behavioural",
+      "target_gap": "Team mentoring",
+      "difficulty": "mid",
+      "rationale": "Mentoring is required for the lead role but is only weakly matched, so this seeks specific evidence of coaching behavior.",
+      "source_evidence": [
+        "Java",
+        "Team mentoring",
+        "Participated in scrum calls to plan and prioritize activities."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "A junior engineer repeatedly submits Spring service changes with incomplete tests and unclear error handling. How would you coach them over the next few weeks while still protecting release quality and delivery commitments?",
+      "competency": "Engineering coaching",
+      "dimension": "Situational",
+      "target_gap": "Team mentoring",
+      "difficulty": "mid",
+      "rationale": "This tests practical mentoring, feedback, and quality-accountability skills needed to lead engineers.",
+      "source_evidence": [
+        "Spring Boot",
+        "Performed unit and integration testing.",
+        "Team mentoring"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Describe a situation where you had to coordinate with teammates during a production issue or a time-sensitive release. How did you keep communication clear and help the group reach resolution?",
+      "competency": "Team collaboration",
+      "dimension": "Behavioural",
+      "target_gap": "Team collaboration",
+      "difficulty": "mid",
+      "rationale": "The profile notes production support and Scrum participation, while collaboration is classified as a weak match; this probes demonstrated team behavior.",
+      "source_evidence": [
+        "Provided daily production support.",
+        "Participated in scrum calls to plan and prioritize activities.",
+        "Team collaboration"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "You discover a production data issue affecting a billing workflow late in the day, while product stakeholders want the planned release to proceed. How would you communicate the issue, organize the response, and decide whether to release?",
+      "competency": "Cross-functional incident collaboration",
+      "dimension": "Situational",
+      "target_gap": "Team collaboration",
+      "difficulty": "hard",
+      "rationale": "This evaluates collaboration, judgment, and clear escalation in a scenario aligned with the candidate's production support and billing experience.",
+      "source_evidence": [
+        "Provided daily production support.",
+        "Billing Automation Project",
+        "Team collaboration"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "What attracts you to building a B2B SaaS product, and how would you distinguish the needs of business administrators, account-level users, and internal support teams when prioritizing a feature?",
+      "competency": "B2B SaaS product thinking",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "B2B SaaS application development",
+      "difficulty": "mid",
+      "rationale": "B2B SaaS experience is a high-weight weak match; this assesses domain understanding and product mindset without assuming undocumented SaaS experience.",
+      "source_evidence": [
+        "B2B SaaS application development",
+        "Enterprise billing and order management applications",
+        "Test Data Management Project"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "How would you design tenant isolation, authorization, and safe configuration changes for a B2B SaaS application used by multiple customer organizations?",
+      "competency": "Multi-tenant SaaS design",
+      "dimension": "Technical",
+      "target_gap": "B2B SaaS application development",
+      "difficulty": "hard",
+      "rationale": "This probes architecture knowledge specific to the required B2B SaaS context, where direct candidate evidence is limited.",
+      "source_evidence": [
+        "B2B SaaS application development",
+        "Web-based application",
+        "Enterprise billing and order management applications"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Tell us about a component, module, or service you built with substantial ownership. How did you move from an initial problem to a working design, and what would you do differently if building it again?",
+      "competency": "Greenfield ownership",
+      "dimension": "Behavioural",
+      "target_gap": "Passion for building from scratch",
+      "difficulty": "mid",
+      "rationale": "The candidate built payment, notification, and tracking modules; this explores ownership and enthusiasm for creating solutions, which is weakly matched in the matrix.",
+      "source_evidence": [
+        "Designed and developed a notification module using Spring, JavaMail, and JDBC Template.",
+        "Implemented a payment module using Java, Spring Batch, Spring Boot, JSON, and JSP.",
+        "Developed and implemented a tracking module using Python and JSON."
+      ],
+      "priority": 0.83
+    },
+    {
+      "question": "If you were starting a new self-service workflow for self-storage operators with only a problem statement and a small team, what would you build first, what assumptions would you test, and what technical foundations would you establish early?",
+      "competency": "Building from scratch",
+      "dimension": "Situational",
+      "target_gap": "Passion for building from scratch",
+      "difficulty": "mid",
+      "rationale": "This assesses appetite for early-stage product delivery and intentional technical foundations, a stated role expectation.",
+      "source_evidence": [
+        "Passion for building from scratch",
+        "Self-storage industry",
+        "Web-based application"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "In the Billing Automation Project, how would you define quality for invoice validation beyond code coverage\u2014for example, correctness of business rules, data quality, explainability of outliers, and operational reliability?",
+      "competency": "Product quality",
+      "dimension": "Role-Specific",
+      "target_gap": "Product and software quality orientation",
+      "difficulty": "mid",
+      "rationale": "The candidate has direct billing and quality-activity evidence; this checks whether quality thinking extends from testing into product outcomes.",
+      "source_evidence": [
+        "Billing Automation Project",
+        "Responsible for ... quality related activities.",
+        "Billing software used to validate invoices, identify outliers against historical data."
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "Describe a defect you identified and corrected using Java, Spring, and Oracle. How did you confirm the root cause, prevent recurrence, and determine that the fix was safe to ship?",
+      "competency": "Defect quality ownership",
+      "dimension": "Behavioural",
+      "target_gap": "Product and software quality orientation",
+      "difficulty": "mid",
+      "rationale": "This validates the candidate's stated defect-fixing and test-result experience while probing ownership of durable quality improvements.",
+      "source_evidence": [
+        "Identified, corrected, and verified defects using Java, Spring, and Oracle.",
+        "Prepared test cases and test results during unit testing."
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "Walk through the architecture of one web-based application you worked on, from browser or client interaction through web services, application components, databases, batch jobs, and deployment. What was your own contribution?",
+      "competency": "Web application architecture",
+      "dimension": "Technical",
+      "target_gap": "Web application development",
+      "difficulty": "mid",
+      "rationale": "Web application development is a partial match; the candidate's listed web-based projects provide a concrete basis to validate end-to-end understanding and ownership.",
+      "source_evidence": [
+        "Test Data Management Project",
+        "Purchase & Order Management System",
+        "Web services",
+        "Spring Boot",
+        "Apache Tomcat"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "How would you evolve a legacy JSP/Servlet-based workflow into a modern React frontend with API-backed services while minimizing disruption to users and enabling incremental releases?",
+      "competency": "Web modernization",
+      "dimension": "Technical",
+      "target_gap": "Web application development",
+      "difficulty": "hard",
+      "rationale": "This combines the candidate's documented JSP and servlet background with the role's React-oriented web stack, testing migration judgment.",
+      "source_evidence": [
+        "Servlets",
+        "JSP",
+        "React",
+        "REST API"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Your profile lists JavaScript alongside Java, JSP, and jQuery. Describe a JavaScript feature you implemented: how you handled asynchronous behavior, state or DOM updates, errors, and browser-side testing.",
+      "competency": "JavaScript proficiency",
+      "dimension": "Technical",
+      "target_gap": "JavaScript",
+      "difficulty": "mid",
+      "rationale": "JavaScript is a strong match, but the profile provides limited implementation detail; this verifies current practical proficiency relevant to the frontend stack.",
+      "source_evidence": [
+        "JavaScript",
+        "jQuery",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
+      "priority": 0.7
+    },
+    {
+      "question": "You have worked on Jenkins, Maven, Git, Sonar, and application deployment. How would you design a CI/CD pipeline for a React and Node.js service that enforces quality gates, manages environments, supports rollback, and keeps releases fast?",
+      "competency": "Delivery engineering",
+      "dimension": "Technical",
+      "target_gap": "Product and software quality orientation",
+      "difficulty": "hard",
+      "rationale": "This is a strength-based probe that connects the candidate's documented CI experience to the role's expectation of strong engineering practices and quality delivery.",
+      "source_evidence": [
+        "Completed an end-to-end continuous integration pipeline using Jenkins, Maven, Git, and Sonar.",
+        "Worked on application deployment and Maven build configuration.",
+        "Jenkins",
+        "SonarQube",
+        "Git"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Your resume shows Software Developer roles at Panjiva and Pearson both dated 10/2016-Current. Can you clarify the employment arrangement, your responsibilities in each engagement, and the scope and recency of your work?",
+      "competency": "Experience chronology",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "easy",
+      "rationale": "The overlapping current dates are ambiguous; clarification helps establish the candidate's employment timeline and level of ownership without making assumptions.",
+      "source_evidence": [
+        "Panjiva - Software Developer; Test Data Management Project; 10/2016-Current",
+        "Pearson - Software Developer; Billing Automation Project; 10/2016-Current"
+      ],
+      "priority": 0.63
+    },
+    {
+      "question": "For the notification module you designed with Spring, JavaMail, and JDBC Template, explain the design, failure and retry behavior, data model, monitoring, and how you tested it in a production-like environment.",
+      "competency": "Module ownership",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This profile-specific probe tests depth of ownership across design, reliability, testing, and operations in a stated project contribution.",
+      "source_evidence": [
+        "Designed and developed a notification module using Spring, JavaMail, and JDBC Template.",
+        "Performed unit and integration testing.",
+        "Provided daily production support."
+      ],
+      "priority": 0.76
+    }
+  ],
+  "validation_failures": [],
+  "n_raw": 31,
+  "n_valid": 31,
+  "n_failed": 0,
+  "weights": [
+    0.9331,
+    0.7014,
+    0.926,
+    0.9301,
+    0.9301,
+    0.717,
+    0.3962,
+    0.3962,
+    0.3924,
+    0.3924,
+    0.3487,
+    0.3487,
+    0.6896,
+    0.6896,
+    0.6896,
+    0.7254,
+    0.7254,
+    0.7341,
+    0.7341,
+    0.6909,
+    0.6909,
+    0.7049,
+    0.7049,
+    0.3854,
+    0.3854,
+    0.3914,
+    0.3914,
+    0.1617,
+    0.3854,
+    0.61426875,
+    0.61426875
+  ],
+  "weight_outcomes": [
+    {
+      "rule": "exact",
+      "weight": 0.9331,
+      "matched_competency": "React",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7014,
+      "matched_competency": "Node.js",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.926,
+      "matched_competency": "Nest.js or similar framework",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9301,
+      "matched_competency": "Technical implementation leadership",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9301,
+      "matched_competency": "Technical implementation leadership",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.717,
+      "matched_competency": "Object-oriented programming",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3962,
+      "matched_competency": "Relational database management",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3962,
+      "matched_competency": "Relational database management",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3924,
+      "matched_competency": "Web application performance and scalability optimization",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3924,
+      "matched_competency": "Web application performance and scalability optimization",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3487,
+      "matched_competency": "Unit testing",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3487,
+      "matched_competency": "Unit testing",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6896,
+      "matched_competency": "Technical planning and code review",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6896,
+      "matched_competency": "Technical planning and code review",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6896,
+      "matched_competency": "Technical planning and code review",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7254,
+      "matched_competency": "Team mentoring",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7254,
+      "matched_competency": "Team mentoring",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7341,
+      "matched_competency": "Team collaboration",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7341,
+      "matched_competency": "Team collaboration",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6909,
+      "matched_competency": "B2B SaaS application development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6909,
+      "matched_competency": "B2B SaaS application development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7049,
+      "matched_competency": "Passion for building from scratch",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7049,
+      "matched_competency": "Passion for building from scratch",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3854,
+      "matched_competency": "Product and software quality orientation",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3854,
+      "matched_competency": "Product and software quality orientation",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3914,
+      "matched_competency": "Web application development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3914,
+      "matched_competency": "Web application development",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1617,
+      "matched_competency": "JavaScript",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3854,
+      "matched_competency": "Product and software quality orientation",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.61426875,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.61426875,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    }
+  ],
+  "fallback_rate": 0.0,
+  "profile_probe_rate": 0.06451612903225806,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 9544,
+    "output_tokens": 3921,
+    "cached_tokens": 0,
+    "estimated_cost": 0.06614,
+    "latency_ms": 30890.66,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.06614,
+  "cost_cny": 0.4477678,
+  "usd_cny_rate": 6.77,
+  "user_prompt_sha256": "11e38f3d4b37e6a12859b3786086e42de71d71e57e270b2ce958ca14322b0dfe",
+  "generated_at": "2026-10-11T13:08:48.520612+00:00"
+}

@@ -1,0 +1,476 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_05260_4f6ef90caf00",
+  "jd_id": "rjf_05260_4f6ef90caf00",
+  "pair_id": "rjf_05260_4f6ef90caf00",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 28,
+  "pool_path": "pool/rjf_05260_4f6ef90caf00__rjf_05260_4f6ef90caf00__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.06666666666666667,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      4,
+      8,
+      10,
+      9,
+      2,
+      7,
+      3,
+      5,
+      6,
+      11
+    ],
+    "questions": [
+      {
+        "question": "Suppose an image-capture subsystem intermittently stops responding after several hours in the field. How would you design the embedded controller architecture and diagnostic strategy to isolate and recover from the fault?",
+        "competency": "Embedded controller implementation",
+        "competency_type": "other",
+        "target_gap": "Embedded controller implementation",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Embedded controller implementation is the highest-weight missing requirement and is central to the job's product work.",
+        "source_evidence": [
+          "Embedded controller implementation",
+          "Hardware testing",
+          "Test automation"
+        ],
+        "priority": 1.0,
+        "weight": 0.9516
+      },
+      {
+        "question": "Have you created a PCB design from requirements through schematic, placement, layout review, and fabrication output? Please distinguish clearly between work you personally performed and work you reviewed or tested.",
+        "competency": "PCB design ownership",
+        "competency_type": "technical",
+        "target_gap": "PCB design",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "PCB design is a high-weight missing competency; the wording verifies scope without inferring undocumented design ownership.",
+        "source_evidence": [
+          "PCB design",
+          "Hardware Test Engineer",
+          "Electronics Technician"
+        ],
+        "priority": 0.97,
+        "weight": 0.9352
+      },
+      {
+        "question": "What experience, if any, do you have with Texas Instruments Code Composer Studio? If it is new to you, outline how you would bring up, build, flash, and debug a TI microcontroller project during your first week.",
+        "competency": "Code Composer Studio",
+        "competency_type": "other",
+        "target_gap": "Code Composer Studio",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Code Composer Studio is explicitly required and missing from the documented profile.",
+        "source_evidence": [
+          "Code Composer Studio",
+          "Linux",
+          "Bash shell scripts"
+        ],
+        "priority": 0.92,
+        "weight": 0.9322
+      },
+      {
+        "question": "Which development environments have you used to build, flash, debug, and version embedded software? Describe the workflow you would establish when joining a team that uses an unfamiliar IDE.",
+        "competency": "Embedded IDE workflow",
+        "competency_type": "technical",
+        "target_gap": "IDE tools",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "No IDE-tool experience is documented, so this assesses both direct exposure and an evidence-based learning approach.",
+        "source_evidence": [
+          "Linux",
+          "Bash",
+          "Shell scripting",
+          "IDE tools"
+        ],
+        "priority": 0.93,
+        "weight": 0.9212
+      },
+      {
+        "question": "What microprocessor- or microcontroller-based hardware have you personally worked with, and what was your specific responsibility in its design, programming, bring-up, or test?",
+        "competency": "Microprocessor design exposure",
+        "competency_type": "technical",
+        "target_gap": "Microprocessor-based design",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Directly clarifies a weakly matched core requirement without assuming that the candidate has microprocessor design experience.",
+        "source_evidence": [
+          "Shell scripting",
+          "Electronic component and assembly testing"
+        ],
+        "priority": 0.93,
+        "weight": 0.7293
+      },
+      {
+        "question": "A PCB designer asks for guidance on routing a board containing a microcontroller, image sensor interface, power regulators, and fast digital lines. What placement and routing constraints would you provide, and why?",
+        "competency": "PCB layout guidance",
+        "competency_type": "other",
+        "target_gap": "PCB layout and routing",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "The role requires layout and routing guidance, while the profile primarily establishes test procedure and hardware-test experience.",
+        "source_evidence": [
+          "Created and revised programming and testing procedures",
+          "Reading schematics",
+          "PCB layout and routing"
+        ],
+        "priority": 0.95,
+        "weight": 0.7106
+      },
+      {
+        "question": "Please write or describe a small C routine for an interrupt-driven peripheral interface that safely shares data with a main loop. Explain your choices around volatile data, buffering, timing, and error handling.",
+        "competency": "Embedded C",
+        "competency_type": "technical",
+        "target_gap": "C programming",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "C programming is a central stated requirement, but the profile documents scripting and test procedures rather than demonstrated C development.",
+        "source_evidence": [
+          "Created and revised programming and testing procedures",
+          "Shell scripting",
+          "C programming"
+        ],
+        "priority": 0.95,
+        "weight": 0.6533
+      },
+      {
+        "question": "Describe a microcontroller project you have built or supported, including the device family, peripheral interfaces, firmware structure, debug method, and the outcome. If you have not done one, explain how you would approach learning and delivering it.",
+        "competency": "Microcontroller development",
+        "competency_type": "technical",
+        "target_gap": "Microcontroller development",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Separates direct microcontroller experience from the candidate's documented software-development and test-automation background.",
+        "source_evidence": [
+          "Software development and documentation",
+          "Test automation",
+          "Microcontroller development"
+        ],
+        "priority": 0.94,
+        "weight": 0.6503
+      },
+      {
+        "question": "How would you partition responsibilities between an FPGA and a microcontroller in a high-throughput image-capture system, particularly for timing-critical acquisition, buffering, configuration, and diagnostics?",
+        "competency": "FPGA system partitioning",
+        "competency_type": "technical",
+        "target_gap": "FPGA development",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Probes a weakly matched required FPGA capability through a role-relevant architecture decision.",
+        "source_evidence": [
+          "Software development and documentation",
+          "FPGA development",
+          "Image capture systems"
+        ],
+        "priority": 0.92,
+        "weight": 0.6569
+      },
+      {
+        "question": "Describe the closest work you have done to firmware development. What code or automation did you personally create, how was it tested, and how did you manage failures or regressions?",
+        "competency": "Firmware development evidence",
+        "competency_type": "technical",
+        "target_gap": "Firmware development",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "The candidate developed test automation and procedures, but the profile does not establish production firmware ownership.",
+        "source_evidence": [
+          "Developed and maintained an in-house test automation framework",
+          "Software development and documentation",
+          "Firmware development"
+        ],
+        "priority": 0.9,
+        "weight": 0.6473
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.9516,
+      0.907144,
+      0.857624,
+      0.856716,
+      0.678249,
+      0.67507,
+      0.6206349999999999,
+      0.611282,
+      0.6043480000000001,
+      0.58257
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.02553742192685604,
+      0.18958546221256256,
+      0.4479973614215851,
+      0.35826054215431213,
+      0.37200927734375,
+      0.34544581174850464,
+      0.46464699506759644,
+      0.5134438276290894,
+      0.5731359720230103
+    ],
+    "mmr_scores": [
+      0.6661199999999999,
+      0.6273395734219431,
+      0.5434611613362312,
+      0.46530199157352437,
+      0.3672961373537063,
+      0.36094621679687494,
+      0.33081075647544855,
+      0.28850330147972103,
+      0.26901045171127325,
+      0.23585820839309693
+    ],
+    "competency_weights": [
+      0.9516,
+      0.9352,
+      0.9322,
+      0.9212,
+      0.7293,
+      0.7106,
+      0.6533,
+      0.6503,
+      0.6569,
+      0.6473
+    ]
+  },
+  "questions": [
+    {
+      "question": "Suppose an image-capture subsystem intermittently stops responding after several hours in the field. How would you design the embedded controller architecture and diagnostic strategy to isolate and recover from the fault?"
+    },
+    {
+      "question": "Have you created a PCB design from requirements through schematic, placement, layout review, and fabrication output? Please distinguish clearly between work you personally performed and work you reviewed or tested."
+    },
+    {
+      "question": "What experience, if any, do you have with Texas Instruments Code Composer Studio? If it is new to you, outline how you would bring up, build, flash, and debug a TI microcontroller project during your first week."
+    },
+    {
+      "question": "Which development environments have you used to build, flash, debug, and version embedded software? Describe the workflow you would establish when joining a team that uses an unfamiliar IDE."
+    },
+    {
+      "question": "What microprocessor- or microcontroller-based hardware have you personally worked with, and what was your specific responsibility in its design, programming, bring-up, or test?"
+    },
+    {
+      "question": "A PCB designer asks for guidance on routing a board containing a microcontroller, image sensor interface, power regulators, and fast digital lines. What placement and routing constraints would you provide, and why?"
+    },
+    {
+      "question": "Please write or describe a small C routine for an interrupt-driven peripheral interface that safely shares data with a main loop. Explain your choices around volatile data, buffering, timing, and error handling."
+    },
+    {
+      "question": "Describe a microcontroller project you have built or supported, including the device family, peripheral interfaces, firmware structure, debug method, and the outcome. If you have not done one, explain how you would approach learning and delivering it."
+    },
+    {
+      "question": "How would you partition responsibilities between an FPGA and a microcontroller in a high-throughput image-capture system, particularly for timing-critical acquisition, buffering, configuration, and diagnostics?"
+    },
+    {
+      "question": "Describe the closest work you have done to firmware development. What code or automation did you personally create, how was it tested, and how did you manage failures or regressions?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Suppose an image-capture subsystem intermittently stops responding after several hours in the field. How would you design the embedded controller architecture and diagnostic strategy to isolate and recover from the fault?",
+      "competency": "Embedded controller implementation",
+      "competency_type": "other",
+      "target_gap": "Embedded controller implementation",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Embedded controller implementation is the highest-weight missing requirement and is central to the job's product work.",
+      "source_evidence": [
+        "Embedded controller implementation",
+        "Hardware testing",
+        "Test automation"
+      ],
+      "priority": 1.0,
+      "weight": 0.9516
+    },
+    {
+      "question": "Have you created a PCB design from requirements through schematic, placement, layout review, and fabrication output? Please distinguish clearly between work you personally performed and work you reviewed or tested.",
+      "competency": "PCB design ownership",
+      "competency_type": "technical",
+      "target_gap": "PCB design",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "PCB design is a high-weight missing competency; the wording verifies scope without inferring undocumented design ownership.",
+      "source_evidence": [
+        "PCB design",
+        "Hardware Test Engineer",
+        "Electronics Technician"
+      ],
+      "priority": 0.97,
+      "weight": 0.9352
+    },
+    {
+      "question": "What experience, if any, do you have with Texas Instruments Code Composer Studio? If it is new to you, outline how you would bring up, build, flash, and debug a TI microcontroller project during your first week.",
+      "competency": "Code Composer Studio",
+      "competency_type": "other",
+      "target_gap": "Code Composer Studio",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Code Composer Studio is explicitly required and missing from the documented profile.",
+      "source_evidence": [
+        "Code Composer Studio",
+        "Linux",
+        "Bash shell scripts"
+      ],
+      "priority": 0.92,
+      "weight": 0.9322
+    },
+    {
+      "question": "Which development environments have you used to build, flash, debug, and version embedded software? Describe the workflow you would establish when joining a team that uses an unfamiliar IDE.",
+      "competency": "Embedded IDE workflow",
+      "competency_type": "technical",
+      "target_gap": "IDE tools",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "No IDE-tool experience is documented, so this assesses both direct exposure and an evidence-based learning approach.",
+      "source_evidence": [
+        "Linux",
+        "Bash",
+        "Shell scripting",
+        "IDE tools"
+      ],
+      "priority": 0.93,
+      "weight": 0.9212
+    },
+    {
+      "question": "What microprocessor- or microcontroller-based hardware have you personally worked with, and what was your specific responsibility in its design, programming, bring-up, or test?",
+      "competency": "Microprocessor design exposure",
+      "competency_type": "technical",
+      "target_gap": "Microprocessor-based design",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly clarifies a weakly matched core requirement without assuming that the candidate has microprocessor design experience.",
+      "source_evidence": [
+        "Shell scripting",
+        "Electronic component and assembly testing"
+      ],
+      "priority": 0.93,
+      "weight": 0.7293
+    },
+    {
+      "question": "A PCB designer asks for guidance on routing a board containing a microcontroller, image sensor interface, power regulators, and fast digital lines. What placement and routing constraints would you provide, and why?",
+      "competency": "PCB layout guidance",
+      "competency_type": "other",
+      "target_gap": "PCB layout and routing",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "The role requires layout and routing guidance, while the profile primarily establishes test procedure and hardware-test experience.",
+      "source_evidence": [
+        "Created and revised programming and testing procedures",
+        "Reading schematics",
+        "PCB layout and routing"
+      ],
+      "priority": 0.95,
+      "weight": 0.7106
+    },
+    {
+      "question": "Please write or describe a small C routine for an interrupt-driven peripheral interface that safely shares data with a main loop. Explain your choices around volatile data, buffering, timing, and error handling.",
+      "competency": "Embedded C",
+      "competency_type": "technical",
+      "target_gap": "C programming",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "C programming is a central stated requirement, but the profile documents scripting and test procedures rather than demonstrated C development.",
+      "source_evidence": [
+        "Created and revised programming and testing procedures",
+        "Shell scripting",
+        "C programming"
+      ],
+      "priority": 0.95,
+      "weight": 0.6533
+    },
+    {
+      "question": "Describe a microcontroller project you have built or supported, including the device family, peripheral interfaces, firmware structure, debug method, and the outcome. If you have not done one, explain how you would approach learning and delivering it.",
+      "competency": "Microcontroller development",
+      "competency_type": "technical",
+      "target_gap": "Microcontroller development",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Separates direct microcontroller experience from the candidate's documented software-development and test-automation background.",
+      "source_evidence": [
+        "Software development and documentation",
+        "Test automation",
+        "Microcontroller development"
+      ],
+      "priority": 0.94,
+      "weight": 0.6503
+    },
+    {
+      "question": "How would you partition responsibilities between an FPGA and a microcontroller in a high-throughput image-capture system, particularly for timing-critical acquisition, buffering, configuration, and diagnostics?",
+      "competency": "FPGA system partitioning",
+      "competency_type": "technical",
+      "target_gap": "FPGA development",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Probes a weakly matched required FPGA capability through a role-relevant architecture decision.",
+      "source_evidence": [
+        "Software development and documentation",
+        "FPGA development",
+        "Image capture systems"
+      ],
+      "priority": 0.92,
+      "weight": 0.6569
+    },
+    {
+      "question": "Describe the closest work you have done to firmware development. What code or automation did you personally create, how was it tested, and how did you manage failures or regressions?",
+      "competency": "Firmware development evidence",
+      "competency_type": "technical",
+      "target_gap": "Firmware development",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate developed test automation and procedures, but the profile does not establish production firmware ownership.",
+      "source_evidence": [
+        "Developed and maintained an in-house test automation framework",
+        "Software development and documentation",
+        "Firmware development"
+      ],
+      "priority": 0.9,
+      "weight": 0.6473
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 8917,
+    "output_tokens": 3437,
+    "cached_tokens": 0,
+    "estimated_cost": 0.059078,
+    "latency_ms": 28465.38,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.059078,
+  "cost_cny": 0.39995806,
+  "selection_latency_ms": 29.48,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:14:05.849963+00:00"
+}

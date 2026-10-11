@@ -1,0 +1,466 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_06210_7de5fd638e77",
+  "jd_id": "rjf_06210_7de5fd638e77",
+  "pair_id": "rjf_06210_7de5fd638e77",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 8,
+  "pool_path": "pool/rjf_06210_7de5fd638e77__rjf_06210_7de5fd638e77__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.06666666666666667,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      0,
+      4,
+      6,
+      3,
+      5,
+      2,
+      1,
+      7,
+      19,
+      10
+    ],
+    "questions": [
+      {
+        "question": "The role requires AWS, which is not reflected in your profile. How would you design and operate a Java service on AWS that must remain available during an Availability Zone failure?",
+        "competency": "AWS architecture",
+        "competency_type": "technical",
+        "target_gap": "Amazon Web Services (AWS)",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Directly tests the highest-priority missing requirement through a production resilience scenario relevant to a lead developer role.",
+        "source_evidence": [
+          "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+          "Job requirement: Experience with Java, AWS, SQL."
+        ],
+        "priority": 0.99,
+        "weight": 0.9433
+      },
+      {
+        "question": "For a new payment-related API handling sensitive financial data, how would you define the security controls around authentication, authorization, encryption, secrets, audit logging, and data retention before development begins?",
+        "competency": "Fintech security",
+        "competency_type": "other",
+        "target_gap": "Fintech",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Probes readiness for a fintech environment where security and regulated data handling are central, despite no explicit fintech background.",
+        "source_evidence": [
+          "Gap matrix: Fintech \u2014 missing",
+          "Job responsibility: meet security, scalability, and performance requirements."
+        ],
+        "priority": 0.95,
+        "weight": 0.9327
+      },
+      {
+        "question": "Describe how you would model a money-movement workflow so that retries cannot create duplicate transactions and every state change is auditable.",
+        "competency": "Financial transaction integrity",
+        "competency_type": "technical",
+        "target_gap": "Fintech",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Tests core fintech engineering concepts\u2014idempotency, state management, and auditability\u2014without presuming direct payments experience.",
+        "source_evidence": [
+          "Gap matrix: Fintech \u2014 missing",
+          "Job requires a strong Fintech background"
+        ],
+        "priority": 0.92,
+        "weight": 0.9327
+      },
+      {
+        "question": "What is your hands-on AWS experience, if any, and which services have you used to build, deploy, secure, or monitor applications? Please distinguish direct implementation from architectural oversight.",
+        "competency": "AWS hands-on experience",
+        "competency_type": "domain",
+        "target_gap": "Amazon Web Services (AWS)",
+        "question_type": "Role-Specific",
+        "difficulty": "mid",
+        "rationale": "Clarifies the extent of a stated gap without assuming AWS experience that is absent from the profile.",
+        "source_evidence": [
+          "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+          "Candidate profile lists Hyper-V and VMware but no AWS"
+        ],
+        "priority": 0.95,
+        "weight": 0.9433
+      },
+      {
+        "question": "What aspects of your work on accounts receivable and collection systems would transfer to a fintech product, and what domain knowledge would you need to build before making design decisions?",
+        "competency": "Fintech domain transfer",
+        "competency_type": "domain",
+        "target_gap": "Fintech",
+        "question_type": "Role-Specific",
+        "difficulty": "medium",
+        "rationale": "Uses the candidate's adjacent collections experience to evaluate honest domain transfer and learning strategy.",
+        "source_evidence": [
+          "Gap matrix: Fintech \u2014 missing",
+          "Candidate experience: Accounts Receivable Collection System (ARCS)",
+          "Candidate experience: solutions for directives affecting collection systems"
+        ],
+        "priority": 0.93,
+        "weight": 0.9327
+      },
+      {
+        "question": "A Java service running on AWS starts timing out intermittently after traffic doubles. Describe the metrics, logs, traces, and AWS components you would inspect first, and how you would isolate the bottleneck.",
+        "competency": "AWS performance troubleshooting",
+        "competency_type": "other",
+        "target_gap": "Amazon Web Services (AWS)",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Tests cloud operational depth for the role's reliability, efficiency, and scale expectations.",
+        "source_evidence": [
+          "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+          "Job responsibility: Ensure services run reliably and efficiently at scale.",
+          "Candidate experience: performance tuning and query analysis"
+        ],
+        "priority": 0.96,
+        "weight": 0.9433
+      },
+      {
+        "question": "Walk through how you would deploy a Java API to AWS from source control through production, including artifact management, environment configuration, secrets, rollback, and post-deployment verification.",
+        "competency": "AWS delivery practices",
+        "competency_type": "technical",
+        "target_gap": "Amazon Web Services (AWS)",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Assesses whether the candidate can translate infrastructure and systems experience into practical cloud-based software delivery.",
+        "source_evidence": [
+          "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+          "Candidate experience: planned and managed upgrade, migration, and conversion projects"
+        ],
+        "priority": 0.97,
+        "weight": 0.9433
+      },
+      {
+        "question": "You join a team with established payment and compliance rules that you have not previously worked with. How would you rapidly learn the domain while avoiding risky assumptions in early technical decisions?",
+        "competency": "Domain onboarding",
+        "competency_type": "soft",
+        "target_gap": "Fintech",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Evaluates the candidate's approach to closing a material domain gap in a safety-conscious manner.",
+        "source_evidence": [
+          "Gap matrix: Fintech \u2014 missing",
+          "Candidate experience: led and mentored multiple teams",
+          "Job requires strong Fintech background"
+        ],
+        "priority": 0.89,
+        "weight": 0.9327
+      },
+      {
+        "question": "Tell me about a delivery that required alignment among technical teams, business stakeholders, and an external vendor. What conflicts arose, what did you do, and what was the outcome?",
+        "competency": "Cross-functional collaboration",
+        "competency_type": "soft",
+        "target_gap": "Cross-functional collaboration",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Tests the weakly matched collaboration requirement using the candidate's documented vendor and multi-team coordination experience.",
+        "source_evidence": [
+          "Gap matrix: Cross-functional collaboration \u2014 weak_match",
+          "Candidate experience: communicated with vendors and multiple teams to resolve technical issues and allocate resources",
+          "Candidate experience: managed reporting requirements for SDIO and CUBS"
+        ],
+        "priority": 0.9,
+        "weight": 0.7243
+      },
+      {
+        "question": "Your background emphasizes infrastructure, databases, and enterprise architecture. Give a concrete example of software you personally designed or implemented, including the language, your code-level contribution, testing approach, and production outcome.",
+        "competency": "Software engineering depth",
+        "competency_type": "domain",
+        "target_gap": "Software engineering experience",
+        "question_type": "Role-Specific",
+        "difficulty": "mid",
+        "rationale": "Clarifies the weak evidence for sustained hands-on software engineering versus systems and infrastructure leadership.",
+        "source_evidence": [
+          "Gap matrix: Software engineering experience \u2014 weak_match",
+          "Candidate evidence: Installed, configured, tested, and maintained database management software.",
+          "Candidate experience: analyzed, designed, developed, tested, and implemented ARCS automated processes"
+        ],
+        "priority": 0.91,
+        "weight": 0.6905
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.933867,
+      0.8860649999999999,
+      0.858084,
+      0.896135,
+      0.867411,
+      0.905568,
+      0.915001,
+      0.830103,
+      0.6518700000000001,
+      0.628355
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.14249728620052338,
+      0.2988811135292053,
+      0.4625190794467926,
+      0.43886280059814453,
+      0.5546460151672363,
+      0.6515936851501465,
+      0.4541280269622803,
+      0.2874358296394348,
+      0.26761776208877563
+    ],
+    "mmr_scores": [
+      0.6537069,
+      0.5774963141398429,
+      0.5109944659412383,
+      0.4885387761659622,
+      0.4755288598205566,
+      0.467503795449829,
+      0.44502259445495596,
+      0.4448336919113159,
+      0.37007825110816955,
+      0.35956317137336724
+    ],
+    "competency_weights": [
+      0.9433,
+      0.9327,
+      0.9327,
+      0.9433,
+      0.9327,
+      0.9433,
+      0.9433,
+      0.9327,
+      0.7243,
+      0.6905
+    ]
+  },
+  "questions": [
+    {
+      "question": "The role requires AWS, which is not reflected in your profile. How would you design and operate a Java service on AWS that must remain available during an Availability Zone failure?"
+    },
+    {
+      "question": "For a new payment-related API handling sensitive financial data, how would you define the security controls around authentication, authorization, encryption, secrets, audit logging, and data retention before development begins?"
+    },
+    {
+      "question": "Describe how you would model a money-movement workflow so that retries cannot create duplicate transactions and every state change is auditable."
+    },
+    {
+      "question": "What is your hands-on AWS experience, if any, and which services have you used to build, deploy, secure, or monitor applications? Please distinguish direct implementation from architectural oversight."
+    },
+    {
+      "question": "What aspects of your work on accounts receivable and collection systems would transfer to a fintech product, and what domain knowledge would you need to build before making design decisions?"
+    },
+    {
+      "question": "A Java service running on AWS starts timing out intermittently after traffic doubles. Describe the metrics, logs, traces, and AWS components you would inspect first, and how you would isolate the bottleneck."
+    },
+    {
+      "question": "Walk through how you would deploy a Java API to AWS from source control through production, including artifact management, environment configuration, secrets, rollback, and post-deployment verification."
+    },
+    {
+      "question": "You join a team with established payment and compliance rules that you have not previously worked with. How would you rapidly learn the domain while avoiding risky assumptions in early technical decisions?"
+    },
+    {
+      "question": "Tell me about a delivery that required alignment among technical teams, business stakeholders, and an external vendor. What conflicts arose, what did you do, and what was the outcome?"
+    },
+    {
+      "question": "Your background emphasizes infrastructure, databases, and enterprise architecture. Give a concrete example of software you personally designed or implemented, including the language, your code-level contribution, testing approach, and production outcome."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "The role requires AWS, which is not reflected in your profile. How would you design and operate a Java service on AWS that must remain available during an Availability Zone failure?",
+      "competency": "AWS architecture",
+      "competency_type": "technical",
+      "target_gap": "Amazon Web Services (AWS)",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Directly tests the highest-priority missing requirement through a production resilience scenario relevant to a lead developer role.",
+      "source_evidence": [
+        "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+        "Job requirement: Experience with Java, AWS, SQL."
+      ],
+      "priority": 0.99,
+      "weight": 0.9433
+    },
+    {
+      "question": "For a new payment-related API handling sensitive financial data, how would you define the security controls around authentication, authorization, encryption, secrets, audit logging, and data retention before development begins?",
+      "competency": "Fintech security",
+      "competency_type": "other",
+      "target_gap": "Fintech",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Probes readiness for a fintech environment where security and regulated data handling are central, despite no explicit fintech background.",
+      "source_evidence": [
+        "Gap matrix: Fintech \u2014 missing",
+        "Job responsibility: meet security, scalability, and performance requirements."
+      ],
+      "priority": 0.95,
+      "weight": 0.9327
+    },
+    {
+      "question": "Describe how you would model a money-movement workflow so that retries cannot create duplicate transactions and every state change is auditable.",
+      "competency": "Financial transaction integrity",
+      "competency_type": "technical",
+      "target_gap": "Fintech",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Tests core fintech engineering concepts\u2014idempotency, state management, and auditability\u2014without presuming direct payments experience.",
+      "source_evidence": [
+        "Gap matrix: Fintech \u2014 missing",
+        "Job requires a strong Fintech background"
+      ],
+      "priority": 0.92,
+      "weight": 0.9327
+    },
+    {
+      "question": "What is your hands-on AWS experience, if any, and which services have you used to build, deploy, secure, or monitor applications? Please distinguish direct implementation from architectural oversight.",
+      "competency": "AWS hands-on experience",
+      "competency_type": "domain",
+      "target_gap": "Amazon Web Services (AWS)",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Clarifies the extent of a stated gap without assuming AWS experience that is absent from the profile.",
+      "source_evidence": [
+        "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+        "Candidate profile lists Hyper-V and VMware but no AWS"
+      ],
+      "priority": 0.95,
+      "weight": 0.9433
+    },
+    {
+      "question": "What aspects of your work on accounts receivable and collection systems would transfer to a fintech product, and what domain knowledge would you need to build before making design decisions?",
+      "competency": "Fintech domain transfer",
+      "competency_type": "domain",
+      "target_gap": "Fintech",
+      "question_type": "Role-Specific",
+      "difficulty": "medium",
+      "rationale": "Uses the candidate's adjacent collections experience to evaluate honest domain transfer and learning strategy.",
+      "source_evidence": [
+        "Gap matrix: Fintech \u2014 missing",
+        "Candidate experience: Accounts Receivable Collection System (ARCS)",
+        "Candidate experience: solutions for directives affecting collection systems"
+      ],
+      "priority": 0.93,
+      "weight": 0.9327
+    },
+    {
+      "question": "A Java service running on AWS starts timing out intermittently after traffic doubles. Describe the metrics, logs, traces, and AWS components you would inspect first, and how you would isolate the bottleneck.",
+      "competency": "AWS performance troubleshooting",
+      "competency_type": "other",
+      "target_gap": "Amazon Web Services (AWS)",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests cloud operational depth for the role's reliability, efficiency, and scale expectations.",
+      "source_evidence": [
+        "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+        "Job responsibility: Ensure services run reliably and efficiently at scale.",
+        "Candidate experience: performance tuning and query analysis"
+      ],
+      "priority": 0.96,
+      "weight": 0.9433
+    },
+    {
+      "question": "Walk through how you would deploy a Java API to AWS from source control through production, including artifact management, environment configuration, secrets, rollback, and post-deployment verification.",
+      "competency": "AWS delivery practices",
+      "competency_type": "technical",
+      "target_gap": "Amazon Web Services (AWS)",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Assesses whether the candidate can translate infrastructure and systems experience into practical cloud-based software delivery.",
+      "source_evidence": [
+        "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+        "Candidate experience: planned and managed upgrade, migration, and conversion projects"
+      ],
+      "priority": 0.97,
+      "weight": 0.9433
+    },
+    {
+      "question": "You join a team with established payment and compliance rules that you have not previously worked with. How would you rapidly learn the domain while avoiding risky assumptions in early technical decisions?",
+      "competency": "Domain onboarding",
+      "competency_type": "soft",
+      "target_gap": "Fintech",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Evaluates the candidate's approach to closing a material domain gap in a safety-conscious manner.",
+      "source_evidence": [
+        "Gap matrix: Fintech \u2014 missing",
+        "Candidate experience: led and mentored multiple teams",
+        "Job requires strong Fintech background"
+      ],
+      "priority": 0.89,
+      "weight": 0.9327
+    },
+    {
+      "question": "Tell me about a delivery that required alignment among technical teams, business stakeholders, and an external vendor. What conflicts arose, what did you do, and what was the outcome?",
+      "competency": "Cross-functional collaboration",
+      "competency_type": "soft",
+      "target_gap": "Cross-functional collaboration",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests the weakly matched collaboration requirement using the candidate's documented vendor and multi-team coordination experience.",
+      "source_evidence": [
+        "Gap matrix: Cross-functional collaboration \u2014 weak_match",
+        "Candidate experience: communicated with vendors and multiple teams to resolve technical issues and allocate resources",
+        "Candidate experience: managed reporting requirements for SDIO and CUBS"
+      ],
+      "priority": 0.9,
+      "weight": 0.7243
+    },
+    {
+      "question": "Your background emphasizes infrastructure, databases, and enterprise architecture. Give a concrete example of software you personally designed or implemented, including the language, your code-level contribution, testing approach, and production outcome.",
+      "competency": "Software engineering depth",
+      "competency_type": "domain",
+      "target_gap": "Software engineering experience",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Clarifies the weak evidence for sustained hands-on software engineering versus systems and infrastructure leadership.",
+      "source_evidence": [
+        "Gap matrix: Software engineering experience \u2014 weak_match",
+        "Candidate evidence: Installed, configured, tested, and maintained database management software.",
+        "Candidate experience: analyzed, designed, developed, tested, and implemented ARCS automated processes"
+      ],
+      "priority": 0.91,
+      "weight": 0.6905
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 7684,
+    "output_tokens": 3712,
+    "cached_tokens": 0,
+    "estimated_cost": 0.059912,
+    "latency_ms": 30203.96,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.059912,
+  "cost_cny": 0.40560424,
+  "selection_latency_ms": 47.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:45.444097+00:00"
+}

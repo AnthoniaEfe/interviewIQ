@@ -1,0 +1,1137 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S0",
+  "selection_strategy": "random",
+  "generation_mode": null,
+  "profile_id": "rjf_05997_55a65605ad8f",
+  "jd_id": "rjf_05997_55a65605ad8f",
+  "pair_id": "rjf_05997_55a65605ad8f",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_05997_55a65605ad8f__rjf_05997_55a65605ad8f__mid.json",
+  "n_requirements": 43,
+  "questions": [
+    {
+      "question": "Given an asset record that must remain available across regions, compare a relational database, document store, and key-value store for the primary data model. What consistency, indexing, and query trade-offs would drive your choice?"
+    },
+    {
+      "question": "You have Docker experience. How would you containerize a service that needs configuration, secrets, health checks, structured logs, and least-privilege runtime access? What common image and runtime risks would you avoid?"
+    },
+    {
+      "question": "Walk me through how you would decompose an asset-management platform into microservices. Which services would own which data, and how would you handle cross-service workflows without creating tightly coupled synchronous dependencies?"
+    },
+    {
+      "question": "The team uses Jenkins today. Describe how you would structure a pipeline that builds a Java service, runs unit and integration tests, produces a container image, and promotes a release only when the right checks pass."
+    },
+    {
+      "question": "What storage characteristics matter when designing a service that keeps asset metadata plus potentially large immutable artifacts? Discuss durability, replication, throughput, latency, lifecycle management, and failure recovery."
+    },
+    {
+      "question": "Describe the Java design choices you would make for a high-throughput REST service that must validate requests, isolate downstream failures, and support safe schema evolution."
+    },
+    {
+      "question": "Tell me about one of the four major projects you led from press release to delivery. How did you set measurable outcomes, track progress, handle risks, and decide whether the delivered result was successful?"
+    },
+    {
+      "question": "Describe the migration campaign for approximately 400 internal customers: how did you stage the rollout, validate availability and security improvements, respond to exceptions, and determine when the migration was complete?"
+    },
+    {
+      "question": "For a Linux service that is intermittently killed under load, which OS-level signals and tools would you inspect to distinguish memory pressure, file-descriptor exhaustion, process limits, and a genuine application leak?"
+    },
+    {
+      "question": "How would you explain a trade-off between eventual consistency and stronger consistency in the asset platform to a non-technical stakeholder deciding on user-visible behavior?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Given an asset record that must remain available across regions, compare a relational database, document store, and key-value store for the primary data model. What consistency, indexing, and query trade-offs would drive your choice?",
+      "competency": "Data-store selection",
+      "competency_type": "technical",
+      "target_gap": "Relational databases",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "The profile lists SQL but the matrix marks relational databases weak; this verifies practical data-modeling depth and contrasts it with NoSQL alternatives.",
+      "source_evidence": [
+        "SQL",
+        "Relational databases is marked weak_match",
+        "NoSQL systems is marked weak_match"
+      ],
+      "priority": 0.94,
+      "weight": 0.6992
+    },
+    {
+      "question": "You have Docker experience. How would you containerize a service that needs configuration, secrets, health checks, structured logs, and least-privilege runtime access? What common image and runtime risks would you avoid?",
+      "competency": "Containerization",
+      "competency_type": "technical",
+      "target_gap": "Docker",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Confirms the strong Docker match and assesses whether it translates into secure, operable service delivery.",
+      "source_evidence": [
+        "Docker",
+        "Docker is marked strong_match",
+        "Backend systems"
+      ],
+      "priority": 0.77,
+      "weight": 0.1014
+    },
+    {
+      "question": "Walk me through how you would decompose an asset-management platform into microservices. Which services would own which data, and how would you handle cross-service workflows without creating tightly coupled synchronous dependencies?",
+      "competency": "Microservice architecture",
+      "competency_type": "technical",
+      "target_gap": "Microservices",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Microservices is a required weak match, so this probes architectural judgment for a central role responsibility.",
+      "source_evidence": [
+        "Highly scalable backend systems",
+        "Led development of multi-tenant, highly scalable software solutions.",
+        "Microservices is marked weak_match"
+      ],
+      "priority": 0.97,
+      "weight": 0.7208
+    },
+    {
+      "question": "The team uses Jenkins today. Describe how you would structure a pipeline that builds a Java service, runs unit and integration tests, produces a container image, and promotes a release only when the right checks pass.",
+      "competency": "Continuous integration",
+      "competency_type": "technical",
+      "target_gap": "Continuous integration",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Jenkins is a strong match but CI is missing; this distinguishes familiarity with the tool from capability to design dependable automation.",
+      "source_evidence": [
+        "Jenkins",
+        "Continuous integration is marked missing",
+        "Docker"
+      ],
+      "priority": 0.84,
+      "weight": 0.5628
+    },
+    {
+      "question": "What storage characteristics matter when designing a service that keeps asset metadata plus potentially large immutable artifacts? Discuss durability, replication, throughput, latency, lifecycle management, and failure recovery.",
+      "competency": "Storage architecture",
+      "competency_type": "technical",
+      "target_gap": "Storage",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Storage is a required weak match and is directly relevant to an asset-management system.",
+      "source_evidence": [
+        "Storage is marked weak_match",
+        "Cloud infrastructure",
+        "Backend systems"
+      ],
+      "priority": 0.92,
+      "weight": 0.7326
+    },
+    {
+      "question": "Describe the Java design choices you would make for a high-throughput REST service that must validate requests, isolate downstream failures, and support safe schema evolution.",
+      "competency": "Java service engineering",
+      "competency_type": "technical",
+      "target_gap": "Java",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Validates the strong Java match in a role-relevant service design scenario.",
+      "source_evidence": [
+        "Java",
+        "Java annotation-based framework for writing and orchestrating test libraries for RESTful API services.",
+        "RESTful web services"
+      ],
+      "priority": 0.82,
+      "weight": 0.172
+    },
+    {
+      "question": "Tell me about one of the four major projects you led from press release to delivery. How did you set measurable outcomes, track progress, handle risks, and decide whether the delivered result was successful?",
+      "competency": "Results-driven delivery",
+      "competency_type": "soft",
+      "target_gap": "Results-driven execution",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Results-driven execution is marked missing despite strong achievement claims; this elicits concrete outcome definition and accountability.",
+      "source_evidence": [
+        "Completed four major projects from press release to final delivery across all SDLC processes.",
+        "Successfully led 4 major projects at Amazon",
+        "Unblocked more than 100 internal customers through major project delivery."
+      ],
+      "priority": 0.96,
+      "weight": 0.9227
+    },
+    {
+      "question": "Describe the migration campaign for approximately 400 internal customers: how did you stage the rollout, validate availability and security improvements, respond to exceptions, and determine when the migration was complete?",
+      "competency": "Migration execution",
+      "competency_type": "domain",
+      "target_gap": "profile_probe",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "This profile-specific probe validates a significant claimed accomplishment and reveals execution, risk-management, and stakeholder-management behaviors.",
+      "source_evidence": [
+        "Ran campaigns migrating approximately 400 internal customers to improve platform availability and security.",
+        "Unblocked more than 100 internal customers through major project delivery."
+      ],
+      "priority": 0.8,
+      "weight": 0.4816348837209302
+    },
+    {
+      "question": "For a Linux service that is intermittently killed under load, which OS-level signals and tools would you inspect to distinguish memory pressure, file-descriptor exhaustion, process limits, and a genuine application leak?",
+      "competency": "Linux systems debugging",
+      "competency_type": "technical",
+      "target_gap": "Linux/Unix fundamentals",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Linux is only a partial match; this assesses hands-on Linux/Unix diagnostic fluency needed for operating services.",
+      "source_evidence": [
+        "Linux",
+        "Linux/Unix fundamentals is marked partial_match",
+        "Shell scripting"
+      ],
+      "priority": 0.91,
+      "weight": 0.3737
+    },
+    {
+      "question": "How would you explain a trade-off between eventual consistency and stronger consistency in the asset platform to a non-technical stakeholder deciding on user-visible behavior?",
+      "competency": "Stakeholder communication",
+      "competency_type": "domain",
+      "target_gap": "Communication",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Communication is a required weak match; this directly evaluates the ability to translate a central distributed-systems trade-off for non-technical audiences.",
+      "source_evidence": [
+        "Communication is marked weak_match",
+        "Technical writing",
+        "paper presentation on Geo Distributed Monitoring Systems"
+      ],
+      "priority": 0.92,
+      "weight": 0.716
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    2,
+    17,
+    1,
+    15,
+    10,
+    11,
+    20,
+    30,
+    6,
+    23
+  ],
+  "repeats": [
+    {
+      "repeat": 0,
+      "selected_indices": [
+        2,
+        17,
+        1,
+        15,
+        10,
+        11,
+        20,
+        30,
+        6,
+        23
+      ],
+      "questions": [
+        {
+          "question": "Given an asset record that must remain available across regions, compare a relational database, document store, and key-value store for the primary data model. What consistency, indexing, and query trade-offs would drive your choice?",
+          "competency": "Data-store selection",
+          "competency_type": "technical",
+          "target_gap": "Relational databases",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The profile lists SQL but the matrix marks relational databases weak; this verifies practical data-modeling depth and contrasts it with NoSQL alternatives.",
+          "source_evidence": [
+            "SQL",
+            "Relational databases is marked weak_match",
+            "NoSQL systems is marked weak_match"
+          ],
+          "priority": 0.94,
+          "weight": 0.6992
+        },
+        {
+          "question": "You have Docker experience. How would you containerize a service that needs configuration, secrets, health checks, structured logs, and least-privilege runtime access? What common image and runtime risks would you avoid?",
+          "competency": "Containerization",
+          "competency_type": "technical",
+          "target_gap": "Docker",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Confirms the strong Docker match and assesses whether it translates into secure, operable service delivery.",
+          "source_evidence": [
+            "Docker",
+            "Docker is marked strong_match",
+            "Backend systems"
+          ],
+          "priority": 0.77,
+          "weight": 0.1014
+        },
+        {
+          "question": "Walk me through how you would decompose an asset-management platform into microservices. Which services would own which data, and how would you handle cross-service workflows without creating tightly coupled synchronous dependencies?",
+          "competency": "Microservice architecture",
+          "competency_type": "technical",
+          "target_gap": "Microservices",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Microservices is a required weak match, so this probes architectural judgment for a central role responsibility.",
+          "source_evidence": [
+            "Highly scalable backend systems",
+            "Led development of multi-tenant, highly scalable software solutions.",
+            "Microservices is marked weak_match"
+          ],
+          "priority": 0.97,
+          "weight": 0.7208
+        },
+        {
+          "question": "The team uses Jenkins today. Describe how you would structure a pipeline that builds a Java service, runs unit and integration tests, produces a container image, and promotes a release only when the right checks pass.",
+          "competency": "Continuous integration",
+          "competency_type": "technical",
+          "target_gap": "Continuous integration",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Jenkins is a strong match but CI is missing; this distinguishes familiarity with the tool from capability to design dependable automation.",
+          "source_evidence": [
+            "Jenkins",
+            "Continuous integration is marked missing",
+            "Docker"
+          ],
+          "priority": 0.84,
+          "weight": 0.5628
+        },
+        {
+          "question": "What storage characteristics matter when designing a service that keeps asset metadata plus potentially large immutable artifacts? Discuss durability, replication, throughput, latency, lifecycle management, and failure recovery.",
+          "competency": "Storage architecture",
+          "competency_type": "technical",
+          "target_gap": "Storage",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Storage is a required weak match and is directly relevant to an asset-management system.",
+          "source_evidence": [
+            "Storage is marked weak_match",
+            "Cloud infrastructure",
+            "Backend systems"
+          ],
+          "priority": 0.92,
+          "weight": 0.7326
+        },
+        {
+          "question": "Describe the Java design choices you would make for a high-throughput REST service that must validate requests, isolate downstream failures, and support safe schema evolution.",
+          "competency": "Java service engineering",
+          "competency_type": "technical",
+          "target_gap": "Java",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Validates the strong Java match in a role-relevant service design scenario.",
+          "source_evidence": [
+            "Java",
+            "Java annotation-based framework for writing and orchestrating test libraries for RESTful API services.",
+            "RESTful web services"
+          ],
+          "priority": 0.82,
+          "weight": 0.172
+        },
+        {
+          "question": "Tell me about one of the four major projects you led from press release to delivery. How did you set measurable outcomes, track progress, handle risks, and decide whether the delivered result was successful?",
+          "competency": "Results-driven delivery",
+          "competency_type": "soft",
+          "target_gap": "Results-driven execution",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Results-driven execution is marked missing despite strong achievement claims; this elicits concrete outcome definition and accountability.",
+          "source_evidence": [
+            "Completed four major projects from press release to final delivery across all SDLC processes.",
+            "Successfully led 4 major projects at Amazon",
+            "Unblocked more than 100 internal customers through major project delivery."
+          ],
+          "priority": 0.96,
+          "weight": 0.9227
+        },
+        {
+          "question": "Describe the migration campaign for approximately 400 internal customers: how did you stage the rollout, validate availability and security improvements, respond to exceptions, and determine when the migration was complete?",
+          "competency": "Migration execution",
+          "competency_type": "domain",
+          "target_gap": "profile_probe",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "This profile-specific probe validates a significant claimed accomplishment and reveals execution, risk-management, and stakeholder-management behaviors.",
+          "source_evidence": [
+            "Ran campaigns migrating approximately 400 internal customers to improve platform availability and security.",
+            "Unblocked more than 100 internal customers through major project delivery."
+          ],
+          "priority": 0.8,
+          "weight": 0.4816348837209302
+        },
+        {
+          "question": "For a Linux service that is intermittently killed under load, which OS-level signals and tools would you inspect to distinguish memory pressure, file-descriptor exhaustion, process limits, and a genuine application leak?",
+          "competency": "Linux systems debugging",
+          "competency_type": "technical",
+          "target_gap": "Linux/Unix fundamentals",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Linux is only a partial match; this assesses hands-on Linux/Unix diagnostic fluency needed for operating services.",
+          "source_evidence": [
+            "Linux",
+            "Linux/Unix fundamentals is marked partial_match",
+            "Shell scripting"
+          ],
+          "priority": 0.91,
+          "weight": 0.3737
+        },
+        {
+          "question": "How would you explain a trade-off between eventual consistency and stronger consistency in the asset platform to a non-technical stakeholder deciding on user-visible behavior?",
+          "competency": "Stakeholder communication",
+          "competency_type": "domain",
+          "target_gap": "Communication",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Communication is a required weak match; this directly evaluates the ability to translate a central distributed-systems trade-off for non-technical audiences.",
+          "source_evidence": [
+            "Communication is marked weak_match",
+            "Technical writing",
+            "paper presentation on Geo Distributed Monitoring Systems"
+          ],
+          "priority": 0.92,
+          "weight": 0.716
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 1,
+      "selected_indices": [
+        11,
+        24,
+        1,
+        25,
+        15,
+        13,
+        0,
+        7,
+        9,
+        18
+      ],
+      "questions": [
+        {
+          "question": "Describe the Java design choices you would make for a high-throughput REST service that must validate requests, isolate downstream failures, and support safe schema evolution.",
+          "competency": "Java service engineering",
+          "competency_type": "technical",
+          "target_gap": "Java",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Validates the strong Java match in a role-relevant service design scenario.",
+          "source_evidence": [
+            "Java",
+            "Java annotation-based framework for writing and orchestrating test libraries for RESTful API services.",
+            "RESTful web services"
+          ],
+          "priority": 0.82,
+          "weight": 0.172
+        },
+        {
+          "question": "Please give a concise two-minute explanation of how a geo-distributed monitoring solution works, first for an operations leader and then for a senior engineer. What would you change between the two explanations?",
+          "competency": "Audience-aware presentation",
+          "competency_type": "domain",
+          "target_gap": "Clear presentation of complex information",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Tests a weak required communication area using the candidate's documented geo-distributed monitoring work and technical presentation experience.",
+          "source_evidence": [
+            "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+            "Invited to VMware Radio 2016 for a paper presentation",
+            "Clear presentation of complex information is marked weak_match"
+          ],
+          "priority": 0.88,
+          "weight": 0.6918
+        },
+        {
+          "question": "Walk me through how you would decompose an asset-management platform into microservices. Which services would own which data, and how would you handle cross-service workflows without creating tightly coupled synchronous dependencies?",
+          "competency": "Microservice architecture",
+          "competency_type": "technical",
+          "target_gap": "Microservices",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Microservices is a required weak match, so this probes architectural judgment for a central role responsibility.",
+          "source_evidence": [
+            "Highly scalable backend systems",
+            "Led development of multi-tenant, highly scalable software solutions.",
+            "Microservices is marked weak_match"
+          ],
+          "priority": 0.97,
+          "weight": 0.7208
+        },
+        {
+          "question": "You are leading two delivery-critical projects when a high-severity production issue interrupts both. How would you prioritize, delegate, communicate status, and protect the highest-value commitments?",
+          "competency": "Priority management",
+          "competency_type": "other",
+          "target_gap": "Project and priority management",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "The candidate has project-leadership evidence but only a partial match for priority management; this probes decision-making under realistic pressure.",
+          "source_evidence": [
+            "Led 4 major projects at Amazon",
+            "Project and priority management is marked partial_match",
+            "Improved platform availability and security for approximately 400 internal customers."
+          ],
+          "priority": 0.89,
+          "weight": 0.3806
+        },
+        {
+          "question": "The team uses Jenkins today. Describe how you would structure a pipeline that builds a Java service, runs unit and integration tests, produces a container image, and promotes a release only when the right checks pass.",
+          "competency": "Continuous integration",
+          "competency_type": "technical",
+          "target_gap": "Continuous integration",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Jenkins is a strong match but CI is missing; this distinguishes familiarity with the tool from capability to design dependable automation.",
+          "source_evidence": [
+            "Jenkins",
+            "Continuous integration is marked missing",
+            "Docker"
+          ],
+          "priority": 0.84,
+          "weight": 0.5628
+        },
+        {
+          "question": "A downstream dependency begins timing out and retries from several services threaten to overload it. What debugging evidence would you collect, and what immediate and longer-term mitigations would you implement?",
+          "competency": "Resilient debugging",
+          "competency_type": "other",
+          "target_gap": "Debugging",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests the candidate's strong debugging match in a distributed production failure relevant to operating scalable services.",
+          "source_evidence": [
+            "Debugging",
+            "Troubleshooting",
+            "Highly scalable backend systems"
+          ],
+          "priority": 0.85,
+          "weight": 0.1689
+        },
+        {
+          "question": "Design the canonical asset-management API for creating, retrieving, and updating assets at high scale. How would you define resource boundaries, idempotency behavior, versioning, pagination, and error contracts?",
+          "competency": "REST API design",
+          "competency_type": "technical",
+          "target_gap": "REST API development",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Tests a documented strength in API development against the role's core asset-management use case and assesses depth beyond a keyword match.",
+          "source_evidence": [
+            "API development",
+            "Stateless POST request service",
+            "RESTful web services"
+          ],
+          "priority": 0.9,
+          "weight": 0.1689
+        },
+        {
+          "question": "Explain how virtual memory, scheduling, blocking I/O, and context switching can influence the throughput and tail latency of a multithreaded backend service.",
+          "competency": "Operating-systems fundamentals",
+          "competency_type": "technical",
+          "target_gap": "Operating systems",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Operating systems is a required partial match and the role explicitly includes low-level systems work.",
+          "source_evidence": [
+            "Backend systems",
+            "Operating systems is marked partial_match",
+            "Linux"
+          ],
+          "priority": 0.9,
+          "weight": 0.3923
+        },
+        {
+          "question": "A rollout causes two regions to return conflicting versions of the same asset. How would you reason about the consistency model, diagnose the conflict, remediate affected records, and prevent recurrence?",
+          "competency": "Distributed-systems reliability",
+          "competency_type": "other",
+          "target_gap": "Distributed systems",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests a required partial match using the candidate's geo-distributed background while focusing on failure and consistency reasoning.",
+          "source_evidence": [
+            "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+            "Distributed systems is marked partial_match"
+          ],
+          "priority": 0.94,
+          "weight": 0.3995
+        },
+        {
+          "question": "Assume the team plans to run the asset-management services on Kubernetes, which is not listed in your profile. How would you approach learning and safely deploying a stateful service there, including readiness, scaling, persistent volumes, and rollback?",
+          "competency": "Kubernetes operations",
+          "competency_type": "other",
+          "target_gap": "Kubernetes",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Kubernetes is missing but relevant to the stated containerized system-design requirement; the question also assesses practical learning approach.",
+          "source_evidence": [
+            "Kubernetes is marked missing",
+            "Docker",
+            "Cloud infrastructure"
+          ],
+          "priority": 0.82,
+          "weight": 0.5543
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 2,
+      "selected_indices": [
+        10,
+        6,
+        19,
+        17,
+        27,
+        16,
+        2,
+        14,
+        28,
+        5
+      ],
+      "questions": [
+        {
+          "question": "What storage characteristics matter when designing a service that keeps asset metadata plus potentially large immutable artifacts? Discuss durability, replication, throughput, latency, lifecycle management, and failure recovery.",
+          "competency": "Storage architecture",
+          "competency_type": "technical",
+          "target_gap": "Storage",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Storage is a required weak match and is directly relevant to an asset-management system.",
+          "source_evidence": [
+            "Storage is marked weak_match",
+            "Cloud infrastructure",
+            "Backend systems"
+          ],
+          "priority": 0.92,
+          "weight": 0.7326
+        },
+        {
+          "question": "For a Linux service that is intermittently killed under load, which OS-level signals and tools would you inspect to distinguish memory pressure, file-descriptor exhaustion, process limits, and a genuine application leak?",
+          "competency": "Linux systems debugging",
+          "competency_type": "technical",
+          "target_gap": "Linux/Unix fundamentals",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Linux is only a partial match; this assesses hands-on Linux/Unix diagnostic fluency needed for operating services.",
+          "source_evidence": [
+            "Linux",
+            "Linux/Unix fundamentals is marked partial_match",
+            "Shell scripting"
+          ],
+          "priority": 0.91,
+          "weight": 0.3737
+        },
+        {
+          "question": "Design an observability plan for the asset API. Which SLIs, logs, traces, dashboards, and alerts would you create, and how would they help distinguish client errors, service regressions, and dependency failures?",
+          "competency": "Observability",
+          "competency_type": "technical",
+          "target_gap": "Observability",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Observability is missing and is important for the role's operate, troubleshoot, and tune responsibilities.",
+          "source_evidence": [
+            "Observability is marked missing",
+            "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems.",
+            "Zabbix"
+          ],
+          "priority": 0.89,
+          "weight": 0.5609
+        },
+        {
+          "question": "You have Docker experience. How would you containerize a service that needs configuration, secrets, health checks, structured logs, and least-privilege runtime access? What common image and runtime risks would you avoid?",
+          "competency": "Containerization",
+          "competency_type": "technical",
+          "target_gap": "Docker",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Confirms the strong Docker match and assesses whether it translates into secure, operable service delivery.",
+          "source_evidence": [
+            "Docker",
+            "Docker is marked strong_match",
+            "Backend systems"
+          ],
+          "priority": 0.77,
+          "weight": 0.1014
+        },
+        {
+          "question": "This role includes global stakeholders and distributed time zones. How would you structure written updates, decisions, and handoffs so that progress continues asynchronously without excluding key collaborators?",
+          "competency": "Global collaboration",
+          "competency_type": "other",
+          "target_gap": "Global distributed-team collaboration",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Global distributed-team collaboration is a partial preferred match and aligns with the role's global communication responsibility.",
+          "source_evidence": [
+            "Collaboration",
+            "Technical writing",
+            "Global distributed-team collaboration is marked partial_match"
+          ],
+          "priority": 0.69,
+          "weight": 0.2199
+        },
+        {
+          "question": "What Git workflow would you establish for a service maintained by several engineers to keep main releasable, support urgent fixes, and make code review effective?",
+          "competency": "Version-control workflow",
+          "competency_type": "technical",
+          "target_gap": "Git",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Git is missing from the profile and is a preferred tool expected in the engineering workflow.",
+          "source_evidence": [
+            "Git is marked missing",
+            "Agile development",
+            "Led 4 major projects at Amazon"
+          ],
+          "priority": 0.66,
+          "weight": 0.5548
+        },
+        {
+          "question": "Given an asset record that must remain available across regions, compare a relational database, document store, and key-value store for the primary data model. What consistency, indexing, and query trade-offs would drive your choice?",
+          "competency": "Data-store selection",
+          "competency_type": "technical",
+          "target_gap": "Relational databases",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The profile lists SQL but the matrix marks relational databases weak; this verifies practical data-modeling depth and contrasts it with NoSQL alternatives.",
+          "source_evidence": [
+            "SQL",
+            "Relational databases is marked weak_match",
+            "NoSQL systems is marked weak_match"
+          ],
+          "priority": 0.94,
+          "weight": 0.6992
+        },
+        {
+          "question": "What would a production-ready CI/CD pipeline for an asset-management service include from commit through deployment and rollback? Explain the quality gates and the deployment strategy you would choose.",
+          "competency": "Continuous delivery",
+          "competency_type": "technical",
+          "target_gap": "Continuous deployment",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Continuous deployment is missing from the profile yet important for the role's build, deploy, and operate responsibility.",
+          "source_evidence": [
+            "Continuous deployment is marked missing",
+            "Jenkins",
+            "Docker"
+          ],
+          "priority": 0.86,
+          "weight": 0.5559
+        },
+        {
+          "question": "Your background includes vCloud Air systems, VMware ESXi, and vCenter. How did the operational characteristics of that environment shape your approach to monitoring, load testing, and failure handling?",
+          "competency": "Infrastructure operations",
+          "competency_type": "domain",
+          "target_gap": "Data center infrastructure and operations",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Uses relevant profile-specific infrastructure experience to validate the partial match for the role's preferred operational domain knowledge.",
+          "source_evidence": [
+            "vCloud Air systems",
+            "VMware ESXi",
+            "vCenter",
+            "Built orchestration tools for system engineers across six teams to perform load tests and stress tests."
+          ],
+          "priority": 0.71,
+          "weight": 0.2266
+        },
+        {
+          "question": "Describe a production issue you diagnosed in a backend system: what signals first indicated a problem, how did you narrow the failure domain, what was the root cause, and what preventive controls did you add?",
+          "competency": "Production troubleshooting",
+          "competency_type": "soft",
+          "target_gap": "Troubleshooting",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Confirms the strong troubleshooting match with a concrete incident narrative and evaluates operational ownership.",
+          "source_evidence": [
+            "Troubleshooting",
+            "Debugging",
+            "Highly scalable backend systems"
+          ],
+          "priority": 0.82,
+          "weight": 0.1689
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 3,
+      "selected_indices": [
+        20,
+        19,
+        24,
+        13,
+        17,
+        16,
+        26,
+        15,
+        23,
+        25
+      ],
+      "questions": [
+        {
+          "question": "Tell me about one of the four major projects you led from press release to delivery. How did you set measurable outcomes, track progress, handle risks, and decide whether the delivered result was successful?",
+          "competency": "Results-driven delivery",
+          "competency_type": "soft",
+          "target_gap": "Results-driven execution",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Results-driven execution is marked missing despite strong achievement claims; this elicits concrete outcome definition and accountability.",
+          "source_evidence": [
+            "Completed four major projects from press release to final delivery across all SDLC processes.",
+            "Successfully led 4 major projects at Amazon",
+            "Unblocked more than 100 internal customers through major project delivery."
+          ],
+          "priority": 0.96,
+          "weight": 0.9227
+        },
+        {
+          "question": "Design an observability plan for the asset API. Which SLIs, logs, traces, dashboards, and alerts would you create, and how would they help distinguish client errors, service regressions, and dependency failures?",
+          "competency": "Observability",
+          "competency_type": "technical",
+          "target_gap": "Observability",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Observability is missing and is important for the role's operate, troubleshoot, and tune responsibilities.",
+          "source_evidence": [
+            "Observability is marked missing",
+            "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems.",
+            "Zabbix"
+          ],
+          "priority": 0.89,
+          "weight": 0.5609
+        },
+        {
+          "question": "Please give a concise two-minute explanation of how a geo-distributed monitoring solution works, first for an operations leader and then for a senior engineer. What would you change between the two explanations?",
+          "competency": "Audience-aware presentation",
+          "competency_type": "domain",
+          "target_gap": "Clear presentation of complex information",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Tests a weak required communication area using the candidate's documented geo-distributed monitoring work and technical presentation experience.",
+          "source_evidence": [
+            "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+            "Invited to VMware Radio 2016 for a paper presentation",
+            "Clear presentation of complex information is marked weak_match"
+          ],
+          "priority": 0.88,
+          "weight": 0.6918
+        },
+        {
+          "question": "A downstream dependency begins timing out and retries from several services threaten to overload it. What debugging evidence would you collect, and what immediate and longer-term mitigations would you implement?",
+          "competency": "Resilient debugging",
+          "competency_type": "other",
+          "target_gap": "Debugging",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests the candidate's strong debugging match in a distributed production failure relevant to operating scalable services.",
+          "source_evidence": [
+            "Debugging",
+            "Troubleshooting",
+            "Highly scalable backend systems"
+          ],
+          "priority": 0.85,
+          "weight": 0.1689
+        },
+        {
+          "question": "You have Docker experience. How would you containerize a service that needs configuration, secrets, health checks, structured logs, and least-privilege runtime access? What common image and runtime risks would you avoid?",
+          "competency": "Containerization",
+          "competency_type": "technical",
+          "target_gap": "Docker",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Confirms the strong Docker match and assesses whether it translates into secure, operable service delivery.",
+          "source_evidence": [
+            "Docker",
+            "Docker is marked strong_match",
+            "Backend systems"
+          ],
+          "priority": 0.77,
+          "weight": 0.1014
+        },
+        {
+          "question": "What Git workflow would you establish for a service maintained by several engineers to keep main releasable, support urgent fixes, and make code review effective?",
+          "competency": "Version-control workflow",
+          "competency_type": "technical",
+          "target_gap": "Git",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Git is missing from the profile and is a preferred tool expected in the engineering workflow.",
+          "source_evidence": [
+            "Git is marked missing",
+            "Agile development",
+            "Led 4 major projects at Amazon"
+          ],
+          "priority": 0.66,
+          "weight": 0.5548
+        },
+        {
+          "question": "Describe how you decide when to work independently on a problem versus when to bring in teammates or partner teams. Use an example involving a dependency or customer migration if possible.",
+          "competency": "Independent collaboration",
+          "competency_type": "soft",
+          "target_gap": "Independent and team collaboration",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests the required partial match for balancing ownership and collaboration, grounded in the candidate's migration and cross-customer work.",
+          "source_evidence": [
+            "Collaboration",
+            "Ran campaigns migrating approximately 400 internal customers",
+            "Collaborated with an agile development team"
+          ],
+          "priority": 0.81,
+          "weight": 0.352
+        },
+        {
+          "question": "The team uses Jenkins today. Describe how you would structure a pipeline that builds a Java service, runs unit and integration tests, produces a container image, and promotes a release only when the right checks pass.",
+          "competency": "Continuous integration",
+          "competency_type": "technical",
+          "target_gap": "Continuous integration",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Jenkins is a strong match but CI is missing; this distinguishes familiarity with the tool from capability to design dependable automation.",
+          "source_evidence": [
+            "Jenkins",
+            "Continuous integration is marked missing",
+            "Docker"
+          ],
+          "priority": 0.84,
+          "weight": 0.5628
+        },
+        {
+          "question": "How would you explain a trade-off between eventual consistency and stronger consistency in the asset platform to a non-technical stakeholder deciding on user-visible behavior?",
+          "competency": "Stakeholder communication",
+          "competency_type": "domain",
+          "target_gap": "Communication",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Communication is a required weak match; this directly evaluates the ability to translate a central distributed-systems trade-off for non-technical audiences.",
+          "source_evidence": [
+            "Communication is marked weak_match",
+            "Technical writing",
+            "paper presentation on Geo Distributed Monitoring Systems"
+          ],
+          "priority": 0.92,
+          "weight": 0.716
+        },
+        {
+          "question": "You are leading two delivery-critical projects when a high-severity production issue interrupts both. How would you prioritize, delegate, communicate status, and protect the highest-value commitments?",
+          "competency": "Priority management",
+          "competency_type": "other",
+          "target_gap": "Project and priority management",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "The candidate has project-leadership evidence but only a partial match for priority management; this probes decision-making under realistic pressure.",
+          "source_evidence": [
+            "Led 4 major projects at Amazon",
+            "Project and priority management is marked partial_match",
+            "Improved platform availability and security for approximately 400 internal customers."
+          ],
+          "priority": 0.89,
+          "weight": 0.3806
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 4,
+      "selected_indices": [
+        5,
+        7,
+        20,
+        28,
+        1,
+        18,
+        14,
+        6,
+        11,
+        4
+      ],
+      "questions": [
+        {
+          "question": "Describe a production issue you diagnosed in a backend system: what signals first indicated a problem, how did you narrow the failure domain, what was the root cause, and what preventive controls did you add?",
+          "competency": "Production troubleshooting",
+          "competency_type": "soft",
+          "target_gap": "Troubleshooting",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Confirms the strong troubleshooting match with a concrete incident narrative and evaluates operational ownership.",
+          "source_evidence": [
+            "Troubleshooting",
+            "Debugging",
+            "Highly scalable backend systems"
+          ],
+          "priority": 0.82,
+          "weight": 0.1689
+        },
+        {
+          "question": "Explain how virtual memory, scheduling, blocking I/O, and context switching can influence the throughput and tail latency of a multithreaded backend service.",
+          "competency": "Operating-systems fundamentals",
+          "competency_type": "technical",
+          "target_gap": "Operating systems",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Operating systems is a required partial match and the role explicitly includes low-level systems work.",
+          "source_evidence": [
+            "Backend systems",
+            "Operating systems is marked partial_match",
+            "Linux"
+          ],
+          "priority": 0.9,
+          "weight": 0.3923
+        },
+        {
+          "question": "Tell me about one of the four major projects you led from press release to delivery. How did you set measurable outcomes, track progress, handle risks, and decide whether the delivered result was successful?",
+          "competency": "Results-driven delivery",
+          "competency_type": "soft",
+          "target_gap": "Results-driven execution",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Results-driven execution is marked missing despite strong achievement claims; this elicits concrete outcome definition and accountability.",
+          "source_evidence": [
+            "Completed four major projects from press release to final delivery across all SDLC processes.",
+            "Successfully led 4 major projects at Amazon",
+            "Unblocked more than 100 internal customers through major project delivery."
+          ],
+          "priority": 0.96,
+          "weight": 0.9227
+        },
+        {
+          "question": "Your background includes vCloud Air systems, VMware ESXi, and vCenter. How did the operational characteristics of that environment shape your approach to monitoring, load testing, and failure handling?",
+          "competency": "Infrastructure operations",
+          "competency_type": "domain",
+          "target_gap": "Data center infrastructure and operations",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Uses relevant profile-specific infrastructure experience to validate the partial match for the role's preferred operational domain knowledge.",
+          "source_evidence": [
+            "vCloud Air systems",
+            "VMware ESXi",
+            "vCenter",
+            "Built orchestration tools for system engineers across six teams to perform load tests and stress tests."
+          ],
+          "priority": 0.71,
+          "weight": 0.2266
+        },
+        {
+          "question": "Walk me through how you would decompose an asset-management platform into microservices. Which services would own which data, and how would you handle cross-service workflows without creating tightly coupled synchronous dependencies?",
+          "competency": "Microservice architecture",
+          "competency_type": "technical",
+          "target_gap": "Microservices",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Microservices is a required weak match, so this probes architectural judgment for a central role responsibility.",
+          "source_evidence": [
+            "Highly scalable backend systems",
+            "Led development of multi-tenant, highly scalable software solutions.",
+            "Microservices is marked weak_match"
+          ],
+          "priority": 0.97,
+          "weight": 0.7208
+        },
+        {
+          "question": "Assume the team plans to run the asset-management services on Kubernetes, which is not listed in your profile. How would you approach learning and safely deploying a stateful service there, including readiness, scaling, persistent volumes, and rollback?",
+          "competency": "Kubernetes operations",
+          "competency_type": "other",
+          "target_gap": "Kubernetes",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Kubernetes is missing but relevant to the stated containerized system-design requirement; the question also assesses practical learning approach.",
+          "source_evidence": [
+            "Kubernetes is marked missing",
+            "Docker",
+            "Cloud infrastructure"
+          ],
+          "priority": 0.82,
+          "weight": 0.5543
+        },
+        {
+          "question": "What would a production-ready CI/CD pipeline for an asset-management service include from commit through deployment and rollback? Explain the quality gates and the deployment strategy you would choose.",
+          "competency": "Continuous delivery",
+          "competency_type": "technical",
+          "target_gap": "Continuous deployment",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Continuous deployment is missing from the profile yet important for the role's build, deploy, and operate responsibility.",
+          "source_evidence": [
+            "Continuous deployment is marked missing",
+            "Jenkins",
+            "Docker"
+          ],
+          "priority": 0.86,
+          "weight": 0.5559
+        },
+        {
+          "question": "For a Linux service that is intermittently killed under load, which OS-level signals and tools would you inspect to distinguish memory pressure, file-descriptor exhaustion, process limits, and a genuine application leak?",
+          "competency": "Linux systems debugging",
+          "competency_type": "technical",
+          "target_gap": "Linux/Unix fundamentals",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Linux is only a partial match; this assesses hands-on Linux/Unix diagnostic fluency needed for operating services.",
+          "source_evidence": [
+            "Linux",
+            "Linux/Unix fundamentals is marked partial_match",
+            "Shell scripting"
+          ],
+          "priority": 0.91,
+          "weight": 0.3737
+        },
+        {
+          "question": "Describe the Java design choices you would make for a high-throughput REST service that must validate requests, isolate downstream failures, and support safe schema evolution.",
+          "competency": "Java service engineering",
+          "competency_type": "technical",
+          "target_gap": "Java",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Validates the strong Java match in a role-relevant service design scenario.",
+          "source_evidence": [
+            "Java",
+            "Java annotation-based framework for writing and orchestrating test libraries for RESTful API services.",
+            "RESTful web services"
+          ],
+          "priority": 0.82,
+          "weight": 0.172
+        },
+        {
+          "question": "An asset lookup endpoint has rising p99 latency, but CPU utilization is normal. Describe your investigation from request tracing through database, network, and storage layers, including how you would isolate the bottleneck safely in production.",
+          "competency": "Performance diagnosis",
+          "competency_type": "other",
+          "target_gap": "Performance tuning",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Builds on the candidate's performance-optimization experience while testing the operational performance-tuning depth required by the role.",
+          "source_evidence": [
+            "Performance optimization",
+            "Improved backend requests for Amazon products by 7\u20139%.",
+            "Delivered performance optimizations resulting in approximately 7% or $10 million in IMR savings."
+          ],
+          "priority": 0.93,
+          "weight": 0.3736
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    }
+  ],
+  "selection_latency_ms": 0.07,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:48.183967+00:00"
+}

@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_05855_1d0e27a3eacb",
+  "jd_id": "rjf_05855_1d0e27a3eacb",
+  "pair_id": "rjf_05855_1d0e27a3eacb",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "[Technical] You created Excel spreadsheets and PowerPoint presentations to support maintenance decisions. Walk us through one analysis: what data you used, how you structured or validated it, what insight you found, and how it changed a decision."
+    },
+    {
+      "question": "[Technical] This role requires formal requirements analysis, which is not explicitly described in your background. How would you elicit, document, validate, and obtain sign-off on requirements from business users, technicians, and managers for a mobile-system improvement?"
+    },
+    {
+      "question": "[Behavioural] Describe how you worked with Quality Assurance to maintain compliance with NAMP 4790.2b while supervising 20 aircraft logbooks and five maintenance programs. How did you handle a discrepancy or competing interpretation of the requirements?"
+    },
+    {
+      "question": "[Situational] A mobile application\u2019s operations team requests a workflow change, while management wants a different feature completed first and technical staff identify delivery risk. How would you assess the requests, prioritize them, communicate the rationale, and maintain stakeholder alignment?"
+    },
+    {
+      "question": "[Role-Specific] Your weekly process-improvement training for more than 100 maintenance professionals reduced man-hours and eliminated wasteful practices. What was the underlying process problem, how did you measure the improvement, and how would you adapt that approach to business-process optimization in this role?"
+    },
+    {
+      "question": "[Technical] What experience do you have with user acceptance testing? If asked to lead UAT for a new mobile workflow, how would you create test scenarios, define acceptance criteria, capture defects, and determine readiness for release?"
+    },
+    {
+      "question": "[Behavioural] Tell us about a time you had to influence people to adopt a process change, such as during your process-improvement training. What resistance did you encounter, what did you do, and what was the result?"
+    },
+    {
+      "question": "[Situational] You inherit a business process supported by a legacy system, comparable in complexity to the NALCOMIS/SYBASE environment you supported. How would you decide whether to automate, modernize, or retain the process while controlling operational disruption and cost?"
+    },
+    {
+      "question": "[Cultural/Motivational] What motivates your transition from transportation logistics, manufacturing operations, and naval maintenance records into a Business Analyst role focused on mobile solutions, and how do you plan to build depth in areas such as formal BA documentation and modern IT practices?"
+    },
+    {
+      "question": "[Role-Specific] This position requires managing project plans, deliverables, resources, and deadlines. Drawing on your experience supervising shifts and resolving NALCOMIS issues to minimize downtime, describe how you would establish a project plan and manage risks when several critical deliverables are due at the same time."
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 6077,
+    "output_tokens": 548,
+    "cached_tokens": 0,
+    "estimated_cost": 0.01873,
+    "latency_ms": 6273.21,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.01873,
+  "cost_cny": 0.1268021,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:05:26.172762+00:00",
+  "user_prompt_sha256": "104064e7e5b39d586c419f614e4267357d597aec3783bf854e912d63ee8ad686"
+}

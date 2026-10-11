@@ -1,0 +1,1089 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S0",
+  "selection_strategy": "random",
+  "generation_mode": null,
+  "profile_id": "rjf_05901_0ce23bc466db",
+  "jd_id": "rjf_05901_0ce23bc466db",
+  "pair_id": "rjf_05901_0ce23bc466db",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_05901_0ce23bc466db__rjf_05901_0ce23bc466db__mid.json",
+  "n_requirements": 42,
+  "questions": [
+    {
+      "question": "How would you design persistence for a scalable application that needs transactional operational data as well as high-volume event data? Explain what you would place in relational versus non-relational storage and why."
+    },
+    {
+      "question": "How would you structure Confluence spaces and page templates so architecture decisions, sprint outcomes, operational runbooks, and release notes remain current and discoverable?"
+    },
+    {
+      "question": "You list Java, but the profile does not describe a Java deliverable. Walk through a Java or J2EE application you have built or maintained, including its layers, dependencies, and your personal contribution."
+    },
+    {
+      "question": "Describe the Agile practices you have actually participated in. Which ceremonies, artifacts, roles, and metrics did you use, and how did they change delivery outcomes?"
+    },
+    {
+      "question": "What branching, pull-request, review, release-tagging, and rollback model would you establish in GitHub for several teams releasing shared services?"
+    },
+    {
+      "question": "In your Navy target-control testing work, what aspects of the system were time-sensitive or hardware-coupled, and how did you test timing, interfaces, and fault behavior?"
+    },
+    {
+      "question": "You led an Army element of six personnel. Describe how you set expectations, addressed an individual performance issue, and maintained morale; then explain how you would adapt that approach to supervising 15\u201320 software staff."
+    },
+    {
+      "question": "Give an example of when competing testing priorities changed suddenly. How did you re-plan your work, communicate trade-offs, and ensure the most important risks were still addressed?"
+    },
+    {
+      "question": "Suppose a developer is adding message parsing to a C++ service. How would you coach them to use test-driven development from the first failing test through refactoring and acceptance criteria?"
+    },
+    {
+      "question": "This role requires authorization to work in the United States. Can you confirm that you can meet this requirement without describing any personal details beyond what is necessary?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "How would you design persistence for a scalable application that needs transactional operational data as well as high-volume event data? Explain what you would place in relational versus non-relational storage and why.",
+      "competency": "Database architecture",
+      "competency_type": "other",
+      "target_gap": "Relational and non-relational databases",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "The profile only notes assistance with SQL Server setup and maintenance, while the role requires design and management across relational and non-relational databases.",
+      "source_evidence": [
+        "Assisted with setup and maintenance of SQL Server 2014",
+        "designing, developing, and managing applications using both relational and non-relational databases"
+      ],
+      "priority": 0.96,
+      "weight": 0.6995
+    },
+    {
+      "question": "How would you structure Confluence spaces and page templates so architecture decisions, sprint outcomes, operational runbooks, and release notes remain current and discoverable?",
+      "competency": "Confluence knowledge management",
+      "competency_type": "other",
+      "target_gap": "Confluence",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Confluence is a high-weight missing tool requirement and is important for cross-team coordination.",
+      "source_evidence": [
+        "Generated Software Description and Testing Plan documents from test reports",
+        "using ... Confluence"
+      ],
+      "priority": 0.95,
+      "weight": 0.9428
+    },
+    {
+      "question": "You list Java, but the profile does not describe a Java deliverable. Walk through a Java or J2EE application you have built or maintained, including its layers, dependencies, and your personal contribution.",
+      "competency": "Java/J2EE development",
+      "competency_type": "technical",
+      "target_gap": "Java/J2EE",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The Java/J2EE match is partial and needs verification of practical enterprise Java experience.",
+      "source_evidence": [
+        "Programming: Java",
+        "Java/J2EE software development"
+      ],
+      "priority": 0.91,
+      "weight": 0.3493
+    },
+    {
+      "question": "Describe the Agile practices you have actually participated in. Which ceremonies, artifacts, roles, and metrics did you use, and how did they change delivery outcomes?",
+      "competency": "Agile development",
+      "competency_type": "soft",
+      "target_gap": "Agile development",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests the candidate's actual Agile exposure before assigning Agile-method SME responsibilities.",
+      "source_evidence": [
+        "Helped plan and organize software testing",
+        "Agile development methods and processes"
+      ],
+      "priority": 0.92,
+      "weight": 0.7324
+    },
+    {
+      "question": "What branching, pull-request, review, release-tagging, and rollback model would you establish in GitHub for several teams releasing shared services?",
+      "competency": "Version control management",
+      "competency_type": "technical",
+      "target_gap": "Version control architecture and management",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "The profile mentions TFS modification but does not establish version-control architecture or governance experience.",
+      "source_evidence": [
+        "Modified and updated Microsoft Team Foundation Server",
+        "Version control architecture and management skills"
+      ],
+      "priority": 0.91,
+      "weight": 0.6479
+    },
+    {
+      "question": "In your Navy target-control testing work, what aspects of the system were time-sensitive or hardware-coupled, and how did you test timing, interfaces, and fault behavior?",
+      "competency": "Real-time embedded testing",
+      "competency_type": "technical",
+      "target_gap": "Real-time embedded software",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Uses the closest relevant system context in the profile to verify whether the candidate has exposure to real-time or embedded concerns.",
+      "source_evidence": [
+        "Performed software testing for the Navy System for Naval Target Control",
+        "Verified software and hardware against software requirements"
+      ],
+      "priority": 0.7,
+      "weight": 0.3975
+    },
+    {
+      "question": "You led an Army element of six personnel. Describe how you set expectations, addressed an individual performance issue, and maintained morale; then explain how you would adapt that approach to supervising 15\u201320 software staff.",
+      "competency": "Staff management",
+      "competency_type": "soft",
+      "target_gap": "Staff management and development",
+      "question_type": "Behavioural",
+      "difficulty": "hard",
+      "rationale": "The candidate has some documented leadership, but the role's people-management scope is substantially larger and requires direct evaluation.",
+      "source_evidence": [
+        "Conducted Team Leader duties for an element of 6 personnel",
+        "Led an element of 6 personnel",
+        "Manage and develop staff, supervising approximately 15\u201320 people"
+      ],
+      "priority": 0.98,
+      "weight": 0.3987
+    },
+    {
+      "question": "Give an example of when competing testing priorities changed suddenly. How did you re-plan your work, communicate trade-offs, and ensure the most important risks were still addressed?",
+      "competency": "Adaptability and prioritization",
+      "competency_type": "soft",
+      "target_gap": "Adaptability and independent work",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Builds on the candidate's stated work ethic and planning experience while testing a preferred capability relevant to shifting priorities.",
+      "source_evidence": [
+        "Helped plan and organize software testing",
+        "Earned a reputation as a hard worker with a strong work ethic",
+        "changing direction and competing priorities"
+      ],
+      "priority": 0.69,
+      "weight": 0.2216
+    },
+    {
+      "question": "Suppose a developer is adding message parsing to a C++ service. How would you coach them to use test-driven development from the first failing test through refactoring and acceptance criteria?",
+      "competency": "Test-driven development",
+      "competency_type": "other",
+      "target_gap": "Test-driven development",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Probes whether the candidate can apply TDD as a development practice rather than only perform downstream testing.",
+      "source_evidence": [
+        "Test automation",
+        "Test Driven DesignDevelopment"
+      ],
+      "priority": 0.88,
+      "weight": 0.3984
+    },
+    {
+      "question": "This role requires authorization to work in the United States. Can you confirm that you can meet this requirement without describing any personal details beyond what is necessary?",
+      "competency": "Work authorization",
+      "competency_type": "domain",
+      "target_gap": "U.S. work authorization",
+      "question_type": "Role-Specific",
+      "difficulty": "junior",
+      "rationale": "Confirms a stated job requirement; the profile's Army service is not sufficient evidence on its own.",
+      "source_evidence": [
+        "Completed U.S. Army EOD training",
+        "US Citizenship or Authorization to work in US required"
+      ],
+      "priority": 0.72,
+      "weight": 0.3879
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    2,
+    16,
+    1,
+    14,
+    10,
+    23,
+    18,
+    28,
+    5,
+    21
+  ],
+  "repeats": [
+    {
+      "repeat": 0,
+      "selected_indices": [
+        2,
+        16,
+        1,
+        14,
+        10,
+        23,
+        18,
+        28,
+        5,
+        21
+      ],
+      "questions": [
+        {
+          "question": "How would you design persistence for a scalable application that needs transactional operational data as well as high-volume event data? Explain what you would place in relational versus non-relational storage and why.",
+          "competency": "Database architecture",
+          "competency_type": "other",
+          "target_gap": "Relational and non-relational databases",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "The profile only notes assistance with SQL Server setup and maintenance, while the role requires design and management across relational and non-relational databases.",
+          "source_evidence": [
+            "Assisted with setup and maintenance of SQL Server 2014",
+            "designing, developing, and managing applications using both relational and non-relational databases"
+          ],
+          "priority": 0.96,
+          "weight": 0.6995
+        },
+        {
+          "question": "How would you structure Confluence spaces and page templates so architecture decisions, sprint outcomes, operational runbooks, and release notes remain current and discoverable?",
+          "competency": "Confluence knowledge management",
+          "competency_type": "other",
+          "target_gap": "Confluence",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Confluence is a high-weight missing tool requirement and is important for cross-team coordination.",
+          "source_evidence": [
+            "Generated Software Description and Testing Plan documents from test reports",
+            "using ... Confluence"
+          ],
+          "priority": 0.95,
+          "weight": 0.9428
+        },
+        {
+          "question": "You list Java, but the profile does not describe a Java deliverable. Walk through a Java or J2EE application you have built or maintained, including its layers, dependencies, and your personal contribution.",
+          "competency": "Java/J2EE development",
+          "competency_type": "technical",
+          "target_gap": "Java/J2EE",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The Java/J2EE match is partial and needs verification of practical enterprise Java experience.",
+          "source_evidence": [
+            "Programming: Java",
+            "Java/J2EE software development"
+          ],
+          "priority": 0.91,
+          "weight": 0.3493
+        },
+        {
+          "question": "Describe the Agile practices you have actually participated in. Which ceremonies, artifacts, roles, and metrics did you use, and how did they change delivery outcomes?",
+          "competency": "Agile development",
+          "competency_type": "soft",
+          "target_gap": "Agile development",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests the candidate's actual Agile exposure before assigning Agile-method SME responsibilities.",
+          "source_evidence": [
+            "Helped plan and organize software testing",
+            "Agile development methods and processes"
+          ],
+          "priority": 0.92,
+          "weight": 0.7324
+        },
+        {
+          "question": "What branching, pull-request, review, release-tagging, and rollback model would you establish in GitHub for several teams releasing shared services?",
+          "competency": "Version control management",
+          "competency_type": "technical",
+          "target_gap": "Version control architecture and management",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The profile mentions TFS modification but does not establish version-control architecture or governance experience.",
+          "source_evidence": [
+            "Modified and updated Microsoft Team Foundation Server",
+            "Version control architecture and management skills"
+          ],
+          "priority": 0.91,
+          "weight": 0.6479
+        },
+        {
+          "question": "In your Navy target-control testing work, what aspects of the system were time-sensitive or hardware-coupled, and how did you test timing, interfaces, and fault behavior?",
+          "competency": "Real-time embedded testing",
+          "competency_type": "technical",
+          "target_gap": "Real-time embedded software",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Uses the closest relevant system context in the profile to verify whether the candidate has exposure to real-time or embedded concerns.",
+          "source_evidence": [
+            "Performed software testing for the Navy System for Naval Target Control",
+            "Verified software and hardware against software requirements"
+          ],
+          "priority": 0.7,
+          "weight": 0.3975
+        },
+        {
+          "question": "You led an Army element of six personnel. Describe how you set expectations, addressed an individual performance issue, and maintained morale; then explain how you would adapt that approach to supervising 15\u201320 software staff.",
+          "competency": "Staff management",
+          "competency_type": "soft",
+          "target_gap": "Staff management and development",
+          "question_type": "Behavioural",
+          "difficulty": "hard",
+          "rationale": "The candidate has some documented leadership, but the role's people-management scope is substantially larger and requires direct evaluation.",
+          "source_evidence": [
+            "Conducted Team Leader duties for an element of 6 personnel",
+            "Led an element of 6 personnel",
+            "Manage and develop staff, supervising approximately 15\u201320 people"
+          ],
+          "priority": 0.98,
+          "weight": 0.3987
+        },
+        {
+          "question": "Give an example of when competing testing priorities changed suddenly. How did you re-plan your work, communicate trade-offs, and ensure the most important risks were still addressed?",
+          "competency": "Adaptability and prioritization",
+          "competency_type": "soft",
+          "target_gap": "Adaptability and independent work",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Builds on the candidate's stated work ethic and planning experience while testing a preferred capability relevant to shifting priorities.",
+          "source_evidence": [
+            "Helped plan and organize software testing",
+            "Earned a reputation as a hard worker with a strong work ethic",
+            "changing direction and competing priorities"
+          ],
+          "priority": 0.69,
+          "weight": 0.2216
+        },
+        {
+          "question": "Suppose a developer is adding message parsing to a C++ service. How would you coach them to use test-driven development from the first failing test through refactoring and acceptance criteria?",
+          "competency": "Test-driven development",
+          "competency_type": "other",
+          "target_gap": "Test-driven development",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Probes whether the candidate can apply TDD as a development practice rather than only perform downstream testing.",
+          "source_evidence": [
+            "Test automation",
+            "Test Driven DesignDevelopment"
+          ],
+          "priority": 0.88,
+          "weight": 0.3984
+        },
+        {
+          "question": "This role requires authorization to work in the United States. Can you confirm that you can meet this requirement without describing any personal details beyond what is necessary?",
+          "competency": "Work authorization",
+          "competency_type": "domain",
+          "target_gap": "U.S. work authorization",
+          "question_type": "Role-Specific",
+          "difficulty": "junior",
+          "rationale": "Confirms a stated job requirement; the profile's Army service is not sufficient evidence on its own.",
+          "source_evidence": [
+            "Completed U.S. Army EOD training",
+            "US Citizenship or Authorization to work in US required"
+          ],
+          "priority": 0.72,
+          "weight": 0.3879
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 1,
+      "selected_indices": [
+        10,
+        22,
+        1,
+        23,
+        13,
+        27,
+        0,
+        7,
+        8,
+        17
+      ],
+      "questions": [
+        {
+          "question": "What branching, pull-request, review, release-tagging, and rollback model would you establish in GitHub for several teams releasing shared services?",
+          "competency": "Version control management",
+          "competency_type": "technical",
+          "target_gap": "Version control architecture and management",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The profile mentions TFS modification but does not establish version-control architecture or governance experience.",
+          "source_evidence": [
+            "Modified and updated Microsoft Team Foundation Server",
+            "Version control architecture and management skills"
+          ],
+          "priority": 0.91,
+          "weight": 0.6479
+        },
+        {
+          "question": "The position requires a local candidate in McLean, Virginia. Can you meet the role's location and onsite-work expectations, including the anticipated start timeframe?",
+          "competency": "Location availability",
+          "competency_type": "domain",
+          "target_gap": "Local candidate in McLean, Virginia",
+          "question_type": "Role-Specific",
+          "difficulty": "junior",
+          "rationale": "Location is an explicit role requirement and the profile provides no location information.",
+          "source_evidence": [
+            "Manually tested products in Jira",
+            "requires a local candidate in Mclean, VA"
+          ],
+          "priority": 0.73,
+          "weight": 0.7117
+        },
+        {
+          "question": "You list Java, but the profile does not describe a Java deliverable. Walk through a Java or J2EE application you have built or maintained, including its layers, dependencies, and your personal contribution.",
+          "competency": "Java/J2EE development",
+          "competency_type": "technical",
+          "target_gap": "Java/J2EE",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The Java/J2EE match is partial and needs verification of practical enterprise Java experience.",
+          "source_evidence": [
+            "Programming: Java",
+            "Java/J2EE software development"
+          ],
+          "priority": 0.91,
+          "weight": 0.3493
+        },
+        {
+          "question": "In your Navy target-control testing work, what aspects of the system were time-sensitive or hardware-coupled, and how did you test timing, interfaces, and fault behavior?",
+          "competency": "Real-time embedded testing",
+          "competency_type": "technical",
+          "target_gap": "Real-time embedded software",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Uses the closest relevant system context in the profile to verify whether the candidate has exposure to real-time or embedded concerns.",
+          "source_evidence": [
+            "Performed software testing for the Navy System for Naval Target Control",
+            "Verified software and hardware against software requirements"
+          ],
+          "priority": 0.7,
+          "weight": 0.3975
+        },
+        {
+          "question": "How would NTCIP, SAE, and IEEE standards influence requirements, interfaces, and test evidence for a connected-vehicle or traffic-management product?",
+          "competency": "ITS standards",
+          "competency_type": "technical",
+          "target_gap": "NTCIP, SAE, and IEEE standards",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The required standards knowledge is a weak match and must be assessed separately from general defense-system testing.",
+          "source_evidence": [
+            "Defense and military systems",
+            "Knowledge of NTCIP, SAE, and IEEE standards"
+          ],
+          "priority": 0.93,
+          "weight": 0.7061
+        },
+        {
+          "question": "You created and maintained virtual machines for test environments. How would you translate that environment-management experience into a Docker and Docker Compose workflow for local development, integration testing, and repeatable releases?",
+          "competency": "Containerization",
+          "competency_type": "other",
+          "target_gap": "Docker",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Docker is missing, while VMware experience provides a concrete adjacent capability from which to assess learning and operational reasoning.",
+          "source_evidence": [
+            "Created and maintained virtual machines for testing environments",
+            "VMware",
+            "Docker (including Docker-compose)"
+          ],
+          "priority": 0.78,
+          "weight": 0.5654
+        },
+        {
+          "question": "Describe the most substantial C++ code you wrote for the JTCG/ME contract: what problem did it solve, how was it structured, and how did you test and debug it?",
+          "competency": "C++ engineering",
+          "competency_type": "technical",
+          "target_gap": "C++",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Validates the candidate's strongest listed programming match and distinguishes hands-on implementation depth from a skills-list mention.",
+          "source_evidence": [
+            "Programmed in C++ for JTCG/ME contract projects",
+            "C++"
+          ],
+          "priority": 0.82,
+          "weight": 0.1661
+        },
+        {
+          "question": "For an ITS component that exchanges time-sensitive data, how would you decide between TCP and UDP, and where could SNMP fit into the operational design?",
+          "competency": "Network protocols",
+          "competency_type": "technical",
+          "target_gap": "Communication protocols",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The match is partial based on communication skills rather than documented protocol experience, so technical understanding needs direct assessment.",
+          "source_evidence": [
+            "Excellent written and verbal communication skills",
+            "communication protocols, such as TCP, UDP, SNMP"
+          ],
+          "priority": 0.87,
+          "weight": 0.3828
+        },
+        {
+          "question": "Prepare a concise verbal status update for an executive sponsor: a release is at risk because a critical integration defect was found two days before deployment. What would you say, and what decision would you ask for?",
+          "competency": "Executive communication",
+          "competency_type": "other",
+          "target_gap": "Professional writing and oral presentation",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Assesses whether claimed written and verbal skills translate to the concise, decision-oriented communication expected of a manager.",
+          "source_evidence": [
+            "Excellent written and verbal communication skills",
+            "Professional writing and oral presentation skills"
+          ],
+          "priority": 0.84,
+          "weight": 0.6732
+        },
+        {
+          "question": "A SonarCloud quality gate begins failing because of newly introduced code duplication and reduced test coverage. How would you investigate, set policy, and decide whether to block the release?",
+          "competency": "Code quality governance",
+          "competency_type": "other",
+          "target_gap": "SonarCloud",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "SonarCloud is missing from the profile and the role requires management of development processes using it.",
+          "source_evidence": [
+            "Troubleshot programs and fixed functional bugs",
+            "using ... Sonar Cloud"
+          ],
+          "priority": 0.95,
+          "weight": 0.9411
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 2,
+      "selected_indices": [
+        10,
+        5,
+        18,
+        15,
+        25,
+        14,
+        2,
+        13,
+        26,
+        4
+      ],
+      "questions": [
+        {
+          "question": "What branching, pull-request, review, release-tagging, and rollback model would you establish in GitHub for several teams releasing shared services?",
+          "competency": "Version control management",
+          "competency_type": "technical",
+          "target_gap": "Version control architecture and management",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The profile mentions TFS modification but does not establish version-control architecture or governance experience.",
+          "source_evidence": [
+            "Modified and updated Microsoft Team Foundation Server",
+            "Version control architecture and management skills"
+          ],
+          "priority": 0.91,
+          "weight": 0.6479
+        },
+        {
+          "question": "Suppose a developer is adding message parsing to a C++ service. How would you coach them to use test-driven development from the first failing test through refactoring and acceptance criteria?",
+          "competency": "Test-driven development",
+          "competency_type": "other",
+          "target_gap": "Test-driven development",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Probes whether the candidate can apply TDD as a development practice rather than only perform downstream testing.",
+          "source_evidence": [
+            "Test automation",
+            "Test Driven DesignDevelopment"
+          ],
+          "priority": 0.88,
+          "weight": 0.3984
+        },
+        {
+          "question": "You led an Army element of six personnel. Describe how you set expectations, addressed an individual performance issue, and maintained morale; then explain how you would adapt that approach to supervising 15\u201320 software staff.",
+          "competency": "Staff management",
+          "competency_type": "soft",
+          "target_gap": "Staff management and development",
+          "question_type": "Behavioural",
+          "difficulty": "hard",
+          "rationale": "The candidate has some documented leadership, but the role's people-management scope is substantially larger and requires direct evaluation.",
+          "source_evidence": [
+            "Conducted Team Leader duties for an element of 6 personnel",
+            "Led an element of 6 personnel",
+            "Manage and develop staff, supervising approximately 15\u201320 people"
+          ],
+          "priority": 0.98,
+          "weight": 0.3987
+        },
+        {
+          "question": "The profile shows Jira-based manual testing and bug tracking. How would you configure Jira workflows, boards, fields, and dashboards so multiple scrum teams can manage dependencies and release readiness?",
+          "competency": "Jira administration and delivery",
+          "competency_type": "technical",
+          "target_gap": "Atlassian Jira",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Uses documented Jira experience to probe the broader operational Jira capability required by the role.",
+          "source_evidence": [
+            "Manually tested products in Jira",
+            "Worked on a team of 8 monitoring and tracking application bugs",
+            "using ... Atlassian Jira"
+          ],
+          "priority": 0.8,
+          "weight": 0.3597
+        },
+        {
+          "question": "How would you evaluate whether Apache Kafka, NATS, or another messaging approach is appropriate for distributing high-volume, time-sensitive vehicle or control-system events?",
+          "competency": "Event-driven architecture",
+          "competency_type": "technical",
+          "target_gap": "Message queues, brokers, and data streaming",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests a relevant preferred architecture gap through a role-specific design scenario.",
+          "source_evidence": [
+            "Defense and military systems",
+            "message queues, message brokers, data streaming such as Apache Kafka, and NATS"
+          ],
+          "priority": 0.65,
+          "weight": 0.4252
+        },
+        {
+          "question": "Describe the Agile practices you have actually participated in. Which ceremonies, artifacts, roles, and metrics did you use, and how did they change delivery outcomes?",
+          "competency": "Agile development",
+          "competency_type": "soft",
+          "target_gap": "Agile development",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests the candidate's actual Agile exposure before assigning Agile-method SME responsibilities.",
+          "source_evidence": [
+            "Helped plan and organize software testing",
+            "Agile development methods and processes"
+          ],
+          "priority": 0.92,
+          "weight": 0.7324
+        },
+        {
+          "question": "How would you design persistence for a scalable application that needs transactional operational data as well as high-volume event data? Explain what you would place in relational versus non-relational storage and why.",
+          "competency": "Database architecture",
+          "competency_type": "other",
+          "target_gap": "Relational and non-relational databases",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "The profile only notes assistance with SQL Server setup and maintenance, while the role requires design and management across relational and non-relational databases.",
+          "source_evidence": [
+            "Assisted with setup and maintenance of SQL Server 2014",
+            "designing, developing, and managing applications using both relational and non-relational databases"
+          ],
+          "priority": 0.96,
+          "weight": 0.6995
+        },
+        {
+          "question": "How would NTCIP, SAE, and IEEE standards influence requirements, interfaces, and test evidence for a connected-vehicle or traffic-management product?",
+          "competency": "ITS standards",
+          "competency_type": "technical",
+          "target_gap": "NTCIP, SAE, and IEEE standards",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The required standards knowledge is a weak match and must be assessed separately from general defense-system testing.",
+          "source_evidence": [
+            "Defense and military systems",
+            "Knowledge of NTCIP, SAE, and IEEE standards"
+          ],
+          "priority": 0.93,
+          "weight": 0.7061
+        },
+        {
+          "question": "Describe a REST or SOAP service you have developed or consumed; if you have not, explain how you would define an API contract, authenticate callers, handle errors, and test compatibility.",
+          "competency": "Web services",
+          "competency_type": "technical",
+          "target_gap": "SOAP and REST web services",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The profile lists JavaScript and HTML but no web-service work, so the question permits candid verification and reasoning.",
+          "source_evidence": [
+            "JavaScript",
+            "HTML",
+            "developing and consuming SOAP and/or REST web services"
+          ],
+          "priority": 0.66,
+          "weight": 0.4285
+        },
+        {
+          "question": "When you set up automation testing for five stand-alone programs, what did the automated tests cover, how were they triggered, and how did you determine whether they were unit, integration, or end-to-end tests?",
+          "competency": "Automated unit testing",
+          "competency_type": "technical",
+          "target_gap": "Automated unit testing",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The candidate has documented automation experience, but its alignment to automated unit testing is only partial.",
+          "source_evidence": [
+            "Setup automation testing for 5 stand-alone programs",
+            "TestComplete/TestExecute"
+          ],
+          "priority": 0.83,
+          "weight": 0.3809
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 3,
+      "selected_indices": [
+        18,
+        25,
+        22,
+        12,
+        16,
+        15,
+        19,
+        14,
+        21,
+        23
+      ],
+      "questions": [
+        {
+          "question": "You led an Army element of six personnel. Describe how you set expectations, addressed an individual performance issue, and maintained morale; then explain how you would adapt that approach to supervising 15\u201320 software staff.",
+          "competency": "Staff management",
+          "competency_type": "soft",
+          "target_gap": "Staff management and development",
+          "question_type": "Behavioural",
+          "difficulty": "hard",
+          "rationale": "The candidate has some documented leadership, but the role's people-management scope is substantially larger and requires direct evaluation.",
+          "source_evidence": [
+            "Conducted Team Leader duties for an element of 6 personnel",
+            "Led an element of 6 personnel",
+            "Manage and develop staff, supervising approximately 15\u201320 people"
+          ],
+          "priority": 0.98,
+          "weight": 0.3987
+        },
+        {
+          "question": "How would you evaluate whether Apache Kafka, NATS, or another messaging approach is appropriate for distributing high-volume, time-sensitive vehicle or control-system events?",
+          "competency": "Event-driven architecture",
+          "competency_type": "technical",
+          "target_gap": "Message queues, brokers, and data streaming",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests a relevant preferred architecture gap through a role-specific design scenario.",
+          "source_evidence": [
+            "Defense and military systems",
+            "message queues, message brokers, data streaming such as Apache Kafka, and NATS"
+          ],
+          "priority": 0.65,
+          "weight": 0.4252
+        },
+        {
+          "question": "The position requires a local candidate in McLean, Virginia. Can you meet the role's location and onsite-work expectations, including the anticipated start timeframe?",
+          "competency": "Location availability",
+          "competency_type": "domain",
+          "target_gap": "Local candidate in McLean, Virginia",
+          "question_type": "Role-Specific",
+          "difficulty": "junior",
+          "rationale": "Location is an explicit role requirement and the profile provides no location information.",
+          "source_evidence": [
+            "Manually tested products in Jira",
+            "requires a local candidate in Mclean, VA"
+          ],
+          "priority": 0.73,
+          "weight": 0.7117
+        },
+        {
+          "question": "Explain a V2X interaction involving a vehicle, roadside equipment, and a backend service. What messages, latency concerns, security considerations, and failure cases would you expect?",
+          "competency": "V2X systems",
+          "competency_type": "technical",
+          "target_gap": "V2X",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Directly tests a required domain gap not substantiated by the candidate profile.",
+          "source_evidence": [
+            "Software testing",
+            "Strong knowledge of ... V2X"
+          ],
+          "priority": 0.94,
+          "weight": 0.7157
+        },
+        {
+          "question": "How would you structure Confluence spaces and page templates so architecture decisions, sprint outcomes, operational runbooks, and release notes remain current and discoverable?",
+          "competency": "Confluence knowledge management",
+          "competency_type": "other",
+          "target_gap": "Confluence",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Confluence is a high-weight missing tool requirement and is important for cross-team coordination.",
+          "source_evidence": [
+            "Generated Software Description and Testing Plan documents from test reports",
+            "using ... Confluence"
+          ],
+          "priority": 0.95,
+          "weight": 0.9428
+        },
+        {
+          "question": "The profile shows Jira-based manual testing and bug tracking. How would you configure Jira workflows, boards, fields, and dashboards so multiple scrum teams can manage dependencies and release readiness?",
+          "competency": "Jira administration and delivery",
+          "competency_type": "technical",
+          "target_gap": "Atlassian Jira",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Uses documented Jira experience to probe the broader operational Jira capability required by the role.",
+          "source_evidence": [
+            "Manually tested products in Jira",
+            "Worked on a team of 8 monitoring and tracking application bugs",
+            "using ... Atlassian Jira"
+          ],
+          "priority": 0.8,
+          "weight": 0.3597
+        },
+        {
+          "question": "Imagine three scrum teams share a dependency that threatens two release dates. As Scrum of Scrums lead, how would you surface the issue, establish ownership, sequence work, and communicate the plan?",
+          "competency": "Scrum-of-Scrums leadership",
+          "competency_type": "other",
+          "target_gap": "Scrum Master leadership",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Scrum Master leadership is a required weak match and is critical to coordinating the role's multiple work streams.",
+          "source_evidence": [
+            "Helped plan and organize software testing",
+            "Act as scrum of scrums master"
+          ],
+          "priority": 0.98,
+          "weight": 0.7249
+        },
+        {
+          "question": "Describe the Agile practices you have actually participated in. Which ceremonies, artifacts, roles, and metrics did you use, and how did they change delivery outcomes?",
+          "competency": "Agile development",
+          "competency_type": "soft",
+          "target_gap": "Agile development",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Tests the candidate's actual Agile exposure before assigning Agile-method SME responsibilities.",
+          "source_evidence": [
+            "Helped plan and organize software testing",
+            "Agile development methods and processes"
+          ],
+          "priority": 0.92,
+          "weight": 0.7324
+        },
+        {
+          "question": "This role requires authorization to work in the United States. Can you confirm that you can meet this requirement without describing any personal details beyond what is necessary?",
+          "competency": "Work authorization",
+          "competency_type": "domain",
+          "target_gap": "U.S. work authorization",
+          "question_type": "Role-Specific",
+          "difficulty": "junior",
+          "rationale": "Confirms a stated job requirement; the profile's Army service is not sufficient evidence on its own.",
+          "source_evidence": [
+            "Completed U.S. Army EOD training",
+            "US Citizenship or Authorization to work in US required"
+          ],
+          "priority": 0.72,
+          "weight": 0.3879
+        },
+        {
+          "question": "In your Navy target-control testing work, what aspects of the system were time-sensitive or hardware-coupled, and how did you test timing, interfaces, and fault behavior?",
+          "competency": "Real-time embedded testing",
+          "competency_type": "technical",
+          "target_gap": "Real-time embedded software",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Uses the closest relevant system context in the profile to verify whether the candidate has exposure to real-time or embedded concerns.",
+          "source_evidence": [
+            "Performed software testing for the Navy System for Naval Target Control",
+            "Verified software and hardware against software requirements"
+          ],
+          "priority": 0.7,
+          "weight": 0.3975
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 4,
+      "selected_indices": [
+        4,
+        6,
+        19,
+        27,
+        1,
+        16,
+        13,
+        25,
+        10,
+        3
+      ],
+      "questions": [
+        {
+          "question": "When you set up automation testing for five stand-alone programs, what did the automated tests cover, how were they triggered, and how did you determine whether they were unit, integration, or end-to-end tests?",
+          "competency": "Automated unit testing",
+          "competency_type": "technical",
+          "target_gap": "Automated unit testing",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The candidate has documented automation experience, but its alignment to automated unit testing is only partial.",
+          "source_evidence": [
+            "Setup automation testing for 5 stand-alone programs",
+            "TestComplete/TestExecute"
+          ],
+          "priority": 0.83,
+          "weight": 0.3809
+        },
+        {
+          "question": "Design a continuous-integration pipeline for a multi-team C++ and Java application. Which stages, quality gates, test suites, and feedback mechanisms would you require before a merge is accepted?",
+          "competency": "Continuous integration",
+          "competency_type": "technical",
+          "target_gap": "Continuous integration",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Continuous integration is a high-weight missing requirement central to the role's delivery responsibilities.",
+          "source_evidence": [
+            "Software testing",
+            "continuous integration"
+          ],
+          "priority": 0.99,
+          "weight": 0.9479
+        },
+        {
+          "question": "Imagine three scrum teams share a dependency that threatens two release dates. As Scrum of Scrums lead, how would you surface the issue, establish ownership, sequence work, and communicate the plan?",
+          "competency": "Scrum-of-Scrums leadership",
+          "competency_type": "other",
+          "target_gap": "Scrum Master leadership",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Scrum Master leadership is a required weak match and is critical to coordinating the role's multiple work streams.",
+          "source_evidence": [
+            "Helped plan and organize software testing",
+            "Act as scrum of scrums master"
+          ],
+          "priority": 0.98,
+          "weight": 0.7249
+        },
+        {
+          "question": "You created and maintained virtual machines for test environments. How would you translate that environment-management experience into a Docker and Docker Compose workflow for local development, integration testing, and repeatable releases?",
+          "competency": "Containerization",
+          "competency_type": "other",
+          "target_gap": "Docker",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Docker is missing, while VMware experience provides a concrete adjacent capability from which to assess learning and operational reasoning.",
+          "source_evidence": [
+            "Created and maintained virtual machines for testing environments",
+            "VMware",
+            "Docker (including Docker-compose)"
+          ],
+          "priority": 0.78,
+          "weight": 0.5654
+        },
+        {
+          "question": "You list Java, but the profile does not describe a Java deliverable. Walk through a Java or J2EE application you have built or maintained, including its layers, dependencies, and your personal contribution.",
+          "competency": "Java/J2EE development",
+          "competency_type": "technical",
+          "target_gap": "Java/J2EE",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The Java/J2EE match is partial and needs verification of practical enterprise Java experience.",
+          "source_evidence": [
+            "Programming: Java",
+            "Java/J2EE software development"
+          ],
+          "priority": 0.91,
+          "weight": 0.3493
+        },
+        {
+          "question": "How would you structure Confluence spaces and page templates so architecture decisions, sprint outcomes, operational runbooks, and release notes remain current and discoverable?",
+          "competency": "Confluence knowledge management",
+          "competency_type": "other",
+          "target_gap": "Confluence",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Confluence is a high-weight missing tool requirement and is important for cross-team coordination.",
+          "source_evidence": [
+            "Generated Software Description and Testing Plan documents from test reports",
+            "using ... Confluence"
+          ],
+          "priority": 0.95,
+          "weight": 0.9428
+        },
+        {
+          "question": "How would NTCIP, SAE, and IEEE standards influence requirements, interfaces, and test evidence for a connected-vehicle or traffic-management product?",
+          "competency": "ITS standards",
+          "competency_type": "technical",
+          "target_gap": "NTCIP, SAE, and IEEE standards",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The required standards knowledge is a weak match and must be assessed separately from general defense-system testing.",
+          "source_evidence": [
+            "Defense and military systems",
+            "Knowledge of NTCIP, SAE, and IEEE standards"
+          ],
+          "priority": 0.93,
+          "weight": 0.7061
+        },
+        {
+          "question": "How would you evaluate whether Apache Kafka, NATS, or another messaging approach is appropriate for distributing high-volume, time-sensitive vehicle or control-system events?",
+          "competency": "Event-driven architecture",
+          "competency_type": "technical",
+          "target_gap": "Message queues, brokers, and data streaming",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests a relevant preferred architecture gap through a role-specific design scenario.",
+          "source_evidence": [
+            "Defense and military systems",
+            "message queues, message brokers, data streaming such as Apache Kafka, and NATS"
+          ],
+          "priority": 0.65,
+          "weight": 0.4252
+        },
+        {
+          "question": "What branching, pull-request, review, release-tagging, and rollback model would you establish in GitHub for several teams releasing shared services?",
+          "competency": "Version control management",
+          "competency_type": "technical",
+          "target_gap": "Version control architecture and management",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The profile mentions TFS modification but does not establish version-control architecture or governance experience.",
+          "source_evidence": [
+            "Modified and updated Microsoft Team Foundation Server",
+            "Version control architecture and management skills"
+          ],
+          "priority": 0.91,
+          "weight": 0.6479
+        },
+        {
+          "question": "Compare a monolithic design, SOA, and microservices for a control-system application. What boundaries, failure modes, and operational trade-offs would drive your recommendation?",
+          "competency": "Architecture patterns",
+          "competency_type": "technical",
+          "target_gap": "Software architecture patterns",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests a major weak match against the role's complex-system architecture expectation.",
+          "source_evidence": [
+            "Software testing",
+            "common software development architectural styles and patterns (SOA, Microservices, etc.)"
+          ],
+          "priority": 0.95,
+          "weight": 0.6768
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    }
+  ],
+  "selection_latency_ms": 0.07,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:48.039478+00:00"
+}

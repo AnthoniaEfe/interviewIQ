@@ -5,12 +5,12 @@
 | Field | Value |
 | --- | --- |
 | Repository | `interviewIQ` |
-| Report date | 2026-10-04 |
+| Report date | 2026-10-11 |
 | Primary dataset | [`cnamuangtoun/resume-job-description-fit`](https://huggingface.co/datasets/cnamuangtoun/resume-job-description-fit) |
 | Generation model (controlled) | `gpt-5.6-terra` |
 | Extraction model | `gpt-5.6-luna` |
 | Embedding model | `all-MiniLM-L6-v2` |
-| Related deep-dives | [Gap sensitivity](gap_sensitivity_report.md) · [Fit-label control](fit_label_control_report.md) · [Gold-set protocol](gold_set_protocol.md) · [Classifier reframing](classifier_reframing_report.md) |
+| Related deep-dives | [Gap sensitivity](gap_sensitivity_report.md) · [Fit-label control](fit_label_control_report.md) · [Gold-set protocol](gold_set_protocol.md) · [Classifier reframing](classifier_reframing_report.md) · [Treatment pilot](treatment_pilot_report.md) |
 
 ---
 
@@ -20,7 +20,7 @@ InterviewIQ is a research system for generating interview questions that are con
 
 1. A **legacy flat-prompt baseline** (`interviewiq_baseline/`, historically `gpt-4o`).
 2. A **FastAPI application** with Luna/Terra routing, TF-IDF + BM25 + semantic retrieval, gap matrix labelling, competency weighting, and competency-weighted MMR.
-3. An **experiment runner** with stages for baseline generation, Luna extraction, gap analysis, evidence-set sensitivity, fit-label control, gold-set pack/analysis, and local classifier evaluation.
+3. An **experiment runner** with stages for baseline generation, Luna extraction, gap analysis, evidence-set sensitivity, fit-label control, gold-set pack/analysis, local classifier evaluation, and the **treatment pilot** (profile-aware baseline, InterviewIQ pool→MMR, selection ablations).
 4. A **Next.js research console** for browsing runs, costs, and question sets.
 
 **Work completed so far (quantitative):**
@@ -29,7 +29,7 @@ InterviewIQ is a research system for generating interview questions that are con
 | --- | --- | --- |
 | Local fit classifier (original V0) | Done (metrics frozen 2026-09-20) | Test accuracy 0.464, macro-F1 0.424 (not a thesis DV) |
 | Classifier reframing (V0–V6, group CV, gap-lite) | **Running** | Protocol frozen; MiniLM + gap-lite features being computed on the 8,000-pair splits. Do not cite variant metrics until `classifier_reframing_combined/summary.json` exists |
-| Terra baseline generation | Done | 30-pair and 150-pair runs; 10 questions/pair; ~$0.25 / ~$1.15 |
+| Terra baseline generation (B0) | Done | 30-pair ×3 replicates + 150-pair; 10 questions/pair |
 | Luna extraction (Primary-30) | Done | 30/30 pairs; $0.213; mean ~2.8 competencies vs ~24 tech skills |
 | Luna extraction (Holdout-30) | Done | 30/30 pairs; $0.196 |
 | Luna extraction (fit-label No Fit + extras) | Done | `exp_20261003T163033Z`; 98/98 pairs; **$0.673**; 0 failures |
@@ -38,10 +38,12 @@ InterviewIQ is a research system for generating interview questions that are con
 | Evidence-set sensitivity | Done | Competencies-only would inflate gaps to 94–97%; raw CV does **not** beat production evidence |
 | Fit-label control (HF labels vs gap rate) | Done | Frozen rule: **does not separate** No Fit vs Good Fit on both splits; do not claim validation |
 | Gold-set (human gap labels) | Phase 1 pack **built**; Phase 2 **not run** | 150 items + 10 calibration; **no human labels yet** (none fabricated) |
-| Full InterviewIQ question generation | Not yet run as controlled experiment | Pipeline modules exist; Terra pool + MMR stage pending batch eval |
+| Treatment pilot (B1 / T / B2 / S0–S2) | **Done** (primary-30) | Paid **$2.448** (B1 $0.602 + T pool $1.846); T not ≥ B1 on both proxies → **do not scale** on the advisory rule (Section 13) |
 | Human evaluation of questions | Not yet | Runner marks `human_evaluation: not_yet_evaluated` |
 
 **Thesis-relevant takeaway from gap work:** the stored high gap rate is **not** an artefact of scoring only ~2.7 extracted competencies—the production scorer already uses an expanded evidence union (~67 strings/pair). Substituting raw CV chunks does not reduce gaps. Restricting evidence to competencies alone *would* inflate gaps to ~94–97%, and that inflation exceeds a mismatched-candidate size-bias control. **Independent Hugging Face fit labels do not validate the matrix** under the pre-registered coarse rule (Section 9). Independent **requirement-level** human labels are the next check (gold set, Section 10); they have not been collected yet.
+
+**Thesis-relevant takeaway from the treatment pilot:** on model-free proxy diagnostics (not human quality), InterviewIQ treatment **T** reduced redundancy vs flat baseline **B0** but was **not** at least as good as the profile-aware baseline **B1** on requirement-coverage@0.45. Plain MMR (**B2**) from the same pool covered more requirements than weighted MMR. Consistent with the null fit-label control, gap-targeting alone should not be assumed to improve question sets.
 
 ---
 
@@ -262,6 +264,20 @@ Embedding device for sensitivity runs: **CUDA**. Library versions logged in each
 | --- | --- |
 | Protocol in `docs/classifier_reframing_report.md` | Frozen before the eval run |
 | `experiments/results/classifier_reframing_combined/` | **Not yet written** (gap-lite features still computing) |
+
+### 5.8 Treatment pilot (Terra; primary-30)
+
+| Experiment ID | Stage | Status | Pairs OK | Cost (USD) | Notes |
+| --- | --- | --- | ---: | ---: | --- |
+| `exp_20261011T130141Z` | baseline_profile_aware | completed | 2/2 | 0.031992 | Smoke B1 |
+| `exp_20261011T130156Z` | treatment_pipeline | completed | 2/2 | 0.108098 | Smoke T pool + weighted MMR |
+| `exp_20261011T130253Z` | selection_ablation | completed | 2 | 0 | Smoke B2/S0–S2 |
+| **`exp_20261011T130310Z`** | **baseline_profile_aware (B1)** | completed | **30/30** | **0.602350** | Profile-aware; prompt 1.0.0 |
+| **`exp_20261011T130619Z`** | **treatment_pipeline (T)** | completed | **30/30** | **1.845848** | Pool v1.1.0 → competency-weighted MMR |
+| **`exp_20261011T131945Z`** | **selection_ablation** | completed | **30** | **0** | B2, S0 (5×), S1, S2 on stored pool |
+| `treatment_pilot_combined/` | pilot_compare | completed | 30 | 0 | Diagnostics, tables, figures 40–43 |
+
+Pinned upstream (not re-run): extraction `exp_20260927T205741Z`, gap `exp_20260927T215232Z`, B0 replicates `exp_20260920T220958Z` / `exp_20260926T221259Z` / primary-30 subset of `exp_20260926T223339Z`. Deep-dive: [treatment_pilot_report.md](treatment_pilot_report.md).
 
 ---
 
@@ -597,16 +613,99 @@ The legacy `interviewiq_baseline/` package remains as a historical `gpt-4o` prot
 
 ---
 
-## 13. Application surface
+## 13. Treatment pilot (primary-30)
 
-### 10.1 Backend API
+Full protocol and tables: [treatment_pilot_report.md](treatment_pilot_report.md). Combined artifacts: `experiments/results/treatment_pilot_combined/`. Figures 40–43 in `docs/figures/`. USD→CNY at **6.77**.
+
+**Fair comparison (held constant):** model `gpt-5.6-terra`, `reasoning_effort=medium`, `max_output_tokens=12000`, temperature omitted, seniority `mid`, \(N=10\), same 30 pairs. Stored extraction + gap reused (no new Luna cost). B0 not regenerated (three stored replicates).
+
+### 13.1 Conditions
+
+| ID | Name | Terra inputs | Final-10 selection |
+| --- | --- | --- | --- |
+| B0 | Flat prompt (stored) | raw CV + JD | none (3 replicates) |
+| B1 | Profile-aware | extraction JSON only | none (single call) |
+| T | InterviewIQ | extraction + gap matrix → pool 30 | competency-weighted MMR (λ=0.7) |
+| B2 | Plain MMR | same pool as T | MMR, relevance = priority, weights = 1 |
+| S0 / S1 / S2 | Selection ablations | same pool | random (5×) / top-priority / query-MMR |
+
+### 13.2 Spend and stage cost
+
+| Paid stage | Experiment | Pairs | Cost USD | Cost CNY |
+| --- | --- | ---: | ---: | ---: |
+| B1 generation | `exp_20261011T130310Z` | 30/30 | **0.602350** | 4.078 |
+| T pool generation | `exp_20261011T130619Z` | 30/30 | **1.845848** | 12.496 |
+| **Pilot paid total** | — | — | **2.448198** | **16.574** |
+
+Failures / truncations reported in summaries: **0** failed pairs (30/30 B1, 30/30 T). Selection ablations: **$0**.
+
+| Stage | Model | Cost/pair USD | Cost/pair CNY | Cost 150 CNY (linear) | Latency/pair s |
+| --- | --- | ---: | ---: | ---: | ---: |
+| B0 generation | Terra | 0.00765 | 0.052 | 7.77 | 5.46 |
+| B1 generation | Terra | 0.02008 | 0.136 | 20.39 | 6.80 |
+| T pool generation | Terra | 0.06153 | 0.417 | 62.48 | 28.72 |
+| Selection (local) | — | 0 | 0 | 0 | 0.0015 |
+| Extraction (attributed) | Luna | 0.00711 | 0.048 | 7.22 | 31.26 |
+| Gap analysis (attributed) | — | 0 | 0 | 0 | 0.062 |
+
+**Full-pipeline cost per pair:** B0 **$0.0077** (gen only); B1 **$0.0272** (extract+gen); T/B2 **$0.0686** (extract+gap+pool+select). Latency/pair ≈ 5.5 s (B0), 38 s (B1), 60 s (T/B2).
+
+### 13.3 B0 replicate variability
+
+Across the three stored B0 replicates (90 pair-comparisons): mean embedding similarity of question-set centroids **0.934**; mean exact question-text Jaccard **0.0006** (wording changes run-to-run; semantic content stays close).
+
+### 13.4 Proxy diagnostics (n=30; bootstrap 95% CIs; seed 42)
+
+Label: redundancy and coverage are **proxies**, not human quality. Coverage = embedding assignment of questions to job requirements at cosine ≥ 0.45.
+
+| Condition | Redundancy mean [CI] | Coverage@0.45 mean [CI] | Lexical-specificity mean [CI] |
+| --- | --- | --- | --- |
+| B0 (mean of 3 reps) | 0.341 [0.324, 0.356] | 0.270 [0.218, 0.332] | 0.974 [0.959, 0.987] |
+| B1 | 0.301 [0.287, 0.315] | 0.272 [0.211, 0.343] | 0.993 [0.983, 1.000] |
+| T | 0.286 [0.264, 0.310] | 0.267 [0.224, 0.313] | 0.917 [0.887, 0.943] |
+| B2 | 0.279 [0.256, 0.303] | 0.316 [0.263, 0.379] | 0.927 [0.900, 0.950] |
+| S0 | 0.293 [0.269, 0.316] | 0.303 [0.241, 0.378] | 0.947 [0.917, 0.973] |
+| S1 | 0.322 [0.298, 0.349] | 0.304 [0.255, 0.360] | 0.927 [0.900, 0.953] |
+| S2 | 0.332 [0.308, 0.356] | 0.321 [0.272, 0.381] | 0.973 [0.953, 0.990] |
+
+Schema validity: **30/30** pairs × 10 questions for every condition above.
+
+### 13.5 Paired comparisons (exploratory; Holm across three)
+
+| Contrast | Redundancy (T−other) | Coverage@0.45 (T−other) |
+| --- | --- | --- |
+| T vs B1 | Δ=−0.015 [−0.039, 0.008]; \(r_{rb}\)=−0.29; Holm p=0.33 | Δ=−0.005 [−0.059, 0.043]; \(r_{rb}\)=−0.04; Holm p=1.00 |
+| T vs B0 | Δ=−0.055 [−0.078, −0.031]; \(r_{rb}\)=−0.80; Holm p=0.0001 | Δ=−0.003 [−0.055, 0.046]; \(r_{rb}\)=0.07; Holm p=1.00 |
+| T vs B2 | Δ=+0.006 [−0.004, 0.016]; \(r_{rb}\)=0.28; Holm p=0.33 | Δ=−0.049 [−0.087, −0.019]; \(r_{rb}\)=−0.81; Holm p=0.013 |
+
+Lower redundancy is better; higher coverage is better. n=30, low power; p-values exploratory.
+
+### 13.6 Selection overlap and gap-category of selected questions
+
+Mean Jaccard of selected pool indices: T∩B2 **0.581** [0.514, 0.646]; T∩S1 **0.608** [0.533, 0.685]; T∩S2 **0.197** [0.161, 0.234].
+
+Among T’s 300 selected questions: **95.0%** target a gap (weak/missing), **2.7%** partial, **2.3%** `profile_probe`, **0%** strong-match — weighted MMR crowds out strength probes (strong-match weights ≈ 0.15). Pool: mean validation-failure rate ≈ **2.4%**; mean `profile_probe` rate ≈ **9.4%**; nearest-competency weight fallback rate **0.0**.
+
+### 13.7 Pilot decision-rule outcome (advisory)
+
+Frozen rule: recommend scaling to 150 pairs only if T ≥ B1 on **both** redundancy (lower) and coverage@0.45 (higher).
+
+- Redundancy T ≤ B1: **yes** (0.286 vs 0.301)
+- Coverage T ≥ B1: **no** (0.267 vs 0.272)
+- **`recommend_scale = false`** — diagnose components first (pool prompt, weight mapping, weighted MMR). Decision to scale remains the researcher’s. Proxies ≠ quality.
+
+---
+
+## 14. Application surface
+
+### 14.1 Backend API
 
 - `GET /api/v1/health` — health  
 - Pipeline / gap endpoints under `app/api/v1/pipeline.py`  
 - Experiment listing / detail under `app/api/v1/experiments.py`  
 - System / model routing info under `app/api/v1/system.py`
 
-### 10.2 Frontend research console
+### 14.2 Frontend research console
 
 - `/` — experiment list + aggregate cost/latency  
 - `/experiments/[id]` — latency, cost, token, and fit-label charts; question inspector  
@@ -614,7 +713,7 @@ The legacy `interviewiq_baseline/` package remains as a historical `gpt-4o` prot
 
 API base: `NEXT_PUBLIC_API_URL` (default `http://127.0.0.1:8000`).
 
-### 10.3 Experiment runner stages
+### 14.3 Experiment runner stages
 
 ```bash
 # Baseline
@@ -642,11 +741,15 @@ PYTHONPATH=backend python experiments/scripts/analyze_gold_set.py
 
 # Classifier reframing (local embeddings only; no LLM)
 PYTHONPATH=backend python experiments/scripts/run_classifier_eval.py
+
+# Treatment pilot (B1 + T + ablations + compare; paid Terra)
+PYTHONPATH=backend python experiments/scripts/run_treatment_pilot.py --dry-run
+PYTHONPATH=backend python experiments/scripts/run_treatment_pilot.py --confirm-spend --max-cost 4.00
 ```
 
 ---
 
-## 14. Testing
+## 15. Testing
 
 Tests mock LLM usage and do not call paid APIs. Prefer `EMBEDDING_MODEL=hashing-test` to avoid downloading Sentence-Transformer weights.
 
@@ -663,27 +766,31 @@ Tests mock LLM usage and do not call paid APIs. Prefer `EMBEDDING_MODEL=hashing-
 | **Fit-label control** | NF sampling disjointness, spend guard, JT toy, synthetic end-to-end |
 | **Gold set** | Deterministic stratified sampler, blind-field check, analysis refusal on missing/short/invalid files, kappa/bootstrap toys, weighted mean |
 | **Classifier eval** | Connected-component groups + group-fold leakage, gap-lite on 2 synthetic pairs, paired-bootstrap gain, smoke pipeline on tiny hashing data |
+| **Treatment pilot** | Pool validation, weight mapping, selection registry, spend/cache, B1 leakage check, synthetic 2-pair pipeline, experiments API with new stage dirs |
 
-As of 2026-10-04: **47 pytest tests passing** (`EMBEDDING_MODEL=hashing-test`).
+As of 2026-10-11: **59 pytest tests passing** (`EMBEDDING_MODEL=hashing-test`).
 
 ---
 
-## 15. Cost summary (completed paid LLM stages)
+## 16. Cost summary (completed paid LLM stages)
 
 | Stage | Approx. total USD (sum of successful runs cited above) |
 | --- | ---: |
 | Baseline Terra (30+30+150+smoke) | ≈ 1.66 |
 | Luna extraction (primary + holdout + smokes) | ≈ 0.63 |
 | Luna extraction (fit-label NF + extras, `exp_20261003T163033Z`) | **0.673245** |
+| Treatment pilot B1 (`exp_20261011T130310Z`) | **0.602350** |
+| Treatment pilot T pool (`exp_20261011T130619Z`) | **1.845848** |
+| Treatment pilot smokes (B1+T) | ≈ 0.140 |
 | Gap analysis | 0 (local embeddings only) |
 | Gap sensitivity | 0 (local embeddings + IR only) |
 | Fit-label scoring / gold-set pack / classifier eval | 0 LLM (local embeddings + sklearn) |
 
-Exact per-run totals are recorded in each experiment’s `summary.json`.
+Exact per-run totals are recorded in each experiment’s `summary.json`. Stage cost/latency CSV: `docs/tables/stage_cost_latency.csv`.
 
 ---
 
-## 16. Limitations and open work
+## 17. Limitations and open work
 
 ### Limitations of completed work
 
@@ -692,20 +799,21 @@ Exact per-run totals are recorded in each experiment’s `summary.json`.
 - Hugging Face pair-level fit labels **do not** validate the requirement-level gap matrix under the frozen H2 coarse rule.  
 - Local fit classifier accuracy is modest (~0.46); it remains exploratory unless a reframing variant meets the pre-registered rule.  
 - Frontend charts visualise run metadata; they are not substitutes for the thesis figures in `docs/figures/`.  
-- Full InterviewIQ **question generation** batch (Terra pool + MMR) vs baseline human eval is still outstanding.
+- Treatment-pilot diagnostics are **proxy** metrics (embedding redundancy/coverage, lexical specificity); they are not human question-quality ratings. n=30, single generation per pair for B1/T, single dataset.  
+- Weighted MMR selected almost exclusively gap-targeted questions (95% weak/missing); strength probes were crowded out by design of the frozen weights.
 
 ### Recommended next steps
 
 1. Annotate the gold set (`annotator_A.csv` / `annotator_B.csv`); then run `analyze_gold_set.py` (G1–G4, figures 26–29).  
 2. Finish classifier reframing and report only computed test metrics plus the literal improved-over-V0 outcomes.  
-3. Run InterviewIQ generation on the same Primary-30 / Holdout-30 pairs with Terra, logging pool/MMR artifacts.  
-4. Blind human evaluation of Baseline vs InterviewIQ question sets.  
+3. Diagnose treatment components before any 150-pair scale-up (advisory rule: `recommend_scale=false`): pool composition, weight mapping, and whether competency-weighted MMR should retain strength probes.  
+4. Blind human evaluation of B0 / B1 / T question sets (official quality metrics not yet frozen).  
 5. Optional: fill the gap-sensitivity audit sheet (20 pairs) for extraction-recall estimates.  
 6. Optional: ablations of TF-IDF / BM25 / semantic flags under fixed evidence.
 
 ---
 
-## 17. Key artifact index
+## 18. Key artifact index
 
 | Artifact | Location |
 | --- | --- |
@@ -715,10 +823,13 @@ Exact per-run totals are recorded in each experiment’s `summary.json`.
 | Research pipeline | `docs/research-pipeline.md` |
 | Gap sensitivity deep-dive | `docs/gap_sensitivity_report.md` |
 | Fit-label control | `docs/fit_label_control_report.md` |
+| Treatment pilot | `docs/treatment_pilot_report.md` |
 | Gold-set protocol / guidelines | `docs/gold_set_protocol.md`, `docs/gold_set_guidelines.md` |
 | Classifier reframing protocol | `docs/classifier_reframing_report.md` |
 | Figures 17–21 | `docs/figures/fig17_*.png` … `fig21_*.png` |
 | Figures 22–25 | `docs/figures/fig22_*.png` … `fig25_*.png` |
+| Figures 40–43 (treatment pilot) | `docs/figures/fig40_*.png` … `fig43_*.png` |
+| Stage cost/latency table | `docs/tables/stage_cost_latency.csv` |
 | Fit classifier metrics (V0) | `experiments/datasets/resume_job_fit/models/fit_classifier_metrics.json` |
 | Primary extraction | `experiments/results/exp_20260927T205741Z/` |
 | Primary gap analysis | `experiments/results/exp_20260927T215232Z/` |
@@ -730,11 +841,17 @@ Exact per-run totals are recorded in each experiment’s `summary.json`.
 | Fit-label control run | `experiments/results/exp_20261003T163033Z/` |
 | Fit-label combined tables | `experiments/results/fit_label_control_combined/` |
 | Gold-set annotation pack | `experiments/gold_set/` |
-| Primary-30 Terra baseline | `experiments/results/exp_20260920T220958Z/` |
+| Primary-30 Terra baseline (B0) | `experiments/results/exp_20260920T220958Z/` |
 | 150-pair Terra baseline | `experiments/results/exp_20260926T223339Z/` |
+| Treatment B1 (primary-30) | `experiments/results/exp_20261011T130310Z/` |
+| Treatment T (primary-30) | `experiments/results/exp_20261011T130619Z/` |
+| Selection ablations | `experiments/results/exp_20261011T131945Z/` |
+| Treatment pilot combined | `experiments/results/treatment_pilot_combined/` |
 
 ---
 
-## 18. Conclusion
+## 19. Conclusion
 
-InterviewIQ’s deterministic gap-analysis stack is implemented, tested, and exercised on two 30-pair fit-positive splits. Production scoring yields **64.3%** (primary) and **72.6%** (holdout) gap shares over job requirements. A local sensitivity study shows that (i) those rates already reflect expanded extracted evidence, not competencies-only sparsity; (ii) competencies-only would severely inflate gaps beyond a size-bias control; and (iii) raw CV chunking does not improve on production evidence for this scorer. Against **independent pair-level fit labels**, the frozen H2 rule is **not** met: do not claim that the gap matrix tracks HF No Fit / Good Fit. A 160-item **human gold set** (requirement vs whole CV) is packed and waiting for annotation; analysis must not proceed without those files. The original local fit classifier remains a weak auxiliary model (macro-F1 0.424); reframing variants are being evaluated under a frozen protocol and are not yet reported. Terra baseline question sets exist at 30- and 150-pair scale. The remaining critical path for the thesis **generation** comparison is **InterviewIQ generation + human evaluation** against those baselines under a matched Terra configuration.
+InterviewIQ’s deterministic gap-analysis stack is implemented, tested, and exercised on two 30-pair fit-positive splits. Production scoring yields **64.3%** (primary) and **72.6%** (holdout) gap shares over job requirements. A local sensitivity study shows that (i) those rates already reflect expanded extracted evidence, not competencies-only sparsity; (ii) competencies-only would severely inflate gaps beyond a size-bias control; and (iii) raw CV chunking does not improve on production evidence for this scorer. Against **independent pair-level fit labels**, the frozen H2 rule is **not** met: do not claim that the gap matrix tracks HF No Fit / Good Fit. A 160-item **human gold set** (requirement vs whole CV) is packed and waiting for annotation; analysis must not proceed without those files. The original local fit classifier remains a weak auxiliary model (macro-F1 0.424); reframing variants are being evaluated under a frozen protocol and are not yet reported.
+
+On the **generation** side, a primary-30 treatment pilot (matched Terra, $2.45 paid) compared flat B0, profile-aware B1, InterviewIQ T, and selection ablations B2/S0–S2 using proxy diagnostics only. T cut redundancy versus B0 but was **not** at least as good as B1 on requirement-coverage@0.45; the frozen advisory rule therefore recommends diagnosing components before scaling to 150 pairs. Plain MMR (B2) from the same pool covered more requirements than weighted MMR, and T’s selected set was 95% gap-targeted—consistent with not assuming gap-targeting alone improves interview questions after the null fit-label control. The remaining critical path is **human evaluation** of B0/B1/T (and gold-set annotation), not an automatic claim of treatment superiority.

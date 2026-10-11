@@ -1,0 +1,1118 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S0",
+  "selection_strategy": "random",
+  "generation_mode": null,
+  "profile_id": "rjf_04652_021f517c37fa",
+  "jd_id": "rjf_04652_021f517c37fa",
+  "pair_id": "rjf_04652_021f517c37fa",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_04652_021f517c37fa__rjf_04652_021f517c37fa__mid.json",
+  "n_requirements": 32,
+  "questions": [
+    {
+      "question": "A production load completes successfully, but downstream users report that record counts and totals no longer reconcile. Walk through your incident triage, containment, root-cause analysis, correction, and stakeholder communication."
+    },
+    {
+      "question": "Describe the architecture and operating model of an Airflow DAG you created for ingestion or reporting. How did you manage dependencies, retries, backfills, parameterization, and alerting?"
+    },
+    {
+      "question": "Give an example of a repetitive engineering or operational task you identified and automated. What was manual before, what did you build, and how did you measure reliability or time saved?"
+    },
+    {
+      "question": "Your resume notes a SQL Server-to-Snowflake migration using Python and SnowSQL. How did you establish source-target reconciliation, deal with data-type differences, and decide that the migration was complete?"
+    },
+    {
+      "question": "Walk me through an ETL pipeline you built from source extraction through orchestration, error handling, restartability, and delivery to consumers. What design trade-offs did you make?"
+    },
+    {
+      "question": "How would you use regular expressions to validate or parse semi-structured feed values such as identifiers, timestamps, or delimited fields? What risks would make you prefer a different parsing approach?"
+    },
+    {
+      "question": "Tell us about the Redshift warehouse you designed and built: how did you select distribution and sort strategies, model data for analytics, and tune queries used by Tableau or SAS Visual Analytics?"
+    },
+    {
+      "question": "This position requires legal authorization to work in the country of application. Are you currently authorized to work there, and will you now or in the future require employer sponsorship?"
+    },
+    {
+      "question": "For a new automated ETL job, which validation controls would you implement at ingestion, transformation, and target-load stages? Explain the failure thresholds and what would happen when a check fails."
+    },
+    {
+      "question": "What PowerShell scripts have you written or maintained, and how would you make a script used for routine data-platform operations safe, logged, and recoverable?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "A production load completes successfully, but downstream users report that record counts and totals no longer reconcile. Walk through your incident triage, containment, root-cause analysis, correction, and stakeholder communication.",
+      "competency": "Post-deployment support",
+      "competency_type": "other",
+      "target_gap": "Post-deployment support",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "The candidate has deployment exposure but only a weak match for post-deployment support; this probes readiness to own a data issue after release.",
+      "source_evidence": [
+        "Gap matrix: Post-deployment support \u2014 weak_match",
+        "Worked on architecture design for multistate implementation and deployment.",
+        "Data quality and reconciliation"
+      ],
+      "priority": 0.93,
+      "weight": 0.696
+    },
+    {
+      "question": "Describe the architecture and operating model of an Airflow DAG you created for ingestion or reporting. How did you manage dependencies, retries, backfills, parameterization, and alerting?",
+      "competency": "Workflow orchestration",
+      "competency_type": "technical",
+      "target_gap": "Data engineering workflows",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate explicitly lists Airflow DAG work. This probes a relevant strength while verifying production orchestration depth for the role's workflow responsibility.",
+      "source_evidence": [
+        "Created Airflow DAGs and Python scheduling scripts for ingestion, ETL jobs, and business reports.",
+        "Apache Airflow"
+      ],
+      "priority": 0.81,
+      "weight": 0.362
+    },
+    {
+      "question": "Give an example of a repetitive engineering or operational task you identified and automated. What was manual before, what did you build, and how did you measure reliability or time saved?",
+      "competency": "Task automation",
+      "competency_type": "soft",
+      "target_gap": "Task automation",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Task automation is a high-weight required gap; the question elicits evidence of initiative, implementation depth, and measurable operational impact.",
+      "source_evidence": [
+        "Gap matrix: Task automation \u2014 missing",
+        "Created Airflow DAGs and Python scheduling scripts",
+        "Automated SQL Server version upgrades and patch installations"
+      ],
+      "priority": 0.97,
+      "weight": 0.9279
+    },
+    {
+      "question": "Your resume notes a SQL Server-to-Snowflake migration using Python and SnowSQL. How did you establish source-target reconciliation, deal with data-type differences, and decide that the migration was complete?",
+      "competency": "Migration reconciliation",
+      "competency_type": "domain",
+      "target_gap": "Data validation",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "This profile-specific technical example gives the candidate an opportunity to substantiate weakly matched validation skills using documented migration experience.",
+      "source_evidence": [
+        "Implemented one-time data migration from SQL Server to Snowflake using Python and SnowSQL.",
+        "Data quality and reconciliation"
+      ],
+      "priority": 0.83,
+      "weight": 0.6762
+    },
+    {
+      "question": "Walk me through an ETL pipeline you built from source extraction through orchestration, error handling, restartability, and delivery to consumers. What design trade-offs did you make?",
+      "competency": "ETL development",
+      "competency_type": "domain",
+      "target_gap": "ETL development",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "ETL is a partial match and a core requirement. The candidate's documented design and implementation experience provides a specific basis for a detailed depth probe.",
+      "source_evidence": [
+        "Gap matrix: ETL development \u2014 partial_match",
+        "Developed ETL pipelines in and out of data warehouses.",
+        "Prepared ETL design documents covering database structure, change data capture, error handling, restart, and refresh strategies."
+      ],
+      "priority": 0.87,
+      "weight": 0.4058
+    },
+    {
+      "question": "How would you use regular expressions to validate or parse semi-structured feed values such as identifiers, timestamps, or delimited fields? What risks would make you prefer a different parsing approach?",
+      "competency": "Regular expressions",
+      "competency_type": "technical",
+      "target_gap": "Regular expressions",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Regular expressions are marked missing. This practical scenario tests baseline capability and engineering judgment around maintainability and data correctness.",
+      "source_evidence": [
+        "Gap matrix: Regular expressions \u2014 missing",
+        "Implemented data lake processing for JSON, CSV, XML, and DAT feeds."
+      ],
+      "priority": 0.63,
+      "weight": 0.5675
+    },
+    {
+      "question": "Tell us about the Redshift warehouse you designed and built: how did you select distribution and sort strategies, model data for analytics, and tune queries used by Tableau or SAS Visual Analytics?",
+      "competency": "Warehouse design",
+      "competency_type": "domain",
+      "target_gap": "Data analytics and reporting solutions",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "This is a strength probe for a strong required match and explores whether the candidate can connect warehouse design decisions to reporting performance.",
+      "source_evidence": [
+        "Gap matrix: Data analytics and reporting solutions \u2014 strong_match",
+        "Designed and built a multi-terabyte data warehouse on Redshift.",
+        "Optimized and tuned Redshift queries for Tableau and SAS Visual Analytics."
+      ],
+      "priority": 0.79,
+      "weight": 0.1623
+    },
+    {
+      "question": "This position requires legal authorization to work in the country of application. Are you currently authorized to work there, and will you now or in the future require employer sponsorship?",
+      "competency": "Work authorization",
+      "competency_type": "domain",
+      "target_gap": "Legal authorization to work",
+      "question_type": "Role-Specific",
+      "difficulty": "easy",
+      "rationale": "Legal authorization is an explicit required job criterion marked missing in the matrix and should be confirmed through a standard, job-related question.",
+      "source_evidence": [
+        "Gap matrix: Legal authorization to work \u2014 missing",
+        "Must be able to legally work in the country to which you have applied"
+      ],
+      "priority": 0.95,
+      "weight": 0.9326
+    },
+    {
+      "question": "For a new automated ETL job, which validation controls would you implement at ingestion, transformation, and target-load stages? Explain the failure thresholds and what would happen when a check fails.",
+      "competency": "Data validation",
+      "competency_type": "technical",
+      "target_gap": "Data validation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate has some validation exposure but is a weak match on the required validation competency; this distinguishes basic checks from robust pipeline controls.",
+      "source_evidence": [
+        "Gap matrix: Data validation \u2014 weak_match",
+        "Used AWS EMR, S3, EC2, and Lambda for distributed processing, storage, Kafka infrastructure, and data validation/transformation.",
+        "Validate the data mapping results"
+      ],
+      "priority": 0.9,
+      "weight": 0.6762
+    },
+    {
+      "question": "What PowerShell scripts have you written or maintained, and how would you make a script used for routine data-platform operations safe, logged, and recoverable?",
+      "competency": "PowerShell automation",
+      "competency_type": "technical",
+      "target_gap": "PowerShell",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "PowerShell is a preferred partial match. The question checks practical automation practices and complements the high-priority task-automation gap.",
+      "source_evidence": [
+        "Gap matrix: PowerShell \u2014 partial_match",
+        "Skills: Scripting Language - PowerShell Scripting",
+        "Automated SQL Server version upgrades and patch installations"
+      ],
+      "priority": 0.65,
+      "weight": 0.2133
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    2,
+    16,
+    1,
+    14,
+    10,
+    23,
+    18,
+    28,
+    5,
+    21
+  ],
+  "repeats": [
+    {
+      "repeat": 0,
+      "selected_indices": [
+        2,
+        16,
+        1,
+        14,
+        10,
+        23,
+        18,
+        28,
+        5,
+        21
+      ],
+      "questions": [
+        {
+          "question": "A production load completes successfully, but downstream users report that record counts and totals no longer reconcile. Walk through your incident triage, containment, root-cause analysis, correction, and stakeholder communication.",
+          "competency": "Post-deployment support",
+          "competency_type": "other",
+          "target_gap": "Post-deployment support",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "The candidate has deployment exposure but only a weak match for post-deployment support; this probes readiness to own a data issue after release.",
+          "source_evidence": [
+            "Gap matrix: Post-deployment support \u2014 weak_match",
+            "Worked on architecture design for multistate implementation and deployment.",
+            "Data quality and reconciliation"
+          ],
+          "priority": 0.93,
+          "weight": 0.696
+        },
+        {
+          "question": "Describe the architecture and operating model of an Airflow DAG you created for ingestion or reporting. How did you manage dependencies, retries, backfills, parameterization, and alerting?",
+          "competency": "Workflow orchestration",
+          "competency_type": "technical",
+          "target_gap": "Data engineering workflows",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The candidate explicitly lists Airflow DAG work. This probes a relevant strength while verifying production orchestration depth for the role's workflow responsibility.",
+          "source_evidence": [
+            "Created Airflow DAGs and Python scheduling scripts for ingestion, ETL jobs, and business reports.",
+            "Apache Airflow"
+          ],
+          "priority": 0.81,
+          "weight": 0.362
+        },
+        {
+          "question": "Give an example of a repetitive engineering or operational task you identified and automated. What was manual before, what did you build, and how did you measure reliability or time saved?",
+          "competency": "Task automation",
+          "competency_type": "soft",
+          "target_gap": "Task automation",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Task automation is a high-weight required gap; the question elicits evidence of initiative, implementation depth, and measurable operational impact.",
+          "source_evidence": [
+            "Gap matrix: Task automation \u2014 missing",
+            "Created Airflow DAGs and Python scheduling scripts",
+            "Automated SQL Server version upgrades and patch installations"
+          ],
+          "priority": 0.97,
+          "weight": 0.9279
+        },
+        {
+          "question": "Your resume notes a SQL Server-to-Snowflake migration using Python and SnowSQL. How did you establish source-target reconciliation, deal with data-type differences, and decide that the migration was complete?",
+          "competency": "Migration reconciliation",
+          "competency_type": "domain",
+          "target_gap": "Data validation",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "This profile-specific technical example gives the candidate an opportunity to substantiate weakly matched validation skills using documented migration experience.",
+          "source_evidence": [
+            "Implemented one-time data migration from SQL Server to Snowflake using Python and SnowSQL.",
+            "Data quality and reconciliation"
+          ],
+          "priority": 0.83,
+          "weight": 0.6762
+        },
+        {
+          "question": "Walk me through an ETL pipeline you built from source extraction through orchestration, error handling, restartability, and delivery to consumers. What design trade-offs did you make?",
+          "competency": "ETL development",
+          "competency_type": "domain",
+          "target_gap": "ETL development",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "ETL is a partial match and a core requirement. The candidate's documented design and implementation experience provides a specific basis for a detailed depth probe.",
+          "source_evidence": [
+            "Gap matrix: ETL development \u2014 partial_match",
+            "Developed ETL pipelines in and out of data warehouses.",
+            "Prepared ETL design documents covering database structure, change data capture, error handling, restart, and refresh strategies."
+          ],
+          "priority": 0.87,
+          "weight": 0.4058
+        },
+        {
+          "question": "How would you use regular expressions to validate or parse semi-structured feed values such as identifiers, timestamps, or delimited fields? What risks would make you prefer a different parsing approach?",
+          "competency": "Regular expressions",
+          "competency_type": "technical",
+          "target_gap": "Regular expressions",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Regular expressions are marked missing. This practical scenario tests baseline capability and engineering judgment around maintainability and data correctness.",
+          "source_evidence": [
+            "Gap matrix: Regular expressions \u2014 missing",
+            "Implemented data lake processing for JSON, CSV, XML, and DAT feeds."
+          ],
+          "priority": 0.63,
+          "weight": 0.5675
+        },
+        {
+          "question": "Tell us about the Redshift warehouse you designed and built: how did you select distribution and sort strategies, model data for analytics, and tune queries used by Tableau or SAS Visual Analytics?",
+          "competency": "Warehouse design",
+          "competency_type": "domain",
+          "target_gap": "Data analytics and reporting solutions",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "This is a strength probe for a strong required match and explores whether the candidate can connect warehouse design decisions to reporting performance.",
+          "source_evidence": [
+            "Gap matrix: Data analytics and reporting solutions \u2014 strong_match",
+            "Designed and built a multi-terabyte data warehouse on Redshift.",
+            "Optimized and tuned Redshift queries for Tableau and SAS Visual Analytics."
+          ],
+          "priority": 0.79,
+          "weight": 0.1623
+        },
+        {
+          "question": "This position requires legal authorization to work in the country of application. Are you currently authorized to work there, and will you now or in the future require employer sponsorship?",
+          "competency": "Work authorization",
+          "competency_type": "domain",
+          "target_gap": "Legal authorization to work",
+          "question_type": "Role-Specific",
+          "difficulty": "easy",
+          "rationale": "Legal authorization is an explicit required job criterion marked missing in the matrix and should be confirmed through a standard, job-related question.",
+          "source_evidence": [
+            "Gap matrix: Legal authorization to work \u2014 missing",
+            "Must be able to legally work in the country to which you have applied"
+          ],
+          "priority": 0.95,
+          "weight": 0.9326
+        },
+        {
+          "question": "For a new automated ETL job, which validation controls would you implement at ingestion, transformation, and target-load stages? Explain the failure thresholds and what would happen when a check fails.",
+          "competency": "Data validation",
+          "competency_type": "technical",
+          "target_gap": "Data validation",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The candidate has some validation exposure but is a weak match on the required validation competency; this distinguishes basic checks from robust pipeline controls.",
+          "source_evidence": [
+            "Gap matrix: Data validation \u2014 weak_match",
+            "Used AWS EMR, S3, EC2, and Lambda for distributed processing, storage, Kafka infrastructure, and data validation/transformation.",
+            "Validate the data mapping results"
+          ],
+          "priority": 0.9,
+          "weight": 0.6762
+        },
+        {
+          "question": "What PowerShell scripts have you written or maintained, and how would you make a script used for routine data-platform operations safe, logged, and recoverable?",
+          "competency": "PowerShell automation",
+          "competency_type": "technical",
+          "target_gap": "PowerShell",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "PowerShell is a preferred partial match. The question checks practical automation practices and complements the high-priority task-automation gap.",
+          "source_evidence": [
+            "Gap matrix: PowerShell \u2014 partial_match",
+            "Skills: Scripting Language - PowerShell Scripting",
+            "Automated SQL Server version upgrades and patch installations"
+          ],
+          "priority": 0.65,
+          "weight": 0.2133
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 1,
+      "selected_indices": [
+        10,
+        22,
+        1,
+        23,
+        13,
+        27,
+        0,
+        7,
+        8,
+        17
+      ],
+      "questions": [
+        {
+          "question": "Walk me through an ETL pipeline you built from source extraction through orchestration, error handling, restartability, and delivery to consumers. What design trade-offs did you make?",
+          "competency": "ETL development",
+          "competency_type": "domain",
+          "target_gap": "ETL development",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "ETL is a partial match and a core requirement. The candidate's documented design and implementation experience provides a specific basis for a detailed depth probe.",
+          "source_evidence": [
+            "Gap matrix: ETL development \u2014 partial_match",
+            "Developed ETL pipelines in and out of data warehouses.",
+            "Prepared ETL design documents covering database structure, change data capture, error handling, restart, and refresh strategies."
+          ],
+          "priority": 0.87,
+          "weight": 0.4058
+        },
+        {
+          "question": "The role may involve aircraft data frames such as DFDR, QAR, ARINC-717, and ARINC-429. What is your approach to learning an unfamiliar domain data format and safely translating its documentation into a validated ingestion design?",
+          "competency": "Domain learning",
+          "competency_type": "other",
+          "target_gap": "Aircraft data frames",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Aircraft data frames are a preferred weak match with no direct profile evidence. This fairly tests learning strategy and disciplined handling of unfamiliar, structured data.",
+          "source_evidence": [
+            "Gap matrix: Aircraft data frames \u2014 weak_match",
+            "Data engineering",
+            "Learning agility"
+          ],
+          "priority": 0.64,
+          "weight": 0.4249
+        },
+        {
+          "question": "Give an example of a repetitive engineering or operational task you identified and automated. What was manual before, what did you build, and how did you measure reliability or time saved?",
+          "competency": "Task automation",
+          "competency_type": "soft",
+          "target_gap": "Task automation",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Task automation is a high-weight required gap; the question elicits evidence of initiative, implementation depth, and measurable operational impact.",
+          "source_evidence": [
+            "Gap matrix: Task automation \u2014 missing",
+            "Created Airflow DAGs and Python scheduling scripts",
+            "Automated SQL Server version upgrades and patch installations"
+          ],
+          "priority": 0.97,
+          "weight": 0.9279
+        },
+        {
+          "question": "How would you use regular expressions to validate or parse semi-structured feed values such as identifiers, timestamps, or delimited fields? What risks would make you prefer a different parsing approach?",
+          "competency": "Regular expressions",
+          "competency_type": "technical",
+          "target_gap": "Regular expressions",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Regular expressions are marked missing. This practical scenario tests baseline capability and engineering judgment around maintainability and data correctness.",
+          "source_evidence": [
+            "Gap matrix: Regular expressions \u2014 missing",
+            "Implemented data lake processing for JSON, CSV, XML, and DAT feeds."
+          ],
+          "priority": 0.63,
+          "weight": 0.5675
+        },
+        {
+          "question": "You need to build an idempotent daily load from a source that can send late records, duplicate files, and occasional corrections. Describe the workflow design, state management, and recovery behavior you would use.",
+          "competency": "Workflow design",
+          "competency_type": "other",
+          "target_gap": "Data engineering workflows",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Data engineering workflows are only a partial match. This tests the candidate's ability to design reliable operational workflows rather than just individual transformations.",
+          "source_evidence": [
+            "Gap matrix: Data engineering workflows \u2014 partial_match",
+            "Created Airflow DAGs and Python scheduling scripts for ingestion, ETL jobs, and business reports.",
+            "Data engineering"
+          ],
+          "priority": 0.84,
+          "weight": 0.362
+        },
+        {
+          "question": "What attracts you to a data-engineering role centered on standardizing customer data feeds, data quality, and analytics enablement, and which areas would you deliberately learn first if selected?",
+          "competency": "Role motivation",
+          "competency_type": "soft",
+          "target_gap": "profile_probe",
+          "question_type": "Cultural/Motivational",
+          "difficulty": "mid",
+          "rationale": "This assesses motivation and learning priorities for the specific role without assuming unlisted domain experience.",
+          "source_evidence": [
+            "Professional IT experience in data engineering and data analytics",
+            "Data integration and orchestration",
+            "Data quality and reconciliation"
+          ],
+          "priority": 0.66,
+          "weight": 0.4312625
+        },
+        {
+          "question": "Describe how you would plan and deliver a two-week sprint to add a new customer data feed when the mapping is still evolving. How would you break down the work, manage changes, and demonstrate progress?",
+          "competency": "Agile delivery",
+          "competency_type": "other",
+          "target_gap": "Agile methodologies",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Agile methodology is a required competency marked missing, so this tests whether the candidate can apply iterative delivery practices in a realistic data-engineering context.",
+          "source_evidence": [
+            "Gap matrix: Agile methodologies \u2014 missing",
+            "Develop data engineering jobs and workflows",
+            "Participate in requirements gathering"
+          ],
+          "priority": 0.98,
+          "weight": 0.9306
+        },
+        {
+          "question": "What is your approach to implementing and governing master-data configurations, including canonical identifiers, reference-data changes, ownership, and propagation to dependent jobs?",
+          "competency": "Master data management",
+          "competency_type": "technical",
+          "target_gap": "Master data management",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Master data management is a required weak match and materially affects standardization and reliable joins across customer feeds.",
+          "source_evidence": [
+            "Gap matrix: Master data management \u2014 weak_match",
+            "Supported Hadoop clusters, HDFS, capacity planning, node management, and maintenance.",
+            "Implement and control the use of master data configurations"
+          ],
+          "priority": 0.89,
+          "weight": 0.6679
+        },
+        {
+          "question": "When an existing application must consume a modified JSON or Kafka feed, how do you assess schema compatibility, manage versioning, handle malformed messages, and deploy the change safely?",
+          "competency": "Data feed integration",
+          "competency_type": "technical",
+          "target_gap": "Data feed integration",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The candidate has relevant API and Kafka staging experience, but the required integration competency is a partial match; this probes production-safe feed evolution.",
+          "source_evidence": [
+            "Gap matrix: Data feed integration \u2014 partial_match",
+            "Staged API and Kafka JSON data into Snowflake using FLATTEN.",
+            "Data integration and orchestration"
+          ],
+          "priority": 0.88,
+          "weight": 0.3884
+        },
+        {
+          "question": "Give an example of a SQL performance problem you investigated. What evidence led you to the bottleneck, what changes did you make, and how did you verify that the improvement did not alter results?",
+          "competency": "SQL performance tuning",
+          "competency_type": "technical",
+          "target_gap": "SQL scripting",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "SQL is a partial match and the candidate reports substantial database experience, including a documented Redshift improvement; this validates both query skill and correctness discipline.",
+          "source_evidence": [
+            "Gap matrix: SQL scripting \u2014 partial_match",
+            "Optimized Redshift queries to perform up to 100x faster for Tableau and SAS Visual Analytics.",
+            "Monitored and tuned SQL Server database resources and activities."
+          ],
+          "priority": 0.8,
+          "weight": 0.2404
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 2,
+      "selected_indices": [
+        10,
+        5,
+        18,
+        15,
+        25,
+        14,
+        2,
+        13,
+        26,
+        4
+      ],
+      "questions": [
+        {
+          "question": "Walk me through an ETL pipeline you built from source extraction through orchestration, error handling, restartability, and delivery to consumers. What design trade-offs did you make?",
+          "competency": "ETL development",
+          "competency_type": "domain",
+          "target_gap": "ETL development",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "ETL is a partial match and a core requirement. The candidate's documented design and implementation experience provides a specific basis for a detailed depth probe.",
+          "source_evidence": [
+            "Gap matrix: ETL development \u2014 partial_match",
+            "Developed ETL pipelines in and out of data warehouses.",
+            "Prepared ETL design documents covering database structure, change data capture, error handling, restart, and refresh strategies."
+          ],
+          "priority": 0.87,
+          "weight": 0.4058
+        },
+        {
+          "question": "For a new automated ETL job, which validation controls would you implement at ingestion, transformation, and target-load stages? Explain the failure thresholds and what would happen when a check fails.",
+          "competency": "Data validation",
+          "competency_type": "technical",
+          "target_gap": "Data validation",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The candidate has some validation exposure but is a weak match on the required validation competency; this distinguishes basic checks from robust pipeline controls.",
+          "source_evidence": [
+            "Gap matrix: Data validation \u2014 weak_match",
+            "Used AWS EMR, S3, EC2, and Lambda for distributed processing, storage, Kafka infrastructure, and data validation/transformation.",
+            "Validate the data mapping results"
+          ],
+          "priority": 0.9,
+          "weight": 0.6762
+        },
+        {
+          "question": "Tell us about the Redshift warehouse you designed and built: how did you select distribution and sort strategies, model data for analytics, and tune queries used by Tableau or SAS Visual Analytics?",
+          "competency": "Warehouse design",
+          "competency_type": "domain",
+          "target_gap": "Data analytics and reporting solutions",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "This is a strength probe for a strong required match and explores whether the candidate can connect warehouse design decisions to reporting performance.",
+          "source_evidence": [
+            "Gap matrix: Data analytics and reporting solutions \u2014 strong_match",
+            "Designed and built a multi-terabyte data warehouse on Redshift.",
+            "Optimized and tuned Redshift queries for Tableau and SAS Visual Analytics."
+          ],
+          "priority": 0.79,
+          "weight": 0.1623
+        },
+        {
+          "question": "What would a well-designed data-quality monitoring dashboard or alerting scheme show for a critical customer feed, and which indicators would trigger investigation versus automatic pipeline failure?",
+          "competency": "DQ observability",
+          "competency_type": "technical",
+          "target_gap": "Data quality management",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "This deepens the data-quality probe by testing operational monitoring and risk-based thresholds, not just one-time validation logic.",
+          "source_evidence": [
+            "Data quality and reconciliation",
+            "Created regulatory and financial reports using advanced Snowflake SQL queries."
+          ],
+          "priority": 0.82,
+          "weight": 0.3696
+        },
+        {
+          "question": "Tell me about a time you had to change direction because requirements, source data, or priorities shifted. How did you assess the impact, update the plan, and communicate the change to others?",
+          "competency": "Adaptability",
+          "competency_type": "soft",
+          "target_gap": "Solution implementation",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "The role requires adapting to changing requirements. This assesses execution behavior in a relevant delivery context while remaining grounded in the candidate's implementation history.",
+          "source_evidence": [
+            "Worked on architecture design for multistate implementation and deployment.",
+            "Data integration and orchestration"
+          ],
+          "priority": 0.73,
+          "weight": 0.6842
+        },
+        {
+          "question": "Your resume notes a SQL Server-to-Snowflake migration using Python and SnowSQL. How did you establish source-target reconciliation, deal with data-type differences, and decide that the migration was complete?",
+          "competency": "Migration reconciliation",
+          "competency_type": "domain",
+          "target_gap": "Data validation",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "This profile-specific technical example gives the candidate an opportunity to substantiate weakly matched validation skills using documented migration experience.",
+          "source_evidence": [
+            "Implemented one-time data migration from SQL Server to Snowflake using Python and SnowSQL.",
+            "Data quality and reconciliation"
+          ],
+          "priority": 0.83,
+          "weight": 0.6762
+        },
+        {
+          "question": "A production load completes successfully, but downstream users report that record counts and totals no longer reconcile. Walk through your incident triage, containment, root-cause analysis, correction, and stakeholder communication.",
+          "competency": "Post-deployment support",
+          "competency_type": "other",
+          "target_gap": "Post-deployment support",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "The candidate has deployment exposure but only a weak match for post-deployment support; this probes readiness to own a data issue after release.",
+          "source_evidence": [
+            "Gap matrix: Post-deployment support \u2014 weak_match",
+            "Worked on architecture design for multistate implementation and deployment.",
+            "Data quality and reconciliation"
+          ],
+          "priority": 0.93,
+          "weight": 0.696
+        },
+        {
+          "question": "You need to build an idempotent daily load from a source that can send late records, duplicate files, and occasional corrections. Describe the workflow design, state management, and recovery behavior you would use.",
+          "competency": "Workflow design",
+          "competency_type": "other",
+          "target_gap": "Data engineering workflows",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Data engineering workflows are only a partial match. This tests the candidate's ability to design reliable operational workflows rather than just individual transformations.",
+          "source_evidence": [
+            "Gap matrix: Data engineering workflows \u2014 partial_match",
+            "Created Airflow DAGs and Python scheduling scripts for ingestion, ETL jobs, and business reports.",
+            "Data engineering"
+          ],
+          "priority": 0.84,
+          "weight": 0.362
+        },
+        {
+          "question": "Describe a code review you performed or received for SQL, ETL, or pipeline code. What did you focus on, how did you handle disagreement, and what changed as a result?",
+          "competency": "Collaboration and quality",
+          "competency_type": "soft",
+          "target_gap": "Requirements gathering",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "The candidate reports code-review participation, and the role requires clear interpersonal collaboration. This tests quality mindset and constructive communication.",
+          "source_evidence": [
+            "Performed code reviews for other development teams.",
+            "Communication across organizational levels"
+          ],
+          "priority": 0.69,
+          "weight": 0.694
+        },
+        {
+          "question": "How would you turn a business requirement such as \u201cstandardize customer status across incoming feeds\u201d into a data mapping specification that another engineer could implement and test?",
+          "competency": "Data mapping",
+          "competency_type": "domain",
+          "target_gap": "Data mapping specifications",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Data mapping specifications are a required weak match. This assesses whether the candidate can translate requirements into source-to-target fields, transformations, defaults, and acceptance rules.",
+          "source_evidence": [
+            "Gap matrix: Data mapping specifications \u2014 weak_match",
+            "Gathered business requirements and converted them into T-SQL stored procedures.",
+            "Prepared ETL design documents"
+          ],
+          "priority": 0.91,
+          "weight": 0.667
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 3,
+      "selected_indices": [
+        18,
+        25,
+        22,
+        12,
+        16,
+        15,
+        19,
+        14,
+        21,
+        23
+      ],
+      "questions": [
+        {
+          "question": "Tell us about the Redshift warehouse you designed and built: how did you select distribution and sort strategies, model data for analytics, and tune queries used by Tableau or SAS Visual Analytics?",
+          "competency": "Warehouse design",
+          "competency_type": "domain",
+          "target_gap": "Data analytics and reporting solutions",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "This is a strength probe for a strong required match and explores whether the candidate can connect warehouse design decisions to reporting performance.",
+          "source_evidence": [
+            "Gap matrix: Data analytics and reporting solutions \u2014 strong_match",
+            "Designed and built a multi-terabyte data warehouse on Redshift.",
+            "Optimized and tuned Redshift queries for Tableau and SAS Visual Analytics."
+          ],
+          "priority": 0.79,
+          "weight": 0.1623
+        },
+        {
+          "question": "Tell me about a time you had to change direction because requirements, source data, or priorities shifted. How did you assess the impact, update the plan, and communicate the change to others?",
+          "competency": "Adaptability",
+          "competency_type": "soft",
+          "target_gap": "Solution implementation",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "The role requires adapting to changing requirements. This assesses execution behavior in a relevant delivery context while remaining grounded in the candidate's implementation history.",
+          "source_evidence": [
+            "Worked on architecture design for multistate implementation and deployment.",
+            "Data integration and orchestration"
+          ],
+          "priority": 0.73,
+          "weight": 0.6842
+        },
+        {
+          "question": "The role may involve aircraft data frames such as DFDR, QAR, ARINC-717, and ARINC-429. What is your approach to learning an unfamiliar domain data format and safely translating its documentation into a validated ingestion design?",
+          "competency": "Domain learning",
+          "competency_type": "other",
+          "target_gap": "Aircraft data frames",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Aircraft data frames are a preferred weak match with no direct profile evidence. This fairly tests learning strategy and disciplined handling of unfamiliar, structured data.",
+          "source_evidence": [
+            "Gap matrix: Aircraft data frames \u2014 weak_match",
+            "Data engineering",
+            "Learning agility"
+          ],
+          "priority": 0.64,
+          "weight": 0.4249
+        },
+        {
+          "question": "Describe a solution you implemented to address a customer or business need. How did you choose the approach, validate that it solved the need, and respond to feedback after rollout?",
+          "competency": "Solution implementation",
+          "competency_type": "soft",
+          "target_gap": "Solution implementation",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "This required competency is a weak match. The question assesses end-to-end ownership beyond building a technical component.",
+          "source_evidence": [
+            "Gap matrix: Solution implementation \u2014 weak_match",
+            "Worked on architecture design for multistate implementation and deployment.",
+            "Implemented one-time data migration from SQL Server to Snowflake"
+          ],
+          "priority": 0.85,
+          "weight": 0.6842
+        },
+        {
+          "question": "Describe the architecture and operating model of an Airflow DAG you created for ingestion or reporting. How did you manage dependencies, retries, backfills, parameterization, and alerting?",
+          "competency": "Workflow orchestration",
+          "competency_type": "technical",
+          "target_gap": "Data engineering workflows",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The candidate explicitly lists Airflow DAG work. This probes a relevant strength while verifying production orchestration depth for the role's workflow responsibility.",
+          "source_evidence": [
+            "Created Airflow DAGs and Python scheduling scripts for ingestion, ETL jobs, and business reports.",
+            "Apache Airflow"
+          ],
+          "priority": 0.81,
+          "weight": 0.362
+        },
+        {
+          "question": "What would a well-designed data-quality monitoring dashboard or alerting scheme show for a critical customer feed, and which indicators would trigger investigation versus automatic pipeline failure?",
+          "competency": "DQ observability",
+          "competency_type": "technical",
+          "target_gap": "Data quality management",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "This deepens the data-quality probe by testing operational monitoring and risk-based thresholds, not just one-time validation logic.",
+          "source_evidence": [
+            "Data quality and reconciliation",
+            "Created regulatory and financial reports using advanced Snowflake SQL queries."
+          ],
+          "priority": 0.82,
+          "weight": 0.3696
+        },
+        {
+          "question": "When a stakeholder asks for a report or dashboard from a newly loaded dataset, how do you confirm metric definitions, ensure the dataset is fit for reporting, and prevent conflicting versions of the truth?",
+          "competency": "Reporting enablement",
+          "competency_type": "domain",
+          "target_gap": "Data analytics and reporting solutions",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "The candidate strongly matches reporting and analytics, and this question tests the interface between data engineering, semantic consistency, and business reporting.",
+          "source_evidence": [
+            "Gap matrix: Data analytics and reporting solutions \u2014 strong_match",
+            "Created regulatory and financial reports using advanced Snowflake SQL queries.",
+            "Reporting and analytics"
+          ],
+          "priority": 0.78,
+          "weight": 0.1623
+        },
+        {
+          "question": "Your resume notes a SQL Server-to-Snowflake migration using Python and SnowSQL. How did you establish source-target reconciliation, deal with data-type differences, and decide that the migration was complete?",
+          "competency": "Migration reconciliation",
+          "competency_type": "domain",
+          "target_gap": "Data validation",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "This profile-specific technical example gives the candidate an opportunity to substantiate weakly matched validation skills using documented migration experience.",
+          "source_evidence": [
+            "Implemented one-time data migration from SQL Server to Snowflake using Python and SnowSQL.",
+            "Data quality and reconciliation"
+          ],
+          "priority": 0.83,
+          "weight": 0.6762
+        },
+        {
+          "question": "What PowerShell scripts have you written or maintained, and how would you make a script used for routine data-platform operations safe, logged, and recoverable?",
+          "competency": "PowerShell automation",
+          "competency_type": "technical",
+          "target_gap": "PowerShell",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "PowerShell is a preferred partial match. The question checks practical automation practices and complements the high-priority task-automation gap.",
+          "source_evidence": [
+            "Gap matrix: PowerShell \u2014 partial_match",
+            "Skills: Scripting Language - PowerShell Scripting",
+            "Automated SQL Server version upgrades and patch installations"
+          ],
+          "priority": 0.65,
+          "weight": 0.2133
+        },
+        {
+          "question": "How would you use regular expressions to validate or parse semi-structured feed values such as identifiers, timestamps, or delimited fields? What risks would make you prefer a different parsing approach?",
+          "competency": "Regular expressions",
+          "competency_type": "technical",
+          "target_gap": "Regular expressions",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Regular expressions are marked missing. This practical scenario tests baseline capability and engineering judgment around maintainability and data correctness.",
+          "source_evidence": [
+            "Gap matrix: Regular expressions \u2014 missing",
+            "Implemented data lake processing for JSON, CSV, XML, and DAT feeds."
+          ],
+          "priority": 0.63,
+          "weight": 0.5675
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 4,
+      "selected_indices": [
+        4,
+        6,
+        19,
+        27,
+        1,
+        16,
+        13,
+        25,
+        10,
+        3
+      ],
+      "questions": [
+        {
+          "question": "How would you turn a business requirement such as \u201cstandardize customer status across incoming feeds\u201d into a data mapping specification that another engineer could implement and test?",
+          "competency": "Data mapping",
+          "competency_type": "domain",
+          "target_gap": "Data mapping specifications",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Data mapping specifications are a required weak match. This assesses whether the candidate can translate requirements into source-to-target fields, transformations, defaults, and acceptance rules.",
+          "source_evidence": [
+            "Gap matrix: Data mapping specifications \u2014 weak_match",
+            "Gathered business requirements and converted them into T-SQL stored procedures.",
+            "Prepared ETL design documents"
+          ],
+          "priority": 0.91,
+          "weight": 0.667
+        },
+        {
+          "question": "Suppose a provided DQ rule requires every active customer to have a valid identifier and a referenceable master record. How would you enforce it, quarantine exceptions, report them, and prevent repeat issues?",
+          "competency": "Data quality management",
+          "competency_type": "other",
+          "target_gap": "Data quality management",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Data quality is central to the role and only partially evidenced. This tests implementation of rules, exception handling, monitoring, and feedback loops.",
+          "source_evidence": [
+            "Gap matrix: Data quality management \u2014 partial_match",
+            "Data quality and reconciliation",
+            "Implement and ensure compliance with Data Quality (DQ) rules"
+          ],
+          "priority": 0.9,
+          "weight": 0.3696
+        },
+        {
+          "question": "When a stakeholder asks for a report or dashboard from a newly loaded dataset, how do you confirm metric definitions, ensure the dataset is fit for reporting, and prevent conflicting versions of the truth?",
+          "competency": "Reporting enablement",
+          "competency_type": "domain",
+          "target_gap": "Data analytics and reporting solutions",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "The candidate strongly matches reporting and analytics, and this question tests the interface between data engineering, semantic consistency, and business reporting.",
+          "source_evidence": [
+            "Gap matrix: Data analytics and reporting solutions \u2014 strong_match",
+            "Created regulatory and financial reports using advanced Snowflake SQL queries.",
+            "Reporting and analytics"
+          ],
+          "priority": 0.78,
+          "weight": 0.1623
+        },
+        {
+          "question": "What attracts you to a data-engineering role centered on standardizing customer data feeds, data quality, and analytics enablement, and which areas would you deliberately learn first if selected?",
+          "competency": "Role motivation",
+          "competency_type": "soft",
+          "target_gap": "profile_probe",
+          "question_type": "Cultural/Motivational",
+          "difficulty": "mid",
+          "rationale": "This assesses motivation and learning priorities for the specific role without assuming unlisted domain experience.",
+          "source_evidence": [
+            "Professional IT experience in data engineering and data analytics",
+            "Data integration and orchestration",
+            "Data quality and reconciliation"
+          ],
+          "priority": 0.66,
+          "weight": 0.4312625
+        },
+        {
+          "question": "Give an example of a repetitive engineering or operational task you identified and automated. What was manual before, what did you build, and how did you measure reliability or time saved?",
+          "competency": "Task automation",
+          "competency_type": "soft",
+          "target_gap": "Task automation",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Task automation is a high-weight required gap; the question elicits evidence of initiative, implementation depth, and measurable operational impact.",
+          "source_evidence": [
+            "Gap matrix: Task automation \u2014 missing",
+            "Created Airflow DAGs and Python scheduling scripts",
+            "Automated SQL Server version upgrades and patch installations"
+          ],
+          "priority": 0.97,
+          "weight": 0.9279
+        },
+        {
+          "question": "Describe the architecture and operating model of an Airflow DAG you created for ingestion or reporting. How did you manage dependencies, retries, backfills, parameterization, and alerting?",
+          "competency": "Workflow orchestration",
+          "competency_type": "technical",
+          "target_gap": "Data engineering workflows",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The candidate explicitly lists Airflow DAG work. This probes a relevant strength while verifying production orchestration depth for the role's workflow responsibility.",
+          "source_evidence": [
+            "Created Airflow DAGs and Python scheduling scripts for ingestion, ETL jobs, and business reports.",
+            "Apache Airflow"
+          ],
+          "priority": 0.81,
+          "weight": 0.362
+        },
+        {
+          "question": "You need to build an idempotent daily load from a source that can send late records, duplicate files, and occasional corrections. Describe the workflow design, state management, and recovery behavior you would use.",
+          "competency": "Workflow design",
+          "competency_type": "other",
+          "target_gap": "Data engineering workflows",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Data engineering workflows are only a partial match. This tests the candidate's ability to design reliable operational workflows rather than just individual transformations.",
+          "source_evidence": [
+            "Gap matrix: Data engineering workflows \u2014 partial_match",
+            "Created Airflow DAGs and Python scheduling scripts for ingestion, ETL jobs, and business reports.",
+            "Data engineering"
+          ],
+          "priority": 0.84,
+          "weight": 0.362
+        },
+        {
+          "question": "Tell me about a time you had to change direction because requirements, source data, or priorities shifted. How did you assess the impact, update the plan, and communicate the change to others?",
+          "competency": "Adaptability",
+          "competency_type": "soft",
+          "target_gap": "Solution implementation",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "The role requires adapting to changing requirements. This assesses execution behavior in a relevant delivery context while remaining grounded in the candidate's implementation history.",
+          "source_evidence": [
+            "Worked on architecture design for multistate implementation and deployment.",
+            "Data integration and orchestration"
+          ],
+          "priority": 0.73,
+          "weight": 0.6842
+        },
+        {
+          "question": "Walk me through an ETL pipeline you built from source extraction through orchestration, error handling, restartability, and delivery to consumers. What design trade-offs did you make?",
+          "competency": "ETL development",
+          "competency_type": "domain",
+          "target_gap": "ETL development",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "ETL is a partial match and a core requirement. The candidate's documented design and implementation experience provides a specific basis for a detailed depth probe.",
+          "source_evidence": [
+            "Gap matrix: ETL development \u2014 partial_match",
+            "Developed ETL pipelines in and out of data warehouses.",
+            "Prepared ETL design documents covering database structure, change data capture, error handling, restart, and refresh strategies."
+          ],
+          "priority": 0.87,
+          "weight": 0.4058
+        },
+        {
+          "question": "Before creating a pipeline for an unfamiliar source system, what profiling queries and checks would you run, and how would those findings affect the target design and load logic?",
+          "competency": "Data profiling",
+          "competency_type": "technical",
+          "target_gap": "Data profiling and analysis",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "This required competency is only a partial match. The question tests a disciplined approach to discovering nulls, duplicates, formats, keys, volume, and distribution issues before implementation.",
+          "source_evidence": [
+            "Gap matrix: Data profiling and analysis \u2014 partial_match",
+            "ETL and data migration",
+            "Perform data profiling and data analysis"
+          ],
+          "priority": 0.91,
+          "weight": 0.3914
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    }
+  ],
+  "selection_latency_ms": 0.07,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:47.378655+00:00"
+}

@@ -1,0 +1,1055 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "pool",
+  "condition": "T_pool",
+  "profile_id": "rjf_03497_3352c5d0c630",
+  "jd_id": "rjf_03497_3352c5d0c630",
+  "pair_id": "rjf_03497_3352c5d0c630",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "prompt": {
+    "file": "generation/interviewiq_pool.md",
+    "version": "1.1.0",
+    "sha256": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc"
+  },
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 41,
+  "pool_size_requested": 30,
+  "raw_questions": [
+    {
+      "question": "What hands-on experience, if any, do you have designing a future-state data architecture, and how did you translate business requirements into its components and standards?",
+      "competency": "Data architecture",
+      "dimension": "Technical",
+      "target_gap": "Data architecture",
+      "difficulty": "hard",
+      "rationale": "Directly tests a core required capability where the available evidence is limited to data-entry work rather than architecture delivery.",
+      "source_evidence": [
+        "Data entry",
+        "6 years in data architecture and data solutions are required"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Walk me through an ELT or ETL pipeline you personally built or operated, from source ingestion through transformation, testing, deployment, and production monitoring.",
+      "competency": "ETL/ELT delivery",
+      "dimension": "Technical",
+      "target_gap": "ELT and ETL data pipelines",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's unverified experience delivering production pipelines, a central requirement for the role.",
+      "source_evidence": [
+        "Performed data entry for end-of-month invoicing and business account orders",
+        "ELT and ETL Data Pipeline solutions from inception to production"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "How would you decide whether a new analytics use case belongs in an enterprise data warehouse, a data mart, or a data lake? Please explain the trade-offs.",
+      "competency": "Enterprise data platforms",
+      "dimension": "Situational",
+      "target_gap": "Enterprise data warehousing",
+      "difficulty": "hard",
+      "rationale": "Assesses architecture judgment across warehouse, mart, and lake patterns that is not demonstrated in the profile.",
+      "source_evidence": [
+        "Data entry",
+        "Lead end to end solution delivery of enterprise data warehouse"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "Describe a data-governance framework you have applied. How did you establish ownership, quality rules, access controls, and issue resolution?",
+      "competency": "Data governance",
+      "dimension": "Technical",
+      "target_gap": "Data governance",
+      "difficulty": "hard",
+      "rationale": "Probes a required governance capability absent from the candidate's stated records and spreadsheet experience.",
+      "source_evidence": [
+        "Organization of filing systems; filed and maintained loan records",
+        "data lake with governance"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "What Azure data services have you used, and what role did each play in an end-to-end data platform?",
+      "competency": "Azure data infrastructure",
+      "dimension": "Technical",
+      "target_gap": "Azure data infrastructure",
+      "difficulty": "hard",
+      "rationale": "Clarifies whether the candidate has practical Azure data-platform experience beyond the tools listed on the profile.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "including Azure andor GCP data infrastructure"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Describe a Spark or PySpark workload you have developed. How did you address partitioning, joins, data skew, and operational failures?",
+      "competency": "Apache Spark",
+      "dimension": "Technical",
+      "target_gap": "Apache Spark",
+      "difficulty": "hard",
+      "rationale": "Apache Spark is a high-weight missing skill and requires direct technical validation.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "SparkPyspark and JSON"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Please write or explain SQL that would identify duplicate customer records, retain the most recent record, and report the records removed from the final result.",
+      "competency": "SQL",
+      "dimension": "Technical",
+      "target_gap": "SQL",
+      "difficulty": "hard",
+      "rationale": "Tests practical SQL fluency, which is only weakly inferred from advanced Excel experience.",
+      "source_evidence": [
+        "Created and maintained spreadsheets using advanced Excel functions and calculations",
+        "Proficient in SQL, NoSQL and columnar databases"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Compare relational, NoSQL, and columnar databases for a high-volume analytics platform. When would you choose each, and what data-modeling implications follow?",
+      "competency": "Database architecture",
+      "dimension": "Technical",
+      "target_gap": "NoSQL databases",
+      "difficulty": "hard",
+      "rationale": "Builds on the partial database match while testing whether the candidate understands the distinct database paradigms required for the role.",
+      "source_evidence": [
+        "Databases",
+        "Proficient in SQL, NoSQL and columnar databases"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "What is the difference between JSON as a data interchange format and a relational table, and how would you validate and transform nested JSON for analytics?",
+      "competency": "JSON data processing",
+      "dimension": "Technical",
+      "target_gap": "JSON",
+      "difficulty": "hard",
+      "rationale": "JSON is a missing required skill; the question distinguishes general data-entry experience from modern semi-structured data processing.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "Experience with SparkPyspark and JSON"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "How would you use pandas DataFrames to profile a newly received file, handle missing values and duplicates, and produce a reproducible quality report?",
+      "competency": "Pandas DataFrames",
+      "dimension": "Technical",
+      "target_gap": "Pandas DataFrames",
+      "difficulty": "hard",
+      "rationale": "Validates a specifically required but missing technical skill, while connecting to the candidate's stated attention to data accuracy.",
+      "source_evidence": [
+        "Performed highly accurate and detailed data entry",
+        "Must have Panda Data Frames knowledge and best practices"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Design an Airflow-style DAG for daily ingestion, validation, transformation, publishing, and alerting. Which tasks depend on others, and how would you handle retries and backfills?",
+      "competency": "Workflow orchestration",
+      "dimension": "Situational",
+      "target_gap": "Directed acyclic graphs",
+      "difficulty": "hard",
+      "rationale": "Tests understanding of DAG-based production orchestration, which is missing from the profile.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "execution engines, DAGs"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "What workflow orchestration tools have you used, such as Airflow, Dagster, or Luigi, and how did you monitor failures and manage dependencies?",
+      "competency": "Workflow orchestration tools",
+      "dimension": "Technical",
+      "target_gap": "Workflow orchestration tools",
+      "difficulty": "hard",
+      "rationale": "Seeks concrete evidence for a missing operational requirement that is critical to production pipeline delivery.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "DAGs (airflow, dagster, luigi, etc.)"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Explain how you have used Kubernetes to deploy or operate data workloads. How did you approach scaling, secrets, configuration, and incident recovery?",
+      "competency": "Kubernetes operations",
+      "dimension": "Technical",
+      "target_gap": "Kubernetes",
+      "difficulty": "hard",
+      "rationale": "Kubernetes is a missing required platform skill and needs explicit hands-on validation.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "and Kubernetes"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Describe your use of GitLab for source control and delivery pipelines. How did you structure merge requests, code review, testing, and release approvals?",
+      "competency": "GitLab delivery practices",
+      "dimension": "Technical",
+      "target_gap": "GitLab",
+      "difficulty": "hard",
+      "rationale": "Tests a missing required engineering-practice skill needed for controlled delivery of data solutions.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "Proficient with GitLab"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "How would you build a Power BI semantic model and dashboard for business leaders while ensuring that metrics, refreshes, and security are reliable?",
+      "competency": "Power BI",
+      "dimension": "Situational",
+      "target_gap": "Power BI",
+      "difficulty": "hard",
+      "rationale": "Power BI is a missing required skill; the question tests both reporting knowledge and operational discipline.",
+      "source_evidence": [
+        "Prepared monthly and special reports for management",
+        "BI reporting with PowerBI"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "Explain how you would implement a data catalog and business glossary so product teams can find trusted data and interpret key measures consistently.",
+      "competency": "Data discovery and definitions",
+      "dimension": "Role-Specific",
+      "target_gap": "Data catalog",
+      "difficulty": "hard",
+      "rationale": "Tests a partial match against the role's required catalog capability and related business-definition practices.",
+      "source_evidence": [
+        "Data entry",
+        "Data Catalog, and Business Glossary"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Give an example of how you have managed metadata for reports, files, or databases. What metadata did you capture, who maintained it, and how was it kept current?",
+      "competency": "Metadata management",
+      "dimension": "Behavioural",
+      "target_gap": "Metadata management",
+      "difficulty": "mid",
+      "rationale": "Leverages the candidate's spreadsheet-management experience while checking whether it extends to governed metadata practices.",
+      "source_evidence": [
+        "Created and maintained spreadsheets using advanced Excel functions and calculations",
+        "Metadata Management, Data Governance"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "How would you define and maintain master data for customers, products, or accounts when multiple operational systems disagree?",
+      "competency": "Master data management",
+      "dimension": "Situational",
+      "target_gap": "Master data management",
+      "difficulty": "hard",
+      "rationale": "Tests a required capability not evidenced by the candidate's account and billing data work.",
+      "source_evidence": [
+        "Organized billing and invoice data",
+        "Master Data Management"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "Describe a time you found a discrepancy in financial, billing, or account records. How did you investigate the source, correct it, and prevent recurrence?",
+      "competency": "Data quality and reconciliation",
+      "dimension": "Behavioural",
+      "target_gap": "Data solutions",
+      "difficulty": "mid",
+      "rationale": "Uses documented reconciliation and issue-resolution experience to assess transferable data-quality discipline for data-solution delivery.",
+      "source_evidence": [
+        "Reconciled records and identified discrepancies",
+        "Identified and resolved system and account issues"
+      ],
+      "priority": 0.76
+    },
+    {
+      "question": "If asked to migrate sensitive reporting data from on-premises systems to a hybrid-cloud platform, what discovery questions, security controls, and migration stages would you propose?",
+      "competency": "Hybrid cloud architecture",
+      "dimension": "Situational",
+      "target_gap": "Hybrid cloud data platforms",
+      "difficulty": "hard",
+      "rationale": "Assesses a required but weakly matched cloud-architecture area through a realistic migration scenario.",
+      "source_evidence": [
+        "Data entry",
+        "Skilled in hybrid cloud data platforms"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "What experience do you have with Google Cloud Platform data services, and how would you compare an Azure-based and GCP-based data-platform design?",
+      "competency": "GCP data infrastructure",
+      "dimension": "Technical",
+      "target_gap": "Google Cloud Platform data infrastructure",
+      "difficulty": "hard",
+      "rationale": "Clarifies whether there is any direct GCP experience for a required skill with only weak evidence.",
+      "source_evidence": [
+        "Data entry",
+        "including Azure andor GCP data infrastructure"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "How would you decide whether Azure Data Factory, Google Dataflow, or AWS Glue is the best managed service for a new ingestion and transformation requirement?",
+      "competency": "Managed cloud integration",
+      "dimension": "Situational",
+      "target_gap": "Azure Data Factory",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's exposure to preferred cloud-integration tools and ability to make an informed platform selection.",
+      "source_evidence": [
+        "Data entry",
+        "Familiarity with Azure data factory preferred"
+      ],
+      "priority": 0.67
+    },
+    {
+      "question": "Describe the largest team you have supervised. How did you set expectations, coach performance, allocate work, and handle a performance issue?",
+      "competency": "Team management",
+      "dimension": "Behavioural",
+      "target_gap": "Team management",
+      "difficulty": "mid",
+      "rationale": "The candidate supervised 7\u20138 cashiers and hired and trained staff; this validates leadership depth relative to managing technical teams.",
+      "source_evidence": [
+        "Monitored a team of 7\u20138 professionals",
+        "Trained and mentored new cashiers",
+        "Hired 3\u20134 team members"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "This role manages Data Engineers and Data Scientists. How would you lead specialists in areas where your own technical depth may initially be developing, while remaining accountable for delivery quality?",
+      "competency": "Technical leadership",
+      "dimension": "Situational",
+      "target_gap": "Team management",
+      "difficulty": "hard",
+      "rationale": "Tests leadership adaptability given supervisory evidence in cashier operations rather than data-engineering teams.",
+      "source_evidence": [
+        "Monitored a team of 7\u20138 professionals",
+        "managing a team of Data Engineers and Data Scientists"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Tell us about a procedure you documented or updated. How did you gather input, make the instructions usable, communicate the change, and verify adoption?",
+      "competency": "Architecture documentation and communication",
+      "dimension": "Behavioural",
+      "target_gap": "Architecture documentation and communication",
+      "difficulty": "mid",
+      "rationale": "Builds on the candidate's documented SOP work to evaluate whether their documentation process can scale toward complex architecture communication.",
+      "source_evidence": [
+        "Updated standard operating procedures and databases",
+        "Ability to document, communicate, implement, and operationalize complex architectures"
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "Provide an example of communicating a complex process or a data issue to people with different levels of technical knowledge. How did you tailor the message and confirm understanding?",
+      "competency": "Stakeholder communication",
+      "dimension": "Behavioural",
+      "target_gap": "Excellent verbal and written communication",
+      "difficulty": "mid",
+      "rationale": "Confirms the candidate's strongest listed match using examples relevant to cross-functional data stakeholders.",
+      "source_evidence": [
+        "Responded to customer, staff, and client inquiries by mail, email, and fax",
+        "Written and verbal communication"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "Describe a time you introduced a new technology, tool, or process into an established team. What resistance did you encounter, and what was the outcome?",
+      "competency": "Technology adoption",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Openness to new technologies",
+      "difficulty": "mid",
+      "rationale": "Tests openness to change using the candidate's stated experience sharing benefits of new technology.",
+      "source_evidence": [
+        "Resolved spreadsheet issues and shared benefits of new technology",
+        "must be open to new technologies"
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "How have you planned and tracked work when several requests had competing deadlines? If you have used Agile or Kanban, describe your specific role; if not, explain how you would adapt your approach.",
+      "competency": "Agile delivery",
+      "dimension": "Behavioural",
+      "target_gap": "Agile methodologies",
+      "difficulty": "mid",
+      "rationale": "Agile is missing from the profile; the question fairly assesses transferable prioritization from multi-project administrative work while seeking direct evidence.",
+      "source_evidence": [
+        "Prepared weekly spreadsheets monitoring more than 15 ongoing projects",
+        "Experience with Agile methodologies"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "What is your experience using Jira or Confluence to manage work and document decisions? How would you structure a project space for a cross-functional data initiative?",
+      "competency": "Delivery collaboration tools",
+      "dimension": "Technical",
+      "target_gap": "Jira and Confluence",
+      "difficulty": "mid",
+      "rationale": "Tests a weakly matched preferred collaboration-tool requirement and ability to support transparent delivery.",
+      "source_evidence": [
+        "Identified and resolved system and account issues",
+        "using tools like Jira and Confluence"
+      ],
+      "priority": 0.62
+    },
+    {
+      "question": "Your background shows long-term work in administration, billing, reporting, and data coordination. What specifically motivates your move into a senior data architecture and engineering leadership role, and what have you done to prepare for it?",
+      "competency": "Role transition motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Clarifies the candidate's motivation, self-awareness, and preparation for a substantial transition into a senior technical leadership role without assuming unlisted experience.",
+      "source_evidence": [
+        "Administrator with over 15 years of professional experience",
+        "Data Management Services Coordinator, 2009\u2013Current",
+        "Senior Manager, Data Architecture & Data Engineering"
+      ],
+      "priority": 0.94
+    }
+  ],
+  "valid_questions": [
+    {
+      "question": "What hands-on experience, if any, do you have designing a future-state data architecture, and how did you translate business requirements into its components and standards?",
+      "competency": "Data architecture",
+      "dimension": "Technical",
+      "target_gap": "Data architecture",
+      "difficulty": "hard",
+      "rationale": "Directly tests a core required capability where the available evidence is limited to data-entry work rather than architecture delivery.",
+      "source_evidence": [
+        "Data entry",
+        "6 years in data architecture and data solutions are required"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Walk me through an ELT or ETL pipeline you personally built or operated, from source ingestion through transformation, testing, deployment, and production monitoring.",
+      "competency": "ETL/ELT delivery",
+      "dimension": "Technical",
+      "target_gap": "ELT and ETL data pipelines",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's unverified experience delivering production pipelines, a central requirement for the role.",
+      "source_evidence": [
+        "Performed data entry for end-of-month invoicing and business account orders",
+        "ELT and ETL Data Pipeline solutions from inception to production"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "How would you decide whether a new analytics use case belongs in an enterprise data warehouse, a data mart, or a data lake? Please explain the trade-offs.",
+      "competency": "Enterprise data platforms",
+      "dimension": "Situational",
+      "target_gap": "Enterprise data warehousing",
+      "difficulty": "hard",
+      "rationale": "Assesses architecture judgment across warehouse, mart, and lake patterns that is not demonstrated in the profile.",
+      "source_evidence": [
+        "Data entry",
+        "Lead end to end solution delivery of enterprise data warehouse"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "Describe a data-governance framework you have applied. How did you establish ownership, quality rules, access controls, and issue resolution?",
+      "competency": "Data governance",
+      "dimension": "Technical",
+      "target_gap": "Data governance",
+      "difficulty": "hard",
+      "rationale": "Probes a required governance capability absent from the candidate's stated records and spreadsheet experience.",
+      "source_evidence": [
+        "Organization of filing systems; filed and maintained loan records",
+        "data lake with governance"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "What Azure data services have you used, and what role did each play in an end-to-end data platform?",
+      "competency": "Azure data infrastructure",
+      "dimension": "Technical",
+      "target_gap": "Azure data infrastructure",
+      "difficulty": "hard",
+      "rationale": "Clarifies whether the candidate has practical Azure data-platform experience beyond the tools listed on the profile.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "including Azure andor GCP data infrastructure"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Describe a Spark or PySpark workload you have developed. How did you address partitioning, joins, data skew, and operational failures?",
+      "competency": "Apache Spark",
+      "dimension": "Technical",
+      "target_gap": "Apache Spark",
+      "difficulty": "hard",
+      "rationale": "Apache Spark is a high-weight missing skill and requires direct technical validation.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "SparkPyspark and JSON"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Please write or explain SQL that would identify duplicate customer records, retain the most recent record, and report the records removed from the final result.",
+      "competency": "SQL",
+      "dimension": "Technical",
+      "target_gap": "SQL",
+      "difficulty": "hard",
+      "rationale": "Tests practical SQL fluency, which is only weakly inferred from advanced Excel experience.",
+      "source_evidence": [
+        "Created and maintained spreadsheets using advanced Excel functions and calculations",
+        "Proficient in SQL, NoSQL and columnar databases"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Compare relational, NoSQL, and columnar databases for a high-volume analytics platform. When would you choose each, and what data-modeling implications follow?",
+      "competency": "Database architecture",
+      "dimension": "Technical",
+      "target_gap": "NoSQL databases",
+      "difficulty": "hard",
+      "rationale": "Builds on the partial database match while testing whether the candidate understands the distinct database paradigms required for the role.",
+      "source_evidence": [
+        "Databases",
+        "Proficient in SQL, NoSQL and columnar databases"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "What is the difference between JSON as a data interchange format and a relational table, and how would you validate and transform nested JSON for analytics?",
+      "competency": "JSON data processing",
+      "dimension": "Technical",
+      "target_gap": "JSON",
+      "difficulty": "hard",
+      "rationale": "JSON is a missing required skill; the question distinguishes general data-entry experience from modern semi-structured data processing.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "Experience with SparkPyspark and JSON"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "How would you use pandas DataFrames to profile a newly received file, handle missing values and duplicates, and produce a reproducible quality report?",
+      "competency": "Pandas DataFrames",
+      "dimension": "Technical",
+      "target_gap": "Pandas DataFrames",
+      "difficulty": "hard",
+      "rationale": "Validates a specifically required but missing technical skill, while connecting to the candidate's stated attention to data accuracy.",
+      "source_evidence": [
+        "Performed highly accurate and detailed data entry",
+        "Must have Panda Data Frames knowledge and best practices"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Design an Airflow-style DAG for daily ingestion, validation, transformation, publishing, and alerting. Which tasks depend on others, and how would you handle retries and backfills?",
+      "competency": "Workflow orchestration",
+      "dimension": "Situational",
+      "target_gap": "Directed acyclic graphs",
+      "difficulty": "hard",
+      "rationale": "Tests understanding of DAG-based production orchestration, which is missing from the profile.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "execution engines, DAGs"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "What workflow orchestration tools have you used, such as Airflow, Dagster, or Luigi, and how did you monitor failures and manage dependencies?",
+      "competency": "Workflow orchestration tools",
+      "dimension": "Technical",
+      "target_gap": "Workflow orchestration tools",
+      "difficulty": "hard",
+      "rationale": "Seeks concrete evidence for a missing operational requirement that is critical to production pipeline delivery.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "DAGs (airflow, dagster, luigi, etc.)"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Explain how you have used Kubernetes to deploy or operate data workloads. How did you approach scaling, secrets, configuration, and incident recovery?",
+      "competency": "Kubernetes operations",
+      "dimension": "Technical",
+      "target_gap": "Kubernetes",
+      "difficulty": "hard",
+      "rationale": "Kubernetes is a missing required platform skill and needs explicit hands-on validation.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "and Kubernetes"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Describe your use of GitLab for source control and delivery pipelines. How did you structure merge requests, code review, testing, and release approvals?",
+      "competency": "GitLab delivery practices",
+      "dimension": "Technical",
+      "target_gap": "GitLab",
+      "difficulty": "hard",
+      "rationale": "Tests a missing required engineering-practice skill needed for controlled delivery of data solutions.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "Proficient with GitLab"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "How would you build a Power BI semantic model and dashboard for business leaders while ensuring that metrics, refreshes, and security are reliable?",
+      "competency": "Power BI",
+      "dimension": "Situational",
+      "target_gap": "Power BI",
+      "difficulty": "hard",
+      "rationale": "Power BI is a missing required skill; the question tests both reporting knowledge and operational discipline.",
+      "source_evidence": [
+        "Prepared monthly and special reports for management",
+        "BI reporting with PowerBI"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "Explain how you would implement a data catalog and business glossary so product teams can find trusted data and interpret key measures consistently.",
+      "competency": "Data discovery and definitions",
+      "dimension": "Role-Specific",
+      "target_gap": "Data catalog",
+      "difficulty": "hard",
+      "rationale": "Tests a partial match against the role's required catalog capability and related business-definition practices.",
+      "source_evidence": [
+        "Data entry",
+        "Data Catalog, and Business Glossary"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Give an example of how you have managed metadata for reports, files, or databases. What metadata did you capture, who maintained it, and how was it kept current?",
+      "competency": "Metadata management",
+      "dimension": "Behavioural",
+      "target_gap": "Metadata management",
+      "difficulty": "mid",
+      "rationale": "Leverages the candidate's spreadsheet-management experience while checking whether it extends to governed metadata practices.",
+      "source_evidence": [
+        "Created and maintained spreadsheets using advanced Excel functions and calculations",
+        "Metadata Management, Data Governance"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "How would you define and maintain master data for customers, products, or accounts when multiple operational systems disagree?",
+      "competency": "Master data management",
+      "dimension": "Situational",
+      "target_gap": "Master data management",
+      "difficulty": "hard",
+      "rationale": "Tests a required capability not evidenced by the candidate's account and billing data work.",
+      "source_evidence": [
+        "Organized billing and invoice data",
+        "Master Data Management"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "Describe a time you found a discrepancy in financial, billing, or account records. How did you investigate the source, correct it, and prevent recurrence?",
+      "competency": "Data quality and reconciliation",
+      "dimension": "Behavioural",
+      "target_gap": "Data solutions",
+      "difficulty": "mid",
+      "rationale": "Uses documented reconciliation and issue-resolution experience to assess transferable data-quality discipline for data-solution delivery.",
+      "source_evidence": [
+        "Reconciled records and identified discrepancies",
+        "Identified and resolved system and account issues"
+      ],
+      "priority": 0.76
+    },
+    {
+      "question": "If asked to migrate sensitive reporting data from on-premises systems to a hybrid-cloud platform, what discovery questions, security controls, and migration stages would you propose?",
+      "competency": "Hybrid cloud architecture",
+      "dimension": "Situational",
+      "target_gap": "Hybrid cloud data platforms",
+      "difficulty": "hard",
+      "rationale": "Assesses a required but weakly matched cloud-architecture area through a realistic migration scenario.",
+      "source_evidence": [
+        "Data entry",
+        "Skilled in hybrid cloud data platforms"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "What experience do you have with Google Cloud Platform data services, and how would you compare an Azure-based and GCP-based data-platform design?",
+      "competency": "GCP data infrastructure",
+      "dimension": "Technical",
+      "target_gap": "Google Cloud Platform data infrastructure",
+      "difficulty": "hard",
+      "rationale": "Clarifies whether there is any direct GCP experience for a required skill with only weak evidence.",
+      "source_evidence": [
+        "Data entry",
+        "including Azure andor GCP data infrastructure"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "How would you decide whether Azure Data Factory, Google Dataflow, or AWS Glue is the best managed service for a new ingestion and transformation requirement?",
+      "competency": "Managed cloud integration",
+      "dimension": "Situational",
+      "target_gap": "Azure Data Factory",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's exposure to preferred cloud-integration tools and ability to make an informed platform selection.",
+      "source_evidence": [
+        "Data entry",
+        "Familiarity with Azure data factory preferred"
+      ],
+      "priority": 0.67
+    },
+    {
+      "question": "Describe the largest team you have supervised. How did you set expectations, coach performance, allocate work, and handle a performance issue?",
+      "competency": "Team management",
+      "dimension": "Behavioural",
+      "target_gap": "Team management",
+      "difficulty": "mid",
+      "rationale": "The candidate supervised 7\u20138 cashiers and hired and trained staff; this validates leadership depth relative to managing technical teams.",
+      "source_evidence": [
+        "Monitored a team of 7\u20138 professionals",
+        "Trained and mentored new cashiers",
+        "Hired 3\u20134 team members"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "This role manages Data Engineers and Data Scientists. How would you lead specialists in areas where your own technical depth may initially be developing, while remaining accountable for delivery quality?",
+      "competency": "Technical leadership",
+      "dimension": "Situational",
+      "target_gap": "Team management",
+      "difficulty": "hard",
+      "rationale": "Tests leadership adaptability given supervisory evidence in cashier operations rather than data-engineering teams.",
+      "source_evidence": [
+        "Monitored a team of 7\u20138 professionals",
+        "managing a team of Data Engineers and Data Scientists"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Tell us about a procedure you documented or updated. How did you gather input, make the instructions usable, communicate the change, and verify adoption?",
+      "competency": "Architecture documentation and communication",
+      "dimension": "Behavioural",
+      "target_gap": "Architecture documentation and communication",
+      "difficulty": "mid",
+      "rationale": "Builds on the candidate's documented SOP work to evaluate whether their documentation process can scale toward complex architecture communication.",
+      "source_evidence": [
+        "Updated standard operating procedures and databases",
+        "Ability to document, communicate, implement, and operationalize complex architectures"
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "Provide an example of communicating a complex process or a data issue to people with different levels of technical knowledge. How did you tailor the message and confirm understanding?",
+      "competency": "Stakeholder communication",
+      "dimension": "Behavioural",
+      "target_gap": "Excellent verbal and written communication",
+      "difficulty": "mid",
+      "rationale": "Confirms the candidate's strongest listed match using examples relevant to cross-functional data stakeholders.",
+      "source_evidence": [
+        "Responded to customer, staff, and client inquiries by mail, email, and fax",
+        "Written and verbal communication"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "Describe a time you introduced a new technology, tool, or process into an established team. What resistance did you encounter, and what was the outcome?",
+      "competency": "Technology adoption",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Openness to new technologies",
+      "difficulty": "mid",
+      "rationale": "Tests openness to change using the candidate's stated experience sharing benefits of new technology.",
+      "source_evidence": [
+        "Resolved spreadsheet issues and shared benefits of new technology",
+        "must be open to new technologies"
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "How have you planned and tracked work when several requests had competing deadlines? If you have used Agile or Kanban, describe your specific role; if not, explain how you would adapt your approach.",
+      "competency": "Agile delivery",
+      "dimension": "Behavioural",
+      "target_gap": "Agile methodologies",
+      "difficulty": "mid",
+      "rationale": "Agile is missing from the profile; the question fairly assesses transferable prioritization from multi-project administrative work while seeking direct evidence.",
+      "source_evidence": [
+        "Prepared weekly spreadsheets monitoring more than 15 ongoing projects",
+        "Experience with Agile methodologies"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "What is your experience using Jira or Confluence to manage work and document decisions? How would you structure a project space for a cross-functional data initiative?",
+      "competency": "Delivery collaboration tools",
+      "dimension": "Technical",
+      "target_gap": "Jira and Confluence",
+      "difficulty": "mid",
+      "rationale": "Tests a weakly matched preferred collaboration-tool requirement and ability to support transparent delivery.",
+      "source_evidence": [
+        "Identified and resolved system and account issues",
+        "using tools like Jira and Confluence"
+      ],
+      "priority": 0.62
+    },
+    {
+      "question": "Your background shows long-term work in administration, billing, reporting, and data coordination. What specifically motivates your move into a senior data architecture and engineering leadership role, and what have you done to prepare for it?",
+      "competency": "Role transition motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Clarifies the candidate's motivation, self-awareness, and preparation for a substantial transition into a senior technical leadership role without assuming unlisted experience.",
+      "source_evidence": [
+        "Administrator with over 15 years of professional experience",
+        "Data Management Services Coordinator, 2009\u2013Current",
+        "Senior Manager, Data Architecture & Data Engineering"
+      ],
+      "priority": 0.94
+    }
+  ],
+  "validation_failures": [],
+  "n_raw": 30,
+  "n_valid": 30,
+  "n_failed": 0,
+  "weights": [
+    0.6681,
+    0.6855,
+    0.6759,
+    0.6873,
+    0.6935,
+    0.9552,
+    0.7023,
+    0.4011,
+    0.935,
+    0.94,
+    0.9374,
+    0.9351,
+    0.9494,
+    0.9565,
+    0.9392,
+    0.4093,
+    0.6757,
+    0.6682,
+    0.6622,
+    0.702,
+    0.7087,
+    0.4232,
+    0.6706,
+    0.6706,
+    0.6477,
+    0.1621,
+    0.7169,
+    0.9349,
+    0.4225,
+    0.6471780487804879
+  ],
+  "weight_outcomes": [
+    {
+      "rule": "exact",
+      "weight": 0.6681,
+      "matched_competency": "Data architecture",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6855,
+      "matched_competency": "ELT and ETL data pipelines",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6759,
+      "matched_competency": "Enterprise data warehousing",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6873,
+      "matched_competency": "Data governance",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6935,
+      "matched_competency": "Azure data infrastructure",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9552,
+      "matched_competency": "Apache Spark",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7023,
+      "matched_competency": "SQL",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4011,
+      "matched_competency": "NoSQL databases",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.935,
+      "matched_competency": "JSON",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.94,
+      "matched_competency": "Pandas DataFrames",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9374,
+      "matched_competency": "Directed acyclic graphs",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9351,
+      "matched_competency": "Workflow orchestration tools",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9494,
+      "matched_competency": "Kubernetes",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9565,
+      "matched_competency": "GitLab",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9392,
+      "matched_competency": "Power BI",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4093,
+      "matched_competency": "Data catalog",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6757,
+      "matched_competency": "Metadata management",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6682,
+      "matched_competency": "Master data management",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6622,
+      "matched_competency": "Data solutions",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.702,
+      "matched_competency": "Hybrid cloud data platforms",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7087,
+      "matched_competency": "Google Cloud Platform data infrastructure",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4232,
+      "matched_competency": "Azure Data Factory",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6706,
+      "matched_competency": "Team management",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6706,
+      "matched_competency": "Team management",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6477,
+      "matched_competency": "Architecture documentation and communication",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1621,
+      "matched_competency": "Excellent verbal and written communication",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7169,
+      "matched_competency": "Openness to new technologies",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9349,
+      "matched_competency": "Agile methodologies",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4225,
+      "matched_competency": "Jira and Confluence",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.6471780487804879,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    }
+  ],
+  "fallback_rate": 0.0,
+  "profile_probe_rate": 0.03333333333333333,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 14130,
+    "output_tokens": 3216,
+    "cached_tokens": 0,
+    "estimated_cost": 0.066852,
+    "latency_ms": 25559.21,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.066852,
+  "cost_cny": 0.45258804,
+  "usd_cny_rate": 6.77,
+  "user_prompt_sha256": "c410adc56ab9f51cae7c2ee84d279c08c7b7268cf859f90859d26e43d1a0c4be",
+  "generated_at": "2026-10-11T13:07:47.191574+00:00"
+}

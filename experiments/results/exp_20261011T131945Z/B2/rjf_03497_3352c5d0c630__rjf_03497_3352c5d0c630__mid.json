@@ -1,0 +1,217 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "B2",
+  "selection_strategy": "plain_mmr_priority",
+  "generation_mode": "interviewiq",
+  "profile_id": "rjf_03497_3352c5d0c630",
+  "jd_id": "rjf_03497_3352c5d0c630",
+  "pair_id": "rjf_03497_3352c5d0c630",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_03497_3352c5d0c630__rjf_03497_3352c5d0c630__mid.json",
+  "n_requirements": 41,
+  "questions": [
+    {
+      "question": "What hands-on experience, if any, do you have designing a future-state data architecture, and how did you translate business requirements into its components and standards?"
+    },
+    {
+      "question": "Please write or explain SQL that would identify duplicate customer records, retain the most recent record, and report the records removed from the final result."
+    },
+    {
+      "question": "Walk me through an ELT or ETL pipeline you personally built or operated, from source ingestion through transformation, testing, deployment, and production monitoring."
+    },
+    {
+      "question": "Describe a Spark or PySpark workload you have developed. How did you address partitioning, joins, data skew, and operational failures?"
+    },
+    {
+      "question": "What is the difference between JSON as a data interchange format and a relational table, and how would you validate and transform nested JSON for analytics?"
+    },
+    {
+      "question": "What Azure data services have you used, and what role did each play in an end-to-end data platform?"
+    },
+    {
+      "question": "How would you decide whether a new analytics use case belongs in an enterprise data warehouse, a data mart, or a data lake? Please explain the trade-offs."
+    },
+    {
+      "question": "How would you use pandas DataFrames to profile a newly received file, handle missing values and duplicates, and produce a reproducible quality report?"
+    },
+    {
+      "question": "Design an Airflow-style DAG for daily ingestion, validation, transformation, publishing, and alerting. Which tasks depend on others, and how would you handle retries and backfills?"
+    },
+    {
+      "question": "Explain how you have used Kubernetes to deploy or operate data workloads. How did you approach scaling, secrets, configuration, and incident recovery?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "What hands-on experience, if any, do you have designing a future-state data architecture, and how did you translate business requirements into its components and standards?",
+      "competency": "Data architecture",
+      "competency_type": "technical",
+      "target_gap": "Data architecture",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Directly tests a core required capability where the available evidence is limited to data-entry work rather than architecture delivery.",
+      "source_evidence": [
+        "Data entry",
+        "6 years in data architecture and data solutions are required"
+      ],
+      "priority": 0.98,
+      "weight": 0.6681
+    },
+    {
+      "question": "Please write or explain SQL that would identify duplicate customer records, retain the most recent record, and report the records removed from the final result.",
+      "competency": "SQL",
+      "competency_type": "technical",
+      "target_gap": "SQL",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Tests practical SQL fluency, which is only weakly inferred from advanced Excel experience.",
+      "source_evidence": [
+        "Created and maintained spreadsheets using advanced Excel functions and calculations",
+        "Proficient in SQL, NoSQL and columnar databases"
+      ],
+      "priority": 0.95,
+      "weight": 0.7023
+    },
+    {
+      "question": "Walk me through an ELT or ETL pipeline you personally built or operated, from source ingestion through transformation, testing, deployment, and production monitoring.",
+      "competency": "ETL/ELT delivery",
+      "competency_type": "technical",
+      "target_gap": "ELT and ETL data pipelines",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's unverified experience delivering production pipelines, a central requirement for the role.",
+      "source_evidence": [
+        "Performed data entry for end-of-month invoicing and business account orders",
+        "ELT and ETL Data Pipeline solutions from inception to production"
+      ],
+      "priority": 0.98,
+      "weight": 0.6855
+    },
+    {
+      "question": "Describe a Spark or PySpark workload you have developed. How did you address partitioning, joins, data skew, and operational failures?",
+      "competency": "Apache Spark",
+      "competency_type": "technical",
+      "target_gap": "Apache Spark",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Apache Spark is a high-weight missing skill and requires direct technical validation.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "SparkPyspark and JSON"
+      ],
+      "priority": 0.95,
+      "weight": 0.9552
+    },
+    {
+      "question": "What is the difference between JSON as a data interchange format and a relational table, and how would you validate and transform nested JSON for analytics?",
+      "competency": "JSON data processing",
+      "competency_type": "technical",
+      "target_gap": "JSON",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "JSON is a missing required skill; the question distinguishes general data-entry experience from modern semi-structured data processing.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "Experience with SparkPyspark and JSON"
+      ],
+      "priority": 0.92,
+      "weight": 0.935
+    },
+    {
+      "question": "What Azure data services have you used, and what role did each play in an end-to-end data platform?",
+      "competency": "Azure data infrastructure",
+      "competency_type": "technical",
+      "target_gap": "Azure data infrastructure",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Clarifies whether the candidate has practical Azure data-platform experience beyond the tools listed on the profile.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "including Azure andor GCP data infrastructure"
+      ],
+      "priority": 0.95,
+      "weight": 0.6935
+    },
+    {
+      "question": "How would you decide whether a new analytics use case belongs in an enterprise data warehouse, a data mart, or a data lake? Please explain the trade-offs.",
+      "competency": "Enterprise data platforms",
+      "competency_type": "other",
+      "target_gap": "Enterprise data warehousing",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Assesses architecture judgment across warehouse, mart, and lake patterns that is not demonstrated in the profile.",
+      "source_evidence": [
+        "Data entry",
+        "Lead end to end solution delivery of enterprise data warehouse"
+      ],
+      "priority": 0.96,
+      "weight": 0.6759
+    },
+    {
+      "question": "How would you use pandas DataFrames to profile a newly received file, handle missing values and duplicates, and produce a reproducible quality report?",
+      "competency": "Pandas DataFrames",
+      "competency_type": "technical",
+      "target_gap": "Pandas DataFrames",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Validates a specifically required but missing technical skill, while connecting to the candidate's stated attention to data accuracy.",
+      "source_evidence": [
+        "Performed highly accurate and detailed data entry",
+        "Must have Panda Data Frames knowledge and best practices"
+      ],
+      "priority": 0.92,
+      "weight": 0.94
+    },
+    {
+      "question": "Design an Airflow-style DAG for daily ingestion, validation, transformation, publishing, and alerting. Which tasks depend on others, and how would you handle retries and backfills?",
+      "competency": "Workflow orchestration",
+      "competency_type": "other",
+      "target_gap": "Directed acyclic graphs",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests understanding of DAG-based production orchestration, which is missing from the profile.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "execution engines, DAGs"
+      ],
+      "priority": 0.93,
+      "weight": 0.9374
+    },
+    {
+      "question": "Explain how you have used Kubernetes to deploy or operate data workloads. How did you approach scaling, secrets, configuration, and incident recovery?",
+      "competency": "Kubernetes operations",
+      "competency_type": "technical",
+      "target_gap": "Kubernetes",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Kubernetes is a missing required platform skill and needs explicit hands-on validation.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "and Kubernetes"
+      ],
+      "priority": 0.93,
+      "weight": 0.9494
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    0,
+    6,
+    1,
+    5,
+    8,
+    4,
+    2,
+    9,
+    10,
+    12
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.23,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:45.603979+00:00"
+}

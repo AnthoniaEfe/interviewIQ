@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_03497_3352c5d0c630",
+  "jd_id": "rjf_03497_3352c5d0c630",
+  "pair_id": "rjf_03497_3352c5d0c630",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Your background includes advanced Excel-based reporting, invoicing data entry, and database updates at Penguin Random House. What experience, if any, do you have writing SQL to extract, join, validate, or transform data, and how would you assess your readiness to use SQL in a production data environment?"
+    },
+    {
+      "question": "This role requires delivery of ETL/ELT pipelines into production. Walk us through the most technically complex data workflow you have built or maintained\u2014from source data through validation, reporting, and issue resolution\u2014and clarify which parts you personally designed versus operated."
+    },
+    {
+      "question": "At General Dynamics Information Technology, you maintained weekly spreadsheets for more than 15 ongoing projects and followed up with program managers. Describe a time when that tracking exposed a risk, discrepancy, or missed commitment; how did you prioritize the issue and drive resolution?"
+    },
+    {
+      "question": "Imagine a product team asks for a new analytics dataset combining billing, customer, and operational data, but definitions of key fields differ across teams. How would you clarify requirements, define business terms, establish data ownership, and communicate a workable approach to both technical and nontechnical stakeholders?"
+    },
+    {
+      "question": "You updated standard operating procedures and databases at Penguin Random House. What approach did you use to make process or data-entry guidance accurate, usable, and consistently followed, and how would you adapt that experience to documenting a complex data architecture?"
+    },
+    {
+      "question": "This position requires Azure or GCP, Spark/PySpark, workflow orchestration tools such as Airflow or Dagster, Kubernetes, and GitLab. Which of these technologies have you used directly, if any, and what is your specific plan for closing any gaps needed to lead a data-engineering team?"
+    },
+    {
+      "question": "You supervised 7\u20138 cashiers at Koons of Westminster, including training, mentoring, hiring, and addressing performance issues. Tell us about a performance or capability problem you handled: how did you set expectations, provide feedback, and determine whether improvement occurred?"
+    },
+    {
+      "question": "A nightly pipeline feeding an enterprise data warehouse fails shortly before executives need a Power BI report. As the manager, how would you coordinate Data Engineering, DataOps, business stakeholders, and report consumers; decide whether to use a validated fallback dataset; and prevent recurrence?"
+    },
+    {
+      "question": "The role requires a data strategy that connects Data Engineering, Data Science, Analytics, governance, master data, and a data catalog. Based on your experience moving from operational reporting and records management, what motivates you to pursue this data-architecture leadership role, and how would you build the technical depth it demands?"
+    },
+    {
+      "question": "This role calls for a minimum of 10 years of IT experience, including 6 years in data architecture and data solutions, while your profile emphasizes office administration and data-management coordination. How do you reconcile this requirement with your background, and what evidence can you provide of experience designing enterprise data warehouses, data marts, data lakes, or cloud data platforms?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 9122,
+    "output_tokens": 629,
+    "cached_tokens": 0,
+    "estimated_cost": 0.025792,
+    "latency_ms": 7686.92,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.025792,
+  "cost_cny": 0.17461184,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:03:31.802170+00:00",
+  "user_prompt_sha256": "53d7dfcb9e2a0de47215dad046cfaa2491e7c945fc686b8d505d6e2eb44298ae"
+}

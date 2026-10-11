@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130141Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_03202_f43978101918",
+  "jd_id": "rjf_03202_f43978101918",
+  "pair_id": "rjf_03202_f43978101918",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "[Technical] In your Verilog projects\u2014the 32-bit integer-multiplication ALU and matrix-multiplication circuit\u2014how did you verify functional correctness, handle edge cases such as two's-complement overflow, and diagnose failures?"
+    },
+    {
+      "question": "[Technical] Describe the design and test approach you used when building the medium-voltage circuit-breaker simulator at Siemens. Which breaker behaviors or panel interfaces did the simulator need to represent, and how did you establish that it was suitable for testing panels?"
+    },
+    {
+      "question": "[Technical] This role requires DFMEA/FMEA reviews, which are not detailed in your profile. How would you conduct an initial DFMEA for a hardware module, including defining failure modes, causes, effects, severity, occurrence, detection, and actions?"
+    },
+    {
+      "question": "[Technical] The role also involves WCCA updates and reviews. What is your current understanding of worst-case circuit analysis, and how would you approach learning the required process and applying it to a circuit with component tolerances and operating extremes?"
+    },
+    {
+      "question": "[Situational] A DV test reveals that a board fails intermittently only at a temperature extreme, while nominal bench testing passes. Walk us through how you would reproduce the issue, isolate whether it is a design, component, or test-setup problem, and decide whether a hardware update is needed."
+    },
+    {
+      "question": "[Role-Specific] Drawing on your experience with relay settings and substation drawings at Power Consultants, how would you ensure that a proposed hardware change remains consistent with system requirements, interfaces, schematics, and installation documentation?"
+    },
+    {
+      "question": "[Behavioural] Tell us about a time you provided technical assistance for a lab device as a Student Assistant. How did you identify the user\u2019s issue, communicate the solution, and balance that request with your responsibility for monitoring the lab?"
+    },
+    {
+      "question": "[Behavioural] You led a team planning and executing a departmental fest. Describe a disagreement, unexpected problem, or scheduling constraint the team encountered and how you organized people and work to resolve it."
+    },
+    {
+      "question": "[Situational] During a hardware V&V review, you find that a requirement is ambiguous and no acceptance criterion has been defined. What questions would you raise, whom would you involve, and how would you document a testable resolution before proceeding?"
+    },
+    {
+      "question": "[Cultural/Motivational] Your background spans electrical substations, circuit-breaker simulation, and computer-engineering projects in Verilog and operating systems. What specifically motivates you to move into a role centered on hardware verification, validation, and design-quality reviews, and which skills do you want to develop first?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 5897,
+    "output_tokens": 589,
+    "cached_tokens": 0,
+    "estimated_cost": 0.018862,
+    "latency_ms": 7577.51,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.018862,
+  "cost_cny": 0.12769574,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:01:56.499223+00:00",
+  "user_prompt_sha256": "157922a1310e679fc9b21eff5cd2b55f0014655dfeff7503f1793d4b96798684"
+}

@@ -1,0 +1,470 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_05855_1d0e27a3eacb",
+  "jd_id": "rjf_05855_1d0e27a3eacb",
+  "pair_id": "rjf_05855_1d0e27a3eacb",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 16,
+  "pool_path": "pool/rjf_05855_1d0e27a3eacb__rjf_05855_1d0e27a3eacb__mid.json",
+  "pool_stats": {
+    "n_raw": 31,
+    "n_valid": 23,
+    "n_failed": 8,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.043478260869565216,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      2,
+      4,
+      3,
+      1,
+      6,
+      5,
+      13,
+      9,
+      14,
+      10
+    ],
+    "questions": [
+      {
+        "question": "A business sponsor says a mobile feature is \u201ctoo slow,\u201d while the technical team asks for measurable acceptance criteria. How would you frame the problem and translate it into testable requirements?",
+        "competency": "Problem framing",
+        "competency_type": "other",
+        "target_gap": "Conceptual thinking",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Assesses the missing ability to abstract an ambiguous business complaint into a coherent model and measurable requirements.",
+        "source_evidence": [
+          "Gap matrix: Conceptual thinking \u2014 missing",
+          "Gap matrix: Requirements analysis \u2014 weak_match"
+        ],
+        "priority": 0.98,
+        "weight": 0.9484
+      },
+      {
+        "question": "Tell me about a time you had to gain support for a process change from people who initially preferred the existing way of working. How did you tailor your case, and what was the outcome?",
+        "competency": "Stakeholder influence",
+        "competency_type": "soft",
+        "target_gap": "Stakeholder influence",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Directly evaluates a missing, highly weighted capability needed to secure agreement on process and system changes.",
+        "source_evidence": [
+          "Gap matrix: Stakeholder influence \u2014 missing",
+          "Conducted weekly process improvement training",
+          "Process improvement reduced man-hours and eliminated wasteful practices"
+        ],
+        "priority": 0.97,
+        "weight": 0.9402
+      },
+      {
+        "question": "What sections would you include in a detailed analysis report for leadership after reviewing a process, and how would you make the recommendations traceable to the underlying evidence?",
+        "competency": "Analytical reporting",
+        "competency_type": "technical",
+        "target_gap": "Report creation",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Tests the missing report-creation capability central to communicating findings and recommendations in the role.",
+        "source_evidence": [
+          "Gap matrix: Report creation \u2014 missing",
+          "Created Excel spreadsheets and PowerPoint presentations for maintenance decision-making"
+        ],
+        "priority": 0.96,
+        "weight": 0.922
+      },
+      {
+        "question": "Describe a time you used data to identify the real cause of an operational problem rather than treating its visible symptom. What data did you examine, what did you conclude, and what changed?",
+        "competency": "Root-cause analysis",
+        "competency_type": "soft",
+        "target_gap": "Analytical thinking",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Directly probes a high-priority missing competency while allowing the candidate to draw on data-analysis and troubleshooting experience.",
+        "source_evidence": [
+          "Gap matrix: Analytical thinking \u2014 missing",
+          "Created Excel spreadsheets for maintenance decision-making",
+          "Resolved NALCOMIS hardware and software issues"
+        ],
+        "priority": 0.98,
+        "weight": 0.9376
+      },
+      {
+        "question": "Give an example of a commitment you owned from initial issue through completion. How did you track actions, manage risks or blockers, and confirm the intended result was achieved?",
+        "competency": "Accountability",
+        "competency_type": "soft",
+        "target_gap": "Follow-through",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Evaluates the missing follow-through competency through evidence of ownership, tracking, escalation, and closure.",
+        "source_evidence": [
+          "Gap matrix: Follow-through \u2014 missing",
+          "Supported timeline decisions to meet Chief of Naval Operations goals",
+          "Shift Supervisor/Data Analyst/Logs and Records Clerk"
+        ],
+        "priority": 0.96,
+        "weight": 0.9338
+      },
+      {
+        "question": "In a mobile-process review, operations, technology, and management stakeholders want different outcomes. How would you run the discussion to surface trade-offs and reach an acceptable solution?",
+        "competency": "Stakeholder facilitation",
+        "competency_type": "other",
+        "target_gap": "Stakeholder collaboration",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Tests the missing ability to collaborate across stakeholders and reconcile competing perspectives.",
+        "source_evidence": [
+          "Gap matrix: Stakeholder collaboration \u2014 missing",
+          "Coordinated with Quality Assurance",
+          "Supervised and mentored personnel"
+        ],
+        "priority": 0.97,
+        "weight": 0.935
+      },
+      {
+        "question": "What would you include in a business case for automating a manual process, and how would you evaluate whether automation is preferable to improving the existing workflow?",
+        "competency": "Technology modernization",
+        "competency_type": "technical",
+        "target_gap": "Advanced technical skills",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Tests the weak match for advanced technical skills through applied evaluation of automation, feasibility, value, and operational risk.",
+        "source_evidence": [
+          "Gap matrix: Advanced technical skills \u2014 weak_match",
+          "Used NALCOMIS, SYBASE, and Windows NT",
+          "Process improvement experience"
+        ],
+        "priority": 0.91,
+        "weight": 0.726
+      },
+      {
+        "question": "When documenting requirements, how do you distinguish business requirements, functional requirements, nonfunctional requirements, assumptions, dependencies, and acceptance criteria?",
+        "competency": "Requirements documentation",
+        "competency_type": "technical",
+        "target_gap": "Documentation",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Tests the weak documentation match with a practical distinction essential for producing usable analysis artifacts.",
+        "source_evidence": [
+          "Gap matrix: Documentation \u2014 weak_match",
+          "Supervised aircraft logbooks and Naval Aviation Maintenance Programs"
+        ],
+        "priority": 0.9,
+        "weight": 0.7319
+      },
+      {
+        "question": "Tell me about a system issue you investigated involving NALCOMIS, SYBASE, or Windows NT. How did you isolate the issue, coordinate resolution, and verify that normal operations had been restored?",
+        "competency": "Technical troubleshooting",
+        "competency_type": "soft",
+        "target_gap": "Advanced technical skills",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Validates the depth of the candidate's technical experience rather than relying on tool names alone.",
+        "source_evidence": [
+          "Addressed NALCOMIS hardware and software issues",
+          "Used a SYBASE database and Windows NT network operations system",
+          "Supported minimal downtime through issue resolution"
+        ],
+        "priority": 0.84,
+        "weight": 0.726
+      },
+      {
+        "question": "Tell me about a procedure, logbook, or record set you were responsible for maintaining. How did you ensure accuracy, version control, compliance, and usability for others?",
+        "competency": "Controlled documentation",
+        "competency_type": "soft",
+        "target_gap": "Documentation",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Uses the candidate's documented record-management experience to probe transferable documentation discipline.",
+        "source_evidence": [
+          "Supervised maintenance of 20 aircraft logbooks",
+          "Coordinated with Quality Assurance to support compliance with NAMP 4790.2b",
+          "Gap matrix: Documentation \u2014 weak_match"
+        ],
+        "priority": 0.88,
+        "weight": 0.7319
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.929432,
+      0.911994,
+      0.88512,
+      0.918848,
+      0.8964479999999999,
+      0.90695,
+      0.66066,
+      0.65871,
+      0.6098399999999999,
+      0.644072
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.19748079776763916,
+      0.2730719745159149,
+      0.3850647211074829,
+      0.3587416708469391,
+      0.45440346002578735,
+      0.3329784572124481,
+      0.42136937379837036,
+      0.366237998008728,
+      0.4811994731426239
+    ],
+    "mmr_scores": [
+      0.6506024,
+      0.5791515606697082,
+      0.5376624076452255,
+      0.527674183667755,
+      0.5198910987459182,
+      0.4985439619922638,
+      0.36256846283626554,
+      0.33468618786048887,
+      0.3170166005973815,
+      0.3064905580572127
+    ],
+    "competency_weights": [
+      0.9484,
+      0.9402,
+      0.922,
+      0.9376,
+      0.9338,
+      0.935,
+      0.726,
+      0.7319,
+      0.726,
+      0.7319
+    ]
+  },
+  "questions": [
+    {
+      "question": "A business sponsor says a mobile feature is \u201ctoo slow,\u201d while the technical team asks for measurable acceptance criteria. How would you frame the problem and translate it into testable requirements?"
+    },
+    {
+      "question": "Tell me about a time you had to gain support for a process change from people who initially preferred the existing way of working. How did you tailor your case, and what was the outcome?"
+    },
+    {
+      "question": "What sections would you include in a detailed analysis report for leadership after reviewing a process, and how would you make the recommendations traceable to the underlying evidence?"
+    },
+    {
+      "question": "Describe a time you used data to identify the real cause of an operational problem rather than treating its visible symptom. What data did you examine, what did you conclude, and what changed?"
+    },
+    {
+      "question": "Give an example of a commitment you owned from initial issue through completion. How did you track actions, manage risks or blockers, and confirm the intended result was achieved?"
+    },
+    {
+      "question": "In a mobile-process review, operations, technology, and management stakeholders want different outcomes. How would you run the discussion to surface trade-offs and reach an acceptable solution?"
+    },
+    {
+      "question": "What would you include in a business case for automating a manual process, and how would you evaluate whether automation is preferable to improving the existing workflow?"
+    },
+    {
+      "question": "When documenting requirements, how do you distinguish business requirements, functional requirements, nonfunctional requirements, assumptions, dependencies, and acceptance criteria?"
+    },
+    {
+      "question": "Tell me about a system issue you investigated involving NALCOMIS, SYBASE, or Windows NT. How did you isolate the issue, coordinate resolution, and verify that normal operations had been restored?"
+    },
+    {
+      "question": "Tell me about a procedure, logbook, or record set you were responsible for maintaining. How did you ensure accuracy, version control, compliance, and usability for others?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "A business sponsor says a mobile feature is \u201ctoo slow,\u201d while the technical team asks for measurable acceptance criteria. How would you frame the problem and translate it into testable requirements?",
+      "competency": "Problem framing",
+      "competency_type": "other",
+      "target_gap": "Conceptual thinking",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Assesses the missing ability to abstract an ambiguous business complaint into a coherent model and measurable requirements.",
+      "source_evidence": [
+        "Gap matrix: Conceptual thinking \u2014 missing",
+        "Gap matrix: Requirements analysis \u2014 weak_match"
+      ],
+      "priority": 0.98,
+      "weight": 0.9484
+    },
+    {
+      "question": "Tell me about a time you had to gain support for a process change from people who initially preferred the existing way of working. How did you tailor your case, and what was the outcome?",
+      "competency": "Stakeholder influence",
+      "competency_type": "soft",
+      "target_gap": "Stakeholder influence",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Directly evaluates a missing, highly weighted capability needed to secure agreement on process and system changes.",
+      "source_evidence": [
+        "Gap matrix: Stakeholder influence \u2014 missing",
+        "Conducted weekly process improvement training",
+        "Process improvement reduced man-hours and eliminated wasteful practices"
+      ],
+      "priority": 0.97,
+      "weight": 0.9402
+    },
+    {
+      "question": "What sections would you include in a detailed analysis report for leadership after reviewing a process, and how would you make the recommendations traceable to the underlying evidence?",
+      "competency": "Analytical reporting",
+      "competency_type": "technical",
+      "target_gap": "Report creation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Tests the missing report-creation capability central to communicating findings and recommendations in the role.",
+      "source_evidence": [
+        "Gap matrix: Report creation \u2014 missing",
+        "Created Excel spreadsheets and PowerPoint presentations for maintenance decision-making"
+      ],
+      "priority": 0.96,
+      "weight": 0.922
+    },
+    {
+      "question": "Describe a time you used data to identify the real cause of an operational problem rather than treating its visible symptom. What data did you examine, what did you conclude, and what changed?",
+      "competency": "Root-cause analysis",
+      "competency_type": "soft",
+      "target_gap": "Analytical thinking",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Directly probes a high-priority missing competency while allowing the candidate to draw on data-analysis and troubleshooting experience.",
+      "source_evidence": [
+        "Gap matrix: Analytical thinking \u2014 missing",
+        "Created Excel spreadsheets for maintenance decision-making",
+        "Resolved NALCOMIS hardware and software issues"
+      ],
+      "priority": 0.98,
+      "weight": 0.9376
+    },
+    {
+      "question": "Give an example of a commitment you owned from initial issue through completion. How did you track actions, manage risks or blockers, and confirm the intended result was achieved?",
+      "competency": "Accountability",
+      "competency_type": "soft",
+      "target_gap": "Follow-through",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Evaluates the missing follow-through competency through evidence of ownership, tracking, escalation, and closure.",
+      "source_evidence": [
+        "Gap matrix: Follow-through \u2014 missing",
+        "Supported timeline decisions to meet Chief of Naval Operations goals",
+        "Shift Supervisor/Data Analyst/Logs and Records Clerk"
+      ],
+      "priority": 0.96,
+      "weight": 0.9338
+    },
+    {
+      "question": "In a mobile-process review, operations, technology, and management stakeholders want different outcomes. How would you run the discussion to surface trade-offs and reach an acceptable solution?",
+      "competency": "Stakeholder facilitation",
+      "competency_type": "other",
+      "target_gap": "Stakeholder collaboration",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Tests the missing ability to collaborate across stakeholders and reconcile competing perspectives.",
+      "source_evidence": [
+        "Gap matrix: Stakeholder collaboration \u2014 missing",
+        "Coordinated with Quality Assurance",
+        "Supervised and mentored personnel"
+      ],
+      "priority": 0.97,
+      "weight": 0.935
+    },
+    {
+      "question": "What would you include in a business case for automating a manual process, and how would you evaluate whether automation is preferable to improving the existing workflow?",
+      "competency": "Technology modernization",
+      "competency_type": "technical",
+      "target_gap": "Advanced technical skills",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Tests the weak match for advanced technical skills through applied evaluation of automation, feasibility, value, and operational risk.",
+      "source_evidence": [
+        "Gap matrix: Advanced technical skills \u2014 weak_match",
+        "Used NALCOMIS, SYBASE, and Windows NT",
+        "Process improvement experience"
+      ],
+      "priority": 0.91,
+      "weight": 0.726
+    },
+    {
+      "question": "When documenting requirements, how do you distinguish business requirements, functional requirements, nonfunctional requirements, assumptions, dependencies, and acceptance criteria?",
+      "competency": "Requirements documentation",
+      "competency_type": "technical",
+      "target_gap": "Documentation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Tests the weak documentation match with a practical distinction essential for producing usable analysis artifacts.",
+      "source_evidence": [
+        "Gap matrix: Documentation \u2014 weak_match",
+        "Supervised aircraft logbooks and Naval Aviation Maintenance Programs"
+      ],
+      "priority": 0.9,
+      "weight": 0.7319
+    },
+    {
+      "question": "Tell me about a system issue you investigated involving NALCOMIS, SYBASE, or Windows NT. How did you isolate the issue, coordinate resolution, and verify that normal operations had been restored?",
+      "competency": "Technical troubleshooting",
+      "competency_type": "soft",
+      "target_gap": "Advanced technical skills",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Validates the depth of the candidate's technical experience rather than relying on tool names alone.",
+      "source_evidence": [
+        "Addressed NALCOMIS hardware and software issues",
+        "Used a SYBASE database and Windows NT network operations system",
+        "Supported minimal downtime through issue resolution"
+      ],
+      "priority": 0.84,
+      "weight": 0.726
+    },
+    {
+      "question": "Tell me about a procedure, logbook, or record set you were responsible for maintaining. How did you ensure accuracy, version control, compliance, and usability for others?",
+      "competency": "Controlled documentation",
+      "competency_type": "soft",
+      "target_gap": "Documentation",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Uses the candidate's documented record-management experience to probe transferable documentation discipline.",
+      "source_evidence": [
+        "Supervised maintenance of 20 aircraft logbooks",
+        "Coordinated with Quality Assurance to support compliance with NAMP 4790.2b",
+        "Gap matrix: Documentation \u2014 weak_match"
+      ],
+      "priority": 0.88,
+      "weight": 0.7319
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 8107,
+    "output_tokens": 3640,
+    "cached_tokens": 0,
+    "estimated_cost": 0.059894,
+    "latency_ms": 28920.59,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.059894,
+  "cost_cny": 0.40548238,
+  "selection_latency_ms": 34.8,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:16:00.673458+00:00"
+}

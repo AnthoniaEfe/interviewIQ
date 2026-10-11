@@ -1,0 +1,1067 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "pool",
+  "condition": "T_pool",
+  "profile_id": "rjf_06191_f9c89e0c6713",
+  "jd_id": "rjf_06191_f9c89e0c6713",
+  "pair_id": "rjf_06191_f9c89e0c6713",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "prompt": {
+    "file": "generation/interviewiq_pool.md",
+    "version": "1.1.0",
+    "sha256": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc"
+  },
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 22,
+  "pool_size_requested": 30,
+  "raw_questions": [
+    {
+      "question": "Walk me through how you would execute a routine electrical test from receiving the approved procedure and schematic through releasing the final result. What hold points would you use?",
+      "competency": "Test procedure execution",
+      "dimension": "Technical",
+      "target_gap": "Test procedure execution",
+      "difficulty": "mid",
+      "rationale": "The role requires disciplined execution against controlled procedures, but the profile does not explicitly show procedure-led test execution.",
+      "source_evidence": [
+        "Test procedure execution is marked missing",
+        "Electrical equipment testing and commissioning"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Describe a time during commissioning or equipment testing when the written steps did not match the equipment configuration or required clarification. How did you record the issue and get the procedure corrected?",
+      "competency": "Procedure redlining",
+      "dimension": "Behavioural",
+      "target_gap": "Test procedure redlining",
+      "difficulty": "mid",
+      "rationale": "This tests whether the candidate can identify, communicate, and formally control needed changes to test instructions, a missing requirement.",
+      "source_evidence": [
+        "Test procedure redlining is marked missing",
+        "Installation, commissioning, and testing of battery chargers, VFDs, battery banks, and relays"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "A newly wired panel fails its functional test. Explain how you would use the schematic, wire list, and a digital multimeter to isolate the fault to the lowest replaceable unit.",
+      "competency": "LRU troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Electrical troubleshooting to line-replaceable-unit level",
+      "difficulty": "hard",
+      "rationale": "The job specifically requires fault isolation to LRU level, while the candidate's evidence only broadly references plant troubleshooting.",
+      "source_evidence": [
+        "Electrical troubleshooting to line-replaceable-unit level is marked weak_match",
+        "Troubleshot plant electrical problems and carried out equipment tests"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "During a test, an expected output is absent but all incoming supply voltages appear normal. What is your step-by-step diagnostic approach before deciding that a component should be replaced?",
+      "competency": "Systematic troubleshooting",
+      "dimension": "Technical",
+      "target_gap": "Electrical troubleshooting to line-replaceable-unit level",
+      "difficulty": "hard",
+      "rationale": "Probes troubleshooting discipline, evidence gathering, and avoidance of unnecessary component replacement.",
+      "source_evidence": [
+        "Electrical troubleshooting to line-replaceable-unit level is marked weak_match",
+        "Worked with generators, transformers, ATS, distribution, and transmission systems"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "What information would you include in a test report for an intermittent failure so that another technician can reproduce the issue and engineering can investigate it?",
+      "competency": "Anomaly documentation",
+      "dimension": "Technical",
+      "target_gap": "Test reporting and anomaly documentation",
+      "difficulty": "mid",
+      "rationale": "The profile shows recurring monitoring reports, but not documentation of test anomalies or failures.",
+      "source_evidence": [
+        "Test reporting and anomaly documentation is marked weak_match",
+        "Performed daily power monitoring and monthly calculations and reporting"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Give an example of a monthly power-monitoring report you produced: which readings did you validate, how did you investigate unexpected values, and who used the report?",
+      "competency": "Technical reporting",
+      "dimension": "Behavioural",
+      "target_gap": "Test reporting and anomaly documentation",
+      "difficulty": "mid",
+      "rationale": "Uses the candidate's stated reporting experience to assess the rigor and usefulness of their documentation.",
+      "source_evidence": [
+        "Performed daily power monitoring and monthly calculations and reporting",
+        "Reviewed and reported project status"
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "How would you safely verify a suspected 24 VDC control-circuit fault and then distinguish it from a 480 VAC power-side problem?",
+      "competency": "AC/DC diagnostics",
+      "dimension": "Technical",
+      "target_gap": "DC and AC electrical systems",
+      "difficulty": "hard",
+      "rationale": "The role spans low-voltage DC and AC systems; the candidate has related battery-system experience but voltage-range depth should be confirmed.",
+      "source_evidence": [
+        "DC and AC electrical systems is marked partial_match",
+        "Battery systems",
+        "Battery chargers and battery banks"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "What checks would you make when commissioning a battery charger and battery bank to confirm both normal operation and loss-of-AC supply behavior?",
+      "competency": "DC power systems",
+      "dimension": "Technical",
+      "target_gap": "DC and AC electrical systems",
+      "difficulty": "mid",
+      "rationale": "Directly probes a stated candidate strength while testing relevant DC-system fundamentals.",
+      "source_evidence": [
+        "DC and AC electrical systems is marked partial_match",
+        "Worked on installation, commissioning, and testing of battery chargers and battery banks"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "You are handed an electrical schematic for a panel that will not energize. How do you trace the power path and control path, and what do you verify before applying power?",
+      "competency": "Schematic interpretation",
+      "dimension": "Technical",
+      "target_gap": "Electrical schematics",
+      "difficulty": "hard",
+      "rationale": "Electrical schematics are central to safe testing and fault isolation; the candidate has adjacent electrical-distribution experience.",
+      "source_evidence": [
+        "Electrical schematics is marked partial_match",
+        "Electrical distribution",
+        "Electrical power engineering"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "How do block diagrams, functional diagrams, schematics, and wire lists each help you move from understanding a system to locating a specific wiring or component fault?",
+      "competency": "Technical documentation interpretation",
+      "dimension": "Technical",
+      "target_gap": "Wire lists",
+      "difficulty": "hard",
+      "rationale": "This consolidates several missing documentation-reading requirements and tests whether the candidate understands each artifact's practical purpose.",
+      "source_evidence": [
+        "Wire lists is marked missing",
+        "Block diagrams is marked missing",
+        "Functional diagrams is marked missing"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "If a wire list says a conductor should terminate at a particular pin but the physical panel differs, what would you do before making any correction or proceeding with a test?",
+      "competency": "Wire-list control",
+      "dimension": "Situational",
+      "target_gap": "Wire lists",
+      "difficulty": "hard",
+      "rationale": "Tests safe handling of a configuration discrepancy in an area not evidenced in the profile.",
+      "source_evidence": [
+        "Wire lists is marked missing",
+        "Electrical panel and equipment installation and termination is marked partial_match"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Using a simple functional block diagram for a control circuit, explain how you would decide which block to test first when a commanded output does not occur.",
+      "competency": "Block diagram analysis",
+      "dimension": "Technical",
+      "target_gap": "Block diagrams",
+      "difficulty": "hard",
+      "rationale": "Block-diagram reasoning is explicitly required but absent from the candidate evidence.",
+      "source_evidence": [
+        "Block diagrams is marked missing",
+        "System analysis listed in Skills"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "How would you use a functional diagram to define expected inputs, outputs, and acceptance criteria before beginning a test?",
+      "competency": "Functional analysis",
+      "dimension": "Technical",
+      "target_gap": "Functional diagrams",
+      "difficulty": "hard",
+      "rationale": "Assesses readiness to translate functional documentation into a structured test plan.",
+      "source_evidence": [
+        "Functional diagrams is marked missing",
+        "Electrical equipment testing and commissioning"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Which computer tools have you used to capture measurements, prepare reports, track test status, or manage equipment data? Please distinguish what you used directly from what you reviewed.",
+      "competency": "Computer-based test documentation",
+      "dimension": "Role-Specific",
+      "target_gap": "Computer use",
+      "difficulty": "mid",
+      "rationale": "Computer use is required and marked missing, so the interviewer needs to establish practical capability without assuming specific software experience.",
+      "source_evidence": [
+        "Computer use is marked missing",
+        "Performed daily power monitoring and monthly calculations and reporting",
+        "Enterprise Resource Planning"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "When collecting time-varying voltage, current, or temperature data during a test, how would you configure a data recorder and verify that the captured data is trustworthy?",
+      "competency": "Data acquisition",
+      "dimension": "Technical",
+      "target_gap": "Data recorders",
+      "difficulty": "hard",
+      "rationale": "Data-recorder experience is only weakly evidenced and is important for qualification and troubleshooting tests.",
+      "source_evidence": [
+        "Data recorders is marked weak_match",
+        "Electrical equipment testing and commissioning"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Demonstrate verbally how you would use a digital multimeter to check continuity, DC voltage, and AC voltage on a de-energized or energized panel, including meter setup and safety controls.",
+      "competency": "Digital multimeter use",
+      "dimension": "Technical",
+      "target_gap": "Digital multimeters",
+      "difficulty": "mid",
+      "rationale": "The role requires direct meter use; the profile mentions digital equipment but does not establish multimeter practice.",
+      "source_evidence": [
+        "Digital multimeters is marked weak_match",
+        "Installed digital equipment including TREs and combiners"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "What measurement instruments have you personally used during electrical testing, how did you select the right instrument and range, and how did you confirm calibration status?",
+      "competency": "Measurement instrumentation",
+      "dimension": "Technical",
+      "target_gap": "Measurement instruments",
+      "difficulty": "mid",
+      "rationale": "Directly investigates a required but missing competency and the candidate's measurement discipline.",
+      "source_evidence": [
+        "Measurement instruments is marked missing",
+        "Carried out equipment tests"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "This role may require checking pneumatic or hydraulic indications alongside electrical symptoms on rail equipment. How would you approach using a pressure gauge safely, and how would you correlate its reading with an electrical control fault?",
+      "competency": "Electro-mechanical diagnosis",
+      "dimension": "Situational",
+      "target_gap": "Pneumatic and hydraulic gauges",
+      "difficulty": "hard",
+      "rationale": "The candidate has no clear gauge experience, while the job requires working across electrical and pneumatic/hydraulic measurements.",
+      "source_evidence": [
+        "Pneumatic and hydraulic gauges is marked weak_match",
+        "Pneumatic and hydraulic gauges are required for the role"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "Explain how you would test a basic relay-driver circuit containing a DC supply, fuse, switch input, relay coil, and load. What failures would you expect at each point?",
+      "competency": "Basic electronics",
+      "dimension": "Technical",
+      "target_gap": "Basic electronics",
+      "difficulty": "hard",
+      "rationale": "Tests practical electronics fundamentals needed to diagnose component-level failures.",
+      "source_evidence": [
+        "Basic electronics is marked weak_match",
+        "Worked with microprocessor-based relays and numerical relays"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "Describe your hands-on role in installing or commissioning a panel, VFD, relay, or battery system. What connections did you personally verify, and how did you confirm correct termination?",
+      "competency": "Panel installation and termination",
+      "dimension": "Behavioural",
+      "target_gap": "Electrical panel and equipment installation and termination",
+      "difficulty": "mid",
+      "rationale": "The candidate reports installation and commissioning work, and this question separates direct hands-on termination experience from general project involvement.",
+      "source_evidence": [
+        "Electrical panel and equipment installation and termination is marked partial_match",
+        "Installation, commissioning, and testing of battery chargers, VFDs, battery banks, and relays"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Before energizing a newly installed electrical panel, what inspection and test sequence would you follow to ensure safe, correct installation?",
+      "competency": "Pre-energization verification",
+      "dimension": "Situational",
+      "target_gap": "Electrical panel and equipment installation and termination",
+      "difficulty": "hard",
+      "rationale": "Evaluates installation quality controls relevant to the role's panel and component responsibilities.",
+      "source_evidence": [
+        "Electrical panel and equipment installation and termination is marked partial_match",
+        "Installed, expanded, and maintained distribution panels"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Describe a maintenance or testing task where you had to stop work because of an electrical or operational hazard. What made you stop, and how was work resumed safely?",
+      "competency": "Industrial safety",
+      "dimension": "Behavioural",
+      "target_gap": "Industrial and technician safety",
+      "difficulty": "mid",
+      "rationale": "Safety is critical in the heavy-industrial setting, but the profile provides no direct safety-process evidence.",
+      "source_evidence": [
+        "Industrial and technician safety is marked weak_match",
+        "Operation and maintenance of transformers, DG sets, UPS, and HVAC systems"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "You discover an unexpected energized condition while testing a panel under schedule pressure. What immediate actions do you take, whom do you notify, and what must be in place before work continues?",
+      "competency": "Stop-work safety",
+      "dimension": "Situational",
+      "target_gap": "Industrial and technician safety",
+      "difficulty": "hard",
+      "rationale": "Tests safety judgment and willingness to prioritize controlled work over production pressure.",
+      "source_evidence": [
+        "Industrial and technician safety is marked weak_match",
+        "Troubleshot plant electrical problems and carried out equipment tests"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Tell us about a recurring equipment or test problem you helped improve. What data did you gather, what change was made, and how did you determine whether the change worked?",
+      "competency": "Test-process optimization",
+      "dimension": "Behavioural",
+      "target_gap": "Learning and test-process optimization",
+      "difficulty": "mid",
+      "rationale": "Assesses the required learning and optimization mindset using the candidate's maintenance and monitoring background.",
+      "source_evidence": [
+        "Learning and test-process optimization is marked weak_match",
+        "Performed daily power monitoring and monthly calculations and reporting",
+        "Plant reactive, preventive and predictive maintenance"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "You are assigned to support maintenance on a rail vehicle with an unfamiliar mechanical subsystem. How would you learn the system quickly, define your electrical-testing boundaries, and collaborate with mechanical technicians?",
+      "competency": "Rail maintenance adaptation",
+      "dimension": "Situational",
+      "target_gap": "Rail vehicle maintenance support",
+      "difficulty": "mid",
+      "rationale": "The candidate has broad electrical maintenance exposure but no stated rail-vehicle experience, so ability to transfer safely into the domain is important.",
+      "source_evidence": [
+        "Rail vehicle maintenance support is marked partial_match",
+        "Electrical operations and maintenance",
+        "Worked with generators, transformers, ATS, distribution, and transmission systems"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "What differences would you expect between maintaining fixed plant electrical equipment and supporting electrical and mechanical repairs on mobile rail vehicles?",
+      "competency": "Rail vehicle systems awareness",
+      "dimension": "Role-Specific",
+      "target_gap": "Rail vehicle maintenance support",
+      "difficulty": "mid",
+      "rationale": "Directly tests domain-transition awareness without assuming the candidate already has rail experience.",
+      "source_evidence": [
+        "Rail vehicle maintenance support is marked partial_match",
+        "Electrical operations and maintenance",
+        "Rail vehicle systems are required for the role"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "This position supports production needs across shifts and may require overtime. What is your availability, and how would you maintain accurate handoffs and safe performance when working an unfamiliar shift?",
+      "competency": "Shift readiness",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Shift and overtime availability",
+      "difficulty": "mid",
+      "rationale": "Confirms a stated working-condition requirement and assesses operational discipline across shift transitions.",
+      "source_evidence": [
+        "Shift and overtime availability is marked weak_match",
+        "Coordinated with different departments for daily operations"
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "The work involves a heavy-industrial environment and handling equipment or materials up to 50 pounds. Are you able to meet these essential job demands, with or without reasonable accommodation?",
+      "competency": "Physical job readiness",
+      "dimension": "Role-Specific",
+      "target_gap": "Ability to lift 50 pounds",
+      "difficulty": "easy",
+      "rationale": "Confirms an explicit essential physical requirement in an appropriate, accommodation-aware manner.",
+      "source_evidence": [
+        "Ability to lift 50 pounds is marked weak_match",
+        "Work will take place in a heavy industrial environment"
+      ],
+      "priority": 0.76
+    },
+    {
+      "question": "In your Amentum role, describe the most technically complex commissioning or troubleshooting activity you personally performed on a battery charger, VFD, relay, generator, or transformer. What was your specific contribution and outcome?",
+      "competency": "Hands-on technical scope",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Clarifies the depth of the candidate's stated hands-on responsibilities, which is especially important given the role's five-year testing expectation.",
+      "source_evidence": [
+        "Electrical Engineer at Amentum",
+        "Worked on installation, commissioning, and testing of battery chargers, VFDs, battery banks, microprocessor-based relays, and numerical relays",
+        "Troubleshot plant electrical problems and carried out equipment tests"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "Your profile describes coordinating vendor engineering deliverables for compliance with project standards. Give a specific example of a nonconforming deliverable: how did you identify the issue, communicate it, and verify closure?",
+      "competency": "Quality coordination",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Probes a profile-specific strength in quality and vendor coordination that can transfer to controlled testing environments.",
+      "source_evidence": [
+        "Supervised and managed vendor engineering and equipment deliverables for compliance with project standards and specifications",
+        "Coordinated electrical-system tendering and contract finalization"
+      ],
+      "priority": 0.72
+    }
+  ],
+  "valid_questions": [
+    {
+      "question": "Walk me through how you would execute a routine electrical test from receiving the approved procedure and schematic through releasing the final result. What hold points would you use?",
+      "competency": "Test procedure execution",
+      "dimension": "Technical",
+      "target_gap": "Test procedure execution",
+      "difficulty": "mid",
+      "rationale": "The role requires disciplined execution against controlled procedures, but the profile does not explicitly show procedure-led test execution.",
+      "source_evidence": [
+        "Test procedure execution is marked missing",
+        "Electrical equipment testing and commissioning"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Describe a time during commissioning or equipment testing when the written steps did not match the equipment configuration or required clarification. How did you record the issue and get the procedure corrected?",
+      "competency": "Procedure redlining",
+      "dimension": "Behavioural",
+      "target_gap": "Test procedure redlining",
+      "difficulty": "mid",
+      "rationale": "This tests whether the candidate can identify, communicate, and formally control needed changes to test instructions, a missing requirement.",
+      "source_evidence": [
+        "Test procedure redlining is marked missing",
+        "Installation, commissioning, and testing of battery chargers, VFDs, battery banks, and relays"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "A newly wired panel fails its functional test. Explain how you would use the schematic, wire list, and a digital multimeter to isolate the fault to the lowest replaceable unit.",
+      "competency": "LRU troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Electrical troubleshooting to line-replaceable-unit level",
+      "difficulty": "hard",
+      "rationale": "The job specifically requires fault isolation to LRU level, while the candidate's evidence only broadly references plant troubleshooting.",
+      "source_evidence": [
+        "Electrical troubleshooting to line-replaceable-unit level is marked weak_match",
+        "Troubleshot plant electrical problems and carried out equipment tests"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "During a test, an expected output is absent but all incoming supply voltages appear normal. What is your step-by-step diagnostic approach before deciding that a component should be replaced?",
+      "competency": "Systematic troubleshooting",
+      "dimension": "Technical",
+      "target_gap": "Electrical troubleshooting to line-replaceable-unit level",
+      "difficulty": "hard",
+      "rationale": "Probes troubleshooting discipline, evidence gathering, and avoidance of unnecessary component replacement.",
+      "source_evidence": [
+        "Electrical troubleshooting to line-replaceable-unit level is marked weak_match",
+        "Worked with generators, transformers, ATS, distribution, and transmission systems"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "What information would you include in a test report for an intermittent failure so that another technician can reproduce the issue and engineering can investigate it?",
+      "competency": "Anomaly documentation",
+      "dimension": "Technical",
+      "target_gap": "Test reporting and anomaly documentation",
+      "difficulty": "mid",
+      "rationale": "The profile shows recurring monitoring reports, but not documentation of test anomalies or failures.",
+      "source_evidence": [
+        "Test reporting and anomaly documentation is marked weak_match",
+        "Performed daily power monitoring and monthly calculations and reporting"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Give an example of a monthly power-monitoring report you produced: which readings did you validate, how did you investigate unexpected values, and who used the report?",
+      "competency": "Technical reporting",
+      "dimension": "Behavioural",
+      "target_gap": "Test reporting and anomaly documentation",
+      "difficulty": "mid",
+      "rationale": "Uses the candidate's stated reporting experience to assess the rigor and usefulness of their documentation.",
+      "source_evidence": [
+        "Performed daily power monitoring and monthly calculations and reporting",
+        "Reviewed and reported project status"
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "How would you safely verify a suspected 24 VDC control-circuit fault and then distinguish it from a 480 VAC power-side problem?",
+      "competency": "AC/DC diagnostics",
+      "dimension": "Technical",
+      "target_gap": "DC and AC electrical systems",
+      "difficulty": "hard",
+      "rationale": "The role spans low-voltage DC and AC systems; the candidate has related battery-system experience but voltage-range depth should be confirmed.",
+      "source_evidence": [
+        "DC and AC electrical systems is marked partial_match",
+        "Battery systems",
+        "Battery chargers and battery banks"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "What checks would you make when commissioning a battery charger and battery bank to confirm both normal operation and loss-of-AC supply behavior?",
+      "competency": "DC power systems",
+      "dimension": "Technical",
+      "target_gap": "DC and AC electrical systems",
+      "difficulty": "mid",
+      "rationale": "Directly probes a stated candidate strength while testing relevant DC-system fundamentals.",
+      "source_evidence": [
+        "DC and AC electrical systems is marked partial_match",
+        "Worked on installation, commissioning, and testing of battery chargers and battery banks"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "You are handed an electrical schematic for a panel that will not energize. How do you trace the power path and control path, and what do you verify before applying power?",
+      "competency": "Schematic interpretation",
+      "dimension": "Technical",
+      "target_gap": "Electrical schematics",
+      "difficulty": "hard",
+      "rationale": "Electrical schematics are central to safe testing and fault isolation; the candidate has adjacent electrical-distribution experience.",
+      "source_evidence": [
+        "Electrical schematics is marked partial_match",
+        "Electrical distribution",
+        "Electrical power engineering"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "How do block diagrams, functional diagrams, schematics, and wire lists each help you move from understanding a system to locating a specific wiring or component fault?",
+      "competency": "Technical documentation interpretation",
+      "dimension": "Technical",
+      "target_gap": "Wire lists",
+      "difficulty": "hard",
+      "rationale": "This consolidates several missing documentation-reading requirements and tests whether the candidate understands each artifact's practical purpose.",
+      "source_evidence": [
+        "Wire lists is marked missing",
+        "Block diagrams is marked missing",
+        "Functional diagrams is marked missing"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "If a wire list says a conductor should terminate at a particular pin but the physical panel differs, what would you do before making any correction or proceeding with a test?",
+      "competency": "Wire-list control",
+      "dimension": "Situational",
+      "target_gap": "Wire lists",
+      "difficulty": "hard",
+      "rationale": "Tests safe handling of a configuration discrepancy in an area not evidenced in the profile.",
+      "source_evidence": [
+        "Wire lists is marked missing",
+        "Electrical panel and equipment installation and termination is marked partial_match"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Using a simple functional block diagram for a control circuit, explain how you would decide which block to test first when a commanded output does not occur.",
+      "competency": "Block diagram analysis",
+      "dimension": "Technical",
+      "target_gap": "Block diagrams",
+      "difficulty": "hard",
+      "rationale": "Block-diagram reasoning is explicitly required but absent from the candidate evidence.",
+      "source_evidence": [
+        "Block diagrams is marked missing",
+        "System analysis listed in Skills"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "How would you use a functional diagram to define expected inputs, outputs, and acceptance criteria before beginning a test?",
+      "competency": "Functional analysis",
+      "dimension": "Technical",
+      "target_gap": "Functional diagrams",
+      "difficulty": "hard",
+      "rationale": "Assesses readiness to translate functional documentation into a structured test plan.",
+      "source_evidence": [
+        "Functional diagrams is marked missing",
+        "Electrical equipment testing and commissioning"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Which computer tools have you used to capture measurements, prepare reports, track test status, or manage equipment data? Please distinguish what you used directly from what you reviewed.",
+      "competency": "Computer-based test documentation",
+      "dimension": "Role-Specific",
+      "target_gap": "Computer use",
+      "difficulty": "mid",
+      "rationale": "Computer use is required and marked missing, so the interviewer needs to establish practical capability without assuming specific software experience.",
+      "source_evidence": [
+        "Computer use is marked missing",
+        "Performed daily power monitoring and monthly calculations and reporting",
+        "Enterprise Resource Planning"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "When collecting time-varying voltage, current, or temperature data during a test, how would you configure a data recorder and verify that the captured data is trustworthy?",
+      "competency": "Data acquisition",
+      "dimension": "Technical",
+      "target_gap": "Data recorders",
+      "difficulty": "hard",
+      "rationale": "Data-recorder experience is only weakly evidenced and is important for qualification and troubleshooting tests.",
+      "source_evidence": [
+        "Data recorders is marked weak_match",
+        "Electrical equipment testing and commissioning"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Demonstrate verbally how you would use a digital multimeter to check continuity, DC voltage, and AC voltage on a de-energized or energized panel, including meter setup and safety controls.",
+      "competency": "Digital multimeter use",
+      "dimension": "Technical",
+      "target_gap": "Digital multimeters",
+      "difficulty": "mid",
+      "rationale": "The role requires direct meter use; the profile mentions digital equipment but does not establish multimeter practice.",
+      "source_evidence": [
+        "Digital multimeters is marked weak_match",
+        "Installed digital equipment including TREs and combiners"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "What measurement instruments have you personally used during electrical testing, how did you select the right instrument and range, and how did you confirm calibration status?",
+      "competency": "Measurement instrumentation",
+      "dimension": "Technical",
+      "target_gap": "Measurement instruments",
+      "difficulty": "mid",
+      "rationale": "Directly investigates a required but missing competency and the candidate's measurement discipline.",
+      "source_evidence": [
+        "Measurement instruments is marked missing",
+        "Carried out equipment tests"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "This role may require checking pneumatic or hydraulic indications alongside electrical symptoms on rail equipment. How would you approach using a pressure gauge safely, and how would you correlate its reading with an electrical control fault?",
+      "competency": "Electro-mechanical diagnosis",
+      "dimension": "Situational",
+      "target_gap": "Pneumatic and hydraulic gauges",
+      "difficulty": "hard",
+      "rationale": "The candidate has no clear gauge experience, while the job requires working across electrical and pneumatic/hydraulic measurements.",
+      "source_evidence": [
+        "Pneumatic and hydraulic gauges is marked weak_match",
+        "Pneumatic and hydraulic gauges are required for the role"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "Explain how you would test a basic relay-driver circuit containing a DC supply, fuse, switch input, relay coil, and load. What failures would you expect at each point?",
+      "competency": "Basic electronics",
+      "dimension": "Technical",
+      "target_gap": "Basic electronics",
+      "difficulty": "hard",
+      "rationale": "Tests practical electronics fundamentals needed to diagnose component-level failures.",
+      "source_evidence": [
+        "Basic electronics is marked weak_match",
+        "Worked with microprocessor-based relays and numerical relays"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "Describe your hands-on role in installing or commissioning a panel, VFD, relay, or battery system. What connections did you personally verify, and how did you confirm correct termination?",
+      "competency": "Panel installation and termination",
+      "dimension": "Behavioural",
+      "target_gap": "Electrical panel and equipment installation and termination",
+      "difficulty": "mid",
+      "rationale": "The candidate reports installation and commissioning work, and this question separates direct hands-on termination experience from general project involvement.",
+      "source_evidence": [
+        "Electrical panel and equipment installation and termination is marked partial_match",
+        "Installation, commissioning, and testing of battery chargers, VFDs, battery banks, and relays"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Before energizing a newly installed electrical panel, what inspection and test sequence would you follow to ensure safe, correct installation?",
+      "competency": "Pre-energization verification",
+      "dimension": "Situational",
+      "target_gap": "Electrical panel and equipment installation and termination",
+      "difficulty": "hard",
+      "rationale": "Evaluates installation quality controls relevant to the role's panel and component responsibilities.",
+      "source_evidence": [
+        "Electrical panel and equipment installation and termination is marked partial_match",
+        "Installed, expanded, and maintained distribution panels"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Describe a maintenance or testing task where you had to stop work because of an electrical or operational hazard. What made you stop, and how was work resumed safely?",
+      "competency": "Industrial safety",
+      "dimension": "Behavioural",
+      "target_gap": "Industrial and technician safety",
+      "difficulty": "mid",
+      "rationale": "Safety is critical in the heavy-industrial setting, but the profile provides no direct safety-process evidence.",
+      "source_evidence": [
+        "Industrial and technician safety is marked weak_match",
+        "Operation and maintenance of transformers, DG sets, UPS, and HVAC systems"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "You discover an unexpected energized condition while testing a panel under schedule pressure. What immediate actions do you take, whom do you notify, and what must be in place before work continues?",
+      "competency": "Stop-work safety",
+      "dimension": "Situational",
+      "target_gap": "Industrial and technician safety",
+      "difficulty": "hard",
+      "rationale": "Tests safety judgment and willingness to prioritize controlled work over production pressure.",
+      "source_evidence": [
+        "Industrial and technician safety is marked weak_match",
+        "Troubleshot plant electrical problems and carried out equipment tests"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Tell us about a recurring equipment or test problem you helped improve. What data did you gather, what change was made, and how did you determine whether the change worked?",
+      "competency": "Test-process optimization",
+      "dimension": "Behavioural",
+      "target_gap": "Learning and test-process optimization",
+      "difficulty": "mid",
+      "rationale": "Assesses the required learning and optimization mindset using the candidate's maintenance and monitoring background.",
+      "source_evidence": [
+        "Learning and test-process optimization is marked weak_match",
+        "Performed daily power monitoring and monthly calculations and reporting",
+        "Plant reactive, preventive and predictive maintenance"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "You are assigned to support maintenance on a rail vehicle with an unfamiliar mechanical subsystem. How would you learn the system quickly, define your electrical-testing boundaries, and collaborate with mechanical technicians?",
+      "competency": "Rail maintenance adaptation",
+      "dimension": "Situational",
+      "target_gap": "Rail vehicle maintenance support",
+      "difficulty": "mid",
+      "rationale": "The candidate has broad electrical maintenance exposure but no stated rail-vehicle experience, so ability to transfer safely into the domain is important.",
+      "source_evidence": [
+        "Rail vehicle maintenance support is marked partial_match",
+        "Electrical operations and maintenance",
+        "Worked with generators, transformers, ATS, distribution, and transmission systems"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "What differences would you expect between maintaining fixed plant electrical equipment and supporting electrical and mechanical repairs on mobile rail vehicles?",
+      "competency": "Rail vehicle systems awareness",
+      "dimension": "Role-Specific",
+      "target_gap": "Rail vehicle maintenance support",
+      "difficulty": "mid",
+      "rationale": "Directly tests domain-transition awareness without assuming the candidate already has rail experience.",
+      "source_evidence": [
+        "Rail vehicle maintenance support is marked partial_match",
+        "Electrical operations and maintenance",
+        "Rail vehicle systems are required for the role"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "This position supports production needs across shifts and may require overtime. What is your availability, and how would you maintain accurate handoffs and safe performance when working an unfamiliar shift?",
+      "competency": "Shift readiness",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Shift and overtime availability",
+      "difficulty": "mid",
+      "rationale": "Confirms a stated working-condition requirement and assesses operational discipline across shift transitions.",
+      "source_evidence": [
+        "Shift and overtime availability is marked weak_match",
+        "Coordinated with different departments for daily operations"
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "The work involves a heavy-industrial environment and handling equipment or materials up to 50 pounds. Are you able to meet these essential job demands, with or without reasonable accommodation?",
+      "competency": "Physical job readiness",
+      "dimension": "Role-Specific",
+      "target_gap": "Ability to lift 50 pounds",
+      "difficulty": "easy",
+      "rationale": "Confirms an explicit essential physical requirement in an appropriate, accommodation-aware manner.",
+      "source_evidence": [
+        "Ability to lift 50 pounds is marked weak_match",
+        "Work will take place in a heavy industrial environment"
+      ],
+      "priority": 0.76
+    },
+    {
+      "question": "In your Amentum role, describe the most technically complex commissioning or troubleshooting activity you personally performed on a battery charger, VFD, relay, generator, or transformer. What was your specific contribution and outcome?",
+      "competency": "Hands-on technical scope",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Clarifies the depth of the candidate's stated hands-on responsibilities, which is especially important given the role's five-year testing expectation.",
+      "source_evidence": [
+        "Electrical Engineer at Amentum",
+        "Worked on installation, commissioning, and testing of battery chargers, VFDs, battery banks, microprocessor-based relays, and numerical relays",
+        "Troubleshot plant electrical problems and carried out equipment tests"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "Your profile describes coordinating vendor engineering deliverables for compliance with project standards. Give a specific example of a nonconforming deliverable: how did you identify the issue, communicate it, and verify closure?",
+      "competency": "Quality coordination",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Probes a profile-specific strength in quality and vendor coordination that can transfer to controlled testing environments.",
+      "source_evidence": [
+        "Supervised and managed vendor engineering and equipment deliverables for compliance with project standards and specifications",
+        "Coordinated electrical-system tendering and contract finalization"
+      ],
+      "priority": 0.72
+    }
+  ],
+  "validation_failures": [],
+  "n_raw": 30,
+  "n_valid": 30,
+  "n_failed": 0,
+  "weights": [
+    0.9203,
+    0.9338,
+    0.6669,
+    0.6669,
+    0.6424,
+    0.6424,
+    0.3579,
+    0.3579,
+    0.4021,
+    0.9257,
+    0.9257,
+    0.9501,
+    0.9455,
+    0.9361,
+    0.734,
+    0.6728,
+    0.9255,
+    0.7161,
+    0.7197,
+    0.3387,
+    0.3387,
+    0.686,
+    0.686,
+    0.7063,
+    0.3958,
+    0.3958,
+    0.6958,
+    0.7088,
+    0.6966727272727273,
+    0.6966727272727273
+  ],
+  "weight_outcomes": [
+    {
+      "rule": "exact",
+      "weight": 0.9203,
+      "matched_competency": "Test procedure execution",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9338,
+      "matched_competency": "Test procedure redlining",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6669,
+      "matched_competency": "Electrical troubleshooting to line-replaceable-unit level",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6669,
+      "matched_competency": "Electrical troubleshooting to line-replaceable-unit level",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6424,
+      "matched_competency": "Test reporting and anomaly documentation",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6424,
+      "matched_competency": "Test reporting and anomaly documentation",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3579,
+      "matched_competency": "DC and AC electrical systems",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3579,
+      "matched_competency": "DC and AC electrical systems",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.4021,
+      "matched_competency": "Electrical schematics",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9257,
+      "matched_competency": "Wire lists",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9257,
+      "matched_competency": "Wire lists",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9501,
+      "matched_competency": "Block diagrams",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9455,
+      "matched_competency": "Functional diagrams",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9361,
+      "matched_competency": "Computer use",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.734,
+      "matched_competency": "Data recorders",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6728,
+      "matched_competency": "Digital multimeters",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.9255,
+      "matched_competency": "Measurement instruments",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7161,
+      "matched_competency": "Pneumatic and hydraulic gauges",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7197,
+      "matched_competency": "Basic electronics",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3387,
+      "matched_competency": "Electrical panel and equipment installation and termination",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3387,
+      "matched_competency": "Electrical panel and equipment installation and termination",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.686,
+      "matched_competency": "Industrial and technician safety",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.686,
+      "matched_competency": "Industrial and technician safety",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7063,
+      "matched_competency": "Learning and test-process optimization",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3958,
+      "matched_competency": "Rail vehicle maintenance support",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3958,
+      "matched_competency": "Rail vehicle maintenance support",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.6958,
+      "matched_competency": "Shift and overtime availability",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.7088,
+      "matched_competency": "Ability to lift 50 pounds",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.6966727272727273,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.6966727272727273,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    }
+  ],
+  "fallback_rate": 0.0,
+  "profile_probe_rate": 0.06666666666666667,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 9178,
+    "output_tokens": 3520,
+    "cached_tokens": 0,
+    "estimated_cost": 0.060596,
+    "latency_ms": 27733.97,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.060596,
+  "cost_cny": 0.41023492,
+  "usd_cny_rate": 6.77,
+  "user_prompt_sha256": "d218fee75f0eac395f6eb9aa8a79d0cca3549d267fa522f654fd7f9be37589ed",
+  "generated_at": "2026-10-11T13:19:15.126827+00:00"
+}

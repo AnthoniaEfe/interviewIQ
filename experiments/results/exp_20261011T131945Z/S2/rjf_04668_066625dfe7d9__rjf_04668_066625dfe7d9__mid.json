@@ -1,0 +1,215 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_04668_066625dfe7d9",
+  "jd_id": "rjf_04668_066625dfe7d9",
+  "pair_id": "rjf_04668_066625dfe7d9",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_04668_066625dfe7d9__rjf_04668_066625dfe7d9__mid.json",
+  "n_requirements": 8,
+  "questions": [
+    {
+      "question": "When joining a new business unit, how do you rapidly develop domain knowledge while avoiding assumptions that can lead to incorrect requirements?"
+    },
+    {
+      "question": "Describe a business process or system solution you helped shape from problem definition through implementation. How did you compare alternatives for cost, risk, feasibility, and business value?"
+    },
+    {
+      "question": "This role requires hands-on FACETS experience. What FACETS modules, workflows, and data entities have you used, and what business change did you support end to end?"
+    },
+    {
+      "question": "Walk me through how you convert an ambiguous business need into a well-formed user story. What do you include in the story, acceptance criteria, dependencies, assumptions, and edge cases?"
+    },
+    {
+      "question": "Describe a time you had to learn an unfamiliar enterprise platform quickly in order to deliver a business-analysis outcome. How did you build enough functional and data knowledge to be effective?"
+    },
+    {
+      "question": "You are asked to lead refinement for a feature with incomplete business rules, conflicting stakeholder requests, and a fixed release date. What sequence of activities would you run, what artifacts would you produce, and what would you escalate?"
+    },
+    {
+      "question": "How would you onboard a new BA into an unfamiliar business unit during their first 30, 60, and 90 days, including domain learning, tools, stakeholder relationships, and quality expectations?"
+    },
+    {
+      "question": "What knowledge artifacts have you created or maintained\u2014such as process maps, business-rule repositories, decision logs, glossaries, or runbooks\u2014and how did you ensure they remained useful after delivery?"
+    },
+    {
+      "question": "How do you connect an individual feature or process improvement to an organization's strategy, and how would you test whether the delivered change advanced that strategic goal?"
+    },
+    {
+      "question": "Take an example of functional and non-functional requirements you gathered at Leidos. Who did you involve, what elicitation methods did you use, and how did you resolve conflicting needs?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "When joining a new business unit, how do you rapidly develop domain knowledge while avoiding assumptions that can lead to incorrect requirements?",
+      "competency": "Domain discovery",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Assesses the candidate's motivation and method for proactively acquiring business-unit and industry context.",
+      "source_evidence": [
+        "Proactively acquire business-unit domain knowledge.",
+        "Undertook analytical projects with business areas across the CEBA small business loan repayment division."
+      ],
+      "priority": 0.72,
+      "weight": 0.57025
+    },
+    {
+      "question": "Describe a business process or system solution you helped shape from problem definition through implementation. How did you compare alternatives for cost, risk, feasibility, and business value?",
+      "competency": "Solution analysis",
+      "competency_type": "domain",
+      "target_gap": "Business process and system solutions",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "The candidate has a partial match through business/IT bridging; this tests end-to-end solution-option analysis required by the role.",
+      "source_evidence": [
+        "Bridged business and IT teams to develop data, process, and technical solutions."
+      ],
+      "priority": 0.78,
+      "weight": 0.3518
+    },
+    {
+      "question": "This role requires hands-on FACETS experience. What FACETS modules, workflows, and data entities have you used, and what business change did you support end to end?",
+      "competency": "FACETS",
+      "competency_type": "technical",
+      "target_gap": "FACETS",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "FACETS is a required competency with no documented candidate experience, so this directly validates the critical gap.",
+      "source_evidence": [
+        "Gap matrix: FACETS \u2014 missing",
+        "Candidate evidence: SQL"
+      ],
+      "priority": 0.99,
+      "weight": 0.9433
+    },
+    {
+      "question": "Walk me through how you convert an ambiguous business need into a well-formed user story. What do you include in the story, acceptance criteria, dependencies, assumptions, and edge cases?",
+      "competency": "User story development",
+      "competency_type": "technical",
+      "target_gap": "User story development",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "User-story development is only a weak match; the candidate documents requirements and clarifies features, but explicit user-story practice needs validation.",
+      "source_evidence": [
+        "Gap matrix: User story development \u2014 weak_match",
+        "Identified product features and clarified requirements for the development team."
+      ],
+      "priority": 0.86,
+      "weight": 0.6884
+    },
+    {
+      "question": "Describe a time you had to learn an unfamiliar enterprise platform quickly in order to deliver a business-analysis outcome. How did you build enough functional and data knowledge to be effective?",
+      "competency": "FACETS learning agility",
+      "competency_type": "soft",
+      "target_gap": "FACETS",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate can close the documented FACETS gap through a disciplined onboarding and learning approach without assuming prior platform experience.",
+      "source_evidence": [
+        "Gap matrix: FACETS \u2014 missing",
+        "Supported migration of reports from legacy software to SuccessFactor software."
+      ],
+      "priority": 0.93,
+      "weight": 0.9433
+    },
+    {
+      "question": "You are asked to lead refinement for a feature with incomplete business rules, conflicting stakeholder requests, and a fixed release date. What sequence of activities would you run, what artifacts would you produce, and what would you escalate?",
+      "competency": "End-to-end business analysis",
+      "competency_type": "other",
+      "target_gap": "Business analysis",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests integrated BA execution across elicitation, user stories, prioritization, dependencies, and escalation while building on the candidate's strong business-analysis match.",
+      "source_evidence": [
+        "Gap matrix: Business analysis \u2014 strong_match",
+        "Led requirements gathering and refinement with multiple stakeholders."
+      ],
+      "priority": 0.85,
+      "weight": 0.1668
+    },
+    {
+      "question": "How would you onboard a new BA into an unfamiliar business unit during their first 30, 60, and 90 days, including domain learning, tools, stakeholder relationships, and quality expectations?",
+      "competency": "Mentoring",
+      "competency_type": "other",
+      "target_gap": "profile_probe",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "The role includes onboarding and mentoring BAs, while the profile shows project leadership but no explicit mentoring example.",
+      "source_evidence": [
+        "On-board and mentor new BAs into the organization.",
+        "Led analytical projects and colleagues to deliver data products."
+      ],
+      "priority": 0.8,
+      "weight": 0.57025
+    },
+    {
+      "question": "What knowledge artifacts have you created or maintained\u2014such as process maps, business-rule repositories, decision logs, glossaries, or runbooks\u2014and how did you ensure they remained useful after delivery?",
+      "competency": "Knowledge management",
+      "competency_type": "technical",
+      "target_gap": "Knowledge management",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Knowledge management is only a partial match, with database management as the matching evidence rather than explicit knowledge-sharing initiatives.",
+      "source_evidence": [
+        "Gap matrix: Knowledge management \u2014 partial_match",
+        "Candidate evidence: Database management"
+      ],
+      "priority": 0.81,
+      "weight": 0.3972
+    },
+    {
+      "question": "How do you connect an individual feature or process improvement to an organization's strategy, and how would you test whether the delivered change advanced that strategic goal?",
+      "competency": "Strategic alignment",
+      "competency_type": "domain",
+      "target_gap": "profile_probe",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "The role requires understanding organizational vision and strategic goals; this explores the candidate's strategic BA mindset.",
+      "source_evidence": [
+        "Develop a strong understanding of the industry and organizational vision, mission, and strategic goals.",
+        "Presented findings and recommendations to senior managers and leadership teams."
+      ],
+      "priority": 0.74,
+      "weight": 0.57025
+    },
+    {
+      "question": "Take an example of functional and non-functional requirements you gathered at Leidos. Who did you involve, what elicitation methods did you use, and how did you resolve conflicting needs?",
+      "competency": "Business requirements gathering",
+      "competency_type": "soft",
+      "target_gap": "Business requirements gathering",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "The candidate has relevant experience, but the partial match warrants validation of elicitation depth and conflict resolution.",
+      "source_evidence": [
+        "Led functional and non-functional requirements gathering, refinement, and documentation."
+      ],
+      "priority": 0.75,
+      "weight": 0.3652
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    23,
+    15,
+    0,
+    3,
+    1,
+    28,
+    21,
+    18,
+    24,
+    6
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.23,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:50.044131+00:00"
+}

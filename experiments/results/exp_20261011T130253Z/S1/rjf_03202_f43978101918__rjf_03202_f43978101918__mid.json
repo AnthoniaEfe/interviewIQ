@@ -1,0 +1,217 @@
+{
+  "experiment_id": "exp_20261011T130253Z",
+  "stage": "selection_ablation",
+  "condition": "S1",
+  "selection_strategy": "top_priority",
+  "generation_mode": null,
+  "profile_id": "rjf_03202_f43978101918",
+  "jd_id": "rjf_03202_f43978101918",
+  "pair_id": "rjf_03202_f43978101918",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130156Z/pool/rjf_03202_f43978101918__rjf_03202_f43978101918__mid.json",
+  "n_requirements": 5,
+  "questions": [
+    {
+      "question": "Walk me through how you would facilitate a DFMEA review for a new hardware design: how would you define functions, identify failure modes and effects, score risk, and drive actions to closure?"
+    },
+    {
+      "question": "Suppose a relay-control hardware change could cause an incorrect trip signal in a substation. How would you build the failure chain in an FMEA and decide which controls or design changes are warranted?"
+    },
+    {
+      "question": "A field issue requires a hardware update, but the change may affect existing interfaces and previously completed tests. How would you assess impact, control the revision, and determine the required regression testing?"
+    },
+    {
+      "question": "What steps would you take from identifying a hardware defect through selecting a corrective update, revising design artifacts, implementing the change, and releasing it?"
+    },
+    {
+      "question": "What artifacts, participants, and evidence would you expect before approving an FMEA review, and how would you ensure open actions are owned and tracked?"
+    },
+    {
+      "question": "Describe the medium-voltage circuit breaker simulator you built at Siemens: what panel behaviours did it emulate, what interfaces or signals were involved, and what conditions could it test?"
+    },
+    {
+      "question": "You inherit an existing DFMEA whose severity, occurrence, and detection ratings are poorly justified. How would you review the ratings and resolve disagreements among design, test, and manufacturing stakeholders?"
+    },
+    {
+      "question": "How did you decide that the circuit breaker simulator was sufficiently representative of the actual breaker for panel testing, and what limitations did you communicate?"
+    },
+    {
+      "question": "How would you distinguish verification from validation for a hardware product, and what evidence would each require?"
+    },
+    {
+      "question": "How would you decide whether a problem can be addressed by a configuration or firmware change versus requiring a physical hardware update? What evidence would support the decision?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk me through how you would facilitate a DFMEA review for a new hardware design: how would you define functions, identify failure modes and effects, score risk, and drive actions to closure?",
+      "competency": "DFMEA/FMEA reviews",
+      "competency_type": "technical",
+      "target_gap": "DFMEA/FMEA reviews",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "DFMEA/FMEA is a high-weight required competency with no demonstrated candidate experience, so this tests practical method knowledge and readiness to learn the process.",
+      "source_evidence": [
+        "Gap: DFMEA/FMEA reviews \u2014 missing",
+        "Candidate evidence: C"
+      ],
+      "priority": 0.98,
+      "weight": 0.959
+    },
+    {
+      "question": "Suppose a relay-control hardware change could cause an incorrect trip signal in a substation. How would you build the failure chain in an FMEA and decide which controls or design changes are warranted?",
+      "competency": "Failure-mode analysis",
+      "competency_type": "other",
+      "target_gap": "DFMEA/FMEA reviews",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Uses the candidate's substation-relay background to determine whether they can apply formal risk analysis to a relevant hardware scenario.",
+      "source_evidence": [
+        "Worked on relay settings for electrical equipment used in substations",
+        "Gap: DFMEA/FMEA reviews \u2014 missing"
+      ],
+      "priority": 0.96,
+      "weight": 0.959
+    },
+    {
+      "question": "A field issue requires a hardware update, but the change may affect existing interfaces and previously completed tests. How would you assess impact, control the revision, and determine the required regression testing?",
+      "competency": "Hardware change control",
+      "competency_type": "other",
+      "target_gap": "Hardware updates",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Hardware updates are a high-weight missing competency; this evaluates a safe, structured change-management approach.",
+      "source_evidence": [
+        "Gap: Hardware updates \u2014 missing",
+        "Candidate evidence: C"
+      ],
+      "priority": 0.96,
+      "weight": 0.9228
+    },
+    {
+      "question": "What steps would you take from identifying a hardware defect through selecting a corrective update, revising design artifacts, implementing the change, and releasing it?",
+      "competency": "Hardware update lifecycle",
+      "competency_type": "technical",
+      "target_gap": "Hardware updates",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly probes lifecycle knowledge for a required area with no demonstrated prior experience.",
+      "source_evidence": [
+        "Gap: Hardware updates \u2014 missing",
+        "Prepared detailed installation drawings"
+      ],
+      "priority": 0.93,
+      "weight": 0.9228
+    },
+    {
+      "question": "What artifacts, participants, and evidence would you expect before approving an FMEA review, and how would you ensure open actions are owned and tracked?",
+      "competency": "FMEA review governance",
+      "competency_type": "domain",
+      "target_gap": "DFMEA/FMEA reviews",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate understands that FMEA is a cross-functional review and action-management process, not only a worksheet.",
+      "source_evidence": [
+        "Gap: DFMEA/FMEA reviews \u2014 missing",
+        "Organize schedules"
+      ],
+      "priority": 0.92,
+      "weight": 0.959
+    },
+    {
+      "question": "Describe the medium-voltage circuit breaker simulator you built at Siemens: what panel behaviours did it emulate, what interfaces or signals were involved, and what conditions could it test?",
+      "competency": "DV testing",
+      "competency_type": "domain",
+      "target_gap": "DV testing",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "The circuit-breaker simulator is the strongest direct evidence for DV testing and should be explored for technical depth and individual ownership.",
+      "source_evidence": [
+        "Built a Medium Voltage Circuit Breaker Simulator",
+        "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker"
+      ],
+      "priority": 0.91,
+      "weight": 0.3927
+    },
+    {
+      "question": "You inherit an existing DFMEA whose severity, occurrence, and detection ratings are poorly justified. How would you review the ratings and resolve disagreements among design, test, and manufacturing stakeholders?",
+      "competency": "FMEA judgment",
+      "competency_type": "other",
+      "target_gap": "DFMEA/FMEA reviews",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Assesses practical judgment, evidence-based risk scoring, and cross-functional communication for a missing critical skill.",
+      "source_evidence": [
+        "Gap: DFMEA/FMEA reviews \u2014 missing",
+        "Technical presenter in national-level competition"
+      ],
+      "priority": 0.9,
+      "weight": 0.959
+    },
+    {
+      "question": "How did you decide that the circuit breaker simulator was sufficiently representative of the actual breaker for panel testing, and what limitations did you communicate?",
+      "competency": "Test representativeness",
+      "competency_type": "technical",
+      "target_gap": "DV testing",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Distinguishes simply building a simulator from understanding validation fidelity, test coverage, and residual risk.",
+      "source_evidence": [
+        "Built a medium-voltage circuit breaker simulator for testing panels in the absence of an actual circuit breaker",
+        "Gap: DV testing \u2014 partial_match"
+      ],
+      "priority": 0.9,
+      "weight": 0.3927
+    },
+    {
+      "question": "How would you distinguish verification from validation for a hardware product, and what evidence would each require?",
+      "competency": "Hardware V&V fundamentals",
+      "competency_type": "technical",
+      "target_gap": "Hardware verification and validation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly probes foundational V&V knowledge where the candidate has a partial rather than proven match.",
+      "source_evidence": [
+        "Gap: Hardware verification and validation \u2014 partial_match",
+        "Prepared electrical drawings, including one-line diagrams, area classifications, layouts, schematics, interconnection diagrams, and detailed installation drawings"
+      ],
+      "priority": 0.9,
+      "weight": 0.3869
+    },
+    {
+      "question": "How would you decide whether a problem can be addressed by a configuration or firmware change versus requiring a physical hardware update? What evidence would support the decision?",
+      "competency": "Engineering change decision-making",
+      "competency_type": "technical",
+      "target_gap": "Hardware updates",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Tests engineering trade-off thinking and ability to use diagnostic evidence in a hardware-update decision.",
+      "source_evidence": [
+        "Gap: Hardware updates \u2014 missing",
+        "Built a Medium Voltage Circuit Breaker Simulator"
+      ],
+      "priority": 0.9,
+      "weight": 0.9228
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    0,
+    1,
+    21,
+    22,
+    2,
+    10,
+    4,
+    11,
+    16,
+    23
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.02,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:02:54.202187+00:00"
+}

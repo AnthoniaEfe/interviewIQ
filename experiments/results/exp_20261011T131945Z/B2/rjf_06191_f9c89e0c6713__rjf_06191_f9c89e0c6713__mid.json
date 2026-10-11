@@ -1,0 +1,221 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "B2",
+  "selection_strategy": "plain_mmr_priority",
+  "generation_mode": "interviewiq",
+  "profile_id": "rjf_06191_f9c89e0c6713",
+  "jd_id": "rjf_06191_f9c89e0c6713",
+  "pair_id": "rjf_06191_f9c89e0c6713",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_06191_f9c89e0c6713__rjf_06191_f9c89e0c6713__mid.json",
+  "n_requirements": 22,
+  "questions": [
+    {
+      "question": "Walk me through how you would execute a routine electrical test from receiving the approved procedure and schematic through releasing the final result. What hold points would you use?"
+    },
+    {
+      "question": "How do block diagrams, functional diagrams, schematics, and wire lists each help you move from understanding a system to locating a specific wiring or component fault?"
+    },
+    {
+      "question": "During a test, an expected output is absent but all incoming supply voltages appear normal. What is your step-by-step diagnostic approach before deciding that a component should be replaced?"
+    },
+    {
+      "question": "Which computer tools have you used to capture measurements, prepare reports, track test status, or manage equipment data? Please distinguish what you used directly from what you reviewed."
+    },
+    {
+      "question": "You discover an unexpected energized condition while testing a panel under schedule pressure. What immediate actions do you take, whom do you notify, and what must be in place before work continues?"
+    },
+    {
+      "question": "Describe a time during commissioning or equipment testing when the written steps did not match the equipment configuration or required clarification. How did you record the issue and get the procedure corrected?"
+    },
+    {
+      "question": "What differences would you expect between maintaining fixed plant electrical equipment and supporting electrical and mechanical repairs on mobile rail vehicles?"
+    },
+    {
+      "question": "What measurement instruments have you personally used during electrical testing, how did you select the right instrument and range, and how did you confirm calibration status?"
+    },
+    {
+      "question": "Using a simple functional block diagram for a control circuit, explain how you would decide which block to test first when a commanded output does not occur."
+    },
+    {
+      "question": "You are handed an electrical schematic for a panel that will not energize. How do you trace the power path and control path, and what do you verify before applying power?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk me through how you would execute a routine electrical test from receiving the approved procedure and schematic through releasing the final result. What hold points would you use?",
+      "competency": "Test procedure execution",
+      "competency_type": "technical",
+      "target_gap": "Test procedure execution",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The role requires disciplined execution against controlled procedures, but the profile does not explicitly show procedure-led test execution.",
+      "source_evidence": [
+        "Test procedure execution is marked missing",
+        "Electrical equipment testing and commissioning"
+      ],
+      "priority": 0.97,
+      "weight": 0.9203
+    },
+    {
+      "question": "How do block diagrams, functional diagrams, schematics, and wire lists each help you move from understanding a system to locating a specific wiring or component fault?",
+      "competency": "Technical documentation interpretation",
+      "competency_type": "technical",
+      "target_gap": "Wire lists",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "This consolidates several missing documentation-reading requirements and tests whether the candidate understands each artifact's practical purpose.",
+      "source_evidence": [
+        "Wire lists is marked missing",
+        "Block diagrams is marked missing",
+        "Functional diagrams is marked missing"
+      ],
+      "priority": 0.96,
+      "weight": 0.9257
+    },
+    {
+      "question": "During a test, an expected output is absent but all incoming supply voltages appear normal. What is your step-by-step diagnostic approach before deciding that a component should be replaced?",
+      "competency": "Systematic troubleshooting",
+      "competency_type": "technical",
+      "target_gap": "Electrical troubleshooting to line-replaceable-unit level",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Probes troubleshooting discipline, evidence gathering, and avoidance of unnecessary component replacement.",
+      "source_evidence": [
+        "Electrical troubleshooting to line-replaceable-unit level is marked weak_match",
+        "Worked with generators, transformers, ATS, distribution, and transmission systems"
+      ],
+      "priority": 0.94,
+      "weight": 0.6669
+    },
+    {
+      "question": "Which computer tools have you used to capture measurements, prepare reports, track test status, or manage equipment data? Please distinguish what you used directly from what you reviewed.",
+      "competency": "Computer-based test documentation",
+      "competency_type": "domain",
+      "target_gap": "Computer use",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Computer use is required and marked missing, so the interviewer needs to establish practical capability without assuming specific software experience.",
+      "source_evidence": [
+        "Computer use is marked missing",
+        "Performed daily power monitoring and monthly calculations and reporting",
+        "Enterprise Resource Planning"
+      ],
+      "priority": 0.94,
+      "weight": 0.9361
+    },
+    {
+      "question": "You discover an unexpected energized condition while testing a panel under schedule pressure. What immediate actions do you take, whom do you notify, and what must be in place before work continues?",
+      "competency": "Stop-work safety",
+      "competency_type": "other",
+      "target_gap": "Industrial and technician safety",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests safety judgment and willingness to prioritize controlled work over production pressure.",
+      "source_evidence": [
+        "Industrial and technician safety is marked weak_match",
+        "Troubleshot plant electrical problems and carried out equipment tests"
+      ],
+      "priority": 0.95,
+      "weight": 0.686
+    },
+    {
+      "question": "Describe a time during commissioning or equipment testing when the written steps did not match the equipment configuration or required clarification. How did you record the issue and get the procedure corrected?",
+      "competency": "Procedure redlining",
+      "competency_type": "soft",
+      "target_gap": "Test procedure redlining",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "This tests whether the candidate can identify, communicate, and formally control needed changes to test instructions, a missing requirement.",
+      "source_evidence": [
+        "Test procedure redlining is marked missing",
+        "Installation, commissioning, and testing of battery chargers, VFDs, battery banks, and relays"
+      ],
+      "priority": 0.97,
+      "weight": 0.9338
+    },
+    {
+      "question": "What differences would you expect between maintaining fixed plant electrical equipment and supporting electrical and mechanical repairs on mobile rail vehicles?",
+      "competency": "Rail vehicle systems awareness",
+      "competency_type": "domain",
+      "target_gap": "Rail vehicle maintenance support",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Directly tests domain-transition awareness without assuming the candidate already has rail experience.",
+      "source_evidence": [
+        "Rail vehicle maintenance support is marked partial_match",
+        "Electrical operations and maintenance",
+        "Rail vehicle systems are required for the role"
+      ],
+      "priority": 0.85,
+      "weight": 0.3958
+    },
+    {
+      "question": "What measurement instruments have you personally used during electrical testing, how did you select the right instrument and range, and how did you confirm calibration status?",
+      "competency": "Measurement instrumentation",
+      "competency_type": "technical",
+      "target_gap": "Measurement instruments",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly investigates a required but missing competency and the candidate's measurement discipline.",
+      "source_evidence": [
+        "Measurement instruments is marked missing",
+        "Carried out equipment tests"
+      ],
+      "priority": 0.94,
+      "weight": 0.9255
+    },
+    {
+      "question": "Using a simple functional block diagram for a control circuit, explain how you would decide which block to test first when a commanded output does not occur.",
+      "competency": "Block diagram analysis",
+      "competency_type": "technical",
+      "target_gap": "Block diagrams",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Block-diagram reasoning is explicitly required but absent from the candidate evidence.",
+      "source_evidence": [
+        "Block diagrams is marked missing",
+        "System analysis listed in Skills"
+      ],
+      "priority": 0.95,
+      "weight": 0.9501
+    },
+    {
+      "question": "You are handed an electrical schematic for a panel that will not energize. How do you trace the power path and control path, and what do you verify before applying power?",
+      "competency": "Schematic interpretation",
+      "competency_type": "technical",
+      "target_gap": "Electrical schematics",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Electrical schematics are central to safe testing and fault isolation; the candidate has adjacent electrical-distribution experience.",
+      "source_evidence": [
+        "Electrical schematics is marked partial_match",
+        "Electrical distribution",
+        "Electrical power engineering"
+      ],
+      "priority": 0.92,
+      "weight": 0.4021
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    0,
+    9,
+    3,
+    13,
+    22,
+    1,
+    25,
+    16,
+    11,
+    8
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.24,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:46.315447+00:00"
+}

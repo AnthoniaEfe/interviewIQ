@@ -1,0 +1,458 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_06021_14549a02aa4a",
+  "jd_id": "rjf_06021_14549a02aa4a",
+  "pair_id": "rjf_06021_14549a02aa4a",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 19,
+  "pool_path": "pool/rjf_06021_14549a02aa4a__rjf_06021_14549a02aa4a__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.1,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      0,
+      8,
+      7,
+      24,
+      3,
+      11,
+      18,
+      9,
+      5,
+      27
+    ],
+    "questions": [
+      {
+        "question": "Walk me through how you would build and post a month-end close package for prepaids, accruals, payroll, and benefits, including the cut-off checks you would perform before close.",
+        "competency": "Month-end close",
+        "competency_type": "technical",
+        "target_gap": "Month-end accounting close",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "The role requires reliable close execution, while the profile mentions month-end statements but provides limited detail on end-to-end close ownership and cut-off controls.",
+        "source_evidence": [
+          "Prepared balance sheets, profit and loss statements, month-end statements, invoices, and vendor payments.",
+          "monthly accounting close procedures"
+        ],
+        "priority": 0.98,
+        "weight": 0.6797
+      },
+      {
+        "question": "Describe the most advanced Excel workbook you have built or maintained for accounting or financial analysis. Which functions, controls, reconciliations, or data-refresh methods made it reliable?",
+        "competency": "Advanced Excel",
+        "competency_type": "technical",
+        "target_gap": "Microsoft Excel",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "The profile lists MS Office, but not advanced Excel capability, which is explicitly required for the role.",
+        "source_evidence": [
+          "proficient in MS Office",
+          "advanced knowledge in Excel"
+        ],
+        "priority": 0.9,
+        "weight": 0.7136
+      },
+      {
+        "question": "What exposure have you had to IFRS accounting, and how would you identify and resolve a difference between an IFRS treatment and the company's US GAAP reporting treatment?",
+        "competency": "IFRS accounting",
+        "competency_type": "technical",
+        "target_gap": "IFRS accounting",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "IFRS is a required capability with only a weak accounting-based match in the gap matrix, so direct exposure and learning approach should be assessed.",
+        "source_evidence": [
+          "Accounting",
+          "IFRS Accounting"
+        ],
+        "priority": 0.9,
+        "weight": 0.6736
+      },
+      {
+        "question": "This role works with international and cross-cultural stakeholders. Describe any experience collaborating across different work styles, locations, or cultural backgrounds, and how you adapted your communication.",
+        "competency": "Cross-cultural collaboration",
+        "competency_type": "soft",
+        "target_gap": "International and cross-cultural work experience",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "International and cross-cultural experience is a weak match with no direct profile evidence, so the interviewer should establish the candidate's actual exposure and adaptability.",
+        "source_evidence": [
+          "team player",
+          "Experience working in an international and cross-cultural environment"
+        ],
+        "priority": 0.83,
+        "weight": 0.6639
+      },
+      {
+        "question": "A department submits a significant expense invoice after the close deadline for services received in the prior month. How would you determine the accounting treatment, document the decision, and communicate the impact?",
+        "competency": "Period-end cut-off",
+        "competency_type": "other",
+        "target_gap": "Month-end accounting close",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "This tests practical period-end cut-off judgment, a core responsibility that is only weakly evidenced by the candidate's month-end statement preparation.",
+        "source_evidence": [
+          "Prepared balance sheets, profit and loss statements, month-end statements, invoices, and vendor payments.",
+          "proper period-end cut-off"
+        ],
+        "priority": 0.94,
+        "weight": 0.6797
+      },
+      {
+        "question": "Describe your experience preparing federal and state tax returns. Which returns or workpapers did you own, and how did you ensure completeness and timely filing?",
+        "competency": "US tax",
+        "competency_type": "domain",
+        "target_gap": "US tax",
+        "question_type": "Role-Specific",
+        "difficulty": "mid",
+        "rationale": "The profile mentions tax-return preparation, but the gap matrix classifies US tax as a weak match, making scope and technical ownership important to clarify.",
+        "source_evidence": [
+          "filed federal and state tax returns",
+          "US Tax"
+        ],
+        "priority": 0.88,
+        "weight": 0.6938
+      },
+      {
+        "question": "Describe a presentation you have made to senior management about a forecast, financial trend, or accounting issue. How did you tailor the message, recommendations, and supporting visuals?",
+        "competency": "Financial presentations",
+        "competency_type": "soft",
+        "target_gap": "Microsoft PowerPoint",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "The candidate has advised senior management on forecasting, but PowerPoint proficiency is only weakly supported by a general MS Office reference.",
+        "source_evidence": [
+          "advised senior management on forecasting decisions",
+          "Strong PC skills with advanced knowledge in Excel and PPT"
+        ],
+        "priority": 0.81,
+        "weight": 0.7034
+      },
+      {
+        "question": "If cash is constrained and AP, payroll, and intercompany obligations all fall due this week, how would you create a cash forecast and recommend a payment sequence?",
+        "competency": "Cash management",
+        "competency_type": "other",
+        "target_gap": "Cash management",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Cash management is a weak match and the scenario tests prioritization, forecasting, and communication under realistic finance constraints.",
+        "source_evidence": [
+          "advised senior management on forecasting decisions",
+          "General Ledger, AR, AP, Cash Management"
+        ],
+        "priority": 0.89,
+        "weight": 0.6576
+      },
+      {
+        "question": "How would you set up and govern a chart-of-accounts or cost-center change request so that reporting remains consistent and unauthorized changes are prevented?",
+        "competency": "Chart of accounts governance",
+        "competency_type": "technical",
+        "target_gap": "General ledger accounting",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "The role includes chart-of-accounts and cost-center reporting, while the profile provides general accounting and controls experience without direct evidence of master-data governance.",
+        "source_evidence": [
+          "Developed accounting policies and documented business processes to strengthen internal controls.",
+          "Maintain the chart of accounts and cost center reporting."
+        ],
+        "priority": 0.91,
+        "weight": 0.4077
+      },
+      {
+        "question": "Your background includes both HR management and payroll administration. How has that combination shaped the way you handle sensitive payroll corrections, employee questions, and segregation-of-duties concerns?",
+        "competency": "Payroll confidentiality",
+        "competency_type": "soft",
+        "target_gap": "profile_probe",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "The question draws on the candidate's documented HR and payroll experience to assess discretion and control awareness in a finance context.",
+        "source_evidence": [
+          "Human Resources Manager",
+          "Handled confidential employee and company information.",
+          "Administered employee payroll and corporate payroll reconciliation and tax activities."
+        ],
+        "priority": 0.7,
+        "weight": 0.4387052631578947
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.666106,
+      0.64224,
+      0.60624,
+      0.551037,
+      0.638918,
+      0.610544,
+      0.5697540000000001,
+      0.585264,
+      0.37100700000000003,
+      0.3070936842105263
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.17602574825286865,
+      0.2931962013244629,
+      0.21597686409950256,
+      0.5103126764297485,
+      0.4465239644050598,
+      0.3633437752723694,
+      0.4146941304206848,
+      0.37576645612716675,
+      0.25693973898887634
+    ],
+    "mmr_scores": [
+      0.46627419999999997,
+      0.3967602755241394,
+      0.33640913960266106,
+      0.32093284077014916,
+      0.29414879707107533,
+      0.293423610678482,
+      0.2898246674182892,
+      0.2852765608737945,
+      0.14697496316185,
+      0.13788365725070548
+    ],
+    "competency_weights": [
+      0.6797,
+      0.7136,
+      0.6736,
+      0.6639,
+      0.6797,
+      0.6938,
+      0.7034,
+      0.6576,
+      0.4077,
+      0.4387052631578947
+    ]
+  },
+  "questions": [
+    {
+      "question": "Walk me through how you would build and post a month-end close package for prepaids, accruals, payroll, and benefits, including the cut-off checks you would perform before close."
+    },
+    {
+      "question": "Describe the most advanced Excel workbook you have built or maintained for accounting or financial analysis. Which functions, controls, reconciliations, or data-refresh methods made it reliable?"
+    },
+    {
+      "question": "What exposure have you had to IFRS accounting, and how would you identify and resolve a difference between an IFRS treatment and the company's US GAAP reporting treatment?"
+    },
+    {
+      "question": "This role works with international and cross-cultural stakeholders. Describe any experience collaborating across different work styles, locations, or cultural backgrounds, and how you adapted your communication."
+    },
+    {
+      "question": "A department submits a significant expense invoice after the close deadline for services received in the prior month. How would you determine the accounting treatment, document the decision, and communicate the impact?"
+    },
+    {
+      "question": "Describe your experience preparing federal and state tax returns. Which returns or workpapers did you own, and how did you ensure completeness and timely filing?"
+    },
+    {
+      "question": "Describe a presentation you have made to senior management about a forecast, financial trend, or accounting issue. How did you tailor the message, recommendations, and supporting visuals?"
+    },
+    {
+      "question": "If cash is constrained and AP, payroll, and intercompany obligations all fall due this week, how would you create a cash forecast and recommend a payment sequence?"
+    },
+    {
+      "question": "How would you set up and govern a chart-of-accounts or cost-center change request so that reporting remains consistent and unauthorized changes are prevented?"
+    },
+    {
+      "question": "Your background includes both HR management and payroll administration. How has that combination shaped the way you handle sensitive payroll corrections, employee questions, and segregation-of-duties concerns?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk me through how you would build and post a month-end close package for prepaids, accruals, payroll, and benefits, including the cut-off checks you would perform before close.",
+      "competency": "Month-end close",
+      "competency_type": "technical",
+      "target_gap": "Month-end accounting close",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The role requires reliable close execution, while the profile mentions month-end statements but provides limited detail on end-to-end close ownership and cut-off controls.",
+      "source_evidence": [
+        "Prepared balance sheets, profit and loss statements, month-end statements, invoices, and vendor payments.",
+        "monthly accounting close procedures"
+      ],
+      "priority": 0.98,
+      "weight": 0.6797
+    },
+    {
+      "question": "Describe the most advanced Excel workbook you have built or maintained for accounting or financial analysis. Which functions, controls, reconciliations, or data-refresh methods made it reliable?",
+      "competency": "Advanced Excel",
+      "competency_type": "technical",
+      "target_gap": "Microsoft Excel",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The profile lists MS Office, but not advanced Excel capability, which is explicitly required for the role.",
+      "source_evidence": [
+        "proficient in MS Office",
+        "advanced knowledge in Excel"
+      ],
+      "priority": 0.9,
+      "weight": 0.7136
+    },
+    {
+      "question": "What exposure have you had to IFRS accounting, and how would you identify and resolve a difference between an IFRS treatment and the company's US GAAP reporting treatment?",
+      "competency": "IFRS accounting",
+      "competency_type": "technical",
+      "target_gap": "IFRS accounting",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "IFRS is a required capability with only a weak accounting-based match in the gap matrix, so direct exposure and learning approach should be assessed.",
+      "source_evidence": [
+        "Accounting",
+        "IFRS Accounting"
+      ],
+      "priority": 0.9,
+      "weight": 0.6736
+    },
+    {
+      "question": "This role works with international and cross-cultural stakeholders. Describe any experience collaborating across different work styles, locations, or cultural backgrounds, and how you adapted your communication.",
+      "competency": "Cross-cultural collaboration",
+      "competency_type": "soft",
+      "target_gap": "International and cross-cultural work experience",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "International and cross-cultural experience is a weak match with no direct profile evidence, so the interviewer should establish the candidate's actual exposure and adaptability.",
+      "source_evidence": [
+        "team player",
+        "Experience working in an international and cross-cultural environment"
+      ],
+      "priority": 0.83,
+      "weight": 0.6639
+    },
+    {
+      "question": "A department submits a significant expense invoice after the close deadline for services received in the prior month. How would you determine the accounting treatment, document the decision, and communicate the impact?",
+      "competency": "Period-end cut-off",
+      "competency_type": "other",
+      "target_gap": "Month-end accounting close",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "This tests practical period-end cut-off judgment, a core responsibility that is only weakly evidenced by the candidate's month-end statement preparation.",
+      "source_evidence": [
+        "Prepared balance sheets, profit and loss statements, month-end statements, invoices, and vendor payments.",
+        "proper period-end cut-off"
+      ],
+      "priority": 0.94,
+      "weight": 0.6797
+    },
+    {
+      "question": "Describe your experience preparing federal and state tax returns. Which returns or workpapers did you own, and how did you ensure completeness and timely filing?",
+      "competency": "US tax",
+      "competency_type": "domain",
+      "target_gap": "US tax",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "The profile mentions tax-return preparation, but the gap matrix classifies US tax as a weak match, making scope and technical ownership important to clarify.",
+      "source_evidence": [
+        "filed federal and state tax returns",
+        "US Tax"
+      ],
+      "priority": 0.88,
+      "weight": 0.6938
+    },
+    {
+      "question": "Describe a presentation you have made to senior management about a forecast, financial trend, or accounting issue. How did you tailor the message, recommendations, and supporting visuals?",
+      "competency": "Financial presentations",
+      "competency_type": "soft",
+      "target_gap": "Microsoft PowerPoint",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "The candidate has advised senior management on forecasting, but PowerPoint proficiency is only weakly supported by a general MS Office reference.",
+      "source_evidence": [
+        "advised senior management on forecasting decisions",
+        "Strong PC skills with advanced knowledge in Excel and PPT"
+      ],
+      "priority": 0.81,
+      "weight": 0.7034
+    },
+    {
+      "question": "If cash is constrained and AP, payroll, and intercompany obligations all fall due this week, how would you create a cash forecast and recommend a payment sequence?",
+      "competency": "Cash management",
+      "competency_type": "other",
+      "target_gap": "Cash management",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Cash management is a weak match and the scenario tests prioritization, forecasting, and communication under realistic finance constraints.",
+      "source_evidence": [
+        "advised senior management on forecasting decisions",
+        "General Ledger, AR, AP, Cash Management"
+      ],
+      "priority": 0.89,
+      "weight": 0.6576
+    },
+    {
+      "question": "How would you set up and govern a chart-of-accounts or cost-center change request so that reporting remains consistent and unauthorized changes are prevented?",
+      "competency": "Chart of accounts governance",
+      "competency_type": "technical",
+      "target_gap": "General ledger accounting",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The role includes chart-of-accounts and cost-center reporting, while the profile provides general accounting and controls experience without direct evidence of master-data governance.",
+      "source_evidence": [
+        "Developed accounting policies and documented business processes to strengthen internal controls.",
+        "Maintain the chart of accounts and cost center reporting."
+      ],
+      "priority": 0.91,
+      "weight": 0.4077
+    },
+    {
+      "question": "Your background includes both HR management and payroll administration. How has that combination shaped the way you handle sensitive payroll corrections, employee questions, and segregation-of-duties concerns?",
+      "competency": "Payroll confidentiality",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "The question draws on the candidate's documented HR and payroll experience to assess discretion and control awareness in a finance context.",
+      "source_evidence": [
+        "Human Resources Manager",
+        "Handled confidential employee and company information.",
+        "Administered employee payroll and corporate payroll reconciliation and tax activities."
+      ],
+      "priority": 0.7,
+      "weight": 0.4387052631578947
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 8602,
+    "output_tokens": 3585,
+    "cached_tokens": 0,
+    "estimated_cost": 0.060224,
+    "latency_ms": 27613.72,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.060224,
+  "cost_cny": 0.40771648,
+  "selection_latency_ms": 39.19,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:18:18.164403+00:00"
+}

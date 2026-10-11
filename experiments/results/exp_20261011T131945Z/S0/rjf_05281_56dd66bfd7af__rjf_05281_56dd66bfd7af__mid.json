@@ -1,0 +1,1117 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S0",
+  "selection_strategy": "random",
+  "generation_mode": null,
+  "profile_id": "rjf_05281_56dd66bfd7af",
+  "jd_id": "rjf_05281_56dd66bfd7af",
+  "pair_id": "rjf_05281_56dd66bfd7af",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_05281_56dd66bfd7af__rjf_05281_56dd66bfd7af__mid.json",
+  "n_requirements": 14,
+  "questions": [
+    {
+      "question": "Describe the Scala constructs and testing practices you would use to make a Spark transformation pipeline reliable, readable, and safe to rerun."
+    },
+    {
+      "question": "Tell me about a relational database you have worked with. What queries, relationships, constraints, or reporting tasks did you personally handle?"
+    },
+    {
+      "question": "Suppose a daily Spark job must join large student-enrollment and attendance datasets and is running slowly. How would you diagnose the bottleneck and improve the job?"
+    },
+    {
+      "question": "Describe a time you created or improved a tracking mechanism, database, or reporting process. How did you identify the need, involve users, validate the result, and measure improvement?"
+    },
+    {
+      "question": "A source system delivers duplicate, late-arriving, and occasionally malformed records. How would you design an ETL process to process them accurately and allow safe reprocessing?"
+    },
+    {
+      "question": "Walk through how you would participate in the full lifecycle of a small data feature, from a stakeholder request through requirements, development, testing, deployment, monitoring, and post-release learning."
+    },
+    {
+      "question": "This position asks for extensive professional engineering experience. How does your experience to date map to engineering work, and what concrete steps have you taken to build software-engineering capability?"
+    },
+    {
+      "question": "You coordinated communication with staff, union representatives, clients, architects, programmers, and engineers. Describe a case where these groups needed different information about a data requirement, and how you aligned them."
+    },
+    {
+      "question": "What exposure have you had to Spring or Spring Boot, and how would you organize controllers, services, repositories, configuration, and tests in a small Spring application?"
+    },
+    {
+      "question": "How would you design a secure cloud-based workflow to ingest files, transform data, store curated datasets, and restrict access to sensitive student-like records?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe the Scala constructs and testing practices you would use to make a Spark transformation pipeline reliable, readable, and safe to rerun.",
+      "competency": "Scala data engineering",
+      "competency_type": "technical",
+      "target_gap": "Scala and Apache Spark",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Probes whether any claimed or developing Scala knowledge extends beyond surface-level Spark familiarity.",
+      "source_evidence": [
+        "Gap matrix: Scala and Apache Spark \u2014 missing",
+        "Data verification and testing"
+      ],
+      "priority": 0.95,
+      "weight": 0.9017
+    },
+    {
+      "question": "Tell me about a relational database you have worked with. What queries, relationships, constraints, or reporting tasks did you personally handle?",
+      "competency": "Relational databases",
+      "competency_type": "technical",
+      "target_gap": "Relational databases",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "This is a documented strong match and should be validated for hands-on depth relevant to the role.",
+      "source_evidence": [
+        "Gap matrix: Relational databases \u2014 strong_match",
+        "Skills: Relational databases",
+        "Performed data management, audits, analysis, reporting, and quality-control activities."
+      ],
+      "priority": 0.72,
+      "weight": 0.1608
+    },
+    {
+      "question": "Suppose a daily Spark job must join large student-enrollment and attendance datasets and is running slowly. How would you diagnose the bottleneck and improve the job?",
+      "competency": "Spark performance tuning",
+      "competency_type": "other",
+      "target_gap": "Scala and Apache Spark",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests practical Spark reasoning for a high-priority missing requirement while using a domain familiar from the candidate's school-data background.",
+      "source_evidence": [
+        "Gap matrix: Scala and Apache Spark \u2014 missing",
+        "Performed data management, audits, analysis, reporting, and quality-control activities."
+      ],
+      "priority": 0.98,
+      "weight": 0.9017
+    },
+    {
+      "question": "Describe a time you created or improved a tracking mechanism, database, or reporting process. How did you identify the need, involve users, validate the result, and measure improvement?",
+      "competency": "System improvement",
+      "competency_type": "soft",
+      "target_gap": "Software feature and system development",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "The profile supports a weak match through tracking mechanisms and office-efficiency improvements; this seeks evidence of end-to-end problem solving.",
+      "source_evidence": [
+        "Gap matrix: Software feature and system development \u2014 weak_match",
+        "Improved office efficiency through client correspondence, record tracking, and data communications.",
+        "Created and maintained databases, spreadsheets, and tracking mechanisms."
+      ],
+      "priority": 0.82,
+      "weight": 0.6896
+    },
+    {
+      "question": "A source system delivers duplicate, late-arriving, and occasionally malformed records. How would you design an ETL process to process them accurately and allow safe reprocessing?",
+      "competency": "ETL data quality",
+      "competency_type": "other",
+      "target_gap": "ETL data pipeline design and development",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Builds on the candidate's documented discrepancy-resolution experience while testing production ETL patterns.",
+      "source_evidence": [
+        "Gap matrix: ETL data pipeline design and development \u2014 weak_match",
+        "Detected and resolved data quality issues and discrepancies.",
+        "Data verification and testing"
+      ],
+      "priority": 0.89,
+      "weight": 0.6651
+    },
+    {
+      "question": "Walk through how you would participate in the full lifecycle of a small data feature, from a stakeholder request through requirements, development, testing, deployment, monitoring, and post-release learning.",
+      "competency": "Software development life cycle",
+      "competency_type": "domain",
+      "target_gap": "Software development life cycle",
+      "question_type": "Role-Specific",
+      "difficulty": "hard",
+      "rationale": "The SDLC is an identified missing area; the question evaluates structured delivery thinking and ability to transfer existing requirements and quality practices.",
+      "source_evidence": [
+        "Gap matrix: Software development life cycle \u2014 missing",
+        "Requirements gathering",
+        "Data verification and testing"
+      ],
+      "priority": 0.64,
+      "weight": 0.5575
+    },
+    {
+      "question": "This position asks for extensive professional engineering experience. How does your experience to date map to engineering work, and what concrete steps have you taken to build software-engineering capability?",
+      "competency": "Engineering readiness",
+      "competency_type": "soft",
+      "target_gap": "Professional engineering",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Directly addresses the documented absence of professional engineering experience while allowing the candidate to explain relevant preparation accurately.",
+      "source_evidence": [
+        "Gap matrix: Professional engineering \u2014 missing",
+        "Student Data Assistant, 01/2018-Current",
+        "Data management and relational databases"
+      ],
+      "priority": 0.98,
+      "weight": 0.9258
+    },
+    {
+      "question": "You coordinated communication with staff, union representatives, clients, architects, programmers, and engineers. Describe a case where these groups needed different information about a data requirement, and how you aligned them.",
+      "competency": "Cross-functional communication",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Probes a distinctive, documented cross-functional experience relevant to working with data and engineering stakeholders.",
+      "source_evidence": [
+        "Coordinated communications with staff, union representatives, clients, architects, programmers, and engineers.",
+        "Explained data requirements for applications to teams and customers."
+      ],
+      "priority": 0.68,
+      "weight": 0.6373
+    },
+    {
+      "question": "What exposure have you had to Spring or Spring Boot, and how would you organize controllers, services, repositories, configuration, and tests in a small Spring application?",
+      "competency": "Spring Framework",
+      "competency_type": "technical",
+      "target_gap": "Spring Framework",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Spring is a required but undocumented capability; the question separates direct experience from conceptual knowledge.",
+      "source_evidence": [
+        "Gap matrix: Spring Framework \u2014 missing",
+        "Gap evidence matched to Relational databases"
+      ],
+      "priority": 0.98,
+      "weight": 0.9555
+    },
+    {
+      "question": "How would you design a secure cloud-based workflow to ingest files, transform data, store curated datasets, and restrict access to sensitive student-like records?",
+      "competency": "Cloud data architecture",
+      "competency_type": "other",
+      "target_gap": "Cloud technology",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Assesses cloud fundamentals and security judgment where the profile shows no direct cloud evidence but does show confidential-records experience.",
+      "source_evidence": [
+        "Gap matrix: Cloud technology \u2014 weak_match",
+        "Handled confidential student information carefully and discreetly.",
+        "Student records management"
+      ],
+      "priority": 0.62,
+      "weight": 0.4354
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    2,
+    17,
+    1,
+    15,
+    10,
+    24,
+    19,
+    29,
+    5,
+    22
+  ],
+  "repeats": [
+    {
+      "repeat": 0,
+      "selected_indices": [
+        2,
+        17,
+        1,
+        15,
+        10,
+        24,
+        19,
+        29,
+        5,
+        22
+      ],
+      "questions": [
+        {
+          "question": "Describe the Scala constructs and testing practices you would use to make a Spark transformation pipeline reliable, readable, and safe to rerun.",
+          "competency": "Scala data engineering",
+          "competency_type": "technical",
+          "target_gap": "Scala and Apache Spark",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Probes whether any claimed or developing Scala knowledge extends beyond surface-level Spark familiarity.",
+          "source_evidence": [
+            "Gap matrix: Scala and Apache Spark \u2014 missing",
+            "Data verification and testing"
+          ],
+          "priority": 0.95,
+          "weight": 0.9017
+        },
+        {
+          "question": "Tell me about a relational database you have worked with. What queries, relationships, constraints, or reporting tasks did you personally handle?",
+          "competency": "Relational databases",
+          "competency_type": "technical",
+          "target_gap": "Relational databases",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "This is a documented strong match and should be validated for hands-on depth relevant to the role.",
+          "source_evidence": [
+            "Gap matrix: Relational databases \u2014 strong_match",
+            "Skills: Relational databases",
+            "Performed data management, audits, analysis, reporting, and quality-control activities."
+          ],
+          "priority": 0.72,
+          "weight": 0.1608
+        },
+        {
+          "question": "Suppose a daily Spark job must join large student-enrollment and attendance datasets and is running slowly. How would you diagnose the bottleneck and improve the job?",
+          "competency": "Spark performance tuning",
+          "competency_type": "other",
+          "target_gap": "Scala and Apache Spark",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests practical Spark reasoning for a high-priority missing requirement while using a domain familiar from the candidate's school-data background.",
+          "source_evidence": [
+            "Gap matrix: Scala and Apache Spark \u2014 missing",
+            "Performed data management, audits, analysis, reporting, and quality-control activities."
+          ],
+          "priority": 0.98,
+          "weight": 0.9017
+        },
+        {
+          "question": "Describe a time you created or improved a tracking mechanism, database, or reporting process. How did you identify the need, involve users, validate the result, and measure improvement?",
+          "competency": "System improvement",
+          "competency_type": "soft",
+          "target_gap": "Software feature and system development",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "The profile supports a weak match through tracking mechanisms and office-efficiency improvements; this seeks evidence of end-to-end problem solving.",
+          "source_evidence": [
+            "Gap matrix: Software feature and system development \u2014 weak_match",
+            "Improved office efficiency through client correspondence, record tracking, and data communications.",
+            "Created and maintained databases, spreadsheets, and tracking mechanisms."
+          ],
+          "priority": 0.82,
+          "weight": 0.6896
+        },
+        {
+          "question": "A source system delivers duplicate, late-arriving, and occasionally malformed records. How would you design an ETL process to process them accurately and allow safe reprocessing?",
+          "competency": "ETL data quality",
+          "competency_type": "other",
+          "target_gap": "ETL data pipeline design and development",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Builds on the candidate's documented discrepancy-resolution experience while testing production ETL patterns.",
+          "source_evidence": [
+            "Gap matrix: ETL data pipeline design and development \u2014 weak_match",
+            "Detected and resolved data quality issues and discrepancies.",
+            "Data verification and testing"
+          ],
+          "priority": 0.89,
+          "weight": 0.6651
+        },
+        {
+          "question": "Walk through how you would participate in the full lifecycle of a small data feature, from a stakeholder request through requirements, development, testing, deployment, monitoring, and post-release learning.",
+          "competency": "Software development life cycle",
+          "competency_type": "domain",
+          "target_gap": "Software development life cycle",
+          "question_type": "Role-Specific",
+          "difficulty": "hard",
+          "rationale": "The SDLC is an identified missing area; the question evaluates structured delivery thinking and ability to transfer existing requirements and quality practices.",
+          "source_evidence": [
+            "Gap matrix: Software development life cycle \u2014 missing",
+            "Requirements gathering",
+            "Data verification and testing"
+          ],
+          "priority": 0.64,
+          "weight": 0.5575
+        },
+        {
+          "question": "This position asks for extensive professional engineering experience. How does your experience to date map to engineering work, and what concrete steps have you taken to build software-engineering capability?",
+          "competency": "Engineering readiness",
+          "competency_type": "soft",
+          "target_gap": "Professional engineering",
+          "question_type": "Cultural/Motivational",
+          "difficulty": "mid",
+          "rationale": "Directly addresses the documented absence of professional engineering experience while allowing the candidate to explain relevant preparation accurately.",
+          "source_evidence": [
+            "Gap matrix: Professional engineering \u2014 missing",
+            "Student Data Assistant, 01/2018-Current",
+            "Data management and relational databases"
+          ],
+          "priority": 0.98,
+          "weight": 0.9258
+        },
+        {
+          "question": "You coordinated communication with staff, union representatives, clients, architects, programmers, and engineers. Describe a case where these groups needed different information about a data requirement, and how you aligned them.",
+          "competency": "Cross-functional communication",
+          "competency_type": "soft",
+          "target_gap": "profile_probe",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Probes a distinctive, documented cross-functional experience relevant to working with data and engineering stakeholders.",
+          "source_evidence": [
+            "Coordinated communications with staff, union representatives, clients, architects, programmers, and engineers.",
+            "Explained data requirements for applications to teams and customers."
+          ],
+          "priority": 0.68,
+          "weight": 0.6373
+        },
+        {
+          "question": "What exposure have you had to Spring or Spring Boot, and how would you organize controllers, services, repositories, configuration, and tests in a small Spring application?",
+          "competency": "Spring Framework",
+          "competency_type": "technical",
+          "target_gap": "Spring Framework",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Spring is a required but undocumented capability; the question separates direct experience from conceptual knowledge.",
+          "source_evidence": [
+            "Gap matrix: Spring Framework \u2014 missing",
+            "Gap evidence matched to Relational databases"
+          ],
+          "priority": 0.98,
+          "weight": 0.9555
+        },
+        {
+          "question": "How would you design a secure cloud-based workflow to ingest files, transform data, store curated datasets, and restrict access to sensitive student-like records?",
+          "competency": "Cloud data architecture",
+          "competency_type": "other",
+          "target_gap": "Cloud technology",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Assesses cloud fundamentals and security judgment where the profile shows no direct cloud evidence but does show confidential-records experience.",
+          "source_evidence": [
+            "Gap matrix: Cloud technology \u2014 weak_match",
+            "Handled confidential student information carefully and discreetly.",
+            "Student records management"
+          ],
+          "priority": 0.62,
+          "weight": 0.4354
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 1,
+      "selected_indices": [
+        10,
+        23,
+        1,
+        24,
+        14,
+        13,
+        0,
+        7,
+        9,
+        17
+      ],
+      "questions": [
+        {
+          "question": "A source system delivers duplicate, late-arriving, and occasionally malformed records. How would you design an ETL process to process them accurately and allow safe reprocessing?",
+          "competency": "ETL data quality",
+          "competency_type": "other",
+          "target_gap": "ETL data pipeline design and development",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Builds on the candidate's documented discrepancy-resolution experience while testing production ETL patterns.",
+          "source_evidence": [
+            "Gap matrix: ETL data pipeline design and development \u2014 weak_match",
+            "Detected and resolved data quality issues and discrepancies.",
+            "Data verification and testing"
+          ],
+          "priority": 0.89,
+          "weight": 0.6651
+        },
+        {
+          "question": "What do you understand by a SaaS product environment, and how would customer impact, release cadence, uptime, and support needs influence your approach to data changes?",
+          "competency": "SaaS product awareness",
+          "competency_type": "soft",
+          "target_gap": "SaaS product environment",
+          "question_type": "Cultural/Motivational",
+          "difficulty": "mid",
+          "rationale": "SaaS experience is missing, and this tests the candidate's understanding of the operating context rather than assuming prior product exposure.",
+          "source_evidence": [
+            "Gap matrix: SaaS product environment \u2014 missing",
+            "Customer service",
+            "Interacted with customers and addressed questions, concerns, and problems."
+          ],
+          "priority": 0.61,
+          "weight": 0.5585
+        },
+        {
+          "question": "Suppose a daily Spark job must join large student-enrollment and attendance datasets and is running slowly. How would you diagnose the bottleneck and improve the job?",
+          "competency": "Spark performance tuning",
+          "competency_type": "other",
+          "target_gap": "Scala and Apache Spark",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests practical Spark reasoning for a high-priority missing requirement while using a domain familiar from the candidate's school-data background.",
+          "source_evidence": [
+            "Gap matrix: Scala and Apache Spark \u2014 missing",
+            "Performed data management, audits, analysis, reporting, and quality-control activities."
+          ],
+          "priority": 0.98,
+          "weight": 0.9017
+        },
+        {
+          "question": "Walk through how you would participate in the full lifecycle of a small data feature, from a stakeholder request through requirements, development, testing, deployment, monitoring, and post-release learning.",
+          "competency": "Software development life cycle",
+          "competency_type": "domain",
+          "target_gap": "Software development life cycle",
+          "question_type": "Role-Specific",
+          "difficulty": "hard",
+          "rationale": "The SDLC is an identified missing area; the question evaluates structured delivery thinking and ability to transfer existing requirements and quality practices.",
+          "source_evidence": [
+            "Gap matrix: Software development life cycle \u2014 missing",
+            "Requirements gathering",
+            "Data verification and testing"
+          ],
+          "priority": 0.64,
+          "weight": 0.5575
+        },
+        {
+          "question": "What trade-offs would you consider when choosing primary keys, foreign keys, indexes, and normalization levels for a transactional data store?",
+          "competency": "Database design trade-offs",
+          "competency_type": "technical",
+          "target_gap": "Database design and development",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Determines whether the partial database match includes core engineering design judgment.",
+          "source_evidence": [
+            "Gap matrix: Database design and development \u2014 partial_match",
+            "Relational databases"
+          ],
+          "priority": 0.75,
+          "weight": 0.3723
+        },
+        {
+          "question": "How would you model a relational database for students, enrollments, courses, and attendance while preventing duplicate identities and preserving historical changes?",
+          "competency": "Relational data modeling",
+          "competency_type": "technical",
+          "target_gap": "Database design and development",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests data modeling, integrity, and history management using the candidate's education-administration context.",
+          "source_evidence": [
+            "Gap matrix: Database design and development \u2014 partial_match",
+            "K-12 education administration",
+            "Student records management"
+          ],
+          "priority": 0.79,
+          "weight": 0.3723
+        },
+        {
+          "question": "What hands-on experience, if any, do you have using Scala and Apache Spark? Please distinguish production work from coursework, self-study, or exposure through colleagues.",
+          "competency": "Scala and Apache Spark",
+          "competency_type": "technical",
+          "target_gap": "Scala and Apache Spark",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Scala/Spark is a core required capability, but the profile documents database and spreadsheet work rather than distributed data processing.",
+          "source_evidence": [
+            "Gap matrix: Scala and Apache Spark \u2014 missing",
+            "Created and maintained databases, spreadsheets, and tracking mechanisms."
+          ],
+          "priority": 0.99,
+          "weight": 0.9017
+        },
+        {
+          "question": "Design a REST API for submitting and retrieving data-quality exceptions. What endpoints, request validation, status codes, pagination, and error responses would you define?",
+          "competency": "REST API design",
+          "competency_type": "technical",
+          "target_gap": "REST API development",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests concrete API-design ability for a required capability absent from the profile, grounded in the candidate's documented quality-control work.",
+          "source_evidence": [
+            "Gap matrix: REST API development \u2014 missing",
+            "Performed routine data audits and quality-control activities."
+          ],
+          "priority": 0.97,
+          "weight": 0.9464
+        },
+        {
+          "question": "Using your experience with audits, reporting, and tracking mechanisms, describe how you would translate a business request into source-to-target mappings, transformation rules, data-quality checks, and acceptance criteria for a new ETL pipeline.",
+          "competency": "ETL pipeline design",
+          "competency_type": "domain",
+          "target_gap": "ETL data pipeline design and development",
+          "question_type": "Role-Specific",
+          "difficulty": "hard",
+          "rationale": "The candidate has a weak match through analysis and data management; this tests whether that experience can extend to disciplined pipeline design.",
+          "source_evidence": [
+            "Gap matrix: ETL data pipeline design and development \u2014 weak_match",
+            "Data analysis and modeling",
+            "Explained data requirements for applications to teams and customers."
+          ],
+          "priority": 0.9,
+          "weight": 0.6651
+        },
+        {
+          "question": "Tell me about a relational database you have worked with. What queries, relationships, constraints, or reporting tasks did you personally handle?",
+          "competency": "Relational databases",
+          "competency_type": "technical",
+          "target_gap": "Relational databases",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "This is a documented strong match and should be validated for hands-on depth relevant to the role.",
+          "source_evidence": [
+            "Gap matrix: Relational databases \u2014 strong_match",
+            "Skills: Relational databases",
+            "Performed data management, audits, analysis, reporting, and quality-control activities."
+          ],
+          "priority": 0.72,
+          "weight": 0.1608
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 2,
+      "selected_indices": [
+        10,
+        6,
+        18,
+        16,
+        26,
+        15,
+        2,
+        14,
+        27,
+        4
+      ],
+      "questions": [
+        {
+          "question": "A source system delivers duplicate, late-arriving, and occasionally malformed records. How would you design an ETL process to process them accurately and allow safe reprocessing?",
+          "competency": "ETL data quality",
+          "competency_type": "other",
+          "target_gap": "ETL data pipeline design and development",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Builds on the candidate's documented discrepancy-resolution experience while testing production ETL patterns.",
+          "source_evidence": [
+            "Gap matrix: ETL data pipeline design and development \u2014 weak_match",
+            "Detected and resolved data quality issues and discrepancies.",
+            "Data verification and testing"
+          ],
+          "priority": 0.89,
+          "weight": 0.6651
+        },
+        {
+          "question": "A Spring REST endpoint begins returning intermittent 500 errors after a database change. Walk through how you would investigate, contain, and correct the issue.",
+          "competency": "Spring troubleshooting",
+          "competency_type": "other",
+          "target_gap": "Spring Framework",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Evaluates operational debugging discipline for a key missing framework requirement.",
+          "source_evidence": [
+            "Gap matrix: Spring Framework \u2014 missing",
+            "Detected and resolved data quality issues and discrepancies."
+          ],
+          "priority": 0.93,
+          "weight": 0.9555
+        },
+        {
+          "question": "When an audit reveals a discrepancy in a relational database report, how do you trace the issue from the report back through queries, source records, and update processes?",
+          "competency": "Data integrity troubleshooting",
+          "competency_type": "technical",
+          "target_gap": "Relational databases",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Probes a clear strength\u2014data auditing and discrepancy resolution\u2014in a database-focused diagnostic scenario.",
+          "source_evidence": [
+            "Gap matrix: Relational databases \u2014 strong_match",
+            "Maintained data integrity and performed routine data audits.",
+            "Detected and resolved data quality issues and discrepancies."
+          ],
+          "priority": 0.74,
+          "weight": 0.1608
+        },
+        {
+          "question": "If stakeholders requested a new data-quality feature but gave conflicting requirements, how would you clarify scope, document decisions, and deliver an initial version?",
+          "competency": "Feature delivery",
+          "competency_type": "other",
+          "target_gap": "Software feature and system development",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Tests feature-development behaviors using the candidate's documented requirements communication and stakeholder coordination.",
+          "source_evidence": [
+            "Gap matrix: Software feature and system development \u2014 weak_match",
+            "Explained data requirements for applications to teams and customers.",
+            "Coordinated communications with staff, programmers, and engineers."
+          ],
+          "priority": 0.8,
+          "weight": 0.6896
+        },
+        {
+          "question": "Describe a time you helped a colleague understand a data process, application requirement, or quality-control step. How did you confirm that they could perform it independently?",
+          "competency": "Mentorship and knowledge transfer",
+          "competency_type": "soft",
+          "target_gap": "Leadership and mentorship",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Leadership and mentorship is a weak match; the profile shows communication and support of diverse stakeholders but not formal mentoring.",
+          "source_evidence": [
+            "Gap matrix: Leadership and mentorship \u2014 weak_match",
+            "Explained data requirements for applications to teams and customers.",
+            "Supported school leadership and teaching staff."
+          ],
+          "priority": 0.56,
+          "weight": 0.3871
+        },
+        {
+          "question": "Describe a time you created or improved a tracking mechanism, database, or reporting process. How did you identify the need, involve users, validate the result, and measure improvement?",
+          "competency": "System improvement",
+          "competency_type": "soft",
+          "target_gap": "Software feature and system development",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "The profile supports a weak match through tracking mechanisms and office-efficiency improvements; this seeks evidence of end-to-end problem solving.",
+          "source_evidence": [
+            "Gap matrix: Software feature and system development \u2014 weak_match",
+            "Improved office efficiency through client correspondence, record tracking, and data communications.",
+            "Created and maintained databases, spreadsheets, and tracking mechanisms."
+          ],
+          "priority": 0.82,
+          "weight": 0.6896
+        },
+        {
+          "question": "Describe the Scala constructs and testing practices you would use to make a Spark transformation pipeline reliable, readable, and safe to rerun.",
+          "competency": "Scala data engineering",
+          "competency_type": "technical",
+          "target_gap": "Scala and Apache Spark",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Probes whether any claimed or developing Scala knowledge extends beyond surface-level Spark familiarity.",
+          "source_evidence": [
+            "Gap matrix: Scala and Apache Spark \u2014 missing",
+            "Data verification and testing"
+          ],
+          "priority": 0.95,
+          "weight": 0.9017
+        },
+        {
+          "question": "What trade-offs would you consider when choosing primary keys, foreign keys, indexes, and normalization levels for a transactional data store?",
+          "competency": "Database design trade-offs",
+          "competency_type": "technical",
+          "target_gap": "Database design and development",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Determines whether the partial database match includes core engineering design judgment.",
+          "source_evidence": [
+            "Gap matrix: Database design and development \u2014 partial_match",
+            "Relational databases"
+          ],
+          "priority": 0.75,
+          "weight": 0.3723
+        },
+        {
+          "question": "If you joined a team with much deeper Spark and Java expertise, how would you seek feedback, close skill gaps, and still contribute reliably in your first 90 days?",
+          "competency": "Self-directed learning",
+          "competency_type": "soft",
+          "target_gap": "Professional engineering",
+          "question_type": "Cultural/Motivational",
+          "difficulty": "mid",
+          "rationale": "Assesses self-motivation and realistic ramp-up planning given the significant engineering gaps relative to role requirements.",
+          "source_evidence": [
+            "Gap matrix: Professional engineering \u2014 missing",
+            "Motivated professional",
+            "Highly organized, proactive and punctual."
+          ],
+          "priority": 0.87,
+          "weight": 0.9258
+        },
+        {
+          "question": "How would you structure a Java service that validates an incoming record, persists it to a relational database, and returns useful errors to its caller?",
+          "competency": "Java application design",
+          "competency_type": "other",
+          "target_gap": "Java",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Assesses transferable software-design thinking against a required gap, including persistence and validation relevant to the candidate's data-quality experience.",
+          "source_evidence": [
+            "Gap matrix: Java \u2014 missing",
+            "Detected and resolved data quality issues and discrepancies.",
+            "Relational databases"
+          ],
+          "priority": 0.94,
+          "weight": 0.9253
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 3,
+      "selected_indices": [
+        19,
+        26,
+        23,
+        12,
+        16,
+        28,
+        25,
+        15,
+        22,
+        13
+      ],
+      "questions": [
+        {
+          "question": "This position asks for extensive professional engineering experience. How does your experience to date map to engineering work, and what concrete steps have you taken to build software-engineering capability?",
+          "competency": "Engineering readiness",
+          "competency_type": "soft",
+          "target_gap": "Professional engineering",
+          "question_type": "Cultural/Motivational",
+          "difficulty": "mid",
+          "rationale": "Directly addresses the documented absence of professional engineering experience while allowing the candidate to explain relevant preparation accurately.",
+          "source_evidence": [
+            "Gap matrix: Professional engineering \u2014 missing",
+            "Student Data Assistant, 01/2018-Current",
+            "Data management and relational databases"
+          ],
+          "priority": 0.98,
+          "weight": 0.9258
+        },
+        {
+          "question": "Describe a time you helped a colleague understand a data process, application requirement, or quality-control step. How did you confirm that they could perform it independently?",
+          "competency": "Mentorship and knowledge transfer",
+          "competency_type": "soft",
+          "target_gap": "Leadership and mentorship",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Leadership and mentorship is a weak match; the profile shows communication and support of diverse stakeholders but not formal mentoring.",
+          "source_evidence": [
+            "Gap matrix: Leadership and mentorship \u2014 weak_match",
+            "Explained data requirements for applications to teams and customers.",
+            "Supported school leadership and teaching staff."
+          ],
+          "priority": 0.56,
+          "weight": 0.3871
+        },
+        {
+          "question": "What do you understand by a SaaS product environment, and how would customer impact, release cadence, uptime, and support needs influence your approach to data changes?",
+          "competency": "SaaS product awareness",
+          "competency_type": "soft",
+          "target_gap": "SaaS product environment",
+          "question_type": "Cultural/Motivational",
+          "difficulty": "mid",
+          "rationale": "SaaS experience is missing, and this tests the candidate's understanding of the operating context rather than assuming prior product exposure.",
+          "source_evidence": [
+            "Gap matrix: SaaS product environment \u2014 missing",
+            "Customer service",
+            "Interacted with customers and addressed questions, concerns, and problems."
+          ],
+          "priority": 0.61,
+          "weight": 0.5585
+        },
+        {
+          "question": "You have maintained databases and spreadsheets. Describe the most complex data structure you have created or maintained: its entities, keys, users, update process, and controls for accuracy.",
+          "competency": "Database design foundations",
+          "competency_type": "domain",
+          "target_gap": "Database design and development",
+          "question_type": "Role-Specific",
+          "difficulty": "mid",
+          "rationale": "Database work is a partial match, so this clarifies depth of actual design responsibility versus maintenance.",
+          "source_evidence": [
+            "Gap matrix: Database design and development \u2014 partial_match",
+            "Created and maintained databases, spreadsheets, and tracking mechanisms."
+          ],
+          "priority": 0.77,
+          "weight": 0.3723
+        },
+        {
+          "question": "If stakeholders requested a new data-quality feature but gave conflicting requirements, how would you clarify scope, document decisions, and deliver an initial version?",
+          "competency": "Feature delivery",
+          "competency_type": "other",
+          "target_gap": "Software feature and system development",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Tests feature-development behaviors using the candidate's documented requirements communication and stakeholder coordination.",
+          "source_evidence": [
+            "Gap matrix: Software feature and system development \u2014 weak_match",
+            "Explained data requirements for applications to teams and customers.",
+            "Coordinated communications with staff, programmers, and engineers."
+          ],
+          "priority": 0.8,
+          "weight": 0.6896
+        },
+        {
+          "question": "In your Student Data Assistant role, describe a specific data-quality discrepancy you found and resolved. What evidence led you to it, who was involved, and what process change prevented recurrence?",
+          "competency": "Data quality ownership",
+          "competency_type": "soft",
+          "target_gap": "profile_probe",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Validates a central profile claim and reveals the candidate's analytical rigor, stakeholder communication, and preventive problem solving.",
+          "source_evidence": [
+            "Student Data Assistant, Billings Public Schools",
+            "Detected and resolved data quality issues and discrepancies.",
+            "Established administrative procedures to minimize errors and avoidable delays."
+          ],
+          "priority": 0.71,
+          "weight": 0.6373
+        },
+        {
+          "question": "Tell me about a time you had to balance several urgent requests while protecting the accuracy of important records. How did you prioritize, communicate trade-offs, and verify completion?",
+          "competency": "Delivery under pressure",
+          "competency_type": "soft",
+          "target_gap": "Software development life cycle",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Connects the candidate's proven multitasking and deadline management to the prioritization discipline needed in iterative software delivery.",
+          "source_evidence": [
+            "Gap matrix: Software development life cycle \u2014 missing",
+            "Manage several complex projects simultaneously.",
+            "Meets tight deadlines every time."
+          ],
+          "priority": 0.55,
+          "weight": 0.5575
+        },
+        {
+          "question": "Describe a time you created or improved a tracking mechanism, database, or reporting process. How did you identify the need, involve users, validate the result, and measure improvement?",
+          "competency": "System improvement",
+          "competency_type": "soft",
+          "target_gap": "Software feature and system development",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "The profile supports a weak match through tracking mechanisms and office-efficiency improvements; this seeks evidence of end-to-end problem solving.",
+          "source_evidence": [
+            "Gap matrix: Software feature and system development \u2014 weak_match",
+            "Improved office efficiency through client correspondence, record tracking, and data communications.",
+            "Created and maintained databases, spreadsheets, and tracking mechanisms."
+          ],
+          "priority": 0.82,
+          "weight": 0.6896
+        },
+        {
+          "question": "How would you design a secure cloud-based workflow to ingest files, transform data, store curated datasets, and restrict access to sensitive student-like records?",
+          "competency": "Cloud data architecture",
+          "competency_type": "other",
+          "target_gap": "Cloud technology",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Assesses cloud fundamentals and security judgment where the profile shows no direct cloud evidence but does show confidential-records experience.",
+          "source_evidence": [
+            "Gap matrix: Cloud technology \u2014 weak_match",
+            "Handled confidential student information carefully and discreetly.",
+            "Student records management"
+          ],
+          "priority": 0.62,
+          "weight": 0.4354
+        },
+        {
+          "question": "How would you model a relational database for students, enrollments, courses, and attendance while preventing duplicate identities and preserving historical changes?",
+          "competency": "Relational data modeling",
+          "competency_type": "technical",
+          "target_gap": "Database design and development",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests data modeling, integrity, and history management using the candidate's education-administration context.",
+          "source_evidence": [
+            "Gap matrix: Database design and development \u2014 partial_match",
+            "K-12 education administration",
+            "Student records management"
+          ],
+          "priority": 0.79,
+          "weight": 0.3723
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 4,
+      "selected_indices": [
+        5,
+        7,
+        19,
+        28,
+        1,
+        17,
+        13,
+        6,
+        10,
+        3
+      ],
+      "questions": [
+        {
+          "question": "What exposure have you had to Spring or Spring Boot, and how would you organize controllers, services, repositories, configuration, and tests in a small Spring application?",
+          "competency": "Spring Framework",
+          "competency_type": "technical",
+          "target_gap": "Spring Framework",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Spring is a required but undocumented capability; the question separates direct experience from conceptual knowledge.",
+          "source_evidence": [
+            "Gap matrix: Spring Framework \u2014 missing",
+            "Gap evidence matched to Relational databases"
+          ],
+          "priority": 0.98,
+          "weight": 0.9555
+        },
+        {
+          "question": "Design a REST API for submitting and retrieving data-quality exceptions. What endpoints, request validation, status codes, pagination, and error responses would you define?",
+          "competency": "REST API design",
+          "competency_type": "technical",
+          "target_gap": "REST API development",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests concrete API-design ability for a required capability absent from the profile, grounded in the candidate's documented quality-control work.",
+          "source_evidence": [
+            "Gap matrix: REST API development \u2014 missing",
+            "Performed routine data audits and quality-control activities."
+          ],
+          "priority": 0.97,
+          "weight": 0.9464
+        },
+        {
+          "question": "This position asks for extensive professional engineering experience. How does your experience to date map to engineering work, and what concrete steps have you taken to build software-engineering capability?",
+          "competency": "Engineering readiness",
+          "competency_type": "soft",
+          "target_gap": "Professional engineering",
+          "question_type": "Cultural/Motivational",
+          "difficulty": "mid",
+          "rationale": "Directly addresses the documented absence of professional engineering experience while allowing the candidate to explain relevant preparation accurately.",
+          "source_evidence": [
+            "Gap matrix: Professional engineering \u2014 missing",
+            "Student Data Assistant, 01/2018-Current",
+            "Data management and relational databases"
+          ],
+          "priority": 0.98,
+          "weight": 0.9258
+        },
+        {
+          "question": "In your Student Data Assistant role, describe a specific data-quality discrepancy you found and resolved. What evidence led you to it, who was involved, and what process change prevented recurrence?",
+          "competency": "Data quality ownership",
+          "competency_type": "soft",
+          "target_gap": "profile_probe",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "Validates a central profile claim and reveals the candidate's analytical rigor, stakeholder communication, and preventive problem solving.",
+          "source_evidence": [
+            "Student Data Assistant, Billings Public Schools",
+            "Detected and resolved data quality issues and discrepancies.",
+            "Established administrative procedures to minimize errors and avoidable delays."
+          ],
+          "priority": 0.71,
+          "weight": 0.6373
+        },
+        {
+          "question": "Suppose a daily Spark job must join large student-enrollment and attendance datasets and is running slowly. How would you diagnose the bottleneck and improve the job?",
+          "competency": "Spark performance tuning",
+          "competency_type": "other",
+          "target_gap": "Scala and Apache Spark",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests practical Spark reasoning for a high-priority missing requirement while using a domain familiar from the candidate's school-data background.",
+          "source_evidence": [
+            "Gap matrix: Scala and Apache Spark \u2014 missing",
+            "Performed data management, audits, analysis, reporting, and quality-control activities."
+          ],
+          "priority": 0.98,
+          "weight": 0.9017
+        },
+        {
+          "question": "Tell me about a relational database you have worked with. What queries, relationships, constraints, or reporting tasks did you personally handle?",
+          "competency": "Relational databases",
+          "competency_type": "technical",
+          "target_gap": "Relational databases",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "This is a documented strong match and should be validated for hands-on depth relevant to the role.",
+          "source_evidence": [
+            "Gap matrix: Relational databases \u2014 strong_match",
+            "Skills: Relational databases",
+            "Performed data management, audits, analysis, reporting, and quality-control activities."
+          ],
+          "priority": 0.72,
+          "weight": 0.1608
+        },
+        {
+          "question": "How would you model a relational database for students, enrollments, courses, and attendance while preventing duplicate identities and preserving historical changes?",
+          "competency": "Relational data modeling",
+          "competency_type": "technical",
+          "target_gap": "Database design and development",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests data modeling, integrity, and history management using the candidate's education-administration context.",
+          "source_evidence": [
+            "Gap matrix: Database design and development \u2014 partial_match",
+            "K-12 education administration",
+            "Student records management"
+          ],
+          "priority": 0.79,
+          "weight": 0.3723
+        },
+        {
+          "question": "A Spring REST endpoint begins returning intermittent 500 errors after a database change. Walk through how you would investigate, contain, and correct the issue.",
+          "competency": "Spring troubleshooting",
+          "competency_type": "other",
+          "target_gap": "Spring Framework",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Evaluates operational debugging discipline for a key missing framework requirement.",
+          "source_evidence": [
+            "Gap matrix: Spring Framework \u2014 missing",
+            "Detected and resolved data quality issues and discrepancies."
+          ],
+          "priority": 0.93,
+          "weight": 0.9555
+        },
+        {
+          "question": "A source system delivers duplicate, late-arriving, and occasionally malformed records. How would you design an ETL process to process them accurately and allow safe reprocessing?",
+          "competency": "ETL data quality",
+          "competency_type": "other",
+          "target_gap": "ETL data pipeline design and development",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Builds on the candidate's documented discrepancy-resolution experience while testing production ETL patterns.",
+          "source_evidence": [
+            "Gap matrix: ETL data pipeline design and development \u2014 weak_match",
+            "Detected and resolved data quality issues and discrepancies.",
+            "Data verification and testing"
+          ],
+          "priority": 0.89,
+          "weight": 0.6651
+        },
+        {
+          "question": "What Java applications or components have you built, maintained, or studied, and what was your specific contribution in each?",
+          "competency": "Java development",
+          "competency_type": "technical",
+          "target_gap": "Java",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Java is required and no Java development is documented, so this establishes the candidate's actual baseline without assuming experience.",
+          "source_evidence": [
+            "Gap matrix: Java \u2014 missing",
+            "Candidate technical skills list relational databases and data management, but not Java."
+          ],
+          "priority": 0.98,
+          "weight": 0.9253
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    }
+  ],
+  "selection_latency_ms": 0.07,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:47.823898+00:00"
+}

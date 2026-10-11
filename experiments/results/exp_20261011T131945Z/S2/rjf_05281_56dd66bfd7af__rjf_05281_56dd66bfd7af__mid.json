@@ -1,0 +1,224 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_05281_56dd66bfd7af",
+  "jd_id": "rjf_05281_56dd66bfd7af",
+  "pair_id": "rjf_05281_56dd66bfd7af",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_05281_56dd66bfd7af__rjf_05281_56dd66bfd7af__mid.json",
+  "n_requirements": 14,
+  "questions": [
+    {
+      "question": "This position asks for extensive professional engineering experience. How does your experience to date map to engineering work, and what concrete steps have you taken to build software-engineering capability?"
+    },
+    {
+      "question": "What AWS services have you used directly, if any? For each, describe the task, your level of access, and how you handled data security and cost awareness."
+    },
+    {
+      "question": "What hands-on experience, if any, do you have using Scala and Apache Spark? Please distinguish production work from coursework, self-study, or exposure through colleagues."
+    },
+    {
+      "question": "What do you understand by a SaaS product environment, and how would customer impact, release cadence, uptime, and support needs influence your approach to data changes?"
+    },
+    {
+      "question": "Using your experience with audits, reporting, and tracking mechanisms, describe how you would translate a business request into source-to-target mappings, transformation rules, data-quality checks, and acceptance criteria for a new ETL pipeline."
+    },
+    {
+      "question": "How would you design a secure cloud-based workflow to ingest files, transform data, store curated datasets, and restrict access to sensitive student-like records?"
+    },
+    {
+      "question": "If you joined a team with much deeper Spark and Java expertise, how would you seek feedback, close skill gaps, and still contribute reliably in your first 90 days?"
+    },
+    {
+      "question": "Tell me about a relational database you have worked with. What queries, relationships, constraints, or reporting tasks did you personally handle?"
+    },
+    {
+      "question": "Walk through how you would participate in the full lifecycle of a small data feature, from a stakeholder request through requirements, development, testing, deployment, monitoring, and post-release learning."
+    },
+    {
+      "question": "Suppose a daily Spark job must join large student-enrollment and attendance datasets and is running slowly. How would you diagnose the bottleneck and improve the job?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "This position asks for extensive professional engineering experience. How does your experience to date map to engineering work, and what concrete steps have you taken to build software-engineering capability?",
+      "competency": "Engineering readiness",
+      "competency_type": "soft",
+      "target_gap": "Professional engineering",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Directly addresses the documented absence of professional engineering experience while allowing the candidate to explain relevant preparation accurately.",
+      "source_evidence": [
+        "Gap matrix: Professional engineering \u2014 missing",
+        "Student Data Assistant, 01/2018-Current",
+        "Data management and relational databases"
+      ],
+      "priority": 0.98,
+      "weight": 0.9258
+    },
+    {
+      "question": "What AWS services have you used directly, if any? For each, describe the task, your level of access, and how you handled data security and cost awareness.",
+      "competency": "AWS experience",
+      "competency_type": "technical",
+      "target_gap": "AWS",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "AWS is preferred and only weakly matched; this verifies actual exposure rather than inferring it from database skills.",
+      "source_evidence": [
+        "Gap matrix: AWS \u2014 weak_match",
+        "Relational databases"
+      ],
+      "priority": 0.58,
+      "weight": 0.4412
+    },
+    {
+      "question": "What hands-on experience, if any, do you have using Scala and Apache Spark? Please distinguish production work from coursework, self-study, or exposure through colleagues.",
+      "competency": "Scala and Apache Spark",
+      "competency_type": "technical",
+      "target_gap": "Scala and Apache Spark",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Scala/Spark is a core required capability, but the profile documents database and spreadsheet work rather than distributed data processing.",
+      "source_evidence": [
+        "Gap matrix: Scala and Apache Spark \u2014 missing",
+        "Created and maintained databases, spreadsheets, and tracking mechanisms."
+      ],
+      "priority": 0.99,
+      "weight": 0.9017
+    },
+    {
+      "question": "What do you understand by a SaaS product environment, and how would customer impact, release cadence, uptime, and support needs influence your approach to data changes?",
+      "competency": "SaaS product awareness",
+      "competency_type": "soft",
+      "target_gap": "SaaS product environment",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "SaaS experience is missing, and this tests the candidate's understanding of the operating context rather than assuming prior product exposure.",
+      "source_evidence": [
+        "Gap matrix: SaaS product environment \u2014 missing",
+        "Customer service",
+        "Interacted with customers and addressed questions, concerns, and problems."
+      ],
+      "priority": 0.61,
+      "weight": 0.5585
+    },
+    {
+      "question": "Using your experience with audits, reporting, and tracking mechanisms, describe how you would translate a business request into source-to-target mappings, transformation rules, data-quality checks, and acceptance criteria for a new ETL pipeline.",
+      "competency": "ETL pipeline design",
+      "competency_type": "domain",
+      "target_gap": "ETL data pipeline design and development",
+      "question_type": "Role-Specific",
+      "difficulty": "hard",
+      "rationale": "The candidate has a weak match through analysis and data management; this tests whether that experience can extend to disciplined pipeline design.",
+      "source_evidence": [
+        "Gap matrix: ETL data pipeline design and development \u2014 weak_match",
+        "Data analysis and modeling",
+        "Explained data requirements for applications to teams and customers."
+      ],
+      "priority": 0.9,
+      "weight": 0.6651
+    },
+    {
+      "question": "How would you design a secure cloud-based workflow to ingest files, transform data, store curated datasets, and restrict access to sensitive student-like records?",
+      "competency": "Cloud data architecture",
+      "competency_type": "other",
+      "target_gap": "Cloud technology",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Assesses cloud fundamentals and security judgment where the profile shows no direct cloud evidence but does show confidential-records experience.",
+      "source_evidence": [
+        "Gap matrix: Cloud technology \u2014 weak_match",
+        "Handled confidential student information carefully and discreetly.",
+        "Student records management"
+      ],
+      "priority": 0.62,
+      "weight": 0.4354
+    },
+    {
+      "question": "If you joined a team with much deeper Spark and Java expertise, how would you seek feedback, close skill gaps, and still contribute reliably in your first 90 days?",
+      "competency": "Self-directed learning",
+      "competency_type": "soft",
+      "target_gap": "Professional engineering",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Assesses self-motivation and realistic ramp-up planning given the significant engineering gaps relative to role requirements.",
+      "source_evidence": [
+        "Gap matrix: Professional engineering \u2014 missing",
+        "Motivated professional",
+        "Highly organized, proactive and punctual."
+      ],
+      "priority": 0.87,
+      "weight": 0.9258
+    },
+    {
+      "question": "Tell me about a relational database you have worked with. What queries, relationships, constraints, or reporting tasks did you personally handle?",
+      "competency": "Relational databases",
+      "competency_type": "technical",
+      "target_gap": "Relational databases",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "This is a documented strong match and should be validated for hands-on depth relevant to the role.",
+      "source_evidence": [
+        "Gap matrix: Relational databases \u2014 strong_match",
+        "Skills: Relational databases",
+        "Performed data management, audits, analysis, reporting, and quality-control activities."
+      ],
+      "priority": 0.72,
+      "weight": 0.1608
+    },
+    {
+      "question": "Walk through how you would participate in the full lifecycle of a small data feature, from a stakeholder request through requirements, development, testing, deployment, monitoring, and post-release learning.",
+      "competency": "Software development life cycle",
+      "competency_type": "domain",
+      "target_gap": "Software development life cycle",
+      "question_type": "Role-Specific",
+      "difficulty": "hard",
+      "rationale": "The SDLC is an identified missing area; the question evaluates structured delivery thinking and ability to transfer existing requirements and quality practices.",
+      "source_evidence": [
+        "Gap matrix: Software development life cycle \u2014 missing",
+        "Requirements gathering",
+        "Data verification and testing"
+      ],
+      "priority": 0.64,
+      "weight": 0.5575
+    },
+    {
+      "question": "Suppose a daily Spark job must join large student-enrollment and attendance datasets and is running slowly. How would you diagnose the bottleneck and improve the job?",
+      "competency": "Spark performance tuning",
+      "competency_type": "other",
+      "target_gap": "Scala and Apache Spark",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests practical Spark reasoning for a high-priority missing requirement while using a domain familiar from the candidate's school-data background.",
+      "source_evidence": [
+        "Gap matrix: Scala and Apache Spark \u2014 missing",
+        "Performed data management, audits, analysis, reporting, and quality-control activities."
+      ],
+      "priority": 0.98,
+      "weight": 0.9017
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    19,
+    21,
+    0,
+    23,
+    9,
+    22,
+    27,
+    17,
+    24,
+    1
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.23,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:50.252496+00:00"
+}

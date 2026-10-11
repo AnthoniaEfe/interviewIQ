@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_04001_28009f597e20",
+  "jd_id": "rjf_04001_28009f597e20",
+  "pair_id": "rjf_04001_28009f597e20",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Your profile describes developing Selenium WebDriver/Page Object Model frameworks in Java at ADP. Walk us through the design of one framework component, including how you structured test data, handled reusable page interactions, and kept the suite maintainable as the application changed."
+    },
+    {
+      "question": "This role requires Oracle Cloud Fusion Financials, Oracle Integration Cloud, Oracle Cloud EPM, BI Publisher, and OTBI; these are not reflected in your profile. What direct exposure, if any, do you have to these platforms, and how would you build the capability to contribute effectively in your first 90 days?"
+    },
+    {
+      "question": "At Algorithm Computers, you used SQL for database testing, while this role requires Oracle or MS SQL for engineering and reporting. Describe a complex SQL query or data-validation problem you solved: what did you investigate, how did you validate the result, and what was the outcome?"
+    },
+    {
+      "question": "Tell us about a production patch, hot fix, or monthly release at ADP that you supported. How did you assess risk, decide the appropriate regression coverage, communicate release readiness, and respond if a critical issue emerged after deployment?"
+    },
+    {
+      "question": "Imagine an Oracle Cloud Financials integration begins producing duplicate transactions after a deployment. How would you triage the incident, isolate the likely failure point across the integration and downstream systems, establish root cause, and communicate status to technical and business stakeholders?"
+    },
+    {
+      "question": "You supervised and mentored three junior QA testers at ADP. Describe a specific instance where you raised a team member\u2019s capability or improved the team\u2019s quality practices while still meeting delivery commitments."
+    },
+    {
+      "question": "The position requires communicating solution requirements and architecture to both technical and non-technical stakeholders. Drawing on your requirements analysis, walkthroughs, and client demonstrations, how would you explain an integration design risk to a finance business partner and an engineer differently?"
+    },
+    {
+      "question": "You have worked in Agile teams using JIRA, including sprint planning, estimation, defect triage, and stand-ups, while this role also uses SAFe, Git, peer review, and CI/CD. What practices from your experience would transfer directly, and where would you need to adapt your approach?"
+    },
+    {
+      "question": "This is a move from senior QA work in e-commerce, banking, payments, and logistics into a senior Oracle Cloud engineering role with ownership for design, development, and support. What specifically motivates that transition, and how do you see your testing background strengthening your effectiveness as an engineer?"
+    },
+    {
+      "question": "A project team is planning to migrate a business-critical workflow to a cloud-centric environment and asks you to lead a work stream. How would you break down the analysis, architecture, integration, testing, deployment, and operational-support work; identify risks; and set accountability across the team?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 10802,
+    "output_tokens": 625,
+    "cached_tokens": 0,
+    "estimated_cost": 0.029104,
+    "latency_ms": 8110.73,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.029104,
+  "cost_cny": 0.19703408,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:04:05.874241+00:00",
+  "user_prompt_sha256": "f1d6d6fbdc8a55484f02954fe11e8387b53f8c478434a98977ba1fc11a5d4644"
+}

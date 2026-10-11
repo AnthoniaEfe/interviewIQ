@@ -1,0 +1,1098 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S0",
+  "selection_strategy": "random",
+  "generation_mode": null,
+  "profile_id": "rjf_06019_4cdecdd79857",
+  "jd_id": "rjf_06019_4cdecdd79857",
+  "pair_id": "rjf_06019_4cdecdd79857",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_06019_4cdecdd79857__rjf_06019_4cdecdd79857__mid.json",
+  "n_requirements": 38,
+  "questions": [
+    {
+      "question": "Describe any direct experience you have using Hibernate or another ORM. How did you model relationships, manage transactions, and avoid inefficient queries?"
+    },
+    {
+      "question": "Describe how you would connect a business requirement, technical design, code change, test evidence, deployment record, and production incident so that the team has end-to-end traceability."
+    },
+    {
+      "question": "If asked to build a Spring Boot REST endpoint for creating a warehouse inventory adjustment, how would you structure the controller, service, validation, error handling, and tests?"
+    },
+    {
+      "question": "How would you design a Jenkins CI/CD pipeline for a Java service so that it builds, runs unit and integration tests, publishes artifacts, deploys safely, and supports rollback?"
+    },
+    {
+      "question": "When reviewing a pull request for a Java service, what coding-standard issues would you look for, and how would you explain and prioritize your feedback?"
+    },
+    {
+      "question": "What Scrum or Agile ceremonies have you participated in, and how did you ensure acceptance criteria and testability were understood before work began?"
+    },
+    {
+      "question": "How would you use Confluence to maintain technical documentation for a service, including setup, architecture, API contracts, support procedures, and known operational risks?"
+    },
+    {
+      "question": "Your background is primarily senior QA and operations, while this role is senior software engineering. What motivates this transition, and what concrete plan would you follow to close development gaps in the first 90 days?"
+    },
+    {
+      "question": "What Oracle-specific experience do you have, such as writing or tuning Oracle SQL, working with execution plans, or managing database-specific behavior?"
+    },
+    {
+      "question": "You provided knowledge transfer to offshore team members and peers. How would you mentor a junior developer who repeatedly submits changes with insufficient tests or unclear implementation reasoning?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe any direct experience you have using Hibernate or another ORM. How did you model relationships, manage transactions, and avoid inefficient queries?",
+      "competency": "ORM persistence",
+      "competency_type": "technical",
+      "target_gap": "Hibernate",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Hibernate is required and has no direct supporting evidence in the candidate profile.",
+      "source_evidence": [
+        "Hibernate",
+        "SQL"
+      ],
+      "priority": 0.99,
+      "weight": 0.9447
+    },
+    {
+      "question": "Describe how you would connect a business requirement, technical design, code change, test evidence, deployment record, and production incident so that the team has end-to-end traceability.",
+      "competency": "Requirements traceability",
+      "competency_type": "technical",
+      "target_gap": "End-to-end traceability",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The candidate has checklist and defect-tracking experience, but the role needs traceability across the engineering lifecycle.",
+      "source_evidence": [
+        "Validated checklists before batch End of Day runs.",
+        "Documented defects using QC/ALM",
+        "End-to-end traceability"
+      ],
+      "priority": 0.82,
+      "weight": 0.6447
+    },
+    {
+      "question": "If asked to build a Spring Boot REST endpoint for creating a warehouse inventory adjustment, how would you structure the controller, service, validation, error handling, and tests?",
+      "competency": "Spring Boot",
+      "competency_type": "other",
+      "target_gap": "Spring Boot",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Tests an explicitly missing core framework skill in a realistic application-development scenario.",
+      "source_evidence": [
+        "Spring Boot",
+        "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+      ],
+      "priority": 0.99,
+      "weight": 0.9254
+    },
+    {
+      "question": "How would you design a Jenkins CI/CD pipeline for a Java service so that it builds, runs unit and integration tests, publishes artifacts, deploys safely, and supports rollback?",
+      "competency": "Jenkins CI/CD",
+      "competency_type": "other",
+      "target_gap": "Jenkins",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Jenkins is a missing required tool, and the question tests practical continuous-delivery capability.",
+      "source_evidence": [
+        "Jenkins",
+        "Performed post-release production sanity testing."
+      ],
+      "priority": 0.98,
+      "weight": 0.9374
+    },
+    {
+      "question": "When reviewing a pull request for a Java service, what coding-standard issues would you look for, and how would you explain and prioritize your feedback?",
+      "competency": "Coding standards",
+      "competency_type": "other",
+      "target_gap": "Coding standards",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Coding standards are explicitly missing and are central to the role's responsibility for sustainable code.",
+      "source_evidence": [
+        "Coding standards",
+        "Conducted test calendar reviews with development teams and clients."
+      ],
+      "priority": 0.98,
+      "weight": 0.9246
+    },
+    {
+      "question": "What Scrum or Agile ceremonies have you participated in, and how did you ensure acceptance criteria and testability were understood before work began?",
+      "competency": "Agile delivery",
+      "competency_type": "soft",
+      "target_gap": "Agile/Scrum",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "The profile lists Agile methodologies, and this verifies practical delivery experience and collaboration behaviors.",
+      "source_evidence": [
+        "Scrum/Agile Methodologies",
+        "Functional Requirements Documentation",
+        "Agile Methodologies"
+      ],
+      "priority": 0.65,
+      "weight": 0.2119
+    },
+    {
+      "question": "How would you use Confluence to maintain technical documentation for a service, including setup, architecture, API contracts, support procedures, and known operational risks?",
+      "competency": "Technical documentation",
+      "competency_type": "other",
+      "target_gap": "Confluence",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Confluence is missing and the role explicitly requires maintaining advanced technical documentation.",
+      "source_evidence": [
+        "Confluence",
+        "Prepared technical reports."
+      ],
+      "priority": 0.94,
+      "weight": 0.9416
+    },
+    {
+      "question": "Your background is primarily senior QA and operations, while this role is senior software engineering. What motivates this transition, and what concrete plan would you follow to close development gaps in the first 90 days?",
+      "competency": "Engineering transition motivation",
+      "competency_type": "soft",
+      "target_gap": "Software development experience",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Directly examines the documented career-background mismatch and the candidate's readiness to move from testing-focused work into hands-on software development.",
+      "source_evidence": [
+        "Senior Software Quality Assurance Tester",
+        "QA Tester (Senior SME)",
+        "Software development experience"
+      ],
+      "priority": 0.93,
+      "weight": 0.6748
+    },
+    {
+      "question": "What Oracle-specific experience do you have, such as writing or tuning Oracle SQL, working with execution plans, or managing database-specific behavior?",
+      "competency": "Oracle",
+      "competency_type": "technical",
+      "target_gap": "Oracle",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Oracle is required but is not named in the profile; this distinguishes transferable SQL exposure from Oracle proficiency.",
+      "source_evidence": [
+        "Oracle",
+        "SQL"
+      ],
+      "priority": 0.87,
+      "weight": 0.7006
+    },
+    {
+      "question": "You provided knowledge transfer to offshore team members and peers. How would you mentor a junior developer who repeatedly submits changes with insufficient tests or unclear implementation reasoning?",
+      "competency": "Developer mentoring",
+      "competency_type": "other",
+      "target_gap": "Leadership and mentoring",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Builds on proven knowledge-transfer experience while testing the role's requirement to coach developers on engineering practices.",
+      "source_evidence": [
+        "Provided knowledge transfer to offshore team members and peers.",
+        "Leadership in Testing"
+      ],
+      "priority": 0.75,
+      "weight": 0.3737
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    2,
+    17,
+    1,
+    15,
+    10,
+    24,
+    19,
+    29,
+    5,
+    22
+  ],
+  "repeats": [
+    {
+      "repeat": 0,
+      "selected_indices": [
+        2,
+        17,
+        1,
+        15,
+        10,
+        24,
+        19,
+        29,
+        5,
+        22
+      ],
+      "questions": [
+        {
+          "question": "Describe any direct experience you have using Hibernate or another ORM. How did you model relationships, manage transactions, and avoid inefficient queries?",
+          "competency": "ORM persistence",
+          "competency_type": "technical",
+          "target_gap": "Hibernate",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Hibernate is required and has no direct supporting evidence in the candidate profile.",
+          "source_evidence": [
+            "Hibernate",
+            "SQL"
+          ],
+          "priority": 0.99,
+          "weight": 0.9447
+        },
+        {
+          "question": "Describe how you would connect a business requirement, technical design, code change, test evidence, deployment record, and production incident so that the team has end-to-end traceability.",
+          "competency": "Requirements traceability",
+          "competency_type": "technical",
+          "target_gap": "End-to-end traceability",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The candidate has checklist and defect-tracking experience, but the role needs traceability across the engineering lifecycle.",
+          "source_evidence": [
+            "Validated checklists before batch End of Day runs.",
+            "Documented defects using QC/ALM",
+            "End-to-end traceability"
+          ],
+          "priority": 0.82,
+          "weight": 0.6447
+        },
+        {
+          "question": "If asked to build a Spring Boot REST endpoint for creating a warehouse inventory adjustment, how would you structure the controller, service, validation, error handling, and tests?",
+          "competency": "Spring Boot",
+          "competency_type": "other",
+          "target_gap": "Spring Boot",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests an explicitly missing core framework skill in a realistic application-development scenario.",
+          "source_evidence": [
+            "Spring Boot",
+            "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+          ],
+          "priority": 0.99,
+          "weight": 0.9254
+        },
+        {
+          "question": "How would you design a Jenkins CI/CD pipeline for a Java service so that it builds, runs unit and integration tests, publishes artifacts, deploys safely, and supports rollback?",
+          "competency": "Jenkins CI/CD",
+          "competency_type": "other",
+          "target_gap": "Jenkins",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Jenkins is a missing required tool, and the question tests practical continuous-delivery capability.",
+          "source_evidence": [
+            "Jenkins",
+            "Performed post-release production sanity testing."
+          ],
+          "priority": 0.98,
+          "weight": 0.9374
+        },
+        {
+          "question": "When reviewing a pull request for a Java service, what coding-standard issues would you look for, and how would you explain and prioritize your feedback?",
+          "competency": "Coding standards",
+          "competency_type": "other",
+          "target_gap": "Coding standards",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Coding standards are explicitly missing and are central to the role's responsibility for sustainable code.",
+          "source_evidence": [
+            "Coding standards",
+            "Conducted test calendar reviews with development teams and clients."
+          ],
+          "priority": 0.98,
+          "weight": 0.9246
+        },
+        {
+          "question": "What Scrum or Agile ceremonies have you participated in, and how did you ensure acceptance criteria and testability were understood before work began?",
+          "competency": "Agile delivery",
+          "competency_type": "soft",
+          "target_gap": "Agile/Scrum",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "The profile lists Agile methodologies, and this verifies practical delivery experience and collaboration behaviors.",
+          "source_evidence": [
+            "Scrum/Agile Methodologies",
+            "Functional Requirements Documentation",
+            "Agile Methodologies"
+          ],
+          "priority": 0.65,
+          "weight": 0.2119
+        },
+        {
+          "question": "How would you use Confluence to maintain technical documentation for a service, including setup, architecture, API contracts, support procedures, and known operational risks?",
+          "competency": "Technical documentation",
+          "competency_type": "other",
+          "target_gap": "Confluence",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Confluence is missing and the role explicitly requires maintaining advanced technical documentation.",
+          "source_evidence": [
+            "Confluence",
+            "Prepared technical reports."
+          ],
+          "priority": 0.94,
+          "weight": 0.9416
+        },
+        {
+          "question": "Your background is primarily senior QA and operations, while this role is senior software engineering. What motivates this transition, and what concrete plan would you follow to close development gaps in the first 90 days?",
+          "competency": "Engineering transition motivation",
+          "competency_type": "soft",
+          "target_gap": "Software development experience",
+          "question_type": "Cultural/Motivational",
+          "difficulty": "mid",
+          "rationale": "Directly examines the documented career-background mismatch and the candidate's readiness to move from testing-focused work into hands-on software development.",
+          "source_evidence": [
+            "Senior Software Quality Assurance Tester",
+            "QA Tester (Senior SME)",
+            "Software development experience"
+          ],
+          "priority": 0.93,
+          "weight": 0.6748
+        },
+        {
+          "question": "What Oracle-specific experience do you have, such as writing or tuning Oracle SQL, working with execution plans, or managing database-specific behavior?",
+          "competency": "Oracle",
+          "competency_type": "technical",
+          "target_gap": "Oracle",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Oracle is required but is not named in the profile; this distinguishes transferable SQL exposure from Oracle proficiency.",
+          "source_evidence": [
+            "Oracle",
+            "SQL"
+          ],
+          "priority": 0.87,
+          "weight": 0.7006
+        },
+        {
+          "question": "You provided knowledge transfer to offshore team members and peers. How would you mentor a junior developer who repeatedly submits changes with insufficient tests or unclear implementation reasoning?",
+          "competency": "Developer mentoring",
+          "competency_type": "other",
+          "target_gap": "Leadership and mentoring",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Builds on proven knowledge-transfer experience while testing the role's requirement to coach developers on engineering practices.",
+          "source_evidence": [
+            "Provided knowledge transfer to offshore team members and peers.",
+            "Leadership in Testing"
+          ],
+          "priority": 0.75,
+          "weight": 0.3737
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 1,
+      "selected_indices": [
+        10,
+        23,
+        1,
+        24,
+        14,
+        13,
+        0,
+        7,
+        9,
+        17
+      ],
+      "questions": [
+        {
+          "question": "When reviewing a pull request for a Java service, what coding-standard issues would you look for, and how would you explain and prioritize your feedback?",
+          "competency": "Coding standards",
+          "competency_type": "other",
+          "target_gap": "Coding standards",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Coding standards are explicitly missing and are central to the role's responsibility for sustainable code.",
+          "source_evidence": [
+            "Coding standards",
+            "Conducted test calendar reviews with development teams and clients."
+          ],
+          "priority": 0.98,
+          "weight": 0.9246
+        },
+        {
+          "question": "How do you tailor the same technical incident update for an engineer actively debugging it, a product stakeholder, and a senior manager?",
+          "competency": "Cross-level communication",
+          "competency_type": "other",
+          "target_gap": "Team communication",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Assesses the candidate's partial communication match in the multiple-audience context required by the role.",
+          "source_evidence": [
+            "Communicated effectively with developers.",
+            "Communication"
+          ],
+          "priority": 0.69,
+          "weight": 0.3472
+        },
+        {
+          "question": "If asked to build a Spring Boot REST endpoint for creating a warehouse inventory adjustment, how would you structure the controller, service, validation, error handling, and tests?",
+          "competency": "Spring Boot",
+          "competency_type": "other",
+          "target_gap": "Spring Boot",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests an explicitly missing core framework skill in a realistic application-development scenario.",
+          "source_evidence": [
+            "Spring Boot",
+            "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+          ],
+          "priority": 0.99,
+          "weight": 0.9254
+        },
+        {
+          "question": "What Scrum or Agile ceremonies have you participated in, and how did you ensure acceptance criteria and testability were understood before work began?",
+          "competency": "Agile delivery",
+          "competency_type": "soft",
+          "target_gap": "Agile/Scrum",
+          "question_type": "Behavioural",
+          "difficulty": "mid",
+          "rationale": "The profile lists Agile methodologies, and this verifies practical delivery experience and collaboration behaviors.",
+          "source_evidence": [
+            "Scrum/Agile Methodologies",
+            "Functional Requirements Documentation",
+            "Agile Methodologies"
+          ],
+          "priority": 0.65,
+          "weight": 0.2119
+        },
+        {
+          "question": "Describe the automation you created with QTP for Amdocs iCare. What did it cover, how was it maintained, and what limitations would you address when moving toward developer-owned automated tests?",
+          "competency": "Automation strategy",
+          "competency_type": "technical",
+          "target_gap": "Automation",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Uses a documented strength to assess automation depth and transferability to an engineering role.",
+          "source_evidence": [
+            "Created Amdocs iCare automation test cases using QTP.",
+            "Test Automation"
+          ],
+          "priority": 0.76,
+          "weight": 0.365
+        },
+        {
+          "question": "What is your experience with build and release pipelines, and how would you add automated quality gates before a change can reach production?",
+          "competency": "Build and release engineering",
+          "competency_type": "technical",
+          "target_gap": "Build and release engineering",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The candidate has strong release-validation exposure, but this tests whether it extends to building and operating release processes.",
+          "source_evidence": [
+            "Performed post-release production sanity testing.",
+            "Tested hotfix packages and production changes.",
+            "Certified patches for production."
+          ],
+          "priority": 0.8,
+          "weight": 0.3836
+        },
+        {
+          "question": "What hands-on Java development experience do you have beyond testing Java-based applications, and can you walk through a class or service you personally implemented?",
+          "competency": "Java development",
+          "competency_type": "technical",
+          "target_gap": "Java",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Java is a core requirement, while the profile primarily evidences QA work rather than implemented application code.",
+          "source_evidence": [
+            "Functional Testing",
+            "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+          ],
+          "priority": 0.96,
+          "weight": 0.7177
+        },
+        {
+          "question": "Have you worked with a NoSQL datastore? If not, how would you decide whether an inventory service should use a relational model or a document model?",
+          "competency": "NoSQL data modeling",
+          "competency_type": "other",
+          "target_gap": "NoSQL databases",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Assesses an explicitly missing required competency and the candidate's engineering judgment when direct experience is limited.",
+          "source_evidence": [
+            "NoSQL databases",
+            "Data interface and migration testing"
+          ],
+          "priority": 0.97,
+          "weight": 0.9395
+        },
+        {
+          "question": "What software engineering practices would you establish first on a service with inconsistent quality, covering design, testing, observability, documentation, and technical debt?",
+          "competency": "Engineering best practices",
+          "competency_type": "technical",
+          "target_gap": "Software engineering best practices",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Probes breadth of engineering practice beyond the candidate's documented testing processes.",
+          "source_evidence": [
+            "Created and executed software test plans, test cases, and scripts.",
+            "Test Process Design"
+          ],
+          "priority": 0.9,
+          "weight": 0.679
+        },
+        {
+          "question": "Describe how you would connect a business requirement, technical design, code change, test evidence, deployment record, and production incident so that the team has end-to-end traceability.",
+          "competency": "Requirements traceability",
+          "competency_type": "technical",
+          "target_gap": "End-to-end traceability",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The candidate has checklist and defect-tracking experience, but the role needs traceability across the engineering lifecycle.",
+          "source_evidence": [
+            "Validated checklists before batch End of Day runs.",
+            "Documented defects using QC/ALM",
+            "End-to-end traceability"
+          ],
+          "priority": 0.82,
+          "weight": 0.6447
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 2,
+      "selected_indices": [
+        10,
+        6,
+        18,
+        16,
+        26,
+        15,
+        2,
+        14,
+        27,
+        4
+      ],
+      "questions": [
+        {
+          "question": "When reviewing a pull request for a Java service, what coding-standard issues would you look for, and how would you explain and prioritize your feedback?",
+          "competency": "Coding standards",
+          "competency_type": "other",
+          "target_gap": "Coding standards",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Coding standards are explicitly missing and are central to the role's responsibility for sustainable code.",
+          "source_evidence": [
+            "Coding standards",
+            "Conducted test calendar reviews with development teams and clients."
+          ],
+          "priority": 0.98,
+          "weight": 0.9246
+        },
+        {
+          "question": "What PostgreSQL experience do you have, and how would you diagnose a slow query in a PostgreSQL-backed application?",
+          "competency": "PostgreSQL",
+          "competency_type": "technical",
+          "target_gap": "PostgreSQL",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "PostgreSQL is a required platform with no direct profile evidence.",
+          "source_evidence": [
+            "PostgreSQL",
+            "SQL"
+          ],
+          "priority": 0.88,
+          "weight": 0.7186
+        },
+        {
+          "question": "What direct experience do you have with JIRA and Confluence? If you have used other tools, describe how you would document an architectural decision and link it to implementation and delivery work.",
+          "competency": "Engineering collaboration tools",
+          "competency_type": "technical",
+          "target_gap": "JIRA",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "JIRA is missing, and the role requires work tracking and advanced technical documentation.",
+          "source_evidence": [
+            "JIRA",
+            "QC/ALM",
+            "Documented defects using QC/ALM"
+          ],
+          "priority": 0.95,
+          "weight": 0.9368
+        },
+        {
+          "question": "What does DevOps mean in day-to-day practice for an engineer who owns a production application, and which operational signals would you monitor after a release?",
+          "competency": "DevOps ownership",
+          "competency_type": "technical",
+          "target_gap": "DevOps",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The candidate has production testing and operations exposure, making this a useful probe of how that experience translates into engineering ownership.",
+          "source_evidence": [
+            "Performed post-release production sanity testing.",
+            "Managed batch operations and critical billing runs.",
+            "DevOps"
+          ],
+          "priority": 0.89,
+          "weight": 0.7248
+        },
+        {
+          "question": "How would you decompose a warehouse-management capability into microservices, and what trade-offs would you consider around service boundaries, data ownership, reliability, and observability?",
+          "competency": "Microservice architecture",
+          "competency_type": "technical",
+          "target_gap": "Microservice architecture",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests an explicitly missing preferred architecture competency relevant to the full-stack application context.",
+          "source_evidence": [
+            "Microservice architecture",
+            "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+          ],
+          "priority": 0.68,
+          "weight": 0.5595
+        },
+        {
+          "question": "How would you design a Jenkins CI/CD pipeline for a Java service so that it builds, runs unit and integration tests, publishes artifacts, deploys safely, and supports rollback?",
+          "competency": "Jenkins CI/CD",
+          "competency_type": "other",
+          "target_gap": "Jenkins",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Jenkins is a missing required tool, and the question tests practical continuous-delivery capability.",
+          "source_evidence": [
+            "Jenkins",
+            "Performed post-release production sanity testing."
+          ],
+          "priority": 0.98,
+          "weight": 0.9374
+        },
+        {
+          "question": "Describe any direct experience you have using Hibernate or another ORM. How did you model relationships, manage transactions, and avoid inefficient queries?",
+          "competency": "ORM persistence",
+          "competency_type": "technical",
+          "target_gap": "Hibernate",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Hibernate is required and has no direct supporting evidence in the candidate profile.",
+          "source_evidence": [
+            "Hibernate",
+            "SQL"
+          ],
+          "priority": 0.99,
+          "weight": 0.9447
+        },
+        {
+          "question": "Describe the automation you created with QTP for Amdocs iCare. What did it cover, how was it maintained, and what limitations would you address when moving toward developer-owned automated tests?",
+          "competency": "Automation strategy",
+          "competency_type": "technical",
+          "target_gap": "Automation",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Uses a documented strength to assess automation depth and transferability to an engineering role.",
+          "source_evidence": [
+            "Created Amdocs iCare automation test cases using QTP.",
+            "Test Automation"
+          ],
+          "priority": 0.76,
+          "weight": 0.365
+        },
+        {
+          "question": "What exposure have you had to containers or Kubernetes? If you needed to support a failing containerized service, what information would you gather before escalating or implementing a fix?",
+          "competency": "Container operations",
+          "competency_type": "other",
+          "target_gap": "Kubernetes",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Kubernetes is missing; the scenario leverages the candidate's documented operations triage background without assuming prior container experience.",
+          "source_evidence": [
+            "Kubernetes",
+            "Performed first-level triage of production job failures.",
+            "Checked job logs."
+          ],
+          "priority": 0.69,
+          "weight": 0.5662
+        },
+        {
+          "question": "How have you used SQL databases in testing, and what experience do you have designing schemas, indexes, constraints, or transaction-safe data changes?",
+          "competency": "Relational databases",
+          "competency_type": "technical",
+          "target_gap": "SQL databases",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The profile supports SQL use but not database design or engineering ownership needed in the role.",
+          "source_evidence": [
+            "SQL",
+            "Performed data creation and analysis"
+          ],
+          "priority": 0.81,
+          "weight": 0.3516
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 3,
+      "selected_indices": [
+        19,
+        26,
+        23,
+        12,
+        16,
+        28,
+        25,
+        15,
+        22,
+        13
+      ],
+      "questions": [
+        {
+          "question": "How would you use Confluence to maintain technical documentation for a service, including setup, architecture, API contracts, support procedures, and known operational risks?",
+          "competency": "Technical documentation",
+          "competency_type": "other",
+          "target_gap": "Confluence",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Confluence is missing and the role explicitly requires maintaining advanced technical documentation.",
+          "source_evidence": [
+            "Confluence",
+            "Prepared technical reports."
+          ],
+          "priority": 0.94,
+          "weight": 0.9416
+        },
+        {
+          "question": "How would you decompose a warehouse-management capability into microservices, and what trade-offs would you consider around service boundaries, data ownership, reliability, and observability?",
+          "competency": "Microservice architecture",
+          "competency_type": "technical",
+          "target_gap": "Microservice architecture",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "Tests an explicitly missing preferred architecture competency relevant to the full-stack application context.",
+          "source_evidence": [
+            "Microservice architecture",
+            "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+          ],
+          "priority": 0.68,
+          "weight": 0.5595
+        },
+        {
+          "question": "How do you tailor the same technical incident update for an engineer actively debugging it, a product stakeholder, and a senior manager?",
+          "competency": "Cross-level communication",
+          "competency_type": "other",
+          "target_gap": "Team communication",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Assesses the candidate's partial communication match in the multiple-audience context required by the role.",
+          "source_evidence": [
+            "Communicated effectively with developers.",
+            "Communication"
+          ],
+          "priority": 0.69,
+          "weight": 0.3472
+        },
+        {
+          "question": "Explain the Git workflow you would use to deliver an urgent production fix while preserving review quality, traceability, and a safe path to rollback.",
+          "competency": "Git workflow",
+          "competency_type": "other",
+          "target_gap": "Git",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Git is missing from the profile and is essential for safe collaborative engineering and production support.",
+          "source_evidence": [
+            "Git",
+            "Tested hotfix packages and production changes.",
+            "Certified patches for production."
+          ],
+          "priority": 0.98,
+          "weight": 0.9254
+        },
+        {
+          "question": "What does DevOps mean in day-to-day practice for an engineer who owns a production application, and which operational signals would you monitor after a release?",
+          "competency": "DevOps ownership",
+          "competency_type": "technical",
+          "target_gap": "DevOps",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The candidate has production testing and operations exposure, making this a useful probe of how that experience translates into engineering ownership.",
+          "source_evidence": [
+            "Performed post-release production sanity testing.",
+            "Managed batch operations and critical billing runs.",
+            "DevOps"
+          ],
+          "priority": 0.89,
+          "weight": 0.7248
+        },
+        {
+          "question": "This role may require nights or weekends for releases or production support. Based on your experience managing critical billing runs and production testing, how do you prepare for and communicate during off-hours support?",
+          "competency": "Production support readiness",
+          "competency_type": "soft",
+          "target_gap": "Flexible schedule",
+          "question_type": "Cultural/Motivational",
+          "difficulty": "mid",
+          "rationale": "Tests availability and operational approach using the candidate's directly relevant batch and production-support experience.",
+          "source_evidence": [
+            "Managed batch operations and critical billing runs.",
+            "Participated in production testing.",
+            "Flexible schedule"
+          ],
+          "priority": 0.78,
+          "weight": 0.6876
+        },
+        {
+          "question": "What JavaScript experience do you have, and how would you debug a defect where a web UI displays inventory data differently from the API response?",
+          "competency": "JavaScript debugging",
+          "competency_type": "technical",
+          "target_gap": "JavaScript",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "JavaScript is a role technology with no direct evidence, while the candidate does have web-application and API testing exposure to anchor the scenario.",
+          "source_evidence": [
+            "JavaScript",
+            "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+          ],
+          "priority": 0.67,
+          "weight": 0.5548
+        },
+        {
+          "question": "How would you design a Jenkins CI/CD pipeline for a Java service so that it builds, runs unit and integration tests, publishes artifacts, deploys safely, and supports rollback?",
+          "competency": "Jenkins CI/CD",
+          "competency_type": "other",
+          "target_gap": "Jenkins",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Jenkins is a missing required tool, and the question tests practical continuous-delivery capability.",
+          "source_evidence": [
+            "Jenkins",
+            "Performed post-release production sanity testing."
+          ],
+          "priority": 0.98,
+          "weight": 0.9374
+        },
+        {
+          "question": "You provided knowledge transfer to offshore team members and peers. How would you mentor a junior developer who repeatedly submits changes with insufficient tests or unclear implementation reasoning?",
+          "competency": "Developer mentoring",
+          "competency_type": "other",
+          "target_gap": "Leadership and mentoring",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Builds on proven knowledge-transfer experience while testing the role's requirement to coach developers on engineering practices.",
+          "source_evidence": [
+            "Provided knowledge transfer to offshore team members and peers.",
+            "Leadership in Testing"
+          ],
+          "priority": 0.75,
+          "weight": 0.3737
+        },
+        {
+          "question": "What is your experience with build and release pipelines, and how would you add automated quality gates before a change can reach production?",
+          "competency": "Build and release engineering",
+          "competency_type": "technical",
+          "target_gap": "Build and release engineering",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The candidate has strong release-validation exposure, but this tests whether it extends to building and operating release processes.",
+          "source_evidence": [
+            "Performed post-release production sanity testing.",
+            "Tested hotfix packages and production changes.",
+            "Certified patches for production."
+          ],
+          "priority": 0.8,
+          "weight": 0.3836
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    },
+    {
+      "repeat": 4,
+      "selected_indices": [
+        5,
+        7,
+        19,
+        28,
+        1,
+        17,
+        13,
+        6,
+        10,
+        3
+      ],
+      "questions": [
+        {
+          "question": "What Oracle-specific experience do you have, such as writing or tuning Oracle SQL, working with execution plans, or managing database-specific behavior?",
+          "competency": "Oracle",
+          "competency_type": "technical",
+          "target_gap": "Oracle",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Oracle is required but is not named in the profile; this distinguishes transferable SQL exposure from Oracle proficiency.",
+          "source_evidence": [
+            "Oracle",
+            "SQL"
+          ],
+          "priority": 0.87,
+          "weight": 0.7006
+        },
+        {
+          "question": "Have you worked with a NoSQL datastore? If not, how would you decide whether an inventory service should use a relational model or a document model?",
+          "competency": "NoSQL data modeling",
+          "competency_type": "other",
+          "target_gap": "NoSQL databases",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Assesses an explicitly missing required competency and the candidate's engineering judgment when direct experience is limited.",
+          "source_evidence": [
+            "NoSQL databases",
+            "Data interface and migration testing"
+          ],
+          "priority": 0.97,
+          "weight": 0.9395
+        },
+        {
+          "question": "How would you use Confluence to maintain technical documentation for a service, including setup, architecture, API contracts, support procedures, and known operational risks?",
+          "competency": "Technical documentation",
+          "competency_type": "other",
+          "target_gap": "Confluence",
+          "question_type": "Situational",
+          "difficulty": "mid",
+          "rationale": "Confluence is missing and the role explicitly requires maintaining advanced technical documentation.",
+          "source_evidence": [
+            "Confluence",
+            "Prepared technical reports."
+          ],
+          "priority": 0.94,
+          "weight": 0.9416
+        },
+        {
+          "question": "This role may require nights or weekends for releases or production support. Based on your experience managing critical billing runs and production testing, how do you prepare for and communicate during off-hours support?",
+          "competency": "Production support readiness",
+          "competency_type": "soft",
+          "target_gap": "Flexible schedule",
+          "question_type": "Cultural/Motivational",
+          "difficulty": "mid",
+          "rationale": "Tests availability and operational approach using the candidate's directly relevant batch and production-support experience.",
+          "source_evidence": [
+            "Managed batch operations and critical billing runs.",
+            "Participated in production testing.",
+            "Flexible schedule"
+          ],
+          "priority": 0.78,
+          "weight": 0.6876
+        },
+        {
+          "question": "If asked to build a Spring Boot REST endpoint for creating a warehouse inventory adjustment, how would you structure the controller, service, validation, error handling, and tests?",
+          "competency": "Spring Boot",
+          "competency_type": "other",
+          "target_gap": "Spring Boot",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Tests an explicitly missing core framework skill in a realistic application-development scenario.",
+          "source_evidence": [
+            "Spring Boot",
+            "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+          ],
+          "priority": 0.99,
+          "weight": 0.9254
+        },
+        {
+          "question": "Describe how you would connect a business requirement, technical design, code change, test evidence, deployment record, and production incident so that the team has end-to-end traceability.",
+          "competency": "Requirements traceability",
+          "competency_type": "technical",
+          "target_gap": "End-to-end traceability",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "The candidate has checklist and defect-tracking experience, but the role needs traceability across the engineering lifecycle.",
+          "source_evidence": [
+            "Validated checklists before batch End of Day runs.",
+            "Documented defects using QC/ALM",
+            "End-to-end traceability"
+          ],
+          "priority": 0.82,
+          "weight": 0.6447
+        },
+        {
+          "question": "What is your experience with build and release pipelines, and how would you add automated quality gates before a change can reach production?",
+          "competency": "Build and release engineering",
+          "competency_type": "technical",
+          "target_gap": "Build and release engineering",
+          "question_type": "Technical",
+          "difficulty": "hard",
+          "rationale": "The candidate has strong release-validation exposure, but this tests whether it extends to building and operating release processes.",
+          "source_evidence": [
+            "Performed post-release production sanity testing.",
+            "Tested hotfix packages and production changes.",
+            "Certified patches for production."
+          ],
+          "priority": 0.8,
+          "weight": 0.3836
+        },
+        {
+          "question": "What PostgreSQL experience do you have, and how would you diagnose a slow query in a PostgreSQL-backed application?",
+          "competency": "PostgreSQL",
+          "competency_type": "technical",
+          "target_gap": "PostgreSQL",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "PostgreSQL is a required platform with no direct profile evidence.",
+          "source_evidence": [
+            "PostgreSQL",
+            "SQL"
+          ],
+          "priority": 0.88,
+          "weight": 0.7186
+        },
+        {
+          "question": "When reviewing a pull request for a Java service, what coding-standard issues would you look for, and how would you explain and prioritize your feedback?",
+          "competency": "Coding standards",
+          "competency_type": "other",
+          "target_gap": "Coding standards",
+          "question_type": "Situational",
+          "difficulty": "hard",
+          "rationale": "Coding standards are explicitly missing and are central to the role's responsibility for sustainable code.",
+          "source_evidence": [
+            "Coding standards",
+            "Conducted test calendar reviews with development teams and clients."
+          ],
+          "priority": 0.98,
+          "weight": 0.9246
+        },
+        {
+          "question": "You have listed SQL. Describe a query you wrote or amended to investigate a production or test-data issue: what tables were involved, what was the query logic, and how did you validate the result?",
+          "competency": "SQL querying",
+          "competency_type": "technical",
+          "target_gap": "Database query writing and modification",
+          "question_type": "Technical",
+          "difficulty": "mid",
+          "rationale": "Clarifies the depth of the candidate's SQL experience, which is evidenced but not specifically as query authoring or modification.",
+          "source_evidence": [
+            "SQL",
+            "Performed data creation and analysis",
+            "Analyzed and interpreted test data and prepared technical reports."
+          ],
+          "priority": 0.88,
+          "weight": 0.6678
+        }
+      ],
+      "n_selected": 10,
+      "n_redundant_pairs_final": 0,
+      "backfilled": false,
+      "backfill_count": 0,
+      "notes": []
+    }
+  ],
+  "selection_latency_ms": 0.07,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:48.255654+00:00"
+}

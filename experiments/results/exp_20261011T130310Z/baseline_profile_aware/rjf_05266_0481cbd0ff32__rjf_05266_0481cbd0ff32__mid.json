@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_05266_0481cbd0ff32",
+  "jd_id": "rjf_05266_0481cbd0ff32",
+  "pair_id": "rjf_05266_0481cbd0ff32",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Technical: In your Project Accountant role at Jacobs Engineering, walk us through how you performed monthly bank reconciliations and investigated any differences between the bank statement, cash records, and supporting documents."
+    },
+    {
+      "question": "Technical: This role requires recording and reconciling general-ledger transactions under U.S. GAAP. What experience do you have applying U.S. GAAP, and how would you determine the appropriate treatment for an unfamiliar transaction?"
+    },
+    {
+      "question": "Role-Specific: You reviewed supplier and subcontractor invoices and coded payments to GL accounts at Allied Universal. How did you validate an invoice before payment, select the account coding, and ensure that documentation was complete?"
+    },
+    {
+      "question": "Situational: During month-end close, you identify that a material vendor invoice was received after the reporting cutoff and has not been recorded. How would you assess whether an accrual or other adjustment is needed, document your conclusion, and communicate it to the reviewer?"
+    },
+    {
+      "question": "Technical: You prepared cash-flow forecasts and monthly budget requests at Jacobs. Describe the inputs, assumptions, and checks you used, and explain how you would present a variance between forecasted and actual cash flow to a client or manager."
+    },
+    {
+      "question": "Behavioural: Tell us about a time when your review of an accounting document, transaction, or payment request uncovered missing or inconsistent support. What actions did you take, and what was the outcome?"
+    },
+    {
+      "question": "Role-Specific: Accountant II will manage multiple client accounts, monitor both accounts payable and receivable, and support recurring closes. Your background emphasizes project and subcontract accounting; how would you organize priorities, aging items, and stakeholder follow-up across several client accounts?"
+    },
+    {
+      "question": "Situational: You have used WEBFCR, IMS, and Microsoft Office, but QuickBooks is required for this role. If asked to take ownership of a QuickBooks workflow shortly after joining, how would you build proficiency while protecting data accuracy and meeting deadlines?"
+    },
+    {
+      "question": "Behavioural: In your Administrative & Finance Coordinator role, you managed correspondence between Kabul and Washington, DC while supporting procurement and financial records. Describe how you kept stakeholders informed when a request, approval, or payment was delayed."
+    },
+    {
+      "question": "Cultural/Motivational: This position expects accountants to identify processing-efficiency improvements and respond constructively to coaching. What motivates you to improve finance processes, and how would you respond if a manager gave feedback that your current process needed to change?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 5931,
+    "output_tokens": 503,
+    "cached_tokens": 0,
+    "estimated_cost": 0.017898,
+    "latency_ms": 6215.25,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.017898,
+  "cost_cny": 0.12116946,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:05:06.857066+00:00",
+  "user_prompt_sha256": "105b9f2320a30d70faaa8c890409ad5f81cd6956740cf79dfbe16a96e8d2e92b"
+}

@@ -1,0 +1,217 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_04001_28009f597e20",
+  "jd_id": "rjf_04001_28009f597e20",
+  "pair_id": "rjf_04001_28009f597e20",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_04001_28009f597e20__rjf_04001_28009f597e20__mid.json",
+  "n_requirements": 24,
+  "questions": [
+    {
+      "question": "What attracts you to moving from senior QA and test automation into a Senior Software Engineer role focused on Oracle Cloud, and what concrete steps have you taken to close the platform and development gaps?"
+    },
+    {
+      "question": "What Oracle Cloud Infrastructure services have you used, and how have you applied identity management, networking, logging, or monitoring in a production environment?"
+    },
+    {
+      "question": "What direct experience, if any, do you have configuring, extending, or supporting Oracle Cloud Fusion Financials, and which Financials modules did you work with?"
+    },
+    {
+      "question": "Describe an Oracle Integration Cloud integration you have built or supported. How did you handle orchestration, error handling, security, monitoring, and reprocessing?"
+    },
+    {
+      "question": "What is your experience with Scrum roles, artifacts, and ceremonies, and how have you helped a team resolve a sprint-risk or scope issue?"
+    },
+    {
+      "question": "Explain how you would communicate a proposed cloud integration architecture differently to a solution architect, a developer, and a non-technical finance manager."
+    },
+    {
+      "question": "How would you assess an on-premises finance-related application for migration to Oracle Cloud, including dependencies, data, integrations, security, testing, cutover, and rollback?"
+    },
+    {
+      "question": "Have you worked in a SAFe environment? If not, how would you prepare to contribute to PI planning, cross-team dependency management, and iteration execution?"
+    },
+    {
+      "question": "Describe how you have used JIRA to manage work from requirement through defect resolution or release. Which workflows, dashboards, or metrics did you rely on?"
+    },
+    {
+      "question": "A production deployment of a new Oracle module fails after a database change. What immediate steps would you take to contain impact, diagnose the failure, communicate status, and decide on rollback?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "What attracts you to moving from senior QA and test automation into a Senior Software Engineer role focused on Oracle Cloud, and what concrete steps have you taken to close the platform and development gaps?",
+      "competency": "Role transition motivation",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "The role demands several Oracle and cloud capabilities not evidenced in the profile; this assesses motivation, self-awareness, and learning discipline without presuming unlisted experience.",
+      "source_evidence": [
+        "Senior Software QA Tester",
+        "Selenium framework development using Java"
+      ],
+      "priority": 0.92,
+      "weight": 0.6714125000000001
+    },
+    {
+      "question": "What Oracle Cloud Infrastructure services have you used, and how have you applied identity management, networking, logging, or monitoring in a production environment?",
+      "competency": "Oracle Cloud Infrastructure",
+      "competency_type": "technical",
+      "target_gap": "Oracle Cloud Infrastructure",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "OCI is required and absent from the documented profile, making direct experience and operational understanding important to verify.",
+      "source_evidence": [
+        "Oracle Cloud Infrastructure",
+        "Manual testing"
+      ],
+      "priority": 0.97,
+      "weight": 0.9399
+    },
+    {
+      "question": "What direct experience, if any, do you have configuring, extending, or supporting Oracle Cloud Fusion Financials, and which Financials modules did you work with?",
+      "competency": "Oracle Fusion Financials",
+      "competency_type": "technical",
+      "target_gap": "Oracle Cloud Fusion Financials",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "This is a critical stated requirement with no demonstrated Oracle Fusion Financials experience in the profile, so the interview should establish actual depth and recency.",
+      "source_evidence": [
+        "Oracle Cloud Fusion Financials",
+        "Manual testing"
+      ],
+      "priority": 0.99,
+      "weight": 0.9377
+    },
+    {
+      "question": "Describe an Oracle Integration Cloud integration you have built or supported. How did you handle orchestration, error handling, security, monitoring, and reprocessing?",
+      "competency": "Oracle Integration Cloud",
+      "competency_type": "technical",
+      "target_gap": "Oracle Integration Cloud",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The profile shows integration testing rather than Oracle integration development; this separates transferable testing knowledge from hands-on OIC capability.",
+      "source_evidence": [
+        "Integration testing",
+        "Oracle Integration Cloud"
+      ],
+      "priority": 0.96,
+      "weight": 0.6991
+    },
+    {
+      "question": "What is your experience with Scrum roles, artifacts, and ceremonies, and how have you helped a team resolve a sprint-risk or scope issue?",
+      "competency": "Scrum",
+      "competency_type": "technical",
+      "target_gap": "Scrum",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The profile indicates Agile participation but not explicit Scrum practice, so this probes the weak match directly.",
+      "source_evidence": [
+        "Agile",
+        "Scrum"
+      ],
+      "priority": 0.8,
+      "weight": 0.6897
+    },
+    {
+      "question": "Explain how you would communicate a proposed cloud integration architecture differently to a solution architect, a developer, and a non-technical finance manager.",
+      "competency": "Architecture communication",
+      "competency_type": "domain",
+      "target_gap": "Architecture communication",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "The position requires architecture communication to mixed audiences, while the profile shows general coordination rather than architecture communication.",
+      "source_evidence": [
+        "Communication and coordination",
+        "communicate solution requirements ... with both technical and non-technical stakeholders"
+      ],
+      "priority": 0.85,
+      "weight": 0.6794
+    },
+    {
+      "question": "How would you assess an on-premises finance-related application for migration to Oracle Cloud, including dependencies, data, integrations, security, testing, cutover, and rollback?",
+      "competency": "Cloud migration",
+      "competency_type": "other",
+      "target_gap": "Cloud migration",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Cloud migration is missing and critical to the target role; this probes structured thinking without assuming previous cloud-migration experience.",
+      "source_evidence": [
+        "Cloud migration",
+        "Manual testing"
+      ],
+      "priority": 0.95,
+      "weight": 0.944
+    },
+    {
+      "question": "Have you worked in a SAFe environment? If not, how would you prepare to contribute to PI planning, cross-team dependency management, and iteration execution?",
+      "competency": "SAFe",
+      "competency_type": "other",
+      "target_gap": "SAFe",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "SAFe is missing; this fairly distinguishes direct experience from the candidate's learning approach and ability to transfer Agile fundamentals.",
+      "source_evidence": [
+        "SAFe",
+        "Manual testing"
+      ],
+      "priority": 0.9,
+      "weight": 0.9373
+    },
+    {
+      "question": "Describe how you have used JIRA to manage work from requirement through defect resolution or release. Which workflows, dashboards, or metrics did you rely on?",
+      "competency": "JIRA delivery management",
+      "competency_type": "technical",
+      "target_gap": "JIRA",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "JIRA is a partial strength; this verifies use beyond defect logging and tracking.",
+      "source_evidence": [
+        "Logged and tracked defects to closure using JIRA.",
+        "JIRA"
+      ],
+      "priority": 0.71,
+      "weight": 0.3691
+    },
+    {
+      "question": "A production deployment of a new Oracle module fails after a database change. What immediate steps would you take to contain impact, diagnose the failure, communicate status, and decide on rollback?",
+      "competency": "Production troubleshooting",
+      "competency_type": "other",
+      "target_gap": "Troubleshooting",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "The candidate has production patch and release support experience, but troubleshooting is only a weak match and is central to the role.",
+      "source_evidence": [
+        "Supported production patches, hot fixes, monthly releases and new feature releases.",
+        "Troubleshooting"
+      ],
+      "priority": 0.9,
+      "weight": 0.7306
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    28,
+    3,
+    0,
+    1,
+    15,
+    12,
+    22,
+    16,
+    17,
+    20
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.22,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:49.837586+00:00"
+}

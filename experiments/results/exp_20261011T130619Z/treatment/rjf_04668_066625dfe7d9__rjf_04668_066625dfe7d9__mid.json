@@ -1,0 +1,456 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_04668_066625dfe7d9",
+  "jd_id": "rjf_04668_066625dfe7d9",
+  "pair_id": "rjf_04668_066625dfe7d9",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 8,
+  "pool_path": "pool/rjf_04668_066625dfe7d9__rjf_04668_066625dfe7d9__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.16666666666666666,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      0,
+      12,
+      2,
+      1,
+      13,
+      14,
+      10,
+      9,
+      3,
+      11
+    ],
+    "questions": [
+      {
+        "question": "This role requires hands-on FACETS experience. What FACETS modules, workflows, and data entities have you used, and what business change did you support end to end?",
+        "competency": "FACETS",
+        "competency_type": "technical",
+        "target_gap": "FACETS",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "FACETS is a required competency with no documented candidate experience, so this directly validates the critical gap.",
+        "source_evidence": [
+          "Gap matrix: FACETS \u2014 missing",
+          "Candidate evidence: SQL"
+        ],
+        "priority": 0.99,
+        "weight": 0.9433
+      },
+      {
+        "question": "How would you prioritize a backlog when senior stakeholders each consider their request urgent, technical dependencies constrain sequencing, and delivery capacity is fixed?",
+        "competency": "Prioritization",
+        "competency_type": "other",
+        "target_gap": "Prioritization",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Prioritization is a required missing competency in the gap matrix and is central to working with the Product Owner and business.",
+        "source_evidence": [
+          "Gap matrix: Prioritization \u2014 missing",
+          "Established and maintained a product backlog based on business priorities and stakeholder needs."
+        ],
+        "priority": 0.96,
+        "weight": 0.9201
+      },
+      {
+        "question": "A claims operations team says that a FACETS configuration is causing delayed adjudication, but they cannot identify the rule or workflow involved. How would you investigate, structure the analysis, and turn the findings into requirements?",
+        "competency": "FACETS problem analysis",
+        "competency_type": "other",
+        "target_gap": "FACETS",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Assesses how the candidate would apply BA analysis in the required system domain despite the missing explicit FACETS experience.",
+        "source_evidence": [
+          "Gap matrix: FACETS \u2014 missing",
+          "Led functional and non-functional requirements gathering, refinement, and documentation."
+        ],
+        "priority": 0.94,
+        "weight": 0.9433
+      },
+      {
+        "question": "Describe a time you had to learn an unfamiliar enterprise platform quickly in order to deliver a business-analysis outcome. How did you build enough functional and data knowledge to be effective?",
+        "competency": "FACETS learning agility",
+        "competency_type": "soft",
+        "target_gap": "FACETS",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Tests whether the candidate can close the documented FACETS gap through a disciplined onboarding and learning approach without assuming prior platform experience.",
+        "source_evidence": [
+          "Gap matrix: FACETS \u2014 missing",
+          "Supported migration of reports from legacy software to SuccessFactor software."
+        ],
+        "priority": 0.93,
+        "weight": 0.9433
+      },
+      {
+        "question": "What prioritization framework would you use to compare operational risk, customer impact, regulatory need, strategic value, effort, and dependency risk? Explain how you would make the decision auditable.",
+        "competency": "Prioritization framework",
+        "competency_type": "technical",
+        "target_gap": "Prioritization",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Tests for a repeatable prioritization method rather than relying on the candidate's title-based Product Owner experience alone.",
+        "source_evidence": [
+          "Gap matrix: Prioritization \u2014 missing",
+          "Established and maintained a product backlog based on business priorities and stakeholder needs."
+        ],
+        "priority": 0.91,
+        "weight": 0.9201
+      },
+      {
+        "question": "Tell me about a situation in which you had to push back on a stakeholder's requested priority. How did you present trade-offs, and what was the final outcome?",
+        "competency": "Stakeholder prioritization",
+        "competency_type": "soft",
+        "target_gap": "Prioritization",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Evaluates the candidate's ability to manage conflict and influence prioritization decisions, which is not explicitly established by the supplied evidence.",
+        "source_evidence": [
+          "Gap matrix: Prioritization \u2014 missing",
+          "Maintained a proactive relation with internal and external stakeholders."
+        ],
+        "priority": 0.86,
+        "weight": 0.9201
+      },
+      {
+        "question": "You have three requested changes: a regulatory fix with unclear effort, a high-value automation requiring two integrations, and a low-effort reporting enhancement. How would you work with delivery partners to produce estimates and communicate confidence levels?",
+        "competency": "Solution estimation",
+        "competency_type": "other",
+        "target_gap": "Estimation",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Assesses whether the candidate can support estimation under uncertainty, a required responsibility not clearly evidenced in the profile.",
+        "source_evidence": [
+          "Gap matrix: Estimation \u2014 weak_match",
+          "Bridged business and IT teams to develop data, process, and technical solutions."
+        ],
+        "priority": 0.88,
+        "weight": 0.7292
+      },
+      {
+        "question": "What inputs and techniques have you used to estimate the effort, cost, uncertainty, and dependencies of a business-process or system change? Give a specific example.",
+        "competency": "Estimation",
+        "competency_type": "technical",
+        "target_gap": "Estimation",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Estimation is a weak match with no direct supporting example in the profile, so practical estimation experience requires targeted validation.",
+        "source_evidence": [
+          "Gap matrix: Estimation \u2014 weak_match",
+          "Candidate evidence: SQL"
+        ],
+        "priority": 0.9,
+        "weight": 0.7292
+      },
+      {
+        "question": "Walk me through how you convert an ambiguous business need into a well-formed user story. What do you include in the story, acceptance criteria, dependencies, assumptions, and edge cases?",
+        "competency": "User story development",
+        "competency_type": "technical",
+        "target_gap": "User story development",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "User-story development is only a weak match; the candidate documents requirements and clarifies features, but explicit user-story practice needs validation.",
+        "source_evidence": [
+          "Gap matrix: User story development \u2014 weak_match",
+          "Identified product features and clarified requirements for the development team."
+        ],
+        "priority": 0.86,
+        "weight": 0.6884
+      },
+      {
+        "question": "Describe a time an initial estimate or delivery assumption proved wrong. What signaled the issue, how did you revise the plan, and what did you change to improve future estimates?",
+        "competency": "Estimation calibration",
+        "competency_type": "soft",
+        "target_gap": "Estimation",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Explores the candidate's transparency, learning, and risk management around an area of weak documented alignment.",
+        "source_evidence": [
+          "Gap matrix: Estimation \u2014 weak_match",
+          "Worked with internal teams to understand business needs and recommend metrics and models."
+        ],
+        "priority": 0.79,
+        "weight": 0.7292
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.933867,
+      0.883296,
+      0.886702,
+      0.8772690000000001,
+      0.837291,
+      0.791286,
+      0.6416959999999999,
+      0.65628,
+      0.592024,
+      0.576068
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.31247079372406006,
+      0.40821516513824463,
+      0.5094833374023438,
+      0.4537658095359802,
+      0.49950331449508667,
+      0.4027594029903412,
+      0.4638351798057556,
+      0.4031118154525757,
+      0.5416719913482666
+    ],
+    "mmr_scores": [
+      0.6537069,
+      0.5245659618827819,
+      0.4982268504585266,
+      0.4612432987792969,
+      0.4499739571392059,
+      0.40404920565147395,
+      0.32835937910289753,
+      0.32024544605827326,
+      0.29348325536422726,
+      0.24074600259551998
+    ],
+    "competency_weights": [
+      0.9433,
+      0.9201,
+      0.9433,
+      0.9433,
+      0.9201,
+      0.9201,
+      0.7292,
+      0.7292,
+      0.6884,
+      0.7292
+    ]
+  },
+  "questions": [
+    {
+      "question": "This role requires hands-on FACETS experience. What FACETS modules, workflows, and data entities have you used, and what business change did you support end to end?"
+    },
+    {
+      "question": "How would you prioritize a backlog when senior stakeholders each consider their request urgent, technical dependencies constrain sequencing, and delivery capacity is fixed?"
+    },
+    {
+      "question": "A claims operations team says that a FACETS configuration is causing delayed adjudication, but they cannot identify the rule or workflow involved. How would you investigate, structure the analysis, and turn the findings into requirements?"
+    },
+    {
+      "question": "Describe a time you had to learn an unfamiliar enterprise platform quickly in order to deliver a business-analysis outcome. How did you build enough functional and data knowledge to be effective?"
+    },
+    {
+      "question": "What prioritization framework would you use to compare operational risk, customer impact, regulatory need, strategic value, effort, and dependency risk? Explain how you would make the decision auditable."
+    },
+    {
+      "question": "Tell me about a situation in which you had to push back on a stakeholder's requested priority. How did you present trade-offs, and what was the final outcome?"
+    },
+    {
+      "question": "You have three requested changes: a regulatory fix with unclear effort, a high-value automation requiring two integrations, and a low-effort reporting enhancement. How would you work with delivery partners to produce estimates and communicate confidence levels?"
+    },
+    {
+      "question": "What inputs and techniques have you used to estimate the effort, cost, uncertainty, and dependencies of a business-process or system change? Give a specific example."
+    },
+    {
+      "question": "Walk me through how you convert an ambiguous business need into a well-formed user story. What do you include in the story, acceptance criteria, dependencies, assumptions, and edge cases?"
+    },
+    {
+      "question": "Describe a time an initial estimate or delivery assumption proved wrong. What signaled the issue, how did you revise the plan, and what did you change to improve future estimates?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "This role requires hands-on FACETS experience. What FACETS modules, workflows, and data entities have you used, and what business change did you support end to end?",
+      "competency": "FACETS",
+      "competency_type": "technical",
+      "target_gap": "FACETS",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "FACETS is a required competency with no documented candidate experience, so this directly validates the critical gap.",
+      "source_evidence": [
+        "Gap matrix: FACETS \u2014 missing",
+        "Candidate evidence: SQL"
+      ],
+      "priority": 0.99,
+      "weight": 0.9433
+    },
+    {
+      "question": "How would you prioritize a backlog when senior stakeholders each consider their request urgent, technical dependencies constrain sequencing, and delivery capacity is fixed?",
+      "competency": "Prioritization",
+      "competency_type": "other",
+      "target_gap": "Prioritization",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Prioritization is a required missing competency in the gap matrix and is central to working with the Product Owner and business.",
+      "source_evidence": [
+        "Gap matrix: Prioritization \u2014 missing",
+        "Established and maintained a product backlog based on business priorities and stakeholder needs."
+      ],
+      "priority": 0.96,
+      "weight": 0.9201
+    },
+    {
+      "question": "A claims operations team says that a FACETS configuration is causing delayed adjudication, but they cannot identify the rule or workflow involved. How would you investigate, structure the analysis, and turn the findings into requirements?",
+      "competency": "FACETS problem analysis",
+      "competency_type": "other",
+      "target_gap": "FACETS",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Assesses how the candidate would apply BA analysis in the required system domain despite the missing explicit FACETS experience.",
+      "source_evidence": [
+        "Gap matrix: FACETS \u2014 missing",
+        "Led functional and non-functional requirements gathering, refinement, and documentation."
+      ],
+      "priority": 0.94,
+      "weight": 0.9433
+    },
+    {
+      "question": "Describe a time you had to learn an unfamiliar enterprise platform quickly in order to deliver a business-analysis outcome. How did you build enough functional and data knowledge to be effective?",
+      "competency": "FACETS learning agility",
+      "competency_type": "soft",
+      "target_gap": "FACETS",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate can close the documented FACETS gap through a disciplined onboarding and learning approach without assuming prior platform experience.",
+      "source_evidence": [
+        "Gap matrix: FACETS \u2014 missing",
+        "Supported migration of reports from legacy software to SuccessFactor software."
+      ],
+      "priority": 0.93,
+      "weight": 0.9433
+    },
+    {
+      "question": "What prioritization framework would you use to compare operational risk, customer impact, regulatory need, strategic value, effort, and dependency risk? Explain how you would make the decision auditable.",
+      "competency": "Prioritization framework",
+      "competency_type": "technical",
+      "target_gap": "Prioritization",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Tests for a repeatable prioritization method rather than relying on the candidate's title-based Product Owner experience alone.",
+      "source_evidence": [
+        "Gap matrix: Prioritization \u2014 missing",
+        "Established and maintained a product backlog based on business priorities and stakeholder needs."
+      ],
+      "priority": 0.91,
+      "weight": 0.9201
+    },
+    {
+      "question": "Tell me about a situation in which you had to push back on a stakeholder's requested priority. How did you present trade-offs, and what was the final outcome?",
+      "competency": "Stakeholder prioritization",
+      "competency_type": "soft",
+      "target_gap": "Prioritization",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Evaluates the candidate's ability to manage conflict and influence prioritization decisions, which is not explicitly established by the supplied evidence.",
+      "source_evidence": [
+        "Gap matrix: Prioritization \u2014 missing",
+        "Maintained a proactive relation with internal and external stakeholders."
+      ],
+      "priority": 0.86,
+      "weight": 0.9201
+    },
+    {
+      "question": "You have three requested changes: a regulatory fix with unclear effort, a high-value automation requiring two integrations, and a low-effort reporting enhancement. How would you work with delivery partners to produce estimates and communicate confidence levels?",
+      "competency": "Solution estimation",
+      "competency_type": "other",
+      "target_gap": "Estimation",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Assesses whether the candidate can support estimation under uncertainty, a required responsibility not clearly evidenced in the profile.",
+      "source_evidence": [
+        "Gap matrix: Estimation \u2014 weak_match",
+        "Bridged business and IT teams to develop data, process, and technical solutions."
+      ],
+      "priority": 0.88,
+      "weight": 0.7292
+    },
+    {
+      "question": "What inputs and techniques have you used to estimate the effort, cost, uncertainty, and dependencies of a business-process or system change? Give a specific example.",
+      "competency": "Estimation",
+      "competency_type": "technical",
+      "target_gap": "Estimation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Estimation is a weak match with no direct supporting example in the profile, so practical estimation experience requires targeted validation.",
+      "source_evidence": [
+        "Gap matrix: Estimation \u2014 weak_match",
+        "Candidate evidence: SQL"
+      ],
+      "priority": 0.9,
+      "weight": 0.7292
+    },
+    {
+      "question": "Walk me through how you convert an ambiguous business need into a well-formed user story. What do you include in the story, acceptance criteria, dependencies, assumptions, and edge cases?",
+      "competency": "User story development",
+      "competency_type": "technical",
+      "target_gap": "User story development",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "User-story development is only a weak match; the candidate documents requirements and clarifies features, but explicit user-story practice needs validation.",
+      "source_evidence": [
+        "Gap matrix: User story development \u2014 weak_match",
+        "Identified product features and clarified requirements for the development team."
+      ],
+      "priority": 0.86,
+      "weight": 0.6884
+    },
+    {
+      "question": "Describe a time an initial estimate or delivery assumption proved wrong. What signaled the issue, how did you revise the plan, and what did you change to improve future estimates?",
+      "competency": "Estimation calibration",
+      "competency_type": "soft",
+      "target_gap": "Estimation",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Explores the candidate's transparency, learning, and risk management around an area of weak documented alignment.",
+      "source_evidence": [
+        "Gap matrix: Estimation \u2014 weak_match",
+        "Worked with internal teams to understand business needs and recommend metrics and models."
+      ],
+      "priority": 0.79,
+      "weight": 0.7292
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 6515,
+    "output_tokens": 3627,
+    "cached_tokens": 0,
+    "estimated_cost": 0.056554,
+    "latency_ms": 29020.55,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.056554,
+  "cost_cny": 0.38287058,
+  "selection_latency_ms": 36.13,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:12:37.972948+00:00"
+}

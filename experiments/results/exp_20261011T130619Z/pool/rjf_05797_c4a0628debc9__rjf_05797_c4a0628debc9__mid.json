@@ -1,0 +1,1069 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "pool",
+  "condition": "T_pool",
+  "profile_id": "rjf_05797_c4a0628debc9",
+  "jd_id": "rjf_05797_c4a0628debc9",
+  "pair_id": "rjf_05797_c4a0628debc9",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "provider": "openai",
+  "prompt": {
+    "file": "generation/interviewiq_pool.md",
+    "version": "1.1.0",
+    "sha256": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc"
+  },
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 12,
+  "pool_size_requested": 30,
+  "raw_questions": [
+    {
+      "question": "Walk me through how you would build and maintain a lease accounting schedule from a new lease agreement through month-end posting, including the key inputs, journal entries, and reconciliations you would perform.",
+      "competency": "Lease accounting",
+      "dimension": "Technical",
+      "target_gap": "Lease accounting",
+      "difficulty": "mid",
+      "rationale": "Lease accounting is a weak match and is a core responsibility, so this tests practical readiness without assuming prior lease-specific experience.",
+      "source_evidence": [
+        "Weak match: Lease accounting",
+        "Candidate evidence: Accounting"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "A prepaid annual insurance invoice is paid at the beginning of the year. Explain how you would set up the amortization schedule, record the initial entry, post monthly expense, and investigate a difference between the schedule and the general ledger.",
+      "competency": "Prepaids amortization",
+      "dimension": "Technical",
+      "target_gap": "Prepaids amortization",
+      "difficulty": "mid",
+      "rationale": "Prepaids amortization is the largest identified technical gap and is an explicit job responsibility.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Candidate evidence: General ledger accounting"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Describe your end-to-end process for a monthly close: how do you plan the calendar, collect inputs, prepare entries and reconciliations, resolve exceptions, and determine that the close is complete?",
+      "competency": "Full-cycle accounting and close",
+      "dimension": "Role-Specific",
+      "target_gap": "Full-cycle accounting and close",
+      "difficulty": "mid",
+      "rationale": "The candidate has month-end-close experience, but the matrix identifies only a partial match to full-cycle ownership.",
+      "source_evidence": [
+        "Partial match: Full-cycle accounting and close",
+        "Candidate evidence: Month-end close"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Suppose a newly signed office lease has fixed monthly payments, an initial incentive, and a rent-free period. How would you determine the accounting treatment and the supporting schedule under US GAAP?",
+      "competency": "Lease accounting under US GAAP",
+      "dimension": "Situational",
+      "target_gap": "Lease accounting",
+      "difficulty": "hard",
+      "rationale": "Tests whether the candidate can apply lease concepts to a realistic scenario rather than rely on general accounting experience alone.",
+      "source_evidence": [
+        "Weak match: Lease accounting",
+        "Partial match: US GAAP",
+        "Candidate evidence: Accounting"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Give an example of a monthly accrual you prepared. What evidence supported the estimate, what journal entry did you record, and how did you reverse or true it up in the next period?",
+      "competency": "Monthly accruals",
+      "dimension": "Technical",
+      "target_gap": "Monthly accruals",
+      "difficulty": "mid",
+      "rationale": "The candidate reports monthly accrual work, while the role requires dependable recurring accrual preparation.",
+      "source_evidence": [
+        "Partial match: Monthly accruals",
+        "Candidate evidence: Performed bank reconciliations, journal entry preparation, month-end close, and monthly accruals."
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "How would you design a month-end allocation for shared costs across departments when the business provides headcount, square footage, and usage data? Explain your allocation-base selection, entry, documentation, and validation steps.",
+      "competency": "Month-end allocations",
+      "dimension": "Situational",
+      "target_gap": "Month-end allocations",
+      "difficulty": "mid",
+      "rationale": "Month-end allocations are a partial match and an explicit recurring responsibility in the role.",
+      "source_evidence": [
+        "Partial match: Month-end allocations",
+        "Candidate evidence: Month-end close"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "When reviewing a reporting package, how do you perform flux analysis? Describe the thresholds you use, the questions you ask, and how you distinguish a timing difference from an error.",
+      "competency": "Financial reporting and flux analysis",
+      "dimension": "Technical",
+      "target_gap": "Financial reporting",
+      "difficulty": "mid",
+      "rationale": "Financial reporting is a strength, and this probes the role-specific expectation of explaining period-over-period movements.",
+      "source_evidence": [
+        "Strong match: Financial reporting",
+        "Candidate evidence: Financial reporting"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "Describe a balance-sheet reconciliation you owned that contained an aged or unexplained reconciling item. How did you research it, decide on corrective action, and prevent recurrence?",
+      "competency": "Account reconciliations",
+      "dimension": "Behavioural",
+      "target_gap": "Account reconciliations",
+      "difficulty": "mid",
+      "rationale": "The candidate strongly matches reconciliation experience; this validates ownership, judgment, and control discipline.",
+      "source_evidence": [
+        "Strong match: Account reconciliations",
+        "Candidate evidence: Performed inter-company account reconciliations."
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "What US GAAP principles most often affect your month-end work, and how have you used authoritative guidance or internal policy to resolve an accounting question?",
+      "competency": "US GAAP application",
+      "dimension": "Technical",
+      "target_gap": "US GAAP",
+      "difficulty": "mid",
+      "rationale": "The matrix shows a partial GAAP match; the question tests applied technical knowledge rather than a r\u00e9sum\u00e9 claim.",
+      "source_evidence": [
+        "Partial match: US GAAP",
+        "Candidate evidence: GAAP compliance"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "A department leader says an operational report is not useful because it arrives after decisions have been made. How would you clarify their needs and redesign the report's metrics, cadence, and presentation?",
+      "competency": "Operational reporting",
+      "dimension": "Situational",
+      "target_gap": "Operational reporting",
+      "difficulty": "mid",
+      "rationale": "Operational reporting is a partial match and requires translating accounting data into useful information for non-finance partners.",
+      "source_evidence": [
+        "Partial match: Operational reporting",
+        "Candidate evidence: Financial reporting"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "Which intermediate or advanced Excel features have you used to prepare, validate, or analyze accounting data? Please describe a specific workbook, including formulas, controls, and how you reduced manual error.",
+      "competency": "Microsoft Excel",
+      "dimension": "Technical",
+      "target_gap": "Microsoft Excel",
+      "difficulty": "mid",
+      "rationale": "Excel is required and strongly matched; this verifies the depth of practical spreadsheet capability needed for schedules and reporting.",
+      "source_evidence": [
+        "Strong match: Microsoft Excel",
+        "Candidate evidence: Microsoft Excel"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "During close, you identify that an expense was charged entirely to one department even though it should have been allocated across several departments. What would you do before posting a correcting allocation?",
+      "competency": "Month-end allocations",
+      "dimension": "Situational",
+      "target_gap": "Month-end allocations",
+      "difficulty": "mid",
+      "rationale": "Tests judgment, stakeholder validation, and control awareness around a partial-match responsibility.",
+      "source_evidence": [
+        "Partial match: Month-end allocations",
+        "Candidate evidence: Month-end close"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Explain the difference between an accrual and a prepaid expense, including the typical initial and subsequent journal entries for each.",
+      "competency": "Accruals and prepaids",
+      "dimension": "Technical",
+      "target_gap": "Prepaids amortization",
+      "difficulty": "mid",
+      "rationale": "Directly assesses foundational understanding needed to close the identified prepaids-amortization gap.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Partial match: Monthly accruals",
+        "Candidate evidence: General ledger accounting"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Tell me about a manual journal entry you prepared during month-end close. What was the business purpose, what support did you retain, and what review or approval controls applied?",
+      "competency": "Journal entries",
+      "dimension": "Behavioural",
+      "target_gap": "Journal entries",
+      "difficulty": "mid",
+      "rationale": "The candidate has manual journal-entry experience, but the matrix labels it partial; this probes quality and control awareness.",
+      "source_evidence": [
+        "Partial match: Journal entries",
+        "Candidate evidence: Performed month-end General Ledger close and prepared manual journal entries."
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "If a journal entry is requested late on the final day of close with incomplete support, how would you balance the need to close on time with accuracy and control requirements?",
+      "competency": "Journal-entry controls",
+      "dimension": "Situational",
+      "target_gap": "Journal entries",
+      "difficulty": "mid",
+      "rationale": "Tests decision-making under close pressure for a responsibility where evidence is only a partial match.",
+      "source_evidence": [
+        "Partial match: Journal entries",
+        "Candidate evidence: Performed month-end General Ledger close and prepared manual journal entries."
+      ],
+      "priority": 0.83
+    },
+    {
+      "question": "How would you create a rent schedule that Accounts Payable can use each month, and what reconciliation would you perform between the schedule, AP activity, and the general ledger?",
+      "competency": "Rent schedule management",
+      "dimension": "Role-Specific",
+      "target_gap": "Lease accounting",
+      "difficulty": "mid",
+      "rationale": "The role specifically requires maintaining a rent schedule and providing it to AP; the candidate has no explicit lease evidence.",
+      "source_evidence": [
+        "Weak match: Lease accounting",
+        "Candidate evidence: Accounting"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Describe how you prioritize close activities when reconciliations, accruals, reporting, and urgent questions from departments all have the same deadline.",
+      "competency": "Close prioritization",
+      "dimension": "Behavioural",
+      "target_gap": "Full-cycle accounting and close",
+      "difficulty": "mid",
+      "rationale": "Evaluates whether the candidate can coordinate recurring full-cycle work under deadline pressure.",
+      "source_evidence": [
+        "Partial match: Full-cycle accounting and close",
+        "Candidate evidence: Month-end close",
+        "Candidate evidence: Ability to meet aggressive deadlines"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "What would you include in a concise monthly financial reporting package for management, and how would you tailor the commentary for operational department leaders?",
+      "competency": "Management reporting",
+      "dimension": "Role-Specific",
+      "target_gap": "Operational reporting",
+      "difficulty": "mid",
+      "rationale": "Assesses the candidate's ability to extend financial-reporting experience into department-facing operational reporting.",
+      "source_evidence": [
+        "Partial match: Operational reporting",
+        "Strong match: Financial reporting",
+        "Candidate evidence: Financial reporting"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Please walk through the fixed-asset capitalization-versus-expense assessment you performed at Ellwood Group. What criteria did you apply, and how did the decision affect depreciation and the financial statements?",
+      "competency": "Capitalization judgment",
+      "dimension": "Technical",
+      "target_gap": "General accounting",
+      "difficulty": "mid",
+      "rationale": "Uses documented fixed-asset work to validate broader general-accounting judgment, which is partially matched.",
+      "source_evidence": [
+        "Partial match: General accounting",
+        "Candidate evidence: Reviewed invoices to determine capital fixed asset versus expense treatment."
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "You receive a balance-sheet account reconciliation with a reconciling item that has rolled forward for three months. What is your investigation plan, and when would you escalate?",
+      "competency": "Reconciliation controls",
+      "dimension": "Situational",
+      "target_gap": "Account reconciliations",
+      "difficulty": "mid",
+      "rationale": "Builds on a strong reconciliation match while testing control-minded escalation and resolution practices.",
+      "source_evidence": [
+        "Strong match: Account reconciliations",
+        "Candidate evidence: Prepared balance sheet account reconciliations and roll-forward schedules."
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Describe a time you found and eliminated a financial discrepancy. How did you isolate the cause, communicate the impact, and confirm the correction was complete?",
+      "competency": "Problem solving",
+      "dimension": "Behavioural",
+      "target_gap": "General accounting",
+      "difficulty": "mid",
+      "rationale": "The candidate documented resolving discrepancies; this probes the analysis and communication behind that outcome.",
+      "source_evidence": [
+        "Partial match: General accounting",
+        "Candidate evidence: Researched and eliminated financial discrepancies in a timely manner."
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "What controls would you build into an Excel-based amortization schedule to ensure formulas, start and end dates, and monthly postings remain accurate as new items are added?",
+      "competency": "Excel-based accounting schedules",
+      "dimension": "Technical",
+      "target_gap": "Microsoft Excel",
+      "difficulty": "mid",
+      "rationale": "Connects the required Excel capability to the role's schedule-heavy prepaid and lease responsibilities.",
+      "source_evidence": [
+        "Strong match: Microsoft Excel",
+        "Weak match: Prepaids amortization",
+        "Weak match: Lease accounting"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "At George Washington University, you prepared budget-versus-actual reports with variance analysis. Choose one variance and explain how you identified the driver, validated it, and presented it to stakeholders.",
+      "competency": "Variance analysis",
+      "dimension": "Behavioural",
+      "target_gap": "Financial reporting",
+      "difficulty": "mid",
+      "rationale": "Uses a documented example to test the candidate's reporting analysis and ability to explain results.",
+      "source_evidence": [
+        "Strong match: Financial reporting",
+        "Candidate evidence: Prepared year-to-date profit and loss budget and actual reports with variance analysis."
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "How would you handle a situation in which a department disputes an allocation methodology that finance considers reasonable?",
+      "competency": "Stakeholder management",
+      "dimension": "Situational",
+      "target_gap": "Operational reporting",
+      "difficulty": "mid",
+      "rationale": "Tests communication and collaboration required when providing department-facing reporting and allocations.",
+      "source_evidence": [
+        "Partial match: Operational reporting",
+        "Partial match: Month-end allocations",
+        "Candidate evidence: Excellent communication skills"
+      ],
+      "priority": 0.76
+    },
+    {
+      "question": "What steps would you take to validate that the accounts, cost centers, periods, and descriptions on a batch of proposed month-end journal entries are complete and accurate before posting?",
+      "competency": "Journal-entry quality assurance",
+      "dimension": "Technical",
+      "target_gap": "Journal entries",
+      "difficulty": "mid",
+      "rationale": "Assesses a systematic approach to journal-entry accuracy, a partial-match requirement central to close quality.",
+      "source_evidence": [
+        "Partial match: Journal entries",
+        "Candidate evidence: Performed month-end General Ledger close and prepared manual journal entries."
+      ],
+      "priority": 0.81
+    },
+    {
+      "question": "Your r\u00e9sum\u00e9 shows several temporary accounting assignments across different organizations. How did you get effective quickly in unfamiliar systems and processes, and what would your first 30 days in this Senior Accountant role look like?",
+      "competency": "Adaptability and onboarding",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Probes the candidate's documented pattern of temporary assignments and ability to transition into a sustained role without inferring unlisted experience.",
+      "source_evidence": [
+        "Accountant II, Ellwood Group, 11/2014 to 10/2016",
+        "Senior Accountant (TEMP), Meggitt Plc",
+        "Ability to learn new software programs"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "You developed a new employee evaluation process at Ellwood Group. What problem were you solving, how did you gain buy-in, and what evidence showed performance improved?",
+      "competency": "Process improvement",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Explores a documented achievement that can reveal initiative, change management, and evidence-based improvement.",
+      "source_evidence": [
+        "Developed a new process for employee evaluation that resulted in marked performance improvements."
+      ],
+      "priority": 0.69
+    },
+    {
+      "question": "What aspects of this Senior Accountant position\u2014particularly recurring close ownership, schedules, and department reporting\u2014are most motivating to you at this stage of your accounting career?",
+      "competency": "Role motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Assesses motivation and fit for the role's recurring accounting responsibilities using the candidate's stated progressive accounting background.",
+      "source_evidence": [
+        "Progressive experience in accounting and financial management",
+        "Accountant II",
+        "Senior Accountant"
+      ],
+      "priority": 0.68
+    },
+    {
+      "question": "Imagine that, after close, a prepaid balance is materially overstated because one month of amortization was omitted. How would you quantify the impact, correct the books, assess whether prior reporting is affected, and prevent recurrence?",
+      "competency": "Prepaids error resolution",
+      "dimension": "Situational",
+      "target_gap": "Prepaids amortization",
+      "difficulty": "hard",
+      "rationale": "Tests technical remediation, materiality judgment, and preventive controls for the most significant identified gap.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Candidate evidence: General ledger accounting",
+        "Candidate evidence: Researched and eliminated financial discrepancies in a timely manner."
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Describe how you would coordinate with Accounts Payable when an invoice must be coded as a prepaid, fixed asset, lease-related cost, or current-period expense. What information would you require and how would you document the decision?",
+      "competency": "AP accounting coordination",
+      "dimension": "Role-Specific",
+      "target_gap": "General accounting",
+      "difficulty": "mid",
+      "rationale": "Tests practical cross-functional accounting judgment relevant to the role and grounded in the candidate's AP support and capitalization experience.",
+      "source_evidence": [
+        "Partial match: General accounting",
+        "Candidate evidence: Supported Accounts Payable and Purchasing with accounting issue resolution.",
+        "Candidate evidence: Reviewed invoices to determine capital fixed asset versus expense treatment."
+      ],
+      "priority": 0.8
+    }
+  ],
+  "valid_questions": [
+    {
+      "question": "Walk me through how you would build and maintain a lease accounting schedule from a new lease agreement through month-end posting, including the key inputs, journal entries, and reconciliations you would perform.",
+      "competency": "Lease accounting",
+      "dimension": "Technical",
+      "target_gap": "Lease accounting",
+      "difficulty": "mid",
+      "rationale": "Lease accounting is a weak match and is a core responsibility, so this tests practical readiness without assuming prior lease-specific experience.",
+      "source_evidence": [
+        "Weak match: Lease accounting",
+        "Candidate evidence: Accounting"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "A prepaid annual insurance invoice is paid at the beginning of the year. Explain how you would set up the amortization schedule, record the initial entry, post monthly expense, and investigate a difference between the schedule and the general ledger.",
+      "competency": "Prepaids amortization",
+      "dimension": "Technical",
+      "target_gap": "Prepaids amortization",
+      "difficulty": "mid",
+      "rationale": "Prepaids amortization is the largest identified technical gap and is an explicit job responsibility.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Candidate evidence: General ledger accounting"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Describe your end-to-end process for a monthly close: how do you plan the calendar, collect inputs, prepare entries and reconciliations, resolve exceptions, and determine that the close is complete?",
+      "competency": "Full-cycle accounting and close",
+      "dimension": "Role-Specific",
+      "target_gap": "Full-cycle accounting and close",
+      "difficulty": "mid",
+      "rationale": "The candidate has month-end-close experience, but the matrix identifies only a partial match to full-cycle ownership.",
+      "source_evidence": [
+        "Partial match: Full-cycle accounting and close",
+        "Candidate evidence: Month-end close"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Suppose a newly signed office lease has fixed monthly payments, an initial incentive, and a rent-free period. How would you determine the accounting treatment and the supporting schedule under US GAAP?",
+      "competency": "Lease accounting under US GAAP",
+      "dimension": "Situational",
+      "target_gap": "Lease accounting",
+      "difficulty": "hard",
+      "rationale": "Tests whether the candidate can apply lease concepts to a realistic scenario rather than rely on general accounting experience alone.",
+      "source_evidence": [
+        "Weak match: Lease accounting",
+        "Partial match: US GAAP",
+        "Candidate evidence: Accounting"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Give an example of a monthly accrual you prepared. What evidence supported the estimate, what journal entry did you record, and how did you reverse or true it up in the next period?",
+      "competency": "Monthly accruals",
+      "dimension": "Technical",
+      "target_gap": "Monthly accruals",
+      "difficulty": "mid",
+      "rationale": "The candidate reports monthly accrual work, while the role requires dependable recurring accrual preparation.",
+      "source_evidence": [
+        "Partial match: Monthly accruals",
+        "Candidate evidence: Performed bank reconciliations, journal entry preparation, month-end close, and monthly accruals."
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "How would you design a month-end allocation for shared costs across departments when the business provides headcount, square footage, and usage data? Explain your allocation-base selection, entry, documentation, and validation steps.",
+      "competency": "Month-end allocations",
+      "dimension": "Situational",
+      "target_gap": "Month-end allocations",
+      "difficulty": "mid",
+      "rationale": "Month-end allocations are a partial match and an explicit recurring responsibility in the role.",
+      "source_evidence": [
+        "Partial match: Month-end allocations",
+        "Candidate evidence: Month-end close"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "When reviewing a reporting package, how do you perform flux analysis? Describe the thresholds you use, the questions you ask, and how you distinguish a timing difference from an error.",
+      "competency": "Financial reporting and flux analysis",
+      "dimension": "Technical",
+      "target_gap": "Financial reporting",
+      "difficulty": "mid",
+      "rationale": "Financial reporting is a strength, and this probes the role-specific expectation of explaining period-over-period movements.",
+      "source_evidence": [
+        "Strong match: Financial reporting",
+        "Candidate evidence: Financial reporting"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "Describe a balance-sheet reconciliation you owned that contained an aged or unexplained reconciling item. How did you research it, decide on corrective action, and prevent recurrence?",
+      "competency": "Account reconciliations",
+      "dimension": "Behavioural",
+      "target_gap": "Account reconciliations",
+      "difficulty": "mid",
+      "rationale": "The candidate strongly matches reconciliation experience; this validates ownership, judgment, and control discipline.",
+      "source_evidence": [
+        "Strong match: Account reconciliations",
+        "Candidate evidence: Performed inter-company account reconciliations."
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "What US GAAP principles most often affect your month-end work, and how have you used authoritative guidance or internal policy to resolve an accounting question?",
+      "competency": "US GAAP application",
+      "dimension": "Technical",
+      "target_gap": "US GAAP",
+      "difficulty": "mid",
+      "rationale": "The matrix shows a partial GAAP match; the question tests applied technical knowledge rather than a r\u00e9sum\u00e9 claim.",
+      "source_evidence": [
+        "Partial match: US GAAP",
+        "Candidate evidence: GAAP compliance"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "A department leader says an operational report is not useful because it arrives after decisions have been made. How would you clarify their needs and redesign the report's metrics, cadence, and presentation?",
+      "competency": "Operational reporting",
+      "dimension": "Situational",
+      "target_gap": "Operational reporting",
+      "difficulty": "mid",
+      "rationale": "Operational reporting is a partial match and requires translating accounting data into useful information for non-finance partners.",
+      "source_evidence": [
+        "Partial match: Operational reporting",
+        "Candidate evidence: Financial reporting"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "Which intermediate or advanced Excel features have you used to prepare, validate, or analyze accounting data? Please describe a specific workbook, including formulas, controls, and how you reduced manual error.",
+      "competency": "Microsoft Excel",
+      "dimension": "Technical",
+      "target_gap": "Microsoft Excel",
+      "difficulty": "mid",
+      "rationale": "Excel is required and strongly matched; this verifies the depth of practical spreadsheet capability needed for schedules and reporting.",
+      "source_evidence": [
+        "Strong match: Microsoft Excel",
+        "Candidate evidence: Microsoft Excel"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "During close, you identify that an expense was charged entirely to one department even though it should have been allocated across several departments. What would you do before posting a correcting allocation?",
+      "competency": "Month-end allocations",
+      "dimension": "Situational",
+      "target_gap": "Month-end allocations",
+      "difficulty": "mid",
+      "rationale": "Tests judgment, stakeholder validation, and control awareness around a partial-match responsibility.",
+      "source_evidence": [
+        "Partial match: Month-end allocations",
+        "Candidate evidence: Month-end close"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Explain the difference between an accrual and a prepaid expense, including the typical initial and subsequent journal entries for each.",
+      "competency": "Accruals and prepaids",
+      "dimension": "Technical",
+      "target_gap": "Prepaids amortization",
+      "difficulty": "mid",
+      "rationale": "Directly assesses foundational understanding needed to close the identified prepaids-amortization gap.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Partial match: Monthly accruals",
+        "Candidate evidence: General ledger accounting"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Tell me about a manual journal entry you prepared during month-end close. What was the business purpose, what support did you retain, and what review or approval controls applied?",
+      "competency": "Journal entries",
+      "dimension": "Behavioural",
+      "target_gap": "Journal entries",
+      "difficulty": "mid",
+      "rationale": "The candidate has manual journal-entry experience, but the matrix labels it partial; this probes quality and control awareness.",
+      "source_evidence": [
+        "Partial match: Journal entries",
+        "Candidate evidence: Performed month-end General Ledger close and prepared manual journal entries."
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "If a journal entry is requested late on the final day of close with incomplete support, how would you balance the need to close on time with accuracy and control requirements?",
+      "competency": "Journal-entry controls",
+      "dimension": "Situational",
+      "target_gap": "Journal entries",
+      "difficulty": "mid",
+      "rationale": "Tests decision-making under close pressure for a responsibility where evidence is only a partial match.",
+      "source_evidence": [
+        "Partial match: Journal entries",
+        "Candidate evidence: Performed month-end General Ledger close and prepared manual journal entries."
+      ],
+      "priority": 0.83
+    },
+    {
+      "question": "How would you create a rent schedule that Accounts Payable can use each month, and what reconciliation would you perform between the schedule, AP activity, and the general ledger?",
+      "competency": "Rent schedule management",
+      "dimension": "Role-Specific",
+      "target_gap": "Lease accounting",
+      "difficulty": "mid",
+      "rationale": "The role specifically requires maintaining a rent schedule and providing it to AP; the candidate has no explicit lease evidence.",
+      "source_evidence": [
+        "Weak match: Lease accounting",
+        "Candidate evidence: Accounting"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Describe how you prioritize close activities when reconciliations, accruals, reporting, and urgent questions from departments all have the same deadline.",
+      "competency": "Close prioritization",
+      "dimension": "Behavioural",
+      "target_gap": "Full-cycle accounting and close",
+      "difficulty": "mid",
+      "rationale": "Evaluates whether the candidate can coordinate recurring full-cycle work under deadline pressure.",
+      "source_evidence": [
+        "Partial match: Full-cycle accounting and close",
+        "Candidate evidence: Month-end close",
+        "Candidate evidence: Ability to meet aggressive deadlines"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "What would you include in a concise monthly financial reporting package for management, and how would you tailor the commentary for operational department leaders?",
+      "competency": "Management reporting",
+      "dimension": "Role-Specific",
+      "target_gap": "Operational reporting",
+      "difficulty": "mid",
+      "rationale": "Assesses the candidate's ability to extend financial-reporting experience into department-facing operational reporting.",
+      "source_evidence": [
+        "Partial match: Operational reporting",
+        "Strong match: Financial reporting",
+        "Candidate evidence: Financial reporting"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Please walk through the fixed-asset capitalization-versus-expense assessment you performed at Ellwood Group. What criteria did you apply, and how did the decision affect depreciation and the financial statements?",
+      "competency": "Capitalization judgment",
+      "dimension": "Technical",
+      "target_gap": "General accounting",
+      "difficulty": "mid",
+      "rationale": "Uses documented fixed-asset work to validate broader general-accounting judgment, which is partially matched.",
+      "source_evidence": [
+        "Partial match: General accounting",
+        "Candidate evidence: Reviewed invoices to determine capital fixed asset versus expense treatment."
+      ],
+      "priority": 0.8
+    },
+    {
+      "question": "You receive a balance-sheet account reconciliation with a reconciling item that has rolled forward for three months. What is your investigation plan, and when would you escalate?",
+      "competency": "Reconciliation controls",
+      "dimension": "Situational",
+      "target_gap": "Account reconciliations",
+      "difficulty": "mid",
+      "rationale": "Builds on a strong reconciliation match while testing control-minded escalation and resolution practices.",
+      "source_evidence": [
+        "Strong match: Account reconciliations",
+        "Candidate evidence: Prepared balance sheet account reconciliations and roll-forward schedules."
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Describe a time you found and eliminated a financial discrepancy. How did you isolate the cause, communicate the impact, and confirm the correction was complete?",
+      "competency": "Problem solving",
+      "dimension": "Behavioural",
+      "target_gap": "General accounting",
+      "difficulty": "mid",
+      "rationale": "The candidate documented resolving discrepancies; this probes the analysis and communication behind that outcome.",
+      "source_evidence": [
+        "Partial match: General accounting",
+        "Candidate evidence: Researched and eliminated financial discrepancies in a timely manner."
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "What controls would you build into an Excel-based amortization schedule to ensure formulas, start and end dates, and monthly postings remain accurate as new items are added?",
+      "competency": "Excel-based accounting schedules",
+      "dimension": "Technical",
+      "target_gap": "Microsoft Excel",
+      "difficulty": "mid",
+      "rationale": "Connects the required Excel capability to the role's schedule-heavy prepaid and lease responsibilities.",
+      "source_evidence": [
+        "Strong match: Microsoft Excel",
+        "Weak match: Prepaids amortization",
+        "Weak match: Lease accounting"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "At George Washington University, you prepared budget-versus-actual reports with variance analysis. Choose one variance and explain how you identified the driver, validated it, and presented it to stakeholders.",
+      "competency": "Variance analysis",
+      "dimension": "Behavioural",
+      "target_gap": "Financial reporting",
+      "difficulty": "mid",
+      "rationale": "Uses a documented example to test the candidate's reporting analysis and ability to explain results.",
+      "source_evidence": [
+        "Strong match: Financial reporting",
+        "Candidate evidence: Prepared year-to-date profit and loss budget and actual reports with variance analysis."
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "How would you handle a situation in which a department disputes an allocation methodology that finance considers reasonable?",
+      "competency": "Stakeholder management",
+      "dimension": "Situational",
+      "target_gap": "Operational reporting",
+      "difficulty": "mid",
+      "rationale": "Tests communication and collaboration required when providing department-facing reporting and allocations.",
+      "source_evidence": [
+        "Partial match: Operational reporting",
+        "Partial match: Month-end allocations",
+        "Candidate evidence: Excellent communication skills"
+      ],
+      "priority": 0.76
+    },
+    {
+      "question": "What steps would you take to validate that the accounts, cost centers, periods, and descriptions on a batch of proposed month-end journal entries are complete and accurate before posting?",
+      "competency": "Journal-entry quality assurance",
+      "dimension": "Technical",
+      "target_gap": "Journal entries",
+      "difficulty": "mid",
+      "rationale": "Assesses a systematic approach to journal-entry accuracy, a partial-match requirement central to close quality.",
+      "source_evidence": [
+        "Partial match: Journal entries",
+        "Candidate evidence: Performed month-end General Ledger close and prepared manual journal entries."
+      ],
+      "priority": 0.81
+    },
+    {
+      "question": "Your r\u00e9sum\u00e9 shows several temporary accounting assignments across different organizations. How did you get effective quickly in unfamiliar systems and processes, and what would your first 30 days in this Senior Accountant role look like?",
+      "competency": "Adaptability and onboarding",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Probes the candidate's documented pattern of temporary assignments and ability to transition into a sustained role without inferring unlisted experience.",
+      "source_evidence": [
+        "Accountant II, Ellwood Group, 11/2014 to 10/2016",
+        "Senior Accountant (TEMP), Meggitt Plc",
+        "Ability to learn new software programs"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "You developed a new employee evaluation process at Ellwood Group. What problem were you solving, how did you gain buy-in, and what evidence showed performance improved?",
+      "competency": "Process improvement",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Explores a documented achievement that can reveal initiative, change management, and evidence-based improvement.",
+      "source_evidence": [
+        "Developed a new process for employee evaluation that resulted in marked performance improvements."
+      ],
+      "priority": 0.69
+    },
+    {
+      "question": "What aspects of this Senior Accountant position\u2014particularly recurring close ownership, schedules, and department reporting\u2014are most motivating to you at this stage of your accounting career?",
+      "competency": "Role motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Assesses motivation and fit for the role's recurring accounting responsibilities using the candidate's stated progressive accounting background.",
+      "source_evidence": [
+        "Progressive experience in accounting and financial management",
+        "Accountant II",
+        "Senior Accountant"
+      ],
+      "priority": 0.68
+    },
+    {
+      "question": "Imagine that, after close, a prepaid balance is materially overstated because one month of amortization was omitted. How would you quantify the impact, correct the books, assess whether prior reporting is affected, and prevent recurrence?",
+      "competency": "Prepaids error resolution",
+      "dimension": "Situational",
+      "target_gap": "Prepaids amortization",
+      "difficulty": "hard",
+      "rationale": "Tests technical remediation, materiality judgment, and preventive controls for the most significant identified gap.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Candidate evidence: General ledger accounting",
+        "Candidate evidence: Researched and eliminated financial discrepancies in a timely manner."
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Describe how you would coordinate with Accounts Payable when an invoice must be coded as a prepaid, fixed asset, lease-related cost, or current-period expense. What information would you require and how would you document the decision?",
+      "competency": "AP accounting coordination",
+      "dimension": "Role-Specific",
+      "target_gap": "General accounting",
+      "difficulty": "mid",
+      "rationale": "Tests practical cross-functional accounting judgment relevant to the role and grounded in the candidate's AP support and capitalization experience.",
+      "source_evidence": [
+        "Partial match: General accounting",
+        "Candidate evidence: Supported Accounts Payable and Purchasing with accounting issue resolution.",
+        "Candidate evidence: Reviewed invoices to determine capital fixed asset versus expense treatment."
+      ],
+      "priority": 0.8
+    }
+  ],
+  "validation_failures": [],
+  "n_raw": 30,
+  "n_valid": 30,
+  "n_failed": 0,
+  "weights": [
+    0.3933,
+    0.436,
+    0.2365,
+    0.3933,
+    0.2342,
+    0.2253,
+    0.1011,
+    0.1052,
+    0.2317,
+    0.245,
+    0.1606,
+    0.2253,
+    0.436,
+    0.2341,
+    0.2341,
+    0.3933,
+    0.2365,
+    0.245,
+    0.2151,
+    0.1052,
+    0.2151,
+    0.1606,
+    0.1011,
+    0.245,
+    0.2341,
+    0.23484166666666664,
+    0.23484166666666664,
+    0.23484166666666664,
+    0.436,
+    0.2151
+  ],
+  "weight_outcomes": [
+    {
+      "rule": "exact",
+      "weight": 0.3933,
+      "matched_competency": "Lease accounting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.436,
+      "matched_competency": "Prepaids amortization",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2365,
+      "matched_competency": "Full-cycle accounting and close",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3933,
+      "matched_competency": "Lease accounting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2342,
+      "matched_competency": "Monthly accruals",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2253,
+      "matched_competency": "Month-end allocations",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1011,
+      "matched_competency": "Financial reporting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1052,
+      "matched_competency": "Account reconciliations",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2317,
+      "matched_competency": "US GAAP",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.245,
+      "matched_competency": "Operational reporting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1606,
+      "matched_competency": "Microsoft Excel",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2253,
+      "matched_competency": "Month-end allocations",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.436,
+      "matched_competency": "Prepaids amortization",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2341,
+      "matched_competency": "Journal entries",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2341,
+      "matched_competency": "Journal entries",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.3933,
+      "matched_competency": "Lease accounting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2365,
+      "matched_competency": "Full-cycle accounting and close",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.245,
+      "matched_competency": "Operational reporting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2151,
+      "matched_competency": "General accounting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1052,
+      "matched_competency": "Account reconciliations",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2151,
+      "matched_competency": "General accounting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1606,
+      "matched_competency": "Microsoft Excel",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.1011,
+      "matched_competency": "Financial reporting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.245,
+      "matched_competency": "Operational reporting",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2341,
+      "matched_competency": "Journal entries",
+      "cosine": 1.0
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.23484166666666664,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.23484166666666664,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "profile_probe",
+      "weight": 0.23484166666666664,
+      "matched_competency": "profile_probe",
+      "cosine": null
+    },
+    {
+      "rule": "exact",
+      "weight": 0.436,
+      "matched_competency": "Prepaids amortization",
+      "cosine": 1.0
+    },
+    {
+      "rule": "exact",
+      "weight": 0.2151,
+      "matched_competency": "General accounting",
+      "cosine": 1.0
+    }
+  ],
+  "fallback_rate": 0.0,
+  "profile_probe_rate": 0.1,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 8216,
+    "output_tokens": 3455,
+    "cached_tokens": 0,
+    "estimated_cost": 0.057892,
+    "latency_ms": 28968.05,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.057892,
+  "cost_cny": 0.39192884,
+  "usd_cny_rate": 6.77,
+  "user_prompt_sha256": "1aa651545e265e5facd0d2bcc276db7aa4918b21ea2e476dcb5ea780e50b9a7c",
+  "generated_at": "2026-10-11T13:15:31.673009+00:00"
+}

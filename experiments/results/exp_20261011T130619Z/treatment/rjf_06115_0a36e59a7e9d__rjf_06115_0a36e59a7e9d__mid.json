@@ -1,0 +1,460 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_06115_0a36e59a7e9d",
+  "jd_id": "rjf_06115_0a36e59a7e9d",
+  "pair_id": "rjf_06115_0a36e59a7e9d",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 21,
+  "pool_path": "pool/rjf_06115_0a36e59a7e9d__rjf_06115_0a36e59a7e9d__mid.json",
+  "pool_stats": {
+    "n_raw": 31,
+    "n_valid": 31,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.03225806451612903,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      18,
+      27,
+      5,
+      16,
+      19,
+      6,
+      17,
+      14,
+      0,
+      26
+    ],
+    "questions": [
+      {
+        "question": "How would you create a current-state and future-state process flow for a patient-facing workflow that currently has duplicate data entry across two systems? Explain the notation, decision points, exceptions, owners, and validation steps you would include.",
+        "competency": "Functional modeling and process flows",
+        "competency_type": "technical",
+        "target_gap": "Microsoft Visio",
+        "question_type": "Technical",
+        "difficulty": "hard",
+        "rationale": "Uses process-flow work central to the role while probing the missing Visio capability needed to create and maintain the artifacts.",
+        "source_evidence": [
+          "Job responsibility: create and maintain functional models and process flows",
+          "Gap matrix: Microsoft Visio \u2014 missing"
+        ],
+        "priority": 0.94,
+        "weight": 0.9274
+      },
+      {
+        "question": "This role requires at least five years of related experience. Walk us through which parts of your Data Analyst and Fraud Coordinator, team-lead, and other roles you consider directly relevant to IT system business analysis, and where you would need support initially.",
+        "competency": "Related professional experience",
+        "competency_type": "soft",
+        "target_gap": "Related professional experience",
+        "question_type": "Cultural/Motivational",
+        "difficulty": "mid",
+        "rationale": "Clarifies the candidate's fit against a missing experience requirement while inviting an accurate account of transferable experience and development needs.",
+        "source_evidence": [
+          "Gap matrix: Related professional experience \u2014 missing",
+          "Data Analyst and Fraud Coordinator, 04/2019-12/2022",
+          "Customer Care Team Lead, 04/2018-03/2019"
+        ],
+        "priority": 0.93,
+        "weight": 0.9276
+      },
+      {
+        "question": "You are supporting two urgent production issues, a requirements workshop, and a scheduled reporting deliverable, all due this week. How would you assess urgency, communicate trade-offs, and reprioritize the team's work?",
+        "competency": "Task prioritization",
+        "competency_type": "other",
+        "target_gap": "Task prioritization",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Directly probes a missing requirement using a realistic multi-demand business analyst scenario.",
+        "source_evidence": [
+          "Gap matrix: Task prioritization \u2014 missing",
+          "Candidate evidence: Time management"
+        ],
+        "priority": 0.94,
+        "weight": 0.9261
+      },
+      {
+        "question": "Describe any Agile environment you have worked in. If your prior work was not formally Agile, explain how you would participate in backlog refinement, sprint planning, daily stand-ups, reviews, and retrospectives.",
+        "competency": "Agile methodology",
+        "competency_type": "technical",
+        "target_gap": "Agile methodology",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Directly tests a missing required competency while allowing the candidate to distinguish documented experience from transferable practices.",
+        "source_evidence": [
+          "Gap matrix: Agile methodology \u2014 missing",
+          "No Agile experience is listed in the profile"
+        ],
+        "priority": 0.94,
+        "weight": 0.9251
+      },
+      {
+        "question": "What experience do you have with Microsoft Visio or comparable diagramming tools, and can you describe a process, data-flow, or functional model you created and how stakeholders used it?",
+        "competency": "Microsoft Visio",
+        "competency_type": "technical",
+        "target_gap": "Microsoft Visio",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Directly validates a missing desktop-tool requirement and seeks concrete evidence of transferable modeling practice.",
+        "source_evidence": [
+          "Gap matrix: Microsoft Visio \u2014 missing",
+          "Candidate profile lists Tableau and data visualization, but not Visio"
+        ],
+        "priority": 0.87,
+        "weight": 0.9274
+      },
+      {
+        "question": "Give an example of a period when you had several competing reports, analyses, or team responsibilities. What system did you use to track work, protect deadlines, and escalate capacity constraints?",
+        "competency": "Multitasking",
+        "competency_type": "soft",
+        "target_gap": "Multitasking",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Tests the missing multitasking competency against the candidate's reporting and leadership experience.",
+        "source_evidence": [
+          "Prepared weekly reports on payments, chargebacks, and credit card fraud",
+          "Managed and trained a team of 25 team members",
+          "Gap matrix: Multitasking \u2014 missing"
+        ],
+        "priority": 0.91,
+        "weight": 0.9256
+      },
+      {
+        "question": "A product owner changes a requirement halfway through a sprint after developers have begun work. As the business analyst, what steps would you take to analyze impact, update artifacts, and support a delivery decision?",
+        "competency": "Agile change management",
+        "competency_type": "other",
+        "target_gap": "Agile methodology",
+        "question_type": "Situational",
+        "difficulty": "hard",
+        "rationale": "Assesses practical Agile analysis behavior under changing scope, a key unverified area.",
+        "source_evidence": [
+          "Gap matrix: Agile methodology \u2014 missing",
+          "Job requirement: standard processes and business-impact assessment"
+        ],
+        "priority": 0.9,
+        "weight": 0.9251
+      },
+      {
+        "question": "What would you need to learn in your first 90 days to become effective as an IT System Business Analyst in a large healthcare organization, and how would you keep current on relevant industry trends?",
+        "competency": "Industry knowledge and trends",
+        "competency_type": "soft",
+        "target_gap": "Industry trends",
+        "question_type": "Cultural/Motivational",
+        "difficulty": "mid",
+        "rationale": "Addresses the missing trends requirement without assuming prior healthcare experience.",
+        "source_evidence": [
+          "Gap matrix: Industry trends \u2014 missing",
+          "Job context: Fortune 15 Healthcare company"
+        ],
+        "priority": 0.89,
+        "weight": 0.929
+      },
+      {
+        "question": "Describe how you would turn a request from a healthcare operations manager to reduce claim-processing rework into a set of validated business requirements, including stakeholders, assumptions, acceptance criteria, and open questions.",
+        "competency": "Business requirements analysis",
+        "competency_type": "other",
+        "target_gap": "Business requirements analysis",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Directly tests an identified weak match in eliciting and structuring requirements for an IT business-analysis context.",
+        "source_evidence": [
+          "Gap matrix: Business requirements analysis \u2014 weak_match",
+          "Candidate evidence: Fraud analysis"
+        ],
+        "priority": 0.95,
+        "weight": 0.6503
+      },
+      {
+        "question": "What direct experience do you have with Microsoft Exchange or enterprise email/calendar administration or integration, and how would you quickly assess its relevance to a system-change requirement?",
+        "competency": "Microsoft Exchange",
+        "competency_type": "technical",
+        "target_gap": "Microsoft Exchange",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Directly probes a missing required application area and the candidate's learning approach.",
+        "source_evidence": [
+          "Gap matrix: Microsoft Exchange \u2014 missing",
+          "Candidate profile lists Network Security and CCNA, but not Exchange"
+        ],
+        "priority": 0.65,
+        "weight": 0.9318
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.871756,
+      0.862668,
+      0.870534,
+      0.869594,
+      0.8068379999999999,
+      0.842296,
+      0.83259,
+      0.82681,
+      0.6177849999999999,
+      0.60567
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.09605200588703156,
+      0.16042837500572205,
+      0.3128780722618103,
+      0.3601749539375305,
+      0.44916486740112305,
+      0.49610525369644165,
+      0.5701635479927063,
+      0.4415457844734192,
+      0.41748473048210144
+    ],
+    "mmr_scores": [
+      0.6102291999999999,
+      0.5750519982338905,
+      0.5612452874982834,
+      0.5148523783214568,
+      0.45673411381874074,
+      0.45485773977966304,
+      0.43398142389106753,
+      0.4077179356021881,
+      0.29998576465797416,
+      0.29872358085536954
+    ],
+    "competency_weights": [
+      0.9274,
+      0.9276,
+      0.9261,
+      0.9251,
+      0.9274,
+      0.9256,
+      0.9251,
+      0.929,
+      0.6503,
+      0.9318
+    ]
+  },
+  "questions": [
+    {
+      "question": "How would you create a current-state and future-state process flow for a patient-facing workflow that currently has duplicate data entry across two systems? Explain the notation, decision points, exceptions, owners, and validation steps you would include."
+    },
+    {
+      "question": "This role requires at least five years of related experience. Walk us through which parts of your Data Analyst and Fraud Coordinator, team-lead, and other roles you consider directly relevant to IT system business analysis, and where you would need support initially."
+    },
+    {
+      "question": "You are supporting two urgent production issues, a requirements workshop, and a scheduled reporting deliverable, all due this week. How would you assess urgency, communicate trade-offs, and reprioritize the team's work?"
+    },
+    {
+      "question": "Describe any Agile environment you have worked in. If your prior work was not formally Agile, explain how you would participate in backlog refinement, sprint planning, daily stand-ups, reviews, and retrospectives."
+    },
+    {
+      "question": "What experience do you have with Microsoft Visio or comparable diagramming tools, and can you describe a process, data-flow, or functional model you created and how stakeholders used it?"
+    },
+    {
+      "question": "Give an example of a period when you had several competing reports, analyses, or team responsibilities. What system did you use to track work, protect deadlines, and escalate capacity constraints?"
+    },
+    {
+      "question": "A product owner changes a requirement halfway through a sprint after developers have begun work. As the business analyst, what steps would you take to analyze impact, update artifacts, and support a delivery decision?"
+    },
+    {
+      "question": "What would you need to learn in your first 90 days to become effective as an IT System Business Analyst in a large healthcare organization, and how would you keep current on relevant industry trends?"
+    },
+    {
+      "question": "Describe how you would turn a request from a healthcare operations manager to reduce claim-processing rework into a set of validated business requirements, including stakeholders, assumptions, acceptance criteria, and open questions."
+    },
+    {
+      "question": "What direct experience do you have with Microsoft Exchange or enterprise email/calendar administration or integration, and how would you quickly assess its relevance to a system-change requirement?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "How would you create a current-state and future-state process flow for a patient-facing workflow that currently has duplicate data entry across two systems? Explain the notation, decision points, exceptions, owners, and validation steps you would include.",
+      "competency": "Functional modeling and process flows",
+      "competency_type": "technical",
+      "target_gap": "Microsoft Visio",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Uses process-flow work central to the role while probing the missing Visio capability needed to create and maintain the artifacts.",
+      "source_evidence": [
+        "Job responsibility: create and maintain functional models and process flows",
+        "Gap matrix: Microsoft Visio \u2014 missing"
+      ],
+      "priority": 0.94,
+      "weight": 0.9274
+    },
+    {
+      "question": "This role requires at least five years of related experience. Walk us through which parts of your Data Analyst and Fraud Coordinator, team-lead, and other roles you consider directly relevant to IT system business analysis, and where you would need support initially.",
+      "competency": "Related professional experience",
+      "competency_type": "soft",
+      "target_gap": "Related professional experience",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Clarifies the candidate's fit against a missing experience requirement while inviting an accurate account of transferable experience and development needs.",
+      "source_evidence": [
+        "Gap matrix: Related professional experience \u2014 missing",
+        "Data Analyst and Fraud Coordinator, 04/2019-12/2022",
+        "Customer Care Team Lead, 04/2018-03/2019"
+      ],
+      "priority": 0.93,
+      "weight": 0.9276
+    },
+    {
+      "question": "You are supporting two urgent production issues, a requirements workshop, and a scheduled reporting deliverable, all due this week. How would you assess urgency, communicate trade-offs, and reprioritize the team's work?",
+      "competency": "Task prioritization",
+      "competency_type": "other",
+      "target_gap": "Task prioritization",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Directly probes a missing requirement using a realistic multi-demand business analyst scenario.",
+      "source_evidence": [
+        "Gap matrix: Task prioritization \u2014 missing",
+        "Candidate evidence: Time management"
+      ],
+      "priority": 0.94,
+      "weight": 0.9261
+    },
+    {
+      "question": "Describe any Agile environment you have worked in. If your prior work was not formally Agile, explain how you would participate in backlog refinement, sprint planning, daily stand-ups, reviews, and retrospectives.",
+      "competency": "Agile methodology",
+      "competency_type": "technical",
+      "target_gap": "Agile methodology",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly tests a missing required competency while allowing the candidate to distinguish documented experience from transferable practices.",
+      "source_evidence": [
+        "Gap matrix: Agile methodology \u2014 missing",
+        "No Agile experience is listed in the profile"
+      ],
+      "priority": 0.94,
+      "weight": 0.9251
+    },
+    {
+      "question": "What experience do you have with Microsoft Visio or comparable diagramming tools, and can you describe a process, data-flow, or functional model you created and how stakeholders used it?",
+      "competency": "Microsoft Visio",
+      "competency_type": "technical",
+      "target_gap": "Microsoft Visio",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly validates a missing desktop-tool requirement and seeks concrete evidence of transferable modeling practice.",
+      "source_evidence": [
+        "Gap matrix: Microsoft Visio \u2014 missing",
+        "Candidate profile lists Tableau and data visualization, but not Visio"
+      ],
+      "priority": 0.87,
+      "weight": 0.9274
+    },
+    {
+      "question": "Give an example of a period when you had several competing reports, analyses, or team responsibilities. What system did you use to track work, protect deadlines, and escalate capacity constraints?",
+      "competency": "Multitasking",
+      "competency_type": "soft",
+      "target_gap": "Multitasking",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests the missing multitasking competency against the candidate's reporting and leadership experience.",
+      "source_evidence": [
+        "Prepared weekly reports on payments, chargebacks, and credit card fraud",
+        "Managed and trained a team of 25 team members",
+        "Gap matrix: Multitasking \u2014 missing"
+      ],
+      "priority": 0.91,
+      "weight": 0.9256
+    },
+    {
+      "question": "A product owner changes a requirement halfway through a sprint after developers have begun work. As the business analyst, what steps would you take to analyze impact, update artifacts, and support a delivery decision?",
+      "competency": "Agile change management",
+      "competency_type": "other",
+      "target_gap": "Agile methodology",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Assesses practical Agile analysis behavior under changing scope, a key unverified area.",
+      "source_evidence": [
+        "Gap matrix: Agile methodology \u2014 missing",
+        "Job requirement: standard processes and business-impact assessment"
+      ],
+      "priority": 0.9,
+      "weight": 0.9251
+    },
+    {
+      "question": "What would you need to learn in your first 90 days to become effective as an IT System Business Analyst in a large healthcare organization, and how would you keep current on relevant industry trends?",
+      "competency": "Industry knowledge and trends",
+      "competency_type": "soft",
+      "target_gap": "Industry trends",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Addresses the missing trends requirement without assuming prior healthcare experience.",
+      "source_evidence": [
+        "Gap matrix: Industry trends \u2014 missing",
+        "Job context: Fortune 15 Healthcare company"
+      ],
+      "priority": 0.89,
+      "weight": 0.929
+    },
+    {
+      "question": "Describe how you would turn a request from a healthcare operations manager to reduce claim-processing rework into a set of validated business requirements, including stakeholders, assumptions, acceptance criteria, and open questions.",
+      "competency": "Business requirements analysis",
+      "competency_type": "other",
+      "target_gap": "Business requirements analysis",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Directly tests an identified weak match in eliciting and structuring requirements for an IT business-analysis context.",
+      "source_evidence": [
+        "Gap matrix: Business requirements analysis \u2014 weak_match",
+        "Candidate evidence: Fraud analysis"
+      ],
+      "priority": 0.95,
+      "weight": 0.6503
+    },
+    {
+      "question": "What direct experience do you have with Microsoft Exchange or enterprise email/calendar administration or integration, and how would you quickly assess its relevance to a system-change requirement?",
+      "competency": "Microsoft Exchange",
+      "competency_type": "technical",
+      "target_gap": "Microsoft Exchange",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly probes a missing required application area and the candidate's learning approach.",
+      "source_evidence": [
+        "Gap matrix: Microsoft Exchange \u2014 missing",
+        "Candidate profile lists Network Security and CCNA, but not Exchange"
+      ],
+      "priority": 0.65,
+      "weight": 0.9318
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 8660,
+    "output_tokens": 3712,
+    "cached_tokens": 0,
+    "estimated_cost": 0.061864,
+    "latency_ms": 29165.68,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.061864,
+  "cost_cny": 0.41881928,
+  "selection_latency_ms": 37.18,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:18:47.381070+00:00"
+}

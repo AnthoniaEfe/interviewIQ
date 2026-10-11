@@ -1,0 +1,225 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S2",
+  "selection_strategy": "plain_mmr_query",
+  "generation_mode": null,
+  "profile_id": "rjf_05260_4f6ef90caf00",
+  "jd_id": "rjf_05260_4f6ef90caf00",
+  "pair_id": "rjf_05260_4f6ef90caf00",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_05260_4f6ef90caf00__rjf_05260_4f6ef90caf00__mid.json",
+  "n_requirements": 28,
+  "questions": [
+    {
+      "question": "Describe a software-development task from your test-automation work that required you to interface with hardware or test equipment. How would you translate that experience into developing and debugging microprocessor firmware?"
+    },
+    {
+      "question": "A PCB designer asks for guidance on routing a board containing a microcontroller, image sensor interface, power regulators, and fast digital lines. What placement and routing constraints would you provide, and why?"
+    },
+    {
+      "question": "This team may use PAD PCB design tools. How would you learn the tool while ensuring that library choices, design rules, and manufacturing outputs are reliable?"
+    },
+    {
+      "question": "How would you partition responsibilities between an FPGA and a microcontroller in a high-throughput image-capture system, particularly for timing-critical acquisition, buffering, configuration, and diagnostics?"
+    },
+    {
+      "question": "This position requires onsite work five days per week and close interaction with manufacturing. What specifically motivates you to move from hardware test and repair into this hands-on digital engineering role, and how would you build effective day-to-day relationships with production partners?"
+    },
+    {
+      "question": "What experience do you have with the NXP i.MX family or similar application processors? How would you structure early hardware and firmware bring-up for a board using one?"
+    },
+    {
+      "question": "Have you used DX Designer for schematic capture or PCB design? If not, how would you transfer your schematic-reading and hardware-test knowledge into a DX Designer design-review workflow?"
+    },
+    {
+      "question": "What microprocessor- or microcontroller-based hardware have you personally worked with, and what was your specific responsibility in its design, programming, bring-up, or test?"
+    },
+    {
+      "question": "Walk me through how you would review a captured schematic for a new microcontroller-based image-capture board before it is released for layout. What checks would you make for power, reset, clocks, interfaces, and testability?"
+    },
+    {
+      "question": "What experience, if any, do you have with Texas Instruments Code Composer Studio? If it is new to you, outline how you would bring up, build, flash, and debug a TI microcontroller project during your first week."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe a software-development task from your test-automation work that required you to interface with hardware or test equipment. How would you translate that experience into developing and debugging microprocessor firmware?",
+      "competency": "Microprocessor firmware transition",
+      "competency_type": "soft",
+      "target_gap": "Microprocessor firmware development",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Connects the candidate's verified automation experience to the weakly matched preferred microprocessor-firmware requirement while testing transferability.",
+      "source_evidence": [
+        "Developed and maintained an in-house test automation framework",
+        "Software development and documentation",
+        "Microprocessor firmware development"
+      ],
+      "priority": 0.6,
+      "weight": 0.3883
+    },
+    {
+      "question": "A PCB designer asks for guidance on routing a board containing a microcontroller, image sensor interface, power regulators, and fast digital lines. What placement and routing constraints would you provide, and why?",
+      "competency": "PCB layout guidance",
+      "competency_type": "other",
+      "target_gap": "PCB layout and routing",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "The role requires layout and routing guidance, while the profile primarily establishes test procedure and hardware-test experience.",
+      "source_evidence": [
+        "Created and revised programming and testing procedures",
+        "Reading schematics",
+        "PCB layout and routing"
+      ],
+      "priority": 0.95,
+      "weight": 0.7106
+    },
+    {
+      "question": "This team may use PAD PCB design tools. How would you learn the tool while ensuring that library choices, design rules, and manufacturing outputs are reliable?",
+      "competency": "PAD tool readiness",
+      "competency_type": "other",
+      "target_gap": "PAD PCB design tools",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Assesses readiness for a missing preferred tool and the candidate's ability to work methodically in a production context.",
+      "source_evidence": [
+        "PAD PCB design tools",
+        "Manufacturing documentation",
+        "Test procedure software development and documentation"
+      ],
+      "priority": 0.59,
+      "weight": 0.5633
+    },
+    {
+      "question": "How would you partition responsibilities between an FPGA and a microcontroller in a high-throughput image-capture system, particularly for timing-critical acquisition, buffering, configuration, and diagnostics?",
+      "competency": "FPGA system partitioning",
+      "competency_type": "technical",
+      "target_gap": "FPGA development",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Probes a weakly matched required FPGA capability through a role-relevant architecture decision.",
+      "source_evidence": [
+        "Software development and documentation",
+        "FPGA development",
+        "Image capture systems"
+      ],
+      "priority": 0.92,
+      "weight": 0.6569
+    },
+    {
+      "question": "This position requires onsite work five days per week and close interaction with manufacturing. What specifically motivates you to move from hardware test and repair into this hands-on digital engineering role, and how would you build effective day-to-day relationships with production partners?",
+      "competency": "Role motivation and collaboration",
+      "competency_type": "soft",
+      "target_gap": "profile_probe",
+      "question_type": "Cultural/Motivational",
+      "difficulty": "mid",
+      "rationale": "Assesses motivation for the transition and collaboration style using the candidate's documented training, manufacturing-adjacent, and hardware-test background.",
+      "source_evidence": [
+        "Primary trainer on test procedure software development and documentation",
+        "Assembled and maintained records for component kits for shipment to manufacturing",
+        "Hardware Test Engineer"
+      ],
+      "priority": 0.78,
+      "weight": 0.572375
+    },
+    {
+      "question": "What experience do you have with the NXP i.MX family or similar application processors? How would you structure early hardware and firmware bring-up for a board using one?",
+      "competency": "NXP i.MX readiness",
+      "competency_type": "technical",
+      "target_gap": "NXP i.MX family",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "NXP i.MX is a missing preferred skill and is relevant to sophisticated embedded image-capture systems.",
+      "source_evidence": [
+        "NXP i.MX family",
+        "Linux",
+        "Unix file systems"
+      ],
+      "priority": 0.55,
+      "weight": 0.573
+    },
+    {
+      "question": "Have you used DX Designer for schematic capture or PCB design? If not, how would you transfer your schematic-reading and hardware-test knowledge into a DX Designer design-review workflow?",
+      "competency": "DX Designer adoption",
+      "competency_type": "other",
+      "target_gap": "DX Designer",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Tests an undocumented preferred tool while connecting the question to verified schematic experience.",
+      "source_evidence": [
+        "DX Designer",
+        "Reading schematics",
+        "Hardware testing"
+      ],
+      "priority": 0.58,
+      "weight": 0.5672
+    },
+    {
+      "question": "What microprocessor- or microcontroller-based hardware have you personally worked with, and what was your specific responsibility in its design, programming, bring-up, or test?",
+      "competency": "Microprocessor design exposure",
+      "competency_type": "technical",
+      "target_gap": "Microprocessor-based design",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly clarifies a weakly matched core requirement without assuming that the candidate has microprocessor design experience.",
+      "source_evidence": [
+        "Shell scripting",
+        "Electronic component and assembly testing"
+      ],
+      "priority": 0.93,
+      "weight": 0.7293
+    },
+    {
+      "question": "Walk me through how you would review a captured schematic for a new microcontroller-based image-capture board before it is released for layout. What checks would you make for power, reset, clocks, interfaces, and testability?",
+      "competency": "Schematic review",
+      "competency_type": "other",
+      "target_gap": "Electronic schematics",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "The profile shows schematic-reading experience, while the role requires schematic capture and design review rather than only interpretation.",
+      "source_evidence": [
+        "Reading schematics",
+        "Electronic schematics"
+      ],
+      "priority": 0.85,
+      "weight": 0.3532
+    },
+    {
+      "question": "What experience, if any, do you have with Texas Instruments Code Composer Studio? If it is new to you, outline how you would bring up, build, flash, and debug a TI microcontroller project during your first week.",
+      "competency": "Code Composer Studio",
+      "competency_type": "other",
+      "target_gap": "Code Composer Studio",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Code Composer Studio is explicitly required and missing from the documented profile.",
+      "source_evidence": [
+        "Code Composer Studio",
+        "Linux",
+        "Bash shell scripts"
+      ],
+      "priority": 0.92,
+      "weight": 0.9322
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    27,
+    7,
+    16,
+    6,
+    29,
+    26,
+    14,
+    2,
+    1,
+    10
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.22,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:50.172306+00:00"
+}

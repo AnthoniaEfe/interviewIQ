@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_03858_f96a3845408e",
+  "jd_id": "rjf_03858_f96a3845408e",
+  "pair_id": "rjf_03858_f96a3845408e",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Your recent work at Avanade involved Spark jobs and scalable AWS data-processing integrations. How would you translate one of those jobs into an Azure Databricks implementation, including cluster configuration, job deployment, and cost/performance controls?"
+    },
+    {
+      "question": "The role requires Azure Data Factory, which is not listed in your profile. How would you design an ADF orchestration pipeline to ingest data from several source systems, trigger Databricks transformations, manage dependencies and retries, and publish curated data?"
+    },
+    {
+      "question": "Describe a PySpark transformation you built at Avanade that applied complex business rules to produce canonical metrics. How did you structure the code, handle skew or performance bottlenecks, and verify that the resulting metrics were correct?"
+    },
+    {
+      "question": "You have used Git and list Jenkins, while this role requires CI/CD for software deployment. Walk us through a CI/CD pipeline you have used or would establish for a PySpark data application, from pull request through automated tests and production release."
+    },
+    {
+      "question": "At Avanade, you performed row-count, schema, and hash-key validation. How would you turn those checks into a data-hygiene framework for production pipelines, including rules for quarantine, alerting, remediation, and tracking data-quality trends?"
+    },
+    {
+      "question": "Tell us about a production data-processing issue you investigated using Spark metrics or Splunk. How did you isolate the root cause, communicate the impact, implement a permanent fix, and confirm the fix in production?"
+    },
+    {
+      "question": "This role handles both relational and NoSQL data stores. Based on your experience with SQL Server, Teradata, Hive, and Snowflake, how would you decide whether a new analytics-serving workload should use a relational store or a NoSQL database, and what knowledge would you need to validate the choice?"
+    },
+    {
+      "question": "Imagine a critical fraud-prevention pipeline is delayed shortly before its downstream consumers need the data. What immediate operational actions would you take, how would you diagnose the failure, and what changes would you propose to prevent recurrence?"
+    },
+    {
+      "question": "In your Verizon role, you gathered customer analytical needs and translated them into detailed system specifications. Describe how you aligned business stakeholders and technical teams when requirements were unclear or changed, and how you ensured the delivered solution met the original business need."
+    },
+    {
+      "question": "This mid-level Azure Data Engineer role expects team members to improve processes and share knowledge. What would motivate you to move from your AWS/Spark background into this Azure-focused role, and how would you help cross-train teammates while developing your own Azure Databricks and Data Factory expertise?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 7466,
+    "output_tokens": 571,
+    "cached_tokens": 0,
+    "estimated_cost": 0.021784,
+    "latency_ms": 6351.83,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.021784,
+  "cost_cny": 0.14747768,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:03:57.758104+00:00",
+  "user_prompt_sha256": "fc3b8fe6e8711dfe1ddc778c8f8456757b891e0e0e068ca2060f903716f2f93d"
+}

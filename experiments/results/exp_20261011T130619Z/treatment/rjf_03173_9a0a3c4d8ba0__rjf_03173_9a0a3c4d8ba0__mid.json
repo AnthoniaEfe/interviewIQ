@@ -1,0 +1,478 @@
+{
+  "experiment_id": "exp_20261011T130619Z",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "selection_strategy": "competency_weighted_mmr",
+  "profile_id": "rjf_03173_9a0a3c4d8ba0",
+  "jd_id": "rjf_03173_9a0a3c4d8ba0",
+  "pair_id": "rjf_03173_9a0a3c4d8ba0",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "n_requirements": 2,
+  "pool_path": "pool/rjf_03173_9a0a3c4d8ba0__rjf_03173_9a0a3c4d8ba0__mid.json",
+  "pool_stats": {
+    "n_raw": 31,
+    "n_valid": 31,
+    "n_failed": 0,
+    "fallback_rate": 0.0,
+    "profile_probe_rate": 0.0967741935483871,
+    "truncated": false
+  },
+  "selection": {
+    "strategy": "competency_weighted_mmr",
+    "selected_indices": [
+      0,
+      4,
+      1,
+      3,
+      14,
+      5,
+      10,
+      2,
+      11,
+      13
+    ],
+    "questions": [
+      {
+        "question": "Walk me through the sales and use tax reconciliation reports you prepared at Graphic Packaging: what data did you compare, how did you investigate differences, and what was your role in resolving them?",
+        "competency": "Sales and use tax reconciliation",
+        "competency_type": "technical",
+        "target_gap": "Taxation",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Taxation is the highest-weight weak match, while the profile specifically mentions sales and use tax reconciliation work that should be validated in depth.",
+        "source_evidence": [
+          "Taxation: weak_match; weight 0.6974",
+          "Prepared sales use and tax reconciliation reports and resolved differences."
+        ],
+        "priority": 0.98,
+        "weight": 0.6974
+      },
+      {
+        "question": "Suppose an invoice was recorded without the expected use tax and the month has already closed. How would you assess the issue, record any adjustment, and document the resolution?",
+        "competency": "Use tax adjustment",
+        "competency_type": "other",
+        "target_gap": "Taxation",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Evaluates judgment on a realistic tax-accounting exception and the link between tax treatment, journal entries, and close.",
+        "source_evidence": [
+          "Taxation: weak_match",
+          "Prepared and posted journal entries",
+          "Participated in the month-end close process."
+        ],
+        "priority": 0.92,
+        "weight": 0.6974
+      },
+      {
+        "question": "If a sales and use tax reconciliation does not agree to the general ledger near close, how would you determine whether the cause is timing, coding, a missing transaction, or an incorrect tax treatment?",
+        "competency": "Tax discrepancy investigation",
+        "competency_type": "other",
+        "target_gap": "Taxation",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Tests practical tax problem-solving for the identified weak requirement and the candidate's stated reconciliation background.",
+        "source_evidence": [
+          "Taxation: weak_match; weight 0.6974",
+          "Sales use and tax reconciliation reports",
+          "General ledger accounting"
+        ],
+        "priority": 0.97,
+        "weight": 0.6974
+      },
+      {
+        "question": "What controls would you expect around sales and use tax data from invoice or subledger entry through tax return support and general-ledger reconciliation?",
+        "competency": "Tax controls",
+        "competency_type": "technical",
+        "target_gap": "Taxation",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "The role includes taxes, so this probes the candidate's understanding of reliable tax accounting processes beyond the weak-match label.",
+        "source_evidence": [
+          "Taxation: weak_match",
+          "Ensured accuracy of subledger postings and compliance with GAAP and company policies.",
+          "Reviewed and analyzed balance sheet account reconciliations."
+        ],
+        "priority": 0.93,
+        "weight": 0.6974
+      },
+      {
+        "question": "What would make you pause before posting a journal entry intended to correct a tax-related balance?",
+        "competency": "Tax journal-entry review",
+        "competency_type": "technical",
+        "target_gap": "Taxation",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Probes accuracy, evidence standards, and judgment when tax matters require accounting corrections.",
+        "source_evidence": [
+          "Taxation: weak_match",
+          "Prepared and posted journal entries",
+          "Balanced and audited general ledger accounts and prepared accounting entries."
+        ],
+        "priority": 0.83,
+        "weight": 0.6974
+      },
+      {
+        "question": "How do you distinguish a sales tax issue from a use tax issue in an accounting workflow, and what information would you need before deciding on the accounting treatment?",
+        "competency": "Sales versus use tax",
+        "competency_type": "technical",
+        "target_gap": "Taxation",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Directly assesses foundational tax knowledge where the matrix indicates only a weak match.",
+        "source_evidence": [
+          "Taxation: weak_match",
+          "Sales Use & Tax reconciliation",
+          "General and tax accounting"
+        ],
+        "priority": 0.91,
+        "weight": 0.6974
+      },
+      {
+        "question": "What parts of taxation have you handled directly versus supported through reconciliation, reporting, or documentation?",
+        "competency": "Tax scope of experience",
+        "competency_type": "domain",
+        "target_gap": "Taxation",
+        "question_type": "Role-Specific",
+        "difficulty": "mid",
+        "rationale": "Clarifies the depth and boundaries of the candidate's tax experience, which is the principal weakly matched requirement.",
+        "source_evidence": [
+          "Taxation: weak_match",
+          "General and tax accounting",
+          "Prepared sales use and tax reconciliation reports and resolved differences."
+        ],
+        "priority": 0.94,
+        "weight": 0.6974
+      },
+      {
+        "question": "Describe a tax-related reconciliation difference you resolved. What evidence did you use, which stakeholders did you involve, and how did you confirm the final correction was appropriate?",
+        "competency": "Tax issue resolution",
+        "competency_type": "soft",
+        "target_gap": "Taxation",
+        "question_type": "Behavioural",
+        "difficulty": "mid",
+        "rationale": "Assesses whether the candidate has hands-on ownership of tax exceptions rather than only report preparation experience.",
+        "source_evidence": [
+          "Taxation: weak_match",
+          "Prepared sales use and tax reconciliation reports and resolved differences.",
+          "Researched and resolved reconciliation items with various departments."
+        ],
+        "priority": 0.95,
+        "weight": 0.6974
+      },
+      {
+        "question": "How would you prioritize work if a tax reconciliation, a month-end journal entry, and an auditor request were all due on the same day?",
+        "competency": "Tax deadline management",
+        "competency_type": "other",
+        "target_gap": "Taxation",
+        "question_type": "Situational",
+        "difficulty": "mid",
+        "rationale": "Assesses prioritization under competing deadlines in the role's accounting-and-taxes scope.",
+        "source_evidence": [
+          "Taxation: weak_match",
+          "Participated in the month-end close process.",
+          "Provided audit support to internal auditors and EY.",
+          "Effectively manages strict deadlines"
+        ],
+        "priority": 0.84,
+        "weight": 0.6974
+      },
+      {
+        "question": "How would you use general-ledger balances, subledger detail, and source invoices to build a monthly tax reconciliation from scratch?",
+        "competency": "Tax reconciliation process",
+        "competency_type": "technical",
+        "target_gap": "Taxation",
+        "question_type": "Technical",
+        "difficulty": "mid",
+        "rationale": "Tests a repeatable end-to-end approach to the role's tax requirement and connects to the candidate's GL and subledger experience.",
+        "source_evidence": [
+          "Taxation: weak_match",
+          "Verified and posted business transactions to the general ledger.",
+          "Ensured accuracy of subledger postings.",
+          "Prepared sales use and tax reconciliation reports."
+        ],
+        "priority": 0.9,
+        "weight": 0.6974
+      }
+    ],
+    "n_selected": 10,
+    "backfilled": false,
+    "backfill_count": 0,
+    "notes": [],
+    "n_redundant_pairs_pool": 0,
+    "n_redundant_pairs_final": 0,
+    "relevance_scores": [
+      0.6834520000000001,
+      0.6416080000000001,
+      0.676478,
+      0.6485820000000001,
+      0.578842,
+      0.634634,
+      0.655556,
+      0.66253,
+      0.585816,
+      0.62766
+    ],
+    "redundancy_scores": [
+      0.0,
+      0.4477507770061493,
+      0.56401526927948,
+      0.5858865976333618,
+      0.4263651371002197,
+      0.5934339761734009,
+      0.6763908267021179,
+      0.7163266539573669,
+      0.5553803443908691,
+      0.6963210105895996
+    ],
+    "mmr_scores": [
+      0.4784164,
+      0.3148003668981552,
+      0.304330019216156,
+      0.27824142070999147,
+      0.277279858869934,
+      0.2662136071479797,
+      0.2559719519893646,
+      0.24887300381278982,
+      0.2434570966827392,
+      0.23046569682312007
+    ],
+    "competency_weights": [
+      0.6974,
+      0.6974,
+      0.6974,
+      0.6974,
+      0.6974,
+      0.6974,
+      0.6974,
+      0.6974,
+      0.6974,
+      0.6974
+    ]
+  },
+  "questions": [
+    {
+      "question": "Walk me through the sales and use tax reconciliation reports you prepared at Graphic Packaging: what data did you compare, how did you investigate differences, and what was your role in resolving them?"
+    },
+    {
+      "question": "Suppose an invoice was recorded without the expected use tax and the month has already closed. How would you assess the issue, record any adjustment, and document the resolution?"
+    },
+    {
+      "question": "If a sales and use tax reconciliation does not agree to the general ledger near close, how would you determine whether the cause is timing, coding, a missing transaction, or an incorrect tax treatment?"
+    },
+    {
+      "question": "What controls would you expect around sales and use tax data from invoice or subledger entry through tax return support and general-ledger reconciliation?"
+    },
+    {
+      "question": "What would make you pause before posting a journal entry intended to correct a tax-related balance?"
+    },
+    {
+      "question": "How do you distinguish a sales tax issue from a use tax issue in an accounting workflow, and what information would you need before deciding on the accounting treatment?"
+    },
+    {
+      "question": "What parts of taxation have you handled directly versus supported through reconciliation, reporting, or documentation?"
+    },
+    {
+      "question": "Describe a tax-related reconciliation difference you resolved. What evidence did you use, which stakeholders did you involve, and how did you confirm the final correction was appropriate?"
+    },
+    {
+      "question": "How would you prioritize work if a tax reconciliation, a month-end journal entry, and an auditor request were all due on the same day?"
+    },
+    {
+      "question": "How would you use general-ledger balances, subledger detail, and source invoices to build a monthly tax reconciliation from scratch?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk me through the sales and use tax reconciliation reports you prepared at Graphic Packaging: what data did you compare, how did you investigate differences, and what was your role in resolving them?",
+      "competency": "Sales and use tax reconciliation",
+      "competency_type": "technical",
+      "target_gap": "Taxation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Taxation is the highest-weight weak match, while the profile specifically mentions sales and use tax reconciliation work that should be validated in depth.",
+      "source_evidence": [
+        "Taxation: weak_match; weight 0.6974",
+        "Prepared sales use and tax reconciliation reports and resolved differences."
+      ],
+      "priority": 0.98,
+      "weight": 0.6974
+    },
+    {
+      "question": "Suppose an invoice was recorded without the expected use tax and the month has already closed. How would you assess the issue, record any adjustment, and document the resolution?",
+      "competency": "Use tax adjustment",
+      "competency_type": "other",
+      "target_gap": "Taxation",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Evaluates judgment on a realistic tax-accounting exception and the link between tax treatment, journal entries, and close.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "Prepared and posted journal entries",
+        "Participated in the month-end close process."
+      ],
+      "priority": 0.92,
+      "weight": 0.6974
+    },
+    {
+      "question": "If a sales and use tax reconciliation does not agree to the general ledger near close, how would you determine whether the cause is timing, coding, a missing transaction, or an incorrect tax treatment?",
+      "competency": "Tax discrepancy investigation",
+      "competency_type": "other",
+      "target_gap": "Taxation",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Tests practical tax problem-solving for the identified weak requirement and the candidate's stated reconciliation background.",
+      "source_evidence": [
+        "Taxation: weak_match; weight 0.6974",
+        "Sales use and tax reconciliation reports",
+        "General ledger accounting"
+      ],
+      "priority": 0.97,
+      "weight": 0.6974
+    },
+    {
+      "question": "What controls would you expect around sales and use tax data from invoice or subledger entry through tax return support and general-ledger reconciliation?",
+      "competency": "Tax controls",
+      "competency_type": "technical",
+      "target_gap": "Taxation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "The role includes taxes, so this probes the candidate's understanding of reliable tax accounting processes beyond the weak-match label.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "Ensured accuracy of subledger postings and compliance with GAAP and company policies.",
+        "Reviewed and analyzed balance sheet account reconciliations."
+      ],
+      "priority": 0.93,
+      "weight": 0.6974
+    },
+    {
+      "question": "What would make you pause before posting a journal entry intended to correct a tax-related balance?",
+      "competency": "Tax journal-entry review",
+      "competency_type": "technical",
+      "target_gap": "Taxation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Probes accuracy, evidence standards, and judgment when tax matters require accounting corrections.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "Prepared and posted journal entries",
+        "Balanced and audited general ledger accounts and prepared accounting entries."
+      ],
+      "priority": 0.83,
+      "weight": 0.6974
+    },
+    {
+      "question": "How do you distinguish a sales tax issue from a use tax issue in an accounting workflow, and what information would you need before deciding on the accounting treatment?",
+      "competency": "Sales versus use tax",
+      "competency_type": "technical",
+      "target_gap": "Taxation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Directly assesses foundational tax knowledge where the matrix indicates only a weak match.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "Sales Use & Tax reconciliation",
+        "General and tax accounting"
+      ],
+      "priority": 0.91,
+      "weight": 0.6974
+    },
+    {
+      "question": "What parts of taxation have you handled directly versus supported through reconciliation, reporting, or documentation?",
+      "competency": "Tax scope of experience",
+      "competency_type": "domain",
+      "target_gap": "Taxation",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Clarifies the depth and boundaries of the candidate's tax experience, which is the principal weakly matched requirement.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "General and tax accounting",
+        "Prepared sales use and tax reconciliation reports and resolved differences."
+      ],
+      "priority": 0.94,
+      "weight": 0.6974
+    },
+    {
+      "question": "Describe a tax-related reconciliation difference you resolved. What evidence did you use, which stakeholders did you involve, and how did you confirm the final correction was appropriate?",
+      "competency": "Tax issue resolution",
+      "competency_type": "soft",
+      "target_gap": "Taxation",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Assesses whether the candidate has hands-on ownership of tax exceptions rather than only report preparation experience.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "Prepared sales use and tax reconciliation reports and resolved differences.",
+        "Researched and resolved reconciliation items with various departments."
+      ],
+      "priority": 0.95,
+      "weight": 0.6974
+    },
+    {
+      "question": "How would you prioritize work if a tax reconciliation, a month-end journal entry, and an auditor request were all due on the same day?",
+      "competency": "Tax deadline management",
+      "competency_type": "other",
+      "target_gap": "Taxation",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Assesses prioritization under competing deadlines in the role's accounting-and-taxes scope.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "Participated in the month-end close process.",
+        "Provided audit support to internal auditors and EY.",
+        "Effectively manages strict deadlines"
+      ],
+      "priority": 0.84,
+      "weight": 0.6974
+    },
+    {
+      "question": "How would you use general-ledger balances, subledger detail, and source invoices to build a monthly tax reconciliation from scratch?",
+      "competency": "Tax reconciliation process",
+      "competency_type": "technical",
+      "target_gap": "Taxation",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Tests a repeatable end-to-end approach to the role's tax requirement and connects to the candidate's GL and subledger experience.",
+      "source_evidence": [
+        "Taxation: weak_match",
+        "Verified and posted business transactions to the general ledger.",
+        "Ensured accuracy of subledger postings.",
+        "Prepared sales use and tax reconciliation reports."
+      ],
+      "priority": 0.9,
+      "weight": 0.6974
+    }
+  ],
+  "n_questions": 10,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 4337,
+    "output_tokens": 3521,
+    "cached_tokens": 0,
+    "estimated_cost": 0.050926,
+    "latency_ms": 28423.05,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.050926,
+  "cost_cny": 0.34476902,
+  "selection_latency_ms": 49.16,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:06:19.694857+00:00"
+}

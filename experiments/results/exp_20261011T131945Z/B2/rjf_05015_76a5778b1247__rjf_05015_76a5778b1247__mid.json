@@ -1,0 +1,219 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "B2",
+  "selection_strategy": "plain_mmr_priority",
+  "generation_mode": "interviewiq",
+  "profile_id": "rjf_05015_76a5778b1247",
+  "jd_id": "rjf_05015_76a5778b1247",
+  "pair_id": "rjf_05015_76a5778b1247",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_05015_76a5778b1247__rjf_05015_76a5778b1247__mid.json",
+  "n_requirements": 22,
+  "questions": [
+    {
+      "question": "Walk me through how you would translate a set of local GAAP ledger balances into IFRS reporting adjustments for a parent-company reporting package. Which differences would you validate first, and how would you document your conclusions?"
+    },
+    {
+      "question": "You are new to IQMS and must take ownership of cost centers, profit centers, standard costs, and project costs during an active close. How would you learn the system, validate the configuration, and reduce risk in your first two closing cycles?"
+    },
+    {
+      "question": "Give an example of a time you needed information or action from people outside your reporting line to meet an accounting deadline. How did you gain commitment, follow up, and handle resistance?"
+    },
+    {
+      "question": "Production reports an unfavorable material variance late on the final day of close, while Engineering believes the bill of materials is correct. How would you investigate, decide whether an adjustment is needed, and communicate the outcome?"
+    },
+    {
+      "question": "Describe the accounting data flows you would expect in a manufacturing ERP from production transactions through inventory valuation, cost of goods sold, and the general ledger. Where would you place key reconciliation controls?"
+    },
+    {
+      "question": "Suppose the parent company changes its reporting template and mapping rules two days before close. How would you coordinate data validation, mapping changes, reconciliations, and communication with the parent and local stakeholders?"
+    },
+    {
+      "question": "What would be your month-end close checklist for a plant accounting function, including subsystem cutoffs, reconciliations, inventory-related activities, journal entries, review, and escalation?"
+    },
+    {
+      "question": "Explain standard costing in a manufacturing setting. How do material, labor, and overhead standards affect inventory and variances, and what would prompt you to review or update a standard?"
+    },
+    {
+      "question": "A project manager submits a project budget that excludes expected engineering change costs and quality testing. How would you challenge the assumptions, build the cost baseline, and manage later changes?"
+    },
+    {
+      "question": "When should a cost accountant capitalize production-related costs into inventory versus expense them, and how would that treatment affect gross margin and variance reporting?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk me through how you would translate a set of local GAAP ledger balances into IFRS reporting adjustments for a parent-company reporting package. Which differences would you validate first, and how would you document your conclusions?",
+      "competency": "IFRS reporting",
+      "competency_type": "technical",
+      "target_gap": "IFRS",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "IFRS is a required capability with no demonstrated candidate evidence; this tests practical technical understanding and documentation discipline.",
+      "source_evidence": [
+        "IFRS",
+        "GAAP Compliance"
+      ],
+      "priority": 0.98,
+      "weight": 0.9571
+    },
+    {
+      "question": "You are new to IQMS and must take ownership of cost centers, profit centers, standard costs, and project costs during an active close. How would you learn the system, validate the configuration, and reduce risk in your first two closing cycles?",
+      "competency": "IQMS onboarding",
+      "competency_type": "other",
+      "target_gap": "IQMS by Dassault",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "The candidate shows Oracle and Hyperion experience but no IQMS experience, so the question assesses transferability and a credible ramp-up approach.",
+      "source_evidence": [
+        "IQMS by Dassault",
+        "Oracle",
+        "Hyperion"
+      ],
+      "priority": 0.96,
+      "weight": 0.9076
+    },
+    {
+      "question": "Give an example of a time you needed information or action from people outside your reporting line to meet an accounting deadline. How did you gain commitment, follow up, and handle resistance?",
+      "competency": "Cross-functional influence",
+      "competency_type": "soft",
+      "target_gap": "Motivating cross-functional contributors",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Motivating non-reporting functions is a required responsibility without direct evidence in the profile.",
+      "source_evidence": [
+        "motivate various non-reporting functions to do their part",
+        "Resolved issues through communication with business partners"
+      ],
+      "priority": 0.94,
+      "weight": 0.9512
+    },
+    {
+      "question": "Production reports an unfavorable material variance late on the final day of close, while Engineering believes the bill of materials is correct. How would you investigate, decide whether an adjustment is needed, and communicate the outcome?",
+      "competency": "Cost variance analysis",
+      "competency_type": "other",
+      "target_gap": "Cost variance analysis",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "The candidate lists variance analysis, but the role requires applying it to manufacturing inputs with Production and Engineering.",
+      "source_evidence": [
+        "Monitoring cost variance in concert with Production and Engineering teams",
+        "Variance Analysis"
+      ],
+      "priority": 0.91,
+      "weight": 0.3499
+    },
+    {
+      "question": "Describe the accounting data flows you would expect in a manufacturing ERP from production transactions through inventory valuation, cost of goods sold, and the general ledger. Where would you place key reconciliation controls?",
+      "competency": "Manufacturing ERP systems",
+      "competency_type": "technical",
+      "target_gap": "Manufacturing ERP systems",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Manufacturing ERP experience is missing and is central to reliable cost accounting and month-end reporting.",
+      "source_evidence": [
+        "manufacturing ERP systems",
+        "General Ledger"
+      ],
+      "priority": 0.95,
+      "weight": 0.927
+    },
+    {
+      "question": "Suppose the parent company changes its reporting template and mapping rules two days before close. How would you coordinate data validation, mapping changes, reconciliations, and communication with the parent and local stakeholders?",
+      "competency": "Accounting systems integration",
+      "competency_type": "other",
+      "target_gap": "IQMS by Dassault",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "The role includes integration with the publicly listed parent; the candidate has no stated experience with IQMS or parent-system integration.",
+      "source_evidence": [
+        "Manage the integration of accounting systems with the publicly listed parent, Stratec SE.",
+        "IQMS by Dassault"
+      ],
+      "priority": 0.89,
+      "weight": 0.9076
+    },
+    {
+      "question": "What would be your month-end close checklist for a plant accounting function, including subsystem cutoffs, reconciliations, inventory-related activities, journal entries, review, and escalation?",
+      "competency": "Month-end closing",
+      "competency_type": "domain",
+      "target_gap": "Month-end closing",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Closing Processes is listed, but the weak match warrants confirming ownership depth in a manufacturing close.",
+      "source_evidence": [
+        "monthly closing",
+        "Closing Processes",
+        "Monthly Journal Entries"
+      ],
+      "priority": 0.88,
+      "weight": 0.653
+    },
+    {
+      "question": "Explain standard costing in a manufacturing setting. How do material, labor, and overhead standards affect inventory and variances, and what would prompt you to review or update a standard?",
+      "competency": "Standard costing",
+      "competency_type": "technical",
+      "target_gap": "Standard costing",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Standard costing is a required area with only a weak match to the candidate's general-ledger background.",
+      "source_evidence": [
+        "standard costing",
+        "General Ledger"
+      ],
+      "priority": 0.9,
+      "weight": 0.7122
+    },
+    {
+      "question": "A project manager submits a project budget that excludes expected engineering change costs and quality testing. How would you challenge the assumptions, build the cost baseline, and manage later changes?",
+      "competency": "Project-based costing",
+      "competency_type": "other",
+      "target_gap": "Project-based costing",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "The candidate has projected future expenses from P&Ls, but project-based costing needs deeper validation.",
+      "source_evidence": [
+        "project-based costing",
+        "Analyzed P&Ls to project future expenses."
+      ],
+      "priority": 0.84,
+      "weight": 0.4065
+    },
+    {
+      "question": "When should a cost accountant capitalize production-related costs into inventory versus expense them, and how would that treatment affect gross margin and variance reporting?",
+      "competency": "Inventory cost accounting",
+      "competency_type": "technical",
+      "target_gap": "Standard costing",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "This tests foundational cost-accounting judgment that is not evidenced by the candidate's general accounting background.",
+      "source_evidence": [
+        "standard costing",
+        "semi-annual physical inventory management"
+      ],
+      "priority": 0.88,
+      "weight": 0.7122
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    0,
+    1,
+    3,
+    4,
+    2,
+    26,
+    6,
+    5,
+    9,
+    27
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.23,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:45.966680+00:00"
+}

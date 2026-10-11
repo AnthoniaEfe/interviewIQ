@@ -1,0 +1,223 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "B2",
+  "selection_strategy": "plain_mmr_priority",
+  "generation_mode": "interviewiq",
+  "profile_id": "rjf_06210_7de5fd638e77",
+  "jd_id": "rjf_06210_7de5fd638e77",
+  "pair_id": "rjf_06210_7de5fd638e77",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_06210_7de5fd638e77__rjf_06210_7de5fd638e77__mid.json",
+  "n_requirements": 8,
+  "questions": [
+    {
+      "question": "The role requires AWS, which is not reflected in your profile. How would you design and operate a Java service on AWS that must remain available during an Availability Zone failure?"
+    },
+    {
+      "question": "For a new payment-related API handling sensitive financial data, how would you define the security controls around authentication, authorization, encryption, secrets, audit logging, and data retention before development begins?"
+    },
+    {
+      "question": "Your background emphasizes infrastructure, databases, and enterprise architecture. Give a concrete example of software you personally designed or implemented, including the language, your code-level contribution, testing approach, and production outcome."
+    },
+    {
+      "question": "When leading a full-stack team, how would you set expectations for code review, automated testing, incident ownership, and technical debt so that delivery speed does not compromise reliability?"
+    },
+    {
+      "question": "Describe how you would model a money-movement workflow so that retries cannot create duplicate transactions and every state change is auditable."
+    },
+    {
+      "question": "Describe a difficult defect you found in an ARCS automated or batch process. How did you reproduce it, determine root cause, test the fix, and ensure it did not recur?"
+    },
+    {
+      "question": "What is your hands-on AWS experience, if any, and which services have you used to build, deploy, secure, or monitor applications? Please distinguish direct implementation from architectural oversight."
+    },
+    {
+      "question": "Tell me about a delivery that required alignment among technical teams, business stakeholders, and an external vendor. What conflicts arose, what did you do, and what was the outcome?"
+    },
+    {
+      "question": "What aspects of your work on accounts receivable and collection systems would transfer to a fintech product, and what domain knowledge would you need to build before making design decisions?"
+    },
+    {
+      "question": "A product manager wants a feature by quarter-end, security requires additional controls, and platform engineering says the service cannot meet the projected load on the current design. As lead, how would you drive a decision and communicate the trade-offs?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "The role requires AWS, which is not reflected in your profile. How would you design and operate a Java service on AWS that must remain available during an Availability Zone failure?",
+      "competency": "AWS architecture",
+      "competency_type": "technical",
+      "target_gap": "Amazon Web Services (AWS)",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Directly tests the highest-priority missing requirement through a production resilience scenario relevant to a lead developer role.",
+      "source_evidence": [
+        "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+        "Job requirement: Experience with Java, AWS, SQL."
+      ],
+      "priority": 0.99,
+      "weight": 0.9433
+    },
+    {
+      "question": "For a new payment-related API handling sensitive financial data, how would you define the security controls around authentication, authorization, encryption, secrets, audit logging, and data retention before development begins?",
+      "competency": "Fintech security",
+      "competency_type": "other",
+      "target_gap": "Fintech",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Probes readiness for a fintech environment where security and regulated data handling are central, despite no explicit fintech background.",
+      "source_evidence": [
+        "Gap matrix: Fintech \u2014 missing",
+        "Job responsibility: meet security, scalability, and performance requirements."
+      ],
+      "priority": 0.95,
+      "weight": 0.9327
+    },
+    {
+      "question": "Your background emphasizes infrastructure, databases, and enterprise architecture. Give a concrete example of software you personally designed or implemented, including the language, your code-level contribution, testing approach, and production outcome.",
+      "competency": "Software engineering depth",
+      "competency_type": "domain",
+      "target_gap": "Software engineering experience",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Clarifies the weak evidence for sustained hands-on software engineering versus systems and infrastructure leadership.",
+      "source_evidence": [
+        "Gap matrix: Software engineering experience \u2014 weak_match",
+        "Candidate evidence: Installed, configured, tested, and maintained database management software.",
+        "Candidate experience: analyzed, designed, developed, tested, and implemented ARCS automated processes"
+      ],
+      "priority": 0.91,
+      "weight": 0.6905
+    },
+    {
+      "question": "When leading a full-stack team, how would you set expectations for code review, automated testing, incident ownership, and technical debt so that delivery speed does not compromise reliability?",
+      "competency": "Full-stack technical leadership",
+      "competency_type": "domain",
+      "target_gap": "Full-stack software development",
+      "question_type": "Role-Specific",
+      "difficulty": "hard",
+      "rationale": "Evaluates whether the candidate can translate existing team-lead experience into software-engineering operating practices.",
+      "source_evidence": [
+        "Gap matrix: Full-stack software development \u2014 weak_match",
+        "Candidate experience: led and mentored multiple teams",
+        "Job responsibility: Lead the full stack team."
+      ],
+      "priority": 0.89,
+      "weight": 0.6871
+    },
+    {
+      "question": "Describe how you would model a money-movement workflow so that retries cannot create duplicate transactions and every state change is auditable.",
+      "competency": "Financial transaction integrity",
+      "competency_type": "technical",
+      "target_gap": "Fintech",
+      "question_type": "Technical",
+      "difficulty": "hard",
+      "rationale": "Tests core fintech engineering concepts\u2014idempotency, state management, and auditability\u2014without presuming direct payments experience.",
+      "source_evidence": [
+        "Gap matrix: Fintech \u2014 missing",
+        "Job requires a strong Fintech background"
+      ],
+      "priority": 0.92,
+      "weight": 0.9327
+    },
+    {
+      "question": "Describe a difficult defect you found in an ARCS automated or batch process. How did you reproduce it, determine root cause, test the fix, and ensure it did not recur?",
+      "competency": "Software debugging",
+      "competency_type": "soft",
+      "target_gap": "Software engineering experience",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Uses a documented development and batch-processing context to elicit evidence of engineering problem solving.",
+      "source_evidence": [
+        "Candidate experience: developed and implemented ARCS automated processes",
+        "Candidate experience: performed unit, integration, and performance testing of batch processes",
+        "Gap matrix: Software engineering experience \u2014 weak_match"
+      ],
+      "priority": 0.87,
+      "weight": 0.6905
+    },
+    {
+      "question": "What is your hands-on AWS experience, if any, and which services have you used to build, deploy, secure, or monitor applications? Please distinguish direct implementation from architectural oversight.",
+      "competency": "AWS hands-on experience",
+      "competency_type": "domain",
+      "target_gap": "Amazon Web Services (AWS)",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Clarifies the extent of a stated gap without assuming AWS experience that is absent from the profile.",
+      "source_evidence": [
+        "Gap matrix: Amazon Web Services (AWS) \u2014 missing",
+        "Candidate profile lists Hyper-V and VMware but no AWS"
+      ],
+      "priority": 0.95,
+      "weight": 0.9433
+    },
+    {
+      "question": "Tell me about a delivery that required alignment among technical teams, business stakeholders, and an external vendor. What conflicts arose, what did you do, and what was the outcome?",
+      "competency": "Cross-functional collaboration",
+      "competency_type": "soft",
+      "target_gap": "Cross-functional collaboration",
+      "question_type": "Behavioural",
+      "difficulty": "mid",
+      "rationale": "Tests the weakly matched collaboration requirement using the candidate's documented vendor and multi-team coordination experience.",
+      "source_evidence": [
+        "Gap matrix: Cross-functional collaboration \u2014 weak_match",
+        "Candidate experience: communicated with vendors and multiple teams to resolve technical issues and allocate resources",
+        "Candidate experience: managed reporting requirements for SDIO and CUBS"
+      ],
+      "priority": 0.9,
+      "weight": 0.7243
+    },
+    {
+      "question": "What aspects of your work on accounts receivable and collection systems would transfer to a fintech product, and what domain knowledge would you need to build before making design decisions?",
+      "competency": "Fintech domain transfer",
+      "competency_type": "domain",
+      "target_gap": "Fintech",
+      "question_type": "Role-Specific",
+      "difficulty": "medium",
+      "rationale": "Uses the candidate's adjacent collections experience to evaluate honest domain transfer and learning strategy.",
+      "source_evidence": [
+        "Gap matrix: Fintech \u2014 missing",
+        "Candidate experience: Accounts Receivable Collection System (ARCS)",
+        "Candidate experience: solutions for directives affecting collection systems"
+      ],
+      "priority": 0.93,
+      "weight": 0.9327
+    },
+    {
+      "question": "A product manager wants a feature by quarter-end, security requires additional controls, and platform engineering says the service cannot meet the projected load on the current design. As lead, how would you drive a decision and communicate the trade-offs?",
+      "competency": "Cross-functional decision-making",
+      "competency_type": "other",
+      "target_gap": "Cross-functional collaboration",
+      "question_type": "Situational",
+      "difficulty": "hard",
+      "rationale": "Assesses leadership across product, security, and platform functions under a realistic delivery conflict.",
+      "source_evidence": [
+        "Gap matrix: Cross-functional collaboration \u2014 weak_match",
+        "Job requirement: working cross-functionality across multiple teams",
+        "Job responsibility: meet security, scalability, and performance requirements"
+      ],
+      "priority": 0.9,
+      "weight": 0.7243
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    0,
+    4,
+    10,
+    18,
+    6,
+    12,
+    3,
+    19,
+    5,
+    20
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.24,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:46.344568+00:00"
+}

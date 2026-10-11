@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_05952_f7fee569a3d8",
+  "jd_id": "rjf_05952_f7fee569a3d8",
+  "pair_id": "rjf_05952_f7fee569a3d8",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Your resume emphasizes data analysis, SAP/Access reporting, metadata management, and workflow support rather than a formal Business Analyst title. Which roles, if any, involved eliciting, documenting, validating, and obtaining approval for business requirements, and what artifacts did you produce?"
+    },
+    {
+      "question": "At C.H. Robinson Worldwide, you standardized metadata for a digital schedule system and performed QA on ingest templates for platforms including Apple iTunes, Google, and Amazon. Walk us through how you identified data-quality requirements, tested them, documented defects, and determined that a template was ready for release."
+    },
+    {
+      "question": "This role requires substantial Agile Scrum experience using JIRA, user stories, sprint planning, and backlog grooming, none of which is detailed in your profile. Describe your hands-on experience with these practices and tools, including the duration, team role, and examples of work you managed."
+    },
+    {
+      "question": "Imagine program leaders, technical staff, and a compliance team disagree about the scope and acceptance criteria for a time-sensitive requirement. How would you facilitate the discussion, surface competing perspectives, reach a decision, and document the outcome?"
+    },
+    {
+      "question": "You created corrective action plans for client complaints and billing discrepancies at Anthology. Tell us about one specific case: how did you investigate the issue, engage the affected stakeholders, define the corrective action, and measure whether it resolved the problem?"
+    },
+    {
+      "question": "The position involves contract compliance and contract change notices tied to requirements specifications. What experience do you have reviewing contractual obligations, managing changes to scope or requirements, and maintaining traceable documentation? If your experience is limited, how would you approach this responsibility?"
+    },
+    {
+      "question": "At AAA Northern California, Nevada & Utah, you developed financial models and analyzed campaign conversion, revenue, spending, and costs. Give an example of an analysis that influenced a business decision, explaining the question, data sources, assumptions, recommendation, and result."
+    },
+    {
+      "question": "Describe a process you improved, such as the allocation-plan work in JDA at CoreLogic or a data workflow at Anthology. How did you map the current process, identify root causes or waste, implement the change, and quantify its impact in a way consistent with LEAN principles?"
+    },
+    {
+      "question": "This role supports programs governed by state and/or federal regulations. What experience, if any, do you have working with regulated requirements, controls, auditability, or policy-driven changes? How would you quickly become effective in an unfamiliar regulatory environment?"
+    },
+    {
+      "question": "This mid-level Business Analyst role nevertheless specifies a minimum of 12 years of general BA experience and requires a Michigan-local candidate. How does this opportunity align with your career direction, and can you confirm your Michigan-local status and ability to meet the role's location expectations?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 5923,
+    "output_tokens": 600,
+    "cached_tokens": 0,
+    "estimated_cost": 0.019046,
+    "latency_ms": 6945.02,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.019046,
+  "cost_cny": 0.12894142,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:05:40.572656+00:00",
+  "user_prompt_sha256": "74e10ad9309561d0f6b7cb4354a4d7eabb713b97a29d6f448bb79615564fd29b"
+}

@@ -342,6 +342,13 @@ async def async_main(
     dry_run: bool = False,
     confirm_spend: bool = False,
     max_cost: float | None = None,
+    resume: bool = True,
+    replicates: int = 1,
+    gap_experiment: str | None = None,
+    selection: str = "competency_weighted_mmr",
+    b1_experiment: str | None = None,
+    treatment_experiment: str | None = None,
+    ablation_experiment: str | None = None,
 ) -> Path:
     config = load_config(config_path)
     get_settings.cache_clear()
@@ -350,6 +357,37 @@ async def async_main(
     n_questions = int(config.get("final_question_count", settings.final_question_count))
     experiment_id = datetime.now(timezone.utc).strftime("exp_%Y%m%dT%H%M%SZ")
     out_dir = ROOT / "experiments" / "results" / experiment_id
+
+    if stage in {
+        "treatment_pipeline",
+        "baseline_profile_aware",
+        "selection_ablation",
+        "pilot_compare",
+        "treatment_regression",
+    }:
+        from app.services.treatment_pilot.constants import DEFAULT_MAX_COST_USD
+        from app.services.treatment_pilot.pipeline import run_treatment_pilot
+
+        mapped = "regression" if stage == "treatment_regression" else stage
+        result = await run_treatment_pilot(
+            stage=mapped,
+            dry_run=dry_run,
+            confirm_spend=confirm_spend,
+            max_cost=DEFAULT_MAX_COST_USD if max_cost is None else max_cost,
+            resume=resume,
+            replicates=replicates,
+            smoke=smoke,
+            source_experiment=source_experiment,
+            gap_experiment=gap_experiment,
+            selection=selection,
+            b1_experiment=b1_experiment,
+            treatment_experiment=treatment_experiment,
+            ablation_experiment=ablation_experiment,
+        )
+        for key in ("b1_dir", "treatment_dir", "ablation_dir"):
+            if result.get(key):
+                return Path(result[key])
+        return ROOT / "experiments" / "results"
 
     if stage == "gap_analysis":
         (out_dir / "gap_analysis").mkdir(parents=True, exist_ok=True)
@@ -712,6 +750,11 @@ def main() -> None:
             "gold_set_build",
             "gold_set_analyze",
             "classifier_eval",
+            "treatment_pipeline",
+            "baseline_profile_aware",
+            "selection_ablation",
+            "pilot_compare",
+            "treatment_regression",
         ),
         default="baseline",
         help="Pipeline stage to run. Default remains baseline generation.",
@@ -720,25 +763,62 @@ def main() -> None:
         "--source-experiment",
         default=None,
         help=(
-            "Extraction experiment id for --stage gap_analysis or gap_sensitivity. "
+            "Extraction experiment id for gap_analysis, gap_sensitivity, or treatment stages. "
             "Defaults to latest completed extraction for gap_analysis."
         ),
     )
     parser.add_argument(
+        "--gap-experiment",
+        default=None,
+        help="Gap-analysis experiment id for treatment stages (default: pinned primary-30).",
+    )
+    parser.add_argument(
+        "--selection",
+        default="competency_weighted_mmr",
+        help="Selection strategy for --stage treatment_pipeline.",
+    )
+    parser.add_argument(
+        "--resume",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Reuse disk-cached LLM outputs for treatment stages (default: true).",
+    )
+    parser.add_argument(
+        "--replicates",
+        type=int,
+        default=1,
+        help="Generations per condition per pair for treatment stages (default: 1).",
+    )
+    parser.add_argument(
+        "--b1-experiment",
+        default=None,
+        help="Existing B1 result dir/id for selection_ablation/pilot_compare.",
+    )
+    parser.add_argument(
+        "--treatment-experiment",
+        default=None,
+        help="Existing treatment result dir/id (with pool/) for ablations/compare.",
+    )
+    parser.add_argument(
+        "--ablation-experiment",
+        default=None,
+        help="Existing selection_ablation result dir/id for pilot_compare.",
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
-        help="For fit_label_control: print pairs and estimated cost, then exit.",
+        help="For fit_label_control / treatment stages: print pairs and estimated cost, then exit.",
     )
     parser.add_argument(
         "--confirm-spend",
         action="store_true",
-        help="For fit_label_control: allow paid Luna extraction.",
+        help="Allow paid LLM calls (fit_label_control / treatment stages).",
     )
     parser.add_argument(
         "--max-cost",
         type=float,
         default=None,
-        help="For fit_label_control: abort if running cost would exceed this USD cap.",
+        help="Abort if running cost would exceed this USD cap.",
     )
     args = parser.parse_args()
     asyncio.run(
@@ -750,6 +830,13 @@ def main() -> None:
             dry_run=args.dry_run,
             confirm_spend=args.confirm_spend,
             max_cost=args.max_cost,
+            resume=args.resume,
+            replicates=args.replicates,
+            gap_experiment=args.gap_experiment,
+            selection=args.selection,
+            b1_experiment=args.b1_experiment,
+            treatment_experiment=args.treatment_experiment,
+            ablation_experiment=args.ablation_experiment,
         )
     )
 

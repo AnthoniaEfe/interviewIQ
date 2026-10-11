@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_06191_f9c89e0c6713",
+  "jd_id": "rjf_06191_f9c89e0c6713",
+  "pair_id": "rjf_06191_f9c89e0c6713",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "[Technical] You have tested and commissioned battery chargers, VFDs, battery banks, and numerical relays at Amentum. Walk us through one test activity: how did you use the schematic or test documentation, what measurements did you take, and how did you determine whether the equipment passed?"
+    },
+    {
+      "question": "[Technical] This role requires troubleshooting down to the lowest line-replaceable unit. Describe a plant electrical fault involving a generator, transformer, ATS, panel, or relay that you troubleshot, including your isolation steps, instruments used, findings, and corrective action."
+    },
+    {
+      "question": "[Technical] What is your hands-on experience using digital multimeters, data recorders, or other measurement instruments? Please give a specific example and explain how you ensured readings were valid and safely obtained."
+    },
+    {
+      "question": "[Role-Specific] Your background is primarily in power-generation, transmission, distribution, and grid-related equipment, while this role supports rail vehicles operating across 12\u201372 VDC and 24\u2013480 VAC systems. How would you transfer your existing electrical knowledge to diagnose an unfamiliar rail-vehicle electrical system?"
+    },
+    {
+      "question": "[Situational] During execution of an approved test procedure, you identify an unexpected voltage reading or component failure that is not addressed by the procedure. What would you do immediately, how would you document the anomaly, and when would you escalate it?"
+    },
+    {
+      "question": "[Technical] Explain how you read and use electrical schematics in your work. How would you use a schematic together with a wire list, block diagram, and functional diagram to trace a fault in an electrical panel?"
+    },
+    {
+      "question": "[Behavioural] At Amentum, you supervised vendor engineering and equipment deliverables for compliance with project standards. Tell us about a time you identified a compliance, quality, or documentation issue; how did you communicate it and drive it to resolution?"
+    },
+    {
+      "question": "[Role-Specific] This position includes installing and terminating electrical panels, equipment, and components, plus supporting mechanical installation or repair work on rail vehicles. Which parts of panel installation, wiring termination, or physical equipment installation have you personally performed, and where would you need training?"
+    },
+    {
+      "question": "[Cultural/Motivational] You previously supported Alstom Grid on high-voltage grid installations and technical proposals. What interests you in moving into a hands-on rail-vehicle testing role, and how would you approach the learning curve in an unfamiliar product domain?"
+    },
+    {
+      "question": "[Situational] In a heavy industrial environment, a supervisor asks you to complete urgent testing after a shift change while production pressure is high. How would you balance safety procedures, clear test reporting, handover communication, and the need to work overtime if required?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 6195,
+    "output_tokens": 561,
+    "cached_tokens": 0,
+    "estimated_cost": 0.019122,
+    "latency_ms": 6128.27,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.019122,
+  "cost_cny": 0.12945594,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:06:13.303462+00:00",
+  "user_prompt_sha256": "33f25417099af544eb48b4eebd137a9bd192095fa20bb2240fde0d27f2eb6f14"
+}

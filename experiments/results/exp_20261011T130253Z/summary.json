@@ -1,0 +1,35 @@
+{
+  "experiment_id": "exp_20261011T130253Z",
+  "status": "completed",
+  "stage": "selection_ablation",
+  "conditions": {
+    "B2": {
+      "n_ok": 2,
+      "strategy": "plain_mmr_priority",
+      "repeats": 1,
+      "mean_selection_latency_ms": 0.34
+    },
+    "S0": {
+      "n_ok": 2,
+      "strategy": "random",
+      "repeats": 5,
+      "mean_selection_latency_ms": 0.1
+    },
+    "S1": {
+      "n_ok": 2,
+      "strategy": "top_priority",
+      "repeats": 1,
+      "mean_selection_latency_ms": 0.03
+    },
+    "S2": {
+      "n_ok": 2,
+      "strategy": "plain_mmr_query",
+      "repeats": 1,
+      "mean_selection_latency_ms": 0.25
+    }
+  },
+  "errors": [],
+  "usd_cny_rate": 6.77,
+  "model": null,
+  "generation_mode": "interviewiq"
+}

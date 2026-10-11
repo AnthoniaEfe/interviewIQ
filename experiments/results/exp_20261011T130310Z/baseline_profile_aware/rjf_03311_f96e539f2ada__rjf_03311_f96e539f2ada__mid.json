@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_03311_f96e539f2ada",
+  "jd_id": "rjf_03311_f96e539f2ada",
+  "pair_id": "rjf_03311_f96e539f2ada",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Your background shows monthly variance analysis against budget, forecast, and prior-year results at Amphitheater Public Schools. Walk us through a significant variance you investigated: how did you isolate the underlying driver, determine the required adjustment or action, and communicate the insight to stakeholders?"
+    },
+    {
+      "question": "This role requires nonprofit accounting expertise, including Uniform Guidance and OMB Circulars. What direct experience do you have with nonprofit funding, restricted funds, grant compliance, Uniform Guidance, or OMB requirements, and how would you close any knowledge gaps quickly?"
+    },
+    {
+      "question": "Describe how you would build a budget-to-actual forecast for a program when personnel reclassifications, changing funding assumptions, and a potential cost overrun emerge partway through the year. What data, stakeholders, and scenario assumptions would you use?"
+    },
+    {
+      "question": "At Adventist Health System, you tested, mapped, and verified an Oracle and internal commissions-system upgrade. Describe your test approach, how you verified interfaces into the General Ledger, and an issue you identified or helped prevent."
+    },
+    {
+      "question": "The position requires knowledge of cost methodologies and cost allocation. Explain your experience, if any, allocating shared costs across departments, programs, entities, or funding sources; if your experience has been limited, how would you validate an allocation methodology before using it in financial reporting?"
+    },
+    {
+      "question": "You have resolved audit deficiencies and participated in internal and external audit work. Tell us about one audit deficiency or control issue you addressed, including the root cause, remediation, evidence of completion, and how you assessed whether the revised process was sustainable."
+    },
+    {
+      "question": "You reported international intercompany activity at Freeport-McMoRan and established forced settlements to close aging receivables. Describe how you balanced timely resolution of aging balances with accuracy, documentation, and relationships across business units."
+    },
+    {
+      "question": "This role includes weekly cash-flow reporting and projections, which is not specifically detailed in your profile. How would you develop a reliable short-term cash-flow forecast for a nonprofit agency, and which inflow, outflow, and uncertainty drivers would you monitor most closely?"
+    },
+    {
+      "question": "At UPS, you developed and trained employees on macros that simplified postings and reconciliations. How did you identify the opportunity, validate that the automation was accurate and controlled, and help colleagues adopt the new process?"
+    },
+    {
+      "question": "What motivates your interest in moving into a nonprofit human-services finance role, and how would you connect rigorous financial stewardship with an organization\u2019s mission of helping individuals in need?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 8091,
+    "output_tokens": 512,
+    "cached_tokens": 0,
+    "estimated_cost": 0.022326,
+    "latency_ms": 6357.41,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.022326,
+  "cost_cny": 0.15114702,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:03:17.026100+00:00",
+  "user_prompt_sha256": "6fb73be1799e8e181a531a2a18c2d44d6c6acd7e2b79586fc8869f21c22a5227"
+}

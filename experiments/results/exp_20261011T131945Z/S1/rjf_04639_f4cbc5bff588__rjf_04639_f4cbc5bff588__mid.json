@@ -1,0 +1,218 @@
+{
+  "experiment_id": "exp_20261011T131945Z",
+  "stage": "selection_ablation",
+  "condition": "S1",
+  "selection_strategy": "top_priority",
+  "generation_mode": null,
+  "profile_id": "rjf_04639_f4cbc5bff588",
+  "jd_id": "rjf_04639_f4cbc5bff588",
+  "pair_id": "rjf_04639_f4cbc5bff588",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "pool_path": "/root/interviewIQ/experiments/results/exp_20261011T130619Z/pool/rjf_04639_f4cbc5bff588__rjf_04639_f4cbc5bff588__mid.json",
+  "n_requirements": 17,
+  "questions": [
+    {
+      "question": "A containerized integration service intermittently fails after deployment to Kubernetes while its local Docker run succeeds. How would you investigate the issue across pod events, logs, configuration, networking, and resource settings?"
+    },
+    {
+      "question": "Walk through the CI/CD pipeline you would establish for a Java service: build, unit and integration tests, security checks, artifact creation, environment promotion, rollback, and deployment approval points."
+    },
+    {
+      "question": "You have previously integrated YouTube, Periscope, and Facebook APIs for live streaming. Explain one integration end to end: authentication, request/response handling, failure cases, testing, and how you diagnosed production-like issues."
+    },
+    {
+      "question": "Suppose a new integration must process high-volume source data in the cloud and send results to a SaaS application. Outline the major components, scalability approach, observability, and recovery plan."
+    },
+    {
+      "question": "A nightly financial data sync reports success, but the target system is missing a subset of records. How would you lead the root-cause investigation with source-system, platform, and target-system teams?"
+    },
+    {
+      "question": "What would a safe deployment and rollback plan look like for a Kubernetes-hosted integration service whose consumers must not receive duplicate or partially processed financial data?"
+    },
+    {
+      "question": "How would you define readiness criteria for promoting an integration feature through a CI/CD pipeline when it depends on external SaaS APIs that may have rate limits or unstable test environments?"
+    },
+    {
+      "question": "How would you package a Java-based integration service into a Docker image, including dependency management, configuration, health checks, and a strategy for keeping the image small and secure?"
+    },
+    {
+      "question": "Design the observability for a cloud-based integration: which logs, metrics, traces, correlation identifiers, dashboards, and alerts would you implement so that failures can be diagnosed across systems?"
+    },
+    {
+      "question": "What AWS services would you choose to run a Java integration API, store its configuration and secrets, persist operational data, and monitor failures? Explain the trade-offs behind your choices."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "A containerized integration service intermittently fails after deployment to Kubernetes while its local Docker run succeeds. How would you investigate the issue across pod events, logs, configuration, networking, and resource settings?",
+      "competency": "Kubernetes troubleshooting",
+      "competency_type": "other",
+      "target_gap": "Kubernetes",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Kubernetes is a high-weight missing requirement, and the scenario evaluates diagnostic thinking rather than vocabulary alone.",
+      "source_evidence": [
+        "Kubernetes: missing",
+        "Analyzed application errors and performance issues."
+      ],
+      "priority": 0.97,
+      "weight": 0.9397
+    },
+    {
+      "question": "Walk through the CI/CD pipeline you would establish for a Java service: build, unit and integration tests, security checks, artifact creation, environment promotion, rollback, and deployment approval points.",
+      "competency": "CI/CD pipeline design",
+      "competency_type": "technical",
+      "target_gap": "CI/CD",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "CI/CD is a high-priority missing requirement and is central to safely delivering mission-critical integrations.",
+      "source_evidence": [
+        "CI/CD: missing",
+        "Maven",
+        "Git"
+      ],
+      "priority": 0.96,
+      "weight": 0.937
+    },
+    {
+      "question": "You have previously integrated YouTube, Periscope, and Facebook APIs for live streaming. Explain one integration end to end: authentication, request/response handling, failure cases, testing, and how you diagnosed production-like issues.",
+      "competency": "External API integration",
+      "competency_type": "domain",
+      "target_gap": "System integrations",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "System integrations is marked missing, while the profile contains relevant third-party API work that can clarify transferable integration capability.",
+      "source_evidence": [
+        "Integrated YouTube, Periscope, and Facebook APIs for live streaming video.",
+        "System integrations: missing"
+      ],
+      "priority": 0.96,
+      "weight": 0.93
+    },
+    {
+      "question": "Suppose a new integration must process high-volume source data in the cloud and send results to a SaaS application. Outline the major components, scalability approach, observability, and recovery plan.",
+      "competency": "Cloud solution design",
+      "competency_type": "domain",
+      "target_gap": "Cloud technologies",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "Cloud technologies is missing and the role specifically involves mission-critical SaaS integrations.",
+      "source_evidence": [
+        "Cloud technologies: missing",
+        "Build mission-critical integrations between source data and financial SaaS applications."
+      ],
+      "priority": 0.95,
+      "weight": 0.9297
+    },
+    {
+      "question": "A nightly financial data sync reports success, but the target system is missing a subset of records. How would you lead the root-cause investigation with source-system, platform, and target-system teams?",
+      "competency": "Cross-functional troubleshooting",
+      "competency_type": "other",
+      "target_gap": "System integrations",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "The role requires cross-functional root-cause analysis, and this probes collaboration in the highest-impact missing domain.",
+      "source_evidence": [
+        "System integrations: missing",
+        "Analyzed application errors and performance issues."
+      ],
+      "priority": 0.94,
+      "weight": 0.93
+    },
+    {
+      "question": "What would a safe deployment and rollback plan look like for a Kubernetes-hosted integration service whose consumers must not receive duplicate or partially processed financial data?",
+      "competency": "Kubernetes release management",
+      "competency_type": "other",
+      "target_gap": "Kubernetes",
+      "question_type": "Situational",
+      "difficulty": "mid",
+      "rationale": "Kubernetes is missing; the scenario tests deployment safety and data-aware operational judgment, not just cluster terminology.",
+      "source_evidence": [
+        "Kubernetes: missing",
+        "Build mission-critical integrations between source data and financial SaaS applications."
+      ],
+      "priority": 0.93,
+      "weight": 0.9397
+    },
+    {
+      "question": "How would you define readiness criteria for promoting an integration feature through a CI/CD pipeline when it depends on external SaaS APIs that may have rate limits or unstable test environments?",
+      "competency": "Integration delivery automation",
+      "competency_type": "domain",
+      "target_gap": "CI/CD",
+      "question_type": "Role-Specific",
+      "difficulty": "mid",
+      "rationale": "CI/CD is missing, and external API experience provides a relevant basis for assessing how the candidate would adapt testing and release controls.",
+      "source_evidence": [
+        "CI/CD: missing",
+        "Integrated YouTube, Periscope, and Facebook APIs for live streaming video."
+      ],
+      "priority": 0.92,
+      "weight": 0.937
+    },
+    {
+      "question": "How would you package a Java-based integration service into a Docker image, including dependency management, configuration, health checks, and a strategy for keeping the image small and secure?",
+      "competency": "Docker",
+      "competency_type": "technical",
+      "target_gap": "Docker",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Docker is required and the profile does not show direct containerization experience; this tests practical readiness to deploy Java services.",
+      "source_evidence": [
+        "Docker: weak_match",
+        "Java"
+      ],
+      "priority": 0.91,
+      "weight": 0.7345
+    },
+    {
+      "question": "Design the observability for a cloud-based integration: which logs, metrics, traces, correlation identifiers, dashboards, and alerts would you implement so that failures can be diagnosed across systems?",
+      "competency": "Cloud observability",
+      "competency_type": "technical",
+      "target_gap": "Cloud technologies",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "Cloud technologies is missing, while the role demands collaborative troubleshooting of production integrations.",
+      "source_evidence": [
+        "Cloud technologies: missing",
+        "Facilitate cross-functional troubleshooting and root cause analysis."
+      ],
+      "priority": 0.9,
+      "weight": 0.9297
+    },
+    {
+      "question": "What AWS services would you choose to run a Java integration API, store its configuration and secrets, persist operational data, and monitor failures? Explain the trade-offs behind your choices.",
+      "competency": "AWS architecture",
+      "competency_type": "technical",
+      "target_gap": "AWS",
+      "question_type": "Technical",
+      "difficulty": "mid",
+      "rationale": "AWS is required but only weakly evidenced, so the question establishes whether the candidate can make usable cloud design choices.",
+      "source_evidence": [
+        "AWS: weak_match",
+        "Java"
+      ],
+      "priority": 0.89,
+      "weight": 0.7335
+    }
+  ],
+  "n_questions": 10,
+  "selected_indices": [
+    1,
+    6,
+    9,
+    8,
+    17,
+    21,
+    25,
+    0,
+    26,
+    5
+  ],
+  "repeats": null,
+  "selection_latency_ms": 0.02,
+  "cost_usd": 0.0,
+  "cost_cny": 0.0,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:19:48.934966+00:00"
+}

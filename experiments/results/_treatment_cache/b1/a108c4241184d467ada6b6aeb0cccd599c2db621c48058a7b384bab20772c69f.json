@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp_20261011T130310Z",
+  "stage": "baseline_profile_aware",
+  "generation_mode": "baseline",
+  "condition": "B1",
+  "profile_id": "rjf_06019_4cdecdd79857",
+  "jd_id": "rjf_06019_4cdecdd79857",
+  "pair_id": "rjf_06019_4cdecdd79857",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "provider": "openai",
+  "model": "gpt-5.6-terra",
+  "task_type": "question_generation",
+  "prompt": {
+    "file": "generation/profile_aware_baseline.md",
+    "version": "1.0.0",
+    "sha256": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779"
+  },
+  "prompt_hash": "1428b36886d5e8bea3c658c71e5fe87fd317ad01c4947bb3ee054d8b21c66779",
+  "prompt_version": "1.0.0",
+  "generation_parameters": {
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5.6-terra"
+  },
+  "final_question_count_requested": 10,
+  "questions": [
+    {
+      "question": "Your background shows extensive QA work with APIs, Unix batch jobs, XML, SQL, and Amdocs applications, while this role requires hands-on Java, Spring Boot, and Hibernate development. What production application code have you personally written in these technologies, and what was your specific contribution from design through deployment?"
+    },
+    {
+      "question": "You list SQL and data analysis experience from testing, but this role requires writing and modifying queries in Oracle, PostgreSQL, and potentially NoSQL databases. Walk us through a complex query you authored or changed: what problem did it solve, how did you validate correctness and performance, and which database was involved?"
+    },
+    {
+      "question": "Describe a time at General Dynamics or Pae Government Services when API, XML, or batch-job testing exposed a design gap or production-risk defect. How did you isolate the cause, communicate it to developers and business stakeholders, and verify the eventual fix?"
+    },
+    {
+      "question": "This position owns applications across design, implementation, release, and support. Given your experience certifying patches and conducting post-release sanity testing, how would you design a safe release and rollback approach for a new Spring Boot service that integrates with a database and third-party package?"
+    },
+    {
+      "question": "Your automation experience includes creating Amdocs iCare test cases using QTP. How would you assess an existing automated test suite and evolve it for a Java-based application running through a Git, Jenkins, and CI/CD workflow?"
+    },
+    {
+      "question": "Tell us about the knowledge transfer you provided to offshore team members and peers. How did you tailor the material, confirm that others could apply it independently, and handle misunderstandings or inconsistent test execution?"
+    },
+    {
+      "question": "A warehouse-management application has an intermittent inventory discrepancy after a nightly batch process, but the issue cannot be reproduced during daytime testing. Based on your experience managing critical billing runs and triaging job failures, how would you investigate, prioritize, and coordinate resolution?"
+    },
+    {
+      "question": "This role requires engineers to participate in code reviews, follow coding standards, and mentor junior developers. Although your profile emphasizes QA rather than code review, how would you approach reviewing a Java pull request, and which quality, testability, reliability, and maintainability concerns would you raise?"
+    },
+    {
+      "question": "What motivates your transition from senior QA and production-testing roles in telecommunications and billing operations to a senior full-stack engineering role supporting warehouse, inventory, or supply-chain applications, and how are you building the development skills required for that move?"
+    },
+    {
+      "question": "Describe how you have worked with customer IT operations, business groups, and development teams during design reviews or UAT. How did you translate business requirements into concrete acceptance criteria, maintain traceability through defects and testing, and resolve conflicting stakeholder expectations?"
+    }
+  ],
+  "n_questions": 10,
+  "truncated": false,
+  "usage": {
+    "provider": "openai",
+    "model": "gpt-5.6-terra",
+    "task_type": "question_generation",
+    "input_tokens": 8045,
+    "output_tokens": 553,
+    "cached_tokens": 0,
+    "estimated_cost": 0.022726,
+    "latency_ms": 7337.21,
+    "retry_count": 0,
+    "fallback_used": false,
+    "fallback_reason": null
+  },
+  "cost_usd": 0.022726,
+  "cost_cny": 0.15385502,
+  "usd_cny_rate": 6.77,
+  "generated_at": "2026-10-11T13:05:55.080626+00:00",
+  "user_prompt_sha256": "b3c519e72171e1a2c82cd8a46fb92060049ab2cb8474fe3ef34effbf692cc007"
+}
