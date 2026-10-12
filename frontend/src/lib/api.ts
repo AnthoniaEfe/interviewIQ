@@ -7,7 +7,39 @@ import type {
   UploadMeta,
 } from "./types";
 
-export const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+/**
+ * Resolve the FastAPI base URL.
+ *
+ * - Browser / Vercel: must be the *public* RunPod (or other) backend URL via
+ *   NEXT_PUBLIC_API_URL — never localhost when the UI is deployed remotely.
+ * - Server components inside Docker can optionally use INTERNAL_API_URL
+ *   (e.g. http://backend:8000) while the browser still uses the public URL.
+ */
+function resolveApiBase(): string {
+  const internal =
+    typeof window === "undefined"
+      ? process.env.INTERNAL_API_URL?.trim()
+      : undefined;
+  const publicUrl = process.env.NEXT_PUBLIC_API_URL?.trim();
+  const raw = (internal || publicUrl || "http://127.0.0.1:8000").replace(
+    /\/$/,
+    "",
+  );
+
+  if (
+    typeof window !== "undefined" &&
+    process.env.NODE_ENV === "production" &&
+    /^(https?:\/\/)?(localhost|127\.0\.0\.1)(:|\/|$)/i.test(raw)
+  ) {
+    console.error(
+      "[InterviewIQ] NEXT_PUBLIC_API_URL points at localhost in production. " +
+        "Set it to your public RunPod FastAPI URL and redeploy.",
+    );
+  }
+  return raw;
+}
+
+export const API_BASE = resolveApiBase();
 
 async function getJson<T>(path: string): Promise<T> {
   const response = await fetch(`${API_BASE}${path}`, {

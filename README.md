@@ -61,7 +61,13 @@ Open http://localhost:3000 for the research console:
 - per-run charts (latency, cost, tokens, primary metrics M1–M4 when present)
 - question inspector and CV/JD upload for ad-hoc testing
 
-API must be running on port 8000 (`NEXT_PUBLIC_API_URL`).
+### Vercel + RunPod
+
+**Critical:** In the Vercel project, set **Root Directory** to `frontend` (not `backend` or repo root). Deploying `backend/` makes Vercel import `app/main.py` as a Python function and fails with `No module named 'fastapi'`. FastAPI belongs on RunPod only — see [docs/deployment.md](docs/deployment.md).
+
+- **Frontend (Vercel):** Root Directory = `frontend`; set `NEXT_PUBLIC_API_URL` to your **public** RunPod HTTPS URL (not `localhost`); redeploy after changing it.
+- **Backend (RunPod):** keep embeddings / CUDA / Luna–Terra calls here. Set `CORS_ALLOW_ORIGINS` (and optionally `CORS_ALLOW_ORIGIN_REGEX=https://.*\\.vercel\\.app`) for your Vercel origin(s).
+- Do **not** load PyTorch or Sentence-Transformers in the Next.js app — see `frontend/README.md`.
 
 ## Testing
 

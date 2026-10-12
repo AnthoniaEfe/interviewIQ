@@ -97,7 +97,11 @@ export default async function HomePage() {
           <code className="font-mono">
             {process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000"}
           </code>
-          . Start the backend, then refresh. ({error})
+          . For a deployed UI, set{" "}
+          <code className="font-mono">NEXT_PUBLIC_API_URL</code> to your public
+          RunPod FastAPI URL (not localhost), allow the Vercel origin in{" "}
+          <code className="font-mono">CORS_ALLOW_ORIGINS</code> on the backend,
+          and redeploy. ({error})
         </div>
       ) : null}
 

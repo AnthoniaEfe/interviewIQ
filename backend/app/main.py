@@ -8,9 +8,13 @@ from app.api.v1 import api_router
 from app.config.settings import get_settings
 from app.core.exceptions import InterviewIQError, ModelUnavailableError
 from app.core.logging import configure_logging
-from app.services.embeddings.service import HashingEmbeddingService
 from app.services.llm.factory import build_router
 from app.services.llm.openai_provider import verify_configured_models
+
+
+def _cors_origins(raw: str) -> list[str]:
+    origins = [part.strip() for part in (raw or "").split(",") if part.strip()]
+    return origins or ["http://localhost:3000"]
 
 
 def create_app() -> FastAPI:
@@ -20,6 +24,8 @@ def create_app() -> FastAPI:
 
     @asynccontextmanager
     async def lifespan(app: FastAPI):
+        # Do not load Sentence-Transformers / CUDA here. Embeddings are built
+        # lazily on RunPod when a route needs them (keeps Vercel free of GPU work).
         if settings.validate_models_on_startup and settings.openai_api_key:
             await verify_configured_models(app.state.llm_router.provider, settings)
         yield
@@ -32,17 +38,19 @@ def create_app() -> FastAPI:
     )
     app.state.settings = settings
     app.state.llm_router = llm_router
-    if settings.embedding_model == "hashing-test":
-        app.state.embeddings = HashingEmbeddingService()
-    else:
-        app.state.embeddings = None
-    app.add_middleware(
-        CORSMiddleware,
-        allow_origins=["http://localhost:3000"],
-        allow_credentials=True,
-        allow_methods=["*"],
-        allow_headers=["*"],
-    )
+    # Never eagerly load torch / MiniLM at import or startup.
+    app.state.embeddings = None
+    cors_kwargs: dict = {
+        "allow_origins": _cors_origins(settings.cors_allow_origins),
+        "allow_credentials": True,
+        "allow_methods": ["*"],
+        "allow_headers": ["*"],
+    }
+    # Allow all *.vercel.app previews when explicitly enabled (RunPod .env).
+    regex = (getattr(settings, "cors_allow_origin_regex", None) or "").strip()
+    if regex:
+        cors_kwargs["allow_origin_regex"] = regex
+    app.add_middleware(CORSMiddleware, **cors_kwargs)
     app.include_router(api_router)
 
     @app.exception_handler(ModelUnavailableError)
