@@ -11,6 +11,7 @@ import {
   YAxis,
 } from "recharts";
 
+import { PerPairMetricChart } from "@/components/MetricCharts";
 import type { ExperimentDetail } from "@/lib/types";
 
 const COLORS = {
@@ -48,97 +49,120 @@ export function ExperimentCharts({ detail }: Props) {
     totalCost: Number((d.total_cost * 1000).toFixed(2)),
     pairs: d.n,
   }));
+  const hasOpsCharts =
+    latency.length > 0 || cost.length > 0 || tokens.length > 0;
+  const hasMetrics = (detail.charts.metrics || []).length > 0;
+
+  if (!hasOpsCharts && !hasMetrics) {
+    return (
+      <p className="rounded-xl border border-dashed border-paper-line bg-paper-card p-6 text-sm text-ink-mute">
+        No per-pair chart series for this experiment stage. See the Frozen
+        metrics page for aggregated decision results.
+      </p>
+    );
+  }
 
   return (
     <div className="grid gap-6 lg:grid-cols-2">
-      <ChartCard
-        title="Latency by pair"
-        caption="Milliseconds per CV/JD generation call"
-      >
-        <ResponsiveContainer width="100%" height={260}>
-          <BarChart data={latency}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#d5ddd8" />
-            <XAxis dataKey="index" tick={{ fontSize: 11 }} />
-            <YAxis tick={{ fontSize: 11 }} />
-            <Tooltip
-              formatter={(value) => [`${String(value)} ms`, "Latency"]}
-              labelFormatter={(label) => `Pair ${String(label)}`}
-            />
-            <Bar dataKey="latency" fill={COLORS.latency} radius={[3, 3, 0, 0]} />
-          </BarChart>
-        </ResponsiveContainer>
-      </ChartCard>
+      {hasMetrics ? (
+        <div className="lg:col-span-2">
+          <PerPairMetricChart detail={detail} />
+        </div>
+      ) : null}
 
-      <ChartCard
-        title="Estimated cost by pair"
-        caption="USD × 1000 (mUSD) for readability"
-      >
-        <ResponsiveContainer width="100%" height={260}>
-          <BarChart data={cost}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#d5ddd8" />
-            <XAxis dataKey="index" tick={{ fontSize: 11 }} />
-            <YAxis tick={{ fontSize: 11 }} />
-            <Tooltip
-              formatter={(value) => [`${String(value)} mUSD`, "Cost"]}
-              labelFormatter={(label) => `Pair ${String(label)}`}
-            />
-            <Bar dataKey="cost" fill={COLORS.cost} radius={[3, 3, 0, 0]} />
-          </BarChart>
-        </ResponsiveContainer>
-      </ChartCard>
+      {latency.length > 0 ? (
+        <ChartCard
+          title="Latency by pair"
+          caption="Milliseconds per generation call"
+        >
+          <ResponsiveContainer width="100%" height={260}>
+            <BarChart data={latency}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#d5ddd8" />
+              <XAxis dataKey="index" tick={{ fontSize: 11 }} />
+              <YAxis tick={{ fontSize: 11 }} />
+              <Tooltip
+                formatter={(value) => [`${String(value)} ms`, "Latency"]}
+                labelFormatter={(label) => `Pair ${String(label)}`}
+              />
+              <Bar dataKey="latency" fill={COLORS.latency} radius={[3, 3, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartCard>
+      ) : null}
 
-      <ChartCard
-        title="Tokens by pair"
-        caption="Input vs output tokens"
-      >
-        <ResponsiveContainer width="100%" height={260}>
-          <BarChart data={tokens}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#d5ddd8" />
-            <XAxis dataKey="index" tick={{ fontSize: 11 }} />
-            <YAxis tick={{ fontSize: 11 }} />
-            <Tooltip />
-            <Legend />
-            <Bar dataKey="input" stackId="t" fill={COLORS.input} name="Input" />
-            <Bar
-              dataKey="output"
-              stackId="t"
-              fill={COLORS.output}
-              name="Output"
-              radius={[3, 3, 0, 0]}
-            />
-          </BarChart>
-        </ResponsiveContainer>
-      </ChartCard>
+      {cost.length > 0 ? (
+        <ChartCard
+          title="Estimated cost by pair"
+          caption="USD × 1000 (mUSD) for readability"
+        >
+          <ResponsiveContainer width="100%" height={260}>
+            <BarChart data={cost}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#d5ddd8" />
+              <XAxis dataKey="index" tick={{ fontSize: 11 }} />
+              <YAxis tick={{ fontSize: 11 }} />
+              <Tooltip
+                formatter={(value) => [`${String(value)} mUSD`, "Cost"]}
+                labelFormatter={(label) => `Pair ${String(label)}`}
+              />
+              <Bar dataKey="cost" fill={COLORS.cost} radius={[3, 3, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartCard>
+      ) : null}
 
-      <ChartCard
-        title="By fit label"
-        caption="Average latency (ms) and total cost (mUSD)"
-      >
-        <ResponsiveContainer width="100%" height={260}>
-          <BarChart data={byLabel}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#d5ddd8" />
-            <XAxis dataKey="label" tick={{ fontSize: 11 }} />
-            <YAxis yAxisId="left" tick={{ fontSize: 11 }} />
-            <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} />
-            <Tooltip />
-            <Legend />
-            <Bar
-              yAxisId="left"
-              dataKey="avgLatency"
-              fill={COLORS.good}
-              name="Avg latency (ms)"
-              radius={[3, 3, 0, 0]}
-            />
-            <Bar
-              yAxisId="right"
-              dataKey="totalCost"
-              fill={COLORS.potential}
-              name="Total cost (mUSD)"
-              radius={[3, 3, 0, 0]}
-            />
-          </BarChart>
-        </ResponsiveContainer>
-      </ChartCard>
+      {tokens.length > 0 ? (
+        <ChartCard title="Tokens by pair" caption="Input vs output tokens">
+          <ResponsiveContainer width="100%" height={260}>
+            <BarChart data={tokens}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#d5ddd8" />
+              <XAxis dataKey="index" tick={{ fontSize: 11 }} />
+              <YAxis tick={{ fontSize: 11 }} />
+              <Tooltip />
+              <Legend />
+              <Bar dataKey="input" stackId="t" fill={COLORS.input} name="Input" />
+              <Bar
+                dataKey="output"
+                stackId="t"
+                fill={COLORS.output}
+                name="Output"
+                radius={[3, 3, 0, 0]}
+              />
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartCard>
+      ) : null}
+
+      {byLabel.length > 0 && hasOpsCharts ? (
+        <ChartCard
+          title="By fit label"
+          caption="Average latency (ms) and total cost (mUSD)"
+        >
+          <ResponsiveContainer width="100%" height={260}>
+            <BarChart data={byLabel}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#d5ddd8" />
+              <XAxis dataKey="label" tick={{ fontSize: 11 }} />
+              <YAxis yAxisId="left" tick={{ fontSize: 11 }} />
+              <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11 }} />
+              <Tooltip />
+              <Legend />
+              <Bar
+                yAxisId="left"
+                dataKey="avgLatency"
+                fill={COLORS.good}
+                name="Avg latency (ms)"
+                radius={[3, 3, 0, 0]}
+              />
+              <Bar
+                yAxisId="right"
+                dataKey="totalCost"
+                fill={COLORS.potential}
+                name="Total cost (mUSD)"
+                radius={[3, 3, 0, 0]}
+              />
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartCard>
+      ) : null}
     </div>
   );
 }

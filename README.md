@@ -55,10 +55,11 @@ npm run dev
 
 Open http://localhost:3000 for the research console:
 
-- experiment list and aggregate cost
-- per-run charts (latency, cost, tokens, fit labels)
-- question inspector
-- CV/JD upload for ad-hoc testing
+- experiment list with stage, metric runs, and scale verdict
+- **Frozen metrics** (`/metrics`): baseline distributions, win/tie/loss, decision clauses, figures 50–56
+- **Human eval** (`/human-eval`): V5 assignment audit sheet + scaffold for future question-quality ratings
+- per-run charts (latency, cost, tokens, primary metrics M1–M4 when present)
+- question inspector and CV/JD upload for ad-hoc testing
 
 API must be running on port 8000 (`NEXT_PUBLIC_API_URL`).
 

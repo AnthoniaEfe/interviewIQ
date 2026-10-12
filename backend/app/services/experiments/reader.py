@@ -26,23 +26,34 @@ def list_experiments() -> list[dict]:
         if not summary_path.exists():
             continue
         summary = json.loads(summary_path.read_text(encoding="utf-8"))
+        stage = summary.get("stage") or summary.get("generation_mode")
+        decision = (summary.get("decision") or {}).get("verdict")
         items.append(
             {
                 "experiment_id": summary.get("experiment_id", path.name),
                 "status": summary.get("status"),
-                "generation_mode": summary.get("generation_mode"),
+                "stage": stage,
+                "generation_mode": summary.get("generation_mode") or stage,
                 "primary_dataset": summary.get("primary_dataset"),
-                "model": summary.get("model"),
+                "model": summary.get("model") or summary.get("embedding_model"),
                 "provider": summary.get("provider"),
-                "combinations_attempted": summary.get("combinations_attempted"),
-                "combinations_ok": summary.get("combinations_ok"),
+                "combinations_attempted": summary.get("combinations_attempted")
+                or summary.get("n_primary_pairs")
+                or (summary.get("counts") or {}).get("baseline_sets_M1_M4"),
+                "combinations_ok": summary.get("combinations_ok")
+                or summary.get("n_primary_pairs")
+                or (summary.get("counts") or {}).get("baseline_sets_M1_M4"),
                 "combinations_failed": summary.get("combinations_failed"),
-                "total_estimated_cost_usd": summary.get("total_estimated_cost_usd"),
+                "total_estimated_cost_usd": summary.get("total_estimated_cost_usd")
+                or ((summary.get("cost_projection") or {}).get("total_usd")),
                 "average_latency_ms": summary.get("average_latency_ms"),
                 "human_evaluation": summary.get("human_evaluation"),
                 "final_question_count_requested": summary.get(
                     "final_question_count_requested"
                 ),
+                "spec_sha256": summary.get("spec_sha256"),
+                "decision_verdict": decision,
+                "post_hoc": bool(summary.get("post_hoc")),
             }
         )
     return items
@@ -112,6 +123,81 @@ class PairSourceIndex:
         )
 
 
+def _normalize_questions(raw: list | None) -> list[dict]:
+    out: list[dict] = []
+    for q in raw or []:
+        if isinstance(q, dict):
+            text = q.get("question")
+            if text:
+                out.append({"question": str(text), **{k: v for k, v in q.items() if k != "question"}})
+        elif q:
+            out.append({"question": str(q)})
+    return out
+
+
+def _pair_dirs(experiment_dir: Path) -> list[Path]:
+    """Candidate directories that may contain per-pair JSON artifacts."""
+    preferred = (
+        "baseline",
+        "baseline_profile_aware",
+        "treatment",
+        "pool",
+        "B2",
+        "S0",
+        "S1",
+        "S2",
+        "per_pair",
+    )
+    found: list[Path] = []
+    for name in preferred:
+        d = experiment_dir / name
+        if d.is_dir():
+            found.append(d)
+    return found
+
+
+def _record_to_pair(file: Path, record: dict, sources: PairSourceIndex) -> dict:
+    usage = record.get("usage") or {}
+    questions = _normalize_questions(
+        record.get("questions") or record.get("valid_questions")
+    )
+    # Metrics per-pair rows store metric values, not questions
+    metrics = {
+        k: record.get(k)
+        for k in ("M1.P", "M2.P", "M3.P", "M4.P", "M1.S1", "M3.S2", "tau")
+        if k in record
+    }
+    if record.get("conditions") and isinstance(record["conditions"], dict):
+        # metrics_pilot bundle
+        t_cond = record["conditions"].get("T") or {}
+        for k in ("M1.P", "M2.P", "M3.P", "M4.P"):
+            if k in t_cond:
+                metrics[k] = t_cond.get(k)
+    resume_text, job_description_text = sources.texts_for(record)
+    return {
+        "file": file.name,
+        "profile_id": record.get("profile_id"),
+        "jd_id": record.get("jd_id"),
+        "pair_id": record.get("pair_id") or file.stem,
+        "fit_label": record.get("fit_label"),
+        "seniority": record.get("seniority"),
+        "model": record.get("model"),
+        "condition": record.get("condition"),
+        "n_questions": len(questions) or int(record.get("n_questions") or 0),
+        "questions": questions,
+        "metrics": metrics or None,
+        "resume_text": resume_text,
+        "job_description_text": job_description_text,
+        "latency_ms": usage.get("latency_ms"),
+        "input_tokens": usage.get("input_tokens"),
+        "output_tokens": usage.get("output_tokens"),
+        "cached_tokens": usage.get("cached_tokens"),
+        "estimated_cost": usage.get("estimated_cost") or record.get("cost_usd"),
+        "fallback_used": usage.get("fallback_used", False),
+        "generated_at": record.get("generated_at"),
+    }
+
+
 def load_experiment(experiment_id: str) -> dict:
     path = results_root() / experiment_id
     summary_path = path / "summary.json"
@@ -121,37 +207,19 @@ def load_experiment(experiment_id: str) -> dict:
     summary = json.loads(summary_path.read_text(encoding="utf-8"))
     sources = PairSourceIndex(summary)
     pairs: list[dict] = []
-    baseline_dir = path / "baseline"
-    if baseline_dir.exists():
-        for file in sorted(baseline_dir.glob("*.json")):
+    seen_files: set[str] = set()
+    for directory in _pair_dirs(path):
+        for file in sorted(directory.glob("*.json")):
             if file.name.startswith("_"):
                 continue
+            key = f"{directory.name}/{file.name}"
+            if key in seen_files:
+                continue
+            seen_files.add(key)
             record = json.loads(file.read_text(encoding="utf-8"))
-            usage = record.get("usage") or {}
-            questions = record.get("questions") or []
-            resume_text, job_description_text = sources.texts_for(record)
-            pairs.append(
-                {
-                    "file": file.name,
-                    "profile_id": record.get("profile_id"),
-                    "jd_id": record.get("jd_id"),
-                    "pair_id": record.get("pair_id"),
-                    "fit_label": record.get("fit_label"),
-                    "seniority": record.get("seniority"),
-                    "model": record.get("model"),
-                    "n_questions": len(questions),
-                    "questions": questions,
-                    "resume_text": resume_text,
-                    "job_description_text": job_description_text,
-                    "latency_ms": usage.get("latency_ms"),
-                    "input_tokens": usage.get("input_tokens"),
-                    "output_tokens": usage.get("output_tokens"),
-                    "cached_tokens": usage.get("cached_tokens"),
-                    "estimated_cost": usage.get("estimated_cost"),
-                    "fallback_used": usage.get("fallback_used", False),
-                    "generated_at": record.get("generated_at"),
-                }
-            )
+            pair = _record_to_pair(file, record, sources)
+            pair["file"] = key
+            pairs.append(pair)
 
     by_label: dict[str, dict] = {}
     for pair in pairs:
@@ -185,6 +253,22 @@ def load_experiment(experiment_id: str) -> dict:
             }
         )
 
+    metric_chart = []
+    for i, p in enumerate(pairs):
+        m = p.get("metrics") or {}
+        if any(m.get(k) is not None for k in ("M1.P", "M2.P", "M3.P", "M4.P")):
+            metric_chart.append(
+                {
+                    "index": i + 1,
+                    "pair_id": p.get("pair_id"),
+                    "fit_label": p.get("fit_label") or "unlabeled",
+                    "M1.P": m.get("M1.P"),
+                    "M2.P": m.get("M2.P"),
+                    "M3.P": m.get("M3.P"),
+                    "M4.P": m.get("M4.P"),
+                }
+            )
+
     return {
         "summary": summary,
         "pairs": pairs,
@@ -198,6 +282,7 @@ def load_experiment(experiment_id: str) -> dict:
                     "value": p.get("latency_ms") or 0,
                 }
                 for i, p in enumerate(pairs)
+                if p.get("latency_ms") is not None
             ],
             "cost_usd": [
                 {
@@ -207,6 +292,7 @@ def load_experiment(experiment_id: str) -> dict:
                     "value": p.get("estimated_cost") or 0,
                 }
                 for i, p in enumerate(pairs)
+                if p.get("estimated_cost") is not None
             ],
             "tokens": [
                 {
@@ -217,6 +303,8 @@ def load_experiment(experiment_id: str) -> dict:
                     "output": p.get("output_tokens") or 0,
                 }
                 for i, p in enumerate(pairs)
+                if p.get("input_tokens") is not None or p.get("output_tokens") is not None
             ],
+            "metrics": metric_chart,
         },
     }

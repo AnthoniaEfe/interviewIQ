@@ -2,13 +2,15 @@ import Link from "next/link";
 
 const links = [
   { href: "/", label: "Experiments" },
+  { href: "/metrics", label: "Frozen metrics" },
+  { href: "/human-eval", label: "Human eval" },
   { href: "/upload", label: "Upload pairs" },
 ];
 
 export function SiteHeader() {
   return (
     <header className="border-b border-paper-line/80 bg-paper-card/80 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-end justify-between gap-6 px-4 py-5 sm:px-6">
+      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-5 sm:flex-row sm:items-end sm:justify-between sm:px-6">
         <div>
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-deep">
             Research console
@@ -17,11 +19,11 @@ export function SiteHeader() {
             InterviewIQ
           </Link>
           <p className="mt-1 max-w-xl text-sm text-ink-mute">
-            Profile-gap interview generation — experiment metrics, cost, latency,
-            and ad-hoc CV/JD testing.
+            Frozen automatic metrics, scale/diagnose decision, experiment runs,
+            and a scaffold for eventual human evaluation.
           </p>
         </div>
-        <nav className="flex gap-1">
+        <nav className="flex flex-wrap gap-1">
           {links.map((link) => (
             <Link
               key={link.href}

@@ -1,10 +1,22 @@
 import Link from "next/link";
 
 import type { ExperimentSummary } from "@/lib/types";
+import { StatusPill } from "@/components/StatusPill";
 import { StatCard } from "@/components/StatCard";
-import { fetchExperiments, formatMs, formatUsd } from "@/lib/api";
+import {
+  fetchExperiments,
+  formatMs,
+  formatUsd,
+  stageLabel,
+} from "@/lib/api";
 
 export const dynamic = "force-dynamic";
+
+const METRIC_STAGES = new Set([
+  "metrics_freeze",
+  "metrics_pilot",
+  "scale_decision",
+]);
 
 export default async function HomePage() {
   let experiments: ExperimentSummary[] = [];
@@ -16,6 +28,12 @@ export default async function HomePage() {
   }
 
   const completed = experiments.filter((e) => e.status === "completed");
+  const metricRuns = experiments.filter((e) =>
+    METRIC_STAGES.has(String(e.stage || e.generation_mode || "")),
+  );
+  const scale = experiments.find(
+    (e) => e.stage === "scale_decision" && !e.post_hoc && e.status === "completed",
+  ) || experiments.find((e) => e.stage === "scale_decision");
   const totalCost = completed.reduce(
     (sum, e) => sum + (e.total_estimated_cost_usd || 0),
     0,
@@ -32,9 +50,16 @@ export default async function HomePage() {
           Experiment results
         </h1>
         <p className="max-w-2xl text-ink-mute">
-          Visualize baseline and InterviewIQ runs: cost, latency, tokens, and
-          generated questions. Upload new CV/JD pairs from the testing page when
-          you want ad-hoc cases beyond the HF dataset.
+          Baseline generation, treatment pilot, and frozen automatic evaluation
+          metrics. Open{" "}
+          <Link href="/metrics" className="text-accent-deep underline-offset-2 hover:underline">
+            Frozen metrics
+          </Link>{" "}
+          for the scale/diagnose decision, or{" "}
+          <Link href="/human-eval" className="text-accent-deep underline-offset-2 hover:underline">
+            Human eval
+          </Link>{" "}
+          for the assignment audit scaffold.
         </p>
       </section>
 
@@ -42,14 +67,27 @@ export default async function HomePage() {
         <StatCard label="Experiments" value={String(experiments.length)} />
         <StatCard label="Completed" value={String(completed.length)} />
         <StatCard
-          label="Pairs generated"
+          label="Metric / decision runs"
+          value={String(metricRuns.length)}
+          hint="Freeze, pilot metrics, scale decision"
+        />
+        <StatCard
+          label="Scale verdict"
+          value={scale?.decision_verdict || "—"}
+          hint={scale ? scale.experiment_id : "No scale_decision yet"}
+        />
+      </section>
+
+      <section className="grid gap-3 sm:grid-cols-2">
+        <StatCard
+          label="Pairs tracked"
           value={String(totalPairs)}
-          hint="Across completed runs"
+          hint="Across completed runs (incl. metric n)"
         />
         <StatCard
           label="Tracked API cost"
           value={formatUsd(totalCost)}
-          hint="Configured Terra pricing"
+          hint="Configured model pricing + projections"
         />
       </section>
 
@@ -77,71 +115,74 @@ export default async function HomePage() {
               <thead className="bg-paper font-mono text-[11px] uppercase tracking-wide text-ink-mute">
                 <tr>
                   <th className="px-4 py-3">Experiment</th>
-                  <th className="px-4 py-3">Mode</th>
+                  <th className="px-4 py-3">Stage</th>
                   <th className="px-4 py-3">Model</th>
                   <th className="px-4 py-3">Status</th>
-                  <th className="px-4 py-3">Pairs</th>
+                  <th className="px-4 py-3">Pairs / n</th>
                   <th className="px-4 py-3">Avg latency</th>
-                  <th className="px-4 py-3">Cost</th>
+                  <th className="px-4 py-3">Cost / verdict</th>
                 </tr>
               </thead>
               <tbody>
-                {experiments.map((exp) => (
-                  <tr
-                    key={exp.experiment_id}
-                    className="border-t border-paper-line hover:bg-paper/80"
-                  >
-                    <td className="px-4 py-3">
-                      <Link
-                        href={`/experiments/${exp.experiment_id}`}
-                        className="font-medium text-accent-deep underline-offset-2 hover:underline"
-                      >
-                        {exp.experiment_id}
-                      </Link>
-                      {exp.primary_dataset ? (
-                        <p className="mt-1 max-w-xs truncate text-xs text-ink-mute">
-                          {exp.primary_dataset}
-                        </p>
-                      ) : null}
-                    </td>
-                    <td className="px-4 py-3">{exp.generation_mode || "—"}</td>
-                    <td className="px-4 py-3 font-mono text-xs">
-                      {exp.model || "—"}
-                    </td>
-                    <td className="px-4 py-3">
-                      <StatusPill status={exp.status} />
-                    </td>
-                    <td className="px-4 py-3">
-                      {exp.combinations_ok ?? 0}/
-                      {exp.combinations_attempted ?? 0}
-                    </td>
-                    <td className="px-4 py-3">
-                      {formatMs(exp.average_latency_ms)}
-                    </td>
-                    <td className="px-4 py-3">
-                      {formatUsd(exp.total_estimated_cost_usd)}
-                    </td>
-                  </tr>
-                ))}
+                {experiments.map((exp) => {
+                  const stage = exp.stage || exp.generation_mode;
+                  const isMetric = METRIC_STAGES.has(String(stage || ""));
+                  return (
+                    <tr
+                      key={exp.experiment_id}
+                      className="border-t border-paper-line hover:bg-paper/80"
+                    >
+                      <td className="px-4 py-3">
+                        <Link
+                          href={`/experiments/${exp.experiment_id}`}
+                          className="font-medium text-accent-deep underline-offset-2 hover:underline"
+                        >
+                          {exp.experiment_id}
+                        </Link>
+                        <div className="mt-1 flex flex-wrap gap-1">
+                          {exp.post_hoc ? (
+                            <span className="rounded bg-warn-soft px-1.5 py-0.5 text-[10px] text-warn">
+                              POST-HOC
+                            </span>
+                          ) : null}
+                          {exp.primary_dataset ? (
+                            <p className="max-w-xs truncate text-xs text-ink-mute">
+                              {exp.primary_dataset}
+                            </p>
+                          ) : null}
+                        </div>
+                      </td>
+                      <td className="px-4 py-3 capitalize">
+                        {stageLabel(stage)}
+                      </td>
+                      <td className="px-4 py-3 font-mono text-xs">
+                        {exp.model || "—"}
+                      </td>
+                      <td className="px-4 py-3">
+                        <StatusPill status={exp.status} />
+                      </td>
+                      <td className="px-4 py-3">
+                        {exp.combinations_ok ?? 0}/
+                        {exp.combinations_attempted ?? 0}
+                      </td>
+                      <td className="px-4 py-3">
+                        {formatMs(exp.average_latency_ms)}
+                      </td>
+                      <td className="px-4 py-3">
+                        {isMetric && exp.decision_verdict ? (
+                          <StatusPill status={exp.decision_verdict} />
+                        ) : (
+                          formatUsd(exp.total_estimated_cost_usd)
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
         )}
       </section>
     </div>
-  );
-}
-
-function StatusPill({ status }: { status: string | null }) {
-  const tone =
-    status === "completed"
-      ? "bg-accent-soft text-accent-deep"
-      : status === "failed"
-        ? "bg-warn-soft text-warn"
-        : "bg-paper text-ink-mute";
-  return (
-    <span className={`rounded-full px-2.5 py-1 text-xs font-medium ${tone}`}>
-      {status || "unknown"}
-    </span>
   );
 }
