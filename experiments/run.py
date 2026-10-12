@@ -349,6 +349,10 @@ async def async_main(
     b1_experiment: str | None = None,
     treatment_experiment: str | None = None,
     ablation_experiment: str | None = None,
+    extract_missing: bool = False,
+    with_dimension_labels: bool = False,
+    scale_budget_cny: float = 100.0,
+    allow_post_hoc: bool = False,
 ) -> Path:
     config = load_config(config_path)
     get_settings.cache_clear()
@@ -357,6 +361,42 @@ async def async_main(
     n_questions = int(config.get("final_question_count", settings.final_question_count))
     experiment_id = datetime.now(timezone.utc).strftime("exp_%Y%m%dT%H%M%SZ")
     out_dir = ROOT / "experiments" / "results" / experiment_id
+
+    if stage in {"metrics_freeze", "metrics_pilot", "scale_decision"}:
+        from app.services.eval_metrics.constants import DEFAULT_MAX_COST_USD
+        from app.services.eval_metrics.pipeline import (
+            run_metrics_freeze,
+            run_metrics_pilot,
+            run_scale_decision,
+        )
+
+        capped = DEFAULT_MAX_COST_USD if max_cost is None else max_cost
+        if stage == "metrics_freeze":
+            result = run_metrics_freeze(
+                settings=settings,
+                dry_run=dry_run,
+                confirm_spend=confirm_spend,
+                max_cost=capped,
+                extract_missing=extract_missing,
+                with_dimension_labels=with_dimension_labels,
+            )
+        elif stage == "metrics_pilot":
+            result = run_metrics_pilot(
+                settings=settings,
+                allow_post_hoc=allow_post_hoc,
+            )
+        else:
+            result = run_scale_decision(
+                settings=settings,
+                allow_post_hoc=allow_post_hoc,
+                scale_budget_cny=scale_budget_cny,
+            )
+        exp = result.get("experiment_id")
+        return (
+            ROOT / "experiments" / "results" / exp
+            if exp
+            else ROOT / "experiments" / "results"
+        )
 
     if stage in {
         "treatment_pipeline",
@@ -755,6 +795,9 @@ def main() -> None:
             "selection_ablation",
             "pilot_compare",
             "treatment_regression",
+            "metrics_freeze",
+            "metrics_pilot",
+            "scale_decision",
         ),
         default="baseline",
         help="Pipeline stage to run. Default remains baseline generation.",
@@ -820,6 +863,27 @@ def main() -> None:
         default=None,
         help="Abort if running cost would exceed this USD cap.",
     )
+    parser.add_argument(
+        "--extract-missing",
+        action="store_true",
+        help="For metrics_freeze: Luna-extract the 90 baseline pairs lacking extraction.",
+    )
+    parser.add_argument(
+        "--with-dimension-labels",
+        action="store_true",
+        help="For metrics stages: optional Luna five-dimension labelling (gated).",
+    )
+    parser.add_argument(
+        "--scale-budget-cny",
+        type=float,
+        default=100.0,
+        help="CNY budget for scale-cost projection (default 100).",
+    )
+    parser.add_argument(
+        "--allow-post-hoc",
+        action="store_true",
+        help="Allow metrics_pilot/scale_decision when freeze hashes differ (tags POST-HOC).",
+    )
     args = parser.parse_args()
     asyncio.run(
         async_main(
@@ -837,6 +901,10 @@ def main() -> None:
             b1_experiment=args.b1_experiment,
             treatment_experiment=args.treatment_experiment,
             ablation_experiment=args.ablation_experiment,
+            extract_missing=args.extract_missing,
+            with_dimension_labels=args.with_dimension_labels,
+            scale_budget_cny=args.scale_budget_cny,
+            allow_post_hoc=args.allow_post_hoc,
         )
     )
 

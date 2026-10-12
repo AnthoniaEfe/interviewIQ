@@ -1,0 +1,428 @@
+{
+  "experiment_id": "exp_20261012T163747Z",
+  "stage": "metrics_freeze",
+  "status": "completed",
+  "spec_version": "v1",
+  "spec_sha256": "31aad6fa2aa3f225f120b075b1da5135fa495a9997931413a67cd9c3f795ed00",
+  "freeze_path": "/root/interviewIQ/experiments/metrics/metrics_freeze.json",
+  "git_commit": "1c62b429108fa3e724660084ea1e2ca3887591af",
+  "library_versions": {
+    "numpy": "2.1.2",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.8.0+cu128",
+    "sentence-transformers": "6.1.0",
+    "rank-bm25": "0.2.2"
+  },
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_device": "cuda",
+  "parameters": {
+    "bootstrap_resamples": 2000,
+    "seed": 42,
+    "usd_cny_rate": 6.77,
+    "extract_missing": false,
+    "with_dimension_labels": false
+  },
+  "counts": {
+    "baseline_sets_M1_M4": 150,
+    "baseline_sets_M4": 150,
+    "baseline_sets_M2": 60,
+    "baseline_sets_M3": 60,
+    "gap_matrices_used": 60,
+    "tau_calibrated": 60
+  },
+  "distributions": {
+    "M1.P": {
+      "overall": {
+        "mean": 0.3372410843105471,
+        "ci_low": 0.3285963225771769,
+        "ci_high": 0.3455669220215782,
+        "n": 150
+      },
+      "by_fit_label": {
+        "Good Fit": {
+          "mean": 0.33468076378487815,
+          "ci_low": 0.3221291023014466,
+          "ci_high": 0.3469488154452026,
+          "n": 75
+        },
+        "Potential Fit": {
+          "mean": 0.3398014048362162,
+          "ci_low": 0.32794979495544874,
+          "ci_high": 0.35107164413509356,
+          "n": 75
+        }
+      }
+    },
+    "M1.S1": {
+      "overall": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n": 150
+      },
+      "by_fit_label": {
+        "Good Fit": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 75
+        },
+        "Potential Fit": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 75
+        }
+      }
+    },
+    "M4.P": {
+      "overall": {
+        "mean": 6.833047704204237,
+        "ci_low": 6.742287942896894,
+        "ci_high": 6.928048626724257,
+        "n": 150
+      },
+      "by_fit_label": {
+        "Good Fit": {
+          "mean": 6.879225495459515,
+          "ci_low": 6.747657010024858,
+          "ci_high": 7.012819311266942,
+          "n": 75
+        },
+        "Potential Fit": {
+          "mean": 6.786869912948956,
+          "ci_low": 6.667247374902003,
+          "ci_high": 6.916775484887176,
+          "n": 75
+        }
+      }
+    },
+    "M2.P": {
+      "overall": {
+        "mean": 0.18499999999999997,
+        "ci_low": 0.14666666666666664,
+        "ci_high": 0.22333333333333333,
+        "n": 60
+      },
+      "by_fit_label": {
+        "Good Fit": {
+          "mean": 0.19666666666666666,
+          "ci_low": 0.14333333333333334,
+          "ci_high": 0.25333333333333335,
+          "n": 30
+        },
+        "Potential Fit": {
+          "mean": 0.17333333333333334,
+          "ci_low": 0.12333333333333334,
+          "ci_high": 0.22333333333333336,
+          "n": 30
+        }
+      }
+    },
+    "M3.P": {
+      "overall": {
+        "mean": 0.3719246031746032,
+        "ci_low": 0.3159459325396825,
+        "ci_high": 0.4257738095238095,
+        "n": 60
+      },
+      "by_fit_label": {
+        "Good Fit": {
+          "mean": 0.3635714285714285,
+          "ci_low": 0.28583333333333333,
+          "ci_high": 0.43858333333333327,
+          "n": 30
+        },
+        "Potential Fit": {
+          "mean": 0.38027777777777777,
+          "ci_low": 0.30666666666666664,
+          "ci_high": 0.46499999999999997,
+          "n": 30
+        }
+      }
+    }
+  },
+  "validity": {
+    "V1": {
+      "vendi_identical": 1.000000000000001,
+      "vendi_orthogonal": 9.999999999999998,
+      "vendi_identical_ok": true,
+      "vendi_orthogonal_ok": true,
+      "M1.S1_zero": 0.0,
+      "M1.S1_one_pair": 0.022222222222222223,
+      "M2.P_hand": 0.9,
+      "M3.P_hand": 1.0,
+      "passed": true
+    },
+    "V2": {
+      "n_pairs": 60,
+      "n_permutations": 5,
+      "true_M2.P_mean": 0.18499999999999997,
+      "null_M2.P_mean": 0.03133333333333333,
+      "gap_M2.P": 0.15366666666666665,
+      "true_M3.P_mean": 0.3719246031746032,
+      "null_M3.P_mean": 0.05378968253968253,
+      "gap_M3.P": 0.31813492063492066
+    },
+    "V3": {
+      "n_sets": 150,
+      "fraction_M1P_rises": 0.98,
+      "fraction_M4P_falls": 1.0
+    },
+    "V4": {
+      "M1.P": {
+        "mean_per_pair_sd": 0.02259752828534724,
+        "median_per_pair_sd": 0.022405358007401854,
+        "mean_abs_replicate_diff": 0.028733060942354557,
+        "smallest_distinguishable_paired_mean_diff": 0.028733060942354557,
+        "n_pairs_with_reps": 30
+      },
+      "M2.P": {
+        "mean_per_pair_sd": 0.0714312374436931,
+        "median_per_pair_sd": 0.05773502691896258,
+        "mean_abs_replicate_diff": 0.08888888888888888,
+        "smallest_distinguishable_paired_mean_diff": 0.08888888888888888,
+        "n_pairs_with_reps": 30
+      },
+      "M3.P": {
+        "mean_per_pair_sd": 0.10341032277002211,
+        "median_per_pair_sd": 0.1,
+        "mean_abs_replicate_diff": 0.1311111111111111,
+        "smallest_distinguishable_paired_mean_diff": 0.1311111111111111,
+        "n_pairs_with_reps": 30
+      },
+      "M4.P": {
+        "mean_per_pair_sd": 0.25279768328583796,
+        "median_per_pair_sd": 0.2468460960087929,
+        "mean_abs_replicate_diff": 0.318404649023268,
+        "smallest_distinguishable_paired_mean_diff": 0.318404649023268,
+        "n_pairs_with_reps": 30
+      }
+    },
+    "V5_audit": "/root/interviewIQ/experiments/metrics/assignment_audit.csv"
+  },
+  "primary30_noise_floor": {
+    "M1.P": {
+      "mean_per_pair_sd": 0.02259752828534724,
+      "median_per_pair_sd": 0.022405358007401854,
+      "mean_abs_replicate_diff": 0.028733060942354557,
+      "smallest_distinguishable_paired_mean_diff": 0.028733060942354557,
+      "n_pairs_with_reps": 30
+    },
+    "M2.P": {
+      "mean_per_pair_sd": 0.0714312374436931,
+      "median_per_pair_sd": 0.05773502691896258,
+      "mean_abs_replicate_diff": 0.08888888888888888,
+      "smallest_distinguishable_paired_mean_diff": 0.08888888888888888,
+      "n_pairs_with_reps": 30
+    },
+    "M3.P": {
+      "mean_per_pair_sd": 0.10341032277002211,
+      "median_per_pair_sd": 0.1,
+      "mean_abs_replicate_diff": 0.1311111111111111,
+      "smallest_distinguishable_paired_mean_diff": 0.1311111111111111,
+      "n_pairs_with_reps": 30
+    },
+    "M4.P": {
+      "mean_per_pair_sd": 0.25279768328583796,
+      "median_per_pair_sd": 0.2468460960087929,
+      "mean_abs_replicate_diff": 0.318404649023268,
+      "smallest_distinguishable_paired_mean_diff": 0.318404649023268,
+      "n_pairs_with_reps": 30
+    }
+  },
+  "extraction_missing": {
+    "requested": false,
+    "ran": false,
+    "cost_usd": 0.0,
+    "cost_cny": 0.0,
+    "n_pairs": 0,
+    "skipped_reason": null,
+    "dimension_labels": "not_requested"
+  },
+  "pilot_summaries_stage_status_only": [
+    {
+      "experiment_id": "exp_20261011T130141Z",
+      "stage": "baseline_profile_aware",
+      "status": "completed"
+    },
+    {
+      "experiment_id": "exp_20261011T130156Z",
+      "stage": "treatment_pipeline",
+      "status": "completed"
+    },
+    {
+      "experiment_id": "exp_20261011T130253Z",
+      "stage": "selection_ablation",
+      "status": "completed"
+    },
+    {
+      "experiment_id": "exp_20261011T130310Z",
+      "stage": "baseline_profile_aware",
+      "status": "completed"
+    },
+    {
+      "experiment_id": "exp_20261011T130619Z",
+      "stage": "treatment_pipeline",
+      "status": "completed"
+    },
+    {
+      "experiment_id": "exp_20261011T131945Z",
+      "stage": "selection_ablation",
+      "status": "completed"
+    }
+  ],
+  "result_files": [
+    "per_pair/rjf_03166_82125d382220.json",
+    "per_pair/rjf_03173_9a0a3c4d8ba0.json",
+    "per_pair/rjf_03192_622dfe3d9c4a.json",
+    "per_pair/rjf_03202_f43978101918.json",
+    "per_pair/rjf_03208_76bd104315d4.json",
+    "per_pair/rjf_03242_33ec8f3057f8.json",
+    "per_pair/rjf_03267_9fef71961ae7.json",
+    "per_pair/rjf_03284_57327b70063a.json",
+    "per_pair/rjf_03305_be01027574f2.json",
+    "per_pair/rjf_03311_f96e539f2ada.json",
+    "per_pair/rjf_03316_24b519fd92df.json",
+    "per_pair/rjf_03383_db537d2d5d43.json",
+    "per_pair/rjf_03390_0c93712a68b3.json",
+    "per_pair/rjf_03404_d22e41ddb521.json",
+    "per_pair/rjf_03417_8db036fb0caf.json",
+    "per_pair/rjf_03475_60d87190015d.json",
+    "per_pair/rjf_03494_2653b1a41741.json",
+    "per_pair/rjf_03495_fed1ccd87630.json",
+    "per_pair/rjf_03496_b9650aabb896.json",
+    "per_pair/rjf_03497_3352c5d0c630.json",
+    "per_pair/rjf_03517_4fbced9a99b3.json",
+    "per_pair/rjf_03523_2e9dd03ef2c8.json",
+    "per_pair/rjf_03558_5a71f8cf9f12.json",
+    "per_pair/rjf_03572_70b8c0e754a2.json",
+    "per_pair/rjf_03611_ef2aa407d208.json",
+    "per_pair/rjf_03643_4fcab747138b.json",
+    "per_pair/rjf_03657_9403c2b926fc.json",
+    "per_pair/rjf_03694_93b887db526b.json",
+    "per_pair/rjf_03709_446922e31e66.json",
+    "per_pair/rjf_03725_b2c8a10e691a.json",
+    "per_pair/rjf_03732_e55e23a1b528.json",
+    "per_pair/rjf_03756_d732ac6d936b.json",
+    "per_pair/rjf_03777_bd0a24d0661b.json",
+    "per_pair/rjf_03794_301991d452b9.json",
+    "per_pair/rjf_03837_0a4aebde05d5.json",
+    "per_pair/rjf_03858_f96a3845408e.json",
+    "per_pair/rjf_03923_fafbdf5e0ed5.json",
+    "per_pair/rjf_03930_1e6b1c3030a3.json",
+    "per_pair/rjf_03935_ad6b99d03c86.json",
+    "per_pair/rjf_03939_0c07f308e860.json",
+    "per_pair/rjf_03949_7f3d80c6585b.json",
+    "per_pair/rjf_03954_1139ae24b947.json",
+    "per_pair/rjf_04001_28009f597e20.json",
+    "per_pair/rjf_04005_8ea360086e3c.json",
+    "per_pair/rjf_04042_54ff5aa9482e.json",
+    "per_pair/rjf_04057_b9b1be297b1d.json",
+    "per_pair/rjf_04061_84d40997ccc4.json",
+    "per_pair/rjf_04101_6a7a43c044b1.json",
+    "per_pair/rjf_04110_a97f4f459fb3.json",
+    "per_pair/rjf_04122_3ec8c52624fb.json",
+    "per_pair/rjf_04125_44e2a9695637.json",
+    "per_pair/rjf_04150_7a17eb2b97eb.json",
+    "per_pair/rjf_04257_b3ef381b1023.json",
+    "per_pair/rjf_04275_6c7d9c6ceb0e.json",
+    "per_pair/rjf_04313_73e9de96e905.json",
+    "per_pair/rjf_04316_c20549127788.json",
+    "per_pair/rjf_04345_b3c0ac5d24c1.json",
+    "per_pair/rjf_04356_1b31246168bf.json",
+    "per_pair/rjf_04357_7ebce778c1e4.json",
+    "per_pair/rjf_04404_586d233b0d45.json",
+    "per_pair/rjf_04423_8ebcbfa69c51.json",
+    "per_pair/rjf_04445_d8e5d928401a.json",
+    "per_pair/rjf_04550_08e0f3121885.json",
+    "per_pair/rjf_04553_ea8f275312b4.json",
+    "per_pair/rjf_04575_0907c96c2349.json",
+    "per_pair/rjf_04597_14051f3b5c46.json",
+    "per_pair/rjf_04627_2eee4b145715.json",
+    "per_pair/rjf_04639_f4cbc5bff588.json",
+    "per_pair/rjf_04645_434efc3ffae8.json",
+    "per_pair/rjf_04646_24c9b44ab279.json",
+    "per_pair/rjf_04649_c07fd77fa4b5.json",
+    "per_pair/rjf_04652_021f517c37fa.json",
+    "per_pair/rjf_04656_c323e4948b89.json",
+    "per_pair/rjf_04668_066625dfe7d9.json",
+    "per_pair/rjf_04688_442f79e07053.json",
+    "per_pair/rjf_04722_002609224fe9.json",
+    "per_pair/rjf_04729_4b4032772de3.json",
+    "per_pair/rjf_04748_e71a9f14bda5.json",
+    "per_pair/rjf_04750_8b4925595ebe.json",
+    "per_pair/rjf_04758_72113cd9f414.json",
+    "per_pair/rjf_04764_cc724f5c8ae3.json",
+    "per_pair/rjf_04769_6ad3ac8f4e95.json",
+    "per_pair/rjf_04775_389ae0597811.json",
+    "per_pair/rjf_04798_c3f6a10627f6.json",
+    "per_pair/rjf_04822_e1ea4abfb9ad.json",
+    "per_pair/rjf_04867_708ae082a6ac.json",
+    "per_pair/rjf_04919_0c835e9614c9.json",
+    "per_pair/rjf_04938_2bff00b73af6.json",
+    "per_pair/rjf_04939_c5f496f21e27.json",
+    "per_pair/rjf_04974_0341f95185b6.json",
+    "per_pair/rjf_05005_9ea5f225c8aa.json",
+    "per_pair/rjf_05015_76a5778b1247.json",
+    "per_pair/rjf_05031_2e00c12c28c7.json",
+    "per_pair/rjf_05041_02231eef9438.json",
+    "per_pair/rjf_05081_34e226751684.json",
+    "per_pair/rjf_05082_7c5371e1d6e8.json",
+    "per_pair/rjf_05115_2bbf1333791f.json",
+    "per_pair/rjf_05131_761b3d7acef1.json",
+    "per_pair/rjf_05138_ace8319feade.json",
+    "per_pair/rjf_05177_3227a30404a7.json",
+    "per_pair/rjf_05181_b399e80a959f.json",
+    "per_pair/rjf_05182_247dd1495014.json",
+    "per_pair/rjf_05212_0ab1ecf61080.json",
+    "per_pair/rjf_05228_82eb57a3fac0.json",
+    "per_pair/rjf_05237_a52a8f7a96d4.json",
+    "per_pair/rjf_05247_c97ea5668bff.json",
+    "per_pair/rjf_05260_4f6ef90caf00.json",
+    "per_pair/rjf_05266_0481cbd0ff32.json",
+    "per_pair/rjf_05281_56dd66bfd7af.json",
+    "per_pair/rjf_05313_109651f210ae.json",
+    "per_pair/rjf_05314_5fa86a9919bb.json",
+    "per_pair/rjf_05318_4105bda9546c.json",
+    "per_pair/rjf_05320_ccfebe0a6c74.json",
+    "per_pair/rjf_05335_e8e8a1e7ab71.json",
+    "per_pair/rjf_05363_571569221daa.json",
+    "per_pair/rjf_05373_0562dd5f09f4.json",
+    "per_pair/rjf_05378_6b48d68c1201.json",
+    "per_pair/rjf_05379_002dea320df4.json",
+    "per_pair/rjf_05451_0bab2e65b3ba.json",
+    "per_pair/rjf_05542_0484929e1582.json",
+    "per_pair/rjf_05560_e320c2bbfdce.json",
+    "per_pair/rjf_05597_9772161b15f8.json",
+    "per_pair/rjf_05640_4624810f8ef3.json",
+    "per_pair/rjf_05677_6ee0874f0f4f.json",
+    "per_pair/rjf_05700_bd0e9149cf9e.json",
+    "per_pair/rjf_05762_105efc327ce7.json",
+    "per_pair/rjf_05797_c4a0628debc9.json",
+    "per_pair/rjf_05799_8edfa9e055be.json",
+    "per_pair/rjf_05848_7e45b1b5421b.json",
+    "per_pair/rjf_05855_1d0e27a3eacb.json",
+    "per_pair/rjf_05896_1cbc4f8a99a6.json",
+    "per_pair/rjf_05901_0ce23bc466db.json",
+    "per_pair/rjf_05952_f7fee569a3d8.json",
+    "per_pair/rjf_05967_6b96aac6d92f.json",
+    "per_pair/rjf_05982_f734ef1c4d1a.json",
+    "per_pair/rjf_05983_4de677e9d67e.json",
+    "per_pair/rjf_05984_888e40e1654d.json",
+    "per_pair/rjf_05989_52b37d24c1b8.json",
+    "per_pair/rjf_05997_55a65605ad8f.json",
+    "per_pair/rjf_06011_6b21f3831c12.json",
+    "per_pair/rjf_06019_4cdecdd79857.json",
+    "per_pair/rjf_06021_14549a02aa4a.json",
+    "per_pair/rjf_06038_1ee8ed36ce13.json",
+    "per_pair/rjf_06043_5bce8a42c9c3.json",
+    "per_pair/rjf_06115_0a36e59a7e9d.json",
+    "per_pair/rjf_06173_3a50629919bd.json",
+    "per_pair/rjf_06191_f9c89e0c6713.json",
+    "per_pair/rjf_06203_bec480775998.json",
+    "per_pair/rjf_06206_4365ee0b5af4.json",
+    "per_pair/rjf_06210_7de5fd638e77.json"
+  ]
+}

@@ -1,0 +1,763 @@
+{
+  "experiment_id": "exp_20261012T163853Z",
+  "stage": "scale_decision",
+  "status": "completed",
+  "post_hoc": false,
+  "post_hoc_tag": null,
+  "spec_sha256": "31aad6fa2aa3f225f120b075b1da5135fa495a9997931413a67cd9c3f795ed00",
+  "git_commit": "1c62b429108fa3e724660084ea1e2ca3887591af",
+  "library_versions": {
+    "numpy": "2.1.2",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.8.0+cu128",
+    "sentence-transformers": "6.1.0",
+    "rank-bm25": "0.2.2"
+  },
+  "pilot_metrics_experiment": "exp_20261012T163833Z",
+  "comparisons": [
+    {
+      "metric": "M1.P",
+      "n_pairs": 30,
+      "mean_favourable_diff": 0.015459081936679208,
+      "ci_low": -0.008465659359735842,
+      "ci_high": 0.03876316868371678,
+      "wilcoxon_p": 0.1641840822994709,
+      "rank_biserial": 0.2946236559139785,
+      "outcome": "tie",
+      "baseline": "B1",
+      "wilcoxon_p_holm": 0.8209204114973545
+    },
+    {
+      "metric": "M2.P",
+      "n_pairs": 30,
+      "mean_favourable_diff": 0.18666666666666668,
+      "ci_low": 0.11333333333333333,
+      "ci_high": 0.2634166666666663,
+      "wilcoxon_p": 0.0001512588262747674,
+      "rank_biserial": 0.9288537549407114,
+      "outcome": "win",
+      "baseline": "B1",
+      "wilcoxon_p_holm": 0.001512588262747674
+    },
+    {
+      "metric": "M3.P",
+      "n_pairs": 30,
+      "mean_favourable_diff": 0.057499999999999996,
+      "ci_low": -0.010000000000000002,
+      "ci_high": 0.13083333333333333,
+      "wilcoxon_p": 0.24503520633277964,
+      "rank_biserial": 0.22,
+      "outcome": "tie",
+      "baseline": "B1",
+      "wilcoxon_p_holm": 0.8209204114973545
+    },
+    {
+      "metric": "M4.P",
+      "n_pairs": 30,
+      "mean_favourable_diff": 0.04839865140286947,
+      "ci_low": -0.21383999039388987,
+      "ci_high": 0.31288696338960265,
+      "wilcoxon_p": 0.7151329666376114,
+      "rank_biserial": 0.07956989247311828,
+      "outcome": "tie",
+      "baseline": "B1",
+      "wilcoxon_p_holm": 0.8209204114973545
+    },
+    {
+      "metric": "M1.P",
+      "n_pairs": 30,
+      "mean_favourable_diff": -0.0064655516876149415,
+      "ci_low": -0.01661076578034258,
+      "ci_high": 0.0034457054955712094,
+      "wilcoxon_p": 0.18396909348666668,
+      "rank_biserial": -0.2817204301075269,
+      "outcome": "tie",
+      "baseline": "B2",
+      "wilcoxon_p_holm": 0.8209204114973545
+    },
+    {
+      "metric": "M2.P",
+      "n_pairs": 30,
+      "mean_favourable_diff": 0.030000000000000006,
+      "ci_low": 1.8503717077085942e-18,
+      "ci_high": 0.06333333333333334,
+      "wilcoxon_p": 0.06694406288246632,
+      "rank_biserial": 0.5047619047619047,
+      "outcome": "win",
+      "baseline": "B2",
+      "wilcoxon_p_holm": 0.4016643772947979
+    },
+    {
+      "metric": "M3.P",
+      "n_pairs": 30,
+      "mean_favourable_diff": -0.060000000000000005,
+      "ci_low": -0.10000000000000002,
+      "ci_high": -0.019999999999999997,
+      "wilcoxon_p": 0.009807975680237977,
+      "rank_biserial": -0.6277056277056277,
+      "outcome": "lose",
+      "baseline": "B2",
+      "wilcoxon_p_holm": 0.06865582976166584
+    },
+    {
+      "metric": "M4.P",
+      "n_pairs": 30,
+      "mean_favourable_diff": -0.17637554995817614,
+      "ci_low": -0.30222696467188953,
+      "ci_high": -0.04635699923112256,
+      "wilcoxon_p": 0.008142979815602303,
+      "rank_biserial": -0.5440860215053763,
+      "outcome": "lose",
+      "baseline": "B2",
+      "wilcoxon_p_holm": 0.06514383852481842
+    },
+    {
+      "metric": "M1.P",
+      "n_pairs": 30,
+      "mean_favourable_diff": 0.05520124513591897,
+      "ci_low": 0.031212018040976643,
+      "ci_high": 0.0783022571538445,
+      "wilcoxon_p": 3.904104232788086e-05,
+      "rank_biserial": 0.7978494623655914,
+      "outcome": "win",
+      "baseline": "B0",
+      "wilcoxon_p_holm": 0.00042945146560668945
+    },
+    {
+      "metric": "M2.P",
+      "n_pairs": 30,
+      "mean_favourable_diff": 0.24666666666666667,
+      "ci_low": 0.18330555555555553,
+      "ci_high": 0.3133333333333333,
+      "wilcoxon_p": 5.79948426941598e-06,
+      "rank_biserial": 0.9802955665024631,
+      "outcome": "win",
+      "baseline": "B0",
+      "wilcoxon_p_holm": 6.959381123299176e-05
+    },
+    {
+      "metric": "M3.P",
+      "n_pairs": 30,
+      "mean_favourable_diff": 0.056944444444444436,
+      "ci_low": -0.016388888888888887,
+      "ci_high": 0.13307638888888876,
+      "wilcoxon_p": 0.16812552460175567,
+      "rank_biserial": 0.2955665024630542,
+      "outcome": "tie",
+      "baseline": "B0",
+      "wilcoxon_p_holm": 0.8209204114973545
+    },
+    {
+      "metric": "M4.P",
+      "n_pairs": 30,
+      "mean_favourable_diff": 0.49653268808440987,
+      "ci_low": 0.22602376035557306,
+      "ci_high": 0.7452164610681086,
+      "wilcoxon_p": 0.000283263623714447,
+      "rank_biserial": 0.7204301075268817,
+      "outcome": "win",
+      "baseline": "B0",
+      "wilcoxon_p_holm": 0.002549372613430023
+    }
+  ],
+  "win_tie_loss": {
+    "B0": {
+      "M1.P": "win",
+      "M2.P": "win",
+      "M3.P": "tie",
+      "M4.P": "win"
+    },
+    "B1": {
+      "M1.P": "tie",
+      "M2.P": "win",
+      "M3.P": "tie",
+      "M4.P": "tie"
+    },
+    "B2": {
+      "M1.P": "tie",
+      "M2.P": "win",
+      "M3.P": "lose",
+      "M4.P": "lose"
+    }
+  },
+  "decision": {
+    "verdict": "DIAGNOSE",
+    "clauses": [
+      {
+        "id": 1,
+        "text": "vs B1: >=2 wins among four primaries and 0 losses",
+        "wins": 1,
+        "losses": 0,
+        "holds": false
+      },
+      {
+        "id": 2,
+        "text": "vs B2: >=1 win among {M2.P, M3.P} and 0 losses among four",
+        "wins_M2_M3": 1,
+        "losses": 2,
+        "holds": false
+      },
+      {
+        "id": 3,
+        "text": "vs B0: >=3 wins and 0 losses",
+        "wins": 3,
+        "losses": 0,
+        "holds": true
+      },
+      {
+        "id": 4,
+        "text": "projected 150-pair cost within scale budget (CNY)",
+        "projected_cost_cny": 87.20587362,
+        "scale_budget_cny": 100.0,
+        "holds": true
+      }
+    ],
+    "advisory": true,
+    "scientific_scale_criteria_met": false
+  },
+  "noise_floor_V4": {
+    "M1.P": {
+      "mean_per_pair_sd": 0.02259752828534724,
+      "median_per_pair_sd": 0.022405358007401854,
+      "mean_abs_replicate_diff": 0.028733060942354557,
+      "smallest_distinguishable_paired_mean_diff": 0.028733060942354557,
+      "n_pairs_with_reps": 30
+    },
+    "M2.P": {
+      "mean_per_pair_sd": 0.0714312374436931,
+      "median_per_pair_sd": 0.05773502691896258,
+      "mean_abs_replicate_diff": 0.08888888888888888,
+      "smallest_distinguishable_paired_mean_diff": 0.08888888888888888,
+      "n_pairs_with_reps": 30
+    },
+    "M3.P": {
+      "mean_per_pair_sd": 0.10341032277002211,
+      "median_per_pair_sd": 0.1,
+      "mean_abs_replicate_diff": 0.1311111111111111,
+      "smallest_distinguishable_paired_mean_diff": 0.1311111111111111,
+      "n_pairs_with_reps": 30
+    },
+    "M4.P": {
+      "mean_per_pair_sd": 0.25279768328583796,
+      "median_per_pair_sd": 0.2468460960087929,
+      "mean_abs_replicate_diff": 0.318404649023268,
+      "smallest_distinguishable_paired_mean_diff": 0.318404649023268,
+      "n_pairs_with_reps": 30
+    }
+  },
+  "cost_projection": {
+    "label": "linear_extrapolation",
+    "extraction_90_usd": 0.6402321,
+    "b1_150_usd": 3.01175,
+    "t_pool_150_usd": 9.229239999999999,
+    "per_pair_latency_s": {
+      "extraction": 31.259867,
+      "B1": null,
+      "T_pool": null
+    },
+    "total_usd": 12.881222,
+    "total_cny": 87.20587362,
+    "extraction_90_cny": 4.33437132,
+    "b1_150_cny": 20.3895475,
+    "t_pool_150_cny": 62.4819548
+  },
+  "scale_budget_cny": 100.0,
+  "diagnostics": {
+    "D1": {
+      "n": 30,
+      "pool_M3.P": null,
+      "T_M3.P": null,
+      "oracle_M3.P": null,
+      "oracle_vs_T_M3": null,
+      "pool_M2.P": null,
+      "T_M2.P": null,
+      "oracle_M2.P": null
+    },
+    "D2_n": 30,
+    "D2_sample": [
+      {
+        "pool": {
+          "mean_weight": null,
+          "fallback_rate": null,
+          "profile_probe_rate": null,
+          "gap_category_counts": {
+            "gap": 0,
+            "partial": 0,
+            "strength": 0,
+            "profile_probe": 0,
+            "other": 0
+          },
+          "n": 0
+        },
+        "selected": {
+          "mean_weight": null,
+          "fallback_rate": 0.0,
+          "profile_probe_rate": 0.0,
+          "gap_category_counts": {
+            "gap": 0,
+            "partial": 0,
+            "strength": 0,
+            "profile_probe": 0,
+            "other": 10
+          },
+          "n": 10
+        },
+        "B2": {
+          "pool": {
+            "mean_weight": null,
+            "fallback_rate": null,
+            "profile_probe_rate": null,
+            "gap_category_counts": {
+              "gap": 0,
+              "partial": 0,
+              "strength": 0,
+              "profile_probe": 0,
+              "other": 0
+            },
+            "n": 0
+          },
+          "selected": {
+            "mean_weight": null,
+            "fallback_rate": 0.0,
+            "profile_probe_rate": 0.0,
+            "gap_category_counts": {
+              "gap": 0,
+              "partial": 0,
+              "strength": 0,
+              "profile_probe": 0,
+              "other": 10
+            },
+            "n": 10
+          }
+        }
+      },
+      {
+        "pool": {
+          "mean_weight": null,
+          "fallback_rate": null,
+          "profile_probe_rate": null,
+          "gap_category_counts": {
+            "gap": 0,
+            "partial": 0,
+            "strength": 0,
+            "profile_probe": 0,
+            "other": 0
+          },
+          "n": 0
+        },
+        "selected": {
+          "mean_weight": null,
+          "fallback_rate": 0.0,
+          "profile_probe_rate": 0.0,
+          "gap_category_counts": {
+            "gap": 0,
+            "partial": 0,
+            "strength": 0,
+            "profile_probe": 0,
+            "other": 10
+          },
+          "n": 10
+        },
+        "B2": {
+          "pool": {
+            "mean_weight": null,
+            "fallback_rate": null,
+            "profile_probe_rate": null,
+            "gap_category_counts": {
+              "gap": 0,
+              "partial": 0,
+              "strength": 0,
+              "profile_probe": 0,
+              "other": 0
+            },
+            "n": 0
+          },
+          "selected": {
+            "mean_weight": null,
+            "fallback_rate": 0.0,
+            "profile_probe_rate": 0.0,
+            "gap_category_counts": {
+              "gap": 0,
+              "partial": 0,
+              "strength": 0,
+              "profile_probe": 0,
+              "other": 10
+            },
+            "n": 10
+          }
+        }
+      },
+      {
+        "pool": {
+          "mean_weight": null,
+          "fallback_rate": null,
+          "profile_probe_rate": null,
+          "gap_category_counts": {
+            "gap": 0,
+            "partial": 0,
+            "strength": 0,
+            "profile_probe": 0,
+            "other": 0
+          },
+          "n": 0
+        },
+        "selected": {
+          "mean_weight": null,
+          "fallback_rate": 0.0,
+          "profile_probe_rate": 0.0,
+          "gap_category_counts": {
+            "gap": 0,
+            "partial": 0,
+            "strength": 0,
+            "profile_probe": 0,
+            "other": 10
+          },
+          "n": 10
+        },
+        "B2": {
+          "pool": {
+            "mean_weight": null,
+            "fallback_rate": null,
+            "profile_probe_rate": null,
+            "gap_category_counts": {
+              "gap": 0,
+              "partial": 0,
+              "strength": 0,
+              "profile_probe": 0,
+              "other": 0
+            },
+            "n": 0
+          },
+          "selected": {
+            "mean_weight": null,
+            "fallback_rate": 0.0,
+            "profile_probe_rate": 0.0,
+            "gap_category_counts": {
+              "gap": 0,
+              "partial": 0,
+              "strength": 0,
+              "profile_probe": 0,
+              "other": 10
+            },
+            "n": 10
+          }
+        }
+      }
+    ],
+    "D3_lambda": {
+      "lambdas": [
+        0.3,
+        0.5,
+        0.7,
+        0.9,
+        1.0
+      ],
+      "means": {
+        "T": {
+          "M3.P": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "M2.P": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "B2": {
+          "M3.P": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "M2.P": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      }
+    },
+    "D4_n": 30,
+    "D4_sample": [
+      {
+        "10": null,
+        "20": null,
+        "30": null
+      },
+      {
+        "10": null,
+        "20": null,
+        "30": null
+      },
+      {
+        "10": null,
+        "20": null,
+        "30": null
+      }
+    ],
+    "D5": {
+      "n": 30,
+      "validation_failure_rate": 0.0,
+      "truncation_rate": 0.0,
+      "backfill_rate": 0.0
+    },
+    "D6": {
+      "primary_outcomes": {
+        "B0": {
+          "M1.P": "win",
+          "M2.P": "win",
+          "M3.P": "tie",
+          "M4.P": "win"
+        },
+        "B1": {
+          "M1.P": "tie",
+          "M2.P": "win",
+          "M3.P": "tie",
+          "M4.P": "tie"
+        },
+        "B2": {
+          "M1.P": "tie",
+          "M2.P": "win",
+          "M3.P": "lose",
+          "M4.P": "lose"
+        }
+      },
+      "flips": [
+        {
+          "variant": "threshold_free",
+          "baseline": "B0",
+          "metric": "M2.P",
+          "primary": "win",
+          "variant_outcome": "tie"
+        },
+        {
+          "variant": "fixed_0.45",
+          "baseline": "B0",
+          "metric": "M2.P",
+          "primary": "win",
+          "variant_outcome": "tie"
+        }
+      ],
+      "any_flip": true
+    },
+    "D7": {
+      "B0": {
+        "Good Fit": {
+          "M1.P": 0.34875427602875425,
+          "M2.P": 0.15555555555555559,
+          "M3.P": 0.33222222222222225,
+          "M4.P": 6.75402834138468
+        },
+        "Potential Fit": {
+          "M1.P": 0.33318717346591953,
+          "M2.P": 0.12444444444444444,
+          "M3.P": 0.35722222222222216,
+          "M4.P": 6.88377954460669
+        },
+        "lt_10_requirements": {
+          "n": 4,
+          "M1.P": 0.34365864404331875,
+          "M2.P": 0.10833333333333334,
+          "M3.P": 0.4604166666666667,
+          "M4.P": 6.779323165008806
+        },
+        "ge_10_requirements": {
+          "n": 26,
+          "M1.P": 0.34055719870180123,
+          "M2.P": 0.14487179487179486,
+          "M3.P": 0.3269230769230769,
+          "M4.P": 6.824993293455204
+        }
+      },
+      "B1": {
+        "Good Fit": {
+          "M1.P": 0.30177158548718774,
+          "M2.P": 0.21333333333333335,
+          "M3.P": 0.305,
+          "M4.P": 7.2850895403420575
+        },
+        "Potential Fit": {
+          "M1.P": 0.30068553760900646,
+          "M2.P": 0.18666666666666668,
+          "M3.P": 0.38333333333333325,
+          "M4.P": 7.248986419012392
+        },
+        "lt_10_requirements": {
+          "n": 4,
+          "M1.P": 0.2996132340933585,
+          "M2.P": 0.1,
+          "M3.P": 0.48125,
+          "M4.P": 7.28384002810311
+        },
+        "ge_10_requirements": {
+          "n": 26,
+          "M1.P": 0.3014770734642107,
+          "M2.P": 0.2153846153846154,
+          "M3.P": 0.3230769230769231,
+          "M4.P": 7.264453049150167
+        }
+      },
+      "T": {
+        "Good Fit": {
+          "M1.P": 0.2662324855281451,
+          "M2.P": 0.44666666666666666,
+          "M3.P": 0.41000000000000003,
+          "M4.P": 7.489234777509887
+        },
+        "Potential Fit": {
+          "M1.P": 0.30530647369469066,
+          "M2.P": 0.3266666666666667,
+          "M3.P": 0.39333333333333337,
+          "M4.P": 7.141638484650302
+        },
+        "lt_10_requirements": {
+          "n": 4,
+          "M1.P": 0.35906725165347847,
+          "M2.P": 0.375,
+          "M3.P": 0.4625,
+          "M4.P": 6.426076319985372
+        },
+        "ge_10_requirements": {
+          "n": 26,
+          "M1.P": 0.27449289929725473,
+          "M2.P": 0.38846153846153847,
+          "M3.P": 0.3923076923076923,
+          "M4.P": 7.452261294325437
+        }
+      },
+      "B2": {
+        "Good Fit": {
+          "M1.P": 0.2585857642316813,
+          "M2.P": 0.39999999999999997,
+          "M3.P": 0.44333333333333336,
+          "M4.P": 7.68344343080608
+        },
+        "Potential Fit": {
+          "M1.P": 0.30002209161592464,
+          "M2.P": 0.31333333333333335,
+          "M3.P": 0.48000000000000004,
+          "M4.P": 7.300180931270461
+        },
+        "lt_10_requirements": {
+          "n": 4,
+          "M1.P": 0.3253494662858775,
+          "M2.P": 0.25,
+          "M3.P": 0.5125,
+          "M4.P": 7.005553841778548
+        },
+        "ge_10_requirements": {
+          "n": 26,
+          "M1.P": 0.27221999894502225,
+          "M2.P": 0.37307692307692314,
+          "M3.P": 0.4538461538461538,
+          "M4.P": 7.566621156308997
+        }
+      },
+      "S0": {
+        "Good Fit": {
+          "M1.P": 0.2909946134287613,
+          "M2.P": 0.24666666666666667,
+          "M3.P": 0.39,
+          "M4.P": 7.366483528826346
+        },
+        "Potential Fit": {
+          "M1.P": 0.2950388407007818,
+          "M2.P": 0.24666666666666667,
+          "M3.P": 0.4649999999999999,
+          "M4.P": 7.286203631710337
+        },
+        "lt_10_requirements": {
+          "n": 4,
+          "M1.P": 0.3269702703305915,
+          "M2.P": 0.22500000000000003,
+          "M3.P": 0.60625,
+          "M4.P": 6.848835123152126
+        },
+        "ge_10_requirements": {
+          "n": 26,
+          "M1.P": 0.2877931050238761,
+          "M2.P": 0.25,
+          "M3.P": 0.4,
+          "M4.P": 7.399806419824682
+        }
+      },
+      "S1": {
+        "Good Fit": {
+          "M1.P": 0.29744127680517274,
+          "M2.P": 0.44666666666666666,
+          "M3.P": 0.41166666666666674,
+          "M4.P": 7.1740502131439
+        },
+        "Potential Fit": {
+          "M1.P": 0.3466949228493148,
+          "M2.P": 0.38666666666666666,
+          "M3.P": 0.49333333333333335,
+          "M4.P": 6.684512091049581
+        },
+        "lt_10_requirements": {
+          "n": 4,
+          "M1.P": 0.3872709688054293,
+          "M2.P": 0.375,
+          "M3.P": 0.49375,
+          "M4.P": 6.096244935682768
+        },
+        "ge_10_requirements": {
+          "n": 26,
+          "M1.P": 0.3120368892152152,
+          "M2.P": 0.423076923076923,
+          "M3.P": 0.44615384615384607,
+          "M4.P": 7.057440570006582
+        }
+      },
+      "S2": {
+        "Good Fit": {
+          "M1.P": 0.3131473874296185,
+          "M2.P": 0.32,
+          "M3.P": 0.465,
+          "M4.P": 7.157769675736164
+        },
+        "Potential Fit": {
+          "M1.P": 0.35019855569043984,
+          "M2.P": 0.27999999999999997,
+          "M3.P": 0.44500000000000006,
+          "M4.P": 6.751780374196119
+        },
+        "lt_10_requirements": {
+          "n": 4,
+          "M1.P": 0.35060821708455897,
+          "M2.P": 0.15,
+          "M3.P": 0.5125,
+          "M4.P": 6.773664805304286
+        },
+        "ge_10_requirements": {
+          "n": 26,
+          "M1.P": 0.32875985686394765,
+          "M2.P": 0.3230769230769231,
+          "M3.P": 0.44615384615384607,
+          "M4.P": 6.982638135683349
+        }
+      }
+    },
+    "D8": {
+      "likely_components": [
+        "Fit-label control was null; gap-matrix quality may limit M2/M3 ceiling.",
+        "Some win/tie/loss outcomes flip under assignment sensitivity.",
+        "M2/M3 advantage for T vs B1 is partly by construction (T sees the gap matrix)."
+      ]
+    }
+  },
+  "validity_caveat": "T is conditioned on the gap matrix while B1 is only told in words to cover gaps; some advantage on M2/M3 is partly by construction. Wins on gap-targeting and coverage are necessary but not sufficient; parity or better on M1/M4 at equal or higher coverage is the more informative result.",
+  "advisory": true,
+  "freeze_not_blind_to_prior_pilot": true
+}
