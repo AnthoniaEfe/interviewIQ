@@ -277,6 +277,11 @@ def main() -> None:
         "llm_calls": 0,
         "cost_usd": 0.0,
         "primary_comparison": "full vs weighted_mmr",
+        "budget_met_definition": (
+            "pools_budget_met counts pools whose shortfall list is empty. "
+            "Configs with no quotas (plain_mmr, weighted_mmr) are vacuously met. "
+            "A zero_availability shortfall means a canonical dimension had no pool question."
+        ),
         "by_config": by_config,
         "figures": [
             "docs/figures/fig60_adaptive_lambda_trajectory.png",
