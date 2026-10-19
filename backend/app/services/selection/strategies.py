@@ -257,6 +257,69 @@ SELECTION_STRATEGIES: dict[str, Callable[..., SelectionResult]] = {
     "random": strategy_random,
 }
 
+# Stage name for the adaptive-lambda / competency-budget grid.
+# Distinct from selection_ablation, which the pilot uses.
+ADAPTIVE_SELECTION_STAGE = "adaptive_selection"
+
+
+def _make_adaptive_strategy(config_name: str) -> Callable[..., SelectionResult]:
+    def _strategy(
+        questions: list[InterviewQuestion],
+        similarity_matrix: np.ndarray,
+        weights: list[float],
+        *,
+        lambda_: float,
+        k: int,
+        seed: int = 42,
+        query_similarities: np.ndarray | None = None,
+    ) -> SelectionResult:
+        del seed, query_similarities
+        from dataclasses import replace
+
+        from app.services.mmr.adaptive import named_ablation_grid, select_adaptive
+
+        cfg = named_ablation_grid()[config_name]
+        if not cfg.use_adaptive_lambda:
+            cfg = replace(cfg, lambda_fixed=float(lambda_))
+        dims = [str(q.question_type) for q in questions]
+        result = select_adaptive(
+            questions,
+            similarity_matrix,
+            list(weights),
+            dims,
+            cfg,
+            k=k,
+        )
+        return SelectionResult(
+            selected_indices=list(result.selected_indices),
+            strategy=f"{ADAPTIVE_SELECTION_STAGE}/{config_name}",
+            relevance_scores=list(result.relevance_scores),
+            redundancy_scores=list(result.redundancy_scores),
+            mmr_scores=list(result.mmr_scores),
+            competency_weights=list(result.competency_weights),
+            notes=[
+                f"stage={ADAPTIVE_SELECTION_STAGE}",
+                f"config={config_name}",
+                f"shortfalls={len(result.shortfalls)}",
+            ],
+        )
+
+    _strategy.__name__ = f"strategy_adaptive_{config_name}"
+    return _strategy
+
+
+def register_adaptive_selection_grid() -> None:
+    """Register named adaptive configs under stage ``adaptive_selection``."""
+    from app.services.mmr.adaptive import named_ablation_grid
+
+    for name in named_ablation_grid():
+        SELECTION_STRATEGIES[f"{ADAPTIVE_SELECTION_STAGE}/{name}"] = _make_adaptive_strategy(
+            name
+        )
+
+
+register_adaptive_selection_grid()
+
 
 def select_questions(
     strategy: str,
