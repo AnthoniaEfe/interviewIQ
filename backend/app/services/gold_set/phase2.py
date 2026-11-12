@@ -41,7 +41,9 @@ def _parse_label(row: dict) -> tuple[int | None, bool]:
     return lab, cj
 
 
-def _consensus(a: dict, b: dict | None, adj: dict | None) -> tuple[int | None, str]:
+def _consensus(a: dict | None, b: dict | None, adj: dict | None) -> tuple[int | None, str]:
+    if a is None:
+        return None, "missing"
     la, ca = _parse_label(a)
     if b is None:
         return (None if ca else la), "single"
@@ -56,50 +58,88 @@ def _consensus(a: dict, b: dict | None, adj: dict | None) -> tuple[int | None, s
     return None, "disagree"
 
 
-def run_phase2(root: Path, a_rows: list[dict], b_rows: list[dict] | None, adj_rows: list[dict] | None) -> dict[str, Any]:
+def _pair_for_item(
+    iid: str,
+    maps: dict[str, dict[str, dict]],
+    assignment: dict[str, Any] | None,
+) -> tuple[dict | None, dict | None]:
+    if assignment:
+        names = assignment.get("item_to_annotators", {}).get(iid)
+        if not names or len(names) < 2:
+            return None, None
+        left, right = names[0], names[1]
+        return maps.get(left, {}).get(iid), maps.get(right, {}).get(iid)
+    names = list(maps)
+    first = maps[names[0]].get(iid) if names else None
+    second = maps[names[1]].get(iid) if len(names) > 1 else None
+    return first, second
+
+
+def _pairwise_labels(
+    ids: list[str],
+    maps: dict[str, dict[str, dict]],
+    assignment: dict[str, Any] | None,
+    *,
+    all_annotator_pairs: bool = False,
+) -> list[tuple[int, int]]:
+    pairs: list[tuple[int, int]] = []
+    if all_annotator_pairs:
+        names = list(maps)
+        for iid in ids:
+            labels = []
+            for name in names:
+                row = maps[name].get(iid)
+                if row is None:
+                    continue
+                lab, cj = _parse_label(row)
+                if cj or lab is None:
+                    continue
+                labels.append(lab)
+            for i, left in enumerate(labels):
+                for right in labels[i + 1 :]:
+                    pairs.append((left, right))
+        return pairs
+    for iid in ids:
+        a_row, b_row = _pair_for_item(iid, maps, assignment)
+        if a_row is None or b_row is None:
+            continue
+        la, ca = _parse_label(a_row)
+        lb, cb = _parse_label(b_row)
+        if ca or cb or la is None or lb is None:
+            continue
+        pairs.append((la, lb))
+    return pairs
+
+
+def run_phase2(
+    root: Path,
+    rows_by: dict[str, list[dict]],
+    adj_rows: list[dict] | None,
+    assignment: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     pack = root / "experiments/gold_set"
     key = {it["item_id"]: it for it in load_json(pack / "answer_key_do_not_open_before_annotating.json")["items"]}
     blind = load_json(pack / "items_blind.json")
     main_ids = [it["item_id"] for it in blind["items"]]
     cal_ids = [it["item_id"] for it in (blind.get("calibration") or [])]
-    a_map = {r["item_id"]: r for r in a_rows}
-    b_map = {r["item_id"]: r for r in (b_rows or [])}
+    maps = {name: {r["item_id"]: r for r in rows} for name, rows in rows_by.items()}
     adj_map = {r["item_id"]: r for r in (adj_rows or [])}
+    dual = len(maps) > 1 or assignment is not None
 
-    def labels_for(ids: list[str]) -> dict[str, Any]:
-        ya, yb, agreed = [], [], []
-        for iid in ids:
-            if iid not in a_map:
-                continue
-            la, ca = _parse_label(a_map[iid])
-            if b_map:
-                lb, cb = _parse_label(b_map.get(iid, {}))
-                if not ca and not cb and la is not None and la == lb:
-                    agreed.append((iid, la))
-                ya.append(la)
-                yb.append(lb)
-            elif not ca and la is not None:
-                agreed.append((iid, la))
-                ya.append(la)
-        return {"ya": ya, "yb": yb, "agreed": agreed}
-
-    main_l = labels_for(main_ids)
-    cal_l = labels_for(cal_ids)
-
-    def agr(block, ids):
-        if not b_rows:
-            return {"mode": "single_annotator_fallback", "n": len(block["agreed"])}
-        ya = np.asarray([x for x in block["ya"] if x is not None])
-        # align pairs where both labelled
-        pairs = []
-        for iid in ids:
-            if iid not in a_map or iid not in b_map:
-                continue
-            la, ca = _parse_label(a_map[iid])
-            lb, cb = _parse_label(b_map[iid])
-            if ca or cb or la is None or lb is None:
-                continue
-            pairs.append((la, lb))
+    def agr(ids: list[str], *, all_annotator_pairs: bool = False) -> dict[str, Any]:
+        if not dual:
+            n = 0
+            for iid in ids:
+                row = next(iter(maps.values()), {}).get(iid)
+                if row is None:
+                    continue
+                lab, cj = _parse_label(row)
+                if not cj and lab is not None:
+                    n += 1
+            return {"mode": "single_annotator_fallback", "n": n}
+        pairs = _pairwise_labels(
+            ids, maps, assignment, all_annotator_pairs=all_annotator_pairs
+        )
         if not pairs:
             return {"n": 0}
         a = np.asarray([p[0] for p in pairs])
@@ -116,10 +156,16 @@ def run_phase2(root: Path, a_rows: list[dict], b_rows: list[dict] | None, adj_ro
 
     items = []
     for iid in main_ids:
-        if iid not in a_map:
+        a_row, b_row = _pair_for_item(iid, maps, assignment)
+        if a_row is None and b_row is None:
             continue
-        cons, how = _consensus(a_map[iid], b_map.get(iid) if b_map else None, adj_map.get(iid))
+        cons, how = _consensus(a_row, b_row if dual else None, adj_map.get(iid))
         k = key[iid]
+        snippet = ""
+        if a_row:
+            snippet = a_row.get("snippet") or ""
+        elif b_row:
+            snippet = b_row.get("snippet") or ""
         items.append(
             {
                 "item_id": iid,
@@ -133,7 +179,7 @@ def run_phase2(root: Path, a_rows: list[dict], b_rows: list[dict] | None, adj_ro
                 "semantic": k["semantic"],
                 "weight": k.get("design_weight") or 1.0,
                 "system_label": k["system_label"],
-                "snippet": (a_map[iid].get("snippet") or ""),
+                "snippet": snippet,
                 "evidence_string": k.get("evidence_string") or "",
                 "requirement_text": None,
             }
@@ -173,10 +219,13 @@ def run_phase2(root: Path, a_rows: list[dict], b_rows: list[dict] | None, adj_ro
         "library_versions": library_versions(),
         "n_main": len(main_ids),
         "n_usable_consensus": len(usable),
-        "cannot_judge_rate_A": _cj_rate(a_map, main_ids),
-        "agreement_main": agr(main_l, main_ids),
-        "agreement_calibration": agr(cal_l, cal_ids),
-        "single_annotator": b_rows is None,
+        "cannot_judge_rate_by_annotator": {
+            name: _cj_rate(amap, main_ids) for name, amap in maps.items()
+        },
+        "agreement_main": agr(main_ids, all_annotator_pairs=False),
+        "agreement_calibration": agr(cal_ids, all_annotator_pairs=True),
+        "single_annotator": not dual,
+        "n_annotators": len(maps),
         "system_vs_human": splits,
         "false_gap_n": len(false_gap),
         "false_gap_rate": (len(false_gap) / len(usable)) if usable else None,

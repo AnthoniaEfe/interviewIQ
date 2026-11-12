@@ -6,9 +6,8 @@ import csv
 from pathlib import Path
 from typing import Any
 
-import numpy as np
-
-from app.services.gold_set.constants import SEED
+from app.services.gold_set.assignments import assign_dual_coding, orders_for_annotators
+from app.services.gold_set.constants import ANNOTATORS, ASSIGNMENT_SEED, SEED
 from app.services.gold_set.html_app import render_annotator_html
 from app.services.gold_set.sampling import sample_gold_items
 from app.services.gap_sensitivity.io_utils import (
@@ -85,14 +84,16 @@ def _write_csv_template(path: Path, item_ids: list[str]) -> None:
             )
 
 
-def _orders(item_ids: list[str], seed: int) -> dict[str, list[str]]:
-    a = np.random.default_rng(seed + 1)
-    b = np.random.default_rng(seed + 2)
-    arr = np.asarray(item_ids)
-    return {
-        "annotator_A": arr[a.permutation(len(arr))].tolist(),
-        "annotator_B": arr[b.permutation(len(arr))].tolist(),
-    }
+def _write_annotator_templates(
+    templates_dir: Path,
+    assignment: dict[str, Any],
+) -> None:
+    templates_dir.mkdir(parents=True, exist_ok=True)
+    for name in ANNOTATORS:
+        _write_csv_template(
+            templates_dir / f"{name}.csv",
+            assignment["annotators"][name]["item_ids"],
+        )
 
 
 def build_gold_set(root: Path | None = None) -> dict[str, Any]:
@@ -116,12 +117,21 @@ def build_gold_set(root: Path | None = None) -> dict[str, Any]:
             "items": [_key_record(it) for it in all_items],
         },
     )
-    orders = _orders([it["item_id"] for it in all_items], SEED)
+    assignment = assign_dual_coding(
+        main,
+        [it["item_id"] for it in cal],
+        seed=ASSIGNMENT_SEED,
+    )
+    orders = orders_for_annotators(assignment, seed=ASSIGNMENT_SEED)
+    write_json(out / "annotator_assignments.json", assignment)
     write_json(out / "annotator_orders.json", orders)
     write_json(
         out / "sampling_meta.json",
         {
             "seed": SEED,
+            "assignment_seed": ASSIGNMENT_SEED,
+            "n_annotators": len(ANNOTATORS),
+            "items_per_annotator_total": assignment["items_per_annotator_total"],
             "primary": sampled["primary_meta"],
             "holdout": sampled["holdout_meta"],
             "n_main": len(main),
@@ -131,24 +141,30 @@ def build_gold_set(root: Path | None = None) -> dict[str, Any]:
         },
     )
     _write_csv_template(out / "annotation_template.csv", [it["item_id"] for it in all_items])
+    _write_annotator_templates(out / "templates", assignment)
     html_path = out / "annotator_app.html"
     html_path.write_text(
         render_annotator_html(blind_cal + blind_main, orders),
         encoding="utf-8",
     )
     (out / "annotations" / "README.txt").write_text(
-        "Place completed files here:\n"
+        "Place completed files here (one per annotator, assigned items only):\n"
         "  annotator_A.csv\n"
         "  annotator_B.csv\n"
-        "  adjudicated.csv  (optional)\n"
+        "  annotator_C.csv\n"
+        "  annotator_D.csv\n"
+        "  adjudicated.csv  (optional; disagreements on dual-coded main items)\n"
         "Columns: item_id,label,cannot_judge,snippet,notes\n"
-        "label in {0,1,2}; cannot_judge true/false.\n",
+        "label in {0,1,2}; cannot_judge true/false.\n"
+        "Each annotator files calibration (c001–c010) plus 75 assigned main items.\n",
         encoding="utf-8",
     )
     return {
         "out_dir": str(out),
         "n_main": len(main),
         "n_calibration": len(cal),
+        "n_annotators": len(ANNOTATORS),
+        "items_per_annotator_total": assignment["items_per_annotator_total"],
         "primary": sampled["primary_meta"],
         "holdout": sampled["holdout_meta"],
     }

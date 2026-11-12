@@ -286,7 +286,7 @@ This is the only independent test of **hybrid profile-gap analysis**.
 
 1. Recruit two annotators (kit already in `experiments/gold_set/annotator_kit/`). ~4 hours each, 160 items.
 2. They use `annotator_app.html` / `items_blind.json` only. Do not open the answer key.
-3. Write `experiments/gold_set/annotations/annotator_A.csv` and `annotator_B.csv`.
+3. Write `experiments/gold_set/annotations/annotator_A.csv` … `annotator_D.csv`.
 4. Run `validate_annotations.py`, then `experiments/scripts/analyze_gold_set.py`.
 5. Report G1–G3 literally (kappa, score-vs-human AUC, false-gap rate and causes).
 6. Apply G4 recalibration **only** if the untouched-split CI excludes 0; otherwise keep production thresholds.
@@ -370,7 +370,7 @@ Ranked by how much they can sink the thesis if ignored.
 
 ### P0 — correctness of the scientific claim
 
-1. **No gold-set labels.** The hybrid gap half of the title is unvalidated except against the scorer’s own combined score (circular) and against pair-level HF labels (null). Until `annotator_A.csv` / `annotator_B.csv` exist, do not write that the matrix is accurate.
+1. **No gold-set labels.** The hybrid gap half of the title is unvalidated except against the scorer’s own combined score (circular) and against pair-level HF labels (null). Until `annotator_A.csv` … `annotator_D.csv` exist, do not write that the matrix is accurate.
 2. **Current T is not competency-balanced.** 95% gap-targeted, 0% strong, Cultural/Motivational ≈ 0.23 questions/set. Shipping this as the title system is a mismatch between claim and artefact.
 3. **DIAGNOSE + freeze hash drift.** Confirmatory 150-pair spend is blocked on purpose. Do not bypass gates. Do not retune the decision rule. Resolve freeze v1 vs v1.1 in writing.
 4. **M2/M3 are not quality.** T is conditioned on the gap matrix; B1 is not. A win on gap-targeting is expected. Human preference is the DV.

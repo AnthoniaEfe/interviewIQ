@@ -58,10 +58,12 @@ at the needed level; 1 if only one is; 0 if neither.
 - Do not reward keyword stuffing with a 2 unless the CV shows actual use.
 - Do not use the job description to *infer* CV content; the JD is only context for
   what the requirement means.
-- Do not discuss items with the other annotator until the calibration round is done
-  and, for the main set, until both have finished independently.
+- Do not discuss items with other annotators until the calibration round is done
+  and, for the main set, until both people assigned to an item have finished
+  independently.
 
 ## Calibration then main set
 
-Complete items marked CALIBRATION first (`c001`…). Discuss those ten. Then annotate
-the main `g001`… items independently in the order given in the app for your id (A or B).
+Complete items marked CALIBRATION first (`c001`…). All four annotators (A–D)
+discuss those ten. Then annotate **only your assigned** main items independently
+in the order given in the app for your id.

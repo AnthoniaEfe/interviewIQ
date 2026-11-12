@@ -1,6 +1,17 @@
 """Gold-set constants."""
 
 SEED = 20261004
+# Staffing assignment only (who codes which frozen items). Does not resample items.
+ASSIGNMENT_SEED = 20261112
+ANNOTATORS = ("annotator_A", "annotator_B", "annotator_C", "annotator_D")
+PAIR_BLOCKS = (
+    ("annotator_A", "annotator_B"),
+    ("annotator_A", "annotator_C"),
+    ("annotator_A", "annotator_D"),
+    ("annotator_B", "annotator_C"),
+    ("annotator_B", "annotator_D"),
+    ("annotator_C", "annotator_D"),
+)
 CALIBRATION_N = 10
 PER_SPLIT = 75
 STRATUM_TARGETS = {

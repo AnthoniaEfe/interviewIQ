@@ -30,18 +30,19 @@ Answer key (DO NOT OPEN until annotation is finished):
   experiments/gold_set/answer_key_do_not_open_before_annotating.json
 
 How to annotate:
-  1. Both annotators complete CALIBRATION items (c001…) first, then discuss.
-  2. Open annotator_app.html locally (no network). Choose A or B (independent order).
-     Keyboard: 0 / 1 / 2 / C. Export CSV.
-     Or fill annotation_template.csv.
+  1. All four annotators complete CALIBRATION items (c001…) first, then discuss.
+  2. Open annotator_app.html locally (no network). Choose A, B, C, or D.
+     You see 10 calibration items then 75 assigned main items.
+     Keyboard: 0 / 1 / 2 / C. Export CSV (filename annotator_X.csv).
+     Or fill experiments/gold_set/templates/annotator_X.csv.
   3. Place completed files at:
        experiments/gold_set/annotations/annotator_A.csv
        experiments/gold_set/annotations/annotator_B.csv
+       experiments/gold_set/annotations/annotator_C.csv
+       experiments/gold_set/annotations/annotator_D.csv
        experiments/gold_set/annotations/adjudicated.csv   (optional; disagreements)
      Columns: item_id, label, cannot_judge, snippet, notes
      label ∈ {{0,1,2}}; cannot_judge true/false.
-  4. If only one annotator: submit annotator_A.csv and, after ≥7 days, a 30-item
-     re-annotation (document item ids). Analysis will report test-retest kappa.
 
 Do NOT run gold_set_analyze until those files exist. Do not invent labels.
 """

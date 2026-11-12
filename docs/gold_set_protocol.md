@@ -113,6 +113,26 @@ Against the **whole CV** (not extracted evidence): 2 = clearly met; 1 = partiall
 
 Expected effort: about 1.5 minutes per item ≈ 4 hours per annotator (150 + 10).
 
+## Staffing addendum (2026-11-12)
+
+The frozen sample is unchanged (seed `20261004`, 150 main + 10 calibration).
+The two-annotator workload was too large, so main-item dual-coding is split
+across **four** annotators without dropping the two-label design required for G1.
+
+- Annotators: A, B, C, D.
+- Assignment seed `20261112` (staffing only; does not resample items).
+- Calibration (10 items): all four annotators, then a joint discussion.
+- Main (150 items): balanced incomplete block. The six pairs AB, AC, AD, BC, BD,
+  CD each receive 25 items. Every main item still has exactly two labels.
+- Load per annotator: 10 calibration + 75 main ≈ **2 hours**.
+- Place `annotator_A.csv` … `annotator_D.csv` under
+  `experiments/gold_set/annotations/`. Optional `adjudicated.csv` for
+  disagreements on dual-coded main items.
+- Analysis pools the 150 assigned pairs for main-set kappa, and reports
+  calibration agreement across all four annotators.
+
+G1–G4 and the item sample are not edited.
+
 ## Phase 1 stop rule
 
 After the pack is written, **do not run analysis**. Analysis (`gold_set_analyze`)

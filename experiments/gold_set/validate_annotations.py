@@ -27,7 +27,20 @@ def _truthy(value: object) -> bool:
     return str(value).strip().lower() in {"1", "true", "yes", "y"}
 
 
-def _load_expected(pack: Path) -> tuple[list[str], list[str]]:
+ANNOTATOR_FILES = {
+    "annotator_A.csv": "annotator_A",
+    "annotator_B.csv": "annotator_B",
+    "annotator_C.csv": "annotator_C",
+    "annotator_D.csv": "annotator_D",
+}
+
+
+def _load_expected(
+    pack: Path,
+    *,
+    annotator: str | None = None,
+    csv_name: str | None = None,
+) -> tuple[list[str], list[str]]:
     blind_path = pack / "items_blind.json"
     if not blind_path.is_file():
         raise AnnotationValidationError(f"Blind item file missing: {blind_path}")
@@ -38,7 +51,27 @@ def _load_expected(pack: Path) -> tuple[list[str], list[str]]:
     ]
     if not main and not calibration:
         raise AnnotationValidationError(f"No item_id values in {blind_path}")
-    return main, calibration
+
+    assign_path = pack / "annotator_assignments.json"
+    if not assign_path.is_file():
+        return main, calibration
+
+    assignment = json.loads(assign_path.read_text(encoding="utf-8"))
+    name = annotator
+    if name and not name.startswith("annotator_"):
+        name = f"annotator_{name}"
+    if name is None and csv_name:
+        name = ANNOTATOR_FILES.get(csv_name)
+    annotators = assignment.get("annotators") or {}
+    if name is None or name not in annotators:
+        raise AnnotationValidationError(
+            "This pack uses four annotators. Pass --annotator A|B|C|D "
+            "or name the file annotator_A.csv … annotator_D.csv."
+        )
+    rec = annotators[name]
+    assigned_main = [str(i) for i in (rec.get("main_ids") or [])]
+    assigned_cal = [str(i) for i in (rec.get("calibration_ids") or calibration)]
+    return assigned_main, assigned_cal
 
 
 def _row_status(row: dict[str, str]) -> str:
@@ -61,13 +94,20 @@ def _row_status(row: dict[str, str]) -> str:
     )
 
 
-def validate_annotation_file(csv_path: Path, pack: Path) -> dict:
+def validate_annotation_file(
+    csv_path: Path,
+    pack: Path,
+    *,
+    annotator: str | None = None,
+) -> dict:
     if csv_path.name == ANSWER_KEY_NAME or ANSWER_KEY_NAME in csv_path.parts:
         raise AnnotationValidationError("Refusing to read the gold-set answer key.")
     if not csv_path.is_file():
         raise AnnotationValidationError(f"Annotation file does not exist: {csv_path}")
 
-    main_ids, calibration_ids = _load_expected(pack)
+    main_ids, calibration_ids = _load_expected(
+        pack, annotator=annotator, csv_name=csv_path.name
+    )
     expected = list(dict.fromkeys([*calibration_ids, *main_ids]))
     expected_set = set(expected)
 
@@ -102,7 +142,9 @@ def validate_annotation_file(csv_path: Path, pack: Path) -> dict:
     if duplicates:
         raise AnnotationValidationError(f"Duplicate item_id values: {duplicates}")
     if unknown:
-        raise AnnotationValidationError(f"item_id values not in the blind pack: {unknown}")
+        raise AnnotationValidationError(
+            f"item_id values not in this annotator's assignment: {unknown}"
+        )
 
     missing_calibration = [item_id for item_id in calibration_ids if item_id not in seen]
     if missing_calibration:
@@ -140,9 +182,17 @@ def main(argv: list[str] | None = None) -> int:
         default=Path(__file__).resolve().parent,
         help="Gold-set pack directory containing items_blind.json",
     )
+    parser.add_argument(
+        "--annotator",
+        choices=("A", "B", "C", "D", "annotator_A", "annotator_B", "annotator_C", "annotator_D"),
+        default=None,
+        help="Required when the filename is not annotator_A.csv … annotator_D.csv",
+    )
     args = parser.parse_args(argv)
     try:
-        report = validate_annotation_file(args.csv_path, args.pack)
+        report = validate_annotation_file(
+            args.csv_path, args.pack, annotator=args.annotator
+        )
     except AnnotationValidationError as exc:
         print(f"NOT READY: {exc}", file=sys.stderr)
         return 1

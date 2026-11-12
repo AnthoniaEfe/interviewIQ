@@ -70,6 +70,39 @@ def _complete_rows() -> list[dict]:
     return rows
 
 
+def test_assigned_subset_passes_when_pack_has_four_annotators(tmp_path: Path):
+    module = _load()
+    pack = _pack(tmp_path)
+    assignment = {
+        "annotators": {
+            "annotator_A": {
+                "main_ids": [f"g{i:03d}" for i in range(1, 6)],
+                "calibration_ids": ["c001", "c002"],
+                "item_ids": ["c001", "c002"] + [f"g{i:03d}" for i in range(1, 6)],
+            }
+        }
+    }
+    (pack / "annotator_assignments.json").write_text(
+        json.dumps(assignment), encoding="utf-8"
+    )
+    rows = []
+    for iid in assignment["annotators"]["annotator_A"]["item_ids"]:
+        rows.append(
+            {
+                "item_id": iid,
+                "label": "1",
+                "cannot_judge": "false",
+                "snippet": "",
+                "notes": "",
+            }
+        )
+    csv_path = tmp_path / "annotator_A.csv"
+    _write(csv_path, rows)
+    report = module.validate_annotation_file(csv_path, pack)
+    assert report["n_expected"] == 7
+    assert report["completion"] == 1.0
+
+
 def test_ready_file_passes(tmp_path: Path):
     module = _load()
     pack = _pack(tmp_path)
@@ -115,7 +148,7 @@ def test_completion_threshold_duplicates_unknown_and_calibration(tmp_path: Path)
     unknown = _complete_rows()
     unknown[-1]["item_id"] = "nope"
     _write(csv_path, unknown)
-    with pytest.raises(module.AnnotationValidationError, match="not in the blind pack"):
+    with pytest.raises(module.AnnotationValidationError, match="not in this annotator's assignment"):
         module.validate_annotation_file(csv_path, pack)
 
     missing_cal = [row for row in _complete_rows() if row["item_id"] != "c001"]

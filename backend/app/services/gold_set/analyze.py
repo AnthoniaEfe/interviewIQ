@@ -5,6 +5,8 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
+from app.services.gold_set.constants import ANNOTATORS
+
 REQUIRED_COLS = {"item_id", "label", "cannot_judge", "snippet", "notes"}
 
 
@@ -63,21 +65,40 @@ def run_gold_set_analyze(root: Path | None = None) -> dict:
     if not items_path.is_file():
         raise GoldSetAnnotationError("Gold-set pack not built. Run build_gold_set.py first.")
     blind = load_json(items_path)
-    expected = {it["item_id"] for it in (blind.get("items") or [])}
-    expected |= {it["item_id"] for it in (blind.get("calibration") or [])}
+    all_ids = {it["item_id"] for it in (blind.get("items") or [])}
+    all_ids |= {it["item_id"] for it in (blind.get("calibration") or [])}
     ann_dir = pack / "annotations"
-    a_path = ann_dir / "annotator_A.csv"
-    b_path = ann_dir / "annotator_B.csv"
-    # Single-annotator fallback: only A is required if B is absent — still refuse
-    # if A is missing. B missing is allowed only if A exists (test-retest later).
     from app.services.gold_set.phase2 import run_phase2
 
-    a_rows = load_and_validate_annotations(a_path, expected)
-    b_rows = None
-    if b_path.is_file():
-        b_rows = load_and_validate_annotations(b_path, expected)
+    assignment_path = pack / "annotator_assignments.json"
+    assignment = load_json(assignment_path) if assignment_path.is_file() else None
+    rows_by: dict[str, list[dict]] = {}
+    if assignment:
+        missing = [
+            name for name in ANNOTATORS if not (ann_dir / f"{name}.csv").is_file()
+        ]
+        if len(missing) == len(ANNOTATORS):
+            raise GoldSetAnnotationError(
+                f"Annotation file missing: {ann_dir / 'annotator_A.csv'}. "
+                "Place real annotator files under experiments/gold_set/annotations/ "
+                "and do not fabricate labels."
+            )
+        if missing:
+            raise GoldSetAnnotationError(
+                "Four-annotator gold set needs all of annotator_A.csv … annotator_D.csv. "
+                "Missing: " + ", ".join(f"{name}.csv" for name in missing)
+            )
+        for name in ANNOTATORS:
+            expected = set(assignment["annotators"][name]["item_ids"])
+            rows_by[name] = load_and_validate_annotations(ann_dir / f"{name}.csv", expected)
+    else:
+        a_path = ann_dir / "annotator_A.csv"
+        a_rows = load_and_validate_annotations(a_path, all_ids)
+        rows_by["annotator_A"] = a_rows
+        b_path = ann_dir / "annotator_B.csv"
+        if b_path.is_file():
+            rows_by["annotator_B"] = load_and_validate_annotations(b_path, all_ids)
+
     adj_path = ann_dir / "adjudicated.csv"
-    adj_rows = None
-    if adj_path.is_file():
-        adj_rows = _read_table(adj_path)
-    return run_phase2(root, a_rows, b_rows, adj_rows)
+    adj_rows = _read_table(adj_path) if adj_path.is_file() else None
+    return run_phase2(root, rows_by, adj_rows, assignment=assignment)

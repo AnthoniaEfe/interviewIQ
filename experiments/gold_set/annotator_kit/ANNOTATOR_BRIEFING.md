@@ -6,9 +6,13 @@ You judge **one job requirement against the whole CV**. You are not scoring a
 model, and you will not be shown model labels, similarity scores, split names,
 or dataset fit labels.
 
-There are 160 items: 10 calibration items (`c001`…) and 150 main items
-(`g001`…). The guideline time is about 90 seconds per item, so the expected
-effort is about **4 hours** for each annotator.
+There are four annotators (A, B, C, D). You complete:
+
+- **10 calibration items** (`c001`…), shared by everyone
+- **75 assigned main items** (`g…`), a subset of the 150-item gold set
+
+Every main item is labelled by exactly two annotators. The guideline time is
+about 90 seconds per item, so the expected effort is about **2 hours**.
 
 ## Labelling rubric
 
@@ -73,21 +77,24 @@ at the needed level; 1 if only one is; 0 if neither.
 - Do not reward keyword stuffing with a 2 unless the CV shows actual use.
 - Do not use the job description to *infer* CV content; the JD is only context for
   what the requirement means.
-- Do not discuss items with the other annotator until the calibration round is done
-  and, for the main set, until both have finished independently.
+- Do not discuss items with other annotators until the calibration round is done
+  and, for the main set, until both people assigned to an item have finished it
+  independently.
 
 ### Calibration then main set
 
-Complete items marked CALIBRATION first (`c001`…). Discuss those ten. Then annotate
-the main `g001`… items independently in the order given in the app for your id (A or B).
+Complete items marked CALIBRATION first (`c001`…). All four annotators discuss
+those ten. Then annotate your assigned main items independently in the order
+given in the app for your id (A, B, C, or D). Do not label items that are not
+in your list.
 
 ## How to use the app offline
 
 1. Open `experiments/gold_set/annotator_app.html` in a browser (double-click, or
    File → Open). The pack is embedded in the file. Do not use a network connection
    and do not upload the CV text anywhere.
-2. Set **Annotator** to A or B. That choice is your id. The app then shows items
-   in your order. Calibration items are flagged.
+2. Set **Annotator** to A, B, C, or D — the id you were assigned. The app then
+   shows your 10 calibration items first, then your 75 main items.
 3. For each item, read the requirement and the whole CV. Keys: `0` not evidenced,
    `1` partial, `2` clearly met, `C` cannot judge. You can also use the buttons.
 4. Optional evidence snippet: paste text from the CV into the snippet box when
@@ -96,21 +103,20 @@ the main `g001`… items independently in the order given in the app for your id
 5. `cannot_judge` (key `C`) is for a requirement that is too vague to interpret,
    or a CV that is unreadable or garbled. It is not a substitute for “I did not
    find the skill”.
-6. Click **Export CSV**. The browser saves `annotations.csv`.
-7. Rename that file to exactly one of:
-   - `annotator_A.csv`
-   - `annotator_B.csv`
-   matching the id you selected. Columns must stay
+6. Click **Export CSV**. The browser saves `annotator_A.csv` (or B/C/D).
+7. Keep that filename. Columns must stay
    `item_id,label,cannot_judge,snippet,notes`.
+
+You may instead fill the matching file under `experiments/gold_set/templates/`.
 
 ## Independence and assistance
 
-Work independently. Do not discuss items with the other annotator until both of
-you have finished the calibration ten, and do not discuss main-set items until
-both of you have finished the main set. **Do not use AI assistance** (chatbots,
+Work independently. Do not discuss items with other annotators until all four of
+you have finished the calibration ten, and do not discuss a main-set item until
+both assigned annotators have finished it. **Do not use AI assistance** (chatbots,
 coding assistants, or automated labelling) on any item.
 
 ## How to return the file
 
 Send only your renamed CSV back to the contact who recruited you. Do not send
-the HTML pack, the CV text, or the other annotator’s file.
+the HTML pack, the CV text, or another annotator’s file.

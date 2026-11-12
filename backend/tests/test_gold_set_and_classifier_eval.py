@@ -24,8 +24,17 @@ from app.services.classifier_eval.pipeline import run_classifier_eval
 from app.services.embeddings.service import HashingEmbeddingService
 from app.services.gold_set.analyze import GoldSetAnnotationError, load_and_validate_annotations, run_gold_set_analyze
 from app.services.gold_set.analyze_lib import bootstrap_metric_ci, unweighted_kappa, weighted_mean
+from app.services.gold_set.assignments import assign_dual_coding, orders_for_annotators
 from app.services.gold_set.build import BLIND_FIELDS, build_gold_set
-from app.services.gold_set.constants import MAX_PER_PAIR, MIN_PAIRS_PER_SPLIT, PER_SPLIT, SEED
+from app.services.gold_set.html_app import render_annotator_html
+from app.services.gold_set.constants import (
+    ANNOTATORS,
+    ASSIGNMENT_SEED,
+    MAX_PER_PAIR,
+    MIN_PAIRS_PER_SPLIT,
+    PER_SPLIT,
+    SEED,
+)
 from app.services.gold_set.sampling import sample_gold_items
 from app.services.gap_sensitivity.io_utils import project_root
 
@@ -54,6 +63,69 @@ def test_gold_sampler_deterministic_and_constraints():
         assert 0 < x["inclusion_probability"] <= 1
         n, N = x["stratum_sample_size"], x["stratum_size"]
         assert x["inclusion_probability"] == pytest.approx(n / N)
+
+
+def test_annotator_html_has_structured_workspace():
+    html = render_annotator_html(
+        [
+            {
+                "item_id": "c001",
+                "requirement_text": "Python",
+                "cv_text": "SummaryOracle developer",
+                "jd_text": "Need Python",
+                "is_calibration": True,
+            }
+        ],
+        {"annotator_A": ["c001"], "annotator_B": ["c001"]},
+    )
+    assert "workspace" in html
+    assert "label-dock" in html
+    assert "formatResume" in html
+    assert "formatJob" in html
+    assert "Candidate CV" in html
+    assert "Job description" in html
+    assert "100dvh" in html
+
+
+def test_four_annotator_assignment_is_balanced():
+    main = []
+    labels = (
+        ["strong_match"] * 19
+        + ["partial_match"] * 19
+        + ["weak_match"] * 19
+        + ["missing"] * 18
+    )
+    for split in ("primary-30", "holdout-30"):
+        for i, lab in enumerate(labels, start=1):
+            prefix = "p" if split == "primary-30" else "h"
+            main.append(
+                {
+                    "item_id": f"g{prefix}{i:03d}",
+                    "split": split,
+                    "match_label": lab,
+                }
+            )
+    # Re-number as g001…g150 to match the pack convention.
+    for i, row in enumerate(main, start=1):
+        row["item_id"] = f"g{i:03d}"
+    cal = [f"c{i:03d}" for i in range(1, 11)]
+    a = assign_dual_coding(main, cal, seed=ASSIGNMENT_SEED)
+    b = assign_dual_coding(main, cal, seed=ASSIGNMENT_SEED)
+    assert a["item_to_annotators"] == b["item_to_annotators"]
+    assert len(a["item_to_annotators"]) == 150
+    assert all(len(v) == 2 for v in a["item_to_annotators"].values())
+    for name in ANNOTATORS:
+        rec = a["annotators"][name]
+        assert rec["n_main"] == 75
+        assert rec["n_calibration"] == 10
+        assert rec["n_total"] == 85
+        assert rec["item_ids"][:10] == cal
+    assert [p["n_main"] for p in a["pairs"]] == [25] * 6
+    orders = orders_for_annotators(a, seed=ASSIGNMENT_SEED)
+    for name in ANNOTATORS:
+        assert len(orders[name]) == 85
+        assert set(orders[name][:10]) == set(cal)
+        assert set(orders[name][10:]) == set(a["annotators"][name]["main_ids"])
 
 
 def test_blind_items_have_no_system_fields(tmp_path, monkeypatch):
