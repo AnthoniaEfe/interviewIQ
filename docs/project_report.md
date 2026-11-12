@@ -12,6 +12,8 @@
 | Embedding model | `all-MiniLM-L6-v2` |
 | Related deep-dives | [Gap sensitivity](gap_sensitivity_report.md) · [Fit-label control](fit_label_control_report.md) · [Gold-set protocol](gold_set_protocol.md) · [Classifier reframing](classifier_reframing_report.md) · [Treatment pilot](treatment_pilot_report.md) |
 
+Note (2026-11-12): the Next.js research console under `frontend/` described below was later removed. FastAPI remains. This file is otherwise the 2026-10-11 snapshot.
+
 ---
 
 ## 1. Executive summary

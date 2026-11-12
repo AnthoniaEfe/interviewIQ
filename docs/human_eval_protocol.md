@@ -30,8 +30,7 @@ exists and the wording is revised at most once. No other criteria are added.
 
 Side of T versus B1 is balanced (15 pairs each way). Item order is randomised
 per rater. Question order inside a set is shuffled once when the blinded
-payload is built. The condition key is not in the API, the client bundle, or
-`frontend/public/`.
+payload is built. The condition key is not in the API response or any committed client assets.
 
 ## Analysis
 

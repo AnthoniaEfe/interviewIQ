@@ -8,7 +8,7 @@ annotators.
 
 ---
 
-Subject: Rating task, interview questions, personal link
+Subject: Rating task, interview questions, personal token
 
 Hello,
 
@@ -16,10 +16,10 @@ I need at least three people to rate pairs of interview-question sets for a
 thesis. Each item shows a job, a candidate, and two unlabeled sets. You score
 relevance, coverage, and non-redundancy from 1 to 5 and pick a preference.
 
-You will get a private link. No account. You can stop and resume. Please work
-alone and without AI assistance. A short pilot will measure how long a pair
-takes; I will send that measured time before the main set, along with the
-deadline.
+You will get a private token for the FastAPI rating API (no website, no account).
+You can stop and resume. Please work alone and without AI assistance. A short
+pilot will measure how long a pair takes; I will send that measured time before
+the main set, along with the deadline.
 
 Pay: [PAY]
 Deadline: [DEADLINE]

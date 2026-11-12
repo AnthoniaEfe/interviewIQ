@@ -1,22 +1,18 @@
 # Human evaluation runbook
 
-The Vercel app is the Next.js site in `frontend/`. It does not store ratings.
-The FastAPI process on RunPod does. There is no database in this repo.
+Ratings are stored by the FastAPI process (local or RunPod). There is no web UI and no database in this repo. Raters and admins talk to the HTTP API directly.
 
 ## What you must provision
 
 Attach a **RunPod network volume** (or other disk that survives pod restarts)
-and set on the RunPod service:
+and set on the FastAPI host:
 
 | Variable | Purpose |
 | --- | --- |
 | `HUMAN_EVAL_DATA_DIR` | Directory on that volume. Ratings, tokens (hashed), and blinded payloads go here. |
-| `HUMAN_EVAL_ADMIN_TOKEN` | Secret for loading a study, issuing links, revoking links, and export. Send it only as the `X-Human-Eval-Admin` header. |
-| `NEXT_PUBLIC_API_URL` | Already set on Vercel to the public RunPod HTTPS origin. |
-| `CORS_ALLOW_ORIGINS` | Must include the Vercel origin. |
+| `HUMAN_EVAL_ADMIN_TOKEN` | Secret for loading a study, issuing tokens, revoking tokens, and export. Send it only as the `X-Human-Eval-Admin` header. |
 
-Do not put the admin token or the condition key in Vercel env vars. Do not
-commit `experiments/human_eval/keys/` or `experiments/human_eval/data/`.
+Do not commit `experiments/human_eval/keys/` or `experiments/human_eval/data/`.
 
 If `HUMAN_EVAL_DATA_DIR` is unset, the API writes under
 `experiments/human_eval/data/` on the machine running FastAPI. That disk is
@@ -30,16 +26,7 @@ export HUMAN_EVAL_DATA_DIR=/tmp/interviewiq-human-eval
 cd backend && PYTHONPATH=. uvicorn app.main:app --reload --port 8000
 ```
 
-In another shell, from `frontend/`, with Node installed and `NEXT_PUBLIC_API_URL=http://127.0.0.1:8000`:
-
-```bash
-npm install
-npm run dev
-```
-
-Open the printed `/study/<token>?mode=pilot` link.
-
-## Load a study and issue links
+## Load a study and issue tokens
 
 Build only from real stored questions. The builder refuses to invent them.
 
@@ -74,19 +61,21 @@ curl -sS -X POST "$API/api/v1/human-eval/admin/tokens" \
   -d '{"mode":"main","rater_id":"R1"}'
 ```
 
-Send the rater `https://<vercel-app>/study/<token>?mode=main`. To revoke, `POST
+Give each rater the token. They load a session with
+`GET /api/v1/human-eval/session?token=...&mode=main` and submit ratings with
+`POST /api/v1/human-eval/ratings`. To revoke, `POST
 /api/v1/human-eval/admin/revoke?token=...&mode=main` with the admin header.
 
-Pilot links use `mode=pilot` and a study built from about five primary-30
+Pilot tokens use `mode=pilot` and a study built from about five primary-30
 pairs. Demo uses `mode=demo` and is rejected by export and by the analysis script.
 
 ## Pre-launch smoke
 
-1. `GET /api/v1/health` on the public RunPod URL returns 200.
+1. `GET /api/v1/health` returns 200.
 2. A session response has Set X and Set Y and no `condition` field.
-3. Changing a score and reloading the link shows the saved score.
+3. Posting a score and fetching the session again shows the saved score.
 4. Export with the admin header returns ratings. Export of `mode=demo` returns 422.
-5. The condition-key file is not in the Vercel deployment or `frontend/public/`.
+5. The condition-key file is not served by the API and is not committed.
 
 ## Export and backup
 

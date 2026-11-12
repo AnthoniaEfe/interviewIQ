@@ -45,29 +45,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 Health: `GET /api/v1/health`
 
-## Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Open http://localhost:3000 for the research console:
-
-- experiment list with stage, metric runs, and scale verdict
-- **Frozen metrics** (`/metrics`): baseline distributions, win/tie/loss, decision clauses, figures 50–56
-- **Human eval** (`/human-eval`): V5 assignment audit sheet + scaffold for future question-quality ratings
-- per-run charts (latency, cost, tokens, primary metrics M1–M4 when present)
-- question inspector and CV/JD upload for ad-hoc testing
-
-### Vercel + RunPod
-
-**Critical:** In the Vercel project, set **Root Directory** to `frontend` (not `backend` or repo root). Deploying `backend/` makes Vercel import `app/main.py` as a Python function and fails with `No module named 'fastapi'`. FastAPI belongs on RunPod only — see [docs/deployment.md](docs/deployment.md).
-
-- **Frontend (Vercel):** Root Directory = `frontend`; set `NEXT_PUBLIC_API_URL` to your **public** RunPod HTTPS URL (not `localhost`); redeploy after changing it.
-- **Backend (RunPod):** keep embeddings / CUDA / Luna–Terra calls here. Set `CORS_ALLOW_ORIGINS` (and optionally `CORS_ALLOW_ORIGIN_REGEX=https://.*\\.vercel\\.app`) for your Vercel origin(s).
-- Do **not** load PyTorch or Sentence-Transformers in the Next.js app — see `frontend/README.md`.
+There is no web UI. Browse experiments and metrics through the FastAPI routes (`/api/v1/experiments`, `/api/v1/experiments/metrics/dashboard`) or the files under `experiments/results/` and `docs/`. GPU embeddings and Luna/Terra calls stay on the FastAPI host (local or RunPod). See [docs/deployment.md](docs/deployment.md).
 
 ## Testing
 

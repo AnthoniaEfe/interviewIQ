@@ -58,7 +58,6 @@ interviewIQ/
 │   ├── metrics/             freeze v1 + assignment audit
 │   ├── results/             all paid and local runs
 │   └── scripts/             stage runners
-├── frontend/                Next.js research console + rater UI
 ├── interviewiq_baseline/    preserved gpt-4o flat-prompt prototype
 ├── docs/                    architecture, protocols, result write-ups
 └── notebooks/               empty (.gitkeep only)
@@ -84,13 +83,13 @@ interviewIQ/
 
 **HTTP surface is thinner than the library.** Live routes: health, models, usage, profile-gap, question select, experiment browse, uploads (no LLM), metrics dashboard, human-eval admin/rater. Extraction, generation, treatment, metrics freeze, and gold-set analysis are CLI-only. `mongodb_uri` is unused. LLM tasks `NORMALIZATION`, `CLASSIFICATION`, `PROFILE_ANALYSIS`, `GAP_ANALYSIS`, `QUESTION_VALIDATION`, `QUESTION_REFINEMENT` are routed but have no callers. Orphan prompts: `prompts/analysis/profile_gap.md`, `prompts/generation/interviewiq.md`, `prompts/validation/question_validation.md`.
 
-**Frontend** (Next.js 16): `/` experiments, `/metrics` frozen dashboard, `/experiments/[id]` inspector, `/upload`, `/human-eval` (assignment audit works; question-quality block is a scaffold), `/study/[token]` blinded rater UI. Deploy: Vercel root = `frontend`; FastAPI on RunPod.
+There is **no web UI**. Experiment browse, metrics dashboard, uploads, and human-eval admin/rater routes remain on FastAPI for scripts and `curl`.
 
 **Tests:** 17 files, 93 `test_` functions, LLM mocked, `EMBEDDING_MODEL=hashing-test`. Gold-set analysis and human-eval `main` mode refuse missing data rather than fabricating it.
 
 **Integrity rules that are actually enforced:** no silent model substitution; spend guards; freeze hashes; gold-set and human-eval analyzers refuse empty stores; B1 leakage assertions; research runner writes `human_evaluation: not_yet_evaluated` until real ratings exist.
 
-`docs/architecture.md` is stale: it still marks Luna extraction, Terra pool, and the frontend as “planned”.
+`docs/architecture.md` is stale in places: it still marks Luna extraction and Terra pool as “planned”.
 
 ---
 
@@ -275,7 +274,7 @@ The title is recovered by fixing **balance and validity**, then testing quality 
 
 ### Step 1 — Integrity housekeeping (1–2 days, $0)
 
-1. Write a short addendum that `docs/architecture.md` is stale; extraction, pool, and frontend are implemented. Do not silently rewrite frozen protocol sections.
+1. Write a short addendum that `docs/architecture.md` is stale; extraction and pool are implemented. Do not silently rewrite frozen protocol sections.
 2. Decide freeze policy in writing: **re-freeze as metrics v1.1** documenting the `valid_questions` loader fix, *or* keep v1 and tag all later metric numbers `POST-HOC`. Do not mix.
 3. Confirm gold-set pack files (`items_blind.json`, `annotator_app.html`, `answer_key_…json`) are backed up. They are large CV-containing artifacts; losing them forces a resample and breaks the frozen seed `20261004`.
 4. Leave `docs/judge_validation_prereg.md` at `approval: pending`.
@@ -383,7 +382,7 @@ Ranked by how much they can sink the thesis if ignored.
 7. **Pool dimension holes.** Budget shortfalls from `zero_availability` cannot be fixed by MMR. Any new pool prompt must require all five dimensions.
 8. **Holdout is unused for generation.** Confirmatory T vs B1 is defined on holdout-30, which has extraction/gap but no questions. Primary-30 results are exploratory by the project’s own pre-reg.
 9. **90/150 pairs lack extraction.** Linear cost projections assume they will be extracted; they have not been. Do not imply a 150-pair treatment exists. B0-150 is flat baseline only.
-10. **Human-eval disk.** Default store is ephemeral on RunPod. Ratings will vanish without `HUMAN_EVAL_DATA_DIR` on a volume. Condition keys must not go to Vercel.
+10. **Human-eval disk.** Default store is ephemeral on RunPod. Ratings will vanish without `HUMAN_EVAL_DATA_DIR` on a volume. Condition keys stay off the API and out of git.
 11. **Judge not approved.** Running it on holdout before approval contaminates a pre-registered file.
 
 ### P2 — method and engineering debt that affects results
@@ -402,7 +401,7 @@ Ranked by how much they can sink the thesis if ignored.
 
 21. **Spend discipline is a feature.** Keep `--confirm-spend`, `--max-cost`, and fail-closed model IDs.
 22. **Empty `notebooks/`.** Not blocking; analysis lives in scripts + `docs/figures/`.
-23. **Frontend question-quality panel is a scaffold.** Real ratings go through `/study/[token]`.
+23. **Human-eval ratings** go through the FastAPI session/ratings routes (no rater UI in this repo).
 24. **Gemini / MongoDB** are comments, not work. Ignore until the research claim is closed.
 
 ---

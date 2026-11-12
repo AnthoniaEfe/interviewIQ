@@ -1,100 +1,62 @@
-# Deployment: Vercel frontend + RunPod GPU backend
+# Deployment: FastAPI backend (local or RunPod)
 
-## Architecture
+InterviewIQ is a Python research stack. There is no web frontend and nothing is deployed to Vercel.
 
 | Host | Role |
 | --- | --- |
-| **Vercel** | Next.js UI under `frontend/` only — no FastAPI, no PyTorch, no MiniLM |
-| **RunPod** | FastAPI in `backend/` — Luna/Terra, embeddings, experiment APIs |
+| **Local / RunPod** | FastAPI in `backend/` — Luna/Terra, embeddings, experiment APIs, human-eval store |
 
-## Root cause of `FUNCTION_INVOCATION_FAILED` / `No module named 'fastapi'`
+## Local
 
-Vercel was treating **`backend/app/main.py`** as a Python serverless entrypoint (runtime path `/var/task/app/main.py`). That happens when the project **Root Directory** is `backend` (or the deploy root otherwise resolves to the FastAPI package). Vercel then imports FastAPI without installing `backend/requirements.txt` into that Python function runtime → `ModuleNotFoundError: fastapi`.
+```bash
+cp .env.example .env
+# set OPENAI_API_KEY
 
-**Fix:** deploy Next.js from `frontend/`. Do **not** add FastAPI to Vercel Python deps; the API stays on RunPod.
+python -m venv .venv
+source .venv/bin/activate
+pip install -r backend/requirements.txt
 
-## Vercel dashboard (required)
+cd backend
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
 
-**Project → Settings → General → Root Directory**
+Health: `GET /api/v1/health`
 
-| Setting | Value |
-| --- | --- |
-| **Root Directory** | `frontend` |
-| Framework Preset | Next.js (auto) |
-| Build Command | `npm run build` (default) |
-| Install Command | `npm install` (default) |
-| Output Directory | *(leave default / empty for Next.js)* |
+Docker:
 
-If Root Directory cannot be changed yet, the repo also has:
+```bash
+docker compose up backend
+```
 
-- Root `vercel.json` + `package.json` — build via `npm … --prefix frontend`
-- Root `.vercelignore` — excludes `backend/**`
-- `backend/vercel.json` — **fails the build** with an explicit message if someone points Root Directory at `backend/`
+## RunPod (GPU)
 
-After changing Root Directory, **redeploy**.
+Used for Sentence-Transformer embeddings and PyTorch experiments. Luna/Terra are API models and are never loaded onto the GPU. Device selection is `EMBEDDING_DEVICE=auto` (`torch.cuda.is_available()`).
 
-## Environment variables
+```bash
+cd /path/to/interviewIQ
+PYTHONPATH=backend uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
 
-### Vercel (Project → Settings → Environment Variables)
+Public proxy must return 200:
 
-| Name | Where | Purpose |
-| --- | --- | --- |
-| `NEXT_PUBLIC_API_URL` | Vercel (Production + Preview) | Public **HTTPS** RunPod FastAPI base URL, no trailing slash |
+```bash
+curl -sS -o /dev/null -w "%{http_code}\n" "$API_URL/api/v1/health"
+```
 
-Example shape (replace with your proxy): `https://xxxxx-8000.proxy.runpod.net`
-
-Do **not** set this to `localhost`, `127.0.0.1`, or `http://backend:8000` on Vercel.  
-Do **not** put `OPENAI_API_KEY` or other secrets in `NEXT_PUBLIC_*`.
-
-Optional (local Docker only, not Vercel): `INTERNAL_API_URL` for server-side fetch inside Compose.
-
-### RunPod (backend `.env`)
+### Backend `.env` on RunPod
 
 | Name | Purpose |
 | --- | --- |
 | `OPENAI_API_KEY` | Luna/Terra (server-side only) |
-| `CORS_ALLOW_ORIGINS` | Comma-separated origins, must include your Vercel URL(s) |
 | `EMBEDDING_MODEL` / `EMBEDDING_DEVICE` | MiniLM on GPU (`auto` / `cuda`) |
 | `VALIDATE_MODELS_ON_STARTUP` | Prefer `false` unless you want catalog checks at boot |
+| `HUMAN_EVAL_DATA_DIR` | Persistent volume for ratings if a human study is run |
+| `HUMAN_EVAL_ADMIN_TOKEN` | Admin header for the human-eval API |
+| `CORS_ALLOW_ORIGINS` | Optional; only if a browser client is added later |
 
-Example:
-
-```bash
-CORS_ALLOW_ORIGINS=http://localhost:3000,https://YOUR-APP.vercel.app,https://YOUR-APP-*.vercel.app
-```
-
-(Use exact preview URLs Vercel issues if wildcards are not supported by your CORS parser — this project splits on commas and matches exact origins.)
-
-## RunPod verification
-
-```bash
-# On the pod — API listens on all interfaces
-cd /path/to/interviewIQ
-PYTHONPATH=backend uvicorn app.main:app --host 0.0.0.0 --port 8000
-
-# From your laptop — public proxy must return 200
-curl -sS -o /dev/null -w "%{http_code}\n" "$NEXT_PUBLIC_API_URL/api/v1/health"
-
-# CORS preflight (Origin = your Vercel production URL)
-curl -sS -D- -o /dev/null -X OPTIONS "$NEXT_PUBLIC_API_URL/api/v1/experiments" \
-  -H "Origin: https://YOUR-APP.vercel.app" \
-  -H "Access-Control-Request-Method: GET"
-```
-
-Expect `access-control-allow-origin` reflecting that Origin when CORS is configured.
-
-## Deployment checklist
-
-1. RunPod: uvicorn up; `/api/v1/health` OK on the **public** HTTPS URL.
-2. RunPod: `CORS_ALLOW_ORIGINS` includes the Vercel production (and preview) origin(s); restart uvicorn.
-3. Vercel: Root Directory = `frontend`.
-4. Vercel: `NEXT_PUBLIC_API_URL` = public RunPod HTTPS base; redeploy after any change.
-5. Open the Vercel homepage — experiment list loads (no FastAPI import errors in function logs).
-6. Open `/metrics` — dashboard JSON loads from RunPod.
-7. Optional: upload a pair / trigger generation only via RunPod-backed API routes (never local GPU on Vercel).
+Embeddings load **lazily** (`app.state.embeddings` starts `None`).
 
 ## GPU boundary
 
-- Embeddings load **lazily** on RunPod (`app.state.embeddings` starts `None`).
-- Do not add `torch` / `sentence-transformers` to `frontend/package.json`.
-- Do not solve Vercel errors by installing FastAPI on Vercel.
+- Embeddings and experiment runners stay on the FastAPI host.
+- Human-eval ratings are stored on that host’s disk (`HUMAN_EVAL_DATA_DIR`), not in this git tree.

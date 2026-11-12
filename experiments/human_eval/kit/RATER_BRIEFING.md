@@ -21,12 +21,16 @@ not treat any number in this file as a measured duration.
 
 ## How to work
 
-1. Open the personal link you were sent. There is no account and no password.
-2. Read the short information screen and continue.
-3. Rate the pair on screen. Changes save automatically.
-4. Use Back and Forward, or the arrow keys when you are not typing, to move.
-5. If you stop, open the **same link** later. It resumes at the first unfinished pair.
-6. When every pair is complete, the page says so. You can close it.
+There is no hosted web page. You receive a personal token and use the FastAPI
+human-eval session and ratings endpoints (the study owner will send the exact
+requests). There is no account and no password.
+
+1. Load your session with the token you were sent (`GET /api/v1/human-eval/session`).
+2. Read the job, candidate, Set X, and Set Y for the current pair.
+3. Submit scores with `POST /api/v1/human-eval/ratings`. You can change a score
+   by posting again.
+4. Reload the same session later to resume at the first unfinished pair.
+5. When every pair is complete, stop. Do not guess which set is which.
 
 ## Independence
 
@@ -35,5 +39,5 @@ to choose scores.
 
 ## Problems
 
-If the link fails, a score does not stick after reload, or you see a label other
-than Set X and Set Y, stop and email the contact who sent the link.
+If the token fails, a score does not stick after reload, or you see a label other
+than Set X and Set Y, stop and email the contact who sent the token.

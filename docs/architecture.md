@@ -20,7 +20,7 @@ CV/JD text
 - Retrieval: scikit-learn TF-IDF, rank-bm25
 - Embeddings: Sentence-Transformers (`all-MiniLM-L6-v2`), CPU or CUDA
 - Persistence: file-based experiment results first; MongoDB only when interactive demo storage is required
-- Frontend: not started (Phase 20)
+- Frontend: removed (research console out of scope; CLI + FastAPI only)
 
 ## Modules
 

@@ -68,10 +68,8 @@ class Settings(BaseSettings):
 
     validate_models_on_startup: bool = False
 
-    # Comma-separated browser origins allowed to call the API (Vercel + local Next).
-    # Example: http://localhost:3000,https://interviewiq.vercel.app
-    cors_allow_origins: str = "http://localhost:3000,http://127.0.0.1:3000"
-    # Optional regex for preview deploys, e.g. https://.*\.vercel\.app
+    # Optional comma-separated browser origins. Empty: CLI/curl only.
+    cors_allow_origins: str = ""
     cors_allow_origin_regex: str = ""
 
     enable_tfidf: bool = True
