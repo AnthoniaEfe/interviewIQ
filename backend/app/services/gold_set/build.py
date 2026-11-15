@@ -7,7 +7,14 @@ from pathlib import Path
 from typing import Any
 
 from app.services.gold_set.assignments import assign_dual_coding, orders_for_annotators
-from app.services.gold_set.constants import ANNOTATORS, ASSIGNMENT_SEED, SEED
+from app.services.gold_set.constants import (
+    ANNOTATORS,
+    ASSIGNMENT_SEED,
+    CALIBRATION_N,
+    ITEMS_PER_ANNOTATOR,
+    MAIN_PER_ANNOTATOR,
+    SEED,
+)
 from app.services.gold_set.html_app import render_annotator_html
 from app.services.gold_set.sampling import sample_gold_items
 from app.services.gap_sensitivity.io_utils import (
@@ -132,6 +139,8 @@ def build_gold_set(root: Path | None = None) -> dict[str, Any]:
             "assignment_seed": ASSIGNMENT_SEED,
             "n_annotators": len(ANNOTATORS),
             "items_per_annotator_total": assignment["items_per_annotator_total"],
+            "items_per_annotator_main": assignment["items_per_annotator_main"],
+            "n_main_assigned": assignment["n_main"],
             "primary": sampled["primary_meta"],
             "holdout": sampled["holdout_meta"],
             "n_main": len(main),
@@ -140,23 +149,30 @@ def build_gold_set(root: Path | None = None) -> dict[str, Any]:
             "library_versions": library_versions(),
         },
     )
-    _write_csv_template(out / "annotation_template.csv", [it["item_id"] for it in all_items])
+    assigned_ids: list[str] = []
+    seen_ids: set[str] = set()
+    for name in ANNOTATORS:
+        for iid in orders[name]:
+            if iid not in seen_ids:
+                seen_ids.add(iid)
+                assigned_ids.append(iid)
+    by_id = {it["item_id"]: it for it in blind_cal + blind_main}
+    _write_csv_template(out / "annotation_template.csv", assigned_ids)
     _write_annotator_templates(out / "templates", assignment)
     html_path = out / "annotator_app.html"
     html_path.write_text(
-        render_annotator_html(blind_cal + blind_main, orders),
+        render_annotator_html([by_id[iid] for iid in assigned_ids], orders),
         encoding="utf-8",
     )
+    roster = "".join(f"  {name}.csv\n" for name in ANNOTATORS)
     (out / "annotations" / "README.txt").write_text(
         "Place completed files here (one per annotator, assigned items only):\n"
-        "  annotator_A.csv\n"
-        "  annotator_B.csv\n"
-        "  annotator_C.csv\n"
-        "  annotator_D.csv\n"
+        f"{roster}"
         "  adjudicated.csv  (optional; disagreements on dual-coded main items)\n"
         "Columns: item_id,label,cannot_judge,snippet,notes\n"
         "label in {0,1,2}; cannot_judge true/false.\n"
-        "Each annotator files calibration (c001–c010) plus 75 assigned main items.\n",
+        f"Cap: {len(ANNOTATORS)} annotators, {ITEMS_PER_ANNOTATOR} CV/JD pairs each "
+        f"({CALIBRATION_N} calibration + {MAIN_PER_ANNOTATOR} assigned main items).\n",
         encoding="utf-8",
     )
     return {

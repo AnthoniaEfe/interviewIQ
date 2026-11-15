@@ -1,18 +1,31 @@
 """Gold-set constants."""
 
+from itertools import combinations
+
 SEED = 20261004
 # Staffing assignment only (who codes which frozen items). Does not resample items.
 ASSIGNMENT_SEED = 20261112
-ANNOTATORS = ("annotator_A", "annotator_B", "annotator_C", "annotator_D")
-PAIR_BLOCKS = (
-    ("annotator_A", "annotator_B"),
-    ("annotator_A", "annotator_C"),
-    ("annotator_A", "annotator_D"),
-    ("annotator_B", "annotator_C"),
-    ("annotator_B", "annotator_D"),
-    ("annotator_C", "annotator_D"),
+# Review cap: five people, 30 CV/JD pairs each (10 shared calibration + 20 main).
+ANNOTATORS = (
+    "annotator_A",
+    "annotator_B",
+    "annotator_C",
+    "annotator_D",
+    "annotator_E",
 )
+PAIR_BLOCKS = tuple(combinations(ANNOTATORS, 2))
+ITEMS_PER_ANNOTATOR = 30
 CALIBRATION_N = 10
+MAIN_PER_ANNOTATOR = ITEMS_PER_ANNOTATOR - CALIBRATION_N
+# 5 annotators × 20 main items / 2 labels per item.
+ASSIGNED_MAIN = len(ANNOTATORS) * MAIN_PER_ANNOTATOR // 2
+# Drawn from the frozen 19/19/19/18 stratum sample. 25 items per split.
+ASSIGNED_STRATUM_PER_SPLIT = {
+    "strong_match": 7,
+    "partial_match": 6,
+    "weak_match": 6,
+    "missing": 6,
+}
 PER_SPLIT = 75
 STRATUM_TARGETS = {
     "strong_match": 19,

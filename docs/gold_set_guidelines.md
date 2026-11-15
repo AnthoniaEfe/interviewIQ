@@ -64,6 +64,8 @@ at the needed level; 1 if only one is; 0 if neither.
 
 ## Calibration then main set
 
-Complete items marked CALIBRATION first (`c001`…). All four annotators (A–D)
+Complete items marked CALIBRATION first (`c001`…). All five annotators (A–E)
 discuss those ten. Then annotate **only your assigned** main items independently
-in the order given in the app for your id.
+in the order given in the app for your id. The review cap is 30 CV/JD pairs:
+10 calibration items plus 20 main items. Do not label anything that is not on
+your list.

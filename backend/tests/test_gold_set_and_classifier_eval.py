@@ -29,7 +29,10 @@ from app.services.gold_set.build import BLIND_FIELDS, build_gold_set
 from app.services.gold_set.html_app import render_annotator_html
 from app.services.gold_set.constants import (
     ANNOTATORS,
+    ASSIGNED_MAIN,
     ASSIGNMENT_SEED,
+    ITEMS_PER_ANNOTATOR,
+    MAIN_PER_ANNOTATOR,
     MAX_PER_PAIR,
     MIN_PAIRS_PER_SPLIT,
     PER_SPLIT,
@@ -87,7 +90,7 @@ def test_annotator_html_has_structured_workspace():
     assert "100dvh" in html
 
 
-def test_four_annotator_assignment_is_balanced():
+def test_five_annotator_assignment_caps_each_reviewer_at_30():
     main = []
     labels = (
         ["strong_match"] * 19
@@ -112,18 +115,29 @@ def test_four_annotator_assignment_is_balanced():
     a = assign_dual_coding(main, cal, seed=ASSIGNMENT_SEED)
     b = assign_dual_coding(main, cal, seed=ASSIGNMENT_SEED)
     assert a["item_to_annotators"] == b["item_to_annotators"]
-    assert len(a["item_to_annotators"]) == 150
+    assert a["n_annotators"] == 5
+    assert a["n_main"] == ASSIGNED_MAIN == 50
+    assert a["items_per_annotator_total"] == ITEMS_PER_ANNOTATOR == 30
+    assert len(a["annotators"]) == 5
+    assert len(a["item_to_annotators"]) == 50
     assert all(len(v) == 2 for v in a["item_to_annotators"].values())
     for name in ANNOTATORS:
         rec = a["annotators"][name]
-        assert rec["n_main"] == 75
+        assert rec["n_main"] == MAIN_PER_ANNOTATOR == 20
         assert rec["n_calibration"] == 10
-        assert rec["n_total"] == 85
+        assert rec["n_total"] == 30
+        assert len(rec["item_ids"]) == 30
         assert rec["item_ids"][:10] == cal
-    assert [p["n_main"] for p in a["pairs"]] == [25] * 6
+    assert [p["n_main"] for p in a["pairs"]] == [5] * 10
+    from itertools import combinations
+
+    for left, right in combinations(ANNOTATORS, 2):
+        shared = set(a["annotators"][left]["main_ids"]) & set(a["annotators"][right]["main_ids"])
+        assert len(shared) == 5
     orders = orders_for_annotators(a, seed=ASSIGNMENT_SEED)
+    assert set(orders) == set(ANNOTATORS)
     for name in ANNOTATORS:
-        assert len(orders[name]) == 85
+        assert len(orders[name]) == 30
         assert set(orders[name][:10]) == set(cal)
         assert set(orders[name][10:]) == set(a["annotators"][name]["main_ids"])
 

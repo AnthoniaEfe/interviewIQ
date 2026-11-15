@@ -115,6 +115,9 @@ Expected effort: about 1.5 minutes per item ≈ 4 hours per annotator (150 + 10)
 
 ## Staffing addendum (2026-11-12)
 
+Superseded for workload by the 2026-11-15 addendum below. Kept as the record of
+the four-annotator split.
+
 The frozen sample is unchanged (seed `20261004`, 150 main + 10 calibration).
 The two-annotator workload was too large, so main-item dual-coding is split
 across **four** annotators without dropping the two-label design required for G1.
@@ -132,6 +135,22 @@ across **four** annotators without dropping the two-label design required for G1
   calibration agreement across all four annotators.
 
 G1–G4 and the item sample are not edited.
+
+## Staffing addendum (2026-11-15)
+
+Review load is capped at **five** annotators and **30** CV/JD pairs each.
+The frozen item sample (seed `20261004`, 150 main + 10 calibration) is not
+resampled. Assignment seed stays `20261112`.
+
+- Annotators: A, B, C, D, E.
+- Each person labels the 10 calibration items and 20 main items (30 total).
+- Main review set: 50 items drawn from the frozen 150 (25 per split; 7 strong /
+  6 partial / 6 weak / 6 missing). Each of those 50 is still dual-coded. Every
+  pair of annotators shares 5 main items.
+- The other 100 main items are not assigned and must not be labelled.
+- Files: `annotator_A.csv` … `annotator_E.csv`.
+
+G1–G4 and the frozen sample are not edited.
 
 ## Phase 1 stop rule
 

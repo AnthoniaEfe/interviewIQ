@@ -30,9 +30,9 @@ Answer key (DO NOT OPEN until annotation is finished):
   experiments/gold_set/answer_key_do_not_open_before_annotating.json
 
 How to annotate:
-  1. All four annotators complete CALIBRATION items (c001…) first, then discuss.
-  2. Open annotator_app.html locally (no network). Choose A, B, C, or D.
-     You see 10 calibration items then 75 assigned main items.
+  1. All five annotators complete CALIBRATION items (c001…) first, then discuss.
+  2. Open annotator_app.html locally (no network). Choose A, B, C, D, or E.
+     You see 10 calibration items then 20 assigned main items (30 CV/JD pairs).
      Keyboard: 0 / 1 / 2 / C. Export CSV (filename annotator_X.csv).
      Or fill experiments/gold_set/templates/annotator_X.csv.
   3. Place completed files at:
@@ -40,6 +40,7 @@ How to annotate:
        experiments/gold_set/annotations/annotator_B.csv
        experiments/gold_set/annotations/annotator_C.csv
        experiments/gold_set/annotations/annotator_D.csv
+       experiments/gold_set/annotations/annotator_E.csv
        experiments/gold_set/annotations/adjudicated.csv   (optional; disagreements)
      Columns: item_id, label, cannot_judge, snippet, notes
      label ∈ {{0,1,2}}; cannot_judge true/false.

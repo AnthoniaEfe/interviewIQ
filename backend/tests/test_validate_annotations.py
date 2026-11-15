@@ -157,6 +157,39 @@ def test_completion_threshold_duplicates_unknown_and_calibration(tmp_path: Path)
         module.validate_annotation_file(csv_path, pack)
 
 
+def test_rejects_sixth_annotator_and_more_than_30_pairs(tmp_path: Path):
+    module = _load()
+    pack = _pack(tmp_path)
+    too_many = {
+        "annotators": {
+            f"annotator_{letter}": {
+                "main_ids": ["g001"],
+                "calibration_ids": ["c001"],
+                "item_ids": ["c001", "g001"],
+            }
+            for letter in "ABCDEF"
+        }
+    }
+    (pack / "annotator_assignments.json").write_text(json.dumps(too_many), encoding="utf-8")
+    csv_path = tmp_path / "annotator_A.csv"
+    _write(csv_path, _complete_rows()[:1])
+    with pytest.raises(module.AnnotationValidationError, match="A–E only"):
+        module.validate_annotation_file(csv_path, pack)
+
+    over_cap = {
+        "annotators": {
+            "annotator_A": {
+                "main_ids": [f"g{i:03d}" for i in range(1, 32)],
+                "calibration_ids": [],
+                "item_ids": [f"g{i:03d}" for i in range(1, 32)],
+            }
+        }
+    }
+    (pack / "annotator_assignments.json").write_text(json.dumps(over_cap), encoding="utf-8")
+    with pytest.raises(module.AnnotationValidationError, match="cap is 30"):
+        module.validate_annotation_file(csv_path, pack)
+
+
 def test_missing_file_columns_and_no_side_effects(tmp_path: Path):
     module = _load()
     pack = _pack(tmp_path)

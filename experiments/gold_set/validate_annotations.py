@@ -12,11 +12,19 @@ import json
 import sys
 from pathlib import Path
 
+_BACKEND = Path(__file__).resolve().parents[2] / "backend"
+if str(_BACKEND) not in sys.path:
+    sys.path.insert(0, str(_BACKEND))
+
+from app.services.gold_set.constants import ANNOTATORS, ITEMS_PER_ANNOTATOR  # noqa: E402
+
 REQUIRED_COLS = ("item_id", "label", "cannot_judge", "snippet", "notes")
 JUDGEMENT_LABELS = {"0", "1", "2"}
 CANNOT_JUDGE_LABELS = {"C", "c"}
 MIN_COMPLETION = 0.90
 ANSWER_KEY_NAME = "answer_key_do_not_open_before_annotating.json"
+MAX_ANNOTATORS = len(ANNOTATORS)
+MAX_PAIRS_PER_ANNOTATOR = ITEMS_PER_ANNOTATOR
 
 
 class AnnotationValidationError(Exception):
@@ -27,12 +35,7 @@ def _truthy(value: object) -> bool:
     return str(value).strip().lower() in {"1", "true", "yes", "y"}
 
 
-ANNOTATOR_FILES = {
-    "annotator_A.csv": "annotator_A",
-    "annotator_B.csv": "annotator_B",
-    "annotator_C.csv": "annotator_C",
-    "annotator_D.csv": "annotator_D",
-}
+ANNOTATOR_FILES = {f"{name}.csv": name for name in ANNOTATORS}
 
 
 def _load_expected(
@@ -54,6 +57,12 @@ def _load_expected(
 
     assign_path = pack / "annotator_assignments.json"
     if not assign_path.is_file():
+        n_pool = len(dict.fromkeys([*calibration, *main]))
+        if n_pool > MAX_PAIRS_PER_ANNOTATOR:
+            raise AnnotationValidationError(
+                f"This pack lists {n_pool} CV/JD pairs and has no assignment file. "
+                f"The cap is {MAX_PAIRS_PER_ANNOTATOR} per annotator."
+            )
         return main, calibration
 
     assignment = json.loads(assign_path.read_text(encoding="utf-8"))
@@ -63,14 +72,29 @@ def _load_expected(
     if name is None and csv_name:
         name = ANNOTATOR_FILES.get(csv_name)
     annotators = assignment.get("annotators") or {}
+    allowed = set(ANNOTATORS)
+    unknown_names = [n for n in annotators if n not in allowed]
+    if unknown_names:
+        raise AnnotationValidationError(
+            "Annotators must be A–E only. Unknown: " + ", ".join(unknown_names)
+        )
+    if len(annotators) > MAX_ANNOTATORS:
+        raise AnnotationValidationError(
+            f"This pack allows {MAX_ANNOTATORS} annotators; found {len(annotators)}."
+        )
     if name is None or name not in annotators:
         raise AnnotationValidationError(
-            "This pack uses four annotators. Pass --annotator A|B|C|D "
-            "or name the file annotator_A.csv … annotator_D.csv."
+            "This pack uses five annotators. Pass --annotator A|B|C|D|E "
+            "or name the file annotator_A.csv … annotator_E.csv."
         )
     rec = annotators[name]
     assigned_main = [str(i) for i in (rec.get("main_ids") or [])]
     assigned_cal = [str(i) for i in (rec.get("calibration_ids") or calibration)]
+    n_assigned = len(dict.fromkeys([*assigned_cal, *assigned_main]))
+    if n_assigned > MAX_PAIRS_PER_ANNOTATOR:
+        raise AnnotationValidationError(
+            f"{name} has {n_assigned} CV/JD pairs; the cap is {MAX_PAIRS_PER_ANNOTATOR}."
+        )
     return assigned_main, assigned_cal
 
 
@@ -184,9 +208,20 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument(
         "--annotator",
-        choices=("A", "B", "C", "D", "annotator_A", "annotator_B", "annotator_C", "annotator_D"),
+        choices=(
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "annotator_A",
+            "annotator_B",
+            "annotator_C",
+            "annotator_D",
+            "annotator_E",
+        ),
         default=None,
-        help="Required when the filename is not annotator_A.csv … annotator_D.csv",
+        help="Required when the filename is not annotator_A.csv … annotator_E.csv",
     )
     args = parser.parse_args(argv)
     try:

@@ -6,13 +6,13 @@ You judge **one job requirement against the whole CV**. You are not scoring a
 model, and you will not be shown model labels, similarity scores, split names,
 or dataset fit labels.
 
-There are four annotators (A, B, C, D). You complete:
+There are five annotators (A, B, C, D, E). You complete **30 CV/JD pairs**:
 
 - **10 calibration items** (`c001`…), shared by everyone
-- **75 assigned main items** (`g…`), a subset of the 150-item gold set
+- **20 assigned main items** (`g…`), from a 50-item subset of the 150-item gold set
 
-Every main item is labelled by exactly two annotators. The guideline time is
-about 90 seconds per item, so the expected effort is about **2 hours**.
+Every assigned main item is labelled by exactly two annotators. The guideline
+time is about 90 seconds per item, so the expected effort is about **45 minutes**.
 
 ## Labelling rubric
 
@@ -83,18 +83,18 @@ at the needed level; 1 if only one is; 0 if neither.
 
 ### Calibration then main set
 
-Complete items marked CALIBRATION first (`c001`…). All four annotators discuss
+Complete items marked CALIBRATION first (`c001`…). All five annotators discuss
 those ten. Then annotate your assigned main items independently in the order
-given in the app for your id (A, B, C, or D). Do not label items that are not
-in your list.
+given in the app for your id (A, B, C, D, or E). Do not label items that are not
+in your list. Your list is 30 pairs and the app will not offer more.
 
 ## How to use the app offline
 
 1. Open `experiments/gold_set/annotator_app.html` in a browser (double-click, or
    File → Open). The pack is embedded in the file. Do not use a network connection
    and do not upload the CV text anywhere.
-2. Set **Annotator** to A, B, C, or D — the id you were assigned. The app then
-   shows your 10 calibration items first, then your 75 main items.
+2. Set **Annotator** to A, B, C, D, or E — the id you were assigned. The app then
+   shows your 10 calibration items first, then your 20 main items.
 3. For each item, read the requirement and the whole CV. Keys: `0` not evidenced,
    `1` partial, `2` clearly met, `C` cannot judge. You can also use the buttons.
 4. Optional evidence snippet: paste text from the CV into the snippet box when
@@ -103,7 +103,7 @@ in your list.
 5. `cannot_judge` (key `C`) is for a requirement that is too vague to interpret,
    or a CV that is unreadable or garbled. It is not a substitute for “I did not
    find the skill”.
-6. Click **Export CSV**. The browser saves `annotator_A.csv` (or B/C/D).
+6. Click **Export CSV**. The browser saves `annotator_A.csv` (or B/C/D/E).
 7. Keep that filename. Columns must stay
    `item_id,label,cannot_judge,snippet,notes`.
 
@@ -111,7 +111,7 @@ You may instead fill the matching file under `experiments/gold_set/templates/`.
 
 ## Independence and assistance
 
-Work independently. Do not discuss items with other annotators until all four of
+Work independently. Do not discuss items with other annotators until all five of
 you have finished the calibration ten, and do not discuss a main-set item until
 both assigned annotators have finished it. **Do not use AI assistance** (chatbots,
 coding assistants, or automated labelling) on any item.

@@ -85,8 +85,9 @@ def run_gold_set_analyze(root: Path | None = None) -> dict:
             )
         if missing:
             raise GoldSetAnnotationError(
-                "Four-annotator gold set needs all of annotator_A.csv … annotator_D.csv. "
-                "Missing: " + ", ".join(f"{name}.csv" for name in missing)
+                "Five-annotator gold set needs all of annotator_A.csv … annotator_E.csv. "
+                "Each file is 30 CV/JD pairs. Missing: "
+                + ", ".join(f"{name}.csv" for name in missing)
             )
         for name in ANNOTATORS:
             expected = set(assignment["annotators"][name]["item_ids"])

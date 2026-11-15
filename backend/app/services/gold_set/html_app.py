@@ -354,7 +354,7 @@ function render() {
     (idx + 1) + " / " + ids.length + " · " + labeledCount() + " labeled";
   const cal = document.getElementById("calflag");
   cal.textContent = it.is_calibration
-    ? "Calibration item — discuss after all four annotators finish these ten"
+    ? "Calibration item — discuss after all five annotators finish these ten"
     : "";
   cal.classList.toggle("is-on", !!it.is_calibration);
   document.getElementById("meta").textContent = kind + " · " + it.item_id;
