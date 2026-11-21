@@ -318,3 +318,32 @@ def test_classifier_eval_smoke_synthetic():
     assert payload["smoke"] is True
     assert "V0" in payload["results_test"]
     assert "majority" in payload["baselines_test"]
+
+
+def test_g4_grid_contains_production_and_adoption_is_strict():
+    from app.services.gold_set.hypotheses import (
+        PROD_WEIGHTS,
+        adoption_decision,
+        production_three,
+        weight_grid,
+    )
+
+    assert PROD_WEIGHTS in weight_grid()
+    assert production_three(0.65) == 2
+    assert production_three(0.40) == 1
+    assert production_three(0.399) == 0
+    assert adoption_decision(0.10, 0.01, 0.20) is True
+    assert adoption_decision(0.10, 0.0, 0.20) is False
+    assert adoption_decision(0.10, -0.02, 0.20) is False
+    assert adoption_decision(-0.05, -0.10, -0.01) is False
+    assert adoption_decision(None, None, None) is False
+
+
+def test_round2_g1_gate_requires_kappa_ci_above_zero():
+    from app.services.gold_set.hypotheses import g1_may_be_interpreted
+
+    assert g1_may_be_interpreted({"value": 0.4, "ci_low": 0.05, "ci_high": 0.7}) is True
+    assert g1_may_be_interpreted({"value": 0.4, "ci_low": 0.0, "ci_high": 0.7}) is False
+    assert g1_may_be_interpreted({"value": -0.03, "ci_low": -0.32, "ci_high": 0.25}) is False
+    assert g1_may_be_interpreted({"value": None, "ci_low": None, "ci_high": None}) is False
+    assert g1_may_be_interpreted(None) is False

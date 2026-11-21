@@ -1,0 +1,983 @@
+{
+  "status": "completed",
+  "git_commit": "28c16784381ea0f2ccdcd39c7b90e402a7f69c54",
+  "library_versions": {
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.15.0",
+    "sentence-transformers": "6.3.0",
+    "rank-bm25": "0.2.2"
+  },
+  "n_main": 150,
+  "n_assigned_main": 50,
+  "n_usable_consensus": 17,
+  "consensus_disposition": {
+    "agree": 17,
+    "disagree": 30,
+    "cannot_judge": 3
+  },
+  "annotator_vs_system": {
+    "annotator_A": {
+      "n": 18,
+      "qwk": {
+        "value": -0.048192771084337505,
+        "ci_low": -0.43433074424989127,
+        "ci_high": 0.3572030497592293,
+        "n": 18
+      }
+    },
+    "annotator_B": {
+      "n": 20,
+      "qwk": {
+        "value": 0.2605633802816901,
+        "ci_low": -0.1217948717948718,
+        "ci_high": 0.5938256048387093,
+        "n": 20
+      }
+    },
+    "annotator_C": {
+      "n": 19,
+      "qwk": {
+        "value": -0.5090252707581226,
+        "ci_low": -0.783673469387755,
+        "ci_high": -0.057233704292527936,
+        "n": 19
+      }
+    },
+    "annotator_D": {
+      "n": 20,
+      "qwk": {
+        "value": 0.125,
+        "ci_low": -0.1525749674054759,
+        "ci_high": 0.4520815496575341,
+        "n": 20
+      }
+    },
+    "annotator_E": {
+      "n": 20,
+      "qwk": {
+        "value": 0.06614785992217909,
+        "ci_low": -0.36722834481939165,
+        "ci_high": 0.49276586368977676,
+        "n": 20
+      }
+    }
+  },
+  "label_margins_main": {
+    "annotator_A": {
+      "2": 8,
+      "1": 5,
+      "0": 5,
+      "cannot_judge": 2
+    },
+    "annotator_B": {
+      "1": 8,
+      "2": 7,
+      "0": 5
+    },
+    "annotator_C": {
+      "2": 6,
+      "0": 10,
+      "cannot_judge": 1,
+      "1": 3
+    },
+    "annotator_D": {
+      "2": 11,
+      "1": 8,
+      "0": 1
+    },
+    "annotator_E": {
+      "2": 5,
+      "1": 9,
+      "0": 6
+    }
+  },
+  "cannot_judge_rate_by_annotator": {
+    "annotator_A": 0.1,
+    "annotator_B": 0.0,
+    "annotator_C": 0.05,
+    "annotator_D": 0.0,
+    "annotator_E": 0.0
+  },
+  "agreement_main": {
+    "n": 47,
+    "percent_agreement": 0.3617021276595745,
+    "kappa_unweighted": {
+      "value": 0.06125166444740349,
+      "ci_low": -0.12827025287091254,
+      "ci_high": 0.25144962186167147,
+      "n": 47
+    },
+    "kappa_quadratic": {
+      "value": -0.032786885245901676,
+      "ci_low": -0.3174831363120283,
+      "ci_high": 0.25396825396825384,
+      "n": 47
+    },
+    "confusion": [
+      [
+        3,
+        6,
+        4
+      ],
+      [
+        3,
+        7,
+        2
+      ],
+      [
+        7,
+        8,
+        7
+      ]
+    ]
+  },
+  "agreement_calibration": {
+    "n": 92,
+    "percent_agreement": 0.43478260869565216,
+    "kappa_unweighted": {
+      "value": 0.12477131357482618,
+      "ci_low": -0.03430337994112711,
+      "ci_high": 0.27994249928481857,
+      "n": 92
+    },
+    "kappa_quadratic": {
+      "value": 0.2689922480620155,
+      "ci_low": 0.06669765344380944,
+      "ci_high": 0.4610066703275703,
+      "n": 92
+    },
+    "confusion": [
+      [
+        20,
+        13,
+        6
+      ],
+      [
+        16,
+        11,
+        7
+      ],
+      [
+        4,
+        6,
+        9
+      ]
+    ]
+  },
+  "calibration_adjudication": {
+    "source": "experiments/gold_set/annotations/adjudicated_calibration.csv",
+    "n": 10,
+    "labels": {
+      "c001": 1,
+      "c002": 1,
+      "c003": 2,
+      "c004": 2,
+      "c005": 0,
+      "c006": 0,
+      "c007": 1,
+      "c008": 0,
+      "c009": 2,
+      "c010": 0
+    },
+    "annotator_vs_adjudicated": {
+      "annotator_A": {
+        "n": 8,
+        "n_match": 4,
+        "percent_agreement": 0.5,
+        "qwk": 0.17647058823529416
+      },
+      "annotator_B": {
+        "n": 10,
+        "n_match": 3,
+        "percent_agreement": 0.3,
+        "qwk": 0.25373134328358216
+      },
+      "annotator_C": {
+        "n": 10,
+        "n_match": 5,
+        "percent_agreement": 0.5,
+        "qwk": 0.42028985507246375
+      },
+      "annotator_D": {
+        "n": 10,
+        "n_match": 6,
+        "percent_agreement": 0.6,
+        "qwk": 0.7101449275362319
+      },
+      "annotator_E": {
+        "n": 10,
+        "n_match": 4,
+        "percent_agreement": 0.4,
+        "qwk": 0.10447761194029848
+      }
+    },
+    "pooled_independent_vs_adjudicated": {
+      "n": 48,
+      "percent_agreement": 0.4583333333333333,
+      "qwk": {
+        "value": 0.3483443708609272,
+        "ci_low": 0.06490743299253929,
+        "ci_high": 0.5746528990316425,
+        "n": 48
+      }
+    },
+    "system_vs_adjudicated": {
+      "n": 10,
+      "accuracy": 0.5,
+      "qwk": 0.2857142857142857,
+      "confusion": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "role": "Descriptive check on the 10 calibration items. Not G1."
+    }
+  },
+  "single_annotator": false,
+  "n_annotators": 5,
+  "system_vs_human": {
+    "pooled": {
+      "n": 17,
+      "accuracy": 0.29411764705882354,
+      "accuracy_weighted": 0.20830564784053154,
+      "macro_f1": 0.26495726495726496,
+      "qwk": -0.09090909090909083,
+      "confusion": [
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          4,
+          0,
+          3
+        ]
+      ],
+      "spearman_score_vs_human": -0.07938841860374447
+    },
+    "primary-30": {
+      "n": 7,
+      "accuracy": 0.42857142857142855,
+      "accuracy_weighted": 0.30273224043715846,
+      "macro_f1": 0.38888888888888884,
+      "qwk": -0.18181818181818188,
+      "confusion": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          3,
+          0,
+          2
+        ]
+      ],
+      "spearman_score_vs_human": -0.15811388300841897
+    },
+    "holdout-30": {
+      "n": 10,
+      "accuracy": 0.2,
+      "accuracy_weighted": 0.12916030534351142,
+      "macro_f1": 0.2074074074074074,
+      "qwk": 0.0,
+      "confusion": [
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "spearman_score_vs_human": -0.07237468644557458
+    }
+  },
+  "false_gap_n": 6,
+  "false_gap_rate": 0.35294117647058826,
+  "g1": {
+    "pooled": {
+      "n": 17,
+      "qwk": {
+        "value": -0.09090909090909083,
+        "ci_low": -0.43099149388623054,
+        "ci_high": 0.32370933177479,
+        "n": 17
+      },
+      "qwk_landis_koch_descriptive": "poor",
+      "spearman": {
+        "rho": -0.07938841860374447,
+        "p_value": 0.7619869996198335,
+        "ci_low": -0.5760403624475482,
+        "ci_high": 0.48080429571760436
+      },
+      "qwk_beyond_chance": false,
+      "spearman_beyond_chance": false,
+      "supported": false,
+      "production_label_reconstruction_match_rate": 1.0
+    },
+    "primary-30": {
+      "n": 7,
+      "qwk": {
+        "value": -0.18181818181818188,
+        "ci_low": -0.5647058823529412,
+        "ci_high": 0.1055555555555392,
+        "n": 7
+      },
+      "qwk_landis_koch_descriptive": "poor",
+      "spearman": {
+        "rho": -0.15811388300841897,
+        "p_value": 0.7349201962234642,
+        "ci_low": -0.9074852129730301,
+        "ci_high": 0.7294937758021268
+      },
+      "qwk_beyond_chance": false,
+      "spearman_beyond_chance": false,
+      "supported": false,
+      "production_label_reconstruction_match_rate": 1.0
+    },
+    "holdout-30": {
+      "n": 10,
+      "qwk": {
+        "value": 0.0,
+        "ci_low": -0.5386363636363639,
+        "ci_high": 0.4776119402985074,
+        "n": 10
+      },
+      "qwk_landis_koch_descriptive": "slight",
+      "spearman": {
+        "rho": -0.07237468644557458,
+        "p_value": 0.8425070635827293,
+        "ci_low": -0.7991611648057816,
+        "ci_high": 0.629129551806689
+      },
+      "qwk_beyond_chance": false,
+      "spearman_beyond_chance": false,
+      "supported": false,
+      "production_label_reconstruction_match_rate": 1.0
+    },
+    "decision_rule": "Supported only if pooled quadratic-weighted kappa has a bootstrap 95% CI entirely above 0 and Spearman rho of combined score vs human label is positive, two-sided p < 0.05, and its bootstrap 95% CI is entirely above 0."
+  },
+  "g2": {
+    "pooled": {
+      "n": 17,
+      "n_positive": 14,
+      "n_negative": 3,
+      "auc": {
+        "combined": {
+          "value": 0.5238095238095238,
+          "ci_low": 0.26666666666666666,
+          "ci_high": 0.7844780219780212,
+          "n": 17
+        },
+        "tfidf": {
+          "value": 0.4761904761904762,
+          "ci_low": 0.21428571428571427,
+          "ci_high": 0.7333333333333333,
+          "n": 17
+        },
+        "bm25_norm": {
+          "value": 0.17857142857142858,
+          "ci_low": 0.0625,
+          "ci_high": 0.3125,
+          "n": 17
+        },
+        "semantic": {
+          "value": 0.6428571428571429,
+          "ci_low": 0.2857142857142857,
+          "ci_high": 1.0,
+          "n": 17
+        }
+      },
+      "roc": {
+        "combined": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            0.6666666666666666,
+            0.6666666666666666,
+            1.0,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.07142857142857142,
+            0.5,
+            0.5,
+            0.5714285714285714,
+            0.5714285714285714,
+            1.0
+          ]
+        },
+        "tfidf": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            0.3333333333333333,
+            0.3333333333333333,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.07142857142857142,
+            0.42857142857142855,
+            0.42857142857142855,
+            0.5,
+            0.5,
+            0.6428571428571429,
+            1.0
+          ]
+        },
+        "bm25_norm": {
+          "fpr": [
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.35714285714285715,
+            0.6428571428571429,
+            1.0
+          ]
+        },
+        "semantic": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.6666666666666666,
+            0.6666666666666666,
+            1.0,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.07142857142857142,
+            0.21428571428571427,
+            0.5,
+            0.5,
+            0.9285714285714286,
+            0.9285714285714286,
+            1.0
+          ]
+        }
+      },
+      "hybrid_separates": false,
+      "hybrid_beats": {
+        "tfidf": {
+          "delta_auc": 0.047619047619047616,
+          "ci_low": -0.09523809523809523,
+          "ci_high": 0.21428571428571436,
+          "beats": false
+        },
+        "bm25_norm": {
+          "delta_auc": 0.34523809523809523,
+          "ci_low": 0.15625,
+          "ci_high": 0.5415064102564104,
+          "beats": true
+        },
+        "semantic": {
+          "delta_auc": -0.11904761904761907,
+          "ci_low": -0.4375,
+          "ci_high": 0.0,
+          "beats": false
+        }
+      }
+    },
+    "primary-30": {
+      "n": 7,
+      "n_positive": 7,
+      "n_negative": 0,
+      "auc": {
+        "combined": {
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n": 7
+        },
+        "tfidf": {
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n": 7
+        },
+        "bm25_norm": {
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n": 7
+        },
+        "semantic": {
+          "value": null,
+          "ci_low": null,
+          "ci_high": null,
+          "n": 7
+        }
+      },
+      "roc": {
+        "combined": {
+          "fpr": [],
+          "tpr": []
+        },
+        "tfidf": {
+          "fpr": [],
+          "tpr": []
+        },
+        "bm25_norm": {
+          "fpr": [],
+          "tpr": []
+        },
+        "semantic": {
+          "fpr": [],
+          "tpr": []
+        }
+      },
+      "hybrid_separates": false,
+      "hybrid_beats": {
+        "tfidf": {
+          "delta_auc": null,
+          "ci_low": null,
+          "ci_high": null,
+          "beats": false
+        },
+        "bm25_norm": {
+          "delta_auc": null,
+          "ci_low": null,
+          "ci_high": null,
+          "beats": false
+        },
+        "semantic": {
+          "delta_auc": null,
+          "ci_low": null,
+          "ci_high": null,
+          "beats": false
+        }
+      }
+    },
+    "holdout-30": {
+      "n": 10,
+      "n_positive": 7,
+      "n_negative": 3,
+      "auc": {
+        "combined": {
+          "value": 0.47619047619047616,
+          "ci_low": 0.11666666666666667,
+          "ci_high": 0.8571428571428571,
+          "n": 10
+        },
+        "tfidf": {
+          "value": 0.5238095238095238,
+          "ci_low": 0.14285714285714285,
+          "ci_high": 0.875,
+          "n": 10
+        },
+        "bm25_norm": {
+          "value": 0.14285714285714285,
+          "ci_low": 0.0,
+          "ci_high": 0.3333333333333333,
+          "n": 10
+        },
+        "semantic": {
+          "value": 0.6190476190476191,
+          "ci_low": 0.16666666666666666,
+          "ci_high": 1.0,
+          "n": 10
+        }
+      },
+      "roc": {
+        "combined": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            0.6666666666666666,
+            0.6666666666666666,
+            1.0,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.14285714285714285,
+            0.42857142857142855,
+            0.42857142857142855,
+            0.5714285714285714,
+            0.5714285714285714,
+            1.0
+          ]
+        },
+        "tfidf": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            0.3333333333333333,
+            0.3333333333333333,
+            1.0,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.14285714285714285,
+            0.42857142857142855,
+            0.42857142857142855,
+            0.5714285714285714,
+            0.5714285714285714,
+            1.0
+          ]
+        },
+        "bm25_norm": {
+          "fpr": [
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.2857142857142857,
+            0.5714285714285714,
+            1.0
+          ]
+        },
+        "semantic": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            0.6666666666666666,
+            0.6666666666666666,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.14285714285714285,
+            0.42857142857142855,
+            0.42857142857142855,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "hybrid_separates": false,
+      "hybrid_beats": {
+        "tfidf": {
+          "delta_auc": -0.04761904761904767,
+          "ci_low": -0.25,
+          "ci_high": 0.0,
+          "beats": false
+        },
+        "bm25_norm": {
+          "delta_auc": 0.3333333333333333,
+          "ci_low": 0.0625,
+          "ci_high": 0.625,
+          "beats": true
+        },
+        "semantic": {
+          "delta_auc": -0.1428571428571429,
+          "ci_low": -0.5714285714285714,
+          "ci_high": 0.0,
+          "beats": false
+        }
+      }
+    },
+    "decision_rule": "Combined score separates met/partial from not-evidenced when its ROC AUC bootstrap 95% CI lies entirely above 0.5. It beats a single signal when the paired AUC difference CI lies entirely above 0."
+  },
+  "g3": {
+    "pooled": {
+      "n_usable": 17,
+      "n_system_gap": 6,
+      "false_gap_n": 6,
+      "false_gap_rate_among_usable": 0.35294117647058826,
+      "false_gap_rate_among_system_gaps": 1.0,
+      "cause_evidence_not_extracted": 0,
+      "cause_matched_but_scored_low": 6,
+      "false_gap_requirement_phrase_in_cv": 0,
+      "missed_gap_n": 3,
+      "missed_gap_rate_among_usable": 0.17647058823529413,
+      "examples": [
+        {
+          "item_id": "g056",
+          "split": "primary-30",
+          "system_label": "weak_match",
+          "human": 2,
+          "combined": 0.2703288537687614,
+          "tfidf": 0.019036693451321408,
+          "bm25_norm": 0.15961733847171614,
+          "semantic": 0.45133069157600403,
+          "evidence_string": "Collaborated with an agile development team to build a Java annotation-based framework for writing and orchestrating test libraries for RESTful API services.",
+          "requirement_text": "Build automation"
+        },
+        {
+          "item_id": "g063",
+          "split": "primary-30",
+          "system_label": "missing",
+          "human": 2,
+          "combined": 0.13548436760902405,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.2709687352180481,
+          "evidence_string": "SQL",
+          "requirement_text": "Regular expressions"
+        },
+        {
+          "item_id": "g067",
+          "split": "primary-30",
+          "system_label": "missing",
+          "human": 2,
+          "combined": 0.1673138439655304,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.3346276879310608,
+          "evidence_string": "Java",
+          "requirement_text": "React"
+        },
+        {
+          "item_id": "g119",
+          "split": "holdout-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.2038809359073639,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.4077618718147278,
+          "evidence_string": "AutoCAD",
+          "requirement_text": "Schematic capture"
+        },
+        {
+          "item_id": "g136",
+          "split": "holdout-30",
+          "system_label": "missing",
+          "human": 1,
+          "combined": 0.17520800232887268,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.35041600465774536,
+          "evidence_string": "Requirements Analysis",
+          "requirement_text": "Natural language processing"
+        },
+        {
+          "item_id": "g138",
+          "split": "holdout-30",
+          "system_label": "missing",
+          "human": 2,
+          "combined": 0.16886334121227264,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.3377266824245453,
+          "evidence_string": "Accounting",
+          "requirement_text": "Tenacity"
+        }
+      ]
+    },
+    "primary-30": {
+      "n_usable": 7,
+      "n_system_gap": 3,
+      "false_gap_n": 3,
+      "false_gap_rate_among_usable": 0.42857142857142855,
+      "false_gap_rate_among_system_gaps": 1.0,
+      "cause_evidence_not_extracted": 0,
+      "cause_matched_but_scored_low": 3,
+      "false_gap_requirement_phrase_in_cv": 0,
+      "missed_gap_n": 0,
+      "missed_gap_rate_among_usable": 0.0,
+      "examples": [
+        {
+          "item_id": "g056",
+          "split": "primary-30",
+          "system_label": "weak_match",
+          "human": 2,
+          "combined": 0.2703288537687614,
+          "tfidf": 0.019036693451321408,
+          "bm25_norm": 0.15961733847171614,
+          "semantic": 0.45133069157600403,
+          "evidence_string": "Collaborated with an agile development team to build a Java annotation-based framework for writing and orchestrating test libraries for RESTful API services.",
+          "requirement_text": "Build automation"
+        },
+        {
+          "item_id": "g063",
+          "split": "primary-30",
+          "system_label": "missing",
+          "human": 2,
+          "combined": 0.13548436760902405,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.2709687352180481,
+          "evidence_string": "SQL",
+          "requirement_text": "Regular expressions"
+        },
+        {
+          "item_id": "g067",
+          "split": "primary-30",
+          "system_label": "missing",
+          "human": 2,
+          "combined": 0.1673138439655304,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.3346276879310608,
+          "evidence_string": "Java",
+          "requirement_text": "React"
+        }
+      ]
+    },
+    "holdout-30": {
+      "n_usable": 10,
+      "n_system_gap": 3,
+      "false_gap_n": 3,
+      "false_gap_rate_among_usable": 0.3,
+      "false_gap_rate_among_system_gaps": 1.0,
+      "cause_evidence_not_extracted": 0,
+      "cause_matched_but_scored_low": 3,
+      "false_gap_requirement_phrase_in_cv": 0,
+      "missed_gap_n": 3,
+      "missed_gap_rate_among_usable": 0.3,
+      "examples": [
+        {
+          "item_id": "g119",
+          "split": "holdout-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.2038809359073639,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.4077618718147278,
+          "evidence_string": "AutoCAD",
+          "requirement_text": "Schematic capture"
+        },
+        {
+          "item_id": "g136",
+          "split": "holdout-30",
+          "system_label": "missing",
+          "human": 1,
+          "combined": 0.17520800232887268,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.35041600465774536,
+          "evidence_string": "Requirements Analysis",
+          "requirement_text": "Natural language processing"
+        },
+        {
+          "item_id": "g138",
+          "split": "holdout-30",
+          "system_label": "missing",
+          "human": 2,
+          "combined": 0.16886334121227264,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.3377266824245453,
+          "evidence_string": "Accounting",
+          "requirement_text": "Tenacity"
+        }
+      ]
+    },
+    "cause_rule": "evidence_not_extracted when the stored matched evidence string is empty; matched_but_scored_low otherwise. Annotator snippet fields are not used, because empty snippets would mis-label every row."
+  },
+  "g4": {
+    "grid": {
+      "weight_step": 0.25,
+      "partial_thresholds": [
+        0.3,
+        0.35,
+        0.4,
+        0.45,
+        0.5
+      ],
+      "strong_thresholds": [
+        0.55,
+        0.6,
+        0.65,
+        0.7,
+        0.75
+      ],
+      "production": {
+        "weights": {
+          "tfidf": 0.25,
+          "bm25_norm": 0.25,
+          "semantic": 0.5
+        },
+        "partial_threshold": 0.4,
+        "strong_threshold": 0.65
+      },
+      "tie_break": "higher tune QWK, then smaller L1 distance to production"
+    },
+    "adoption_test": {
+      "evaluable": false,
+      "tune_split": "primary-30",
+      "confirm_split": "holdout-30",
+      "n_tune": 7,
+      "n_confirm": 10,
+      "selected": null,
+      "improvement": null,
+      "adopt": false,
+      "reason": "Need at least 8 consensus items on each split."
+    },
+    "reverse_sensitivity": {
+      "evaluable": false,
+      "tune_split": "holdout-30",
+      "confirm_split": "primary-30",
+      "n_tune": 10,
+      "n_confirm": 7,
+      "selected": null,
+      "improvement": null,
+      "adopt": false,
+      "reason": "Need at least 8 consensus items on each split.",
+      "role": "sensitivity_not_an_adoption_test"
+    },
+    "adopt_recalibration": false
+  },
+  "aqg_implication": "Round 2 does not interpret G1. The five annotators' main-set quadratic kappa still has a 95% interval covering 0. The adjudicated calibration labels cover the 10 shared items only. The hybrid gap matrix stays an implemented, unvalidated component. Production weights 0.25/0.25/0.50 and thresholds 0.65/0.40/0.20 stay.",
+  "note": "Consensus drops items the two assigned annotators did not agree on, unless adjudicated.csv resolves them. G4 adoption uses primary-30 to choose a configuration and holdout-30 to test it.",
+  "seed": 42,
+  "bootstrap_resamples": 2000,
+  "analysis_round": "round2_gate_on_unchanged_human_labels",
+  "g1_interpretation": {
+    "rule": "Interpret G1 only when the inter-annotator quadratic-weighted kappa on the main pairs has a bootstrap 95% CI entirely above 0. This gate is separate from the round-1 G1 calculation.",
+    "interpreted": false,
+    "kappa_quadratic": {
+      "value": -0.032786885245901676,
+      "ci_low": -0.3174831363120283,
+      "ci_high": 0.25396825396825384,
+      "n": 47
+    },
+    "reason": "Main-pair quadratic kappa has a 95% interval that covers 0 or is undefined. G1 is not interpreted. The hybrid-gap component stays implemented and unvalidated. Calibration items c001\u2013c010 have an adjudicated label. The 30 main disagreements do not."
+  }
+}

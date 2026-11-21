@@ -2,8 +2,11 @@
 
 from __future__ import annotations
 
+import csv
 from pathlib import Path
 from typing import Any
+
+from collections import Counter
 
 import numpy as np
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
@@ -122,6 +125,9 @@ def run_phase2(
     blind = load_json(pack / "items_blind.json")
     main_ids = [it["item_id"] for it in blind["items"]]
     cal_ids = [it["item_id"] for it in (blind.get("calibration") or [])]
+    blind_rows = list(blind.get("items") or []) + list(blind.get("calibration") or [])
+    req_text = {it["item_id"]: it.get("requirement_text") or "" for it in blind_rows}
+    cv_text = {it["item_id"]: it.get("cv_text") or "" for it in blind_rows}
     maps = {name: {r["item_id"]: r for r in rows} for name, rows in rows_by.items()}
     adj_map = {r["item_id"]: r for r in (adj_rows or [])}
     dual = len(maps) > 1 or assignment is not None
@@ -181,7 +187,8 @@ def run_phase2(
                 "system_label": k["system_label"],
                 "snippet": snippet,
                 "evidence_string": k.get("evidence_string") or "",
-                "requirement_text": None,
+                "requirement_text": req_text.get(iid, ""),
+                "requirement_in_cv": _phrase_in_cv(req_text.get(iid, ""), cv_text.get(iid, "")),
             }
         )
 
@@ -213,41 +220,229 @@ def run_phase2(
     }
 
     false_gap = [it for it in usable if it["system3"] == 0 and it["consensus"] >= 1]
+    from app.services.gold_set.hypotheses import (
+        aqg_implication,
+        evaluate_hypotheses,
+        g1_may_be_interpreted,
+        render_report,
+    )
+
+    hypotheses = evaluate_hypotheses(usable)
     payload = {
         "status": "completed",
         "git_commit": git_commit_hash(),
         "library_versions": library_versions(),
         "n_main": len(main_ids),
+        "n_assigned_main": len(items),
         "n_usable_consensus": len(usable),
+        "consensus_disposition": dict(Counter(it["how"] for it in items)),
+        "annotator_vs_system": _annotator_vs_system(maps, key, main_ids),
+        "label_margins_main": _label_margins(maps, main_ids),
         "cannot_judge_rate_by_annotator": {
             name: _cj_rate(amap, main_ids) for name, amap in maps.items()
         },
         "agreement_main": agr(main_ids, all_annotator_pairs=False),
         "agreement_calibration": agr(cal_ids, all_annotator_pairs=True),
+        "calibration_adjudication": _calibration_adjudication(pack, maps, key, cal_ids),
         "single_annotator": not dual,
         "n_annotators": len(maps),
         "system_vs_human": splits,
         "false_gap_n": len(false_gap),
         "false_gap_rate": (len(false_gap) / len(usable)) if usable else None,
-        "note": "Signal AUC, recalibration, and figures are produced by the same stage when n is sufficient.",
+        "g1": hypotheses["g1"],
+        "g2": hypotheses["g2"],
+        "g3": hypotheses["g3"],
+        "g4": hypotheses["g4"],
+        "aqg_implication": aqg_implication(hypotheses),
+        "note": (
+            "Consensus drops items the two assigned annotators did not agree on, "
+            "unless adjudicated.csv resolves them. G4 adoption uses primary-30 to "
+            "choose a configuration and holdout-30 to test it."
+        ),
         "seed": STATS_SEED,
         "bootstrap_resamples": BOOTSTRAP,
     }
+    kappa_q = payload["agreement_main"].get("kappa_quadratic") or {}
+    interpreted = g1_may_be_interpreted(kappa_q)
+    payload["analysis_round"] = "round2_gate_on_unchanged_human_labels"
+    payload["g1_interpretation"] = {
+        "rule": (
+            "Interpret G1 only when the inter-annotator quadratic-weighted kappa "
+            "on the main pairs has a bootstrap 95% CI entirely above 0. "
+            "This gate is separate from the round-1 G1 calculation."
+        ),
+        "interpreted": interpreted,
+        "kappa_quadratic": kappa_q,
+        "reason": (
+            "Main-pair quadratic kappa has a 95% CI entirely above 0, so G1 may be read."
+            if interpreted
+            else (
+                "Main-pair quadratic kappa has a 95% interval that covers 0 or is undefined. "
+                "G1 is not interpreted. The hybrid-gap component stays implemented and unvalidated. "
+                "Calibration items c001–c010 have an adjudicated label. "
+                "The 30 main disagreements do not."
+            )
+        ),
+    }
+    if not interpreted:
+        payload["aqg_implication"] = (
+            "Round 2 does not interpret G1. The five annotators' main-set quadratic kappa "
+            "still has a 95% interval covering 0. The adjudicated calibration labels "
+            "cover the 10 shared items only. The hybrid gap matrix stays an implemented, "
+            "unvalidated component. Production weights 0.25/0.25/0.50 and thresholds "
+            "0.65/0.40/0.20 stay."
+        )
     out = root / "experiments/results" / "gold_set_analysis"
     out.mkdir(parents=True, exist_ok=True)
     write_json(out / "summary.json", payload)
+    write_json(out / "consensus_items.json", items)
+    from app.services.gold_set.figures import write_gold_figures
+
+    write_gold_figures(root / "docs/figures", payload)
     report = root / "docs/gold_set_report.md"
-    report.write_text(
-        "# Gold-set report\n\n"
-        "Frozen hypotheses: see `docs/gold_set_protocol.md` (G1–G4).\n\n"
-        f"Usable consensus items: {len(usable)} / {len(main_ids)}.\n\n"
-        f"False-gap count (system gap & human ≥ 1): {len(false_gap)} "
-        f"(rate {payload['false_gap_rate']}).\n\n"
-        "G4 adoption was not evaluated in this compact write-path if recalibration tables "
-        "are absent from summary.json.\n",
-        encoding="utf-8",
-    )
+    report.write_text(render_report(payload), encoding="utf-8")
     return payload
+
+
+def _phrase_in_cv(requirement: str, cv: str) -> bool:
+    phrase = " ".join(requirement.split()).casefold()
+    if len(phrase) < 2:
+        return False
+    return phrase in " ".join(cv.split()).casefold()
+
+
+def _calibration_adjudication(
+    pack: Path,
+    maps: dict[str, dict[str, dict]],
+    key: dict[str, dict],
+    cal_ids: list[str],
+) -> dict[str, Any] | None:
+    """Post-discussion labels for the 10 shared items. Not a main-set consensus."""
+    path = pack / "annotations" / "adjudicated_calibration.csv"
+    if not path.is_file():
+        return None
+    with path.open(encoding="utf-8", newline="") as fh:
+        rows = list(csv.DictReader(fh))
+    labels: dict[str, int] = {}
+    for row in rows:
+        iid = str(row.get("item_id") or "").strip()
+        lab, cj = _parse_label(row)
+        if cj or lab is None:
+            raise RuntimeError(f"{path} has no usable label for {iid or '(blank)'}")
+        labels[iid] = lab
+    missing = [iid for iid in cal_ids if iid not in labels]
+    extra = [iid for iid in labels if iid not in set(cal_ids)]
+    if missing or extra:
+        raise RuntimeError(
+            f"{path} must contain exactly the calibration items. "
+            f"Missing {missing}. Extra {extra}."
+        )
+    per_annotator: dict[str, Any] = {}
+    pooled_human: list[int] = []
+    pooled_key: list[int] = []
+    for name, amap in maps.items():
+        human: list[int] = []
+        gold: list[int] = []
+        for iid in cal_ids:
+            row = amap.get(iid)
+            if row is None:
+                continue
+            lab, cj = _parse_label(row)
+            if cj or lab is None:
+                continue
+            human.append(lab)
+            gold.append(labels[iid])
+        yh = np.asarray(human, dtype=int)
+        yg = np.asarray(gold, dtype=int)
+        per_annotator[name] = {
+            "n": int(yh.size),
+            "n_match": int(np.sum(yh == yg)) if yh.size else 0,
+            "percent_agreement": percent_agreement(yh, yg),
+            "qwk": quadratic_weighted_kappa(yh, yg) if yh.size else None,
+        }
+        pooled_human.extend(human)
+        pooled_key.extend(gold)
+    yh = np.asarray(pooled_human, dtype=int)
+    yg = np.asarray(pooled_key, dtype=int)
+    system = np.asarray([SYS3.get(key[iid]["system_label"], 0) for iid in cal_ids], dtype=int)
+    adjudicated = np.asarray([labels[iid] for iid in cal_ids], dtype=int)
+    return {
+        "source": str(path.relative_to(pack.parents[1])),
+        "n": len(cal_ids),
+        "labels": {iid: labels[iid] for iid in cal_ids},
+        "annotator_vs_adjudicated": per_annotator,
+        "pooled_independent_vs_adjudicated": {
+            "n": int(yh.size),
+            "percent_agreement": percent_agreement(yh, yg),
+            "qwk": bootstrap_metric_ci(
+                yh,
+                yg,
+                quadratic_weighted_kappa,
+                n_resamples=BOOTSTRAP,
+                seed=STATS_SEED + 7,
+            ),
+        },
+        "system_vs_adjudicated": {
+            "n": int(adjudicated.size),
+            "accuracy": float(np.mean(system == adjudicated)),
+            "qwk": quadratic_weighted_kappa(adjudicated, system),
+            "confusion": confusion_matrix(adjudicated, system, labels=[0, 1, 2]).tolist(),
+            "role": "Descriptive check on the 10 calibration items. Not G1.",
+        },
+    }
+
+
+def _label_margins(maps: dict[str, dict[str, dict]], main_ids: list[str]) -> dict[str, dict[str, int]]:
+    margins: dict[str, dict[str, int]] = {}
+    for name, amap in maps.items():
+        counts: Counter[str] = Counter()
+        for iid in main_ids:
+            row = amap.get(iid)
+            if row is None:
+                continue
+            lab, cj = _parse_label(row)
+            if cj or lab is None:
+                counts["cannot_judge"] += 1
+            else:
+                counts[str(lab)] += 1
+        margins[name] = dict(counts)
+    return margins
+
+
+def _annotator_vs_system(
+    maps: dict[str, dict[str, dict]],
+    key: dict[str, dict],
+    main_ids: list[str],
+) -> dict[str, Any]:
+    """Sensitivity: each annotator's own labels, including items the pair disagreed on."""
+    out: dict[str, Any] = {}
+    for name, amap in maps.items():
+        human: list[int] = []
+        system: list[int] = []
+        for iid in main_ids:
+            row = amap.get(iid)
+            if row is None or iid not in key:
+                continue
+            lab, cj = _parse_label(row)
+            if cj or lab is None:
+                continue
+            human.append(lab)
+            system.append(SYS3.get(key[iid]["system_label"], 0))
+        yh = np.asarray(human, dtype=int)
+        ys = np.asarray(system, dtype=int)
+        out[name] = {
+            "n": int(yh.size),
+            "qwk": bootstrap_metric_ci(
+                yh,
+                ys,
+                quadratic_weighted_kappa,
+                n_resamples=BOOTSTRAP,
+                seed=STATS_SEED,
+            )
+            if yh.size
+            else {"value": None, "ci_low": None, "ci_high": None, "n": 0},
+        }
+    return out
 
 
 def _cj_rate(amap: dict, ids: list[str]) -> float | None:

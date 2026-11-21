@@ -1,0 +1,17 @@
+{
+  "status": "stopped",
+  "label": "post-hoc",
+  "prereg_commit": "717dabde3215401b976d7f1c24b3e1e17d10303b",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "n_pools": 30,
+  "n_cached_similarity_files": 0,
+  "cache_dirs_checked": [
+    "experiments/results/exp_20261011T130619Z/similarity",
+    "experiments/results/exp_20261011T130619Z/embeddings",
+    "experiments/adaptive_selection_replay/similarity"
+  ],
+  "llm_calls": 0,
+  "embeddings_computed": 0,
+  "tprime_metrics": null,
+  "reason": "T-prime uses the weighted-MMR score, which needs a stored cosine similarity matrix per pool. Those matrices are not on disk. No embedding was computed and no T-prime number was produced."
+}
