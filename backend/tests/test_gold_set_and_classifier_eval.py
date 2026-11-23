@@ -68,6 +68,42 @@ def test_gold_sampler_deterministic_and_constraints():
         assert x["inclusion_probability"] == pytest.approx(n / N)
 
 
+def test_adjudication_html_hides_system_labels_and_exports_agreed_csv():
+    from app.services.gold_set.adjudication_app import render_adjudication_html
+
+    html = render_adjudication_html(
+        [
+            {
+                "item_id": "g003",
+                "requirement_text": "Oral and written communication",
+                "cv_text": "Led client workshops",
+                "jd_text": "Need communication skills",
+                "annotator_1": "annotator_A",
+                "label_1": "2",
+                "notes_1": "",
+                "annotator_2": "annotator_B",
+                "label_2": "1",
+                "notes_2": "adjacent only",
+                "requirement_phrase_in_cv": False,
+                "system_label": "strong_match",
+                "combined": 0.91,
+            }
+        ],
+        [{"item_id": "c001", "requirement_text": "Amazon DynamoDB", "label": "1"}],
+    )
+    assert "adjudicated.csv" in html
+    assert "g003" in html
+    assert '"annotator_1": "A"' in html
+    assert '"label_1": "2"' in html
+    assert '"label_2": "1"' in html
+    assert "adjacent only" in html
+    assert "annotator_A" not in html
+    assert "strong_match" not in html
+    assert "0.91" not in html
+    assert "c001" in html
+    assert "Amazon DynamoDB" in html
+
+
 def test_annotator_html_has_structured_workspace():
     html = render_annotator_html(
         [

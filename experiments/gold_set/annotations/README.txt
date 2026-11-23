@@ -7,4 +7,8 @@ Place completed files here (one per annotator, assigned items only):
   adjudicated.csv  (optional; disagreements on dual-coded main items)
 Columns: item_id,label,cannot_judge,snippet,notes
 label in {0,1,2}; cannot_judge true/false.
+Two adjudicators fill the 30 open main disagreements in
+  experiments/gold_set/round2/adjudication_app.html
+Export writes adjudicated.csv. A row is included only when both choices match.
+Place that file here. The page does not show system scores.
 Cap: 5 annotators, 30 CV/JD pairs each (10 calibration + 20 assigned main items).
