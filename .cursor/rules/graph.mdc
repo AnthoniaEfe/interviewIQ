@@ -1,0 +1,14 @@
+---
+description: Graph/chart images are opt-in only — never generate unless explicitly requested
+alwaysApply: true
+---
+
+# Graph generation (opt-in only)
+
+Do **not** generate graph, chart, plot, or diagram images by default.
+
+- Never call image-generation tools (e.g. GenerateImage) for graphs/charts unless the user explicitly asks for a graph, chart, plot, or diagram.
+- Never invent or proactively offer graph images in reports, analyses, or summaries.
+- Text, tables, and Mermaid (when useful for structure) are fine without a graph request; raster/PNG graph images are not.
+- Phrases that count as an explicit request: "graph", "chart", "plot", "diagram", "visualize", "draw a graph", or similar.
+- If the user did not ask for a graph, answer with text/tables only — no graph image.

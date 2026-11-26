@@ -1,0 +1,33 @@
+---
+description: Always update docs/report.md after every successful experiment or pipeline run
+alwaysApply: true
+---
+
+# Report update after successful runs
+
+After every **successful** experiment, pipeline, evaluation, or research run that produces new results or changes project status, update [`docs/report.md`](docs/report.md) in the same session.
+
+## When to update
+
+Update when a run completes successfully and yields durable artifacts or decisions, for example:
+
+- Experiment / stage scripts under `experiments/`
+- Backend research services (gap, generation, MMR, metrics, fit-label, gold-set, treatment pilot, etc.)
+- Scale / gate / freeze decisions
+- Human-eval or gold-set analysis that changes evidence status
+
+Do **not** update for failed, aborted, dry-run, or no-op runs, or for unrelated code edits with no new results.
+
+## What to write
+
+Keep the report's voice: evidence-based, numbers from stored artifacts only (no invented metrics). Prefer editing existing sections over adding noise.
+
+1. Refresh the header **Date** (and HEAD / branch if the report cites them) when the update is material.
+2. Fold new findings into the relevant sections (verdict, results, maturity tables, suggested sequence, key paths) — do not leave progress only in chat.
+3. Record: what ran, artifact paths (`experiments/results/…`, `docs/…`), key numbers from `summary.json` or equivalent, and how the thesis / next-step status changed.
+4. If the run is a null, negative, or DIAGNOSE outcome, document it plainly; do not soft-pedal.
+5. Add new durable paths to **§10 Key paths** when they matter for future work.
+
+## After updating
+
+Briefly tell the user that `docs/report.md` was updated and what changed (one or two sentences).
