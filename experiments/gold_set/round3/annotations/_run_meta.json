@@ -1,0 +1,34 @@
+{
+  "round": 3,
+  "git_commit": "07082d9c5c3aab41198fe38a1190a4c8fcbb4424",
+  "annotators": {
+    "annotator_P1": {
+      "model_task": "classification",
+      "seed": 20261126,
+      "persona": "You are Annotator P1. Be strict: upgrade to met (2) only when the CV clearly shows the named requirement. Prefer partial or not evidenced when unsure. Use cannot_judge for vague soft requirements."
+    },
+    "annotator_P2": {
+      "model_task": "profile_analysis",
+      "seed": 20261127,
+      "persona": "You are Annotator P2. Apply the worked rule carefully. Related skills are partial (1), never met. Absence is 0. Vague attitude/culture phrases without a clear evidence standard are cannot_judge."
+    }
+  },
+  "include_calibration": false,
+  "summaries": [
+    {
+      "annotator": "annotator_P1",
+      "n_done": 50,
+      "n_target": 50,
+      "errors": [],
+      "path": "/root/interviewIQ/experiments/gold_set/round3/annotations/annotator_P1.csv"
+    },
+    {
+      "annotator": "annotator_P2",
+      "n_done": 50,
+      "n_target": 50,
+      "errors": [],
+      "path": "/root/interviewIQ/experiments/gold_set/round3/annotations/annotator_P2.csv"
+    }
+  ],
+  "integrity": "LLM dual coding under worked_rule_brief.md. Does not replace human round 1\u20132 unless humans replicate."
+}

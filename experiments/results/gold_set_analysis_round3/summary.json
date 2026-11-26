@@ -1,0 +1,1177 @@
+{
+  "status": "completed",
+  "git_commit": "07082d9c5c3aab41198fe38a1190a4c8fcbb4424",
+  "library_versions": {
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.15.0",
+    "sentence-transformers": "6.3.0",
+    "rank-bm25": "0.2.2"
+  },
+  "n_main": 150,
+  "n_assigned_main": 50,
+  "n_usable_consensus": 40,
+  "consensus_disposition": {
+    "agree": 40,
+    "disagree": 8,
+    "cannot_judge": 2
+  },
+  "annotator_vs_system": {
+    "annotator_P1": {
+      "n": 48,
+      "qwk": {
+        "value": 0.601063829787234,
+        "ci_low": 0.4303189485165313,
+        "ci_high": 0.7352941176470589,
+        "n": 48
+      }
+    },
+    "annotator_P2": {
+      "n": 48,
+      "qwk": {
+        "value": 0.5867346938775511,
+        "ci_low": 0.3999999999999999,
+        "ci_high": 0.7338262476894639,
+        "n": 48
+      }
+    }
+  },
+  "label_margins_main": {
+    "annotator_P1": {
+      "2": 15,
+      "1": 23,
+      "0": 10,
+      "cannot_judge": 2
+    },
+    "annotator_P2": {
+      "2": 17,
+      "1": 21,
+      "0": 10,
+      "cannot_judge": 2
+    }
+  },
+  "cannot_judge_rate_by_annotator": {
+    "annotator_P1": 0.04,
+    "annotator_P2": 0.04
+  },
+  "agreement_main": {
+    "n": 48,
+    "percent_agreement": 0.8333333333333334,
+    "kappa_unweighted": {
+      "value": 0.7380627557980901,
+      "ci_low": 0.5565015094259959,
+      "ci_high": 0.8924182579514742,
+      "n": 48
+    },
+    "kappa_quadratic": {
+      "value": 0.841714756801319,
+      "ci_low": 0.7124160623153372,
+      "ci_high": 0.9350436652340075,
+      "n": 48
+    },
+    "confusion": [
+      [
+        8,
+        2,
+        0
+      ],
+      [
+        2,
+        18,
+        3
+      ],
+      [
+        0,
+        1,
+        14
+      ]
+    ]
+  },
+  "agreement_calibration": {
+    "n": 0
+  },
+  "calibration_adjudication": {
+    "source": "experiments/gold_set/annotations/adjudicated_calibration.csv",
+    "n": 10,
+    "labels": {
+      "c001": 1,
+      "c002": 1,
+      "c003": 2,
+      "c004": 2,
+      "c005": 0,
+      "c006": 0,
+      "c007": 1,
+      "c008": 0,
+      "c009": 2,
+      "c010": 0
+    },
+    "annotator_vs_adjudicated": {
+      "annotator_P1": {
+        "n": 0,
+        "n_match": 0,
+        "percent_agreement": null,
+        "qwk": null
+      },
+      "annotator_P2": {
+        "n": 0,
+        "n_match": 0,
+        "percent_agreement": null,
+        "qwk": null
+      }
+    },
+    "pooled_independent_vs_adjudicated": {
+      "n": 0,
+      "percent_agreement": null,
+      "qwk": {
+        "value": null,
+        "ci_low": null,
+        "ci_high": null,
+        "n": 0
+      }
+    },
+    "system_vs_adjudicated": {
+      "n": 10,
+      "accuracy": 0.5,
+      "qwk": 0.2857142857142857,
+      "confusion": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      "role": "Descriptive check on the 10 calibration items. Not G1."
+    }
+  },
+  "single_annotator": false,
+  "n_annotators": 2,
+  "system_vs_human": {
+    "pooled": {
+      "n": 40,
+      "accuracy": 0.5,
+      "accuracy_weighted": 0.3617060335332272,
+      "macro_f1": 0.5001763668430335,
+      "qwk": 0.6240601503759399,
+      "confusion": [
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          12,
+          4,
+          2
+        ],
+        [
+          0,
+          3,
+          11
+        ]
+      ],
+      "spearman_score_vs_human": 0.7522326950745128
+    },
+    "primary-30": {
+      "n": 20,
+      "accuracy": 0.45,
+      "accuracy_weighted": 0.23804713804713803,
+      "macro_f1": 0.38055555555555554,
+      "qwk": 0.5736434108527131,
+      "confusion": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          8,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "spearman_score_vs_human": 0.7795276883571836
+    },
+    "holdout-30": {
+      "n": 20,
+      "accuracy": 0.55,
+      "accuracy_weighted": 0.5099569429494081,
+      "macro_f1": 0.5533216783216783,
+      "qwk": 0.6590909090909091,
+      "confusion": [
+        [
+          5,
+          2,
+          0
+        ],
+        [
+          4,
+          2,
+          2
+        ],
+        [
+          0,
+          1,
+          4
+        ]
+      ],
+      "spearman_score_vs_human": 0.7864122248487467
+    }
+  },
+  "false_gap_n": 12,
+  "false_gap_rate": 0.3,
+  "g1": {
+    "pooled": {
+      "n": 40,
+      "qwk": {
+        "value": 0.6240601503759399,
+        "ci_low": 0.4444444444444444,
+        "ci_high": 0.7509752987744538,
+        "n": 40
+      },
+      "qwk_landis_koch_descriptive": "substantial",
+      "spearman": {
+        "rho": 0.7522326950745128,
+        "p_value": 2.187442342745033e-08,
+        "ci_low": 0.5785947929043772,
+        "ci_high": 0.849376834599367
+      },
+      "qwk_beyond_chance": true,
+      "spearman_beyond_chance": true,
+      "supported": true,
+      "production_label_reconstruction_match_rate": 1.0
+    },
+    "primary-30": {
+      "n": 20,
+      "qwk": {
+        "value": 0.5736434108527131,
+        "ci_low": 0.3777083333333333,
+        "ci_high": 0.6981172739102147,
+        "n": 20
+      },
+      "qwk_landis_koch_descriptive": "moderate",
+      "spearman": {
+        "rho": 0.7795276883571836,
+        "p_value": 5.084505078836193e-05,
+        "ci_low": 0.5410350833881404,
+        "ci_high": 0.8689949355178206
+      },
+      "qwk_beyond_chance": true,
+      "spearman_beyond_chance": true,
+      "supported": true,
+      "production_label_reconstruction_match_rate": 1.0
+    },
+    "holdout-30": {
+      "n": 20,
+      "qwk": {
+        "value": 0.6590909090909091,
+        "ci_low": 0.36886366744154253,
+        "ci_high": 0.8376885211562629,
+        "n": 20
+      },
+      "qwk_landis_koch_descriptive": "substantial",
+      "spearman": {
+        "rho": 0.7864122248487467,
+        "p_value": 3.9271039584137784e-05,
+        "ci_low": 0.5200327441112649,
+        "ci_high": 0.919429367857289
+      },
+      "qwk_beyond_chance": true,
+      "spearman_beyond_chance": true,
+      "supported": true,
+      "production_label_reconstruction_match_rate": 1.0
+    },
+    "decision_rule": "Supported only if pooled quadratic-weighted kappa has a bootstrap 95% CI entirely above 0 and Spearman rho of combined score vs human label is positive, two-sided p < 0.05, and its bootstrap 95% CI is entirely above 0."
+  },
+  "g2": {
+    "pooled": {
+      "n": 40,
+      "n_positive": 32,
+      "n_negative": 8,
+      "auc": {
+        "combined": {
+          "value": 0.80859375,
+          "ci_low": 0.6396208708708709,
+          "ci_high": 0.9437409812409812,
+          "n": 40
+        },
+        "tfidf": {
+          "value": 0.79296875,
+          "ci_low": 0.6523151425264884,
+          "ci_high": 0.9093744791666666,
+          "n": 40
+        },
+        "bm25_norm": {
+          "value": 0.68359375,
+          "ci_low": 0.4541839826839827,
+          "ci_high": 0.8906450892857142,
+          "n": 40
+        },
+        "semantic": {
+          "value": 0.82421875,
+          "ci_low": 0.6578888098624941,
+          "ci_high": 0.953125,
+          "n": 40
+        }
+      },
+      "roc": {
+        "combined": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            0.125,
+            0.125,
+            0.375,
+            0.375,
+            0.5,
+            0.5,
+            0.75,
+            0.75,
+            1.0,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.03125,
+            0.5625,
+            0.5625,
+            0.625,
+            0.625,
+            0.84375,
+            0.84375,
+            0.9375,
+            0.9375,
+            0.96875,
+            0.96875,
+            1.0
+          ]
+        },
+        "tfidf": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            0.125,
+            0.125,
+            0.25,
+            0.25,
+            0.375,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.03125,
+            0.5625,
+            0.5625,
+            0.65625,
+            0.65625,
+            0.75,
+            0.75,
+            1.0
+          ]
+        },
+        "bm25_norm": {
+          "fpr": [
+            0.0,
+            0.25,
+            0.25,
+            0.375,
+            0.375,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.40625,
+            0.6875,
+            0.6875,
+            0.75,
+            1.0
+          ]
+        },
+        "semantic": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.125,
+            0.125,
+            0.25,
+            0.25,
+            0.375,
+            0.375,
+            0.625,
+            0.625,
+            1.0,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.03125,
+            0.0625,
+            0.1875,
+            0.53125,
+            0.53125,
+            0.65625,
+            0.65625,
+            0.78125,
+            0.78125,
+            0.90625,
+            0.90625,
+            0.9375,
+            0.9375,
+            1.0
+          ]
+        }
+      },
+      "hybrid_separates": true,
+      "hybrid_beats": {
+        "tfidf": {
+          "delta_auc": 0.015625,
+          "ci_low": -0.06864336643748417,
+          "ci_high": 0.09836417748917747,
+          "beats": false
+        },
+        "bm25_norm": {
+          "delta_auc": 0.125,
+          "ci_low": 0.0,
+          "ci_high": 0.2604538690476188,
+          "beats": false
+        },
+        "semantic": {
+          "delta_auc": -0.015625,
+          "ci_low": -0.1362266185035842,
+          "ci_high": 0.0800178571428572,
+          "beats": false
+        }
+      }
+    },
+    "primary-30": {
+      "n": 20,
+      "n_positive": 19,
+      "n_negative": 1,
+      "auc": {
+        "combined": {
+          "value": 0.5789473684210527,
+          "ci_low": 0.35294117647058826,
+          "ci_high": 0.7894736842105263,
+          "n": 20
+        },
+        "tfidf": {
+          "value": 0.6842105263157895,
+          "ci_low": 0.47368421052631576,
+          "ci_high": 0.8888888888888888,
+          "n": 20
+        },
+        "bm25_norm": {
+          "value": 0.5789473684210527,
+          "ci_low": 0.3333333333333333,
+          "ci_high": 0.7894736842105263,
+          "n": 20
+        },
+        "semantic": {
+          "value": 0.47368421052631576,
+          "ci_low": 0.2631578947368421,
+          "ci_high": 0.7222222222222222,
+          "n": 20
+        }
+      },
+      "roc": {
+        "combined": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.05263157894736842,
+            0.5789473684210527,
+            0.5789473684210527,
+            1.0
+          ]
+        },
+        "tfidf": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.05263157894736842,
+            0.6842105263157895,
+            0.6842105263157895,
+            1.0
+          ]
+        },
+        "bm25_norm": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.3684210526315789,
+            0.5789473684210527,
+            0.5789473684210527,
+            0.6842105263157895,
+            1.0
+          ]
+        },
+        "semantic": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.05263157894736842,
+            0.15789473684210525,
+            0.47368421052631576,
+            0.47368421052631576,
+            1.0
+          ]
+        }
+      },
+      "hybrid_separates": false,
+      "hybrid_beats": {
+        "tfidf": {
+          "delta_auc": -0.10526315789473684,
+          "ci_low": -0.26315789473684215,
+          "ci_high": 0.0,
+          "beats": false
+        },
+        "bm25_norm": {
+          "delta_auc": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "beats": false
+        },
+        "semantic": {
+          "delta_auc": 0.10526315789473689,
+          "ci_low": 0.0,
+          "ci_high": 0.26315789473684215,
+          "beats": false
+        }
+      }
+    },
+    "holdout-30": {
+      "n": 20,
+      "n_positive": 13,
+      "n_negative": 7,
+      "auc": {
+        "combined": {
+          "value": 0.8901098901098901,
+          "ci_low": 0.7083333333333334,
+          "ci_high": 1.0,
+          "n": 20
+        },
+        "tfidf": {
+          "value": 0.8571428571428572,
+          "ci_low": 0.6767602495543671,
+          "ci_high": 0.9895833333333333,
+          "n": 20
+        },
+        "bm25_norm": {
+          "value": 0.7252747252747254,
+          "ci_low": 0.4333333333333333,
+          "ci_high": 0.9666666666666667,
+          "n": 20
+        },
+        "semantic": {
+          "value": 0.8681318681318683,
+          "ci_low": 0.6666666666666667,
+          "ci_high": 1.0,
+          "n": 20
+        }
+      },
+      "roc": {
+        "combined": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.2857142857142857,
+            0.2857142857142857,
+            0.42857142857142855,
+            0.42857142857142855,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.07692307692307693,
+            0.6153846153846154,
+            0.6153846153846154,
+            0.6923076923076923,
+            0.6923076923076923,
+            0.9230769230769231,
+            0.9230769230769231,
+            1.0,
+            1.0
+          ]
+        },
+        "tfidf": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.2857142857142857,
+            0.2857142857142857,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.07692307692307693,
+            0.6153846153846154,
+            0.6153846153846154,
+            0.7692307692307693,
+            0.7692307692307693,
+            0.8461538461538461,
+            1.0
+          ]
+        },
+        "bm25_norm": {
+          "fpr": [
+            0.0,
+            0.2857142857142857,
+            0.2857142857142857,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.46153846153846156,
+            0.8461538461538461,
+            1.0
+          ]
+        },
+        "semantic": {
+          "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.2857142857142857,
+            0.2857142857142857,
+            1.0,
+            1.0
+          ],
+          "tpr": [
+            0.0,
+            0.07692307692307693,
+            0.23076923076923078,
+            0.6923076923076923,
+            0.6923076923076923,
+            0.7692307692307693,
+            0.7692307692307693,
+            0.9230769230769231,
+            0.9230769230769231,
+            1.0
+          ]
+        }
+      },
+      "hybrid_separates": true,
+      "hybrid_beats": {
+        "tfidf": {
+          "delta_auc": 0.03296703296703285,
+          "ci_low": -0.09090909090909094,
+          "ci_high": 0.1428571428571428,
+          "beats": false
+        },
+        "bm25_norm": {
+          "delta_auc": 0.1648351648351647,
+          "ci_low": 0.025246212121212173,
+          "ci_high": 0.33333333333333337,
+          "beats": true
+        },
+        "semantic": {
+          "delta_auc": 0.02197802197802179,
+          "ci_low": -0.1200000000000001,
+          "ci_high": 0.203125,
+          "beats": false
+        }
+      }
+    },
+    "decision_rule": "Combined score separates met/partial from not-evidenced when its ROC AUC bootstrap 95% CI lies entirely above 0.5. It beats a single signal when the paired AUC difference CI lies entirely above 0."
+  },
+  "g3": {
+    "pooled": {
+      "n_usable": 40,
+      "n_system_gap": 17,
+      "false_gap_n": 12,
+      "false_gap_rate_among_usable": 0.3,
+      "false_gap_rate_among_system_gaps": 0.7058823529411765,
+      "cause_evidence_not_extracted": 0,
+      "cause_matched_but_scored_low": 12,
+      "false_gap_requirement_phrase_in_cv": 0,
+      "missed_gap_n": 3,
+      "missed_gap_rate_among_usable": 0.075,
+      "examples": [
+        {
+          "item_id": "g043",
+          "split": "primary-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.3704751034237888,
+          "tfidf": 0.05546587258605365,
+          "bm25_norm": 0.2758430484562085,
+          "semantic": 0.5752957463264465,
+          "evidence_string": "Data entry",
+          "requirement_text": "Master data management"
+        },
+        {
+          "item_id": "g044",
+          "split": "primary-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.20728324353694916,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.4145664870738983,
+          "evidence_string": "Java 8",
+          "requirement_text": "Bootstrap"
+        },
+        {
+          "item_id": "g050",
+          "split": "primary-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.2237459272146225,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.447491854429245,
+          "evidence_string": "Microsoft Office",
+          "requirement_text": "Customer service"
+        },
+        {
+          "item_id": "g055",
+          "split": "primary-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.30825838446617126,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.6165167689323425,
+          "evidence_string": "Java",
+          "requirement_text": "Node.js"
+        },
+        {
+          "item_id": "g056",
+          "split": "primary-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.2703288537687614,
+          "tfidf": 0.019036693451321408,
+          "bm25_norm": 0.15961733847171614,
+          "semantic": 0.45133069157600403,
+          "evidence_string": "Collaborated with an agile development team to build a Java annotation-based framework for writing and orchestrating test libraries for RESTful API services.",
+          "requirement_text": "Build automation"
+        },
+        {
+          "item_id": "g061",
+          "split": "primary-30",
+          "system_label": "missing",
+          "human": 1,
+          "combined": 0.12945061922073364,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.2589012384414673,
+          "evidence_string": "Functional Testing",
+          "requirement_text": "MongoDB"
+        },
+        {
+          "item_id": "g064",
+          "split": "primary-30",
+          "system_label": "missing",
+          "human": 1,
+          "combined": 0.17799264192581177,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.35598528385162354,
+          "evidence_string": "Python",
+          "requirement_text": "Software testing"
+        },
+        {
+          "item_id": "g067",
+          "split": "primary-30",
+          "system_label": "missing",
+          "human": 1,
+          "combined": 0.1673138439655304,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.3346276879310608,
+          "evidence_string": "Java",
+          "requirement_text": "React"
+        },
+        {
+          "item_id": "g119",
+          "split": "holdout-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.2038809359073639,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.4077618718147278,
+          "evidence_string": "AutoCAD",
+          "requirement_text": "Schematic capture"
+        },
+        {
+          "item_id": "g123",
+          "split": "holdout-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.34773411347762584,
+          "tfidf": 0.03538163480344764,
+          "bm25_norm": 0.5,
+          "semantic": 0.42777740955352783,
+          "evidence_string": "Word processing",
+          "requirement_text": "Payment processing systems"
+        },
+        {
+          "item_id": "g130",
+          "split": "holdout-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.26281168665835564,
+          "tfidf": 0.1560315781003296,
+          "bm25_norm": 0.3936982303235593,
+          "semantic": 0.25075846910476685,
+          "evidence_string": "Served as data lead for multiple development projects.",
+          "requirement_text": "Java and Spring REST API development"
+        },
+        {
+          "item_id": "g131",
+          "split": "holdout-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.2772407829761505,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.554481565952301,
+          "evidence_string": "Requirements Analysis",
+          "requirement_text": "Data mining"
+        }
+      ]
+    },
+    "primary-30": {
+      "n_usable": 20,
+      "n_system_gap": 8,
+      "false_gap_n": 8,
+      "false_gap_rate_among_usable": 0.4,
+      "false_gap_rate_among_system_gaps": 1.0,
+      "cause_evidence_not_extracted": 0,
+      "cause_matched_but_scored_low": 8,
+      "false_gap_requirement_phrase_in_cv": 0,
+      "missed_gap_n": 1,
+      "missed_gap_rate_among_usable": 0.05,
+      "examples": [
+        {
+          "item_id": "g043",
+          "split": "primary-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.3704751034237888,
+          "tfidf": 0.05546587258605365,
+          "bm25_norm": 0.2758430484562085,
+          "semantic": 0.5752957463264465,
+          "evidence_string": "Data entry",
+          "requirement_text": "Master data management"
+        },
+        {
+          "item_id": "g044",
+          "split": "primary-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.20728324353694916,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.4145664870738983,
+          "evidence_string": "Java 8",
+          "requirement_text": "Bootstrap"
+        },
+        {
+          "item_id": "g050",
+          "split": "primary-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.2237459272146225,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.447491854429245,
+          "evidence_string": "Microsoft Office",
+          "requirement_text": "Customer service"
+        },
+        {
+          "item_id": "g055",
+          "split": "primary-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.30825838446617126,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.6165167689323425,
+          "evidence_string": "Java",
+          "requirement_text": "Node.js"
+        },
+        {
+          "item_id": "g056",
+          "split": "primary-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.2703288537687614,
+          "tfidf": 0.019036693451321408,
+          "bm25_norm": 0.15961733847171614,
+          "semantic": 0.45133069157600403,
+          "evidence_string": "Collaborated with an agile development team to build a Java annotation-based framework for writing and orchestrating test libraries for RESTful API services.",
+          "requirement_text": "Build automation"
+        },
+        {
+          "item_id": "g061",
+          "split": "primary-30",
+          "system_label": "missing",
+          "human": 1,
+          "combined": 0.12945061922073364,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.2589012384414673,
+          "evidence_string": "Functional Testing",
+          "requirement_text": "MongoDB"
+        },
+        {
+          "item_id": "g064",
+          "split": "primary-30",
+          "system_label": "missing",
+          "human": 1,
+          "combined": 0.17799264192581177,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.35598528385162354,
+          "evidence_string": "Python",
+          "requirement_text": "Software testing"
+        },
+        {
+          "item_id": "g067",
+          "split": "primary-30",
+          "system_label": "missing",
+          "human": 1,
+          "combined": 0.1673138439655304,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.3346276879310608,
+          "evidence_string": "Java",
+          "requirement_text": "React"
+        }
+      ]
+    },
+    "holdout-30": {
+      "n_usable": 20,
+      "n_system_gap": 9,
+      "false_gap_n": 4,
+      "false_gap_rate_among_usable": 0.2,
+      "false_gap_rate_among_system_gaps": 0.4444444444444444,
+      "cause_evidence_not_extracted": 0,
+      "cause_matched_but_scored_low": 4,
+      "false_gap_requirement_phrase_in_cv": 0,
+      "missed_gap_n": 2,
+      "missed_gap_rate_among_usable": 0.1,
+      "examples": [
+        {
+          "item_id": "g119",
+          "split": "holdout-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.2038809359073639,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.4077618718147278,
+          "evidence_string": "AutoCAD",
+          "requirement_text": "Schematic capture"
+        },
+        {
+          "item_id": "g123",
+          "split": "holdout-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.34773411347762584,
+          "tfidf": 0.03538163480344764,
+          "bm25_norm": 0.5,
+          "semantic": 0.42777740955352783,
+          "evidence_string": "Word processing",
+          "requirement_text": "Payment processing systems"
+        },
+        {
+          "item_id": "g130",
+          "split": "holdout-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.26281168665835564,
+          "tfidf": 0.1560315781003296,
+          "bm25_norm": 0.3936982303235593,
+          "semantic": 0.25075846910476685,
+          "evidence_string": "Served as data lead for multiple development projects.",
+          "requirement_text": "Java and Spring REST API development"
+        },
+        {
+          "item_id": "g131",
+          "split": "holdout-30",
+          "system_label": "weak_match",
+          "human": 1,
+          "combined": 0.2772407829761505,
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 0.554481565952301,
+          "evidence_string": "Requirements Analysis",
+          "requirement_text": "Data mining"
+        }
+      ]
+    },
+    "cause_rule": "evidence_not_extracted when the stored matched evidence string is empty; matched_but_scored_low otherwise. Annotator snippet fields are not used, because empty snippets would mis-label every row."
+  },
+  "g4": {
+    "grid": {
+      "weight_step": 0.25,
+      "partial_thresholds": [
+        0.3,
+        0.35,
+        0.4,
+        0.45,
+        0.5
+      ],
+      "strong_thresholds": [
+        0.55,
+        0.6,
+        0.65,
+        0.7,
+        0.75
+      ],
+      "production": {
+        "weights": {
+          "tfidf": 0.25,
+          "bm25_norm": 0.25,
+          "semantic": 0.5
+        },
+        "partial_threshold": 0.4,
+        "strong_threshold": 0.65
+      },
+      "tie_break": "higher tune QWK, then smaller L1 distance to production"
+    },
+    "adoption_test": {
+      "evaluable": true,
+      "tune_split": "primary-30",
+      "confirm_split": "holdout-30",
+      "n_tune": 20,
+      "n_confirm": 20,
+      "selected": {
+        "weights": {
+          "tfidf": 0.0,
+          "bm25_norm": 0.0,
+          "semantic": 1.0
+        },
+        "partial_threshold": 0.3,
+        "strong_threshold": 0.65,
+        "qwk_tune": 0.7058823529411765,
+        "distance_to_production": 1.1,
+        "on_grid_boundary": true,
+        "n_configs_evaluated": 375,
+        "is_production": false
+      },
+      "improvement": {
+        "value": -0.22512864493996554,
+        "ci_low": -0.3876513469881949,
+        "ci_high": -0.021622343908259848,
+        "n": 20,
+        "qwk_production": 0.6590909090909091,
+        "qwk_candidate": 0.4339622641509435,
+        "n_valid_resamples": 2000
+      },
+      "adopt": false,
+      "reason": "Untouched-split QWK gain CI does not lie entirely above 0. Keep production weights and thresholds."
+    },
+    "reverse_sensitivity": {
+      "evaluable": true,
+      "tune_split": "holdout-30",
+      "confirm_split": "primary-30",
+      "n_tune": 20,
+      "n_confirm": 20,
+      "selected": {
+        "weights": {
+          "tfidf": 0.25,
+          "bm25_norm": 0.0,
+          "semantic": 0.75
+        },
+        "partial_threshold": 0.3,
+        "strong_threshold": 0.65,
+        "qwk_tune": 0.8148148148148149,
+        "distance_to_production": 0.6000000000000001,
+        "on_grid_boundary": true,
+        "n_configs_evaluated": 375,
+        "is_production": false
+      },
+      "improvement": {
+        "value": 0.004669842159335191,
+        "ci_low": -0.21580549465666718,
+        "ci_high": 0.21309472490979325,
+        "n": 20,
+        "qwk_production": 0.5736434108527131,
+        "qwk_candidate": 0.5783132530120483,
+        "n_valid_resamples": 2000
+      },
+      "adopt": false,
+      "reason": "Untouched-split QWK gain CI does not lie entirely above 0. Keep production weights and thresholds.",
+      "role": "sensitivity_not_an_adoption_test"
+    },
+    "adopt_recalibration": false
+  },
+  "aqg_implication": "G1 is supported on the consensus items. Gap labels carry human-aligned signal, so conditioning a question pool on the gap matrix is a defensible personalization step. The hybrid score separates the human binary, but it does not beat every single signal under the CI rule. Keep the hybrid as the production score. Do not claim it dominates TF-IDF, BM25, and semantic similarity. On the consensus subset, 12 of 17 system-gap items were judged met or partial (0 with no stored evidence string, 12 with a stored neighbor). The requirement phrase is a literal substring of the CV in 0 of those false gaps. A stored neighbor that is a different competency, plus an absent phrase, is not the same failure as finding the right evidence and scoring it low. The 6-item count is also not a population rate, because items without rater consensus are excluded. G4 does not adopt a new configuration. Production weights 0.25/0.25/0.50 and thresholds 0.65/0.40/0.20 stay. The next gain in question quality is selection balance on the pools already generated, not another threshold search on these items.",
+  "note": "Consensus drops items the two assigned annotators did not agree on, unless adjudicated.csv resolves them. G4 adoption uses primary-30 to choose a configuration and holdout-30 to test it.",
+  "seed": 42,
+  "bootstrap_resamples": 2000,
+  "analysis_round": "round3_worked_rule_llm_dual_coding",
+  "g1_interpretation": {
+    "rule": "Interpret G1 only when the inter-annotator quadratic-weighted kappa on the main pairs has a bootstrap 95% CI entirely above 0. This gate is separate from the round-1 G1 calculation.",
+    "interpreted": true,
+    "kappa_quadratic": {
+      "value": 0.841714756801319,
+      "ci_low": 0.7124160623153372,
+      "ci_high": 0.9350436652340075,
+      "n": 48
+    },
+    "reason": "Main-pair quadratic kappa has a 95% CI entirely above 0, so G1 may be read. Main-set disagreements have no adjudicated.csv resolution."
+  },
+  "label_source": "LLM annotators P1/P2 under experiments/gold_set/round3/training/worked_rule_brief.md. Exploratory. Does not replace human round 1\u20132."
+}

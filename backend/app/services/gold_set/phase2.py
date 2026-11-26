@@ -119,6 +119,11 @@ def run_phase2(
     rows_by: dict[str, list[dict]],
     adj_rows: list[dict] | None,
     assignment: dict[str, Any] | None = None,
+    *,
+    analysis_round: str = "round2_gate_on_unchanged_human_labels",
+    results_dirname: str = "gold_set_analysis",
+    report_path: Path | None = None,
+    figures_dirname: str | None = None,
 ) -> dict[str, Any]:
     pack = root / "experiments/gold_set"
     key = {it["item_id"]: it for it in load_json(pack / "answer_key_do_not_open_before_annotating.json")["items"]}
@@ -273,7 +278,7 @@ def run_phase2(
         if n_adj_main or adj_map
         else "Main-set disagreements have no adjudicated.csv resolution."
     )
-    payload["analysis_round"] = "round2_gate_on_unchanged_human_labels"
+    payload["analysis_round"] = analysis_round
     payload["g1_interpretation"] = {
         "rule": (
             "Interpret G1 only when the inter-annotator quadratic-weighted kappa "
@@ -307,21 +312,23 @@ def run_phase2(
                 "0.65/0.40/0.20 stay."
             )
         )
+        round_label = analysis_round.split("_")[0].replace("round", "Round ")
         payload["aqg_implication"] = (
-            "Round 2 does not interpret G1. The five annotators' main-set quadratic kappa "
+            f"{round_label} does not interpret G1. Main-set quadratic kappa "
             "still has a 95% interval covering 0. "
             f"{adj_main_note} "
             "The hybrid gap matrix stays an implemented, unvalidated component. "
             f"{g4_note}"
         )
-    out = root / "experiments/results" / "gold_set_analysis"
+    out = root / "experiments/results" / results_dirname
     out.mkdir(parents=True, exist_ok=True)
     write_json(out / "summary.json", payload)
     write_json(out / "consensus_items.json", items)
     from app.services.gold_set.figures import write_gold_figures
 
-    write_gold_figures(root / "docs/figures", payload)
-    report = root / "docs/gold_set_report.md"
+    fig_dir = root / "docs/figures" / figures_dirname if figures_dirname else root / "docs/figures"
+    write_gold_figures(fig_dir, payload)
+    report = report_path or (root / "docs/gold_set_report.md")
     report.write_text(render_report(payload), encoding="utf-8")
     return payload
 

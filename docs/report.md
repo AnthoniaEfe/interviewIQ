@@ -13,14 +13,15 @@ This report is an independent reading of the current tree, stored artifacts, and
 
 The **framework is implemented**. Extraction, hybrid gap scoring, Terra generation (B0 / B1 / T), competency-weighted MMR, adaptive selection, automatic metrics, and a research console all exist and have been exercised.
 
-The **thesis claim is not yet supported**. Four independent checks all point the same way:
+The **thesis claim is not yet fully supported**. Independent checks:
 
 1. The gap matrix does **not** track independent Hugging Face fit labels (null control).
 2. InterviewIQ treatment **T does not beat** the profile-aware baseline **B1** on coverage, and **loses** to plain MMR **B2** on coverage and diversity.
-3. **Gold-set phase 2 with full main-set adjudication is complete.** All 30 dual-coder disagreements now have an `adjudicated.csv` row (usable consensus **46**; disposition agree 17 / adjudicated 30 / cannot_judge 3; open disagree **0**). Inter-annotator main QWK is unchanged (−0.033 [−0.317, 0.254]), so G1 is still **not interpreted**. On consensus: G1 unsupported (QWK 0.271 [−0.002, 0.523]); G2 fails (AUC 0.642 [0.472, 0.799]); G3 false gaps 11/21 system gaps. **G4 adoption test is now True** (holdout ΔQWK 0.154 [0.006, 0.342]; candidate 0.25/0/0.75, thresholds 0.50/0.55), but reverse-split sensitivity does **not** adopt, and G1-uninterpreted policy keeps production artifacts unchanged pending an explicit cutover. Details: `docs/gold_set_report.md`, `experiments/gold_set/round2/main_open_adjudication.md`.
-4. **Human-eval infrastructure for T′ vs B1 is launched; ratings are not yet collected.** Rubric pilot (5 primary-30 pairs) is built, API smoke-passed, rater UI ready (`docs/human_eval_launch.md`). The human DV is still empty until ≥3 raters finish.
+3. **Human gold-set (rounds 1–2) stays historical and negative on the IAA gate.** Main human QWK −0.033 [−0.317, 0.254] → G1 **not interpreted** for human validation (`docs/gold_set_report.md`).
+4. **Round 3 worked-rule re-labelling (same pack, LLM dual-coders P1/P2) cleared the IAA gate and supported G1 under the frozen rules** — IAA QWK 0.842 [0.712, 0.935]; system QWK 0.624 [0.444, 0.751]; Spearman 0.752 [0.579, 0.849]; G2 separates; G4 no-adopt. This is **exploratory** and does **not** replace human round 1–2 unless humans replicate. Details: `docs/gold_set_round3.md`, `docs/gold_set_round3_report.md`.
+5. **Human-eval infrastructure for T′ vs B1 is launched; ratings are not yet collected.** Rubric pilot (5 primary-30 pairs) is built, API smoke-passed, rater UI ready (`docs/human_eval_launch.md`). The human DV is still empty until ≥3 raters finish.
 
-The frozen scale rule therefore returned **DIAGNOSE**, not SCALE. The 150-pair confirmatory run was correctly **not started** ($0). Spending more Terra tokens on historical T will not salvage the claim. **T′ is adopted as the forward treatment** (`docs/selector_tprime_adoption.md`; default `--selection tprime`; materialized sets in `experiments/results/selector_tprime_replay/treatment/`; human-eval inputs `experiments/human_eval/inputs/primary30_Tprime_vs_B1.json`). The remaining path that can still advance the title is **question-level human evaluation of T′ vs B1**, plus a thesis narrative that treats the hybrid gap matrix as implemented but **not human-validated**.
+The frozen scale rule therefore returned **DIAGNOSE**, not SCALE. The 150-pair confirmatory run was correctly **not started** ($0). Spending more Terra tokens on historical T will not salvage the claim. **T′ is adopted as the forward treatment** (`docs/selector_tprime_adoption.md`; default `--selection tprime`; materialized sets in `experiments/results/selector_tprime_replay/treatment/`; human-eval inputs `experiments/human_eval/inputs/primary30_Tprime_vs_B1.json`). The remaining path that can still advance the title is **question-level human evaluation of T′ vs B1**. Gap-matrix *human* validation remains negative (rounds 1–2); round 3 only shows rule-consistent LLM dual-coding can clear G1 gates on the same pack.
 
 ---
 
@@ -30,7 +31,7 @@ The title has four load-bearing pieces. Mapping each piece to the code makes the
 
 | Phrase | What it must mean in this repo | Current status |
 | --- | --- | --- |
-| **Hybrid profile-gap analysis** | Combine lexical (TF-IDF, BM25) and semantic (MiniLM) signals into a requirement-level match label and weight | **Implemented.** Gold-set n=46: G1 not interpreted / unsupported; G2 fails; G4 adopt flag True but production not cut over while G1 uninterpreted. HF fit labels also null. |
+| **Hybrid profile-gap analysis** | Combine lexical (TF-IDF, BM25) and semantic (MiniLM) signals into a requirement-level match label and weight | **Implemented.** Human gold-set: G1 not interpreted. Round-3 LLM dual-code (same pack): G1 interpreted+supported, G2 separates, G4 no-adopt — exploratory only. HF fit labels null. |
 | **Personalized** | Questions conditioned on *this* candidate vs *this* job, not a generic JD prompt | **Implemented** as Luna profiles + gap-conditioned Terra pool. Automatic metrics show T ≈ B1 except on gap-targeting, which is partly by construction. |
 | **Competency-balanced** | Final N questions cover dimensions and mix gaps, partials, and strengths — not 95% gap probes | **Code exists; empirical behaviour fails the phrase.** Weighted MMR crowds out strengths. Cultural/Motivational is starved unless a dimension budget is on. |
 | **LLM interview question generation** | Controlled Terra generation with matched baselines | **Implemented** for primary-30. Holdout-30 and 90/150 pairs have no T/B1 generations. |
@@ -161,7 +162,8 @@ HF splits: train 6,241 / test 1,759, labels No Fit / Potential Fit / Good Fit.
 | Classifier V0–V6 | `exp_20261019T123223Z` | $0 | V3, V5_LR “improve” with huge train–test gap |
 | Adaptive replay | `experiments/adaptive_selection_replay/` | $0 | Budget balances dimensions; adaptive-λ without budget does not |
 | 150-pair T/B1 | — | **$0** | Gates failed; not run |
-| Gold-set phase 2 (+ full adjudication) | `experiments/results/gold_set_analysis/` | $0 | Usable n=46; G1 not interpreted; G4 adopt flag True (no code cutover) |
+| Gold-set phase 2 (+ full adjudication) | `experiments/results/gold_set_analysis/` | $0 | Human: usable n=46; G1 not interpreted |
+| Gold-set round 3 (worked-rule LLM dual-code) | `experiments/results/gold_set_analysis_round3/` | ~LLM | IAA/G1/G2 pass; G4 no-adopt; exploratory |
 | Selector T′ replay | `experiments/results/selector_tprime_replay/` | $0 | Exploratory success rule met (quota, gap share, M3/M4 margins) |
 | Human question ratings (T′ vs B1) | pilot study ready | $0 | Infrastructure launched; **0 human ratings** |
 
@@ -244,20 +246,29 @@ Freeze v1 (`experiments/metrics/metrics_freeze.json`, 2026-10-12, commit `1c62b4
 
 V0 test accuracy 0.464, macro-F1 0.424 (below majority accuracy 0.487). Under the frozen rule, V3 and V5_LR “improve” (macro-F1 gain CI excludes 0). Their group-CV macro-F1 is ~0.999 vs test ~0.46 — a collapse that forbids treating them as a contribution. Gap-lite is **not** the production Luna matrix. Do not put this in the thesis claims section.
 
-### 5.7 Gold-set phase 2 (2026-11-26, full main adjudication)
+### 5.7 Gold-set rounds 1–3 (2026-11-26)
 
-Artifacts: annotator A–E CSVs, `experiments/gold_set/adjudicated.csv` (30 rows), `experiments/gold_set/round2/main_open_adjudication.md` (final four: g003=2, g066=cannot_judge, g080=2, g118=1), `docs/gold_set_report.md`, `experiments/results/gold_set_analysis/summary.json`.
+**Human rounds 1–2 (official for human-validation claim):** A–E + `adjudicated.csv` (30). `docs/gold_set_report.md`.
 
-| Gate | Result (stored numbers) |
+| Gate (human) | Result |
 | --- | --- |
-| Inter-annotator main QWK | −0.033 [−0.317, 0.254] (n=47) → **G1 not interpreted** (unchanged by adjudication) |
-| Usable consensus | 46/50 (`agree` 17 + `adjudicated` 30; open `disagree` 0; annotator `cannot_judge` 3) |
-| G1 system vs human | QWK 0.271 [−0.002, 0.523] → **False** |
-| G2 hybrid AUC | 0.642 [0.472, 0.799] → does **not** separate |
-| G3 false gaps | 11/21 system gaps (0.524); all matched-but-scored-low |
-| G4 recalibration | Holdout ΔQWK 0.154 [0.006, 0.342] → **adopt flag True** (candidate tfidf 0.25 / bm25 0 / semantic 0.75; partial 0.50; strong 0.55). Reverse sensitivity adopt=False. **Production artifacts not rewritten** while G1 is uninterpreted. |
+| Main IAA QWK | −0.033 [−0.317, 0.254] → **G1 not interpreted** |
+| Usable consensus | 46/50 |
+| G1 / G2 | unsupported / does not separate |
+| G4 | adopt flag True on primary→holdout; reverse False; **no production cutover** |
 
-Question study (T′ vs B1): rubric pilot study built (`manifest_pilot.json`, 5 pairs, seed 20261126); `rater_app.html` + API smoke passed; pilot export still **0** ratings. Rubric remains **draft** until a real pilot export. LLM judge stays `approval: pending`. Confirmatory holdout main study still blocked on holdout T′ generation.
+**Round 3 (exploratory, same pack, LLM P1/P2 + worked-rule brief):** `docs/gold_set_round3_report.md`, figures under `docs/figures/round3/`.
+
+| Gate (round 3) | Result |
+| --- | --- |
+| Main IAA QWK | **0.842 [0.712, 0.935]** → **G1 interpreted** |
+| Usable consensus | 40/50 (agree 40 / disagree 8 / cannot_judge 2) |
+| G1 | QWK **0.624 [0.444, 0.751]**; Spearman **0.752 [0.579, 0.849]** → **supported** |
+| G2 | combined AUC **0.809 [0.640, 0.944]** → separates; does not beat every single signal |
+| G3 | false gaps 12/17 system gaps (matched-but-scored-low) |
+| G4 | **no-adopt** |
+
+Question study (T′ vs B1): rubric pilot ready; pilot export still **0** ratings. LLM judge pending.
 
 ---
 
@@ -291,13 +302,14 @@ The title is recovered by fixing **balance and validity**, then testing quality 
 4. Leave `docs/judge_validation_prereg.md` at `approval: pending`.
 5. Treat classifier V3/V5_LR as appendix only.
 
-### Step 2 — Gold-set annotation — DONE (2026-11-26)
+### Step 2 — Gold-set annotation — DONE (rounds 1–3)
 
-Five annotators + full main-set `adjudicated.csv` (30/30 disagreements resolved; see `round2/main_open_adjudication.md`). Phase 2 re-run → `docs/gold_set_report.md`.
+**Human (1–2):** full adjudication; G1 not interpreted. Official human record: `docs/gold_set_report.md`.
 
-**Outcome (pre-registered):** G1 still not interpreted (IAA unchanged). Consensus n=46: G1 unsupported, G2 does not separate. G4 adoption test **True** on primary→holdout; reverse sensitivity False. Because G1 is uninterpreted, **do not cut over production weights/thresholds in code** without an explicit decision; keep the G4 candidate as a locked sensitivity config only.
+**Round 3 (worked-rule retrain + dual-coding, same pack):**  
+Training brief `experiments/gold_set/round3/training/worked_rule_brief.md`; dual-coders P1/P2 via `experiments/scripts/round3_annotate.py`; analyze `experiments/scripts/analyze_gold_set_round3.py` → `docs/gold_set_round3_report.md`.
 
-**Branch taken:** hybrid gap remains **implemented, unvalidated**. Proceed to selector T′ + human question eval. Any G4 production cutover is a separate, written decision.
+**Outcome:** Round 3 clears IAA and supports G1/G2 under frozen rules; G4 no-adopt. **Integrity:** LLM labels ≠ human replication. Thesis *human*-validation claim still rests on rounds 1–2 unless humans redo round 3. Production weights stay unless an explicit cutover cites which label source.
 - If agreement is near chance → the “hybrid profile-gap” claim must be weakened in the thesis. Generation can still be studied as a prompt+selector system, but not as “gap-validated personalization”.
 
 ### Step 3 — Diagnose, redesign, and adopt T′ — DONE (2026-11-26)
@@ -432,7 +444,8 @@ Ranked by how much they can sink the thesis if ignored.
 
 | Priority | Work | Spend | Output |
 | --- | --- | --- | --- |
-| Done | Gold-set A–E + full `adjudicated.csv` (30) + analyze | $0 | G1 not interpreted; G4 adopt flag True (no cutover); figures 26–31 |
+| Done | Gold-set human rounds 1–2 | $0 | G1 not interpreted |
+| Done | Gold-set round 3 worked-rule LLM dual-code + analyze | LLM | IAA/G1/G2 pass (exploratory); G4 no-adopt |
 | Done | T′ replay on stored pools | $0 | Exploratory success rule met |
 | Done | Adopt T′ as forward treatment + materialize + human-eval inputs | $0 | `docs/selector_tprime_adoption.md` |
 | Done | Rubric pilot study build + API smoke + rater UI | $0 | `docs/human_eval_launch.md`; ratings still 0 |
@@ -463,6 +476,9 @@ Gold-set is clearly negative on gap validity. That does **not** by itself kill t
 | Gold-set analysis summary | `experiments/results/gold_set_analysis/summary.json` |
 | Main-set adjudication | `experiments/gold_set/adjudicated.csv` (30 rows) |
 | Final-four adjudication notes | `experiments/gold_set/round2/main_open_adjudication.md` |
+| Gold-set round 3 protocol/report | `docs/gold_set_round3.md`, `docs/gold_set_round3_report.md` |
+| Round 3 analysis | `experiments/results/gold_set_analysis_round3/` |
+| Round 3 figures | `docs/figures/fig*_round3_gold_*.png` (also `docs/figures/round3/`) |
 | Selector T′ replay | `experiments/results/selector_tprime_replay/summary.json` |
 | T′ adoption | `docs/selector_tprime_adoption.md` |
 | T′ treatment sets | `experiments/results/selector_tprime_replay/treatment/` |
