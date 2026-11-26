@@ -77,7 +77,7 @@
     <p class="muted">Blinded sets only. Score with the study rubric. Do not guess which method is which. Do not use AI assistance.</p>
     <div class="row">
       <label>API base
-        <input id="apiBase" size="36" value="http://127.0.0.1:8000" />
+        <input id="apiBase" size="36" value="" placeholder="auto from this page’s origin" />
       </label>
       <label>Mode
         <select id="mode">
@@ -135,7 +135,7 @@
       </div>
     </div>
   </main>
-  <footer class="muted">Anchors: docs/human_eval_rubric.md · Local file only; token stays in this browser tab.</footer>
+  <footer class="muted">Use a <strong>rater token</strong> from the study owner — not an OpenAI API key. Rubric: docs/human_eval_rubric.md.</footer>
   <script>
   (() => {
     const $ = (id) => document.getElementById(id);
@@ -143,9 +143,20 @@
     let index = 0;
     let openedAt = Date.now();
     const criteria = ["relevance", "coverage", "non_redundancy"];
+    if (location.protocol.startsWith("http") && !$("apiBase").value) {
+      $("apiBase").value = location.origin;
+    }
+
+    function apiBase() {
+      const typed = $("apiBase").value.trim();
+      if (typed) return typed.replace(/\/$/, "");
+      // When served from /rater, same origin — avoids CORS / Failed to fetch.
+      if (location.protocol.startsWith("http")) return location.origin;
+      return "http://127.0.0.1:8000";
+    }
 
     function api(path, opts = {}) {
-      const base = $("apiBase").value.replace(/\/$/, "");
+      const base = apiBase();
       return fetch(base + path, opts).then(async (res) => {
         const text = await res.text();
         let data;

@@ -1,8 +1,9 @@
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import FileResponse, JSONResponse
 
 from app.api.v1 import api_router
 from app.config.settings import get_settings
@@ -10,6 +11,8 @@ from app.core.exceptions import InterviewIQError, ModelUnavailableError
 from app.core.logging import configure_logging
 from app.services.llm.factory import build_router
 from app.services.llm.openai_provider import verify_configured_models
+
+_RATER_APP = Path(__file__).resolve().parents[2] / "experiments" / "human_eval" / "rater_app.html"
 
 
 def _cors_origins(raw: str) -> list[str]:
@@ -52,6 +55,13 @@ def create_app() -> FastAPI:
             cors_kwargs["allow_origin_regex"] = regex
         app.add_middleware(CORSMiddleware, **cors_kwargs)
     app.include_router(api_router)
+
+    @app.get("/rater")
+    async def rater_app() -> FileResponse:
+        """Same-origin rater UI (avoids file:// CORS failures on other machines)."""
+        if not _RATER_APP.is_file():
+            return JSONResponse(status_code=404, content={"detail": "rater_app.html missing"})
+        return FileResponse(_RATER_APP, media_type="text/html")
 
     @app.exception_handler(ModelUnavailableError)
     async def model_unavailable(_: Request, exc: ModelUnavailableError) -> JSONResponse:

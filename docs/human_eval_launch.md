@@ -28,10 +28,22 @@ Pilot pairs: `rjf_03202_f43978101918`, `rjf_04668_066625dfe7d9`, `rjf_04729_4b40
 4. Demo mode accepts a smoke rating; demo export refused (422).
 5. Pilot export currently **0** ratings.
 
+## Access from your laptop (SSH remote)
+
+`192.168.0.2` is the **GPU host’s LAN** address. Your browser on a local machine cannot reach it unless you are on that same LAN. Use an SSH tunnel instead:
+
+```bash
+# on your LOCAL machine (keep this session open)
+ssh -L 8000:127.0.0.1:8000 <user>@<gpu-host>
+```
+
+Then open **http://127.0.0.1:8000/rater** in the local browser (not `192.168.0.2`).  
+API base: leave blank or `http://127.0.0.1:8000`. Mode: `pilot`. Token: a **rater token** (R1–R3), not an OpenAI key.
+
 ## What you do next (humans required)
 
 1. Recruit ≥3 raters (kit: `experiments/human_eval/kit/`). Separate from gold-set annotators; ≥1 with HR/interviewing experience if possible.
-2. Send each rater: API base URL, mode `pilot`, personal token, `rater_app.html` (or curl instructions), and `docs/human_eval_rubric.md`.
+2. Send each rater: local-tunnel URL (or same-LAN URL), mode `pilot`, personal token, and `docs/human_eval_rubric.md`. Prefer `http://127.0.0.1:8000/rater` via SSH `-L` when the API runs on a remote GPU host.
 3. After all three finish the 5 pairs, export:
 
 ```bash
