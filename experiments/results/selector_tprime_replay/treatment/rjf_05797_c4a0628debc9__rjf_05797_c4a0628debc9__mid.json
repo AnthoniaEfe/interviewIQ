@@ -1,0 +1,367 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_05797_c4a0628debc9",
+  "jd_id": "rjf_05797_c4a0628debc9",
+  "pair_id": "rjf_05797_c4a0628debc9",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_05797_c4a0628debc9__rjf_05797_c4a0628debc9__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      1,
+      13,
+      28,
+      25,
+      15,
+      9,
+      23,
+      12,
+      3,
+      0
+    ],
+    "questions": [
+      {
+        "question": "A prepaid annual insurance invoice is paid at the beginning of the year. Explain how you would set up the amortization schedule, record the initial entry, post monthly expense, and investigate a difference between the schedule and the general ledger.",
+        "competency": "Prepaids amortization",
+        "dimension": "Technical",
+        "target_gap": "Prepaids amortization",
+        "difficulty": "mid",
+        "rationale": "Prepaids amortization is the largest identified technical gap and is an explicit job responsibility.",
+        "source_evidence": [
+          "Weak match: Prepaids amortization",
+          "Candidate evidence: General ledger accounting"
+        ],
+        "priority": 0.97
+      },
+      {
+        "question": "Tell me about a manual journal entry you prepared during month-end close. What was the business purpose, what support did you retain, and what review or approval controls applied?",
+        "competency": "Journal entries",
+        "dimension": "Behavioural",
+        "target_gap": "Journal entries",
+        "difficulty": "mid",
+        "rationale": "The candidate has manual journal-entry experience, but the matrix labels it partial; this probes quality and control awareness.",
+        "source_evidence": [
+          "Partial match: Journal entries",
+          "Candidate evidence: Performed month-end General Ledger close and prepared manual journal entries."
+        ],
+        "priority": 0.84
+      },
+      {
+        "question": "Imagine that, after close, a prepaid balance is materially overstated because one month of amortization was omitted. How would you quantify the impact, correct the books, assess whether prior reporting is affected, and prevent recurrence?",
+        "competency": "Prepaids error resolution",
+        "dimension": "Situational",
+        "target_gap": "Prepaids amortization",
+        "difficulty": "hard",
+        "rationale": "Tests technical remediation, materiality judgment, and preventive controls for the most significant identified gap.",
+        "source_evidence": [
+          "Weak match: Prepaids amortization",
+          "Candidate evidence: General ledger accounting",
+          "Candidate evidence: Researched and eliminated financial discrepancies in a timely manner."
+        ],
+        "priority": 0.93
+      },
+      {
+        "question": "Your r\u00e9sum\u00e9 shows several temporary accounting assignments across different organizations. How did you get effective quickly in unfamiliar systems and processes, and what would your first 30 days in this Senior Accountant role look like?",
+        "competency": "Adaptability and onboarding",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "Probes the candidate's documented pattern of temporary assignments and ability to transition into a sustained role without inferring unlisted experience.",
+        "source_evidence": [
+          "Accountant II, Ellwood Group, 11/2014 to 10/2016",
+          "Senior Accountant (TEMP), Meggitt Plc",
+          "Ability to learn new software programs"
+        ],
+        "priority": 0.72
+      },
+      {
+        "question": "How would you create a rent schedule that Accounts Payable can use each month, and what reconciliation would you perform between the schedule, AP activity, and the general ledger?",
+        "competency": "Rent schedule management",
+        "dimension": "Role-Specific",
+        "target_gap": "Lease accounting",
+        "difficulty": "mid",
+        "rationale": "The role specifically requires maintaining a rent schedule and providing it to AP; the candidate has no explicit lease evidence.",
+        "source_evidence": [
+          "Weak match: Lease accounting",
+          "Candidate evidence: Accounting"
+        ],
+        "priority": 0.94
+      },
+      {
+        "question": "A department leader says an operational report is not useful because it arrives after decisions have been made. How would you clarify their needs and redesign the report's metrics, cadence, and presentation?",
+        "competency": "Operational reporting",
+        "dimension": "Situational",
+        "target_gap": "Operational reporting",
+        "difficulty": "mid",
+        "rationale": "Operational reporting is a partial match and requires translating accounting data into useful information for non-finance partners.",
+        "source_evidence": [
+          "Partial match: Operational reporting",
+          "Candidate evidence: Financial reporting"
+        ],
+        "priority": 0.85
+      },
+      {
+        "question": "How would you handle a situation in which a department disputes an allocation methodology that finance considers reasonable?",
+        "competency": "Stakeholder management",
+        "dimension": "Situational",
+        "target_gap": "Operational reporting",
+        "difficulty": "mid",
+        "rationale": "Tests communication and collaboration required when providing department-facing reporting and allocations.",
+        "source_evidence": [
+          "Partial match: Operational reporting",
+          "Partial match: Month-end allocations",
+          "Candidate evidence: Excellent communication skills"
+        ],
+        "priority": 0.76
+      },
+      {
+        "question": "Explain the difference between an accrual and a prepaid expense, including the typical initial and subsequent journal entries for each.",
+        "competency": "Accruals and prepaids",
+        "dimension": "Technical",
+        "target_gap": "Prepaids amortization",
+        "difficulty": "mid",
+        "rationale": "Directly assesses foundational understanding needed to close the identified prepaids-amortization gap.",
+        "source_evidence": [
+          "Weak match: Prepaids amortization",
+          "Partial match: Monthly accruals",
+          "Candidate evidence: General ledger accounting"
+        ],
+        "priority": 0.92
+      },
+      {
+        "question": "Suppose a newly signed office lease has fixed monthly payments, an initial incentive, and a rent-free period. How would you determine the accounting treatment and the supporting schedule under US GAAP?",
+        "competency": "Lease accounting under US GAAP",
+        "dimension": "Situational",
+        "target_gap": "Lease accounting",
+        "difficulty": "hard",
+        "rationale": "Tests whether the candidate can apply lease concepts to a realistic scenario rather than rely on general accounting experience alone.",
+        "source_evidence": [
+          "Weak match: Lease accounting",
+          "Partial match: US GAAP",
+          "Candidate evidence: Accounting"
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "Walk me through how you would build and maintain a lease accounting schedule from a new lease agreement through month-end posting, including the key inputs, journal entries, and reconciliations you would perform.",
+        "competency": "Lease accounting",
+        "dimension": "Technical",
+        "target_gap": "Lease accounting",
+        "difficulty": "mid",
+        "rationale": "Lease accounting is a weak match and is a core responsibility, so this tests practical readiness without assuming prior lease-specific experience.",
+        "source_evidence": [
+          "Weak match: Lease accounting",
+          "Candidate evidence: Accounting"
+        ],
+        "priority": 0.98
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 3,
+      "Behavioural": 1,
+      "Situational": 4,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 1
+    },
+    "gap_share": 0.6,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.31977098262546927,
+      "M2.P": 0.5,
+      "M3.P": 0.4,
+      "M4.P": 6.851193398482583,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "A prepaid annual insurance invoice is paid at the beginning of the year. Explain how you would set up the amortization schedule, record the initial entry, post monthly expense, and investigate a difference between the schedule and the general ledger."
+    },
+    {
+      "question": "Tell me about a manual journal entry you prepared during month-end close. What was the business purpose, what support did you retain, and what review or approval controls applied?"
+    },
+    {
+      "question": "Imagine that, after close, a prepaid balance is materially overstated because one month of amortization was omitted. How would you quantify the impact, correct the books, assess whether prior reporting is affected, and prevent recurrence?"
+    },
+    {
+      "question": "Your r\u00e9sum\u00e9 shows several temporary accounting assignments across different organizations. How did you get effective quickly in unfamiliar systems and processes, and what would your first 30 days in this Senior Accountant role look like?"
+    },
+    {
+      "question": "How would you create a rent schedule that Accounts Payable can use each month, and what reconciliation would you perform between the schedule, AP activity, and the general ledger?"
+    },
+    {
+      "question": "A department leader says an operational report is not useful because it arrives after decisions have been made. How would you clarify their needs and redesign the report's metrics, cadence, and presentation?"
+    },
+    {
+      "question": "How would you handle a situation in which a department disputes an allocation methodology that finance considers reasonable?"
+    },
+    {
+      "question": "Explain the difference between an accrual and a prepaid expense, including the typical initial and subsequent journal entries for each."
+    },
+    {
+      "question": "Suppose a newly signed office lease has fixed monthly payments, an initial incentive, and a rent-free period. How would you determine the accounting treatment and the supporting schedule under US GAAP?"
+    },
+    {
+      "question": "Walk me through how you would build and maintain a lease accounting schedule from a new lease agreement through month-end posting, including the key inputs, journal entries, and reconciliations you would perform."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "A prepaid annual insurance invoice is paid at the beginning of the year. Explain how you would set up the amortization schedule, record the initial entry, post monthly expense, and investigate a difference between the schedule and the general ledger.",
+      "competency": "Prepaids amortization",
+      "dimension": "Technical",
+      "target_gap": "Prepaids amortization",
+      "difficulty": "mid",
+      "rationale": "Prepaids amortization is the largest identified technical gap and is an explicit job responsibility.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Candidate evidence: General ledger accounting"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Tell me about a manual journal entry you prepared during month-end close. What was the business purpose, what support did you retain, and what review or approval controls applied?",
+      "competency": "Journal entries",
+      "dimension": "Behavioural",
+      "target_gap": "Journal entries",
+      "difficulty": "mid",
+      "rationale": "The candidate has manual journal-entry experience, but the matrix labels it partial; this probes quality and control awareness.",
+      "source_evidence": [
+        "Partial match: Journal entries",
+        "Candidate evidence: Performed month-end General Ledger close and prepared manual journal entries."
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Imagine that, after close, a prepaid balance is materially overstated because one month of amortization was omitted. How would you quantify the impact, correct the books, assess whether prior reporting is affected, and prevent recurrence?",
+      "competency": "Prepaids error resolution",
+      "dimension": "Situational",
+      "target_gap": "Prepaids amortization",
+      "difficulty": "hard",
+      "rationale": "Tests technical remediation, materiality judgment, and preventive controls for the most significant identified gap.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Candidate evidence: General ledger accounting",
+        "Candidate evidence: Researched and eliminated financial discrepancies in a timely manner."
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Your r\u00e9sum\u00e9 shows several temporary accounting assignments across different organizations. How did you get effective quickly in unfamiliar systems and processes, and what would your first 30 days in this Senior Accountant role look like?",
+      "competency": "Adaptability and onboarding",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Probes the candidate's documented pattern of temporary assignments and ability to transition into a sustained role without inferring unlisted experience.",
+      "source_evidence": [
+        "Accountant II, Ellwood Group, 11/2014 to 10/2016",
+        "Senior Accountant (TEMP), Meggitt Plc",
+        "Ability to learn new software programs"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "How would you create a rent schedule that Accounts Payable can use each month, and what reconciliation would you perform between the schedule, AP activity, and the general ledger?",
+      "competency": "Rent schedule management",
+      "dimension": "Role-Specific",
+      "target_gap": "Lease accounting",
+      "difficulty": "mid",
+      "rationale": "The role specifically requires maintaining a rent schedule and providing it to AP; the candidate has no explicit lease evidence.",
+      "source_evidence": [
+        "Weak match: Lease accounting",
+        "Candidate evidence: Accounting"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "A department leader says an operational report is not useful because it arrives after decisions have been made. How would you clarify their needs and redesign the report's metrics, cadence, and presentation?",
+      "competency": "Operational reporting",
+      "dimension": "Situational",
+      "target_gap": "Operational reporting",
+      "difficulty": "mid",
+      "rationale": "Operational reporting is a partial match and requires translating accounting data into useful information for non-finance partners.",
+      "source_evidence": [
+        "Partial match: Operational reporting",
+        "Candidate evidence: Financial reporting"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "How would you handle a situation in which a department disputes an allocation methodology that finance considers reasonable?",
+      "competency": "Stakeholder management",
+      "dimension": "Situational",
+      "target_gap": "Operational reporting",
+      "difficulty": "mid",
+      "rationale": "Tests communication and collaboration required when providing department-facing reporting and allocations.",
+      "source_evidence": [
+        "Partial match: Operational reporting",
+        "Partial match: Month-end allocations",
+        "Candidate evidence: Excellent communication skills"
+      ],
+      "priority": 0.76
+    },
+    {
+      "question": "Explain the difference between an accrual and a prepaid expense, including the typical initial and subsequent journal entries for each.",
+      "competency": "Accruals and prepaids",
+      "dimension": "Technical",
+      "target_gap": "Prepaids amortization",
+      "difficulty": "mid",
+      "rationale": "Directly assesses foundational understanding needed to close the identified prepaids-amortization gap.",
+      "source_evidence": [
+        "Weak match: Prepaids amortization",
+        "Partial match: Monthly accruals",
+        "Candidate evidence: General ledger accounting"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Suppose a newly signed office lease has fixed monthly payments, an initial incentive, and a rent-free period. How would you determine the accounting treatment and the supporting schedule under US GAAP?",
+      "competency": "Lease accounting under US GAAP",
+      "dimension": "Situational",
+      "target_gap": "Lease accounting",
+      "difficulty": "hard",
+      "rationale": "Tests whether the candidate can apply lease concepts to a realistic scenario rather than rely on general accounting experience alone.",
+      "source_evidence": [
+        "Weak match: Lease accounting",
+        "Partial match: US GAAP",
+        "Candidate evidence: Accounting"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Walk me through how you would build and maintain a lease accounting schedule from a new lease agreement through month-end posting, including the key inputs, journal entries, and reconciliations you would perform.",
+      "competency": "Lease accounting",
+      "dimension": "Technical",
+      "target_gap": "Lease accounting",
+      "difficulty": "mid",
+      "rationale": "Lease accounting is a weak match and is a core responsibility, so this tests practical readiness without assuming prior lease-specific experience.",
+      "source_evidence": [
+        "Weak match: Lease accounting",
+        "Candidate evidence: Accounting"
+      ],
+      "priority": 0.98
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

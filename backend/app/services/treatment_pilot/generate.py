@@ -344,6 +344,8 @@ def _select_from_pool(
     lambda_: float = MMR_LAMBDA,
     k: int = FINAL_N,
     seed: int = SEED,
+    match_label_by_competency: dict[str, str] | None = None,
+    dimensions: list[str] | None = None,
 ) -> tuple[dict[str, Any], float]:
     started = time.perf_counter()
     texts = [q.question for q in questions]
@@ -367,6 +369,9 @@ def _select_from_pool(
         k=k,
         seed=seed,
         query_similarities=query_sims,
+        dimensions=dimensions,
+        target_gaps=[str(q.target_gap) for q in questions],
+        match_label_by_competency=match_label_by_competency,
     )
     red_pool = redundant_pairs(sim, SIM_THRESHOLD) if texts else []
     selected_texts = [questions[i].question for i in result.selected_indices]
@@ -415,7 +420,7 @@ async def run_treatment_pipeline(
     experiment_id: str,
     out_dir: Path,
     guard: TreatmentSpendGuard,
-    selection: str = "competency_weighted_mmr",
+    selection: str = "tprime",
     resume: bool = True,
     replicates: int = 1,
     dry_run: bool = False,
@@ -625,12 +630,19 @@ async def run_treatment_pipeline(
                     if job_path.is_file():
                         jd_text = job_path.read_text(encoding="utf-8")
 
+                match_labels = {
+                    str(g.job_competency): str(g.match_label)
+                    for g in gap_matrix.gaps
+                    if g.job_competency
+                }
                 selection_payload, sel_latency = _select_from_pool(
                     questions=questions,
                     weights=weights,
                     embeddings=embeddings,
                     strategy=selection,
                     jd_text=jd_text,
+                    match_label_by_competency=match_labels,
+                    dimensions=[str(q.question_type) for q in questions],
                 )
                 if selection_payload["n_selected"] < FINAL_N:
                     errors.append(

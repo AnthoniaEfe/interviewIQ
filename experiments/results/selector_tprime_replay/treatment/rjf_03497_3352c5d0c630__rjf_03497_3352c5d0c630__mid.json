@@ -1,0 +1,359 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_03497_3352c5d0c630",
+  "jd_id": "rjf_03497_3352c5d0c630",
+  "pair_id": "rjf_03497_3352c5d0c630",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_03497_3352c5d0c630__rjf_03497_3352c5d0c630__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      5,
+      27,
+      10,
+      29,
+      15,
+      7,
+      25,
+      13,
+      9,
+      12
+    ],
+    "questions": [
+      {
+        "question": "Describe a Spark or PySpark workload you have developed. How did you address partitioning, joins, data skew, and operational failures?",
+        "competency": "Apache Spark",
+        "dimension": "Technical",
+        "target_gap": "Apache Spark",
+        "difficulty": "hard",
+        "rationale": "Apache Spark is a high-weight missing skill and requires direct technical validation.",
+        "source_evidence": [
+          "Microsoft Excel",
+          "SparkPyspark and JSON"
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "How have you planned and tracked work when several requests had competing deadlines? If you have used Agile or Kanban, describe your specific role; if not, explain how you would adapt your approach.",
+        "competency": "Agile delivery",
+        "dimension": "Behavioural",
+        "target_gap": "Agile methodologies",
+        "difficulty": "mid",
+        "rationale": "Agile is missing from the profile; the question fairly assesses transferable prioritization from multi-project administrative work while seeking direct evidence.",
+        "source_evidence": [
+          "Prepared weekly spreadsheets monitoring more than 15 ongoing projects",
+          "Experience with Agile methodologies"
+        ],
+        "priority": 0.86
+      },
+      {
+        "question": "Design an Airflow-style DAG for daily ingestion, validation, transformation, publishing, and alerting. Which tasks depend on others, and how would you handle retries and backfills?",
+        "competency": "Workflow orchestration",
+        "dimension": "Situational",
+        "target_gap": "Directed acyclic graphs",
+        "difficulty": "hard",
+        "rationale": "Tests understanding of DAG-based production orchestration, which is missing from the profile.",
+        "source_evidence": [
+          "Microsoft Excel",
+          "execution engines, DAGs"
+        ],
+        "priority": 0.93
+      },
+      {
+        "question": "Your background shows long-term work in administration, billing, reporting, and data coordination. What specifically motivates your move into a senior data architecture and engineering leadership role, and what have you done to prepare for it?",
+        "competency": "Role transition motivation",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "Clarifies the candidate's motivation, self-awareness, and preparation for a substantial transition into a senior technical leadership role without assuming unlisted experience.",
+        "source_evidence": [
+          "Administrator with over 15 years of professional experience",
+          "Data Management Services Coordinator, 2009\u2013Current",
+          "Senior Manager, Data Architecture & Data Engineering"
+        ],
+        "priority": 0.94
+      },
+      {
+        "question": "Explain how you would implement a data catalog and business glossary so product teams can find trusted data and interpret key measures consistently.",
+        "competency": "Data discovery and definitions",
+        "dimension": "Role-Specific",
+        "target_gap": "Data catalog",
+        "difficulty": "hard",
+        "rationale": "Tests a partial match against the role's required catalog capability and related business-definition practices.",
+        "source_evidence": [
+          "Data entry",
+          "Data Catalog, and Business Glossary"
+        ],
+        "priority": 0.87
+      },
+      {
+        "question": "Compare relational, NoSQL, and columnar databases for a high-volume analytics platform. When would you choose each, and what data-modeling implications follow?",
+        "competency": "Database architecture",
+        "dimension": "Technical",
+        "target_gap": "NoSQL databases",
+        "difficulty": "hard",
+        "rationale": "Builds on the partial database match while testing whether the candidate understands the distinct database paradigms required for the role.",
+        "source_evidence": [
+          "Databases",
+          "Proficient in SQL, NoSQL and columnar databases"
+        ],
+        "priority": 0.9
+      },
+      {
+        "question": "Provide an example of communicating a complex process or a data issue to people with different levels of technical knowledge. How did you tailor the message and confirm understanding?",
+        "competency": "Stakeholder communication",
+        "dimension": "Behavioural",
+        "target_gap": "Excellent verbal and written communication",
+        "difficulty": "mid",
+        "rationale": "Confirms the candidate's strongest listed match using examples relevant to cross-functional data stakeholders.",
+        "source_evidence": [
+          "Responded to customer, staff, and client inquiries by mail, email, and fax",
+          "Written and verbal communication"
+        ],
+        "priority": 0.72
+      },
+      {
+        "question": "Describe your use of GitLab for source control and delivery pipelines. How did you structure merge requests, code review, testing, and release approvals?",
+        "competency": "GitLab delivery practices",
+        "dimension": "Technical",
+        "target_gap": "GitLab",
+        "difficulty": "hard",
+        "rationale": "Tests a missing required engineering-practice skill needed for controlled delivery of data solutions.",
+        "source_evidence": [
+          "Microsoft Excel",
+          "Proficient with GitLab"
+        ],
+        "priority": 0.93
+      },
+      {
+        "question": "How would you use pandas DataFrames to profile a newly received file, handle missing values and duplicates, and produce a reproducible quality report?",
+        "competency": "Pandas DataFrames",
+        "dimension": "Technical",
+        "target_gap": "Pandas DataFrames",
+        "difficulty": "hard",
+        "rationale": "Validates a specifically required but missing technical skill, while connecting to the candidate's stated attention to data accuracy.",
+        "source_evidence": [
+          "Performed highly accurate and detailed data entry",
+          "Must have Panda Data Frames knowledge and best practices"
+        ],
+        "priority": 0.92
+      },
+      {
+        "question": "Explain how you have used Kubernetes to deploy or operate data workloads. How did you approach scaling, secrets, configuration, and incident recovery?",
+        "competency": "Kubernetes operations",
+        "dimension": "Technical",
+        "target_gap": "Kubernetes",
+        "difficulty": "hard",
+        "rationale": "Kubernetes is a missing required platform skill and needs explicit hands-on validation.",
+        "source_evidence": [
+          "Microsoft Excel",
+          "and Kubernetes"
+        ],
+        "priority": 0.93
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 5,
+      "Behavioural": 2,
+      "Situational": 1,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 1
+    },
+    "gap_share": 0.6,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.25847811882203625,
+      "M2.P": 0.3,
+      "M3.P": 0.5,
+      "M4.P": 7.920763427124085,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "Describe a Spark or PySpark workload you have developed. How did you address partitioning, joins, data skew, and operational failures?"
+    },
+    {
+      "question": "How have you planned and tracked work when several requests had competing deadlines? If you have used Agile or Kanban, describe your specific role; if not, explain how you would adapt your approach."
+    },
+    {
+      "question": "Design an Airflow-style DAG for daily ingestion, validation, transformation, publishing, and alerting. Which tasks depend on others, and how would you handle retries and backfills?"
+    },
+    {
+      "question": "Your background shows long-term work in administration, billing, reporting, and data coordination. What specifically motivates your move into a senior data architecture and engineering leadership role, and what have you done to prepare for it?"
+    },
+    {
+      "question": "Explain how you would implement a data catalog and business glossary so product teams can find trusted data and interpret key measures consistently."
+    },
+    {
+      "question": "Compare relational, NoSQL, and columnar databases for a high-volume analytics platform. When would you choose each, and what data-modeling implications follow?"
+    },
+    {
+      "question": "Provide an example of communicating a complex process or a data issue to people with different levels of technical knowledge. How did you tailor the message and confirm understanding?"
+    },
+    {
+      "question": "Describe your use of GitLab for source control and delivery pipelines. How did you structure merge requests, code review, testing, and release approvals?"
+    },
+    {
+      "question": "How would you use pandas DataFrames to profile a newly received file, handle missing values and duplicates, and produce a reproducible quality report?"
+    },
+    {
+      "question": "Explain how you have used Kubernetes to deploy or operate data workloads. How did you approach scaling, secrets, configuration, and incident recovery?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe a Spark or PySpark workload you have developed. How did you address partitioning, joins, data skew, and operational failures?",
+      "competency": "Apache Spark",
+      "dimension": "Technical",
+      "target_gap": "Apache Spark",
+      "difficulty": "hard",
+      "rationale": "Apache Spark is a high-weight missing skill and requires direct technical validation.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "SparkPyspark and JSON"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "How have you planned and tracked work when several requests had competing deadlines? If you have used Agile or Kanban, describe your specific role; if not, explain how you would adapt your approach.",
+      "competency": "Agile delivery",
+      "dimension": "Behavioural",
+      "target_gap": "Agile methodologies",
+      "difficulty": "mid",
+      "rationale": "Agile is missing from the profile; the question fairly assesses transferable prioritization from multi-project administrative work while seeking direct evidence.",
+      "source_evidence": [
+        "Prepared weekly spreadsheets monitoring more than 15 ongoing projects",
+        "Experience with Agile methodologies"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "Design an Airflow-style DAG for daily ingestion, validation, transformation, publishing, and alerting. Which tasks depend on others, and how would you handle retries and backfills?",
+      "competency": "Workflow orchestration",
+      "dimension": "Situational",
+      "target_gap": "Directed acyclic graphs",
+      "difficulty": "hard",
+      "rationale": "Tests understanding of DAG-based production orchestration, which is missing from the profile.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "execution engines, DAGs"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Your background shows long-term work in administration, billing, reporting, and data coordination. What specifically motivates your move into a senior data architecture and engineering leadership role, and what have you done to prepare for it?",
+      "competency": "Role transition motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Clarifies the candidate's motivation, self-awareness, and preparation for a substantial transition into a senior technical leadership role without assuming unlisted experience.",
+      "source_evidence": [
+        "Administrator with over 15 years of professional experience",
+        "Data Management Services Coordinator, 2009\u2013Current",
+        "Senior Manager, Data Architecture & Data Engineering"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Explain how you would implement a data catalog and business glossary so product teams can find trusted data and interpret key measures consistently.",
+      "competency": "Data discovery and definitions",
+      "dimension": "Role-Specific",
+      "target_gap": "Data catalog",
+      "difficulty": "hard",
+      "rationale": "Tests a partial match against the role's required catalog capability and related business-definition practices.",
+      "source_evidence": [
+        "Data entry",
+        "Data Catalog, and Business Glossary"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "Compare relational, NoSQL, and columnar databases for a high-volume analytics platform. When would you choose each, and what data-modeling implications follow?",
+      "competency": "Database architecture",
+      "dimension": "Technical",
+      "target_gap": "NoSQL databases",
+      "difficulty": "hard",
+      "rationale": "Builds on the partial database match while testing whether the candidate understands the distinct database paradigms required for the role.",
+      "source_evidence": [
+        "Databases",
+        "Proficient in SQL, NoSQL and columnar databases"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Provide an example of communicating a complex process or a data issue to people with different levels of technical knowledge. How did you tailor the message and confirm understanding?",
+      "competency": "Stakeholder communication",
+      "dimension": "Behavioural",
+      "target_gap": "Excellent verbal and written communication",
+      "difficulty": "mid",
+      "rationale": "Confirms the candidate's strongest listed match using examples relevant to cross-functional data stakeholders.",
+      "source_evidence": [
+        "Responded to customer, staff, and client inquiries by mail, email, and fax",
+        "Written and verbal communication"
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "Describe your use of GitLab for source control and delivery pipelines. How did you structure merge requests, code review, testing, and release approvals?",
+      "competency": "GitLab delivery practices",
+      "dimension": "Technical",
+      "target_gap": "GitLab",
+      "difficulty": "hard",
+      "rationale": "Tests a missing required engineering-practice skill needed for controlled delivery of data solutions.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "Proficient with GitLab"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "How would you use pandas DataFrames to profile a newly received file, handle missing values and duplicates, and produce a reproducible quality report?",
+      "competency": "Pandas DataFrames",
+      "dimension": "Technical",
+      "target_gap": "Pandas DataFrames",
+      "difficulty": "hard",
+      "rationale": "Validates a specifically required but missing technical skill, while connecting to the candidate's stated attention to data accuracy.",
+      "source_evidence": [
+        "Performed highly accurate and detailed data entry",
+        "Must have Panda Data Frames knowledge and best practices"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Explain how you have used Kubernetes to deploy or operate data workloads. How did you approach scaling, secrets, configuration, and incident recovery?",
+      "competency": "Kubernetes operations",
+      "dimension": "Technical",
+      "target_gap": "Kubernetes",
+      "difficulty": "hard",
+      "rationale": "Kubernetes is a missing required platform skill and needs explicit hands-on validation.",
+      "source_evidence": [
+        "Microsoft Excel",
+        "and Kubernetes"
+      ],
+      "priority": 0.93
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

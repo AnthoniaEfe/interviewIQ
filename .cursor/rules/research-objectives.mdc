@@ -1,0 +1,27 @@
+---
+description: Thesis title and research objectives — always prioritize advancing these goals
+alwaysApply: true
+---
+
+# Thesis research objectives
+
+**Title:** Hybrid Profile-Gap Analysis Framework for Personalized and Competency-Balanced LLM Interview Question Generation
+
+Work on this project must advance the research objectives below. Prefer decisions, implementations, experiments, and documentation that measure or improve relevance, competency coverage, and non-redundancy of LLM-generated interview questions versus unstructured baseline generation.
+
+## Overall objective
+
+Investigate whether a structured, profile-aware algorithmic pipeline can measurably improve the relevance, competency coverage, and non-redundancy of Large Language Model (LLM) generated job interview questions compared to unstructured baseline generation.
+
+## Principal objectives
+
+1. **Profile-Gap Analysis Algorithm** — Extract structured JSON profiles from candidate CVs and job descriptions; compute three-category gap matrices (strength matches, partial matches, gap areas); use those matrices to construct targeted LLM prompts.
+2. **Competency Diversity and Anti-Redundancy Algorithm** — Two layers: (a) configurable competency-budget enforcement across five dimensions (Technical, Behavioural, Situational, Cultural/Motivational, Role-Specific); (b) semantic redundancy detection with sentence embeddings and adaptive cosine-similarity thresholds.
+3. **Controlled empirical experiment** — Compare baseline vs. treatment question sets on four metrics: relevance, competency coverage, redundancy rate, and overall human preference.
+4. **Novel algorithmic contributions** — Hybrid TF-IDF/LLM gap computation, adaptive similarity thresholds by competency type, and competency-weighted Maximal Marginal Relevance (MMR); evaluate measurable impact via blind human evaluation.
+
+## Agent behaviour
+
+- Frame implementation, experiments, and analysis against these objectives; do not drift into unrelated product work without tying it back.
+- Prefer measurable progress on the four evaluation metrics and the named algorithmic contributions.
+- When choosing next steps, favor work that closes gaps toward objectives 1–4 over cosmetic or tangential changes.

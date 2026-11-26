@@ -116,6 +116,82 @@ def figure_29_recalibration(path: Path, g4: dict[str, Any]) -> None:
     _savefig(path)
 
 
+def figure_30_disposition(path: Path, disposition: dict[str, Any], n_usable: int) -> None:
+    order = ["agree", "adjudicated", "disagree", "cannot_judge"]
+    labels = {
+        "agree": "Agree",
+        "adjudicated": "Adjudicated",
+        "disagree": "Open disagree",
+        "cannot_judge": "Cannot judge",
+    }
+    colors = {
+        "agree": "#2A9D8F",
+        "adjudicated": "#1D3557",
+        "disagree": "#E76F51",
+        "cannot_judge": "#ADB5BD",
+    }
+    names = [labels[k] for k in order]
+    vals = [int(disposition.get(k) or 0) for k in order]
+    fig, ax = plt.subplots(figsize=(6.8, 4.6))
+    bars = ax.bar(names, vals, color=[colors[k] for k in order])
+    ax.set_ylabel("Main assigned items")
+    ax.set_title(f"Figure 30. Consensus disposition (usable n={n_usable})")
+    for bar, val in zip(bars, vals, strict=True):
+        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), str(val), ha="center", va="bottom")
+    _savefig(path)
+
+
+def _point_estimate(block: dict[str, Any]) -> float | None:
+    if block.get("value") is not None:
+        return float(block["value"])
+    if block.get("rho") is not None:
+        return float(block["rho"])
+    return None
+
+
+def figure_31_gate_summary(path: Path, payload: dict[str, Any]) -> None:
+    """Forest-style CIs for the phase-2 gates that carry interval estimates."""
+    g1 = ((payload.get("g1") or {}).get("pooled") or {})
+    rows = [
+        ("IAA main QWK", (payload.get("agreement_main") or {}).get("kappa_quadratic") or {}, 0.0),
+        ("G1 system QWK", g1.get("qwk") or {}, 0.0),
+        ("G1 Spearman ρ", g1.get("spearman") or {}, 0.0),
+        (
+            "G2 combined AUC",
+            (((payload.get("g2") or {}).get("pooled") or {}).get("auc") or {}).get("combined") or {},
+            0.5,
+        ),
+        (
+            "G4 holdout ΔQWK",
+            (((payload.get("g4") or {}).get("adoption_test") or {}).get("improvement") or {}),
+            0.0,
+        ),
+    ]
+
+    fig, ax = plt.subplots(figsize=(7.4, 5.2))
+    y = np.arange(len(rows))[::-1]
+    for i, (name, block, ref) in enumerate(rows):
+        yi = float(y[i])
+        lo = block.get("ci_low")
+        hi = block.get("ci_high")
+        val = _point_estimate(block)
+        if lo is None or hi is None or val is None:
+            ax.text(0.0, yi, f"{name}: n/a", va="center", fontsize=10)
+            continue
+        color = "#2A9D8F" if float(lo) > ref else "#E76F51"
+        ax.plot([float(lo), float(hi)], [yi, yi], color=color, lw=2.5, solid_capstyle="round")
+        ax.plot([val], [yi], "o", color=color, markersize=7)
+        ax.axvline(ref, color="#6C757D", ls="--", lw=0.8)
+        ax.text(float(hi) + 0.02, yi, f"{val:.3f} [{float(lo):.3f}, {float(hi):.3f}]", va="center", fontsize=9)
+
+    ax.set_yticks(y)
+    ax.set_yticklabels([r[0] for r in rows])
+    ax.set_xlabel("Estimate and bootstrap 95% CI")
+    ax.set_title("Figure 31. Gold-set phase-2 gates (red = fails CI rule)")
+    ax.set_xlim(-0.6, 1.15)
+    _savefig(path)
+
+
 def write_gold_figures(fig_dir: Path, payload: dict[str, Any]) -> None:
     confusion = payload["system_vs_human"]["pooled"]["confusion"]
     figure_26_confusion(fig_dir / "fig26_gold_confusion.png", confusion)
@@ -123,3 +199,9 @@ def write_gold_figures(fig_dir: Path, payload: dict[str, Any]) -> None:
     figure_27_roc(fig_dir / "fig27_gold_roc.png", pooled["roc"], pooled["auc"])
     figure_28_false_gaps(fig_dir / "fig28_gold_false_gaps.png", payload["g3"]["pooled"])
     figure_29_recalibration(fig_dir / "fig29_gold_recalibration.png", payload["g4"])
+    figure_30_disposition(
+        fig_dir / "fig30_gold_disposition.png",
+        payload.get("consensus_disposition") or {},
+        int(payload.get("n_usable_consensus") or 0),
+    )
+    figure_31_gate_summary(fig_dir / "fig31_gold_gates.png", payload)

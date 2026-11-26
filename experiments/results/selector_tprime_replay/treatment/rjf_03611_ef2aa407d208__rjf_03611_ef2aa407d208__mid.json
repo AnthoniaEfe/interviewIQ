@@ -1,0 +1,373 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_03611_ef2aa407d208",
+  "jd_id": "rjf_03611_ef2aa407d208",
+  "pair_id": "rjf_03611_ef2aa407d208",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_03611_ef2aa407d208__rjf_03611_ef2aa407d208__mid.json",
+  "pool_stats": {
+    "n_raw": 31,
+    "n_valid": 31
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      0,
+      3,
+      4,
+      19,
+      13,
+      8,
+      24,
+      2,
+      16,
+      5
+    ],
+    "questions": [
+      {
+        "question": "Design a React-based screen for reviewing invoice-validation outliers, including its component boundaries, client-side state, loading/error states, and how it would call a backend API. What trade-offs would you make?",
+        "competency": "React architecture",
+        "dimension": "Technical",
+        "target_gap": "React",
+        "difficulty": "mid",
+        "rationale": "React is a required skill with no direct candidate evidence, so this tests practical frontend design ability and the ability to transfer experience from enterprise billing systems.",
+        "source_evidence": [
+          "React",
+          "Billing Automation Project",
+          "JavaScript"
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "Describe a technical implementation you led from initial design through rollout. How did you divide work, manage risks and dependencies, make key decisions, and ensure delivery?",
+        "competency": "Implementation leadership",
+        "dimension": "Behavioural",
+        "target_gap": "Technical implementation leadership",
+        "difficulty": "mid",
+        "rationale": "Leading implementations is a core Lead Engineer requirement and is marked missing, so this validates whether relevant leadership experience exists beyond the written profile.",
+        "source_evidence": [
+          "Participated in design and documentation of an enhancement to a scheduled scenario module.",
+          "Technical implementation leadership"
+        ],
+        "priority": 0.99
+      },
+      {
+        "question": "A team is split between rapidly delivering an invoice-processing feature and redesigning a shared API first. How would you facilitate the decision, establish a plan, and keep the team aligned on scope and delivery?",
+        "competency": "Technical leadership",
+        "dimension": "Situational",
+        "target_gap": "Technical implementation leadership",
+        "difficulty": "mid",
+        "rationale": "This tests the candidate's ability to make and communicate implementation decisions in a lead role when direct leadership evidence is absent.",
+        "source_evidence": [
+          "Billing Automation Project",
+          "Participated in scrum calls to plan and prioritize activities.",
+          "Technical implementation leadership"
+        ],
+        "priority": 0.97
+      },
+      {
+        "question": "What attracts you to building a B2B SaaS product, and how would you distinguish the needs of business administrators, account-level users, and internal support teams when prioritizing a feature?",
+        "competency": "B2B SaaS product thinking",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "B2B SaaS application development",
+        "difficulty": "mid",
+        "rationale": "B2B SaaS experience is a high-weight weak match; this assesses domain understanding and product mindset without assuming undocumented SaaS experience.",
+        "source_evidence": [
+          "B2B SaaS application development",
+          "Enterprise billing and order management applications",
+          "Test Data Management Project"
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "Describe how you would turn a broadly stated request\u2014such as improving order synchronization reliability\u2014into an implementation plan with milestones, estimates, dependencies, test strategy, and rollout criteria.",
+        "competency": "Technical planning",
+        "dimension": "Role-Specific",
+        "target_gap": "Technical planning and code review",
+        "difficulty": "mid",
+        "rationale": "The Lead Engineer role requires planning and reliable delivery; the profile shows Scrum participation and design documentation but limited explicit planning ownership.",
+        "source_evidence": [
+          "Purchase & Order Management System",
+          "Participated in scrum calls to plan and prioritize activities.",
+          "Involved in design and documentation of enhancement"
+        ],
+        "priority": 0.9
+      },
+      {
+        "question": "An enterprise web application starts timing out during a peak billing run. Describe how you would isolate whether the bottleneck is in the browser, API layer, application code, database, or downstream dependency, then prioritize fixes.",
+        "competency": "Performance troubleshooting",
+        "dimension": "Situational",
+        "target_gap": "Web application performance and scalability optimization",
+        "difficulty": "hard",
+        "rationale": "Performance and scalability are only partially matched, while rapid troubleshooting and scalable enterprise design are central to the role.",
+        "source_evidence": [
+          "Billing Automation Project",
+          "Web services",
+          "Web application performance and scalability optimization"
+        ],
+        "priority": 0.92
+      },
+      {
+        "question": "Describe a defect you identified and corrected using Java, Spring, and Oracle. How did you confirm the root cause, prevent recurrence, and determine that the fix was safe to ship?",
+        "competency": "Defect quality ownership",
+        "dimension": "Behavioural",
+        "target_gap": "Product and software quality orientation",
+        "difficulty": "mid",
+        "rationale": "This validates the candidate's stated defect-fixing and test-result experience while probing ownership of durable quality improvements.",
+        "source_evidence": [
+          "Identified, corrected, and verified defects using Java, Spring, and Oracle.",
+          "Prepared test cases and test results during unit testing."
+        ],
+        "priority": 0.79
+      },
+      {
+        "question": "Explain how you would structure a Nest.js or comparable backend service for order-status updates: modules, controllers, services, persistence boundaries, validation, and error handling.",
+        "competency": "Backend framework design",
+        "dimension": "Technical",
+        "target_gap": "Nest.js or similar framework",
+        "difficulty": "mid",
+        "rationale": "The profile has no direct Nest.js evidence, and the question assesses whether the candidate can apply Spring-style architectural experience to a modular TypeScript backend framework.",
+        "source_evidence": [
+          "Spring Boot",
+          "Purchase & Order Management System",
+          "Nest.js or similar framework"
+        ],
+        "priority": 0.96
+      },
+      {
+        "question": "A junior engineer repeatedly submits Spring service changes with incomplete tests and unclear error handling. How would you coach them over the next few weeks while still protecting release quality and delivery commitments?",
+        "competency": "Engineering coaching",
+        "dimension": "Situational",
+        "target_gap": "Team mentoring",
+        "difficulty": "mid",
+        "rationale": "This tests practical mentoring, feedback, and quality-accountability skills needed to lead engineers.",
+        "source_evidence": [
+          "Spring Boot",
+          "Performed unit and integration testing.",
+          "Team mentoring"
+        ],
+        "priority": 0.93
+      },
+      {
+        "question": "Walk us through a Java domain model you have designed or would design for invoices, payments, and validation outcomes. How would you enforce invariants, manage object relationships, and avoid a model that becomes difficult to change?",
+        "competency": "Object-oriented design",
+        "dimension": "Technical",
+        "target_gap": "Object-oriented programming",
+        "difficulty": "mid",
+        "rationale": "Java is present, but the matrix classifies object-oriented programming as a weak match; this probes depth beyond language familiarity.",
+        "source_evidence": [
+          "Java",
+          "Implemented a payment module using Java, Spring Batch, Spring Boot, JSON, and JSP.",
+          "Object-oriented programming"
+        ],
+        "priority": 0.89
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 3,
+      "Behavioural": 2,
+      "Situational": 3,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 1
+    },
+    "gap_share": 0.8,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.27059086183083003,
+      "M2.P": 0.4,
+      "M3.P": 0.5,
+      "M4.P": 7.609723811128361,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "Design a React-based screen for reviewing invoice-validation outliers, including its component boundaries, client-side state, loading/error states, and how it would call a backend API. What trade-offs would you make?"
+    },
+    {
+      "question": "Describe a technical implementation you led from initial design through rollout. How did you divide work, manage risks and dependencies, make key decisions, and ensure delivery?"
+    },
+    {
+      "question": "A team is split between rapidly delivering an invoice-processing feature and redesigning a shared API first. How would you facilitate the decision, establish a plan, and keep the team aligned on scope and delivery?"
+    },
+    {
+      "question": "What attracts you to building a B2B SaaS product, and how would you distinguish the needs of business administrators, account-level users, and internal support teams when prioritizing a feature?"
+    },
+    {
+      "question": "Describe how you would turn a broadly stated request\u2014such as improving order synchronization reliability\u2014into an implementation plan with milestones, estimates, dependencies, test strategy, and rollout criteria."
+    },
+    {
+      "question": "An enterprise web application starts timing out during a peak billing run. Describe how you would isolate whether the bottleneck is in the browser, API layer, application code, database, or downstream dependency, then prioritize fixes."
+    },
+    {
+      "question": "Describe a defect you identified and corrected using Java, Spring, and Oracle. How did you confirm the root cause, prevent recurrence, and determine that the fix was safe to ship?"
+    },
+    {
+      "question": "Explain how you would structure a Nest.js or comparable backend service for order-status updates: modules, controllers, services, persistence boundaries, validation, and error handling."
+    },
+    {
+      "question": "A junior engineer repeatedly submits Spring service changes with incomplete tests and unclear error handling. How would you coach them over the next few weeks while still protecting release quality and delivery commitments?"
+    },
+    {
+      "question": "Walk us through a Java domain model you have designed or would design for invoices, payments, and validation outcomes. How would you enforce invariants, manage object relationships, and avoid a model that becomes difficult to change?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Design a React-based screen for reviewing invoice-validation outliers, including its component boundaries, client-side state, loading/error states, and how it would call a backend API. What trade-offs would you make?",
+      "competency": "React architecture",
+      "dimension": "Technical",
+      "target_gap": "React",
+      "difficulty": "mid",
+      "rationale": "React is a required skill with no direct candidate evidence, so this tests practical frontend design ability and the ability to transfer experience from enterprise billing systems.",
+      "source_evidence": [
+        "React",
+        "Billing Automation Project",
+        "JavaScript"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Describe a technical implementation you led from initial design through rollout. How did you divide work, manage risks and dependencies, make key decisions, and ensure delivery?",
+      "competency": "Implementation leadership",
+      "dimension": "Behavioural",
+      "target_gap": "Technical implementation leadership",
+      "difficulty": "mid",
+      "rationale": "Leading implementations is a core Lead Engineer requirement and is marked missing, so this validates whether relevant leadership experience exists beyond the written profile.",
+      "source_evidence": [
+        "Participated in design and documentation of an enhancement to a scheduled scenario module.",
+        "Technical implementation leadership"
+      ],
+      "priority": 0.99
+    },
+    {
+      "question": "A team is split between rapidly delivering an invoice-processing feature and redesigning a shared API first. How would you facilitate the decision, establish a plan, and keep the team aligned on scope and delivery?",
+      "competency": "Technical leadership",
+      "dimension": "Situational",
+      "target_gap": "Technical implementation leadership",
+      "difficulty": "mid",
+      "rationale": "This tests the candidate's ability to make and communicate implementation decisions in a lead role when direct leadership evidence is absent.",
+      "source_evidence": [
+        "Billing Automation Project",
+        "Participated in scrum calls to plan and prioritize activities.",
+        "Technical implementation leadership"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "What attracts you to building a B2B SaaS product, and how would you distinguish the needs of business administrators, account-level users, and internal support teams when prioritizing a feature?",
+      "competency": "B2B SaaS product thinking",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "B2B SaaS application development",
+      "difficulty": "mid",
+      "rationale": "B2B SaaS experience is a high-weight weak match; this assesses domain understanding and product mindset without assuming undocumented SaaS experience.",
+      "source_evidence": [
+        "B2B SaaS application development",
+        "Enterprise billing and order management applications",
+        "Test Data Management Project"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Describe how you would turn a broadly stated request\u2014such as improving order synchronization reliability\u2014into an implementation plan with milestones, estimates, dependencies, test strategy, and rollout criteria.",
+      "competency": "Technical planning",
+      "dimension": "Role-Specific",
+      "target_gap": "Technical planning and code review",
+      "difficulty": "mid",
+      "rationale": "The Lead Engineer role requires planning and reliable delivery; the profile shows Scrum participation and design documentation but limited explicit planning ownership.",
+      "source_evidence": [
+        "Purchase & Order Management System",
+        "Participated in scrum calls to plan and prioritize activities.",
+        "Involved in design and documentation of enhancement"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "An enterprise web application starts timing out during a peak billing run. Describe how you would isolate whether the bottleneck is in the browser, API layer, application code, database, or downstream dependency, then prioritize fixes.",
+      "competency": "Performance troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Web application performance and scalability optimization",
+      "difficulty": "hard",
+      "rationale": "Performance and scalability are only partially matched, while rapid troubleshooting and scalable enterprise design are central to the role.",
+      "source_evidence": [
+        "Billing Automation Project",
+        "Web services",
+        "Web application performance and scalability optimization"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Describe a defect you identified and corrected using Java, Spring, and Oracle. How did you confirm the root cause, prevent recurrence, and determine that the fix was safe to ship?",
+      "competency": "Defect quality ownership",
+      "dimension": "Behavioural",
+      "target_gap": "Product and software quality orientation",
+      "difficulty": "mid",
+      "rationale": "This validates the candidate's stated defect-fixing and test-result experience while probing ownership of durable quality improvements.",
+      "source_evidence": [
+        "Identified, corrected, and verified defects using Java, Spring, and Oracle.",
+        "Prepared test cases and test results during unit testing."
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "Explain how you would structure a Nest.js or comparable backend service for order-status updates: modules, controllers, services, persistence boundaries, validation, and error handling.",
+      "competency": "Backend framework design",
+      "dimension": "Technical",
+      "target_gap": "Nest.js or similar framework",
+      "difficulty": "mid",
+      "rationale": "The profile has no direct Nest.js evidence, and the question assesses whether the candidate can apply Spring-style architectural experience to a modular TypeScript backend framework.",
+      "source_evidence": [
+        "Spring Boot",
+        "Purchase & Order Management System",
+        "Nest.js or similar framework"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "A junior engineer repeatedly submits Spring service changes with incomplete tests and unclear error handling. How would you coach them over the next few weeks while still protecting release quality and delivery commitments?",
+      "competency": "Engineering coaching",
+      "dimension": "Situational",
+      "target_gap": "Team mentoring",
+      "difficulty": "mid",
+      "rationale": "This tests practical mentoring, feedback, and quality-accountability skills needed to lead engineers.",
+      "source_evidence": [
+        "Spring Boot",
+        "Performed unit and integration testing.",
+        "Team mentoring"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Walk us through a Java domain model you have designed or would design for invoices, payments, and validation outcomes. How would you enforce invariants, manage object relationships, and avoid a model that becomes difficult to change?",
+      "competency": "Object-oriented design",
+      "dimension": "Technical",
+      "target_gap": "Object-oriented programming",
+      "difficulty": "mid",
+      "rationale": "Java is present, but the matrix classifies object-oriented programming as a weak match; this probes depth beyond language familiarity.",
+      "source_evidence": [
+        "Java",
+        "Implemented a payment module using Java, Spring Batch, Spring Boot, JSON, and JSP.",
+        "Object-oriented programming"
+      ],
+      "priority": 0.89
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

@@ -50,7 +50,7 @@ def main() -> None:
     parser.add_argument("--replicates", type=int, default=1)
     parser.add_argument("--source-experiment", default=None)
     parser.add_argument("--gap-experiment", default=None)
-    parser.add_argument("--selection", default="competency_weighted_mmr")
+    parser.add_argument("--selection", default="tprime")
     parser.add_argument("--b1-experiment", default=None)
     parser.add_argument("--treatment-experiment", default=None)
     parser.add_argument("--ablation-experiment", default=None)

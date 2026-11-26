@@ -82,7 +82,7 @@ async def run_treatment_pilot(
     smoke: bool = False,
     source_experiment: str | None = None,
     gap_experiment: str | None = None,
-    selection: str = "competency_weighted_mmr",
+    selection: str = "tprime",
     b1_experiment: str | None = None,
     treatment_experiment: str | None = None,
     ablation_experiment: str | None = None,

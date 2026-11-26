@@ -264,6 +264,15 @@ def run_phase2(
     }
     kappa_q = payload["agreement_main"].get("kappa_quadratic") or {}
     interpreted = g1_may_be_interpreted(kappa_q)
+    disposition = payload.get("consensus_disposition") or {}
+    n_adj_main = int(disposition.get("adjudicated") or 0)
+    n_open_disagree = int(disposition.get("disagree") or 0)
+    adj_main_note = (
+        f"Main-set adjudicated.csv resolved {n_adj_main} dual-coder disagreements "
+        f"({n_open_disagree} still open; cannot_judge={int(disposition.get('cannot_judge') or 0)})."
+        if n_adj_main or adj_map
+        else "Main-set disagreements have no adjudicated.csv resolution."
+    )
     payload["analysis_round"] = "round2_gate_on_unchanged_human_labels"
     payload["g1_interpretation"] = {
         "rule": (
@@ -274,23 +283,36 @@ def run_phase2(
         "interpreted": interpreted,
         "kappa_quadratic": kappa_q,
         "reason": (
-            "Main-pair quadratic kappa has a 95% CI entirely above 0, so G1 may be read."
+            "Main-pair quadratic kappa has a 95% CI entirely above 0, so G1 may be read. "
+            + adj_main_note
             if interpreted
             else (
                 "Main-pair quadratic kappa has a 95% interval that covers 0 or is undefined. "
                 "G1 is not interpreted. The hybrid-gap component stays implemented and unvalidated. "
                 "Calibration items c001–c010 have an adjudicated label. "
-                "The 30 main disagreements do not."
+                + adj_main_note
             )
         ),
     }
     if not interpreted:
+        g4_adopt = bool((payload.get("g4") or {}).get("adopt_recalibration"))
+        g4_note = (
+            "G4's frozen adoption test is True on this consensus (holdout ΔQWK CI excludes 0); "
+            "the reverse-split sensitivity does not adopt. This run does not rewrite stored gap "
+            "artifacts. Because G1 remains uninterpreted, treat the G4 candidate as a locked "
+            "sensitivity configuration pending an explicit production cutover decision."
+            if g4_adopt
+            else (
+                "G4 does not adopt. Production weights 0.25/0.25/0.50 and thresholds "
+                "0.65/0.40/0.20 stay."
+            )
+        )
         payload["aqg_implication"] = (
             "Round 2 does not interpret G1. The five annotators' main-set quadratic kappa "
-            "still has a 95% interval covering 0. The adjudicated calibration labels "
-            "cover the 10 shared items only. The hybrid gap matrix stays an implemented, "
-            "unvalidated component. Production weights 0.25/0.25/0.50 and thresholds "
-            "0.65/0.40/0.20 stay."
+            "still has a 95% interval covering 0. "
+            f"{adj_main_note} "
+            "The hybrid gap matrix stays an implemented, unvalidated component. "
+            f"{g4_note}"
         )
     out = root / "experiments/results" / "gold_set_analysis"
     out.mkdir(parents=True, exist_ok=True)

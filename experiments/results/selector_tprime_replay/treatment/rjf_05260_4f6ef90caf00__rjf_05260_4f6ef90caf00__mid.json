@@ -1,0 +1,384 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_05260_4f6ef90caf00",
+  "jd_id": "rjf_05260_4f6ef90caf00",
+  "pair_id": "rjf_05260_4f6ef90caf00",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_05260_4f6ef90caf00__rjf_05260_4f6ef90caf00__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      8,
+      28,
+      4,
+      29,
+      0,
+      12,
+      10,
+      9,
+      7,
+      2
+    ],
+    "questions": [
+      {
+        "question": "Have you created a PCB design from requirements through schematic, placement, layout review, and fabrication output? Please distinguish clearly between work you personally performed and work you reviewed or tested.",
+        "competency": "PCB design ownership",
+        "dimension": "Technical",
+        "target_gap": "PCB design",
+        "difficulty": "mid",
+        "rationale": "PCB design is a high-weight missing competency; the wording verifies scope without inferring undocumented design ownership.",
+        "source_evidence": [
+          "PCB design",
+          "Hardware Test Engineer",
+          "Electronics Technician"
+        ],
+        "priority": 0.97
+      },
+      {
+        "question": "At Zoom, you overhauled programming and testing processes with management. Describe how you identified the problem, aligned stakeholders, introduced the new process, and measured whether it improved delivery or quality.",
+        "competency": "Process improvement leadership",
+        "dimension": "Behavioural",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "Probes a documented leadership and process-improvement accomplishment that can indicate effectiveness in a cross-functional engineering environment.",
+        "source_evidence": [
+          "Overhauled programming and testing processes and infrastructure with management",
+          "Team lead experience",
+          "Scheduled due dates and tracked projects to completion"
+        ],
+        "priority": 0.69
+      },
+      {
+        "question": "Suppose an image-capture subsystem intermittently stops responding after several hours in the field. How would you design the embedded controller architecture and diagnostic strategy to isolate and recover from the fault?",
+        "competency": "Embedded controller implementation",
+        "dimension": "Situational",
+        "target_gap": "Embedded controller implementation",
+        "difficulty": "hard",
+        "rationale": "Embedded controller implementation is the highest-weight missing requirement and is central to the job's product work.",
+        "source_evidence": [
+          "Embedded controller implementation",
+          "Hardware testing",
+          "Test automation"
+        ],
+        "priority": 1.0
+      },
+      {
+        "question": "This position requires onsite work five days per week and close interaction with manufacturing. What specifically motivates you to move from hardware test and repair into this hands-on digital engineering role, and how would you build effective day-to-day relationships with production partners?",
+        "competency": "Role motivation and collaboration",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "Assesses motivation for the transition and collaboration style using the candidate's documented training, manufacturing-adjacent, and hardware-test background.",
+        "source_evidence": [
+          "Primary trainer on test procedure software development and documentation",
+          "Assembled and maintained records for component kits for shipment to manufacturing",
+          "Hardware Test Engineer"
+        ],
+        "priority": 0.78
+      },
+      {
+        "question": "Describe the most complex digital circuit or electronic assembly you have diagnosed or tested. How did you move from the schematic and observed symptoms to a defensible root-cause conclusion?",
+        "competency": "Digital circuit design",
+        "dimension": "Technical",
+        "target_gap": "Digital electronic circuit design",
+        "difficulty": "mid",
+        "rationale": "Tests whether the candidate's circuit fundamentals and component-level debug experience extend to design-level digital reasoning required for the role.",
+        "source_evidence": [
+          "Circuit fundamentals",
+          "Electronics debugging and repair",
+          "Reading schematics"
+        ],
+        "priority": 0.84
+      },
+      {
+        "question": "Give an example of a programming or test procedure you revised that improved repeatability or reduced manufacturing errors. How did you control revisions, train users, and verify that the change worked on the production floor?",
+        "competency": "Manufacturing documentation",
+        "dimension": "Behavioural",
+        "target_gap": "Manufacturing documentation",
+        "difficulty": "mid",
+        "rationale": "Builds on the candidate's documented procedure, documentation, and training experience while testing the manufacturing-facing documentation requirement.",
+        "source_evidence": [
+          "Created and revised programming and testing procedures",
+          "Trained staff on test procedure software development and documentation",
+          "Manufacturing documentation"
+        ],
+        "priority": 0.82
+      },
+      {
+        "question": "What experience, if any, do you have with Texas Instruments Code Composer Studio? If it is new to you, outline how you would bring up, build, flash, and debug a TI microcontroller project during your first week.",
+        "competency": "Code Composer Studio",
+        "dimension": "Situational",
+        "target_gap": "Code Composer Studio",
+        "difficulty": "mid",
+        "rationale": "Code Composer Studio is explicitly required and missing from the documented profile.",
+        "source_evidence": [
+          "Code Composer Studio",
+          "Linux",
+          "Bash shell scripts"
+        ],
+        "priority": 0.92
+      },
+      {
+        "question": "Which development environments have you used to build, flash, debug, and version embedded software? Describe the workflow you would establish when joining a team that uses an unfamiliar IDE.",
+        "competency": "Embedded IDE workflow",
+        "dimension": "Technical",
+        "target_gap": "IDE tools",
+        "difficulty": "mid",
+        "rationale": "No IDE-tool experience is documented, so this assesses both direct exposure and an evidence-based learning approach.",
+        "source_evidence": [
+          "Linux",
+          "Bash",
+          "Shell scripting",
+          "IDE tools"
+        ],
+        "priority": 0.93
+      },
+      {
+        "question": "A PCB designer asks for guidance on routing a board containing a microcontroller, image sensor interface, power regulators, and fast digital lines. What placement and routing constraints would you provide, and why?",
+        "competency": "PCB layout guidance",
+        "dimension": "Situational",
+        "target_gap": "PCB layout and routing",
+        "difficulty": "hard",
+        "rationale": "The role requires layout and routing guidance, while the profile primarily establishes test procedure and hardware-test experience.",
+        "source_evidence": [
+          "Created and revised programming and testing procedures",
+          "Reading schematics",
+          "PCB layout and routing"
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "What microprocessor- or microcontroller-based hardware have you personally worked with, and what was your specific responsibility in its design, programming, bring-up, or test?",
+        "competency": "Microprocessor design exposure",
+        "dimension": "Technical",
+        "target_gap": "Microprocessor-based design",
+        "difficulty": "mid",
+        "rationale": "Directly clarifies a weakly matched core requirement without assuming that the candidate has microprocessor design experience.",
+        "source_evidence": [
+          "Shell scripting",
+          "Electronic component and assembly testing"
+        ],
+        "priority": 0.93
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": false,
+    "dimension_counts": {
+      "Technical": 4,
+      "Behavioural": 2,
+      "Situational": 3,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 0
+    },
+    "gap_share": 0.6,
+    "relaxations": [
+      {
+        "phase": "quota",
+        "reason": "zero_availability",
+        "dimension": "Role-Specific",
+        "reserved_index": null
+      }
+    ],
+    "metrics": {
+      "M1.P": 0.2520749944672756,
+      "M2.P": 0.6,
+      "M3.P": 0.7,
+      "M4.P": 7.891406812811172,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "Have you created a PCB design from requirements through schematic, placement, layout review, and fabrication output? Please distinguish clearly between work you personally performed and work you reviewed or tested."
+    },
+    {
+      "question": "At Zoom, you overhauled programming and testing processes with management. Describe how you identified the problem, aligned stakeholders, introduced the new process, and measured whether it improved delivery or quality."
+    },
+    {
+      "question": "Suppose an image-capture subsystem intermittently stops responding after several hours in the field. How would you design the embedded controller architecture and diagnostic strategy to isolate and recover from the fault?"
+    },
+    {
+      "question": "This position requires onsite work five days per week and close interaction with manufacturing. What specifically motivates you to move from hardware test and repair into this hands-on digital engineering role, and how would you build effective day-to-day relationships with production partners?"
+    },
+    {
+      "question": "Describe the most complex digital circuit or electronic assembly you have diagnosed or tested. How did you move from the schematic and observed symptoms to a defensible root-cause conclusion?"
+    },
+    {
+      "question": "Give an example of a programming or test procedure you revised that improved repeatability or reduced manufacturing errors. How did you control revisions, train users, and verify that the change worked on the production floor?"
+    },
+    {
+      "question": "What experience, if any, do you have with Texas Instruments Code Composer Studio? If it is new to you, outline how you would bring up, build, flash, and debug a TI microcontroller project during your first week."
+    },
+    {
+      "question": "Which development environments have you used to build, flash, debug, and version embedded software? Describe the workflow you would establish when joining a team that uses an unfamiliar IDE."
+    },
+    {
+      "question": "A PCB designer asks for guidance on routing a board containing a microcontroller, image sensor interface, power regulators, and fast digital lines. What placement and routing constraints would you provide, and why?"
+    },
+    {
+      "question": "What microprocessor- or microcontroller-based hardware have you personally worked with, and what was your specific responsibility in its design, programming, bring-up, or test?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Have you created a PCB design from requirements through schematic, placement, layout review, and fabrication output? Please distinguish clearly between work you personally performed and work you reviewed or tested.",
+      "competency": "PCB design ownership",
+      "dimension": "Technical",
+      "target_gap": "PCB design",
+      "difficulty": "mid",
+      "rationale": "PCB design is a high-weight missing competency; the wording verifies scope without inferring undocumented design ownership.",
+      "source_evidence": [
+        "PCB design",
+        "Hardware Test Engineer",
+        "Electronics Technician"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "At Zoom, you overhauled programming and testing processes with management. Describe how you identified the problem, aligned stakeholders, introduced the new process, and measured whether it improved delivery or quality.",
+      "competency": "Process improvement leadership",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Probes a documented leadership and process-improvement accomplishment that can indicate effectiveness in a cross-functional engineering environment.",
+      "source_evidence": [
+        "Overhauled programming and testing processes and infrastructure with management",
+        "Team lead experience",
+        "Scheduled due dates and tracked projects to completion"
+      ],
+      "priority": 0.69
+    },
+    {
+      "question": "Suppose an image-capture subsystem intermittently stops responding after several hours in the field. How would you design the embedded controller architecture and diagnostic strategy to isolate and recover from the fault?",
+      "competency": "Embedded controller implementation",
+      "dimension": "Situational",
+      "target_gap": "Embedded controller implementation",
+      "difficulty": "hard",
+      "rationale": "Embedded controller implementation is the highest-weight missing requirement and is central to the job's product work.",
+      "source_evidence": [
+        "Embedded controller implementation",
+        "Hardware testing",
+        "Test automation"
+      ],
+      "priority": 1.0
+    },
+    {
+      "question": "This position requires onsite work five days per week and close interaction with manufacturing. What specifically motivates you to move from hardware test and repair into this hands-on digital engineering role, and how would you build effective day-to-day relationships with production partners?",
+      "competency": "Role motivation and collaboration",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Assesses motivation for the transition and collaboration style using the candidate's documented training, manufacturing-adjacent, and hardware-test background.",
+      "source_evidence": [
+        "Primary trainer on test procedure software development and documentation",
+        "Assembled and maintained records for component kits for shipment to manufacturing",
+        "Hardware Test Engineer"
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "Describe the most complex digital circuit or electronic assembly you have diagnosed or tested. How did you move from the schematic and observed symptoms to a defensible root-cause conclusion?",
+      "competency": "Digital circuit design",
+      "dimension": "Technical",
+      "target_gap": "Digital electronic circuit design",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate's circuit fundamentals and component-level debug experience extend to design-level digital reasoning required for the role.",
+      "source_evidence": [
+        "Circuit fundamentals",
+        "Electronics debugging and repair",
+        "Reading schematics"
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "Give an example of a programming or test procedure you revised that improved repeatability or reduced manufacturing errors. How did you control revisions, train users, and verify that the change worked on the production floor?",
+      "competency": "Manufacturing documentation",
+      "dimension": "Behavioural",
+      "target_gap": "Manufacturing documentation",
+      "difficulty": "mid",
+      "rationale": "Builds on the candidate's documented procedure, documentation, and training experience while testing the manufacturing-facing documentation requirement.",
+      "source_evidence": [
+        "Created and revised programming and testing procedures",
+        "Trained staff on test procedure software development and documentation",
+        "Manufacturing documentation"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "What experience, if any, do you have with Texas Instruments Code Composer Studio? If it is new to you, outline how you would bring up, build, flash, and debug a TI microcontroller project during your first week.",
+      "competency": "Code Composer Studio",
+      "dimension": "Situational",
+      "target_gap": "Code Composer Studio",
+      "difficulty": "mid",
+      "rationale": "Code Composer Studio is explicitly required and missing from the documented profile.",
+      "source_evidence": [
+        "Code Composer Studio",
+        "Linux",
+        "Bash shell scripts"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Which development environments have you used to build, flash, debug, and version embedded software? Describe the workflow you would establish when joining a team that uses an unfamiliar IDE.",
+      "competency": "Embedded IDE workflow",
+      "dimension": "Technical",
+      "target_gap": "IDE tools",
+      "difficulty": "mid",
+      "rationale": "No IDE-tool experience is documented, so this assesses both direct exposure and an evidence-based learning approach.",
+      "source_evidence": [
+        "Linux",
+        "Bash",
+        "Shell scripting",
+        "IDE tools"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "A PCB designer asks for guidance on routing a board containing a microcontroller, image sensor interface, power regulators, and fast digital lines. What placement and routing constraints would you provide, and why?",
+      "competency": "PCB layout guidance",
+      "dimension": "Situational",
+      "target_gap": "PCB layout and routing",
+      "difficulty": "hard",
+      "rationale": "The role requires layout and routing guidance, while the profile primarily establishes test procedure and hardware-test experience.",
+      "source_evidence": [
+        "Created and revised programming and testing procedures",
+        "Reading schematics",
+        "PCB layout and routing"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "What microprocessor- or microcontroller-based hardware have you personally worked with, and what was your specific responsibility in its design, programming, bring-up, or test?",
+      "competency": "Microprocessor design exposure",
+      "dimension": "Technical",
+      "target_gap": "Microprocessor-based design",
+      "difficulty": "mid",
+      "rationale": "Directly clarifies a weakly matched core requirement without assuming that the candidate has microprocessor design experience.",
+      "source_evidence": [
+        "Shell scripting",
+        "Electronic component and assembly testing"
+      ],
+      "priority": 0.93
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

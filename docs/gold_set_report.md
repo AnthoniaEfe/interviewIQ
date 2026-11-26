@@ -4,11 +4,11 @@ Analysis round: `round2_gate_on_unchanged_human_labels`.
 
 Frozen hypotheses: `docs/gold_set_protocol.md` (G1–G4). This file is the phase-2 result. It does not edit the protocol.
 
-G1 interpretation: **False**. Main-pair quadratic kappa has a 95% interval that covers 0 or is undefined. G1 is not interpreted. The hybrid-gap component stays implemented and unvalidated. Calibration items c001–c010 have an adjudicated label. The 30 main disagreements do not.
+G1 interpretation: **False**. Main-pair quadratic kappa has a 95% interval that covers 0 or is undefined. G1 is not interpreted. The hybrid-gap component stays implemented and unvalidated. Calibration items c001–c010 have an adjudicated label. Main-set adjudicated.csv resolved 30 dual-coder disagreements (0 still open; cannot_judge=3).
 
 Human labels are the five files in `experiments/gold_set/annotator_key/` (annotators A–E), copied unchanged into `experiments/gold_set/annotations/` for the runner. No label was imputed. Disagreements without `adjudicated.csv` are excluded from consensus. That exclusion can make agreement with the system look better than it is, so per-annotator quadratic-weighted kappa is reported beside the consensus test.
 
-Assigned main items: 50. Usable consensus: 17. Disposition: `{'agree': 17, 'disagree': 30, 'cannot_judge': 3}`.
+Assigned main items: 50. Usable consensus: 46. Disposition: `{'agree': 17, 'adjudicated': 30, 'cannot_judge': 3}`.
 
 ## Inter-annotator agreement
 
@@ -51,9 +51,9 @@ Main-item label counts (0 not evidenced, 1 partial, 2 met). Different use of the
 
 Supported only if pooled quadratic-weighted kappa has a bootstrap 95% CI entirely above 0 and Spearman rho of combined score vs human label is positive, two-sided p < 0.05, and its bootstrap 95% CI is entirely above 0.
 
-- n = 17
-- quadratic-weighted kappa = -0.091 [-0.431, 0.324] (poor; descriptive band only)
-- Spearman combined score vs human = -0.079 (p = 0.762, CI [-0.576, 0.481])
+- n = 46
+- quadratic-weighted kappa = 0.271 [-0.002, 0.523] (fair; descriptive band only)
+- Spearman combined score vs human = 0.250 (p = 0.094, CI [-0.084, 0.535])
 - beyond chance: kappa False, Spearman False
 - **G1 supported: False**
 - Stored three-category labels match the 0.40/0.65 reconstruction on 1.000 of consensus items.
@@ -68,57 +68,57 @@ Per-annotator quadratic kappa against the stored system label (sensitivity; disa
 
 Split consensus QWK:
 
-- primary-30: -0.182 [-0.565, 0.106] (n = 7)
-- holdout-30: 0.000 [-0.539, 0.478] (n = 10)
+- primary-30: 0.217 [-0.208, 0.595] (n = 22)
+- holdout-30: 0.324 [-0.077, 0.651] (n = 24)
 
 ## G2 — does the combined score separate met/partial from not evidenced?
 
 Combined score separates met/partial from not-evidenced when its ROC AUC bootstrap 95% CI lies entirely above 0.5. It beats a single signal when the paired AUC difference CI lies entirely above 0.
 
-Pooled n = 17 (positive 14, negative 3).
+Pooled n = 46 (positive 26, negative 20).
 
 | Signal | AUC [95% CI] |
 | --- | --- |
-| combined | 0.524 [0.267, 0.784] |
-| tfidf | 0.476 [0.214, 0.733] |
-| bm25_norm | 0.179 [0.062, 0.312] |
-| semantic | 0.643 [0.286, 1.000] |
+| combined | 0.642 [0.472, 0.799] |
+| tfidf | 0.613 [0.452, 0.771] |
+| bm25_norm | 0.573 [0.417, 0.728] |
+| semantic | 0.656 [0.483, 0.808] |
 
 Hybrid separates (CI entirely above 0.5): **False**.
 
-- hybrid minus tfidf: delta AUC 0.048 [-0.095, 0.214], beats = False
-- hybrid minus bm25_norm: delta AUC 0.345 [0.156, 0.542], beats = True
-- hybrid minus semantic: delta AUC -0.119 [-0.438, 0.000], beats = False
+- hybrid minus tfidf: delta AUC 0.029 [-0.103, 0.155], beats = False
+- hybrid minus bm25_norm: delta AUC 0.069 [-0.017, 0.156], beats = False
+- hybrid minus semantic: delta AUC -0.013 [-0.085, 0.046], beats = False
 
 ## G3 — false gaps
 
 evidence_not_extracted when the stored matched evidence string is empty; matched_but_scored_low otherwise. Annotator snippet fields are not used, because empty snippets would mis-label every row.
 
-- false gaps = 6 / 17 usable (rate 0.353)
-- among items the system called gap: 1.000 (6 / 6)
+- false gaps = 11 / 46 usable (rate 0.239)
+- among items the system called gap: 0.524 (11 / 21)
 - evidence not extracted: 0
-- matched but scored low: 6
+- matched but scored low: 11
 - of those false gaps, requirement phrase is a literal substring of the CV: 0
-- complementary error (human not evidenced, system partial or strong): 3 (rate 0.176)
+- complementary error (human not evidenced, system partial or strong): 10 (rate 0.217)
 
 ## G4 — recalibration
 
 Grid: signal weights in steps of 0.25 summing to 1; partial threshold in {0.30, 0.35, 0.40, 0.45, 0.50}; strong threshold in {0.55, 0.60, 0.65, 0.70, 0.75}. Objective on the tune split is quadratic-weighted kappa. Ties prefer the configuration closer to production (0.25 / 0.25 / 0.50, thresholds 0.40 / 0.65).
 
-Adoption test tunes on primary-30 (n = 7) and confirms on holdout-30 (n = 10). The search runs only when both splits have at least 8 consensus items.
+Adoption test tunes on primary-30 (n = 22) and confirms on holdout-30 (n = 24). The search runs only when both splits have at least 8 consensus items.
 
-- evaluable: False
-- selected: `None`
-- untouched improvement (candidate QWK − production QWK) = n/a
-- production QWK on untouched = n/a
-- candidate QWK on untouched = n/a
-- **adopt recalibration: False**
-- reason: Need at least 8 consensus items on each split.
+- evaluable: True
+- selected: `{'weights': {'tfidf': 0.25, 'bm25_norm': 0.0, 'semantic': 0.75}, 'partial_threshold': 0.5, 'strong_threshold': 0.55, 'qwk_tune': 0.3857868020304569, 'distance_to_production': 0.7, 'on_grid_boundary': True, 'n_configs_evaluated': 375, 'is_production': False}`
+- untouched improvement (candidate QWK − production QWK) = 0.154 [0.006, 0.342]
+- production QWK on untouched = 0.324
+- candidate QWK on untouched = 0.477
+- **adopt recalibration: True**
+- reason: Untouched-split QWK gain has a bootstrap 95% CI entirely above 0.
 
 Reverse split (tune on holdout, confirm on primary) is a sensitivity. It is not an adoption test.
 
 - reverse adopt flag (ignored): False
-- reverse improvement = n/a
+- reverse improvement = -0.044 [-0.201, 0.123]
 
 ## Figures
 
@@ -130,7 +130,11 @@ Reverse split (tune on holdout, confirm on primary) is a sensitivity. It is not 
 
 ![Figure 29: recalibration QWK](figures/fig29_gold_recalibration.png)
 
+![Figure 30: consensus disposition](figures/fig30_gold_disposition.png)
+
+![Figure 31: phase-2 gate CIs](figures/fig31_gold_gates.png)
+
 ## What this does to question generation
 
-Round 2 does not interpret G1. The five annotators' main-set quadratic kappa still has a 95% interval covering 0. The adjudicated calibration labels cover the 10 shared items only. The hybrid gap matrix stays an implemented, unvalidated component. Production weights 0.25/0.25/0.50 and thresholds 0.65/0.40/0.20 stay.
+Round 2 does not interpret G1. The five annotators' main-set quadratic kappa still has a 95% interval covering 0. Main-set adjudicated.csv resolved 30 dual-coder disagreements (0 still open; cannot_judge=3). The hybrid gap matrix stays an implemented, unvalidated component. G4's frozen adoption test is True on this consensus (holdout ΔQWK CI excludes 0); the reverse-split sensitivity does not adopt. This run does not rewrite stored gap artifacts. Because G1 remains uninterpreted, treat the G4 candidate as a locked sensitivity configuration pending an explicit production cutover decision.
 

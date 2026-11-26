@@ -1,0 +1,357 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_04553_ea8f275312b4",
+  "jd_id": "rjf_04553_ea8f275312b4",
+  "pair_id": "rjf_04553_ea8f275312b4",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_04553_ea8f275312b4__rjf_04553_ea8f275312b4__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 29
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      4,
+      8,
+      2,
+      24,
+      22,
+      9,
+      21,
+      5,
+      6,
+      3
+    ],
+    "questions": [
+      {
+        "question": "How do you determine whether an accounting treatment complies with U.S. GAAP when the facts are not straightforward? Please describe the sources you would consult and how you would document your conclusion.",
+        "competency": "U.S. GAAP application",
+        "dimension": "Technical",
+        "target_gap": "U.S. GAAP",
+        "difficulty": "mid",
+        "rationale": "Tests a high-priority weak match and the candidate's approach to defensible GAAP conclusions.",
+        "source_evidence": [
+          "Accounting",
+          "U.S. GAAP: weak_match"
+        ],
+        "priority": 0.96
+      },
+      {
+        "question": "Describe an instance in which internal-control testing identified a deficiency or a process that could be improved. What was the risk, what recommendation did you make, and what happened afterward?",
+        "competency": "Internal controls",
+        "dimension": "Behavioural",
+        "target_gap": "Internal controls",
+        "difficulty": "mid",
+        "rationale": "Tests whether the candidate can translate documented control-testing experience into remediation-oriented ownership.",
+        "source_evidence": [
+          "Performed internal control testing",
+          "Internal controls: partial_match"
+        ],
+        "priority": 0.88
+      },
+      {
+        "question": "If a balance-sheet account reconciliation contains an unexplained difference shortly before close, how would you investigate it, decide whether a journal entry is needed, and communicate the issue?",
+        "competency": "Close issue resolution",
+        "dimension": "Situational",
+        "target_gap": "Journal entries",
+        "difficulty": "mid",
+        "rationale": "Probes a weakly evidenced requirement to analyze and post journal entries while connecting it to the candidate's reconciliation background.",
+        "source_evidence": [
+          "Account reconciliation specialist",
+          "Journal entries: weak_match"
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "What attracts you to moving from your audit, tax, and client-service background into a Senior Accountant II role with ongoing ownership of close, reporting, and technical accounting matters?",
+        "competency": "Role motivation",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "Clarifies motivation and readiness for the role's in-house accounting scope without assuming unlisted experience.",
+        "source_evidence": [
+          "Experience in audits, tax preparation, financial statement analysis, and reconciliations",
+          "Senior Accountant II role"
+        ],
+        "priority": 0.64
+      },
+      {
+        "question": "Tell me about your implementation of the Amelio Software System for the Construction Industry Services Group. What was your role, how did you manage readiness before busy season, and what accounting-process impacts did you monitor?",
+        "competency": "Systems implementation",
+        "dimension": "Role-Specific",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "Explores a concrete candidate-specific accomplishment that may indicate transferable implementation and change-management capability.",
+        "source_evidence": [
+          "Configured and implemented Amelio Software System",
+          "Ensured efficient implementation before busy season"
+        ],
+        "priority": 0.7
+      },
+      {
+        "question": "How would you update a control narrative and process flow for a disbursements process after finding that approvals were inconsistently evidenced? Include the control objective, key risks, and remediation steps.",
+        "competency": "Control documentation",
+        "dimension": "Situational",
+        "target_gap": "Internal controls",
+        "difficulty": "hard",
+        "rationale": "Expands the candidate's control-testing experience to the role's responsibility for narratives, flowcharts, and remediation.",
+        "source_evidence": [
+          "Tested cash disbursements",
+          "Performed internal control testing"
+        ],
+        "priority": 0.9
+      },
+      {
+        "question": "This role must support both auditors and internal stakeholders during compressed reporting cycles. Describe how you prioritize competing requests while preserving accuracy, documentation, and timely follow-up.",
+        "competency": "Stakeholder coordination",
+        "dimension": "Situational",
+        "target_gap": "Audit support",
+        "difficulty": "mid",
+        "rationale": "Assesses coordination and execution under deadline pressure using the candidate's audit and client-service background.",
+        "source_evidence": [
+          "Adhered to strict timelines and budget demands",
+          "Completed audits and attestation services"
+        ],
+        "priority": 0.82
+      },
+      {
+        "question": "A new office lease includes fixed payments, a tenant-improvement allowance, and a renewal option that is reasonably certain to be exercised. Explain how you would evaluate and account for it under ASC 842 from commencement onward.",
+        "competency": "Lease accounting",
+        "dimension": "Technical",
+        "target_gap": "ASC 842 lease accounting",
+        "difficulty": "hard",
+        "rationale": "Assesses a major technical-accounting gap through a realistic fact pattern requiring both initial and subsequent accounting judgment.",
+        "source_evidence": [
+          "Accounting",
+          "ASC 842 lease accounting: weak_match"
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "What inputs and judgments would you expect to evaluate when calculating an allowance for credit losses under CECL for a portfolio of trade receivables?",
+        "competency": "CECL credit loss accounting",
+        "dimension": "Technical",
+        "target_gap": "CECL credit loss accounting",
+        "difficulty": "hard",
+        "rationale": "Tests knowledge in a high-priority weak-match area central to the role's complex accounting responsibilities.",
+        "source_evidence": [
+          "Accounts receivable",
+          "CECL credit loss accounting: weak_match"
+        ],
+        "priority": 0.97
+      },
+      {
+        "question": "Give an example of a journal entry you have prepared, reviewed, or supported. What was the business purpose, what documentation supported it, and how did you confirm the debit-and-credit treatment?",
+        "competency": "Journal entry preparation",
+        "dimension": "Technical",
+        "target_gap": "Journal entries",
+        "difficulty": "mid",
+        "rationale": "Directly tests practical experience that is not explicitly demonstrated in the profile.",
+        "source_evidence": [
+          "Maintained general ledger",
+          "Journal entries: weak_match"
+        ],
+        "priority": 0.94
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 4,
+      "Behavioural": 1,
+      "Situational": 3,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 1
+    },
+    "gap_share": 0.5,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.2592799417695653,
+      "M2.P": 0.2,
+      "M3.P": 0.4,
+      "M4.P": 7.919590451014241,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "How do you determine whether an accounting treatment complies with U.S. GAAP when the facts are not straightforward? Please describe the sources you would consult and how you would document your conclusion."
+    },
+    {
+      "question": "Describe an instance in which internal-control testing identified a deficiency or a process that could be improved. What was the risk, what recommendation did you make, and what happened afterward?"
+    },
+    {
+      "question": "If a balance-sheet account reconciliation contains an unexplained difference shortly before close, how would you investigate it, decide whether a journal entry is needed, and communicate the issue?"
+    },
+    {
+      "question": "What attracts you to moving from your audit, tax, and client-service background into a Senior Accountant II role with ongoing ownership of close, reporting, and technical accounting matters?"
+    },
+    {
+      "question": "Tell me about your implementation of the Amelio Software System for the Construction Industry Services Group. What was your role, how did you manage readiness before busy season, and what accounting-process impacts did you monitor?"
+    },
+    {
+      "question": "How would you update a control narrative and process flow for a disbursements process after finding that approvals were inconsistently evidenced? Include the control objective, key risks, and remediation steps."
+    },
+    {
+      "question": "This role must support both auditors and internal stakeholders during compressed reporting cycles. Describe how you prioritize competing requests while preserving accuracy, documentation, and timely follow-up."
+    },
+    {
+      "question": "A new office lease includes fixed payments, a tenant-improvement allowance, and a renewal option that is reasonably certain to be exercised. Explain how you would evaluate and account for it under ASC 842 from commencement onward."
+    },
+    {
+      "question": "What inputs and judgments would you expect to evaluate when calculating an allowance for credit losses under CECL for a portfolio of trade receivables?"
+    },
+    {
+      "question": "Give an example of a journal entry you have prepared, reviewed, or supported. What was the business purpose, what documentation supported it, and how did you confirm the debit-and-credit treatment?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "How do you determine whether an accounting treatment complies with U.S. GAAP when the facts are not straightforward? Please describe the sources you would consult and how you would document your conclusion.",
+      "competency": "U.S. GAAP application",
+      "dimension": "Technical",
+      "target_gap": "U.S. GAAP",
+      "difficulty": "mid",
+      "rationale": "Tests a high-priority weak match and the candidate's approach to defensible GAAP conclusions.",
+      "source_evidence": [
+        "Accounting",
+        "U.S. GAAP: weak_match"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "Describe an instance in which internal-control testing identified a deficiency or a process that could be improved. What was the risk, what recommendation did you make, and what happened afterward?",
+      "competency": "Internal controls",
+      "dimension": "Behavioural",
+      "target_gap": "Internal controls",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate can translate documented control-testing experience into remediation-oriented ownership.",
+      "source_evidence": [
+        "Performed internal control testing",
+        "Internal controls: partial_match"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "If a balance-sheet account reconciliation contains an unexplained difference shortly before close, how would you investigate it, decide whether a journal entry is needed, and communicate the issue?",
+      "competency": "Close issue resolution",
+      "dimension": "Situational",
+      "target_gap": "Journal entries",
+      "difficulty": "mid",
+      "rationale": "Probes a weakly evidenced requirement to analyze and post journal entries while connecting it to the candidate's reconciliation background.",
+      "source_evidence": [
+        "Account reconciliation specialist",
+        "Journal entries: weak_match"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "What attracts you to moving from your audit, tax, and client-service background into a Senior Accountant II role with ongoing ownership of close, reporting, and technical accounting matters?",
+      "competency": "Role motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Clarifies motivation and readiness for the role's in-house accounting scope without assuming unlisted experience.",
+      "source_evidence": [
+        "Experience in audits, tax preparation, financial statement analysis, and reconciliations",
+        "Senior Accountant II role"
+      ],
+      "priority": 0.64
+    },
+    {
+      "question": "Tell me about your implementation of the Amelio Software System for the Construction Industry Services Group. What was your role, how did you manage readiness before busy season, and what accounting-process impacts did you monitor?",
+      "competency": "Systems implementation",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Explores a concrete candidate-specific accomplishment that may indicate transferable implementation and change-management capability.",
+      "source_evidence": [
+        "Configured and implemented Amelio Software System",
+        "Ensured efficient implementation before busy season"
+      ],
+      "priority": 0.7
+    },
+    {
+      "question": "How would you update a control narrative and process flow for a disbursements process after finding that approvals were inconsistently evidenced? Include the control objective, key risks, and remediation steps.",
+      "competency": "Control documentation",
+      "dimension": "Situational",
+      "target_gap": "Internal controls",
+      "difficulty": "hard",
+      "rationale": "Expands the candidate's control-testing experience to the role's responsibility for narratives, flowcharts, and remediation.",
+      "source_evidence": [
+        "Tested cash disbursements",
+        "Performed internal control testing"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "This role must support both auditors and internal stakeholders during compressed reporting cycles. Describe how you prioritize competing requests while preserving accuracy, documentation, and timely follow-up.",
+      "competency": "Stakeholder coordination",
+      "dimension": "Situational",
+      "target_gap": "Audit support",
+      "difficulty": "mid",
+      "rationale": "Assesses coordination and execution under deadline pressure using the candidate's audit and client-service background.",
+      "source_evidence": [
+        "Adhered to strict timelines and budget demands",
+        "Completed audits and attestation services"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "A new office lease includes fixed payments, a tenant-improvement allowance, and a renewal option that is reasonably certain to be exercised. Explain how you would evaluate and account for it under ASC 842 from commencement onward.",
+      "competency": "Lease accounting",
+      "dimension": "Technical",
+      "target_gap": "ASC 842 lease accounting",
+      "difficulty": "hard",
+      "rationale": "Assesses a major technical-accounting gap through a realistic fact pattern requiring both initial and subsequent accounting judgment.",
+      "source_evidence": [
+        "Accounting",
+        "ASC 842 lease accounting: weak_match"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "What inputs and judgments would you expect to evaluate when calculating an allowance for credit losses under CECL for a portfolio of trade receivables?",
+      "competency": "CECL credit loss accounting",
+      "dimension": "Technical",
+      "target_gap": "CECL credit loss accounting",
+      "difficulty": "hard",
+      "rationale": "Tests knowledge in a high-priority weak-match area central to the role's complex accounting responsibilities.",
+      "source_evidence": [
+        "Accounts receivable",
+        "CECL credit loss accounting: weak_match"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Give an example of a journal entry you have prepared, reviewed, or supported. What was the business purpose, what documentation supported it, and how did you confirm the debit-and-credit treatment?",
+      "competency": "Journal entry preparation",
+      "dimension": "Technical",
+      "target_gap": "Journal entries",
+      "difficulty": "mid",
+      "rationale": "Directly tests practical experience that is not explicitly demonstrated in the profile.",
+      "source_evidence": [
+        "Maintained general ledger",
+        "Journal entries: weak_match"
+      ],
+      "priority": 0.94
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

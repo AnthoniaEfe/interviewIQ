@@ -1,0 +1,365 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_03311_f96e539f2ada",
+  "jd_id": "rjf_03311_f96e539f2ada",
+  "pair_id": "rjf_03311_f96e539f2ada",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_03311_f96e539f2ada__rjf_03311_f96e539f2ada__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 29
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      0,
+      22,
+      21,
+      25,
+      27,
+      15,
+      10,
+      24,
+      1,
+      4
+    ],
+    "questions": [
+      {
+        "question": "Walk me through how you would build a defensible indirect-cost allocation methodology for shared finance, facilities, and IT costs across several nonprofit programs and funding streams. What drivers would you select, and how would you validate that they are equitable and consistently applied?",
+        "competency": "Cost allocation design",
+        "dimension": "Technical",
+        "target_gap": "Cost allocation methodologies",
+        "difficulty": "hard",
+        "rationale": "Directly tests a high-weight weak match in a role that requires cost allocation and cost-methodology knowledge.",
+        "source_evidence": [
+          "Weak match: Cost allocation methodologies",
+          "Candidate evidence: Account reconciliation"
+        ],
+        "priority": 0.99
+      },
+      {
+        "question": "Describe a time you proactively identified an issue or improvement opportunity before it was assigned to you. What prompted you to investigate, what actions did you take, and what was the outcome?",
+        "competency": "Proactivity",
+        "dimension": "Behavioural",
+        "target_gap": "Self-starter and proactive work style",
+        "difficulty": "mid",
+        "rationale": "Tests a weak-match work-style requirement using the candidate's documented process-improvement achievements.",
+        "source_evidence": [
+          "Weak match: Self-starter and proactive work style",
+          "Created transparency in complex accounts.",
+          "Improved multiple reconciliations."
+        ],
+        "priority": 0.87
+      },
+      {
+        "question": "During month-end, you receive an audit request, an urgent cash-flow update, and several unreconciled accounts at once. How would you triage the work, communicate trade-offs, and protect the accuracy of the close?",
+        "competency": "Prioritization under pressure",
+        "dimension": "Situational",
+        "target_gap": "Multitasking and prioritization",
+        "difficulty": "hard",
+        "rationale": "Directly assesses a high-weight weak match under conditions common to the target role.",
+        "source_evidence": [
+          "Weak match: Multitasking and prioritization",
+          "Closed the books monthly, quarterly, and annually."
+        ],
+        "priority": 0.93
+      },
+      {
+        "question": "What specifically motivates you to move from your prior accounting environments into a nonprofit human-services organization, and how would you connect rigorous financial stewardship to services for individuals in need?",
+        "competency": "Mission alignment",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "Nonprofit human services experience",
+        "difficulty": "mid",
+        "rationale": "Explores the sole missing competency and the role's stated preference for mission-driven human-services interest without presuming prior nonprofit work.",
+        "source_evidence": [
+          "Missing: Nonprofit human services experience",
+          "Professional summary: career in finance and accounting",
+          "Passion for working in a non-profit, human services organization"
+        ],
+        "priority": 0.85
+      },
+      {
+        "question": "At Adventist Health System, you tested, mapped, and verified an Oracle and internal commissions-system upgrade. Walk us through your role: how did you define test cases, validate interfaces into the General Ledger, log defects, and determine readiness for deployment?",
+        "competency": "Financial systems implementation",
+        "dimension": "Role-Specific",
+        "target_gap": "profile_probe",
+        "difficulty": "hard",
+        "rationale": "Examines a distinctive, relevant systems-upgrade experience in the profile and provides evidence of technical rigor beyond the listed requirements.",
+        "source_evidence": [
+          "Tested, mapped, and verified an Oracle and internal commissions system upgrade.",
+          "Ensured timely and accurate subsystem interfaces into the General Ledger."
+        ],
+        "priority": 0.79
+      },
+      {
+        "question": "Please describe the most advanced Excel workbook you have built or maintained for accounting or analysis. Which functions, pivots, data-validation methods, automation, and error checks did you use, and how did you make it usable for others?",
+        "competency": "Advanced Excel",
+        "dimension": "Technical",
+        "target_gap": "Advanced Microsoft Excel",
+        "difficulty": "mid",
+        "rationale": "The candidate lists Excel Level 3, macros, pivots, and modeling, but the matrix identifies only a partial match to advanced Excel.",
+        "source_evidence": [
+          "Partial match: Advanced Microsoft Excel",
+          "Microsoft Excel Level 3; spreadsheets and pivot tables",
+          "Developed macros that simplified account postings and reconciliations."
+        ],
+        "priority": 0.86
+      },
+      {
+        "question": "Tell us about a reconciliation process you improved by identifying new data sources or clearer clearing procedures. What was the original failure point, what changed, and how did you confirm the revised process was reliable?",
+        "competency": "Reconciliation improvement",
+        "dimension": "Behavioural",
+        "target_gap": "Accounting",
+        "difficulty": "mid",
+        "rationale": "The candidate reports meaningful reconciliation improvements; this clarifies depth of accounting ownership within a partial match.",
+        "source_evidence": [
+          "Partial match: Accounting",
+          "Improved multiple reconciliations by identifying data sources and clearing processes."
+        ],
+        "priority": 0.87
+      },
+      {
+        "question": "You discover that a proposed journal entry would improve the current month's results but lacks sufficient supporting evidence. What would you do, who would you involve, and how would you document the decision?",
+        "competency": "Accounting judgment",
+        "dimension": "Situational",
+        "target_gap": "Judgment and decision-making",
+        "difficulty": "hard",
+        "rationale": "Assesses a high-weight weak match around integrity and decision-making in a realistic close scenario.",
+        "source_evidence": [
+          "Weak match: Judgment and decision-making",
+          "Documented and reviewed policies and procedures annually.",
+          "Ensured compliance with internal and external accounting controls."
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "A restricted grant has been received in advance, and program services will be delivered over the next two quarters. How would you determine the timing of revenue recognition, the required entries, and the documentation needed to support your conclusion?",
+        "competency": "Revenue recognition",
+        "dimension": "Situational",
+        "target_gap": "Revenue recognition",
+        "difficulty": "hard",
+        "rationale": "Tests the candidate's limited evidenced exposure to revenue recognition in a nonprofit funding context.",
+        "source_evidence": [
+          "Weak match: Revenue recognition",
+          "Analyzed production revenue and expense."
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "Give an example of an accounting conclusion you have made or reviewed involving compliance with accounting policies or controls. How did you identify the applicable guidance, document your rationale, and ensure the treatment was consistently applied?",
+        "competency": "GAAP application",
+        "dimension": "Behavioural",
+        "target_gap": "GAAP compliance",
+        "difficulty": "hard",
+        "rationale": "The profile shows control compliance but does not clearly demonstrate GAAP-specific application.",
+        "source_evidence": [
+          "Weak match: GAAP compliance",
+          "Ensured compliance with internal and external accounting controls."
+        ],
+        "priority": 0.95
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 2,
+      "Behavioural": 3,
+      "Situational": 3,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 1
+    },
+    "gap_share": 0.7,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.27587597829063193,
+      "M2.P": 0.3,
+      "M3.P": 0.4,
+      "M4.P": 7.575347061185471,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "Walk me through how you would build a defensible indirect-cost allocation methodology for shared finance, facilities, and IT costs across several nonprofit programs and funding streams. What drivers would you select, and how would you validate that they are equitable and consistently applied?"
+    },
+    {
+      "question": "Describe a time you proactively identified an issue or improvement opportunity before it was assigned to you. What prompted you to investigate, what actions did you take, and what was the outcome?"
+    },
+    {
+      "question": "During month-end, you receive an audit request, an urgent cash-flow update, and several unreconciled accounts at once. How would you triage the work, communicate trade-offs, and protect the accuracy of the close?"
+    },
+    {
+      "question": "What specifically motivates you to move from your prior accounting environments into a nonprofit human-services organization, and how would you connect rigorous financial stewardship to services for individuals in need?"
+    },
+    {
+      "question": "At Adventist Health System, you tested, mapped, and verified an Oracle and internal commissions-system upgrade. Walk us through your role: how did you define test cases, validate interfaces into the General Ledger, log defects, and determine readiness for deployment?"
+    },
+    {
+      "question": "Please describe the most advanced Excel workbook you have built or maintained for accounting or analysis. Which functions, pivots, data-validation methods, automation, and error checks did you use, and how did you make it usable for others?"
+    },
+    {
+      "question": "Tell us about a reconciliation process you improved by identifying new data sources or clearer clearing procedures. What was the original failure point, what changed, and how did you confirm the revised process was reliable?"
+    },
+    {
+      "question": "You discover that a proposed journal entry would improve the current month's results but lacks sufficient supporting evidence. What would you do, who would you involve, and how would you document the decision?"
+    },
+    {
+      "question": "A restricted grant has been received in advance, and program services will be delivered over the next two quarters. How would you determine the timing of revenue recognition, the required entries, and the documentation needed to support your conclusion?"
+    },
+    {
+      "question": "Give an example of an accounting conclusion you have made or reviewed involving compliance with accounting policies or controls. How did you identify the applicable guidance, document your rationale, and ensure the treatment was consistently applied?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk me through how you would build a defensible indirect-cost allocation methodology for shared finance, facilities, and IT costs across several nonprofit programs and funding streams. What drivers would you select, and how would you validate that they are equitable and consistently applied?",
+      "competency": "Cost allocation design",
+      "dimension": "Technical",
+      "target_gap": "Cost allocation methodologies",
+      "difficulty": "hard",
+      "rationale": "Directly tests a high-weight weak match in a role that requires cost allocation and cost-methodology knowledge.",
+      "source_evidence": [
+        "Weak match: Cost allocation methodologies",
+        "Candidate evidence: Account reconciliation"
+      ],
+      "priority": 0.99
+    },
+    {
+      "question": "Describe a time you proactively identified an issue or improvement opportunity before it was assigned to you. What prompted you to investigate, what actions did you take, and what was the outcome?",
+      "competency": "Proactivity",
+      "dimension": "Behavioural",
+      "target_gap": "Self-starter and proactive work style",
+      "difficulty": "mid",
+      "rationale": "Tests a weak-match work-style requirement using the candidate's documented process-improvement achievements.",
+      "source_evidence": [
+        "Weak match: Self-starter and proactive work style",
+        "Created transparency in complex accounts.",
+        "Improved multiple reconciliations."
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "During month-end, you receive an audit request, an urgent cash-flow update, and several unreconciled accounts at once. How would you triage the work, communicate trade-offs, and protect the accuracy of the close?",
+      "competency": "Prioritization under pressure",
+      "dimension": "Situational",
+      "target_gap": "Multitasking and prioritization",
+      "difficulty": "hard",
+      "rationale": "Directly assesses a high-weight weak match under conditions common to the target role.",
+      "source_evidence": [
+        "Weak match: Multitasking and prioritization",
+        "Closed the books monthly, quarterly, and annually."
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "What specifically motivates you to move from your prior accounting environments into a nonprofit human-services organization, and how would you connect rigorous financial stewardship to services for individuals in need?",
+      "competency": "Mission alignment",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Nonprofit human services experience",
+      "difficulty": "mid",
+      "rationale": "Explores the sole missing competency and the role's stated preference for mission-driven human-services interest without presuming prior nonprofit work.",
+      "source_evidence": [
+        "Missing: Nonprofit human services experience",
+        "Professional summary: career in finance and accounting",
+        "Passion for working in a non-profit, human services organization"
+      ],
+      "priority": 0.85
+    },
+    {
+      "question": "At Adventist Health System, you tested, mapped, and verified an Oracle and internal commissions-system upgrade. Walk us through your role: how did you define test cases, validate interfaces into the General Ledger, log defects, and determine readiness for deployment?",
+      "competency": "Financial systems implementation",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "hard",
+      "rationale": "Examines a distinctive, relevant systems-upgrade experience in the profile and provides evidence of technical rigor beyond the listed requirements.",
+      "source_evidence": [
+        "Tested, mapped, and verified an Oracle and internal commissions system upgrade.",
+        "Ensured timely and accurate subsystem interfaces into the General Ledger."
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "Please describe the most advanced Excel workbook you have built or maintained for accounting or analysis. Which functions, pivots, data-validation methods, automation, and error checks did you use, and how did you make it usable for others?",
+      "competency": "Advanced Excel",
+      "dimension": "Technical",
+      "target_gap": "Advanced Microsoft Excel",
+      "difficulty": "mid",
+      "rationale": "The candidate lists Excel Level 3, macros, pivots, and modeling, but the matrix identifies only a partial match to advanced Excel.",
+      "source_evidence": [
+        "Partial match: Advanced Microsoft Excel",
+        "Microsoft Excel Level 3; spreadsheets and pivot tables",
+        "Developed macros that simplified account postings and reconciliations."
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "Tell us about a reconciliation process you improved by identifying new data sources or clearer clearing procedures. What was the original failure point, what changed, and how did you confirm the revised process was reliable?",
+      "competency": "Reconciliation improvement",
+      "dimension": "Behavioural",
+      "target_gap": "Accounting",
+      "difficulty": "mid",
+      "rationale": "The candidate reports meaningful reconciliation improvements; this clarifies depth of accounting ownership within a partial match.",
+      "source_evidence": [
+        "Partial match: Accounting",
+        "Improved multiple reconciliations by identifying data sources and clearing processes."
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "You discover that a proposed journal entry would improve the current month's results but lacks sufficient supporting evidence. What would you do, who would you involve, and how would you document the decision?",
+      "competency": "Accounting judgment",
+      "dimension": "Situational",
+      "target_gap": "Judgment and decision-making",
+      "difficulty": "hard",
+      "rationale": "Assesses a high-weight weak match around integrity and decision-making in a realistic close scenario.",
+      "source_evidence": [
+        "Weak match: Judgment and decision-making",
+        "Documented and reviewed policies and procedures annually.",
+        "Ensured compliance with internal and external accounting controls."
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "A restricted grant has been received in advance, and program services will be delivered over the next two quarters. How would you determine the timing of revenue recognition, the required entries, and the documentation needed to support your conclusion?",
+      "competency": "Revenue recognition",
+      "dimension": "Situational",
+      "target_gap": "Revenue recognition",
+      "difficulty": "hard",
+      "rationale": "Tests the candidate's limited evidenced exposure to revenue recognition in a nonprofit funding context.",
+      "source_evidence": [
+        "Weak match: Revenue recognition",
+        "Analyzed production revenue and expense."
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Give an example of an accounting conclusion you have made or reviewed involving compliance with accounting policies or controls. How did you identify the applicable guidance, document your rationale, and ensure the treatment was consistently applied?",
+      "competency": "GAAP application",
+      "dimension": "Behavioural",
+      "target_gap": "GAAP compliance",
+      "difficulty": "hard",
+      "rationale": "The profile shows control compliance but does not clearly demonstrate GAAP-specific application.",
+      "source_evidence": [
+        "Weak match: GAAP compliance",
+        "Ensured compliance with internal and external accounting controls."
+      ],
+      "priority": 0.95
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

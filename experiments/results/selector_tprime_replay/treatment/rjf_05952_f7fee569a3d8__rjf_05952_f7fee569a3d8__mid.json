@@ -1,0 +1,369 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_05952_f7fee569a3d8",
+  "jd_id": "rjf_05952_f7fee569a3d8",
+  "pair_id": "rjf_05952_f7fee569a3d8",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_05952_f7fee569a3d8__rjf_05952_f7fee569a3d8__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      9,
+      7,
+      22,
+      25,
+      28,
+      14,
+      5,
+      23,
+      12,
+      8
+    ],
+    "questions": [
+      {
+        "question": "What experience do you have working in Agile Scrum teams, and what were your specific responsibilities during a sprint?",
+        "competency": "Agile Scrum",
+        "dimension": "Technical",
+        "target_gap": "Agile Scrum",
+        "difficulty": "mid",
+        "rationale": "Clarifies whether the candidate has any practical Scrum exposure, which is missing from the profile.",
+        "source_evidence": [
+          "TRACS",
+          "Performed program testing and quality assurance for ingest templates and metadata."
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "Tell us about a time stakeholders had competing priorities or interpretations of data. How did you facilitate the discussion and help them reach a decision?",
+        "competency": "Consensus facilitation",
+        "dimension": "Behavioural",
+        "target_gap": "Consensus facilitation",
+        "difficulty": "hard",
+        "rationale": "Directly probes a high-priority missing competency: facilitating agreement among groups with competing perspectives.",
+        "source_evidence": [
+          "TRACS",
+          "Provided consulting solutions supporting on-time service-level agreements.",
+          "Provided corrective action plans for client complaints and billing discrepancies."
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "A process has a growing queue of incomplete requests and frequent rework. How would you use a LEAN approach to diagnose root causes and design improvements?",
+        "competency": "LEAN problem solving",
+        "dimension": "Situational",
+        "target_gap": "LEAN principles",
+        "difficulty": "hard",
+        "rationale": "Tests whether the candidate can apply LEAN concepts to an operational process rather than merely define them.",
+        "source_evidence": [
+          "TRACS",
+          "Provided corrective action plans for client complaints and billing discrepancies.",
+          "Maintained on-time service-level agreements for deliverables."
+        ],
+        "priority": 0.94
+      },
+      {
+        "question": "This role requires significant established BA experience. How has your work as a Data Analyst and Data Support Analyst prepared you to own business-analysis deliverables rather than primarily operational data tasks?",
+        "competency": "BA role readiness",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "Business analysis",
+        "difficulty": "mid",
+        "rationale": "Assesses the candidate's candid view of the transition from a stated junior data-analyst profile to a demanding BA role.",
+        "source_evidence": [
+          "Jr. Data Analyst",
+          "Data Analyst, C.H. Robinson Worldwide, Inc.",
+          "Data Support Analyst, Anthology"
+        ],
+        "priority": 0.9
+      },
+      {
+        "question": "You mention delivering the DASS program on time and maintaining Apple iTunes metadata. What was your individual scope, how did you manage dependencies and quality risks, and what did 'on time' mean operationally?",
+        "competency": "Delivery ownership",
+        "dimension": "Role-Specific",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "Probes a specific stated achievement for ownership, planning, coordination, and quality-management evidence.",
+        "source_evidence": [
+          "Delivered the DASS program on time and maintained metadata for Apple iTunes.",
+          "Supported data ingestion for Sony, Google, Amazon, LG, Apple iTunes, and other platforms."
+        ],
+        "priority": 0.7
+      },
+      {
+        "question": "Describe how you would break a request to improve a data-ingestion workflow into user stories, including acceptance criteria and validation steps.",
+        "competency": "User story development",
+        "dimension": "Technical",
+        "target_gap": "User story development and validation",
+        "difficulty": "hard",
+        "rationale": "Connects the candidate's ingestion and QA background to a core BA practice that is only partially matched.",
+        "source_evidence": [
+          "Managed user accounts, network security, and troubleshooting.",
+          "Supported data ingestion for Sony, Google, Amazon, LG, Apple iTunes, and other platforms.",
+          "Performed program testing and quality assurance for ingest templates and metadata."
+        ],
+        "priority": 0.91
+      },
+      {
+        "question": "Imagine program staff ask for a reporting enhancement but disagree about the metrics, data definitions, and scope. How would you run discovery, document requirements, and gain formal validation?",
+        "competency": "Requirements documentation",
+        "dimension": "Situational",
+        "target_gap": "Requirements elicitation and documentation",
+        "difficulty": "hard",
+        "rationale": "Assesses a repeatable elicitation, documentation, and validation approach for this BA role.",
+        "source_evidence": [
+          "Billed and invoiced clients and supported deal documentation.",
+          "Prepared SAP data for custom dashboard reporting."
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "Have you supported an LPI or similarly structured continuous-improvement initiative? Describe the goals, your role, measures used, and results.",
+        "competency": "LPI initiatives",
+        "dimension": "Behavioural",
+        "target_gap": "LPI initiatives",
+        "difficulty": "mid",
+        "rationale": "Directly probes the missing LPI-initiative requirement and allows relevant improvement experience to surface.",
+        "source_evidence": [
+          "TRACS",
+          "Supported home video distribution through data analysis and workflow improvement.",
+          "Developed a more efficient process through allocation plans in JDA."
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "A JIRA backlog contains duplicated tickets, vague requests, unestimated items, and several production defects. How would you prepare it for a planning session?",
+        "competency": "Backlog grooming",
+        "dimension": "Situational",
+        "target_gap": "Backlog grooming",
+        "difficulty": "hard",
+        "rationale": "Directly evaluates the missing backlog-grooming capability through a practical scenario.",
+        "source_evidence": [
+          "TRACS",
+          "Created corrective action plans and allocation plans in JDA."
+        ],
+        "priority": 0.96
+      },
+      {
+        "question": "You are facilitating a meeting with executives, operations staff, and technical contributors who disagree on the scope of a high-impact process change. What would you do before, during, and after the meeting to drive consensus?",
+        "competency": "Executive facilitation",
+        "dimension": "Situational",
+        "target_gap": "Consensus facilitation",
+        "difficulty": "hard",
+        "rationale": "Evaluates facilitation structure, conflict management, decision capture, and follow-through where direct evidence is absent.",
+        "source_evidence": [
+          "TRACS",
+          "Fostered and developed client relations",
+          "communication and self motivated individual"
+        ],
+        "priority": 1.0
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 2,
+      "Behavioural": 2,
+      "Situational": 4,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 1
+    },
+    "gap_share": 0.6,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.27906634081552434,
+      "M2.P": 0.3,
+      "M3.P": 0.4,
+      "M4.P": 7.6912545196062885,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "What experience do you have working in Agile Scrum teams, and what were your specific responsibilities during a sprint?"
+    },
+    {
+      "question": "Tell us about a time stakeholders had competing priorities or interpretations of data. How did you facilitate the discussion and help them reach a decision?"
+    },
+    {
+      "question": "A process has a growing queue of incomplete requests and frequent rework. How would you use a LEAN approach to diagnose root causes and design improvements?"
+    },
+    {
+      "question": "This role requires significant established BA experience. How has your work as a Data Analyst and Data Support Analyst prepared you to own business-analysis deliverables rather than primarily operational data tasks?"
+    },
+    {
+      "question": "You mention delivering the DASS program on time and maintaining Apple iTunes metadata. What was your individual scope, how did you manage dependencies and quality risks, and what did 'on time' mean operationally?"
+    },
+    {
+      "question": "Describe how you would break a request to improve a data-ingestion workflow into user stories, including acceptance criteria and validation steps."
+    },
+    {
+      "question": "Imagine program staff ask for a reporting enhancement but disagree about the metrics, data definitions, and scope. How would you run discovery, document requirements, and gain formal validation?"
+    },
+    {
+      "question": "Have you supported an LPI or similarly structured continuous-improvement initiative? Describe the goals, your role, measures used, and results."
+    },
+    {
+      "question": "A JIRA backlog contains duplicated tickets, vague requests, unestimated items, and several production defects. How would you prepare it for a planning session?"
+    },
+    {
+      "question": "You are facilitating a meeting with executives, operations staff, and technical contributors who disagree on the scope of a high-impact process change. What would you do before, during, and after the meeting to drive consensus?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "What experience do you have working in Agile Scrum teams, and what were your specific responsibilities during a sprint?",
+      "competency": "Agile Scrum",
+      "dimension": "Technical",
+      "target_gap": "Agile Scrum",
+      "difficulty": "mid",
+      "rationale": "Clarifies whether the candidate has any practical Scrum exposure, which is missing from the profile.",
+      "source_evidence": [
+        "TRACS",
+        "Performed program testing and quality assurance for ingest templates and metadata."
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Tell us about a time stakeholders had competing priorities or interpretations of data. How did you facilitate the discussion and help them reach a decision?",
+      "competency": "Consensus facilitation",
+      "dimension": "Behavioural",
+      "target_gap": "Consensus facilitation",
+      "difficulty": "hard",
+      "rationale": "Directly probes a high-priority missing competency: facilitating agreement among groups with competing perspectives.",
+      "source_evidence": [
+        "TRACS",
+        "Provided consulting solutions supporting on-time service-level agreements.",
+        "Provided corrective action plans for client complaints and billing discrepancies."
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "A process has a growing queue of incomplete requests and frequent rework. How would you use a LEAN approach to diagnose root causes and design improvements?",
+      "competency": "LEAN problem solving",
+      "dimension": "Situational",
+      "target_gap": "LEAN principles",
+      "difficulty": "hard",
+      "rationale": "Tests whether the candidate can apply LEAN concepts to an operational process rather than merely define them.",
+      "source_evidence": [
+        "TRACS",
+        "Provided corrective action plans for client complaints and billing discrepancies.",
+        "Maintained on-time service-level agreements for deliverables."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "This role requires significant established BA experience. How has your work as a Data Analyst and Data Support Analyst prepared you to own business-analysis deliverables rather than primarily operational data tasks?",
+      "competency": "BA role readiness",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Business analysis",
+      "difficulty": "mid",
+      "rationale": "Assesses the candidate's candid view of the transition from a stated junior data-analyst profile to a demanding BA role.",
+      "source_evidence": [
+        "Jr. Data Analyst",
+        "Data Analyst, C.H. Robinson Worldwide, Inc.",
+        "Data Support Analyst, Anthology"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "You mention delivering the DASS program on time and maintaining Apple iTunes metadata. What was your individual scope, how did you manage dependencies and quality risks, and what did 'on time' mean operationally?",
+      "competency": "Delivery ownership",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Probes a specific stated achievement for ownership, planning, coordination, and quality-management evidence.",
+      "source_evidence": [
+        "Delivered the DASS program on time and maintained metadata for Apple iTunes.",
+        "Supported data ingestion for Sony, Google, Amazon, LG, Apple iTunes, and other platforms."
+      ],
+      "priority": 0.7
+    },
+    {
+      "question": "Describe how you would break a request to improve a data-ingestion workflow into user stories, including acceptance criteria and validation steps.",
+      "competency": "User story development",
+      "dimension": "Technical",
+      "target_gap": "User story development and validation",
+      "difficulty": "hard",
+      "rationale": "Connects the candidate's ingestion and QA background to a core BA practice that is only partially matched.",
+      "source_evidence": [
+        "Managed user accounts, network security, and troubleshooting.",
+        "Supported data ingestion for Sony, Google, Amazon, LG, Apple iTunes, and other platforms.",
+        "Performed program testing and quality assurance for ingest templates and metadata."
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "Imagine program staff ask for a reporting enhancement but disagree about the metrics, data definitions, and scope. How would you run discovery, document requirements, and gain formal validation?",
+      "competency": "Requirements documentation",
+      "dimension": "Situational",
+      "target_gap": "Requirements elicitation and documentation",
+      "difficulty": "hard",
+      "rationale": "Assesses a repeatable elicitation, documentation, and validation approach for this BA role.",
+      "source_evidence": [
+        "Billed and invoiced clients and supported deal documentation.",
+        "Prepared SAP data for custom dashboard reporting."
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Have you supported an LPI or similarly structured continuous-improvement initiative? Describe the goals, your role, measures used, and results.",
+      "competency": "LPI initiatives",
+      "dimension": "Behavioural",
+      "target_gap": "LPI initiatives",
+      "difficulty": "mid",
+      "rationale": "Directly probes the missing LPI-initiative requirement and allows relevant improvement experience to surface.",
+      "source_evidence": [
+        "TRACS",
+        "Supported home video distribution through data analysis and workflow improvement.",
+        "Developed a more efficient process through allocation plans in JDA."
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "A JIRA backlog contains duplicated tickets, vague requests, unestimated items, and several production defects. How would you prepare it for a planning session?",
+      "competency": "Backlog grooming",
+      "dimension": "Situational",
+      "target_gap": "Backlog grooming",
+      "difficulty": "hard",
+      "rationale": "Directly evaluates the missing backlog-grooming capability through a practical scenario.",
+      "source_evidence": [
+        "TRACS",
+        "Created corrective action plans and allocation plans in JDA."
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "You are facilitating a meeting with executives, operations staff, and technical contributors who disagree on the scope of a high-impact process change. What would you do before, during, and after the meeting to drive consensus?",
+      "competency": "Executive facilitation",
+      "dimension": "Situational",
+      "target_gap": "Consensus facilitation",
+      "difficulty": "hard",
+      "rationale": "Evaluates facilitation structure, conflict management, decision capture, and follow-through where direct evidence is absent.",
+      "source_evidence": [
+        "TRACS",
+        "Fostered and developed client relations",
+        "communication and self motivated individual"
+      ],
+      "priority": 1.0
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

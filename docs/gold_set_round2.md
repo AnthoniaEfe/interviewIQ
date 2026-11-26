@@ -27,9 +27,9 @@ Independent round-1 labels in `annotator_key/` are unchanged.
 
 ## Adjudication of the main set
 
-The 30 main items the two assigned annotators did not agree on are listed in `experiments/gold_set/round2/adjudication_worksheet.csv`. The `adjudicated_label` column is still empty. `experiments/gold_set/annotations/adjudicated.csv` was not created, so these calibration labels are not applied to the main-set consensus.
+The 30 main disagreements are listed in `experiments/gold_set/round2/adjudication_worksheet.csv`. `experiments/gold_set/adjudicated.csv` now has **30** rows (also under `annotations/`). The final four open items (`g003`, `g066`, `g080`, `g118`) are documented in `experiments/gold_set/round2/main_open_adjudication.md`.
 
-When the annotators finish the main set, copy a completed file to `experiments/gold_set/annotations/adjudicated.csv` with columns `item_id,label,cannot_judge,snippet,notes`, then re-run the analysis. Filling that file does not change inter-annotator kappa. Kappa is computed from the two original labels.
+Re-run: `experiments/scripts/analyze_gold_set.py` → usable consensus 46; open disagree 0. Filling adjudication does **not** change inter-annotator kappa (still −0.033 [−0.317, 0.254]); kappa uses the two original labels.
 
 ## Gate
 

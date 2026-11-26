@@ -101,5 +101,10 @@ def run_gold_set_analyze(root: Path | None = None) -> dict:
             rows_by["annotator_B"] = load_and_validate_annotations(b_path, all_ids)
 
     adj_path = ann_dir / "adjudicated.csv"
+    if not adj_path.is_file():
+        # Accept export dropped at pack root (adjudication_app download default).
+        alt = pack / "adjudicated.csv"
+        if alt.is_file():
+            adj_path = alt
     adj_rows = _read_table(adj_path) if adj_path.is_file() else None
     return run_phase2(root, rows_by, adj_rows, assignment=assignment)

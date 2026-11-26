@@ -30,17 +30,28 @@ cd backend && PYTHONPATH=. uvicorn app.main:app --reload --port 8000
 
 Build only from real stored questions. The builder refuses to invent them.
 
+Rubric pilot (T′ vs B1, five primary-30 pairs):
+
+```bash
+PYTHONPATH=backend python experiments/scripts/prepare_human_eval_pilot.py
+```
+
+Full custom build:
+
 ```bash
 PYTHONPATH=backend python experiments/human_eval/build_study.py \
-  --inputs /path/to/records.json \
+  --inputs experiments/human_eval/inputs/primary30_Tprime_vs_B1.json \
   --raters R1 R2 R3 \
-  --mode main
+  --mode pilot
 ```
 
 `records.json` is a list of objects with `job_text`, `candidate_text`, `T`
-(list of question strings), and `B1`. The condition key is written to
-`experiments/human_eval/keys/condition_key_main.json`. Only
-`manifest_main.json` (seed and key hash) is safe to commit.
+(list of question strings), and `B1`. For current work, **T is T′**. The
+condition key is written under `experiments/human_eval/keys/` (gitignored).
+Only `manifest_*.json` (seed and key hash) is safe to commit.
+
+Raters can use `experiments/human_eval/rater_app.html` locally. See
+`docs/human_eval_launch.md`.
 
 Then, against the API:
 

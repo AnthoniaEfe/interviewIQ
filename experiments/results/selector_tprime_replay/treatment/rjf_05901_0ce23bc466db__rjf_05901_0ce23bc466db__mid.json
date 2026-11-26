@@ -1,0 +1,357 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_05901_0ce23bc466db",
+  "jd_id": "rjf_05901_0ce23bc466db",
+  "pair_id": "rjf_05901_0ce23bc466db",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_05901_0ce23bc466db__rjf_05901_0ce23bc466db__mid.json",
+  "pool_stats": {
+    "n_raw": 29,
+    "n_valid": 29
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      6,
+      14,
+      17,
+      11,
+      20,
+      7,
+      1,
+      16,
+      2,
+      19
+    ],
+    "questions": [
+      {
+        "question": "Design a continuous-integration pipeline for a multi-team C++ and Java application. Which stages, quality gates, test suites, and feedback mechanisms would you require before a merge is accepted?",
+        "competency": "Continuous integration",
+        "dimension": "Technical",
+        "target_gap": "Continuous integration",
+        "difficulty": "hard",
+        "rationale": "Continuous integration is a high-weight missing requirement central to the role's delivery responsibilities.",
+        "source_evidence": [
+          "Software testing",
+          "continuous integration"
+        ],
+        "priority": 0.99
+      },
+      {
+        "question": "Describe the Agile practices you have actually participated in. Which ceremonies, artifacts, roles, and metrics did you use, and how did they change delivery outcomes?",
+        "competency": "Agile development",
+        "dimension": "Behavioural",
+        "target_gap": "Agile development",
+        "difficulty": "mid",
+        "rationale": "Tests the candidate's actual Agile exposure before assigning Agile-method SME responsibilities.",
+        "source_evidence": [
+          "Helped plan and organize software testing",
+          "Agile development methods and processes"
+        ],
+        "priority": 0.92
+      },
+      {
+        "question": "A SonarCloud quality gate begins failing because of newly introduced code duplication and reduced test coverage. How would you investigate, set policy, and decide whether to block the release?",
+        "competency": "Code quality governance",
+        "dimension": "Situational",
+        "target_gap": "SonarCloud",
+        "difficulty": "hard",
+        "rationale": "SonarCloud is missing from the profile and the role requires management of development processes using it.",
+        "source_evidence": [
+          "Troubleshot programs and fixed functional bugs",
+          "using ... Sonar Cloud"
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "What is your current understanding of Intelligent Transportation Systems, and how would you build enough domain knowledge in your first 60 days to make sound technical and delivery decisions?",
+        "competency": "ITS domain knowledge",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "Intelligent Transportation Systems (ITS)",
+        "difficulty": "mid",
+        "rationale": "ITS is a required domain area with only a weak match from prior defense-system experience.",
+        "source_evidence": [
+          "Software testing for Navy and JTCG/ME programs",
+          "Strong knowledge of ITS"
+        ],
+        "priority": 0.94
+      },
+      {
+        "question": "This position requires the ability to obtain and maintain a Public Trust clearance. Are you able and willing to complete the required suitability process, and is there anything relevant you would need to discuss with the employer's security team?",
+        "competency": "Clearance eligibility",
+        "dimension": "Role-Specific",
+        "target_gap": "Public Trust security clearance",
+        "difficulty": "mid",
+        "rationale": "Clarifies the candidate's ability to satisfy a stated role condition while recognizing prior work with classified material.",
+        "source_evidence": [
+          "Worked with classified material daily",
+          "Ability to obtain and maintain a Public Trust security clearance"
+        ],
+        "priority": 0.86
+      },
+      {
+        "question": "For an ITS component that exchanges time-sensitive data, how would you decide between TCP and UDP, and where could SNMP fit into the operational design?",
+        "competency": "Network protocols",
+        "dimension": "Technical",
+        "target_gap": "Communication protocols",
+        "difficulty": "hard",
+        "rationale": "The match is partial based on communication skills rather than documented protocol experience, so technical understanding needs direct assessment.",
+        "source_evidence": [
+          "Excellent written and verbal communication skills",
+          "communication protocols, such as TCP, UDP, SNMP"
+        ],
+        "priority": 0.87
+      },
+      {
+        "question": "You list Java, but the profile does not describe a Java deliverable. Walk through a Java or J2EE application you have built or maintained, including its layers, dependencies, and your personal contribution.",
+        "competency": "Java/J2EE development",
+        "dimension": "Technical",
+        "target_gap": "Java/J2EE",
+        "difficulty": "mid",
+        "rationale": "The Java/J2EE match is partial and needs verification of practical enterprise Java experience.",
+        "source_evidence": [
+          "Programming: Java",
+          "Java/J2EE software development"
+        ],
+        "priority": 0.91
+      },
+      {
+        "question": "How would you structure Confluence spaces and page templates so architecture decisions, sprint outcomes, operational runbooks, and release notes remain current and discoverable?",
+        "competency": "Confluence knowledge management",
+        "dimension": "Situational",
+        "target_gap": "Confluence",
+        "difficulty": "mid",
+        "rationale": "Confluence is a high-weight missing tool requirement and is important for cross-team coordination.",
+        "source_evidence": [
+          "Generated Software Description and Testing Plan documents from test reports",
+          "using ... Confluence"
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "How would you design persistence for a scalable application that needs transactional operational data as well as high-volume event data? Explain what you would place in relational versus non-relational storage and why.",
+        "competency": "Database architecture",
+        "dimension": "Situational",
+        "target_gap": "Relational and non-relational databases",
+        "difficulty": "hard",
+        "rationale": "The profile only notes assistance with SQL Server setup and maintenance, while the role requires design and management across relational and non-relational databases.",
+        "source_evidence": [
+          "Assisted with setup and maintenance of SQL Server 2014",
+          "designing, developing, and managing applications using both relational and non-relational databases"
+        ],
+        "priority": 0.96
+      },
+      {
+        "question": "Imagine three scrum teams share a dependency that threatens two release dates. As Scrum of Scrums lead, how would you surface the issue, establish ownership, sequence work, and communicate the plan?",
+        "competency": "Scrum-of-Scrums leadership",
+        "dimension": "Situational",
+        "target_gap": "Scrum Master leadership",
+        "difficulty": "hard",
+        "rationale": "Scrum Master leadership is a required weak match and is critical to coordinating the role's multiple work streams.",
+        "source_evidence": [
+          "Helped plan and organize software testing",
+          "Act as scrum of scrums master"
+        ],
+        "priority": 0.98
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 3,
+      "Behavioural": 1,
+      "Situational": 4,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 1
+    },
+    "gap_share": 0.8,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.1410806165995165,
+      "M2.P": 0.4,
+      "M3.P": 0.5,
+      "M4.P": 8.981292938601747,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "Design a continuous-integration pipeline for a multi-team C++ and Java application. Which stages, quality gates, test suites, and feedback mechanisms would you require before a merge is accepted?"
+    },
+    {
+      "question": "Describe the Agile practices you have actually participated in. Which ceremonies, artifacts, roles, and metrics did you use, and how did they change delivery outcomes?"
+    },
+    {
+      "question": "A SonarCloud quality gate begins failing because of newly introduced code duplication and reduced test coverage. How would you investigate, set policy, and decide whether to block the release?"
+    },
+    {
+      "question": "What is your current understanding of Intelligent Transportation Systems, and how would you build enough domain knowledge in your first 60 days to make sound technical and delivery decisions?"
+    },
+    {
+      "question": "This position requires the ability to obtain and maintain a Public Trust clearance. Are you able and willing to complete the required suitability process, and is there anything relevant you would need to discuss with the employer's security team?"
+    },
+    {
+      "question": "For an ITS component that exchanges time-sensitive data, how would you decide between TCP and UDP, and where could SNMP fit into the operational design?"
+    },
+    {
+      "question": "You list Java, but the profile does not describe a Java deliverable. Walk through a Java or J2EE application you have built or maintained, including its layers, dependencies, and your personal contribution."
+    },
+    {
+      "question": "How would you structure Confluence spaces and page templates so architecture decisions, sprint outcomes, operational runbooks, and release notes remain current and discoverable?"
+    },
+    {
+      "question": "How would you design persistence for a scalable application that needs transactional operational data as well as high-volume event data? Explain what you would place in relational versus non-relational storage and why."
+    },
+    {
+      "question": "Imagine three scrum teams share a dependency that threatens two release dates. As Scrum of Scrums lead, how would you surface the issue, establish ownership, sequence work, and communicate the plan?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Design a continuous-integration pipeline for a multi-team C++ and Java application. Which stages, quality gates, test suites, and feedback mechanisms would you require before a merge is accepted?",
+      "competency": "Continuous integration",
+      "dimension": "Technical",
+      "target_gap": "Continuous integration",
+      "difficulty": "hard",
+      "rationale": "Continuous integration is a high-weight missing requirement central to the role's delivery responsibilities.",
+      "source_evidence": [
+        "Software testing",
+        "continuous integration"
+      ],
+      "priority": 0.99
+    },
+    {
+      "question": "Describe the Agile practices you have actually participated in. Which ceremonies, artifacts, roles, and metrics did you use, and how did they change delivery outcomes?",
+      "competency": "Agile development",
+      "dimension": "Behavioural",
+      "target_gap": "Agile development",
+      "difficulty": "mid",
+      "rationale": "Tests the candidate's actual Agile exposure before assigning Agile-method SME responsibilities.",
+      "source_evidence": [
+        "Helped plan and organize software testing",
+        "Agile development methods and processes"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "A SonarCloud quality gate begins failing because of newly introduced code duplication and reduced test coverage. How would you investigate, set policy, and decide whether to block the release?",
+      "competency": "Code quality governance",
+      "dimension": "Situational",
+      "target_gap": "SonarCloud",
+      "difficulty": "hard",
+      "rationale": "SonarCloud is missing from the profile and the role requires management of development processes using it.",
+      "source_evidence": [
+        "Troubleshot programs and fixed functional bugs",
+        "using ... Sonar Cloud"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "What is your current understanding of Intelligent Transportation Systems, and how would you build enough domain knowledge in your first 60 days to make sound technical and delivery decisions?",
+      "competency": "ITS domain knowledge",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Intelligent Transportation Systems (ITS)",
+      "difficulty": "mid",
+      "rationale": "ITS is a required domain area with only a weak match from prior defense-system experience.",
+      "source_evidence": [
+        "Software testing for Navy and JTCG/ME programs",
+        "Strong knowledge of ITS"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "This position requires the ability to obtain and maintain a Public Trust clearance. Are you able and willing to complete the required suitability process, and is there anything relevant you would need to discuss with the employer's security team?",
+      "competency": "Clearance eligibility",
+      "dimension": "Role-Specific",
+      "target_gap": "Public Trust security clearance",
+      "difficulty": "mid",
+      "rationale": "Clarifies the candidate's ability to satisfy a stated role condition while recognizing prior work with classified material.",
+      "source_evidence": [
+        "Worked with classified material daily",
+        "Ability to obtain and maintain a Public Trust security clearance"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "For an ITS component that exchanges time-sensitive data, how would you decide between TCP and UDP, and where could SNMP fit into the operational design?",
+      "competency": "Network protocols",
+      "dimension": "Technical",
+      "target_gap": "Communication protocols",
+      "difficulty": "hard",
+      "rationale": "The match is partial based on communication skills rather than documented protocol experience, so technical understanding needs direct assessment.",
+      "source_evidence": [
+        "Excellent written and verbal communication skills",
+        "communication protocols, such as TCP, UDP, SNMP"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "You list Java, but the profile does not describe a Java deliverable. Walk through a Java or J2EE application you have built or maintained, including its layers, dependencies, and your personal contribution.",
+      "competency": "Java/J2EE development",
+      "dimension": "Technical",
+      "target_gap": "Java/J2EE",
+      "difficulty": "mid",
+      "rationale": "The Java/J2EE match is partial and needs verification of practical enterprise Java experience.",
+      "source_evidence": [
+        "Programming: Java",
+        "Java/J2EE software development"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "How would you structure Confluence spaces and page templates so architecture decisions, sprint outcomes, operational runbooks, and release notes remain current and discoverable?",
+      "competency": "Confluence knowledge management",
+      "dimension": "Situational",
+      "target_gap": "Confluence",
+      "difficulty": "mid",
+      "rationale": "Confluence is a high-weight missing tool requirement and is important for cross-team coordination.",
+      "source_evidence": [
+        "Generated Software Description and Testing Plan documents from test reports",
+        "using ... Confluence"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "How would you design persistence for a scalable application that needs transactional operational data as well as high-volume event data? Explain what you would place in relational versus non-relational storage and why.",
+      "competency": "Database architecture",
+      "dimension": "Situational",
+      "target_gap": "Relational and non-relational databases",
+      "difficulty": "hard",
+      "rationale": "The profile only notes assistance with SQL Server setup and maintenance, while the role requires design and management across relational and non-relational databases.",
+      "source_evidence": [
+        "Assisted with setup and maintenance of SQL Server 2014",
+        "designing, developing, and managing applications using both relational and non-relational databases"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "Imagine three scrum teams share a dependency that threatens two release dates. As Scrum of Scrums lead, how would you surface the issue, establish ownership, sequence work, and communicate the plan?",
+      "competency": "Scrum-of-Scrums leadership",
+      "dimension": "Situational",
+      "target_gap": "Scrum Master leadership",
+      "difficulty": "hard",
+      "rationale": "Scrum Master leadership is a required weak match and is critical to coordinating the role's multiple work streams.",
+      "source_evidence": [
+        "Helped plan and organize software testing",
+        "Act as scrum of scrums master"
+      ],
+      "priority": 0.98
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

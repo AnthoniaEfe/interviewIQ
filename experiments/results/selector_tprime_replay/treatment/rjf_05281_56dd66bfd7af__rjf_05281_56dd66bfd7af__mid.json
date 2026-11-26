@@ -1,0 +1,365 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_05281_56dd66bfd7af",
+  "jd_id": "rjf_05281_56dd66bfd7af",
+  "pair_id": "rjf_05281_56dd66bfd7af",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_05281_56dd66bfd7af__rjf_05281_56dd66bfd7af__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      5,
+      20,
+      1,
+      19,
+      9,
+      13,
+      14,
+      7,
+      6,
+      3
+    ],
+    "questions": [
+      {
+        "question": "What exposure have you had to Spring or Spring Boot, and how would you organize controllers, services, repositories, configuration, and tests in a small Spring application?",
+        "competency": "Spring Framework",
+        "dimension": "Technical",
+        "target_gap": "Spring Framework",
+        "difficulty": "mid",
+        "rationale": "Spring is a required but undocumented capability; the question separates direct experience from conceptual knowledge.",
+        "source_evidence": [
+          "Gap matrix: Spring Framework \u2014 missing",
+          "Gap evidence matched to Relational databases"
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "Describe the most technical problem you have owned from problem definition through implementation, validation, documentation, and ongoing support. What artifacts did you produce?",
+        "competency": "Engineering ownership",
+        "dimension": "Behavioural",
+        "target_gap": "Professional engineering",
+        "difficulty": "mid",
+        "rationale": "Tests end-to-end ownership and technical rigor without presuming that the candidate has held a software-engineering title.",
+        "source_evidence": [
+          "Gap matrix: Professional engineering \u2014 missing",
+          "Established administrative procedures to minimize errors and avoidable delays.",
+          "Data verification and testing"
+        ],
+        "priority": 0.92
+      },
+      {
+        "question": "Suppose a daily Spark job must join large student-enrollment and attendance datasets and is running slowly. How would you diagnose the bottleneck and improve the job?",
+        "competency": "Spark performance tuning",
+        "dimension": "Situational",
+        "target_gap": "Scala and Apache Spark",
+        "difficulty": "hard",
+        "rationale": "Tests practical Spark reasoning for a high-priority missing requirement while using a domain familiar from the candidate's school-data background.",
+        "source_evidence": [
+          "Gap matrix: Scala and Apache Spark \u2014 missing",
+          "Performed data management, audits, analysis, reporting, and quality-control activities."
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "This position asks for extensive professional engineering experience. How does your experience to date map to engineering work, and what concrete steps have you taken to build software-engineering capability?",
+        "competency": "Engineering readiness",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "Professional engineering",
+        "difficulty": "mid",
+        "rationale": "Directly addresses the documented absence of professional engineering experience while allowing the candidate to explain relevant preparation accurately.",
+        "source_evidence": [
+          "Gap matrix: Professional engineering \u2014 missing",
+          "Student Data Assistant, 01/2018-Current",
+          "Data management and relational databases"
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "Using your experience with audits, reporting, and tracking mechanisms, describe how you would translate a business request into source-to-target mappings, transformation rules, data-quality checks, and acceptance criteria for a new ETL pipeline.",
+        "competency": "ETL pipeline design",
+        "dimension": "Role-Specific",
+        "target_gap": "ETL data pipeline design and development",
+        "difficulty": "hard",
+        "rationale": "The candidate has a weak match through analysis and data management; this tests whether that experience can extend to disciplined pipeline design.",
+        "source_evidence": [
+          "Gap matrix: ETL data pipeline design and development \u2014 weak_match",
+          "Data analysis and modeling",
+          "Explained data requirements for applications to teams and customers."
+        ],
+        "priority": 0.9
+      },
+      {
+        "question": "How would you model a relational database for students, enrollments, courses, and attendance while preventing duplicate identities and preserving historical changes?",
+        "competency": "Relational data modeling",
+        "dimension": "Technical",
+        "target_gap": "Database design and development",
+        "difficulty": "hard",
+        "rationale": "Tests data modeling, integrity, and history management using the candidate's education-administration context.",
+        "source_evidence": [
+          "Gap matrix: Database design and development \u2014 partial_match",
+          "K-12 education administration",
+          "Student records management"
+        ],
+        "priority": 0.79
+      },
+      {
+        "question": "What trade-offs would you consider when choosing primary keys, foreign keys, indexes, and normalization levels for a transactional data store?",
+        "competency": "Database design trade-offs",
+        "dimension": "Technical",
+        "target_gap": "Database design and development",
+        "difficulty": "hard",
+        "rationale": "Determines whether the partial database match includes core engineering design judgment.",
+        "source_evidence": [
+          "Gap matrix: Database design and development \u2014 partial_match",
+          "Relational databases"
+        ],
+        "priority": 0.75
+      },
+      {
+        "question": "Design a REST API for submitting and retrieving data-quality exceptions. What endpoints, request validation, status codes, pagination, and error responses would you define?",
+        "competency": "REST API design",
+        "dimension": "Technical",
+        "target_gap": "REST API development",
+        "difficulty": "hard",
+        "rationale": "Tests concrete API-design ability for a required capability absent from the profile, grounded in the candidate's documented quality-control work.",
+        "source_evidence": [
+          "Gap matrix: REST API development \u2014 missing",
+          "Performed routine data audits and quality-control activities."
+        ],
+        "priority": 0.97
+      },
+      {
+        "question": "A Spring REST endpoint begins returning intermittent 500 errors after a database change. Walk through how you would investigate, contain, and correct the issue.",
+        "competency": "Spring troubleshooting",
+        "dimension": "Situational",
+        "target_gap": "Spring Framework",
+        "difficulty": "hard",
+        "rationale": "Evaluates operational debugging discipline for a key missing framework requirement.",
+        "source_evidence": [
+          "Gap matrix: Spring Framework \u2014 missing",
+          "Detected and resolved data quality issues and discrepancies."
+        ],
+        "priority": 0.93
+      },
+      {
+        "question": "What Java applications or components have you built, maintained, or studied, and what was your specific contribution in each?",
+        "competency": "Java development",
+        "dimension": "Technical",
+        "target_gap": "Java",
+        "difficulty": "mid",
+        "rationale": "Java is required and no Java development is documented, so this establishes the candidate's actual baseline without assuming experience.",
+        "source_evidence": [
+          "Gap matrix: Java \u2014 missing",
+          "Candidate technical skills list relational databases and data management, but not Java."
+        ],
+        "priority": 0.98
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 5,
+      "Behavioural": 1,
+      "Situational": 2,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 1
+    },
+    "gap_share": 0.8,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.18492449498907687,
+      "M2.P": 0.5,
+      "M3.P": 0.6,
+      "M4.P": 8.411872242488219,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "What exposure have you had to Spring or Spring Boot, and how would you organize controllers, services, repositories, configuration, and tests in a small Spring application?"
+    },
+    {
+      "question": "Describe the most technical problem you have owned from problem definition through implementation, validation, documentation, and ongoing support. What artifacts did you produce?"
+    },
+    {
+      "question": "Suppose a daily Spark job must join large student-enrollment and attendance datasets and is running slowly. How would you diagnose the bottleneck and improve the job?"
+    },
+    {
+      "question": "This position asks for extensive professional engineering experience. How does your experience to date map to engineering work, and what concrete steps have you taken to build software-engineering capability?"
+    },
+    {
+      "question": "Using your experience with audits, reporting, and tracking mechanisms, describe how you would translate a business request into source-to-target mappings, transformation rules, data-quality checks, and acceptance criteria for a new ETL pipeline."
+    },
+    {
+      "question": "How would you model a relational database for students, enrollments, courses, and attendance while preventing duplicate identities and preserving historical changes?"
+    },
+    {
+      "question": "What trade-offs would you consider when choosing primary keys, foreign keys, indexes, and normalization levels for a transactional data store?"
+    },
+    {
+      "question": "Design a REST API for submitting and retrieving data-quality exceptions. What endpoints, request validation, status codes, pagination, and error responses would you define?"
+    },
+    {
+      "question": "A Spring REST endpoint begins returning intermittent 500 errors after a database change. Walk through how you would investigate, contain, and correct the issue."
+    },
+    {
+      "question": "What Java applications or components have you built, maintained, or studied, and what was your specific contribution in each?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "What exposure have you had to Spring or Spring Boot, and how would you organize controllers, services, repositories, configuration, and tests in a small Spring application?",
+      "competency": "Spring Framework",
+      "dimension": "Technical",
+      "target_gap": "Spring Framework",
+      "difficulty": "mid",
+      "rationale": "Spring is a required but undocumented capability; the question separates direct experience from conceptual knowledge.",
+      "source_evidence": [
+        "Gap matrix: Spring Framework \u2014 missing",
+        "Gap evidence matched to Relational databases"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Describe the most technical problem you have owned from problem definition through implementation, validation, documentation, and ongoing support. What artifacts did you produce?",
+      "competency": "Engineering ownership",
+      "dimension": "Behavioural",
+      "target_gap": "Professional engineering",
+      "difficulty": "mid",
+      "rationale": "Tests end-to-end ownership and technical rigor without presuming that the candidate has held a software-engineering title.",
+      "source_evidence": [
+        "Gap matrix: Professional engineering \u2014 missing",
+        "Established administrative procedures to minimize errors and avoidable delays.",
+        "Data verification and testing"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "Suppose a daily Spark job must join large student-enrollment and attendance datasets and is running slowly. How would you diagnose the bottleneck and improve the job?",
+      "competency": "Spark performance tuning",
+      "dimension": "Situational",
+      "target_gap": "Scala and Apache Spark",
+      "difficulty": "hard",
+      "rationale": "Tests practical Spark reasoning for a high-priority missing requirement while using a domain familiar from the candidate's school-data background.",
+      "source_evidence": [
+        "Gap matrix: Scala and Apache Spark \u2014 missing",
+        "Performed data management, audits, analysis, reporting, and quality-control activities."
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "This position asks for extensive professional engineering experience. How does your experience to date map to engineering work, and what concrete steps have you taken to build software-engineering capability?",
+      "competency": "Engineering readiness",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Professional engineering",
+      "difficulty": "mid",
+      "rationale": "Directly addresses the documented absence of professional engineering experience while allowing the candidate to explain relevant preparation accurately.",
+      "source_evidence": [
+        "Gap matrix: Professional engineering \u2014 missing",
+        "Student Data Assistant, 01/2018-Current",
+        "Data management and relational databases"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Using your experience with audits, reporting, and tracking mechanisms, describe how you would translate a business request into source-to-target mappings, transformation rules, data-quality checks, and acceptance criteria for a new ETL pipeline.",
+      "competency": "ETL pipeline design",
+      "dimension": "Role-Specific",
+      "target_gap": "ETL data pipeline design and development",
+      "difficulty": "hard",
+      "rationale": "The candidate has a weak match through analysis and data management; this tests whether that experience can extend to disciplined pipeline design.",
+      "source_evidence": [
+        "Gap matrix: ETL data pipeline design and development \u2014 weak_match",
+        "Data analysis and modeling",
+        "Explained data requirements for applications to teams and customers."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "How would you model a relational database for students, enrollments, courses, and attendance while preventing duplicate identities and preserving historical changes?",
+      "competency": "Relational data modeling",
+      "dimension": "Technical",
+      "target_gap": "Database design and development",
+      "difficulty": "hard",
+      "rationale": "Tests data modeling, integrity, and history management using the candidate's education-administration context.",
+      "source_evidence": [
+        "Gap matrix: Database design and development \u2014 partial_match",
+        "K-12 education administration",
+        "Student records management"
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "What trade-offs would you consider when choosing primary keys, foreign keys, indexes, and normalization levels for a transactional data store?",
+      "competency": "Database design trade-offs",
+      "dimension": "Technical",
+      "target_gap": "Database design and development",
+      "difficulty": "hard",
+      "rationale": "Determines whether the partial database match includes core engineering design judgment.",
+      "source_evidence": [
+        "Gap matrix: Database design and development \u2014 partial_match",
+        "Relational databases"
+      ],
+      "priority": 0.75
+    },
+    {
+      "question": "Design a REST API for submitting and retrieving data-quality exceptions. What endpoints, request validation, status codes, pagination, and error responses would you define?",
+      "competency": "REST API design",
+      "dimension": "Technical",
+      "target_gap": "REST API development",
+      "difficulty": "hard",
+      "rationale": "Tests concrete API-design ability for a required capability absent from the profile, grounded in the candidate's documented quality-control work.",
+      "source_evidence": [
+        "Gap matrix: REST API development \u2014 missing",
+        "Performed routine data audits and quality-control activities."
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "A Spring REST endpoint begins returning intermittent 500 errors after a database change. Walk through how you would investigate, contain, and correct the issue.",
+      "competency": "Spring troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Spring Framework",
+      "difficulty": "hard",
+      "rationale": "Evaluates operational debugging discipline for a key missing framework requirement.",
+      "source_evidence": [
+        "Gap matrix: Spring Framework \u2014 missing",
+        "Detected and resolved data quality issues and discrepancies."
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "What Java applications or components have you built, maintained, or studied, and what was your specific contribution in each?",
+      "competency": "Java development",
+      "dimension": "Technical",
+      "target_gap": "Java",
+      "difficulty": "mid",
+      "rationale": "Java is required and no Java development is documented, so this establishes the candidate's actual baseline without assuming experience.",
+      "source_evidence": [
+        "Gap matrix: Java \u2014 missing",
+        "Candidate technical skills list relational databases and data management, but not Java."
+      ],
+      "priority": 0.98
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

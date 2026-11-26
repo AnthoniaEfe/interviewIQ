@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InterviewIQ human rating</title>
+  <style>
+    :root {
+      --bg: #f7f5f1;
+      --ink: #1c1917;
+      --muted: #57534e;
+      --line: #d6d3d1;
+      --card: #fff;
+      --accent: #0f766e;
+      --warn: #9a3412;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.45 "Source Sans 3", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+    header, main, footer { max-width: 980px; margin: 0 auto; padding: 1rem 1.25rem; }
+    header { border-bottom: 1px solid var(--line); }
+    h1 { font-size: 1.35rem; margin: 0 0 0.35rem; font-weight: 600; }
+    .muted { color: var(--muted); }
+    .row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: end; margin: 0.75rem 0; }
+    label { display: grid; gap: 0.25rem; font-size: 0.9rem; }
+    input, select, button, textarea {
+      font: inherit;
+      padding: 0.45rem 0.6rem;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+    }
+    button {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+      cursor: pointer;
+    }
+    button.secondary { background: #fff; color: var(--ink); }
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    .grid2 { display: grid; gap: 1rem; }
+    @media (min-width: 860px) { .grid2 { grid-template-columns: 1fr 1fr; } }
+    .set h2 { margin-top: 0; font-size: 1.05rem; }
+    .q { margin: 0.4rem 0; padding: 0.55rem 0.65rem; background: #fafaf9; border-left: 3px solid var(--accent); }
+    .scores { display: grid; gap: 0.5rem; }
+    .score-row { display: flex; gap: 0.5rem; align-items: center; justify-content: space-between; }
+    .score-row select { min-width: 4.5rem; }
+    .progress { font-weight: 600; }
+    .error { color: var(--warn); white-space: pre-wrap; }
+    details.cvjd { margin-top: 0.75rem; }
+    pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      background: #fafaf9;
+      border: 1px solid var(--line);
+      padding: 0.75rem;
+      max-height: 220px;
+      overflow: auto;
+      font-size: 0.85rem;
+    }
+    .nav { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Interview question rating</h1>
+    <p class="muted">Blinded sets only. Score with the study rubric. Do not guess which method is which. Do not use AI assistance.</p>
+    <div class="row">
+      <label>API base
+        <input id="apiBase" size="36" value="http://127.0.0.1:8000" />
+      </label>
+      <label>Mode
+        <select id="mode">
+          <option value="pilot" selected>pilot</option>
+          <option value="main">main</option>
+          <option value="demo">demo</option>
+        </select>
+      </label>
+      <label>Token
+        <input id="token" size="40" placeholder="paste personal token" />
+      </label>
+      <button id="loadBtn" type="button">Load session</button>
+    </div>
+    <p id="status" class="muted"></p>
+    <p id="error" class="error" hidden></p>
+  </header>
+  <main id="main" hidden>
+    <div class="panel">
+      <div class="row" style="justify-content:space-between">
+        <div>
+          <div class="progress" id="progress"></div>
+          <div class="muted" id="itemMeta"></div>
+        </div>
+        <div class="nav">
+          <button class="secondary" type="button" id="prevBtn">Previous</button>
+          <button class="secondary" type="button" id="nextBtn">Next unfinished</button>
+        </div>
+      </div>
+      <h2 style="margin-bottom:0.35rem">Job</h2>
+      <p id="jobSummary"></p>
+      <details class="cvjd"><summary>Full job text</summary><pre id="jobText"></pre></details>
+      <h2 style="margin:1rem 0 0.35rem">Candidate</h2>
+      <p id="candSummary"></p>
+      <details class="cvjd"><summary>Full CV text</summary><pre id="candText"></pre></details>
+    </div>
+    <div class="grid2">
+      <section class="panel set" id="setX"></section>
+      <section class="panel set" id="setY"></section>
+    </div>
+    <div class="panel">
+      <label>Preference
+        <select id="preference">
+          <option value="">—</option>
+          <option value="X">Set X</option>
+          <option value="Y">Set Y</option>
+          <option value="no_preference">No preference</option>
+        </select>
+      </label>
+      <label style="margin-top:0.75rem;display:grid">Optional comment
+        <textarea id="comment" rows="2"></textarea>
+      </label>
+      <div class="row">
+        <button type="button" id="saveBtn">Save rating</button>
+        <span id="saveMsg" class="muted"></span>
+      </div>
+    </div>
+  </main>
+  <footer class="muted">Anchors: docs/human_eval_rubric.md · Local file only; token stays in this browser tab.</footer>
+  <script>
+  (() => {
+    const $ = (id) => document.getElementById(id);
+    let session = null;
+    let index = 0;
+    let openedAt = Date.now();
+    const criteria = ["relevance", "coverage", "non_redundancy"];
+
+    function api(path, opts = {}) {
+      const base = $("apiBase").value.replace(/\/$/, "");
+      return fetch(base + path, opts).then(async (res) => {
+        const text = await res.text();
+        let data;
+        try { data = JSON.parse(text); } catch { data = { detail: text }; }
+        if (!res.ok) throw new Error(typeof data.detail === "string" ? data.detail : JSON.stringify(data.detail || data));
+        return data;
+      });
+    }
+
+    function showError(msg) {
+      const el = $("error");
+      if (!msg) { el.hidden = true; el.textContent = ""; return; }
+      el.hidden = false;
+      el.textContent = msg;
+    }
+
+    function scoreSelect(name, value) {
+      const opts = [1,2,3,4,5].map(v => `<option value="${v}" ${Number(value)===v?"selected":""}>${v}</option>`).join("");
+      return `<select data-field="${name}"><option value="">—</option>${opts}</select>`;
+    }
+
+    function renderSet(el, title, questions, side, draft) {
+      const qs = (questions || []).map((q, i) => `<div class="q"><strong>Q${i+1}.</strong> ${escapeHtml(q)}</div>`).join("");
+      const scores = criteria.map(c => {
+        const key = `${c}_${side}`;
+        const label = c.replace("_", "-");
+        return `<div class="score-row"><span>${label}</span>${scoreSelect(key, draft && draft[key])}</div>`;
+      }).join("");
+      el.innerHTML = `<h2>${title}</h2>${qs}<div class="scores">${scores}</div>`;
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[ch]));
+    }
+
+    function currentEntry() {
+      return session.items[index];
+    }
+
+    function render() {
+      if (!session) return;
+      const entry = currentEntry();
+      const item = entry.item;
+      $("main").hidden = false;
+      $("progress").textContent = `${session.n_complete} / ${session.n_items} complete · rater ${session.rater_id}`;
+      $("itemMeta").textContent = `${item.item_id}${entry.complete ? " (complete)" : ""}`;
+      $("jobSummary").textContent = item.job_summary || "";
+      $("candSummary").textContent = item.candidate_summary || "";
+      $("jobText").textContent = item.job_text || "";
+      $("candText").textContent = item.candidate_text || "";
+      renderSet($("setX"), "Set X", item.set_x, "x", entry.draft);
+      renderSet($("setY"), "Set Y", item.set_y, "y", entry.draft);
+      $("preference").value = (entry.draft && entry.draft.preference) || "";
+      $("comment").value = (entry.draft && entry.draft.comment) || "";
+      $("saveMsg").textContent = "";
+      openedAt = Date.now();
+    }
+
+    async function loadSession() {
+      showError("");
+      $("status").textContent = "Loading…";
+      try {
+        const mode = $("mode").value;
+        const token = $("token").value.trim();
+        if (!token) throw new Error("token required");
+        session = await api(`/api/v1/human-eval/session?token=${encodeURIComponent(token)}&mode=${encodeURIComponent(mode)}`);
+        index = 0;
+        if (session.resume_item_id) {
+          const idx = session.items.findIndex(e => e.item.item_id === session.resume_item_id);
+          if (idx >= 0) index = idx;
+        }
+        $("status").textContent = `Loaded mode=${session.mode}`;
+        render();
+      } catch (err) {
+        showError(String(err.message || err));
+        $("status").textContent = "";
+      }
+    }
+
+    async function save() {
+      showError("");
+      $("saveMsg").textContent = "Saving…";
+      try {
+        const mode = $("mode").value;
+        const token = $("token").value.trim();
+        const item = currentEntry().item;
+        const payload = {
+          item_id: item.item_id,
+          preference: $("preference").value || null,
+          comment: $("comment").value || "",
+          elapsed_ms: Math.max(0, Date.now() - openedAt),
+        };
+        document.querySelectorAll("select[data-field]").forEach(sel => {
+          const v = sel.value;
+          payload[sel.dataset.field] = v === "" ? null : Number(v);
+        });
+        const res = await api(
+          `/api/v1/human-eval/ratings?token=${encodeURIComponent(token)}&mode=${encodeURIComponent(mode)}`,
+          { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }
+        );
+        session = await api(`/api/v1/human-eval/session?token=${encodeURIComponent(token)}&mode=${encodeURIComponent(mode)}`);
+        const idx = session.items.findIndex(e => e.item.item_id === item.item_id);
+        if (idx >= 0) index = idx;
+        render();
+        $("saveMsg").textContent = res.complete ? "Saved (complete)." : "Saved (incomplete).";
+      } catch (err) {
+        showError(String(err.message || err));
+        $("saveMsg").textContent = "";
+      }
+    }
+
+    $("loadBtn").addEventListener("click", loadSession);
+    $("saveBtn").addEventListener("click", save);
+    $("prevBtn").addEventListener("click", () => {
+      if (!session) return;
+      index = (index - 1 + session.items.length) % session.items.length;
+      render();
+    });
+    $("nextBtn").addEventListener("click", () => {
+      if (!session) return;
+      if (session.resume_item_id) {
+        const idx = session.items.findIndex(e => e.item.item_id === session.resume_item_id);
+        index = idx >= 0 ? idx : index;
+      } else {
+        index = (index + 1) % session.items.length;
+      }
+      render();
+    });
+  })();
+  </script>
+</body>
+</html>

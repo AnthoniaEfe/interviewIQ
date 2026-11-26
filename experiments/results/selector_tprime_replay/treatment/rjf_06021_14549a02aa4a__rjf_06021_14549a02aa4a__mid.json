@@ -1,0 +1,357 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_06021_14549a02aa4a",
+  "jd_id": "rjf_06021_14549a02aa4a",
+  "pair_id": "rjf_06021_14549a02aa4a",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_06021_14549a02aa4a__rjf_06021_14549a02aa4a__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      0,
+      24,
+      3,
+      25,
+      11,
+      5,
+      2,
+      8,
+      7,
+      18
+    ],
+    "questions": [
+      {
+        "question": "Walk me through how you would build and post a month-end close package for prepaids, accruals, payroll, and benefits, including the cut-off checks you would perform before close.",
+        "competency": "Month-end close",
+        "dimension": "Technical",
+        "target_gap": "Month-end accounting close",
+        "difficulty": "mid",
+        "rationale": "The role requires reliable close execution, while the profile mentions month-end statements but provides limited detail on end-to-end close ownership and cut-off controls.",
+        "source_evidence": [
+          "Prepared balance sheets, profit and loss statements, month-end statements, invoices, and vendor payments.",
+          "monthly accounting close procedures"
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "This role works with international and cross-cultural stakeholders. Describe any experience collaborating across different work styles, locations, or cultural backgrounds, and how you adapted your communication.",
+        "competency": "Cross-cultural collaboration",
+        "dimension": "Behavioural",
+        "target_gap": "International and cross-cultural work experience",
+        "difficulty": "mid",
+        "rationale": "International and cross-cultural experience is a weak match with no direct profile evidence, so the interviewer should establish the candidate's actual exposure and adaptability.",
+        "source_evidence": [
+          "team player",
+          "Experience working in an international and cross-cultural environment"
+        ],
+        "priority": 0.83
+      },
+      {
+        "question": "A department submits a significant expense invoice after the close deadline for services received in the prior month. How would you determine the accounting treatment, document the decision, and communicate the impact?",
+        "competency": "Period-end cut-off",
+        "dimension": "Situational",
+        "target_gap": "Month-end accounting close",
+        "difficulty": "mid",
+        "rationale": "This tests practical period-end cut-off judgment, a core responsibility that is only weakly evidenced by the candidate's month-end statement preparation.",
+        "source_evidence": [
+          "Prepared balance sheets, profit and loss statements, month-end statements, invoices, and vendor payments.",
+          "proper period-end cut-off"
+        ],
+        "priority": 0.94
+      },
+      {
+        "question": "What interests you about moving from your accounting work in a healthcare system into this Senior Accountant role, particularly its GL close, cost-center, and profitability responsibilities?",
+        "competency": "Role motivation",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "This profile-specific question explores motivation and transferability from the candidate's long tenure in healthcare accounting without assuming reasons for a move.",
+        "source_evidence": [
+          "03/2011 to Current Accountant, Blue Ridge Healthcare System, Inc.",
+          "Monitor elements leading to cross-margin profitability analysis and support project management."
+        ],
+        "priority": 0.68
+      },
+      {
+        "question": "Describe your experience preparing federal and state tax returns. Which returns or workpapers did you own, and how did you ensure completeness and timely filing?",
+        "competency": "US tax",
+        "dimension": "Role-Specific",
+        "target_gap": "US tax",
+        "difficulty": "mid",
+        "rationale": "The profile mentions tax-return preparation, but the gap matrix classifies US tax as a weak match, making scope and technical ownership important to clarify.",
+        "source_evidence": [
+          "filed federal and state tax returns",
+          "US Tax"
+        ],
+        "priority": 0.88
+      },
+      {
+        "question": "How would you set up and govern a chart-of-accounts or cost-center change request so that reporting remains consistent and unauthorized changes are prevented?",
+        "competency": "Chart of accounts governance",
+        "dimension": "Technical",
+        "target_gap": "General ledger accounting",
+        "difficulty": "mid",
+        "rationale": "The role includes chart-of-accounts and cost-center reporting, while the profile provides general accounting and controls experience without direct evidence of master-data governance.",
+        "source_evidence": [
+          "Developed accounting policies and documented business processes to strengthen internal controls.",
+          "Maintain the chart of accounts and cost center reporting."
+        ],
+        "priority": 0.91
+      },
+      {
+        "question": "In the SAP environment you used, which FI transactions, modules, or workflows did you personally use for general-ledger postings, reconciliations, and period-end reporting?",
+        "competency": "SAP FI",
+        "dimension": "Technical",
+        "target_gap": "SAP FI",
+        "difficulty": "mid",
+        "rationale": "SAP is listed in the profile, but the required SAP FI depth and specific finance functionality are not established.",
+        "source_evidence": [
+          "Reconciled bank accounts, expense reports, and financial accounts using SAP software.",
+          "Experience with SAPR3 or S4 (FI) required"
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "Describe the most advanced Excel workbook you have built or maintained for accounting or financial analysis. Which functions, controls, reconciliations, or data-refresh methods made it reliable?",
+        "competency": "Advanced Excel",
+        "dimension": "Technical",
+        "target_gap": "Microsoft Excel",
+        "difficulty": "mid",
+        "rationale": "The profile lists MS Office, but not advanced Excel capability, which is explicitly required for the role.",
+        "source_evidence": [
+          "proficient in MS Office",
+          "advanced knowledge in Excel"
+        ],
+        "priority": 0.9
+      },
+      {
+        "question": "What exposure have you had to IFRS accounting, and how would you identify and resolve a difference between an IFRS treatment and the company's US GAAP reporting treatment?",
+        "competency": "IFRS accounting",
+        "dimension": "Technical",
+        "target_gap": "IFRS accounting",
+        "difficulty": "mid",
+        "rationale": "IFRS is a required capability with only a weak accounting-based match in the gap matrix, so direct exposure and learning approach should be assessed.",
+        "source_evidence": [
+          "Accounting",
+          "IFRS Accounting"
+        ],
+        "priority": 0.9
+      },
+      {
+        "question": "Describe a presentation you have made to senior management about a forecast, financial trend, or accounting issue. How did you tailor the message, recommendations, and supporting visuals?",
+        "competency": "Financial presentations",
+        "dimension": "Behavioural",
+        "target_gap": "Microsoft PowerPoint",
+        "difficulty": "mid",
+        "rationale": "The candidate has advised senior management on forecasting, but PowerPoint proficiency is only weakly supported by a general MS Office reference.",
+        "source_evidence": [
+          "advised senior management on forecasting decisions",
+          "Strong PC skills with advanced knowledge in Excel and PPT"
+        ],
+        "priority": 0.81
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 5,
+      "Behavioural": 2,
+      "Situational": 1,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 1
+    },
+    "gap_share": 0.7,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.2928604014922535,
+      "M2.P": 0.3,
+      "M3.P": 0.3,
+      "M4.P": 7.40886845167982,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "Walk me through how you would build and post a month-end close package for prepaids, accruals, payroll, and benefits, including the cut-off checks you would perform before close."
+    },
+    {
+      "question": "This role works with international and cross-cultural stakeholders. Describe any experience collaborating across different work styles, locations, or cultural backgrounds, and how you adapted your communication."
+    },
+    {
+      "question": "A department submits a significant expense invoice after the close deadline for services received in the prior month. How would you determine the accounting treatment, document the decision, and communicate the impact?"
+    },
+    {
+      "question": "What interests you about moving from your accounting work in a healthcare system into this Senior Accountant role, particularly its GL close, cost-center, and profitability responsibilities?"
+    },
+    {
+      "question": "Describe your experience preparing federal and state tax returns. Which returns or workpapers did you own, and how did you ensure completeness and timely filing?"
+    },
+    {
+      "question": "How would you set up and govern a chart-of-accounts or cost-center change request so that reporting remains consistent and unauthorized changes are prevented?"
+    },
+    {
+      "question": "In the SAP environment you used, which FI transactions, modules, or workflows did you personally use for general-ledger postings, reconciliations, and period-end reporting?"
+    },
+    {
+      "question": "Describe the most advanced Excel workbook you have built or maintained for accounting or financial analysis. Which functions, controls, reconciliations, or data-refresh methods made it reliable?"
+    },
+    {
+      "question": "What exposure have you had to IFRS accounting, and how would you identify and resolve a difference between an IFRS treatment and the company's US GAAP reporting treatment?"
+    },
+    {
+      "question": "Describe a presentation you have made to senior management about a forecast, financial trend, or accounting issue. How did you tailor the message, recommendations, and supporting visuals?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk me through how you would build and post a month-end close package for prepaids, accruals, payroll, and benefits, including the cut-off checks you would perform before close.",
+      "competency": "Month-end close",
+      "dimension": "Technical",
+      "target_gap": "Month-end accounting close",
+      "difficulty": "mid",
+      "rationale": "The role requires reliable close execution, while the profile mentions month-end statements but provides limited detail on end-to-end close ownership and cut-off controls.",
+      "source_evidence": [
+        "Prepared balance sheets, profit and loss statements, month-end statements, invoices, and vendor payments.",
+        "monthly accounting close procedures"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "This role works with international and cross-cultural stakeholders. Describe any experience collaborating across different work styles, locations, or cultural backgrounds, and how you adapted your communication.",
+      "competency": "Cross-cultural collaboration",
+      "dimension": "Behavioural",
+      "target_gap": "International and cross-cultural work experience",
+      "difficulty": "mid",
+      "rationale": "International and cross-cultural experience is a weak match with no direct profile evidence, so the interviewer should establish the candidate's actual exposure and adaptability.",
+      "source_evidence": [
+        "team player",
+        "Experience working in an international and cross-cultural environment"
+      ],
+      "priority": 0.83
+    },
+    {
+      "question": "A department submits a significant expense invoice after the close deadline for services received in the prior month. How would you determine the accounting treatment, document the decision, and communicate the impact?",
+      "competency": "Period-end cut-off",
+      "dimension": "Situational",
+      "target_gap": "Month-end accounting close",
+      "difficulty": "mid",
+      "rationale": "This tests practical period-end cut-off judgment, a core responsibility that is only weakly evidenced by the candidate's month-end statement preparation.",
+      "source_evidence": [
+        "Prepared balance sheets, profit and loss statements, month-end statements, invoices, and vendor payments.",
+        "proper period-end cut-off"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "What interests you about moving from your accounting work in a healthcare system into this Senior Accountant role, particularly its GL close, cost-center, and profitability responsibilities?",
+      "competency": "Role motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This profile-specific question explores motivation and transferability from the candidate's long tenure in healthcare accounting without assuming reasons for a move.",
+      "source_evidence": [
+        "03/2011 to Current Accountant, Blue Ridge Healthcare System, Inc.",
+        "Monitor elements leading to cross-margin profitability analysis and support project management."
+      ],
+      "priority": 0.68
+    },
+    {
+      "question": "Describe your experience preparing federal and state tax returns. Which returns or workpapers did you own, and how did you ensure completeness and timely filing?",
+      "competency": "US tax",
+      "dimension": "Role-Specific",
+      "target_gap": "US tax",
+      "difficulty": "mid",
+      "rationale": "The profile mentions tax-return preparation, but the gap matrix classifies US tax as a weak match, making scope and technical ownership important to clarify.",
+      "source_evidence": [
+        "filed federal and state tax returns",
+        "US Tax"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "How would you set up and govern a chart-of-accounts or cost-center change request so that reporting remains consistent and unauthorized changes are prevented?",
+      "competency": "Chart of accounts governance",
+      "dimension": "Technical",
+      "target_gap": "General ledger accounting",
+      "difficulty": "mid",
+      "rationale": "The role includes chart-of-accounts and cost-center reporting, while the profile provides general accounting and controls experience without direct evidence of master-data governance.",
+      "source_evidence": [
+        "Developed accounting policies and documented business processes to strengthen internal controls.",
+        "Maintain the chart of accounts and cost center reporting."
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "In the SAP environment you used, which FI transactions, modules, or workflows did you personally use for general-ledger postings, reconciliations, and period-end reporting?",
+      "competency": "SAP FI",
+      "dimension": "Technical",
+      "target_gap": "SAP FI",
+      "difficulty": "mid",
+      "rationale": "SAP is listed in the profile, but the required SAP FI depth and specific finance functionality are not established.",
+      "source_evidence": [
+        "Reconciled bank accounts, expense reports, and financial accounts using SAP software.",
+        "Experience with SAPR3 or S4 (FI) required"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Describe the most advanced Excel workbook you have built or maintained for accounting or financial analysis. Which functions, controls, reconciliations, or data-refresh methods made it reliable?",
+      "competency": "Advanced Excel",
+      "dimension": "Technical",
+      "target_gap": "Microsoft Excel",
+      "difficulty": "mid",
+      "rationale": "The profile lists MS Office, but not advanced Excel capability, which is explicitly required for the role.",
+      "source_evidence": [
+        "proficient in MS Office",
+        "advanced knowledge in Excel"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "What exposure have you had to IFRS accounting, and how would you identify and resolve a difference between an IFRS treatment and the company's US GAAP reporting treatment?",
+      "competency": "IFRS accounting",
+      "dimension": "Technical",
+      "target_gap": "IFRS accounting",
+      "difficulty": "mid",
+      "rationale": "IFRS is a required capability with only a weak accounting-based match in the gap matrix, so direct exposure and learning approach should be assessed.",
+      "source_evidence": [
+        "Accounting",
+        "IFRS Accounting"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Describe a presentation you have made to senior management about a forecast, financial trend, or accounting issue. How did you tailor the message, recommendations, and supporting visuals?",
+      "competency": "Financial presentations",
+      "dimension": "Behavioural",
+      "target_gap": "Microsoft PowerPoint",
+      "difficulty": "mid",
+      "rationale": "The candidate has advised senior management on forecasting, but PowerPoint proficiency is only weakly supported by a general MS Office reference.",
+      "source_evidence": [
+        "advised senior management on forecasting decisions",
+        "Strong PC skills with advanced knowledge in Excel and PPT"
+      ],
+      "priority": 0.81
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

@@ -1,0 +1,370 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_06019_4cdecdd79857",
+  "jd_id": "rjf_06019_4cdecdd79857",
+  "pair_id": "rjf_06019_4cdecdd79857",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_06019_4cdecdd79857__rjf_06019_4cdecdd79857__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      2,
+      11,
+      15,
+      29,
+      21,
+      14,
+      1,
+      12,
+      7,
+      18
+    ],
+    "questions": [
+      {
+        "question": "Describe any direct experience you have using Hibernate or another ORM. How did you model relationships, manage transactions, and avoid inefficient queries?",
+        "competency": "ORM persistence",
+        "dimension": "Technical",
+        "target_gap": "Hibernate",
+        "difficulty": "hard",
+        "rationale": "Hibernate is required and has no direct supporting evidence in the candidate profile.",
+        "source_evidence": [
+          "Hibernate",
+          "SQL"
+        ],
+        "priority": 0.99
+      },
+      {
+        "question": "You have participated in test-calendar and design reviews. How would you adapt that review discipline to reviewing code changes, including correctness, maintainability, test coverage, performance, and security?",
+        "competency": "Code review",
+        "dimension": "Behavioural",
+        "target_gap": "Code reviews",
+        "difficulty": "mid",
+        "rationale": "Builds on the candidate's documented review experience while assessing the gap between QA reviews and code reviews.",
+        "source_evidence": [
+          "Conducted test calendar reviews with development teams and clients.",
+          "Conducted design reviews with customer IT operations and business groups."
+        ],
+        "priority": 0.87
+      },
+      {
+        "question": "How would you design a Jenkins CI/CD pipeline for a Java service so that it builds, runs unit and integration tests, publishes artifacts, deploys safely, and supports rollback?",
+        "competency": "Jenkins CI/CD",
+        "dimension": "Situational",
+        "target_gap": "Jenkins",
+        "difficulty": "hard",
+        "rationale": "Jenkins is a missing required tool, and the question tests practical continuous-delivery capability.",
+        "source_evidence": [
+          "Jenkins",
+          "Performed post-release production sanity testing."
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "Your background is primarily senior QA and operations, while this role is senior software engineering. What motivates this transition, and what concrete plan would you follow to close development gaps in the first 90 days?",
+        "competency": "Engineering transition motivation",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "Software development experience",
+        "difficulty": "mid",
+        "rationale": "Directly examines the documented career-background mismatch and the candidate's readiness to move from testing-focused work into hands-on software development.",
+        "source_evidence": [
+          "Senior Software Quality Assurance Tester",
+          "QA Tester (Senior SME)",
+          "Software development experience"
+        ],
+        "priority": 0.93
+      },
+      {
+        "question": "Describe a time you had to coordinate an issue involving an external vendor, package provider, or another organization. How did you establish ownership, share evidence, and drive resolution?",
+        "competency": "Vendor communication",
+        "dimension": "Behavioural",
+        "target_gap": "Vendor communication",
+        "difficulty": "mid",
+        "rationale": "Vendor communication is only a partial match, and no specific vendor interaction is documented.",
+        "source_evidence": [
+          "Vendor communication",
+          "Followed escalation procedures and coordinated with development teams."
+        ],
+        "priority": 0.7
+      },
+      {
+        "question": "Describe the automation you created with QTP for Amdocs iCare. What did it cover, how was it maintained, and what limitations would you address when moving toward developer-owned automated tests?",
+        "competency": "Automation strategy",
+        "dimension": "Technical",
+        "target_gap": "Automation",
+        "difficulty": "mid",
+        "rationale": "Uses a documented strength to assess automation depth and transferability to an engineering role.",
+        "source_evidence": [
+          "Created Amdocs iCare automation test cases using QTP.",
+          "Test Automation"
+        ],
+        "priority": 0.76
+      },
+      {
+        "question": "If asked to build a Spring Boot REST endpoint for creating a warehouse inventory adjustment, how would you structure the controller, service, validation, error handling, and tests?",
+        "competency": "Spring Boot",
+        "dimension": "Situational",
+        "target_gap": "Spring Boot",
+        "difficulty": "hard",
+        "rationale": "Tests an explicitly missing core framework skill in a realistic application-development scenario.",
+        "source_evidence": [
+          "Spring Boot",
+          "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+        ],
+        "priority": 0.99
+      },
+      {
+        "question": "Explain the Git workflow you would use to deliver an urgent production fix while preserving review quality, traceability, and a safe path to rollback.",
+        "competency": "Git workflow",
+        "dimension": "Situational",
+        "target_gap": "Git",
+        "difficulty": "hard",
+        "rationale": "Git is missing from the profile and is essential for safe collaborative engineering and production support.",
+        "source_evidence": [
+          "Git",
+          "Tested hotfix packages and production changes.",
+          "Certified patches for production."
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "Have you worked with a NoSQL datastore? If not, how would you decide whether an inventory service should use a relational model or a document model?",
+        "competency": "NoSQL data modeling",
+        "dimension": "Situational",
+        "target_gap": "NoSQL databases",
+        "difficulty": "hard",
+        "rationale": "Assesses an explicitly missing required competency and the candidate's engineering judgment when direct experience is limited.",
+        "source_evidence": [
+          "NoSQL databases",
+          "Data interface and migration testing"
+        ],
+        "priority": 0.97
+      },
+      {
+        "question": "What direct experience do you have with JIRA and Confluence? If you have used other tools, describe how you would document an architectural decision and link it to implementation and delivery work.",
+        "competency": "Engineering collaboration tools",
+        "dimension": "Technical",
+        "target_gap": "JIRA",
+        "difficulty": "mid",
+        "rationale": "JIRA is missing, and the role requires work tracking and advanced technical documentation.",
+        "source_evidence": [
+          "JIRA",
+          "QC/ALM",
+          "Documented defects using QC/ALM"
+        ],
+        "priority": 0.95
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": false,
+    "dimension_counts": {
+      "Technical": 3,
+      "Behavioural": 2,
+      "Situational": 4,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 0
+    },
+    "gap_share": 0.8,
+    "relaxations": [
+      {
+        "phase": "quota",
+        "reason": "zero_availability",
+        "dimension": "Role-Specific",
+        "reserved_index": null
+      }
+    ],
+    "metrics": {
+      "M1.P": 0.21589251266314488,
+      "M2.P": 0.5,
+      "M3.P": 0.6,
+      "M4.P": 8.304061194157839,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "Describe any direct experience you have using Hibernate or another ORM. How did you model relationships, manage transactions, and avoid inefficient queries?"
+    },
+    {
+      "question": "You have participated in test-calendar and design reviews. How would you adapt that review discipline to reviewing code changes, including correctness, maintainability, test coverage, performance, and security?"
+    },
+    {
+      "question": "How would you design a Jenkins CI/CD pipeline for a Java service so that it builds, runs unit and integration tests, publishes artifacts, deploys safely, and supports rollback?"
+    },
+    {
+      "question": "Your background is primarily senior QA and operations, while this role is senior software engineering. What motivates this transition, and what concrete plan would you follow to close development gaps in the first 90 days?"
+    },
+    {
+      "question": "Describe a time you had to coordinate an issue involving an external vendor, package provider, or another organization. How did you establish ownership, share evidence, and drive resolution?"
+    },
+    {
+      "question": "Describe the automation you created with QTP for Amdocs iCare. What did it cover, how was it maintained, and what limitations would you address when moving toward developer-owned automated tests?"
+    },
+    {
+      "question": "If asked to build a Spring Boot REST endpoint for creating a warehouse inventory adjustment, how would you structure the controller, service, validation, error handling, and tests?"
+    },
+    {
+      "question": "Explain the Git workflow you would use to deliver an urgent production fix while preserving review quality, traceability, and a safe path to rollback."
+    },
+    {
+      "question": "Have you worked with a NoSQL datastore? If not, how would you decide whether an inventory service should use a relational model or a document model?"
+    },
+    {
+      "question": "What direct experience do you have with JIRA and Confluence? If you have used other tools, describe how you would document an architectural decision and link it to implementation and delivery work."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Describe any direct experience you have using Hibernate or another ORM. How did you model relationships, manage transactions, and avoid inefficient queries?",
+      "competency": "ORM persistence",
+      "dimension": "Technical",
+      "target_gap": "Hibernate",
+      "difficulty": "hard",
+      "rationale": "Hibernate is required and has no direct supporting evidence in the candidate profile.",
+      "source_evidence": [
+        "Hibernate",
+        "SQL"
+      ],
+      "priority": 0.99
+    },
+    {
+      "question": "You have participated in test-calendar and design reviews. How would you adapt that review discipline to reviewing code changes, including correctness, maintainability, test coverage, performance, and security?",
+      "competency": "Code review",
+      "dimension": "Behavioural",
+      "target_gap": "Code reviews",
+      "difficulty": "mid",
+      "rationale": "Builds on the candidate's documented review experience while assessing the gap between QA reviews and code reviews.",
+      "source_evidence": [
+        "Conducted test calendar reviews with development teams and clients.",
+        "Conducted design reviews with customer IT operations and business groups."
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "How would you design a Jenkins CI/CD pipeline for a Java service so that it builds, runs unit and integration tests, publishes artifacts, deploys safely, and supports rollback?",
+      "competency": "Jenkins CI/CD",
+      "dimension": "Situational",
+      "target_gap": "Jenkins",
+      "difficulty": "hard",
+      "rationale": "Jenkins is a missing required tool, and the question tests practical continuous-delivery capability.",
+      "source_evidence": [
+        "Jenkins",
+        "Performed post-release production sanity testing."
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Your background is primarily senior QA and operations, while this role is senior software engineering. What motivates this transition, and what concrete plan would you follow to close development gaps in the first 90 days?",
+      "competency": "Engineering transition motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Software development experience",
+      "difficulty": "mid",
+      "rationale": "Directly examines the documented career-background mismatch and the candidate's readiness to move from testing-focused work into hands-on software development.",
+      "source_evidence": [
+        "Senior Software Quality Assurance Tester",
+        "QA Tester (Senior SME)",
+        "Software development experience"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "Describe a time you had to coordinate an issue involving an external vendor, package provider, or another organization. How did you establish ownership, share evidence, and drive resolution?",
+      "competency": "Vendor communication",
+      "dimension": "Behavioural",
+      "target_gap": "Vendor communication",
+      "difficulty": "mid",
+      "rationale": "Vendor communication is only a partial match, and no specific vendor interaction is documented.",
+      "source_evidence": [
+        "Vendor communication",
+        "Followed escalation procedures and coordinated with development teams."
+      ],
+      "priority": 0.7
+    },
+    {
+      "question": "Describe the automation you created with QTP for Amdocs iCare. What did it cover, how was it maintained, and what limitations would you address when moving toward developer-owned automated tests?",
+      "competency": "Automation strategy",
+      "dimension": "Technical",
+      "target_gap": "Automation",
+      "difficulty": "mid",
+      "rationale": "Uses a documented strength to assess automation depth and transferability to an engineering role.",
+      "source_evidence": [
+        "Created Amdocs iCare automation test cases using QTP.",
+        "Test Automation"
+      ],
+      "priority": 0.76
+    },
+    {
+      "question": "If asked to build a Spring Boot REST endpoint for creating a warehouse inventory adjustment, how would you structure the controller, service, validation, error handling, and tests?",
+      "competency": "Spring Boot",
+      "dimension": "Situational",
+      "target_gap": "Spring Boot",
+      "difficulty": "hard",
+      "rationale": "Tests an explicitly missing core framework skill in a realistic application-development scenario.",
+      "source_evidence": [
+        "Spring Boot",
+        "Tested APIs, web applications, widgets, and Unix batch jobs across Amdocs modules."
+      ],
+      "priority": 0.99
+    },
+    {
+      "question": "Explain the Git workflow you would use to deliver an urgent production fix while preserving review quality, traceability, and a safe path to rollback.",
+      "competency": "Git workflow",
+      "dimension": "Situational",
+      "target_gap": "Git",
+      "difficulty": "hard",
+      "rationale": "Git is missing from the profile and is essential for safe collaborative engineering and production support.",
+      "source_evidence": [
+        "Git",
+        "Tested hotfix packages and production changes.",
+        "Certified patches for production."
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Have you worked with a NoSQL datastore? If not, how would you decide whether an inventory service should use a relational model or a document model?",
+      "competency": "NoSQL data modeling",
+      "dimension": "Situational",
+      "target_gap": "NoSQL databases",
+      "difficulty": "hard",
+      "rationale": "Assesses an explicitly missing required competency and the candidate's engineering judgment when direct experience is limited.",
+      "source_evidence": [
+        "NoSQL databases",
+        "Data interface and migration testing"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "What direct experience do you have with JIRA and Confluence? If you have used other tools, describe how you would document an architectural decision and link it to implementation and delivery work.",
+      "competency": "Engineering collaboration tools",
+      "dimension": "Technical",
+      "target_gap": "JIRA",
+      "difficulty": "mid",
+      "rationale": "JIRA is missing, and the role requires work tracking and advanced technical documentation.",
+      "source_evidence": [
+        "JIRA",
+        "QC/ALM",
+        "Documented defects using QC/ALM"
+      ],
+      "priority": 0.95
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

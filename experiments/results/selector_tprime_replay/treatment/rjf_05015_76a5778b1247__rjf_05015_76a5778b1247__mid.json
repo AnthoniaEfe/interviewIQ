@@ -1,0 +1,368 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_05015_76a5778b1247",
+  "jd_id": "rjf_05015_76a5778b1247",
+  "pair_id": "rjf_05015_76a5778b1247",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_05015_76a5778b1247__rjf_05015_76a5778b1247__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 29
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      0,
+      3,
+      1,
+      21,
+      9,
+      10,
+      2,
+      26,
+      5,
+      6
+    ],
+    "questions": [
+      {
+        "question": "Walk me through how you would translate a set of local GAAP ledger balances into IFRS reporting adjustments for a parent-company reporting package. Which differences would you validate first, and how would you document your conclusions?",
+        "competency": "IFRS reporting",
+        "dimension": "Technical",
+        "target_gap": "IFRS",
+        "difficulty": "mid",
+        "rationale": "IFRS is a required capability with no demonstrated candidate evidence; this tests practical technical understanding and documentation discipline.",
+        "source_evidence": [
+          "IFRS",
+          "GAAP Compliance"
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "Give an example of a time you needed information or action from people outside your reporting line to meet an accounting deadline. How did you gain commitment, follow up, and handle resistance?",
+        "competency": "Cross-functional influence",
+        "dimension": "Behavioural",
+        "target_gap": "Motivating cross-functional contributors",
+        "difficulty": "mid",
+        "rationale": "Motivating non-reporting functions is a required responsibility without direct evidence in the profile.",
+        "source_evidence": [
+          "motivate various non-reporting functions to do their part",
+          "Resolved issues through communication with business partners"
+        ],
+        "priority": 0.94
+      },
+      {
+        "question": "You are new to IQMS and must take ownership of cost centers, profit centers, standard costs, and project costs during an active close. How would you learn the system, validate the configuration, and reduce risk in your first two closing cycles?",
+        "competency": "IQMS onboarding",
+        "dimension": "Situational",
+        "target_gap": "IQMS by Dassault",
+        "difficulty": "hard",
+        "rationale": "The candidate shows Oracle and Hyperion experience but no IQMS experience, so the question assesses transferability and a credible ramp-up approach.",
+        "source_evidence": [
+          "IQMS by Dassault",
+          "Oracle",
+          "Hyperion"
+        ],
+        "priority": 0.96
+      },
+      {
+        "question": "This role supports a contract manufacturer of in-vitro diagnostics and medical devices. What accounting risks would you expect in a regulated manufacturing environment, and how would you partner with Quality and Operations without compromising financial-control responsibilities?",
+        "competency": "Regulated manufacturing awareness",
+        "dimension": "Role-Specific",
+        "target_gap": "Manufacturing ERP systems",
+        "difficulty": "mid",
+        "rationale": "The profile does not evidence manufacturing experience; this tests the candidate's ability to reason about the operating context tied to ERP and controls.",
+        "source_evidence": [
+          "contract manufacturer for in-vitro diagnostics",
+          "manufacturing ERP systems"
+        ],
+        "priority": 0.82
+      },
+      {
+        "question": "A project manager submits a project budget that excludes expected engineering change costs and quality testing. How would you challenge the assumptions, build the cost baseline, and manage later changes?",
+        "competency": "Project-based costing",
+        "dimension": "Situational",
+        "target_gap": "Project-based costing",
+        "difficulty": "hard",
+        "rationale": "The candidate has projected future expenses from P&Ls, but project-based costing needs deeper validation.",
+        "source_evidence": [
+          "project-based costing",
+          "Analyzed P&Ls to project future expenses."
+        ],
+        "priority": 0.84
+      },
+      {
+        "question": "How would you work with the Director of Finance and operational leaders to build an annual manufacturing budget when volume forecasts are uncertain?",
+        "competency": "Budget preparation",
+        "dimension": "Behavioural",
+        "target_gap": "Budget preparation",
+        "difficulty": "mid",
+        "rationale": "Budgeting is listed in the profile, but the role requires collaborative annual-budget ownership in an operational environment.",
+        "source_evidence": [
+          "Prepare annual budgets with the Director of Finance and leadership team",
+          "Budgeting"
+        ],
+        "priority": 0.83
+      },
+      {
+        "question": "Describe the accounting data flows you would expect in a manufacturing ERP from production transactions through inventory valuation, cost of goods sold, and the general ledger. Where would you place key reconciliation controls?",
+        "competency": "Manufacturing ERP systems",
+        "dimension": "Technical",
+        "target_gap": "Manufacturing ERP systems",
+        "difficulty": "hard",
+        "rationale": "Manufacturing ERP experience is missing and is central to reliable cost accounting and month-end reporting.",
+        "source_evidence": [
+          "manufacturing ERP systems",
+          "General Ledger"
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "Suppose the parent company changes its reporting template and mapping rules two days before close. How would you coordinate data validation, mapping changes, reconciliations, and communication with the parent and local stakeholders?",
+        "competency": "Accounting systems integration",
+        "dimension": "Situational",
+        "target_gap": "IQMS by Dassault",
+        "difficulty": "hard",
+        "rationale": "The role includes integration with the publicly listed parent; the candidate has no stated experience with IQMS or parent-system integration.",
+        "source_evidence": [
+          "Manage the integration of accounting systems with the publicly listed parent, Stratec SE.",
+          "IQMS by Dassault"
+        ],
+        "priority": 0.89
+      },
+      {
+        "question": "Explain standard costing in a manufacturing setting. How do material, labor, and overhead standards affect inventory and variances, and what would prompt you to review or update a standard?",
+        "competency": "Standard costing",
+        "dimension": "Technical",
+        "target_gap": "Standard costing",
+        "difficulty": "hard",
+        "rationale": "Standard costing is a required area with only a weak match to the candidate's general-ledger background.",
+        "source_evidence": [
+          "standard costing",
+          "General Ledger"
+        ],
+        "priority": 0.9
+      },
+      {
+        "question": "What would be your month-end close checklist for a plant accounting function, including subsystem cutoffs, reconciliations, inventory-related activities, journal entries, review, and escalation?",
+        "competency": "Month-end closing",
+        "dimension": "Role-Specific",
+        "target_gap": "Month-end closing",
+        "difficulty": "mid",
+        "rationale": "Closing Processes is listed, but the weak match warrants confirming ownership depth in a manufacturing close.",
+        "source_evidence": [
+          "monthly closing",
+          "Closing Processes",
+          "Monthly Journal Entries"
+        ],
+        "priority": 0.88
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": false,
+    "dimension_counts": {
+      "Technical": 3,
+      "Behavioural": 2,
+      "Situational": 3,
+      "Cultural/Motivational": 0,
+      "Role-Specific": 2
+    },
+    "gap_share": 0.8,
+    "relaxations": [
+      {
+        "phase": "quota",
+        "reason": "zero_availability",
+        "dimension": "Cultural/Motivational",
+        "reserved_index": null
+      }
+    ],
+    "metrics": {
+      "M1.P": 0.3305581953883993,
+      "M2.P": 0.1,
+      "M3.P": 0.3,
+      "M4.P": 7.087971185986893,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "Walk me through how you would translate a set of local GAAP ledger balances into IFRS reporting adjustments for a parent-company reporting package. Which differences would you validate first, and how would you document your conclusions?"
+    },
+    {
+      "question": "Give an example of a time you needed information or action from people outside your reporting line to meet an accounting deadline. How did you gain commitment, follow up, and handle resistance?"
+    },
+    {
+      "question": "You are new to IQMS and must take ownership of cost centers, profit centers, standard costs, and project costs during an active close. How would you learn the system, validate the configuration, and reduce risk in your first two closing cycles?"
+    },
+    {
+      "question": "This role supports a contract manufacturer of in-vitro diagnostics and medical devices. What accounting risks would you expect in a regulated manufacturing environment, and how would you partner with Quality and Operations without compromising financial-control responsibilities?"
+    },
+    {
+      "question": "A project manager submits a project budget that excludes expected engineering change costs and quality testing. How would you challenge the assumptions, build the cost baseline, and manage later changes?"
+    },
+    {
+      "question": "How would you work with the Director of Finance and operational leaders to build an annual manufacturing budget when volume forecasts are uncertain?"
+    },
+    {
+      "question": "Describe the accounting data flows you would expect in a manufacturing ERP from production transactions through inventory valuation, cost of goods sold, and the general ledger. Where would you place key reconciliation controls?"
+    },
+    {
+      "question": "Suppose the parent company changes its reporting template and mapping rules two days before close. How would you coordinate data validation, mapping changes, reconciliations, and communication with the parent and local stakeholders?"
+    },
+    {
+      "question": "Explain standard costing in a manufacturing setting. How do material, labor, and overhead standards affect inventory and variances, and what would prompt you to review or update a standard?"
+    },
+    {
+      "question": "What would be your month-end close checklist for a plant accounting function, including subsystem cutoffs, reconciliations, inventory-related activities, journal entries, review, and escalation?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk me through how you would translate a set of local GAAP ledger balances into IFRS reporting adjustments for a parent-company reporting package. Which differences would you validate first, and how would you document your conclusions?",
+      "competency": "IFRS reporting",
+      "dimension": "Technical",
+      "target_gap": "IFRS",
+      "difficulty": "mid",
+      "rationale": "IFRS is a required capability with no demonstrated candidate evidence; this tests practical technical understanding and documentation discipline.",
+      "source_evidence": [
+        "IFRS",
+        "GAAP Compliance"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Give an example of a time you needed information or action from people outside your reporting line to meet an accounting deadline. How did you gain commitment, follow up, and handle resistance?",
+      "competency": "Cross-functional influence",
+      "dimension": "Behavioural",
+      "target_gap": "Motivating cross-functional contributors",
+      "difficulty": "mid",
+      "rationale": "Motivating non-reporting functions is a required responsibility without direct evidence in the profile.",
+      "source_evidence": [
+        "motivate various non-reporting functions to do their part",
+        "Resolved issues through communication with business partners"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "You are new to IQMS and must take ownership of cost centers, profit centers, standard costs, and project costs during an active close. How would you learn the system, validate the configuration, and reduce risk in your first two closing cycles?",
+      "competency": "IQMS onboarding",
+      "dimension": "Situational",
+      "target_gap": "IQMS by Dassault",
+      "difficulty": "hard",
+      "rationale": "The candidate shows Oracle and Hyperion experience but no IQMS experience, so the question assesses transferability and a credible ramp-up approach.",
+      "source_evidence": [
+        "IQMS by Dassault",
+        "Oracle",
+        "Hyperion"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "This role supports a contract manufacturer of in-vitro diagnostics and medical devices. What accounting risks would you expect in a regulated manufacturing environment, and how would you partner with Quality and Operations without compromising financial-control responsibilities?",
+      "competency": "Regulated manufacturing awareness",
+      "dimension": "Role-Specific",
+      "target_gap": "Manufacturing ERP systems",
+      "difficulty": "mid",
+      "rationale": "The profile does not evidence manufacturing experience; this tests the candidate's ability to reason about the operating context tied to ERP and controls.",
+      "source_evidence": [
+        "contract manufacturer for in-vitro diagnostics",
+        "manufacturing ERP systems"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "A project manager submits a project budget that excludes expected engineering change costs and quality testing. How would you challenge the assumptions, build the cost baseline, and manage later changes?",
+      "competency": "Project-based costing",
+      "dimension": "Situational",
+      "target_gap": "Project-based costing",
+      "difficulty": "hard",
+      "rationale": "The candidate has projected future expenses from P&Ls, but project-based costing needs deeper validation.",
+      "source_evidence": [
+        "project-based costing",
+        "Analyzed P&Ls to project future expenses."
+      ],
+      "priority": 0.84
+    },
+    {
+      "question": "How would you work with the Director of Finance and operational leaders to build an annual manufacturing budget when volume forecasts are uncertain?",
+      "competency": "Budget preparation",
+      "dimension": "Behavioural",
+      "target_gap": "Budget preparation",
+      "difficulty": "mid",
+      "rationale": "Budgeting is listed in the profile, but the role requires collaborative annual-budget ownership in an operational environment.",
+      "source_evidence": [
+        "Prepare annual budgets with the Director of Finance and leadership team",
+        "Budgeting"
+      ],
+      "priority": 0.83
+    },
+    {
+      "question": "Describe the accounting data flows you would expect in a manufacturing ERP from production transactions through inventory valuation, cost of goods sold, and the general ledger. Where would you place key reconciliation controls?",
+      "competency": "Manufacturing ERP systems",
+      "dimension": "Technical",
+      "target_gap": "Manufacturing ERP systems",
+      "difficulty": "hard",
+      "rationale": "Manufacturing ERP experience is missing and is central to reliable cost accounting and month-end reporting.",
+      "source_evidence": [
+        "manufacturing ERP systems",
+        "General Ledger"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "Suppose the parent company changes its reporting template and mapping rules two days before close. How would you coordinate data validation, mapping changes, reconciliations, and communication with the parent and local stakeholders?",
+      "competency": "Accounting systems integration",
+      "dimension": "Situational",
+      "target_gap": "IQMS by Dassault",
+      "difficulty": "hard",
+      "rationale": "The role includes integration with the publicly listed parent; the candidate has no stated experience with IQMS or parent-system integration.",
+      "source_evidence": [
+        "Manage the integration of accounting systems with the publicly listed parent, Stratec SE.",
+        "IQMS by Dassault"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "Explain standard costing in a manufacturing setting. How do material, labor, and overhead standards affect inventory and variances, and what would prompt you to review or update a standard?",
+      "competency": "Standard costing",
+      "dimension": "Technical",
+      "target_gap": "Standard costing",
+      "difficulty": "hard",
+      "rationale": "Standard costing is a required area with only a weak match to the candidate's general-ledger background.",
+      "source_evidence": [
+        "standard costing",
+        "General Ledger"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "What would be your month-end close checklist for a plant accounting function, including subsystem cutoffs, reconciliations, inventory-related activities, journal entries, review, and escalation?",
+      "competency": "Month-end closing",
+      "dimension": "Role-Specific",
+      "target_gap": "Month-end closing",
+      "difficulty": "mid",
+      "rationale": "Closing Processes is listed, but the weak match warrants confirming ownership depth in a manufacturing close.",
+      "source_evidence": [
+        "monthly closing",
+        "Closing Processes",
+        "Monthly Journal Entries"
+      ],
+      "priority": 0.88
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

@@ -345,7 +345,7 @@ async def async_main(
     resume: bool = True,
     replicates: int = 1,
     gap_experiment: str | None = None,
-    selection: str = "competency_weighted_mmr",
+    selection: str = "tprime",
     b1_experiment: str | None = None,
     treatment_experiment: str | None = None,
     ablation_experiment: str | None = None,
@@ -817,8 +817,8 @@ def main() -> None:
     )
     parser.add_argument(
         "--selection",
-        default="competency_weighted_mmr",
-        help="Selection strategy for --stage treatment_pipeline.",
+        default="tprime",
+        help="Selection strategy for --stage treatment_pipeline (default: tprime).",
     )
     parser.add_argument(
         "--resume",

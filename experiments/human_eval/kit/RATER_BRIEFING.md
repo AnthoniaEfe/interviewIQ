@@ -21,14 +21,18 @@ not treat any number in this file as a measured duration.
 
 ## How to work
 
-There is no hosted web page. You receive a personal token and use the FastAPI
-human-eval session and ratings endpoints (the study owner will send the exact
-requests). There is no account and no password.
+You receive a personal token. There is no account and no password.
 
-1. Load your session with the token you were sent (`GET /api/v1/human-eval/session`).
+**Preferred:** open `experiments/human_eval/rater_app.html` in a browser, paste
+the API base URL, mode (`pilot` or `main`), and your token, then click
+Load session. Score Set X and Set Y with the rubric anchors, set a preference,
+and Save. You can leave and resume later.
+
+**Alternative (curl):**
+
+1. Load your session (`GET /api/v1/human-eval/session?token=…&mode=…`).
 2. Read the job, candidate, Set X, and Set Y for the current pair.
-3. Submit scores with `POST /api/v1/human-eval/ratings`. You can change a score
-   by posting again.
+3. Submit scores with `POST /api/v1/human-eval/ratings?token=…&mode=…`.
 4. Reload the same session later to resume at the first unfinished pair.
 5. When every pair is complete, stop. Do not guess which set is which.
 

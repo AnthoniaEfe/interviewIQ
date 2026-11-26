@@ -1,0 +1,378 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_05855_1d0e27a3eacb",
+  "jd_id": "rjf_05855_1d0e27a3eacb",
+  "pair_id": "rjf_05855_1d0e27a3eacb",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_05855_1d0e27a3eacb__rjf_05855_1d0e27a3eacb__mid.json",
+  "pool_stats": {
+    "n_raw": 31,
+    "n_valid": 23
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      3,
+      4,
+      2,
+      22,
+      20,
+      7,
+      1,
+      6,
+      5,
+      13
+    ],
+    "questions": [
+      {
+        "question": "What sections would you include in a detailed analysis report for leadership after reviewing a process, and how would you make the recommendations traceable to the underlying evidence?",
+        "competency": "Analytical reporting",
+        "dimension": "Technical",
+        "target_gap": "Report creation",
+        "difficulty": "mid",
+        "rationale": "Tests the missing report-creation capability central to communicating findings and recommendations in the role.",
+        "source_evidence": [
+          "Gap matrix: Report creation \u2014 missing",
+          "Created Excel spreadsheets and PowerPoint presentations for maintenance decision-making"
+        ],
+        "priority": 0.96
+      },
+      {
+        "question": "Tell me about a time you had to gain support for a process change from people who initially preferred the existing way of working. How did you tailor your case, and what was the outcome?",
+        "competency": "Stakeholder influence",
+        "dimension": "Behavioural",
+        "target_gap": "Stakeholder influence",
+        "difficulty": "mid",
+        "rationale": "Directly evaluates a missing, highly weighted capability needed to secure agreement on process and system changes.",
+        "source_evidence": [
+          "Gap matrix: Stakeholder influence \u2014 missing",
+          "Conducted weekly process improvement training",
+          "Process improvement reduced man-hours and eliminated wasteful practices"
+        ],
+        "priority": 0.97
+      },
+      {
+        "question": "A business sponsor says a mobile feature is \u201ctoo slow,\u201d while the technical team asks for measurable acceptance criteria. How would you frame the problem and translate it into testable requirements?",
+        "competency": "Problem framing",
+        "dimension": "Situational",
+        "target_gap": "Conceptual thinking",
+        "difficulty": "mid",
+        "rationale": "Assesses the missing ability to abstract an ambiguous business complaint into a coherent model and measurable requirements.",
+        "source_evidence": [
+          "Gap matrix: Conceptual thinking \u2014 missing",
+          "Gap matrix: Requirements analysis \u2014 weak_match"
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "What prompted your interest in moving from logistics, maintenance records, and manufacturing operations into a Business Analyst - Mobile role, and which parts of your background would you deliberately build on first?",
+        "competency": "Role motivation",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "Clarifies motivation, transition readiness, and self-awareness without assuming mobile or formal BA experience not stated in the profile.",
+        "source_evidence": [
+          "Professional summary: logistics analysis, scheduling, and inventory management",
+          "Experience: Shift Supervisor/Data Analyst/Logs and Records Clerk",
+          "No mobile-domain experience stated in candidate profile"
+        ],
+        "priority": 0.75
+      },
+      {
+        "question": "How have you used Outlook or an equivalent calendar and email tool to coordinate meetings, maintain decision records, and follow up on actions across a group?",
+        "competency": "Communication coordination",
+        "dimension": "Behavioural",
+        "target_gap": "Microsoft Outlook",
+        "difficulty": "mid",
+        "rationale": "Tests the partial Outlook match in the context of analyst coordination and action management.",
+        "source_evidence": [
+          "Gap matrix: Microsoft Outlook \u2014 partial_match",
+          "Candidate evidence: Microsoft Office"
+        ],
+        "priority": 0.66
+      },
+      {
+        "question": "How would you map the current state of a mobile support or fulfillment process, identify bottlenecks, and prioritize improvement opportunities before recommending a solution?",
+        "competency": "Business process analysis",
+        "dimension": "Technical",
+        "target_gap": "Business analysis",
+        "difficulty": "mid",
+        "rationale": "Builds on the partial match in logistics analysis and tests whether it transfers to end-to-end business analysis and prioritization.",
+        "source_evidence": [
+          "Gap matrix: Business analysis \u2014 partial_match",
+          "Candidate evidence: Logistics analysis",
+          "Conducted process improvement training"
+        ],
+        "priority": 0.91
+      },
+      {
+        "question": "Describe a time you used data to identify the real cause of an operational problem rather than treating its visible symptom. What data did you examine, what did you conclude, and what changed?",
+        "competency": "Root-cause analysis",
+        "dimension": "Behavioural",
+        "target_gap": "Analytical thinking",
+        "difficulty": "mid",
+        "rationale": "Directly probes a high-priority missing competency while allowing the candidate to draw on data-analysis and troubleshooting experience.",
+        "source_evidence": [
+          "Gap matrix: Analytical thinking \u2014 missing",
+          "Created Excel spreadsheets for maintenance decision-making",
+          "Resolved NALCOMIS hardware and software issues"
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "Give an example of a commitment you owned from initial issue through completion. How did you track actions, manage risks or blockers, and confirm the intended result was achieved?",
+        "competency": "Accountability",
+        "dimension": "Behavioural",
+        "target_gap": "Follow-through",
+        "difficulty": "mid",
+        "rationale": "Evaluates the missing follow-through competency through evidence of ownership, tracking, escalation, and closure.",
+        "source_evidence": [
+          "Gap matrix: Follow-through \u2014 missing",
+          "Supported timeline decisions to meet Chief of Naval Operations goals",
+          "Shift Supervisor/Data Analyst/Logs and Records Clerk"
+        ],
+        "priority": 0.96
+      },
+      {
+        "question": "In a mobile-process review, operations, technology, and management stakeholders want different outcomes. How would you run the discussion to surface trade-offs and reach an acceptable solution?",
+        "competency": "Stakeholder facilitation",
+        "dimension": "Situational",
+        "target_gap": "Stakeholder collaboration",
+        "difficulty": "mid",
+        "rationale": "Tests the missing ability to collaborate across stakeholders and reconcile competing perspectives.",
+        "source_evidence": [
+          "Gap matrix: Stakeholder collaboration \u2014 missing",
+          "Coordinated with Quality Assurance",
+          "Supervised and mentored personnel"
+        ],
+        "priority": 0.97
+      },
+      {
+        "question": "What would you include in a business case for automating a manual process, and how would you evaluate whether automation is preferable to improving the existing workflow?",
+        "competency": "Technology modernization",
+        "dimension": "Technical",
+        "target_gap": "Advanced technical skills",
+        "difficulty": "mid",
+        "rationale": "Tests the weak match for advanced technical skills through applied evaluation of automation, feasibility, value, and operational risk.",
+        "source_evidence": [
+          "Gap matrix: Advanced technical skills \u2014 weak_match",
+          "Used NALCOMIS, SYBASE, and Windows NT",
+          "Process improvement experience"
+        ],
+        "priority": 0.91
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": false,
+    "dimension_counts": {
+      "Technical": 3,
+      "Behavioural": 4,
+      "Situational": 2,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 0
+    },
+    "gap_share": 0.7,
+    "relaxations": [
+      {
+        "phase": "quota",
+        "reason": "zero_availability",
+        "dimension": "Role-Specific",
+        "reserved_index": null
+      }
+    ],
+    "metrics": {
+      "M1.P": 0.2989114825164647,
+      "M2.P": 0.0,
+      "M3.P": 0.0,
+      "M4.P": 7.414219491879714,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "What sections would you include in a detailed analysis report for leadership after reviewing a process, and how would you make the recommendations traceable to the underlying evidence?"
+    },
+    {
+      "question": "Tell me about a time you had to gain support for a process change from people who initially preferred the existing way of working. How did you tailor your case, and what was the outcome?"
+    },
+    {
+      "question": "A business sponsor says a mobile feature is \u201ctoo slow,\u201d while the technical team asks for measurable acceptance criteria. How would you frame the problem and translate it into testable requirements?"
+    },
+    {
+      "question": "What prompted your interest in moving from logistics, maintenance records, and manufacturing operations into a Business Analyst - Mobile role, and which parts of your background would you deliberately build on first?"
+    },
+    {
+      "question": "How have you used Outlook or an equivalent calendar and email tool to coordinate meetings, maintain decision records, and follow up on actions across a group?"
+    },
+    {
+      "question": "How would you map the current state of a mobile support or fulfillment process, identify bottlenecks, and prioritize improvement opportunities before recommending a solution?"
+    },
+    {
+      "question": "Describe a time you used data to identify the real cause of an operational problem rather than treating its visible symptom. What data did you examine, what did you conclude, and what changed?"
+    },
+    {
+      "question": "Give an example of a commitment you owned from initial issue through completion. How did you track actions, manage risks or blockers, and confirm the intended result was achieved?"
+    },
+    {
+      "question": "In a mobile-process review, operations, technology, and management stakeholders want different outcomes. How would you run the discussion to surface trade-offs and reach an acceptable solution?"
+    },
+    {
+      "question": "What would you include in a business case for automating a manual process, and how would you evaluate whether automation is preferable to improving the existing workflow?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "What sections would you include in a detailed analysis report for leadership after reviewing a process, and how would you make the recommendations traceable to the underlying evidence?",
+      "competency": "Analytical reporting",
+      "dimension": "Technical",
+      "target_gap": "Report creation",
+      "difficulty": "mid",
+      "rationale": "Tests the missing report-creation capability central to communicating findings and recommendations in the role.",
+      "source_evidence": [
+        "Gap matrix: Report creation \u2014 missing",
+        "Created Excel spreadsheets and PowerPoint presentations for maintenance decision-making"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "Tell me about a time you had to gain support for a process change from people who initially preferred the existing way of working. How did you tailor your case, and what was the outcome?",
+      "competency": "Stakeholder influence",
+      "dimension": "Behavioural",
+      "target_gap": "Stakeholder influence",
+      "difficulty": "mid",
+      "rationale": "Directly evaluates a missing, highly weighted capability needed to secure agreement on process and system changes.",
+      "source_evidence": [
+        "Gap matrix: Stakeholder influence \u2014 missing",
+        "Conducted weekly process improvement training",
+        "Process improvement reduced man-hours and eliminated wasteful practices"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "A business sponsor says a mobile feature is \u201ctoo slow,\u201d while the technical team asks for measurable acceptance criteria. How would you frame the problem and translate it into testable requirements?",
+      "competency": "Problem framing",
+      "dimension": "Situational",
+      "target_gap": "Conceptual thinking",
+      "difficulty": "mid",
+      "rationale": "Assesses the missing ability to abstract an ambiguous business complaint into a coherent model and measurable requirements.",
+      "source_evidence": [
+        "Gap matrix: Conceptual thinking \u2014 missing",
+        "Gap matrix: Requirements analysis \u2014 weak_match"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "What prompted your interest in moving from logistics, maintenance records, and manufacturing operations into a Business Analyst - Mobile role, and which parts of your background would you deliberately build on first?",
+      "competency": "Role motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Clarifies motivation, transition readiness, and self-awareness without assuming mobile or formal BA experience not stated in the profile.",
+      "source_evidence": [
+        "Professional summary: logistics analysis, scheduling, and inventory management",
+        "Experience: Shift Supervisor/Data Analyst/Logs and Records Clerk",
+        "No mobile-domain experience stated in candidate profile"
+      ],
+      "priority": 0.75
+    },
+    {
+      "question": "How have you used Outlook or an equivalent calendar and email tool to coordinate meetings, maintain decision records, and follow up on actions across a group?",
+      "competency": "Communication coordination",
+      "dimension": "Behavioural",
+      "target_gap": "Microsoft Outlook",
+      "difficulty": "mid",
+      "rationale": "Tests the partial Outlook match in the context of analyst coordination and action management.",
+      "source_evidence": [
+        "Gap matrix: Microsoft Outlook \u2014 partial_match",
+        "Candidate evidence: Microsoft Office"
+      ],
+      "priority": 0.66
+    },
+    {
+      "question": "How would you map the current state of a mobile support or fulfillment process, identify bottlenecks, and prioritize improvement opportunities before recommending a solution?",
+      "competency": "Business process analysis",
+      "dimension": "Technical",
+      "target_gap": "Business analysis",
+      "difficulty": "mid",
+      "rationale": "Builds on the partial match in logistics analysis and tests whether it transfers to end-to-end business analysis and prioritization.",
+      "source_evidence": [
+        "Gap matrix: Business analysis \u2014 partial_match",
+        "Candidate evidence: Logistics analysis",
+        "Conducted process improvement training"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "Describe a time you used data to identify the real cause of an operational problem rather than treating its visible symptom. What data did you examine, what did you conclude, and what changed?",
+      "competency": "Root-cause analysis",
+      "dimension": "Behavioural",
+      "target_gap": "Analytical thinking",
+      "difficulty": "mid",
+      "rationale": "Directly probes a high-priority missing competency while allowing the candidate to draw on data-analysis and troubleshooting experience.",
+      "source_evidence": [
+        "Gap matrix: Analytical thinking \u2014 missing",
+        "Created Excel spreadsheets for maintenance decision-making",
+        "Resolved NALCOMIS hardware and software issues"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Give an example of a commitment you owned from initial issue through completion. How did you track actions, manage risks or blockers, and confirm the intended result was achieved?",
+      "competency": "Accountability",
+      "dimension": "Behavioural",
+      "target_gap": "Follow-through",
+      "difficulty": "mid",
+      "rationale": "Evaluates the missing follow-through competency through evidence of ownership, tracking, escalation, and closure.",
+      "source_evidence": [
+        "Gap matrix: Follow-through \u2014 missing",
+        "Supported timeline decisions to meet Chief of Naval Operations goals",
+        "Shift Supervisor/Data Analyst/Logs and Records Clerk"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "In a mobile-process review, operations, technology, and management stakeholders want different outcomes. How would you run the discussion to surface trade-offs and reach an acceptable solution?",
+      "competency": "Stakeholder facilitation",
+      "dimension": "Situational",
+      "target_gap": "Stakeholder collaboration",
+      "difficulty": "mid",
+      "rationale": "Tests the missing ability to collaborate across stakeholders and reconcile competing perspectives.",
+      "source_evidence": [
+        "Gap matrix: Stakeholder collaboration \u2014 missing",
+        "Coordinated with Quality Assurance",
+        "Supervised and mentored personnel"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "What would you include in a business case for automating a manual process, and how would you evaluate whether automation is preferable to improving the existing workflow?",
+      "competency": "Technology modernization",
+      "dimension": "Technical",
+      "target_gap": "Advanced technical skills",
+      "difficulty": "mid",
+      "rationale": "Tests the weak match for advanced technical skills through applied evaluation of automation, feasibility, value, and operational risk.",
+      "source_evidence": [
+        "Gap matrix: Advanced technical skills \u2014 weak_match",
+        "Used NALCOMIS, SYBASE, and Windows NT",
+        "Process improvement experience"
+      ],
+      "priority": 0.91
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

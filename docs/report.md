@@ -1,7 +1,7 @@
 # InterviewIQ — Full-Tree Analysis Report
 
-**Date:** 2026-11-12  
-**Repository:** `interviewIQ` (branch `main`, HEAD `2b176c0`)  
+**Date:** 2026-11-26  
+**Repository:** `interviewIQ` (branch `main`, HEAD `416d257`)  
 **Thesis goal:** Hybrid Profile-Gap Analysis Framework for Personalized and Competency-Balanced LLM Interview Question Generation  
 **Primary dataset:** [`cnamuangtoun/resume-job-description-fit`](https://huggingface.co/datasets/cnamuangtoun/resume-job-description-fit)
 
@@ -13,13 +13,14 @@ This report is an independent reading of the current tree, stored artifacts, and
 
 The **framework is implemented**. Extraction, hybrid gap scoring, Terra generation (B0 / B1 / T), competency-weighted MMR, adaptive selection, automatic metrics, and a research console all exist and have been exercised.
 
-The **thesis claim is not yet supported**. Three independent checks all point the same way:
+The **thesis claim is not yet supported**. Four independent checks all point the same way:
 
 1. The gap matrix does **not** track independent Hugging Face fit labels (null control).
 2. InterviewIQ treatment **T does not beat** the profile-aware baseline **B1** on coverage, and **loses** to plain MMR **B2** on coverage and diversity.
-3. There are **no human labels** for either the gap matrix or question quality.
+3. **Gold-set phase 2 with full main-set adjudication is complete.** All 30 dual-coder disagreements now have an `adjudicated.csv` row (usable consensus **46**; disposition agree 17 / adjudicated 30 / cannot_judge 3; open disagree **0**). Inter-annotator main QWK is unchanged (−0.033 [−0.317, 0.254]), so G1 is still **not interpreted**. On consensus: G1 unsupported (QWK 0.271 [−0.002, 0.523]); G2 fails (AUC 0.642 [0.472, 0.799]); G3 false gaps 11/21 system gaps. **G4 adoption test is now True** (holdout ΔQWK 0.154 [0.006, 0.342]; candidate 0.25/0/0.75, thresholds 0.50/0.55), but reverse-split sensitivity does **not** adopt, and G1-uninterpreted policy keeps production artifacts unchanged pending an explicit cutover. Details: `docs/gold_set_report.md`, `experiments/gold_set/round2/main_open_adjudication.md`.
+4. **Human-eval infrastructure for T′ vs B1 is launched; ratings are not yet collected.** Rubric pilot (5 primary-30 pairs) is built, API smoke-passed, rater UI ready (`docs/human_eval_launch.md`). The human DV is still empty until ≥3 raters finish.
 
-The frozen scale rule therefore returned **DIAGNOSE**, not SCALE. The 150-pair confirmatory run was correctly **not started** ($0). Spending more Terra tokens on the current T will not salvage the claim. The next work is diagnosis, human validation, and a redesigned **competency-balanced** selector — not a larger generation run.
+The frozen scale rule therefore returned **DIAGNOSE**, not SCALE. The 150-pair confirmatory run was correctly **not started** ($0). Spending more Terra tokens on historical T will not salvage the claim. **T′ is adopted as the forward treatment** (`docs/selector_tprime_adoption.md`; default `--selection tprime`; materialized sets in `experiments/results/selector_tprime_replay/treatment/`; human-eval inputs `experiments/human_eval/inputs/primary30_Tprime_vs_B1.json`). The remaining path that can still advance the title is **question-level human evaluation of T′ vs B1**, plus a thesis narrative that treats the hybrid gap matrix as implemented but **not human-validated**.
 
 ---
 
@@ -29,7 +30,7 @@ The title has four load-bearing pieces. Mapping each piece to the code makes the
 
 | Phrase | What it must mean in this repo | Current status |
 | --- | --- | --- |
-| **Hybrid profile-gap analysis** | Combine lexical (TF-IDF, BM25) and semantic (MiniLM) signals into a requirement-level match label and weight | **Implemented and frozen.** Not human-validated. HF fit labels do not corroborate it. |
+| **Hybrid profile-gap analysis** | Combine lexical (TF-IDF, BM25) and semantic (MiniLM) signals into a requirement-level match label and weight | **Implemented.** Gold-set n=46: G1 not interpreted / unsupported; G2 fails; G4 adopt flag True but production not cut over while G1 uninterpreted. HF fit labels also null. |
 | **Personalized** | Questions conditioned on *this* candidate vs *this* job, not a generic JD prompt | **Implemented** as Luna profiles + gap-conditioned Terra pool. Automatic metrics show T ≈ B1 except on gap-targeting, which is partly by construction. |
 | **Competency-balanced** | Final N questions cover dimensions and mix gaps, partials, and strengths — not 95% gap probes | **Code exists; empirical behaviour fails the phrase.** Weighted MMR crowds out strengths. Cultural/Motivational is starved unless a dimension budget is on. |
 | **LLM interview question generation** | Controlled Terra generation with matched baselines | **Implemented** for primary-30. Holdout-30 and 90/150 pairs have no T/B1 generations. |
@@ -53,7 +54,7 @@ interviewIQ/
 ├── experiments/
 │   ├── configs/             YAML pair subsets
 │   ├── datasets/            HF resume–job-fit pairs and local classifier
-│   ├── gold_set/            160-item annotation pack (no labels yet)
+│   ├── gold_set/            160-item pack + A–E CSVs + adjudicated.csv (phase 2 done)
 │   ├── human_eval/          blinded study builder (no ratings yet)
 │   ├── metrics/             freeze v1 + assignment audit
 │   ├── results/             all paid and local runs
@@ -77,7 +78,7 @@ interviewIQ/
 | `eval_metrics/` | M1–M4, freeze, scale decision | Complete. Freeze hashes have drifted. |
 | `treatment_pilot/` | B1 / T / B2 / S0–S2 orchestration | Complete (primary-30). |
 | `full_experiment/` | Spend gates for 150-pair run | Gates correctly refuse. |
-| `gold_set/` | Stratified pack + analysis that refuses empty CSVs | Pack built. Phase 2 blocked. |
+| `gold_set/` | Stratified pack + analysis that refuses empty CSVs | Phase 2 complete with adjudication. G1 not interpreted; G1–G4 gates fail/no-adopt. |
 | `human_eval/` | Blinded T vs B1 store, study, judge, analysis | Platform complete. Data empty. |
 | `classifier_eval/` | Local MiniLM + sklearn V0–V6 | Complete. Not a thesis DV. |
 
@@ -160,8 +161,9 @@ HF splits: train 6,241 / test 1,759, labels No Fit / Potential Fit / Good Fit.
 | Classifier V0–V6 | `exp_20261019T123223Z` | $0 | V3, V5_LR “improve” with huge train–test gap |
 | Adaptive replay | `experiments/adaptive_selection_replay/` | $0 | Budget balances dimensions; adaptive-λ without budget does not |
 | 150-pair T/B1 | — | **$0** | Gates failed; not run |
-| Gold-set labels | pack only | $0 | **No CSVs** |
-| Human question ratings | platform only | $0 | **Empty** |
+| Gold-set phase 2 (+ full adjudication) | `experiments/results/gold_set_analysis/` | $0 | Usable n=46; G1 not interpreted; G4 adopt flag True (no code cutover) |
+| Selector T′ replay | `experiments/results/selector_tprime_replay/` | $0 | Exploratory success rule met (quota, gap share, M3/M4 margins) |
+| Human question ratings (T′ vs B1) | pilot study ready | $0 | Infrastructure launched; **0 human ratings** |
 
 Approximate successful LLM spend to date: **~$5.3 USD**.
 
@@ -173,7 +175,7 @@ Approximate successful LLM spend to date: **~$5.3 USD**.
 
 Primary-30: 633 requirements → **64.3% gap**. Holdout-30: 515 → **72.6%**. Production evidence is already ~67 strings/pair. Competencies-only would push gaps to 94–97%. Raw CV chunks **raise** gaps to 83–86%. Size-adjusted mismatched-candidate controls still show a matching signal, but it is modest.
 
-Luna extracts few competencies (mean ~2.7) versus many technical skills (~24). The scorer already unions those fields. The remaining risk is **requirement-level false gaps** (extraction miss or MiniLM under-match), which only the gold set can measure.
+Luna extracts few competencies (mean ~2.7) versus many technical skills (~24). The scorer already unions those fields. Gold-set G3 (after adjudication): **10 false gaps / 20 system-gap consensus items** (rate 0.50); all classified `matched_but_scored_low` (0 `evidence_not_extracted`). Complementary misses (human not evidenced, system partial/strong) also 10/43. The bottleneck is score/threshold calibration and semantic under-match, not empty evidence strings.
 
 ### 5.2 Independent fit labels do not validate the matrix
 
@@ -242,11 +244,20 @@ Freeze v1 (`experiments/metrics/metrics_freeze.json`, 2026-10-12, commit `1c62b4
 
 V0 test accuracy 0.464, macro-F1 0.424 (below majority accuracy 0.487). Under the frozen rule, V3 and V5_LR “improve” (macro-F1 gain CI excludes 0). Their group-CV macro-F1 is ~0.999 vs test ~0.46 — a collapse that forbids treating them as a contribution. Gap-lite is **not** the production Luna matrix. Do not put this in the thesis claims section.
 
-### 5.7 Human evaluation infrastructure is ready; data are not
+### 5.7 Gold-set phase 2 (2026-11-26, full main adjudication)
 
-- Gold set: 150 stratified items + 10 calibration; `items_blind.json` and `annotator_app.html` exist on disk (~1.4 MB each); `annotations/` contains only a README. Analysis refuses until real CSVs exist.
-- Question study: blinded T vs B1 protocol, runbook, rater UI, admin tokens, Krippendorff / Wilcoxon / Holm analysis. `question_ratings.json` is an empty scaffold. Rubric is still **draft** until a pilot export exists.
-- LLM judge (`judge_v1.md`, Luna): **approval: pending**. Must not run on holdout or load human ratings until the user changes that line.
+Artifacts: annotator A–E CSVs, `experiments/gold_set/adjudicated.csv` (30 rows), `experiments/gold_set/round2/main_open_adjudication.md` (final four: g003=2, g066=cannot_judge, g080=2, g118=1), `docs/gold_set_report.md`, `experiments/results/gold_set_analysis/summary.json`.
+
+| Gate | Result (stored numbers) |
+| --- | --- |
+| Inter-annotator main QWK | −0.033 [−0.317, 0.254] (n=47) → **G1 not interpreted** (unchanged by adjudication) |
+| Usable consensus | 46/50 (`agree` 17 + `adjudicated` 30; open `disagree` 0; annotator `cannot_judge` 3) |
+| G1 system vs human | QWK 0.271 [−0.002, 0.523] → **False** |
+| G2 hybrid AUC | 0.642 [0.472, 0.799] → does **not** separate |
+| G3 false gaps | 11/21 system gaps (0.524); all matched-but-scored-low |
+| G4 recalibration | Holdout ΔQWK 0.154 [0.006, 0.342] → **adopt flag True** (candidate tfidf 0.25 / bm25 0 / semantic 0.75; partial 0.50; strong 0.55). Reverse sensitivity adopt=False. **Production artifacts not rewritten** while G1 is uninterpreted. |
+
+Question study (T′ vs B1): rubric pilot study built (`manifest_pilot.json`, 5 pairs, seed 20261126); `rater_app.html` + API smoke passed; pilot export still **0** ratings. Rubric remains **draft** until a real pilot export. LLM judge stays `approval: pending`. Confirmatory holdout main study still blocked on holdout T′ generation.
 
 ---
 
@@ -254,15 +265,15 @@ V0 test accuracy 0.464, macro-F1 0.424 (below majority accuracy 0.487). Under th
 
 | Thesis requirement | What the tree does | What is missing |
 | --- | --- | --- |
-| Hybrid gap analysis | Frozen 0.25/0.25/0.50 scorer, sensitivity, fit-label control | Requirement-level **human** gold labels; optional G4 recalibration |
-| Personalization | Profiles + gap-conditioned pool | Evidence that T questions are *better for this pair* than B1 (needs humans) |
-| Competency balance | Weights + five-dimension schema + adaptive budgets | Selected sets are **not** balanced under current T; budgets not in the official treatment |
+| Hybrid gap analysis | Frozen 0.25/0.25/0.50 scorer, sensitivity, fit-label control, gold-set G1–G4 | Human validation **failed pre-registered gates**; keep production config; do not claim gap accuracy |
+| Personalization | Profiles + gap-conditioned pool | Evidence that T/T′ questions are *better for this pair* than B1 (needs humans); gap labels themselves are unvalidated |
+| Competency balance | Weights + five-dimension schema + **adopted T′** | Historical T unbalanced; T′ is forward treatment on stored pools |
 | Controlled LLM generation | Matched Terra B0/B1/T on primary-30 | Holdout-30 T/B1; 90 missing extractions; no 150-pair run |
 | Confirmatory evaluation | M1–M4 freeze + DIAGNOSE | Human quality DV; freeze v1.1; do not reopen SCALE by editing the rule |
 
-The honest current contribution is: **a reproducible hybrid pipeline plus a negative result** — gap-targeting MMR does not, by itself, improve interview question sets over a profile-aware prompt, and the gap matrix does not track pair-level fit labels.
+The honest current contribution is: **a reproducible hybrid pipeline plus converging negative/null results** — gap-targeting MMR does not beat profile-aware B1 / plain MMR B2 on automatic coverage; the gap matrix tracks neither HF fit labels nor (after adjudication) human requirement labels under G1–G2; G4 keeps production weights; and T′ restores competency balance on stored pools without new generation.
 
-That is a publishable finding if it is framed as such. It is **not** yet a positive demonstration of the title.
+That is a publishable finding if framed as such. It is **not** a positive demonstration of the full title.
 
 ---
 
@@ -280,27 +291,29 @@ The title is recovered by fixing **balance and validity**, then testing quality 
 4. Leave `docs/judge_validation_prereg.md` at `approval: pending`.
 5. Treat classifier V3/V5_LR as appendix only.
 
-### Step 2 — Gold-set annotation (highest scientific priority, $0 LLM)
+### Step 2 — Gold-set annotation — DONE (2026-11-26)
 
-This is the only independent test of **hybrid profile-gap analysis**.
+Five annotators + full main-set `adjudicated.csv` (30/30 disagreements resolved; see `round2/main_open_adjudication.md`). Phase 2 re-run → `docs/gold_set_report.md`.
 
-1. Recruit two annotators (kit already in `experiments/gold_set/annotator_kit/`). ~4 hours each, 160 items.
-2. They use `annotator_app.html` / `items_blind.json` only. Do not open the answer key.
-3. Write `experiments/gold_set/annotations/annotator_A.csv` … `annotator_D.csv`.
-4. Run `validate_annotations.py`, then `experiments/scripts/analyze_gold_set.py`.
-5. Report G1–G3 literally (kappa, score-vs-human AUC, false-gap rate and causes).
-6. Apply G4 recalibration **only** if the untouched-split CI excludes 0; otherwise keep production thresholds.
+**Outcome (pre-registered):** G1 still not interpreted (IAA unchanged). Consensus n=46: G1 unsupported, G2 does not separate. G4 adoption test **True** on primary→holdout; reverse sensitivity False. Because G1 is uninterpreted, **do not cut over production weights/thresholds in code** without an explicit decision; keep the G4 candidate as a locked sensitivity config only.
 
-**Branching:**
-
-- If humans largely agree with the matrix → keep scorer; proceed to selector redesign.
-- If false-gap rate is high because extraction misses CV evidence → expand `_candidate_texts` (achievements, titles, education, projects) and/or extraction prompts; re-score stored pairs locally; do **not** retune thresholds on the same gold items you will report.
-- If false-gap rate is high because MiniLM under-matches paraphrases → that is a scorer limitation; report it; consider semantic-only or hybrid-weight G4 only under the frozen rule.
+**Branch taken:** hybrid gap remains **implemented, unvalidated**. Proceed to selector T′ + human question eval. Any G4 production cutover is a separate, written decision.
 - If agreement is near chance → the “hybrid profile-gap” claim must be weakened in the thesis. Generation can still be studied as a prompt+selector system, but not as “gap-validated personalization”.
 
-### Step 3 — Diagnose and redesign the selector on stored pools ($0 LLM)
+### Step 3 — Diagnose, redesign, and adopt T′ — DONE (2026-11-26)
 
-The DIAGNOSE result already names the bottleneck. Pre-register a **new treatment T′** *before* looking at frozen M1–M4 for it.
+T′ replay met its pre-registered exploratory success rule (quota 26/30, gap share 0.71, M3/M4 within margin of T; B2−T′ M3 delta 0.027). Mean Cultural/Motivational rose from ~0.23 (T) to ~0.97 (T′).
+
+**Adoption (this step):** T′ is the forward treatment. Defaults, artifacts, and human-eval wiring:
+
+- Decision: `docs/selector_tprime_adoption.md`
+- Code default: `tprime` (`FORWARD_TREATMENT_SELECTION`, treatment CLI/pipeline)
+- Materialized sets: `experiments/results/selector_tprime_replay/treatment/` (30)
+- Human-eval inputs: `experiments/human_eval/inputs/primary30_Tprime_vs_B1.json` (T key = T′)
+- Addendum: `docs/human_eval_tprime_addendum.md`
+- Historical weighted-MMR T left unchanged under `exp_20261011T130619Z/treatment/`
+
+Historical design note (kept for context). Pre-register a **new treatment T′** *before* looking at frozen M1–M4 for it:
 
 Recommended T′ (aligned with the title’s “competency-balanced”):
 
@@ -320,16 +333,25 @@ If T′ still loses M3 to B2 by a wide margin, the weight term itself is the pro
 
 Also inspect the **four zero-availability pools**: if Cultural/Motivational is absent from the pool, no selector can balance it. That becomes a pool-prompt constraint for any future generation (force at least one question per dimension in the pool of 30).
 
-### Step 4 — Human evaluation of questions (the actual quality DV)
+### Step 4 — Human evaluation of questions — IN PROGRESS (pilot ready, 2026-11-26)
 
-Automatic metrics cannot close the thesis. Protocol is already written.
+Automatic metrics cannot close the thesis. Protocol already written; T′ addendum applies.
 
-1. **Rubric pilot** (~5 primary-30 pairs, T vs B1, 3 raters) → freeze `docs/human_eval_rubric.md` after at most one wording revision.
-2. Provision RunPod volume + `HUMAN_EVAL_DATA_DIR` + `HUMAN_EVAL_ADMIN_TOKEN` (ratings die on ephemeral disk otherwise).
-3. Build blinded payload from **stored** primary-30 or, for the confirmatory study, from holdout once those questions exist. Builder refuses to invent questions.
-4. **Main study** is specified as holdout-30 × {T, B1}. That requires holdout T/B1 generations (Step 5). Until then, a larger primary-30 human study is exploratory and must be labelled as such.
-5. Analysis: refuse <90% completion; Krippendorff α first; Wilcoxon on T−B1 for relevance / coverage / non-redundancy; Holm; preference binomial.
-6. Only after human ratings exist, and only if the user sets `approval: approved`, consider the Luna judge as a **secondary** instrument.
+**Done (no invented ratings):**
+
+1. Built rubric pilot: 5 primary-30 pairs T′ vs B1 → `experiments/human_eval/inputs/pilot5_Tprime_vs_B1.json`, blinded study + condition key, `manifest_pilot.json`.
+2. Local API smoke with `HUMAN_EVAL_DATA_DIR` / admin token; session blinding checked; demo rating path checked; pilot export = 0.
+3. Local rater UI: `experiments/human_eval/rater_app.html`.
+4. Launch checklist: `docs/human_eval_launch.md`. Kit briefing updated.
+
+**Blocked on humans:**
+
+1. Recruit ≥3 raters; they complete the 5-pair pilot via token + rater app.
+2. Export pilot → freeze `docs/human_eval_rubric.md` (at most one wording revision); record median `elapsed_ms`.
+3. Optional exploratory primary-30 study from `primary30_Tprime_vs_B1.json` (label exploratory).
+4. Confirmatory **main** = holdout-30 × {T′, B1} still needs holdout generation (Step 5) under the spend gate.
+5. Analysis unchanged: refuse <90% completion; Krippendorff α; Wilcoxon T′−B1; Holm; preference binomial.
+6. Luna judge stays pending approval.
 
 If humans prefer B1 or are indifferent, that is the result. Do not keep generating until a proxy looks better.
 
@@ -370,8 +392,8 @@ Ranked by how much they can sink the thesis if ignored.
 
 ### P0 — correctness of the scientific claim
 
-1. **No gold-set labels.** The hybrid gap half of the title is unvalidated except against the scorer’s own combined score (circular) and against pair-level HF labels (null). Until `annotator_A.csv` … `annotator_D.csv` exist, do not write that the matrix is accurate.
-2. **Current T is not competency-balanced.** 95% gap-targeted, 0% strong, Cultural/Motivational ≈ 0.23 questions/set. Shipping this as the title system is a mismatch between claim and artefact.
+1. **Gold-set negative.** After adjudication, hybrid gap still fails G1/G2 interpretation/support; G4 keeps production. Do **not** write that the matrix is accurate. Report the nulls.
+2. **Historical T is not competency-balanced; T′ is adopted.** Use T′ (not weighted-MMR T) for human study and any new selection.
 3. **DIAGNOSE + freeze hash drift.** Confirmatory 150-pair spend is blocked on purpose. Do not bypass gates. Do not retune the decision rule. Resolve freeze v1 vs v1.1 in writing.
 4. **M2/M3 are not quality.** T is conditioned on the gap matrix; B1 is not. A win on gap-targeting is expected. Human preference is the DV.
 5. **Null fit-label control must stay in the narrative.** Hiding it and claiming “gaps measure misfit” would be a research-integrity failure.
@@ -406,18 +428,20 @@ Ranked by how much they can sink the thesis if ignored.
 
 ---
 
-## 9. Suggested 30-day sequence
+## 9. Suggested next sequence (post gold-set + T′)
 
-| Week | Work | Spend | Output |
+| Priority | Work | Spend | Output |
 | --- | --- | --- | --- |
-| 1 | Freeze policy, architecture errata, gold-set recruitment, T′ pre-reg | $0 | Written gates; annotators scheduled |
-| 1–2 | Gold-set annotation + analysis | $0 LLM | G1–G4 tables, figures 26–29 |
-| 2 | T′ / budget replay on stored pools with frozen metrics | $0 | Selector decision; whether pool prompt must change |
-| 3 | Rubric pilot (5 pairs, 3 raters) | $0 LLM (rater time) | Frozen rubric; time-per-pair |
-| 3–4 | **Only if** gold-set and T′ replay support it: holdout T/B1 generation + main human study | Recalculated Terra + rater time | Confirmatory contrast + human DV |
-| 4 | Draft results chapters including nulls | $0 | Thesis-shaped narrative |
+| Done | Gold-set A–E + full `adjudicated.csv` (30) + analyze | $0 | G1 not interpreted; G4 adopt flag True (no cutover); figures 26–31 |
+| Done | T′ replay on stored pools | $0 | Exploratory success rule met |
+| Done | Adopt T′ as forward treatment + materialize + human-eval inputs | $0 | `docs/selector_tprime_adoption.md` |
+| Done | Rubric pilot study build + API smoke + rater UI | $0 | `docs/human_eval_launch.md`; ratings still 0 |
+| Now | Recruit ≥3 raters; complete 5-pair pilot | Rater time | Pilot export; freeze rubric |
+| Next | Exploratory primary-30 human study (T′ vs B1) if rubric freezes | Rater time | Human DV on relevance / coverage / non-redundancy / preference |
+| Gate | Paid holdout T′/B1 generation | Terra | **Only if** humans prefer T′ or show material gains; else stop spend |
+| Parallel | Draft thesis chapters around implemented pipeline + null gold-set + DIAGNOSE + T′ | $0 | Negative-capable narrative |
 
-If week 2 gold-set or T′ replay is clearly negative, skip paid holdout generation and write the negative-result thesis. That is the scientifically correct, budget-correct, and title-honest path.
+Gold-set is clearly negative on gap validity. That does **not** by itself kill the question-generation half of the title: competency-budget T′ can still be tested as a selection method against B1 with humans. It does kill claims that personalization is “gap-validated.” Skip 150-pair spend unless the human pilot justifies it.
 
 ---
 
@@ -435,6 +459,17 @@ If week 2 gold-set or T′ replay is clearly negative, skip paid holdout generat
 | Fit-label null | `docs/fit_label_control_report.md` |
 | Gap sensitivity | `docs/gap_sensitivity_report.md` |
 | Gold-set protocol | `docs/gold_set_protocol.md` |
+| Gold-set phase-2 report | `docs/gold_set_report.md` |
+| Gold-set analysis summary | `experiments/results/gold_set_analysis/summary.json` |
+| Main-set adjudication | `experiments/gold_set/adjudicated.csv` (30 rows) |
+| Final-four adjudication notes | `experiments/gold_set/round2/main_open_adjudication.md` |
+| Selector T′ replay | `experiments/results/selector_tprime_replay/summary.json` |
+| T′ adoption | `docs/selector_tprime_adoption.md` |
+| T′ treatment sets | `experiments/results/selector_tprime_replay/treatment/` |
+| Human-eval T′ vs B1 inputs | `experiments/human_eval/inputs/primary30_Tprime_vs_B1.json` |
+| Rubric pilot (5 pairs) | `experiments/human_eval/inputs/pilot5_Tprime_vs_B1.json`, `manifest_pilot.json` |
+| Human-eval launch | `docs/human_eval_launch.md` |
+| Rater UI | `experiments/human_eval/rater_app.html` |
 | Adaptive selector pre-reg | `docs/adaptive_selection_prereg.md` |
 | 150-pair pre-reg + failed gates | `docs/full_experiment_prereg.md`, `docs/full_experiment_report.md` |
 | Human eval | `docs/human_eval_protocol.md`, `docs/human_eval_runbook.md` |
@@ -446,14 +481,13 @@ If week 2 gold-set or T′ replay is clearly negative, skip paid holdout generat
 | Primary extraction / gap | `exp_20260927T205741Z` / `exp_20260927T215232Z` |
 | B1 / T / ablations | `exp_20261011T130310Z` / `…130619Z` / `…131945Z` |
 | Gold-set pack | `experiments/gold_set/` |
+| Gold-set figures 26–31 | `docs/figures/fig26_gold_*.png` … `fig31_gold_gates.png` |
 | Adaptive replay | `experiments/adaptive_selection_replay/` |
 
 ---
 
 ## 11. Conclusion
 
-InterviewIQ is a **research-grade implementation** of the named framework, not a prototype sketch. The missing piece is not more plumbing. It is **evidence**.
+InterviewIQ is a **research-grade implementation** of the named framework, not a prototype sketch. After gold-set adjudication, the hybrid gap half of the title is **implemented and empirically unvalidated** under the frozen G1–G4 rules. T′ shows that competency-balanced selection is achievable on stored pools without new LLM spend.
 
-Right now the system personalizes by pushing almost every question onto noisy gap labels, then loses coverage to a simpler selector. The best way forward is to (1) validate or recalibrate the hybrid gap matrix with the gold set, (2) make selection actually competency-balanced on the pools you already paid for, (3) measure question quality with humans, and (4) generate at 150-pair scale only if those three steps justify it.
-
-A DIAGNOSE result, a null fit-label control, and a human study that may prefer B1 are all legitimate thesis outcomes. An unvalidated claim that T is better is not.
+The remaining evidence gap is **human preference and quality ratings for generated questions** (objectives 3–4). Do that on **adopted T′** vs B1 (`primary30_Tprime_vs_B1.json`) before any further Terra generation. A DIAGNOSE result, a null fit-label control, a negative gold set, and a human study that may prefer B1 are all legitimate thesis outcomes. An unvalidated claim that historical gap-conditioned T is better is not.

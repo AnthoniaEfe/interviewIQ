@@ -1,0 +1,39 @@
+{
+  "status": "adopted",
+  "forward_treatment": "Tprime",
+  "selection_strategy": "tprime",
+  "historical_T": "competency_weighted_mmr",
+  "n_pools": 30,
+  "success_rule": {
+    "quota_at_least_24": true,
+    "gap_share_below_0.95": true,
+    "coverage_and_diversity_within_margin_of_T": true,
+    "all_three": true,
+    "margins": {
+      "M3.P": 0.02,
+      "M4.P": 0.25
+    },
+    "comparison": "recomputed paired means from this run, not the stored frozen means"
+  },
+  "recomputed_means_Tprime": {
+    "n": 30,
+    "mean_gap_share": 0.7100000000000001,
+    "pools_quota_met": 26,
+    "quota_defined": true,
+    "mean_dimension_counts": {
+      "Technical": 3.4,
+      "Behavioural": 1.6666666666666667,
+      "Situational": 2.8333333333333335,
+      "Cultural/Motivational": 0.9666666666666667,
+      "Role-Specific": 1.1333333333333333
+    },
+    "mean_M1.P": 0.2631845249742166,
+    "mean_M2.P": 0.3333333333333333,
+    "mean_M3.P": 0.4350000000000001,
+    "mean_M4.P": 7.646997729459866
+  },
+  "treatment_dir": "experiments/results/selector_tprime_replay/treatment",
+  "human_eval_inputs": "experiments/human_eval/inputs/primary30_Tprime_vs_B1.json",
+  "git_commit": "416d257659e827dc9b86ce5c8963c5d5e4f161ea",
+  "note": "T\u2032 replaces competency_weighted_mmr as the forward treatment selector. Stored historical T artifacts are unchanged. Human-eval inputs label the T\u2032 set as condition T for blinding compatibility."
+}

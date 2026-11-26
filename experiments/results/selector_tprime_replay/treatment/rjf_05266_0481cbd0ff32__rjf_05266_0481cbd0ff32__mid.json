@@ -1,0 +1,357 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_05266_0481cbd0ff32",
+  "jd_id": "rjf_05266_0481cbd0ff32",
+  "pair_id": "rjf_05266_0481cbd0ff32",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_05266_0481cbd0ff32__rjf_05266_0481cbd0ff32__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 26
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      4,
+      8,
+      3,
+      25,
+      12,
+      0,
+      6,
+      9,
+      14,
+      11
+    ],
+    "questions": [
+      {
+        "question": "When reviewing a high volume of invoices and payment requests, what specific checks do you use to ensure vendor, amount, coding, approval, and supporting-document accuracy before processing?",
+        "competency": "Accuracy and controls",
+        "dimension": "Technical",
+        "target_gap": "Detail orientation",
+        "difficulty": "mid",
+        "rationale": "The candidate reviewed invoices and documentation; this clarifies the precision and control practices behind that experience.",
+        "source_evidence": [
+          "Reviewed supplier and subcontractor invoices, bills and payment requests.",
+          "Uploaded vendor and contractor invoices to IMS."
+        ],
+        "priority": 0.94
+      },
+      {
+        "question": "Describe a situation in which you had to explain a finance requirement, missing documentation, or payment issue to someone outside the finance team. How did you make the message clear and obtain a timely response?",
+        "competency": "Professional stakeholder communication",
+        "dimension": "Behavioural",
+        "target_gap": "Professional communication",
+        "difficulty": "mid",
+        "rationale": "The role requires fluent communication with management and clients, while direct stakeholder communication evidence is limited.",
+        "source_evidence": [
+          "Managed correspondence between Kabul and Washington, DC.",
+          "Reviewed accounting documents and transactions for supporting documentation."
+        ],
+        "priority": 0.9
+      },
+      {
+        "question": "Give an example of how you would organize the close of several client accounts with overlapping deadlines. How would you track outstanding reconciliations, approvals, supporting schedules, and open questions?",
+        "competency": "Close organization",
+        "dimension": "Situational",
+        "target_gap": "Organizational skills",
+        "difficulty": "mid",
+        "rationale": "The role requires recurring close support across client accounts, and organization is marked missing despite the candidate's file-management background.",
+        "source_evidence": [
+          "Organized technical, administrative and financial files.",
+          "Maintained office administrative and financial records."
+        ],
+        "priority": 0.94
+      },
+      {
+        "question": "What motivates you to move from project and subcontract accounting into an Accountant II role managing multiple client accounts, and how does that fit your longer-term professional development?",
+        "competency": "Role motivation",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "Connects the candidate's stated interest in career guidance and advancement with the demands of this client-accounting role.",
+        "source_evidence": [
+          "Obtain a position in a professional organization where I can apply my skills and loyalty in exchange for career guidance, training and opportunity for advancement.",
+          "Project Accountant; Subcontract Accountant; Administrative & Finance Coordinator"
+        ],
+        "priority": 0.7
+      },
+      {
+        "question": "What is an example of a repetitive finance or records task you would examine for improvement? Describe the current-state steps, the control risks, and a practical improvement you would propose to management.",
+        "competency": "Process improvement",
+        "dimension": "Role-Specific",
+        "target_gap": "Process improvement",
+        "difficulty": "mid",
+        "rationale": "Directly tests a required responsibility for identifying processing-efficiency improvements, which is not evidenced in the profile.",
+        "source_evidence": [
+          "Developed and maintained a filing system for an IED project.",
+          "Entered transactions into WEBFCR and uploaded supporting documentation."
+        ],
+        "priority": 0.89
+      },
+      {
+        "question": "Walk me through how you would determine the correct accounting treatment under U.S. GAAP when a vendor invoice includes both a prepaid service component and an immediately expensed component. What entries and supporting documentation would you expect?",
+        "competency": "U.S. GAAP application",
+        "dimension": "Technical",
+        "target_gap": "Generally Accepted Accounting Principles (GAAP)",
+        "difficulty": "mid",
+        "rationale": "Tests whether the candidate can move from general project accounting experience to applying U.S. GAAP judgments and documenting entries.",
+        "source_evidence": [
+          "Accounting",
+          "Reviewed accounting documents and transactions for supporting documentation."
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "A client asks why operating expenses are 12% above budget this month. How would you analyze the variance, distinguish timing differences from true overspend, and communicate the finding?",
+        "competency": "Variance analysis",
+        "dimension": "Situational",
+        "target_gap": "Financial transactions and accounting fundamentals",
+        "difficulty": "mid",
+        "rationale": "Tests knowledge of expenses, budgets, and financial drivers relevant to the role's variance-analysis responsibilities.",
+        "source_evidence": [
+          "Prepared cash flow forecasts and monthly budget requests.",
+          "Prepared weekly financial reports with supporting backups."
+        ],
+        "priority": 0.91
+      },
+      {
+        "question": "Draft the key points you would include in an email to a vendor or internal requestor whose invoice cannot be processed because the approval and receipt are missing. How would you keep the tone professional while protecting the control process?",
+        "competency": "Written finance communication",
+        "dimension": "Situational",
+        "target_gap": "Written business communication",
+        "difficulty": "mid",
+        "rationale": "Evaluates practical written communication in a common accounts-payable control scenario.",
+        "source_evidence": [
+          "Managed correspondence between Kabul and Washington, DC.",
+          "Reviewed supplier and subcontractor invoices, bills and payment requests."
+        ],
+        "priority": 0.9
+      },
+      {
+        "question": "Describe a time you received corrective feedback on your work, process, or documentation. What did you do with the feedback, and what changed afterward?",
+        "competency": "Feedback receptiveness",
+        "dimension": "Behavioural",
+        "target_gap": "Coaching and feedback receptiveness",
+        "difficulty": "mid",
+        "rationale": "Assesses openness to coaching, a required team behavior absent from the documented profile.",
+        "source_evidence": [
+          "Administrative & Finance Coordinator",
+          "Project Accountant"
+        ],
+        "priority": 0.87
+      },
+      {
+        "question": "If a manager asks for an urgent cash-flow report while you are completing a bank reconciliation and processing approved invoices, how would you prioritize, communicate trade-offs, and maintain accuracy?",
+        "competency": "Prioritization under pressure",
+        "dimension": "Situational",
+        "target_gap": "Adaptability",
+        "difficulty": "mid",
+        "rationale": "Tests the ability to adapt to changing priorities in a finance environment without weakening financial controls.",
+        "source_evidence": [
+          "Prepared cash flow forecasts for upcoming months.",
+          "Performed monthly bank account reconciliations."
+        ],
+        "priority": 0.89
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 2,
+      "Behavioural": 2,
+      "Situational": 4,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 1
+    },
+    "gap_share": 0.7,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.30815444470409076,
+      "M2.P": 0.0,
+      "M3.P": 0.1,
+      "M4.P": 7.200952993303306,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "When reviewing a high volume of invoices and payment requests, what specific checks do you use to ensure vendor, amount, coding, approval, and supporting-document accuracy before processing?"
+    },
+    {
+      "question": "Describe a situation in which you had to explain a finance requirement, missing documentation, or payment issue to someone outside the finance team. How did you make the message clear and obtain a timely response?"
+    },
+    {
+      "question": "Give an example of how you would organize the close of several client accounts with overlapping deadlines. How would you track outstanding reconciliations, approvals, supporting schedules, and open questions?"
+    },
+    {
+      "question": "What motivates you to move from project and subcontract accounting into an Accountant II role managing multiple client accounts, and how does that fit your longer-term professional development?"
+    },
+    {
+      "question": "What is an example of a repetitive finance or records task you would examine for improvement? Describe the current-state steps, the control risks, and a practical improvement you would propose to management."
+    },
+    {
+      "question": "Walk me through how you would determine the correct accounting treatment under U.S. GAAP when a vendor invoice includes both a prepaid service component and an immediately expensed component. What entries and supporting documentation would you expect?"
+    },
+    {
+      "question": "A client asks why operating expenses are 12% above budget this month. How would you analyze the variance, distinguish timing differences from true overspend, and communicate the finding?"
+    },
+    {
+      "question": "Draft the key points you would include in an email to a vendor or internal requestor whose invoice cannot be processed because the approval and receipt are missing. How would you keep the tone professional while protecting the control process?"
+    },
+    {
+      "question": "Describe a time you received corrective feedback on your work, process, or documentation. What did you do with the feedback, and what changed afterward?"
+    },
+    {
+      "question": "If a manager asks for an urgent cash-flow report while you are completing a bank reconciliation and processing approved invoices, how would you prioritize, communicate trade-offs, and maintain accuracy?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "When reviewing a high volume of invoices and payment requests, what specific checks do you use to ensure vendor, amount, coding, approval, and supporting-document accuracy before processing?",
+      "competency": "Accuracy and controls",
+      "dimension": "Technical",
+      "target_gap": "Detail orientation",
+      "difficulty": "mid",
+      "rationale": "The candidate reviewed invoices and documentation; this clarifies the precision and control practices behind that experience.",
+      "source_evidence": [
+        "Reviewed supplier and subcontractor invoices, bills and payment requests.",
+        "Uploaded vendor and contractor invoices to IMS."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Describe a situation in which you had to explain a finance requirement, missing documentation, or payment issue to someone outside the finance team. How did you make the message clear and obtain a timely response?",
+      "competency": "Professional stakeholder communication",
+      "dimension": "Behavioural",
+      "target_gap": "Professional communication",
+      "difficulty": "mid",
+      "rationale": "The role requires fluent communication with management and clients, while direct stakeholder communication evidence is limited.",
+      "source_evidence": [
+        "Managed correspondence between Kabul and Washington, DC.",
+        "Reviewed accounting documents and transactions for supporting documentation."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Give an example of how you would organize the close of several client accounts with overlapping deadlines. How would you track outstanding reconciliations, approvals, supporting schedules, and open questions?",
+      "competency": "Close organization",
+      "dimension": "Situational",
+      "target_gap": "Organizational skills",
+      "difficulty": "mid",
+      "rationale": "The role requires recurring close support across client accounts, and organization is marked missing despite the candidate's file-management background.",
+      "source_evidence": [
+        "Organized technical, administrative and financial files.",
+        "Maintained office administrative and financial records."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "What motivates you to move from project and subcontract accounting into an Accountant II role managing multiple client accounts, and how does that fit your longer-term professional development?",
+      "competency": "Role motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Connects the candidate's stated interest in career guidance and advancement with the demands of this client-accounting role.",
+      "source_evidence": [
+        "Obtain a position in a professional organization where I can apply my skills and loyalty in exchange for career guidance, training and opportunity for advancement.",
+        "Project Accountant; Subcontract Accountant; Administrative & Finance Coordinator"
+      ],
+      "priority": 0.7
+    },
+    {
+      "question": "What is an example of a repetitive finance or records task you would examine for improvement? Describe the current-state steps, the control risks, and a practical improvement you would propose to management.",
+      "competency": "Process improvement",
+      "dimension": "Role-Specific",
+      "target_gap": "Process improvement",
+      "difficulty": "mid",
+      "rationale": "Directly tests a required responsibility for identifying processing-efficiency improvements, which is not evidenced in the profile.",
+      "source_evidence": [
+        "Developed and maintained a filing system for an IED project.",
+        "Entered transactions into WEBFCR and uploaded supporting documentation."
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "Walk me through how you would determine the correct accounting treatment under U.S. GAAP when a vendor invoice includes both a prepaid service component and an immediately expensed component. What entries and supporting documentation would you expect?",
+      "competency": "U.S. GAAP application",
+      "dimension": "Technical",
+      "target_gap": "Generally Accepted Accounting Principles (GAAP)",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate can move from general project accounting experience to applying U.S. GAAP judgments and documenting entries.",
+      "source_evidence": [
+        "Accounting",
+        "Reviewed accounting documents and transactions for supporting documentation."
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "A client asks why operating expenses are 12% above budget this month. How would you analyze the variance, distinguish timing differences from true overspend, and communicate the finding?",
+      "competency": "Variance analysis",
+      "dimension": "Situational",
+      "target_gap": "Financial transactions and accounting fundamentals",
+      "difficulty": "mid",
+      "rationale": "Tests knowledge of expenses, budgets, and financial drivers relevant to the role's variance-analysis responsibilities.",
+      "source_evidence": [
+        "Prepared cash flow forecasts and monthly budget requests.",
+        "Prepared weekly financial reports with supporting backups."
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "Draft the key points you would include in an email to a vendor or internal requestor whose invoice cannot be processed because the approval and receipt are missing. How would you keep the tone professional while protecting the control process?",
+      "competency": "Written finance communication",
+      "dimension": "Situational",
+      "target_gap": "Written business communication",
+      "difficulty": "mid",
+      "rationale": "Evaluates practical written communication in a common accounts-payable control scenario.",
+      "source_evidence": [
+        "Managed correspondence between Kabul and Washington, DC.",
+        "Reviewed supplier and subcontractor invoices, bills and payment requests."
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Describe a time you received corrective feedback on your work, process, or documentation. What did you do with the feedback, and what changed afterward?",
+      "competency": "Feedback receptiveness",
+      "dimension": "Behavioural",
+      "target_gap": "Coaching and feedback receptiveness",
+      "difficulty": "mid",
+      "rationale": "Assesses openness to coaching, a required team behavior absent from the documented profile.",
+      "source_evidence": [
+        "Administrative & Finance Coordinator",
+        "Project Accountant"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "If a manager asks for an urgent cash-flow report while you are completing a bank reconciliation and processing approved invoices, how would you prioritize, communicate trade-offs, and maintain accuracy?",
+      "competency": "Prioritization under pressure",
+      "dimension": "Situational",
+      "target_gap": "Adaptability",
+      "difficulty": "mid",
+      "rationale": "Tests the ability to adapt to changing priorities in a finance environment without weakening financial controls.",
+      "source_evidence": [
+        "Prepared cash flow forecasts for upcoming months.",
+        "Performed monthly bank account reconciliations."
+      ],
+      "priority": 0.89
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

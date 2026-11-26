@@ -249,13 +249,66 @@ def strategy_random(
     )
 
 
+def strategy_tprime(
+    questions: list[InterviewQuestion],
+    similarity_matrix: np.ndarray,
+    weights: list[float],
+    *,
+    lambda_: float,
+    k: int,
+    seed: int = 42,
+    query_similarities: np.ndarray | None = None,
+    dimensions: list[str] | None = None,
+    target_gaps: list[str] | None = None,
+    match_label_by_competency: dict[str, str] | None = None,
+) -> SelectionResult:
+    """Competency-budget T′ (docs/selector_tprime_prereg.md). Forward treatment selector."""
+    del lambda_, k, seed, query_similarities
+    from app.services.selection.tprime import select_tprime
+
+    dims = dimensions or [str(q.question_type) for q in questions]
+    gaps = target_gaps or [str(q.target_gap) for q in questions]
+    if match_label_by_competency is None:
+        raise ValueError(
+            "strategy tprime requires match_label_by_competency "
+            "(job_competency → match_label from the gap matrix)"
+        )
+    result = select_tprime(
+        questions,
+        similarity_matrix,
+        weights,
+        dims,
+        gaps,
+        match_label_by_competency,
+        use_weights=True,
+    )
+    notes = [
+        f"quota_met={result.quota_met}",
+        f"relaxations={len(result.relaxations)}",
+    ]
+    for item in result.relaxations:
+        notes.append(
+            f"relax:{item.phase}:{item.reason}"
+            + (f":{item.dimension}" if item.dimension else "")
+        )
+    return SelectionResult(
+        selected_indices=list(result.selected_indices),
+        strategy="tprime",
+        notes=notes,
+    )
+
+
 SELECTION_STRATEGIES: dict[str, Callable[..., SelectionResult]] = {
+    "tprime": strategy_tprime,
     "competency_weighted_mmr": strategy_competency_weighted_mmr,
     "plain_mmr_priority": strategy_plain_mmr_priority,
     "plain_mmr_query": strategy_plain_mmr_query,
     "top_priority": strategy_top_priority,
     "random": strategy_random,
 }
+
+# Forward treatment default after T′ exploratory success (docs/selector_tprime_adoption.md).
+FORWARD_TREATMENT_SELECTION = "tprime"
 
 # Stage name for the adaptive-lambda / competency-budget grid.
 # Distinct from selection_ablation, which the pilot uses.
@@ -331,18 +384,28 @@ def select_questions(
     k: int,
     seed: int = 42,
     query_similarities: np.ndarray | None = None,
+    dimensions: list[str] | None = None,
+    target_gaps: list[str] | None = None,
+    match_label_by_competency: dict[str, str] | None = None,
 ) -> SelectionResult:
     if strategy not in SELECTION_STRATEGIES:
         raise KeyError(
             f"Unknown selection strategy {strategy!r}. "
             f"Known: {sorted(SELECTION_STRATEGIES)}"
         )
+    kwargs: dict = {
+        "lambda_": lambda_,
+        "k": k,
+        "seed": seed,
+        "query_similarities": query_similarities,
+    }
+    if strategy == "tprime":
+        kwargs["dimensions"] = dimensions
+        kwargs["target_gaps"] = target_gaps
+        kwargs["match_label_by_competency"] = match_label_by_competency
     return SELECTION_STRATEGIES[strategy](
         questions,
         similarity_matrix,
         weights,
-        lambda_=lambda_,
-        k=k,
-        seed=seed,
-        query_similarities=query_similarities,
+        **kwargs,
     )

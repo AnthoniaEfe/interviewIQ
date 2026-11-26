@@ -1,0 +1,371 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_03558_5a71f8cf9f12",
+  "jd_id": "rjf_03558_5a71f8cf9f12",
+  "pair_id": "rjf_03558_5a71f8cf9f12",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_03558_5a71f8cf9f12__rjf_03558_5a71f8cf9f12__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      22,
+      29,
+      2,
+      7,
+      28,
+      19,
+      21,
+      1,
+      24,
+      9
+    ],
+    "questions": [
+      {
+        "question": "How would you provision and operate an AWS RDS database for a production web service, including backups, high availability, connection management, schema migrations, security, and performance monitoring?",
+        "competency": "AWS RDS",
+        "dimension": "Technical",
+        "target_gap": "AWS RDS",
+        "difficulty": "hard",
+        "rationale": "AWS RDS is a high-weight missing required skill. It is directly named in the role responsibilities and should be assessed explicitly.",
+        "source_evidence": [
+          "Microsoft Azure",
+          "Database design",
+          "MySQL"
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "You owned internal acceptance testing for new AT&T site builds and maintenance-window testing. Describe a high-risk test you planned: what were the acceptance criteria, rollback triggers, evidence captured, and communication plan if it failed?",
+        "competency": "Quality ownership",
+        "dimension": "Behavioural",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "This validates a distinctive ownership claim in the profile and assesses the testing discipline needed in an agile, continuously deployed engineering environment.",
+        "source_evidence": [
+          "Owned internal acceptance testing for new site builds",
+          "Performed maintenance-window testing for upgraded sites",
+          "Project ownership"
+        ],
+        "priority": 0.66
+      },
+      {
+        "question": "Suppose a legacy Java application must be split into independently deployable services. How would you identify service boundaries, manage inter-service communication, and avoid distributed-data consistency problems?",
+        "competency": "Microservices architecture",
+        "dimension": "Situational",
+        "target_gap": "Microservices",
+        "difficulty": "mid",
+        "rationale": "Microservices is missing and central to the role's scalable services requirement; this assesses architectural reasoning rather than claimed hands-on experience.",
+        "source_evidence": [
+          "Java 8",
+          "REST",
+          "MVC Architecture"
+        ],
+        "priority": 0.97
+      },
+      {
+        "question": "This role uses Ruby in a functional-programming-oriented stack. What Ruby experience do you have, and how would you assess and close any gap before taking ownership of a production Ruby service?",
+        "competency": "Ruby readiness",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "Ruby",
+        "difficulty": "mid",
+        "rationale": "Ruby is a missing required skill. This probes candor, learning strategy, and ownership for a material technology gap.",
+        "source_evidence": [
+          "Java 8",
+          "JavaScript",
+          "Full-stack developer with 3 years of professional experience"
+        ],
+        "priority": 0.82
+      },
+      {
+        "question": "Your profile notes machine-learning models for predicting power-market prices. Explain one model-selection decision, how you evaluated predictive quality, and how you would present its uncertainty and limitations to both technical and business stakeholders.",
+        "competency": "Data presentation and communication",
+        "dimension": "Role-Specific",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "This profile-specific probe validates the claimed predictive-analysis work while evaluating the role's need for data presentation and cross-functional communication.",
+        "source_evidence": [
+          "Applied machine learning algorithms to predict power market prices for different ISOs",
+          "Predictive analysis",
+          "reporting and documentation"
+        ],
+        "priority": 0.68
+      },
+      {
+        "question": "How would you design a relational schema and transactional workflow for a reservation-style system where users can modify an existing reservation using a confirmation number?",
+        "competency": "SQL and database programming",
+        "dimension": "Technical",
+        "target_gap": "SQL and database programming",
+        "difficulty": "mid",
+        "rationale": "The candidate worked on an AVIS reservation application and lists database design, making this a grounded probe of the partial SQL/database match.",
+        "source_evidence": [
+          "Developed a mobile web application for AVIS using Hibernate",
+          "Developed a screen for modifying existing reservations",
+          "Database design"
+        ],
+        "priority": 0.77
+      },
+      {
+        "question": "You are given a Linux host running a web service that is intermittently returning 502 errors. What commands, logs, metrics, and network checks would you use to isolate the fault safely?",
+        "competency": "Unix web-stack operations",
+        "dimension": "Situational",
+        "target_gap": "Unix server and web stack administration",
+        "difficulty": "mid",
+        "rationale": "Unix server and web stack administration is a partial match based on Unix/Linux evidence. This tests hands-on operational troubleshooting.",
+        "source_evidence": [
+          "Unix/Linux",
+          "Wireshark",
+          "SecureCRT"
+        ],
+        "priority": 0.78
+      },
+      {
+        "question": "Design a Spring Boot service that receives a request, validates it, persists data, calls a downstream REST service, and returns a consistent error response. Which Spring components and testing approach would you use?",
+        "competency": "Spring Boot",
+        "dimension": "Technical",
+        "target_gap": "Spring Boot",
+        "difficulty": "mid",
+        "rationale": "Spring Boot is a high-weight missing required skill. The candidate's Java background provides a basis to assess readiness to use the framework.",
+        "source_evidence": [
+          "Java 8",
+          "Oracle Certified Associate, Java SE 8 Programmer"
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "Describe a CI/CD pipeline you would expect for a Java or Node.js service, from pull request through automated testing, artifact creation, deployment, rollback, and production verification.",
+        "competency": "Continuous integration",
+        "dimension": "Technical",
+        "target_gap": "Continuous integration",
+        "difficulty": "mid",
+        "rationale": "Continuous integration is missing and the job explicitly requires testing and continuous deployment. This tests delivery-process readiness.",
+        "source_evidence": [
+          "Handled project activities from design through testing",
+          "Git"
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "A product manager wants type-ahead search across millions of records with faceting and relevance ranking. Outline an Elasticsearch index, ingestion/update path, query strategy, and operational risks.",
+        "competency": "Elasticsearch",
+        "dimension": "Situational",
+        "target_gap": "Elasticsearch",
+        "difficulty": "hard",
+        "rationale": "Elasticsearch is missing and required. This scenario assesses whether the candidate understands search-system concepts needed in the role.",
+        "source_evidence": [
+          "Database design",
+          "Web development"
+        ],
+        "priority": 0.9
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 4,
+      "Behavioural": 1,
+      "Situational": 3,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 1
+    },
+    "gap_share": 0.6,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.17192239681076138,
+      "M2.P": 0.3,
+      "M3.P": 0.3,
+      "M4.P": 8.63230888414802,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "How would you provision and operate an AWS RDS database for a production web service, including backups, high availability, connection management, schema migrations, security, and performance monitoring?"
+    },
+    {
+      "question": "You owned internal acceptance testing for new AT&T site builds and maintenance-window testing. Describe a high-risk test you planned: what were the acceptance criteria, rollback triggers, evidence captured, and communication plan if it failed?"
+    },
+    {
+      "question": "Suppose a legacy Java application must be split into independently deployable services. How would you identify service boundaries, manage inter-service communication, and avoid distributed-data consistency problems?"
+    },
+    {
+      "question": "This role uses Ruby in a functional-programming-oriented stack. What Ruby experience do you have, and how would you assess and close any gap before taking ownership of a production Ruby service?"
+    },
+    {
+      "question": "Your profile notes machine-learning models for predicting power-market prices. Explain one model-selection decision, how you evaluated predictive quality, and how you would present its uncertainty and limitations to both technical and business stakeholders."
+    },
+    {
+      "question": "How would you design a relational schema and transactional workflow for a reservation-style system where users can modify an existing reservation using a confirmation number?"
+    },
+    {
+      "question": "You are given a Linux host running a web service that is intermittently returning 502 errors. What commands, logs, metrics, and network checks would you use to isolate the fault safely?"
+    },
+    {
+      "question": "Design a Spring Boot service that receives a request, validates it, persists data, calls a downstream REST service, and returns a consistent error response. Which Spring components and testing approach would you use?"
+    },
+    {
+      "question": "Describe a CI/CD pipeline you would expect for a Java or Node.js service, from pull request through automated testing, artifact creation, deployment, rollback, and production verification."
+    },
+    {
+      "question": "A product manager wants type-ahead search across millions of records with faceting and relevance ranking. Outline an Elasticsearch index, ingestion/update path, query strategy, and operational risks."
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "How would you provision and operate an AWS RDS database for a production web service, including backups, high availability, connection management, schema migrations, security, and performance monitoring?",
+      "competency": "AWS RDS",
+      "dimension": "Technical",
+      "target_gap": "AWS RDS",
+      "difficulty": "hard",
+      "rationale": "AWS RDS is a high-weight missing required skill. It is directly named in the role responsibilities and should be assessed explicitly.",
+      "source_evidence": [
+        "Microsoft Azure",
+        "Database design",
+        "MySQL"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "You owned internal acceptance testing for new AT&T site builds and maintenance-window testing. Describe a high-risk test you planned: what were the acceptance criteria, rollback triggers, evidence captured, and communication plan if it failed?",
+      "competency": "Quality ownership",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This validates a distinctive ownership claim in the profile and assesses the testing discipline needed in an agile, continuously deployed engineering environment.",
+      "source_evidence": [
+        "Owned internal acceptance testing for new site builds",
+        "Performed maintenance-window testing for upgraded sites",
+        "Project ownership"
+      ],
+      "priority": 0.66
+    },
+    {
+      "question": "Suppose a legacy Java application must be split into independently deployable services. How would you identify service boundaries, manage inter-service communication, and avoid distributed-data consistency problems?",
+      "competency": "Microservices architecture",
+      "dimension": "Situational",
+      "target_gap": "Microservices",
+      "difficulty": "mid",
+      "rationale": "Microservices is missing and central to the role's scalable services requirement; this assesses architectural reasoning rather than claimed hands-on experience.",
+      "source_evidence": [
+        "Java 8",
+        "REST",
+        "MVC Architecture"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "This role uses Ruby in a functional-programming-oriented stack. What Ruby experience do you have, and how would you assess and close any gap before taking ownership of a production Ruby service?",
+      "competency": "Ruby readiness",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Ruby",
+      "difficulty": "mid",
+      "rationale": "Ruby is a missing required skill. This probes candor, learning strategy, and ownership for a material technology gap.",
+      "source_evidence": [
+        "Java 8",
+        "JavaScript",
+        "Full-stack developer with 3 years of professional experience"
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "Your profile notes machine-learning models for predicting power-market prices. Explain one model-selection decision, how you evaluated predictive quality, and how you would present its uncertainty and limitations to both technical and business stakeholders.",
+      "competency": "Data presentation and communication",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "This profile-specific probe validates the claimed predictive-analysis work while evaluating the role's need for data presentation and cross-functional communication.",
+      "source_evidence": [
+        "Applied machine learning algorithms to predict power market prices for different ISOs",
+        "Predictive analysis",
+        "reporting and documentation"
+      ],
+      "priority": 0.68
+    },
+    {
+      "question": "How would you design a relational schema and transactional workflow for a reservation-style system where users can modify an existing reservation using a confirmation number?",
+      "competency": "SQL and database programming",
+      "dimension": "Technical",
+      "target_gap": "SQL and database programming",
+      "difficulty": "mid",
+      "rationale": "The candidate worked on an AVIS reservation application and lists database design, making this a grounded probe of the partial SQL/database match.",
+      "source_evidence": [
+        "Developed a mobile web application for AVIS using Hibernate",
+        "Developed a screen for modifying existing reservations",
+        "Database design"
+      ],
+      "priority": 0.77
+    },
+    {
+      "question": "You are given a Linux host running a web service that is intermittently returning 502 errors. What commands, logs, metrics, and network checks would you use to isolate the fault safely?",
+      "competency": "Unix web-stack operations",
+      "dimension": "Situational",
+      "target_gap": "Unix server and web stack administration",
+      "difficulty": "mid",
+      "rationale": "Unix server and web stack administration is a partial match based on Unix/Linux evidence. This tests hands-on operational troubleshooting.",
+      "source_evidence": [
+        "Unix/Linux",
+        "Wireshark",
+        "SecureCRT"
+      ],
+      "priority": 0.78
+    },
+    {
+      "question": "Design a Spring Boot service that receives a request, validates it, persists data, calls a downstream REST service, and returns a consistent error response. Which Spring components and testing approach would you use?",
+      "competency": "Spring Boot",
+      "dimension": "Technical",
+      "target_gap": "Spring Boot",
+      "difficulty": "mid",
+      "rationale": "Spring Boot is a high-weight missing required skill. The candidate's Java background provides a basis to assess readiness to use the framework.",
+      "source_evidence": [
+        "Java 8",
+        "Oracle Certified Associate, Java SE 8 Programmer"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Describe a CI/CD pipeline you would expect for a Java or Node.js service, from pull request through automated testing, artifact creation, deployment, rollback, and production verification.",
+      "competency": "Continuous integration",
+      "dimension": "Technical",
+      "target_gap": "Continuous integration",
+      "difficulty": "mid",
+      "rationale": "Continuous integration is missing and the job explicitly requires testing and continuous deployment. This tests delivery-process readiness.",
+      "source_evidence": [
+        "Handled project activities from design through testing",
+        "Git"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "A product manager wants type-ahead search across millions of records with faceting and relevance ranking. Outline an Elasticsearch index, ingestion/update path, query strategy, and operational risks.",
+      "competency": "Elasticsearch",
+      "dimension": "Situational",
+      "target_gap": "Elasticsearch",
+      "difficulty": "hard",
+      "rationale": "Elasticsearch is missing and required. This scenario assesses whether the candidate understands search-system concepts needed in the role.",
+      "source_evidence": [
+        "Database design",
+        "Web development"
+      ],
+      "priority": 0.9
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

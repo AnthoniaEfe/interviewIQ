@@ -1,0 +1,369 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_05997_55a65605ad8f",
+  "jd_id": "rjf_05997_55a65605ad8f",
+  "pair_id": "rjf_05997_55a65605ad8f",
+  "fit_label": "Good Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_05997_55a65605ad8f__rjf_05997_55a65605ad8f__mid.json",
+  "pool_stats": {
+    "n_raw": 31,
+    "n_valid": 31
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      1,
+      20,
+      9,
+      22,
+      29,
+      7,
+      6,
+      24,
+      3,
+      21
+    ],
+    "questions": [
+      {
+        "question": "Walk me through how you would decompose an asset-management platform into microservices. Which services would own which data, and how would you handle cross-service workflows without creating tightly coupled synchronous dependencies?",
+        "competency": "Microservice architecture",
+        "dimension": "Technical",
+        "target_gap": "Microservices",
+        "difficulty": "hard",
+        "rationale": "Microservices is a required weak match, so this probes architectural judgment for a central role responsibility.",
+        "source_evidence": [
+          "Highly scalable backend systems",
+          "Led development of multi-tenant, highly scalable software solutions.",
+          "Microservices is marked weak_match"
+        ],
+        "priority": 0.97
+      },
+      {
+        "question": "Tell me about one of the four major projects you led from press release to delivery. How did you set measurable outcomes, track progress, handle risks, and decide whether the delivered result was successful?",
+        "competency": "Results-driven delivery",
+        "dimension": "Behavioural",
+        "target_gap": "Results-driven execution",
+        "difficulty": "mid",
+        "rationale": "Results-driven execution is marked missing despite strong achievement claims; this elicits concrete outcome definition and accountability.",
+        "source_evidence": [
+          "Completed four major projects from press release to final delivery across all SDLC processes.",
+          "Successfully led 4 major projects at Amazon",
+          "Unblocked more than 100 internal customers through major project delivery."
+        ],
+        "priority": 0.96
+      },
+      {
+        "question": "A rollout causes two regions to return conflicting versions of the same asset. How would you reason about the consistency model, diagnose the conflict, remediate affected records, and prevent recurrence?",
+        "competency": "Distributed-systems reliability",
+        "dimension": "Situational",
+        "target_gap": "Distributed systems",
+        "difficulty": "hard",
+        "rationale": "Tests a required partial match using the candidate's geo-distributed background while focusing on failure and consistency reasoning.",
+        "source_evidence": [
+          "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+          "Distributed systems is marked partial_match"
+        ],
+        "priority": 0.94
+      },
+      {
+        "question": "Give an example of a technology or engineering practice you had to learn quickly for a project. How did you identify the knowledge gap, validate your understanding, and apply what you learned?",
+        "competency": "Learning agility",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "Learning orientation",
+        "difficulty": "mid",
+        "rationale": "Learning orientation is a high-weight required missing competency, so direct evidence is needed.",
+        "source_evidence": [
+          "Learning orientation is marked missing",
+          "Over 5 years of professional software development experience",
+          "Master of Science: Computer Science"
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "This position requires U.S. citizenship and the ability to obtain a security clearance. Are you able to satisfy this requirement?",
+        "competency": "Clearance eligibility",
+        "dimension": "Role-Specific",
+        "target_gap": "U.S. citizenship and ability to obtain security clearance",
+        "difficulty": "easy",
+        "rationale": "This is an explicit required job condition with insufficient candidate-profile evidence and should be confirmed through a direct, role-relevant eligibility question.",
+        "source_evidence": [
+          "US Citizens able to obtain a security clearance",
+          "U.S. citizenship and ability to obtain security clearance is marked weak_match"
+        ],
+        "priority": 0.98
+      },
+      {
+        "question": "Explain how virtual memory, scheduling, blocking I/O, and context switching can influence the throughput and tail latency of a multithreaded backend service.",
+        "competency": "Operating-systems fundamentals",
+        "dimension": "Technical",
+        "target_gap": "Operating systems",
+        "difficulty": "hard",
+        "rationale": "Operating systems is a required partial match and the role explicitly includes low-level systems work.",
+        "source_evidence": [
+          "Backend systems",
+          "Operating systems is marked partial_match",
+          "Linux"
+        ],
+        "priority": 0.9
+      },
+      {
+        "question": "For a Linux service that is intermittently killed under load, which OS-level signals and tools would you inspect to distinguish memory pressure, file-descriptor exhaustion, process limits, and a genuine application leak?",
+        "competency": "Linux systems debugging",
+        "dimension": "Technical",
+        "target_gap": "Linux/Unix fundamentals",
+        "difficulty": "hard",
+        "rationale": "Linux is only a partial match; this assesses hands-on Linux/Unix diagnostic fluency needed for operating services.",
+        "source_evidence": [
+          "Linux",
+          "Linux/Unix fundamentals is marked partial_match",
+          "Shell scripting"
+        ],
+        "priority": 0.91
+      },
+      {
+        "question": "Please give a concise two-minute explanation of how a geo-distributed monitoring solution works, first for an operations leader and then for a senior engineer. What would you change between the two explanations?",
+        "competency": "Audience-aware presentation",
+        "dimension": "Role-Specific",
+        "target_gap": "Clear presentation of complex information",
+        "difficulty": "mid",
+        "rationale": "Tests a weak required communication area using the candidate's documented geo-distributed monitoring work and technical presentation experience.",
+        "source_evidence": [
+          "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+          "Invited to VMware Radio 2016 for a paper presentation",
+          "Clear presentation of complex information is marked weak_match"
+        ],
+        "priority": 0.88
+      },
+      {
+        "question": "How would you design distributed persistence for asset metadata and large associated artifacts when writes can arrive in multiple regions and clients require predictable read behavior?",
+        "competency": "Distributed persistence",
+        "dimension": "Technical",
+        "target_gap": "Distributed persistence",
+        "difficulty": "hard",
+        "rationale": "Distributed persistence is a high-weight weak match and is central to building a scalable canonical system.",
+        "source_evidence": [
+          "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+          "Distributed persistence is marked weak_match"
+        ],
+        "priority": 0.96
+      },
+      {
+        "question": "Describe a time when requirements for a technical project were incomplete or changing. What assumptions did you make explicit, how did you seek alignment, and what did you do when new information invalidated the plan?",
+        "competency": "Ambiguity management",
+        "dimension": "Behavioural",
+        "target_gap": "Adaptability to ambiguity and uncertainty",
+        "difficulty": "mid",
+        "rationale": "Adaptability is a required weak match; this tests a behavior essential to a fast-moving multi-project environment.",
+        "source_evidence": [
+          "Completed four major projects from press release to final delivery across all SDLC processes.",
+          "Adaptability to ambiguity and uncertainty is marked weak_match"
+        ],
+        "priority": 0.9
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 4,
+      "Behavioural": 2,
+      "Situational": 1,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 2
+    },
+    "gap_share": 0.7,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.155499324660703,
+      "M2.P": 0.3,
+      "M3.P": 0.3,
+      "M4.P": 8.452293970184819,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "Walk me through how you would decompose an asset-management platform into microservices. Which services would own which data, and how would you handle cross-service workflows without creating tightly coupled synchronous dependencies?"
+    },
+    {
+      "question": "Tell me about one of the four major projects you led from press release to delivery. How did you set measurable outcomes, track progress, handle risks, and decide whether the delivered result was successful?"
+    },
+    {
+      "question": "A rollout causes two regions to return conflicting versions of the same asset. How would you reason about the consistency model, diagnose the conflict, remediate affected records, and prevent recurrence?"
+    },
+    {
+      "question": "Give an example of a technology or engineering practice you had to learn quickly for a project. How did you identify the knowledge gap, validate your understanding, and apply what you learned?"
+    },
+    {
+      "question": "This position requires U.S. citizenship and the ability to obtain a security clearance. Are you able to satisfy this requirement?"
+    },
+    {
+      "question": "Explain how virtual memory, scheduling, blocking I/O, and context switching can influence the throughput and tail latency of a multithreaded backend service."
+    },
+    {
+      "question": "For a Linux service that is intermittently killed under load, which OS-level signals and tools would you inspect to distinguish memory pressure, file-descriptor exhaustion, process limits, and a genuine application leak?"
+    },
+    {
+      "question": "Please give a concise two-minute explanation of how a geo-distributed monitoring solution works, first for an operations leader and then for a senior engineer. What would you change between the two explanations?"
+    },
+    {
+      "question": "How would you design distributed persistence for asset metadata and large associated artifacts when writes can arrive in multiple regions and clients require predictable read behavior?"
+    },
+    {
+      "question": "Describe a time when requirements for a technical project were incomplete or changing. What assumptions did you make explicit, how did you seek alignment, and what did you do when new information invalidated the plan?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk me through how you would decompose an asset-management platform into microservices. Which services would own which data, and how would you handle cross-service workflows without creating tightly coupled synchronous dependencies?",
+      "competency": "Microservice architecture",
+      "dimension": "Technical",
+      "target_gap": "Microservices",
+      "difficulty": "hard",
+      "rationale": "Microservices is a required weak match, so this probes architectural judgment for a central role responsibility.",
+      "source_evidence": [
+        "Highly scalable backend systems",
+        "Led development of multi-tenant, highly scalable software solutions.",
+        "Microservices is marked weak_match"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "Tell me about one of the four major projects you led from press release to delivery. How did you set measurable outcomes, track progress, handle risks, and decide whether the delivered result was successful?",
+      "competency": "Results-driven delivery",
+      "dimension": "Behavioural",
+      "target_gap": "Results-driven execution",
+      "difficulty": "mid",
+      "rationale": "Results-driven execution is marked missing despite strong achievement claims; this elicits concrete outcome definition and accountability.",
+      "source_evidence": [
+        "Completed four major projects from press release to final delivery across all SDLC processes.",
+        "Successfully led 4 major projects at Amazon",
+        "Unblocked more than 100 internal customers through major project delivery."
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "A rollout causes two regions to return conflicting versions of the same asset. How would you reason about the consistency model, diagnose the conflict, remediate affected records, and prevent recurrence?",
+      "competency": "Distributed-systems reliability",
+      "dimension": "Situational",
+      "target_gap": "Distributed systems",
+      "difficulty": "hard",
+      "rationale": "Tests a required partial match using the candidate's geo-distributed background while focusing on failure and consistency reasoning.",
+      "source_evidence": [
+        "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+        "Distributed systems is marked partial_match"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Give an example of a technology or engineering practice you had to learn quickly for a project. How did you identify the knowledge gap, validate your understanding, and apply what you learned?",
+      "competency": "Learning agility",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Learning orientation",
+      "difficulty": "mid",
+      "rationale": "Learning orientation is a high-weight required missing competency, so direct evidence is needed.",
+      "source_evidence": [
+        "Learning orientation is marked missing",
+        "Over 5 years of professional software development experience",
+        "Master of Science: Computer Science"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "This position requires U.S. citizenship and the ability to obtain a security clearance. Are you able to satisfy this requirement?",
+      "competency": "Clearance eligibility",
+      "dimension": "Role-Specific",
+      "target_gap": "U.S. citizenship and ability to obtain security clearance",
+      "difficulty": "easy",
+      "rationale": "This is an explicit required job condition with insufficient candidate-profile evidence and should be confirmed through a direct, role-relevant eligibility question.",
+      "source_evidence": [
+        "US Citizens able to obtain a security clearance",
+        "U.S. citizenship and ability to obtain security clearance is marked weak_match"
+      ],
+      "priority": 0.98
+    },
+    {
+      "question": "Explain how virtual memory, scheduling, blocking I/O, and context switching can influence the throughput and tail latency of a multithreaded backend service.",
+      "competency": "Operating-systems fundamentals",
+      "dimension": "Technical",
+      "target_gap": "Operating systems",
+      "difficulty": "hard",
+      "rationale": "Operating systems is a required partial match and the role explicitly includes low-level systems work.",
+      "source_evidence": [
+        "Backend systems",
+        "Operating systems is marked partial_match",
+        "Linux"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "For a Linux service that is intermittently killed under load, which OS-level signals and tools would you inspect to distinguish memory pressure, file-descriptor exhaustion, process limits, and a genuine application leak?",
+      "competency": "Linux systems debugging",
+      "dimension": "Technical",
+      "target_gap": "Linux/Unix fundamentals",
+      "difficulty": "hard",
+      "rationale": "Linux is only a partial match; this assesses hands-on Linux/Unix diagnostic fluency needed for operating services.",
+      "source_evidence": [
+        "Linux",
+        "Linux/Unix fundamentals is marked partial_match",
+        "Shell scripting"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "Please give a concise two-minute explanation of how a geo-distributed monitoring solution works, first for an operations leader and then for a senior engineer. What would you change between the two explanations?",
+      "competency": "Audience-aware presentation",
+      "dimension": "Role-Specific",
+      "target_gap": "Clear presentation of complex information",
+      "difficulty": "mid",
+      "rationale": "Tests a weak required communication area using the candidate's documented geo-distributed monitoring work and technical presentation experience.",
+      "source_evidence": [
+        "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+        "Invited to VMware Radio 2016 for a paper presentation",
+        "Clear presentation of complex information is marked weak_match"
+      ],
+      "priority": 0.88
+    },
+    {
+      "question": "How would you design distributed persistence for asset metadata and large associated artifacts when writes can arrive in multiple regions and clients require predictable read behavior?",
+      "competency": "Distributed persistence",
+      "dimension": "Technical",
+      "target_gap": "Distributed persistence",
+      "difficulty": "hard",
+      "rationale": "Distributed persistence is a high-weight weak match and is central to building a scalable canonical system.",
+      "source_evidence": [
+        "Designed and implemented a geo-distributed monitoring solution for real-time monitoring of vCloud Air systems using open-source technologies.",
+        "Distributed persistence is marked weak_match"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "Describe a time when requirements for a technical project were incomplete or changing. What assumptions did you make explicit, how did you seek alignment, and what did you do when new information invalidated the plan?",
+      "competency": "Ambiguity management",
+      "dimension": "Behavioural",
+      "target_gap": "Adaptability to ambiguity and uncertainty",
+      "difficulty": "mid",
+      "rationale": "Adaptability is a required weak match; this tests a behavior essential to a fast-moving multi-project environment.",
+      "source_evidence": [
+        "Completed four major projects from press release to final delivery across all SDLC processes.",
+        "Adaptability to ambiguity and uncertainty is marked weak_match"
+      ],
+      "priority": 0.9
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

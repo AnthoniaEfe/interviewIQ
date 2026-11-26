@@ -1,0 +1,357 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_03794_301991d452b9",
+  "jd_id": "rjf_03794_301991d452b9",
+  "pair_id": "rjf_03794_301991d452b9",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_03794_301991d452b9__rjf_03794_301991d452b9__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      5,
+      12,
+      28,
+      24,
+      22,
+      7,
+      0,
+      17,
+      4,
+      16
+    ],
+    "questions": [
+      {
+        "question": "How would you distinguish a timing variance from a sustained change in a program's cost base when preparing a periodic financial projection? What data would you seek before revising the forecast?",
+        "competency": "Financial projections",
+        "dimension": "Technical",
+        "target_gap": "Financial projections",
+        "difficulty": "mid",
+        "rationale": "Probes the candidate's ability to apply analytical judgment to ongoing forecasts, an area not evidenced directly in the profile.",
+        "source_evidence": [
+          "Financial projections \u2014 weak_match",
+          "Analytical skills"
+        ],
+        "priority": 0.89
+      },
+      {
+        "question": "Tell me about a technical international-tax issue you researched where the answer was not immediately clear. What sources did you consult, how did you validate your interpretation, and how did you document your conclusion?",
+        "competency": "Technical research",
+        "dimension": "Behavioural",
+        "target_gap": "Technical issue research",
+        "difficulty": "mid",
+        "rationale": "The candidate reports researching international-tax issues, but the matrix rates direct alignment as weak; this probes research quality and defensibility.",
+        "source_evidence": [
+          "Researched technical issues regarding international tax matters",
+          "Technical issue research \u2014 weak_match"
+        ],
+        "priority": 0.86
+      },
+      {
+        "question": "A department leader disagrees with your forecast because it shows an unfavorable year-end result. How would you explain the assumptions, invite challenge, and decide whether the projection should be revised?",
+        "competency": "Financial communication",
+        "dimension": "Situational",
+        "target_gap": "Financial projections",
+        "difficulty": "mid",
+        "rationale": "Assesses communication and professional judgment in a high-stakes forecasting discussion.",
+        "source_evidence": [
+          "Financial projections \u2014 weak_match",
+          "Communication"
+        ],
+        "priority": 0.87
+      },
+      {
+        "question": "What interests you about moving from international tax accounting into a Senior Accountant role focused on program accounting, financial statements, budgets, and audits?",
+        "competency": "Role motivation",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "Clarifies the candidate's motivation and readiness for a role whose core focus differs from their documented tax specialization.",
+        "source_evidence": [
+          "International Tax Accountant, Coca-Cola, 2015 to Current",
+          "accountable for program accounting"
+        ],
+        "priority": 0.81
+      },
+      {
+        "question": "What do you understand by funding source regulations and requirements, and what approach would you take in your first 90 days to learn the specific restrictions that govern assigned programs?",
+        "competency": "Funding compliance",
+        "dimension": "Role-Specific",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "Funding-source knowledge is central to the role but is not represented in the gap matrix; the question assesses learning strategy without assuming prior experience.",
+        "source_evidence": [
+          "International taxation",
+          "Maintains high degree of working knowledge of applicable funding source regulations and requirements"
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "An external auditor requests a schedule that does not tie to the general ledger two days before fieldwork ends. What steps would you take to investigate the discrepancy, respond to the auditor, and prevent recurrence?",
+        "competency": "Audit support",
+        "dimension": "Situational",
+        "target_gap": "Audit documentation",
+        "difficulty": "mid",
+        "rationale": "Assesses audit responsiveness, reconciliation discipline, and communication under time pressure.",
+        "source_evidence": [
+          "Audit documentation \u2014 partial_match",
+          "managing multiple projects and meeting deadlines under pressure"
+        ],
+        "priority": 0.9
+      },
+      {
+        "question": "Walk me through how you would turn a completed period close package into a set of financial statements. Which reconciliations, review steps, and supporting schedules would you complete before issuing the statements?",
+        "competency": "Financial statement preparation",
+        "dimension": "Technical",
+        "target_gap": "Financial statement preparation",
+        "difficulty": "mid",
+        "rationale": "The candidate's tax-return preparation experience is adjacent to, but does not establish, end-to-end financial statement preparation.",
+        "source_evidence": [
+          "Tax return preparation",
+          "Financial statement preparation \u2014 partial_match"
+        ],
+        "priority": 0.93
+      },
+      {
+        "question": "When researching accounting or funding requirements online, how do you judge whether a source is authoritative, preserve the relevant evidence, and make sure you are using the current version?",
+        "competency": "Web research",
+        "dimension": "Technical",
+        "target_gap": "Web browsing",
+        "difficulty": "easy",
+        "rationale": "Web browsing is marked missing; the question verifies functional research habits relevant to regulatory work.",
+        "source_evidence": [
+          "Web browsing \u2014 missing",
+          "Researched technical issues regarding international tax matters"
+        ],
+        "priority": 0.62
+      },
+      {
+        "question": "Suppose actual spending is trending above budget halfway through the year. How would you develop a revised projection, identify the drivers of the variance, and communicate the outlook to program leadership?",
+        "competency": "Financial forecasting",
+        "dimension": "Situational",
+        "target_gap": "Financial projections",
+        "difficulty": "mid",
+        "rationale": "Financial projections are a weak match and are important for managing assigned programs.",
+        "source_evidence": [
+          "International tax reporting",
+          "Financial projections \u2014 weak_match"
+        ],
+        "priority": 0.94
+      },
+      {
+        "question": "What Windows-based tools and file-management practices do you use to securely store, find, version, and share accounting support during a close or audit?",
+        "competency": "Windows PC skills",
+        "dimension": "Technical",
+        "target_gap": "Microsoft Windows PC",
+        "difficulty": "easy",
+        "rationale": "Windows PC proficiency is listed as missing and should be confirmed efficiently because it is a baseline job requirement.",
+        "source_evidence": [
+          "Microsoft Windows PC \u2014 missing",
+          "Prepared and maintained support documentation"
+        ],
+        "priority": 0.58
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 4,
+      "Behavioural": 1,
+      "Situational": 3,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 1
+    },
+    "gap_share": 0.6,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.24715037049277713,
+      "M2.P": 0.0,
+      "M3.P": 0.3,
+      "M4.P": 7.762837574323498,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "How would you distinguish a timing variance from a sustained change in a program's cost base when preparing a periodic financial projection? What data would you seek before revising the forecast?"
+    },
+    {
+      "question": "Tell me about a technical international-tax issue you researched where the answer was not immediately clear. What sources did you consult, how did you validate your interpretation, and how did you document your conclusion?"
+    },
+    {
+      "question": "A department leader disagrees with your forecast because it shows an unfavorable year-end result. How would you explain the assumptions, invite challenge, and decide whether the projection should be revised?"
+    },
+    {
+      "question": "What interests you about moving from international tax accounting into a Senior Accountant role focused on program accounting, financial statements, budgets, and audits?"
+    },
+    {
+      "question": "What do you understand by funding source regulations and requirements, and what approach would you take in your first 90 days to learn the specific restrictions that govern assigned programs?"
+    },
+    {
+      "question": "An external auditor requests a schedule that does not tie to the general ledger two days before fieldwork ends. What steps would you take to investigate the discrepancy, respond to the auditor, and prevent recurrence?"
+    },
+    {
+      "question": "Walk me through how you would turn a completed period close package into a set of financial statements. Which reconciliations, review steps, and supporting schedules would you complete before issuing the statements?"
+    },
+    {
+      "question": "When researching accounting or funding requirements online, how do you judge whether a source is authoritative, preserve the relevant evidence, and make sure you are using the current version?"
+    },
+    {
+      "question": "Suppose actual spending is trending above budget halfway through the year. How would you develop a revised projection, identify the drivers of the variance, and communicate the outlook to program leadership?"
+    },
+    {
+      "question": "What Windows-based tools and file-management practices do you use to securely store, find, version, and share accounting support during a close or audit?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "How would you distinguish a timing variance from a sustained change in a program's cost base when preparing a periodic financial projection? What data would you seek before revising the forecast?",
+      "competency": "Financial projections",
+      "dimension": "Technical",
+      "target_gap": "Financial projections",
+      "difficulty": "mid",
+      "rationale": "Probes the candidate's ability to apply analytical judgment to ongoing forecasts, an area not evidenced directly in the profile.",
+      "source_evidence": [
+        "Financial projections \u2014 weak_match",
+        "Analytical skills"
+      ],
+      "priority": 0.89
+    },
+    {
+      "question": "Tell me about a technical international-tax issue you researched where the answer was not immediately clear. What sources did you consult, how did you validate your interpretation, and how did you document your conclusion?",
+      "competency": "Technical research",
+      "dimension": "Behavioural",
+      "target_gap": "Technical issue research",
+      "difficulty": "mid",
+      "rationale": "The candidate reports researching international-tax issues, but the matrix rates direct alignment as weak; this probes research quality and defensibility.",
+      "source_evidence": [
+        "Researched technical issues regarding international tax matters",
+        "Technical issue research \u2014 weak_match"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "A department leader disagrees with your forecast because it shows an unfavorable year-end result. How would you explain the assumptions, invite challenge, and decide whether the projection should be revised?",
+      "competency": "Financial communication",
+      "dimension": "Situational",
+      "target_gap": "Financial projections",
+      "difficulty": "mid",
+      "rationale": "Assesses communication and professional judgment in a high-stakes forecasting discussion.",
+      "source_evidence": [
+        "Financial projections \u2014 weak_match",
+        "Communication"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "What interests you about moving from international tax accounting into a Senior Accountant role focused on program accounting, financial statements, budgets, and audits?",
+      "competency": "Role motivation",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Clarifies the candidate's motivation and readiness for a role whose core focus differs from their documented tax specialization.",
+      "source_evidence": [
+        "International Tax Accountant, Coca-Cola, 2015 to Current",
+        "accountable for program accounting"
+      ],
+      "priority": 0.81
+    },
+    {
+      "question": "What do you understand by funding source regulations and requirements, and what approach would you take in your first 90 days to learn the specific restrictions that govern assigned programs?",
+      "competency": "Funding compliance",
+      "dimension": "Role-Specific",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Funding-source knowledge is central to the role but is not represented in the gap matrix; the question assesses learning strategy without assuming prior experience.",
+      "source_evidence": [
+        "International taxation",
+        "Maintains high degree of working knowledge of applicable funding source regulations and requirements"
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "An external auditor requests a schedule that does not tie to the general ledger two days before fieldwork ends. What steps would you take to investigate the discrepancy, respond to the auditor, and prevent recurrence?",
+      "competency": "Audit support",
+      "dimension": "Situational",
+      "target_gap": "Audit documentation",
+      "difficulty": "mid",
+      "rationale": "Assesses audit responsiveness, reconciliation discipline, and communication under time pressure.",
+      "source_evidence": [
+        "Audit documentation \u2014 partial_match",
+        "managing multiple projects and meeting deadlines under pressure"
+      ],
+      "priority": 0.9
+    },
+    {
+      "question": "Walk me through how you would turn a completed period close package into a set of financial statements. Which reconciliations, review steps, and supporting schedules would you complete before issuing the statements?",
+      "competency": "Financial statement preparation",
+      "dimension": "Technical",
+      "target_gap": "Financial statement preparation",
+      "difficulty": "mid",
+      "rationale": "The candidate's tax-return preparation experience is adjacent to, but does not establish, end-to-end financial statement preparation.",
+      "source_evidence": [
+        "Tax return preparation",
+        "Financial statement preparation \u2014 partial_match"
+      ],
+      "priority": 0.93
+    },
+    {
+      "question": "When researching accounting or funding requirements online, how do you judge whether a source is authoritative, preserve the relevant evidence, and make sure you are using the current version?",
+      "competency": "Web research",
+      "dimension": "Technical",
+      "target_gap": "Web browsing",
+      "difficulty": "easy",
+      "rationale": "Web browsing is marked missing; the question verifies functional research habits relevant to regulatory work.",
+      "source_evidence": [
+        "Web browsing \u2014 missing",
+        "Researched technical issues regarding international tax matters"
+      ],
+      "priority": 0.62
+    },
+    {
+      "question": "Suppose actual spending is trending above budget halfway through the year. How would you develop a revised projection, identify the drivers of the variance, and communicate the outlook to program leadership?",
+      "competency": "Financial forecasting",
+      "dimension": "Situational",
+      "target_gap": "Financial projections",
+      "difficulty": "mid",
+      "rationale": "Financial projections are a weak match and are important for managing assigned programs.",
+      "source_evidence": [
+        "International tax reporting",
+        "Financial projections \u2014 weak_match"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "What Windows-based tools and file-management practices do you use to securely store, find, version, and share accounting support during a close or audit?",
+      "competency": "Windows PC skills",
+      "dimension": "Technical",
+      "target_gap": "Microsoft Windows PC",
+      "difficulty": "easy",
+      "rationale": "Windows PC proficiency is listed as missing and should be confirmed efficiently because it is a baseline job requirement.",
+      "source_evidence": [
+        "Microsoft Windows PC \u2014 missing",
+        "Prepared and maintained support documentation"
+      ],
+      "priority": 0.58
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

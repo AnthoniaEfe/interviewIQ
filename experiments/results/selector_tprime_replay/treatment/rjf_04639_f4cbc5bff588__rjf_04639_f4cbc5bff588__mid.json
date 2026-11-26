@@ -1,0 +1,361 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_04639_f4cbc5bff588",
+  "jd_id": "rjf_04639_f4cbc5bff588",
+  "pair_id": "rjf_04639_f4cbc5bff588",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_04639_f4cbc5bff588__rjf_04639_f4cbc5bff588__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      6,
+      13,
+      1,
+      16,
+      9,
+      7,
+      14,
+      8,
+      17,
+      21
+    ],
+    "questions": [
+      {
+        "question": "Walk through the CI/CD pipeline you would establish for a Java service: build, unit and integration tests, security checks, artifact creation, environment promotion, rollback, and deployment approval points.",
+        "competency": "CI/CD pipeline design",
+        "dimension": "Technical",
+        "target_gap": "CI/CD",
+        "difficulty": "mid",
+        "rationale": "CI/CD is a high-priority missing requirement and is central to safely delivering mission-critical integrations.",
+        "source_evidence": [
+          "CI/CD: missing",
+          "Maven",
+          "Git"
+        ],
+        "priority": 0.96
+      },
+      {
+        "question": "Describe a technical issue you explained to a non-engineering partner, designer, or tester. How did you tailor the message, document decisions, and verify shared understanding?",
+        "competency": "Technical communication",
+        "dimension": "Behavioural",
+        "target_gap": "Verbal and written communication",
+        "difficulty": "mid",
+        "rationale": "Communication is a required weak match, while the profile includes collaboration and documentation activities that can yield a concrete example.",
+        "source_evidence": [
+          "Collaborated with team members to update documentation.",
+          "Cooperated with web designers to match visual design intent."
+        ],
+        "priority": 0.82
+      },
+      {
+        "question": "A containerized integration service intermittently fails after deployment to Kubernetes while its local Docker run succeeds. How would you investigate the issue across pod events, logs, configuration, networking, and resource settings?",
+        "competency": "Kubernetes troubleshooting",
+        "dimension": "Situational",
+        "target_gap": "Kubernetes",
+        "difficulty": "mid",
+        "rationale": "Kubernetes is a high-weight missing requirement, and the scenario evaluates diagnostic thinking rather than vocabulary alone.",
+        "source_evidence": [
+          "Kubernetes: missing",
+          "Analyzed application errors and performance issues."
+        ],
+        "priority": 0.97
+      },
+      {
+        "question": "What additional technical and domain knowledge would you need before owning an integration into or out of a financial planning platform such as Anaplan or Oracle, and how would you acquire it?",
+        "competency": "Financial planning integrations",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "Financial planning system integrations",
+        "difficulty": "mid",
+        "rationale": "This preferred domain is missing; the question assesses learning approach and realistic awareness of domain-specific integration risk.",
+        "source_evidence": [
+          "Financial planning system integrations: missing",
+          "Enterprise application development"
+        ],
+        "priority": 0.69
+      },
+      {
+        "question": "You have previously integrated YouTube, Periscope, and Facebook APIs for live streaming. Explain one integration end to end: authentication, request/response handling, failure cases, testing, and how you diagnosed production-like issues.",
+        "competency": "External API integration",
+        "dimension": "Role-Specific",
+        "target_gap": "System integrations",
+        "difficulty": "mid",
+        "rationale": "System integrations is marked missing, while the profile contains relevant third-party API work that can clarify transferable integration capability.",
+        "source_evidence": [
+          "Integrated YouTube, Periscope, and Facebook APIs for live streaming video.",
+          "System integrations: missing"
+        ],
+        "priority": 0.96
+      },
+      {
+        "question": "In Java, how would you implement a client that calls an external API with timeouts, retries, exponential backoff, structured error handling, and protection against duplicate writes?",
+        "competency": "Java integration resilience",
+        "dimension": "Technical",
+        "target_gap": "Java",
+        "difficulty": "mid",
+        "rationale": "Java is a strong match, but the role needs deep Java applied to reliable system integration work.",
+        "source_evidence": [
+          "Java",
+          "REST Web Services",
+          "Java: strong_match"
+        ],
+        "priority": 0.79
+      },
+      {
+        "question": "How would you use Python to validate and reconcile source data before it is sent to a financial SaaS application, including duplicate detection, schema validation, error reporting, and an auditable output?",
+        "competency": "Python data validation",
+        "dimension": "Technical",
+        "target_gap": "Python",
+        "difficulty": "mid",
+        "rationale": "Python is a preferred strong match; this explores whether the listed skill can add value to integration data-quality workflows.",
+        "source_evidence": [
+          "Python",
+          "Python: strong_match"
+        ],
+        "priority": 0.53
+      },
+      {
+        "question": "Suppose a new integration must process high-volume source data in the cloud and send results to a SaaS application. Outline the major components, scalability approach, observability, and recovery plan.",
+        "competency": "Cloud solution design",
+        "dimension": "Role-Specific",
+        "target_gap": "Cloud technologies",
+        "difficulty": "mid",
+        "rationale": "Cloud technologies is missing and the role specifically involves mission-critical SaaS integrations.",
+        "source_evidence": [
+          "Cloud technologies: missing",
+          "Build mission-critical integrations between source data and financial SaaS applications."
+        ],
+        "priority": 0.95
+      },
+      {
+        "question": "A nightly financial data sync reports success, but the target system is missing a subset of records. How would you lead the root-cause investigation with source-system, platform, and target-system teams?",
+        "competency": "Cross-functional troubleshooting",
+        "dimension": "Situational",
+        "target_gap": "System integrations",
+        "difficulty": "mid",
+        "rationale": "The role requires cross-functional root-cause analysis, and this probes collaboration in the highest-impact missing domain.",
+        "source_evidence": [
+          "System integrations: missing",
+          "Analyzed application errors and performance issues."
+        ],
+        "priority": 0.94
+      },
+      {
+        "question": "What would a safe deployment and rollback plan look like for a Kubernetes-hosted integration service whose consumers must not receive duplicate or partially processed financial data?",
+        "competency": "Kubernetes release management",
+        "dimension": "Situational",
+        "target_gap": "Kubernetes",
+        "difficulty": "mid",
+        "rationale": "Kubernetes is missing; the scenario tests deployment safety and data-aware operational judgment, not just cluster terminology.",
+        "source_evidence": [
+          "Kubernetes: missing",
+          "Build mission-critical integrations between source data and financial SaaS applications."
+        ],
+        "priority": 0.93
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 3,
+      "Behavioural": 1,
+      "Situational": 3,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 2
+    },
+    "gap_share": 0.8,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.2493181007657665,
+      "M2.P": 0.4,
+      "M3.P": 0.3,
+      "M4.P": 7.814333446220763,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "Walk through the CI/CD pipeline you would establish for a Java service: build, unit and integration tests, security checks, artifact creation, environment promotion, rollback, and deployment approval points."
+    },
+    {
+      "question": "Describe a technical issue you explained to a non-engineering partner, designer, or tester. How did you tailor the message, document decisions, and verify shared understanding?"
+    },
+    {
+      "question": "A containerized integration service intermittently fails after deployment to Kubernetes while its local Docker run succeeds. How would you investigate the issue across pod events, logs, configuration, networking, and resource settings?"
+    },
+    {
+      "question": "What additional technical and domain knowledge would you need before owning an integration into or out of a financial planning platform such as Anaplan or Oracle, and how would you acquire it?"
+    },
+    {
+      "question": "You have previously integrated YouTube, Periscope, and Facebook APIs for live streaming. Explain one integration end to end: authentication, request/response handling, failure cases, testing, and how you diagnosed production-like issues."
+    },
+    {
+      "question": "In Java, how would you implement a client that calls an external API with timeouts, retries, exponential backoff, structured error handling, and protection against duplicate writes?"
+    },
+    {
+      "question": "How would you use Python to validate and reconcile source data before it is sent to a financial SaaS application, including duplicate detection, schema validation, error reporting, and an auditable output?"
+    },
+    {
+      "question": "Suppose a new integration must process high-volume source data in the cloud and send results to a SaaS application. Outline the major components, scalability approach, observability, and recovery plan."
+    },
+    {
+      "question": "A nightly financial data sync reports success, but the target system is missing a subset of records. How would you lead the root-cause investigation with source-system, platform, and target-system teams?"
+    },
+    {
+      "question": "What would a safe deployment and rollback plan look like for a Kubernetes-hosted integration service whose consumers must not receive duplicate or partially processed financial data?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "Walk through the CI/CD pipeline you would establish for a Java service: build, unit and integration tests, security checks, artifact creation, environment promotion, rollback, and deployment approval points.",
+      "competency": "CI/CD pipeline design",
+      "dimension": "Technical",
+      "target_gap": "CI/CD",
+      "difficulty": "mid",
+      "rationale": "CI/CD is a high-priority missing requirement and is central to safely delivering mission-critical integrations.",
+      "source_evidence": [
+        "CI/CD: missing",
+        "Maven",
+        "Git"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "Describe a technical issue you explained to a non-engineering partner, designer, or tester. How did you tailor the message, document decisions, and verify shared understanding?",
+      "competency": "Technical communication",
+      "dimension": "Behavioural",
+      "target_gap": "Verbal and written communication",
+      "difficulty": "mid",
+      "rationale": "Communication is a required weak match, while the profile includes collaboration and documentation activities that can yield a concrete example.",
+      "source_evidence": [
+        "Collaborated with team members to update documentation.",
+        "Cooperated with web designers to match visual design intent."
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "A containerized integration service intermittently fails after deployment to Kubernetes while its local Docker run succeeds. How would you investigate the issue across pod events, logs, configuration, networking, and resource settings?",
+      "competency": "Kubernetes troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "Kubernetes",
+      "difficulty": "mid",
+      "rationale": "Kubernetes is a high-weight missing requirement, and the scenario evaluates diagnostic thinking rather than vocabulary alone.",
+      "source_evidence": [
+        "Kubernetes: missing",
+        "Analyzed application errors and performance issues."
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "What additional technical and domain knowledge would you need before owning an integration into or out of a financial planning platform such as Anaplan or Oracle, and how would you acquire it?",
+      "competency": "Financial planning integrations",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "Financial planning system integrations",
+      "difficulty": "mid",
+      "rationale": "This preferred domain is missing; the question assesses learning approach and realistic awareness of domain-specific integration risk.",
+      "source_evidence": [
+        "Financial planning system integrations: missing",
+        "Enterprise application development"
+      ],
+      "priority": 0.69
+    },
+    {
+      "question": "You have previously integrated YouTube, Periscope, and Facebook APIs for live streaming. Explain one integration end to end: authentication, request/response handling, failure cases, testing, and how you diagnosed production-like issues.",
+      "competency": "External API integration",
+      "dimension": "Role-Specific",
+      "target_gap": "System integrations",
+      "difficulty": "mid",
+      "rationale": "System integrations is marked missing, while the profile contains relevant third-party API work that can clarify transferable integration capability.",
+      "source_evidence": [
+        "Integrated YouTube, Periscope, and Facebook APIs for live streaming video.",
+        "System integrations: missing"
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "In Java, how would you implement a client that calls an external API with timeouts, retries, exponential backoff, structured error handling, and protection against duplicate writes?",
+      "competency": "Java integration resilience",
+      "dimension": "Technical",
+      "target_gap": "Java",
+      "difficulty": "mid",
+      "rationale": "Java is a strong match, but the role needs deep Java applied to reliable system integration work.",
+      "source_evidence": [
+        "Java",
+        "REST Web Services",
+        "Java: strong_match"
+      ],
+      "priority": 0.79
+    },
+    {
+      "question": "How would you use Python to validate and reconcile source data before it is sent to a financial SaaS application, including duplicate detection, schema validation, error reporting, and an auditable output?",
+      "competency": "Python data validation",
+      "dimension": "Technical",
+      "target_gap": "Python",
+      "difficulty": "mid",
+      "rationale": "Python is a preferred strong match; this explores whether the listed skill can add value to integration data-quality workflows.",
+      "source_evidence": [
+        "Python",
+        "Python: strong_match"
+      ],
+      "priority": 0.53
+    },
+    {
+      "question": "Suppose a new integration must process high-volume source data in the cloud and send results to a SaaS application. Outline the major components, scalability approach, observability, and recovery plan.",
+      "competency": "Cloud solution design",
+      "dimension": "Role-Specific",
+      "target_gap": "Cloud technologies",
+      "difficulty": "mid",
+      "rationale": "Cloud technologies is missing and the role specifically involves mission-critical SaaS integrations.",
+      "source_evidence": [
+        "Cloud technologies: missing",
+        "Build mission-critical integrations between source data and financial SaaS applications."
+      ],
+      "priority": 0.95
+    },
+    {
+      "question": "A nightly financial data sync reports success, but the target system is missing a subset of records. How would you lead the root-cause investigation with source-system, platform, and target-system teams?",
+      "competency": "Cross-functional troubleshooting",
+      "dimension": "Situational",
+      "target_gap": "System integrations",
+      "difficulty": "mid",
+      "rationale": "The role requires cross-functional root-cause analysis, and this probes collaboration in the highest-impact missing domain.",
+      "source_evidence": [
+        "System integrations: missing",
+        "Analyzed application errors and performance issues."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "What would a safe deployment and rollback plan look like for a Kubernetes-hosted integration service whose consumers must not receive duplicate or partially processed financial data?",
+      "competency": "Kubernetes release management",
+      "dimension": "Situational",
+      "target_gap": "Kubernetes",
+      "difficulty": "mid",
+      "rationale": "Kubernetes is missing; the scenario tests deployment safety and data-aware operational judgment, not just cluster terminology.",
+      "source_evidence": [
+        "Kubernetes: missing",
+        "Build mission-critical integrations between source data and financial SaaS applications."
+      ],
+      "priority": 0.93
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

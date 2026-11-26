@@ -1,0 +1,371 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_03858_f96a3845408e",
+  "jd_id": "rjf_03858_f96a3845408e",
+  "pair_id": "rjf_03858_f96a3845408e",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_03858_f96a3845408e__rjf_03858_f96a3845408e__mid.json",
+  "pool_stats": {
+    "n_raw": 29,
+    "n_valid": 29
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      5,
+      20,
+      4,
+      22,
+      16,
+      13,
+      8,
+      14,
+      7,
+      15
+    ],
+    "questions": [
+      {
+        "question": "How would you test a pipeline that reads source records, applies PySpark business rules, writes curated tables, and triggers downstream reporting? Distinguish unit, integration, data-quality, and end-to-end tests.",
+        "competency": "Software testing",
+        "dimension": "Technical",
+        "target_gap": "Software testing",
+        "difficulty": "mid",
+        "rationale": "Tests a missing requirement and whether the candidate can extend existing data checks into a complete software-testing strategy.",
+        "source_evidence": [
+          "Gap matrix: Software testing \u2014 missing",
+          "Candidate: performed row count, schema validation, and hash key validation",
+          "Job: support system and integration testing activities"
+        ],
+        "priority": 0.97
+      },
+      {
+        "question": "How have you helped a teammate become effective with a data-engineering tool, workflow, or production support process? What did you teach and how did you verify the knowledge transferred?",
+        "competency": "Coaching and mentoring",
+        "dimension": "Behavioural",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "The job expects coaching and cross-training, while the profile contains no direct mentoring evidence; this appropriately probes rather than assumes the capability.",
+        "source_evidence": [
+          "Job: coach and mentor team members",
+          "Job: facilitate information sharing among team members"
+        ],
+        "priority": 0.81
+      },
+      {
+        "question": "This team works in Scrum. Walk through how you would turn an ambiguous request for a new curated dataset into a backlog item, acceptance criteria, estimates, and a demonstrable sprint increment.",
+        "competency": "Agile delivery",
+        "dimension": "Situational",
+        "target_gap": "Agile/Scrum",
+        "difficulty": "mid",
+        "rationale": "Agile/Scrum is marked missing and is central to the role's expected delivery model.",
+        "source_evidence": [
+          "Gap matrix: Agile/Scrum \u2014 missing",
+          "Job: deliver high-quality software using Agile/Scrum methodologies",
+          "Candidate: translates business questions into quantitative questions"
+        ],
+        "priority": 0.97
+      },
+      {
+        "question": "When do you believe a data engineer should challenge a requested dataset or metric definition rather than implement it as specified, and how would you do so constructively?",
+        "competency": "Data-product judgment",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "Explores the candidate's approach to quality, stakeholder partnership, and decision-making, all relevant to independently delivering business capabilities.",
+        "source_evidence": [
+          "Candidate: Strong decision-maker",
+          "Candidate: translates business questions into quantitative questions"
+        ],
+        "priority": 0.7
+      },
+      {
+        "question": "Describe how you would version and deploy Azure Data Factory pipelines and Databricks code across development, test, and production while coordinating changes with dependent teams.",
+        "competency": "Release management",
+        "dimension": "Role-Specific",
+        "target_gap": "Continuous integration and continuous delivery (CI/CD)",
+        "difficulty": "mid",
+        "rationale": "Evaluates whether the candidate can operationalize CI/CD across the Azure services central to the role.",
+        "source_evidence": [
+          "Gap matrix: Continuous integration and continuous delivery (CI/CD) \u2014 weak_match",
+          "Candidate: Git branching and merging",
+          "Job: build and deploy software systems"
+        ],
+        "priority": 0.92
+      },
+      {
+        "question": "For a pipeline component that deduplicates a large stream of customer events, what data structures and algorithmic trade-offs would you consider for exact versus approximate deduplication?",
+        "competency": "Algorithms and data structures",
+        "dimension": "Technical",
+        "target_gap": "Software engineering fundamentals",
+        "difficulty": "mid",
+        "rationale": "The candidate has a partial match in software engineering fundamentals; this directly assesses algorithm and data-structure reasoning requested by the job.",
+        "source_evidence": [
+          "Gap matrix: Software engineering fundamentals \u2014 partial_match",
+          "Candidate: Data engineering",
+          "Job: algorithm theory and data structures"
+        ],
+        "priority": 0.86
+      },
+      {
+        "question": "You already use row counts, schema validation, and hash-key validation. How would you develop these into a reusable data-hygiene framework with quality dimensions, thresholds, exception handling, and remediation ownership?",
+        "competency": "Data hygiene",
+        "dimension": "Technical",
+        "target_gap": "Data hygiene",
+        "difficulty": "mid",
+        "rationale": "Builds directly on the candidate's partial match and reveals whether their checks can support durable hygiene routines and models.",
+        "source_evidence": [
+          "Gap matrix: Data hygiene \u2014 partial_match",
+          "Candidate: row count, schema validation, and hash key validation"
+        ],
+        "priority": 0.87
+      },
+      {
+        "question": "How would you plan and execute an integration test for an Azure Data Factory pipeline that invokes Databricks and writes to a curated serving layer, without relying on uncontrolled production data?",
+        "competency": "Integration testing",
+        "dimension": "Situational",
+        "target_gap": "Software testing",
+        "difficulty": "mid",
+        "rationale": "Tests the missing testing competency in the specific Azure service integration expected for this role.",
+        "source_evidence": [
+          "Gap matrix: Software testing \u2014 missing",
+          "Gap matrix: Azure Data Factory \u2014 weak_match",
+          "Gap matrix: Azure Databricks \u2014 weak_match"
+        ],
+        "priority": 0.94
+      },
+      {
+        "question": "Give an example of when you would choose a NoSQL store rather than a relational warehouse for a data-product requirement. How would access patterns, schema evolution, consistency, and cost affect the decision?",
+        "competency": "NoSQL databases",
+        "dimension": "Situational",
+        "target_gap": "NoSQL databases",
+        "difficulty": "mid",
+        "rationale": "NoSQL is a weak match with no direct database evidence, so the question identifies transferable design judgment and hands-on exposure.",
+        "source_evidence": [
+          "Gap matrix: NoSQL databases \u2014 weak_match",
+          "Candidate: designed analytical solutions for large datasets",
+          "Job: requires non-relational/NoSQL database experience"
+        ],
+        "priority": 0.91
+      },
+      {
+        "question": "A release introduces a subtle schema change that only affects one downstream consumer. What evidence would you gather, how would you contain the impact, and how would you prevent recurrence?",
+        "competency": "Incident resolution",
+        "dimension": "Situational",
+        "target_gap": "Root cause analysis",
+        "difficulty": "mid",
+        "rationale": "Assesses disciplined root-cause analysis and corrective actions for a realistic integration failure.",
+        "source_evidence": [
+          "Gap matrix: Root cause analysis \u2014 weak_match",
+          "Candidate: performed schema validation",
+          "Job: identify permanent resolutions to software or business process issues"
+        ],
+        "priority": 0.88
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 3,
+      "Behavioural": 1,
+      "Situational": 4,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 1
+    },
+    "gap_share": 0.6,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.27796405918839684,
+      "M2.P": 0.4,
+      "M3.P": 0.4,
+      "M4.P": 7.525479841977349,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "How would you test a pipeline that reads source records, applies PySpark business rules, writes curated tables, and triggers downstream reporting? Distinguish unit, integration, data-quality, and end-to-end tests."
+    },
+    {
+      "question": "How have you helped a teammate become effective with a data-engineering tool, workflow, or production support process? What did you teach and how did you verify the knowledge transferred?"
+    },
+    {
+      "question": "This team works in Scrum. Walk through how you would turn an ambiguous request for a new curated dataset into a backlog item, acceptance criteria, estimates, and a demonstrable sprint increment."
+    },
+    {
+      "question": "When do you believe a data engineer should challenge a requested dataset or metric definition rather than implement it as specified, and how would you do so constructively?"
+    },
+    {
+      "question": "Describe how you would version and deploy Azure Data Factory pipelines and Databricks code across development, test, and production while coordinating changes with dependent teams."
+    },
+    {
+      "question": "For a pipeline component that deduplicates a large stream of customer events, what data structures and algorithmic trade-offs would you consider for exact versus approximate deduplication?"
+    },
+    {
+      "question": "You already use row counts, schema validation, and hash-key validation. How would you develop these into a reusable data-hygiene framework with quality dimensions, thresholds, exception handling, and remediation ownership?"
+    },
+    {
+      "question": "How would you plan and execute an integration test for an Azure Data Factory pipeline that invokes Databricks and writes to a curated serving layer, without relying on uncontrolled production data?"
+    },
+    {
+      "question": "Give an example of when you would choose a NoSQL store rather than a relational warehouse for a data-product requirement. How would access patterns, schema evolution, consistency, and cost affect the decision?"
+    },
+    {
+      "question": "A release introduces a subtle schema change that only affects one downstream consumer. What evidence would you gather, how would you contain the impact, and how would you prevent recurrence?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "How would you test a pipeline that reads source records, applies PySpark business rules, writes curated tables, and triggers downstream reporting? Distinguish unit, integration, data-quality, and end-to-end tests.",
+      "competency": "Software testing",
+      "dimension": "Technical",
+      "target_gap": "Software testing",
+      "difficulty": "mid",
+      "rationale": "Tests a missing requirement and whether the candidate can extend existing data checks into a complete software-testing strategy.",
+      "source_evidence": [
+        "Gap matrix: Software testing \u2014 missing",
+        "Candidate: performed row count, schema validation, and hash key validation",
+        "Job: support system and integration testing activities"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "How have you helped a teammate become effective with a data-engineering tool, workflow, or production support process? What did you teach and how did you verify the knowledge transferred?",
+      "competency": "Coaching and mentoring",
+      "dimension": "Behavioural",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "The job expects coaching and cross-training, while the profile contains no direct mentoring evidence; this appropriately probes rather than assumes the capability.",
+      "source_evidence": [
+        "Job: coach and mentor team members",
+        "Job: facilitate information sharing among team members"
+      ],
+      "priority": 0.81
+    },
+    {
+      "question": "This team works in Scrum. Walk through how you would turn an ambiguous request for a new curated dataset into a backlog item, acceptance criteria, estimates, and a demonstrable sprint increment.",
+      "competency": "Agile delivery",
+      "dimension": "Situational",
+      "target_gap": "Agile/Scrum",
+      "difficulty": "mid",
+      "rationale": "Agile/Scrum is marked missing and is central to the role's expected delivery model.",
+      "source_evidence": [
+        "Gap matrix: Agile/Scrum \u2014 missing",
+        "Job: deliver high-quality software using Agile/Scrum methodologies",
+        "Candidate: translates business questions into quantitative questions"
+      ],
+      "priority": 0.97
+    },
+    {
+      "question": "When do you believe a data engineer should challenge a requested dataset or metric definition rather than implement it as specified, and how would you do so constructively?",
+      "competency": "Data-product judgment",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Explores the candidate's approach to quality, stakeholder partnership, and decision-making, all relevant to independently delivering business capabilities.",
+      "source_evidence": [
+        "Candidate: Strong decision-maker",
+        "Candidate: translates business questions into quantitative questions"
+      ],
+      "priority": 0.7
+    },
+    {
+      "question": "Describe how you would version and deploy Azure Data Factory pipelines and Databricks code across development, test, and production while coordinating changes with dependent teams.",
+      "competency": "Release management",
+      "dimension": "Role-Specific",
+      "target_gap": "Continuous integration and continuous delivery (CI/CD)",
+      "difficulty": "mid",
+      "rationale": "Evaluates whether the candidate can operationalize CI/CD across the Azure services central to the role.",
+      "source_evidence": [
+        "Gap matrix: Continuous integration and continuous delivery (CI/CD) \u2014 weak_match",
+        "Candidate: Git branching and merging",
+        "Job: build and deploy software systems"
+      ],
+      "priority": 0.92
+    },
+    {
+      "question": "For a pipeline component that deduplicates a large stream of customer events, what data structures and algorithmic trade-offs would you consider for exact versus approximate deduplication?",
+      "competency": "Algorithms and data structures",
+      "dimension": "Technical",
+      "target_gap": "Software engineering fundamentals",
+      "difficulty": "mid",
+      "rationale": "The candidate has a partial match in software engineering fundamentals; this directly assesses algorithm and data-structure reasoning requested by the job.",
+      "source_evidence": [
+        "Gap matrix: Software engineering fundamentals \u2014 partial_match",
+        "Candidate: Data engineering",
+        "Job: algorithm theory and data structures"
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "You already use row counts, schema validation, and hash-key validation. How would you develop these into a reusable data-hygiene framework with quality dimensions, thresholds, exception handling, and remediation ownership?",
+      "competency": "Data hygiene",
+      "dimension": "Technical",
+      "target_gap": "Data hygiene",
+      "difficulty": "mid",
+      "rationale": "Builds directly on the candidate's partial match and reveals whether their checks can support durable hygiene routines and models.",
+      "source_evidence": [
+        "Gap matrix: Data hygiene \u2014 partial_match",
+        "Candidate: row count, schema validation, and hash key validation"
+      ],
+      "priority": 0.87
+    },
+    {
+      "question": "How would you plan and execute an integration test for an Azure Data Factory pipeline that invokes Databricks and writes to a curated serving layer, without relying on uncontrolled production data?",
+      "competency": "Integration testing",
+      "dimension": "Situational",
+      "target_gap": "Software testing",
+      "difficulty": "mid",
+      "rationale": "Tests the missing testing competency in the specific Azure service integration expected for this role.",
+      "source_evidence": [
+        "Gap matrix: Software testing \u2014 missing",
+        "Gap matrix: Azure Data Factory \u2014 weak_match",
+        "Gap matrix: Azure Databricks \u2014 weak_match"
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "Give an example of when you would choose a NoSQL store rather than a relational warehouse for a data-product requirement. How would access patterns, schema evolution, consistency, and cost affect the decision?",
+      "competency": "NoSQL databases",
+      "dimension": "Situational",
+      "target_gap": "NoSQL databases",
+      "difficulty": "mid",
+      "rationale": "NoSQL is a weak match with no direct database evidence, so the question identifies transferable design judgment and hands-on exposure.",
+      "source_evidence": [
+        "Gap matrix: NoSQL databases \u2014 weak_match",
+        "Candidate: designed analytical solutions for large datasets",
+        "Job: requires non-relational/NoSQL database experience"
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "A release introduces a subtle schema change that only affects one downstream consumer. What evidence would you gather, how would you contain the impact, and how would you prevent recurrence?",
+      "competency": "Incident resolution",
+      "dimension": "Situational",
+      "target_gap": "Root cause analysis",
+      "difficulty": "mid",
+      "rationale": "Assesses disciplined root-cause analysis and corrective actions for a realistic integration failure.",
+      "source_evidence": [
+        "Gap matrix: Root cause analysis \u2014 weak_match",
+        "Candidate: performed schema validation",
+        "Job: identify permanent resolutions to software or business process issues"
+      ],
+      "priority": 0.88
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}

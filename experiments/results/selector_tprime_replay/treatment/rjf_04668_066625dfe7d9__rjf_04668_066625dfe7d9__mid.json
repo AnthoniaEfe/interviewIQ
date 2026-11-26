@@ -1,0 +1,357 @@
+{
+  "experiment_id": "selector_tprime_replay",
+  "stage": "treatment_pipeline",
+  "generation_mode": "interviewiq",
+  "condition": "T",
+  "condition_detail": "Tprime",
+  "selection_strategy": "tprime",
+  "forward_treatment": true,
+  "profile_id": "rjf_04668_066625dfe7d9",
+  "jd_id": "rjf_04668_066625dfe7d9",
+  "pair_id": "rjf_04668_066625dfe7d9",
+  "fit_label": "Potential Fit",
+  "seniority": "mid",
+  "replicate": 0,
+  "model": "gpt-5.6-terra",
+  "prompt_hash": "26e027acc555bdd199a57093cb15b173f15de1b04c2a160718b22727f128eabc",
+  "prompt_version": "1.1.0",
+  "pool_path": "../exp_20261011T130619Z/pool/rjf_04668_066625dfe7d9__rjf_04668_066625dfe7d9__mid.json",
+  "pool_stats": {
+    "n_raw": 30,
+    "n_valid": 30
+  },
+  "selection": {
+    "strategy": "tprime",
+    "selected_indices": [
+      0,
+      14,
+      2,
+      23,
+      4,
+      27,
+      17,
+      13,
+      12,
+      1
+    ],
+    "questions": [
+      {
+        "question": "This role requires hands-on FACETS experience. What FACETS modules, workflows, and data entities have you used, and what business change did you support end to end?",
+        "competency": "FACETS",
+        "dimension": "Technical",
+        "target_gap": "FACETS",
+        "difficulty": "mid",
+        "rationale": "FACETS is a required competency with no documented candidate experience, so this directly validates the critical gap.",
+        "source_evidence": [
+          "Gap matrix: FACETS \u2014 missing",
+          "Candidate evidence: SQL"
+        ],
+        "priority": 0.99
+      },
+      {
+        "question": "Tell me about a situation in which you had to push back on a stakeholder's requested priority. How did you present trade-offs, and what was the final outcome?",
+        "competency": "Stakeholder prioritization",
+        "dimension": "Behavioural",
+        "target_gap": "Prioritization",
+        "difficulty": "mid",
+        "rationale": "Evaluates the candidate's ability to manage conflict and influence prioritization decisions, which is not explicitly established by the supplied evidence.",
+        "source_evidence": [
+          "Gap matrix: Prioritization \u2014 missing",
+          "Maintained a proactive relation with internal and external stakeholders."
+        ],
+        "priority": 0.86
+      },
+      {
+        "question": "A claims operations team says that a FACETS configuration is causing delayed adjudication, but they cannot identify the rule or workflow involved. How would you investigate, structure the analysis, and turn the findings into requirements?",
+        "competency": "FACETS problem analysis",
+        "dimension": "Situational",
+        "target_gap": "FACETS",
+        "difficulty": "hard",
+        "rationale": "Assesses how the candidate would apply BA analysis in the required system domain despite the missing explicit FACETS experience.",
+        "source_evidence": [
+          "Gap matrix: FACETS \u2014 missing",
+          "Led functional and non-functional requirements gathering, refinement, and documentation."
+        ],
+        "priority": 0.94
+      },
+      {
+        "question": "When joining a new business unit, how do you rapidly develop domain knowledge while avoiding assumptions that can lead to incorrect requirements?",
+        "competency": "Domain discovery",
+        "dimension": "Cultural/Motivational",
+        "target_gap": "profile_probe",
+        "difficulty": "mid",
+        "rationale": "Assesses the candidate's motivation and method for proactively acquiring business-unit and industry context.",
+        "source_evidence": [
+          "Proactively acquire business-unit domain knowledge.",
+          "Undertook analytical projects with business areas across the CEBA small business loan repayment division."
+        ],
+        "priority": 0.72
+      },
+      {
+        "question": "Using the report-migration work you performed at Leidos, give an example of a requirement that could have been expressed as a user story. How would you define acceptance criteria that prove its business logic was replicated correctly?",
+        "competency": "User story development",
+        "dimension": "Role-Specific",
+        "target_gap": "User story development",
+        "difficulty": "mid",
+        "rationale": "Elicits a concrete, candidate-specific example while probing the transition from documented requirements to testable agile delivery artifacts.",
+        "source_evidence": [
+          "Ensured 20 reports were properly migrated with business logic accurately replicated.",
+          "Created business requirements documentation, requirements traceability documentation, test plans, and test cases."
+        ],
+        "priority": 0.82
+      },
+      {
+        "question": "For the documentation repository that helped improve loan approvals, how did you identify the root cause, decide what knowledge to capture, and measure whether the repository changed user behavior?",
+        "competency": "Knowledge management impact",
+        "dimension": "Role-Specific",
+        "target_gap": "Knowledge management",
+        "difficulty": "mid",
+        "rationale": "Uses a candidate-specific achievement to test knowledge-management design, adoption, and measurable impact.",
+        "source_evidence": [
+          "Found that 78% of declined loans were due to applicants not providing the correct supporting documents.",
+          "Supported development of a documentation repository that contributed to a 30% increase in approval rate within two months."
+        ],
+        "priority": 0.83
+      },
+      {
+        "question": "A business team proposes a manual workaround because a system enhancement appears expensive. How would you evaluate the current process, the workaround, and an automated alternative before recommending a solution?",
+        "competency": "Cost-effective solutions",
+        "dimension": "Situational",
+        "target_gap": "Business process and system solutions",
+        "difficulty": "mid",
+        "rationale": "Directly assesses the role's need to support cost-effective process and system solutions.",
+        "source_evidence": [
+          "Gap matrix: Business process and system solutions \u2014 partial_match",
+          "Bridged business and IT teams to develop data, process, and technical solutions."
+        ],
+        "priority": 0.82
+      },
+      {
+        "question": "What prioritization framework would you use to compare operational risk, customer impact, regulatory need, strategic value, effort, and dependency risk? Explain how you would make the decision auditable.",
+        "competency": "Prioritization framework",
+        "dimension": "Technical",
+        "target_gap": "Prioritization",
+        "difficulty": "mid",
+        "rationale": "Tests for a repeatable prioritization method rather than relying on the candidate's title-based Product Owner experience alone.",
+        "source_evidence": [
+          "Gap matrix: Prioritization \u2014 missing",
+          "Established and maintained a product backlog based on business priorities and stakeholder needs."
+        ],
+        "priority": 0.91
+      },
+      {
+        "question": "How would you prioritize a backlog when senior stakeholders each consider their request urgent, technical dependencies constrain sequencing, and delivery capacity is fixed?",
+        "competency": "Prioritization",
+        "dimension": "Situational",
+        "target_gap": "Prioritization",
+        "difficulty": "hard",
+        "rationale": "Prioritization is a required missing competency in the gap matrix and is central to working with the Product Owner and business.",
+        "source_evidence": [
+          "Gap matrix: Prioritization \u2014 missing",
+          "Established and maintained a product backlog based on business priorities and stakeholder needs."
+        ],
+        "priority": 0.96
+      },
+      {
+        "question": "Describe a time you had to learn an unfamiliar enterprise platform quickly in order to deliver a business-analysis outcome. How did you build enough functional and data knowledge to be effective?",
+        "competency": "FACETS learning agility",
+        "dimension": "Behavioural",
+        "target_gap": "FACETS",
+        "difficulty": "mid",
+        "rationale": "Tests whether the candidate can close the documented FACETS gap through a disciplined onboarding and learning approach without assuming prior platform experience.",
+        "source_evidence": [
+          "Gap matrix: FACETS \u2014 missing",
+          "Supported migration of reports from legacy software to SuccessFactor software."
+        ],
+        "priority": 0.93
+      }
+    ],
+    "n_selected": 10,
+    "quota_met": true,
+    "dimension_counts": {
+      "Technical": 2,
+      "Behavioural": 2,
+      "Situational": 3,
+      "Cultural/Motivational": 1,
+      "Role-Specific": 2
+    },
+    "gap_share": 0.7,
+    "relaxations": [],
+    "metrics": {
+      "M1.P": 0.3121742304491247,
+      "M2.P": 0.1,
+      "M3.P": 0.5,
+      "M4.P": 7.321098019284832,
+      "assignment_available": true,
+      "n_questions": 10
+    }
+  },
+  "questions": [
+    {
+      "question": "This role requires hands-on FACETS experience. What FACETS modules, workflows, and data entities have you used, and what business change did you support end to end?"
+    },
+    {
+      "question": "Tell me about a situation in which you had to push back on a stakeholder's requested priority. How did you present trade-offs, and what was the final outcome?"
+    },
+    {
+      "question": "A claims operations team says that a FACETS configuration is causing delayed adjudication, but they cannot identify the rule or workflow involved. How would you investigate, structure the analysis, and turn the findings into requirements?"
+    },
+    {
+      "question": "When joining a new business unit, how do you rapidly develop domain knowledge while avoiding assumptions that can lead to incorrect requirements?"
+    },
+    {
+      "question": "Using the report-migration work you performed at Leidos, give an example of a requirement that could have been expressed as a user story. How would you define acceptance criteria that prove its business logic was replicated correctly?"
+    },
+    {
+      "question": "For the documentation repository that helped improve loan approvals, how did you identify the root cause, decide what knowledge to capture, and measure whether the repository changed user behavior?"
+    },
+    {
+      "question": "A business team proposes a manual workaround because a system enhancement appears expensive. How would you evaluate the current process, the workaround, and an automated alternative before recommending a solution?"
+    },
+    {
+      "question": "What prioritization framework would you use to compare operational risk, customer impact, regulatory need, strategic value, effort, and dependency risk? Explain how you would make the decision auditable."
+    },
+    {
+      "question": "How would you prioritize a backlog when senior stakeholders each consider their request urgent, technical dependencies constrain sequencing, and delivery capacity is fixed?"
+    },
+    {
+      "question": "Describe a time you had to learn an unfamiliar enterprise platform quickly in order to deliver a business-analysis outcome. How did you build enough functional and data knowledge to be effective?"
+    }
+  ],
+  "questions_rich": [
+    {
+      "question": "This role requires hands-on FACETS experience. What FACETS modules, workflows, and data entities have you used, and what business change did you support end to end?",
+      "competency": "FACETS",
+      "dimension": "Technical",
+      "target_gap": "FACETS",
+      "difficulty": "mid",
+      "rationale": "FACETS is a required competency with no documented candidate experience, so this directly validates the critical gap.",
+      "source_evidence": [
+        "Gap matrix: FACETS \u2014 missing",
+        "Candidate evidence: SQL"
+      ],
+      "priority": 0.99
+    },
+    {
+      "question": "Tell me about a situation in which you had to push back on a stakeholder's requested priority. How did you present trade-offs, and what was the final outcome?",
+      "competency": "Stakeholder prioritization",
+      "dimension": "Behavioural",
+      "target_gap": "Prioritization",
+      "difficulty": "mid",
+      "rationale": "Evaluates the candidate's ability to manage conflict and influence prioritization decisions, which is not explicitly established by the supplied evidence.",
+      "source_evidence": [
+        "Gap matrix: Prioritization \u2014 missing",
+        "Maintained a proactive relation with internal and external stakeholders."
+      ],
+      "priority": 0.86
+    },
+    {
+      "question": "A claims operations team says that a FACETS configuration is causing delayed adjudication, but they cannot identify the rule or workflow involved. How would you investigate, structure the analysis, and turn the findings into requirements?",
+      "competency": "FACETS problem analysis",
+      "dimension": "Situational",
+      "target_gap": "FACETS",
+      "difficulty": "hard",
+      "rationale": "Assesses how the candidate would apply BA analysis in the required system domain despite the missing explicit FACETS experience.",
+      "source_evidence": [
+        "Gap matrix: FACETS \u2014 missing",
+        "Led functional and non-functional requirements gathering, refinement, and documentation."
+      ],
+      "priority": 0.94
+    },
+    {
+      "question": "When joining a new business unit, how do you rapidly develop domain knowledge while avoiding assumptions that can lead to incorrect requirements?",
+      "competency": "Domain discovery",
+      "dimension": "Cultural/Motivational",
+      "target_gap": "profile_probe",
+      "difficulty": "mid",
+      "rationale": "Assesses the candidate's motivation and method for proactively acquiring business-unit and industry context.",
+      "source_evidence": [
+        "Proactively acquire business-unit domain knowledge.",
+        "Undertook analytical projects with business areas across the CEBA small business loan repayment division."
+      ],
+      "priority": 0.72
+    },
+    {
+      "question": "Using the report-migration work you performed at Leidos, give an example of a requirement that could have been expressed as a user story. How would you define acceptance criteria that prove its business logic was replicated correctly?",
+      "competency": "User story development",
+      "dimension": "Role-Specific",
+      "target_gap": "User story development",
+      "difficulty": "mid",
+      "rationale": "Elicits a concrete, candidate-specific example while probing the transition from documented requirements to testable agile delivery artifacts.",
+      "source_evidence": [
+        "Ensured 20 reports were properly migrated with business logic accurately replicated.",
+        "Created business requirements documentation, requirements traceability documentation, test plans, and test cases."
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "For the documentation repository that helped improve loan approvals, how did you identify the root cause, decide what knowledge to capture, and measure whether the repository changed user behavior?",
+      "competency": "Knowledge management impact",
+      "dimension": "Role-Specific",
+      "target_gap": "Knowledge management",
+      "difficulty": "mid",
+      "rationale": "Uses a candidate-specific achievement to test knowledge-management design, adoption, and measurable impact.",
+      "source_evidence": [
+        "Found that 78% of declined loans were due to applicants not providing the correct supporting documents.",
+        "Supported development of a documentation repository that contributed to a 30% increase in approval rate within two months."
+      ],
+      "priority": 0.83
+    },
+    {
+      "question": "A business team proposes a manual workaround because a system enhancement appears expensive. How would you evaluate the current process, the workaround, and an automated alternative before recommending a solution?",
+      "competency": "Cost-effective solutions",
+      "dimension": "Situational",
+      "target_gap": "Business process and system solutions",
+      "difficulty": "mid",
+      "rationale": "Directly assesses the role's need to support cost-effective process and system solutions.",
+      "source_evidence": [
+        "Gap matrix: Business process and system solutions \u2014 partial_match",
+        "Bridged business and IT teams to develop data, process, and technical solutions."
+      ],
+      "priority": 0.82
+    },
+    {
+      "question": "What prioritization framework would you use to compare operational risk, customer impact, regulatory need, strategic value, effort, and dependency risk? Explain how you would make the decision auditable.",
+      "competency": "Prioritization framework",
+      "dimension": "Technical",
+      "target_gap": "Prioritization",
+      "difficulty": "mid",
+      "rationale": "Tests for a repeatable prioritization method rather than relying on the candidate's title-based Product Owner experience alone.",
+      "source_evidence": [
+        "Gap matrix: Prioritization \u2014 missing",
+        "Established and maintained a product backlog based on business priorities and stakeholder needs."
+      ],
+      "priority": 0.91
+    },
+    {
+      "question": "How would you prioritize a backlog when senior stakeholders each consider their request urgent, technical dependencies constrain sequencing, and delivery capacity is fixed?",
+      "competency": "Prioritization",
+      "dimension": "Situational",
+      "target_gap": "Prioritization",
+      "difficulty": "hard",
+      "rationale": "Prioritization is a required missing competency in the gap matrix and is central to working with the Product Owner and business.",
+      "source_evidence": [
+        "Gap matrix: Prioritization \u2014 missing",
+        "Established and maintained a product backlog based on business priorities and stakeholder needs."
+      ],
+      "priority": 0.96
+    },
+    {
+      "question": "Describe a time you had to learn an unfamiliar enterprise platform quickly in order to deliver a business-analysis outcome. How did you build enough functional and data knowledge to be effective?",
+      "competency": "FACETS learning agility",
+      "dimension": "Behavioural",
+      "target_gap": "FACETS",
+      "difficulty": "mid",
+      "rationale": "Tests whether the candidate can close the documented FACETS gap through a disciplined onboarding and learning approach without assuming prior platform experience.",
+      "source_evidence": [
+        "Gap matrix: FACETS \u2014 missing",
+        "Supported migration of reports from legacy software to SuccessFactor software."
+      ],
+      "priority": 0.93
+    }
+  ],
+  "n_questions": 10,
+  "source_replay": "experiments/results/selector_tprime_replay",
+  "prereg_path": "docs/selector_tprime_prereg.md",
+  "adoption_path": "docs/selector_tprime_adoption.md"
+}
